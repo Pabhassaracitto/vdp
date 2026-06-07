@@ -3,6 +3,7 @@
 // Accessibility-First + Dual Encoding (Màu + Hình + Text)
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/vdp_theme.dart';
@@ -40,9 +41,11 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   final ScrollController _verticalController1 = ScrollController();
   final ScrollController _verticalController2 = ScrollController();
 
-  // Filter state
   BhumiGroup? _filterBhumi;
   bool _showHighContrastMode = false;
+  bool _forceLandscape = false;
+
+  bool _isSyncingScroll = false;
 
   @override
   void initState() {
@@ -52,21 +55,67 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   void _syncVerticalScroll1() {
-    if (_verticalController2.hasClients &&
-        (_verticalController2.offset - _verticalController1.offset).abs() > 0.001) {
+    if (_isSyncingScroll) return;
+    if (!_verticalController1.hasClients || !_verticalController2.hasClients) {
+      return;
+    }
+
+    final diff =
+        (_verticalController2.offset - _verticalController1.offset).abs();
+    if (diff > 0.5) {
+      _isSyncingScroll = true;
       _verticalController2.jumpTo(_verticalController1.offset);
+      _isSyncingScroll = false;
     }
   }
 
   void _syncVerticalScroll2() {
-    if (_verticalController1.hasClients &&
-        (_verticalController1.offset - _verticalController2.offset).abs() > 0.001) {
+    if (_isSyncingScroll) return;
+    if (!_verticalController1.hasClients || !_verticalController2.hasClients) {
+      return;
+    }
+
+    final diff =
+        (_verticalController1.offset - _verticalController2.offset).abs();
+    if (diff > 0.5) {
+      _isSyncingScroll = true;
       _verticalController1.jumpTo(_verticalController2.offset);
+      _isSyncingScroll = false;
     }
   }
 
+  Future<void> _toggleOrientation() async {
+  if (_forceLandscape) {
+    await SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+  } else {
+    await SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+  }
+
+  if (mounted) {
+    setState(() => _forceLandscape = !_forceLandscape);
+  }
+}
+
   @override
   void dispose() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+
+    _verticalController1.removeListener(_syncVerticalScroll1);
+    _verticalController2.removeListener(_syncVerticalScroll2);
+
     _horizontalController.dispose();
     _verticalController1.dispose();
     _verticalController2.dispose();
@@ -74,76 +123,87 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    final dataState = ref.watch(vdpRepositoryProvider);
+Widget build(BuildContext context) {
+  final dataState = ref.watch(vdpRepositoryProvider);
 
-    if (!dataState.isReady) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
-      );
-    }
+  if (!dataState.isReady) {
+    return const Scaffold(
+      body: Center(child: CircularProgressIndicator()),
+    );
+  }
 
-    final cittas = _filterBhumi != null
-        ? dataState.cittas.where((c) => c.bhumiGroup == _filterBhumi).toList()
-        : dataState.cittas;
-    final cetasikas = List<CetasikaModel>.from(dataState.cetasikas)
-      ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
+  final cittas = _filterBhumi != null
+      ? dataState.cittas.where((c) => c.bhumiGroup == _filterBhumi).toList()
+      : dataState.cittas;
 
-    return Scaffold(
-      appBar: _buildAppBar(context, cittas.length),
-      body: Column(
+  final cetasikas = List<CetasikaModel>.from(dataState.cetasikas)
+    ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
+
+  return Scaffold(
+    appBar: _buildAppBar(context, cittas.length),
+    body: Column(
+      children: [
+        _buildBhumiFilter(),
+        if (dataState.hasValidationWarnings) _buildWarningBanner(dataState),
+        _buildLegend(),
+        Expanded(
+          child: _buildMatrix(context, cittas, cetasikas),
+        ),
+      ],
+    ),
+  );
+}
+
+  PreferredSizeWidget _buildAppBar(BuildContext context, int cittaCount) {
+  return AppBar(
+    title: Semantics(
+      label: 'Ma trận Vi Diệu Pháp, đang hiển thị $cittaCount Tâm',
+      child: const Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          // Bộ lọc Bhumi Groups
-          _buildBhumiFilter(),
-
-          // Validation Warnings Banner (nếu có)
-          if (dataState.hasValidationWarnings) _buildWarningBanner(dataState),
-
-          // Legend / Hướng dẫn Dual Encoding
-          _buildLegend(),
-
-          // Ma trận chính
-          Expanded(
-            child: _buildMatrix(context, cittas, cetasikas),
+          Text('Ma Trận Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
+          Text(
+            'Abhidhamma Matrix',
+            style: TextStyle(fontSize: 12, color: Colors.white70),
           ),
         ],
       ),
-    );
-  }
-
-  PreferredSizeWidget _buildAppBar(BuildContext context, int cittaCount) {
-    return AppBar(
-      title: Semantics(
-        label: 'Ma trận Vi Diệu Pháp, đang hiển thị $cittaCount Tâm',
-        child: const Column(
-          children: [
-            Text('Ma Trận Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
-            Text('Abhidhamma Matrix',
-                style: TextStyle(fontSize: 12, color: Colors.white70)),
-          ],
+    ),
+    actions: [
+      Semantics(
+        label: 'Xoay màn hình ngang để xem ma trận rộng hơn',
+        child: IconButton(
+          icon: Icon(
+            _forceLandscape
+                ? Icons.stay_current_portrait
+                : Icons.stay_current_landscape,
+          ),
+          onPressed: _toggleOrientation,
+          tooltip: 'Xoay màn hình',
         ),
       ),
-      actions: [
-        // High Contrast Toggle - Accessibility
-        Semantics(
-          label: 'Bật/tắt chế độ tương phản cao',
-          child: IconButton(
-            icon: Icon(_showHighContrastMode
+      Semantics(
+        label: 'Bật/tắt chế độ tương phản cao',
+        child: IconButton(
+          icon: Icon(
+            _showHighContrastMode
                 ? Icons.contrast
-                : Icons.contrast_outlined),
-            onPressed: () =>
-                setState(() => _showHighContrastMode = !_showHighContrastMode),
-            tooltip: 'Chế độ tương phản cao',
+                : Icons.contrast_outlined,
           ),
+          onPressed: () {
+            setState(() => _showHighContrastMode = !_showHighContrastMode);
+          },
+          tooltip: 'Chế độ tương phản cao',
         ),
-        IconButton(
-          icon: const Icon(Icons.info_outline),
-          onPressed: () => _showHelp(context),
-          tooltip: 'Hướng dẫn',
-        ),
-      ],
-    );
-  }
+      ),
+      IconButton(
+        icon: const Icon(Icons.info_outline),
+        onPressed: () => _showHelp(context),
+        tooltip: 'Hướng dẫn',
+      ),
+    ],
+  );
+}
 
   Widget _buildBhumiFilter() {
     return Semantics(
@@ -262,9 +322,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     List<CittaModel> cittas,
     List<CetasikaModel> cetasikas,
   ) {
-    const double cellSize = 40.0;
-    const double headerWidth = 180.0;
-    const double cetasikaHeaderHeight = 100.0;
+    const double cellSize = 44.0; //40.0;
+    const double headerWidth = 200.0; // 180.0;
+    const double cetasikaHeaderHeight = 110.0; // 100.0;
 
     final selectedCitta = ref.watch(selectedCittaProvider);
     final selectedCetasika = ref.watch(selectedCetasikaProvider);

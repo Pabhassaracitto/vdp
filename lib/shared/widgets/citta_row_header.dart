@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import '../../data/models/citta_model.dart';
 import '../../core/theme/vdp_theme.dart';
-
+import 'package:flutter/services.dart';
 class CittaRowHeader extends StatelessWidget {
   final CittaModel citta;
   final bool isSelected;
@@ -74,10 +74,11 @@ class CittaRowHeader extends StatelessWidget {
                   Text(
                     citta.nameVietnamese,
                     style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
-                      color: VdpColors.onBackground,
-                    ),
+                    fontSize: 10.5,
+                    height: 1.0,
+                    fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                    color: VdpColors.onBackground,
+                  ),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
