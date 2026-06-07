@@ -37,16 +37,39 @@ class MatrixScreen extends ConsumerStatefulWidget {
 
 class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   final ScrollController _horizontalController = ScrollController();
-  final ScrollController _verticalController = ScrollController();
+  final ScrollController _verticalController1 = ScrollController();
+  final ScrollController _verticalController2 = ScrollController();
 
   // Filter state
   BhumiGroup? _filterBhumi;
   bool _showHighContrastMode = false;
 
   @override
+  void initState() {
+    super.initState();
+    _verticalController1.addListener(_syncVerticalScroll1);
+    _verticalController2.addListener(_syncVerticalScroll2);
+  }
+
+  void _syncVerticalScroll1() {
+    if (_verticalController2.hasClients &&
+        (_verticalController2.offset - _verticalController1.offset).abs() > 0.001) {
+      _verticalController2.jumpTo(_verticalController1.offset);
+    }
+  }
+
+  void _syncVerticalScroll2() {
+    if (_verticalController1.hasClients &&
+        (_verticalController1.offset - _verticalController2.offset).abs() > 0.001) {
+      _verticalController1.jumpTo(_verticalController2.offset);
+    }
+  }
+
+  @override
   void dispose() {
     _horizontalController.dispose();
-    _verticalController.dispose();
+    _verticalController1.dispose();
+    _verticalController2.dispose();
     super.dispose();
   }
 
@@ -63,7 +86,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final cittas = _filterBhumi != null
         ? dataState.cittas.where((c) => c.bhumiGroup == _filterBhumi).toList()
         : dataState.cittas;
-    final cetasikas = dataState.cetasikas
+    final cetasikas = List<CetasikaModel>.from(dataState.cetasikas)
       ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
 
     return Scaffold(
@@ -247,6 +270,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final selectedCetasika = ref.watch(selectedCetasikaProvider);
     final dimmedCetasikas = ref.watch(dimmedCetasikasProvider);
 
+    final double matrixWidth = cetasikas.length * cellSize;
+
     return Row(
       children: [
         // Cột cố định: Header Tâm (bên trái)
@@ -274,7 +299,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
               // Tâm rows
               Expanded(
                 child: ListView.builder(
-                  controller: _verticalController,
+                  controller: _verticalController1,
                   itemCount: cittas.length,
                   itemBuilder: (context, index) {
                     final citta = cittas[index];
@@ -306,62 +331,65 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             controller: _horizontalController,
-            child: Column(
-              children: [
-                // Cetasika Headers (cố định trên)
-                Row(
-                  children: cetasikas.map((cetasika) {
-                    final isSelected = selectedCetasika == cetasika.id;
-                    final isDimmed = dimmedCetasikas.contains(cetasika.id);
-                    return GestureDetector(
-                      onTap: () {
-                        ref.read(selectedCetasikaProvider.notifier).state =
-                            isSelected ? null : cetasika.id;
-                        if (!isSelected) {
-                          _showCetasikaDetail(context, cetasika);
-                        }
-                      },
-                      child: CetasikaHeader(
-                        cetasika: cetasika,
-                        isSelected: isSelected,
-                        isDimmed: isDimmed,
-                        width: cellSize,
-                        height: cetasikaHeaderHeight,
-                      ),
-                    );
-                  }).toList(),
-                ),
-
-                // Matrix body (cuộn cả hai chiều)
-                Expanded(
-                  child: ListView.builder(
-                    controller: _verticalController,
-                    itemCount: cittas.length,
-                    cacheExtent: 500, // Tăng cache để cuộn mượt hơn
-                    itemBuilder: (context, rowIndex) {
-                      final citta = cittas[rowIndex];
-                      final isCittaSelected = selectedCitta == citta.id;
-
-                      return Row(
-                        children: List.generate(cetasikas.length, (colIndex) {
-                          final cetasika = cetasikas[colIndex];
-                          return AssociationCell(
-                            cittaId: citta.id,
-                            cetasikaId: cetasika.id,
-                            type: _getAssocType(citta, cetasika.id),
-                            isCittaHighlighted: isCittaSelected,
-                            isCetasikaHighlighted:
-                                selectedCetasika == cetasika.id,
-                            isDimmed: dimmedCetasikas.contains(cetasika.id),
-                            size: cellSize,
-                            useHighContrast: _showHighContrastMode,
-                          );
-                        }),
+            child: SizedBox(
+              width: matrixWidth,
+              child: Column(
+                children: [
+                  // Cetasika Headers (cố định trên)
+                  Row(
+                    children: cetasikas.map((cetasika) {
+                      final isSelected = selectedCetasika == cetasika.id;
+                      final isDimmed = dimmedCetasikas.contains(cetasika.id);
+                      return GestureDetector(
+                        onTap: () {
+                          ref.read(selectedCetasikaProvider.notifier).state =
+                              isSelected ? null : cetasika.id;
+                          if (!isSelected) {
+                            _showCetasikaDetail(context, cetasika);
+                          }
+                        },
+                        child: CetasikaHeader(
+                          cetasika: cetasika,
+                          isSelected: isSelected,
+                          isDimmed: isDimmed,
+                          width: cellSize,
+                          height: cetasikaHeaderHeight,
+                        ),
                       );
-                    },
+                    }).toList(),
                   ),
-                ),
-              ],
+
+                  // Matrix body (cuộn cả hai chiều)
+                  Expanded(
+                    child: ListView.builder(
+                      controller: _verticalController2,
+                      itemCount: cittas.length,
+                      cacheExtent: 500, // Tăng cache để cuộn mượt hơn
+                      itemBuilder: (context, rowIndex) {
+                        final citta = cittas[rowIndex];
+                        final isCittaSelected = selectedCitta == citta.id;
+
+                        return Row(
+                          children: List.generate(cetasikas.length, (colIndex) {
+                            final cetasika = cetasikas[colIndex];
+                            return AssociationCell(
+                              cittaId: citta.id,
+                              cetasikaId: cetasika.id,
+                              type: _getAssocType(citta, cetasika.id),
+                              isCittaHighlighted: isCittaSelected,
+                              isCetasikaHighlighted:
+                                  selectedCetasika == cetasika.id,
+                              isDimmed: dimmedCetasikas.contains(cetasika.id),
+                              size: cellSize,
+                              useHighContrast: _showHighContrastMode,
+                            );
+                          }),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

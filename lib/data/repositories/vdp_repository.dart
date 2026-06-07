@@ -56,6 +56,9 @@ class VdpRepository extends StateNotifier<VdpDataState> {
   VdpRepository() : super(const VdpDataState());
 
   Future<void> initialize() async {
+    if (state.status == DataLoadStatus.loading || state.status == DataLoadStatus.loaded) {
+      return;
+    }
     debugPrint('VDP ▶ initialize() start');
     state = state.copyWith(status: DataLoadStatus.loading);
 

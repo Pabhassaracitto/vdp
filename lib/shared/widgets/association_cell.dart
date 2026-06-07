@@ -3,7 +3,6 @@
 // WCAG 2.1 AA compliant - Min touch target 48x48dp
 
 import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
 
 import '../../data/models/citta_model.dart';
 import '../../core/theme/vdp_theme.dart';

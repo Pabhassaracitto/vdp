@@ -54,12 +54,13 @@ class _AppRoot extends ConsumerStatefulWidget {
 
 class _AppRootState extends ConsumerState<_AppRoot> {
   bool? _showOnboarding;
-  String? _initError;
 
   @override
   void initState() {
     super.initState();
-    _initialize();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _initialize();
+    });
   }
 
   Future<void> _initialize() async {
@@ -75,9 +76,6 @@ class _AppRootState extends ConsumerState<_AppRoot> {
     } catch (e, st) {
       // Bắt MỌI lỗi — không để _showOnboarding = null mãi mãi
       debugPrint('VDP: initialize() lỗi: $e\n$st');
-      if (mounted) {
-        setState(() => _initError = e.toString());
-      }
       // Vẫn tiếp tục flow bình thường dù lỗi
     }
 
