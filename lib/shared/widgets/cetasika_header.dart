@@ -12,7 +12,8 @@ class CetasikaHeader extends StatelessWidget {
   final bool isDimmed;
   final double width;
   final double height;
-  
+  final int displayIndex;
+
   const CetasikaHeader({
     super.key,
     required this.cetasika,
@@ -20,6 +21,7 @@ class CetasikaHeader extends StatelessWidget {
     required this.isDimmed,
     required this.width,
     required this.height,
+    required this.displayIndex,
   });
   
   @override
@@ -83,7 +85,7 @@ class CetasikaHeader extends StatelessWidget {
               
               // Số thứ tự
               Text(
-                '${cetasika.traditionalOrder}',
+                '$displayIndex',
                 style: TextStyle(
                   fontSize: 9,
                   color: groupColor.withOpacity(0.7),

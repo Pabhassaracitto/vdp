@@ -283,131 +283,145 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   // ════════════════════════════════════════════════════════════
 
   Widget _buildMatrix(
-    BuildContext context,
-    List<CittaModel> cittas,
-    List<CetasikaModel> cetasikas,
-  ) {
-    final isLandscape = MediaQuery.of(context).orientation == Orientation.landscape;
-    final double cellSize = isLandscape ? 38.0 : 44.0;
-    final double headerWidth = isLandscape ? 160.0 : 200.0;
-    final double cetasikaHeaderHeight = isLandscape ? 80.0 : 110.0;
-    final double matrixWidth = cetasikas.length * cellSize;
+  BuildContext context,
+  List<CittaModel> cittas,
+  List<CetasikaModel> cetasikas,
+) {
+  final isLandscape =
+      MediaQuery.of(context).orientation == Orientation.landscape;
+  final double cellSize = isLandscape ? 38.0 : 44.0;
+  final double headerWidth = isLandscape ? 160.0 : 200.0;
+  final double cetasikaHeaderHeight = isLandscape ? 80.0 : 110.0;
+  final double matrixWidth = cetasikas.length * cellSize;
 
-    final selectedCitta = ref.watch(selectedCittaProvider);
-    final selectedCetasika = ref.watch(selectedCetasikaProvider);
-    final dimmed = ref.watch(dimmedCetasikasProvider);
+  final selectedCitta = ref.watch(selectedCittaProvider);
+  final selectedCetasika = ref.watch(selectedCetasikaProvider);
+  final dimmed = ref.watch(dimmedCetasikasProvider);
 
-    return LayoutBuilder(
-  builder: (context, constraints) {
-    // Floor để tránh lỗi sub-pixel overflow
-    final double bodyHeight =
-        (constraints.maxHeight - cetasikaHeaderHeight).floorToDouble().clamp(0, double.infinity);
-
-    return Row(
-      children: [
-        // Cột trái: tên Tâm
-        SizedBox(
-          width: headerWidth,
-          child: Column(
-            children: [
-              Container(
-                height: cetasikaHeaderHeight,
-                decoration: BoxDecoration(
-                  color: VdpColors.primary,
-                  border: Border.all(color: Colors.white30),
-                ),
-                alignment: Alignment.center,
-                child: const Text(
-                  'Tâm ↓\nTâm Sở →',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold),
+  return Row(
+    children: [
+      // ═══ Cột trái: tên Tâm ═══
+      SizedBox(
+        width: headerWidth,
+        child: Column(
+          children: [
+            Container(
+              height: cetasikaHeaderHeight,
+              decoration: BoxDecoration(
+                color: VdpColors.primary,
+                border: Border.all(color: Colors.white30),
+              ),
+              alignment: Alignment.center,
+              child: const Text(
+                'Tâm ↓\nTâm Sở →',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
-                height: bodyHeight,
-                child: ListView.builder(
-                  controller: _verticalController1,
-                  itemCount: cittas.length,
-                  itemBuilder: (_, i) {
-                    final citta = cittas[i];
-                    final isSel = selectedCitta == citta.id;
-                    return GestureDetector(
-                      onTap: () {
-                        ref.read(selectedCittaProvider.notifier).state = isSel ? null : citta.id;
-                        if (!isSel) _showCittaDetail(context, citta);
-                      },
-                      child: CittaRowHeader(
-                        citta: citta, isSelected: isSel, width: headerWidth, height: cellSize,
-                      ),
-                    );
-                  },
-                ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                controller: _verticalController1,
+                itemCount: cittas.length,
+                itemBuilder: (_, i) {
+                  final citta = cittas[i];
+                  final isSel = selectedCitta == citta.id;
+                  return GestureDetector(
+                    onTap: () {
+                      ref.read(selectedCittaProvider.notifier).state =
+                          isSel ? null : citta.id;
+                      if (!isSel) _showCittaDetail(context, citta);
+                    },
+                    child: CittaRowHeader(
+                      citta: citta,
+                      isSelected: isSel,
+                      width: headerWidth,
+                      height: cellSize,
+                      displayIndex: i + 1,
+                    ),
+                  );
+                },
               ),
-            ],
-          ),
+            ),
+          ],
         ),
+      ),
 
-        // Phần phải
-        Expanded(
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            controller: _horizontalController,
-            child: SizedBox(
-              width: matrixWidth,
-              child: Column(
-                children: [
-                  Row(
-                    children: cetasikas.map((cs) {
-                      final isSel = selectedCetasika == cs.id;
-                      final isDim = dimmed.contains(cs.id);
-                      return GestureDetector(
-                        onTap: () {
-                          ref.read(selectedCetasikaProvider.notifier).state = isSel ? null : cs.id;
-                          if (!isSel) _showCetasikaDetail(context, cs);
-                        },
-                        child: CetasikaHeader(
-                          cetasika: cs, isSelected: isSel, isDimmed: isDim,
-                          width: cellSize, height: cetasikaHeaderHeight,
-                        ),
-                      );
-                    }).toList(),
-                  ),
-                  SizedBox(
-                    height: bodyHeight,
-                    child: ListView.builder(
-                      controller: _verticalController2,
-                      itemCount: cittas.length,
-                      itemBuilder: (_, rowIdx) {
-                        final citta = cittas[rowIdx];
-                        final isCittaSel = selectedCitta == citta.id;
-                        return Row(
-                          children: List.generate(cetasikas.length, (colIdx) {
+      // ═══ Phần phải: header Tâm Sở + ô ma trận ═══
+      Expanded(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          controller: _horizontalController,
+          child: SizedBox(
+            width: matrixWidth,
+            child: Column(
+              children: [
+                // Header Tâm Sở
+                Row(
+  children: cetasikas.asMap().entries.map((entry) {
+    final colIdx = entry.key;
+    final cs = entry.value;
+    final isSel = selectedCetasika == cs.id;
+    final isDim = dimmed.contains(cs.id);
+    return GestureDetector(
+      onTap: () {
+        ref.read(selectedCetasikaProvider.notifier).state =
+            isSel ? null : cs.id;
+        if (!isSel) _showCetasikaDetail(context, cs);
+      },
+      child: CetasikaHeader(
+        cetasika: cs,
+        isSelected: isSel,
+        isDimmed: isDim,
+        width: cellSize,
+        height: cetasikaHeaderHeight,
+        displayIndex: colIdx + 1,
+      ),
+    );
+  }).toList(),
+),
+
+                // Ô ma trận
+                Expanded(
+                  child: ListView.builder(
+                    controller: _verticalController2,
+                    itemCount: cittas.length,
+                    itemBuilder: (_, rowIdx) {
+                      final citta = cittas[rowIdx];
+                      final isCittaSel = selectedCitta == citta.id;
+                      return Row(
+                        children: List.generate(
+                          cetasikas.length,
+                          (colIdx) {
                             final cs = cetasikas[colIdx];
                             return AssociationCell(
                               cittaId: citta.id,
                               cetasikaId: cs.id,
                               type: _getAssocType(citta, cs.id),
                               isCittaHighlighted: isCittaSel,
-                              isCetasikaHighlighted: selectedCetasika == cs.id,
+                              isCetasikaHighlighted:
+                                  selectedCetasika == cs.id,
                               isDimmed: dimmed.contains(cs.id),
                               size: cellSize,
                               useHighContrast: _showHighContrastMode,
                             );
-                          }),
-                        );
-                      },
-                    ),
+                          },
+                        ),
+                      );
+                    },
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
-      ],
-    );
-  },
-);
-  }
+      ),
+    ],
+  );
+}
 
   AssociationType _getAssocType(CittaModel citta, String cetasikaId) {
     final a = citta.cetasikaAssociations.where((x) => x.cetasikaId == cetasikaId).firstOrNull;

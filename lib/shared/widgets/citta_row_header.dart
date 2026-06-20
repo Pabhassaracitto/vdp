@@ -11,6 +11,7 @@ class CittaRowHeader extends StatelessWidget {
   final bool isSelected;
   final double width;
   final double height;
+  final int displayIndex; // Thứ tự hiển thị trong danh sách (bắt đầu từ 0)
   
   const CittaRowHeader({
     super.key,
@@ -18,6 +19,7 @@ class CittaRowHeader extends StatelessWidget {
     required this.isSelected,
     required this.width,
     required this.height,
+    required this.displayIndex, // Thứ tự hiển thị, dùng để debug
   });
   
   @override
@@ -27,7 +29,8 @@ class CittaRowHeader extends StatelessWidget {
     final vedanaSymbol = _getVedanaSymbol(citta.vedana);
     
     return Semantics(
-      label: 'Tâm số ${citta.orderIndex}: ${citta.nameVietnamese}, '
+      label: 'Tâm hàng $displayIndex: ${citta.nameVietnamese}, '
+       'số gốc ${citta.orderIndex}, '
              'nhóm ${_getBhumiName(citta.bhumiGroup)}, '
              'thọ ${_getVedanaName(citta.vedana)}. '
              '${isSelected ? "Đang được chọn" : "Nhấn để xem chi tiết"}',
@@ -54,9 +57,9 @@ class CittaRowHeader extends StatelessWidget {
           children: [
             // Số thứ tự
             SizedBox(
-              width: 24,
+              width: 30,
               child: Text(
-                '${citta.orderIndex}',
+                '$displayIndex',
                 style: TextStyle(
                   fontSize: 10,
                   color: bhumiColor.withOpacity(0.7),

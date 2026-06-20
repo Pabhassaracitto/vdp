@@ -2221,15 +2221,18 @@
         },
         {
           "cetasikaId": "CS_ISSA",
-          "type": "sometimes"
+          "type": "sometimes",
+          "note": "sometimes - tùy duyên xuất hiện"
         },
         {
           "cetasikaId": "CS_MACCHARIYA",
-          "type": "sometimes"
+          "type": "sometimes",
+          "note": "sometimes - tùy duyên xuất hiện"
         },
         {
           "cetasikaId": "CS_KUKKUCCA",
-          "type": "sometimes"
+          "type": "sometimes",
+          "note": "sometimes - tùy duyên xuất hiện"
         },
         {
           "cetasikaId": "CS_THINA",

@@ -67,7 +67,8 @@ class VdpRepository extends StateNotifier<VdpDataState> {
     try {
       final cittas = await _loadCittas();
       final cetasikas = await _loadCetasikas();
-
+      // Debug orderIndex của cittas ngay sau khi load, trước khi validate, để dễ phát hiện lỗi dữ liệu
+      _debugCittaOrderIndexes(cittas);
       // Validate
       ValidationResult? validation;
       if (cittas.isNotEmpty && cetasikas.isNotEmpty) {
@@ -248,6 +249,42 @@ debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
     }
     return dimmed;
   }
+  void _debugCittaOrderIndexes(List<CittaModel> cittas) {
+  if (cittas.isEmpty) {
+    debugPrint('VDP ▶ No cittas loaded');
+    return;
+  }
+
+  final indexes = cittas.map((e) => e.orderIndex).toList()..sort();
+
+  final seen = <int>{};
+  final duplicates = <int>[];
+
+  for (final idx in indexes) {
+    if (!seen.add(idx) && !duplicates.contains(idx)) {
+      duplicates.add(idx);
+    }
+  }
+
+  final missing1To121 = <int>[];
+  for (var i = 1; i <= 121; i++) {
+    if (!seen.contains(i)) {
+      missing1To121.add(i);
+    }
+  }
+
+  final outOfRange = indexes.where((e) => e < 1 || e > 121).toList();
+
+  debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
+  debugPrint('VDP ▶ orderIndex min=${indexes.first}, max=${indexes.last}, unique=${seen.length}');
+  debugPrint('VDP ▶ duplicate orderIndex: ${duplicates.isEmpty ? 'none' : duplicates}');
+  debugPrint('VDP ▶ missing orderIndex 1..121: ${missing1To121.isEmpty ? 'none' : missing1To121}');
+  debugPrint('VDP ▶ out-of-range orderIndex: ${outOfRange.isEmpty ? 'none' : outOfRange}');
+  debugPrint('VDP ▶ first 20 indexes: ${indexes.take(20).toList()}');
+
+  final last20Start = indexes.length > 20 ? indexes.length - 20 : 0;
+  debugPrint('VDP ▶ last 20 indexes: ${indexes.skip(last20Start).toList()}');
+}
 }
 
 final vdpRepositoryProvider =
