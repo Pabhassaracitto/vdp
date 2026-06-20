@@ -1,6 +1,4 @@
 // lib/features/matrix/matrix_screen.dart
-// Matrix Layer - Trực quan hóa quan hệ 121 Tâm × 52 Tâm Sở
-// Accessibility-First + Dual Encoding (Màu + Hình + Text)
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,13 +14,8 @@ import '../../shared/widgets/citta_row_header.dart';
 import '../detail/cetasika_detail_sheet.dart';
 import '../detail/citta_detail_sheet.dart';
 
-/// Provider cho Tâm đang được chọn (highlight)
 final selectedCittaProvider = StateProvider<String?>((ref) => null);
-
-/// Provider cho Tâm Sở đang được chọn (highlight + dim conflicts)
 final selectedCetasikaProvider = StateProvider<String?>((ref) => null);
-
-/// Provider cho danh sách Tâm Sở bị dim (conflict detection)
 final dimmedCetasikasProvider = Provider<Set<String>>((ref) {
   final selected = ref.watch(selectedCetasikaProvider);
   if (selected == null) return {};
@@ -44,24 +37,20 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   BhumiGroup? _filterBhumi;
   bool _showHighContrastMode = false;
   bool _forceLandscape = false;
-
   bool _isSyncingScroll = false;
+  bool _dismissedWarning = false;
 
   @override
   void initState() {
     super.initState();
-    _verticalController1.addListener(_syncVerticalScroll1);
-    _verticalController2.addListener(_syncVerticalScroll2);
+    _verticalController1.addListener(_syncScroll1);
+    _verticalController2.addListener(_syncScroll2);
   }
 
-  void _syncVerticalScroll1() {
+  void _syncScroll1() {
     if (_isSyncingScroll) return;
-    if (!_verticalController1.hasClients || !_verticalController2.hasClients) {
-      return;
-    }
-
-    final diff =
-        (_verticalController2.offset - _verticalController1.offset).abs();
+    if (!_verticalController2.hasClients) return;
+    final diff = (_verticalController2.offset - _verticalController1.offset).abs();
     if (diff > 0.5) {
       _isSyncingScroll = true;
       _verticalController2.jumpTo(_verticalController1.offset);
@@ -69,14 +58,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     }
   }
 
-  void _syncVerticalScroll2() {
+  void _syncScroll2() {
     if (_isSyncingScroll) return;
-    if (!_verticalController1.hasClients || !_verticalController2.hasClients) {
-      return;
-    }
-
-    final diff =
-        (_verticalController1.offset - _verticalController2.offset).abs();
+    if (!_verticalController1.hasClients) return;
+    final diff = (_verticalController1.offset - _verticalController2.offset).abs();
     if (diff > 0.5) {
       _isSyncingScroll = true;
       _verticalController1.jumpTo(_verticalController2.offset);
@@ -85,212 +70,182 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   Future<void> _toggleOrientation() async {
-  if (_forceLandscape) {
-    await SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
-  } else {
-    await SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
+    final goLandscape = !_forceLandscape;
+    await SystemChrome.setPreferredOrientations(
+      goLandscape
+          ? [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]
+          : [DeviceOrientation.portraitUp],
+    );
+    await Future.delayed(const Duration(milliseconds: 400));
+    if (mounted) {
+      setState(() => _forceLandscape = goLandscape);
+      if (goLandscape) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('📱 Nếu không xoay, hãy bật "Xoay tự động" trong cài đặt hệ thống.'),
+            duration: Duration(seconds: 3),
+          ),
+        );
+      }
+    }
   }
-
-  if (mounted) {
-    setState(() => _forceLandscape = !_forceLandscape);
-  }
-}
 
   @override
   void dispose() {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
-
-    _verticalController1.removeListener(_syncVerticalScroll1);
-    _verticalController2.removeListener(_syncVerticalScroll2);
-
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    _verticalController1.removeListener(_syncScroll1);
+    _verticalController2.removeListener(_syncScroll2);
     _horizontalController.dispose();
     _verticalController1.dispose();
     _verticalController2.dispose();
     super.dispose();
   }
 
-  @override
-Widget build(BuildContext context) {
-  final dataState = ref.watch(vdpRepositoryProvider);
+  // ════════════════════════════════════════════════════════════
+  //  BUILD
+  // ════════════════════════════════════════════════════════════
 
-  if (!dataState.isReady) {
-    return const Scaffold(
-      body: Center(child: CircularProgressIndicator()),
+  @override
+  Widget build(BuildContext context) {
+    final dataState = ref.watch(vdpRepositoryProvider);
+
+    if (!dataState.isReady) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
+
+    final cittas = _filterBhumi != null
+        ? dataState.cittas.where((c) => c.bhumiGroup == _filterBhumi).toList()
+        : dataState.cittas;
+
+    final cetasikas = List<CetasikaModel>.from(dataState.cetasikas)
+      ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
+
+    return Scaffold(
+      appBar: _buildAppBar(context, cittas.length),
+      body: Column(
+        children: [
+          _buildBhumiFilter(),
+          if (dataState.hasValidationWarnings && !_dismissedWarning)
+            _buildWarningBanner(dataState),
+          _buildLegend(),
+          Expanded(child: _buildMatrix(context, cittas, cetasikas)),
+        ],
+      ),
     );
   }
 
-  final cittas = _filterBhumi != null
-      ? dataState.cittas.where((c) => c.bhumiGroup == _filterBhumi).toList()
-      : dataState.cittas;
-
-  final cetasikas = List<CetasikaModel>.from(dataState.cetasikas)
-    ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
-
-  return Scaffold(
-    appBar: _buildAppBar(context, cittas.length),
-    body: Column(
-      children: [
-        _buildBhumiFilter(),
-        if (dataState.hasValidationWarnings) _buildWarningBanner(dataState),
-        _buildLegend(),
-        Expanded(
-          child: _buildMatrix(context, cittas, cetasikas),
-        ),
-      ],
-    ),
-  );
-}
+  // ════════════════════════════════════════════════════════════
+  //  APP BAR
+  // ════════════════════════════════════════════════════════════
 
   PreferredSizeWidget _buildAppBar(BuildContext context, int cittaCount) {
-  return AppBar(
-    title: Semantics(
-      label: 'Ma trận Vi Diệu Pháp, đang hiển thị $cittaCount Tâm',
-      child: const Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text('Ma Trận Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
-          Text(
-            'Abhidhamma Matrix',
-            style: TextStyle(fontSize: 12, color: Colors.white70),
-          ),
-        ],
-      ),
-    ),
-    actions: [
-      Semantics(
-        label: 'Xoay màn hình ngang để xem ma trận rộng hơn',
-        child: IconButton(
-          icon: Icon(
-            _forceLandscape
-                ? Icons.stay_current_portrait
-                : Icons.stay_current_landscape,
-          ),
-          onPressed: _toggleOrientation,
-          tooltip: 'Xoay màn hình',
-        ),
-      ),
-      Semantics(
-        label: 'Bật/tắt chế độ tương phản cao',
-        child: IconButton(
-          icon: Icon(
-            _showHighContrastMode
-                ? Icons.contrast
-                : Icons.contrast_outlined,
-          ),
-          onPressed: () {
-            setState(() => _showHighContrastMode = !_showHighContrastMode);
-          },
-          tooltip: 'Chế độ tương phản cao',
-        ),
-      ),
-      IconButton(
-        icon: const Icon(Icons.info_outline),
-        onPressed: () => _showHelp(context),
-        tooltip: 'Hướng dẫn',
-      ),
-    ],
-  );
-}
-
-  Widget _buildBhumiFilter() {
-    return Semantics(
-      label: 'Bộ lọc theo cõi giới',
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        child: Row(
+    return AppBar(
+      title: Semantics(
+        label: 'Ma trận Vi Diệu Pháp, đang hiển thị $cittaCount Tâm',
+        child: const Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            _buildFilterChip(null, 'Tất cả', '🌐'),
-            const SizedBox(width: 8),
-            _buildFilterChip(
-                BhumiGroup.akusala, 'Bất Thiện', VdpSymbols.akusala),
-            const SizedBox(width: 8),
-            _buildFilterChip(BhumiGroup.ahetuka, 'Vô Nhân', '⬜'),
-            const SizedBox(width: 8),
-            _buildFilterChip(BhumiGroup.sobhanaKamavacara, 'Tịnh Hảo DG',
-                VdpSymbols.sobhanaKama),
-            const SizedBox(width: 8),
-            _buildFilterChip(
-                BhumiGroup.rupavacara, 'Sắc Giới', VdpSymbols.rupavacara),
-            const SizedBox(width: 8),
-            _buildFilterChip(
-                BhumiGroup.arupavacara, 'Vô Sắc', VdpSymbols.arupavacara),
-            const SizedBox(width: 8),
-            _buildFilterChip(
-                BhumiGroup.lokuttara, 'Siêu Thế', VdpSymbols.lokuttara),
+            Text('Ma Trận Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
+            Text('Abhidhamma Matrix', style: TextStyle(fontSize: 12, color: Colors.white70)),
           ],
         ),
       ),
+      actions: [
+        IconButton(
+          icon: Icon(_forceLandscape ? Icons.stay_current_portrait : Icons.stay_current_landscape),
+          onPressed: _toggleOrientation,
+          tooltip: 'Xoay màn hình',
+        ),
+        IconButton(
+          icon: Icon(_showHighContrastMode ? Icons.contrast : Icons.contrast_outlined),
+          onPressed: () => setState(() => _showHighContrastMode = !_showHighContrastMode),
+          tooltip: 'Tương phản cao',
+        ),
+        IconButton(
+          icon: const Icon(Icons.info_outline),
+          onPressed: () => _showHelp(context),
+          tooltip: 'Hướng dẫn',
+        ),
+      ],
     );
   }
 
-  Widget _buildFilterChip(BhumiGroup? bhumi, String label, String symbol) {
-    final isSelected = _filterBhumi == bhumi;
-    final color = bhumi == null ? VdpColors.primary : bhumi.name.bhumiColor;
+  // ════════════════════════════════════════════════════════════
+  //  BHUMI FILTER
+  // ════════════════════════════════════════════════════════════
 
-    return Semantics(
-      label: 'Lọc: $label',
-      selected: isSelected,
-      button: true,
-      child: FilterChip(
-        label: Text('$symbol $label'),
-        selected: isSelected,
-        onSelected: (_) => setState(() => _filterBhumi = bhumi),
-        selectedColor: color.withOpacity(0.3),
-        checkmarkColor: color,
-        side: BorderSide(color: isSelected ? color : Colors.grey.shade300),
+  Widget _buildBhumiFilter() {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      child: Row(
+        children: [
+          _filterChip(null, 'Tất cả', '🌐'),
+          _filterChip(BhumiGroup.akusala, 'Bất Thiện', VdpSymbols.akusala),
+          _filterChip(BhumiGroup.ahetuka, 'Vô Nhân', '⬜'),
+          _filterChip(BhumiGroup.sobhanaKamavacara, 'Tịnh Hảo DG', VdpSymbols.sobhanaKama),
+          _filterChip(BhumiGroup.rupavacara, 'Sắc Giới', VdpSymbols.rupavacara),
+          _filterChip(BhumiGroup.arupavacara, 'Vô Sắc', VdpSymbols.arupavacara),
+          _filterChip(BhumiGroup.lokuttara, 'Siêu Thế', VdpSymbols.lokuttara),
+        ],
       ),
     );
   }
+
+  Widget _filterChip(BhumiGroup? bhumi, String label, String symbol) {
+    final sel = _filterBhumi == bhumi;
+    final c = bhumi == null ? VdpColors.primary : bhumi.name.bhumiColor;
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: FilterChip(
+        label: Text('$symbol $label'),
+        selected: sel,
+        onSelected: (_) => setState(() => _filterBhumi = bhumi),
+        selectedColor: c.withOpacity(0.3),
+        checkmarkColor: c,
+        side: BorderSide(color: sel ? c : Colors.grey.shade300),
+      ),
+    );
+  }
+
+  // ════════════════════════════════════════════════════════════
+  //  LEGEND
+  // ════════════════════════════════════════════════════════════
 
   Widget _buildLegend() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
       color: Colors.grey.shade50,
-      child: Semantics(
-        label:
-            'Giải thích ký hiệu: Hình vuông vàng là cố định, vòng tròn vàng là bất định, dấu X xám là không có',
-        child: Row(
-          children: [
-            const Text('Ký hiệu:',
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
-            const SizedBox(width: 12),
-            _buildLegendItem(VdpSymbols.always, 'Cố định', VdpColors.always),
-            const SizedBox(width: 16),
-            _buildLegendItem(
-                VdpSymbols.sometimes, 'Bất định', VdpColors.sometimes),
-            const SizedBox(width: 16),
-            _buildLegendItem(VdpSymbols.never, 'Không có', VdpColors.never),
-          ],
-        ),
+      child: Row(
+        children: [
+          const Text('Ký hiệu:', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
+          const SizedBox(width: 12),
+          _legendItem(VdpSymbols.always, 'Cố định', VdpColors.always),
+          const SizedBox(width: 16),
+          _legendItem(VdpSymbols.sometimes, 'Bất định', VdpColors.sometimes),
+          const SizedBox(width: 16),
+          _legendItem(VdpSymbols.never, 'Không có', VdpColors.never),
+        ],
       ),
     );
   }
 
-  Widget _buildLegendItem(String symbol, String label, Color color) {
+  Widget _legendItem(String sym, String label, Color color) {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(symbol, style: TextStyle(color: color, fontSize: 16)),
+        Text(sym, style: TextStyle(color: color, fontSize: 16)),
         const SizedBox(width: 4),
-        Text(label,
-            style: TextStyle(fontSize: 11, color: Colors.grey.shade700)),
+        Text(label, style: TextStyle(fontSize: 11, color: Colors.grey.shade700)),
       ],
     );
   }
+
+  // ════════════════════════════════════════════════════════════
+  //  WARNING BANNER
+  // ════════════════════════════════════════════════════════════
 
   Widget _buildWarningBanner(VdpDataState dataState) {
     return Container(
@@ -303,8 +258,7 @@ Widget build(BuildContext context) {
           const SizedBox(width: 8),
           Expanded(
             child: Text(
-              '${dataState.validationResult!.warnings.length} cảnh báo dữ liệu. '
-              'Dữ liệu vẫn được tải nhưng cần kiểm tra.',
+              '${dataState.validationResult!.warnings.length} cảnh báo dữ liệu.',
               style: TextStyle(fontSize: 12, color: Colors.orange.shade900),
             ),
           ),
@@ -312,34 +266,50 @@ Widget build(BuildContext context) {
             onPressed: () => _showWarnings(dataState),
             child: const Text('Xem', style: TextStyle(fontSize: 12)),
           ),
+          IconButton(
+            icon: const Icon(Icons.close, size: 16),
+            onPressed: () => setState(() => _dismissedWarning = true),
+            tooltip: 'Ẩn',
+            padding: EdgeInsets.zero,
+            constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+          ),
         ],
       ),
     );
   }
+
+  // ════════════════════════════════════════════════════════════
+  //  MATRIX
+  // ════════════════════════════════════════════════════════════
 
   Widget _buildMatrix(
     BuildContext context,
     List<CittaModel> cittas,
     List<CetasikaModel> cetasikas,
   ) {
-    const double cellSize = 44.0; //40.0;
-    const double headerWidth = 200.0; // 180.0;
-    const double cetasikaHeaderHeight = 110.0; // 100.0;
+    final isLandscape = MediaQuery.of(context).orientation == Orientation.landscape;
+    final double cellSize = isLandscape ? 38.0 : 44.0;
+    final double headerWidth = isLandscape ? 160.0 : 200.0;
+    final double cetasikaHeaderHeight = isLandscape ? 80.0 : 110.0;
+    final double matrixWidth = cetasikas.length * cellSize;
 
     final selectedCitta = ref.watch(selectedCittaProvider);
     final selectedCetasika = ref.watch(selectedCetasikaProvider);
-    final dimmedCetasikas = ref.watch(dimmedCetasikasProvider);
+    final dimmed = ref.watch(dimmedCetasikasProvider);
 
-    final double matrixWidth = cetasikas.length * cellSize;
+    return LayoutBuilder(
+  builder: (context, constraints) {
+    // Floor để tránh lỗi sub-pixel overflow
+    final double bodyHeight =
+        (constraints.maxHeight - cetasikaHeaderHeight).floorToDouble().clamp(0, double.infinity);
 
     return Row(
       children: [
-        // Cột cố định: Header Tâm (bên trái)
+        // Cột trái: tên Tâm
         SizedBox(
           width: headerWidth,
           child: Column(
             children: [
-              // Corner cell
               Container(
                 height: cetasikaHeaderHeight,
                 decoration: BoxDecoration(
@@ -348,35 +318,26 @@ Widget build(BuildContext context) {
                 ),
                 alignment: Alignment.center,
                 child: const Text(
-                  'Tâm\nTâm Sở',
+                  'Tâm ↓\nTâm Sở →',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 11,
-                      fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold),
                 ),
               ),
-              // Tâm rows
-              Expanded(
+              SizedBox(
+                height: bodyHeight,
                 child: ListView.builder(
                   controller: _verticalController1,
                   itemCount: cittas.length,
-                  itemBuilder: (context, index) {
-                    final citta = cittas[index];
-                    final isSelected = selectedCitta == citta.id;
+                  itemBuilder: (_, i) {
+                    final citta = cittas[i];
+                    final isSel = selectedCitta == citta.id;
                     return GestureDetector(
                       onTap: () {
-                        ref.read(selectedCittaProvider.notifier).state =
-                            isSelected ? null : citta.id;
-                        if (!isSelected) {
-                          _showCittaDetail(context, citta);
-                        }
+                        ref.read(selectedCittaProvider.notifier).state = isSel ? null : citta.id;
+                        if (!isSel) _showCittaDetail(context, citta);
                       },
                       child: CittaRowHeader(
-                        citta: citta,
-                        isSelected: isSelected,
-                        width: headerWidth,
-                        height: cellSize,
+                        citta: citta, isSelected: isSel, width: headerWidth, height: cellSize,
                       ),
                     );
                   },
@@ -386,7 +347,7 @@ Widget build(BuildContext context) {
           ),
         ),
 
-        // Vùng cuộn ngang: Cetasika headers + Matrix cells
+        // Phần phải
         Expanded(
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -395,51 +356,40 @@ Widget build(BuildContext context) {
               width: matrixWidth,
               child: Column(
                 children: [
-                  // Cetasika Headers (cố định trên)
                   Row(
-                    children: cetasikas.map((cetasika) {
-                      final isSelected = selectedCetasika == cetasika.id;
-                      final isDimmed = dimmedCetasikas.contains(cetasika.id);
+                    children: cetasikas.map((cs) {
+                      final isSel = selectedCetasika == cs.id;
+                      final isDim = dimmed.contains(cs.id);
                       return GestureDetector(
                         onTap: () {
-                          ref.read(selectedCetasikaProvider.notifier).state =
-                              isSelected ? null : cetasika.id;
-                          if (!isSelected) {
-                            _showCetasikaDetail(context, cetasika);
-                          }
+                          ref.read(selectedCetasikaProvider.notifier).state = isSel ? null : cs.id;
+                          if (!isSel) _showCetasikaDetail(context, cs);
                         },
                         child: CetasikaHeader(
-                          cetasika: cetasika,
-                          isSelected: isSelected,
-                          isDimmed: isDimmed,
-                          width: cellSize,
-                          height: cetasikaHeaderHeight,
+                          cetasika: cs, isSelected: isSel, isDimmed: isDim,
+                          width: cellSize, height: cetasikaHeaderHeight,
                         ),
                       );
                     }).toList(),
                   ),
-
-                  // Matrix body (cuộn cả hai chiều)
-                  Expanded(
+                  SizedBox(
+                    height: bodyHeight,
                     child: ListView.builder(
                       controller: _verticalController2,
                       itemCount: cittas.length,
-                      cacheExtent: 500, // Tăng cache để cuộn mượt hơn
-                      itemBuilder: (context, rowIndex) {
-                        final citta = cittas[rowIndex];
-                        final isCittaSelected = selectedCitta == citta.id;
-
+                      itemBuilder: (_, rowIdx) {
+                        final citta = cittas[rowIdx];
+                        final isCittaSel = selectedCitta == citta.id;
                         return Row(
-                          children: List.generate(cetasikas.length, (colIndex) {
-                            final cetasika = cetasikas[colIndex];
+                          children: List.generate(cetasikas.length, (colIdx) {
+                            final cs = cetasikas[colIdx];
                             return AssociationCell(
                               cittaId: citta.id,
-                              cetasikaId: cetasika.id,
-                              type: _getAssocType(citta, cetasika.id),
-                              isCittaHighlighted: isCittaSelected,
-                              isCetasikaHighlighted:
-                                  selectedCetasika == cetasika.id,
-                              isDimmed: dimmedCetasikas.contains(cetasika.id),
+                              cetasikaId: cs.id,
+                              type: _getAssocType(citta, cs.id),
+                              isCittaHighlighted: isCittaSel,
+                              isCetasikaHighlighted: selectedCetasika == cs.id,
+                              isDimmed: dimmed.contains(cs.id),
                               size: cellSize,
                               useHighContrast: _showHighContrastMode,
                             );
@@ -455,18 +405,22 @@ Widget build(BuildContext context) {
         ),
       ],
     );
+  },
+);
   }
 
   AssociationType _getAssocType(CittaModel citta, String cetasikaId) {
-    final assoc = citta.cetasikaAssociations
-        .where((a) => a.cetasikaId == cetasikaId)
-        .firstOrNull;
-    return assoc?.type ?? AssociationType.never;
+    final a = citta.cetasikaAssociations.where((x) => x.cetasikaId == cetasikaId).firstOrNull;
+    return a?.type ?? AssociationType.never;
   }
 
-  void _showCittaDetail(BuildContext context, CittaModel citta) {
+  // ════════════════════════════════════════════════════════════
+  //  DETAIL SHEETS
+  // ════════════════════════════════════════════════════════════
+
+  void _showCittaDetail(BuildContext ctx, CittaModel citta) {
     showModalBottomSheet(
-      context: context,
+      context: ctx,
       isScrollControlled: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
@@ -475,9 +429,9 @@ Widget build(BuildContext context) {
     );
   }
 
-  void _showCetasikaDetail(BuildContext context, CetasikaModel cetasika) {
+  void _showCetasikaDetail(BuildContext ctx, CetasikaModel cetasika) {
     showModalBottomSheet(
-      context: context,
+      context: ctx,
       isScrollControlled: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
@@ -486,42 +440,36 @@ Widget build(BuildContext context) {
     );
   }
 
-  void _showHelp(BuildContext context) {
+  // ════════════════════════════════════════════════════════════
+  //  DIALOGS
+  // ════════════════════════════════════════════════════════════
+
+  void _showHelp(BuildContext ctx) {
     showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
+      context: ctx,
+      builder: (_) => AlertDialog(
         title: const Text('Hướng dẫn Ma Trận'),
         content: const SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('📖 Cách đọc Ma Trận:',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Text('📖 Cách đọc:', style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
-              Text('• Hàng ngang: 121 Tâm (Citta)\n'
-                  '• Cột dọc: 52 Tâm Sở (Cetasika)\n'
-                  '• Ô giao nhau: Mối quan hệ phối hợp'),
+              Text('• Hàng ngang: Tâm (Citta)\n• Cột dọc: Tâm Sở (Cetasika)\n• Ô giao nhau: Mối quan hệ'),
               SizedBox(height: 12),
               Text('✦ Ký hiệu:', style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
-              Text('✦ = Cố định (luôn phối hợp)\n'
-                  '◎ = Bất định (có thể có)\n'
-                  '✕ = Không có'),
+              Text('✦ = Cố định\n◎ = Bất định\n✕ = Không có'),
               SizedBox(height: 12),
               Text('💡 Mẹo:', style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
-              Text('• Nhấn vào Tâm để xem chi tiết\n'
-                  '• Nhấn vào Tâm Sở để xem xung đột\n'
-                  '• Dùng bộ lọc để thu hẹp hiển thị'),
+              Text('• Nhấn Tâm → xem chi tiết\n• Nhấn Tâm Sở → xem xung đột\n• Dùng bộ lọc → thu hẹp\n• Xoay ngang → xem rộng hơn'),
             ],
           ),
         ),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Đã hiểu'),
-          ),
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Đã hiểu')),
         ],
       ),
     );
@@ -530,35 +478,26 @@ Widget build(BuildContext context) {
   void _showWarnings(VdpDataState dataState) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (_) => AlertDialog(
         title: const Text('Cảnh báo Dữ liệu'),
         content: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
-            children: dataState.validationResult!.warnings
-                .map(
-                  (w) => Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text('⚠️ '),
-                        Expanded(
-                            child: Text(w.message,
-                                style: const TextStyle(fontSize: 13))),
-                      ],
-                    ),
-                  ),
-                )
-                .toList(),
+            children: dataState.validationResult!.warnings.map((w) => Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('⚠️ '),
+                  Expanded(child: Text(w.message, style: const TextStyle(fontSize: 13))),
+                ],
+              ),
+            )).toList(),
           ),
         ),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Đóng'),
-          ),
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Đóng')),
         ],
       ),
     );

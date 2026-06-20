@@ -61,7 +61,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
     }
     debugPrint('VDP ▶ initialize() start');
     state = state.copyWith(status: DataLoadStatus.loading);
-
+    
     // Bọc toàn bộ trong try/catch lớn nhất
     // Đảm bảo state LUÔN được set về loaded hoặc error
     try {
@@ -110,6 +110,8 @@ class VdpRepository extends StateNotifier<VdpDataState> {
       );
 
       debugPrint('VDP ▶ initialize() DONE ✓');
+      debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
+debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
     } catch (e, st) {
       debugPrint('VDP ▶ initialize() FATAL: $e\n$st');
       // Dù lỗi gì → state = error, KHÔNG để status = loading mãi
@@ -119,13 +121,14 @@ class VdpRepository extends StateNotifier<VdpDataState> {
       );
     }
   }
+  
 
   // ── Load helpers ───────────────────────────────────────────────
 
   Future<List<CittaModel>> _loadCittas() async {
     try {
-      debugPrint('VDP ▶ loading cittas_sample.json...');
-      final raw = await rootBundle.loadString('assets/data/cittas_sample.json');
+      debugPrint('VDP ▶ loading cittas.json...');
+      final raw = await rootBundle.loadString('assets/data/cittas.json');
       debugPrint('VDP ▶ cittas raw length: ${raw.length}');
 
       final decoded = json.decode(raw);
@@ -151,7 +154,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
       debugPrint('VDP ▶ cittas loaded: ${cittas.length}/${list.length}');
       return cittas;
     } on FlutterError catch (e) {
-      debugPrint('VDP ▶ cittas_sample.json không tìm thấy: $e');
+      debugPrint('VDP ▶ cittas.json không tìm thấy: $e');
       return [];
     } catch (e) {
       debugPrint('VDP ▶ cittas load lỗi khác: $e');

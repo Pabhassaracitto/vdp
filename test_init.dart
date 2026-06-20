@@ -10,7 +10,7 @@ void main() async {
   final stopWatch = Stopwatch()..start();
 
   try {
-    final cittasRaw = await File('assets/data/cittas_sample.json').readAsString();
+    final cittasRaw = await File('assets/data/cittas.json').readAsString();
     final decodedCittas = json.decode(cittasRaw);
     final listCittas = (decodedCittas as Map<String, dynamic>)['cittas'] as List;
     final cittas = <CittaModel>[];
