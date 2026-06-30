@@ -25,8 +25,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     _OnboardingSlide(
       icon: '🔆',
       title: 'Thấy Bằng Mắt',
-      subtitle: 'Ma Trận Tâm × Tâm Sở',
-      body: 'Trực quan hóa 121 Tâm và 52 Tâm Sở trong một ma trận '
+      subtitle: 'Bảng Tương Ưng Tâm × Tâm Sở',
+      body: 'Trực quan hóa 121 Tâm và 52 Tâm Sở trong một Bảng Tương Ưng '
           'tương tác. Ba trạng thái phối hợp được mã hóa bằng '
           'màu sắc, hình dạng và chữ để mọi người đều hiểu được.',
       color: Color(0xFF2D6A8F),
@@ -76,7 +76,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
 
           // Bottom controls
           Positioned(
-            bottom: 0, left: 0, right: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
             child: Container(
               padding: const EdgeInsets.fromLTRB(24, 16, 24, 40),
               decoration: BoxDecoration(
@@ -157,7 +159,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                               ),
                             ),
                             child: const Text('Bắt đầu khám phá!',
-                                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+                                style: TextStyle(
+                                    fontSize: 17, fontWeight: FontWeight.bold)),
                           ),
                         ),
                     ],
@@ -224,7 +227,8 @@ class _SlideView extends StatelessWidget {
 
           // Main icon
           Container(
-            width: 110, height: 110,
+            width: 110,
+            height: 110,
             decoration: BoxDecoration(
               color: slide.color.withOpacity(0.12),
               shape: BoxShape.circle,

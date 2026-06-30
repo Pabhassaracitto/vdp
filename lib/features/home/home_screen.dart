@@ -41,7 +41,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   static const _tabs = [
-    _TabItem(icon: Icons.grid_view, label: 'Ma Trận', widget: MatrixScreen()),
+    _TabItem(
+        icon: Icons.grid_view, label: 'Bảng Tương Ưng', widget: MatrixScreen()),
     _TabItem(icon: Icons.school, label: 'Học Tập', widget: StudyScreen()),
     _TabItem(icon: Icons.settings, label: 'Cài đặt', widget: SettingsScreen()),
   ];

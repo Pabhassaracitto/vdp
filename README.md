@@ -23,7 +23,7 @@ vdp_app/
 │   ├── features/
 │   │   ├── onboarding/              # 3-slide onboarding
 │   │   ├── home/                    # Bottom nav shell
-│   │   ├── matrix/                  # Ma Trận 121×52 (Pha 1)
+│   │   ├── matrix/                  # Bảng Tương Ưng 121×52 (Pha 1)
 │   │   ├── detail/                  # Citta & Cetasika bottom sheets
 │   │   ├── study/                   # Study Engine + Blur/Reveal (Pha 1-2)
 │   │   ├── quiz/                    # Quiz 3 cấp (Pha 3)
