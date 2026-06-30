@@ -60,7 +60,7 @@ jobs:
       - name: Build APK (ARM64 only)
         run: |
           flutter build apk --release --target-platform android-arm64 -v
-          mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/VipLang-Android-ARM64-${{ github.ref_name }}.apk
+          mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/VDP-Android-ARM64-${{ github.ref_name }}.apk
 
       - name: Build AppBundle (Optional - for Google Play)
         run: flutter build appbundle --release
@@ -69,7 +69,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: android-apk
-          path: build/app/outputs/flutter-apk/VipLang-Android-ARM64-*.apk
+          path: build/app/outputs/flutter-apk/VDP-Android-ARM64-*.apk
 
       - name: Upload AppBundle artifact (Optional)
         uses: actions/upload-artifact@v4
@@ -113,13 +113,13 @@ jobs:
         shell: powershell
         run: |
           $absolutePath = "$env:GITHUB_WORKSPACE\build\windows\x64\runner\Release\*"
-          Compress-Archive -Path $absolutePath -DestinationPath VipLang-Windows-${{ github.ref_name }}.zip
+          Compress-Archive -Path $absolutePath -DestinationPath VDP-Windows-${{ github.ref_name }}.zip
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
         with:
           name: windows-zip
-          path: VipLang-Windows-*.zip
+          path: VDP-Windows-*.zip
 
   build-ios:
     name: Build iOS IPA (sideload)
@@ -165,14 +165,14 @@ jobs:
         run: |
           mkdir -p Payload
           cp -r build/ios/iphoneos/Runner.app Payload/
-          zip -r VipLang-iOS-${{ github.ref_name }}.ipa Payload
+          zip -r VDP-iOS-${{ github.ref_name }}.ipa Payload
           rm -rf Payload
 
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
           name: ios-ipa
-          path: VipLang-iOS-*.ipa
+          path: VDP-iOS-*.ipa
 
   build-linux:
     name: Build Linux App
@@ -208,13 +208,13 @@ jobs:
       - name: Zip Linux build
         run: |
           cd build/linux/x64/release/bundle
-          zip -r ../../../../../VipLang-Linux-${{ github.ref_name }}.zip .
+          zip -r ../../../../../VDP-Linux-${{ github.ref_name }}.zip .
 
       - name: Upload Linux artifact
         uses: actions/upload-artifact@v4
         with:
           name: linux-zip
-          path: VipLang-Linux-*.zip
+          path: VDP-Linux-*.zip
 
   create-release:
     name: Create Release
