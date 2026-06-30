@@ -3,8 +3,9 @@
 // Hiển thị thẳng đứng để tiết kiệm không gian
 
 import 'package:flutter/material.dart';
-import '../../data/models/cetasika_model.dart';
+
 import '../../core/theme/vdp_theme.dart';
+import '../../data/models/cetasika_model.dart';
 
 class CetasikaHeader extends StatelessWidget {
   final CetasikaModel cetasika;
@@ -73,7 +74,10 @@ class CetasikaHeader extends StatelessWidget {
                   child: Text(
                     cetasika.nameShort,
                     style: TextStyle(
-                      fontSize: 11,
+                      fontSize: MediaQuery.of(context).orientation ==
+                              Orientation.landscape
+                          ? 9
+                          : 11,
                       fontWeight:
                           isSelected ? FontWeight.w700 : FontWeight.w500,
                       color: VdpColors.onBackground,

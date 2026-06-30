@@ -111,6 +111,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   @override
   Widget build(BuildContext context) {
     final dataState = ref.watch(vdpRepositoryProvider);
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
 
     if (!dataState.isReady) {
       return const Scaffold(
@@ -132,7 +134,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           _buildBhumiFilter(),
           if (dataState.hasValidationWarnings && !_dismissedWarning)
             _buildWarningBanner(dataState),
-          _buildLegend(),
+          if (!isLandscape) _buildLegend(), // Ẩn legend khi landscape
           Expanded(child: _buildMatrix(context, cittas, cetasikas)),
         ],
       ),
@@ -300,9 +302,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   ) {
     final isLandscape =
         MediaQuery.of(context).orientation == Orientation.landscape;
-    final double cellSize = isLandscape ? 38.0 : 44.0;
-    final double headerWidth = isLandscape ? 160.0 : 200.0;
-    final double cetasikaHeaderHeight = isLandscape ? 80.0 : 110.0;
+    final double cellSize = isLandscape ? 30.0 : 44.0;
+    final double headerWidth = isLandscape ? 130.0 : 200.0;
+    final double cetasikaHeaderHeight = isLandscape ? 60.0 : 110.0;
     final double matrixWidth = cetasikas.length * cellSize;
 
     final selectedCitta = ref.watch(selectedCittaProvider);

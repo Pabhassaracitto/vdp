@@ -3,9 +3,9 @@
 // Dual Encoding: Màu theo Bhumi + Hình theo Vedana
 
 import 'package:flutter/material.dart';
-import '../../data/models/citta_model.dart';
+
 import '../../core/theme/vdp_theme.dart';
-import 'package:flutter/services.dart';
+import '../../data/models/citta_model.dart';
 
 class CittaRowHeader extends StatelessWidget {
   final CittaModel citta;
@@ -25,6 +25,8 @@ class CittaRowHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
     final bhumiColor = citta.bhumiGroup.name.bhumiColor;
     final bhumiSymbol = citta.bhumiGroup.name.bhumiSymbol;
     final vedanaSymbol = _getVedanaSymbol(citta.vedana);
@@ -78,7 +80,7 @@ class CittaRowHeader extends StatelessWidget {
                   Text(
                     citta.nameVietnamese,
                     style: TextStyle(
-                      fontSize: 10.5,
+                      fontSize: isLandscape ? 9.0 : 10.5,
                       height: 1.0,
                       fontWeight:
                           isSelected ? FontWeight.w700 : FontWeight.w500,
