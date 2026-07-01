@@ -2,6 +2,7 @@
 // User Progress - Lưu local với SharedPreferences (Offline-First)
 
 import 'dart:convert';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -12,7 +13,7 @@ const _kProgressKey = 'vdp_user_progress';
 class ProgressNotifier extends StateNotifier<UserProgress> {
   ProgressNotifier()
       : super(UserProgress(
-          moduleProgress: {},
+          moduleProgress: const {},
           lastStudied: DateTime.now(),
         )) {
     _load();
@@ -45,6 +46,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
               DateTime.tryParse(data['lastStudied'] as String? ?? '') ??
                   DateTime.now(),
           lastModuleId: data['lastModuleId'] as String?,
+          allModulesUnlocked: data['allModulesUnlocked'] as bool? ?? false,
         );
       }
     } catch (_) {
@@ -70,6 +72,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
           'moduleProgress': mp,
           'lastStudied': state.lastStudied.toIso8601String(),
           'lastModuleId': state.lastModuleId,
+          'allModulesUnlocked': state.allModulesUnlocked,
         }),
       );
     } catch (_) {}
@@ -89,6 +92,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       moduleProgress: {...state.moduleProgress, moduleId: updated},
       lastStudied: DateTime.now(),
       lastModuleId: moduleId,
+      allModulesUnlocked: state.allModulesUnlocked,
     );
     _save();
   }
@@ -107,6 +111,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       moduleProgress: {...state.moduleProgress, moduleId: updated},
       lastStudied: DateTime.now(),
       lastModuleId: moduleId,
+      allModulesUnlocked: state.allModulesUnlocked,
     );
     _save();
   }
@@ -114,11 +119,23 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
   /// Reset toàn bộ tiến độ
   Future<void> resetAll() async {
     state = UserProgress(
-      moduleProgress: {},
+      moduleProgress: const {},
       lastStudied: DateTime.now(),
+      allModulesUnlocked: false,
     );
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_kProgressKey);
+  }
+
+  /// Toggle mở khóa tất cả bài học
+  void toggleAllModulesUnlocked(bool unlocked) {
+    state = UserProgress(
+      moduleProgress: state.moduleProgress,
+      lastStudied: state.lastStudied,
+      lastModuleId: state.lastModuleId,
+      allModulesUnlocked: unlocked,
+    );
+    _save();
   }
 }
 

@@ -13,32 +13,32 @@ class StudyModule with _$StudyModule {
     required String title,
     required String titlePali,
     required String description,
-    
+
     // Prerequisite modules (edges trong Study Graph)
     @Default([]) List<String> prerequisiteIds,
-    
+
     // Danh sách Tâm liên quan
     @Default([]) List<String> cittaIds,
-    
+
     // Danh sách Tâm Sở liên quan
     @Default([]) List<String> cetasikaIds,
-    
+
     // Thứ tự khuyến nghị
     required int recommendedOrder,
-    
+
     // Màu sắc cho UI
     required int colorCode,
-    
+
     // Icon
     required String icon,
-    
+
     // Có phải bắt buộc không
     @Default(false) bool isRequired,
-    
+
     // Phase (1/2/3)
     @Default(1) int phase,
   }) = _StudyModule;
-  
+
   factory StudyModule.fromJson(Map<String, dynamic> json) =>
       _$StudyModuleFromJson(json);
 }
@@ -48,13 +48,15 @@ class UserProgress {
   final Map<String, ModuleProgress> moduleProgress;
   final DateTime lastStudied;
   final String? lastModuleId;
-  
+  final bool allModulesUnlocked;
+
   const UserProgress({
     required this.moduleProgress,
     required this.lastStudied,
     this.lastModuleId,
+    this.allModulesUnlocked = false,
   });
-  
+
   double get overallProgress {
     if (moduleProgress.isEmpty) return 0;
     final total = moduleProgress.values
@@ -62,8 +64,9 @@ class UserProgress {
         .reduce((a, b) => a + b);
     return total / moduleProgress.length;
   }
-  
+
   bool isModuleUnlocked(StudyModule module, List<StudyModule> allModules) {
+    if (allModulesUnlocked) return true;
     if (module.prerequisiteIds.isEmpty) return true;
     return module.prerequisiteIds.every((prereqId) {
       final progress = moduleProgress[prereqId];
@@ -78,7 +81,7 @@ class ModuleProgress {
   final int quizScore;
   final DateTime? completedAt;
   final List<String> viewedCittaIds;
-  
+
   const ModuleProgress({
     required this.moduleId,
     this.completionPercentage = 0,
@@ -95,21 +98,29 @@ final List<Map<String, dynamic>> kStudyModules = [
     'title': '7 Tâm Sở Biến Hành',
     'titlePali': 'Sabbacittasādhārana Cetasika',
     'description': 'Nền tảng bắt buộc: 7 Tâm Sở có mặt trong mọi tâm. '
-                   'Hiểu rõ trước khi học các module khác.',
+        'Hiểu rõ trước khi học các module khác.',
     'prerequisiteIds': [],
     'recommendedOrder': 1,
     'colorCode': 0xFF2D6A8F,
     'icon': '🌱',
     'isRequired': true,
     'phase': 1,
-    'cetasikaIds': ['CS_PHASSA', 'CS_VEDANA', 'CS_SANNA', 'CS_CETANA', 
-                    'CS_EKAGGATA', 'CS_JIVITA', 'CS_MANASIKARA'],
+    'cetasikaIds': [
+      'CS_PHASSA',
+      'CS_VEDANA',
+      'CS_SANNA',
+      'CS_CETANA',
+      'CS_EKAGGATA',
+      'CS_JIVITA',
+      'CS_MANASIKARA'
+    ],
   },
   {
     'id': 'M2_SI_PHAN',
     'title': 'Si Phần (Nhóm Vô Minh)',
     'titlePali': 'Moha-pakinnaka',
-    'description': 'Si, Vô Tàm, Vô Quý, Phóng Dật - có mặt trong mọi tâm bất thiện.',
+    'description':
+        'Si, Vô Tàm, Vô Quý, Phóng Dật - có mặt trong mọi tâm bất thiện.',
     'prerequisiteIds': ['M1_BASICS'],
     'recommendedOrder': 2,
     'colorCode': 0xFF8F2D2D,
@@ -129,8 +140,15 @@ final List<Map<String, dynamic>> kStudyModules = [
     'icon': '🌟',
     'isRequired': false,
     'phase': 1,
-    'cetasikaIds': ['CS_SADDHA', 'CS_SATI', 'CS_HIRI', 'CS_OTTAPPA', 
-                    'CS_ALOBHA', 'CS_ADOSA', 'CS_TATRAMAJJHATTATA'],
+    'cetasikaIds': [
+      'CS_SADDHA',
+      'CS_SATI',
+      'CS_HIRI',
+      'CS_OTTAPPA',
+      'CS_ALOBHA',
+      'CS_ADOSA',
+      'CS_TATRAMAJJHATTATA'
+    ],
   },
   {
     'id': 'M4_AKUSALA',

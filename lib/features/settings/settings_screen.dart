@@ -128,6 +128,24 @@ class SettingsScreen extends ConsumerWidget {
 
           const _SectionDivider('📊 Tiến Độ Học Tập'),
 
+          // Unlock all modules
+          SwitchListTile(
+            title: const Text('Mở khóa tất cả bài học'),
+            subtitle: const Text(
+                'Lộ trình tuần tự giúp xây dựng nền tảng vững chắc. Nếu bạn đã có kiến thức nền, bạn có thể mở khóa toàn bộ bài học để tự do lựa chọn.'),
+            value: progress.allModulesUnlocked,
+            onChanged: (v) {
+              if (v) {
+                _confirmUnlockAll(context, ref);
+              } else {
+                ref
+                    .read(progressProvider.notifier)
+                    .toggleAllModulesUnlocked(false);
+              }
+            },
+            secondary: const Icon(Icons.lock_open, color: VdpColors.secondary),
+          ),
+
           // Progress summary
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
@@ -240,6 +258,36 @@ class SettingsScreen extends ConsumerWidget {
             },
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
             child: const Text('Đặt lại', style: TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _confirmUnlockAll(BuildContext context, WidgetRef ref) {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Mở khóa các bài học?'),
+        content: const Text(
+          'Lộ trình tuần tự là cách hiệu quả nhất để nắm vững giáo lý Vi Diệu Pháp.\n\n'
+          'Tính năng này phù hợp cho người đã có nền tảng. Bạn có thể quay lại học theo lộ trình bất cứ lúc nào.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Giữ tuần tự'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+              ref
+                  .read(progressProvider.notifier)
+                  .toggleAllModulesUnlocked(true);
+            },
+            style:
+                ElevatedButton.styleFrom(backgroundColor: VdpColors.secondary),
+            child: const Text('Mở khóa', style: TextStyle(color: Colors.white)),
           ),
         ],
       ),
