@@ -6,8 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/theme/vdp_theme.dart';
 import 'data/repositories/vdp_repository.dart';
-import 'features/onboarding/onboarding_screen.dart';
 import 'features/home/home_screen.dart';
+import 'features/onboarding/onboarding_screen.dart';
 import 'features/settings/settings_screen.dart';
 
 void main() {
@@ -70,12 +70,12 @@ class _AppRootState extends ConsumerState<_AppRoot> {
         const Duration(seconds: 15),
         onTimeout: () {
           // Timeout nhưng vẫn tiếp tục (data rỗng, hiện HomeScreen)
-          debugPrint('VDP: initialize() timeout sau 15s');
+          // debugPrint('VDP: initialize() timeout sau 15s');
         },
       );
     } catch (e, st) {
       // Bắt MỌI lỗi — không để _showOnboarding = null mãi mãi
-      debugPrint('VDP: initialize() lỗi: $e\n$st');
+      // debugPrint('VDP: initialize() lỗi: $e\n$st');
       // Vẫn tiếp tục flow bình thường dù lỗi
     }
 
@@ -84,7 +84,7 @@ class _AppRootState extends ConsumerState<_AppRoot> {
     try {
       needsOb = await needsOnboarding();
     } catch (e) {
-      debugPrint('VDP: needsOnboarding() lỗi: $e');
+      // debugPrint('VDP: needsOnboarding() lỗi: $e');
       needsOb = false; // Default: không hiện onboarding
     }
 

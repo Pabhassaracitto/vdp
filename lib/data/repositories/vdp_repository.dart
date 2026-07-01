@@ -1,13 +1,14 @@
 // lib/data/repositories/vdp_repository.dart
 
 import 'dart:convert';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../models/citta_model.dart';
-import '../models/cetasika_model.dart';
 import '../../core/validators/data_validator.dart';
+import '../models/cetasika_model.dart';
+import '../models/citta_model.dart';
 
 enum DataLoadStatus {
   initial,
@@ -56,19 +57,20 @@ class VdpRepository extends StateNotifier<VdpDataState> {
   VdpRepository() : super(const VdpDataState());
 
   Future<void> initialize() async {
-    if (state.status == DataLoadStatus.loading || state.status == DataLoadStatus.loaded) {
+    if (state.status == DataLoadStatus.loading ||
+        state.status == DataLoadStatus.loaded) {
       return;
     }
-    debugPrint('VDP ▶ initialize() start');
+    // debugPrint('VDP ▶ initialize() start');
     state = state.copyWith(status: DataLoadStatus.loading);
-    
+
     // Bọc toàn bộ trong try/catch lớn nhất
     // Đảm bảo state LUÔN được set về loaded hoặc error
     try {
       final cittas = await _loadCittas();
       final cetasikas = await _loadCetasikas();
       // Debug orderIndex của cittas ngay sau khi load, trước khi validate, để dễ phát hiện lỗi dữ liệu
-      _debugCittaOrderIndexes(cittas);
+      // _debugCittaOrderIndexes(cittas);
       // Validate
       ValidationResult? validation;
       if (cittas.isNotEmpty && cetasikas.isNotEmpty) {
@@ -77,10 +79,10 @@ class VdpRepository extends StateNotifier<VdpDataState> {
             cittas: cittas,
             cetasikas: cetasikas,
           );
-          debugPrint('VDP ▶ validation done, '
-              'valid=${validation.isValid}, '
-              'errors=${validation.errors.length}, '
-              'warnings=${validation.warnings.length}');
+          // debugPrint('VDP ▶ validation done, '
+          //     'valid=${validation.isValid}, '
+          //     'errors=${validation.errors.length}, '
+          //     'warnings=${validation.warnings.length}');
 
           if (!validation.isValid) {
             state = state.copyWith(
@@ -93,12 +95,12 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           }
         } catch (e) {
           // Validate lỗi → vẫn load, bỏ qua validate
-          debugPrint('VDP ▶ validate lỗi (bỏ qua): $e');
+          // debugPrint('VDP ▶ validate lỗi (bỏ qua): $e');
         }
       }
 
-      debugPrint('VDP ▶ setState loaded — '
-          'cittas=${cittas.length}, cetasikas=${cetasikas.length}');
+      // debugPrint('VDP ▶ setState loaded — '
+      //     'cittas=${cittas.length}, cetasikas=${cetasikas.length}');
 
       state = state.copyWith(
         status: DataLoadStatus.loaded,
@@ -110,9 +112,9 @@ class VdpRepository extends StateNotifier<VdpDataState> {
             : null,
       );
 
-      debugPrint('VDP ▶ initialize() DONE ✓');
-      debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
-debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
+      // debugPrint('VDP ▶ initialize() DONE ✓');
+      // debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
+      // debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
     } catch (e, st) {
       debugPrint('VDP ▶ initialize() FATAL: $e\n$st');
       // Dù lỗi gì → state = error, KHÔNG để status = loading mãi
@@ -122,22 +124,21 @@ debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
       );
     }
   }
-  
 
   // ── Load helpers ───────────────────────────────────────────────
 
   Future<List<CittaModel>> _loadCittas() async {
     try {
-      debugPrint('VDP ▶ loading cittas.json...');
+      // debugPrint('VDP ▶ loading cittas.json...');
       final raw = await rootBundle.loadString('assets/data/cittas.json');
-      debugPrint('VDP ▶ cittas raw length: ${raw.length}');
+      // debugPrint('VDP ▶ cittas raw length: ${raw.length}');
 
       final decoded = json.decode(raw);
-      debugPrint('VDP ▶ cittas decoded type: ${decoded.runtimeType}');
+      // debugPrint('VDP ▶ cittas decoded type: ${decoded.runtimeType}');
 
       final list = (decoded as Map<String, dynamic>)['cittas'] as List?;
       if (list == null) {
-        debugPrint('VDP ▶ cittas: key "cittas" không tồn tại');
+        // debugPrint('VDP ▶ cittas: key "cittas" không tồn tại');
         return [];
       }
 
@@ -148,11 +149,11 @@ debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
             CittaModel.fromJson(list[i] as Map<String, dynamic>),
           );
         } catch (e) {
-          debugPrint('VDP ▶ cittas[$i] parse lỗi: $e');
+          // debugPrint('VDP ▶ cittas[$i] parse lỗi: $e');
           // Bỏ qua item lỗi, tiếp tục
         }
       }
-      debugPrint('VDP ▶ cittas loaded: ${cittas.length}/${list.length}');
+      // debugPrint('VDP ▶ cittas loaded: ${cittas.length}/${list.length}');
       return cittas;
     } on FlutterError catch (e) {
       debugPrint('VDP ▶ cittas.json không tìm thấy: $e');
@@ -165,16 +166,16 @@ debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
 
   Future<List<CetasikaModel>> _loadCetasikas() async {
     try {
-      debugPrint('VDP ▶ loading cetasikas.json...');
+      // debugPrint('VDP ▶ loading cetasikas.json...');
       final raw = await rootBundle.loadString('assets/data/cetasikas.json');
-      debugPrint('VDP ▶ cetasikas raw length: ${raw.length}');
+      // debugPrint('VDP ▶ cetasikas raw length: ${raw.length}');
 
       final decoded = json.decode(raw);
-      debugPrint('VDP ▶ cetasikas decoded type: ${decoded.runtimeType}');
+      // debugPrint('VDP ▶ cetasikas decoded type: ${decoded.runtimeType}');
 
       final list = (decoded as Map<String, dynamic>)['cetasikas'] as List?;
       if (list == null) {
-        debugPrint('VDP ▶ cetasikas: key "cetasikas" không tồn tại');
+        // debugPrint('VDP ▶ cetasikas: key "cetasikas" không tồn tại');
         return [];
       }
 
@@ -185,10 +186,10 @@ debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
             CetasikaModel.fromJson(list[i] as Map<String, dynamic>),
           );
         } catch (e) {
-          debugPrint('VDP ▶ cetasikas[$i] parse lỗi: $e');
+          // debugPrint('VDP ▶ cetasikas[$i] parse lỗi: $e');
         }
       }
-      debugPrint('VDP ▶ cetasikas loaded: ${cetasikas.length}/${list.length}');
+      // debugPrint('VDP ▶ cetasikas loaded: ${cetasikas.length}/${list.length}');
       return cetasikas;
     } on FlutterError catch (e) {
       debugPrint('VDP ▶ cetasikas.json không tìm thấy: $e');
@@ -249,42 +250,43 @@ debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
     }
     return dimmed;
   }
+
   void _debugCittaOrderIndexes(List<CittaModel> cittas) {
-  if (cittas.isEmpty) {
-    debugPrint('VDP ▶ No cittas loaded');
-    return;
-  }
-
-  final indexes = cittas.map((e) => e.orderIndex).toList()..sort();
-
-  final seen = <int>{};
-  final duplicates = <int>[];
-
-  for (final idx in indexes) {
-    if (!seen.add(idx) && !duplicates.contains(idx)) {
-      duplicates.add(idx);
+    if (cittas.isEmpty) {
+      // debugPrint('VDP ▶ No cittas loaded');
+      return;
     }
-  }
 
-  final missing1To121 = <int>[];
-  for (var i = 1; i <= 121; i++) {
-    if (!seen.contains(i)) {
-      missing1To121.add(i);
+    final indexes = cittas.map((e) => e.orderIndex).toList()..sort();
+
+    final seen = <int>{};
+    final duplicates = <int>[];
+
+    for (final idx in indexes) {
+      if (!seen.add(idx) && !duplicates.contains(idx)) {
+        duplicates.add(idx);
+      }
     }
+
+    final missing1To121 = <int>[];
+    for (var i = 1; i <= 121; i++) {
+      if (!seen.contains(i)) {
+        missing1To121.add(i);
+      }
+    }
+
+    final outOfRange = indexes.where((e) => e < 1 || e > 121).toList();
+
+    // debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
+    // debugPrint('VDP ▶ orderIndex min=${indexes.first}, max=${indexes.last}, unique=${seen.length}');
+    // debugPrint('VDP ▶ duplicate orderIndex: ${duplicates.isEmpty ? 'none' : duplicates}');
+    // debugPrint('VDP ▶ missing orderIndex 1..121: ${missing1To121.isEmpty ? 'none' : missing1To121}');
+    // debugPrint('VDP ▶ out-of-range orderIndex: ${outOfRange.isEmpty ? 'none' : outOfRange}');
+    // debugPrint('VDP ▶ first 20 indexes: ${indexes.take(20).toList()}');
+
+    final last20Start = indexes.length > 20 ? indexes.length - 20 : 0;
+    // debugPrint('VDP ▶ last 20 indexes: ${indexes.skip(last20Start).toList()}');
   }
-
-  final outOfRange = indexes.where((e) => e < 1 || e > 121).toList();
-
-  debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
-  debugPrint('VDP ▶ orderIndex min=${indexes.first}, max=${indexes.last}, unique=${seen.length}');
-  debugPrint('VDP ▶ duplicate orderIndex: ${duplicates.isEmpty ? 'none' : duplicates}');
-  debugPrint('VDP ▶ missing orderIndex 1..121: ${missing1To121.isEmpty ? 'none' : missing1To121}');
-  debugPrint('VDP ▶ out-of-range orderIndex: ${outOfRange.isEmpty ? 'none' : outOfRange}');
-  debugPrint('VDP ▶ first 20 indexes: ${indexes.take(20).toList()}');
-
-  final last20Start = indexes.length > 20 ? indexes.length - 20 : 0;
-  debugPrint('VDP ▶ last 20 indexes: ${indexes.skip(last20Start).toList()}');
-}
 }
 
 final vdpRepositoryProvider =
