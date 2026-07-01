@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'dart:async';
 
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
@@ -23,6 +24,45 @@ final dimmedCetasikasProvider = Provider<Set<String>>((ref) {
   return ref.read(vdpRepositoryProvider.notifier).getDimmedCetasikas(selected);
 });
 
+// M2-T4: Search state
+enum SearchType { citta, cetasika }
+
+final matrixSearchQueryProvider = StateProvider<String>((ref) => '');
+final matrixSearchTypeProvider =
+    StateProvider<SearchType>((ref) => SearchType.citta);
+
+final searchMatchedCittaIndicesProvider = Provider<Set<int>>((ref) {
+  final query = ref.watch(matrixSearchQueryProvider).toLowerCase();
+  final searchType = ref.watch(matrixSearchTypeProvider);
+  if (query.isEmpty || searchType != SearchType.citta) return {};
+
+  final cittas = ref.watch(cittasProvider);
+  final matches = <int>{};
+  for (int i = 0; i < cittas.length; i++) {
+    if (cittas[i].nameVietnamese.toLowerCase().contains(query) ||
+        cittas[i].namePali.toLowerCase().contains(query)) {
+      matches.add(i);
+    }
+  }
+  return matches;
+});
+
+final searchMatchedCetasikaIndicesProvider = Provider<Set<int>>((ref) {
+  final query = ref.watch(matrixSearchQueryProvider).toLowerCase();
+  final searchType = ref.watch(matrixSearchTypeProvider);
+  if (query.isEmpty || searchType != SearchType.cetasika) return {};
+
+  final cetasikas = ref.watch(cetasikasProvider);
+  final matches = <int>{};
+  for (int i = 0; i < cetasikas.length; i++) {
+    if (cetasikas[i].nameVietnamese.toLowerCase().contains(query) ||
+        cetasikas[i].namePali.toLowerCase().contains(query)) {
+      matches.add(i);
+    }
+  }
+  return matches;
+});
+
 class MatrixScreen extends ConsumerStatefulWidget {
   const MatrixScreen({super.key});
 
@@ -34,6 +74,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   final ScrollController _horizontalController = ScrollController();
   final ScrollController _verticalController1 = ScrollController();
   final ScrollController _verticalController2 = ScrollController();
+
+  // M2-T4: Debounce timer
+  Timer? _searchDebounceTimer;
 
   BhumiGroup? _filterBhumi;
   bool _showHighContrastMode = false;
@@ -101,6 +144,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     _horizontalController.dispose();
     _verticalController1.dispose();
     _verticalController2.dispose();
+    _searchDebounceTimer?.cancel(); // M2-T4: Dispose timer
     super.dispose();
   }
 
@@ -132,6 +176,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       body: Column(
         children: [
           _buildBhumiFilter(),
+          _buildSearchBar(isLandscape), // M2-T4: Thêm Search Bar
           if (dataState.hasValidationWarnings &&
               !ref.read(progressProvider.notifier).warningDismissed)
             _buildWarningBanner(dataState),
@@ -180,6 +225,115 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           tooltip: 'Hướng dẫn',
         ),
       ],
+    );
+  }
+
+  // M2-T4: Search Bar
+  Widget _buildSearchBar(bool isLandscape) {
+    final query = ref.watch(matrixSearchQueryProvider);
+    final searchType = ref.watch(matrixSearchTypeProvider);
+
+    return Padding(
+      padding: EdgeInsets.symmetric(
+        horizontal: 16,
+        vertical: isLandscape ? 4 : 8,
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: 'Tìm Tâm hoặc Tâm Sở...',
+                hintStyle: TextStyle(fontSize: isLandscape ? 13 : 14),
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: query.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          ref.read(matrixSearchQueryProvider.notifier).state =
+                              '';
+                        },
+                        tooltip: 'Xóa tìm kiếm',
+                      )
+                    : null,
+                contentPadding: EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: isLandscape ? 8 : 12,
+                ),
+                border: const OutlineInputBorder(),
+              ),
+              onChanged: (val) {
+                _searchDebounceTimer?.cancel();
+                _searchDebounceTimer =
+                    Timer(const Duration(milliseconds: 300), () {
+                  ref.read(matrixSearchQueryProvider.notifier).state = val;
+                  // M2-T4: Announce results
+                  final matchedCittas =
+                      ref.read(searchMatchedCittaIndicesProvider);
+                  final matchedCetasikas =
+                      ref.read(searchMatchedCetasikaIndicesProvider);
+                  final count = matchedCittas.length + matchedCetasikas.length;
+                  if (count > 0) {
+                    // SemanticsService.announce('Tìm thấy $count kết quả'); // Giả định có service này
+                  }
+                  // Scroll logic
+                  if (searchType == SearchType.citta) {
+                    _scrollToFirstMatch(
+                        matchedCittas, _verticalController1, 44.0);
+                  } else {
+                    _scrollToFirstMatch(
+                        matchedCetasikas, _horizontalController, 44.0);
+                  }
+                });
+              },
+            ),
+          ),
+          const SizedBox(width: 8),
+          ToggleButtons(
+            isSelected: [
+              searchType == SearchType.citta,
+              searchType == SearchType.cetasika
+            ],
+            onPressed: (idx) {
+              ref.read(matrixSearchTypeProvider.notifier).state =
+                  idx == 0 ? SearchType.citta : SearchType.cetasika;
+            },
+            children: const [
+              Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8),
+                  child: Text('Tâm')),
+              Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8),
+                  child: Text('Tâm Sở')),
+            ],
+          ),
+          if (isLandscape) ...[
+            const SizedBox(width: 8),
+            IconButton(
+              icon: const Icon(Icons.close),
+              onPressed: () {
+                ref.read(matrixSearchQueryProvider.notifier).state = '';
+              },
+              tooltip: 'Ẩn',
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  void _scrollToFirstMatch(
+      Set<int> matchedIndices, ScrollController ctrl, double cellSize) {
+    if (matchedIndices.isEmpty) return;
+    final firstIdx = matchedIndices.reduce((a, b) => a < b ? a : b);
+    final offset = (firstIdx * cellSize).clamp(
+      0.0,
+      ctrl.position.maxScrollExtent,
+    );
+    ctrl.animateTo(
+      offset,
+      duration: const Duration(milliseconds: 400),
+      curve: Curves.easeInOut,
     );
   }
 
@@ -315,6 +469,11 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final selectedCetasika = ref.watch(selectedCetasikaProvider);
     final dimmed = ref.watch(dimmedCetasikasProvider);
 
+    // M2-T4: Search state
+    final searchType = ref.watch(matrixSearchTypeProvider);
+    final matchedCittas = ref.watch(searchMatchedCittaIndicesProvider);
+    final matchedCetasikas = ref.watch(searchMatchedCetasikaIndicesProvider);
+
     return Row(
       children: [
         // ═══ Cột trái: tên Tâm ═══
@@ -346,7 +505,12 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                   itemBuilder: (_, i) {
                     final citta = cittas[i];
                     final isSel = selectedCitta == citta.id;
-                    return GestureDetector(
+                    final isMatch = matchedCittas.contains(i);
+                    final isDimmed = searchType == SearchType.citta &&
+                        matchedCittas.isNotEmpty &&
+                        !isMatch;
+
+                    Widget child = GestureDetector(
                       onTap: () {
                         ref.read(selectedCittaProvider.notifier).state =
                             isSel ? null : citta.id;
@@ -359,6 +523,23 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                         height: cellSize,
                         displayIndex: i + 1,
                       ),
+                    );
+
+                    if (isMatch) {
+                      child = Container(
+                        decoration: const BoxDecoration(
+                          border: Border(
+                            left:
+                                BorderSide(color: Color(0xFFFFD700), width: 3),
+                          ),
+                        ),
+                        child: child,
+                      );
+                    }
+
+                    return Opacity(
+                      opacity: isDimmed ? 0.35 : 1.0,
+                      child: child,
                     );
                   },
                 ),
@@ -383,7 +564,12 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                       final cs = entry.value;
                       final isSel = selectedCetasika == cs.id;
                       final isDim = dimmed.contains(cs.id);
-                      return GestureDetector(
+                      final isMatch = matchedCetasikas.contains(colIdx);
+                      final isSearchDim = searchType == SearchType.cetasika &&
+                          matchedCetasikas.isNotEmpty &&
+                          !isMatch;
+
+                      Widget child = GestureDetector(
                         onTap: () {
                           ref.read(selectedCetasikaProvider.notifier).state =
                               isSel ? null : cs.id;
@@ -392,11 +578,28 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                         child: CetasikaHeader(
                           cetasika: cs,
                           isSelected: isSel,
-                          isDimmed: isDim,
+                          isDimmed: isDim || isSearchDim,
                           width: cellSize,
                           height: cetasikaHeaderHeight,
                           displayIndex: colIdx + 1,
                         ),
+                      );
+
+                      if (isMatch) {
+                        child = Container(
+                          decoration: const BoxDecoration(
+                            border: Border(
+                              top: BorderSide(
+                                  color: Color(0xFFFFD700), width: 3),
+                            ),
+                          ),
+                          child: child,
+                        );
+                      }
+
+                      return Opacity(
+                        opacity: isSearchDim ? 0.35 : 1.0,
+                        child: child,
                       );
                     }).toList(),
                   ),
@@ -421,7 +624,13 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                                 isCittaHighlighted: isCittaSel,
                                 isCetasikaHighlighted:
                                     selectedCetasika == cs.id,
-                                isDimmed: dimmed.contains(cs.id),
+                                isDimmed: dimmed.contains(cs.id) ||
+                                    (searchType == SearchType.cetasika &&
+                                        matchedCetasikas.isNotEmpty &&
+                                        !matchedCetasikas.contains(colIdx)) ||
+                                    (searchType == SearchType.citta &&
+                                        matchedCittas.isNotEmpty &&
+                                        !matchedCittas.contains(rowIdx)),
                                 size: cellSize,
                                 useHighContrast: _showHighContrastMode,
                               );
