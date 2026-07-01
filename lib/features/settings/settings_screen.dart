@@ -153,12 +153,30 @@ class SettingsScreen extends ConsumerWidget {
           ),
 
           // Reset progress
+          // Reset progress
           ListTile(
             leading: const Icon(Icons.refresh, color: Colors.orange),
             title: const Text('Đặt lại tiến độ'),
             subtitle: const Text('Xóa toàn bộ dữ liệu học tập'),
             onTap: () => _confirmReset(context, ref),
           ),
+          // Reset warning
+          if (ref.watch(
+              progressProvider.notifier.select((n) => n.warningDismissed)))
+            ListTile(
+              leading:
+                  const Icon(Icons.notifications_active, color: Colors.orange),
+              title: const Text('Hiện lại cảnh báo dữ liệu'),
+              subtitle: const Text('Bật lại thông báo banner Bảng Tương Ưng'),
+              onTap: () {
+                ref.read(progressProvider.notifier).resetWarningDismissed();
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Đã bật lại cảnh báo')),
+                  );
+                }
+              },
+            ),
 
           const _SectionDivider('ℹ️ Về Ứng Dụng'),
 

@@ -8,6 +8,7 @@ import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/repositories/vdp_repository.dart';
+import '../../shared/providers/progress_provider.dart';
 import '../../shared/widgets/association_cell.dart';
 import '../../shared/widgets/cetasika_header.dart';
 import '../../shared/widgets/citta_row_header.dart';
@@ -38,7 +39,6 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   bool _showHighContrastMode = false;
   bool _forceLandscape = false;
   bool _isSyncingScroll = false;
-  bool _dismissedWarning = false;
 
   @override
   void initState() {
@@ -132,7 +132,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       body: Column(
         children: [
           _buildBhumiFilter(),
-          if (dataState.hasValidationWarnings && !_dismissedWarning)
+          if (dataState.hasValidationWarnings &&
+              !ref.read(progressProvider.notifier).warningDismissed)
             _buildWarningBanner(dataState),
           if (!isLandscape) _buildLegend(), // Ẩn legend khi landscape
           Expanded(child: _buildMatrix(context, cittas, cetasikas)),
@@ -281,7 +282,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           ),
           IconButton(
             icon: const Icon(Icons.close, size: 16),
-            onPressed: () => setState(() => _dismissedWarning = true),
+            onPressed: () {
+              ref.read(progressProvider.notifier).dismissWarning();
+              setState(() {});
+            },
             tooltip: 'Ẩn',
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(minWidth: 32, minHeight: 32),

@@ -11,6 +11,10 @@ import '../../data/models/study_module.dart';
 const _kProgressKey = 'vdp_user_progress';
 
 class ProgressNotifier extends StateNotifier<UserProgress> {
+  bool _warningDismissed = false;
+
+  bool get warningDismissed => _warningDismissed;
+
   ProgressNotifier()
       : super(UserProgress(
           moduleProgress: const {},
@@ -22,6 +26,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
   Future<void> _load() async {
     try {
       final prefs = await SharedPreferences.getInstance();
+      _warningDismissed = prefs.getBool('vdp_warning_dismissed') ?? false;
       final json = prefs.getString(_kProgressKey);
       if (json != null) {
         final data = jsonDecode(json) as Map<String, dynamic>;
@@ -136,6 +141,18 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       allModulesUnlocked: unlocked,
     );
     _save();
+  }
+
+  Future<void> dismissWarning() async {
+    _warningDismissed = true;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('vdp_warning_dismissed', true);
+  }
+
+  Future<void> resetWarningDismissed() async {
+    _warningDismissed = false;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('vdp_warning_dismissed');
   }
 }
 
