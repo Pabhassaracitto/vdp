@@ -3,7 +3,9 @@ name: Flutter Full Build - Android, iOS, Windows, Linux
 on:
   push:
     tags:
-      - 'v*'
+      #- 'v*'
+      - 'v[0-9].*'          # Kích hoạt cho v1.4, v1.5...
+      - '!v*-[a-z]*'        # PHỦ ĐỊNH (Bỏ qua) tất cả các tag có đuôi chữ như -rc, -beta
   workflow_dispatch: # Mở tính năng kích hoạt thủ công từ giao diện GitHub
     inputs:
       build_android:
