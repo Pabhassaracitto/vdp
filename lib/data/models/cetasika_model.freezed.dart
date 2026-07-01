@@ -289,7 +289,15 @@ mixin _$CetasikaModel {
       throw _privateConstructorUsedError; // Giải thích
   String get descriptionVi => throw _privateConstructorUsedError;
   String? get descriptionPali =>
-      throw _privateConstructorUsedError; // Danh sách quy tắc xung đột liên quan
+      throw _privateConstructorUsedError; // Tứ Nghĩa (4 aspects)
+  String? get trangThai =>
+      throw _privateConstructorUsedError; // Đặc tướng (Lakkhaṇa)
+  String? get phanSu => throw _privateConstructorUsedError; // Phận sự (Rasa)
+  String? get thanhTuu =>
+      throw _privateConstructorUsedError; // Thành tựu (Paccupaṭṭhāna)
+  String? get nhanGan =>
+      throw _privateConstructorUsedError; // Nhân gần (Padaṭṭhāna)
+// Danh sách quy tắc xung đột liên quan
   List<ConflictRule> get conflictRules =>
       throw _privateConstructorUsedError; // Icon/Symbol cho dual encoding
   String get symbol => throw _privateConstructorUsedError; // Unicode symbol
@@ -324,6 +332,10 @@ abstract class $CetasikaModelCopyWith<$Res> {
       String? audioPronunciation,
       String descriptionVi,
       String? descriptionPali,
+      String? trangThai,
+      String? phanSu,
+      String? thanhTuu,
+      String? nhanGan,
       List<ConflictRule> conflictRules,
       String symbol,
       int colorCode});
@@ -356,6 +368,10 @@ class _$CetasikaModelCopyWithImpl<$Res, $Val extends CetasikaModel>
     Object? audioPronunciation = freezed,
     Object? descriptionVi = null,
     Object? descriptionPali = freezed,
+    Object? trangThai = freezed,
+    Object? phanSu = freezed,
+    Object? thanhTuu = freezed,
+    Object? nhanGan = freezed,
     Object? conflictRules = null,
     Object? symbol = null,
     Object? colorCode = null,
@@ -409,6 +425,22 @@ class _$CetasikaModelCopyWithImpl<$Res, $Val extends CetasikaModel>
           ? _value.descriptionPali
           : descriptionPali // ignore: cast_nullable_to_non_nullable
               as String?,
+      trangThai: freezed == trangThai
+          ? _value.trangThai
+          : trangThai // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phanSu: freezed == phanSu
+          ? _value.phanSu
+          : phanSu // ignore: cast_nullable_to_non_nullable
+              as String?,
+      thanhTuu: freezed == thanhTuu
+          ? _value.thanhTuu
+          : thanhTuu // ignore: cast_nullable_to_non_nullable
+              as String?,
+      nhanGan: freezed == nhanGan
+          ? _value.nhanGan
+          : nhanGan // ignore: cast_nullable_to_non_nullable
+              as String?,
       conflictRules: null == conflictRules
           ? _value.conflictRules
           : conflictRules // ignore: cast_nullable_to_non_nullable
@@ -446,6 +478,10 @@ abstract class _$$CetasikaModelImplCopyWith<$Res>
       String? audioPronunciation,
       String descriptionVi,
       String? descriptionPali,
+      String? trangThai,
+      String? phanSu,
+      String? thanhTuu,
+      String? nhanGan,
       List<ConflictRule> conflictRules,
       String symbol,
       int colorCode});
@@ -476,6 +512,10 @@ class __$$CetasikaModelImplCopyWithImpl<$Res>
     Object? audioPronunciation = freezed,
     Object? descriptionVi = null,
     Object? descriptionPali = freezed,
+    Object? trangThai = freezed,
+    Object? phanSu = freezed,
+    Object? thanhTuu = freezed,
+    Object? nhanGan = freezed,
     Object? conflictRules = null,
     Object? symbol = null,
     Object? colorCode = null,
@@ -529,6 +569,22 @@ class __$$CetasikaModelImplCopyWithImpl<$Res>
           ? _value.descriptionPali
           : descriptionPali // ignore: cast_nullable_to_non_nullable
               as String?,
+      trangThai: freezed == trangThai
+          ? _value.trangThai
+          : trangThai // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phanSu: freezed == phanSu
+          ? _value.phanSu
+          : phanSu // ignore: cast_nullable_to_non_nullable
+              as String?,
+      thanhTuu: freezed == thanhTuu
+          ? _value.thanhTuu
+          : thanhTuu // ignore: cast_nullable_to_non_nullable
+              as String?,
+      nhanGan: freezed == nhanGan
+          ? _value.nhanGan
+          : nhanGan // ignore: cast_nullable_to_non_nullable
+              as String?,
       conflictRules: null == conflictRules
           ? _value._conflictRules
           : conflictRules // ignore: cast_nullable_to_non_nullable
@@ -561,6 +617,10 @@ class _$CetasikaModelImpl implements _CetasikaModel {
       this.audioPronunciation,
       required this.descriptionVi,
       this.descriptionPali,
+      this.trangThai,
+      this.phanSu,
+      this.thanhTuu,
+      this.nhanGan,
       final List<ConflictRule> conflictRules = const [],
       required this.symbol,
       required this.colorCode})
@@ -598,8 +658,22 @@ class _$CetasikaModelImpl implements _CetasikaModel {
   final String descriptionVi;
   @override
   final String? descriptionPali;
+// Tứ Nghĩa (4 aspects)
+  @override
+  final String? trangThai;
+// Đặc tướng (Lakkhaṇa)
+  @override
+  final String? phanSu;
+// Phận sự (Rasa)
+  @override
+  final String? thanhTuu;
+// Thành tựu (Paccupaṭṭhāna)
+  @override
+  final String? nhanGan;
+// Nhân gần (Padaṭṭhāna)
 // Danh sách quy tắc xung đột liên quan
   final List<ConflictRule> _conflictRules;
+// Nhân gần (Padaṭṭhāna)
 // Danh sách quy tắc xung đột liên quan
   @override
   @JsonKey()
@@ -618,7 +692,7 @@ class _$CetasikaModelImpl implements _CetasikaModel {
 
   @override
   String toString() {
-    return 'CetasikaModel(id: $id, namePali: $namePali, nameVietnamese: $nameVietnamese, nameShort: $nameShort, group: $group, akusalaSubGroup: $akusalaSubGroup, sobhanaSubGroup: $sobhanaSubGroup, traditionalOrder: $traditionalOrder, ipaTranscription: $ipaTranscription, audioPronunciation: $audioPronunciation, descriptionVi: $descriptionVi, descriptionPali: $descriptionPali, conflictRules: $conflictRules, symbol: $symbol, colorCode: $colorCode)';
+    return 'CetasikaModel(id: $id, namePali: $namePali, nameVietnamese: $nameVietnamese, nameShort: $nameShort, group: $group, akusalaSubGroup: $akusalaSubGroup, sobhanaSubGroup: $sobhanaSubGroup, traditionalOrder: $traditionalOrder, ipaTranscription: $ipaTranscription, audioPronunciation: $audioPronunciation, descriptionVi: $descriptionVi, descriptionPali: $descriptionPali, trangThai: $trangThai, phanSu: $phanSu, thanhTuu: $thanhTuu, nhanGan: $nhanGan, conflictRules: $conflictRules, symbol: $symbol, colorCode: $colorCode)';
   }
 
   @override
@@ -648,6 +722,12 @@ class _$CetasikaModelImpl implements _CetasikaModel {
                 other.descriptionVi == descriptionVi) &&
             (identical(other.descriptionPali, descriptionPali) ||
                 other.descriptionPali == descriptionPali) &&
+            (identical(other.trangThai, trangThai) ||
+                other.trangThai == trangThai) &&
+            (identical(other.phanSu, phanSu) || other.phanSu == phanSu) &&
+            (identical(other.thanhTuu, thanhTuu) ||
+                other.thanhTuu == thanhTuu) &&
+            (identical(other.nhanGan, nhanGan) || other.nhanGan == nhanGan) &&
             const DeepCollectionEquality()
                 .equals(other._conflictRules, _conflictRules) &&
             (identical(other.symbol, symbol) || other.symbol == symbol) &&
@@ -657,23 +737,28 @@ class _$CetasikaModelImpl implements _CetasikaModel {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      namePali,
-      nameVietnamese,
-      nameShort,
-      group,
-      akusalaSubGroup,
-      sobhanaSubGroup,
-      traditionalOrder,
-      ipaTranscription,
-      audioPronunciation,
-      descriptionVi,
-      descriptionPali,
-      const DeepCollectionEquality().hash(_conflictRules),
-      symbol,
-      colorCode);
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        id,
+        namePali,
+        nameVietnamese,
+        nameShort,
+        group,
+        akusalaSubGroup,
+        sobhanaSubGroup,
+        traditionalOrder,
+        ipaTranscription,
+        audioPronunciation,
+        descriptionVi,
+        descriptionPali,
+        trangThai,
+        phanSu,
+        thanhTuu,
+        nhanGan,
+        const DeepCollectionEquality().hash(_conflictRules),
+        symbol,
+        colorCode
+      ]);
 
   /// Create a copy of CetasikaModel
   /// with the given fields replaced by the non-null parameter values.
@@ -705,6 +790,10 @@ abstract class _CetasikaModel implements CetasikaModel {
       final String? audioPronunciation,
       required final String descriptionVi,
       final String? descriptionPali,
+      final String? trangThai,
+      final String? phanSu,
+      final String? thanhTuu,
+      final String? nhanGan,
       final List<ConflictRule> conflictRules,
       required final String symbol,
       required final int colorCode}) = _$CetasikaModelImpl;
@@ -735,7 +824,16 @@ abstract class _CetasikaModel implements CetasikaModel {
   @override
   String get descriptionVi;
   @override
-  String? get descriptionPali; // Danh sách quy tắc xung đột liên quan
+  String? get descriptionPali; // Tứ Nghĩa (4 aspects)
+  @override
+  String? get trangThai; // Đặc tướng (Lakkhaṇa)
+  @override
+  String? get phanSu; // Phận sự (Rasa)
+  @override
+  String? get thanhTuu; // Thành tựu (Paccupaṭṭhāna)
+  @override
+  String? get nhanGan; // Nhân gần (Padaṭṭhāna)
+// Danh sách quy tắc xung đột liên quan
   @override
   List<ConflictRule> get conflictRules; // Icon/Symbol cho dual encoding
   @override

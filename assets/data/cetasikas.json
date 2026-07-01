@@ -14,7 +14,11 @@
       "descriptionPali": "Phassa: sự chạm xúc, đụng cảnh. Khi có đủ 3 duyên: Căn + Cảnh + Thức = Xúc sanh.",
       "symbol": "●",
       "colorCode": 2775183,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Sự xúc chạm cảnh — cách tiếp xúc giữa Tâm, Căn và Cảnh",
+      "phanSu": "Gom thâu các Tâm sở khác kết dính vào Tâm để tiếp xúc Căn và Cảnh",
+      "thanhTuu": "Tâm, Tâm sở, Căn, Cảnh hội tụ hợp lại",
+      "nhanGan": "Có cảnh trợ bày khác nhau (Căn + Cảnh + Thức)"
     },
     {
       "id": "CS_VEDANA",
@@ -30,7 +34,11 @@
       "descriptionPali": "Vedanā: sự cảm thọ, hưởng thọ đối tượng.",
       "symbol": "●",
       "colorCode": 2775183,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Cảm thọ, hưởng thọ đối tượng — cách nhận lãnh, cảm nhận cảnh",
+      "phanSu": "Thọ hưởng cảnh đáng mong muốn hoặc tạo sự héo sầu / phát triển cho các pháp tương ưng",
+      "thanhTuu": "Tâm được an vui (Thọ Hỷ/Lạc); có sự khổ tâm (Thọ Ưu); có thân thọ khổ/lạc; là vắng lặng (Thọ Xả)",
+      "nhanGan": "Thân yên tĩnh, tâm an lạc (Thọ Hỷ/Lạc); có sắc Ý vật (Thọ Ưu); xa lìa sự hoan hỷ (Thọ Xả)"
     },
     {
       "id": "CS_SANNA",
@@ -46,7 +54,11 @@
       "descriptionPali": "Saññā: sự nhận thức, tri giác về đối tượng.",
       "symbol": "●",
       "colorCode": 2775183,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Sự nhớ lại, cách nhớ — nhận biết và ghi nhận đặc tính đối tượng",
+      "phanSu": "Nhớ lại sự việc đã qua nhờ có dấu hiệu nhận biết",
+      "thanhTuu": "Nhớ lại sự việc đã từng biết (đúng hoặc sai)",
+      "nhanGan": "Có cảnh tái hiện bày — có đối tượng nhắc nhớ (vd: nhìn người quen nhớ đã gặp ở đâu)"
     },
     {
       "id": "CS_CETANA",
@@ -62,7 +74,11 @@
       "descriptionPali": "Cetanā: sự cố tâm, ý định hành động.",
       "symbol": "●",
       "colorCode": 2775183,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Sự tác động, điều hành, đôn đốc đến các pháp tương ưng đồng sanh chung",
+      "phanSu": "Tập hợp các pháp đồng sanh cùng hướng về cảnh, bắt lấy đối tượng",
+      "thanhTuu": "Có sự phối hợp, điều khiển, sắp đặt các pháp tương ưng",
+      "nhanGan": "Có 3 Danh uẩn là Thọ, Tưởng và Thức uẩn (Tư là Hành uẩn nên cần có 3 uẩn kia)"
     },
     {
       "id": "CS_EKAGGATA",
@@ -78,7 +94,11 @@
       "descriptionPali": "Ekaggatā: trạng thái nhất tâm, chuyên chú vào một cảnh.",
       "symbol": "●",
       "colorCode": 2775183,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Không loạn động, không chao động trước đối tượng — sự nhất tâm chuyên chú",
+      "phanSu": "Gom các Danh pháp đồng sanh quy về một mối, về một đối tượng duy nhất",
+      "thanhTuu": "Hiện bày sự yên tĩnh, yên trú vững vàng trong cảnh",
+      "nhanGan": "Có Thọ Lạc; sự vắng mặt của Si Phóng dật và Si Hoài nghi (phải có thọ lạc mới đạt được định)"
     },
     {
       "id": "CS_JIVITINDRIYA",
@@ -94,7 +114,11 @@
       "descriptionPali": "Jīvitindriya: quyền lực sự sống của danh pháp.",
       "symbol": "●",
       "colorCode": 2775183,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Bảo trì, bảo tồn, chăm nom các pháp đồng sanh chung với nó",
+      "phanSu": "Làm cho các pháp đồng sanh được tồn tại thọ mạng trong 3 sát na tiểu rồi mới diệt",
+      "thanhTuu": "Các pháp đồng sanh được tồn tại sống còn đến sát na diệt",
+      "nhanGan": "Phải có Thọ uẩn, Tưởng uẩn và Thức uẩn"
     },
     {
       "id": "CS_MANASIKARA",
@@ -110,7 +134,11 @@
       "descriptionPali": "Manasikāra: sự tác ý, hướng tâm đến đối tượng.",
       "symbol": "●",
       "colorCode": 2775183,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Cách hướng dẫn các pháp tương ưng bắt cảnh trọn vẹn",
+      "phanSu": "Làm cho Tâm và Tâm sở sanh chung với nó phối hợp bắt níu lấy cảnh",
+      "thanhTuu": "Hướng tâm đến cảnh (ví: người lái tàu hướng tàu về một điểm đến)",
+      "nhanGan": "Phải có cảnh — phải có đối tượng quá khứ, hiện tại hoặc vị lai"
     },
     {
       "id": "CS_VITAKKA",
@@ -126,7 +154,11 @@
       "descriptionPali": "Vitakka: sự suy nghĩ, hướng tâm lên đối tượng.",
       "symbol": "◆",
       "colorCode": 4362285,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Đem các pháp đồng sanh đi đến cảnh — quăng ném lên cảnh",
+      "phanSu": "Làm cho Tâm và Tâm sở tiếp xúc cảnh",
+      "thanhTuu": "Tâm và Tâm sở đồng sanh gặp được cảnh",
+      "nhanGan": "Phải có cảnh (đối tượng) và 3 uẩn ngoài ra — Tầm thuộc Hành uẩn nên cần Thọ, Tưởng, Thức"
     },
     {
       "id": "CS_VICARA",
@@ -142,7 +174,11 @@
       "descriptionPali": "Vicāra: sự suy xét, quán sát trên đối tượng.",
       "symbol": "◆",
       "colorCode": 4362285,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Cách trông nom cảnh — suy xét, quan sát cảnh một cách khắng khít",
+      "phanSu": "Làm cho Tâm và Tâm sở đồng sanh chung với nó khắng khít với cảnh liên tục",
+      "thanhTuu": "Đã khắng khít được cảnh, siết chặt làm cho các pháp tương ưng nhận biết được cảnh đó, không cho xa lìa cảnh",
+      "nhanGan": "Phải có cảnh và 3 uẩn ngoài ra — Tứ thuộc Hành uẩn nên cần Thọ, Tưởng, Thức"
     },
     {
       "id": "CS_ADHIMOKKHA",
@@ -162,11 +198,17 @@
         {
           "ruleId": "CR_ADHIMOKKHA_VICIKICCHA",
           "type": "pair",
-          "conflictingIds": ["CS_VICIKICCHA"],
+          "conflictingIds": [
+            "CS_VICIKICCHA"
+          ],
           "explanation": "Thắng Giải không thể cùng tồn tại với Hoài nghi vì Thắng Giải là sự quyết định dứt khoát trong khi Hoài nghi là trạng thái phân vân lưỡng lự.",
           "explanationPali": "Adhimokkha vicikicchāsahagatacitte na labbhati."
         }
-      ]
+      ],
+      "trangThai": "Cách quyết định phá tan trạng thái lưỡng lự — phóng thích Tâm ra khỏi hoài nghi để tiến đến đối tượng",
+      "phanSu": "Làm cho Tâm quyết chắc trong cảnh, không do dự",
+      "thanhTuu": "Đã có sự quyết đoán cảnh — thực hiện được quyết định",
+      "nhanGan": "Cần có cảnh để phân đoán, phán quyết, hay quyết định"
     },
     {
       "id": "CS_VIRIYA",
@@ -182,7 +224,11 @@
       "descriptionPali": "Vīriya: Vīra = người chuyên cần nỗ lực. Sự tinh cần, nỗ lực.",
       "symbol": "◆",
       "colorCode": 4362285,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Cách siêng năng, chịu đựng — sự nỗ lực tinh cần không thối chuyển",
+      "phanSu": "Trợ giúp các pháp đồng sanh không lui sụt",
+      "thanhTuu": "Không lui sụt",
+      "nhanGan": "Có điều lo âu, điều làm rúng động Tâm như: cảnh già, đau, chết, cảnh khổ"
     },
     {
       "id": "CS_PITI",
@@ -198,7 +244,11 @@
       "descriptionPali": "Pīti: hân hoan, phấn khởi với đối tượng.",
       "symbol": "◆",
       "colorCode": 4362285,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Có sự vui mừng, phấn khởi, thoả thích với cảnh (khác cảm thọ vì Thọ nhận hưởng cảnh, còn Hỷ tạo sự thích thú)",
+      "phanSu": "Làm cho Thân lạc và Tâm hỷ",
+      "thanhTuu": "Tâm được hưng phấn, no lòng, bừng lên (khác thọ là tâm được an vui)",
+      "nhanGan": "Thọ uẩn, Tưởng uẩn và Thức uẩn (Hỷ thuộc Hành uẩn — khác nhân của Thọ Hỷ là thân yên tĩnh, tâm an lạc)"
     },
     {
       "id": "CS_CHANDA",
@@ -214,7 +264,11 @@
       "descriptionPali": "Chanda: sự mong muốn, ước muốn hành động.",
       "symbol": "◆",
       "colorCode": 4362285,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Có sự hy vọng, mong mỏi cho được cảnh",
+      "phanSu": "Làm cho Tâm mong mỏi tìm kiếm cảnh",
+      "thanhTuu": "Được cảnh mong muốn",
+      "nhanGan": "Có cảnh đáng mong mỏi, đáng ao ước"
     },
     {
       "id": "CS_MOHA",
@@ -230,7 +284,11 @@
       "descriptionPali": "Moha: sự mê mờ, ngu muội, vô minh.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Mờ ám, không hiểu biết điều đáng biết — trái với trí tuệ",
+      "phanSu": "Che ngăn sự sáng suốt, không cho thấy thực tính pháp",
+      "thanhTuu": "Có sự mờ ám, tối tăm",
+      "nhanGan": "Không khéo dùng tâm, vụng tác ý"
     },
     {
       "id": "CS_AHIRIKA",
@@ -246,7 +304,11 @@
       "descriptionPali": "Ahirika: sự không hổ thẹn, vô liêm sỉ.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Không có sự xấu hổ với các điều tội lỗi, ác, xấu",
+      "phanSu": "Thực hiện các điều ác, xấu, tội lỗi",
+      "thanhTuu": "Không lui sụt với các ác pháp",
+      "nhanGan": "Không biết tự trọng"
     },
     {
       "id": "CS_ANOTTAPPA",
@@ -262,7 +324,11 @@
       "descriptionPali": "Anottappa: sự không ghê sợ, không kinh hãi về tội lỗi.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Không ghê sợ đối với ác pháp",
+      "phanSu": "Thực hiện tội lỗi, ác hạnh",
+      "thanhTuu": "Không rụt rè, không sợ hãi khi làm ác",
+      "nhanGan": "Không tôn trọng người khác"
     },
     {
       "id": "CS_UDDHACCA",
@@ -278,7 +344,11 @@
       "descriptionPali": "Uddhacca: sự phóng dật, tán loạn của tâm.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Có sự không yên tịnh — tâm chao động, phóng tâm",
+      "phanSu": "Làm cho tâm không an trú chắc chắn trong cảnh lâu",
+      "thanhTuu": "Tâm không yên tĩnh, bị dao động",
+      "nhanGan": "Không khéo tác ý, vụng dụng tâm"
     },
     {
       "id": "CS_LOBHA",
@@ -298,11 +368,17 @@
         {
           "ruleId": "CR_LOBHA_DOSA",
           "type": "pair",
-          "conflictingIds": ["CS_DOSA"],
+          "conflictingIds": [
+            "CS_DOSA"
+          ],
           "explanation": "Tham và Sân không thể đồng sanh vì Tham là sự dính mắc còn Sân là sự chống đối — hai trạng thái ngược nhau.",
           "explanationPali": "Lobhamūla dosasamuṭṭhāna na sahuppajjanti."
         }
-      ]
+      ],
+      "trangThai": "Chấp dính cảnh — làm cho các Tâm sở đồng sanh chung chấp dính cảnh",
+      "phanSu": "Làm cho Tâm dính mắc cảnh",
+      "thanhTuu": "Không buông rời cảnh",
+      "nhanGan": "Ưa gặp, thích gặp trong pháp trói buộc — thích những thứ đẹp đẽ, mê ly, ngon lành"
     },
     {
       "id": "CS_DITTHI",
@@ -322,11 +398,17 @@
         {
           "ruleId": "CR_DITTHI_MANA",
           "type": "pair",
-          "conflictingIds": ["CS_MANA"],
+          "conflictingIds": [
+            "CS_MANA"
+          ],
           "explanation": "Tà Kiến và Ngã Mạn không thể đồng sanh: Tà Kiến ở 4 Tham hợp tà, Ngã Mạn ở 4 Tham ly tà.",
           "explanationPali": "Diṭṭhigatasampayutta diṭṭhigatavippayutta na sahuppajjanti."
         }
-      ]
+      ],
+      "trangThai": "Khắng khít, cố chấp với điều không đúng với chân lý",
+      "phanSu": "Suy xét sai sự thật",
+      "thanhTuu": "Chấp cứng theo sự sai lầm",
+      "nhanGan": "Không gặp bậc Hiền trí"
     },
     {
       "id": "CS_MANA",
@@ -346,11 +428,17 @@
         {
           "ruleId": "CR_MANA_DITTHI",
           "type": "pair",
-          "conflictingIds": ["CS_DITTHI"],
+          "conflictingIds": [
+            "CS_DITTHI"
+          ],
           "explanation": "Ngã Mạn và Tà Kiến không thể đồng sanh.",
           "explanationPali": "Māno diṭṭhigatasampayutta na sahuppajjati."
         }
-      ]
+      ],
+      "trangThai": "Có sự lừng lẫy, kiêu căng, tự phụ — sự so sánh hơn thua với người khác",
+      "phanSu": "Thúc đẩy làm cho các pháp tương ưng lừng lẫy",
+      "thanhTuu": "Cống cao, tự đại",
+      "nhanGan": "Có đối tượng để so sánh"
     },
     {
       "id": "CS_DOSA",
@@ -370,11 +458,17 @@
         {
           "ruleId": "CR_DOSA_LOBHA",
           "type": "pair",
-          "conflictingIds": ["CS_LOBHA"],
+          "conflictingIds": [
+            "CS_LOBHA"
+          ],
           "explanation": "Sân và Tham không thể đồng sanh.",
           "explanationPali": "Dosamūla lobhamūla na sahuppajjanti."
         }
-      ]
+      ],
+      "trangThai": "Thân tâm nóng nảy, thô tháo — trạng thái chống đối, thiêu đốt",
+      "phanSu": "Làm cho tâm nóng nảy, thiêu đốt, huỷ diệt đối tượng",
+      "thanhTuu": "Phạm ác nghiệp, phá hoại, gây tổn hại cho mình, người hoặc cả hai",
+      "nhanGan": "Có cảnh vật, đối tượng bất khả ý — thiếu hiểu biết hay thiếu lý trí"
     },
     {
       "id": "CS_ISSA",
@@ -390,7 +484,11 @@
       "descriptionPali": "Issā: sự ganh tị, tật đố.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Sự đố kỵ, ganh ghét với phần hơn hay sự thành đạt của người khác",
+      "phanSu": "Không vừa lòng với phần hơn, phần trội nổi của người",
+      "thanhTuu": "Tránh mặt, quay lưng với phần hơn của kẻ khác",
+      "nhanGan": "Danh lợi, tài sản, hạnh phúc, sự thành đạt của kẻ khác hơn mình"
     },
     {
       "id": "CS_MACCHARIYA",
@@ -406,7 +504,11 @@
       "descriptionPali": "Macchariya: sự bủn xỉn, keo kiệt.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Che dấu tài sản hay sự thành đạt của mình",
+      "phanSu": "Không chịu chia sớt hoặc cho người khác liên hệ đến tài sản của mình",
+      "thanhTuu": "Không san sẻ tài sản, bòn rít, không chịu cho ra",
+      "nhanGan": "Tài sản, sự thành đạt của mình"
     },
     {
       "id": "CS_KUKKUCCA",
@@ -422,7 +524,11 @@
       "descriptionPali": "Kukkucca: sự hối hận, ân hận, lo lắng.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Cách hối tiếc, hối hận, ray rứt về việc đã qua",
+      "phanSu": "Làm cho tâm bực bội ray rứt với việc đã qua",
+      "thanhTuu": "Có sự ân hận, hối hận trong tâm",
+      "nhanGan": "Có việc xấu ác đã làm, việc lành việc phước không làm được"
     },
     {
       "id": "CS_THINA",
@@ -446,7 +552,11 @@
           "explanation": "Hôn Trầm chỉ có trong tâm Hữu trợ (sasaṅkhārika), không có trong tâm Vô trợ.",
           "explanationPali": "Thīnaṁ middhaṁ pañcasu sasaṅkhārikacittesu."
         }
-      ]
+      ],
+      "trangThai": "Cách lười biếng chặn đứng sự siêng năng",
+      "phanSu": "Rời bỏ tinh tấn, làm cho không còn siêng năng tích cực, đưa đến ngoại lộ tâm bước vào hộ kiếp",
+      "thanhTuu": "Tâm bị lui sụt",
+      "nhanGan": "Không khéo tác ý, vụng dụng tâm"
     },
     {
       "id": "CS_MIDDHA",
@@ -462,7 +572,11 @@
       "descriptionPali": "Middha: sự buồn ngủ, thụy miên.",
       "symbol": "▼",
       "colorCode": 16711680,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Không thích hợp với việc làm — trạng thái bần thần, dã dượi, buồn ngủ",
+      "phanSu": "Che đậy Tâm",
+      "thanhTuu": "Ngủ mơ màng hay là buồn ngủ",
+      "nhanGan": "Không khởi sinh tác ý đúng"
     },
     {
       "id": "CS_VICIKICCHA",
@@ -482,11 +596,17 @@
         {
           "ruleId": "CR_VICIKICCHA_ADHIMOKKHA",
           "type": "pair",
-          "conflictingIds": ["CS_ADHIMOKKHA"],
+          "conflictingIds": [
+            "CS_ADHIMOKKHA"
+          ],
           "explanation": "Hoài Nghi và Thắng Giải không thể đồng sanh.",
           "explanationPali": "Vicikicchāsahagate adhimokkho na labbhati."
         }
-      ]
+      ],
+      "trangThai": "Cách hoài nghi — sự phân vân, lưỡng lự về Tam Bảo và Giáo Pháp",
+      "phanSu": "Làm cho lung lay, dao động, lưỡng lự, phân vân",
+      "thanhTuu": "Không thể quyết đoán, không cương quyết",
+      "nhanGan": "Không khéo tác ý"
     },
     {
       "id": "CS_SADDHA",
@@ -502,7 +622,11 @@
       "descriptionPali": "Saddhā: niềm tin, tịnh tín.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Tin tưởng, tin vào Tam Bảo, nghiệp báo nhân quả — trạng thái trong sạch của tâm",
+      "phanSu": "Trong sạch hoá, làm cho Tâm đặt để niềm tin vào các điều chân chánh",
+      "thanhTuu": "Không nhơ bẩn do mê tín",
+      "nhanGan": "Có những điều đáng tin tưởng (Tam Bảo, nghiệp quả)"
     },
     {
       "id": "CS_SATI",
@@ -518,7 +642,11 @@
       "descriptionPali": "Sati: sự chánh niệm, ghi nhớ đối tượng.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Cách tỉnh thức không sơ ý, không trôi nổi — ghi nhớ đối tượng",
+      "phanSu": "Ghi nhớ, làm cho không quên",
+      "thanhTuu": "Trau dồi tâm khắng khít với cảnh — canh giữ, bảo vệ 6 căn",
+      "nhanGan": "Biết vững chắc"
     },
     {
       "id": "CS_HIRI",
@@ -534,7 +662,11 @@
       "descriptionPali": "Hirī: sự hổ thẹn, liêm sỉ.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Cách ghét sự tội lỗi, không ưa thích tội lỗi",
+      "phanSu": "Không làm việc tội lỗi",
+      "thanhTuu": "Cách lui sụt với chuyện ác, xấu, né tránh tội lỗi",
+      "nhanGan": "Biết tự trọng"
     },
     {
       "id": "CS_OTTAPPA",
@@ -550,7 +682,11 @@
       "descriptionPali": "Ottappa: sự kinh hãi về tội lỗi.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Ghê sợ, chán ghét tội lỗi, nguy hại của tội lỗi",
+      "phanSu": "Không làm tội lỗi, không tạo ra điều nguy hại",
+      "thanhTuu": "Lui sụt, né tránh tội lỗi",
+      "nhanGan": "Tôn trọng người, sợ người chỉ trích"
     },
     {
       "id": "CS_ALOBHA",
@@ -566,7 +702,11 @@
       "descriptionPali": "Alobha: sự vô tham, không dính mắc.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Tâm không đắm nhiễm trong cảnh — không dính mắc, không chấp trước",
+      "phanSu": "Không nắm giữ, không chấp trước, không dính mắc, vượt thoát các trói buộc",
+      "thanhTuu": "Không bám lấy cái đang hiện hữu, không bị nhiễm đắm cảnh ưa thích; đỉnh cao là không bám lấy một sinh hữu mới",
+      "nhanGan": "Có tác ý khéo"
     },
     {
       "id": "CS_ADOSA",
@@ -582,7 +722,11 @@
       "descriptionPali": "Adosa: sự vô sân, từ ái.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Không tàn hại, không độc, không đối kháng — trạng thái mát mẻ, êm dịu",
+      "phanSu": "Xua đuổi sự tàn hại, tránh xa sự sát hại, xua đuổi sự nóng nảy",
+      "thanhTuu": "Hiện khởi sự êm dịu, mát mẻ",
+      "nhanGan": "Có tác ý khéo"
     },
     {
       "id": "CS_TATRAMAJJHATTATA",
@@ -598,7 +742,11 @@
       "descriptionPali": "Tatramajjhattatā: sự quân bình, trung dung.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Làm cho Tâm và các Tâm sở ngang nhau — sự quân bình, không thiên lệch",
+      "phanSu": "Cản trở sự lui sụt, giữ các pháp không bị mất quân bình",
+      "thanhTuu": "Tạo ra được sự quân bình",
+      "nhanGan": "Có pháp hoà hợp nhau"
     },
     {
       "id": "CS_KAYAPASSADDHI",
@@ -614,7 +762,11 @@
       "descriptionPali": "Kāya-passaddhi: sự an tịnh của các Tâm sở đồng sanh.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "An tịnh, lìa xa sự sôi nổi của các Tâm sở (Thọ-Tưởng-Hành uẩn)",
+      "phanSu": "Làm cho êm dịu sự sôi nổi — Tâm sở không còn dao động",
+      "thanhTuu": "Tâm sở yên tịnh, êm dịu, mát mẻ",
+      "nhanGan": "Có các Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_CITTAPASSADDHI",
@@ -630,7 +782,11 @@
       "descriptionPali": "Citta-passaddhi: sự an tịnh của Tâm vương.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "An tịnh, lìa xa sự sôi nổi của Tâm (Thức uẩn)",
+      "phanSu": "Làm cho êm dịu sự sôi nổi — Tâm không còn dao động",
+      "thanhTuu": "Tâm yên tịnh, êm dịu, mát mẻ",
+      "nhanGan": "Có Tâm (Thức uẩn)"
     },
     {
       "id": "CS_KAYALAHUTA",
@@ -646,7 +802,11 @@
       "descriptionPali": "Kāya-lahutā: sự khinh nhẹ của Tâm sở.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Nhẹ nhàng, lìa bỏ sự nặng nề của Thọ, Tưởng, Hành uẩn",
+      "phanSu": "Làm cho không bị sự nặng nề chi phối Tâm sở — làm cho Tâm sở trở nên nhẹ nhàng",
+      "thanhTuu": "Tâm sở không bị trì trệ và trở nên nhẹ nhàng",
+      "nhanGan": "Có Thức uẩn (thuộc về Tâm) và Thọ-Tưởng-Hành (Tâm sở)"
     },
     {
       "id": "CS_CITTALAHUTA",
@@ -662,7 +822,11 @@
       "descriptionPali": "Citta-lahutā: sự khinh nhẹ của Tâm vương.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Nhẹ nhàng, lìa bỏ sự nặng nề của Thức uẩn (Tâm)",
+      "phanSu": "Làm cho không bị sự nặng nề chi phối Tâm — làm cho Tâm trở nên nhẹ nhàng",
+      "thanhTuu": "Tâm không bị trì trệ và trở nên nhẹ nhàng",
+      "nhanGan": "Có Thức uẩn (thuộc về Tâm) và Thọ-Tưởng-Hành (Tâm sở)"
     },
     {
       "id": "CS_KAYAMUDUTA",
@@ -678,7 +842,11 @@
       "descriptionPali": "Kāya-mudutā: sự nhu nhuyễn của các Tâm sở.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Sự mềm mại, dịu dàng của Tâm sở (Thọ-Tưởng-Hành uẩn)",
+      "phanSu": "Làm tan biến sự cứng rắn của Tâm sở — hạn chế sự cứng cỏi, sượng sần",
+      "thanhTuu": "Dịu dàng, dễ bắt cảnh và không uể oải",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_CITTAMUDUTA",
@@ -694,7 +862,11 @@
       "descriptionPali": "Citta-mudutā: sự nhu nhuyễn của Tâm vương.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Sự mềm mại, dịu dàng của Tâm (Thức uẩn)",
+      "phanSu": "Làm tan biến sự cứng rắn của Tâm — hạn chế sự cứng cỏi, sượng sần của Tâm",
+      "thanhTuu": "Tâm dịu dàng, dễ bắt cảnh và không uể oải",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_KAYAKAMMANNATA",
@@ -710,7 +882,11 @@
       "descriptionPali": "Kāya-kammaññatā: sự thích ứng của các Tâm sở.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Thân-Tâm sở thoát ra hiện trạng không thích ứng, xa lìa sự không thích hợp",
+      "phanSu": "Làm tan biến, xa lìa sự không thích nghi của Tâm sở",
+      "thanhTuu": "Thích ứng, thích hợp của Tâm sở khi tiếp nhận với đối tượng",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_CITTAKAMMANNATA",
@@ -726,7 +902,11 @@
       "descriptionPali": "Citta-kammaññatā: sự thích ứng của Tâm vương.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Tâm thoát ra hiện trạng không thích ứng, xa lìa sự không thích hợp",
+      "phanSu": "Làm tan biến, xa lìa sự không thích nghi của Tâm",
+      "thanhTuu": "Thích ứng, thích hợp của Tâm khi tiếp nhận với đối tượng",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_KAYAPAGUNNATA",
@@ -742,7 +922,11 @@
       "descriptionPali": "Kāya-pāguññatā: sự thuần thục của các Tâm sở.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Không đình trệ của Tâm sở — sự tinh luyện thuần thục của các Tâm sở",
+      "phanSu": "Phá cách, làm tan biến sự đình trệ của Tâm sở",
+      "thanhTuu": "Lìa xa, không dính đến điều xấu, tội lỗi",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_CITTAPAGUNNATA",
@@ -758,7 +942,11 @@
       "descriptionPali": "Citta-pāguññatā: sự thuần thục của Tâm vương.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Không đình trệ của Tâm — sự tinh luyện thuần thục của Tâm",
+      "phanSu": "Phá cách, làm tan biến sự đình trệ của Tâm",
+      "thanhTuu": "Lìa xa, không dính đến điều xấu, tội lỗi",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_KAYUJUKATA",
@@ -774,7 +962,11 @@
       "descriptionPali": "Kāy'ujukatā: sự ngay thẳng của các Tâm sở.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Chân chánh và ngay thẳng của Tâm sở",
+      "phanSu": "Đối trị sự tà vạy, sự không chánh trực của Tâm sở",
+      "thanhTuu": "Được chân chánh, không tà vạy, không cong vẹo (của Tâm sở)",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_CITTUJUKATA",
@@ -790,7 +982,11 @@
       "descriptionPali": "Citt'ujukatā: sự ngay thẳng của Tâm vương.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Chân chánh và ngay thẳng của Tâm (Thức uẩn)",
+      "phanSu": "Đối trị sự tà vạy, sự không chánh trực của Tâm",
+      "thanhTuu": "Được chân chánh, không tà vạy, không cong vẹo (của Tâm)",
+      "nhanGan": "Có Tâm (Thức) và Tâm sở (Thọ, Tưởng, Hành uẩn)"
     },
     {
       "id": "CS_SAMMAVACA",
@@ -814,7 +1010,11 @@
           "explanation": "Chánh Ngữ chỉ có trong tâm Thiện Dục giới Tịnh hảo và Tâm Siêu thế. Trong Tâm Thiện DG chỉ sanh 1 trong 3 Giới phần. Trong Tâm Đạo Siêu thế cả 3 đồng sanh.",
           "explanationPali": "Sammā-vācā kāmāvacarakusala lokuttara sahuppajjati."
         }
-      ]
+      ],
+      "trangThai": "Gìn giữ Chánh ngữ — tiết chế, kiêng cử thuộc về lời nói",
+      "phanSu": "Tránh xa những điều hư nguỵ, giả dối (Tà ngữ: nói dối, đâm thọc, thô lỗ, nhảm nhí)",
+      "thanhTuu": "Đoạn trừ Tà ngữ",
+      "nhanGan": "Có Tín (niềm tin), Niệm (sự ghi nhớ), Tàm, Quý và Thiểu dục"
     },
     {
       "id": "CS_SAMMAKAMMANTA",
@@ -838,7 +1038,11 @@
           "explanation": "Chánh Nghiệp chỉ có trong tâm Thiện Dục giới Tịnh hảo và Tâm Siêu thế.",
           "explanationPali": "Sammā-kammanta kāmāvacarakusala lokuttara sahuppajjati."
         }
-      ]
+      ],
+      "trangThai": "Làm việc đúng, trợ giúp các pháp và tự mình diệt trừ phiền não",
+      "phanSu": "Tránh xa các Ác nghiệp (sát sanh, trộm cắp, tà hạnh)",
+      "thanhTuu": "Đoạn trừ Tà nghiệp",
+      "nhanGan": "Có Tín (niềm tin), Niệm (sự ghi nhớ), Tàm, Quý và Thiểu dục"
     },
     {
       "id": "CS_SAMMAAJIVA",
@@ -862,7 +1066,11 @@
           "explanation": "Chánh Mạng chỉ có trong tâm Thiện Dục giới Tịnh hảo và Tâm Siêu thế.",
           "explanationPali": "Sammā-ājīva kāmāvacarakusala lokuttara sahuppajjati."
         }
-      ]
+      ],
+      "trangThai": "Trong sạch, từ bỏ, không phạm vào các ác hạnh (Thân ác và Khẩu ác)",
+      "phanSu": "Duy trì sự sống chân chánh, ngăn chặn ác hạnh",
+      "thanhTuu": "Đoạn trừ Tà mạng, không hành các Ác hạnh",
+      "nhanGan": "Có Tín (niềm tin), Niệm (sự ghi nhớ), Tàm, Quý và Thiểu dục"
     },
     {
       "id": "CS_KARUNA",
@@ -882,11 +1090,17 @@
         {
           "ruleId": "CR_KARUNA_MUDITA_COEXIST",
           "type": "pair",
-          "conflictingIds": ["CS_MUDITA"],
+          "conflictingIds": [
+            "CS_MUDITA"
+          ],
           "explanation": "Bi và Tùy Hỷ không thể đồng sanh cùng lúc trong một tâm. Mỗi lần chỉ phát sanh một trong hai.",
           "explanationPali": "Karuṇā muditā ekacitte na sahuppajjanti."
         }
-      ]
+      ],
+      "trangThai": "Mong muốn chúng sanh thoát khổ — cách muốn bài trừ đau khổ của chúng sanh",
+      "phanSu": "Không chịu đựng nổi khi thấy chúng sanh khổ — không thể làm ngơ trước sự đau khổ của chúng sanh khác",
+      "thanhTuu": "Có lòng nhân từ hoặc không ép uổng chúng sanh khác",
+      "nhanGan": "Gặp những chúng sanh đau khổ — thấy được nhu cầu cần thiết của chúng sanh đang bị khổ vây chặt"
     },
     {
       "id": "CS_MUDITA",
@@ -906,11 +1120,17 @@
         {
           "ruleId": "CR_MUDITA_KARUNA_COEXIST",
           "type": "pair",
-          "conflictingIds": ["CS_KARUNA"],
+          "conflictingIds": [
+            "CS_KARUNA"
+          ],
           "explanation": "Tùy Hỷ và Bi không thể đồng sanh cùng lúc.",
           "explanationPali": "Muditā karuṇā ekacitte na sahuppajjanti."
         }
-      ]
+      ],
+      "trangThai": "Vui theo quả phúc của chúng sanh — trạng thái hoan hỷ với hạnh phúc của người khác",
+      "phanSu": "Không ganh tỵ với chúng sanh khác",
+      "thanhTuu": "Hài lòng với sự tiến hoá, sự hạnh phúc của chúng sanh khác — phá huỷ sự chán ghét",
+      "nhanGan": "Nhận thấy chúng sanh tạo và hưởng hạnh phúc — thấy biết có chúng sanh thành đạt"
     },
     {
       "id": "CS_PANNA",
@@ -926,7 +1146,11 @@
       "descriptionPali": "Paññā: trí tuệ, thấy biết thực tính của các pháp.",
       "symbol": "▲",
       "colorCode": 3018858,
-      "conflictRules": []
+      "conflictRules": [],
+      "trangThai": "Biết rõ, thấu tột pháp thực tính — trí tuệ thấy rõ Tam Tướng (Vô Thường, Khổ, Vô Ngã)",
+      "phanSu": "Phá tan, bài trừ sự tối tăm, vô minh",
+      "thanhTuu": "Không mê muội, không nhiễm đắm",
+      "nhanGan": "Tác ý khéo; Tịnh (tâm yên tịnh); tục sinh Tam Nhân (Vô Tham, Vô Sân, Vô Si)"
     }
   ]
 }
