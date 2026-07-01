@@ -49,6 +49,10 @@ _$CetasikaModelImpl _$$CetasikaModelImplFromJson(Map<String, dynamic> json) =>
       audioPronunciation: json['audioPronunciation'] as String?,
       descriptionVi: json['descriptionVi'] as String,
       descriptionPali: json['descriptionPali'] as String?,
+      trangThai: json['trangThai'] as String?,
+      phanSu: json['phanSu'] as String?,
+      thanhTuu: json['thanhTuu'] as String?,
+      nhanGan: json['nhanGan'] as String?,
       conflictRules: (json['conflictRules'] as List<dynamic>?)
               ?.map((e) => ConflictRule.fromJson(e as Map<String, dynamic>))
               .toList() ??
@@ -71,6 +75,10 @@ Map<String, dynamic> _$$CetasikaModelImplToJson(_$CetasikaModelImpl instance) =>
       'audioPronunciation': instance.audioPronunciation,
       'descriptionVi': instance.descriptionVi,
       'descriptionPali': instance.descriptionPali,
+      'trangThai': instance.trangThai,
+      'phanSu': instance.phanSu,
+      'thanhTuu': instance.thanhTuu,
+      'nhanGan': instance.nhanGan,
       'conflictRules': instance.conflictRules,
       'symbol': instance.symbol,
       'colorCode': instance.colorCode,
