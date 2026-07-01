@@ -82,12 +82,24 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   bool _showHighContrastMode = false;
   bool _forceLandscape = false;
   bool _isSyncingScroll = false;
+  bool _showScrollToTop = false;
 
   @override
   void initState() {
     super.initState();
     _verticalController1.addListener(_syncScroll1);
     _verticalController2.addListener(_syncScroll2);
+    _verticalController1.addListener(_updateScrollToTopVisibility);
+  }
+
+  void _updateScrollToTopVisibility() {
+    if (!mounted) return;
+    final shouldShow = _verticalController1.offset > 200;
+    if (_showScrollToTop != shouldShow) {
+      setState(() {
+        _showScrollToTop = shouldShow;
+      });
+    }
   }
 
   void _syncScroll1() {
@@ -139,6 +151,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   @override
   void dispose() {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    _verticalController1.removeListener(_updateScrollToTopVisibility);
     _verticalController1.removeListener(_syncScroll1);
     _verticalController2.removeListener(_syncScroll2);
     _horizontalController.dispose();
@@ -183,6 +196,24 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           if (!isLandscape) _buildLegend(), // Ẩn legend khi landscape
           Expanded(child: _buildMatrix(context, cittas, cetasikas)),
         ],
+      ),
+      floatingActionButton: AnimatedOpacity(
+        opacity: _showScrollToTop ? 1.0 : 0.0,
+        duration: const Duration(milliseconds: 300),
+        child: IgnorePointer(
+          ignoring: !_showScrollToTop,
+          child: FloatingActionButton(
+            mini: true,
+            onPressed: () {
+              _verticalController1.animateTo(
+                0,
+                duration: const Duration(milliseconds: 500),
+                curve: Curves.easeInOut,
+              );
+            },
+            child: const Icon(Icons.arrow_upward),
+          ),
+        ),
       ),
     );
   }
@@ -369,7 +400,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
         label: Text('$symbol $label'),
         selected: sel,
         onSelected: (_) => setState(() => _filterBhumi = bhumi),
-        selectedColor: c.withOpacity(0.3),
+        selectedColor: c.withValues(alpha: 0.3),
         checkmarkColor: c,
         side: BorderSide(color: sel ? c : Colors.grey.shade300),
       ),
