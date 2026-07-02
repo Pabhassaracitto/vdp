@@ -1,0 +1,213 @@
+{
+  "kammas": [
+    {
+      "id": "KM_T_01",
+      "namePali": "Diṭṭhadhammavedanīya-kamma",
+      "nameVietnamese": "Hiện Báo Nghiệp",
+      "nameShort": "Hiện Báo",
+      "byTime": "ditthadhammavedaniya",
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 1,
+      "descriptionVi": "Nghiệp cho quả ngay trong kiếp sống hiện tại. Nếu không trổ kịp thì trở thành Vô Hiệu Nghiệp (Ahosi).",
+      "examples": [
+        "Bố thí cúng dường với tâm trong sạch và được hưởng lợi lộc ngay trong đời này",
+        "5 Vô Gián Nghiệp (giết cha, giết mẹ, giết A-la-hán, làm Phật chảy máu, phá hoà hợp Tăng) cho quả địa ngục ngay kiếp kế"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Hiện Báo Nghiệp chỉ có 1 cơ hội trổ quả trong cùng kiếp sống. Không trổ được → thành Ahosi."
+    },
+    {
+      "id": "KM_T_02",
+      "namePali": "Upapajjavedanīya-kamma",
+      "nameVietnamese": "Hậu Báo Nghiệp",
+      "nameShort": "Hậu Báo",
+      "byTime": "upapajjavedaniya",
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 2,
+      "descriptionVi": "Nghiệp cho quả trong kiếp tái sanh kế tiếp. Nếu kiếp kế không trổ thì thành Vô Hiệu Nghiệp.",
+      "examples": [
+        "Người tu thiền trong kiếp này tái sanh làm Phạm Thiên trong kiếp sau"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Chỉ có 1 lần cơ hội (kiếp tiếp theo). Không trổ được → Ahosi."
+    },
+    {
+      "id": "KM_T_03",
+      "namePali": "Aparāpariyavedanīya-kamma",
+      "nameVietnamese": "Hậu Hậu Báo Nghiệp",
+      "nameShort": "Hậu Hậu Báo",
+      "byTime": "aparapariyavedaniya",
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 3,
+      "descriptionVi": "Nghiệp cho quả từ kiếp thứ 3 trở đi, không có thời hạn — tồn tại cho đến khi chứng Niết Bàn. Loại nghiệp phổ biến nhất.",
+      "examples": [
+        "Nghiệp bố thí xây chùa trong kiếp trước cho quả phú quý nhiều kiếp sau"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Không hết hạn — lý do dòng nghiệp luân hồi rất phức tạp."
+    },
+    {
+      "id": "KM_T_04",
+      "namePali": "Ahosi-kamma",
+      "nameVietnamese": "Vô Hiệu Nghiệp",
+      "nameShort": "Vô Hiệu",
+      "byTime": "ahosi",
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 4,
+      "descriptionVi": "Nghiệp đã hết cơ hội cho quả — Hiện Báo không trổ trong kiếp này, Hậu Báo không trổ trong kiếp kế. Khi chứng A-la-hán tất cả nghiệp tương lai đều thành Vô Hiệu.",
+      "examples": [
+        "Bậc A-la-hán: tất cả nghiệp chưa trổ đều thành Ahosi sau Niết Bàn cuối"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Ahosi = 'đã qua rồi' — không phải bị huỷ mà là hết thời cơ trổ quả."
+    },
+    {
+      "id": "KM_P_01",
+      "namePali": "Janaka-kamma",
+      "nameVietnamese": "Sanh Nghiệp",
+      "nameShort": "Sanh Nghiệp",
+      "byTime": null,
+      "byFunction": "janaka",
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 1,
+      "descriptionVi": "Nghiệp tạo ra quả tục sinh — quyết định cõi tái sanh và duy trì đời sống (Tục Sinh + Hộ Kiếp + Tử).",
+      "examples": [
+        "Nghiệp thiện dục giới → tục sinh làm người hay chư thiên",
+        "Nghiệp đắc thiền → tục sinh làm Phạm Thiên"
+      ],
+      "relatedCittaIds": ["CI_055", "CI_059", "CI_001", "CI_009"],
+      "doctrinalNote": "Janaka-kamma quyết định toàn bộ nền tảng đời sống."
+    },
+    {
+      "id": "KM_P_02",
+      "namePali": "Upatthambhaka-kamma",
+      "nameVietnamese": "Bổ Trợ Nghiệp",
+      "nameShort": "Bổ Trợ",
+      "byTime": null,
+      "byFunction": "upatthambhaka",
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 2,
+      "descriptionVi": "Nghiệp hỗ trợ, nuôi dưỡng cho nghiệp Sanh (Janaka) tiếp tục trổ quả — không tự tạo quả mới mà gia tăng, kéo dài quả đang có.",
+      "examples": [
+        "Người tu thiện mỗi ngày → Bổ Trợ Nghiệp tăng thêm tuổi thọ, sức khoẻ"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Không phải người gieo hạt mà là người tưới nước cho hạt đã gieo."
+    },
+    {
+      "id": "KM_P_03",
+      "namePali": "Upapīḷaka-kamma",
+      "nameVietnamese": "Cản Trở Nghiệp",
+      "nameShort": "Cản Trở",
+      "byTime": null,
+      "byFunction": "upapilaka",
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 3,
+      "descriptionVi": "Nghiệp ngăn cản, làm giảm sức mạnh của nghiệp khác đang trổ quả.",
+      "examples": [
+        "Người giàu nhưng hay bệnh — Cản Trở Nghiệp làm giảm hưởng thụ"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Giải thích tại sao người làm thiện vẫn gặp khó khăn."
+    },
+    {
+      "id": "KM_P_04",
+      "namePali": "Upaghātaka-kamma",
+      "nameVietnamese": "Đoạn Đứt Nghiệp",
+      "nameShort": "Đoạn Đứt",
+      "byTime": null,
+      "byFunction": "upaghataka",
+      "byPriority": null,
+      "byResult": null,
+      "orderIndex": 4,
+      "descriptionVi": "Nghiệp cực mạnh phá huỷ hoàn toàn nghiệp đang trổ quả — cắt đứt luồng quả và thay thế quả mới.",
+      "examples": [
+        "Người giàu sang đột ngột mất toàn bộ tài sản — Đoạn Đứt Nghiệp cắt Sanh Nghiệp cũ"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Loại nghiệp mạnh nhất trong nhóm Phận Sự. Giải thích sự thay đổi đột ngột trong cuộc đời."
+    },
+    {
+      "id": "KM_U_01",
+      "namePali": "Garuka-kamma",
+      "nameVietnamese": "Trọng Nghiệp",
+      "nameShort": "Trọng Nghiệp",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": "garuka",
+      "byResult": null,
+      "orderIndex": 1,
+      "descriptionVi": "Nghiệp cực nặng — ưu tiên số 1 quyết định tục sinh. Gồm: Thiện Trọng Nghiệp (đắc 5 thiền chứng) và Bất Thiện Trọng Nghiệp (5 Vô Gián Nghiệp).",
+      "examples": [
+        "THIỆN: Chứng đắc Nhị thiền → tục sinh cõi Phạm Thiên Nhị Thiền",
+        "BẤT THIỆN: Phạm tội giết mẹ → địa ngục Avīci"
+      ],
+      "relatedCittaIds": ["CI_080", "CI_081", "CI_082", "CI_083", "CI_084"],
+      "doctrinalNote": "Garuka-kamma luôn cho quả tục sinh — không bao giờ Ahosi."
+    },
+    {
+      "id": "KM_U_02",
+      "namePali": "Āsanna-kamma",
+      "nameVietnamese": "Cận Tử Nghiệp",
+      "nameShort": "Cận Tử",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": "asanna",
+      "byResult": null,
+      "orderIndex": 2,
+      "descriptionVi": "Nghiệp hoặc cảnh hiện ra lúc lâm chung — cho quả tục sinh nếu không có Trọng Nghiệp.",
+      "examples": [
+        "Lúc hấp hối nhớ lại thiện nghiệp bố thí → tục sinh thiện",
+        "Lúc hấp hối thấy cảnh địa ngục → tục sinh khổ"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Giải thích tầm quan trọng của việc chuẩn bị tâm lúc lâm chung."
+    },
+    {
+      "id": "KM_U_03",
+      "namePali": "Āciṇṇa-kamma",
+      "nameVietnamese": "Thường Nghiệp",
+      "nameShort": "Thường Nghiệp",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": "acinna",
+      "byResult": null,
+      "orderIndex": 3,
+      "descriptionVi": "Nghiệp làm đi làm lại nhiều lần, trở thành thói quen, tích luỹ sức mạnh qua sự lặp lại.",
+      "examples": [
+        "Người suốt đời làm nghề sát sinh → Thường Nghiệp bất thiện mạnh",
+        "Người hằng ngày tụng kinh, thiền định → Thường Nghiệp thiện mạnh"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Lý do Đức Phật dạy phải thường xuyên làm thiện, tu tập."
+    },
+    {
+      "id": "KM_U_04",
+      "namePali": "Kaṭattā-kamma",
+      "nameVietnamese": "Dồn Tích Nghiệp",
+      "nameShort": "Dồn Tích",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": "katatta",
+      "byResult": null,
+      "orderIndex": 4,
+      "descriptionVi": "Tất cả nghiệp còn lại — không đủ mạnh thành Trọng, không kịp thành Cận Tử, không đủ quen thành Thường. Là 'kho nghiệp dự phòng'.",
+      "examples": [
+        "Những hành động thiện/ác bình thường, lẻ tẻ trong cuộc sống hằng ngày"
+      ],
+      "relatedCittaIds": [],
+      "doctrinalNote": "Loại nghiệp yếu nhất nhưng chiếm phần lớn tổng lượng nghiệp của chúng ta."
+    }
+  ]
+}

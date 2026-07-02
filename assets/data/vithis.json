@@ -1,0 +1,408 @@
+{
+  "vithis": [
+    {
+      "id": "VT_NGU_MON_RATLON",
+      "namePali": "Atimahanta-ārammaṇa Pañcadvāra-vīthi",
+      "nameVietnamese": "Lộ Ngũ Môn Cảnh Rất Lớn",
+      "nameShort": "Lộ Cảnh Rất Lớn",
+      "dvara": "panca",
+      "vithiType": "atimahanta",
+      "descriptionVi": "Lộ đầy đủ nhất — phát sinh khi cảnh ngũ tác động rất mạnh. Có đủ 17 sát-na: 2 hộ kiếp rúng động + 1 dứt dòng + 5 tâm vô nhân + 7 đổng tốc + 2 thập di.",
+      "totalSteps": 17,
+      "arisingCondition": "Cảnh ngũ (sắc, thinh, khí, vị, xúc) tác động rất mạnh vào căn tương ứng",
+      "significance": "Lộ hoàn chỉnh nhất — 7 Javana tạo đủ nghiệp; Tadārammaṇa hưởng cảnh dư.",
+      "doctrinalNote": "Atimahanta = cảnh đủ lớn để có đủ Javana × 7 + Tadārammaṇa × 2.",
+      "orderIndex": 1,
+      "steps": [
+        {
+          "stepNumber": 1,
+          "role": "bhavanga_sota",
+          "namePali": "Atīta-bhavaṅga",
+          "nameVietnamese": "Hộ Kiếp Quá Khứ",
+          "description": "Dòng hộ kiếp đang chạy bình thường trước khi cảnh tác động.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": -1,
+          "isOptional": false,
+          "doctrinalNote": "Cùng loại tâm với Tục Sinh và Tử của người đó."
+        },
+        {
+          "stepNumber": 2,
+          "role": "bhavanga_calana",
+          "namePali": "Bhavaṅga-calana",
+          "nameVietnamese": "Hộ Kiếp Rúng Động",
+          "description": "Cảnh tác động vào căn, làm hộ kiếp rúng động lần đầu.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 3,
+          "role": "bhavangupaccheda",
+          "namePali": "Bhavaṅgupaccheda",
+          "nameVietnamese": "Hộ Kiếp Dứt Dòng",
+          "description": "Dòng hộ kiếp bị cắt đứt hoàn toàn — lộ tâm bắt đầu.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "Sau sát-na này, Khán Ngũ Môn sanh lên."
+        },
+        {
+          "stepNumber": 4,
+          "role": "panca_dvaravajjana",
+          "namePali": "Pañcadvārāvajjana",
+          "nameVietnamese": "Khán Ngũ Môn",
+          "description": "Mở cửa ngũ giác quan, hướng về cảnh. Xác định cảnh đang ở cửa nào.",
+          "allowedCittaIds": ["CI_028"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "CI_028 — Thọ Xả, 11 Tâm sở. Không tạo nghiệp."
+        },
+        {
+          "stepNumber": 5,
+          "role": "dvipanca_vinnana",
+          "namePali": "Dvipañca-viññāṇa",
+          "nameVietnamese": "Ngũ Song Thức",
+          "description": "Nhận biết cảnh qua giác quan tương ứng. Chỉ có 7 Tâm sở Biến hành.",
+          "allowedCittaIds": ["CI_013", "CI_014", "CI_015", "CI_016", "CI_017", "CI_020", "CI_021", "CI_022", "CI_023", "CI_024"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "BT (CI_013–017) hoặc Thiện (CI_020–024) tuỳ nghiệp tục sinh."
+        },
+        {
+          "stepNumber": 6,
+          "role": "sampati_cchana",
+          "namePali": "Sampaṭicchana",
+          "nameVietnamese": "Tiếp Thâu",
+          "description": "Tiếp nhận cảnh từ Ngũ Song Thức, chuyển vào dòng tâm thức nội tâm.",
+          "allowedCittaIds": ["CI_018", "CI_025"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "CI_018 = BT Thọ Xả; CI_025 = Thiện Thọ Xả. 10 Tâm sở."
+        },
+        {
+          "stepNumber": 7,
+          "role": "santi_rana",
+          "namePali": "Santīraṇa",
+          "nameVietnamese": "Quan Sát",
+          "description": "Quan sát, xem xét cảnh — xác định tốt hay xấu, đáng ưa hay không.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "CI_027 (Thọ Hỷ) chỉ xuất hiện khi cảnh rất đẹp."
+        },
+        {
+          "stepNumber": 8,
+          "role": "vott_hapana",
+          "namePali": "Voṭṭhapana",
+          "nameVietnamese": "Xác Định",
+          "description": "Xác định cuối cùng cảnh tốt/xấu — mở đường cho 7 Đổng Tốc.",
+          "allowedCittaIds": ["CI_029"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "CI_029 (Khán Ý Môn) đóng vai Voṭṭhapana. 11 Tâm sở. Quyết định loại Javana tiếp theo."
+        },
+        {
+          "stepNumber": 9,
+          "role": "javana",
+          "namePali": "Javana (1–7)",
+          "nameVietnamese": "Đổng Tốc (7 sát-na)",
+          "description": "7 sát-na Đổng Tốc liên tiếp — tạo nghiệp thiện hoặc bất thiện. Sát-na 1: Hiện Báo; Sát-na 7: Hậu Báo; Sát-na 2–6: Hậu Hậu Báo.",
+          "allowedCittaIds": [
+            "CI_001","CI_002","CI_003","CI_004","CI_005","CI_006","CI_007","CI_008",
+            "CI_009","CI_010","CI_011","CI_012",
+            "CI_028","CI_029","CI_030",
+            "CI_055","CI_056","CI_057","CI_058","CI_059","CI_060","CI_061","CI_062",
+            "CI_063","CI_064","CI_065","CI_066","CI_067","CI_068","CI_069","CI_070",
+            "CI_071","CI_072","CI_073","CI_074","CI_075","CI_076","CI_077","CI_078"
+          ],
+          "repeatCount": 7,
+          "isOptional": false,
+          "doctrinalNote": "7 lần cùng 1 loại tâm. Là phần duy nhất tạo nghiệp trong lộ trình."
+        },
+        {
+          "stepNumber": 10,
+          "role": "tada_aramana",
+          "namePali": "Tadārammaṇa (1–2)",
+          "nameVietnamese": "Thập Di (2 sát-na)",
+          "description": "2 sát-na Thập Di hưởng cảnh dư sau Đổng Tốc. Chỉ có trong Lộ Cảnh Rất Lớn. Không tạo nghiệp mới.",
+          "allowedCittaIds": ["CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 2,
+          "isOptional": true,
+          "doctrinalNote": "Tadā = 'bấy giờ'; ārammaṇa = cảnh. Chỉ sanh khi cảnh đủ lớn."
+        },
+        {
+          "stepNumber": 11,
+          "role": "bhavanga_sota",
+          "namePali": "Post-vīthi Bhavaṅga",
+          "nameVietnamese": "Hộ Kiếp Sau Lộ",
+          "description": "Sau lộ tâm kết thúc, dòng hộ kiếp tiếp tục chạy bình thường.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": -1,
+          "isOptional": false,
+          "doctrinalNote": null
+        }
+      ]
+    },
+    {
+      "id": "VT_NGU_MON_LON",
+      "namePali": "Mahanta-ārammaṇa Pañcadvāra-vīthi",
+      "nameVietnamese": "Lộ Ngũ Môn Cảnh Lớn",
+      "nameShort": "Lộ Cảnh Lớn",
+      "dvara": "panca",
+      "vithiType": "mahanta",
+      "descriptionVi": "Lộ Ngũ Môn có đủ 7 Đổng Tốc nhưng KHÔNG có Thập Di — cảnh không đủ lớn để Tadārammaṇa sanh.",
+      "totalSteps": 10,
+      "arisingCondition": "Cảnh ngũ đủ mạnh để có 7 Javana nhưng không đủ để tạo Tadārammaṇa",
+      "significance": "Lộ bình thường nhất — nghiệp được tạo đầy đủ qua 7 Javana.",
+      "doctrinalNote": "Khác VT_NGU_MON_RATLON duy nhất ở chỗ vắng 2 sát-na Tadārammaṇa.",
+      "orderIndex": 2,
+      "steps": [
+        {
+          "stepNumber": 1,
+          "role": "bhavanga_calana",
+          "namePali": "Bhavaṅga-calana",
+          "nameVietnamese": "Hộ Kiếp Rúng Động",
+          "description": "Hộ kiếp rúng động khi cảnh tác động.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 2,
+          "role": "bhavangupaccheda",
+          "namePali": "Bhavaṅgupaccheda",
+          "nameVietnamese": "Hộ Kiếp Dứt Dòng",
+          "description": "Dòng hộ kiếp bị cắt đứt — lộ tâm bắt đầu.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 3,
+          "role": "panca_dvaravajjana",
+          "namePali": "Pañcadvārāvajjana",
+          "nameVietnamese": "Khán Ngũ Môn",
+          "description": "Mở cửa ngũ môn.",
+          "allowedCittaIds": ["CI_028"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 4,
+          "role": "dvipanca_vinnana",
+          "namePali": "Dvipañca-viññāṇa",
+          "nameVietnamese": "Ngũ Song Thức",
+          "description": "Nhận biết cảnh qua giác quan.",
+          "allowedCittaIds": ["CI_013","CI_014","CI_015","CI_016","CI_017","CI_020","CI_021","CI_022","CI_023","CI_024"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 5,
+          "role": "sampati_cchana",
+          "namePali": "Sampaṭicchana",
+          "nameVietnamese": "Tiếp Thâu",
+          "description": "Tiếp nhận cảnh.",
+          "allowedCittaIds": ["CI_018", "CI_025"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 6,
+          "role": "santi_rana",
+          "namePali": "Santīraṇa",
+          "nameVietnamese": "Quan Sát",
+          "description": "Quan sát cảnh.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 7,
+          "role": "vott_hapana",
+          "namePali": "Voṭṭhapana",
+          "nameVietnamese": "Xác Định",
+          "description": "Xác định cảnh, mở đường cho Đổng Tốc.",
+          "allowedCittaIds": ["CI_029"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 8,
+          "role": "javana",
+          "namePali": "Javana (1–7)",
+          "nameVietnamese": "Đổng Tốc (7 sát-na)",
+          "description": "7 sát-na Đổng Tốc tạo nghiệp. Sau đó KHÔNG có Thập Di.",
+          "allowedCittaIds": [
+            "CI_001","CI_002","CI_003","CI_004","CI_005","CI_006","CI_007","CI_008",
+            "CI_009","CI_010","CI_011","CI_012",
+            "CI_028","CI_029","CI_030",
+            "CI_055","CI_056","CI_057","CI_058","CI_059","CI_060","CI_061","CI_062",
+            "CI_063","CI_064","CI_065","CI_066","CI_067","CI_068","CI_069","CI_070",
+            "CI_071","CI_072","CI_073","CI_074","CI_075","CI_076","CI_077","CI_078"
+          ],
+          "repeatCount": 7,
+          "isOptional": false,
+          "doctrinalNote": "Sau 7 Javana tâm rơi thẳng vào hộ kiếp."
+        },
+        {
+          "stepNumber": 9,
+          "role": "bhavanga_sota",
+          "namePali": "Post-vīthi Bhavaṅga",
+          "nameVietnamese": "Hộ Kiếp Sau Lộ",
+          "description": "Hộ kiếp tiếp tục sau lộ.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": -1,
+          "isOptional": false,
+          "doctrinalNote": null
+        }
+      ]
+    },
+    {
+      "id": "VT_Y_MON",
+      "namePali": "Manodvāra-vīthi",
+      "nameVietnamese": "Lộ Ý Môn",
+      "nameShort": "Lộ Ý Môn",
+      "dvara": "mano",
+      "vithiType": "mano_vithi",
+      "descriptionVi": "Lộ Ý Môn phát sinh khi tâm tiếp xúc với cảnh Pháp qua ý môn — suy nghĩ, nhớ lại, tưởng tượng. Ngay sau Khán Ý Môn là 7 Đổng Tốc.",
+      "totalSteps": 7,
+      "arisingCondition": "Cảnh Pháp (dhammārammaṇa) hiện ra trong ý môn — suy nghĩ, ký ức, tưởng tượng",
+      "significance": "Giải thích toàn bộ hoạt động tư duy nội tâm. Tạo Ý Nghiệp, và là nguồn gốc của Thân/Khẩu Nghiệp.",
+      "doctrinalNote": "Lộ Ý Môn bắt đầu từ Khán Ý Môn (CI_029), không qua Khán Ngũ Môn.",
+      "orderIndex": 3,
+      "steps": [
+        {
+          "stepNumber": 1,
+          "role": "bhavanga_calana",
+          "namePali": "Bhavaṅga-calana",
+          "nameVietnamese": "Hộ Kiếp Rúng Động",
+          "description": "Hộ kiếp rúng động khi cảnh pháp tác động.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 2,
+          "role": "bhavangupaccheda",
+          "namePali": "Bhavaṅgupaccheda",
+          "nameVietnamese": "Hộ Kiếp Dứt Dòng",
+          "description": "Dứt hộ kiếp — lộ ý môn bắt đầu.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 3,
+          "role": "mano_dvaravajjana",
+          "namePali": "Manodvārāvajjana",
+          "nameVietnamese": "Khán Ý Môn",
+          "description": "Mở cửa ý môn, hướng tâm đến cảnh Pháp, đồng thời xác định cảnh (đóng vai Voṭṭhapana trong lộ ý môn).",
+          "allowedCittaIds": ["CI_029"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "CI_029 đóng vai Khán Ý Môn kiêm Voṭṭhapana. 11 Tâm sở."
+        },
+        {
+          "stepNumber": 4,
+          "role": "javana",
+          "namePali": "Javana (1–7)",
+          "nameVietnamese": "Đổng Tốc (7 sát-na)",
+          "description": "7 sát-na Đổng Tốc — tạo Ý Nghiệp. Là tất cả suy nghĩ, lời nói, hành động có chủ ý.",
+          "allowedCittaIds": [
+            "CI_001","CI_002","CI_003","CI_004","CI_005","CI_006","CI_007","CI_008",
+            "CI_009","CI_010","CI_011","CI_012",
+            "CI_028","CI_029","CI_030",
+            "CI_055","CI_056","CI_057","CI_058","CI_059","CI_060","CI_061","CI_062",
+            "CI_063","CI_064","CI_065","CI_066","CI_067","CI_068","CI_069","CI_070",
+            "CI_071","CI_072","CI_073","CI_074","CI_075","CI_076","CI_077","CI_078"
+          ],
+          "repeatCount": 7,
+          "isOptional": false,
+          "doctrinalNote": "Tạo Ý Nghiệp trực tiếp. Khẩu và Thân Nghiệp cũng bắt đầu từ Ý Môn."
+        },
+        {
+          "stepNumber": 5,
+          "role": "tada_aramana",
+          "namePali": "Tadārammaṇa (tuỳ chọn)",
+          "nameVietnamese": "Thập Di (tuỳ chọn)",
+          "description": "Thập Di trong Lộ Ý Môn — tuỳ vào sức mạnh của cảnh Pháp.",
+          "allowedCittaIds": ["CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 2,
+          "isOptional": true,
+          "doctrinalNote": null
+        },
+        {
+          "stepNumber": 6,
+          "role": "bhavanga_sota",
+          "namePali": "Post-vīthi Bhavaṅga",
+          "nameVietnamese": "Hộ Kiếp Sau Lộ",
+          "description": "Hộ kiếp tiếp tục.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": -1,
+          "isOptional": false,
+          "doctrinalNote": null
+        }
+      ]
+    },
+    {
+      "id": "VT_VITHIMUTTA",
+      "namePali": "Vīthimutta-citta",
+      "nameVietnamese": "Lộ Ngoài (Tục Sinh / Hộ Kiếp / Tử)",
+      "nameShort": "Ngoài Lộ",
+      "dvara": "vithimutta",
+      "vithiType": "vithimutta",
+      "descriptionVi": "Vīthimutta là các Tâm hoạt động ngoài lộ trình tâm — không qua cửa nào. Gồm 3 phận sự: Tục Sinh (Paṭisandhi), Hộ Kiếp (Bhavaṅga), Tử (Cuti). Cả 3 dùng cùng 1 loại tâm.",
+      "totalSteps": 3,
+      "arisingCondition": "Tục Sinh: khi kiếp trước chấm dứt. Hộ Kiếp: giữa các lộ. Tử: khi Sắc Mạng Quyền diệt.",
+      "significance": "Giải thích cơ chế tái sanh và liên kết giữa các kiếp sống.",
+      "doctrinalNote": "Tâm Vīthimutta không tạo nghiệp mới — là Tâm Quả Vô Ký.",
+      "orderIndex": 4,
+      "steps": [
+        {
+          "stepNumber": 1,
+          "role": "patisandhi",
+          "namePali": "Paṭisandhi-citta",
+          "nameVietnamese": "Tục Sinh Tâm",
+          "description": "Tâm đầu tiên của kiếp sống mới — nối tiếp từ Tử Tâm kiếp trước. Mang theo hạt giống nghiệp.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "CI_019/CI_026 = người nhị nhân; CI_027 = người đặc biệt hỷ lạc; CI_063–CI_070 = người tam nhân hoặc chư thiên."
+        },
+        {
+          "stepNumber": 2,
+          "role": "bhavanga_sota",
+          "namePali": "Bhavaṅga-citta",
+          "nameVietnamese": "Hộ Kiếp Tâm",
+          "description": "Dòng tâm thức duy trì kiếp sống giữa các lộ. Sanh diệt liên tiếp vô số lần. Là nền tảng của mọi hoạt động tâm thức.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": -1,
+          "isOptional": false,
+          "doctrinalNote": "Bhavaṅga = phần duy trì kiếp sống. Diễn ra trong giấc ngủ sâu, giữa các lộ."
+        },
+        {
+          "stepNumber": 3,
+          "role": "cuti",
+          "namePali": "Cuti-citta",
+          "nameVietnamese": "Tử Tâm",
+          "description": "Sát-na tâm cuối cùng — Sắc Mạng Quyền diệt, Tử Tâm diệt → kiếp kết thúc. Ngay sau, Tục Sinh Tâm kiếp mới sanh lên.",
+          "allowedCittaIds": ["CI_019", "CI_026", "CI_027", "CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+          "repeatCount": 1,
+          "isOptional": false,
+          "doctrinalNote": "Cuti = di chuyển, ra đi. Cảnh của Tử Tâm = Cận Tử cảnh (Āsanna)."
+        }
+      ]
+    }
+  ]
+}

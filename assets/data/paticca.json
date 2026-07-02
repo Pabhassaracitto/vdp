@@ -1,0 +1,371 @@
+{
+  "paticcas": [
+    {
+      "id": "PD_01",
+      "namePali": "Avijjā",
+      "nameVietnamese": "Vô Minh",
+      "nameShort": "Vô Minh",
+      "order": 1,
+      "vatta": "kilesa",
+      "kiep": "past",
+      "causeId": null,
+      "effectId": "PD_02",
+      "descriptionVi": "Vô Minh là sự không biết về Tứ Diệu Đế, Tam Tướng, nghiệp quả và Thập Nhị Nhân Duyên. Là căn nguyên đầu tiên của vòng luân hồi. Không có Vô Minh thì Hành không sanh, vòng nhân duyên không thành.",
+      "trangThai": "Không hiểu biết — mờ ám đối với thực tính pháp (Tứ Đế, Tam Tướng)",
+      "phanSu": "Che ngăn sự sáng suốt — làm điều kiện cho Hành sanh khởi",
+      "thanhTuu": "Có sự mê mờ, tối tăm — tiếp tục tạo Hành (nghiệp) trong vô thức",
+      "nhanGan": "Không khéo tác ý (Ayoniso-manasikāra); không gặp bậc Hiền trí, không nghe Chánh Pháp",
+      "links": [
+        {
+          "causeId": "PD_01",
+          "effectId": "PD_02",
+          "relationType": "avijja_sankhara",
+          "explanation": "Vô Minh duyên Hành: vì không biết thực tướng nên tạo các hành động nghiệp — thiện, bất thiện, vô ký.",
+          "explanationPali": "Avijjāpaccayā saṅkhārā"
+        }
+      ],
+      "relatedCittaIds": ["CI_011", "CI_012"],
+      "relatedCetasikaIds": ["CS_MOHA"],
+      "examples": [
+        "Không biết thân này là Vô Thường → chấp thân làm Ngã → tạo nghiệp để bảo vệ ngã"
+      ],
+      "doctrinalNote": "Avijjā không có điểm khởi đầu (anamatagga). Diệt Vô Minh = chứng Tứ Đạo."
+    },
+    {
+      "id": "PD_02",
+      "namePali": "Saṅkhārā",
+      "nameVietnamese": "Hành",
+      "nameShort": "Hành",
+      "order": 2,
+      "vatta": "kamma",
+      "kiep": "past",
+      "causeId": "PD_01",
+      "effectId": "PD_03",
+      "descriptionVi": "Hành là những hành động tạo nghiệp — Tư (Cetanā) trong 3 cửa Thân, Khẩu, Ý. Có 3 loại: Phúc Hành (thiện), Phi Phúc Hành (bất thiện), Bất Động Hành (thiền đáo đại).",
+      "trangThai": "Tác động, điều hành — sự cố ý tạo tác trong thân, khẩu, ý",
+      "phanSu": "Tạo nghiệp — tích luỹ nghiệp lực sẽ cho quả tục sinh kiếp sau",
+      "thanhTuu": "Nghiệp được tích luỹ — sẽ kéo Thức vào tái sanh",
+      "nhanGan": "Vô Minh làm điều kiện (không có Vô Minh thì Hành là siêu thế — không tạo nghiệp mới)",
+      "links": [
+        {
+          "causeId": "PD_02",
+          "effectId": "PD_03",
+          "relationType": "sankhara_vinnana",
+          "explanation": "Hành duyên Thức: nghiệp đã tích luỹ kéo Thức tục sinh vào cảnh giới tương ứng.",
+          "explanationPali": "Saṅkhārapaccayā viññāṇaṃ"
+        }
+      ],
+      "relatedCittaIds": ["CI_001", "CI_002", "CI_009", "CI_010", "CI_055", "CI_056"],
+      "relatedCetasikaIds": ["CS_CETANA"],
+      "examples": [
+        "Bố thí với tâm thiện → Phúc Hành → Thức tục sinh vào cõi lành",
+        "Đắc thiền → Bất Động Hành → Thức tục sinh làm Phạm Thiên"
+      ],
+      "doctrinalNote": "Saṅkhāra trong Nhân Duyên = Tư Tâm sở (Cetanā) tạo nghiệp."
+    },
+    {
+      "id": "PD_03",
+      "namePali": "Viññāṇa",
+      "nameVietnamese": "Thức",
+      "nameShort": "Thức",
+      "order": 3,
+      "vatta": "vipaka",
+      "kiep": "present",
+      "causeId": "PD_02",
+      "effectId": "PD_04",
+      "descriptionVi": "Thức ở đây chủ yếu chỉ Tục Sinh Thức (Paṭisandhi-citta) — Tâm đầu tiên nối tiếp từ kiếp trước vào kiếp này, mang theo hạt giống nghiệp.",
+      "trangThai": "Biết cảnh — Tâm tục sinh nương vào danh-sắc mới",
+      "phanSu": "Tái sanh — khởi đầu kiếp sống mới",
+      "thanhTuu": "Kiếp sống mới được hình thành — Danh Sắc có mặt",
+      "nhanGan": "Nghiệp (Hành) làm điều kiện; cần có Danh Sắc nương trú",
+      "links": [
+        {
+          "causeId": "PD_03",
+          "effectId": "PD_04",
+          "relationType": "vinnana_namarupa",
+          "explanation": "Thức duyên Danh Sắc: Tâm tục sinh làm điều kiện cho Danh Sắc phát triển từ lúc thụ thai.",
+          "explanationPali": "Viññāṇapaccayā nāmarūpaṃ"
+        }
+      ],
+      "relatedCittaIds": ["CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+      "relatedCetasikaIds": [],
+      "examples": [
+        "Giây phút thụ thai: Tục Sinh Thức xuất hiện → Danh Sắc phát sinh → kiếp mới bắt đầu"
+      ],
+      "doctrinalNote": "Thức và Danh Sắc nương nhau mà tồn tại — giống 2 bó lau nương vào nhau."
+    },
+    {
+      "id": "PD_04",
+      "namePali": "Nāmarūpa",
+      "nameVietnamese": "Danh Sắc",
+      "nameShort": "Danh Sắc",
+      "order": 4,
+      "vatta": "vipaka",
+      "kiep": "present",
+      "causeId": "PD_03",
+      "effectId": "PD_05",
+      "descriptionVi": "Danh Sắc là toàn bộ thân-tâm: Sắc (thân vật chất — 4 Đại và các sắc phái sinh) và Danh (Tâm + Tâm sở).",
+      "trangThai": "Tồn tại — thân tâm hiện hữu và phát triển",
+      "phanSu": "Làm nền tảng cho Thức hoạt động và điều kiện cho Lục Nhập phát triển",
+      "thanhTuu": "Lục Căn (6 giác quan) được hình thành đầy đủ",
+      "nhanGan": "Thức làm điều kiện; Sắc do 4 nguồn tạo ra",
+      "links": [
+        {
+          "causeId": "PD_04",
+          "effectId": "PD_05",
+          "relationType": "namarupa_salayatana",
+          "explanation": "Danh Sắc duyên Lục Nhập: khi Danh Sắc phát triển đủ, Lục Căn hình thành hoàn chỉnh.",
+          "explanationPali": "Nāmarūpapaccayā saḷāyatanaṃ"
+        }
+      ],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_PHASSA", "CS_VEDANA", "CS_SANNA", "CS_CETANA", "CS_MANASIKARA"],
+      "examples": [
+        "Thai nhi: Thức tục sinh → Danh Sắc phát triển dần từ noãn, phôi, thai đủ tháng"
+      ],
+      "doctrinalNote": null
+    },
+    {
+      "id": "PD_05",
+      "namePali": "Saḷāyatana",
+      "nameVietnamese": "Lục Nhập",
+      "nameShort": "Lục Nhập",
+      "order": 5,
+      "vatta": "vipaka",
+      "kiep": "present",
+      "causeId": "PD_04",
+      "effectId": "PD_06",
+      "descriptionVi": "Lục Nhập là 6 cơ quan tiếp nhận cảnh: Nhãn Xứ, Nhĩ Xứ, Tỷ Xứ, Thiệt Xứ, Thân Xứ, Ý Xứ — 6 cửa để Tâm tiếp nhận 6 cảnh.",
+      "trangThai": "Sẵn sàng tiếp nhận — 6 cửa để cảnh đi vào",
+      "phanSu": "Làm cửa (dvāra) cho Tâm tiếp xúc với cảnh bên ngoài",
+      "thanhTuu": "Xúc (Phassa) được hình thành — Tâm tiếp xúc được với cảnh",
+      "nhanGan": "Danh Sắc đầy đủ làm điều kiện",
+      "links": [
+        {
+          "causeId": "PD_05",
+          "effectId": "PD_06",
+          "relationType": "salayatana_phassa",
+          "explanation": "Lục Nhập duyên Xúc: Căn + Cảnh + Thức hội tụ → Xúc sanh khởi.",
+          "explanationPali": "Saḷāyatanapaccayā phasso"
+        }
+      ],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "examples": [
+        "Đứa trẻ sơ sinh: Lục Căn đủ → bắt đầu tiếp xúc với thế giới bên ngoài"
+      ],
+      "doctrinalNote": null
+    },
+    {
+      "id": "PD_06",
+      "namePali": "Phassa",
+      "nameVietnamese": "Xúc",
+      "nameShort": "Xúc",
+      "order": 6,
+      "vatta": "vipaka",
+      "kiep": "present",
+      "causeId": "PD_05",
+      "effectId": "PD_07",
+      "descriptionVi": "Xúc là sự gặp gỡ, tiếp xúc giữa 3 yếu tố: Căn + Cảnh + Thức. Là điều kiện để Thọ sanh lên.",
+      "trangThai": "Tiếp xúc — sự gặp gỡ của Căn, Cảnh và Thức",
+      "phanSu": "Gom thâu Căn, Cảnh, Thức lại — tạo điều kiện cho Thọ sanh khởi",
+      "thanhTuu": "Tâm, Tâm sở, Căn, Cảnh hội tụ lại",
+      "nhanGan": "Phải có đủ 3: Căn + Cảnh + Thức",
+      "links": [
+        {
+          "causeId": "PD_06",
+          "effectId": "PD_07",
+          "relationType": "phassa_vedana",
+          "explanation": "Xúc duyên Thọ: khi tiếp xúc diễn ra, Thọ nhất thiết sanh lên — vui, khổ, hay trung tính.",
+          "explanationPali": "Phassapaccayā vedanā"
+        }
+      ],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_PHASSA"],
+      "examples": [
+        "Mắt thấy cảnh đẹp: Nhãn Căn + Sắc Cảnh + Nhãn Thức → Nhãn Xúc → Thọ Hỷ"
+      ],
+      "doctrinalNote": "Phassa trong Nhân Duyên = Tâm Sở Xúc (CS_PHASSA)."
+    },
+    {
+      "id": "PD_07",
+      "namePali": "Vedanā",
+      "nameVietnamese": "Thọ",
+      "nameShort": "Thọ",
+      "order": 7,
+      "vatta": "vipaka",
+      "kiep": "present",
+      "causeId": "PD_06",
+      "effectId": "PD_08",
+      "descriptionVi": "Thọ là cảm giác phát sinh sau Xúc — Hỷ, Ưu, Lạc, Khổ, Xả. Đây là điểm quan trọng nhất trong thực hành thiền: dừng ở Thọ, không để Thọ dẫn đến Ái.",
+      "trangThai": "Cảm nhận — thọ hưởng cảnh tốt xấu trung tính sau Xúc",
+      "phanSu": "Thọ hưởng cảnh — tạo điều kiện cho Ái sanh khởi nếu phi như lý tác ý",
+      "thanhTuu": "Kinh nghiệm vui, khổ, trung tính được hình thành trong tâm",
+      "nhanGan": "Xúc làm điều kiện",
+      "links": [
+        {
+          "causeId": "PD_07",
+          "effectId": "PD_08",
+          "relationType": "vedana_tanha",
+          "explanation": "Thọ duyên Ái: nếu không có Chánh Niệm, Ái sẽ theo sau Thọ — dính mắc vào Hỷ/Lạc, chống đối Ưu/Khổ.",
+          "explanationPali": "Vedanāpaccayā taṇhā"
+        }
+      ],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_VEDANA"],
+      "examples": [
+        "Nghe lời khen (Xúc) → Thọ Hỷ → không Chánh Niệm → Ái dục (muốn nghe thêm)"
+      ],
+      "doctrinalNote": "Đây là điểm mấu chốt trong Tứ Niệm Xứ — dừng lại ở Thọ, không để Thọ dẫn đến Ái."
+    },
+    {
+      "id": "PD_08",
+      "namePali": "Taṇhā",
+      "nameVietnamese": "Ái",
+      "nameShort": "Ái",
+      "order": 8,
+      "vatta": "kilesa",
+      "kiep": "present",
+      "causeId": "PD_07",
+      "effectId": "PD_09",
+      "descriptionVi": "Ái là sự khát ái, tham muốn. Có 3 loại: Dục Ái (khát ái 5 dục), Hữu Ái (muốn tiếp tục tồn tại), Vô Hữu Ái (muốn không tồn tại). Ái là Tập Đế — căn nguyên của Khổ.",
+      "trangThai": "Khát ái — sự ham muốn dính mắc do Thọ tạo ra",
+      "phanSu": "Bám víu vào đối tượng — tạo điều kiện cho Thủ sanh khởi",
+      "thanhTuu": "Thủ (bám chặt) được hình thành; dòng luân hồi tiếp tục",
+      "nhanGan": "Thọ (đặc biệt Thọ Hỷ và Thọ Lạc) làm điều kiện",
+      "links": [
+        {
+          "causeId": "PD_08",
+          "effectId": "PD_09",
+          "relationType": "tanha_upadana",
+          "explanation": "Ái duyên Thủ: từ Ái (muốn) phát triển thành Thủ (nắm chặt).",
+          "explanationPali": "Taṇhāpaccayā upādānaṃ"
+        }
+      ],
+      "relatedCittaIds": ["CI_001", "CI_002", "CI_003", "CI_004", "CI_005", "CI_006", "CI_007", "CI_008"],
+      "relatedCetasikaIds": ["CS_LOBHA"],
+      "examples": [
+        "Thấy thức ăn ngon → Ái Dục: muốn ăn thêm",
+        "Gặp cảnh khổ → Ái Vô Hữu: muốn không tồn tại"
+      ],
+      "doctrinalNote": "Ái = Tập Đế trong Tứ Diệu Đế. Diệt Ái = Diệt Khổ = Niết Bàn."
+    },
+    {
+      "id": "PD_09",
+      "namePali": "Upādāna",
+      "nameVietnamese": "Thủ",
+      "nameShort": "Thủ",
+      "order": 9,
+      "vatta": "kilesa",
+      "kiep": "present",
+      "causeId": "PD_08",
+      "effectId": "PD_10",
+      "descriptionVi": "Thủ là sự bám chặt, nắm giữ mạnh hơn Ái. Có 4 loại: Dục Thủ, Kiến Thủ, Giới Cấm Thủ, Ngã Luận Thủ.",
+      "trangThai": "Bám chặt — sự nắm giữ mạnh mẽ, không buông rời",
+      "phanSu": "Bám chặt vào đối tượng — tạo điều kiện cho Hữu sanh khởi",
+      "thanhTuu": "Hữu (Bhava) được hình thành — nghiệp cho tái sanh tích luỹ",
+      "nhanGan": "Ái làm điều kiện — Thủ là Ái được tăng cường, củng cố",
+      "links": [
+        {
+          "causeId": "PD_09",
+          "effectId": "PD_10",
+          "relationType": "upadana_bhava",
+          "explanation": "Thủ duyên Hữu: sự chấp thủ tạo ra Hữu (nghiệp lực tái sanh).",
+          "explanationPali": "Upādānapaccayā bhavo"
+        }
+      ],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_LOBHA", "CS_DITTHI"],
+      "examples": [
+        "Không chỉ muốn có tiền (Ái) mà còn không thể buông tiền ra (Thủ)"
+      ],
+      "doctrinalNote": null
+    },
+    {
+      "id": "PD_10",
+      "namePali": "Bhava",
+      "nameVietnamese": "Hữu",
+      "nameShort": "Hữu",
+      "order": 10,
+      "vatta": "kamma",
+      "kiep": "present",
+      "causeId": "PD_09",
+      "effectId": "PD_11",
+      "descriptionVi": "Hữu gồm 2 phần: Nghiệp Hữu (nghiệp tích luỹ sẽ tạo tái sanh) và Sanh Hữu (cõi giới sẽ tái sanh vào). Có 3 cõi Hữu: Dục Hữu, Sắc Hữu, Vô Sắc Hữu.",
+      "trangThai": "Hiện hữu — nghiệp lực tích luỹ, sẵn sàng tạo tái sanh",
+      "phanSu": "Tạo điều kiện cho Sanh diễn ra trong kiếp tương lai",
+      "thanhTuu": "Tái sanh sẽ xảy ra trong cõi phù hợp với nghiệp",
+      "nhanGan": "Thủ làm điều kiện — Thủ là nhiên liệu cho Hữu",
+      "links": [
+        {
+          "causeId": "PD_10",
+          "effectId": "PD_11",
+          "relationType": "bhava_jati",
+          "explanation": "Hữu duyên Sanh: nghiệp lực (Hữu) tất yếu dẫn đến tái sanh (Sanh).",
+          "explanationPali": "Bhavapaccayā jāti"
+        }
+      ],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_CETANA"],
+      "examples": [
+        "Người suốt đời bố thí → Hữu thiện dục giới → Sanh làm người giàu kiếp sau"
+      ],
+      "doctrinalNote": null
+    },
+    {
+      "id": "PD_11",
+      "namePali": "Jāti",
+      "nameVietnamese": "Sanh",
+      "nameShort": "Sanh",
+      "order": 11,
+      "vatta": "vipaka",
+      "kiep": "future",
+      "causeId": "PD_10",
+      "effectId": "PD_12",
+      "descriptionVi": "Sanh là sự tái sanh — Tục Sinh Thức xuất hiện trong kiếp mới, Danh Sắc hình thành, các Uẩn khởi sanh. Tất cả khổ đau đều bắt đầu từ đây.",
+      "trangThai": "Tục sinh — Thức tái sanh vào cõi giới mới",
+      "phanSu": "Khởi đầu kiếp sống mới — kéo theo toàn bộ Khổ",
+      "thanhTuu": "Khổ (Lão-Tử) hiện ra",
+      "nhanGan": "Hữu (nghiệp lực) làm điều kiện",
+      "links": [
+        {
+          "causeId": "PD_11",
+          "effectId": "PD_12",
+          "relationType": "jati_jaramarana",
+          "explanation": "Sanh duyên Lão Tử: đã sanh ra tất yếu phải già và chết.",
+          "explanationPali": "Jātipaccayā jarāmaraṇaṃ"
+        }
+      ],
+      "relatedCittaIds": ["CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+      "relatedCetasikaIds": [],
+      "examples": [
+        "Giây phút thụ thai = Sanh — mọi khổ theo sau"
+      ],
+      "doctrinalNote": "Vòng tròn 3 kiếp được kết nối ở đây — Sanh tương ứng với PD_03 ở chiều quả kiếp sau."
+    },
+    {
+      "id": "PD_12",
+      "namePali": "Jarāmaraṇa",
+      "nameVietnamese": "Lão Tử",
+      "nameShort": "Lão Tử",
+      "order": 12,
+      "vatta": "vipaka",
+      "kiep": "future",
+      "causeId": "PD_11",
+      "effectId": null,
+      "descriptionVi": "Lão Tử — Lão: già nua, biến hoại; Tử: chết. Kèm theo là Sầu, Bi, Khổ, Ưu, Não — tất cả khổ đau trong đời. Là quả cuối, kết thúc 1 kiếp và bắt đầu vòng luân hồi mới nếu chưa giải thoát.",
+      "trangThai": "Già và Chết — biến hoại và hoại diệt tất yếu của mọi thân tâm hữu vi",
+      "phanSu": "Kết thúc một kiếp sống — tiếp tục vòng luân hồi mới nếu chưa giải thoát",
+      "thanhTuu": "Một kiếp kết thúc — nếu chưa giải thoát thì vòng luân hồi tiếp tục",
+      "nhanGan": "Sanh làm điều kiện — đã có Sanh tất có Lão Tử",
+      "links": [],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "examples": [
+        "Mọi chúng sanh đã sanh đều phải già và chết",
+        "Khi Vô Minh và Ái được đoạn trừ → Lão Tử không còn tiếp diễn"
+      ],
+      "doctrinalNote": "Giải thoát = diệt Vô Minh (PD_01) và Ái (PD_08) = chứng Niết Bàn."
+    }
+  ]
+}
