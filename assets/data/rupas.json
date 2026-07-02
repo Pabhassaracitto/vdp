@@ -8,14 +8,22 @@
       "type": "maha_bhuta",
       "subGroup": "none",
       "traditionalOrder": 1,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Địa Đại là yếu tố cứng chắc hoặc mềm mại của vật chất — nền tảng chống đỡ cho các sắc pháp trong cùng nhóm (kalāpa). Một trong Tứ Đại, luôn đồng sanh với 3 Đại còn lại.",
       "descriptionPali": "Pathavī: đất, nền tảng. Pathavī-dhātu: Địa giới — yếu tố đất.",
       "trangThai": "Cứng hay mềm — đặc tính cứng chắc hoặc mềm mại của vật chất",
       "phanSu": "Làm nền tảng chống đỡ cho các sắc pháp đồng nhóm (kalāpa)",
       "thanhTuu": "Nhận lấy — có thể cảm nhận qua xúc chạm: cứng, mềm",
       "nhanGan": "Ba Đại còn lại (Thủy, Hỏa, Phong) đồng sanh chung",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Tứ Đại luôn đồng sanh, không tách rời. Cõi Vô Sắc không có Sắc pháp."
     },
     {
@@ -26,14 +34,22 @@
       "type": "maha_bhuta",
       "subGroup": "none",
       "traditionalOrder": 2,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Thủy Đại là yếu tố kết dính — làm cho các sắc pháp trong cùng kalāpa không bị rã rời. Thủy Đại không thể cảm nhận trực tiếp qua xúc giác.",
       "descriptionPali": "Āpo: nước, chất lỏng. Āpo-dhātu: Thủy giới — yếu tố kết dính.",
       "trangThai": "Chảy hay kết dính — yếu tố keo tụ của vật chất",
       "phanSu": "Kết dính các sắc pháp trong cùng kalāpa",
       "thanhTuu": "Vật chất được gắn kết, không bị rã rời",
       "nhanGan": "Ba Đại còn lại (Địa, Hỏa, Phong) đồng sanh chung",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Thủy Đại là Đại duy nhất không thể cảm nhận trực tiếp qua thân xúc."
     },
     {
@@ -44,14 +60,22 @@
       "type": "maha_bhuta",
       "subGroup": "none",
       "traditionalOrder": 3,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Hỏa Đại là yếu tố nhiệt độ — nóng hay lạnh. Làm chín muồi, nuôi dưỡng các sắc pháp và điều tiết thân nhiệt.",
       "descriptionPali": "Tejo: lửa, nhiệt. Tejo-dhātu: Hoả giới — yếu tố nhiệt độ.",
       "trangThai": "Nóng hay lạnh — yếu tố nhiệt độ của vật chất",
       "phanSu": "Làm chín muồi, nuôi dưỡng các sắc pháp đồng nhóm",
       "thanhTuu": "Vật chất được chín muồi, trưởng thành",
       "nhanGan": "Ba Đại còn lại (Địa, Thủy, Phong) đồng sanh chung",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Hỏa Đại khi đứng độc lập (Utu) tạo ra Sắc do Thời tiết (Utu-samuṭṭhāna-rūpa)."
     },
     {
@@ -62,14 +86,22 @@
       "type": "maha_bhuta",
       "subGroup": "none",
       "traditionalOrder": 4,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Phong Đại là yếu tố chuyển động và căng phồng. Hơi thở (assāsa-passāsa) là biểu hiện rõ nhất của Phong Đại.",
       "descriptionPali": "Vāyo: gió, khí. Vāyo-dhātu: Phong giới — yếu tố vận động.",
       "trangThai": "Căng phồng hay chuyển động — yếu tố vận động của vật chất",
       "phanSu": "Nâng đỡ và làm cho vật chất chuyển động",
       "thanhTuu": "Vật chất được nâng đỡ và chuyển động",
       "nhanGan": "Ba Đại còn lại (Địa, Thủy, Hỏa) đồng sanh chung",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Trong thiền Ānāpānasati, hơi thở (Phong Đại) là đề mục tu tập chính."
     },
     {
@@ -80,14 +112,19 @@
       "type": "upada",
       "subGroup": "pasada",
       "traditionalOrder": 5,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Nhãn Thần Kinh là sắc tinh tế trong nhãn cầu, nhận cảnh Sắc. Vật nương của Nhãn Thức. Chỉ do Nghiệp tạo ra.",
       "descriptionPali": "Cakkhu: mắt. Pasāda: trong sáng, thần kinh tinh tế.",
       "trangThai": "Tinh tế, trong sáng — có khả năng bắt lấy cảnh Sắc",
       "phanSu": "Làm vật nương cho Nhãn Thức sanh khởi",
       "thanhTuu": "Nhãn Thức sanh lên được, thấy cảnh Sắc",
       "nhanGan": "Nghiệp quá khứ; cần có cảnh Sắc tác động",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Chỉ do Nghiệp tạo. Không có ở cõi Vô Sắc."
     },
     {
@@ -98,14 +135,19 @@
       "type": "upada",
       "subGroup": "pasada",
       "traditionalOrder": 6,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Nhĩ Thần Kinh là sắc tinh tế trong lỗ tai, nhận cảnh Thinh. Vật nương của Nhĩ Thức.",
       "descriptionPali": "Sota: tai. Pasāda: thần kinh tinh tế.",
       "trangThai": "Tinh tế — có khả năng bắt lấy cảnh Thinh",
       "phanSu": "Làm vật nương cho Nhĩ Thức sanh khởi",
       "thanhTuu": "Nhĩ Thức sanh lên được, nghe cảnh Thinh",
       "nhanGan": "Nghiệp quá khứ; cần có cảnh Thinh tác động",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Phạm Thiên Sắc Giới có Nhĩ Căn vì giao tiếp bằng âm thanh."
     },
     {
@@ -116,14 +158,18 @@
       "type": "upada",
       "subGroup": "pasada",
       "traditionalOrder": 7,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Tỷ Thần Kinh là sắc tinh tế trong mũi, nhận cảnh Khí. Vật nương của Tỷ Thức.",
       "descriptionPali": "Ghāna: mũi. Pasāda: thần kinh tinh tế.",
       "trangThai": "Tinh tế — có khả năng bắt lấy cảnh Khí",
       "phanSu": "Làm vật nương cho Tỷ Thức sanh khởi",
       "thanhTuu": "Tỷ Thức sanh lên được, ngửi cảnh Khí",
       "nhanGan": "Nghiệp quá khứ; cần có cảnh Khí tác động",
-      "presentInBhumi": ["kamavacara"],
+      "presentInBhumi": [
+        "kamavacara"
+      ],
       "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên Sắc Giới không có Tỷ Căn."
     },
     {
@@ -134,14 +180,18 @@
       "type": "upada",
       "subGroup": "pasada",
       "traditionalOrder": 8,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Thiệt Thần Kinh là sắc tinh tế ở lưỡi, nhận cảnh Vị. Vật nương của Thiệt Thức.",
       "descriptionPali": "Jivhā: lưỡi. Pasāda: thần kinh tinh tế.",
       "trangThai": "Tinh tế — có khả năng bắt lấy cảnh Vị",
       "phanSu": "Làm vật nương cho Thiệt Thức sanh khởi",
       "thanhTuu": "Thiệt Thức sanh lên được, nếm cảnh Vị",
       "nhanGan": "Nghiệp quá khứ; cần có cảnh Vị tác động",
-      "presentInBhumi": ["kamavacara"],
+      "presentInBhumi": [
+        "kamavacara"
+      ],
       "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên không ăn uống nên không có Thiệt Căn."
     },
     {
@@ -152,14 +202,19 @@
       "type": "upada",
       "subGroup": "pasada",
       "traditionalOrder": 9,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Thân Thần Kinh là sắc tinh tế lan toả khắp thân, nhận cảnh Xúc (Địa-Hỏa-Phong). Vật nương của Thân Thức.",
       "descriptionPali": "Kāya: thân. Pasāda: thần kinh tinh tế.",
       "trangThai": "Tinh tế, lan toả — bắt lấy cảnh Xúc (Địa-Hỏa-Phong)",
       "phanSu": "Làm vật nương cho Thân Thức sanh khởi",
       "thanhTuu": "Thân Thức sanh lên được, cảm nhận cảnh Xúc",
       "nhanGan": "Nghiệp quá khứ; cần có cảnh Xúc tác động",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Phạm Thiên Sắc Giới có Thân Căn. Cõi Vô Tưởng không có."
     },
     {
@@ -170,14 +225,22 @@
       "type": "upada",
       "subGroup": "gocara",
       "traditionalOrder": 10,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Sắc Cảnh là màu sắc, hình dạng, ánh sáng — đối tượng của Nhãn Thần Kinh. Không phải Nhãn Căn mà là cảnh để Nhãn Căn bắt lấy.",
       "descriptionPali": "Rūpa: hình sắc. Gocara: cảnh của căn.",
       "trangThai": "Hiển lộ, biểu hiện — đối tượng được thấy bởi Nhãn Căn",
       "phanSu": "Làm đối tượng (cảnh) cho Nhãn Thức nhận biết",
       "thanhTuu": "Nhãn Thức sanh lên bắt lấy được",
       "nhanGan": "Có ánh sáng (Āloka) và Nhãn Căn tiếp xúc",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Sắc Cảnh (màu sắc) khác với Sắc Pháp (vật chất nói chung)."
     },
     {
@@ -188,14 +251,22 @@
       "type": "upada",
       "subGroup": "gocara",
       "traditionalOrder": 11,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Thinh Cảnh là âm thanh — đối tượng của Nhĩ Thần Kinh.",
       "descriptionPali": "Sadda: âm thanh.",
       "trangThai": "Vang lên — đối tượng được nghe bởi Nhĩ Căn",
       "phanSu": "Làm đối tượng cho Nhĩ Thức nhận biết",
       "thanhTuu": "Nhĩ Thức sanh lên bắt lấy được",
       "nhanGan": "Có âm thanh phát sinh và Nhĩ Căn tiếp xúc",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": null
     },
     {
@@ -206,14 +277,21 @@
       "type": "upada",
       "subGroup": "gocara",
       "traditionalOrder": 12,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Khí Cảnh là mùi hương — đối tượng của Tỷ Thần Kinh.",
       "descriptionPali": "Gandha: mùi, hương.",
       "trangThai": "Thoảng ra — đối tượng được ngửi bởi Tỷ Căn",
       "phanSu": "Làm đối tượng cho Tỷ Thức nhận biết",
       "thanhTuu": "Tỷ Thức sanh lên bắt lấy được",
       "nhanGan": "Có mùi phát sinh và Tỷ Căn tiếp xúc",
-      "presentInBhumi": ["kamavacara"],
+      "presentInBhumi": [
+        "kamavacara"
+      ],
       "doctrinalNote": null
     },
     {
@@ -224,14 +302,21 @@
       "type": "upada",
       "subGroup": "gocara",
       "traditionalOrder": 13,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Vị Cảnh là vị nếm — đối tượng của Thiệt Thần Kinh.",
       "descriptionPali": "Rasa: vị, mùi vị.",
       "trangThai": "Hiển lộ — đối tượng được nếm bởi Thiệt Căn",
       "phanSu": "Làm đối tượng cho Thiệt Thức nhận biết",
       "thanhTuu": "Thiệt Thức sanh lên bắt lấy được",
       "nhanGan": "Có vị tiếp xúc và Thiệt Căn nhận lấy",
-      "presentInBhumi": ["kamavacara"],
+      "presentInBhumi": [
+        "kamavacara"
+      ],
       "doctrinalNote": null
     },
     {
@@ -242,14 +327,18 @@
       "type": "upada",
       "subGroup": "bhava",
       "traditionalOrder": 14,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Nữ Căn là sắc pháp quy định giới tính nữ — ảnh hưởng đến hình dáng, cơ quan sinh dục và tâm lý nữ giới.",
       "descriptionPali": "Itthi: phụ nữ. Bhāva: trạng thái, căn tính.",
       "trangThai": "Biểu hiện giới nữ — ảnh hưởng lên toàn bộ sắc thân",
       "phanSu": "Quy định dấu hiệu, hành vi đặc trưng nữ giới",
       "thanhTuu": "Có sự biểu hiện giới tính nữ trong sắc thân",
       "nhanGan": "Nghiệp tạo phái tính nữ từ lúc tục sinh",
-      "presentInBhumi": ["kamavacara"],
+      "presentInBhumi": [
+        "kamavacara"
+      ],
       "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên Sắc Giới không có phái tính."
     },
     {
@@ -260,14 +349,18 @@
       "type": "upada",
       "subGroup": "bhava",
       "traditionalOrder": 15,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Nam Căn là sắc pháp quy định giới tính nam — ảnh hưởng đến hình dáng, cơ quan sinh dục và tâm lý nam giới.",
       "descriptionPali": "Purisa: nam giới. Bhāva: trạng thái, căn tính.",
       "trangThai": "Biểu hiện giới nam — ảnh hưởng lên toàn bộ sắc thân",
       "phanSu": "Quy định dấu hiệu, hành vi đặc trưng nam giới",
       "thanhTuu": "Có sự biểu hiện giới tính nam trong sắc thân",
       "nhanGan": "Nghiệp tạo phái tính nam từ lúc tục sinh",
-      "presentInBhumi": ["kamavacara"],
+      "presentInBhumi": [
+        "kamavacara"
+      ],
       "doctrinalNote": "Chỉ có ở cõi Dục Giới."
     },
     {
@@ -278,14 +371,19 @@
       "type": "upada",
       "subGroup": "hadaya",
       "traditionalOrder": 16,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Ý Vật là sắc pháp nằm trong tim, làm vật nương cho tất cả Tâm ngoài Ngũ song thức — tức là vật nương của Ý Thức và các tâm qua Ý Môn.",
       "descriptionPali": "Hadaya: tim. Vatthu: nơi nương trú.",
       "trangThai": "Là chỗ nương trú — vật nương của các Tâm Ý môn",
       "phanSu": "Làm vật nương cho tất cả Tâm sanh lên qua Ý Môn (trừ Ngũ song thức)",
       "thanhTuu": "Các Tâm Ý môn sanh lên được",
       "nhanGan": "Nghiệp quá khứ tạo ra; máu tim duy trì",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Cõi Vô Sắc không có Ý Vật. Đây là sắc quan trọng nhất trong hệ thần kinh Abhidhamma."
     },
     {
@@ -296,14 +394,19 @@
       "type": "upada",
       "subGroup": "jivita",
       "traditionalOrder": 17,
-      "causes": ["kamma"],
+      "causes": [
+        "kamma"
+      ],
       "descriptionVi": "Sắc Mạng Quyền duy trì sự sống của các sắc pháp do Nghiệp tạo trong cùng kalāpa. Khác với Danh Mạng Quyền (Tâm sở CS_JIVITINDRIYA).",
       "descriptionPali": "Jīvita: sự sống. Indriya: quyền. Rūpa Jīvitindriya: Sắc mạng quyền.",
       "trangThai": "Duy trì sự sống — bảo tồn các sắc do Nghiệp tạo",
       "phanSu": "Làm cho các sắc do Nghiệp tạo tồn tại trong 1 sát-na sắc",
       "thanhTuu": "Các sắc do Nghiệp tạo được duy trì sống còn",
       "nhanGan": "Chỉ Nghiệp mới tạo ra Sắc Mạng Quyền",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Tuổi thọ sắc pháp = 17 sát-na tâm. Khi Sắc Mạng Quyền diệt, sắc do Nghiệp tạo cũng diệt."
     },
     {
@@ -314,14 +417,22 @@
       "type": "upada",
       "subGroup": "ahara",
       "traditionalOrder": 18,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Ojā là tinh chất dinh dưỡng có mặt trong mọi nhóm sắc (kalāpa). Khi Ojā từ thức ăn được tiêu hoá, nó tạo ra các nhóm sắc mới.",
       "descriptionPali": "Ojā: tinh chất, chất bổ dưỡng.",
       "trangThai": "Dưỡng nuôi — tinh chất có mặt trong mọi nhóm sắc",
       "phanSu": "Nuôi dưỡng các sắc pháp đồng nhóm và tạo sắc mới từ vật thực",
       "thanhTuu": "Sắc pháp được nuôi dưỡng, duy trì và sinh sôi",
       "nhanGan": "Có vật thực (thức ăn) được tiêu hoá",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Ojā trong vật thực (Kabaḷīkāra-āhāra) là 1 trong 4 loại vật thực theo Abhidhamma."
     },
     {
@@ -332,14 +443,22 @@
       "type": "upada",
       "subGroup": "akasa",
       "traditionalOrder": 19,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Hư Không Giới là sắc pháp phân ranh, tạo khoảng trống giữa các nhóm sắc (kalāpa), giúp phân biệt các nhóm sắc không hoà lẫn. Không phải hư không tuyệt đối.",
       "descriptionPali": "Ākāsa: hư không, khoảng không gian. Dhātu: giới.",
       "trangThai": "Phân ranh — tạo ranh giới giữa các nhóm sắc",
       "phanSu": "Phân định ranh giới giữa các nhóm kalāpa",
       "thanhTuu": "Các nhóm sắc được phân biệt, không hoà lẫn",
       "nhanGan": "Các nhóm sắc (kalāpa) hiện hữu cạnh nhau",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Ākāsa-dhātu (Sắc pháp) ≠ Hư không tuyệt đối trong triết học."
     },
     {
@@ -350,14 +469,19 @@
       "type": "upada",
       "subGroup": "vinnatti",
       "traditionalOrder": 20,
-      "causes": ["citta"],
+      "causes": [
+        "citta"
+      ],
       "descriptionVi": "Thân Biểu Tri là sự chuyển động của thân do Tâm tạo ra, dùng để biểu đạt ý muốn (cử chỉ, hành động, điệu bộ). Chỉ do Tâm tạo.",
       "descriptionPali": "Kāya: thân. Viññatti: biểu tri, biểu hiện.",
       "trangThai": "Chuyển động — biểu hiện thân để thông báo ý muốn",
       "phanSu": "Biểu đạt ý định qua cử chỉ thân thể",
       "thanhTuu": "Người khác hiểu được ý muốn qua cử chỉ thân",
       "nhanGan": "Tâm khởi lên ý muốn biểu đạt",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Chỉ do Tâm tạo. Là cơ sở của Thân Nghiệp (Kāya-kamma)."
     },
     {
@@ -368,14 +492,19 @@
       "type": "upada",
       "subGroup": "vinnatti",
       "traditionalOrder": 21,
-      "causes": ["citta"],
+      "causes": [
+        "citta"
+      ],
       "descriptionVi": "Ngữ Biểu Tri là sự rung động không khí tạo thành lời nói, do Tâm tạo ra, truyền đạt ý nghĩa. Chỉ do Tâm tạo.",
       "descriptionPali": "Vacī: lời nói, khẩu. Viññatti: biểu tri.",
       "trangThai": "Biểu hiện âm thanh — lời nói để truyền đạt ý muốn",
       "phanSu": "Biểu đạt ý định qua lời nói",
       "thanhTuu": "Người khác hiểu được ý muốn qua âm thanh lời nói",
       "nhanGan": "Tâm khởi lên ý muốn nói",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Chỉ do Tâm tạo. Là cơ sở của Khẩu Nghiệp (Vacī-kamma)."
     },
     {
@@ -386,14 +515,21 @@
       "type": "upada",
       "subGroup": "vikara",
       "traditionalOrder": 22,
-      "causes": ["citta", "utu", "ahara"],
+      "causes": [
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Khinh Sắc là tính nhẹ nhàng, linh hoạt của sắc pháp. Không do Nghiệp tạo.",
       "descriptionPali": "Rūpassa lahutā: sự nhẹ nhàng của sắc pháp.",
       "trangThai": "Nhẹ nhàng — tính khinh nhẹ, linh hoạt của sắc pháp",
       "phanSu": "Làm cho sắc pháp không bị nặng nề, cứng chắc",
       "thanhTuu": "Thân thể nhẹ nhàng, dễ cử động",
       "nhanGan": "Tâm, Thời tiết, Vật thực tốt; không bệnh hoạn",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Không do Nghiệp tạo. Tuỳ thuộc sức khoẻ và điều kiện hiện tại."
     },
     {
@@ -404,14 +540,21 @@
       "type": "upada",
       "subGroup": "vikara",
       "traditionalOrder": 23,
-      "causes": ["citta", "utu", "ahara"],
+      "causes": [
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Nhu Sắc là tính mềm mại, dễ uốn nắn của sắc pháp.",
       "descriptionPali": "Rūpassa mudutā: sự mềm mại của sắc pháp.",
       "trangThai": "Mềm mại — tính dịu dàng, dễ uốn của sắc pháp",
       "phanSu": "Làm cho sắc pháp không cứng cỏi, không cứng đờ",
       "thanhTuu": "Thân thể mềm dịu, linh hoạt",
       "nhanGan": "Tâm, Thời tiết, Vật thực điều hoà; không bệnh hoạn",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": null
     },
     {
@@ -422,14 +565,21 @@
       "type": "upada",
       "subGroup": "vikara",
       "traditionalOrder": 24,
-      "causes": ["citta", "utu", "ahara"],
+      "causes": [
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Thích Sắc là tính thích hợp, thích ứng của sắc pháp — thân thể dễ sử dụng, thích hợp với công việc.",
       "descriptionPali": "Rūpassa kammaññatā: sự thích hợp của sắc pháp.",
       "trangThai": "Thích hợp — tính dễ sử dụng, thích ứng của sắc pháp",
       "phanSu": "Làm cho sắc pháp dễ sử dụng, không mệt mỏi",
       "thanhTuu": "Thân thể thích hợp với mọi công việc",
       "nhanGan": "Tâm, Thời tiết, Vật thực điều hoà",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": null
     },
     {
@@ -440,14 +590,22 @@
       "type": "upada",
       "subGroup": "lakkhana",
       "traditionalOrder": 25,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Upacaya là tướng tích luỹ / phát sinh lần đầu tiên của sắc pháp trong một kalāpa.",
       "descriptionPali": "Upacaya: tích luỹ, phát sinh.",
       "trangThai": "Phát sinh — tướng khởi sanh lần đầu của nhóm sắc",
       "phanSu": "Đánh dấu sự khởi đầu tồn tại của nhóm sắc",
       "thanhTuu": "Sắc pháp có mặt trong thế gian",
       "nhanGan": "4 nguồn tạo sắc (Nghiệp, Tâm, Thời tiết, Vật thực)",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Tứ Lakkhaṇa Sắc là tướng trạng của mọi sắc pháp, không phải sắc độc lập."
     },
     {
@@ -458,14 +616,22 @@
       "type": "upada",
       "subGroup": "lakkhana",
       "traditionalOrder": 26,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Santati là tướng tiếp nối — dòng sắc pháp sanh diệt liên tiếp tạo ảo giác về sự bền vững.",
       "descriptionPali": "Santati: sự tiếp nối, dòng chảy liên tục.",
       "trangThai": "Tiếp nối — tướng duy trì, trú của dòng sắc pháp",
       "phanSu": "Duy trì dòng sắc pháp không gián đoạn",
       "thanhTuu": "Sắc pháp có vẻ bền vững, liên tục",
       "nhanGan": "4 nguồn tạo sắc liên tục hoạt động",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Santati giải thích tại sao chúng ta cảm nhận sự vật là bền vững — thực ra là dòng sanh-diệt liên tiếp."
     },
     {
@@ -476,14 +642,22 @@
       "type": "upada",
       "subGroup": "lakkhana",
       "traditionalOrder": 27,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Jaratā là tướng già nua, biến dị — sự hao mòn, thay đổi của sắc pháp theo thời gian.",
       "descriptionPali": "Jaratā: sự già nua, suy tàn, biến hoại.",
       "trangThai": "Biến hoại — tướng già nua, suy tàn của sắc pháp",
       "phanSu": "Đánh dấu sự biến đổi, suy tàn của sắc pháp",
       "thanhTuu": "Sắc pháp bị già nua, hao mòn, thay đổi",
       "nhanGan": "Thời gian trôi qua; sắc pháp đã tồn tại",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Jaratā là hiện tướng rõ nhất của Vô Thường (Anicca) trong Sắc pháp."
     },
     {
@@ -494,14 +668,22 @@
       "type": "upada",
       "subGroup": "lakkhana",
       "traditionalOrder": 28,
-      "causes": ["kamma", "citta", "utu", "ahara"],
+      "causes": [
+        "kamma",
+        "citta",
+        "utu",
+        "ahara"
+      ],
       "descriptionVi": "Aniccatā là tướng diệt — sự hoại diệt hoàn toàn của sắc pháp. Không có sắc nào thoát khỏi tướng diệt này.",
       "descriptionPali": "Aniccatā: tính vô thường, sự hoại diệt.",
       "trangThai": "Hoại diệt — tướng chấm dứt hoàn toàn của sắc pháp",
       "phanSu": "Đánh dấu sự chấm dứt tồn tại của sắc pháp",
       "thanhTuu": "Sắc pháp không còn tồn tại — hoàn toàn diệt",
       "nhanGan": "Sắc pháp đã trải qua đủ 3 tướng Sanh-Trú-Dị trước đó",
-      "presentInBhumi": ["kamavacara", "rupavacara"],
+      "presentInBhumi": [
+        "kamavacara",
+        "rupavacara"
+      ],
       "doctrinalNote": "Thấy rõ tướng Diệt là bước đầu của Thiền Quán (Vipassanā)."
     }
   ]

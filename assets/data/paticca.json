@@ -24,8 +24,13 @@
           "explanationPali": "Avijjāpaccayā saṅkhārā"
         }
       ],
-      "relatedCittaIds": ["CI_011", "CI_012"],
-      "relatedCetasikaIds": ["CS_MOHA"],
+      "relatedCittaIds": [
+        "CI_011",
+        "CI_012"
+      ],
+      "relatedCetasikaIds": [
+        "CS_MOHA"
+      ],
       "examples": [
         "Không biết thân này là Vô Thường → chấp thân làm Ngã → tạo nghiệp để bảo vệ ngã"
       ],
@@ -55,8 +60,17 @@
           "explanationPali": "Saṅkhārapaccayā viññāṇaṃ"
         }
       ],
-      "relatedCittaIds": ["CI_001", "CI_002", "CI_009", "CI_010", "CI_055", "CI_056"],
-      "relatedCetasikaIds": ["CS_CETANA"],
+      "relatedCittaIds": [
+        "CI_001",
+        "CI_002",
+        "CI_009",
+        "CI_010",
+        "CI_055",
+        "CI_056"
+      ],
+      "relatedCetasikaIds": [
+        "CS_CETANA"
+      ],
       "examples": [
         "Bố thí với tâm thiện → Phúc Hành → Thức tục sinh vào cõi lành",
         "Đắc thiền → Bất Động Hành → Thức tục sinh làm Phạm Thiên"
@@ -87,7 +101,16 @@
           "explanationPali": "Viññāṇapaccayā nāmarūpaṃ"
         }
       ],
-      "relatedCittaIds": ["CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+      "relatedCittaIds": [
+        "CI_063",
+        "CI_064",
+        "CI_065",
+        "CI_066",
+        "CI_067",
+        "CI_068",
+        "CI_069",
+        "CI_070"
+      ],
       "relatedCetasikaIds": [],
       "examples": [
         "Giây phút thụ thai: Tục Sinh Thức xuất hiện → Danh Sắc phát sinh → kiếp mới bắt đầu"
@@ -119,7 +142,13 @@
         }
       ],
       "relatedCittaIds": [],
-      "relatedCetasikaIds": ["CS_PHASSA", "CS_VEDANA", "CS_SANNA", "CS_CETANA", "CS_MANASIKARA"],
+      "relatedCetasikaIds": [
+        "CS_PHASSA",
+        "CS_VEDANA",
+        "CS_SANNA",
+        "CS_CETANA",
+        "CS_MANASIKARA"
+      ],
       "examples": [
         "Thai nhi: Thức tục sinh → Danh Sắc phát triển dần từ noãn, phôi, thai đủ tháng"
       ],
@@ -181,7 +210,9 @@
         }
       ],
       "relatedCittaIds": [],
-      "relatedCetasikaIds": ["CS_PHASSA"],
+      "relatedCetasikaIds": [
+        "CS_PHASSA"
+      ],
       "examples": [
         "Mắt thấy cảnh đẹp: Nhãn Căn + Sắc Cảnh + Nhãn Thức → Nhãn Xúc → Thọ Hỷ"
       ],
@@ -212,7 +243,9 @@
         }
       ],
       "relatedCittaIds": [],
-      "relatedCetasikaIds": ["CS_VEDANA"],
+      "relatedCetasikaIds": [
+        "CS_VEDANA"
+      ],
       "examples": [
         "Nghe lời khen (Xúc) → Thọ Hỷ → không Chánh Niệm → Ái dục (muốn nghe thêm)"
       ],
@@ -242,8 +275,19 @@
           "explanationPali": "Taṇhāpaccayā upādānaṃ"
         }
       ],
-      "relatedCittaIds": ["CI_001", "CI_002", "CI_003", "CI_004", "CI_005", "CI_006", "CI_007", "CI_008"],
-      "relatedCetasikaIds": ["CS_LOBHA"],
+      "relatedCittaIds": [
+        "CI_001",
+        "CI_002",
+        "CI_003",
+        "CI_004",
+        "CI_005",
+        "CI_006",
+        "CI_007",
+        "CI_008"
+      ],
+      "relatedCetasikaIds": [
+        "CS_LOBHA"
+      ],
       "examples": [
         "Thấy thức ăn ngon → Ái Dục: muốn ăn thêm",
         "Gặp cảnh khổ → Ái Vô Hữu: muốn không tồn tại"
@@ -275,7 +319,10 @@
         }
       ],
       "relatedCittaIds": [],
-      "relatedCetasikaIds": ["CS_LOBHA", "CS_DITTHI"],
+      "relatedCetasikaIds": [
+        "CS_LOBHA",
+        "CS_DITTHI"
+      ],
       "examples": [
         "Không chỉ muốn có tiền (Ái) mà còn không thể buông tiền ra (Thủ)"
       ],
@@ -306,7 +353,9 @@
         }
       ],
       "relatedCittaIds": [],
-      "relatedCetasikaIds": ["CS_CETANA"],
+      "relatedCetasikaIds": [
+        "CS_CETANA"
+      ],
       "examples": [
         "Người suốt đời bố thí → Hữu thiện dục giới → Sanh làm người giàu kiếp sau"
       ],
@@ -336,7 +385,16 @@
           "explanationPali": "Jātipaccayā jarāmaraṇaṃ"
         }
       ],
-      "relatedCittaIds": ["CI_063", "CI_064", "CI_065", "CI_066", "CI_067", "CI_068", "CI_069", "CI_070"],
+      "relatedCittaIds": [
+        "CI_063",
+        "CI_064",
+        "CI_065",
+        "CI_066",
+        "CI_067",
+        "CI_068",
+        "CI_069",
+        "CI_070"
+      ],
       "relatedCetasikaIds": [],
       "examples": [
         "Giây phút thụ thai = Sanh — mọi khổ theo sau"
