@@ -43,6 +43,13 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
             completedAt: m['completedAt'] != null
                 ? DateTime.tryParse(m['completedAt'] as String)
                 : null,
+            reviewCount: (m['reviewCount'] as int?) ?? 0,
+            lastReviewedAt: m['lastReviewedAt'] != null
+                ? DateTime.tryParse(m['lastReviewedAt'] as String)
+                : null,
+            nextReviewDue: m['nextReviewDue'] != null
+                ? DateTime.tryParse(m['nextReviewDue'] as String)
+                : null,
           );
         });
         state = UserProgress(
@@ -69,6 +76,9 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
           'quizScore': v.quizScore,
           'viewedCittaIds': v.viewedCittaIds,
           'completedAt': v.completedAt?.toIso8601String(),
+          'reviewCount': v.reviewCount,
+          'lastReviewedAt': v.lastReviewedAt?.toIso8601String(),
+          'nextReviewDue': v.nextReviewDue?.toIso8601String(),
         };
       });
       await prefs.setString(
@@ -83,16 +93,36 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     } catch (_) {}
   }
 
-  /// Ghi lại điểm quiz
+  /// Ghi lại điểm quiz và cập nhật logic Spaced Repetition
+  /// Cấu trúc khoảng cách: 1, 3, 7, 14, 30 ngày cho các mốc điểm 80+
   void recordQuizScore(String moduleId, double score) {
     final existing = state.moduleProgress[moduleId];
+    
+    // Spaced Repetition Logic (Simple point-based intervals)
+    int reviewCount = (existing?.reviewCount ?? 0) + 1;
+    DateTime nextReviewDue = DateTime.now();
+    
+    if (score >= 80) {
+      // Tăng khoảng cách dựa trên số lần ôn tốt
+      final daysToAdd = [1, 3, 7, 14, 30][reviewCount < 5 ? reviewCount - 1 : 4];
+      nextReviewDue = DateTime.now().add(Duration(days: daysToAdd));
+    } else {
+      // Nếu điểm thấp, ôn lại ngay sớm hơn (vẫn dùng count nhưng reset/giảm hiệu quả)
+      reviewCount = (reviewCount > 1) ? reviewCount - 1 : 1;
+      nextReviewDue = DateTime.now().add(const Duration(days: 1));
+    }
+
     final updated = ModuleProgress(
       moduleId: moduleId,
       completionPercentage: score,
       quizScore: score.round(),
       viewedCittaIds: existing?.viewedCittaIds ?? [],
-      completedAt: score >= 80 ? DateTime.now() : existing?.completedAt,
+      completedAt: score >= 80 ? (existing?.completedAt ?? DateTime.now()) : existing?.completedAt,
+      reviewCount: reviewCount,
+      lastReviewedAt: DateTime.now(),
+      nextReviewDue: nextReviewDue,
     );
+    
     state = UserProgress(
       moduleProgress: {...state.moduleProgress, moduleId: updated},
       lastStudied: DateTime.now(),
@@ -111,6 +141,9 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       completionPercentage: existing?.completionPercentage ?? 0,
       quizScore: existing?.quizScore ?? 0,
       viewedCittaIds: List<String>.from(viewed),
+      reviewCount: existing?.reviewCount ?? 0,
+      lastReviewedAt: existing?.lastReviewedAt,
+      nextReviewDue: existing?.nextReviewDue,
     );
     state = UserProgress(
       moduleProgress: {...state.moduleProgress, moduleId: updated},

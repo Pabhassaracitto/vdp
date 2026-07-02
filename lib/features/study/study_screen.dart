@@ -337,6 +337,7 @@ class _ModuleCard extends ConsumerWidget {
     final modProgress = progress.moduleProgress[module.id];
     final pct = modProgress?.completionPercentage ?? 0;
     final color = Color(module.colorCode);
+    final isDueForReview = progress.isModuleDueForReview(module);
 
     return GestureDetector(
       onTap: isUnlocked
@@ -361,6 +362,7 @@ class _ModuleCard extends ConsumerWidget {
         child: Row(
           children: [
             Stack(
+              clipBehavior: Clip.none,
               alignment: Alignment.center,
               children: [
                 Container(
@@ -376,6 +378,18 @@ class _ModuleCard extends ConsumerWidget {
                   child:
                       Text(module.icon, style: const TextStyle(fontSize: 22)),
                 ),
+                if (isDueForReview)
+                  Positioned(
+                    top: -4,
+                    right: -4,
+                    child: Container(
+                      padding: const EdgeInsets.all(4),
+                      decoration: const BoxDecoration(
+                          color: Colors.orange, shape: BoxShape.circle),
+                      child: const Icon(Icons.refresh,
+                          size: 10, color: Colors.white),
+                    ),
+                  ),
                 if (progress.allModulesUnlocked)
                   const Positioned(
                       right: 0,
@@ -397,13 +411,25 @@ class _ModuleCard extends ConsumerWidget {
             ),
             const SizedBox(width: 14),
             Expanded(
-              child: Text(
-                module.title,
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w700,
-                  color: isUnlocked ? VdpColors.onBackground : Colors.grey,
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    module.title,
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      color: isUnlocked ? VdpColors.onBackground : Colors.grey,
+                    ),
+                  ),
+                  if (isUnlocked && pct > 0)
+                    LinearProgressIndicator(
+                      value: pct / 100,
+                      backgroundColor: Colors.grey.shade200,
+                      valueColor: AlwaysStoppedAnimation<Color>(color),
+                      minHeight: 4,
+                  ),
+                ],
               ),
             ),
           ],
@@ -466,8 +492,37 @@ class _OverallProgressSheet extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(height: 20),
+          _StatRow(
+            label: 'Tổng modules',
+            value: '${kStudyModules.length}',
+          ),
+          _StatRow(
+            label: 'Cần ôn tập',
+            value: '${kStudyModules.map((m) => StudyModule.fromJson(m)).where((m) => progress.isModuleDueForReview(m)).length}',
+          ),
         ],
       ),
     );
   }
 }
+
+class _StatRow extends StatelessWidget {
+  final String label;
+  final String value;
+  const _StatRow({required this.label, required this.value});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(label, style: const TextStyle(color: Colors.grey)),
+          Text(value,
+              style:
+                  const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+        ],
+      ),
+    );
