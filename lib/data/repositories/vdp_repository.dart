@@ -9,6 +9,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/validators/data_validator.dart';
 import '../models/cetasika_model.dart';
 import '../models/citta_model.dart';
+import '../models/kamma_model.dart';
+import '../models/paticca_model.dart';
+import '../models/rupa_model.dart';
+import '../models/vithi_model.dart';
 
 enum DataLoadStatus {
   initial,
@@ -22,6 +26,10 @@ class VdpDataState {
   final DataLoadStatus status;
   final List<CittaModel> cittas;
   final List<CetasikaModel> cetasikas;
+  final List<RupaModel> rupas;
+  final List<KammaModel> kammas;
+  final List<PaticcaModel> paticcas;
+  final List<VithiModel> vithis;
   final ValidationResult? validationResult;
   final String? errorMessage;
 
@@ -29,6 +37,10 @@ class VdpDataState {
     this.status = DataLoadStatus.initial,
     this.cittas = const [],
     this.cetasikas = const [],
+    this.rupas = const [],
+    this.kammas = const [],
+    this.paticcas = const [],
+    this.vithis = const [],
     this.validationResult,
     this.errorMessage,
   });
@@ -37,6 +49,10 @@ class VdpDataState {
     DataLoadStatus? status,
     List<CittaModel>? cittas,
     List<CetasikaModel>? cetasikas,
+    List<RupaModel>? rupas,
+    List<KammaModel>? kammas,
+    List<PaticcaModel>? paticcas,
+    List<VithiModel>? vithis,
     ValidationResult? validationResult,
     String? errorMessage,
   }) {
@@ -44,6 +60,10 @@ class VdpDataState {
       status: status ?? this.status,
       cittas: cittas ?? this.cittas,
       cetasikas: cetasikas ?? this.cetasikas,
+      rupas: rupas ?? this.rupas,
+      kammas: kammas ?? this.kammas,
+      paticcas: paticcas ?? this.paticcas,
+      vithis: vithis ?? this.vithis,
       validationResult: validationResult ?? this.validationResult,
       errorMessage: errorMessage ?? this.errorMessage,
     );
@@ -61,17 +81,25 @@ class VdpRepository extends StateNotifier<VdpDataState> {
         state.status == DataLoadStatus.loaded) {
       return;
     }
-    // debugPrint('VDP ▶ initialize() start');
     state = state.copyWith(status: DataLoadStatus.loading);
 
-    // Bọc toàn bộ trong try/catch lớn nhất
-    // Đảm bảo state LUÔN được set về loaded hoặc error
     try {
-      final cittas = await _loadCittas();
-      final cetasikas = await _loadCetasikas();
-      // Debug orderIndex của cittas ngay sau khi load, trước khi validate, để dễ phát hiện lỗi dữ liệu
-      // _debugCittaOrderIndexes(cittas);
-      // Validate
+      final results = await Future.wait([
+        _loadCittas(),
+        _loadCetasikas(),
+        _loadRupas(),
+        _loadKammas(),
+        _loadPaticcas(),
+        _loadVithis(),
+      ]);
+
+      final cittas = results[0] as List<CittaModel>;
+      final cetasikas = results[1] as List<CetasikaModel>;
+      final rupas = results[2] as List<RupaModel>;
+      final kammas = results[3] as List<KammaModel>;
+      final paticcas = results[4] as List<PaticcaModel>;
+      final vithis = results[5] as List<VithiModel>;
+
       ValidationResult? validation;
       if (cittas.isNotEmpty && cetasikas.isNotEmpty) {
         try {
@@ -79,10 +107,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
             cittas: cittas,
             cetasikas: cetasikas,
           );
-          // debugPrint('VDP ▶ validation done, '
-          //     'valid=${validation.isValid}, '
-          //     'errors=${validation.errors.length}, '
-          //     'warnings=${validation.warnings.length}');
 
           if (!validation.isValid) {
             state = state.copyWith(
@@ -95,29 +119,24 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           }
         } catch (e) {
           // Validate lỗi → vẫn load, bỏ qua validate
-          // debugPrint('VDP ▶ validate lỗi (bỏ qua): $e');
         }
       }
-
-      // debugPrint('VDP ▶ setState loaded — '
-      //     'cittas=${cittas.length}, cetasikas=${cetasikas.length}');
 
       state = state.copyWith(
         status: DataLoadStatus.loaded,
         cittas: cittas,
         cetasikas: cetasikas,
+        rupas: rupas,
+        kammas: kammas,
+        paticcas: paticcas,
+        vithis: vithis,
         validationResult: validation,
         errorMessage: cittas.isEmpty && cetasikas.isEmpty
             ? 'Chưa có dữ liệu — kiểm tra assets/data/'
             : null,
       );
-
-      // debugPrint('VDP ▶ initialize() DONE ✓');
-      // debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
-      // debugPrint('VDP ▶ Loaded cetasikas: ${cetasikas.length}');
     } catch (e, st) {
       debugPrint('VDP ▶ initialize() FATAL: $e\n$st');
-      // Dù lỗi gì → state = error, KHÔNG để status = loading mãi
       state = state.copyWith(
         status: DataLoadStatus.error,
         errorMessage: 'Lỗi khởi tạo: $e',
@@ -129,73 +148,90 @@ class VdpRepository extends StateNotifier<VdpDataState> {
 
   Future<List<CittaModel>> _loadCittas() async {
     try {
-      // debugPrint('VDP ▶ loading cittas.json...');
       final raw = await rootBundle.loadString('assets/data/cittas.json');
-      // debugPrint('VDP ▶ cittas raw length: ${raw.length}');
-
       final decoded = json.decode(raw);
-      // debugPrint('VDP ▶ cittas decoded type: ${decoded.runtimeType}');
-
       final list = (decoded as Map<String, dynamic>)['cittas'] as List?;
-      if (list == null) {
-        // debugPrint('VDP ▶ cittas: key "cittas" không tồn tại');
-        return [];
-      }
-
-      final cittas = <CittaModel>[];
-      for (var i = 0; i < list.length; i++) {
-        try {
-          cittas.add(
-            CittaModel.fromJson(list[i] as Map<String, dynamic>),
-          );
-        } catch (e) {
-          // debugPrint('VDP ▶ cittas[$i] parse lỗi: $e');
-          // Bỏ qua item lỗi, tiếp tục
-        }
-      }
-      // debugPrint('VDP ▶ cittas loaded: ${cittas.length}/${list.length}');
-      return cittas;
-    } on FlutterError catch (e) {
-      debugPrint('VDP ▶ cittas.json không tìm thấy: $e');
-      return [];
+      if (list == null) return [];
+      return list
+          .map((e) => CittaModel.fromJson(e as Map<String, dynamic>))
+          .toList();
     } catch (e) {
-      debugPrint('VDP ▶ cittas load lỗi khác: $e');
+      debugPrint('VDP ▶ cittas load lỗi: $e');
       return [];
     }
   }
 
   Future<List<CetasikaModel>> _loadCetasikas() async {
     try {
-      // debugPrint('VDP ▶ loading cetasikas.json...');
       final raw = await rootBundle.loadString('assets/data/cetasikas.json');
-      // debugPrint('VDP ▶ cetasikas raw length: ${raw.length}');
-
       final decoded = json.decode(raw);
-      // debugPrint('VDP ▶ cetasikas decoded type: ${decoded.runtimeType}');
-
       final list = (decoded as Map<String, dynamic>)['cetasikas'] as List?;
-      if (list == null) {
-        // debugPrint('VDP ▶ cetasikas: key "cetasikas" không tồn tại');
-        return [];
-      }
-
-      final cetasikas = <CetasikaModel>[];
-      for (var i = 0; i < list.length; i++) {
-        try {
-          cetasikas.add(
-            CetasikaModel.fromJson(list[i] as Map<String, dynamic>),
-          );
-        } catch (e) {
-          // debugPrint('VDP ▶ cetasikas[$i] parse lỗi: $e');
-        }
-      }
-      // debugPrint('VDP ▶ cetasikas loaded: ${cetasikas.length}/${list.length}');
-      return cetasikas;
-    } on FlutterError catch (e) {
-      debugPrint('VDP ▶ cetasikas.json không tìm thấy: $e');
-      return [];
+      if (list == null) return [];
+      return list
+          .map((e) => CetasikaModel.fromJson(e as Map<String, dynamic>))
+          .toList();
     } catch (e) {
-      debugPrint('VDP ▶ cetasikas load lỗi khác: $e');
+      debugPrint('VDP ▶ cetasikas load lỗi: $e');
+      return [];
+    }
+  }
+
+  Future<List<RupaModel>> _loadRupas() async {
+    try {
+      final raw = await rootBundle.loadString('assets/data/rupas.json');
+      final decoded = json.decode(raw);
+      final list = (decoded as Map<String, dynamic>)['rupas'] as List?;
+      if (list == null) return [];
+      return list
+          .map((e) => RupaModel.fromJson(e as Map<String, dynamic>))
+          .toList();
+    } catch (e) {
+      debugPrint('VDP ▶ rupas load lỗi: $e');
+      return [];
+    }
+  }
+
+  Future<List<KammaModel>> _loadKammas() async {
+    try {
+      final raw = await rootBundle.loadString('assets/data/kammas.json');
+      final decoded = json.decode(raw);
+      final list = (decoded as Map<String, dynamic>)['kammas'] as List?;
+      if (list == null) return [];
+      return list
+          .map((e) => KammaModel.fromJson(e as Map<String, dynamic>))
+          .toList();
+    } catch (e) {
+      debugPrint('VDP ▶ kammas load lỗi: $e');
+      return [];
+    }
+  }
+
+  Future<List<PaticcaModel>> _loadPaticcas() async {
+    try {
+      final raw = await rootBundle.loadString('assets/data/paticca.json');
+      final decoded = json.decode(raw);
+      final list = (decoded as Map<String, dynamic>)['paticcas'] as List?;
+      if (list == null) return [];
+      return list
+          .map((e) => PaticcaModel.fromJson(e as Map<String, dynamic>))
+          .toList();
+    } catch (e) {
+      debugPrint('VDP ▶ paticcas load lỗi: $e');
+      return [];
+    }
+  }
+
+  Future<List<VithiModel>> _loadVithis() async {
+    try {
+      final raw = await rootBundle.loadString('assets/data/vithis.json');
+      final decoded = json.decode(raw);
+      final list = (decoded as Map<String, dynamic>)['vithis'] as List?;
+      if (list == null) return [];
+      return list
+          .map((e) => VithiModel.fromJson(e as Map<String, dynamic>))
+          .toList();
+    } catch (e) {
+      debugPrint('VDP ▶ vithis load lỗi: $e');
       return [];
     }
   }
@@ -249,43 +285,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
       }
     }
     return dimmed;
-  }
-
-  void _debugCittaOrderIndexes(List<CittaModel> cittas) {
-    if (cittas.isEmpty) {
-      // debugPrint('VDP ▶ No cittas loaded');
-      return;
-    }
-
-    final indexes = cittas.map((e) => e.orderIndex).toList()..sort();
-
-    final seen = <int>{};
-    final duplicates = <int>[];
-
-    for (final idx in indexes) {
-      if (!seen.add(idx) && !duplicates.contains(idx)) {
-        duplicates.add(idx);
-      }
-    }
-
-    final missing1To121 = <int>[];
-    for (var i = 1; i <= 121; i++) {
-      if (!seen.contains(i)) {
-        missing1To121.add(i);
-      }
-    }
-
-    final outOfRange = indexes.where((e) => e < 1 || e > 121).toList();
-
-    // debugPrint('VDP ▶ Loaded cittas: ${cittas.length}');
-    // debugPrint('VDP ▶ orderIndex min=${indexes.first}, max=${indexes.last}, unique=${seen.length}');
-    // debugPrint('VDP ▶ duplicate orderIndex: ${duplicates.isEmpty ? 'none' : duplicates}');
-    // debugPrint('VDP ▶ missing orderIndex 1..121: ${missing1To121.isEmpty ? 'none' : missing1To121}');
-    // debugPrint('VDP ▶ out-of-range orderIndex: ${outOfRange.isEmpty ? 'none' : outOfRange}');
-    // debugPrint('VDP ▶ first 20 indexes: ${indexes.take(20).toList()}');
-
-    final last20Start = indexes.length > 20 ? indexes.length - 20 : 0;
-    // debugPrint('VDP ▶ last 20 indexes: ${indexes.skip(last20Start).toList()}');
   }
 }
 
