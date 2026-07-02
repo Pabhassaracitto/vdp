@@ -73,6 +73,19 @@ class UserProgress {
       return progress != null && progress.completionPercentage >= 80;
     });
   }
+
+  bool isModuleDueForReview(StudyModule module) {
+    if (moduleProgress.containsKey(module.id)) {
+      final progress = moduleProgress[module.id]!;
+      if (progress.completionPercentage >= 80) {
+        // Due for review if completed more than 7 days ago
+        if (progress.completedAt != null) {
+          return DateTime.now().difference(progress.completedAt!).inDays >= 7;
+        }
+      }
+    }
+    return false;
+  }
 }
 
 class ModuleProgress {
@@ -81,6 +94,11 @@ class ModuleProgress {
   final int quizScore;
   final DateTime? completedAt;
   final List<String> viewedCittaIds;
+  
+  // Spaced Repetition fields
+  final int reviewCount;
+  final DateTime? lastReviewedAt;
+  final DateTime? nextReviewDue;
 
   const ModuleProgress({
     required this.moduleId,
@@ -88,6 +106,9 @@ class ModuleProgress {
     this.quizScore = 0,
     this.completedAt,
     this.viewedCittaIds = const [],
+    this.reviewCount = 0,
+    this.lastReviewedAt,
+    this.nextReviewDue,
   });
 }
 
