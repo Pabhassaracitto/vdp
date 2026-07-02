@@ -111,7 +111,7 @@ final List<Map<String, dynamic>> kStudyModules = [
       'CS_SANNA',
       'CS_CETANA',
       'CS_EKAGGATA',
-      'CS_JIVITA',
+      'CS_JIVITINDRIYA',
       'CS_MANASIKARA'
     ],
   },
@@ -147,7 +147,19 @@ final List<Map<String, dynamic>> kStudyModules = [
       'CS_OTTAPPA',
       'CS_ALOBHA',
       'CS_ADOSA',
-      'CS_TATRAMAJJHATTATA'
+      'CS_TATRAMAJJHATTATA',
+      'CS_KAYAPASSADDHI',
+      'CS_CITTAPASSADDHI',
+      'CS_KAYALAHUTA',
+      'CS_CITTALAHUTA',
+      'CS_KAYAMUDUTA',
+      'CS_CITTAMUDUTA',
+      'CS_KAYAKAMMANNATA',
+      'CS_CITTAKAMMANNATA',
+      'CS_KAYAPAGUNNATA',
+      'CS_CITTAPAGUNNATA',
+      'CS_KAYUJUKATA',
+      'CS_CITTUJUKATA'
     ],
   },
   {
@@ -161,7 +173,10 @@ final List<Map<String, dynamic>> kStudyModules = [
     'icon': '⚠️',
     'isRequired': false,
     'phase': 1,
-    'cittaIds': ['CI_001', 'CI_002', 'CI_009'],
+    'cittaIds': [
+      'CI_001', 'CI_002', 'CI_003', 'CI_004', 'CI_005', 'CI_006',
+      'CI_007', 'CI_008', 'CI_009', 'CI_010', 'CI_011', 'CI_012'
+    ],
   },
   {
     'id': 'M5_SOBHANA',
@@ -174,7 +189,12 @@ final List<Map<String, dynamic>> kStudyModules = [
     'icon': '🌿',
     'isRequired': false,
     'phase': 1,
-    'cittaIds': ['CI_054'],
+    'cittaIds': [
+      'CI_055', 'CI_056', 'CI_057', 'CI_058', 'CI_059', 'CI_060',
+      'CI_061', 'CI_062', 'CI_063', 'CI_064', 'CI_065', 'CI_066',
+      'CI_067', 'CI_068', 'CI_069', 'CI_070', 'CI_071', 'CI_072',
+      'CI_073', 'CI_074', 'CI_075', 'CI_076', 'CI_077', 'CI_078'
+    ],
   },
   {
     'id': 'M6_NGHIEP',
@@ -199,6 +219,13 @@ final List<Map<String, dynamic>> kStudyModules = [
     'icon': '⭐',
     'isRequired': false,
     'phase': 2,
+    'cittaIds': [
+      'CI_106', 'CI_107', 'CI_108', 'CI_109', 'CI_110', 'CI_111', 'CI_112', 'CI_113',
+      'CI_114', 'CI_115', 'CI_116', 'CI_117', 'CI_118', 'CI_119', 'CI_120', 'CI_121',
+      'CI_122', 'CI_123', 'CI_124', 'CI_125', 'CI_126', 'CI_127', 'CI_128', 'CI_129',
+      'CI_130', 'CI_131', 'CI_132', 'CI_133', 'CI_134', 'CI_135', 'CI_136', 'CI_137',
+      'CI_138', 'CI_139', 'CI_140', 'CI_141', 'CI_142', 'CI_143', 'CI_144', 'CI_145'
+    ],
   },
   {
     'id': 'M8_NHAN_DUYEN',
