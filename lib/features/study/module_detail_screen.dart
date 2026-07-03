@@ -4,9 +4,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/theme/vdp_theme.dart';
 import '../../data/models/study_module.dart';
 import '../../data/repositories/vdp_repository.dart';
-import '../../core/theme/vdp_theme.dart';
+import '../../shared/providers/progress_provider.dart';
 import '../quiz/quiz_screen.dart';
 
 class ModuleDetailScreen extends ConsumerStatefulWidget {
@@ -477,95 +478,221 @@ class _SectionHeader extends StatelessWidget {
       );
 }
 
-class _CittaStudyCard extends StatelessWidget {
+class _CittaStudyCard extends ConsumerWidget {
   final dynamic citta;
   final Color color;
   const _CittaStudyCard({required this.citta, required this.color});
 
   @override
-  Widget build(BuildContext context) => Container(
-        margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.all(13),
-        decoration: BoxDecoration(
-          color: color.withOpacity(0.05),
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: color.withOpacity(0.2)),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              '${citta.bhumiGroup.name.bhumiSymbol} ${citta.nameVietnamese}',
-              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              citta.namePali,
-              style: TextStyle(
-                fontSize: 12,
-                fontStyle: FontStyle.italic,
-                color: color,
-              ),
-            ),
-            if (citta.doctrinalNote != null)
-              Padding(
-                padding: const EdgeInsets.only(top: 6),
+  Widget build(BuildContext context, WidgetRef ref) {
+    final progress = ref.watch(progressProvider);
+    final isBookmarked = progress.bookmarkedCittaIds.contains(citta.id);
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(13),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: color.withOpacity(0.2)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Expanded(
                 child: Text(
-                  citta.doctrinalNote!,
+                  '${citta.bhumiGroup.name.bhumiSymbol} ${citta.nameVietnamese}',
                   style: const TextStyle(
-                      fontSize: 13, height: 1.5, color: Colors.black87),
+                      fontSize: 14, fontWeight: FontWeight.w600),
                 ),
               ),
-          ],
+              IconButton(
+                icon: Icon(
+                  isBookmarked
+                      ? Icons.bookmark_rounded
+                      : Icons.bookmark_border_rounded,
+                  color: isBookmarked ? VdpColors.secondary : Colors.grey,
+                  size: 20,
+                ),
+                onPressed: () => ref
+                    .read(progressProvider.notifier)
+                    .toggleCittaBookmark(citta.id),
+                constraints: const BoxConstraints(),
+                padding: EdgeInsets.zero,
+              ),
+              IconButton(
+                icon: const Icon(Icons.edit_note, size: 20, color: Colors.grey),
+                onPressed: () => _showNoteEditor(
+                    context, ref, citta.id, citta.nameVietnamese),
+                constraints: const BoxConstraints(),
+                padding: const EdgeInsets.only(left: 8),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            citta.namePali,
+            style: TextStyle(
+              fontSize: 12,
+              fontStyle: FontStyle.italic,
+              color: color,
+            ),
+          ),
+          if (citta.doctrinalNote != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 6),
+              child: Text(
+                citta.doctrinalNote!,
+                style: const TextStyle(
+                    fontSize: 13, height: 1.5, color: Colors.black87),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  void _showNoteEditor(
+      BuildContext context, WidgetRef ref, String id, String name) {
+    final note = ref.read(progressProvider).personalNotes[id] ?? '';
+    final controller = TextEditingController(text: note);
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Ghi chú: $name'),
+        content: TextField(
+          controller: controller,
+          maxLines: 5,
+          decoration:
+              const InputDecoration(hintText: 'Nhập ghi chú của bạn...'),
         ),
-      );
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Hủy')),
+          ElevatedButton(
+            onPressed: () {
+              ref.read(progressProvider.notifier).saveNote(id, controller.text);
+              Navigator.pop(context);
+            },
+            child: const Text('Lưu'),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
-class _CetasikaStudyCard extends StatelessWidget {
+class _CetasikaStudyCard extends ConsumerWidget {
   final dynamic cetasika;
   final Color color;
   const _CetasikaStudyCard({required this.cetasika, required this.color});
 
   @override
-  Widget build(BuildContext context) => Container(
-        margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.all(13),
-        decoration: BoxDecoration(
-          color: color.withOpacity(0.05),
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: color.withOpacity(0.2)),
-        ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(cetasika.symbol, style: TextStyle(fontSize: 22, color: color)),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    cetasika.nameVietnamese,
-                    style: const TextStyle(
-                        fontSize: 14, fontWeight: FontWeight.w600),
-                  ),
-                  Text(
-                    cetasika.namePali,
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontStyle: FontStyle.italic,
-                      color: color,
+  Widget build(BuildContext context, WidgetRef ref) {
+    final progress = ref.watch(progressProvider);
+    final isBookmarked = progress.bookmarkedCetasikaIds.contains(cetasika.id);
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(13),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: color.withOpacity(0.2)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(cetasika.symbol, style: TextStyle(fontSize: 22, color: color)),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        cetasika.nameVietnamese,
+                        style: const TextStyle(
+                            fontSize: 14, fontWeight: FontWeight.w600),
+                      ),
                     ),
+                    IconButton(
+                      icon: Icon(
+                        isBookmarked
+                            ? Icons.bookmark_rounded
+                            : Icons.bookmark_border_rounded,
+                        color: isBookmarked ? VdpColors.secondary : Colors.grey,
+                        size: 20,
+                      ),
+                      onPressed: () => ref
+                          .read(progressProvider.notifier)
+                          .toggleCetasikaBookmark(cetasika.id),
+                      constraints: const BoxConstraints(),
+                      padding: EdgeInsets.zero,
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.edit_note,
+                          size: 20, color: Colors.grey),
+                      onPressed: () => _showNoteEditor(
+                          context, ref, cetasika.id, cetasika.nameVietnamese),
+                      constraints: const BoxConstraints(),
+                      padding: const EdgeInsets.only(left: 8),
+                    ),
+                  ],
+                ),
+                Text(
+                  cetasika.namePali,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontStyle: FontStyle.italic,
+                    color: color,
                   ),
-                  const SizedBox(height: 4),
-                  Text(
-                    cetasika.descriptionVi,
-                    style: const TextStyle(fontSize: 13, height: 1.5),
-                  ),
-                ],
-              ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  cetasika.descriptionVi,
+                  style: const TextStyle(fontSize: 13, height: 1.5),
+                ),
+              ],
             ),
-          ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showNoteEditor(
+      BuildContext context, WidgetRef ref, String id, String name) {
+    final note = ref.read(progressProvider).personalNotes[id] ?? '';
+    final controller = TextEditingController(text: note);
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Ghi chú: $name'),
+        content: TextField(
+          controller: controller,
+          maxLines: 5,
+          decoration:
+              const InputDecoration(hintText: 'Nhập ghi chú của bạn...'),
         ),
-      );
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Hủy')),
+          ElevatedButton(
+            onPressed: () {
+              ref.read(progressProvider.notifier).saveNote(id, controller.text);
+              Navigator.pop(context);
+            },
+            child: const Text('Lưu'),
+          ),
+        ],
+      ),
+    );
+  }
 }
