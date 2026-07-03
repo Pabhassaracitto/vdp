@@ -50,11 +50,23 @@ class UserProgress {
   final String? lastModuleId;
   final bool allModulesUnlocked;
 
+  /// Danh sách Citta ID đã bookmark
+  final Set<String> bookmarkedCittaIds;
+
+  /// Danh sách Cetasika ID đã bookmark
+  final Set<String> bookmarkedCetasikaIds;
+
+  /// Ghi chú cá nhân - key format: citta_CI_001, cetasika_CS_PHASSA
+  final Map<String, String> personalNotes;
+
   const UserProgress({
     required this.moduleProgress,
     required this.lastStudied,
     this.lastModuleId,
     this.allModulesUnlocked = false,
+    this.bookmarkedCittaIds = const {},
+    this.bookmarkedCetasikaIds = const {},
+    this.personalNotes = const {},
   });
 
   double get overallProgress {

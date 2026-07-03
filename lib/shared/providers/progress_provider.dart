@@ -52,6 +52,19 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
                 : null,
           );
         });
+
+        // Load bookmarks - backward compatible (mặc định rỗng nếu cũ)
+        final bookmarkedCittaIds = Set<String>.from(
+          data['bookmarkedCittaIds'] ?? <String>[],
+        );
+        final bookmarkedCetasikaIds = Set<String>.from(
+          data['bookmarkedCetasikaIds'] ?? <String>[],
+        );
+
+        // Load personal notes - backward compatible
+        final notesRaw = data['personalNotes'] as Map<String, dynamic>? ?? {};
+        final personalNotes = Map<String, String>.from(notesRaw);
+
         state = UserProgress(
           moduleProgress: mp,
           lastStudied:
@@ -59,6 +72,9 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
                   DateTime.now(),
           lastModuleId: data['lastModuleId'] as String?,
           allModulesUnlocked: data['allModulesUnlocked'] as bool? ?? false,
+          bookmarkedCittaIds: bookmarkedCittaIds,
+          bookmarkedCetasikaIds: bookmarkedCetasikaIds,
+          personalNotes: personalNotes,
         );
       }
     } catch (_) {
@@ -88,6 +104,9 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
           'lastStudied': state.lastStudied.toIso8601String(),
           'lastModuleId': state.lastModuleId,
           'allModulesUnlocked': state.allModulesUnlocked,
+          'bookmarkedCittaIds': state.bookmarkedCittaIds.toList(),
+          'bookmarkedCetasikaIds': state.bookmarkedCetasikaIds.toList(),
+          'personalNotes': state.personalNotes,
         }),
       );
     } catch (_) {}
@@ -128,6 +147,9 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       lastStudied: DateTime.now(),
       lastModuleId: moduleId,
       allModulesUnlocked: state.allModulesUnlocked,
+      bookmarkedCittaIds: state.bookmarkedCittaIds,
+      bookmarkedCetasikaIds: state.bookmarkedCetasikaIds,
+      personalNotes: state.personalNotes,
     );
     _save();
   }
@@ -150,16 +172,115 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       lastStudied: DateTime.now(),
       lastModuleId: moduleId,
       allModulesUnlocked: state.allModulesUnlocked,
+      bookmarkedCittaIds: state.bookmarkedCittaIds,
+      bookmarkedCetasikaIds: state.bookmarkedCetasikaIds,
+      personalNotes: state.personalNotes,
     );
     _save();
   }
 
-  /// Reset toàn bộ tiến độ
+  // ─── Bookmark methods ────────────────────────────────────────────
+
+  /// Toggle bookmark cho Citta
+  void toggleCittaBookmark(String cittaId) {
+    final set = Set<String>.from(state.bookmarkedCittaIds);
+    if (set.contains(cittaId)) {
+      set.remove(cittaId);
+    } else {
+      set.add(cittaId);
+    }
+    state = UserProgress(
+      moduleProgress: state.moduleProgress,
+      lastStudied: state.lastStudied,
+      lastModuleId: state.lastModuleId,
+      allModulesUnlocked: state.allModulesUnlocked,
+      bookmarkedCittaIds: set,
+      bookmarkedCetasikaIds: state.bookmarkedCetasikaIds,
+      personalNotes: state.personalNotes,
+    );
+    _save();
+  }
+
+  /// Toggle bookmark cho Cetasika
+  void toggleCetasikaBookmark(String cetasikaId) {
+    final set = Set<String>.from(state.bookmarkedCetasikaIds);
+    if (set.contains(cetasikaId)) {
+      set.remove(cetasikaId);
+    } else {
+      set.add(cetasikaId);
+    }
+    state = UserProgress(
+      moduleProgress: state.moduleProgress,
+      lastStudied: state.lastStudied,
+      lastModuleId: state.lastModuleId,
+      allModulesUnlocked: state.allModulesUnlocked,
+      bookmarkedCittaIds: state.bookmarkedCittaIds,
+      bookmarkedCetasikaIds: set,
+      personalNotes: state.personalNotes,
+    );
+    _save();
+  }
+
+  /// Kiểm tra Citta đã được bookmark chưa
+  bool isCittaBookmarked(String id) => state.bookmarkedCittaIds.contains(id);
+
+  /// Kiểm tra Cetasika đã được bookmark chưa
+  bool isCetasikaBookmarked(String id) =>
+      state.bookmarkedCetasikaIds.contains(id);
+
+  // ─── Personal Notes methods ──────────────────────────────────────
+
+  /// Lưu ghi chú cá nhân
+  /// Key format: citta_CI_001, cetasika_CS_PHASSA
+  void saveNote(String key, String note) {
+    final notes = Map<String, String>.from(state.personalNotes);
+    if (note.trim().isEmpty) {
+      notes.remove(key);
+    } else {
+      notes[key] = note;
+    }
+    state = UserProgress(
+      moduleProgress: state.moduleProgress,
+      lastStudied: state.lastStudied,
+      lastModuleId: state.lastModuleId,
+      allModulesUnlocked: state.allModulesUnlocked,
+      bookmarkedCittaIds: state.bookmarkedCittaIds,
+      bookmarkedCetasikaIds: state.bookmarkedCetasikaIds,
+      personalNotes: notes,
+    );
+    _save();
+  }
+
+  /// Xóa ghi chú cá nhân
+  void deleteNote(String key) {
+    final notes = Map<String, String>.from(state.personalNotes);
+    notes.remove(key);
+    state = UserProgress(
+      moduleProgress: state.moduleProgress,
+      lastStudied: state.lastStudied,
+      lastModuleId: state.lastModuleId,
+      allModulesUnlocked: state.allModulesUnlocked,
+      bookmarkedCittaIds: state.bookmarkedCittaIds,
+      bookmarkedCetasikaIds: state.bookmarkedCetasikaIds,
+      personalNotes: notes,
+    );
+    _save();
+  }
+
+  /// Lấy ghi chú cá nhân theo key
+  String? getNote(String key) => state.personalNotes[key];
+
+  // ─── Reset & Unlock ──────────────────────────────────────────────
+
+  /// Reset toàn bộ tiến độ (bao gồm bookmark + notes)
   Future<void> resetAll() async {
     state = UserProgress(
       moduleProgress: const {},
       lastStudied: DateTime.now(),
       allModulesUnlocked: false,
+      bookmarkedCittaIds: const {},
+      bookmarkedCetasikaIds: const {},
+      personalNotes: const {},
     );
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_kProgressKey);
@@ -172,6 +293,9 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       lastStudied: state.lastStudied,
       lastModuleId: state.lastModuleId,
       allModulesUnlocked: unlocked,
+      bookmarkedCittaIds: state.bookmarkedCittaIds,
+      bookmarkedCetasikaIds: state.bookmarkedCetasikaIds,
+      personalNotes: state.personalNotes,
     );
     _save();
   }
@@ -192,3 +316,9 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
 final progressProvider = StateNotifierProvider<ProgressNotifier, UserProgress>(
   (ref) => ProgressNotifier(),
 );
+
+/// Provider phụ: đếm tổng số bookmark (citta + cetasika)
+final bookmarkCountProvider = Provider<int>((ref) {
+  final p = ref.watch(progressProvider);
+  return p.bookmarkedCittaIds.length + p.bookmarkedCetasikaIds.length;
+});
