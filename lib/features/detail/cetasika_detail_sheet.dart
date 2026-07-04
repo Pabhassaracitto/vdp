@@ -5,15 +5,57 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/vdp_theme.dart';
+import '../../core/utils/pali_tts_helper.dart';
 import '../../data/models/cetasika_model.dart';
+import 'widgets/pali_name_card.dart';
 
-class CetasikaDetailSheet extends ConsumerWidget {
+class CetasikaDetailSheet extends ConsumerStatefulWidget {
   final CetasikaModel cetasika;
 
   const CetasikaDetailSheet({super.key, required this.cetasika});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<CetasikaDetailSheet> createState() =>
+      _CetasikaDetailSheetState();
+}
+
+class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
+  bool _isSpeaking = false;
+
+  Future<void> _speakPali() async {
+    if (_isSpeaking) {
+      await PaliTtsHelper.instance.stop();
+      if (mounted) setState(() => _isSpeaking = false);
+      return;
+    }
+
+    setState(() => _isSpeaking = true);
+
+    final success =
+        await PaliTtsHelper.instance.speak(widget.cetasika.namePali);
+
+    if (mounted) {
+      setState(() => _isSpeaking = false);
+      if (!success) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Thiết bị không hỗ trợ phát âm TTS.'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
+    }
+  }
+
+  @override
+  void dispose() {
+    // PaliTtsHelper.instance.stop(); // Không cần stop ở đây nếu muốn phát tiếp khi đóng sheet
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final cetasika = widget.cetasika;
     final groupColor = _getGroupColor(cetasika.group);
 
     return DraggableScrollableSheet(
@@ -32,7 +74,7 @@ class CetasikaDetailSheet extends ConsumerWidget {
             controller: scrollController,
             padding: const EdgeInsets.all(20),
             children: [
-              // Handle
+              // ── Handle ──────────────────────────────────────────────
               Center(
                 child: Container(
                   width: 40,
@@ -45,7 +87,7 @@ class CetasikaDetailSheet extends ConsumerWidget {
                 ),
               ),
 
-              // Header
+              // ── Header ──────────────────────────────────────────────
               Row(
                 children: [
                   Container(
@@ -87,65 +129,16 @@ class CetasikaDetailSheet extends ConsumerWidget {
 
               const SizedBox(height: 16),
 
-              // Pali name + IPA
-              GestureDetector(
-                onLongPress: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        cetasika.ipaTranscription != null
-                            ? 'IPA: /${cetasika.ipaTranscription}/'
-                            : 'Chưa có phát âm',
-                      ),
-                    ),
-                  );
-                },
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: groupColor.withOpacity(0.05),
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: groupColor.withOpacity(0.2)),
-                  ),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              cetasika.namePali,
-                              style: const TextStyle(
-                                fontSize: 16,
-                                fontStyle: FontStyle.italic,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                            if (cetasika.ipaTranscription != null)
-                              Text(
-                                '/${cetasika.ipaTranscription}/',
-                                style: TextStyle(
-                                    fontSize: 13, color: Colors.grey.shade600),
-                              ),
-                          ],
-                        ),
-                      ),
-                      const Column(
-                        children: [
-                          Icon(Icons.volume_up_outlined,
-                              size: 20, color: Colors.blue),
-                          Text('Giữ để\nnghe',
-                              textAlign: TextAlign.center,
-                              style:
-                                  TextStyle(fontSize: 9, color: Colors.blue)),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+              // ── Pali name + TTS button ───────────────────────────────
+              PaliNameCard(
+                namePali: cetasika.namePali,
+                ipaTranscription: cetasika.ipaTranscription,
+                accentColor: groupColor,
+                isSpeaking: _isSpeaking,
+                onSpeak: _speakPali,
               ),
 
-              // Mô tả
+              // ── Mô tả ───────────────────────────────────────────────
               const SizedBox(height: 16),
               Container(
                 padding: const EdgeInsets.all(14),
@@ -159,15 +152,16 @@ class CetasikaDetailSheet extends ConsumerWidget {
                 ),
               ),
 
-              // === TỨ NGHĨA SECTION ===
+              // ── Tứ Nghĩa ────────────────────────────────────────────
               if (cetasika.trangThai != null ||
                   cetasika.phanSu != null ||
                   cetasika.thanhTuu != null ||
                   cetasika.nhanGan != null) ...[
                 const SizedBox(height: 20),
-                const Text('📖 Tứ Nghĩa',
-                    style:
-                        TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                const Text(
+                  '📖 Tứ Nghĩa',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                ),
                 const SizedBox(height: 8),
                 Container(
                   padding: const EdgeInsets.all(14),
@@ -195,7 +189,7 @@ class CetasikaDetailSheet extends ConsumerWidget {
                 ),
               ],
 
-              // === CONFLICT GUARD SECTION ===
+              // ── Conflict Guard ───────────────────────────────────────
               if (cetasika.conflictRules.isNotEmpty) ...[
                 const SizedBox(height: 20),
                 Row(
@@ -260,8 +254,9 @@ class CetasikaDetailSheet extends ConsumerWidget {
             ),
           ),
           Expanded(
-              child: Text(value,
-                  style: const TextStyle(fontSize: 13, height: 1.5))),
+            child:
+                Text(value, style: const TextStyle(fontSize: 13, height: 1.5)),
+          ),
         ],
       ),
     );

@@ -4,24 +4,67 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/theme/vdp_theme.dart';
+import '../../core/utils/pali_tts_helper.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/repositories/vdp_repository.dart';
-import '../../core/theme/vdp_theme.dart';
+import 'widgets/pali_name_card.dart';
 
-class CittaDetailSheet extends ConsumerWidget {
+// Chuyển sang StatefulWidget để quản lý trạng thái isSpeaking
+class CittaDetailSheet extends ConsumerStatefulWidget {
   final CittaModel citta;
-  
+
   const CittaDetailSheet({super.key, required this.citta});
-  
+
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<CittaDetailSheet> createState() => _CittaDetailSheetState();
+}
+
+class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
+  bool _isSpeaking = false;
+
+  Future<void> _speakPali() async {
+    if (_isSpeaking) {
+      await PaliTtsHelper.instance.stop();
+      if (mounted) setState(() => _isSpeaking = false);
+      return;
+    }
+
+    setState(() => _isSpeaking = true);
+
+    final success = await PaliTtsHelper.instance.speak(widget.citta.namePali);
+
+    if (mounted) {
+      setState(() => _isSpeaking = false);
+      if (!success) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Thiết bị không hỗ trợ phát âm TTS.'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
+    }
+  }
+
+  @override
+  void dispose() {
+    PaliTtsHelper.instance.stop();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final citta = widget.citta;
     final bhumiColor = citta.bhumiGroup.name.bhumiColor;
     final cetasikas = ref.read(cetasikasProvider);
     final alwaysAssocs = citta.cetasikaAssociations
-        .where((a) => a.type == AssociationType.always).toList();
+        .where((a) => a.type == AssociationType.always)
+        .toList();
     final sometimesAssocs = citta.cetasikaAssociations
-        .where((a) => a.type == AssociationType.sometimes).toList();
-    
+        .where((a) => a.type == AssociationType.sometimes)
+        .toList();
+
     return DraggableScrollableSheet(
       initialChildSize: 0.7,
       maxChildSize: 0.95,
@@ -33,17 +76,19 @@ class CittaDetailSheet extends ConsumerWidget {
           body: Container(
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(20)),
               border: Border(top: BorderSide(color: bhumiColor, width: 4)),
             ),
             child: ListView(
               controller: scrollController,
               padding: const EdgeInsets.all(20),
               children: [
-                // Handle
+                // ── Handle ──────────────────────────────────────────────
                 Center(
                   child: Container(
-                    width: 40, height: 4,
+                    width: 40,
+                    height: 4,
                     margin: const EdgeInsets.only(bottom: 16),
                     decoration: BoxDecoration(
                       color: Colors.grey.shade300,
@@ -51,12 +96,13 @@ class CittaDetailSheet extends ConsumerWidget {
                     ),
                   ),
                 ),
-                
-                // Header
+
+                // ── Header ──────────────────────────────────────────────
                 Row(
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
                         color: bhumiColor.withOpacity(0.15),
                         borderRadius: BorderRadius.circular(6),
@@ -88,43 +134,21 @@ class CittaDetailSheet extends ConsumerWidget {
                     ),
                   ],
                 ),
-                
+
                 const SizedBox(height: 12),
-                
-                // Pali name (Long press for pronunciation)
-                GestureDetector(
-                  onLongPress: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Phát âm: ${citta.namePali}')),
-                    );
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade50,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text('Pāḷi:', style: TextStyle(fontSize: 11, color: Colors.grey)),
-                        Text(
-                          citta.namePali,
-                          style: const TextStyle(fontSize: 13, fontStyle: FontStyle.italic),
-                        ),
-                        const SizedBox(height: 4),
-                        const Text(
-                          '👆 Nhấn giữ để nghe phát âm',
-                          style: TextStyle(fontSize: 10, color: Colors.blue),
-                        ),
-                      ],
-                    ),
-                  ),
+
+                // ── Pali name + TTS button ───────────────────────────────
+                PaliNameCard(
+                  namePali: citta.namePali,
+                  ipaTranscription: null, // CittaModel không có IPA
+                  accentColor: bhumiColor,
+                  isSpeaking: _isSpeaking,
+                  onSpeak: _speakPali,
                 ),
-                
+
                 const SizedBox(height: 16),
-                
-                // Info chips
+
+                // ── Info chips ───────────────────────────────────────────
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,
@@ -146,8 +170,8 @@ class CittaDetailSheet extends ConsumerWidget {
                     ),
                   ],
                 ),
-                
-                // Ghi chú giáo lý
+
+                // ── Ghi chú giáo lý ─────────────────────────────────────
                 if (citta.doctrinalNote != null) ...[
                   const SizedBox(height: 16),
                   _SectionTitle('📖 Giáo Lý'),
@@ -156,47 +180,55 @@ class CittaDetailSheet extends ConsumerWidget {
                     style: const TextStyle(fontSize: 14, height: 1.6),
                   ),
                 ],
-                
-                // Ví dụ
+
+                // ── Ví dụ ───────────────────────────────────────────────
                 if (citta.examples != null && citta.examples!.isNotEmpty) ...[
                   const SizedBox(height: 16),
                   _SectionTitle('💡 Ví dụ'),
                   ...citta.examples!.map((ex) => Padding(
-                    padding: const EdgeInsets.only(bottom: 4),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text('• ', style: TextStyle(fontWeight: FontWeight.bold)),
-                        Expanded(child: Text(ex, style: const TextStyle(fontSize: 14))),
-                      ],
-                    ),
-                  )),
+                        padding: const EdgeInsets.only(bottom: 4),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('• ',
+                                style: TextStyle(fontWeight: FontWeight.bold)),
+                            Expanded(
+                                child: Text(ex,
+                                    style: const TextStyle(fontSize: 14))),
+                          ],
+                        ),
+                      )),
                 ],
-                
-                // Tâm Sở Cố Định
+
+                // ── Tâm Sở Cố Định ───────────────────────────────────────
                 const SizedBox(height: 16),
                 _SectionTitle('✦ Tâm Sở Cố Định (${alwaysAssocs.length})'),
                 Wrap(
                   spacing: 8,
                   runSpacing: 6,
                   children: alwaysAssocs.map((assoc) {
-                    final cs = cetasikas.where((c) => c.id == assoc.cetasikaId).firstOrNull;
+                    final cs = cetasikas
+                        .where((c) => c.id == assoc.cetasikaId)
+                        .firstOrNull;
                     return _CetasikaChip(
                       label: cs?.nameShort ?? assoc.cetasikaId,
                       type: AssociationType.always,
                     );
                   }).toList(),
                 ),
-                
-                // Tâm Sở Bất Định
+
+                // ── Tâm Sở Bất Định ──────────────────────────────────────
                 if (sometimesAssocs.isNotEmpty) ...[
                   const SizedBox(height: 12),
-                  _SectionTitle('◎ Tâm Sở Bất Định (${sometimesAssocs.length})'),
+                  _SectionTitle(
+                      '◎ Tâm Sở Bất Định (${sometimesAssocs.length})'),
                   Wrap(
                     spacing: 8,
                     runSpacing: 6,
                     children: sometimesAssocs.map((assoc) {
-                      final cs = cetasikas.where((c) => c.id == assoc.cetasikaId).firstOrNull;
+                      final cs = cetasikas
+                          .where((c) => c.id == assoc.cetasikaId)
+                          .firstOrNull;
                       return _CetasikaChip(
                         label: cs?.nameShort ?? assoc.cetasikaId,
                         type: AssociationType.sometimes,
@@ -205,7 +237,7 @@ class CittaDetailSheet extends ConsumerWidget {
                     }).toList(),
                   ),
                 ],
-                
+
                 const SizedBox(height: 32),
               ],
             ),
@@ -214,59 +246,85 @@ class CittaDetailSheet extends ConsumerWidget {
       },
     );
   }
-  
+
+  // ─── Label helpers ────────────────────────────────────────────────────────
+
   String _getVedanaName(Vedana vedana) {
     switch (vedana) {
-      case Vedana.pleasant: return 'Lạc thọ';
-      case Vedana.unpleasant: return 'Khổ thọ';
-      case Vedana.neutral: return 'Xả thọ';
-      case Vedana.joy: return 'Hỷ thọ';
+      case Vedana.pleasant:
+        return 'Lạc thọ';
+      case Vedana.unpleasant:
+        return 'Khổ thọ';
+      case Vedana.neutral:
+        return 'Xả thọ';
+      case Vedana.joy:
+        return 'Hỷ thọ';
     }
   }
-  
+
   String _getVedanaSymbol(Vedana vedana) {
     switch (vedana) {
-      case Vedana.pleasant: return VdpSymbols.pleasant;
-      case Vedana.unpleasant: return VdpSymbols.unpleasant;
-      case Vedana.neutral: return VdpSymbols.neutral;
-      case Vedana.joy: return VdpSymbols.joy;
+      case Vedana.pleasant:
+        return VdpSymbols.pleasant;
+      case Vedana.unpleasant:
+        return VdpSymbols.unpleasant;
+      case Vedana.neutral:
+        return VdpSymbols.neutral;
+      case Vedana.joy:
+        return VdpSymbols.joy;
     }
   }
-  
+
   Color _getVedanaColor(Vedana vedana) {
     switch (vedana) {
-      case Vedana.pleasant: return VdpColors.pleasant;
-      case Vedana.unpleasant: return VdpColors.unpleasant;
-      case Vedana.neutral: return VdpColors.neutral;
-      case Vedana.joy: return VdpColors.joy;
+      case Vedana.pleasant:
+        return VdpColors.pleasant;
+      case Vedana.unpleasant:
+        return VdpColors.unpleasant;
+      case Vedana.neutral:
+        return VdpColors.neutral;
+      case Vedana.joy:
+        return VdpColors.joy;
     }
   }
-  
+
   String _getFunctionName(CittaFunction func) {
     switch (func) {
-      case CittaFunction.kusala: return 'Thiện';
-      case CittaFunction.akusala: return 'Bất Thiện';
-      case CittaFunction.vipaka: return 'Quả';
-      case CittaFunction.kiriya: return 'Duy Tác';
+      case CittaFunction.kusala:
+        return 'Thiện';
+      case CittaFunction.akusala:
+        return 'Bất Thiện';
+      case CittaFunction.vipaka:
+        return 'Quả';
+      case CittaFunction.kiriya:
+        return 'Duy Tác';
     }
   }
-  
+
   String _getBhumiName(BhumiGroup bhumi) {
     switch (bhumi) {
-      case BhumiGroup.akusala: return 'Bất Thiện';
-      case BhumiGroup.ahetuka: return 'Vô Nhân';
-      case BhumiGroup.sobhanaKamavacara: return 'Tịnh Hảo DG';
-      case BhumiGroup.rupavacara: return 'Sắc Giới';
-      case BhumiGroup.arupavacara: return 'Vô Sắc Giới';
-      case BhumiGroup.lokuttara: return 'Siêu Thế';
+      case BhumiGroup.akusala:
+        return 'Bất Thiện';
+      case BhumiGroup.ahetuka:
+        return 'Vô Nhân';
+      case BhumiGroup.sobhanaKamavacara:
+        return 'Tịnh Hảo DG';
+      case BhumiGroup.rupavacara:
+        return 'Sắc Giới';
+      case BhumiGroup.arupavacara:
+        return 'Vô Sắc Giới';
+      case BhumiGroup.lokuttara:
+        return 'Siêu Thế';
     }
   }
 }
 
+// ─── Shared Widgets ──────────────────────────────────────────────────────────
+
 class _SectionTitle extends StatelessWidget {
   final String text;
   const _SectionTitle(this.text);
-  
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -283,9 +341,10 @@ class _InfoChip extends StatelessWidget {
   final String label;
   final String icon;
   final Color color;
-  
-  const _InfoChip({required this.label, required this.icon, required this.color});
-  
+
+  const _InfoChip(
+      {required this.label, required this.icon, required this.color});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -297,7 +356,8 @@ class _InfoChip extends StatelessWidget {
       ),
       child: Text(
         '$icon $label',
-        style: TextStyle(fontSize: 12, color: color, fontWeight: FontWeight.w600),
+        style:
+            TextStyle(fontSize: 12, color: color, fontWeight: FontWeight.w600),
       ),
     );
   }
@@ -307,20 +367,20 @@ class _CetasikaChip extends StatelessWidget {
   final String label;
   final AssociationType type;
   final String? note;
-  
+
   const _CetasikaChip({required this.label, required this.type, this.note});
-  
+
   @override
   Widget build(BuildContext context) {
-    final color = type == AssociationType.always 
-        ? VdpColors.always 
-        : VdpColors.sometimes;
-    final symbol = type == AssociationType.always 
-        ? VdpSymbols.always 
+    final color =
+        type == AssociationType.always ? VdpColors.always : VdpColors.sometimes;
+    final symbol = type == AssociationType.always
+        ? VdpSymbols.always
         : VdpSymbols.sometimes;
-    
+
     return Tooltip(
-      message: note ?? (type == AssociationType.always ? 'Luôn phối hợp' : 'Có thể có'),
+      message: note ??
+          (type == AssociationType.always ? 'Luôn phối hợp' : 'Có thể có'),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(
