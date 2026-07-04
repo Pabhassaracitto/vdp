@@ -81,12 +81,7 @@ class StudyScreen extends ConsumerWidget {
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
-      builder: (_) => ProviderScope(
-        overrides: [
-          progressProvider.overrideWith((ref) => ref.read(progressProvider.notifier)),
-        ],
-        child: const _BookmarksSheet(),
-      ),
+      builder: (_) => const _BookmarksSheet(),
     );
   }
 

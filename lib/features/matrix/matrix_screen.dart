@@ -1,9 +1,10 @@
 // lib/features/matrix/matrix_screen.dart
 
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:async';
 
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
@@ -73,7 +74,6 @@ class MatrixScreen extends ConsumerStatefulWidget {
 class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   final ScrollController _horizontalController = ScrollController();
   final ScrollController _verticalController1 = ScrollController();
-  final ScrollController _verticalController2 = ScrollController();
 
   // M2-T4: Debounce timer
   Timer? _searchDebounceTimer;
@@ -87,8 +87,6 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   @override
   void initState() {
     super.initState();
-    _verticalController1.addListener(_syncScroll1);
-    _verticalController2.addListener(_syncScroll2);
     _verticalController1.addListener(_updateScrollToTopVisibility);
   }
 
@@ -99,30 +97,6 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       setState(() {
         _showScrollToTop = shouldShow;
       });
-    }
-  }
-
-  void _syncScroll1() {
-    if (_isSyncingScroll) return;
-    if (!_verticalController2.hasClients) return;
-    final diff =
-        (_verticalController2.offset - _verticalController1.offset).abs();
-    if (diff > 0.5) {
-      _isSyncingScroll = true;
-      _verticalController2.jumpTo(_verticalController1.offset);
-      _isSyncingScroll = false;
-    }
-  }
-
-  void _syncScroll2() {
-    if (_isSyncingScroll) return;
-    if (!_verticalController1.hasClients) return;
-    final diff =
-        (_verticalController1.offset - _verticalController2.offset).abs();
-    if (diff > 0.5) {
-      _isSyncingScroll = true;
-      _verticalController1.jumpTo(_verticalController2.offset);
-      _isSyncingScroll = false;
     }
   }
 
@@ -152,11 +126,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   void dispose() {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     _verticalController1.removeListener(_updateScrollToTopVisibility);
-    _verticalController1.removeListener(_syncScroll1);
-    _verticalController2.removeListener(_syncScroll2);
     _horizontalController.dispose();
     _verticalController1.dispose();
-    _verticalController2.dispose();
     _searchDebounceTimer?.cancel(); // M2-T4: Dispose timer
     super.dispose();
   }
@@ -637,38 +608,38 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
 
                   // Ô Bảng Tương Ưng
                   Expanded(
-                    child: ListView.builder(
-                      controller: _verticalController2,
-                      itemCount: cittas.length,
-                      itemBuilder: (_, rowIdx) {
-                        final citta = cittas[rowIdx];
-                        final isCittaSel = selectedCitta == citta.id;
-                        return Row(
-                          children: List.generate(
-                            cetasikas.length,
-                            (colIdx) {
-                              final cs = cetasikas[colIdx];
-                              return AssociationCell(
-                                cittaId: citta.id,
-                                cetasikaId: cs.id,
-                                type: _getAssocType(citta, cs.id),
-                                isCittaHighlighted: isCittaSel,
-                                isCetasikaHighlighted:
-                                    selectedCetasika == cs.id,
-                                isDimmed: dimmed.contains(cs.id) ||
-                                    (searchType == SearchType.cetasika &&
-                                        matchedCetasikas.isNotEmpty &&
-                                        !matchedCetasikas.contains(colIdx)) ||
-                                    (searchType == SearchType.citta &&
-                                        matchedCittas.isNotEmpty &&
-                                        !matchedCittas.contains(rowIdx)),
-                                size: cellSize,
-                                useHighContrast: _showHighContrastMode,
-                              );
-                            },
-                          ),
-                        );
-                      },
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: List.generate(cittas.length, (rowIdx) {
+                          final citta = cittas[rowIdx];
+                          final isCittaSel = selectedCitta == citta.id;
+                          return Row(
+                            children: List.generate(
+                              cetasikas.length,
+                              (colIdx) {
+                                final cs = cetasikas[colIdx];
+                                return AssociationCell(
+                                  cittaId: citta.id,
+                                  cetasikaId: cs.id,
+                                  type: _getAssocType(citta, cs.id),
+                                  isCittaHighlighted: isCittaSel,
+                                  isCetasikaHighlighted:
+                                      selectedCetasika == cs.id,
+                                  isDimmed: dimmed.contains(cs.id) ||
+                                      (searchType == SearchType.cetasika &&
+                                          matchedCetasikas.isNotEmpty &&
+                                          !matchedCetasikas.contains(colIdx)) ||
+                                      (searchType == SearchType.citta &&
+                                          matchedCittas.isNotEmpty &&
+                                          !matchedCittas.contains(rowIdx)),
+                                  size: cellSize,
+                                  useHighContrast: _showHighContrastMode,
+                                );
+                              },
+                            ),
+                          );
+                        }),
+                      ),
                     ),
                   ),
                 ],
@@ -695,9 +666,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     showModalBottomSheet(
       context: ctx,
       isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
+      backgroundColor: Colors.transparent,
       builder: (_) => CittaDetailSheet(citta: citta),
     );
   }
@@ -706,9 +675,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     showModalBottomSheet(
       context: ctx,
       isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
+      backgroundColor: Colors.transparent,
       builder: (_) => CetasikaDetailSheet(cetasika: cetasika),
     );
   }

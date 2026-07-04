@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vdp_app/shared/providers/progress_provider.dart';
 
 import '../../core/theme/vdp_theme.dart';
 import '../../core/utils/pali_tts_helper.dart';
@@ -132,6 +133,31 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                         ],
                       ),
                     ),
+                    // ── Note Button ──────────────────────────────────────
+                    IconButton(
+                      icon: const Icon(Icons.edit_note_rounded,
+                          color: VdpColors.primary),
+                      onPressed: () => _showNoteEditor(context, citta),
+                    ),
+                    // ── Bookmark Button ──────────────────────────────────
+                    Consumer(builder: (context, ref, _) {
+                      final isBookmarked = ref
+                          .watch(progressProvider)
+                          .bookmarkedCittaIds
+                          .contains(citta.id);
+                      return IconButton(
+                        icon: Icon(
+                          isBookmarked
+                              ? Icons.bookmark_rounded
+                              : Icons.bookmark_border_rounded,
+                          color:
+                              isBookmarked ? VdpColors.secondary : Colors.grey,
+                        ),
+                        onPressed: () => ref
+                            .read(progressProvider.notifier)
+                            .toggleCittaBookmark(citta.id),
+                      );
+                    }),
                   ],
                 ),
 
@@ -244,6 +270,43 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
           ),
         );
       },
+    );
+  }
+
+  // ─── Note Editor ──────────────────────────────────────────────────────────
+
+  void _showNoteEditor(BuildContext context, CittaModel citta) {
+    final noteKey = 'citta_${citta.id}';
+    final noteController = TextEditingController(
+        text: ref.read(progressProvider).personalNotes[noteKey] ?? '');
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Ghi chú cá nhân'),
+        content: TextField(
+          controller: noteController,
+          maxLines: 5,
+          decoration: const InputDecoration(
+            hintText: 'Nhập ghi chú của bạn...',
+            border: OutlineInputBorder(),
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Hủy'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              ref
+                  .read(progressProvider.notifier)
+                  .saveNote(noteKey, noteController.text);
+              Navigator.pop(ctx);
+            },
+            child: const Text('Lưu'),
+          ),
+        ],
+      ),
     );
   }
 
