@@ -86,14 +86,17 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
               padding: const EdgeInsets.all(20),
               children: [
                 // ── Handle ──────────────────────────────────────────────
-                Center(
-                  child: Container(
-                    width: 40,
-                    height: 4,
-                    margin: const EdgeInsets.only(bottom: 16),
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
-                      borderRadius: BorderRadius.circular(2),
+                Semantics(
+                  label: 'Thanh kéo để thay đổi kích thước',
+                  child: Center(
+                    child: Container(
+                      width: 40,
+                      height: 4,
+                      margin: const EdgeInsets.only(bottom: 16),
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
                     ),
                   ),
                 ),
@@ -101,17 +104,20 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                 // ── Header ──────────────────────────────────────────────
                 Row(
                   children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 8, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: bhumiColor.withOpacity(0.15),
-                        borderRadius: BorderRadius.circular(6),
-                        border: Border.all(color: bhumiColor, width: 1),
-                      ),
-                      child: Text(
-                        citta.bhumiGroup.name.bhumiSymbol,
-                        style: const TextStyle(fontSize: 20),
+                    Semantics(
+                      label: 'Bhumi Group ${citta.bhumiGroup.name}',
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: bhumiColor.withOpacity(0.15),
+                          borderRadius: BorderRadius.circular(6),
+                          border: Border.all(color: bhumiColor, width: 1),
+                        ),
+                        child: Text(
+                          citta.bhumiGroup.name.bhumiSymbol,
+                          style: const TextStyle(fontSize: 20),
+                        ),
                       ),
                     ),
                     const SizedBox(width: 12),
