@@ -156,7 +156,40 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
 
     return Scaffold(
-      appBar: _buildAppBar(context, cittas.length),
+      appBar: AppBar(
+        title: Semantics(
+          label: 'Bảng Tương Ưng Vi Diệu Pháp, đang hiển thị ${cittas.length} Tâm',
+          child: const Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text('Bảng Tương Ưng Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
+              Text('Abhidhamma Matrix',
+                  style: TextStyle(fontSize: 12, color: Colors.white70)),
+            ],
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(_forceLandscape
+                ? Icons.stay_current_portrait
+                : Icons.stay_current_landscape),
+            onPressed: _toggleOrientation,
+            tooltip: 'Xoay màn hình',
+          ),
+          IconButton(
+            icon: Icon(
+                _showHighContrastMode ? Icons.contrast : Icons.contrast_outlined),
+            onPressed: () =>
+                setState(() => _showHighContrastMode = !_showHighContrastMode),
+            tooltip: 'Tương phản cao',
+          ),
+          IconButton(
+            icon: const Icon(Icons.info_outline),
+            onPressed: () => _showHelp(context),
+            tooltip: 'Hướng dẫn',
+          ),
+        ],
+      ),
       body: Column(
         children: [
           _buildBhumiFilter(),
@@ -190,45 +223,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   // ════════════════════════════════════════════════════════════
-  //  APP BAR
+  //  APP BAR (Moved into build)
   // ════════════════════════════════════════════════════════════
 
-  PreferredSizeWidget _buildAppBar(BuildContext context, int cittaCount) {
-    return AppBar(
-      title: Semantics(
-        label: 'Bảng Tương Ưng Vi Diệu Pháp, đang hiển thị $cittaCount Tâm',
-        child: const Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text('Bảng Tương Ưng Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
-            Text('Abhidhamma Matrix',
-                style: TextStyle(fontSize: 12, color: Colors.white70)),
-          ],
-        ),
-      ),
-      actions: [
-        IconButton(
-          icon: Icon(_forceLandscape
-              ? Icons.stay_current_portrait
-              : Icons.stay_current_landscape),
-          onPressed: _toggleOrientation,
-          tooltip: 'Xoay màn hình',
-        ),
-        IconButton(
-          icon: Icon(
-              _showHighContrastMode ? Icons.contrast : Icons.contrast_outlined),
-          onPressed: () =>
-              setState(() => _showHighContrastMode = !_showHighContrastMode),
-          tooltip: 'Tương phản cao',
-        ),
-        IconButton(
-          icon: const Icon(Icons.info_outline),
-          onPressed: () => _showHelp(context),
-          tooltip: 'Hướng dẫn',
-        ),
-      ],
-    );
-  }
+  // M4-T3: _buildAppBar removed.
 
   // M2-T4: Search Bar
   Widget _buildSearchBar(bool isLandscape) {
