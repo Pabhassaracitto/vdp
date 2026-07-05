@@ -9,6 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/repositories/vdp_repository.dart';
 import '../matrix/matrix_screen.dart';
+import '../paticca/presentation/screens/paticca_screen.dart';
 import '../settings/settings_screen.dart';
 import '../study/study_screen.dart';
 
@@ -44,6 +45,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     _TabItem(
         icon: Icons.grid_view, label: 'Bảng Tương Ưng', widget: MatrixScreen()),
     _TabItem(icon: Icons.school, label: 'Học Tập', widget: StudyScreen()),
+    _TabItem(icon: Icons.account_tree, label: 'Nhân Duyên', widget: PaticcaScreen()),
     _TabItem(icon: Icons.settings, label: 'Cài đặt', widget: SettingsScreen()),
   ];
 
