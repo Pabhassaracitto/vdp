@@ -81,7 +81,6 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   BhumiGroup? _filterBhumi;
   bool _showHighContrastMode = false;
   bool _forceLandscape = false;
-  bool _isSyncingScroll = false;
   bool _showScrollToTop = false;
 
   @override
