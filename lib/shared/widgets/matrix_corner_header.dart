@@ -1,14 +1,14 @@
 // lib/shared/widgets/matrix_corner_header.dart
 //
 // Ô góc trái trên cùng của Bảng Tương Ưng.
-// Đường gạch chéo chia ô thành 2 vùng:
-//   • Góc TRÊN-PHẢI : "Tâm Sở →"  (hướng đọc cột — sang phải)
-//   • Góc DƯỚI-TRÁI : "Tâm ↓"    (hướng đọc hàng — xuống dưới)
+// Thiết kế: đường gạch chéo chia ô thành 2 vùng:
+//   • Góc TRÊN-PHẢI : "Tâm Sở →"
+//   • Góc DƯỚI-TRÁI : "Tâm ↓"
 
 import 'package:flutter/material.dart';
 
-import '../../l10n/l10n.dart';
 import '../../core/theme/vdp_theme.dart';
+import '../../l10n/l10n.dart';
 
 class MatrixCornerHeader extends StatelessWidget {
   final double width;
@@ -29,102 +29,64 @@ class MatrixCornerHeader extends StatelessWidget {
     final Color textColor =
         isHighContrast ? HCColors.primary : Colors.white;
     final Color lineColor =
-        isHighContrast ? HCColors.border : Colors.white54;
+        isHighContrast ? HCColors.border : Colors.white38;
 
     return Semantics(
       label: context.l10n.matrixCornerSemantics,
       header: true,
-      child: SizedBox(
+      child: Container(
         width: width,
-        height: height,
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: bgColor,
-            border: Border(
-              right: BorderSide(
-                color: isHighContrast ? HCColors.border : Colors.white24,
-                width: 1,
-              ),
-              bottom: BorderSide(
-                color: isHighContrast ? HCColors.border : Colors.white24,
-                width: 1,
-              ),
+        constraints: BoxConstraints(minHeight: height),
+        decoration: BoxDecoration(
+          color: bgColor,
+          border: Border(
+            right: BorderSide(
+              color: isHighContrast ? HCColors.border : Colors.white24,
+              width: 1,
+            ),
+            bottom: BorderSide(
+              color: isHighContrast ? HCColors.border : Colors.white24,
+              width: 1,
             ),
           ),
-          child: ClipRect(
-            child: CustomPaint(
-              painter: _DiagonalLinePainter(color: lineColor),
-              child: Stack(
-                children: [
-                  // ═══ Góc TRÊN-PHẢI: "Tâm Sở →" ═══
-                  // Đặt trong vùng tam giác trên-phải của đường chéo
-                  Positioned(
-                    top: 10,
-                    right: 8,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          context.l10n.cetasika,
-                          textScaler: TextScaler.noScaling,
-                          style: TextStyle(
-                            color: textColor,
-                            fontSize: 13,
-                            fontWeight: FontWeight.w700,
-                            height: 1.2,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          '→',
-                          textScaler: TextScaler.noScaling,
-                          style: TextStyle(
-                            color: textColor.withValues(alpha: 0.9),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            height: 1.0,
-                          ),
-                        ),
-                      ],
+        ),
+        child: ClipRect(
+          child: CustomPaint(
+            foregroundPainter: _DiagonalLinePainter(color: lineColor),
+            child: Stack(
+              children: [
+                // ── Góc TRÊN-PHẢI: "Tâm Sở →" ──
+                Positioned(
+                  top: 8,
+                  right: 6,
+                  left: 0,
+                  child: Align(
+                    alignment: Alignment.topRight,
+                    child: _CornerLabel(
+                      text: context.l10n.cetasika,
+                      icon: '→',
+                      color: textColor,
+                      baseFontSize: 10,
                     ),
                   ),
+                ),
 
-                  // ═══ Góc DƯỚI-TRÁI: "Tâm ↓" ═══
-                  // Đặt trong vùng tam giác dưới-trái của đường chéo
-                  Positioned(
-                    bottom: 10,
-                    left: 8,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          context.l10n.citta,
-                          textScaler: TextScaler.noScaling,
-                          style: TextStyle(
-                            color: textColor,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w700,
-                            height: 1.2,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          '↓',
-                          textScaler: TextScaler.noScaling,
-                          style: TextStyle(
-                            color: textColor.withValues(alpha: 0.9),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            height: 1.0,
-                          ),
-                        ),
-                      ],
+                // ── Góc DƯỚI-TRÁI: "Tâm ↓" ──
+                Positioned(
+                  bottom: 8,
+                  left: 6,
+                  right: 0,
+                  child: Align(
+                    alignment: Alignment.bottomLeft,
+                    child: _CornerLabel(
+                      text: context.l10n.citta,
+                      icon: '↓',
+                      color: textColor,
+                      baseFontSize: 10,
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
@@ -133,7 +95,56 @@ class MatrixCornerHeader extends StatelessWidget {
   }
 }
 
-/// Vẽ đường chéo từ góc trên-trái → góc dưới-phải
+class _CornerLabel extends StatelessWidget {
+  final String text;
+  final String icon;
+  final Color color;
+  final double baseFontSize;
+
+  const _CornerLabel({
+    required this.text,
+    required this.icon,
+    required this.color,
+    required this.baseFontSize,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scale = MediaQuery.textScalerOf(context).scale(1.0);
+    final effectiveFontSize =
+        scale > 1.3 ? baseFontSize / scale * 1.3 : baseFontSize;
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          text,
+          style: TextStyle(
+            color: color,
+            fontSize: effectiveFontSize,
+            fontWeight: FontWeight.w700,
+            height: 1.2,
+            letterSpacing: 0.2,
+          ),
+          maxLines: 1,
+          overflow: TextOverflow.visible,
+        ),
+        Text(
+          icon,
+          style: TextStyle(
+            color: color.withValues(alpha: 0.85),
+            fontSize: effectiveFontSize + 1,
+            height: 1.0,
+            fontWeight: FontWeight.w400,
+          ),
+          maxLines: 1,
+        ),
+      ],
+    );
+  }
+}
+
 class _DiagonalLinePainter extends CustomPainter {
   final Color color;
   const _DiagonalLinePainter({required this.color});
@@ -142,7 +153,7 @@ class _DiagonalLinePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 1.2
+      ..strokeWidth = 1.0
       ..style = PaintingStyle.stroke
       ..isAntiAlias = true;
 

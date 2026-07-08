@@ -1,6 +1,7 @@
 // lib/shared/widgets/citta_row_header.dart
 
 import 'package:flutter/material.dart';
+
 import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/citta_model.dart';
@@ -41,9 +42,7 @@ class CittaRowHeader extends StatelessWidget {
     final double symbolFontSize = isLandscape ? 9.0 : 12.0;
     final double vedanaFontSize = isLandscape ? 7.0 : 10.0;
 
-    // Tính chiều cao tối thiểu thích ứng với text scaling
     final textScale = MediaQuery.textScalerOf(context).scale(1.0);
-    // Cho phép ô cao hơn tối đa 1.5× so với mặc định khi scale lớn
     final double minHeight = height;
     final double maxHeight = height * textScale.clamp(1.0, 1.5);
 
@@ -93,7 +92,6 @@ class CittaRowHeader extends StatelessWidget {
             vertical: isLandscape ? 0 : 2,
           ),
           child: Row(
-            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // Số thứ tự
@@ -112,7 +110,7 @@ class CittaRowHeader extends StatelessWidget {
                 ),
               ),
 
-              // Tên Tâm
+              // Tên Tâm (Localized)
               Expanded(
                 child: Text(
                   localizedName,
