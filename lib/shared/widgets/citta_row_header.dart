@@ -12,7 +12,8 @@ class CittaRowHeader extends StatelessWidget {
   final bool isSelected;
   final double width;
   final double height;
-  final int displayIndex; // Thứ tự hiển thị trong danh sách (bắt đầu từ 0)
+  final int displayIndex;
+  final bool useHighContrast; // M1-T4: HC mode flag
 
   const CittaRowHeader({
     super.key,
@@ -20,7 +21,8 @@ class CittaRowHeader extends StatelessWidget {
     required this.isSelected,
     required this.width,
     required this.height,
-    required this.displayIndex, // Thứ tự hiển thị, dùng để debug
+    required this.displayIndex,
+    this.useHighContrast = false,
   });
 
   @override
@@ -44,12 +46,21 @@ class CittaRowHeader extends StatelessWidget {
         width: width,
         height: height,
         decoration: BoxDecoration(
+          // M1-T4: HC fix — nền tối khi HC, không dùng màu bhumi mờ
           color: isSelected
               ? bhumiColor.withOpacity(0.25)
-              : bhumiColor.withOpacity(0.08),
+              : (useHighContrast
+                  ? HCColors.surface
+                  : bhumiColor.withOpacity(0.08)),
           border: Border(
             left: BorderSide(color: bhumiColor, width: 4),
-            bottom: BorderSide(color: Colors.grey.shade200, width: 0.5),
+            bottom: BorderSide(
+              // M1-T4: HC fix — border rõ trên nền tối
+              color: useHighContrast
+                  ? HCColors.textMuted.withOpacity(0.2)
+                  : Colors.grey.shade200,
+              width: 0.5,
+            ),
             right: isSelected
                 ? BorderSide(color: bhumiColor, width: 2)
                 : BorderSide.none,
@@ -65,7 +76,10 @@ class CittaRowHeader extends StatelessWidget {
                 '$displayIndex',
                 style: TextStyle(
                   fontSize: 10,
-                  color: bhumiColor.withOpacity(0.7),
+                  // M1-T4: HC fix — số thứ tự rõ trên nền tối
+                  color: useHighContrast
+                      ? HCColors.textMuted
+                      : bhumiColor.withOpacity(0.7),
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -84,7 +98,10 @@ class CittaRowHeader extends StatelessWidget {
                       height: 1.0,
                       fontWeight:
                           isSelected ? FontWeight.w700 : FontWeight.w500,
-                      color: VdpColors.onBackground,
+                      // M1-T4: HC fix — màu trắng trên nền tối
+                      color: useHighContrast
+                          ? HCColors.textPrimary
+                          : VdpColors.onBackground,
                     ),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,

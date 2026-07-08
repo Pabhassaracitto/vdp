@@ -137,7 +137,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
             : null,
       );
     } catch (e, st) {
-      debugPrint('VDP ▶ initialize() FATAL: $e\n$st');
       state = state.copyWith(
         status: DataLoadStatus.error,
         errorMessage: 'Lỗi khởi tạo: $e',
@@ -157,7 +156,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           .map((e) => CittaModel.fromJson(e as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      debugPrint('VDP ▶ cittas load lỗi: $e');
       return [];
     }
   }
@@ -172,7 +170,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           .map((e) => CetasikaModel.fromJson(e as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      debugPrint('VDP ▶ cetasikas load lỗi: $e');
       return [];
     }
   }
@@ -187,7 +184,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           .map((e) => RupaModel.fromJson(e as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      debugPrint('VDP ▶ rupas load lỗi: $e');
       return [];
     }
   }
@@ -202,7 +198,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           .map((e) => KammaModel.fromJson(e as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      debugPrint('VDP ▶ kammas load lỗi: $e');
       return [];
     }
   }
@@ -217,7 +212,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           .map((e) => PaticcaModel.fromJson(e as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      debugPrint('VDP ▶ paticcas load lỗi: $e');
       return [];
     }
   }
@@ -232,7 +226,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           .map((e) => VithiModel.fromJson(e as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      debugPrint('VDP ▶ vithis load lỗi: $e');
       return [];
     }
   }

@@ -266,16 +266,12 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                 _searchDebounceTimer =
                     Timer(const Duration(milliseconds: 300), () {
                   ref.read(matrixSearchQueryProvider.notifier).state = val;
-                  // M2-T4: Announce results
                   final matchedCittas =
                       ref.read(searchMatchedCittaIndicesProvider);
                   final matchedCetasikas =
                       ref.read(searchMatchedCetasikaIndicesProvider);
-                  final count = matchedCittas.length + matchedCetasikas.length;
-                  if (count > 0) {
-                    // SemanticsService.announce('Tìm thấy $count kết quả'); // Giả định có service này
-                  }
-                  // Scroll logic
+
+                  // Scroll to first match
                   if (searchType == SearchType.citta) {
                     _scrollToFirstMatch(
                         matchedCittas, _verticalController1, 44.0);

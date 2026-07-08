@@ -16,7 +16,7 @@ class AssociationCell extends StatelessWidget {
   final bool isDimmed;
   final double size;
   final bool useHighContrast;
-  
+
   const AssociationCell({
     super.key,
     required this.cittaId,
@@ -28,21 +28,18 @@ class AssociationCell extends StatelessWidget {
     this.size = 40.0,
     this.useHighContrast = false,
   });
-  
+
   @override
   Widget build(BuildContext context) {
     final cellInfo = _getCellInfo();
-    
-    // Tính opacity dựa trên trạng thái
+
     double opacity = 1.0;
-    if (isDimmed) opacity = 0.15;  // Proactive Dimming
+    if (isDimmed) opacity = 0.15;
     if (type == AssociationType.never) opacity = isDimmed ? 0.1 : 0.3;
-    
-    // Highlight khi Tâm hoặc Tâm Sở được chọn
+
     bool isHighlighted = isCittaHighlighted || isCetasikaHighlighted;
-    
+
     return Semantics(
-      // Accessibility: Đầy đủ semanticsLabel
       label: '${_getAssocTypeName(type)} - Tâm $cittaId với Tâm Sở $cetasikaId',
       button: false,
       child: AnimatedOpacity(
@@ -52,13 +49,16 @@ class AssociationCell extends StatelessWidget {
           width: size,
           height: size,
           decoration: BoxDecoration(
-            color: isHighlighted 
+            color: isHighlighted
                 ? cellInfo.backgroundColor.withOpacity(0.5)
                 : cellInfo.backgroundColor,
             border: Border.all(
-              color: isHighlighted 
+              color: isHighlighted
                   ? cellInfo.symbolColor
-                  : Colors.grey.shade200,
+                  // M1-T4: HC fix — border rõ trên nền tối
+                  : (useHighContrast
+                      ? HCColors.textMuted.withOpacity(0.2)
+                      : Colors.grey.shade200),
               width: isHighlighted ? 2 : 0.5,
             ),
           ),
@@ -69,10 +69,9 @@ class AssociationCell extends StatelessWidget {
       ),
     );
   }
-  
+
   Widget _buildSymbol(_CellInfo info) {
     if (type == AssociationType.never) {
-      // Không vẽ gì hoặc dấu X nhỏ
       return Text(
         VdpSymbols.never,
         style: TextStyle(
@@ -81,56 +80,63 @@ class AssociationCell extends StatelessWidget {
         ),
       );
     }
-    
+
     return Text(
       info.symbol,
       style: TextStyle(
         fontSize: type == AssociationType.always ? 14 : 12,
         color: useHighContrast ? info.hcSymbolColor : info.symbolColor,
-        fontWeight: type == AssociationType.always 
-            ? FontWeight.bold 
+        fontWeight: type == AssociationType.always
+            ? FontWeight.bold
             : FontWeight.normal,
       ),
     );
   }
-  
+
   _CellInfo _getCellInfo() {
     switch (type) {
       case AssociationType.always:
         return _CellInfo(
-          symbol: VdpSymbols.always,           // ✦ Solid
-          symbolColor: VdpColors.always,        // Vàng sáng
-          hcSymbolColor: VdpColors.hcAlways,    // Trắng (HC)
+          symbol: VdpSymbols.always,
+          symbolColor: VdpColors.always,
+          hcSymbolColor: VdpColors.hcAlways,
+          // M1-T4: HC fix — dùng HCColors.surface thay VdpColors.hcSurface
           backgroundColor: useHighContrast
-              ? VdpColors.hcSurface
+              ? HCColors.surface
               : VdpColors.always.withOpacity(0.12),
         );
-        
+
       case AssociationType.sometimes:
         return _CellInfo(
-          symbol: VdpSymbols.sometimes,         // ◎ Dashed circle
+          symbol: VdpSymbols.sometimes,
           symbolColor: VdpColors.sometimes,
           hcSymbolColor: VdpColors.hcSometimes,
           backgroundColor: useHighContrast
-              ? VdpColors.hcSurface
+              ? HCColors.surface
               : VdpColors.sometimes.withOpacity(0.08),
         );
-        
+
       case AssociationType.never:
         return _CellInfo(
-          symbol: VdpSymbols.never,             // ✕
+          symbol: VdpSymbols.never,
           symbolColor: VdpColors.never,
           hcSymbolColor: VdpColors.hcNever,
-          backgroundColor: Colors.transparent,
+          // M1-T4: HC fix — never cell cũng cần nền tối, không transparent
+          backgroundColor: useHighContrast
+              ? HCColors.surface
+              : Colors.transparent,
         );
     }
   }
-  
+
   String _getAssocTypeName(AssociationType type) {
     switch (type) {
-      case AssociationType.always: return 'Cố định';
-      case AssociationType.sometimes: return 'Bất định';
-      case AssociationType.never: return 'Không phối hợp';
+      case AssociationType.always:
+        return 'Cố định';
+      case AssociationType.sometimes:
+        return 'Bất định';
+      case AssociationType.never:
+        return 'Không phối hợp';
     }
   }
 }
@@ -140,7 +146,7 @@ class _CellInfo {
   final Color symbolColor;
   final Color hcSymbolColor;
   final Color backgroundColor;
-  
+
   const _CellInfo({
     required this.symbol,
     required this.symbolColor,

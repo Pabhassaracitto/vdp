@@ -55,7 +55,6 @@ class PaliTtsHelper {
       final result = await _tts.speak(text);
       return result == 1; // flutter_tts trả về 1 khi thành công
     } catch (e, stack) {
-      debugPrint('[PaliTts] speak() error: $e\n$stack');
       return false;
     }
   }
@@ -65,7 +64,6 @@ class PaliTtsHelper {
     try {
       await _tts.stop();
     } catch (e) {
-      debugPrint('[PaliTts] stop() error: $e');
     }
   }
 
@@ -75,7 +73,6 @@ class PaliTtsHelper {
       await _tts.stop();
       _initState = _TtsInitState.uninitialized;
     } catch (e) {
-      debugPrint('[PaliTts] dispose() error: $e');
     }
   }
 
@@ -92,7 +89,6 @@ class PaliTtsHelper {
       final dynamic rawLanguages = await _tts.getLanguages;
       final supportedLanguages = _parseLanguages(rawLanguages);
 
-      debugPrint('[PaliTts] Supported languages: $supportedLanguages');
 
       // Tìm ngôn ngữ ưu tiên đầu tiên mà thiết bị hỗ trợ
       String? selectedLanguage;
@@ -106,11 +102,8 @@ class PaliTtsHelper {
       // Áp dụng cấu hình
       if (selectedLanguage != null) {
         await _tts.setLanguage(selectedLanguage);
-        debugPrint('[PaliTts] Language set to: $selectedLanguage');
       } else {
         // Fallback: dùng ngôn ngữ mặc định của engine
-        debugPrint(
-            '[PaliTts] No preferred language found, using engine default.');
       }
 
       await _tts.setSpeechRate(_speechRate);
@@ -119,14 +112,11 @@ class PaliTtsHelper {
 
       // Xử lý sự kiện lỗi từ engine (không crash app)
       _tts.setErrorHandler((message) {
-        debugPrint('[PaliTts] TTS engine error: $message');
       });
 
       _initState = _TtsInitState.ready;
-      debugPrint('[PaliTts] Initialized successfully.');
     } catch (e, stack) {
       _initState = _TtsInitState.unavailable;
-      debugPrint('[PaliTts] Initialization failed: $e\n$stack');
     }
   }
 

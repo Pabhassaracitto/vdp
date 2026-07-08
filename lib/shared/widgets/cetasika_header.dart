@@ -14,6 +14,7 @@ class CetasikaHeader extends StatelessWidget {
   final double width;
   final double height;
   final int displayIndex;
+  final bool useHighContrast; // M1-T4: HC mode flag
 
   const CetasikaHeader({
     super.key,
@@ -23,6 +24,7 @@ class CetasikaHeader extends StatelessWidget {
     required this.width,
     required this.height,
     required this.displayIndex,
+    this.useHighContrast = false,
   });
 
   @override
@@ -46,12 +48,21 @@ class CetasikaHeader extends StatelessWidget {
           width: width,
           height: height,
           decoration: BoxDecoration(
+            // M1-T4: HC fix — nền tối khi HC
             color: isSelected
                 ? groupColor.withOpacity(0.25)
-                : groupColor.withOpacity(0.08),
+                : (useHighContrast
+                    ? HCColors.surface
+                    : groupColor.withOpacity(0.08)),
             border: Border(
               top: BorderSide(color: groupColor, width: 3),
-              right: BorderSide(color: Colors.grey.shade200, width: 0.5),
+              right: BorderSide(
+                // M1-T4: HC fix — border rõ trên nền tối
+                color: useHighContrast
+                    ? HCColors.textMuted.withOpacity(0.2)
+                    : Colors.grey.shade200,
+                width: 0.5,
+              ),
               bottom: isSelected
                   ? BorderSide(color: groupColor, width: 2)
                   : BorderSide.none,
@@ -70,7 +81,7 @@ class CetasikaHeader extends StatelessWidget {
               // Tên xoay dọc
               Expanded(
                 child: RotatedBox(
-                  quarterTurns: 3, // Xoay 90 độ ngược chiều kim đồng hồ
+                  quarterTurns: 3,
                   child: Text(
                     cetasika.nameShort,
                     style: TextStyle(
@@ -80,7 +91,10 @@ class CetasikaHeader extends StatelessWidget {
                           : 11,
                       fontWeight:
                           isSelected ? FontWeight.w700 : FontWeight.w500,
-                      color: VdpColors.onBackground,
+                      // M1-T4: HC fix — màu trắng trên nền tối
+                      color: useHighContrast
+                          ? HCColors.textPrimary
+                          : VdpColors.onBackground,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -93,7 +107,10 @@ class CetasikaHeader extends StatelessWidget {
                 '$displayIndex',
                 style: TextStyle(
                   fontSize: 9,
-                  color: groupColor.withOpacity(0.7),
+                  // M1-T4: HC fix — số thứ tự rõ trên nền tối
+                  color: useHighContrast
+                      ? HCColors.textMuted
+                      : groupColor.withOpacity(0.7),
                 ),
               ),
             ],

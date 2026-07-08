@@ -54,6 +54,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final tab = ref.watch(_currentTabProvider);
     final dataState = ref.watch(vdpRepositoryProvider);
 
+    // M1-T4: Detect HC mode from theme brightness
+    final isHC = Theme.of(context).brightness == Brightness.dark;
+
     if (dataState.status == DataLoadStatus.loading ||
         dataState.status == DataLoadStatus.initial) {
       return _LoadingScreen(showWarning: _showTimeoutWarning);

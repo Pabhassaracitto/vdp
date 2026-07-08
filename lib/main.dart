@@ -70,12 +70,10 @@ class _AppRootState extends ConsumerState<_AppRoot> {
         const Duration(seconds: 15),
         onTimeout: () {
           // Timeout nhưng vẫn tiếp tục (data rỗng, hiện HomeScreen)
-          // debugPrint('VDP: initialize() timeout sau 15s');
         },
       );
     } catch (e, st) {
       // Bắt MỌI lỗi — không để _showOnboarding = null mãi mãi
-      // debugPrint('VDP: initialize() lỗi: $e\n$st');
       // Vẫn tiếp tục flow bình thường dù lỗi
     }
 
@@ -84,7 +82,6 @@ class _AppRootState extends ConsumerState<_AppRoot> {
     try {
       needsOb = await needsOnboarding();
     } catch (e) {
-      // debugPrint('VDP: needsOnboarding() lỗi: $e');
       needsOb = false; // Default: không hiện onboarding
     }
 

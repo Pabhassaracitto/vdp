@@ -137,8 +137,6 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       );
     } catch (e, st) {
       assert(() {
-        // ignore: avoid_print
-        print('[ProgressNotifier._load] $e\n$st');
         return true;
       }());
     }
@@ -179,8 +177,6 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       );
     } catch (e) {
       assert(() {
-        // ignore: avoid_print
-        print('[ProgressNotifier._save] $e');
         return true;
       }());
     }
