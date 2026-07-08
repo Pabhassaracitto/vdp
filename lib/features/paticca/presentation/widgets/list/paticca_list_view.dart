@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/paticca_providers.dart';
 import 'paticca_list_item.dart';
+import '../../paticca_detail_sheet.dart';
 
 class PaticcaListView extends ConsumerWidget {
   const PaticcaListView({super.key});
@@ -15,7 +16,10 @@ class PaticcaListView extends ConsumerWidget {
         itemCount: list.length,
         itemBuilder: (context, index) => PaticcaListItem(
           item: list[index],
-          onTap: () {}, // navigation logic later
+          onTap: () => showModalBottomSheet(
+            context: context,
+            builder: (_) => PaticcaDetailSheet(item: list[index]),
+          ),
         ),
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
