@@ -281,6 +281,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                 duration: const Duration(milliseconds: 500),
                 curve: Curves.easeInOut,
               );
+              // Không cần animateTo cho controller2 vì listener tự đồng bộ
             },
             child: const Icon(Icons.arrow_upward),
           ),
@@ -314,8 +315,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                     ? IconButton(
                         icon: const Icon(Icons.clear),
                         onPressed: () {
-                          ref.read(matrixSearchQueryProvider.notifier).state =
-                              '';
+                          ref
+                              .read(matrixSearchQueryProvider.notifier)
+                              .state = '';
                         },
                         tooltip: context.l10n.clearSearch,
                       )
@@ -335,7 +337,6 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                       ref.read(searchMatchedCittaIndicesProvider);
                   final matchedCetasikas =
                       ref.read(searchMatchedCetasikaIndicesProvider);
-
                   if (searchType == SearchType.citta) {
                     _scrollToFirstMatch(
                         matchedCittas, _verticalController1, 44.0);
@@ -571,199 +572,202 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   // ════════════════════════════════════════════════════════════
-  //  MATRIX
+  //  MATRIX — Trung tâm của tính năng M2-T7
   // ════════════════════════════════════════════════════════════
 
   Widget _buildMatrix(
-    BuildContext context,
-    List<CittaModel> cittas,
-    List<CetasikaModel> cetasikas,
-  ) {
-    final isLandscape =
-        MediaQuery.of(context).orientation == Orientation.landscape;
-    final double cellSize = isLandscape ? 30.0 : 44.0;
-    final double headerWidth = isLandscape ? 130.0 : 200.0;
-    final double cetasikaHeaderHeight = isLandscape ? 60.0 : 110.0;
-    final double matrixWidth = cetasikas.length * cellSize;
+  BuildContext context,
+  List<CittaModel> cittas,
+  List<CetasikaModel> cetasikas,
+) {
+  final isLandscape =
+      MediaQuery.of(context).orientation == Orientation.landscape;
+  final double cellSize = isLandscape ? 30.0 : 44.0;
+  final double headerWidth = isLandscape ? 130.0 : 200.0;
+  final double cetasikaHeaderHeight = isLandscape ? 60.0 : 110.0;
+  final double matrixWidth = cetasikas.length * cellSize;
 
-    final selectedCitta = ref.watch(selectedCittaProvider);
-    final selectedCetasika = ref.watch(selectedCetasikaProvider);
-    final dimmed = ref.watch(dimmedCetasikasProvider);
-    final searchType = ref.watch(matrixSearchTypeProvider);
-    final matchedCittas = ref.watch(searchMatchedCittaIndicesProvider);
-    final matchedCetasikas = ref.watch(searchMatchedCetasikaIndicesProvider);
+  final selectedCitta = ref.watch(selectedCittaProvider);
+  final selectedCetasika = ref.watch(selectedCetasikaProvider);
+  final dimmed = ref.watch(dimmedCetasikasProvider);
+  final searchType = ref.watch(matrixSearchTypeProvider);
+  final matchedCittas = ref.watch(searchMatchedCittaIndicesProvider);
+  final matchedCetasikas = ref.watch(searchMatchedCetasikaIndicesProvider);
 
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(
-          width: headerWidth,
-          child: Column(
-            children: [
-              MatrixCornerHeader(
-                width: headerWidth,
-                height: cetasikaHeaderHeight,
-                isHighContrast: _isHC,
-              ),
-              Expanded(
-                child: ListView.builder(
-                  controller: _verticalController1,
-                  itemCount: cittas.length,
-                  itemBuilder: (_, i) {
-                    final citta = cittas[i];
-                    final isSel = selectedCitta == citta.id;
-                    final isMatch = matchedCittas.contains(i);
-                    final isDimmed = searchType == SearchType.citta &&
-                        matchedCittas.isNotEmpty &&
-                        !isMatch;
+  return Row(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      SizedBox(
+        width: headerWidth,
+        child: Column(
+          children: [
+            MatrixCornerHeader(
+              width: headerWidth,
+              height: cetasikaHeaderHeight,
+              isHighContrast: _isHC,
+            ),
 
-                    Widget child = GestureDetector(
-                      onTap: () {
-                        ref.read(selectedCittaProvider.notifier).state =
-                            isSel ? null : citta.id;
-                        if (!isSel) _showCittaDetail(context, citta);
-                      },
-                      child: CittaRowHeader(
-                        citta: citta,
-                        isSelected: isSel,
-                        width: headerWidth,
-                        height: cellSize,
-                        displayIndex: i + 1,
-                        useHighContrast: _isHC,
-                      ),
-                    );
+            // ── Danh sách Tâm (cuộn dọc) ──
+            Expanded(
+              child: ListView.builder(
+                controller: _verticalController1,
+                // physics mặc định — cho phép cuộn tự nhiên
+                itemCount: cittas.length,
+                itemBuilder: (_, i) {
+                  final citta = cittas[i];
+                  final isSel = selectedCitta == citta.id;
+                  final isMatch = matchedCittas.contains(i);
+                  final isDimmed = searchType == SearchType.citta &&
+                      matchedCittas.isNotEmpty &&
+                      !isMatch;
 
-                    if (isMatch) {
-                      child = Container(
-                        decoration: const BoxDecoration(
-                          border: Border(
-                            left: BorderSide(
-                              color: Color(0xFFFFD700),
-                              width: 3,
-                            ),
+                  Widget child = GestureDetector(
+                    onTap: () {
+                      ref.read(selectedCittaProvider.notifier).state =
+                          isSel ? null : citta.id;
+                      if (!isSel) _showCittaDetail(context, citta);
+                    },
+                    child: CittaRowHeader(
+                      citta: citta,
+                      isSelected: isSel,
+                      width: headerWidth,
+                      height: cellSize,
+                      displayIndex: i + 1,
+                      useHighContrast: _isHC,
+                    ),
+                  );
+
+                  if (isMatch) {
+                    child = Container(
+                      decoration: const BoxDecoration(
+                        border: Border(
+                          left: BorderSide(
+                            color: Color(0xFFFFD700),
+                            width: 3,
                           ),
                         ),
-                        child: child,
-                      );
-                    }
-
-                    return Opacity(
-                      opacity: isDimmed ? 0.35 : 1.0,
+                      ),
                       child: child,
                     );
-                  },
-                ),
+                  }
+
+                  return Opacity(
+                    opacity: isDimmed ? 0.35 : 1.0,
+                    child: child,
+                  );
+                },
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-        Expanded(
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            controller: _horizontalController,
-            child: SizedBox(
-              width: matrixWidth,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: cetasikaHeaderHeight,
-                    child: Row(
-                      children: cetasikas.asMap().entries.map((entry) {
-                        final colIdx = entry.key;
-                        final cs = entry.value;
-                        final isSel = selectedCetasika == cs.id;
-                        final isDim = dimmed.contains(cs.id);
-                        final isMatch = matchedCetasikas.contains(colIdx);
-                        final isSearchDim = searchType == SearchType.cetasika &&
-                            matchedCetasikas.isNotEmpty &&
-                            !isMatch;
+      ),
+      Expanded(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          controller: _horizontalController,
+          child: SizedBox(
+            width: matrixWidth,
+            child: Column(
+              children: [
+                SizedBox(
+                  height: cetasikaHeaderHeight,
+                  child: Row(
+                    children: cetasikas.asMap().entries.map((entry) {
+                      final colIdx = entry.key;
+                      final cs = entry.value;
+                      final isSel = selectedCetasika == cs.id;
+                      final isDim = dimmed.contains(cs.id);
+                      final isMatch = matchedCetasikas.contains(colIdx);
+                      final isSearchDim = searchType == SearchType.cetasika &&
+                          matchedCetasikas.isNotEmpty &&
+                          !isMatch;
 
-                        Widget child = GestureDetector(
-                          onTap: () {
-                            ref.read(selectedCetasikaProvider.notifier).state =
-                                isSel ? null : cs.id;
-                            if (!isSel) _showCetasikaDetail(context, cs);
-                          },
-                          child: CetasikaHeader(
-                            cetasika: cs,
-                            isSelected: isSel,
-                            isDimmed: isDim || isSearchDim,
-                            width: cellSize,
-                            height: cetasikaHeaderHeight,
-                            displayIndex: colIdx + 1,
-                            useHighContrast: _isHC,
-                          ),
-                        );
+                      Widget child = GestureDetector(
+                        onTap: () {
+                          ref.read(selectedCetasikaProvider.notifier).state =
+                              isSel ? null : cs.id;
+                          if (!isSel) _showCetasikaDetail(context, cs);
+                        },
+                        child: CetasikaHeader(
+                          cetasika: cs,
+                          isSelected: isSel,
+                          isDimmed: isDim || isSearchDim,
+                          width: cellSize,
+                          height: cetasikaHeaderHeight,
+                          displayIndex: colIdx + 1,
+                          useHighContrast: _isHC,
+                        ),
+                      );
 
-                        if (isMatch) {
-                          child = Container(
-                            decoration: const BoxDecoration(
-                              border: Border(
-                                top: BorderSide(
-                                  color: Color(0xFFFFD700),
-                                  width: 3,
-                                ),
+                      if (isMatch) {
+                        child = Container(
+                          decoration: const BoxDecoration(
+                            border: Border(
+                              top: BorderSide(
+                                color: Color(0xFFFFD700),
+                                width: 3,
                               ),
                             ),
-                            child: child,
-                          );
-                        }
-
-                        return Opacity(
-                          opacity: isSearchDim ? 0.35 : 1.0,
+                          ),
                           child: child,
                         );
-                      }).toList(),
-                    ),
+                      }
+
+                      return Opacity(
+                        opacity: isSearchDim ? 0.35 : 1.0,
+                        child: child,
+                      );
+                    }).toList(),
                   ),
-                  Expanded(
-                    child: SingleChildScrollView(
-                      controller: _verticalController2,
-                      child: Column(
-                        children: List.generate(cittas.length, (rowIdx) {
-                          final citta = cittas[rowIdx];
-                          final isCittaSel = selectedCitta == citta.id;
-                          return SizedBox(
-                            height: cellSize,
-                            child: Row(
-                              children: List.generate(
-                                cetasikas.length,
-                                (colIdx) {
-                                  final cs = cetasikas[colIdx];
-                                  return AssociationCell(
-                                    cittaId: citta.id,
-                                    cetasikaId: cs.id,
-                                    type: _getAssocType(citta, cs.id),
-                                    isCittaHighlighted: isCittaSel,
-                                    isCetasikaHighlighted:
-                                        selectedCetasika == cs.id,
-                                    isDimmed: dimmed.contains(cs.id) ||
-                                        (searchType == SearchType.cetasika &&
-                                            matchedCetasikas.isNotEmpty &&
-                                            !matchedCetasikas
-                                                .contains(colIdx)) ||
-                                        (searchType == SearchType.citta &&
-                                            matchedCittas.isNotEmpty &&
-                                            !matchedCittas.contains(rowIdx)),
-                                    size: cellSize,
-                                    useHighContrast: _isHC,
-                                  );
-                                },
-                              ),
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    controller: _verticalController2,
+                    child: Column(
+                      children: List.generate(cittas.length, (rowIdx) {
+                        final citta = cittas[rowIdx];
+                        final isCittaSel = selectedCitta == citta.id;
+                        return SizedBox(
+                          height: cellSize,
+                          child: Row(
+                            children: List.generate(
+                              cetasikas.length,
+                              (colIdx) {
+                                final cs = cetasikas[colIdx];
+                                return AssociationCell(
+                                  cittaId: citta.id,
+                                  cetasikaId: cs.id,
+                                  type: _getAssocType(citta, cs.id),
+                                  isCittaHighlighted: isCittaSel,
+                                  isCetasikaHighlighted:
+                                      selectedCetasika == cs.id,
+                                  isDimmed: dimmed.contains(cs.id) ||
+                                      (searchType == SearchType.cetasika &&
+                                          matchedCetasikas.isNotEmpty &&
+                                          !matchedCetasikas
+                                              .contains(colIdx)) ||
+                                      (searchType == SearchType.citta &&
+                                          matchedCittas.isNotEmpty &&
+                                          !matchedCittas.contains(rowIdx)),
+                                  size: cellSize,
+                                  useHighContrast: _isHC,
+                                );
+                              },
                             ),
-                          );
-                        }),
-                      ),
+                          ),
+                        );
+                      }),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
-      ],
-    );
-  }
+      ),
+    ],
+  );
+}
 
   AssociationType _getAssocType(CittaModel citta, String cetasikaId) {
     final a = citta.cetasikaAssociations

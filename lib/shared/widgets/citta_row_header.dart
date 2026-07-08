@@ -10,6 +10,9 @@ class CittaRowHeader extends StatelessWidget {
   final CittaModel citta;
   final bool isSelected;
   final double width;
+
+  /// [height] là chiều cao MẶC ĐỊNH (khi scale = 1.0).
+  /// Widget sẽ tự mở rộng nếu text cần thêm không gian.
   final double height;
   final int displayIndex;
   final bool useHighContrast;
@@ -38,6 +41,12 @@ class CittaRowHeader extends StatelessWidget {
     final double symbolFontSize = isLandscape ? 9.0 : 12.0;
     final double vedanaFontSize = isLandscape ? 7.0 : 10.0;
 
+    // Tính chiều cao tối thiểu thích ứng với text scaling
+    final textScale = MediaQuery.textScalerOf(context).scale(1.0);
+    // Cho phép ô cao hơn tối đa 1.5× so với mặc định khi scale lớn
+    final double minHeight = height;
+    final double maxHeight = height * textScale.clamp(1.0, 1.5);
+
     return Semantics(
       label: context.l10n.rowCittaSemantics(
         displayIndex,
@@ -50,112 +59,114 @@ class CittaRowHeader extends StatelessWidget {
       button: true,
       selected: isSelected,
       excludeSemantics: false,
-      child: SizedBox(
+      child: Container(
         width: width,
-        height: height,
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: isSelected
-                ? bhumiColor.withValues(alpha: 0.25)
-                : (useHighContrast
-                    ? HCColors.surface
-                    : bhumiColor.withValues(alpha: 0.08)),
-            border: BorderDirectional(
-              start: BorderSide(
-                color: bhumiColor,
-                width: isLandscape ? 3 : 4,
-              ),
-              bottom: BorderSide(
-                color: useHighContrast
-                    ? HCColors.textMuted.withValues(alpha: 0.2)
-                    : Colors.grey.shade200,
-                width: 0.5,
-              ),
-              end: isSelected
-                  ? BorderSide(color: bhumiColor, width: 2)
-                  : BorderSide.none,
+        constraints: BoxConstraints(
+          minHeight: minHeight,
+          maxHeight: maxHeight,
+        ),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? bhumiColor.withValues(alpha: 0.25)
+              : (useHighContrast
+                  ? HCColors.surface
+                  : bhumiColor.withValues(alpha: 0.08)),
+          border: BorderDirectional(
+            start: BorderSide(
+              color: bhumiColor,
+              width: isLandscape ? 3 : 4,
             ),
+            bottom: BorderSide(
+              color: useHighContrast
+                  ? HCColors.textMuted.withValues(alpha: 0.2)
+                  : Colors.grey.shade200,
+              width: 0.5,
+            ),
+            end: isSelected
+                ? BorderSide(color: bhumiColor, width: 2)
+                : BorderSide.none,
           ),
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: isLandscape ? 4 : 8,
-              vertical: isLandscape ? 0 : 2,
-            ),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                // Số thứ tự
-                SizedBox(
-                  width: isLandscape ? 18 : 24,
-                  child: Text(
-                    '$displayIndex',
-                    style: TextStyle(
-                      fontSize: indexFontSize,
-                      color: useHighContrast
-                          ? HCColors.textMuted
-                          : bhumiColor.withValues(alpha: 0.7),
-                      fontWeight: FontWeight.w600,
-                    ),
-                    textScaler: TextScaler.noScaling,
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: isLandscape ? 4 : 8,
+            vertical: isLandscape ? 0 : 2,
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // Số thứ tự
+              SizedBox(
+                width: isLandscape ? 18 : 24,
+                child: Text(
+                  '$displayIndex',
+                  style: TextStyle(
+                    fontSize: indexFontSize,
+                    color: useHighContrast
+                        ? HCColors.textMuted
+                        : bhumiColor.withValues(alpha: 0.7),
+                    fontWeight: FontWeight.w600,
                   ),
+                  textScaler: TextScaler.noScaling,
                 ),
+              ),
 
-                // Tên Tâm
-                Expanded(
-                  child: Text(
-                    localizedName,
-                    style: TextStyle(
-                      fontSize: textFontSize,
-                      height: 1.15,
-                      fontWeight:
-                          isSelected ? FontWeight.w700 : FontWeight.w500,
-                      color: useHighContrast
-                          ? HCColors.textPrimary
-                          : VdpColors.onBackground,
-                    ),
-                    maxLines: isLandscape ? 1 : 2,
-                    overflow: TextOverflow.ellipsis,
-                    textScaler: TextScaler.noScaling,
+              // Tên Tâm
+              Expanded(
+                child: Text(
+                  localizedName,
+                  style: TextStyle(
+                    fontSize: textFontSize,
+                    height: 1.15,
+                    fontWeight:
+                        isSelected ? FontWeight.w700 : FontWeight.w500,
+                    color: useHighContrast
+                        ? HCColors.textPrimary
+                        : VdpColors.onBackground,
                   ),
+                  maxLines: isLandscape ? 1 : 2,
+                  overflow: TextOverflow.ellipsis,
+                  textScaler: TextScaler.noScaling,
                 ),
+              ),
 
-                // Symbol Bhumi + Vedana
-                if (isLandscape)
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        bhumiSymbol,
-                        style: TextStyle(fontSize: symbolFontSize),
-                        textScaler: TextScaler.noScaling,
-                      ),
-                      const SizedBox(width: 1),
-                      Text(
-                        vedanaSymbol,
-                        style: TextStyle(fontSize: vedanaFontSize),
-                        textScaler: TextScaler.noScaling,
-                      ),
-                    ],
-                  )
-                else
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        bhumiSymbol,
-                        style: TextStyle(fontSize: symbolFontSize),
-                        textScaler: TextScaler.noScaling,
-                      ),
-                      Text(
-                        vedanaSymbol,
-                        style: TextStyle(fontSize: vedanaFontSize),
-                        textScaler: TextScaler.noScaling,
-                      ),
-                    ],
-                  ),
-              ],
-            ),
+              // Symbol Bhumi + Vedana
+              if (isLandscape)
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      bhumiSymbol,
+                      style: TextStyle(fontSize: symbolFontSize),
+                      textScaler: TextScaler.noScaling,
+                    ),
+                    const SizedBox(width: 1),
+                    Text(
+                      vedanaSymbol,
+                      style: TextStyle(fontSize: vedanaFontSize),
+                      textScaler: TextScaler.noScaling,
+                    ),
+                  ],
+                )
+              else
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      bhumiSymbol,
+                      style: TextStyle(fontSize: symbolFontSize),
+                      textScaler: TextScaler.noScaling,
+                    ),
+                    Text(
+                      vedanaSymbol,
+                      style: TextStyle(fontSize: vedanaFontSize),
+                      textScaler: TextScaler.noScaling,
+                    ),
+                  ],
+                ),
+            ],
           ),
         ),
       ),
@@ -164,11 +175,14 @@ class CittaRowHeader extends StatelessWidget {
 
   String _getVedanaSymbol(Vedana vedana) {
     switch (vedana) {
-      case Vedana.pleasant: return VdpSymbols.pleasant;
-      case Vedana.unpleasant: return VdpSymbols.unpleasant;
-      case Vedana.neutral: return VdpSymbols.neutral;
-      case Vedana.joy: return VdpSymbols.joy;
+      case Vedana.pleasant:
+        return VdpSymbols.pleasant;
+      case Vedana.unpleasant:
+        return VdpSymbols.unpleasant;
+      case Vedana.neutral:
+        return VdpSymbols.neutral;
+      case Vedana.joy:
+        return VdpSymbols.joy;
     }
   }
-
 }
