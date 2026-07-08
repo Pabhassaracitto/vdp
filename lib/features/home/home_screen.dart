@@ -12,6 +12,7 @@ import '../matrix/matrix_screen.dart';
 import '../paticca/presentation/screens/paticca_screen.dart';
 import '../settings/settings_screen.dart';
 import '../study/study_screen.dart';
+import '../vithi/vithi_screen.dart';
 
 final _currentTabProvider = StateProvider<int>((ref) => 0);
 
@@ -29,7 +30,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    // Hiển thị cảnh báo nếu load quá 10 giây
     _timeoutTimer = Timer(const Duration(seconds: 10), () {
       if (mounted) setState(() => _showTimeoutWarning = true);
     });
@@ -54,27 +54,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final tab = ref.watch(_currentTabProvider);
     final dataState = ref.watch(vdpRepositoryProvider);
 
-    // Đang load HOẶC chưa bắt đầu
     if (dataState.status == DataLoadStatus.loading ||
         dataState.status == DataLoadStatus.initial) {
       return _LoadingScreen(showWarning: _showTimeoutWarning);
     }
 
-    // Lỗi nghiêm trọng (không phải validation)
     if (dataState.status == DataLoadStatus.error) {
-      return _ErrorScreen(
-        message: dataState.errorMessage ?? 'Lỗi không xác định',
-      );
+      return _ErrorScreen(message: dataState.errorMessage ?? 'Lỗi không xác định');
     }
 
-    // Validation failed
     if (dataState.status == DataLoadStatus.validationFailed) {
-      return _ErrorScreen(
-        message: dataState.errorMessage ?? 'Lỗi dữ liệu',
-      );
+      return _ErrorScreen(message: dataState.errorMessage ?? 'Lỗi dữ liệu');
     }
 
-    // loaded — kể cả data rỗng vẫn hiện UI bình thường
     return Scaffold(
       body: IndexedStack(
         index: tab,
@@ -87,13 +79,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         backgroundColor: VdpColors.surface,
         indicatorColor: VdpColors.primary.withOpacity(0.12),
         destinations: _tabs
-            .map(
-              (t) => NavigationDestination(
-                icon: Icon(t.icon),
-                label: t.label,
-                selectedIcon: Icon(t.icon, color: VdpColors.primary),
-              ),
-            )
+            .map((t) => NavigationDestination(
+                  icon: Icon(t.icon),
+                  label: t.label,
+                  selectedIcon: Icon(t.icon, color: VdpColors.primary),
+                ))
             .toList(),
       ),
     );
@@ -122,7 +112,6 @@ class _LoadingScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // App logo area
             Container(
               width: 100,
               height: 100,

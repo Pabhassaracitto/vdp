@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../data/models/paticca_model.dart';
-import '../../../../core/theme/vdp_theme.dart';
+import '../../../../data/models/paticca_model.dart';
 
 class PaticcaDetailSheet extends StatelessWidget {
   final PaticcaModel item;
@@ -22,10 +21,17 @@ class PaticcaDetailSheet extends StatelessWidget {
               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             const Divider(),
             const Text('Chi tiết Nhân Duyên:', style: TextStyle(fontWeight: FontWeight.bold)),
-            ...item.links.map((link) => Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
-              child: Text('• Duyên sang: ${link.effectId}\n  Giải thích: ${link.explanation}'),
-            )),
+            ...item.links.isEmpty
+                ? [
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 8),
+                      child: Text('Đây là chi quả cuối của vòng Nhân Duyên kiếp này. Không khởi sanh điều kiện mới.'),
+                    )
+                  ]
+                : item.links.map((link) => Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Text('• Duyên sang: ${link.effectId}\n  Giải thích: ${link.explanation}'),
+                  )),
           ],
         ),
       ),

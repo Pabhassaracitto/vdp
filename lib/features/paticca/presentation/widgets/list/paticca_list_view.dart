@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/paticca_providers.dart';
 import 'paticca_list_item.dart';
-import '../../paticca_detail_sheet.dart';
+import '../paticca_detail_sheet.dart';
 
 class PaticcaListView extends ConsumerWidget {
   const PaticcaListView({super.key});
