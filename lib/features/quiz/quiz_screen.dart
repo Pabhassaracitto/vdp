@@ -1,6 +1,7 @@
 // lib/features/quiz/quiz_screen.dart
-// Quiz Engine — Rule-based, 3 cấp độ
-// Refactored: safety checks, null-safe, SM-2 tích hợp, 0 warning
+// Quiz Screen — UI Layer only (SRP enforced)
+// Milestone 3: Logic sinh câu hỏi đã chuyển sang QuizGeneratorService
+// 0 warnings, null-safe
 
 import 'dart:math';
 
@@ -8,13 +9,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/vdp_theme.dart';
-import '../../data/models/cetasika_model.dart';
-import '../../data/models/citta_model.dart';
 import '../../data/models/study_module.dart';
 import '../../data/repositories/vdp_repository.dart';
 import '../../shared/providers/progress_provider.dart';
+import 'services/quiz_generator.dart';
 
-// ─── Enums ────────────────────────────────────────────────────────────────────
+// ─── Enums (public — dùng bởi QuizGeneratorService) ─────────────────────────
 
 enum QuizLevel { beginner, intermediate, advanced }
 
@@ -25,7 +25,7 @@ enum QuizQuestionType {
   cittaBhumi, // Tâm A thuộc cõi nào?
 }
 
-// ─── Model ────────────────────────────────────────────────────────────────────
+// ─── Model (public — dùng bởi QuizGeneratorService) ──────────────────────────
 
 class QuizQuestion {
   final String id;
@@ -45,15 +45,8 @@ class QuizQuestion {
   });
 }
 
-// ─── Minimum data requirements ────────────────────────────────────────────────
+// ─── Constants ────────────────────────────────────────────────────────────────
 
-/// Số lựa chọn sai tối thiểu để tạo câu hỏi 4-option.
-const _kMinWrongOptions4 = 3;
-
-/// Số lựa chọn sai tối thiểu để tạo câu hỏi 3-option.
-const _kMinWrongOptions3 = 2;
-
-/// Số câu hỏi tối đa mỗi bài quiz.
 const _kMaxQuestions = 10;
 
 // ─── Screen ───────────────────────────────────────────────────────────────────
@@ -87,6 +80,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: color,
+        foregroundColor: Colors.white,
         title: Text(
           'Quiz: ${widget.module.title}',
           style: const TextStyle(fontSize: 15),
@@ -98,7 +92,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               child: Center(
                 child: Text(
                   '${_currentIndex + 1} / ${_questions.length}',
-                  style: const TextStyle(color: Colors.white70, fontSize: 14),
+                  style: const TextStyle(
+                    color: Colors.white70,
+                    fontSize: 14,
+                  ),
                 ),
               ),
             ),
@@ -130,8 +127,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           ),
           const SizedBox(height: 8),
           const Text(
-            'Mỗi cấp độ có tối đa 10 câu hỏi được tạo tự động',
-            style: TextStyle(color: Colors.grey, fontSize: 14),
+            'Mỗi cấp độ có tối đa $_kMaxQuestions câu hỏi tự động sinh\n'
+            'từ nội dung module này',
+            style: TextStyle(color: Colors.grey, fontSize: 13),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 32),
@@ -165,7 +163,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: const Text('Bắt đầu', style: TextStyle(fontSize: 17)),
+              child: const Text(
+                'Bắt đầu',
+                style: TextStyle(fontSize: 17),
+              ),
             ),
           ),
         ],
@@ -178,7 +179,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   Widget _buildQuestion(Color color) {
     if (_questions.isEmpty) {
       return const Center(
-        child: Text('Chưa đủ dữ liệu để tạo câu hỏi'),
+        child: Padding(
+          padding: EdgeInsets.all(32),
+          child: Text(
+            'Module này chưa đủ dữ liệu để tạo câu hỏi.',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 15, color: Colors.grey),
+          ),
+        ),
       );
     }
 
@@ -187,14 +195,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
     return Column(
       children: [
-        // Progress bar
         LinearProgressIndicator(
           value: progress,
           backgroundColor: color.withOpacity(0.15),
           valueColor: AlwaysStoppedAnimation<Color>(color),
           minHeight: 5,
         ),
-
         Expanded(
           child: SingleChildScrollView(
             padding: const EdgeInsets.all(20),
@@ -221,7 +227,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   ),
                 ),
                 const SizedBox(height: 14),
-
                 // Question text
                 Text(
                   q.questionText,
@@ -232,7 +237,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   ),
                 ),
                 const SizedBox(height: 24),
-
                 // Options
                 ...q.options.asMap().entries.map((entry) {
                   final i = entry.key;
@@ -246,7 +250,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                     onTap: _answered ? null : () => _selectOption(i),
                   );
                 }),
-
                 // Explanation
                 if (_answered) ...[
                   const SizedBox(height: 20),
@@ -260,15 +263,20 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Row(
+                        Row(
                           children: [
-                            Icon(Icons.info, color: Colors.blue, size: 16),
-                            SizedBox(width: 6),
+                            Icon(
+                              Icons.info_outline_rounded,
+                              color: Colors.blue.shade700,
+                              size: 16,
+                            ),
+                            const SizedBox(width: 6),
                             Text(
                               'Giải thích',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.blue,
+                                color: Colors.blue.shade700,
+                                fontSize: 13,
                               ),
                             ),
                           ],
@@ -276,20 +284,20 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                         const SizedBox(height: 6),
                         Text(
                           q.explanation,
-                          style: const TextStyle(fontSize: 13, height: 1.6),
+                          style: const TextStyle(
+                            fontSize: 13,
+                            height: 1.6,
+                          ),
                         ),
                       ],
                     ),
                   ),
                 ],
-
                 const SizedBox(height: 30),
               ],
             ),
           ),
         ),
-
-        // Next button
         if (_answered)
           Padding(
             padding: const EdgeInsets.all(16),
@@ -322,6 +330,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   Widget _buildResult(Color color) {
     final total = _questions.length;
+    // Tính phần trăm 0-100 chỉ để hiển thị UI
     final pct = total > 0 ? (_score / total * 100).round() : 0;
     final passed = pct >= 70;
     final emoji = pct >= 90
@@ -387,19 +396,31 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   void _startQuiz() {
     final dataState = ref.read(vdpRepositoryProvider);
-    final generated = _generateQuestions(dataState);
+
+    // Delegate hoàn toàn sang QuizGeneratorService
+    // UI không còn biết gì về logic sinh câu hỏi
+    final generated = QuizGeneratorService.generate(
+      module: widget.module,
+      dataState: dataState,
+      level: _level,
+      random: _rng,
+    );
 
     if (generated.isEmpty) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Chưa đủ dữ liệu để tạo câu hỏi cho module này.'),
+        SnackBar(
+          content: Text(
+            'Module "${widget.module.title}" chưa đủ dữ liệu để tạo câu hỏi.',
+          ),
           behavior: SnackBarBehavior.floating,
+          backgroundColor: Colors.orange.shade700,
         ),
       );
       return;
     }
 
-    generated.shuffle(_rng);
+    // generated đã được shuffle trong service, chỉ cần sublist
     final questions = generated.length > _kMaxQuestions
         ? generated.sublist(0, _kMaxQuestions)
         : generated;
@@ -419,7 +440,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     setState(() {
       _started = false;
       _finished = false;
-      _questions = [];
+      _questions = const [];
       _currentIndex = 0;
       _score = 0;
       _selectedOption = null;
@@ -439,7 +460,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   void _nextQuestion() {
     if (_currentIndex + 1 >= _questions.length) {
-      final pct = (_score / _questions.length * 100).roundToDouble();
+      // recordQuizScore nhận điểm 0.0–100.0
+      // BUG FIX: Chỉ tính ratio ở đây, recordQuizScore lưu dưới dạng
+      // completionPercentage (0–100), provider sẽ return 0.0–1.0
+      final pct = _questions.isNotEmpty
+          ? (_score / _questions.length * 100).roundToDouble()
+          : 0.0;
       ref.read(progressProvider.notifier).recordQuizScore(
             widget.module.id,
             pct,
@@ -454,213 +480,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
   }
 
-  // ── Question Generator ─────────────────────────────────────────────────────
+  // ── Label helpers (UI only) ────────────────────────────────────────────────
 
-  List<QuizQuestion> _generateQuestions(VdpDataState data) {
-    final questions = <QuizQuestion>[];
-    final cetasikas = data.cetasikas;
-    final cittas = data.cittas;
-
-    if (cetasikas.isEmpty || cittas.isEmpty) return questions;
-
-    final allGroups = CetasikaGroup.values;
-    final allVedanas = Vedana.values;
-    final allBhumis = BhumiGroup.values;
-
-    // ── Q-Type 1: Cetasika thuộc nhóm nào? (4 options) ──────────────────
-    if (allGroups.length > _kMinWrongOptions4) {
-      final pool = List<CetasikaModel>.from(cetasikas)..shuffle(_rng);
-
-      for (final cs in pool.take(5)) {
-        final correctLabel = _getGroupName(cs.group);
-        final wrongLabels = allGroups
-            .where((g) => g != cs.group)
-            .map(_getGroupName)
-            .toList()
-          ..shuffle(_rng);
-
-        if (wrongLabels.length < _kMinWrongOptions4) continue;
-
-        final opts = <String>[
-          correctLabel,
-          wrongLabels[0],
-          wrongLabels[1],
-          wrongLabels[2],
-        ]..shuffle(_rng);
-
-        questions.add(QuizQuestion(
-          id: 'q_group_${cs.id}',
-          questionText:
-              'Tâm Sở "${cs.nameVietnamese}" (${cs.namePali}) thuộc nhóm nào?',
-          options: opts,
-          correctIndex: opts.indexOf(correctLabel),
-          type: QuizQuestionType.cetasikaGroup,
-          explanation:
-              '"${cs.nameVietnamese}" thuộc $correctLabel.\n${cs.descriptionVi}',
-        ));
-      }
-    }
-
-    // ── Q-Type 2: Citta có thọ gì? (3 options) ──────────────────────────
-    if (allVedanas.length > _kMinWrongOptions3) {
-      final pool = List<CittaModel>.from(cittas)..shuffle(_rng);
-
-      for (final citta in pool.take(5)) {
-        final correctLabel = _getVedanaName(citta.vedana);
-        final wrongLabels = allVedanas
-            .where((v) => v != citta.vedana)
-            .map(_getVedanaName)
-            .toList()
-          ..shuffle(_rng);
-
-        if (wrongLabels.length < _kMinWrongOptions3) continue;
-
-        final opts = <String>[
-          correctLabel,
-          wrongLabels[0],
-          wrongLabels[1],
-        ]..shuffle(_rng);
-
-        questions.add(QuizQuestion(
-          id: 'q_vedana_${citta.id}',
-          questionText: 'Tâm "${citta.nameVietnamese}" có thọ gì?',
-          options: opts,
-          correctIndex: opts.indexOf(correctLabel),
-          type: QuizQuestionType.cittaVedana,
-          explanation: '"${citta.nameVietnamese}" có $correctLabel.',
-        ));
-      }
-    }
-
-    // ── Q-Type 3: Conflict (intermediate+) ──────────────────────────────
-    if (_level != QuizLevel.beginner) {
-      final conflictPool = cetasikas
-          .where((c) => c.conflictRules.isNotEmpty)
-          .toList()
-        ..shuffle(_rng);
-
-      for (final cs in conflictPool.take(3)) {
-        final rule = cs.conflictRules.first;
-        final conflictIds = rule.conflictingIds;
-        if (conflictIds.isEmpty) continue;
-
-        final conflictId = conflictIds.first;
-        final conflictCs =
-            cetasikas.where((c) => c.id == conflictId).firstOrNull;
-        if (conflictCs == null) continue;
-
-        const correctLabel = 'Không — chúng xung đột';
-        final opts = <String>[
-          correctLabel,
-          'Có — luôn cùng nhau',
-          'Có — đôi khi',
-        ]..shuffle(_rng);
-
-        questions.add(QuizQuestion(
-          id: 'q_conflict_${cs.id}_$conflictId',
-          questionText:
-              '"${cs.nameVietnamese}" và "${conflictCs.nameVietnamese}" '
-              'có thể cùng xuất hiện trong một tâm không?',
-          options: opts,
-          correctIndex: opts.indexOf(correctLabel),
-          type: QuizQuestionType.conflictDetect,
-          explanation: rule.explanation,
-        ));
-      }
-    }
-
-    // ── Q-Type 4: Bhumi (advanced) ───────────────────────────────────────
-    if (_level == QuizLevel.advanced && allBhumis.length > _kMinWrongOptions4) {
-      final pool = List<CittaModel>.from(cittas)..shuffle(_rng);
-
-      for (final citta in pool.take(3)) {
-        final correctLabel = _getBhumiName(citta.bhumiGroup);
-        final wrongLabels = allBhumis
-            .where((b) => b != citta.bhumiGroup)
-            .map(_getBhumiName)
-            .toList()
-          ..shuffle(_rng);
-
-        if (wrongLabels.length < _kMinWrongOptions4) continue;
-
-        final opts = <String>[
-          correctLabel,
-          wrongLabels[0],
-          wrongLabels[1],
-          wrongLabels[2],
-        ]..shuffle(_rng);
-
-        questions.add(QuizQuestion(
-          id: 'q_bhumi_${citta.id}',
-          questionText: 'Tâm "${citta.nameVietnamese}" thuộc cõi giới nào?',
-          options: opts,
-          correctIndex: opts.indexOf(correctLabel),
-          type: QuizQuestionType.cittaBhumi,
-          explanation: '"${citta.nameVietnamese}" thuộc $correctLabel.',
-        ));
-      }
-    }
-
-    return questions;
-  }
-
-  // ── Label Helpers ──────────────────────────────────────────────────────────
-
-  String _getGroupName(CetasikaGroup g) {
-    switch (g) {
-      case CetasikaGroup.sabbacittasadharana:
-        return '7 Biến Hành';
-      case CetasikaGroup.pakinnaka:
-        return '6 Biệt Cảnh';
-      case CetasikaGroup.akusala:
-        return '14 Bất Thiện';
-      case CetasikaGroup.sobhana:
-        return '25 Tịnh Hảo';
-    }
-  }
-
-  String _getVedanaName(Vedana v) {
-    switch (v) {
-      case Vedana.pleasant:
-        return 'Lạc thọ';
-      case Vedana.unpleasant:
-        return 'Khổ thọ';
-      case Vedana.neutral:
-        return 'Xả thọ';
-      case Vedana.joy:
-        return 'Hỷ thọ';
-    }
-  }
-
-  String _getBhumiName(BhumiGroup b) {
-    switch (b) {
-      case BhumiGroup.akusala:
-        return 'Bất Thiện';
-      case BhumiGroup.ahetuka:
-        return 'Vô Nhân';
-      case BhumiGroup.sobhanaKamavacara:
-        return 'Tịnh Hảo Dục Giới';
-      case BhumiGroup.rupavacara:
-        return 'Sắc Giới';
-      case BhumiGroup.arupavacara:
-        return 'Vô Sắc Giới';
-      case BhumiGroup.lokuttara:
-        return 'Siêu Thế';
-    }
-  }
-
-  String _getTypeName(QuizQuestionType t) {
-    switch (t) {
-      case QuizQuestionType.cetasikaGroup:
-        return 'Phân Loại Tâm Sở';
-      case QuizQuestionType.cittaVedana:
-        return 'Nhận Diện Thọ';
-      case QuizQuestionType.conflictDetect:
-        return 'Xung Đột Giáo Lý';
-      case QuizQuestionType.cittaBhumi:
-        return 'Cõi Giới';
-    }
-  }
+  String _getTypeName(QuizQuestionType t) => switch (t) {
+        QuizQuestionType.cetasikaGroup => 'Phân Loại Tâm Sở',
+        QuizQuestionType.cittaVedana => 'Nhận Diện Thọ',
+        QuizQuestionType.conflictDetect => 'Xung Đột Giáo Lý',
+        QuizQuestionType.cittaBhumi => 'Cõi Giới',
+      };
 }
 
 // ─── Sub-widgets ──────────────────────────────────────────────────────────────
@@ -679,18 +506,23 @@ class _LevelCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (title, subtitle, icon, color) = switch (level) {
-      QuizLevel.beginner => ('Sơ Cấp', 'Nhóm & Thọ cơ bản', '🌱', Colors.green),
+      QuizLevel.beginner => (
+          'Sơ Cấp',
+          'Nhóm Tâm Sở & Thọ cơ bản',
+          '🌱',
+          Colors.green,
+        ),
       QuizLevel.intermediate => (
           'Trung Cấp',
-          '+ Xung đột Tâm Sở',
+          '+ Xung đột Tâm Sở (Conflict)',
           '🔥',
-          Colors.orange
+          Colors.orange,
         ),
       QuizLevel.advanced => (
           'Nâng Cao',
-          '+ Cõi Giới & toàn bộ loại',
+          '+ Cõi Giới & toàn bộ loại câu hỏi',
           '⚡',
-          Colors.purple
+          Colors.purple,
         ),
     };
 
@@ -773,12 +605,19 @@ class _OptionTile extends StatelessWidget {
     } else if (isCorrect) {
       bgColor = Colors.green.shade50;
       borderColor = Colors.green;
-      trailingIcon =
-          const Icon(Icons.check_circle, color: Colors.green, size: 20);
+      trailingIcon = const Icon(
+        Icons.check_circle_rounded,
+        color: Colors.green,
+        size: 20,
+      );
     } else if (selected) {
       bgColor = Colors.red.shade50;
       borderColor = Colors.red;
-      trailingIcon = const Icon(Icons.cancel, color: Colors.red, size: 20);
+      trailingIcon = const Icon(
+        Icons.cancel_rounded,
+        color: Colors.red,
+        size: 20,
+      );
     } else {
       bgColor = Colors.white;
       borderColor = Colors.grey.shade200;
@@ -807,7 +646,7 @@ class _OptionTile extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: Text(
-                String.fromCharCode(65 + index),
+                String.fromCharCode(65 + index), // A, B, C, D
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w700,

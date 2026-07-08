@@ -1,6 +1,7 @@
 // lib/shared/providers/progress_provider.dart
 // User Progress — Offline-First với SharedPreferences
-// Refactored: SM-2 Simplified, null-safe, đầy đủ serialize/deserialize
+// Milestone 3 Fix: overallProgress trả về 0.0–1.0 (Bug 5.3: 9200% → 92%)
+// SM-2 Simplified, null-safe, đầy đủ serialize/deserialize
 
 import 'dart:convert';
 import 'dart:math' as math;
@@ -15,37 +16,26 @@ import '../../data/models/study_module.dart';
 const _kProgressKey = 'vdp_user_progress';
 const _kWarningKey = 'vdp_warning_dismissed';
 
-/// SM-2 Simplified: khoảng cách ôn tập (ngày) theo số lần ôn liên tiếp thành công.
-/// Index 0 = lần 1, index 4+ = plateau 30 ngày.
+/// SM-2 Simplified intervals (ngày).
 const _kSm2Intervals = <int>[1, 3, 7, 14, 30];
 
-/// Ngưỡng điểm để tính là "lần ôn thành công".
+/// Ngưỡng điểm "lần ôn thành công" (0–100).
 const _kPassThreshold = 80.0;
 
-// ─── SM-2 Helper (pure function, dễ test) ────────────────────────────────────
+// ─── SM-2 Helper ─────────────────────────────────────────────────────────────
 
-/// Tính interval ngày tiếp theo theo SM-2 Simplified.
-///
-/// [previousEf]       : Easiness Factor hiện tại (mặc định 2.5).
-/// [consecutivePasses]: Số lần liên tiếp đạt điểm >= threshold.
-/// [score]            : Điểm vừa đạt (0–100).
-///
-/// Trả về [_Sm2Result] chứa nextIntervalDays và ef mới.
 _Sm2Result _computeSm2({
   required double score,
   required int consecutivePasses,
   required double previousEf,
 }) {
-  // Chuẩn hoá score về thang 0–5 (SM-2 gốc dùng thang này)
   final q = (score / 100 * 5).clamp(0.0, 5.0);
-
-  // Cập nhật EF: EF' = EF + (0.1 - (5-q)*(0.08+(5-q)*0.02))
-  // Clamp tối thiểu 1.3 theo spec SM-2
-  final newEf =
-      math.max(1.3, previousEf + 0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+  final newEf = math.max(
+    1.3,
+    previousEf + 0.1 - (5 - q) * (0.08 + (5 - q) * 0.02),
+  );
 
   if (score < _kPassThreshold) {
-    // Thất bại: reset consecutive, ôn lại sau 1 ngày
     return _Sm2Result(
       nextIntervalDays: 1,
       newEf: newEf,
@@ -53,14 +43,12 @@ _Sm2Result _computeSm2({
     );
   }
 
-  // Thành công: tăng interval
   final newConsecutive = consecutivePasses + 1;
   final intervalIndex =
       (newConsecutive - 1).clamp(0, _kSm2Intervals.length - 1);
-  final days = _kSm2Intervals[intervalIndex];
 
   return _Sm2Result(
-    nextIntervalDays: days,
+    nextIntervalDays: _kSm2Intervals[intervalIndex],
     newEf: newEf,
     newConsecutivePasses: newConsecutive,
   );
@@ -92,20 +80,17 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     _load();
   }
 
-  // ── Persistence: Load ────────────────────────────────────────────────────
+  // ── Load ─────────────────────────────────────────────────────────────────
 
   Future<void> _load() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-
       _warningDismissed = prefs.getBool(_kWarningKey) ?? false;
 
       final raw = prefs.getString(_kProgressKey);
       if (raw == null) return;
 
       final data = jsonDecode(raw) as Map<String, dynamic>;
-
-      // ── Module Progress ────────────────────────────────────────────────
       final mp = <String, ModuleProgress>{};
       final mpRaw = (data['moduleProgress'] as Map<String, dynamic>?) ?? {};
 
@@ -113,32 +98,33 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
         final m = value as Map<String, dynamic>;
         mp[id] = ModuleProgress(
           moduleId: id,
+          // ── BUG FIX NOTE: completionPercentage được lưu ở thang 0–100.
+          // overallProgress sẽ chia cho 100 để trả về 0.0–1.0.
           completionPercentage:
               (m['completionPercentage'] as num?)?.toDouble() ?? 0.0,
           quizScore: (m['quizScore'] as num?)?.toInt() ?? 0,
-          viewedCittaIds: List<String>.from(m['viewedCittaIds'] as List? ?? []),
+          viewedCittaIds:
+              List<String>.from(m['viewedCittaIds'] as List? ?? []),
           completedAt: _tryParseDate(m['completedAt']),
           reviewCount: (m['reviewCount'] as num?)?.toInt() ?? 0,
-          consecutivePasses: (m['consecutivePasses'] as num?)?.toInt() ?? 0,
-          easinessFactor: (m['easinessFactor'] as num?)?.toDouble() ?? 2.5,
+          consecutivePasses:
+              (m['consecutivePasses'] as num?)?.toInt() ?? 0,
+          easinessFactor:
+              (m['easinessFactor'] as num?)?.toDouble() ?? 2.5,
           lastReviewedAt: _tryParseDate(m['lastReviewedAt']),
           nextReviewDue: _tryParseDate(m['nextReviewDue']),
         );
       });
 
-      // ── Bookmarks (backward-compatible) ───────────────────────────────
       final bookmarkedCittaIds = Set<String>.from(
         data['bookmarkedCittaIds'] as List? ?? [],
       );
       final bookmarkedCetasikaIds = Set<String>.from(
         data['bookmarkedCetasikaIds'] as List? ?? [],
       );
-
-      // ── Personal Notes (backward-compatible) ──────────────────────────
-      final notesRaw = (data['personalNotes'] as Map<String, dynamic>?) ?? {};
-      final personalNotes = notesRaw.map(
-        (k, v) => MapEntry(k, v as String),
-      );
+      final notesRaw =
+          (data['personalNotes'] as Map<String, dynamic>?) ?? {};
+      final personalNotes = notesRaw.map((k, v) => MapEntry(k, v as String));
 
       state = UserProgress(
         moduleProgress: mp,
@@ -150,23 +136,21 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
         personalNotes: personalNotes,
       );
     } catch (e, st) {
-      // Ghi log nhưng không crash — khởi động với state rỗng
       assert(() {
         // ignore: avoid_print
-        print('[ProgressNotifier._load] Error: $e\n$st');
+        print('[ProgressNotifier._load] $e\n$st');
         return true;
       }());
     }
   }
 
-  // ── Persistence: Save ────────────────────────────────────────────────────
+  // ── Save ─────────────────────────────────────────────────────────────────
 
   Future<void> _save() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-
-      // Serialize module progress
       final mpJson = <String, dynamic>{};
+
       state.moduleProgress.forEach((id, v) {
         mpJson[id] = {
           'completionPercentage': v.completionPercentage,
@@ -196,23 +180,24 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     } catch (e) {
       assert(() {
         // ignore: avoid_print
-        print('[ProgressNotifier._save] Error: $e');
+        print('[ProgressNotifier._save] $e');
         return true;
       }());
     }
   }
 
-  // ── Quiz & Spaced Repetition ─────────────────────────────────────────────
+  // ── Quiz & Spaced Repetition ──────────────────────────────────────────────
 
   /// Ghi điểm quiz và cập nhật SM-2.
-  ///
-  /// [score]: 0.0–100.0 (điểm phần trăm)
+  /// [score]: 0.0–100.0
   void recordQuizScore(String moduleId, double score) {
-    assert(score >= 0 && score <= 100, 'score phải trong khoảng 0–100');
+    assert(
+      score >= 0 && score <= 100,
+      'score phải trong khoảng 0–100, nhận được: $score',
+    );
 
     final existing = state.moduleProgress[moduleId];
-
-    final sm2Result = _computeSm2(
+    final sm2 = _computeSm2(
       score: score,
       consecutivePasses: existing?.consecutivePasses ?? 0,
       previousEf: existing?.easinessFactor ?? 2.5,
@@ -220,22 +205,22 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
 
     final now = DateTime.now();
     final passed = score >= _kPassThreshold;
-
-    // completedAt: chỉ set lần đầu vượt ngưỡng, không ghi đè
     final completedAt =
         passed ? (existing?.completedAt ?? now) : existing?.completedAt;
 
+    // completionPercentage lưu ở thang 0–100
+    // overallProgress provider sẽ normalize về 0.0–1.0 khi cần
     final updated = ModuleProgress(
       moduleId: moduleId,
-      completionPercentage: score,
+      completionPercentage: score, // 0–100, KHÔNG nhân thêm
       quizScore: score.round(),
       viewedCittaIds: List<String>.from(existing?.viewedCittaIds ?? []),
       completedAt: completedAt,
       reviewCount: (existing?.reviewCount ?? 0) + 1,
-      consecutivePasses: sm2Result.newConsecutivePasses,
-      easinessFactor: sm2Result.newEf,
+      consecutivePasses: sm2.newConsecutivePasses,
+      easinessFactor: sm2.newEf,
       lastReviewedAt: now,
-      nextReviewDue: now.add(Duration(days: sm2Result.nextIntervalDays)),
+      nextReviewDue: now.add(Duration(days: sm2.nextIntervalDays)),
     );
 
     state = _copyStateWith(
@@ -246,9 +231,8 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     _save();
   }
 
-  // ── Citta Viewed ─────────────────────────────────────────────────────────
+  // ── Citta Viewed ──────────────────────────────────────────────────────────
 
-  /// Đánh dấu đã xem một Tâm (idempotent).
   void markCittaViewed(String moduleId, String cittaId) {
     final existing = state.moduleProgress[moduleId];
     final viewed = <String>{...?existing?.viewedCittaIds, cittaId};
@@ -258,7 +242,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       completionPercentage: existing?.completionPercentage ?? 0,
       quizScore: existing?.quizScore ?? 0,
       viewedCittaIds: viewed.toList(),
-      completedAt: existing?.completedAt, // giữ nguyên
+      completedAt: existing?.completedAt,
       reviewCount: existing?.reviewCount ?? 0,
       consecutivePasses: existing?.consecutivePasses ?? 0,
       easinessFactor: existing?.easinessFactor ?? 2.5,
@@ -274,38 +258,34 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     _save();
   }
 
-  // ── Bookmarks ────────────────────────────────────────────────────────────
+  // ── Bookmarks ─────────────────────────────────────────────────────────────
 
-  /// Toggle bookmark Citta. Trả về trạng thái mới (true = đã bookmark).
   bool toggleCittaBookmark(String cittaId) {
     final updated = Set<String>.from(state.bookmarkedCittaIds);
-    final added = updated.add(cittaId); // false nếu đã có
+    final added = updated.add(cittaId);
     if (!added) updated.remove(cittaId);
-
     state = _copyStateWith(bookmarkedCittaIds: updated);
     _save();
     return added;
   }
 
-  /// Toggle bookmark Cetasika. Trả về trạng thái mới (true = đã bookmark).
   bool toggleCetasikaBookmark(String cetasikaId) {
     final updated = Set<String>.from(state.bookmarkedCetasikaIds);
     final added = updated.add(cetasikaId);
     if (!added) updated.remove(cetasikaId);
-
     state = _copyStateWith(bookmarkedCetasikaIds: updated);
     _save();
     return added;
   }
 
-  bool isCittaBookmarked(String id) => state.bookmarkedCittaIds.contains(id);
+  bool isCittaBookmarked(String id) =>
+      state.bookmarkedCittaIds.contains(id);
+
   bool isCetasikaBookmarked(String id) =>
       state.bookmarkedCetasikaIds.contains(id);
 
-  // ── Personal Notes ───────────────────────────────────────────────────────
+  // ── Personal Notes ────────────────────────────────────────────────────────
 
-  /// Lưu/xoá ghi chú.
-  /// Key format: "citta_CI_001" | "cetasika_CS_PHASSA"
   void saveNote(String key, String note) {
     final updated = Map<String, String>.from(state.personalNotes);
     if (note.trim().isEmpty) {
@@ -318,14 +298,15 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
   }
 
   void deleteNote(String key) {
-    final updated = Map<String, String>.from(state.personalNotes)..remove(key);
+    final updated = Map<String, String>.from(state.personalNotes)
+      ..remove(key);
     state = _copyStateWith(personalNotes: updated);
     _save();
   }
 
   String? getNote(String key) => state.personalNotes[key];
 
-  // ── Unlock & Reset ───────────────────────────────────────────────────────
+  // ── Unlock & Reset ────────────────────────────────────────────────────────
 
   void toggleAllModulesUnlocked(bool unlocked) {
     state = _copyStateWith(allModulesUnlocked: unlocked);
@@ -345,7 +326,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     await prefs.remove(_kProgressKey);
   }
 
-  // ── Warning Dismissed ────────────────────────────────────────────────────
+  // ── Warning ───────────────────────────────────────────────────────────────
 
   Future<void> dismissWarning() async {
     _warningDismissed = true;
@@ -359,10 +340,8 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     await prefs.remove(_kWarningKey);
   }
 
-  // ── Private Helpers ──────────────────────────────────────────────────────
+  // ── Helpers ───────────────────────────────────────────────────────────────
 
-  /// Tạo bản copy state mới với các field được override.
-  /// Giữ nguyên tất cả field không được truyền vào.
   UserProgress _copyStateWith({
     Map<String, ModuleProgress>? moduleProgress,
     DateTime? lastStudied,
@@ -392,9 +371,42 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
 
 // ─── Providers ────────────────────────────────────────────────────────────────
 
-final progressProvider = StateNotifierProvider<ProgressNotifier, UserProgress>(
+final progressProvider =
+    StateNotifierProvider<ProgressNotifier, UserProgress>(
   (ref) => ProgressNotifier(),
 );
+
+/// ── BUG FIX 5.3: overallProgress ────────────────────────────────────────────
+///
+/// **Root cause của bug 9200%:**
+/// `completionPercentage` được lưu ở thang 0–100 (ví dụ: 92.0).
+/// Trước đây code UI lại nhân thêm *100 → 9200.
+///
+/// **Fix:**
+/// Provider này chuẩn hóa về 0.0–1.0.
+/// UI chỉ cần `(overallProgress * 100).round()` để hiển thị "92%".
+/// KHÔNG được nhân thêm lần nào khác.
+///
+/// **Quy ước dữ liệu:**
+/// - `ModuleProgress.completionPercentage` : 0.0–100.0 (thang quiz)
+/// - `overallProgressProvider`             : 0.0–1.0   (ratio chuẩn)
+/// - UI display                            : `(ratio * 100).round()` → "92%"
+final overallProgressProvider = Provider<double>((ref) {
+  final progress = ref.watch(progressProvider);
+  final modules = progress.moduleProgress;
+
+  if (modules.isEmpty) return 0.0;
+
+  // completionPercentage ∈ [0, 100] → chia 100 → [0.0, 1.0]
+  final totalRatio = modules.values.fold<double>(
+    0.0,
+    (sum, m) => sum + (m.completionPercentage / 100.0).clamp(0.0, 1.0),
+  );
+
+  // Trả về tỷ lệ trung bình trong khoảng 0.0–1.0
+  // UI: (overallProgress * 100).round() để hiển thị "%"
+  return (totalRatio / modules.length).clamp(0.0, 1.0);
+});
 
 /// Tổng số bookmark (citta + cetasika).
 final bookmarkCountProvider = Provider<int>((ref) {
@@ -402,7 +414,15 @@ final bookmarkCountProvider = Provider<int>((ref) {
   return p.bookmarkedCittaIds.length + p.bookmarkedCetasikaIds.length;
 });
 
-/// Danh sách moduleId cần ôn tập hôm nay.
+/// Số module đã hoàn thành (quizScore >= 80).
+final completedModuleCountProvider = Provider<int>((ref) {
+  final p = ref.watch(progressProvider);
+  return p.moduleProgress.values
+      .where((m) => m.completionPercentage >= 80.0)
+      .length;
+});
+
+/// Danh sách moduleId cần ôn tập hôm nay (SM-2).
 final dueForReviewProvider = Provider<List<String>>((ref) {
   final p = ref.watch(progressProvider);
   final now = DateTime.now();
