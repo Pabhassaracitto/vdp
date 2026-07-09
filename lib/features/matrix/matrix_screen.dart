@@ -222,9 +222,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           ),
           IconButton(
             icon: Icon(
-              _showHighContrastMode
-                  ? Icons.contrast
-                  : Icons.contrast_outlined,
+              _showHighContrastMode ? Icons.contrast : Icons.contrast_outlined,
             ),
             onPressed: () =>
                 setState(() => _showHighContrastMode = !_showHighContrastMode),
@@ -294,9 +292,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                     ? IconButton(
                         icon: const Icon(Icons.clear),
                         onPressed: () {
-                          ref
-                              .read(matrixSearchQueryProvider.notifier)
-                              .state = '';
+                          ref.read(matrixSearchQueryProvider.notifier).state =
+                              '';
                         },
                         tooltip: 'Xóa tìm kiếm',
                       )
@@ -640,9 +637,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
 
                         Widget child = GestureDetector(
                           onTap: () {
-                            ref
-                                .read(selectedCetasikaProvider.notifier)
-                                .state = isSel ? null : cs.id;
+                            ref.read(selectedCetasikaProvider.notifier).state =
+                                isSel ? null : cs.id;
                             if (!isSel) _showCetasikaDetail(context, cs);
                           },
                           child: CetasikaHeader(
@@ -678,42 +674,43 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                     ),
                   ),
                   Expanded(
-                    child: ListView.builder(
+                    child: SingleChildScrollView(
                       controller: _verticalController2,
-                      itemCount: cittas.length,
-                      itemBuilder: (_, rowIdx) {
-                        final citta = cittas[rowIdx];
-                        final isCittaSel = selectedCitta == citta.id;
-                        return SizedBox(
-                          height: cellSize,
-                          child: Row(
-                            children: List.generate(
-                              cetasikas.length,
-                              (colIdx) {
-                                final cs = cetasikas[colIdx];
-                                return AssociationCell(
-                                  cittaId: citta.id,
-                                  cetasikaId: cs.id,
-                                  type: _getAssocType(citta, cs.id),
-                                  isCittaHighlighted: isCittaSel,
-                                  isCetasikaHighlighted:
-                                      selectedCetasika == cs.id,
-                                  isDimmed: dimmed.contains(cs.id) ||
-                                      (searchType == SearchType.cetasika &&
-                                          matchedCetasikas.isNotEmpty &&
-                                          !matchedCetasikas
-                                              .contains(colIdx)) ||
-                                      (searchType == SearchType.citta &&
-                                          matchedCittas.isNotEmpty &&
-                                          !matchedCittas.contains(rowIdx)),
-                                  size: cellSize,
-                                  useHighContrast: _isHC,
-                                );
-                              },
+                      child: Column(
+                        children: List.generate(cittas.length, (rowIdx) {
+                          final citta = cittas[rowIdx];
+                          final isCittaSel = selectedCitta == citta.id;
+                          return SizedBox(
+                            height: cellSize,
+                            child: Row(
+                              children: List.generate(
+                                cetasikas.length,
+                                (colIdx) {
+                                  final cs = cetasikas[colIdx];
+                                  return AssociationCell(
+                                    cittaId: citta.id,
+                                    cetasikaId: cs.id,
+                                    type: _getAssocType(citta, cs.id),
+                                    isCittaHighlighted: isCittaSel,
+                                    isCetasikaHighlighted:
+                                        selectedCetasika == cs.id,
+                                    isDimmed: dimmed.contains(cs.id) ||
+                                        (searchType == SearchType.cetasika &&
+                                            matchedCetasikas.isNotEmpty &&
+                                            !matchedCetasikas
+                                                .contains(colIdx)) ||
+                                        (searchType == SearchType.citta &&
+                                            matchedCittas.isNotEmpty &&
+                                            !matchedCittas.contains(rowIdx)),
+                                    size: cellSize,
+                                    useHighContrast: _isHC,
+                                  );
+                                },
+                              ),
                             ),
-                          ),
-                        );
-                      },
+                          );
+                        }),
+                      ),
                     ),
                   ),
                 ],
