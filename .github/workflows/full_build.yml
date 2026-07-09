@@ -23,6 +23,10 @@ on:
         description: 'Build Linux?'
         type: boolean
         default: false
+      build_web:
+        description: 'Build Web?'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -221,9 +225,36 @@ jobs:
           name: linux-zip
           path: VDP-Linux-*.zip
 
+  build-web:
+    name: Build Web App
+    # Chỉ chạy cho stable tags hoặc manual trigger
+    if: (startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')) || github.event.inputs.build_web == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build Web
+        run: flutter build web --release
+
+      - name: Upload Web artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-build
+          path: build/web/
+
   create-release:
     name: Create Release
-    needs: [build-android, build-windows, build-ios, build-linux]
+    needs: [build-android, build-windows, build-ios, build-linux, build-web]
     # Chỉ tạo Release thật sự khi push Tag stable, không tạo khi build thủ công để debug
     if: startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')
     runs-on: ubuntu-latest
@@ -242,6 +273,8 @@ jobs:
             artifacts/windows-zip/*.zip
             artifacts/ios-ipa/*.ipa
             artifacts/linux-zip/*.zip
+            artifacts/web-build/*
           generate_release_notes: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+
