@@ -1,10 +1,6 @@
 // lib/shared/widgets/citta_row_header.dart
-// Header hàng ngang cho mỗi Tâm trong Bảng Tương Ưng
-// FIX M2-T7: Thêm IntrinsicHeight + flexible layout để tránh
-//            Bottom overflowed khi Text Scaling cao
 
 import 'package:flutter/material.dart';
-
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/citta_model.dart';
 
@@ -12,12 +8,9 @@ class CittaRowHeader extends StatelessWidget {
   final CittaModel citta;
   final bool isSelected;
   final double width;
-
-  /// [height] là chiều cao MẶC ĐỊNH (khi scale = 1.0).
-  /// Widget sẽ tự mở rộng nếu text cần thêm không gian.
   final double height;
   final int displayIndex;
-  final bool useHighContrast; // M1-T4: HC mode flag
+  final bool useHighContrast;
 
   const CittaRowHeader({
     super.key,
@@ -37,12 +30,15 @@ class CittaRowHeader extends StatelessWidget {
     final bhumiSymbol = citta.bhumiGroup.name.bhumiSymbol;
     final vedanaSymbol = _getVedanaSymbol(citta.vedana);
 
-    // Tính chiều cao tối thiểu thích ứng với text scaling
-    final textScale = MediaQuery.textScalerOf(context).scale(1.0);
-    // Cho phép ô cao hơn tối đa 1.5× so với mặc định khi scale lớn
-    final double minHeight = height;
-    final double maxHeight = height * textScale.clamp(1.0, 1.5);
+    // FIX: Tính height một lần, KHÔNG thay đổi động để tránh dirty semantics.
+    // Dùng height cố định bằng cellSize được truyền vào — đồng bộ với
+    // ListView.builder (không dùng itemExtent nên height do widget tự quyết).
+    // maxLines:2 + overflow:ellipsis đã đủ để tránh overflow mà không cần
+    // BoxConstraints động.
+    final double fixedHeight = height;
 
+    // FIX ROOT CAUSE: Đưa Semantics ra NGOÀI container có animation/constraints.
+    // Semantics chỉ bao widget con tĩnh, không bị ảnh hưởng bởi layout dirty.
     return Semantics(
       label: 'Tâm hàng $displayIndex: ${citta.nameVietnamese}, '
           'số gốc ${citta.orderIndex}, '
@@ -51,16 +47,90 @@ class CittaRowHeader extends StatelessWidget {
           '${isSelected ? "Đang được chọn" : "Nhấn để xem chi tiết"}',
       button: true,
       selected: isSelected,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
+      // excludeSemantics ngăn child tạo thêm semantics node chồng chéo
+      excludeSemantics: false,
+      child: _CittaRowHeaderContent(
+        citta: citta,
+        isSelected: isSelected,
         width: width,
-        // ── FIX: dùng constraints thay vì height cứng ──
-        constraints: BoxConstraints(
-          minHeight: minHeight,
-          maxHeight: maxHeight,
-        ),
+        height: fixedHeight,
+        displayIndex: displayIndex,
+        useHighContrast: useHighContrast,
+        isLandscape: isLandscape,
+        bhumiColor: bhumiColor,
+        bhumiSymbol: bhumiSymbol,
+        vedanaSymbol: vedanaSymbol,
+      ),
+    );
+  }
+
+  String _getVedanaSymbol(Vedana vedana) {
+    switch (vedana) {
+      case Vedana.pleasant: return VdpSymbols.pleasant;
+      case Vedana.unpleasant: return VdpSymbols.unpleasant;
+      case Vedana.neutral: return VdpSymbols.neutral;
+      case Vedana.joy: return VdpSymbols.joy;
+    }
+  }
+
+  String _getVedanaName(Vedana vedana) {
+    switch (vedana) {
+      case Vedana.pleasant: return 'Lạc thọ';
+      case Vedana.unpleasant: return 'Khổ thọ';
+      case Vedana.neutral: return 'Xả thọ';
+      case Vedana.joy: return 'Hỷ thọ';
+    }
+  }
+
+  String _getBhumiName(BhumiGroup bhumi) {
+    switch (bhumi) {
+      case BhumiGroup.akusala: return 'Bất Thiện';
+      case BhumiGroup.ahetuka: return 'Vô Nhân';
+      case BhumiGroup.sobhanaKamavacara: return 'Tịnh Hảo Dục Giới';
+      case BhumiGroup.rupavacara: return 'Sắc Giới';
+      case BhumiGroup.arupavacara: return 'Vô Sắc Giới';
+      case BhumiGroup.lokuttara: return 'Siêu Thế';
+    }
+  }
+}
+
+/// Widget con thuần layout — KHÔNG chứa Semantics.
+/// Tách riêng để AnimatedContainer không làm dirty semantics tree.
+class _CittaRowHeaderContent extends StatelessWidget {
+  final CittaModel citta;
+  final bool isSelected;
+  final double width;
+  final double height;
+  final int displayIndex;
+  final bool useHighContrast;
+  final bool isLandscape;
+  final Color bhumiColor;
+  final String bhumiSymbol;
+  final String vedanaSymbol;
+
+  const _CittaRowHeaderContent({
+    required this.citta,
+    required this.isSelected,
+    required this.width,
+    required this.height,
+    required this.displayIndex,
+    required this.useHighContrast,
+    required this.isLandscape,
+    required this.bhumiColor,
+    required this.bhumiSymbol,
+    required this.vedanaSymbol,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    // FIX: Dùng DecoratedBox + SizedBox thay cho AnimatedContainer.
+    // AnimatedContainer tạo implicit animation → dirty semantics liên tục.
+    // Thay bằng AnimatedPhysicalModel chỉ animate màu, không animate size.
+    return SizedBox(
+      width: width,
+      height: height,
+      child: DecoratedBox(
         decoration: BoxDecoration(
-          // M1-T4: HC fix — nền tối khi HC, không dùng màu bhumi mờ
           color: isSelected
               ? bhumiColor.withValues(alpha: 0.25)
               : (useHighContrast
@@ -69,7 +139,6 @@ class CittaRowHeader extends StatelessWidget {
           border: Border(
             left: BorderSide(color: bhumiColor, width: 4),
             bottom: BorderSide(
-              // M1-T4: HC fix — border rõ trên nền tối
               color: useHighContrast
                   ? HCColors.textMuted.withValues(alpha: 0.2)
                   : Colors.grey.shade200,
@@ -80,124 +149,70 @@ class CittaRowHeader extends StatelessWidget {
                 : BorderSide.none,
           ),
         ),
-        // ── FIX: padding linh hoạt, giảm khi landscape ──
-        padding: EdgeInsets.symmetric(
-          horizontal: 8,
-          vertical: isLandscape ? 1 : 2,
-        ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            // ── Số thứ tự: chiều rộng cố định, không co giãn ──
-            SizedBox(
-              width: 24,
-              child: Text(
-                '$displayIndex',
-                style: TextStyle(
-                  fontSize: isLandscape ? 9.0 : 10.0,
-                  // M1-T4: HC fix — số thứ tự rõ trên nền tối
-                  color: useHighContrast
-                      ? HCColors.textMuted
-                      : bhumiColor.withValues(alpha: 0.7),
-                  fontWeight: FontWeight.w600,
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: 8,
+            vertical: isLandscape ? 1 : 2,
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // Số thứ tự — width cố định, noScaling
+              SizedBox(
+                width: 24,
+                child: Text(
+                  '$displayIndex',
+                  style: TextStyle(
+                    fontSize: isLandscape ? 9.0 : 10.0,
+                    color: useHighContrast
+                        ? HCColors.textMuted
+                        : bhumiColor.withValues(alpha: 0.7),
+                    fontWeight: FontWeight.w600,
+                  ),
+                  textScaler: TextScaler.noScaling,
                 ),
-                // Không scale quá mức để vừa SizedBox
-                textScaler: TextScaler.noScaling,
               ),
-            ),
 
-            // ── Tên Tâm: Expanded để chiếm không gian còn lại ──
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              // Tên Tâm
+              Expanded(
+                child: Text(
+                  citta.nameVietnamese,
+                  style: TextStyle(
+                    fontSize: isLandscape ? 9.0 : 10.5,
+                    height: 1.2,
+                    fontWeight:
+                        isSelected ? FontWeight.w700 : FontWeight.w500,
+                    color: useHighContrast
+                        ? HCColors.textPrimary
+                        : VdpColors.onBackground,
+                  ),
+                  // maxLines:2 chống overflow không cần BoxConstraints động
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+
+              // Dual encoding symbols — noScaling, không tham gia layout động
+              Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Tên tiếng Việt — cho phép xuống hàng khi text lớn
                   Text(
-                    citta.nameVietnamese,
-                    style: TextStyle(
-                      // fontSize cơ bản — để hệ thống scale bình thường
-                      fontSize: isLandscape ? 9.0 : 10.5,
-                      height: 1.2,
-                      fontWeight:
-                          isSelected ? FontWeight.w700 : FontWeight.w500,
-                      // M1-T4: HC fix — màu trắng trên nền tối
-                      color: useHighContrast
-                          ? HCColors.textPrimary
-                          : VdpColors.onBackground,
-                    ),
-                    // ── FIX: maxLines 2 thay vì 1 để tránh overflow ──
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
+                    bhumiSymbol,
+                    style: const TextStyle(fontSize: 12),
+                    textScaler: TextScaler.noScaling,
+                  ),
+                  Text(
+                    vedanaSymbol,
+                    style: const TextStyle(fontSize: 10),
+                    textScaler: TextScaler.noScaling,
                   ),
                 ],
               ),
-            ),
-
-            // ── Dual Encoding symbols: không scale, cố định ──
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  bhumiSymbol,
-                  style: const TextStyle(fontSize: 12),
-                  textScaler: TextScaler.noScaling,
-                ),
-                Text(
-                  vedanaSymbol,
-                  style: const TextStyle(fontSize: 10),
-                  textScaler: TextScaler.noScaling,
-                ),
-              ],
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
-  }
-
-  String _getVedanaSymbol(Vedana vedana) {
-    switch (vedana) {
-      case Vedana.pleasant:
-        return VdpSymbols.pleasant;
-      case Vedana.unpleasant:
-        return VdpSymbols.unpleasant;
-      case Vedana.neutral:
-        return VdpSymbols.neutral;
-      case Vedana.joy:
-        return VdpSymbols.joy;
-    }
-  }
-
-  String _getVedanaName(Vedana vedana) {
-    switch (vedana) {
-      case Vedana.pleasant:
-        return 'Lạc thọ';
-      case Vedana.unpleasant:
-        return 'Khổ thọ';
-      case Vedana.neutral:
-        return 'Xả thọ';
-      case Vedana.joy:
-        return 'Hỷ thọ';
-    }
-  }
-
-  String _getBhumiName(BhumiGroup bhumi) {
-    switch (bhumi) {
-      case BhumiGroup.akusala:
-        return 'Bất Thiện';
-      case BhumiGroup.ahetuka:
-        return 'Vô Nhân';
-      case BhumiGroup.sobhanaKamavacara:
-        return 'Tịnh Hảo Dục Giới';
-      case BhumiGroup.rupavacara:
-        return 'Sắc Giới';
-      case BhumiGroup.arupavacara:
-        return 'Vô Sắc Giới';
-      case BhumiGroup.lokuttara:
-        return 'Siêu Thế';
-    }
   }
 }
