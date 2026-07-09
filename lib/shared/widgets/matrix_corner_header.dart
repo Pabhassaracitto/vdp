@@ -1,4 +1,9 @@
 // lib/shared/widgets/matrix_corner_header.dart
+//
+// Ô góc trái trên cùng của Bảng Tương Ưng.
+// Đường gạch chéo chia ô thành 2 vùng:
+//   • Góc TRÊN-PHẢI : "Tâm Sở →"  (hướng đọc cột — sang phải)
+//   • Góc DƯỚI-TRÁI : "Tâm ↓"    (hướng đọc hàng — xuống dưới)
 
 import 'package:flutter/material.dart';
 import '../../core/theme/vdp_theme.dart';
@@ -22,13 +27,10 @@ class MatrixCornerHeader extends StatelessWidget {
     final Color textColor =
         isHighContrast ? HCColors.primary : Colors.white;
     final Color lineColor =
-        isHighContrast ? HCColors.border : Colors.white38;
+        isHighContrast ? HCColors.border : Colors.white54;
 
-    // FIX: Semantics đặt NGOÀI cùng, bao SizedBox tĩnh.
-    // KHÔNG đặt Semantics bên trong CustomPaint hay Stack có Positioned động.
     return Semantics(
       label: 'Góc bảng: hàng là Tâm chiều dọc, cột là Tâm Sở chiều ngang',
-      // header: true thay vì button — phù hợp ngữ nghĩa hơn
       header: true,
       child: SizedBox(
         width: width,
@@ -49,13 +51,77 @@ class MatrixCornerHeader extends StatelessWidget {
           ),
           child: ClipRect(
             child: CustomPaint(
-              // FIX: painter (background) thay vì foregroundPainter.
-              // foregroundPainter vẽ SAU child → đường chéo đè lên chữ.
-              // painter vẽ TRƯỚC child → chữ nổi trên đường chéo.
               painter: _DiagonalLinePainter(color: lineColor),
-              child: _CornerContent(
-                textColor: textColor,
-                height: height,
+              child: Stack(
+                children: [
+                  // ═══ Góc TRÊN-PHẢI: "Tâm Sở →" ═══
+                  // Đặt trong vùng tam giác trên-phải của đường chéo
+                  Positioned(
+                    top: 10,
+                    right: 8,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(
+                          'Tâm Sở',
+                          textScaler: TextScaler.noScaling,
+                          style: TextStyle(
+                            color: textColor,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w700,
+                            height: 1.2,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          '→',
+                          textScaler: TextScaler.noScaling,
+                          style: TextStyle(
+                            color: textColor.withValues(alpha: 0.9),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                            height: 1.0,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // ═══ Góc DƯỚI-TRÁI: "Tâm ↓" ═══
+                  // Đặt trong vùng tam giác dưới-trái của đường chéo
+                  Positioned(
+                    bottom: 10,
+                    left: 8,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Tâm',
+                          textScaler: TextScaler.noScaling,
+                          style: TextStyle(
+                            color: textColor,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            height: 1.2,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          '↓',
+                          textScaler: TextScaler.noScaling,
+                          style: TextStyle(
+                            color: textColor.withValues(alpha: 0.9),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                            height: 1.0,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -65,107 +131,7 @@ class MatrixCornerHeader extends StatelessWidget {
   }
 }
 
-/// Nội dung 2 góc — widget riêng để dễ test và tránh rebuild không cần thiết.
-class _CornerContent extends StatelessWidget {
-  final Color textColor;
-  final double height;
-
-  const _CornerContent({
-    required this.textColor,
-    required this.height,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    // Padding tính theo height thực để chữ không bao giờ đè đường chéo.
-    // Góc trên-phải và dưới-trái cách đường chéo ít nhất 6px.
-    const double edgePad = 6.0;
-
-    return Stack(
-      children: [
-        // Góc TRÊN-PHẢI: "Tâm Sở →"
-        Positioned(
-          top: edgePad,
-          right: edgePad,
-          child: _CornerLabel(
-            line1: 'Tâm Sở',
-            line2: '→',
-            color: textColor,
-            align: TextAlign.right,
-          ),
-        ),
-
-        // Góc DƯỚI-TRÁI: "Tâm ↓"
-        Positioned(
-          bottom: edgePad,
-          left: edgePad,
-          child: _CornerLabel(
-            line1: 'Tâm',
-            line2: '↓',
-            color: textColor,
-            align: TextAlign.left,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _CornerLabel extends StatelessWidget {
-  final String line1;
-  final String line2;
-  final Color color;
-  final TextAlign align;
-
-  const _CornerLabel({
-    required this.line1,
-    required this.line2,
-    required this.color,
-    required this.align,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    // FIX: Dùng textScaler: TextScaler.noScaling để kích thước label
-    // KHÔNG thay đổi theo text scaling của hệ thống.
-    // Điều này ngăn label tràn ra ngoài ô góc cố định.
-    const textScaler = TextScaler.noScaling;
-    const double fontSize = 10.0;
-
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: align == TextAlign.right
-          ? CrossAxisAlignment.end
-          : CrossAxisAlignment.start,
-      children: [
-        Text(
-          line1,
-          textScaler: textScaler,
-          textAlign: align,
-          style: TextStyle(
-            color: color,
-            fontSize: fontSize,
-            fontWeight: FontWeight.w700,
-            height: 1.2,
-            letterSpacing: 0.2,
-          ),
-        ),
-        Text(
-          line2,
-          textScaler: textScaler,
-          textAlign: align,
-          style: TextStyle(
-            color: color.withValues(alpha: 0.85),
-            // Icon mũi tên to hơn chữ 1px cho dễ đọc
-            fontSize: fontSize + 1,
-            height: 1.0,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
+/// Vẽ đường chéo từ góc trên-trái → góc dưới-phải
 class _DiagonalLinePainter extends CustomPainter {
   final Color color;
   const _DiagonalLinePainter({required this.color});
@@ -174,7 +140,7 @@ class _DiagonalLinePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..strokeWidth = 1.0
+      ..strokeWidth = 1.2
       ..style = PaintingStyle.stroke
       ..isAntiAlias = true;
 
