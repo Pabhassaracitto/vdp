@@ -70,11 +70,16 @@ class UserProgress {
   });
 
   double get overallProgress {
-    if (moduleProgress.isEmpty) return 0;
-    final total = moduleProgress.values
-        .map((p) => p.completionPercentage)
-        .reduce((a, b) => a + b);
-    return total / moduleProgress.length;
+    if (moduleProgress.isEmpty) return 0.0;
+
+    final total = moduleProgress.values.fold<double>(
+      0.0,
+      // completionPercentage ∈ [0, 100] → chia 100 → [0.0, 1.0] mỗi module
+      (sum, m) => sum + (m.completionPercentage / 100.0).clamp(0.0, 1.0),
+    );
+
+    // Trung bình tỷ lệ, clamp để đảm bảo không vượt 1.0
+    return (total / moduleProgress.length).clamp(0.0, 1.0);
   }
 
   bool isModuleUnlocked(StudyModule module, List<StudyModule> allModules) {
