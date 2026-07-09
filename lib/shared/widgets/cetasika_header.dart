@@ -1,9 +1,6 @@
 // lib/shared/widgets/cetasika_header.dart
-// Header cột dọc cho mỗi Tâm Sở trong Bảng Tương Ưng
-// Hiển thị thẳng đứng để tiết kiệm không gian
 
 import 'package:flutter/material.dart';
-
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
 
@@ -14,7 +11,7 @@ class CetasikaHeader extends StatelessWidget {
   final double width;
   final double height;
   final int displayIndex;
-  final bool useHighContrast; // M1-T4: HC mode flag
+  final bool useHighContrast;
 
   const CetasikaHeader({
     super.key,
@@ -29,8 +26,18 @@ class CetasikaHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isLandscape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
     final groupColor = _getGroupColor(cetasika.group);
     final groupSymbol = _getGroupSymbol(cetasika.group);
+
+    final displayName = isLandscape
+        ? _abbreviate(cetasika.nameShort)
+        : cetasika.nameShort;
+
+    final double nameFontSize = isLandscape ? 7.5 : 11.0;
+    final double symbolFontSize = isLandscape ? 8.0 : 12.0;
+    final double indexFontSize = isLandscape ? 7.0 : 9.0;
 
     return Semantics(
       label: 'Tâm Sở ${cetasika.nameVietnamese} (${cetasika.namePali}), '
@@ -43,82 +50,126 @@ class CetasikaHeader extends StatelessWidget {
       child: AnimatedOpacity(
         duration: const Duration(milliseconds: 200),
         opacity: isDimmed ? 0.25 : 1.0,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 150),
+        child: SizedBox(
           width: width,
           height: height,
-          decoration: BoxDecoration(
-            // M1-T4: HC fix — nền tối khi HC
-            color: isSelected
-                ? groupColor.withOpacity(0.25)
-                : (useHighContrast
-                    ? HCColors.surface
-                    : groupColor.withOpacity(0.08)),
-            border: Border(
-              top: BorderSide(color: groupColor, width: 3),
-              right: BorderSide(
-                // M1-T4: HC fix — border rõ trên nền tối
-                color: useHighContrast
-                    ? HCColors.textMuted.withOpacity(0.2)
-                    : Colors.grey.shade200,
-                width: 0.5,
-              ),
-              bottom: isSelected
-                  ? BorderSide(color: groupColor, width: 2)
-                  : BorderSide.none,
-            ),
-          ),
-          padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 2),
-          child: Column(
-            children: [
-              // Symbol nhóm
-              Text(
-                groupSymbol,
-                style: TextStyle(fontSize: 12, color: groupColor),
-              ),
-              const SizedBox(height: 4),
-
-              // Tên xoay dọc
-              Expanded(
-                child: RotatedBox(
-                  quarterTurns: 3,
-                  child: Text(
-                    cetasika.nameShort,
-                    style: TextStyle(
-                      fontSize: MediaQuery.of(context).orientation ==
-                              Orientation.landscape
-                          ? 9
-                          : 11,
-                      fontWeight:
-                          isSelected ? FontWeight.w700 : FontWeight.w500,
-                      // M1-T4: HC fix — màu trắng trên nền tối
-                      color: useHighContrast
-                          ? HCColors.textPrimary
-                          : VdpColors.onBackground,
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: isSelected
+                  ? groupColor.withValues(alpha: 0.25)
+                  : (useHighContrast
+                      ? HCColors.surface
+                      : groupColor.withValues(alpha: 0.08)),
+              border: Border(
+                top: BorderSide(
+                  color: groupColor,
+                  width: isLandscape ? 2 : 3,
                 ),
-              ),
-
-              // Số thứ tự
-              Text(
-                '$displayIndex',
-                style: TextStyle(
-                  fontSize: 9,
-                  // M1-T4: HC fix — số thứ tự rõ trên nền tối
+                right: BorderSide(
                   color: useHighContrast
-                      ? HCColors.textMuted
-                      : groupColor.withOpacity(0.7),
+                      ? HCColors.textMuted.withValues(alpha: 0.2)
+                      : Colors.grey.shade200,
+                  width: 0.5,
                 ),
+                bottom: isSelected
+                    ? BorderSide(color: groupColor, width: 2)
+                    : BorderSide.none,
               ),
-            ],
+            ),
+            child: Padding(
+              padding: EdgeInsets.symmetric(
+                vertical: isLandscape ? 2 : 6,
+                horizontal: isLandscape ? 1 : 2,
+              ),
+              child: Column(
+                children: [
+                  // Symbol nhóm
+                  Text(
+                    groupSymbol,
+                    style: TextStyle(
+                      fontSize: symbolFontSize,
+                      color: useHighContrast
+                          ? _hcGroupColor(groupColor)
+                          : groupColor,
+                    ),
+                    textScaler: TextScaler.noScaling,
+                  ),
+                  SizedBox(height: isLandscape ? 1 : 4),
+
+                  // Tên xoay dọc
+                  Expanded(
+                    child: RotatedBox(
+                      quarterTurns: 3,
+                      child: Text(
+                        displayName,
+                        style: TextStyle(
+                          fontSize: nameFontSize,
+                          fontWeight: isSelected
+                              ? FontWeight.w700
+                              : FontWeight.w500,
+                          color: useHighContrast
+                              ? HCColors.textPrimary
+                              : VdpColors.onBackground,
+                          height: 1.1,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        textScaler: TextScaler.noScaling,
+                      ),
+                    ),
+                  ),
+
+                  // Số thứ tự
+                  Text(
+                    '$displayIndex',
+                    style: TextStyle(
+                      fontSize: indexFontSize,
+                      color: useHighContrast
+                          ? HCColors.textMuted
+                          : groupColor.withValues(alpha: 0.7),
+                    ),
+                    textScaler: TextScaler.noScaling,
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       ),
     );
   }
+
+  // ════════════════════════════════════════════════════════════
+  //  VIẾT TẮT THÔNG MINH cho Landscape
+  // ════════════════════════════════════════════════════════════
+
+  String _abbreviate(String name) {
+    if (name.length <= 5) return name;
+
+    final words = name.split(RegExp(r'\s+'));
+
+    if (words.length == 1) {
+      return '${name.substring(0, 4.clamp(0, name.length))}.';
+    }
+
+    if (words.length == 2) {
+      final second = words[1];
+      final secondDisplay =
+          second.length > 5 ? '${second.substring(0, 4)}.' : second;
+      return '${words[0][0]}.$secondDisplay';
+    }
+
+    final inits =
+        words.sublist(0, words.length - 1).map((w) => w[0]).join('.');
+    final lastWord = words.last;
+    final lastDisplay =
+        lastWord.length > 4 ? '${lastWord.substring(0, 3)}.' : lastWord;
+    return '$inits.$lastDisplay';
+  }
+
+  // ════════════════════════════════════════════════════════════
+  //  HELPERS
+  // ════════════════════════════════════════════════════════════
 
   Color _getGroupColor(CetasikaGroup group) {
     switch (group) {
@@ -131,6 +182,20 @@ class CetasikaHeader extends StatelessWidget {
       case CetasikaGroup.sobhana:
         return VdpColors.cetasikaSobhana;
     }
+  }
+
+  Color _hcGroupColor(Color groupColor) {
+    if (groupColor == VdpColors.sabbacittasadharana) {
+      return HCColors.hcSabbacittasadharana;
+    }
+    if (groupColor == VdpColors.pakinnaka) return HCColors.hcPakinnaka;
+    if (groupColor == VdpColors.cetasikaAkusala) {
+      return HCColors.hcCetasikaAkusala;
+    }
+    if (groupColor == VdpColors.cetasikaSobhana) {
+      return HCColors.hcCetasikaSobhana;
+    }
+    return HCColors.textPrimary;
   }
 
   String _getGroupSymbol(CetasikaGroup group) {

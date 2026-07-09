@@ -30,8 +30,6 @@ class CittaRowHeader extends StatelessWidget {
     final bhumiSymbol = citta.bhumiGroup.name.bhumiSymbol;
     final vedanaSymbol = _getVedanaSymbol(citta.vedana);
 
-    // ── Tính font size linh hoạt theo cellSize ──
-    // Landscape cellSize=30 → fontSize 8, Portrait cellSize=44 → fontSize 10.5
     final double textFontSize = isLandscape ? 8.0 : 10.5;
     final double indexFontSize = isLandscape ? 8.0 : 10.0;
     final double symbolFontSize = isLandscape ? 9.0 : 12.0;
@@ -57,7 +55,10 @@ class CittaRowHeader extends StatelessWidget {
                     ? HCColors.surface
                     : bhumiColor.withValues(alpha: 0.08)),
             border: Border(
-              left: BorderSide(color: bhumiColor, width: isLandscape ? 3 : 4),
+              left: BorderSide(
+                color: bhumiColor,
+                width: isLandscape ? 3 : 4,
+              ),
               bottom: BorderSide(
                 color: useHighContrast
                     ? HCColors.textMuted.withValues(alpha: 0.2)
@@ -70,7 +71,6 @@ class CittaRowHeader extends StatelessWidget {
             ),
           ),
           child: Padding(
-            // ── Padding thu nhỏ khi landscape ──
             padding: EdgeInsets.symmetric(
               horizontal: isLandscape ? 4 : 8,
               vertical: isLandscape ? 0 : 2,
@@ -78,7 +78,7 @@ class CittaRowHeader extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                // ── Số thứ tự ──
+                // Số thứ tự
                 SizedBox(
                   width: isLandscape ? 18 : 24,
                   child: Text(
@@ -94,7 +94,7 @@ class CittaRowHeader extends StatelessWidget {
                   ),
                 ),
 
-                // ── Tên Tâm: co giãn theo không gian còn lại ──
+                // Tên Tâm
                 Expanded(
                   child: Text(
                     citta.nameVietnamese,
@@ -107,16 +107,13 @@ class CittaRowHeader extends StatelessWidget {
                           ? HCColors.textPrimary
                           : VdpColors.onBackground,
                     ),
-                    // ── Landscape: chỉ 1 dòng để vừa 30px ──
-                    // ── Portrait: cho phép 2 dòng ──
                     maxLines: isLandscape ? 1 : 2,
                     overflow: TextOverflow.ellipsis,
                     textScaler: TextScaler.noScaling,
                   ),
                 ),
 
-                // ── Symbol khu vực Tâm + Thọ ──
-                // Landscape: xếp ngang để tiết kiệm chiều cao
+                // Symbol Bhumi + Vedana
                 if (isLandscape)
                   Row(
                     mainAxisSize: MainAxisSize.min,
