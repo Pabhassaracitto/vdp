@@ -21,20 +21,30 @@ class VithiScreen extends ConsumerWidget {
       backgroundColor: const Color(0xFF1A1A2E),
       appBar: AppBar(title: const Text('Lộ Trình Tâm')),
       body: vithiAsync.when(
-        data: (vithi) => vithi == null ? const SizedBox() : Column(
-          children: [
-            VithiHeader(currentVithi: vithi),
-            Expanded(child: VithiTimeline(vithi: vithi, onStepTap: (i) => ref.read(activeStepIndexProvider.notifier).state = i)),
-            VithiPlaybackControls(
-              playbackState: playbackState,
-              onPrev: () => ref.read(activeStepIndexProvider.notifier).state--,
-              onNext: () => ref.read(activeStepIndexProvider.notifier).state++,
-              onAutoPlay: () => {},
-              onReset: () => ref.read(activeStepIndexProvider.notifier).state = 0,
-            ),
-            if (activeStep != null) VithiDetailPanel(step: activeStep),
-          ],
-        ),
+        data: (vithi) => vithi == null
+            ? const SizedBox()
+            : Column(
+                children: [
+                  VithiHeader(currentVithi: vithi),
+                  Expanded(
+                      child: VithiTimeline(
+                          vithi: vithi,
+                          onStepTap: (i) => ref
+                              .read(activeStepIndexProvider.notifier)
+                              .state = i)),
+                  VithiPlaybackControls(
+                    playbackState: playbackState,
+                    onPrev: () =>
+                        ref.read(activeStepIndexProvider.notifier).state--,
+                    onNext: () =>
+                        ref.read(activeStepIndexProvider.notifier).state++,
+                    onAutoPlay: () => {},
+                    onReset: () =>
+                        ref.read(activeStepIndexProvider.notifier).state = 0,
+                  ),
+                  if (activeStep != null) VithiDetailPanel(step: activeStep),
+                ],
+              ),
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text('$e')),
       ),

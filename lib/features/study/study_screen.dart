@@ -37,12 +37,12 @@ class StudyScreen extends ConsumerWidget {
         actions: [
           // ── 🔖 Bookmark Button với Badge ────────────────────────────────
           Padding(
-            padding: const EdgeInsets.only(right: 4),
+            padding: EdgeInsets.only(right: 4),
             child: Badge(
               isLabelVisible: bookmarkCount > 0,
               label: Text(
                 '$bookmarkCount',
-                style: const TextStyle(fontSize: 10),
+                style: TextStyle(fontSize: 10),
               ),
               backgroundColor: VdpColors.secondary,
               child: IconButton(
@@ -66,7 +66,7 @@ class StudyScreen extends ConsumerWidget {
           _SmartRecommendation(progress: progress),
           Expanded(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
+              padding: EdgeInsets.all(16),
               child: _ModuleGraph(progress: progress),
             ),
           ),
@@ -133,8 +133,8 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
 
     return Container(
       height: screenHeight * 0.82,
-      decoration: const BoxDecoration(
-        color: Colors.white,
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
       child: Column(
@@ -143,7 +143,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
           Container(
             width: 44,
             height: 4,
-            margin: const EdgeInsets.symmetric(vertical: 12),
+            margin: EdgeInsets.symmetric(vertical: 12),
             decoration: BoxDecoration(
               color: Colors.grey.shade300,
               borderRadius: BorderRadius.circular(2),
@@ -152,11 +152,11 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
 
           // ── Header ──────────────────────────────────────────────────────
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.all(8),
+                  padding: EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: VdpColors.primary.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(10),
@@ -172,19 +172,19 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      Text(
                         'Bookmark & Ghi chú',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w800,
-                          color: VdpColors.onBackground,
+                          color: Theme.of(context).textTheme.bodyLarge?.color,
                         ),
                       ),
                       Text(
                         '$bookmarkCount mục đã lưu',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.grey.shade500,
+                          color: Theme.of(context).textTheme.bodySmall?.color,
                         ),
                       ),
                     ],
@@ -202,9 +202,9 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
 
           // ── TabBar ──────────────────────────────────────────────────────
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
+            margin: EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
-              color: Colors.grey.shade100,
+              color: Theme.of(context).scaffoldBackgroundColor,
               borderRadius: BorderRadius.circular(12),
             ),
             child: TabBar(
@@ -216,18 +216,18 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
               indicatorSize: TabBarIndicatorSize.tab,
               labelColor: Colors.white,
               unselectedLabelColor: Colors.grey.shade600,
-              labelStyle: const TextStyle(
+              labelStyle: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
               ),
-              padding: const EdgeInsets.all(4),
+              padding: EdgeInsets.all(4),
               dividerColor: Colors.transparent,
               tabs: [
                 Tab(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text('Tâm'),
+                      Text('Tâm'),
                       if (progress.bookmarkedCittaIds.isNotEmpty) ...[
                         const SizedBox(width: 4),
                         _MiniCountBadge(
@@ -241,7 +241,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text('Tâm sở'),
+                      Text('Tâm sở'),
                       if (progress.bookmarkedCetasikaIds.isNotEmpty) ...[
                         const SizedBox(width: 4),
                         _MiniCountBadge(
@@ -255,7 +255,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text('Ghi chú'),
+                      Text('Ghi chú'),
                       if (progress.personalNotes.isNotEmpty) ...[
                         const SizedBox(width: 4),
                         _MiniCountBadge(
@@ -363,7 +363,7 @@ class _CittaBookmarksList extends ConsumerWidget {
     }
 
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       itemCount: bookmarked.length,
       separatorBuilder: (_, __) => const SizedBox(height: 8),
       itemBuilder: (context, index) {
@@ -424,7 +424,7 @@ class _CetasikaBookmarksList extends ConsumerWidget {
     }
 
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       itemCount: bookmarked.length,
       separatorBuilder: (_, __) => const SizedBox(height: 8),
       itemBuilder: (context, index) {
@@ -481,7 +481,7 @@ class _NotesList extends StatelessWidget {
 
     final entries = notes.entries.toList();
     return ListView.separated(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       itemCount: entries.length,
       separatorBuilder: (_, __) => const SizedBox(height: 8),
       itemBuilder: (context, index) {
@@ -502,18 +502,18 @@ class _NotesList extends StatelessWidget {
       context: context,
       builder: (_) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text(
+        title: Text(
           'Xóa ghi chú?',
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
         ),
-        content: const Text(
+        content: Text(
           'Ghi chú này sẽ bị xóa vĩnh viễn. Bạn có chắc không?',
           style: TextStyle(fontSize: 14),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Hủy'),
+            child: Text('Hủy'),
           ),
           ElevatedButton(
             onPressed: () {
@@ -527,7 +527,7 @@ class _NotesList extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: const Text('Xóa'),
+            child: Text('Xóa'),
           ),
         ],
       ),
@@ -561,7 +561,7 @@ class _BookmarkItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      padding: EdgeInsets.symmetric(horizontal: 14, vertical: 12),
       decoration: BoxDecoration(
         color: accentColor.withOpacity(0.05),
         borderRadius: BorderRadius.circular(14),
@@ -578,7 +578,7 @@ class _BookmarkItemCard extends StatelessWidget {
               shape: BoxShape.circle,
             ),
             alignment: Alignment.center,
-            child: Text(icon, style: const TextStyle(fontSize: 20)),
+            child: Text(icon, style: TextStyle(fontSize: 20)),
           ),
           const SizedBox(width: 12),
 
@@ -589,20 +589,20 @@ class _BookmarkItemCard extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
-                    color: VdpColors.onBackground,
+                    color: Theme.of(context).textTheme.bodyLarge?.color,
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(height: 2),
+                SizedBox(height: 2),
                 Text(
                   subtitle,
                   style: TextStyle(
                     fontSize: 12,
-                    color: Colors.grey.shade500,
+                    color: Theme.of(context).textTheme.bodySmall?.color,
                     fontStyle: FontStyle.italic,
                   ),
                   maxLines: 1,
@@ -668,7 +668,7 @@ class _NoteItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(14),
+      padding: EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: Colors.amber.shade50,
         borderRadius: BorderRadius.circular(14),
@@ -717,9 +717,9 @@ class _NoteItemCard extends StatelessWidget {
           // ── Note Content ────────────────────────────────────────────────
           Text(
             noteContent,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 13,
-              color: VdpColors.onBackground,
+              color: Theme.of(context).textTheme.bodyLarge?.color,
               height: 1.5,
             ),
             maxLines: 5,
@@ -828,8 +828,8 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
         SnackBar(
           content: Row(
             children: [
-              const Icon(Icons.check_circle_outline,
-                  color: Colors.white, size: 18),
+              Icon(Icons.check_circle_outline,
+                  color: Theme.of(context).cardColor, size: 18),
               const SizedBox(width: 8),
               Text(_isEditing ? 'Đã cập nhật ghi chú' : 'Đã lưu ghi chú'),
             ],
@@ -848,9 +848,9 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
   Widget build(BuildContext context) {
     return Dialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      insetPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+      insetPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.all(20),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -859,7 +859,7 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
             Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.all(8),
+                  padding: EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: Colors.amber.shade50,
                     borderRadius: BorderRadius.circular(10),
@@ -879,17 +879,17 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                     children: [
                       Text(
                         _isEditing ? 'Sửa ghi chú' : 'Thêm ghi chú',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w800,
-                          color: VdpColors.onBackground,
+                          color: Theme.of(context).textTheme.bodyLarge?.color,
                         ),
                       ),
                       Text(
                         widget.label,
                         style: TextStyle(
                           fontSize: 11,
-                          color: Colors.grey.shade500,
+                          color: Theme.of(context).textTheme.bodySmall?.color,
                         ),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
@@ -931,10 +931,10 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                         required isFocused,
                         required maxLength}) =>
                     null,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 14,
                   height: 1.6,
-                  color: VdpColors.onBackground,
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
                 ),
                 decoration: InputDecoration(
                   hintText: 'Nhập ghi chú của bạn về mục này...\n\n'
@@ -945,7 +945,7 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                     height: 1.6,
                   ),
                   border: InputBorder.none,
-                  contentPadding: const EdgeInsets.all(14),
+                  contentPadding: EdgeInsets.all(14),
                 ),
               ),
             ),
@@ -981,9 +981,9 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      padding: EdgeInsets.symmetric(vertical: 12),
                     ),
-                    child: const Text('Hủy'),
+                    child: Text('Hủy'),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -1000,20 +1000,20 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      padding: EdgeInsets.symmetric(vertical: 12),
                     ),
                     child: _isSaving
-                        ? const SizedBox(
+                        ? SizedBox(
                             width: 18,
                             height: 18,
                             child: CircularProgressIndicator(
                               strokeWidth: 2,
-                              color: Colors.white,
+                              color: Theme.of(context).cardColor,
                             ),
                           )
                         : Text(
                             _isEditing ? 'Cập nhật' : 'Lưu ghi chú',
-                            style: const TextStyle(fontWeight: FontWeight.w700),
+                            style: TextStyle(fontWeight: FontWeight.w700),
                           ),
                   ),
                 ),
@@ -1038,16 +1038,16 @@ class _MiniCountBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 1),
       decoration: BoxDecoration(
         color: VdpColors.secondary,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Text(
         '$count',
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 9,
-          color: Colors.white,
+          color: Theme.of(context).cardColor,
           fontWeight: FontWeight.w800,
         ),
       ),
@@ -1077,7 +1077,7 @@ class _SmallIconButton extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(8),
         child: Container(
-          padding: const EdgeInsets.all(6),
+          padding: EdgeInsets.all(6),
           decoration: BoxDecoration(
             color: color.withOpacity(0.1),
             borderRadius: BorderRadius.circular(8),
@@ -1105,7 +1105,7 @@ class _EmptyState extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(32),
+        padding: EdgeInsets.all(32),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -1126,7 +1126,7 @@ class _EmptyState extends StatelessWidget {
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w700,
-                color: Colors.grey.shade600,
+                color: Theme.of(context).textTheme.titleSmall?.color,
               ),
             ),
             const SizedBox(height: 8),
@@ -1159,7 +1159,7 @@ class _ProgressSummaryBar extends StatelessWidget {
     final pct = (progress.overallProgress * 100).round();
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 14),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [VdpColors.primary, VdpColors.primaryLight],
@@ -1175,18 +1175,18 @@ class _ProgressSummaryBar extends StatelessWidget {
               children: [
                 Text(
                   'Tiến độ học tập: $pct%',
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: TextStyle(
+                    color: Theme.of(context).cardColor,
                     fontWeight: FontWeight.w700,
                     fontSize: 14,
                   ),
                 ),
-                const SizedBox(height: 6),
+                SizedBox(height: 6),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(4),
                   child: LinearProgressIndicator(
                     value: progress.overallProgress,
-                    backgroundColor: Colors.white24,
+                    backgroundColor: Theme.of(context).cardColor,
                     valueColor: const AlwaysStoppedAnimation<Color>(
                         VdpColors.secondary),
                     minHeight: 8,
@@ -1200,13 +1200,13 @@ class _ProgressSummaryBar extends StatelessWidget {
             children: [
               Text(
                 '${progress.moduleProgress.values.where((m) => m.completionPercentage >= 80).length}',
-                style: const TextStyle(
+                style: TextStyle(
                   color: VdpColors.secondary,
                   fontSize: 28,
                   fontWeight: FontWeight.w900,
                 ),
               ),
-              const Text(
+              Text(
                 'Module\nhoàn thành',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white70, fontSize: 10),
@@ -1253,8 +1253,8 @@ class _SmartRecommendation extends ConsumerWidget {
     final color = Color(next.colorCode);
 
     return Container(
-      margin: const EdgeInsets.fromLTRB(16, 12, 16, 0),
-      padding: const EdgeInsets.all(14),
+      margin: EdgeInsets.fromLTRB(16, 12, 16, 0),
+      padding: EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: color.withOpacity(0.08),
         borderRadius: BorderRadius.circular(12),
@@ -1262,19 +1262,19 @@ class _SmartRecommendation extends ConsumerWidget {
       ),
       child: Row(
         children: [
-          Text(next.icon, style: const TextStyle(fontSize: 24)),
+          Text(next.icon, style: TextStyle(fontSize: 24)),
           const SizedBox(width: 12),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   '💡 Nên học tiếp',
                   style: TextStyle(fontSize: 11, color: Colors.grey),
                 ),
                 Text(
                   next.title,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
                   ),
@@ -1292,11 +1292,11 @@ class _SmartRecommendation extends ConsumerWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: color,
               foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
             ),
-            child: const Text('Học', style: TextStyle(fontSize: 13)),
+            child: Text('Học', style: TextStyle(fontSize: 13)),
           ),
         ],
       ),
@@ -1362,7 +1362,7 @@ class _PhaseSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(bottom: 10),
+          padding: EdgeInsets.only(bottom: 10),
           child: Row(
             children: [
               Container(
@@ -1375,20 +1375,20 @@ class _PhaseSection extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text(
                   '$phase',
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: TextStyle(
+                    color: Theme.of(context).cardColor,
                     fontWeight: FontWeight.bold,
                     fontSize: 13,
                   ),
                 ),
               ),
-              const SizedBox(width: 10),
+              SizedBox(width: 10),
               Text(
                 title,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w700,
-                  color: VdpColors.onBackground,
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
                 ),
               ),
             ],
@@ -1441,13 +1441,17 @@ class _ModuleCard extends ConsumerWidget {
           : null,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        margin: const EdgeInsets.only(bottom: 12),
-        padding: const EdgeInsets.all(14),
+        margin: EdgeInsets.only(bottom: 12),
+        padding: EdgeInsets.all(14),
         decoration: BoxDecoration(
-          color: isUnlocked ? Colors.white : Colors.grey.shade100,
+          color: isUnlocked
+              ? Theme.of(context).cardColor
+              : Theme.of(context).scaffoldBackgroundColor,
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
-            color: isUnlocked ? color.withOpacity(0.4) : Colors.grey.shade300,
+            color: isUnlocked
+                ? color.withOpacity(0.4)
+                : Theme.of(context).dividerColor,
           ),
         ),
         child: Row(
@@ -1466,15 +1470,14 @@ class _ModuleCard extends ConsumerWidget {
                     shape: BoxShape.circle,
                   ),
                   alignment: Alignment.center,
-                  child:
-                      Text(module.icon, style: const TextStyle(fontSize: 22)),
+                  child: Text(module.icon, style: TextStyle(fontSize: 22)),
                 ),
                 if (isDueForReview)
                   Positioned(
                     top: -4,
                     right: -4,
                     child: Container(
-                      padding: const EdgeInsets.all(4),
+                      padding: EdgeInsets.all(4),
                       decoration: const BoxDecoration(
                           color: Colors.orange, shape: BoxShape.circle),
                       child: const Icon(Icons.refresh,
@@ -1510,7 +1513,9 @@ class _ModuleCard extends ConsumerWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w700,
-                      color: isUnlocked ? VdpColors.onBackground : Colors.grey,
+                      color: isUnlocked
+                          ? Theme.of(context).textTheme.bodyLarge?.color
+                          : Colors.grey,
                     ),
                   ),
                   if (isUnlocked && pct > 0)
@@ -1537,9 +1542,9 @@ class _OverallProgressSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(24),
-      decoration: const BoxDecoration(
-        color: Colors.white,
+      padding: EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: Column(
@@ -1548,13 +1553,13 @@ class _OverallProgressSheet extends StatelessWidget {
           Container(
             width: 40,
             height: 4,
-            margin: const EdgeInsets.only(bottom: 20),
+            margin: EdgeInsets.only(bottom: 20),
             decoration: BoxDecoration(
               color: Colors.grey.shade300,
               borderRadius: BorderRadius.circular(2),
             ),
           ),
-          const Text(
+          Text(
             'Tổng Quan Tiến Độ',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
@@ -1574,7 +1579,7 @@ class _OverallProgressSheet extends StatelessWidget {
                 ),
                 Text(
                   '${(progress.overallProgress * 100).round()}%',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.w900,
                     color: VdpColors.primary,
@@ -1607,14 +1612,13 @@ class _StatRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
+      padding: EdgeInsets.symmetric(vertical: 8),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: Colors.grey)),
+          Text(label, style: TextStyle(color: Colors.grey)),
           Text(value,
-              style:
-                  const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
         ],
       ),
     );

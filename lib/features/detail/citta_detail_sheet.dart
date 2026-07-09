@@ -76,7 +76,8 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
           backgroundColor: Colors.transparent,
           body: Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Theme.of(context).bottomSheetTheme.backgroundColor ??
+                  Theme.of(context).colorScheme.surface,
               borderRadius:
                   const BorderRadius.vertical(top: Radius.circular(20)),
               border: Border(top: BorderSide(color: bhumiColor, width: 4)),

@@ -137,10 +137,7 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
   }) {
     if (ids.isEmpty) return const [];
     final lookup = {for (final c in allCetasikas) c.id: c};
-    return ids
-        .map((id) => lookup[id])
-        .whereType<CetasikaModel>()
-        .toList();
+    return ids.map((id) => lookup[id]).whereType<CetasikaModel>().toList();
   }
 }
 
@@ -264,8 +261,7 @@ class _BlurRevealTab extends StatelessWidget {
         (c) => _RecallItem(
           id: 'ci_${c.id}',
           hint: _getBhumiSymbol(c.bhumiGroup),
-          question:
-              'Tâm "${c.nameVietnamese}" thuộc nhóm nào và có thọ gì?',
+          question: 'Tâm "${c.nameVietnamese}" thuộc nhóm nào và có thọ gì?',
           answer: 'Cõi: ${_getBhumiName(c.bhumiGroup)}\n'
               'Thọ: ${_getVedanaName(c.vedana)}\n'
               'Pāḷi: ${c.namePali}',
@@ -297,9 +293,8 @@ class _BlurRevealTab extends StatelessWidget {
       );
     }
 
-    final revealedCount = allItems
-        .where((item) => revealedItems.contains(item.id))
-        .length;
+    final revealedCount =
+        allItems.where((item) => revealedItems.contains(item.id)).length;
     final total = allItems.length;
     final allRevealed = revealedCount == total;
 
@@ -319,8 +314,7 @@ class _BlurRevealTab extends StatelessWidget {
                       child: LinearProgressIndicator(
                         value: total == 0 ? 0 : revealedCount / total,
                         backgroundColor: Colors.grey.shade200,
-                        valueColor:
-                            AlwaysStoppedAnimation<Color>(color),
+                        valueColor: AlwaysStoppedAnimation<Color>(color),
                         minHeight: 8,
                       ),
                     ),
@@ -508,9 +502,7 @@ class _BlurRevealCard extends StatelessWidget {
                         ? Icons.check_circle_rounded
                         : Icons.lock_outline_rounded,
                     size: 18,
-                    color: isRevealed
-                        ? Colors.green
-                        : Colors.grey.shade400,
+                    color: isRevealed ? Colors.green : Colors.grey.shade400,
                   ),
                 ],
               ),
@@ -587,8 +579,7 @@ class _QuizTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = Color(module.colorCode);
-    final totalItems =
-        module.cittaIds.length + module.cetasikaIds.length;
+    final totalItems = module.cittaIds.length + module.cetasikaIds.length;
 
     return Center(
       child: Padding(
@@ -987,10 +978,8 @@ class _CetasikaStudyCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isBookmarked = ref
-        .watch(progressProvider)
-        .bookmarkedCetasikaIds
-        .contains(cetasika.id);
+    final isBookmarked =
+        ref.watch(progressProvider).bookmarkedCetasikaIds.contains(cetasika.id);
 
     return Container(
       margin: const EdgeInsets.only(bottom: 10),

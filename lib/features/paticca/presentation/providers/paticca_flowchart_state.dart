@@ -5,12 +5,10 @@ import 'package:collection/collection.dart';
 import '../../../../data/models/paticca_model.dart';
 import 'paticca_providers.dart';
 
-class PaticcaFlowchartNotifier
-    extends StateNotifier<PaticcaFlowchartState> {
+class PaticcaFlowchartNotifier extends StateNotifier<PaticcaFlowchartState> {
   final Ref _ref;
 
-  PaticcaFlowchartNotifier(this._ref)
-      : super(const PaticcaFlowchartState());
+  PaticcaFlowchartNotifier(this._ref) : super(const PaticcaFlowchartState());
 
   // ── Tab navigation ──────────────────────────────
 

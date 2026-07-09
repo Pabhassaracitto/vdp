@@ -66,7 +66,8 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
       builder: (context, scrollController) {
         return Container(
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Theme.of(context).bottomSheetTheme.backgroundColor ??
+                Theme.of(context).colorScheme.surface,
             borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
             border: Border(top: BorderSide(color: groupColor, width: 4)),
           ),
@@ -166,7 +167,8 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                 Container(
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Theme.of(context).bottomSheetTheme.backgroundColor ??
+                        Theme.of(context).colorScheme.surface,
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(color: Colors.grey.shade200),
                   ),

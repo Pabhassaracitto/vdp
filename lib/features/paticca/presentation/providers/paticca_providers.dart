@@ -13,6 +13,7 @@ part 'paticca_providers.freezed.dart';
 // ─────────────────────────────────────────────
 
 enum PaticcaViewTab { list, flowchart, threeKiep }
+
 enum ChainDirection { forward, reverse, none }
 
 @freezed

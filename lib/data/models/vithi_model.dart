@@ -12,38 +12,62 @@ part 'vithi_model.g.dart';
 
 /// Phân loại Lộ Trình theo loại cửa (Dvāra).
 enum VithiDvara {
-  @JsonValue('panca')      panca,      // Lộ Ngũ Môn (5 giác quan)
-  @JsonValue('mano')       mano,       // Lộ Ý Môn
-  @JsonValue('vithimutta') vithimutta, // Ngoài Lộ (Tục Sinh / Hộ Kiếp / Tử)
+  @JsonValue('panca')
+  panca, // Lộ Ngũ Môn (5 giác quan)
+  @JsonValue('mano')
+  mano, // Lộ Ý Môn
+  @JsonValue('vithimutta')
+  vithimutta, // Ngoài Lộ (Tục Sinh / Hộ Kiếp / Tử)
 }
 
 /// Loại lộ theo cảnh mạnh yếu / mục đích.
 enum VithiType {
-  @JsonValue('atimahanta') atimahanta, // Cảnh rất lớn — đủ 7 Javana + 2 Tadā
-  @JsonValue('mahanta')    mahanta,    // Cảnh lớn — đủ 7 Javana, không Tadā
-  @JsonValue('paritta')    paritta,    // Cảnh nhỏ — chỉ đến Santīraṇa
-  @JsonValue('atiparittā') atiparitta, // Cảnh rất nhỏ — không thành lộ
-  @JsonValue('mano_vithi') manoVithi,  // Lộ Ý Môn thuần tuý
-  @JsonValue('vithimutta') vithimutta, // Ngoài Lộ
-  @JsonValue('appana')     appana,     // Lộ Đắc Thiền (An Chỉ)
-  @JsonValue('lokuttara')  lokuttara,  // Lộ Siêu Thế
+  @JsonValue('atimahanta')
+  atimahanta, // Cảnh rất lớn — đủ 7 Javana + 2 Tadā
+  @JsonValue('mahanta')
+  mahanta, // Cảnh lớn — đủ 7 Javana, không Tadā
+  @JsonValue('paritta')
+  paritta, // Cảnh nhỏ — chỉ đến Santīraṇa
+  @JsonValue('atiparittā')
+  atiparitta, // Cảnh rất nhỏ — không thành lộ
+  @JsonValue('mano_vithi')
+  manoVithi, // Lộ Ý Môn thuần tuý
+  @JsonValue('vithimutta')
+  vithimutta, // Ngoài Lộ
+  @JsonValue('appana')
+  appana, // Lộ Đắc Thiền (An Chỉ)
+  @JsonValue('lokuttara')
+  lokuttara, // Lộ Siêu Thế
 }
 
 /// Vai trò của từng sát-na trong lộ trình.
 enum VithiStepRole {
-  @JsonValue('bhavanga_sota')      bhavangaSota,      // Hộ Kiếp (dòng chảy)
-  @JsonValue('bhavanga_calana')    bhavangaCalana,    // Hộ Kiếp Rúng Động
-  @JsonValue('bhavangupaccheda')   bhavangupaccheda,  // Hộ Kiếp Dứt Dòng
-  @JsonValue('panca_dvaravajjana') pancaDvaravajjana, // Khán Ngũ Môn
-  @JsonValue('dvipanca_vinnana')   dvipancaVinnana,   // Ngũ Song Thức
-  @JsonValue('sampati_cchana')     sampatiCchana,     // Tiếp Thâu
-  @JsonValue('santi_rana')         santiRana,         // Quan Sát
-  @JsonValue('vott_hapana')        vottHapana,        // Xác Định (Voṭṭhapana)
-  @JsonValue('javana')             javana,            // Đổng Tốc (7 sát-na)
-  @JsonValue('tada_aramana')       tadAramana,        // Thập Di / Mót
-  @JsonValue('mano_dvaravajjana')  manoDvaravajjana,  // Khán Ý Môn
-  @JsonValue('patisandhi')         patisandhi,        // Tục Sinh
-  @JsonValue('cuti')               cuti,              // Tử
+  @JsonValue('bhavanga_sota')
+  bhavangaSota, // Hộ Kiếp (dòng chảy)
+  @JsonValue('bhavanga_calana')
+  bhavangaCalana, // Hộ Kiếp Rúng Động
+  @JsonValue('bhavangupaccheda')
+  bhavangupaccheda, // Hộ Kiếp Dứt Dòng
+  @JsonValue('panca_dvaravajjana')
+  pancaDvaravajjana, // Khán Ngũ Môn
+  @JsonValue('dvipanca_vinnana')
+  dvipancaVinnana, // Ngũ Song Thức
+  @JsonValue('sampati_cchana')
+  sampatiCchana, // Tiếp Thâu
+  @JsonValue('santi_rana')
+  santiRana, // Quan Sát
+  @JsonValue('vott_hapana')
+  vottHapana, // Xác Định (Voṭṭhapana)
+  @JsonValue('javana')
+  javana, // Đổng Tốc (7 sát-na)
+  @JsonValue('tada_aramana')
+  tadAramana, // Thập Di / Mót
+  @JsonValue('mano_dvaravajjana')
+  manoDvaravajjana, // Khán Ý Môn
+  @JsonValue('patisandhi')
+  patisandhi, // Tục Sinh
+  @JsonValue('cuti')
+  cuti, // Tử
 }
 
 // ---------------------------------------------------------------------------

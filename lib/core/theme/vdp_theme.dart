@@ -78,17 +78,17 @@ class HCColors {
   static const Color textDisabled = Color(0xFF666666);
 
   // Accent
-  static const Color primary = Color(0xFFFFD700);       // Vàng — trên đen: 9.5:1
-  static const Color secondary = Color(0xFF00E5FF);     // Cyan — trên đen: 8.1:1
-  static const Color success = Color(0xFF00E676);       // Xanh lá — trên đen: 8.4:1
-  static const Color error = Color(0xFFFF5252);         // Đỏ — trên đen: 4.6:1
-  static const Color warning = Color(0xFFFFAB40);       // Cam — trên đen: 6.2:1
-  static const Color info = Color(0xFF82B1FF);          // Xanh nhạt — trên đen: 5.8:1
+  static const Color primary = Color(0xFFFFD700); // Vàng — trên đen: 9.5:1
+  static const Color secondary = Color(0xFF00E5FF); // Cyan — trên đen: 8.1:1
+  static const Color success = Color(0xFF00E676); // Xanh lá — trên đen: 8.4:1
+  static const Color error = Color(0xFFFF5252); // Đỏ — trên đen: 4.6:1
+  static const Color warning = Color(0xFFFFAB40); // Cam — trên đen: 6.2:1
+  static const Color info = Color(0xFF82B1FF); // Xanh nhạt — trên đen: 5.8:1
 
   // Association types — phân biệt rõ nhờ cả màu + symbol
-  static const Color always = Color(0xFFFFFFFF);        // Trắng
-  static const Color sometimes = Color(0xFFFFFF00);     // Vàng thuần
-  static const Color never = Color(0xFF444444);         // Xám tối
+  static const Color always = Color(0xFFFFFFFF); // Trắng
+  static const Color sometimes = Color(0xFFFFFF00); // Vàng thuần
+  static const Color never = Color(0xFF444444); // Xám tối
 
   // Border
   static const Color border = Color(0xFF555555);
@@ -127,13 +127,20 @@ extension BuildContextHC on BuildContext {
 extension HCBhumiColor on String {
   Color get hcBhumiColor {
     switch (this) {
-      case 'akusala': return HCColors.hcAkusala;
-      case 'ahetuka': return HCColors.hcAhetuka;
-      case 'sobhana_kamavacara': return HCColors.hcSobhanaKama;
-      case 'rupavacara': return HCColors.hcRupavacara;
-      case 'arupavacara': return HCColors.hcArupavacara;
-      case 'lokuttara': return HCColors.hcLokuttara;
-      default: return HCColors.hcAhetuka;
+      case 'akusala':
+        return HCColors.hcAkusala;
+      case 'ahetuka':
+        return HCColors.hcAhetuka;
+      case 'sobhana_kamavacara':
+        return HCColors.hcSobhanaKama;
+      case 'rupavacara':
+        return HCColors.hcRupavacara;
+      case 'arupavacara':
+        return HCColors.hcArupavacara;
+      case 'lokuttara':
+        return HCColors.hcLokuttara;
+      default:
+        return HCColors.hcAhetuka;
     }
   }
 }
@@ -162,8 +169,8 @@ class VdpSymbols {
   static const String lokuttara = '⭐';
 
   // HC-safe text labels (không dựa vào emoji color)
-  static const String alwaysLabel = 'CĐ';     // Cố định
-  static const String sometimesLabel = 'BĐ';  // Bất định
+  static const String alwaysLabel = 'CĐ'; // Cố định
+  static const String sometimesLabel = 'BĐ'; // Bất định
   static const String neverLabel = '—';
 }
 
@@ -182,31 +189,43 @@ class VdpTheme {
     fontFamily: 'Sarabun',
     textTheme: const TextTheme(
       displayLarge: TextStyle(
-          fontSize: 32, fontWeight: FontWeight.w700,
-          color: VdpColors.onBackground, height: 1.3),
+          fontSize: 32,
+          fontWeight: FontWeight.w700,
+          color: VdpColors.onBackground,
+          height: 1.3),
       displayMedium: TextStyle(
-          fontSize: 26, fontWeight: FontWeight.w700,
+          fontSize: 26,
+          fontWeight: FontWeight.w700,
           color: VdpColors.onBackground),
       headlineLarge: TextStyle(
-          fontSize: 22, fontWeight: FontWeight.w700,
+          fontSize: 22,
+          fontWeight: FontWeight.w700,
           color: VdpColors.onBackground),
       headlineMedium: TextStyle(
-          fontSize: 18, fontWeight: FontWeight.w700,
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
           color: VdpColors.onBackground),
       titleLarge: TextStyle(
-          fontSize: 16, fontWeight: FontWeight.w700,
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
           color: VdpColors.onBackground),
       titleMedium: TextStyle(
-          fontSize: 14, fontWeight: FontWeight.w600,
+          fontSize: 14,
+          fontWeight: FontWeight.w600,
           color: VdpColors.onBackground),
       bodyLarge: TextStyle(
-          fontSize: 16, fontWeight: FontWeight.w400,
-          color: VdpColors.onBackground, height: 1.6),
+          fontSize: 16,
+          fontWeight: FontWeight.w400,
+          color: VdpColors.onBackground,
+          height: 1.6),
       bodyMedium: TextStyle(
-          fontSize: 14, fontWeight: FontWeight.w400,
-          color: VdpColors.onBackground, height: 1.6),
+          fontSize: 14,
+          fontWeight: FontWeight.w400,
+          color: VdpColors.onBackground,
+          height: 1.6),
       bodySmall: TextStyle(
-          fontSize: 12, fontWeight: FontWeight.w300,
+          fontSize: 12,
+          fontWeight: FontWeight.w300,
           color: VdpColors.primaryLight),
       labelLarge: TextStyle(
           fontSize: 14, fontWeight: FontWeight.w600, letterSpacing: 0.5),
@@ -241,35 +260,49 @@ class VdpTheme {
     fontFamily: 'Sarabun',
     textTheme: const TextTheme(
       displayLarge: TextStyle(
-          fontSize: 32, fontWeight: FontWeight.w700,
-          color: HCColors.textPrimary, height: 1.3),
+          fontSize: 32,
+          fontWeight: FontWeight.w700,
+          color: HCColors.textPrimary,
+          height: 1.3),
       displayMedium: TextStyle(
-          fontSize: 26, fontWeight: FontWeight.w700,
+          fontSize: 26,
+          fontWeight: FontWeight.w700,
           color: HCColors.textPrimary),
       headlineLarge: TextStyle(
-          fontSize: 22, fontWeight: FontWeight.w700,
+          fontSize: 22,
+          fontWeight: FontWeight.w700,
           color: HCColors.textPrimary),
       headlineMedium: TextStyle(
-          fontSize: 18, fontWeight: FontWeight.w700,
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
           color: HCColors.textPrimary),
       titleLarge: TextStyle(
-          fontSize: 16, fontWeight: FontWeight.w700,
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
           color: HCColors.textPrimary),
       titleMedium: TextStyle(
-          fontSize: 14, fontWeight: FontWeight.w600,
+          fontSize: 14,
+          fontWeight: FontWeight.w600,
           color: HCColors.textPrimary),
       bodyLarge: TextStyle(
-          fontSize: 16, fontWeight: FontWeight.w400,
-          color: HCColors.textPrimary, height: 1.6),
+          fontSize: 16,
+          fontWeight: FontWeight.w400,
+          color: HCColors.textPrimary,
+          height: 1.6),
       bodyMedium: TextStyle(
-          fontSize: 14, fontWeight: FontWeight.w400,
-          color: HCColors.textPrimary, height: 1.6),
+          fontSize: 14,
+          fontWeight: FontWeight.w400,
+          color: HCColors.textPrimary,
+          height: 1.6),
       bodySmall: TextStyle(
-          fontSize: 12, fontWeight: FontWeight.w300,
+          fontSize: 12,
+          fontWeight: FontWeight.w300,
           color: HCColors.textSecondary),
       labelLarge: TextStyle(
-          fontSize: 14, fontWeight: FontWeight.w600,
-          letterSpacing: 0.5, color: HCColors.textPrimary),
+          fontSize: 14,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 0.5,
+          color: HCColors.textPrimary),
     ),
     appBarTheme: const AppBarTheme(
       backgroundColor: HCColors.surface,
@@ -370,10 +403,11 @@ class VdpTheme {
     dialogTheme: const DialogThemeData(
       backgroundColor: HCColors.surfaceVariant,
       titleTextStyle: TextStyle(
-          color: HCColors.textPrimary, fontSize: 18,
+          color: HCColors.textPrimary,
+          fontSize: 18,
           fontWeight: FontWeight.w700),
-      contentTextStyle: TextStyle(
-          color: HCColors.textSecondary, fontSize: 14, height: 1.6),
+      contentTextStyle:
+          TextStyle(color: HCColors.textSecondary, fontSize: 14, height: 1.6),
     ),
     snackBarTheme: const SnackBarThemeData(
       backgroundColor: HCColors.surfaceElevated,
@@ -387,25 +421,39 @@ class VdpTheme {
 extension BhumiGroupColor on String {
   Color get bhumiColor {
     switch (this) {
-      case 'akusala': return VdpColors.akusala;
-      case 'ahetuka': return VdpColors.ahetuka;
-      case 'sobhana_kamavacara': return VdpColors.sobhanaKama;
-      case 'rupavacara': return VdpColors.rupavacara;
-      case 'arupavacara': return VdpColors.arupavacara;
-      case 'lokuttara': return VdpColors.lokuttara;
-      default: return VdpColors.ahetuka;
+      case 'akusala':
+        return VdpColors.akusala;
+      case 'ahetuka':
+        return VdpColors.ahetuka;
+      case 'sobhana_kamavacara':
+        return VdpColors.sobhanaKama;
+      case 'rupavacara':
+        return VdpColors.rupavacara;
+      case 'arupavacara':
+        return VdpColors.arupavacara;
+      case 'lokuttara':
+        return VdpColors.lokuttara;
+      default:
+        return VdpColors.ahetuka;
     }
   }
 
   String get bhumiSymbol {
     switch (this) {
-      case 'akusala': return VdpSymbols.akusala;
-      case 'ahetuka': return '⬜';
-      case 'sobhana_kamavacara': return VdpSymbols.sobhanaKama;
-      case 'rupavacara': return VdpSymbols.rupavacara;
-      case 'arupavacara': return VdpSymbols.arupavacara;
-      case 'lokuttara': return VdpSymbols.lokuttara;
-      default: return '○';
+      case 'akusala':
+        return VdpSymbols.akusala;
+      case 'ahetuka':
+        return '⬜';
+      case 'sobhana_kamavacara':
+        return VdpSymbols.sobhanaKama;
+      case 'rupavacara':
+        return VdpSymbols.rupavacara;
+      case 'arupavacara':
+        return VdpSymbols.arupavacara;
+      case 'lokuttara':
+        return VdpSymbols.lokuttara;
+      default:
+        return '○';
     }
   }
 }

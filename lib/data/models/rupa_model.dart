@@ -12,32 +12,50 @@ part 'rupa_model.g.dart';
 
 /// Nguồn gốc sanh khởi của Sắc Pháp (Tứ Thực).
 enum RupaCause {
-  @JsonValue('kamma') kamma,     // Nghiệp sanh sắc
-  @JsonValue('citta') citta,     // Tâm sanh sắc
-  @JsonValue('utu') utu,         // Thời tiết sanh sắc (Hỏa Đại)
-  @JsonValue('ahara') ahara,     // Vật thực sanh sắc (Ojā)
-  @JsonValue('none') none,       // Không do nhân đặc biệt (dùng cho sắc tướng)
+  @JsonValue('kamma')
+  kamma, // Nghiệp sanh sắc
+  @JsonValue('citta')
+  citta, // Tâm sanh sắc
+  @JsonValue('utu')
+  utu, // Thời tiết sanh sắc (Hỏa Đại)
+  @JsonValue('ahara')
+  ahara, // Vật thực sanh sắc (Ojā)
+  @JsonValue('none')
+  none, // Không do nhân đặc biệt (dùng cho sắc tướng)
 }
 
 /// Phân loại Sắc: Đại Hiển hay Y Đại Sinh.
 enum RupaType {
-  @JsonValue('maha_bhuta') mahaBhuta,  // Tứ Đại Hiển (4 sắc căn bản)
-  @JsonValue('upada') upada,           // Y Đại Sinh (24 sắc phụ thuộc)
+  @JsonValue('maha_bhuta')
+  mahaBhuta, // Tứ Đại Hiển (4 sắc căn bản)
+  @JsonValue('upada')
+  upada, // Y Đại Sinh (24 sắc phụ thuộc)
 }
 
 /// Nhóm con của sắc Y Đại Sinh.
 enum RupaSubGroup {
-  @JsonValue('pasada') pasada,       // Thần kinh (Pasāda) — 5 căn
-  @JsonValue('gocara') gocara,       // Cảnh (Gocara) — 4 sắc cảnh
-  @JsonValue('bhava') bhava,         // Phái tính (Bhāva) — 2 sắc
-  @JsonValue('hadaya') hadaya,       // Ý vật (Hadaya) — 1 sắc
-  @JsonValue('jivita') jivita,       // Mạng căn (Jīvita) — 1 sắc
-  @JsonValue('ahara') ahara,         // Vật thực (Ojā) — 1 sắc
-  @JsonValue('akasa') akasa,         // Hư không (Ākāsa) — 1 sắc
-  @JsonValue('vinnatti') vinnatti,   // Biểu tri (Viññatti) — 2 sắc
-  @JsonValue('vikara') vikara,       // Biến hoá (Vikāra) — 3 sắc
-  @JsonValue('lakkhana') lakkhana,   // Tướng (Lakkhaṇa) — 4 sắc
-  @JsonValue('none') none,           // Không áp dụng (Tứ Đại Hiển)
+  @JsonValue('pasada')
+  pasada, // Thần kinh (Pasāda) — 5 căn
+  @JsonValue('gocara')
+  gocara, // Cảnh (Gocara) — 4 sắc cảnh
+  @JsonValue('bhava')
+  bhava, // Phái tính (Bhāva) — 2 sắc
+  @JsonValue('hadaya')
+  hadaya, // Ý vật (Hadaya) — 1 sắc
+  @JsonValue('jivita')
+  jivita, // Mạng căn (Jīvita) — 1 sắc
+  @JsonValue('ahara')
+  ahara, // Vật thực (Ojā) — 1 sắc
+  @JsonValue('akasa')
+  akasa, // Hư không (Ākāsa) — 1 sắc
+  @JsonValue('vinnatti')
+  vinnatti, // Biểu tri (Viññatti) — 2 sắc
+  @JsonValue('vikara')
+  vikara, // Biến hoá (Vikāra) — 3 sắc
+  @JsonValue('lakkhana')
+  lakkhana, // Tướng (Lakkhaṇa) — 4 sắc
+  @JsonValue('none')
+  none, // Không áp dụng (Tứ Đại Hiển)
 }
 
 // ---------------------------------------------------------------------------
@@ -78,10 +96,10 @@ class RupaModel with _$RupaModel {
     @Default('') String descriptionPali,
 
     // Tứ Nghĩa (4 aspects) — theo chuẩn cetasika_model.dart
-    String? trangThai,   // Đặc tướng / Lakkhaṇa
-    String? phanSu,      // Phận sự / Rasa
-    String? thanhTuu,    // Thành tựu / Paccupaṭṭhāna
-    String? nhanGan,     // Nhân gần / Padaṭṭhāna
+    String? trangThai, // Đặc tướng / Lakkhaṇa
+    String? phanSu, // Phận sự / Rasa
+    String? thanhTuu, // Thành tựu / Paccupaṭṭhāna
+    String? nhanGan, // Nhân gần / Padaṭṭhāna
 
     // Sắc này có mặt ở cõi nào — giá trị: 'kamavacara' | 'rupavacara' | 'all'
     @Default(['all']) List<String> presentInBhumi,

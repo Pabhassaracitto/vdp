@@ -42,10 +42,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   static const _tabs = [
-    _TabItem(icon: Icons.grid_view, label: 'Bảng Tương Ưng', widget: MatrixScreen()),
+    _TabItem(
+        icon: Icons.grid_view, label: 'Bảng Tương Ưng', widget: MatrixScreen()),
     _TabItem(icon: Icons.school, label: 'Học Tập', widget: StudyScreen()),
-    _TabItem(icon: Icons.account_tree, label: 'Nhân Duyên', widget: PaticcaScreen()),
-    _TabItem(icon: Icons.timeline, label: 'Lộ trình Tâm', widget: VithiScreen()),
+    _TabItem(
+        icon: Icons.account_tree, label: 'Nhân Duyên', widget: PaticcaScreen()),
+    _TabItem(
+        icon: Icons.timeline, label: 'Lộ trình Tâm', widget: VithiScreen()),
     _TabItem(icon: Icons.settings, label: 'Cài đặt', widget: SettingsScreen()),
   ];
 
@@ -53,7 +56,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) {
     final tab = ref.watch(_currentTabProvider);
     final dataState = ref.watch(vdpRepositoryProvider);
-
     // M1-T4: Detect HC mode from theme brightness
     final isHC = Theme.of(context).brightness == Brightness.dark;
 
@@ -63,7 +65,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     }
 
     if (dataState.status == DataLoadStatus.error) {
-      return _ErrorScreen(message: dataState.errorMessage ?? 'Lỗi không xác định');
+      return _ErrorScreen(
+          message: dataState.errorMessage ?? 'Lỗi không xác định');
     }
 
     if (dataState.status == DataLoadStatus.validationFailed) {
@@ -79,11 +82,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         selectedIndex: tab,
         onDestinationSelected: (i) =>
             ref.read(_currentTabProvider.notifier).state = i,
-        backgroundColor: VdpColors.surface,
+        // M1-T4: HC fix — nền tối trong HC mode, tránh hòa lẫn với nền trắng
+        backgroundColor: isHC ? HCColors.surface : VdpColors.surface,
         indicatorColor: VdpColors.primary.withOpacity(0.12),
         destinations: _tabs
             .map((t) => NavigationDestination(
-                  icon: Icon(t.icon),
+                  // M1-T4: HC fix — icon chưa chọn phải rõ trên nền đen
+                  icon: Icon(t.icon, color: isHC ? HCColors.textMuted : null),
                   label: t.label,
                   selectedIcon: Icon(t.icon, color: VdpColors.primary),
                 ))
@@ -109,8 +114,10 @@ class _LoadingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isHC = Theme.of(context).brightness == Brightness.dark;
+
     return Scaffold(
-      backgroundColor: VdpColors.background,
+      backgroundColor: isHC ? HCColors.background : VdpColors.background,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -148,9 +155,12 @@ class _LoadingScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'Đang tải và kiểm tra dữ liệu giáo lý…',
-              style: TextStyle(color: Colors.grey, fontSize: 13),
+              style: TextStyle(
+                color: isHC ? HCColors.textSecondary : Colors.grey,
+                fontSize: 13,
+              ),
             ),
             if (showWarning) ...[
               const SizedBox(height: 24),
@@ -160,7 +170,10 @@ class _LoadingScreen extends StatelessWidget {
                   'Quá trình khởi động đang mất nhiều thời gian hơn dự kiến. '
                   'Có thể do dữ liệu giáo lý đang được tối ưu hóa cho thiết bị của bạn.',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.orange.shade700, fontSize: 12),
+                  style: TextStyle(
+                    color: isHC ? HCColors.textPrimary : Colors.orange.shade700,
+                    fontSize: 12,
+                  ),
                 ),
               ),
             ],
@@ -179,8 +192,10 @@ class _ErrorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isHC = Theme.of(context).brightness == Brightness.dark;
+
     return Scaffold(
-      backgroundColor: VdpColors.background,
+      backgroundColor: isHC ? HCColors.background : VdpColors.background,
       body: Padding(
         padding: const EdgeInsets.all(32),
         child: Column(
@@ -197,23 +212,32 @@ class _ErrorScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            const Text(
+            Text(
               'Hệ thống phát hiện vi phạm quy tắc giáo lý.\n'
               'Vui lòng liên hệ đội biên soạn để kiểm tra lại dữ liệu.',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey, fontSize: 14, height: 1.6),
+              style: TextStyle(
+                color: isHC ? HCColors.textSecondary : Colors.grey,
+                fontSize: 14,
+                height: 1.6,
+              ),
             ),
             const SizedBox(height: 24),
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.red.shade50,
+                color: isHC ? HCColors.surface : Colors.red.shade50,
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.red.shade200),
+                border: Border.all(
+                  color: isHC ? HCColors.textMuted : Colors.red.shade200,
+                ),
               ),
               child: Text(
                 message,
-                style: TextStyle(fontSize: 12, color: Colors.red.shade800),
+                style: TextStyle(
+                  fontSize: 12,
+                  color: isHC ? HCColors.textPrimary : Colors.red.shade800,
+                ),
               ),
             ),
           ],

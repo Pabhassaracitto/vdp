@@ -11,9 +11,12 @@ class VithiPlaybackControls extends StatelessWidget {
   final VoidCallback onReset;
 
   const VithiPlaybackControls({
-    super.key, required this.playbackState,
-    required this.onPrev, required this.onNext,
-    required this.onAutoPlay, required this.onReset,
+    super.key,
+    required this.playbackState,
+    required this.onPrev,
+    required this.onNext,
+    required this.onAutoPlay,
+    required this.onReset,
   });
 
   @override
@@ -21,9 +24,19 @@ class VithiPlaybackControls extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        IconButton(onPressed: onPrev, icon: const Icon(Icons.skip_previous, color: Colors.white)),
-        IconButton(onPressed: onAutoPlay, icon: Icon(playbackState == PlaybackState.playing ? Icons.pause : Icons.play_arrow, color: Colors.white)),
-        IconButton(onPressed: onNext, icon: const Icon(Icons.skip_next, color: Colors.white)),
+        IconButton(
+            onPressed: onPrev,
+            icon: const Icon(Icons.skip_previous, color: Colors.white)),
+        IconButton(
+            onPressed: onAutoPlay,
+            icon: Icon(
+                playbackState == PlaybackState.playing
+                    ? Icons.pause
+                    : Icons.play_arrow,
+                color: Colors.white)),
+        IconButton(
+            onPressed: onNext,
+            icon: const Icon(Icons.skip_next, color: Colors.white)),
       ],
     );
   }

@@ -18,12 +18,17 @@ class VithiDetailPanel extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(step.nameVietnamese, style: TextStyle(color: roleColor, fontWeight: FontWeight.bold)),
+          Text(step.nameVietnamese,
+              style: TextStyle(color: roleColor, fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
-          Text(step.description, style: const TextStyle(color: Colors.white, fontSize: 13)),
+          Text(step.description,
+              style: const TextStyle(color: Colors.white, fontSize: 13)),
           if (step.allowedCittaIds.isNotEmpty) ...[
             const SizedBox(height: 8),
-            Wrap(children: step.allowedCittaIds.map((id) => VithiCittaChip(cittaId: id)).toList()),
+            Wrap(
+                children: step.allowedCittaIds
+                    .map((id) => VithiCittaChip(cittaId: id))
+                    .toList()),
           ]
         ],
       ),

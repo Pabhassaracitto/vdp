@@ -57,8 +57,7 @@ final class QuizGeneratorService {
     final rng = random ?? Random();
 
     // ── Safety Guard: IDs rỗng ─────────────────────────────────────────
-    final hasIds =
-        module.cittaIds.isNotEmpty || module.cetasikaIds.isNotEmpty;
+    final hasIds = module.cittaIds.isNotEmpty || module.cetasikaIds.isNotEmpty;
     if (!hasIds) {
       // Trả về rỗng, không fallback DB
       return const [];
@@ -212,8 +211,7 @@ final class QuizGeneratorService {
     final pool = List<CetasikaModel>.from(moduleCetasikas)..shuffle(rng);
 
     // Lấy tất cả nhóm có trong MODULE (không phải toàn DB)
-    final moduleGroups =
-        moduleCetasikas.map((c) => c.group).toSet().toList();
+    final moduleGroups = moduleCetasikas.map((c) => c.group).toSet().toList();
 
     for (final cs in pool.take(maxCount)) {
       final correctLabel = _getGroupName(cs.group);
@@ -280,9 +278,10 @@ final class QuizGeneratorService {
         isTrue = true;
       } else {
         // Chọn nhóm sai từ canonical list
-        final otherGroups =
-            CetasikaGroup.values.where((g) => g != cs.group).toList()
-              ..shuffle(rng);
+        final otherGroups = CetasikaGroup.values
+            .where((g) => g != cs.group)
+            .toList()
+          ..shuffle(rng);
         if (otherGroups.isEmpty) continue;
         claimedGroup = _getGroupName(otherGroups.first);
         isTrue = false;
@@ -327,8 +326,8 @@ final class QuizGeneratorService {
           moduleVedanas.where((v) => v != citta.vedana).toList();
       // Bổ sung từ canonical nếu cần
       final allVedanas = Vedana.values;
-      final fallbackVedanas =
-          allVedanas.where((v) => v != citta.vedana && !wrongVedanas.contains(v));
+      final fallbackVedanas = allVedanas
+          .where((v) => v != citta.vedana && !wrongVedanas.contains(v));
 
       final distractors = [
         ...wrongVedanas.map(_getVedanaName),
@@ -377,8 +376,8 @@ final class QuizGeneratorService {
         claimedVedana = _getVedanaName(citta.vedana);
         isTrue = true;
       } else {
-        final others =
-            Vedana.values.where((v) => v != citta.vedana).toList()..shuffle(rng);
+        final others = Vedana.values.where((v) => v != citta.vedana).toList()
+          ..shuffle(rng);
         if (others.isEmpty) continue;
         claimedVedana = _getVedanaName(others.first);
         isTrue = false;
@@ -428,8 +427,9 @@ final class QuizGeneratorService {
       String? conflictPartnerId;
 
       for (final rule in cs.conflictRules) {
-        final partnerInModule =
-            rule.conflictingIds.where((id) => moduleIdSet.contains(id)).toList();
+        final partnerInModule = rule.conflictingIds
+            .where((id) => moduleIdSet.contains(id))
+            .toList();
         if (partnerInModule.isNotEmpty) {
           validRule = rule;
           partnerInModule.shuffle(rng);
@@ -440,9 +440,8 @@ final class QuizGeneratorService {
 
       if (validRule == null || conflictPartnerId == null) continue;
 
-      final conflictCs = moduleCetasikas
-          .where((c) => c.id == conflictPartnerId)
-          .firstOrNull;
+      final conflictCs =
+          moduleCetasikas.where((c) => c.id == conflictPartnerId).firstOrNull;
       if (conflictCs == null) continue;
 
       const correctLabel = 'Không — chúng xung đột nhau';
@@ -506,8 +505,7 @@ final class QuizGeneratorService {
 
       questions.add(QuizQuestion(
         id: 'q_bhumi_${citta.id}',
-        questionText:
-            'Tâm "${citta.nameVietnamese}" thuộc cõi giới nào?',
+        questionText: 'Tâm "${citta.nameVietnamese}" thuộc cõi giới nào?',
         options: opts,
         correctIndex: opts.indexOf(correctLabel),
         type: QuizQuestionType.cittaBhumi,
@@ -567,7 +565,8 @@ final class QuizGeneratorService {
   // ── Label Helpers (pure, no side-effects) ─────────────────────────────────
 
   static String _getGroupName(CetasikaGroup g) => switch (g) {
-        CetasikaGroup.sabbacittasadharana => '7 Biến Hành (Sabbacittasādhāraṇa)',
+        CetasikaGroup.sabbacittasadharana =>
+          '7 Biến Hành (Sabbacittasādhāraṇa)',
         CetasikaGroup.pakinnaka => '6 Biệt Cảnh (Pakiṇṇaka)',
         CetasikaGroup.akusala => '14 Bất Thiện (Akusala)',
         CetasikaGroup.sobhana => '25 Tịnh Hảo (Sobhana)',
@@ -583,7 +582,8 @@ final class QuizGeneratorService {
   static String _getBhumiName(BhumiGroup b) => switch (b) {
         BhumiGroup.akusala => 'Bất Thiện (Akusala)',
         BhumiGroup.ahetuka => 'Vô Nhân (Ahetuka)',
-        BhumiGroup.sobhanaKamavacara => 'Tịnh Hảo Dục Giới (Sobhana Kāmāvacara)',
+        BhumiGroup.sobhanaKamavacara =>
+          'Tịnh Hảo Dục Giới (Sobhana Kāmāvacara)',
         BhumiGroup.rupavacara => 'Sắc Giới (Rūpāvacara)',
         BhumiGroup.arupavacara => 'Vô Sắc Giới (Arūpāvacara)',
         BhumiGroup.lokuttara => 'Siêu Thế (Lokuttara)',

@@ -63,8 +63,7 @@ class PaliTtsHelper {
   Future<void> stop() async {
     try {
       await _tts.stop();
-    } catch (e) {
-    }
+    } catch (e) {}
   }
 
   /// Giải phóng tài nguyên TTS — gọi khi app tắt hẳn.
@@ -72,8 +71,7 @@ class PaliTtsHelper {
     try {
       await _tts.stop();
       _initState = _TtsInitState.uninitialized;
-    } catch (e) {
-    }
+    } catch (e) {}
   }
 
   // ─── Private helpers ─────────────────────────────────────────────────────
@@ -88,7 +86,6 @@ class PaliTtsHelper {
       // Lấy danh sách ngôn ngữ mà thiết bị hỗ trợ
       final dynamic rawLanguages = await _tts.getLanguages;
       final supportedLanguages = _parseLanguages(rawLanguages);
-
 
       // Tìm ngôn ngữ ưu tiên đầu tiên mà thiết bị hỗ trợ
       String? selectedLanguage;
@@ -111,8 +108,7 @@ class PaliTtsHelper {
       await _tts.setVolume(_volume);
 
       // Xử lý sự kiện lỗi từ engine (không crash app)
-      _tts.setErrorHandler((message) {
-      });
+      _tts.setErrorHandler((message) {});
 
       _initState = _TtsInitState.ready;
     } catch (e, stack) {

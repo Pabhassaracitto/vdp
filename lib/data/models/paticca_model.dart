@@ -12,31 +12,48 @@ part 'paticca_model.g.dart';
 
 /// Loại quan hệ nhân-duyên giữa 2 chi liên tiếp.
 enum PaticcaRelationType {
-  @JsonValue('avijja_sankhara')       avijjaSankhara,       // Vô Minh → Hành
-  @JsonValue('sankhara_vinnana')      sankharaVinnana,      // Hành → Thức
-  @JsonValue('vinnana_namarupa')      vinnanaNamarupa,      // Thức → Danh Sắc
-  @JsonValue('namarupa_salayatana')   namarupaSalayatana,   // Danh Sắc → Lục Nhập
-  @JsonValue('salayatana_phassa')     salayatanaPhassa,     // Lục Nhập → Xúc
-  @JsonValue('phassa_vedana')         phassaVedana,         // Xúc → Thọ
-  @JsonValue('vedana_tanha')          vedanaTanha,          // Thọ → Ái
-  @JsonValue('tanha_upadana')         tanhaUpadana,         // Ái → Thủ
-  @JsonValue('upadana_bhava')         upadanaBhava,         // Thủ → Hữu
-  @JsonValue('bhava_jati')            bhavaJati,            // Hữu → Sanh
-  @JsonValue('jati_jaramarana')       jatiJaramarana,       // Sanh → Lão Tử
+  @JsonValue('avijja_sankhara')
+  avijjaSankhara, // Vô Minh → Hành
+  @JsonValue('sankhara_vinnana')
+  sankharaVinnana, // Hành → Thức
+  @JsonValue('vinnana_namarupa')
+  vinnanaNamarupa, // Thức → Danh Sắc
+  @JsonValue('namarupa_salayatana')
+  namarupaSalayatana, // Danh Sắc → Lục Nhập
+  @JsonValue('salayatana_phassa')
+  salayatanaPhassa, // Lục Nhập → Xúc
+  @JsonValue('phassa_vedana')
+  phassaVedana, // Xúc → Thọ
+  @JsonValue('vedana_tanha')
+  vedanaTanha, // Thọ → Ái
+  @JsonValue('tanha_upadana')
+  tanhaUpadana, // Ái → Thủ
+  @JsonValue('upadana_bhava')
+  upadanaBhava, // Thủ → Hữu
+  @JsonValue('bhava_jati')
+  bhavaJati, // Hữu → Sanh
+  @JsonValue('jati_jaramarana')
+  jatiJaramarana, // Sanh → Lão Tử
 }
 
 /// Vòng tròn Luân Hồi mà chi này thuộc về (Vatta).
 enum PaticcaVatta {
-  @JsonValue('kilesa') kilesa, // Vòng Phiền Não: Vô Minh, Ái, Thủ
-  @JsonValue('kamma')  kamma,  // Vòng Nghiệp: Hành, Hữu
-  @JsonValue('vipaka') vipaka, // Vòng Quả: Thức, Danh Sắc, Lục Nhập, Xúc, Thọ, Sanh, Lão Tử
+  @JsonValue('kilesa')
+  kilesa, // Vòng Phiền Não: Vô Minh, Ái, Thủ
+  @JsonValue('kamma')
+  kamma, // Vòng Nghiệp: Hành, Hữu
+  @JsonValue('vipaka')
+  vipaka, // Vòng Quả: Thức, Danh Sắc, Lục Nhập, Xúc, Thọ, Sanh, Lão Tử
 }
 
 /// Chi này thuộc về kiếp nào trong mô hình 3 kiếp.
 enum PaticcaKiep {
-  @JsonValue('past')    past,    // Quá Khứ (nhân kiếp trước: chi 1–2)
-  @JsonValue('present') present, // Hiện Tại (quả + nhân kiếp này: chi 3–10)
-  @JsonValue('future')  future,  // Tương Lai (quả kiếp sau: chi 11–12)
+  @JsonValue('past')
+  past, // Quá Khứ (nhân kiếp trước: chi 1–2)
+  @JsonValue('present')
+  present, // Hiện Tại (quả + nhân kiếp này: chi 3–10)
+  @JsonValue('future')
+  future, // Tương Lai (quả kiếp sau: chi 11–12)
 }
 
 // ---------------------------------------------------------------------------
@@ -104,10 +121,10 @@ class PaticcaModel with _$PaticcaModel {
     required String descriptionVi,
 
     // Tứ Nghĩa (4 aspects) — theo chuẩn cetasika_model.dart
-    String? trangThai,  // Đặc tướng / Lakkhaṇa
-    String? phanSu,     // Phận sự / Rasa
-    String? thanhTuu,   // Thành tựu / Paccupaṭṭhāna
-    String? nhanGan,    // Nhân gần / Padaṭṭhāna
+    String? trangThai, // Đặc tướng / Lakkhaṇa
+    String? phanSu, // Phận sự / Rasa
+    String? thanhTuu, // Thành tựu / Paccupaṭṭhāna
+    String? nhanGan, // Nhân gần / Padaṭṭhāna
 
     // Liên kết nhân-quả chi tiết (thường chỉ 1 link xuôi)
     @Default([]) List<PaticcaLink> links,

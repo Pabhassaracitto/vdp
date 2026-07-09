@@ -32,7 +32,9 @@ class PaticcaFilterBar extends ConsumerWidget {
       child: FilterChip(
         label: Text(label),
         selected: selected,
-        onSelected: (_) => ref.read(paticcaFlowchartStateProvider.notifier).setVattaFilter(vatta),
+        onSelected: (_) => ref
+            .read(paticcaFlowchartStateProvider.notifier)
+            .setVattaFilter(vatta),
       ),
     );
   }

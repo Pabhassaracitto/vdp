@@ -122,9 +122,8 @@ class AssociationCell extends StatelessWidget {
           symbolColor: VdpColors.never,
           hcSymbolColor: VdpColors.hcNever,
           // M1-T4: HC fix — never cell cũng cần nền tối, không transparent
-          backgroundColor: useHighContrast
-              ? HCColors.surface
-              : Colors.transparent,
+          backgroundColor:
+              useHighContrast ? HCColors.surface : Colors.transparent,
         );
     }
   }

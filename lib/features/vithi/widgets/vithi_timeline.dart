@@ -6,7 +6,8 @@ import 'vithi_step_node.dart';
 class VithiTimeline extends StatelessWidget {
   final VithiModel vithi;
   final Function(int) onStepTap;
-  const VithiTimeline({super.key, required this.vithi, required this.onStepTap});
+  const VithiTimeline(
+      {super.key, required this.vithi, required this.onStepTap});
 
   @override
   Widget build(BuildContext context) {

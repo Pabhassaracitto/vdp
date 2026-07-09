@@ -10,19 +10,24 @@ class VithiStepNode extends StatelessWidget {
   final int index;
 
   const VithiStepNode({
-    super.key, required this.step,
-    required this.isActive, required this.index,
+    super.key,
+    required this.step,
+    required this.isActive,
+    required this.index,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 60, height: 60,
+      width: 60,
+      height: 60,
       decoration: BoxDecoration(
         color: VithiColorMapper.colorForRole(step.role),
         border: isActive ? Border.all(color: Colors.white, width: 2) : null,
       ),
-      child: Center(child: Text(VithiLabelMapper.shortNameForRole(step.role), style: const TextStyle(fontSize: 10, color: Colors.white))),
+      child: Center(
+          child: Text(VithiLabelMapper.shortNameForRole(step.role),
+              style: const TextStyle(fontSize: 10, color: Colors.white))),
     );
   }
 }

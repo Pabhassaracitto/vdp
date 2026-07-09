@@ -11,13 +11,14 @@ class KammaListScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final group = ref.watch(selectedKammaGroupProvider);
     final kammasAsync = ref.watch(kammasByGroupProvider(group));
-    
+
     return Scaffold(
       appBar: AppBar(title: const Text('Nghiệp (Kamma)')),
       body: kammasAsync.when(
         data: (kammas) => ListView.builder(
           itemCount: kammas.length,
-          itemBuilder: (context, i) => KammaCard(kamma: kammas[i], onTap: () {}),
+          itemBuilder: (context, i) =>
+              KammaCard(kamma: kammas[i], onTap: () {}),
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text('Lỗi: $e')),

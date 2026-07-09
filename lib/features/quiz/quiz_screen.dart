@@ -532,7 +532,8 @@ class _LevelCard extends StatelessWidget {
         duration: const Duration(milliseconds: 180),
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: selected ? color.withOpacity(0.08) : Colors.grey.shade50,
+          color:
+              selected ? color.withOpacity(0.08) : Theme.of(context).cardColor,
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
             color: selected ? color : Colors.grey.shade200,
@@ -552,7 +553,10 @@ class _LevelCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w700,
-                      color: selected ? color : VdpColors.onBackground,
+                      color: selected
+                          ? color
+                          : Theme.of(context).textTheme.bodyLarge?.color ??
+                              VdpColors.onBackground,
                     ),
                   ),
                   const SizedBox(height: 2),
@@ -599,7 +603,7 @@ class _OptionTile extends StatelessWidget {
     final Widget? trailingIcon;
 
     if (!answered) {
-      bgColor = selected ? Colors.blue.shade50 : Colors.white;
+      bgColor = selected ? Colors.blue.shade50 : Theme.of(context).cardColor;
       borderColor = selected ? Colors.blue : Colors.grey.shade300;
       trailingIcon = null;
     } else if (isCorrect) {
@@ -619,7 +623,7 @@ class _OptionTile extends StatelessWidget {
         size: 20,
       );
     } else {
-      bgColor = Colors.white;
+      bgColor = Theme.of(context).cardColor;
       borderColor = Colors.grey.shade200;
       trailingIcon = null;
     }
@@ -658,7 +662,10 @@ class _OptionTile extends StatelessWidget {
             Expanded(
               child: Text(
                 label,
-                style: const TextStyle(fontSize: 14, height: 1.4),
+                style: TextStyle(
+                    fontSize: 14,
+                    height: 1.4,
+                    color: Theme.of(context).textTheme.bodyLarge?.color),
               ),
             ),
             if (trailingIcon != null) ...[

@@ -13,34 +13,50 @@ part 'kamma_model.g.dart';
 
 /// Phân loại Nghiệp theo THỜI GIAN cho quả (Pāka-kāla).
 enum KammaByTime {
-  @JsonValue('ditthadhammavedaniya') ditthadhammavedaniya, // Hiện báo nghiệp
-  @JsonValue('upapajjavedaniya')     upapajjavedaniya,     // Hậu báo nghiệp
-  @JsonValue('aparapariyavedaniya')  aparapariyavedaniya,  // Hậu hậu báo nghiệp
-  @JsonValue('ahosi')                ahosi,                // Vô hiệu nghiệp
+  @JsonValue('ditthadhammavedaniya')
+  ditthadhammavedaniya, // Hiện báo nghiệp
+  @JsonValue('upapajjavedaniya')
+  upapajjavedaniya, // Hậu báo nghiệp
+  @JsonValue('aparapariyavedaniya')
+  aparapariyavedaniya, // Hậu hậu báo nghiệp
+  @JsonValue('ahosi')
+  ahosi, // Vô hiệu nghiệp
 }
 
 /// Phân loại Nghiệp theo PHẬN SỰ (Kicca).
 enum KammaByFunction {
-  @JsonValue('janaka')         janaka,         // Sanh nghiệp (tạo quả tục sinh)
-  @JsonValue('upatthambhaka')  upatthambhaka,  // Bổ trợ nghiệp
-  @JsonValue('upapilaka')      upapilaka,      // Cản trở nghiệp
-  @JsonValue('upaghataka')     upaghataka,     // Đoạn đứt nghiệp
+  @JsonValue('janaka')
+  janaka, // Sanh nghiệp (tạo quả tục sinh)
+  @JsonValue('upatthambhaka')
+  upatthambhaka, // Bổ trợ nghiệp
+  @JsonValue('upapilaka')
+  upapilaka, // Cản trở nghiệp
+  @JsonValue('upaghataka')
+  upaghataka, // Đoạn đứt nghiệp
 }
 
 /// Phân loại Nghiệp theo THỨ TỰ ƯU TIÊN cho quả tục sinh (Pāka-ṭhāna).
 enum KammaByPriority {
-  @JsonValue('garuka')  garuka,  // Trọng nghiệp (thiền chứng / ngũ nghịch)
-  @JsonValue('asanna')  asanna,  // Cận tử nghiệp
-  @JsonValue('acinna')  acinna,  // Thường nghiệp / Tích luỹ nghiệp
-  @JsonValue('katatta') katatta, // Dồn tích nghiệp (tất cả nghiệp còn lại)
+  @JsonValue('garuka')
+  garuka, // Trọng nghiệp (thiền chứng / ngũ nghịch)
+  @JsonValue('asanna')
+  asanna, // Cận tử nghiệp
+  @JsonValue('acinna')
+  acinna, // Thường nghiệp / Tích luỹ nghiệp
+  @JsonValue('katatta')
+  katatta, // Dồn tích nghiệp (tất cả nghiệp còn lại)
 }
 
 /// Phân loại Nghiệp theo CHỖ CHO QUẢ (Bhūmi).
 enum KammaByResult {
-  @JsonValue('akusala')       akusala,       // Cho quả 4 cảnh khổ
-  @JsonValue('kusala_duggati') kusalaDuggati, // Cho quả cõi người & chư thiên DG
-  @JsonValue('kusala_uggata')  kusalaUggata,  // Cho quả cõi Đáo Đại (SG / VSG)
-  @JsonValue('lokuttara')     lokuttara,     // Cho quả Niết Bàn (Đạo + Quả)
+  @JsonValue('akusala')
+  akusala, // Cho quả 4 cảnh khổ
+  @JsonValue('kusala_duggati')
+  kusalaDuggati, // Cho quả cõi người & chư thiên DG
+  @JsonValue('kusala_uggata')
+  kusalaUggata, // Cho quả cõi Đáo Đại (SG / VSG)
+  @JsonValue('lokuttara')
+  lokuttara, // Cho quả Niết Bàn (Đạo + Quả)
 }
 
 // ---------------------------------------------------------------------------

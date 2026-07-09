@@ -103,14 +103,11 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
           completionPercentage:
               (m['completionPercentage'] as num?)?.toDouble() ?? 0.0,
           quizScore: (m['quizScore'] as num?)?.toInt() ?? 0,
-          viewedCittaIds:
-              List<String>.from(m['viewedCittaIds'] as List? ?? []),
+          viewedCittaIds: List<String>.from(m['viewedCittaIds'] as List? ?? []),
           completedAt: _tryParseDate(m['completedAt']),
           reviewCount: (m['reviewCount'] as num?)?.toInt() ?? 0,
-          consecutivePasses:
-              (m['consecutivePasses'] as num?)?.toInt() ?? 0,
-          easinessFactor:
-              (m['easinessFactor'] as num?)?.toDouble() ?? 2.5,
+          consecutivePasses: (m['consecutivePasses'] as num?)?.toInt() ?? 0,
+          easinessFactor: (m['easinessFactor'] as num?)?.toDouble() ?? 2.5,
           lastReviewedAt: _tryParseDate(m['lastReviewedAt']),
           nextReviewDue: _tryParseDate(m['nextReviewDue']),
         );
@@ -122,8 +119,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       final bookmarkedCetasikaIds = Set<String>.from(
         data['bookmarkedCetasikaIds'] as List? ?? [],
       );
-      final notesRaw =
-          (data['personalNotes'] as Map<String, dynamic>?) ?? {};
+      final notesRaw = (data['personalNotes'] as Map<String, dynamic>?) ?? {};
       final personalNotes = notesRaw.map((k, v) => MapEntry(k, v as String));
 
       state = UserProgress(
@@ -274,8 +270,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
     return added;
   }
 
-  bool isCittaBookmarked(String id) =>
-      state.bookmarkedCittaIds.contains(id);
+  bool isCittaBookmarked(String id) => state.bookmarkedCittaIds.contains(id);
 
   bool isCetasikaBookmarked(String id) =>
       state.bookmarkedCetasikaIds.contains(id);
@@ -294,8 +289,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
   }
 
   void deleteNote(String key) {
-    final updated = Map<String, String>.from(state.personalNotes)
-      ..remove(key);
+    final updated = Map<String, String>.from(state.personalNotes)..remove(key);
     state = _copyStateWith(personalNotes: updated);
     _save();
   }
@@ -367,8 +361,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
 
 // ─── Providers ────────────────────────────────────────────────────────────────
 
-final progressProvider =
-    StateNotifierProvider<ProgressNotifier, UserProgress>(
+final progressProvider = StateNotifierProvider<ProgressNotifier, UserProgress>(
   (ref) => ProgressNotifier(),
 );
 

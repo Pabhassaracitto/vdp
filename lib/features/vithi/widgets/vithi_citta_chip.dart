@@ -16,7 +16,8 @@ class VithiCittaChip extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: const Color(0xFF3F51B5), width: 0.5),
       ),
-      child: Text(cittaId, style: const TextStyle(color: Colors.white, fontSize: 11)),
+      child: Text(cittaId,
+          style: const TextStyle(color: Colors.white, fontSize: 11)),
     );
   }
 }

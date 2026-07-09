@@ -233,16 +233,20 @@ class VdpRepository extends StateNotifier<VdpDataState> {
   // ── Query methods (giữ nguyên) ────────────────────────────────
 
   // --- Kamma Query Methods (M5-T2) ---
-  
+
   List<KammaModel> getAllKammas() => state.kammas;
 
   List<KammaModel> getKammasByGroup(KammaGroup group) {
     return state.kammas.where((k) {
       switch (group) {
-        case KammaGroup.byTime:     return k.byTime != null;
-        case KammaGroup.byFunction: return k.byFunction != null;
-        case KammaGroup.byPriority: return k.byPriority != null;
-        case KammaGroup.byResult:   return k.byResult != null;
+        case KammaGroup.byTime:
+          return k.byTime != null;
+        case KammaGroup.byFunction:
+          return k.byFunction != null;
+        case KammaGroup.byPriority:
+          return k.byPriority != null;
+        case KammaGroup.byResult:
+          return k.byResult != null;
       }
       return false;
     }).toList();
@@ -262,7 +266,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
 
   List<CittaModel> getCittasByKamma(String kammaId) {
     return state.cittas.where((c) => c.kammaLinks.contains(kammaId)).toList()
-      ..sort((a,b) => a.id.compareTo(b.id));
+      ..sort((a, b) => a.id.compareTo(b.id));
   }
 
   List<CittaModel> getCittasByBhumi(BhumiGroup bhumi) {
@@ -322,7 +326,6 @@ final vdpRepositoryProvider =
 
 // Thêm export cho các method của Repository nếu cần thiết
 // Hiện tại tôi đang gọi trực tiếp qua ref.watch(vdpRepositoryProvider.notifier)
-
 
 final cittasProvider = Provider<List<CittaModel>>((ref) {
   return ref.watch(vdpRepositoryProvider).cittas;

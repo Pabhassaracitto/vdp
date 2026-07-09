@@ -20,8 +20,7 @@ final kammasByGroupProvider =
 });
 
 /// Kamma chi tiết theo ID
-final kammaByIdProvider =
-    FutureProvider.family<KammaModel?, String>((ref, id) {
+final kammaByIdProvider = FutureProvider.family<KammaModel?, String>((ref, id) {
   final repo = ref.watch(vdpRepositoryProvider.notifier);
   return repo.getKammaById(id);
 });

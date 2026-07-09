@@ -75,11 +75,12 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   final ScrollController _horizontalController = ScrollController();
   final ScrollController _verticalController1 = ScrollController();
 
-  // M2-T4: Debounce timer
   Timer? _searchDebounceTimer;
 
   BhumiGroup? _filterBhumi;
   bool _showHighContrastMode = false;
+  bool get _isHC =>
+      _showHighContrastMode || Theme.of(context).brightness == Brightness.dark;
   bool _forceLandscape = false;
   bool _showScrollToTop = false;
 
@@ -127,7 +128,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     _verticalController1.removeListener(_updateScrollToTopVisibility);
     _horizontalController.dispose();
     _verticalController1.dispose();
-    _searchDebounceTimer?.cancel(); // M2-T4: Dispose timer
+    _searchDebounceTimer?.cancel();
     super.dispose();
   }
 
@@ -157,11 +158,13 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Semantics(
-          label: 'Bảng Tương Ưng Vi Diệu Pháp, đang hiển thị ${cittas.length} Tâm',
+          label:
+              'Bảng Tương Ưng Vi Diệu Pháp, đang hiển thị ${cittas.length} Tâm',
           child: const Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Bảng Tương Ưng Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
+              Text('Bảng Tương Ưng Vi Diệu Pháp',
+                  style: TextStyle(fontSize: 18)),
               Text('Abhidhamma Matrix',
                   style: TextStyle(fontSize: 12, color: Colors.white70)),
             ],
@@ -176,8 +179,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
             tooltip: 'Xoay màn hình',
           ),
           IconButton(
-            icon: Icon(
-                _showHighContrastMode ? Icons.contrast : Icons.contrast_outlined),
+            icon: Icon(_isHC ? Icons.contrast : Icons.contrast_outlined),
             onPressed: () =>
                 setState(() => _showHighContrastMode = !_showHighContrastMode),
             tooltip: 'Tương phản cao',
@@ -192,11 +194,11 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       body: Column(
         children: [
           _buildBhumiFilter(),
-          _buildSearchBar(isLandscape), // M2-T4: Thêm Search Bar
+          _buildSearchBar(isLandscape),
           if (dataState.hasValidationWarnings &&
               !ref.read(progressProvider.notifier).warningDismissed)
             _buildWarningBanner(dataState),
-          if (!isLandscape) _buildLegend(), // Ẩn legend khi landscape
+          if (!isLandscape) _buildLegend(),
           Expanded(child: _buildMatrix(context, cittas, cetasikas)),
         ],
       ),
@@ -222,12 +224,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   // ════════════════════════════════════════════════════════════
-  //  APP BAR (Moved into build)
+  //  SEARCH BAR
   // ════════════════════════════════════════════════════════════
 
-  // M4-T3: _buildAppBar removed.
-
-  // M2-T4: Search Bar
   Widget _buildSearchBar(bool isLandscape) {
     final query = ref.watch(matrixSearchQueryProvider);
     final searchType = ref.watch(matrixSearchTypeProvider);
@@ -266,6 +265,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                 _searchDebounceTimer =
                     Timer(const Duration(milliseconds: 300), () {
                   ref.read(matrixSearchQueryProvider.notifier).state = val;
+
                   final matchedCittas =
                       ref.read(searchMatchedCittaIndicesProvider);
                   final matchedCetasikas =
@@ -361,12 +361,26 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
-        label: Text('$symbol $label'),
+        label: Text(
+          '$symbol $label',
+          style: TextStyle(
+            // M1-T4: HC fix — label rõ trên nền tối
+            color: _isHC ? HCColors.textPrimary : null,
+          ),
+        ),
         selected: sel,
         onSelected: (_) => setState(() => _filterBhumi = bhumi),
+        // M1-T4: HC fix — không hiện nền trắng
+        backgroundColor: _isHC ? HCColors.surface : null,
         selectedColor: c.withValues(alpha: 0.3),
         checkmarkColor: c,
-        side: BorderSide(color: sel ? c : Colors.grey.shade300),
+        side: BorderSide(
+          color: sel
+              ? c
+              : (_showHighContrastMode
+                  ? HCColors.textMuted
+                  : Colors.grey.shade300),
+        ),
       ),
     );
   }
@@ -378,11 +392,16 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   Widget _buildLegend() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-      color: Colors.grey.shade50,
+      // M1-T4: HC fix — không dùng Colors.grey.shade50 trong HC
+      color: Colors.transparent,
       child: Row(
         children: [
-          const Text('Ký hiệu:',
-              style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
+          Text('Ký hiệu:',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: _showHighContrastMode ? HCColors.textPrimary : null,
+              )),
           const SizedBox(width: 12),
           _legendItem(VdpSymbols.always, 'Cố định', VdpColors.always),
           const SizedBox(width: 16),
@@ -400,8 +419,16 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       children: [
         Text(sym, style: TextStyle(color: color, fontSize: 16)),
         const SizedBox(width: 4),
-        Text(label,
-            style: TextStyle(fontSize: 11, color: Colors.grey.shade700)),
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 11,
+            // M1-T4: HC fix — label text rõ trên nền tối
+            color: _showHighContrastMode
+                ? HCColors.textSecondary
+                : Colors.grey.shade700,
+          ),
+        ),
       ],
     );
   }
@@ -414,15 +441,28 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      color: Colors.orange.shade50,
+      // M1-T4: HC fix
+      color:
+          _showHighContrastMode ? HCColors.background : Colors.orange.shade50,
       child: Row(
         children: [
-          Icon(Icons.warning_amber, color: Colors.orange.shade700, size: 18),
+          Icon(
+            Icons.warning_amber,
+            color: _showHighContrastMode
+                ? HCColors.textPrimary
+                : Colors.orange.shade700,
+            size: 18,
+          ),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
               '${dataState.validationResult!.warnings.length} cảnh báo dữ liệu.',
-              style: TextStyle(fontSize: 12, color: Colors.orange.shade900),
+              style: TextStyle(
+                fontSize: 12,
+                color: _showHighContrastMode
+                    ? HCColors.textPrimary
+                    : Colors.orange.shade900,
+              ),
             ),
           ),
           TextButton(
@@ -464,7 +504,6 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final selectedCetasika = ref.watch(selectedCetasikaProvider);
     final dimmed = ref.watch(dimmedCetasikasProvider);
 
-    // M2-T4: Search state
     final searchType = ref.watch(matrixSearchTypeProvider);
     final matchedCittas = ref.watch(searchMatchedCittaIndicesProvider);
     final matchedCetasikas = ref.watch(searchMatchedCetasikaIndicesProvider);
@@ -517,6 +556,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                         width: headerWidth,
                         height: cellSize,
                         displayIndex: i + 1,
+                        // M1-T4: Truyền HC mode xuống header
+                        useHighContrast: _isHC,
                       ),
                     );
 
@@ -577,6 +618,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                           width: cellSize,
                           height: cetasikaHeaderHeight,
                           displayIndex: colIdx + 1,
+                          // M1-T4: Truyền HC mode xuống header
+                          useHighContrast: _isHC,
                         ),
                       );
 
@@ -626,7 +669,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                                           matchedCittas.isNotEmpty &&
                                           !matchedCittas.contains(rowIdx)),
                                   size: cellSize,
-                                  useHighContrast: _showHighContrastMode,
+                                  useHighContrast: _isHC,
                                 );
                               },
                             ),

@@ -14,7 +14,8 @@ class KammaCard extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: ListTile(
-        title: Text(kamma.nameVietnamese, style: const TextStyle(fontWeight: FontWeight.bold)),
+        title: Text(kamma.nameVietnamese,
+            style: const TextStyle(fontWeight: FontWeight.bold)),
         subtitle: Text(kamma.namePali),
         onTap: onTap,
       ),
