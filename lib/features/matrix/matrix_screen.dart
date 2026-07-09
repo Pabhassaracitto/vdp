@@ -14,6 +14,7 @@ import '../../shared/providers/progress_provider.dart';
 import '../../shared/widgets/association_cell.dart';
 import '../../shared/widgets/cetasika_header.dart';
 import '../../shared/widgets/citta_row_header.dart';
+import '../../shared/widgets/matrix_corner_header.dart'; // NEW
 import '../detail/cetasika_detail_sheet.dart';
 import '../detail/citta_detail_sheet.dart';
 
@@ -25,7 +26,6 @@ final dimmedCetasikasProvider = Provider<Set<String>>((ref) {
   return ref.read(vdpRepositoryProvider.notifier).getDimmedCetasikas(selected);
 });
 
-// M2-T4: Search state
 enum SearchType { citta, cetasika }
 
 final matrixSearchQueryProvider = StateProvider<String>((ref) => '');
@@ -73,11 +73,17 @@ class MatrixScreen extends ConsumerStatefulWidget {
 
 class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   final ScrollController _horizontalController = ScrollController();
+
+  // ─── FIX M2-T7: Hai controller dọc được đồng bộ bằng listener ───
+  // _verticalController1: cột Tâm bên trái (có thể kéo)
+  // _verticalController2: phần ma trận bên phải (scroll theo)
   final ScrollController _verticalController1 = ScrollController();
+  final ScrollController _verticalController2 = ScrollController();
 
-  // M2-T4: Debounce timer
+  /// Flag ngăn vòng lặp gọi đệ quy khi 2 controller đồng bộ nhau
+  bool _isSyncingScroll = false;
+
   Timer? _searchDebounceTimer;
-
   BhumiGroup? _filterBhumi;
   bool _showHighContrastMode = false;
   bool _forceLandscape = false;
@@ -86,16 +92,44 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   @override
   void initState() {
     super.initState();
+    _verticalController1.addListener(_onLeftScroll);
+    _verticalController2.addListener(_onRightScroll);
     _verticalController1.addListener(_updateScrollToTopVisibility);
+  }
+
+  // ─── Đồng bộ: kéo cột trái → phải theo ───
+  void _onLeftScroll() {
+    if (_isSyncingScroll) return;
+    if (!_verticalController2.hasClients) return;
+    _isSyncingScroll = true;
+    _verticalController2.jumpTo(
+      _verticalController1.offset.clamp(
+        0.0,
+        _verticalController2.position.maxScrollExtent,
+      ),
+    );
+    _isSyncingScroll = false;
+  }
+
+  // ─── Đồng bộ: kéo ma trận phải → cột trái theo ───
+  void _onRightScroll() {
+    if (_isSyncingScroll) return;
+    if (!_verticalController1.hasClients) return;
+    _isSyncingScroll = true;
+    _verticalController1.jumpTo(
+      _verticalController2.offset.clamp(
+        0.0,
+        _verticalController1.position.maxScrollExtent,
+      ),
+    );
+    _isSyncingScroll = false;
   }
 
   void _updateScrollToTopVisibility() {
     if (!mounted) return;
     final shouldShow = _verticalController1.offset > 200;
     if (_showScrollToTop != shouldShow) {
-      setState(() {
-        _showScrollToTop = shouldShow;
-      });
+      setState(() => _showScrollToTop = shouldShow);
     }
   }
 
@@ -113,7 +147,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text(
-                '📱 Nếu không xoay, hãy bật "Xoay tự động" trong cài đặt hệ thống.'),
+              '📱 Nếu không xoay, hãy bật "Xoay tự động" trong cài đặt hệ thống.',
+            ),
             duration: Duration(seconds: 3),
           ),
         );
@@ -124,10 +159,13 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   @override
   void dispose() {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    _verticalController1.removeListener(_onLeftScroll);
     _verticalController1.removeListener(_updateScrollToTopVisibility);
+    _verticalController2.removeListener(_onRightScroll);
     _horizontalController.dispose();
     _verticalController1.dispose();
-    _searchDebounceTimer?.cancel(); // M2-T4: Dispose timer
+    _verticalController2.dispose();
+    _searchDebounceTimer?.cancel();
     super.dispose();
   }
 
@@ -157,27 +195,38 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Semantics(
-          label: 'Bảng Tương Ưng Vi Diệu Pháp, đang hiển thị ${cittas.length} Tâm',
+          label:
+              'Bảng Tương Ưng Vi Diệu Pháp, đang hiển thị ${cittas.length} Tâm',
           child: const Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Bảng Tương Ưng Vi Diệu Pháp', style: TextStyle(fontSize: 18)),
-              Text('Abhidhamma Matrix',
-                  style: TextStyle(fontSize: 12, color: Colors.white70)),
+              Text(
+                'Bảng Tương Ưng Vi Diệu Pháp',
+                style: TextStyle(fontSize: 18),
+              ),
+              Text(
+                'Abhidhamma Matrix',
+                style: TextStyle(fontSize: 12, color: Colors.white70),
+              ),
             ],
           ),
         ),
         actions: [
           IconButton(
-            icon: Icon(_forceLandscape
-                ? Icons.stay_current_portrait
-                : Icons.stay_current_landscape),
+            icon: Icon(
+              _forceLandscape
+                  ? Icons.stay_current_portrait
+                  : Icons.stay_current_landscape,
+            ),
             onPressed: _toggleOrientation,
             tooltip: 'Xoay màn hình',
           ),
           IconButton(
             icon: Icon(
-                _showHighContrastMode ? Icons.contrast : Icons.contrast_outlined),
+              _showHighContrastMode
+                  ? Icons.contrast
+                  : Icons.contrast_outlined,
+            ),
             onPressed: () =>
                 setState(() => _showHighContrastMode = !_showHighContrastMode),
             tooltip: 'Tương phản cao',
@@ -192,11 +241,11 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       body: Column(
         children: [
           _buildBhumiFilter(),
-          _buildSearchBar(isLandscape), // M2-T4: Thêm Search Bar
+          _buildSearchBar(isLandscape),
           if (dataState.hasValidationWarnings &&
               !ref.read(progressProvider.notifier).warningDismissed)
             _buildWarningBanner(dataState),
-          if (!isLandscape) _buildLegend(), // Ẩn legend khi landscape
+          if (!isLandscape) _buildLegend(),
           Expanded(child: _buildMatrix(context, cittas, cetasikas)),
         ],
       ),
@@ -213,6 +262,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                 duration: const Duration(milliseconds: 500),
                 curve: Curves.easeInOut,
               );
+              // Không cần animateTo cho controller2 vì listener tự đồng bộ
             },
             child: const Icon(Icons.arrow_upward),
           ),
@@ -222,12 +272,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   // ════════════════════════════════════════════════════════════
-  //  APP BAR (Moved into build)
+  //  SEARCH BAR
   // ════════════════════════════════════════════════════════════
 
-  // M4-T3: _buildAppBar removed.
-
-  // M2-T4: Search Bar
   Widget _buildSearchBar(bool isLandscape) {
     final query = ref.watch(matrixSearchQueryProvider);
     final searchType = ref.watch(matrixSearchTypeProvider);
@@ -249,8 +296,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                     ? IconButton(
                         icon: const Icon(Icons.clear),
                         onPressed: () {
-                          ref.read(matrixSearchQueryProvider.notifier).state =
-                              '';
+                          ref
+                              .read(matrixSearchQueryProvider.notifier)
+                              .state = '';
                         },
                         tooltip: 'Xóa tìm kiếm',
                       )
@@ -266,16 +314,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                 _searchDebounceTimer =
                     Timer(const Duration(milliseconds: 300), () {
                   ref.read(matrixSearchQueryProvider.notifier).state = val;
-                  // M2-T4: Announce results
                   final matchedCittas =
                       ref.read(searchMatchedCittaIndicesProvider);
                   final matchedCetasikas =
                       ref.read(searchMatchedCetasikaIndicesProvider);
-                  final count = matchedCittas.length + matchedCetasikas.length;
-                  if (count > 0) {
-                    // SemanticsService.announce('Tìm thấy $count kết quả'); // Giả định có service này
-                  }
-                  // Scroll logic
                   if (searchType == SearchType.citta) {
                     _scrollToFirstMatch(
                         matchedCittas, _verticalController1, 44.0);
@@ -291,7 +333,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           ToggleButtons(
             isSelected: [
               searchType == SearchType.citta,
-              searchType == SearchType.cetasika
+              searchType == SearchType.cetasika,
             ],
             onPressed: (idx) {
               ref.read(matrixSearchTypeProvider.notifier).state =
@@ -299,31 +341,27 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
             },
             children: const [
               Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8),
-                  child: Text('Tâm')),
+                padding: EdgeInsets.symmetric(horizontal: 8),
+                child: Text('Tâm'),
+              ),
               Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8),
-                  child: Text('Tâm Sở')),
+                padding: EdgeInsets.symmetric(horizontal: 8),
+                child: Text('Tâm Sở'),
+              ),
             ],
           ),
-          if (isLandscape) ...[
-            const SizedBox(width: 8),
-            IconButton(
-              icon: const Icon(Icons.close),
-              onPressed: () {
-                ref.read(matrixSearchQueryProvider.notifier).state = '';
-              },
-              tooltip: 'Ẩn',
-            ),
-          ],
         ],
       ),
     );
   }
 
   void _scrollToFirstMatch(
-      Set<int> matchedIndices, ScrollController ctrl, double cellSize) {
+    Set<int> matchedIndices,
+    ScrollController ctrl,
+    double cellSize,
+  ) {
     if (matchedIndices.isEmpty) return;
+    if (!ctrl.hasClients) return;
     final firstIdx = matchedIndices.reduce((a, b) => a < b ? a : b);
     final offset = (firstIdx * cellSize).clamp(
       0.0,
@@ -349,11 +387,26 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           _filterChip(null, 'Tất cả', '🌐'),
           _filterChip(BhumiGroup.akusala, 'Bất Thiện', VdpSymbols.akusala),
           _filterChip(BhumiGroup.ahetuka, 'Vô Nhân', '⬜'),
-          _filterChip(BhumiGroup.sobhanaKamavacara, 'Tịnh Hảo DG',
-              VdpSymbols.sobhanaKama),
-          _filterChip(BhumiGroup.rupavacara, 'Sắc Giới', VdpSymbols.rupavacara),
-          _filterChip(BhumiGroup.arupavacara, 'Vô Sắc', VdpSymbols.arupavacara),
-          _filterChip(BhumiGroup.lokuttara, 'Siêu Thế', VdpSymbols.lokuttara),
+          _filterChip(
+            BhumiGroup.sobhanaKamavacara,
+            'Tịnh Hảo DG',
+            VdpSymbols.sobhanaKama,
+          ),
+          _filterChip(
+            BhumiGroup.rupavacara,
+            'Sắc Giới',
+            VdpSymbols.rupavacara,
+          ),
+          _filterChip(
+            BhumiGroup.arupavacara,
+            'Vô Sắc',
+            VdpSymbols.arupavacara,
+          ),
+          _filterChip(
+            BhumiGroup.lokuttara,
+            'Siêu Thế',
+            VdpSymbols.lokuttara,
+          ),
         ],
       ),
     );
@@ -385,8 +438,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       color: Colors.grey.shade50,
       child: Row(
         children: [
-          const Text('Ký hiệu:',
-              style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
+          const Text(
+            'Ký hiệu:',
+            style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+          ),
           const SizedBox(width: 12),
           _legendItem(VdpSymbols.always, 'Cố định', VdpColors.always),
           const SizedBox(width: 16),
@@ -404,8 +459,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       children: [
         Text(sym, style: TextStyle(color: color, fontSize: 16)),
         const SizedBox(width: 4),
-        Text(label,
-            style: TextStyle(fontSize: 11, color: Colors.grey.shade700)),
+        Text(
+          label,
+          style: TextStyle(fontSize: 11, color: Colors.grey.shade700),
+        ),
       ],
     );
   }
@@ -426,7 +483,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           Expanded(
             child: Text(
               '${dataState.validationResult!.warnings.length} cảnh báo dữ liệu.',
-              style: TextStyle(fontSize: 12, color: Colors.orange.shade900),
+              style:
+                  TextStyle(fontSize: 12, color: Colors.orange.shade900),
             ),
           ),
           TextButton(
@@ -449,7 +507,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   // ════════════════════════════════════════════════════════════
-  //  MATRIX
+  //  MATRIX — Trung tâm của tính năng M2-T7
   // ════════════════════════════════════════════════════════════
 
   Widget _buildMatrix(
@@ -467,39 +525,32 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final selectedCitta = ref.watch(selectedCittaProvider);
     final selectedCetasika = ref.watch(selectedCetasikaProvider);
     final dimmed = ref.watch(dimmedCetasikasProvider);
-
-    // M2-T4: Search state
     final searchType = ref.watch(matrixSearchTypeProvider);
     final matchedCittas = ref.watch(searchMatchedCittaIndicesProvider);
     final matchedCetasikas = ref.watch(searchMatchedCetasikaIndicesProvider);
 
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // ═══ Cột trái: tên Tâm ═══
+        // ═══════════════════════════════════════════════════════
+        //  CỘT TRÁI: Corner header + danh sách Tâm
+        // ═══════════════════════════════════════════════════════
         SizedBox(
           width: headerWidth,
           child: Column(
             children: [
-              Container(
+              // ── Ô góc trái trên cùng (M2-T7) ──
+              MatrixCornerHeader(
+                width: headerWidth,
                 height: cetasikaHeaderHeight,
-                decoration: BoxDecoration(
-                  color: VdpColors.primary,
-                  border: Border.all(color: Colors.white30),
-                ),
-                alignment: Alignment.center,
-                child: const Text(
-                  'Tâm ↓\nTâm Sở →',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 11,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                isHighContrast: _showHighContrastMode,
               ),
+
+              // ── Danh sách Tâm (cuộn dọc) ──
               Expanded(
                 child: ListView.builder(
                   controller: _verticalController1,
+                  // physics mặc định — cho phép cuộn tự nhiên
                   itemCount: cittas.length,
                   itemBuilder: (_, i) {
                     final citta = cittas[i];
@@ -528,8 +579,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                       child = Container(
                         decoration: const BoxDecoration(
                           border: Border(
-                            left:
-                                BorderSide(color: Color(0xFFFFD700), width: 3),
+                            left: BorderSide(
+                              color: Color(0xFFFFD700),
+                              width: 3,
+                            ),
                           ),
                         ),
                         child: child,
@@ -547,7 +600,11 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           ),
         ),
 
-        // ═══ Phần phải: header Tâm Sở + ô Bảng Tương Ưng ═══
+        // ═══════════════════════════════════════════════════════
+        //  PHẦN PHẢI: Header Tâm Sở + Ô ma trận
+        //  Cuộn ngang bằng _horizontalController
+        //  Cuộn dọc bằng _verticalController2 (đồng bộ với _verticalController1)
+        // ═══════════════════════════════════════════════════════
         Expanded(
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -556,61 +613,71 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
               width: matrixWidth,
               child: Column(
                 children: [
-                  // Header Tâm Sở
-                  Row(
-                    children: cetasikas.asMap().entries.map((entry) {
-                      final colIdx = entry.key;
-                      final cs = entry.value;
-                      final isSel = selectedCetasika == cs.id;
-                      final isDim = dimmed.contains(cs.id);
-                      final isMatch = matchedCetasikas.contains(colIdx);
-                      final isSearchDim = searchType == SearchType.cetasika &&
-                          matchedCetasikas.isNotEmpty &&
-                          !isMatch;
+                  // ── Header Tâm Sở (cố định, không cuộn dọc) ──
+                  SizedBox(
+                    height: cetasikaHeaderHeight,
+                    child: Row(
+                      children: cetasikas.asMap().entries.map((entry) {
+                        final colIdx = entry.key;
+                        final cs = entry.value;
+                        final isSel = selectedCetasika == cs.id;
+                        final isDim = dimmed.contains(cs.id);
+                        final isMatch = matchedCetasikas.contains(colIdx);
+                        final isSearchDim =
+                            searchType == SearchType.cetasika &&
+                                matchedCetasikas.isNotEmpty &&
+                                !isMatch;
 
-                      Widget child = GestureDetector(
-                        onTap: () {
-                          ref.read(selectedCetasikaProvider.notifier).state =
-                              isSel ? null : cs.id;
-                          if (!isSel) _showCetasikaDetail(context, cs);
-                        },
-                        child: CetasikaHeader(
-                          cetasika: cs,
-                          isSelected: isSel,
-                          isDimmed: isDim || isSearchDim,
-                          width: cellSize,
-                          height: cetasikaHeaderHeight,
-                          displayIndex: colIdx + 1,
-                        ),
-                      );
-
-                      if (isMatch) {
-                        child = Container(
-                          decoration: const BoxDecoration(
-                            border: Border(
-                              top: BorderSide(
-                                  color: Color(0xFFFFD700), width: 3),
-                            ),
+                        Widget child = GestureDetector(
+                          onTap: () {
+                            ref
+                                .read(selectedCetasikaProvider.notifier)
+                                .state = isSel ? null : cs.id;
+                            if (!isSel) _showCetasikaDetail(context, cs);
+                          },
+                          child: CetasikaHeader(
+                            cetasika: cs,
+                            isSelected: isSel,
+                            isDimmed: isDim || isSearchDim,
+                            width: cellSize,
+                            height: cetasikaHeaderHeight,
+                            displayIndex: colIdx + 1,
                           ),
+                        );
+
+                        if (isMatch) {
+                          child = Container(
+                            decoration: const BoxDecoration(
+                              border: Border(
+                                top: BorderSide(
+                                  color: Color(0xFFFFD700),
+                                  width: 3,
+                                ),
+                              ),
+                            ),
+                            child: child,
+                          );
+                        }
+
+                        return Opacity(
+                          opacity: isSearchDim ? 0.35 : 1.0,
                           child: child,
                         );
-                      }
-
-                      return Opacity(
-                        opacity: isSearchDim ? 0.35 : 1.0,
-                        child: child,
-                      );
-                    }).toList(),
+                      }).toList(),
+                    ),
                   ),
 
-                  // Ô Bảng Tương Ưng
+                  // ── Ô Bảng Tương Ưng (cuộn dọc đồng bộ) ──
                   Expanded(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: List.generate(cittas.length, (rowIdx) {
-                          final citta = cittas[rowIdx];
-                          final isCittaSel = selectedCitta == citta.id;
-                          return Row(
+                    child: ListView.builder(
+                      controller: _verticalController2,
+                      itemCount: cittas.length,
+                      itemBuilder: (_, rowIdx) {
+                        final citta = cittas[rowIdx];
+                        final isCittaSel = selectedCitta == citta.id;
+                        return SizedBox(
+                          height: cellSize,
+                          child: Row(
                             children: List.generate(
                               cetasikas.length,
                               (colIdx) {
@@ -625,7 +692,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                                   isDimmed: dimmed.contains(cs.id) ||
                                       (searchType == SearchType.cetasika &&
                                           matchedCetasikas.isNotEmpty &&
-                                          !matchedCetasikas.contains(colIdx)) ||
+                                          !matchedCetasikas
+                                              .contains(colIdx)) ||
                                       (searchType == SearchType.citta &&
                                           matchedCittas.isNotEmpty &&
                                           !matchedCittas.contains(rowIdx)),
@@ -634,9 +702,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                                 );
                               },
                             ),
-                          );
-                        }),
-                      ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ],
@@ -691,27 +759,43 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('📖 Cách đọc:',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Text(
+                '📖 Cách đọc:',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               SizedBox(height: 8),
               Text(
-                  '• Hàng ngang: Tâm (Citta)\n• Cột dọc: Tâm Sở (Cetasika)\n• Ô giao nhau: Mối quan hệ'),
+                '• Hàng ngang: Tâm (Citta)\n'
+                '• Cột dọc: Tâm Sở (Cetasika)\n'
+                '• Ô giao nhau: Mối quan hệ',
+              ),
               SizedBox(height: 12),
-              Text('✦ Ký hiệu:', style: TextStyle(fontWeight: FontWeight.bold)),
+              Text(
+                '✦ Ký hiệu:',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               SizedBox(height: 8),
               Text('✦ = Cố định\n◎ = Bất định\n✕ = Không có'),
               SizedBox(height: 12),
-              Text('💡 Mẹo:', style: TextStyle(fontWeight: FontWeight.bold)),
+              Text(
+                '💡 Mẹo:',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               SizedBox(height: 8),
               Text(
-                  '• Nhấn Tâm → xem chi tiết\n• Nhấn Tâm Sở → xem xung đột\n• Dùng bộ lọc → thu hẹp\n• Xoay ngang → xem rộng hơn'),
+                '• Nhấn Tâm → xem chi tiết\n'
+                '• Nhấn Tâm Sở → xem xung đột\n'
+                '• Dùng bộ lọc → thu hẹp\n'
+                '• Xoay ngang → xem rộng hơn',
+              ),
             ],
           ),
         ),
         actions: [
           TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: const Text('Đã hiểu')),
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Đã hiểu'),
+          ),
         ],
       ),
     );
@@ -727,25 +811,31 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: dataState.validationResult!.warnings
-                .map((w) => Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text('⚠️ '),
-                          Expanded(
-                              child: Text(w.message,
-                                  style: const TextStyle(fontSize: 13))),
-                        ],
-                      ),
-                    ))
+                .map(
+                  (w) => Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text('⚠️ '),
+                        Expanded(
+                          child: Text(
+                            w.message,
+                            style: const TextStyle(fontSize: 13),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
                 .toList(),
           ),
         ),
         actions: [
           TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Đóng')),
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Đóng'),
+          ),
         ],
       ),
     );

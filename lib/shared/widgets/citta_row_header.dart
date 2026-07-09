@@ -1,9 +1,9 @@
 // lib/shared/widgets/citta_row_header.dart
 // Header hàng ngang cho mỗi Tâm trong Bảng Tương Ưng
-// Dual Encoding: Màu theo Bhumi + Hình theo Vedana
+// FIX M2-T7: Thêm IntrinsicHeight + flexible layout để tránh
+//            Bottom overflowed khi Text Scaling cao
 
 import 'package:flutter/material.dart';
-
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/citta_model.dart';
 
@@ -11,8 +11,11 @@ class CittaRowHeader extends StatelessWidget {
   final CittaModel citta;
   final bool isSelected;
   final double width;
+
+  /// [height] là chiều cao MẶC ĐỊNH (khi scale = 1.0).
+  /// Widget sẽ tự mở rộng nếu text cần thêm không gian.
   final double height;
-  final int displayIndex; // Thứ tự hiển thị trong danh sách (bắt đầu từ 0)
+  final int displayIndex;
 
   const CittaRowHeader({
     super.key,
@@ -20,7 +23,7 @@ class CittaRowHeader extends StatelessWidget {
     required this.isSelected,
     required this.width,
     required this.height,
-    required this.displayIndex, // Thứ tự hiển thị, dùng để debug
+    required this.displayIndex,
   });
 
   @override
@@ -30,6 +33,12 @@ class CittaRowHeader extends StatelessWidget {
     final bhumiColor = citta.bhumiGroup.name.bhumiColor;
     final bhumiSymbol = citta.bhumiGroup.name.bhumiSymbol;
     final vedanaSymbol = _getVedanaSymbol(citta.vedana);
+
+    // Tính chiều cao tối thiểu thích ứng với text scaling
+    final textScale = MediaQuery.textScalerOf(context).scale(1.0);
+    // Cho phép ô cao hơn tối đa 1.5× so với mặc định khi scale lớn
+    final double minHeight = height;
+    final double maxHeight = height * textScale.clamp(1.0, 1.5);
 
     return Semantics(
       label: 'Tâm hàng $displayIndex: ${citta.nameVietnamese}, '
@@ -42,11 +51,15 @@ class CittaRowHeader extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 150),
         width: width,
-        height: height,
+        // ── FIX: dùng constraints thay vì height cứng ──
+        constraints: BoxConstraints(
+          minHeight: minHeight,
+          maxHeight: maxHeight,
+        ),
         decoration: BoxDecoration(
           color: isSelected
-              ? bhumiColor.withOpacity(0.25)
-              : bhumiColor.withOpacity(0.08),
+              ? bhumiColor.withValues(alpha: 0.25)
+              : bhumiColor.withValues(alpha: 0.08),
           border: Border(
             left: BorderSide(color: bhumiColor, width: 4),
             bottom: BorderSide(color: Colors.grey.shade200, width: 0.5),
@@ -55,37 +68,49 @@ class CittaRowHeader extends StatelessWidget {
                 : BorderSide.none,
           ),
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+        // ── FIX: padding linh hoạt, giảm khi landscape ──
+        padding: EdgeInsets.symmetric(
+          horizontal: 8,
+          vertical: isLandscape ? 1 : 2,
+        ),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Số thứ tự
+            // ── Số thứ tự: chiều rộng cố định, không co giãn ──
             SizedBox(
-              width: 30,
+              width: 24,
               child: Text(
                 '$displayIndex',
                 style: TextStyle(
-                  fontSize: 10,
-                  color: bhumiColor.withOpacity(0.7),
+                  fontSize: isLandscape ? 9.0 : 10.0,
+                  color: bhumiColor.withValues(alpha: 0.7),
                   fontWeight: FontWeight.w600,
                 ),
+                // Không scale quá mức để vừa SizedBox
+                textScaler: TextScaler.noScaling,
               ),
             ),
 
-            // Tên Tâm
+            // ── Tên Tâm: Expanded để chiếm không gian còn lại ──
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
                 children: [
+                  // Tên tiếng Việt — cho phép xuống hàng khi text lớn
                   Text(
                     citta.nameVietnamese,
                     style: TextStyle(
+                      // fontSize cơ bản — để hệ thống scale bình thường
                       fontSize: isLandscape ? 9.0 : 10.5,
-                      height: 1.0,
-                      fontWeight:
-                          isSelected ? FontWeight.w700 : FontWeight.w500,
+                      height: 1.2,
+                      fontWeight: isSelected
+                          ? FontWeight.w700
+                          : FontWeight.w500,
                       color: VdpColors.onBackground,
                     ),
+                    // ── FIX: maxLines 2 thay vì 1 để tránh overflow ──
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -93,12 +118,21 @@ class CittaRowHeader extends StatelessWidget {
               ),
             ),
 
-            // Dual Encoding Symbols
+            // ── Dual Encoding symbols: không scale, cố định ──
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Text(bhumiSymbol, style: const TextStyle(fontSize: 12)),
-                Text(vedanaSymbol, style: const TextStyle(fontSize: 10)),
+                Text(
+                  bhumiSymbol,
+                  style: const TextStyle(fontSize: 12),
+                  textScaler: TextScaler.noScaling,
+                ),
+                Text(
+                  vedanaSymbol,
+                  style: const TextStyle(fontSize: 10),
+                  textScaler: TextScaler.noScaling,
+                ),
               ],
             ),
           ],
