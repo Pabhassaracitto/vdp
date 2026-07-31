@@ -6,11 +6,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/models/study_module.dart';
 import '../../data/repositories/vdp_repository.dart';
+import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
 import '../quiz/quiz_screen.dart';
 
@@ -69,7 +71,7 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
         backgroundColor: color,
         foregroundColor: Colors.white,
         title: Text(
-          widget.moduleData.title,
+          widget.moduleData.localizedTitle(context),
           style: const TextStyle(fontSize: 16),
         ),
         bottom: TabBar(
@@ -77,13 +79,19 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
           indicatorColor: Colors.white,
           labelColor: Colors.white,
           unselectedLabelColor: Colors.white60,
-          tabs: const [
-            Tab(text: 'Học', icon: Icon(Icons.menu_book, size: 18)),
+          tabs: [
             Tab(
-              text: 'Ôn Tập',
-              icon: Icon(Icons.visibility_off_rounded, size: 18),
+              text: context.l10n.learnTab,
+              icon: const Icon(Icons.menu_book, size: 18),
             ),
-            Tab(text: 'Kiểm Tra', icon: Icon(Icons.quiz_rounded, size: 18)),
+            Tab(
+              text: context.l10n.reviewTab,
+              icon: const Icon(Icons.visibility_off_rounded, size: 18),
+            ),
+            Tab(
+              text: context.l10n.testTab,
+              icon: const Icon(Icons.quiz_rounded, size: 18),
+            ),
           ],
         ),
       ),
@@ -179,9 +187,8 @@ class _StudyTab extends StatelessWidget {
                     color: color.withOpacity(0.4),
                   ),
                   const SizedBox(height: 12),
-                  const Text(
-                    'Module này chưa có dữ liệu Tâm/Tâm Sở.\n'
-                    'Vui lòng kiểm tra file JSON.',
+                  Text(
+                    context.l10n.moduleHasNoData,
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.grey, fontSize: 14),
                   ),
@@ -193,7 +200,7 @@ class _StudyTab extends StatelessWidget {
           // ── Tâm (Citta) section ───────────────────────────────────────
           if (cittas.isNotEmpty) ...[
             _SectionHeader(
-              'Tâm (Citta) trong Module — ${cittas.length} tâm',
+              context.l10n.cittasInModule(cittas.length),
               color,
             ),
             ...cittas.map(
@@ -205,7 +212,7 @@ class _StudyTab extends StatelessWidget {
           // ── Tâm Sở (Cetasika) section ─────────────────────────────────
           if (cetasikas.isNotEmpty) ...[
             _SectionHeader(
-              'Tâm Sở (Cetasika) trong Module — ${cetasikas.length} tâm sở',
+              context.l10n.cetasikasInModule(cetasikas.length),
               color,
             ),
             ...cetasikas.map(
@@ -251,9 +258,10 @@ class _BlurRevealTab extends StatelessWidget {
           id: 'cs_${cs.id}',
           hint: cs.symbol,
           question:
-              'Tâm Sở "${cs.nameVietnamese}" (${cs.namePali}) có nghĩa là gì?',
-          answer: '${cs.descriptionVi}\n'
-              'Nhóm: ${_getGroupName(cs.group)}',
+              context.l10n.reviewCetasikaQuestion(
+            cs.localizedName(context), cs.namePali),
+          answer: '${cs.localizedDescription(context)}\n'
+              '${context.l10n.groupAnswer(cs.group.localizedName(context.l10n, includeCount: true))}',
         ),
       ),
       // Citta items — hỏi về nhóm, thọ, cõi
@@ -261,10 +269,12 @@ class _BlurRevealTab extends StatelessWidget {
         (c) => _RecallItem(
           id: 'ci_${c.id}',
           hint: _getBhumiSymbol(c.bhumiGroup),
-          question: 'Tâm "${c.nameVietnamese}" thuộc nhóm nào và có thọ gì?',
-          answer: 'Cõi: ${_getBhumiName(c.bhumiGroup)}\n'
-              'Thọ: ${_getVedanaName(c.vedana)}\n'
-              'Pāḷi: ${c.namePali}',
+          question: context.l10n.reviewCittaQuestion(c.localizedName(context)),
+          answer: context.l10n.cittaReviewAnswer(
+            c.bhumiGroup.localizedName(context.l10n),
+            c.vedana.localizedName(context.l10n),
+            c.namePali,
+          ),
         ),
       ),
     ];
@@ -282,8 +292,8 @@ class _BlurRevealTab extends StatelessWidget {
                 color: color.withOpacity(0.3),
               ),
               const SizedBox(height: 16),
-              const Text(
-                'Module này chưa có nội dung ôn tập.\nHãy quay lại sau!',
+              Text(
+                context.l10n.noReviewContent,
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.grey, fontSize: 15),
               ),
@@ -302,7 +312,7 @@ class _BlurRevealTab extends StatelessWidget {
       children: [
         // ── Progress bar + Reset button ───────────────────────────────────
         Padding(
-          padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+          padding: const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 4),
           child: Row(
             children: [
               Expanded(
@@ -320,7 +330,7 @@ class _BlurRevealTab extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      '$revealedCount / $total đã xem',
+                      context.l10n.reviewedCount(revealedCount, total),
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.grey.shade600,
@@ -333,7 +343,10 @@ class _BlurRevealTab extends StatelessWidget {
               TextButton.icon(
                 onPressed: revealedCount > 0 ? onResetAll : null,
                 icon: const Icon(Icons.refresh_rounded, size: 16),
-                label: const Text('Reset', style: TextStyle(fontSize: 12)),
+                label: Text(
+                  context.l10n.reset,
+                  style: const TextStyle(fontSize: 12),
+                ),
                 style: TextButton.styleFrom(
                   foregroundColor: color,
                   padding: const EdgeInsets.symmetric(
@@ -360,10 +373,10 @@ class _BlurRevealTab extends StatelessWidget {
               children: [
                 const Text('🏆', style: TextStyle(fontSize: 20)),
                 const SizedBox(width: 10),
-                const Expanded(
+                Expanded(
                   child: Text(
-                    'Bạn đã ôn tập tất cả nội dung! Hãy làm Quiz để kiểm tra.',
-                    style: TextStyle(fontSize: 13, color: Colors.green),
+                    context.l10n.reviewComplete,
+                    style: const TextStyle(fontSize: 13, color: Colors.green),
                   ),
                 ),
               ],
@@ -389,30 +402,6 @@ class _BlurRevealTab extends StatelessWidget {
       ],
     );
   }
-
-  // Label helpers (type-safe, không dùng .name raw)
-  static String _getGroupName(CetasikaGroup g) => switch (g) {
-        CetasikaGroup.sabbacittasadharana => '7 Biến Hành',
-        CetasikaGroup.pakinnaka => '6 Biệt Cảnh',
-        CetasikaGroup.akusala => '14 Bất Thiện',
-        CetasikaGroup.sobhana => '25 Tịnh Hảo',
-      };
-
-  static String _getVedanaName(Vedana v) => switch (v) {
-        Vedana.pleasant => 'Lạc thọ (Sukha)',
-        Vedana.unpleasant => 'Khổ thọ (Dukkha)',
-        Vedana.neutral => 'Xả thọ (Upekkhā)',
-        Vedana.joy => 'Hỷ thọ (Somanassa)',
-      };
-
-  static String _getBhumiName(BhumiGroup b) => switch (b) {
-        BhumiGroup.akusala => 'Bất Thiện',
-        BhumiGroup.ahetuka => 'Vô Nhân',
-        BhumiGroup.sobhanaKamavacara => 'Tịnh Hảo Dục Giới',
-        BhumiGroup.rupavacara => 'Sắc Giới',
-        BhumiGroup.arupavacara => 'Vô Sắc Giới',
-        BhumiGroup.lokuttara => 'Siêu Thế',
-      };
 
   static String _getBhumiSymbol(BhumiGroup b) => switch (b) {
         BhumiGroup.akusala => '🔴',
@@ -456,8 +445,7 @@ class _BlurRevealCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Semantics(
-      label: '${item.question}. '
-          '${isRevealed ? "Câu trả lời: ${item.answer}" : "Nhấn để xem câu trả lời"}',
+      label: '${item.question}. ${isRevealed ? context.l10n.answerLabel(item.answer) : context.l10n.tapToReveal}',
       button: !isRevealed,
       child: Container(
         margin: const EdgeInsets.only(bottom: 14),
@@ -477,7 +465,7 @@ class _BlurRevealCard extends StatelessWidget {
           children: [
             // Question row
             Padding(
-              padding: const EdgeInsets.fromLTRB(14, 14, 14, 10),
+              padding: const EdgeInsetsDirectional.fromSTEB(14, 14, 14, 10),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -546,7 +534,7 @@ class _BlurRevealCard extends StatelessWidget {
                               Icons.visibility_rounded,
                               size: 16,
                             ),
-                            label: const Text('Hiện đáp án'),
+                            label: Text(context.l10n.revealAnswer),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: VdpColors.primary,
                               foregroundColor: Colors.white,
@@ -594,7 +582,7 @@ class _QuizTab extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Kiểm Tra\n${module.title}',
+              context.l10n.moduleQuizTitle(module.localizedTitle(context)),
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -603,16 +591,15 @@ class _QuizTab extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              '$totalItems nội dung trong module',
+              context.l10n.moduleContentCount(totalItems),
               style: TextStyle(
                 fontSize: 13,
                 color: Colors.grey.shade500,
               ),
             ),
             const SizedBox(height: 12),
-            const Text(
-              'Tối đa 10 câu hỏi trắc nghiệm\n'
-              'Tổng hợp kiến thức trong module này',
+            Text(
+              context.l10n.quizMaximumDescription,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.grey,
@@ -631,9 +618,9 @@ class _QuizTab extends StatelessWidget {
                   ),
                 ),
                 icon: const Icon(Icons.play_arrow_rounded),
-                label: const Text(
-                  'Bắt đầu Quiz',
-                  style: TextStyle(fontSize: 16),
+                label: Text(
+                  context.l10n.startQuiz,
+                  style: const TextStyle(fontSize: 16),
                 ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: color,
@@ -681,7 +668,7 @@ class _ModuleHeaderCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      module.title,
+                      module.localizedTitle(context),
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -704,7 +691,7 @@ class _ModuleHeaderCard extends StatelessWidget {
           if (module.description.isNotEmpty) ...[
             const SizedBox(height: 12),
             Text(
-              module.description,
+              module.localizedDescription(context),
               style: const TextStyle(fontSize: 14, height: 1.7),
             ),
           ],
@@ -714,13 +701,13 @@ class _ModuleHeaderCard extends StatelessWidget {
             children: [
               _StatChip(
                 icon: Icons.psychology_rounded,
-                label: '${module.cittaIds.length} Tâm',
+                label: context.l10n.cittasCount(module.cittaIds.length),
                 color: color,
               ),
               const SizedBox(width: 8),
               _StatChip(
                 icon: Icons.auto_awesome_rounded,
-                label: '${module.cetasikaIds.length} Tâm Sở',
+                label: context.l10n.cetasikasCount(module.cetasikaIds.length),
                 color: color,
               ),
             ],
@@ -804,6 +791,7 @@ class _CittaStudyCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final isBookmarked =
         ref.watch(progressProvider).bookmarkedCittaIds.contains(citta.id);
+    final doctrinalNote = citta.localizedDoctrine(context);
 
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
@@ -824,7 +812,7 @@ class _CittaStudyCard extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      citta.nameVietnamese,
+                      citta.localizedName(context),
                       style: const TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
@@ -856,7 +844,9 @@ class _CittaStudyCard extends ConsumerWidget {
                     .toggleCittaBookmark(citta.id),
                 constraints: const BoxConstraints(),
                 padding: EdgeInsets.zero,
-                tooltip: isBookmarked ? 'Bỏ bookmark' : 'Bookmark',
+                tooltip: isBookmarked
+                    ? context.l10n.removeBookmark
+                    : context.l10n.bookmarksAndNotes,
               ),
               const SizedBox(width: 4),
               // Note button
@@ -868,16 +858,16 @@ class _CittaStudyCard extends ConsumerWidget {
                 ),
                 onPressed: () => _showNoteEditor(context, ref),
                 constraints: const BoxConstraints(),
-                padding: const EdgeInsets.only(left: 4),
-                tooltip: 'Ghi chú',
+                padding: const EdgeInsetsDirectional.only(start: 4),
+                tooltip: context.l10n.notes,
               ),
             ],
           ),
           const SizedBox(height: 6),
           // Doctrinal note
-          if (citta.doctrinalNote != null && citta.doctrinalNote!.isNotEmpty)
+          if (doctrinalNote != null)
             Text(
-              citta.doctrinalNote!,
+              doctrinalNote,
               style: const TextStyle(
                 fontSize: 13,
                 height: 1.5,
@@ -891,11 +881,11 @@ class _CittaStudyCard extends ConsumerWidget {
             runSpacing: 4,
             children: [
               _InfoChip(
-                label: _getVedanaLabel(citta.vedana),
+                label: citta.vedana.localizedName(context.l10n),
                 color: _getVedanaColor(citta.vedana),
               ),
               _InfoChip(
-                label: _getBhumiLabel(citta.bhumiGroup),
+                label: citta.bhumiGroup.localizedName(context.l10n),
                 color: color,
               ),
             ],
@@ -915,20 +905,20 @@ class _CittaStudyCard extends ConsumerWidget {
     showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Ghi chú: ${citta.nameVietnamese}'),
+        title: Text(context.l10n.noteForItem(citta.localizedName(context))),
         content: TextField(
           controller: controller,
           maxLines: 5,
-          decoration: const InputDecoration(
-            hintText: 'Nhập ghi chú của bạn...',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            hintText: context.l10n.personalNoteHint,
+            border: const OutlineInputBorder(),
           ),
           autofocus: true,
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Hủy'),
+            child: Text(context.l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -937,19 +927,12 @@ class _CittaStudyCard extends ConsumerWidget {
                   .saveNote(citta.id, controller.text);
               Navigator.pop(context);
             },
-            child: const Text('Lưu'),
+            child: Text(context.l10n.save),
           ),
         ],
       ),
     );
   }
-
-  static String _getVedanaLabel(Vedana v) => switch (v) {
-        Vedana.pleasant => '😊 Lạc thọ',
-        Vedana.unpleasant => '😔 Khổ thọ',
-        Vedana.neutral => '😐 Xả thọ',
-        Vedana.joy => '😄 Hỷ thọ',
-      };
 
   static Color _getVedanaColor(Vedana v) => switch (v) {
         Vedana.pleasant => Colors.green,
@@ -958,14 +941,6 @@ class _CittaStudyCard extends ConsumerWidget {
         Vedana.joy => Colors.orange,
       };
 
-  static String _getBhumiLabel(BhumiGroup b) => switch (b) {
-        BhumiGroup.akusala => '🔴 Bất Thiện',
-        BhumiGroup.ahetuka => '⚪ Vô Nhân',
-        BhumiGroup.sobhanaKamavacara => '🟢 Tịnh Hảo DG',
-        BhumiGroup.rupavacara => '🔵 Sắc Giới',
-        BhumiGroup.arupavacara => '🟣 Vô Sắc Giới',
-        BhumiGroup.lokuttara => '✨ Siêu Thế',
-      };
 }
 
 // ─── Cetasika Study Card ──────────────────────────────────────────────────────
@@ -1019,7 +994,7 @@ class _CetasikaStudyCard extends ConsumerWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            cetasika.nameVietnamese,
+                            cetasika.localizedName(context),
                             style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
@@ -1062,13 +1037,13 @@ class _CetasikaStudyCard extends ConsumerWidget {
                       ),
                       onPressed: () => _showNoteEditor(context, ref),
                       constraints: const BoxConstraints(),
-                      padding: const EdgeInsets.only(left: 4),
+                      padding: const EdgeInsetsDirectional.only(start: 4),
                     ),
                   ],
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  cetasika.descriptionVi,
+                  cetasika.localizedDescription(context),
                   style: const TextStyle(
                     fontSize: 13,
                     height: 1.5,
@@ -1078,7 +1053,7 @@ class _CetasikaStudyCard extends ConsumerWidget {
                 const SizedBox(height: 6),
                 // Group badge
                 _InfoChip(
-                  label: _getGroupName(cetasika.group),
+                  label: cetasika.group.localizedName(context.l10n, includeCount: true),
                   color: color,
                 ),
                 // Personal note preview
@@ -1099,20 +1074,20 @@ class _CetasikaStudyCard extends ConsumerWidget {
     showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Ghi chú: ${cetasika.nameVietnamese}'),
+        title: Text(context.l10n.noteForItem(cetasika.localizedName(context))),
         content: TextField(
           controller: controller,
           maxLines: 5,
-          decoration: const InputDecoration(
-            hintText: 'Nhập ghi chú của bạn...',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            hintText: context.l10n.personalNoteHint,
+            border: const OutlineInputBorder(),
           ),
           autofocus: true,
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Hủy'),
+            child: Text(context.l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -1121,19 +1096,14 @@ class _CetasikaStudyCard extends ConsumerWidget {
                   .saveNote(cetasika.id, controller.text);
               Navigator.pop(context);
             },
-            child: const Text('Lưu'),
+            child: Text(context.l10n.save),
           ),
         ],
       ),
     );
   }
 
-  static String _getGroupName(CetasikaGroup g) => switch (g) {
-        CetasikaGroup.sabbacittasadharana => '7 Biến Hành',
-        CetasikaGroup.pakinnaka => '6 Biệt Cảnh',
-        CetasikaGroup.akusala => '14 Bất Thiện',
-        CetasikaGroup.sobhana => '25 Tịnh Hảo',
-      };
+
 }
 
 // ─── Shared Micro-widgets ─────────────────────────────────────────────────────

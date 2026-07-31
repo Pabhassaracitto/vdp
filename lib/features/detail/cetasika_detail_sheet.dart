@@ -4,9 +4,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/localization/content_catalog.dart';
+import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../core/utils/pali_tts_helper.dart';
 import '../../data/models/cetasika_model.dart';
+import '../../l10n/l10n.dart';
 import 'widgets/pali_name_card.dart';
 
 class CetasikaDetailSheet extends ConsumerStatefulWidget {
@@ -38,9 +41,9 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
       setState(() => _isSpeaking = false);
       if (!success) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Thiết bị không hỗ trợ phát âm TTS.'),
-            duration: Duration(seconds: 2),
+          SnackBar(
+            content: Text(context.l10n.ttsUnavailable),
+            duration: const Duration(seconds: 2),
           ),
         );
       }
@@ -56,6 +59,11 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
   @override
   Widget build(BuildContext context) {
     final cetasika = widget.cetasika;
+    final localizedName = cetasika.localizedName(context);
+    final characteristic = cetasika.localizedCharacteristic(context);
+    final function = cetasika.localizedFunction(context);
+    final manifestation = cetasika.localizedManifestation(context);
+    final proximateCause = cetasika.localizedProximateCause(context);
     final groupColor = _getGroupColor(cetasika.group);
 
     return DraggableScrollableSheet(
@@ -108,18 +116,18 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Tâm Sở ${cetasika.traditionalOrder}',
+                          '${context.l10n.cetasika} ${cetasika.traditionalOrder}',
                           style: TextStyle(fontSize: 11, color: groupColor),
                         ),
                         Text(
-                          cetasika.nameVietnamese,
+                          localizedName,
                           style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
-                          _getGroupName(cetasika.group),
+                          cetasika.group.localizedName(context.l10n, includeCount: true),
                           style: TextStyle(fontSize: 12, color: groupColor),
                         ),
                       ],
@@ -148,20 +156,20 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
-                  cetasika.descriptionVi,
+                  cetasika.localizedDescription(context),
                   style: const TextStyle(fontSize: 15, height: 1.7),
                 ),
               ),
 
               // ── Tứ Nghĩa ────────────────────────────────────────────
-              if (cetasika.trangThai != null ||
-                  cetasika.phanSu != null ||
-                  cetasika.thanhTuu != null ||
-                  cetasika.nhanGan != null) ...[
+              if (characteristic != null ||
+                  function != null ||
+                  manifestation != null ||
+                  proximateCause != null) ...[
                 const SizedBox(height: 20),
-                const Text(
-                  '📖 Tứ Nghĩa',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                Text(
+                  '📖 ${context.l10n.fourfoldDefinition}',
+                  style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
                 Container(
@@ -174,18 +182,18 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                   ),
                   child: Column(
                     children: [
-                      if (cetasika.trangThai != null)
+                      if (characteristic != null)
+                        _buildFourAspectRow(context.l10n.characteristic,
+                            'Lakkhaṇa', characteristic),
+                      if (function != null)
                         _buildFourAspectRow(
-                            'Đặc tướng', 'Lakkhaṇa', cetasika.trangThai!),
-                      if (cetasika.phanSu != null)
-                        _buildFourAspectRow(
-                            'Phận sự', 'Rasa', cetasika.phanSu!),
-                      if (cetasika.thanhTuu != null)
-                        _buildFourAspectRow(
-                            'Thành tựu', 'Paccupaṭṭhāna', cetasika.thanhTuu!),
-                      if (cetasika.nhanGan != null)
-                        _buildFourAspectRow(
-                            'Nhân gần', 'Padaṭṭhāna', cetasika.nhanGan!),
+                            context.l10n.functionLabel, 'Rasa', function),
+                      if (manifestation != null)
+                        _buildFourAspectRow(context.l10n.manifestation,
+                            'Paccupaṭṭhāna', manifestation),
+                      if (proximateCause != null)
+                        _buildFourAspectRow(context.l10n.proximateCause,
+                            'Padaṭṭhāna', proximateCause),
                     ],
                   ),
                 ),
@@ -199,10 +207,10 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                     const Icon(Icons.warning_amber,
                         color: Colors.orange, size: 18),
                     const SizedBox(width: 6),
-                    const Text(
-                      'Xung Đột Giáo Lý',
+                    Text(
+                      context.l10n.doctrinalConflicts,
                       style:
-                          TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                          const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                     ),
                     const Spacer(),
                     Container(
@@ -213,7 +221,7 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
-                        '${cetasika.conflictRules.length} quy tắc',
+                        context.l10n.rulesCount(cetasika.conflictRules.length),
                         style: TextStyle(
                             fontSize: 11, color: Colors.orange.shade800),
                       ),
@@ -277,18 +285,6 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
     }
   }
 
-  String _getGroupName(CetasikaGroup group) {
-    switch (group) {
-      case CetasikaGroup.sabbacittasadharana:
-        return 'Tâm Sở Biến Hành';
-      case CetasikaGroup.pakinnaka:
-        return 'Tâm Sở Biệt Cảnh';
-      case CetasikaGroup.akusala:
-        return 'Tâm Sở Bất Thiện';
-      case CetasikaGroup.sobhana:
-        return 'Tâm Sở Tịnh Hảo';
-    }
-  }
 }
 
 class _ConflictRuleCard extends StatelessWidget {
@@ -307,7 +303,12 @@ class _ConflictRuleCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(rule.explanation, style: const TextStyle(fontSize: 13)),
+          Text(
+            context.usesEnglishContent
+                ? (rule.explanationPali ?? context.l10n.doctrinalConflicts)
+                : rule.explanation,
+            style: const TextStyle(fontSize: 13),
+          ),
           if (rule.explanationPali != null)
             Text(rule.explanationPali!,
                 style:

@@ -1,7 +1,7 @@
 // lib/features/kamma/presentation/widgets/kamma_card.dart
 import 'package:flutter/material.dart';
+import '../../../../core/localization/localized_content.dart';
 import '../../../../data/models/kamma_model.dart';
-import '../../../../../core/theme/vdp_theme.dart';
 
 class KammaCard extends StatelessWidget {
   final KammaModel kamma;
@@ -14,7 +14,7 @@ class KammaCard extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: ListTile(
-        title: Text(kamma.nameVietnamese,
+        title: Text(kamma.localizedName(context),
             style: const TextStyle(fontWeight: FontWeight.bold)),
         subtitle: Text(kamma.namePali),
         onTap: onTap,

@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/theme/vdp_theme.dart';
+import '../../l10n/l10n.dart';
 import '../home/home_screen.dart';
 
 const _kOnboardingDone = 'vdp_onboarding_done';
@@ -21,38 +22,32 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   final _controller = PageController();
   int _page = 0;
 
-  final _slides = const [
-    _OnboardingSlide(
-      icon: '🔆',
-      title: 'Thấy Bằng Mắt',
-      subtitle: 'Bảng Tương Ưng Tâm × Tâm Sở',
-      body: 'Trực quan hóa 121 Tâm và 52 Tâm Sở trong một Bảng Tương Ưng '
-          'tương tác. Ba trạng thái phối hợp được mã hóa bằng '
-          'màu sắc, hình dạng và chữ để mọi người đều hiểu được.',
-      color: Color(0xFF2D6A8F),
-      bgSymbols: '✦◎✕✦◎',
-    ),
-    _OnboardingSlide(
-      icon: '🔄',
-      title: 'Hiểu Bằng Tim',
-      subtitle: 'Dòng Chảy Nhân Duyên',
-      body: 'Khám phá 12 Nhân Duyên và 16 loại Nghiệp qua '
-          'flowchart tương tác. Kamma Trace — cầu nối N-M '
-          'giữa Tâm và Nghiệp — giúp bạn thấy rõ nhân quả.',
-      color: Color(0xFF4A2800),
-      bgSymbols: '⟳→↗⟳→',
-    ),
-    _OnboardingSlide(
-      icon: '🌟',
-      title: 'Tự Mình Khám Phá',
-      subtitle: 'Lộ Trình Học Phi Tuyến',
-      body: '10 module học theo mạng lưới — bạn tự chọn hướng đi. '
-          'Blur/Reveal Active Recall, Quiz 3 cấp, và Smart Hints '
-          'giúp bạn ghi nhớ sâu mà không nhàm chán.',
-      color: Color(0xFF1A6B3C),
-      bgSymbols: '🌱🌿🌳',
-    ),
-  ];
+  List<_OnboardingSlide> _localizedSlides(BuildContext context) => [
+        _OnboardingSlide(
+          icon: '🔆',
+          title: context.l10n.onboardingVisualTitle,
+          subtitle: context.l10n.onboardingVisualSubtitle,
+          body: context.l10n.onboardingVisualBody,
+          color: const Color(0xFF2D6A8F),
+          bgSymbols: '✦◎✕✦◎',
+        ),
+        _OnboardingSlide(
+          icon: '🔄',
+          title: context.l10n.onboardingCausalityTitle,
+          subtitle: context.l10n.onboardingCausalitySubtitle,
+          body: context.l10n.onboardingCausalityBody,
+          color: const Color(0xFF4A2800),
+          bgSymbols: '⟳→↗⟳→',
+        ),
+        _OnboardingSlide(
+          icon: '🌟',
+          title: context.l10n.onboardingExploreTitle,
+          subtitle: context.l10n.onboardingExploreSubtitle,
+          body: context.l10n.onboardingExploreBody,
+          color: const Color(0xFF1A6B3C),
+          bgSymbols: '🌱🌿🌳',
+        ),
+      ];
 
   @override
   void dispose() {
@@ -62,6 +57,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final slides = _localizedSlides(context);
     return Scaffold(
       backgroundColor: VdpColors.background,
       body: Stack(
@@ -70,8 +66,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
           PageView.builder(
             controller: _controller,
             onPageChanged: (i) => setState(() => _page = i),
-            itemCount: _slides.length,
-            itemBuilder: (_, i) => _SlideView(slide: _slides[i]),
+            itemCount: slides.length,
+            itemBuilder: (_, i) => _SlideView(slide: slides[i]),
           ),
 
           // Bottom controls
@@ -80,7 +76,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             left: 0,
             right: 0,
             child: Container(
-              padding: const EdgeInsets.fromLTRB(24, 16, 24, 40),
+              padding: const EdgeInsetsDirectional.fromSTEB(24, 16, 24, 40),
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
@@ -97,7 +93,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   // Dots
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(_slides.length, (i) {
+                    children: List.generate(slides.length, (i) {
                       final active = i == _page;
                       return AnimatedContainer(
                         duration: const Duration(milliseconds: 200),
@@ -106,7 +102,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                         height: 8,
                         decoration: BoxDecoration(
                           color: active
-                              ? _slides[_page].color
+                              ? slides[_page].color
                               : Colors.grey.shade300,
                           borderRadius: BorderRadius.circular(4),
                         ),
@@ -118,12 +114,12 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   // Action buttons
                   Row(
                     children: [
-                      if (_page < _slides.length - 1) ...[
+                      if (_page < slides.length - 1) ...[
                         Expanded(
                           child: TextButton(
                             onPressed: _finish,
-                            child: const Text('Bỏ qua',
-                                style: TextStyle(color: Colors.grey)),
+                            child: Text(context.l10n.skip,
+                                style: const TextStyle(color: Colors.grey)),
                           ),
                         ),
                         const SizedBox(width: 12),
@@ -135,15 +131,15 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                               curve: Curves.easeInOut,
                             ),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: _slides[_page].color,
+                              backgroundColor: slides[_page].color,
                               foregroundColor: Colors.white,
                               padding: const EdgeInsets.symmetric(vertical: 14),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
                             ),
-                            child: const Text('Tiếp theo',
-                                style: TextStyle(fontSize: 16)),
+                            child: Text(context.l10n.next,
+                                style: const TextStyle(fontSize: 16)),
                           ),
                         ),
                       ] else
@@ -151,15 +147,15 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                           child: ElevatedButton(
                             onPressed: _finish,
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: _slides[_page].color,
+                              backgroundColor: slides[_page].color,
                               foregroundColor: Colors.white,
                               padding: const EdgeInsets.symmetric(vertical: 16),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
                             ),
-                            child: const Text('Bắt đầu khám phá!',
-                                style: TextStyle(
+                            child: Text(context.l10n.beginExploring,
+                                style: const TextStyle(
                                     fontSize: 17, fontWeight: FontWeight.bold)),
                           ),
                         ),
@@ -210,7 +206,7 @@ class _SlideView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(28, 80, 28, 160),
+      padding: const EdgeInsetsDirectional.fromSTEB(28, 80, 28, 160),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

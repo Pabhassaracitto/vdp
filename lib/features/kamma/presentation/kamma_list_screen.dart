@@ -1,6 +1,7 @@
 // lib/features/kamma/presentation/kamma_list_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../l10n/l10n.dart';
 import 'providers/kamma_providers.dart';
 import 'widgets/kamma_card.dart';
 
@@ -13,7 +14,7 @@ class KammaListScreen extends ConsumerWidget {
     final kammasAsync = ref.watch(kammasByGroupProvider(group));
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Nghiệp (Kamma)')),
+      appBar: AppBar(title: Text(context.l10n.kammaTitle)),
       body: kammasAsync.when(
         data: (kammas) => ListView.builder(
           itemCount: kammas.length,
@@ -21,7 +22,9 @@ class KammaListScreen extends ConsumerWidget {
               KammaCard(kamma: kammas[i], onTap: () {}),
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Lỗi: $e')),
+        error: (error, _) => Center(
+          child: Text(context.l10n.errorWithMessage(error.toString())),
+        ),
       ),
     );
   }

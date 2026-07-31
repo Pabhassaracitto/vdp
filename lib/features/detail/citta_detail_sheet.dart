@@ -5,10 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vdp_app/shared/providers/progress_provider.dart';
 
+import '../../core/localization/content_catalog.dart';
+import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../core/utils/pali_tts_helper.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/repositories/vdp_repository.dart';
+import '../../l10n/l10n.dart';
 import 'widgets/pali_name_card.dart';
 
 // Chuyển sang StatefulWidget để quản lý trạng thái isSpeaking
@@ -39,9 +42,9 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
       setState(() => _isSpeaking = false);
       if (!success) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Thiết bị không hỗ trợ phát âm TTS.'),
-            duration: Duration(seconds: 2),
+          SnackBar(
+            content: Text(context.l10n.ttsUnavailable),
+            duration: const Duration(seconds: 2),
           ),
         );
       }
@@ -57,6 +60,9 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
   @override
   Widget build(BuildContext context) {
     final citta = widget.citta;
+    final localizedName = citta.localizedName(context);
+    final localizedDoctrine = citta.localizedDoctrine(context);
+    final localizedExamples = citta.localizedExamples(context);
     final bhumiColor = citta.bhumiGroup.name.bhumiColor;
     final cetasikas = ref.read(cetasikasProvider);
     final alwaysAssocs = citta.cetasikaAssociations
@@ -88,7 +94,7 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
               children: [
                 // ── Handle ──────────────────────────────────────────────
                 Semantics(
-                  label: 'Thanh kéo để thay đổi kích thước',
+                  label: context.l10n.dragHandleSemantics,
                   child: Center(
                     child: Container(
                       width: 40,
@@ -127,11 +133,11 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Tâm số ${citta.orderIndex}',
+                            context.l10n.cittaNumber(citta.orderIndex),
                             style: TextStyle(fontSize: 12, color: bhumiColor),
                           ),
                           Text(
-                            citta.nameVietnamese,
+                            localizedName,
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -187,17 +193,17 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                   runSpacing: 8,
                   children: [
                     _InfoChip(
-                      label: _getVedanaName(citta.vedana),
+                      label: citta.vedana.localizedName(context.l10n),
                       icon: _getVedanaSymbol(citta.vedana),
                       color: _getVedanaColor(citta.vedana),
                     ),
                     _InfoChip(
-                      label: _getFunctionName(citta.function),
+                      label: citta.function.localizedName(context.l10n),
                       icon: '⚙',
                       color: VdpColors.primaryLight,
                     ),
                     _InfoChip(
-                      label: _getBhumiName(citta.bhumiGroup),
+                      label: citta.bhumiGroup.localizedName(context.l10n),
                       icon: citta.bhumiGroup.name.bhumiSymbol,
                       color: bhumiColor,
                     ),
@@ -205,20 +211,20 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                 ),
 
                 // ── Ghi chú giáo lý ─────────────────────────────────────
-                if (citta.doctrinalNote != null) ...[
+                if (localizedDoctrine != null) ...[
                   const SizedBox(height: 16),
-                  _SectionTitle('📖 Giáo Lý'),
+                  _SectionTitle('📖 ${context.l10n.doctrine}'),
                   Text(
-                    citta.doctrinalNote!,
+                    localizedDoctrine,
                     style: const TextStyle(fontSize: 14, height: 1.6),
                   ),
                 ],
 
                 // ── Ví dụ ───────────────────────────────────────────────
-                if (citta.examples != null && citta.examples!.isNotEmpty) ...[
+                if (localizedExamples.isNotEmpty) ...[
                   const SizedBox(height: 16),
-                  _SectionTitle('💡 Ví dụ'),
-                  ...citta.examples!.map((ex) => Padding(
+                  _SectionTitle('💡 ${context.l10n.examples}'),
+                  ...localizedExamples.map((ex) => Padding(
                         padding: const EdgeInsets.only(bottom: 4),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -235,7 +241,7 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
 
                 // ── Tâm Sở Cố Định ───────────────────────────────────────
                 const SizedBox(height: 16),
-                _SectionTitle('✦ Tâm Sở Cố Định (${alwaysAssocs.length})'),
+                _SectionTitle('✦ ${context.l10n.fixedCetasikasCount(alwaysAssocs.length)}'),
                 Wrap(
                   spacing: 8,
                   runSpacing: 6,
@@ -244,7 +250,7 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                         .where((c) => c.id == assoc.cetasikaId)
                         .firstOrNull;
                     return _CetasikaChip(
-                      label: cs?.nameShort ?? assoc.cetasikaId,
+                      label: cs?.localizedShortName(context) ?? assoc.cetasikaId,
                       type: AssociationType.always,
                     );
                   }).toList(),
@@ -254,7 +260,8 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                 if (sometimesAssocs.isNotEmpty) ...[
                   const SizedBox(height: 12),
                   _SectionTitle(
-                      '◎ Tâm Sở Bất Định (${sometimesAssocs.length})'),
+                    '◎ ${context.l10n.variableCetasikasCount(sometimesAssocs.length)}',
+                  ),
                   Wrap(
                     spacing: 8,
                     runSpacing: 6,
@@ -263,7 +270,7 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                           .where((c) => c.id == assoc.cetasikaId)
                           .firstOrNull;
                       return _CetasikaChip(
-                        label: cs?.nameShort ?? assoc.cetasikaId,
+                        label: cs?.localizedShortName(context) ?? assoc.cetasikaId,
                         type: AssociationType.sometimes,
                         note: assoc.note,
                       );
@@ -289,19 +296,19 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Ghi chú cá nhân'),
+        title: Text(context.l10n.personalNote),
         content: TextField(
           controller: noteController,
           maxLines: 5,
-          decoration: const InputDecoration(
-            hintText: 'Nhập ghi chú của bạn...',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            hintText: context.l10n.personalNoteHint,
+            border: const OutlineInputBorder(),
           ),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Hủy'),
+            child: Text(context.l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -310,7 +317,7 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                   .saveNote(noteKey, noteController.text);
               Navigator.pop(ctx);
             },
-            child: const Text('Lưu'),
+            child: Text(context.l10n.save),
           ),
         ],
       ),
@@ -318,19 +325,6 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
   }
 
   // ─── Label helpers ────────────────────────────────────────────────────────
-
-  String _getVedanaName(Vedana vedana) {
-    switch (vedana) {
-      case Vedana.pleasant:
-        return 'Lạc thọ';
-      case Vedana.unpleasant:
-        return 'Khổ thọ';
-      case Vedana.neutral:
-        return 'Xả thọ';
-      case Vedana.joy:
-        return 'Hỷ thọ';
-    }
-  }
 
   String _getVedanaSymbol(Vedana vedana) {
     switch (vedana) {
@@ -358,35 +352,6 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
     }
   }
 
-  String _getFunctionName(CittaFunction func) {
-    switch (func) {
-      case CittaFunction.kusala:
-        return 'Thiện';
-      case CittaFunction.akusala:
-        return 'Bất Thiện';
-      case CittaFunction.vipaka:
-        return 'Quả';
-      case CittaFunction.kiriya:
-        return 'Duy Tác';
-    }
-  }
-
-  String _getBhumiName(BhumiGroup bhumi) {
-    switch (bhumi) {
-      case BhumiGroup.akusala:
-        return 'Bất Thiện';
-      case BhumiGroup.ahetuka:
-        return 'Vô Nhân';
-      case BhumiGroup.sobhanaKamavacara:
-        return 'Tịnh Hảo DG';
-      case BhumiGroup.rupavacara:
-        return 'Sắc Giới';
-      case BhumiGroup.arupavacara:
-        return 'Vô Sắc Giới';
-      case BhumiGroup.lokuttara:
-        return 'Siêu Thế';
-    }
-  }
 }
 
 // ─── Shared Widgets ──────────────────────────────────────────────────────────
@@ -449,8 +414,10 @@ class _CetasikaChip extends StatelessWidget {
         : VdpSymbols.sometimes;
 
     return Tooltip(
-      message: note ??
-          (type == AssociationType.always ? 'Luôn phối hợp' : 'Có thể có'),
+      message: (!context.usesEnglishContent ? note : null) ??
+          (type == AssociationType.always
+              ? context.l10n.alwaysAssociated
+              : context.l10n.mayBeAssociated),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(

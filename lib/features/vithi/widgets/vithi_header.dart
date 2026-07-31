@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../core/localization/localized_content.dart';
 import '../../../data/models/vithi_model.dart';
 import '../providers/vithi_providers.dart';
 
@@ -12,7 +13,7 @@ class VithiHeader extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(children: [
-      Text(currentVithi.nameVietnamese,
+      Text(currentVithi.localizedName(context),
           style: const TextStyle(color: Colors.white, fontSize: 18)),
       Text(currentVithi.namePali, style: const TextStyle(color: Colors.amber)),
     ]);

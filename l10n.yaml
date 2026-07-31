@@ -1,0 +1,10 @@
+arb-dir: lib/l10n
+# English is the international fallback. Vietnamese remains fully translated and
+# is the default content language for Vietnamese devices.
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+synthetic-package: false
+nullable-getter: false
+untranslated-messages-file: untranslated_messages.json
+use-escaping: true

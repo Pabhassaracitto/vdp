@@ -6,6 +6,8 @@
 //   • Góc DƯỚI-TRÁI : "Tâm ↓"    (hướng đọc hàng — xuống dưới)
 
 import 'package:flutter/material.dart';
+
+import '../../l10n/l10n.dart';
 import '../../core/theme/vdp_theme.dart';
 
 class MatrixCornerHeader extends StatelessWidget {
@@ -30,7 +32,7 @@ class MatrixCornerHeader extends StatelessWidget {
         isHighContrast ? HCColors.border : Colors.white54;
 
     return Semantics(
-      label: 'Góc bảng: hàng là Tâm chiều dọc, cột là Tâm Sở chiều ngang',
+      label: context.l10n.matrixCornerSemantics,
       header: true,
       child: SizedBox(
         width: width,
@@ -64,7 +66,7 @@ class MatrixCornerHeader extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          'Tâm Sở',
+                          context.l10n.cetasika,
                           textScaler: TextScaler.noScaling,
                           style: TextStyle(
                             color: textColor,
@@ -98,7 +100,7 @@ class MatrixCornerHeader extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Tâm',
+                          context.l10n.citta,
                           textScaler: TextScaler.noScaling,
                           style: TextStyle(
                             color: textColor,

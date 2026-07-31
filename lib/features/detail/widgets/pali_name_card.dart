@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../l10n/l10n.dart';
+
 /// Card hiển thị tên Pāḷi + nút phát âm TTS.
 /// Dùng chung cho cả Citta và Cetasika.
 class PaliNameCard extends StatelessWidget {
@@ -23,7 +25,7 @@ class PaliNameCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(14, 10, 8, 10),
+      padding: const EdgeInsetsDirectional.fromSTEB(14, 10, 8, 10),
       decoration: BoxDecoration(
         color: accentColor.withOpacity(0.05),
         borderRadius: BorderRadius.circular(10),
@@ -34,12 +36,14 @@ class PaliNameCard extends StatelessWidget {
         children: [
           // ── Text block ──────────────────────────────────────────
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+            child: Directionality(
+              textDirection: TextDirection.ltr,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                 // Label "Pāḷi:"
                 Text(
-                  'Pāḷi:',
+                  context.l10n.paliLabel,
                   style: TextStyle(
                     fontSize: 10,
                     color: Colors.grey.shade500,
@@ -69,7 +73,8 @@ class PaliNameCard extends StatelessWidget {
                     ),
                   ),
                 ],
-              ],
+                ],
+              ),
             ),
           ),
 
@@ -83,7 +88,9 @@ class PaliNameCard extends StatelessWidget {
 
           // ── Nút loa ─────────────────────────────────────────────
           Tooltip(
-            message: isSpeaking ? 'Dừng phát âm' : 'Nghe phát âm Pāḷi',
+            message: isSpeaking
+                ? context.l10n.stopPronunciation
+                : context.l10n.listenPaliPronunciation,
             child: Material(
               color: Colors.transparent,
               child: InkWell(

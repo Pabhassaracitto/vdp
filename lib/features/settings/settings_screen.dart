@@ -1,14 +1,12 @@
-// lib/features/settings/settings_screen.dart
-// Cài đặt - Accessibility, High Contrast, Reset Progress
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:vdp_app/data/models/study_module.dart';
 
+import '../../core/localization/language_settings.dart';
 import '../../core/theme/vdp_theme.dart';
+import '../../data/models/study_module.dart';
+import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
 
-// Settings state
 class AppSettings {
   final bool highContrastMode;
   final bool screenReaderHints;
@@ -24,12 +22,13 @@ class AppSettings {
     bool? highContrastMode,
     bool? screenReaderHints,
     double? textScaleFactor,
-  }) =>
-      AppSettings(
-        highContrastMode: highContrastMode ?? this.highContrastMode,
-        screenReaderHints: screenReaderHints ?? this.screenReaderHints,
-        textScaleFactor: textScaleFactor ?? this.textScaleFactor,
-      );
+  }) {
+    return AppSettings(
+      highContrastMode: highContrastMode ?? this.highContrastMode,
+      screenReaderHints: screenReaderHints ?? this.screenReaderHints,
+      textScaleFactor: textScaleFactor ?? this.textScaleFactor,
+    );
+  }
 }
 
 final settingsProvider =
@@ -45,38 +44,38 @@ class SettingsScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cài Đặt', style: TextStyle(fontSize: 18)),
+        title: Text(
+          context.l10n.navSettings,
+          style: const TextStyle(fontSize: 18),
+        ),
       ),
       body: ListView(
         children: [
-          // App info
-          _buildAppHeader(),
-
-          const _SectionDivider('♿ Trợ Năng (Accessibility)'),
-
-          // High contrast
+          _buildAppHeader(context),
+          _SectionDivider('🌐 ${context.l10n.languageSection}'),
+          const LanguageSettingsSection(),
+          _SectionDivider('♿ ${context.l10n.settingsAccessibility}'),
           SwitchListTile(
-            title: const Text('Chế độ tương phản cao'),
-            subtitle:
-                const Text('Tăng độ tương phản màu sắc cho người khó nhìn'),
+            title: Text(context.l10n.highContrastMode),
+            subtitle: Text(context.l10n.highContrastSubtitle),
             value: settings.highContrastMode,
-            onChanged: (v) => ref.read(settingsProvider.notifier).state =
-                settings.copyWith(highContrastMode: v),
+            onChanged: (value) {
+              ref.read(settingsProvider.notifier).state =
+                  settings.copyWith(highContrastMode: value);
+            },
             secondary: const Icon(Icons.contrast),
           ),
-
-          // Screen reader hints
           SwitchListTile(
-            title: const Text('Gợi ý trình đọc màn hình'),
-            subtitle: const Text('Mô tả chi tiết hơn cho TalkBack / VoiceOver'),
+            title: Text(context.l10n.screenReaderHints),
+            subtitle: Text(context.l10n.screenReaderHintsSubtitle),
             value: settings.screenReaderHints,
-            onChanged: (v) => ref.read(settingsProvider.notifier).state =
-                settings.copyWith(screenReaderHints: v),
+            onChanged: (value) {
+              ref.read(settingsProvider.notifier).state =
+                  settings.copyWith(screenReaderHints: value);
+            },
             secondary: const Icon(Icons.record_voice_over),
           ),
-
-          // Text scale
-          const _SectionDivider('🔤 Cỡ Chữ'),
+          _SectionDivider('🔤 ${context.l10n.textSize}'),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
             child: Column(
@@ -85,10 +84,15 @@ class SettingsScreen extends ConsumerWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text('Tỉ lệ chữ', style: TextStyle(fontSize: 15)),
+                    Text(
+                      context.l10n.textScale,
+                      style: const TextStyle(fontSize: 15),
+                    ),
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 4),
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
                       decoration: BoxDecoration(
                         color: VdpColors.primary.withOpacity(0.1),
                         borderRadius: BorderRadius.circular(6),
@@ -110,32 +114,28 @@ class SettingsScreen extends ConsumerWidget {
                   divisions: 7,
                   label: '${(settings.textScaleFactor * 100).round()}%',
                   activeColor: VdpColors.primary,
-                  onChanged: (v) => ref.read(settingsProvider.notifier).state =
-                      settings.copyWith(textScaleFactor: v),
+                  onChanged: (value) {
+                    ref.read(settingsProvider.notifier).state =
+                        settings.copyWith(textScaleFactor: value);
+                  },
                 ),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('A',
-                        style: TextStyle(fontSize: 12, color: Colors.grey)),
-                    Text('A',
-                        style: TextStyle(fontSize: 22, color: Colors.grey)),
+                    Text('A', style: TextStyle(fontSize: 12)),
+                    Text('A', style: TextStyle(fontSize: 22)),
                   ],
                 ),
               ],
             ),
           ),
-
-          const _SectionDivider('📊 Tiến Độ Học Tập'),
-
-          // Unlock all modules
+          _SectionDivider('📊 ${context.l10n.studyProgress}'),
           SwitchListTile(
-            title: const Text('Mở khóa tất cả bài học'),
-            subtitle: const Text(
-                'Lộ trình tuần tự giúp xây dựng nền tảng vững chắc. Nếu bạn đã có kiến thức nền, bạn có thể mở khóa toàn bộ bài học để tự do lựa chọn.'),
+            title: Text(context.l10n.unlockAllLessons),
+            subtitle: Text(context.l10n.unlockAllLessonsSubtitle),
             value: progress.allModulesUnlocked,
-            onChanged: (v) {
-              if (v) {
+            onChanged: (value) {
+              if (value) {
                 _confirmUnlockAll(context, ref);
               } else {
                 ref
@@ -143,76 +143,73 @@ class SettingsScreen extends ConsumerWidget {
                     .toggleAllModulesUnlocked(false);
               }
             },
-            secondary: const Icon(Icons.lock_open, color: VdpColors.secondary),
+            secondary: const Icon(
+              Icons.lock_open,
+              color: VdpColors.secondary,
+            ),
           ),
-
-          // Progress summary
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
             child: _ProgressSummary(progress: progress),
           ),
-
-          // Reset progress
-          // Reset progress
           ListTile(
             leading: const Icon(Icons.refresh, color: Colors.orange),
-            title: const Text('Đặt lại tiến độ'),
-            subtitle: const Text('Xóa toàn bộ dữ liệu học tập'),
+            title: Text(context.l10n.resetProgress),
+            subtitle: Text(context.l10n.resetProgressSubtitle),
             onTap: () => _confirmReset(context, ref),
           ),
-          // Reset warning
           if (ref.watch(
-              progressProvider.notifier.select((n) => n.warningDismissed)))
+            progressProvider.notifier.select((notifier) => notifier.warningDismissed),
+          ))
             ListTile(
-              leading:
-                  const Icon(Icons.notifications_active, color: Colors.orange),
-              title: const Text('Hiện lại cảnh báo dữ liệu'),
-              subtitle: const Text('Bật lại thông báo banner Bảng Tương Ưng'),
+              leading: const Icon(
+                Icons.notifications_active,
+                color: Colors.orange,
+              ),
+              title: Text(context.l10n.showDataWarningAgain),
+              subtitle: Text(context.l10n.showDataWarningAgainSubtitle),
               onTap: () {
                 ref.read(progressProvider.notifier).resetWarningDismissed();
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Đã bật lại cảnh báo')),
-                  );
-                }
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(context.l10n.dataWarningEnabled)),
+                );
               },
             ),
-
-          const _SectionDivider('ℹ️ Về Ứng Dụng'),
-
-          const ListTile(
-            leading: Icon(Icons.info_outline),
-            title: Text('Phiên bản'),
-            trailing: Text('1.0.0', style: TextStyle(color: Colors.grey)),
+          _SectionDivider('ℹ️ ${context.l10n.aboutApp}'),
+          ListTile(
+            leading: const Icon(Icons.info_outline),
+            title: Text(context.l10n.version),
+            trailing: const Text(
+              '0.2.0',
+              style: TextStyle(color: Colors.grey),
+            ),
           ),
-
-          const ListTile(
-            leading: Icon(Icons.book_outlined),
-            title: Text('Nguồn tài liệu'),
-            subtitle: Text('Giáo trình King Milanda A — Abhidhamma'),
+          ListTile(
+            leading: const Icon(Icons.book_outlined),
+            title: Text(context.l10n.sourceMaterial),
+            subtitle: Text(context.l10n.sourceMaterialValue),
           ),
-
-          const ListTile(
-            leading: Icon(Icons.gavel),
-            title: Text('Nguyên tắc biên soạn'),
-            subtitle:
-                Text('Offline-First · Accuracy-First · Accessibility-First'),
+          ListTile(
+            leading: const Icon(Icons.gavel),
+            title: Text(context.l10n.editorialPrinciples),
+            subtitle: const Text(
+              'Offline-First · Accuracy-First · Accessibility-First',
+            ),
           ),
-
           const SizedBox(height: 40),
         ],
       ),
     );
   }
 
-  Widget _buildAppHeader() {
+  Widget _buildAppHeader(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [VdpColors.primary, VdpColors.primaryLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+          begin: AlignmentDirectional.topStart,
+          end: AlignmentDirectional.bottomEnd,
         ),
       ),
       child: Row(
@@ -228,22 +225,27 @@ class SettingsScreen extends ConsumerWidget {
             child: const Text('☸', style: TextStyle(fontSize: 36)),
           ),
           const SizedBox(width: 16),
-          const Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Vi Diệu Pháp',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w900,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  context.l10n.appName,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
-              ),
-              Text(
-                'Abhidhamma Interactive',
-                style: TextStyle(color: Colors.white70, fontSize: 13),
-              ),
-            ],
+                Text(
+                  context.l10n.appTagline,
+                  style: const TextStyle(
+                    color: Colors.white70,
+                    fontSize: 13,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
@@ -251,31 +253,28 @@ class SettingsScreen extends ConsumerWidget {
   }
 
   void _confirmReset(BuildContext context, WidgetRef ref) {
-    showDialog(
+    showDialog<void>(
       context: context,
-      builder: (_) => AlertDialog(
-        title: const Text('Đặt lại tiến độ?'),
-        content: const Text(
-          'Toàn bộ tiến độ học tập và điểm quiz sẽ bị xóa.\n'
-          'Hành động này không thể hoàn tác.',
-        ),
+      builder: (dialogContext) => AlertDialog(
+        title: Text(context.l10n.resetProgressQuestion),
+        content: Text(context.l10n.resetProgressWarning),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Hủy'),
+            onPressed: () => Navigator.pop(dialogContext),
+            child: Text(context.l10n.cancel),
           ),
-          ElevatedButton(
+          FilledButton(
             onPressed: () async {
-              Navigator.pop(context);
+              Navigator.pop(dialogContext);
               await ref.read(progressProvider.notifier).resetAll();
               if (context.mounted) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Đã đặt lại tiến độ học tập')),
+                  SnackBar(content: Text(context.l10n.progressResetSuccess)),
                 );
               }
             },
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            child: const Text('Đặt lại', style: TextStyle(color: Colors.white)),
+            style: FilledButton.styleFrom(backgroundColor: Colors.red),
+            child: Text(context.l10n.reset),
           ),
         ],
       ),
@@ -283,29 +282,24 @@ class SettingsScreen extends ConsumerWidget {
   }
 
   void _confirmUnlockAll(BuildContext context, WidgetRef ref) {
-    showDialog(
+    showDialog<void>(
       context: context,
-      builder: (_) => AlertDialog(
-        title: const Text('Mở khóa các bài học?'),
-        content: const Text(
-          'Lộ trình tuần tự là cách hiệu quả nhất để nắm vững giáo lý Vi Diệu Pháp.\n\n'
-          'Tính năng này phù hợp cho người đã có nền tảng. Bạn có thể quay lại học theo lộ trình bất cứ lúc nào.',
-        ),
+      builder: (dialogContext) => AlertDialog(
+        title: Text(context.l10n.unlockLessonsQuestion),
+        content: Text(context.l10n.unlockLessonsWarning),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Giữ tuần tự'),
+            onPressed: () => Navigator.pop(dialogContext),
+            child: Text(context.l10n.keepGuidedPath),
           ),
-          ElevatedButton(
+          FilledButton(
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.pop(dialogContext);
               ref
                   .read(progressProvider.notifier)
                   .toggleAllModulesUnlocked(true);
             },
-            style:
-                ElevatedButton.styleFrom(backgroundColor: VdpColors.secondary),
-            child: const Text('Mở khóa', style: TextStyle(color: Colors.white)),
+            child: Text(context.l10n.unlock),
           ),
         ],
       ),
@@ -320,7 +314,7 @@ class _SectionDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 20, 20, 6),
+      padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 6),
       child: Text(
         title,
         style: TextStyle(
@@ -341,9 +335,9 @@ class _ProgressSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final completed = progress.moduleProgress.values
-        .where((m) => m.completionPercentage >= 80)
+        .where((module) => module.completionPercentage >= 80)
         .length;
-    final pct = (progress.overallProgress * 100).round();
+    final percent = (progress.overallProgress * 100).round();
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -364,11 +358,12 @@ class _ProgressSummary extends StatelessWidget {
                   value: progress.overallProgress,
                   strokeWidth: 6,
                   backgroundColor: Colors.grey.shade200,
-                  valueColor:
-                      const AlwaysStoppedAnimation<Color>(VdpColors.secondary),
+                  valueColor: const AlwaysStoppedAnimation<Color>(
+                    VdpColors.secondary,
+                  ),
                 ),
                 Text(
-                  '$pct%',
+                  '$percent%',
                   style: const TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.bold,
@@ -379,35 +374,41 @@ class _ProgressSummary extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 16),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '$completed / ${progress.moduleProgress.length} module hoàn thành',
-                style:
-                    const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-              ),
-              if (progress.lastModuleId != null)
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                 Text(
-                  'Module gần nhất: ${progress.lastModuleId}',
+                  context.l10n.modulesCompleted(
+                    completed,
+                    progress.moduleProgress.length,
+                  ),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                if (progress.lastModuleId != null)
+                  Text(
+                    context.l10n.mostRecentModule(progress.lastModuleId!),
+                    style: const TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                Text(
+                  context.l10n.lastStudied(_formatDate(context)),
                   style: const TextStyle(fontSize: 12, color: Colors.grey),
                 ),
-              Text(
-                'Học lần cuối: ${_formatDate(progress.lastStudied)}',
-                style: const TextStyle(fontSize: 12, color: Colors.grey),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
     );
   }
 
-  String _formatDate(DateTime dt) {
-    final now = DateTime.now();
-    final diff = now.difference(dt);
-    if (diff.inDays == 0) return 'Hôm nay';
-    if (diff.inDays == 1) return 'Hôm qua';
-    return '${diff.inDays} ngày trước';
+  String _formatDate(BuildContext context) {
+    final difference = DateTime.now().difference(progress.lastStudied);
+    if (difference.inDays == 0) return context.l10n.today;
+    if (difference.inDays == 1) return context.l10n.yesterday;
+    return context.l10n.daysAgo(difference.inDays);
   }
 }

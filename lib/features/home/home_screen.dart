@@ -8,6 +8,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/vdp_theme.dart';
 import '../../data/repositories/vdp_repository.dart';
+import '../../l10n/l10n.dart';
 import '../matrix/matrix_screen.dart';
 import '../paticca/presentation/screens/paticca_screen.dart';
 import '../settings/settings_screen.dart';
@@ -41,19 +42,35 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     super.dispose();
   }
 
-  static const _tabs = [
-    _TabItem(
-        icon: Icons.grid_view, label: 'Bảng Tương Ưng', widget: MatrixScreen()),
-    _TabItem(icon: Icons.school, label: 'Học Tập', widget: StudyScreen()),
-    _TabItem(
-        icon: Icons.account_tree, label: 'Nhân Duyên', widget: PaticcaScreen()),
-    _TabItem(
-        icon: Icons.timeline, label: 'Lộ trình Tâm', widget: VithiScreen()),
-    _TabItem(icon: Icons.settings, label: 'Cài đặt', widget: SettingsScreen()),
-  ];
-
   @override
   Widget build(BuildContext context) {
+    final tabs = [
+      _TabItem(
+        icon: Icons.grid_view,
+        label: context.l10n.navMatrix,
+        widget: const MatrixScreen(),
+      ),
+      _TabItem(
+        icon: Icons.school,
+        label: context.l10n.navStudy,
+        widget: const StudyScreen(),
+      ),
+      _TabItem(
+        icon: Icons.account_tree,
+        label: context.l10n.navConditions,
+        widget: const PaticcaScreen(),
+      ),
+      _TabItem(
+        icon: Icons.timeline,
+        label: context.l10n.navMindProcess,
+        widget: const VithiScreen(),
+      ),
+      _TabItem(
+        icon: Icons.settings,
+        label: context.l10n.navSettings,
+        widget: const SettingsScreen(),
+      ),
+    ];
     final tab = ref.watch(_currentTabProvider);
     final dataState = ref.watch(vdpRepositoryProvider);
     // M1-T4: Detect HC mode from theme brightness
@@ -65,18 +82,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     }
 
     if (dataState.status == DataLoadStatus.error) {
-      return _ErrorScreen(
-          message: dataState.errorMessage ?? 'Lỗi không xác định');
+      return _ErrorScreen(message: context.l10n.unknownError);
     }
 
     if (dataState.status == DataLoadStatus.validationFailed) {
-      return _ErrorScreen(message: dataState.errorMessage ?? 'Lỗi dữ liệu');
+      return _ErrorScreen(message: context.l10n.invalidDataDescription);
     }
 
     return Scaffold(
       body: IndexedStack(
         index: tab,
-        children: _tabs.map((t) => t.widget).toList(),
+        children: tabs.map((t) => t.widget).toList(),
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: tab,
@@ -85,7 +101,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         // M1-T4: HC fix — nền tối trong HC mode, tránh hòa lẫn với nền trắng
         backgroundColor: isHC ? HCColors.surface : VdpColors.surface,
         indicatorColor: VdpColors.primary.withOpacity(0.12),
-        destinations: _tabs
+        destinations: tabs
             .map((t) => NavigationDestination(
                   // M1-T4: HC fix — icon chưa chọn phải rõ trên nền đen
                   icon: Icon(t.icon, color: isHC ? HCColors.textMuted : null),
@@ -133,17 +149,20 @@ class _LoadingScreen extends StatelessWidget {
               child: const Text('☸', style: TextStyle(fontSize: 52)),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'Vi Diệu Pháp',
-              style: TextStyle(
+            Text(
+              context.l10n.appName,
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w900,
                 color: VdpColors.primary,
               ),
             ),
-            const Text(
-              'Abhidhamma',
-              style: TextStyle(fontSize: 14, color: VdpColors.primaryLight),
+            Text(
+              context.l10n.appTagline,
+              style: const TextStyle(
+                fontSize: 14,
+                color: VdpColors.primaryLight,
+              ),
             ),
             const SizedBox(height: 40),
             const SizedBox(
@@ -156,7 +175,7 @@ class _LoadingScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              'Đang tải và kiểm tra dữ liệu giáo lý…',
+              context.l10n.loadingDoctrineData,
               style: TextStyle(
                 color: isHC ? HCColors.textSecondary : Colors.grey,
                 fontSize: 13,
@@ -167,8 +186,7 @@ class _LoadingScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Text(
-                  'Quá trình khởi động đang mất nhiều thời gian hơn dự kiến. '
-                  'Có thể do dữ liệu giáo lý đang được tối ưu hóa cho thiết bị của bạn.',
+                  context.l10n.loadingTakingLonger,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: isHC ? HCColors.textPrimary : Colors.orange.shade700,
@@ -203,9 +221,9 @@ class _ErrorScreen extends StatelessWidget {
           children: [
             const Icon(Icons.error_outline, color: VdpColors.error, size: 64),
             const SizedBox(height: 20),
-            const Text(
-              'Dữ liệu không hợp lệ',
-              style: TextStyle(
+            Text(
+              context.l10n.invalidData,
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: VdpColors.error,
@@ -213,8 +231,7 @@ class _ErrorScreen extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             Text(
-              'Hệ thống phát hiện vi phạm quy tắc giáo lý.\n'
-              'Vui lòng liên hệ đội biên soạn để kiểm tra lại dữ liệu.',
+              context.l10n.invalidDataDescription,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: isHC ? HCColors.textSecondary : Colors.grey,

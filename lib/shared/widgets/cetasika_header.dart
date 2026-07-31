@@ -1,8 +1,10 @@
 // lib/shared/widgets/cetasika_header.dart
 
 import 'package:flutter/material.dart';
+import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
+import '../../l10n/l10n.dart';
 
 class CetasikaHeader extends StatelessWidget {
   final CetasikaModel cetasika;
@@ -31,20 +33,26 @@ class CetasikaHeader extends StatelessWidget {
     final groupColor = _getGroupColor(cetasika.group);
     final groupSymbol = _getGroupSymbol(cetasika.group);
 
+    final localizedName = cetasika.localizedName(context);
+    final localizedShortName = cetasika.localizedShortName(context);
     final displayName = isLandscape
-        ? _abbreviate(cetasika.nameShort)
-        : cetasika.nameShort;
+        ? _abbreviate(localizedShortName)
+        : localizedShortName;
 
     final double nameFontSize = isLandscape ? 7.5 : 11.0;
     final double symbolFontSize = isLandscape ? 8.0 : 12.0;
     final double indexFontSize = isLandscape ? 7.0 : 9.0;
 
     return Semantics(
-      label: 'Tâm Sở ${cetasika.nameVietnamese} (${cetasika.namePali}), '
-          'nhóm ${_getGroupName(cetasika.group)}. '
-          '${isSelected ? "Đang được chọn" : ""}'
-          '${isDimmed ? "Bị mờ do xung đột" : ""}'
-          ' Nhấn để xem chi tiết',
+      label: context.l10n.cetasikaSemantics(
+        localizedName,
+        cetasika.namePali,
+        cetasika.group.localizedName(context.l10n, includeCount: true),
+        [
+          if (isSelected) context.l10n.selected,
+          if (isDimmed) context.l10n.dimmedByConflict,
+        ].join('. '),
+      ),
       button: true,
       selected: isSelected,
       child: AnimatedOpacity(
@@ -60,12 +68,12 @@ class CetasikaHeader extends StatelessWidget {
                   : (useHighContrast
                       ? HCColors.surface
                       : groupColor.withValues(alpha: 0.08)),
-              border: Border(
+              border: BorderDirectional(
                 top: BorderSide(
                   color: groupColor,
                   width: isLandscape ? 2 : 3,
                 ),
-                right: BorderSide(
+                end: BorderSide(
                   color: useHighContrast
                       ? HCColors.textMuted.withValues(alpha: 0.2)
                       : Colors.grey.shade200,
@@ -211,16 +219,4 @@ class CetasikaHeader extends StatelessWidget {
     }
   }
 
-  String _getGroupName(CetasikaGroup group) {
-    switch (group) {
-      case CetasikaGroup.sabbacittasadharana:
-        return '7 Tâm Sở Biến Hành';
-      case CetasikaGroup.pakinnaka:
-        return '6 Tâm Sở Biệt Cảnh';
-      case CetasikaGroup.akusala:
-        return '14 Tâm Sở Bất Thiện';
-      case CetasikaGroup.sobhana:
-        return '25 Tâm Sở Tịnh Hảo';
-    }
-  }
 }

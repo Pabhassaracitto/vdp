@@ -8,9 +8,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/localization/content_catalog.dart';
+import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/study_module.dart';
 import '../../data/repositories/vdp_repository.dart';
+import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
 import 'services/quiz_generator.dart';
 
@@ -82,13 +85,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         backgroundColor: color,
         foregroundColor: Colors.white,
         title: Text(
-          'Quiz: ${widget.module.title}',
+          '${context.l10n.testTab}: ${widget.module.localizedTitle(context)}',
           style: const TextStyle(fontSize: 15),
         ),
         actions: [
           if (_started && !_finished)
             Padding(
-              padding: const EdgeInsets.only(right: 16),
+              padding: const EdgeInsetsDirectional.only(end: 16),
               child: Center(
                 child: Text(
                   '${_currentIndex + 1} / ${_questions.length}',
@@ -118,7 +121,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         children: [
           const SizedBox(height: 16),
           Text(
-            'Chọn Cấp Độ',
+            context.l10n.chooseLevel,
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
@@ -126,9 +129,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Mỗi cấp độ có tối đa $_kMaxQuestions câu hỏi tự động sinh\n'
-            'từ nội dung module này',
+          Text(
+            context.l10n.quizLevelDescription(_kMaxQuestions),
             style: TextStyle(color: Colors.grey, fontSize: 13),
             textAlign: TextAlign.center,
           ),
@@ -163,9 +165,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: const Text(
-                'Bắt đầu',
-                style: TextStyle(fontSize: 17),
+              child: Text(
+                context.l10n.start,
+                style: const TextStyle(fontSize: 17),
               ),
             ),
           ),
@@ -178,11 +180,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   Widget _buildQuestion(Color color) {
     if (_questions.isEmpty) {
-      return const Center(
+      return Center(
         child: Padding(
-          padding: EdgeInsets.all(32),
+          padding: const EdgeInsets.all(32),
           child: Text(
-            'Module này chưa đủ dữ liệu để tạo câu hỏi.',
+            context.l10n.insufficientQuizData,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 15, color: Colors.grey),
           ),
@@ -272,7 +274,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                             ),
                             const SizedBox(width: 6),
                             Text(
-                              'Giải thích',
+                              context.l10n.explanation,
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.blue.shade700,
@@ -315,8 +317,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 ),
                 child: Text(
                   _currentIndex + 1 < _questions.length
-                      ? 'Câu tiếp theo'
-                      : 'Xem kết quả',
+                      ? context.l10n.nextQuestion
+                      : context.l10n.viewResults,
                   style: const TextStyle(fontSize: 16),
                 ),
               ),
@@ -356,14 +358,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               ),
             ),
             Text(
-              '$_score / $total câu đúng',
+              context.l10n.correctAnswers(_score, total),
               style: const TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 12),
             Text(
               passed
-                  ? 'Xuất sắc! Bạn đã nắm vững module này.'
-                  : 'Hãy ôn lại và thử lại nhé!',
+                  ? context.l10n.quizExcellent
+                  : context.l10n.quizTryAgain,
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 15, height: 1.5),
             ),
@@ -373,7 +375,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               children: [
                 OutlinedButton(
                   onPressed: _restartQuiz,
-                  child: const Text('Làm lại'),
+                  child: Text(context.l10n.tryAgain),
                 ),
                 const SizedBox(width: 16),
                 ElevatedButton(
@@ -382,7 +384,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                     backgroundColor: color,
                     foregroundColor: Colors.white,
                   ),
-                  child: const Text('Xong'),
+                  child: Text(context.l10n.done),
                 ),
               ],
             ),
@@ -403,6 +405,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       module: widget.module,
       dataState: dataState,
       level: _level,
+      l10n: context.l10n,
+      contentCatalog: context.contentCatalog,
       random: _rng,
     );
 
@@ -411,7 +415,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Module "${widget.module.title}" chưa đủ dữ liệu để tạo câu hỏi.',
+            context.l10n.quizInsufficientDataMessage(
+              widget.module.localizedTitle(context),
+            ),
           ),
           behavior: SnackBarBehavior.floating,
           backgroundColor: Colors.orange.shade700,
@@ -483,10 +489,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   // ── Label helpers (UI only) ────────────────────────────────────────────────
 
   String _getTypeName(QuizQuestionType t) => switch (t) {
-        QuizQuestionType.cetasikaGroup => 'Phân Loại Tâm Sở',
-        QuizQuestionType.cittaVedana => 'Nhận Diện Thọ',
-        QuizQuestionType.conflictDetect => 'Xung Đột Giáo Lý',
-        QuizQuestionType.cittaBhumi => 'Cõi Giới',
+        QuizQuestionType.cetasikaGroup => context.l10n.quizTypeCetasikaGroup,
+        QuizQuestionType.cittaVedana => context.l10n.quizTypeFeeling,
+        QuizQuestionType.conflictDetect => context.l10n.quizTypeConflict,
+        QuizQuestionType.cittaBhumi => context.l10n.quizTypeSphere,
       };
 }
 
@@ -507,20 +513,20 @@ class _LevelCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final (title, subtitle, icon, color) = switch (level) {
       QuizLevel.beginner => (
-          'Sơ Cấp',
-          'Nhóm Tâm Sở & Thọ cơ bản',
+          context.l10n.beginner,
+          context.l10n.beginnerDescription,
           '🌱',
           Colors.green,
         ),
       QuizLevel.intermediate => (
-          'Trung Cấp',
-          '+ Xung đột Tâm Sở (Conflict)',
+          context.l10n.intermediate,
+          context.l10n.intermediateDescription,
           '🔥',
           Colors.orange,
         ),
       QuizLevel.advanced => (
-          'Nâng Cao',
-          '+ Cõi Giới & toàn bộ loại câu hỏi',
+          context.l10n.advanced,
+          context.l10n.advancedDescription,
           '⚡',
           Colors.purple,
         ),

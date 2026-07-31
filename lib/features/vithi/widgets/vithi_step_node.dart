@@ -1,6 +1,6 @@
 // lib/features/vithi/widgets/vithi_step_node.dart
 import 'package:flutter/material.dart';
-import '../../../../data/models/vithi_model.dart';
+import '../../../data/models/vithi_model.dart';
 import '../utils/vithi_color_mapper.dart';
 import '../utils/vithi_label_mapper.dart';
 

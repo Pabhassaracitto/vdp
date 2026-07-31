@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../../data/models/citta_model.dart';
 import '../../core/theme/vdp_theme.dart';
+import '../../l10n/l10n.dart';
 
 class AssociationCell extends StatelessWidget {
   final String cittaId;
@@ -40,7 +41,11 @@ class AssociationCell extends StatelessWidget {
     bool isHighlighted = isCittaHighlighted || isCetasikaHighlighted;
 
     return Semantics(
-      label: '${_getAssocTypeName(type)} - Tâm $cittaId với Tâm Sở $cetasikaId',
+      label: context.l10n.associationSemantics(
+        type.localizedName(context.l10n),
+        cittaId,
+        cetasikaId,
+      ),
       button: false,
       child: AnimatedOpacity(
         duration: const Duration(milliseconds: 200),
@@ -128,16 +133,6 @@ class AssociationCell extends StatelessWidget {
     }
   }
 
-  String _getAssocTypeName(AssociationType type) {
-    switch (type) {
-      case AssociationType.always:
-        return 'Cố định';
-      case AssociationType.sometimes:
-        return 'Bất định';
-      case AssociationType.never:
-        return 'Không phối hợp';
-    }
-  }
 }
 
 class _CellInfo {

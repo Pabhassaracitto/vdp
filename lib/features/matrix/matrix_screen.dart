@@ -6,7 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/localization/content_catalog.dart';
+import '../../core/localization/locale_controller.dart';
 import '../../core/theme/vdp_theme.dart';
+import '../../l10n/l10n.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/repositories/vdp_repository.dart';
@@ -38,9 +41,20 @@ final searchMatchedCittaIndicesProvider = Provider<Set<int>>((ref) {
   if (query.isEmpty || searchType != SearchType.citta) return {};
 
   final cittas = ref.watch(cittasProvider);
+  final contentLocale = ref.watch(localeSettingsProvider).contentLocale;
+  final catalog = ref.watch(contentCatalogProvider(contentLocale)).maybeWhen(
+        data: (value) => value,
+        orElse: () => ContentCatalog.vietnamese,
+      );
   final matches = <int>{};
   for (int i = 0; i < cittas.length; i++) {
-    if (cittas[i].nameVietnamese.toLowerCase().contains(query) ||
+    final localizedName = catalog.text(
+      'cittas',
+      cittas[i].id,
+      'name',
+      cittas[i].nameVietnamese,
+    );
+    if (localizedName.toLowerCase().contains(query) ||
         cittas[i].namePali.toLowerCase().contains(query)) {
       matches.add(i);
     }
@@ -54,9 +68,20 @@ final searchMatchedCetasikaIndicesProvider = Provider<Set<int>>((ref) {
   if (query.isEmpty || searchType != SearchType.cetasika) return {};
 
   final cetasikas = ref.watch(cetasikasProvider);
+  final contentLocale = ref.watch(localeSettingsProvider).contentLocale;
+  final catalog = ref.watch(contentCatalogProvider(contentLocale)).maybeWhen(
+        data: (value) => value,
+        orElse: () => ContentCatalog.vietnamese,
+      );
   final matches = <int>{};
   for (int i = 0; i < cetasikas.length; i++) {
-    if (cetasikas[i].nameVietnamese.toLowerCase().contains(query) ||
+    final localizedName = catalog.text(
+      'cetasikas',
+      cetasikas[i].id,
+      'name',
+      cetasikas[i].nameVietnamese,
+    );
+    if (localizedName.toLowerCase().contains(query) ||
         cetasikas[i].namePali.toLowerCase().contains(query)) {
       matches.add(i);
     }
@@ -144,11 +169,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       setState(() => _forceLandscape = goLandscape);
       if (goLandscape) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text(
-              '📱 Nếu không xoay, hãy bật "Xoay tự động" trong cài đặt hệ thống.',
-            ),
-            duration: Duration(seconds: 3),
+          SnackBar(
+            content: Text('📱 ${context.l10n.rotationHint}'),
+            duration: const Duration(seconds: 3),
           ),
         );
       }
@@ -194,18 +217,17 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Semantics(
-          label:
-              'Bảng Tương Ưng Vi Diệu Pháp, đang hiển thị ${cittas.length} Tâm',
-          child: const Column(
+          label: context.l10n.matrixSemantics(cittas.length),
+          child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Bảng Tương Ưng Vi Diệu Pháp',
-                style: TextStyle(fontSize: 18),
+                context.l10n.matrixTitle,
+                style: const TextStyle(fontSize: 18),
               ),
               Text(
-                'Abhidhamma Matrix',
-                style: TextStyle(fontSize: 12, color: Colors.white70),
+                context.l10n.appTagline,
+                style: const TextStyle(fontSize: 12, color: Colors.white70),
               ),
             ],
           ),
@@ -218,7 +240,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                   : Icons.stay_current_landscape,
             ),
             onPressed: _toggleOrientation,
-            tooltip: 'Xoay màn hình',
+            tooltip: context.l10n.rotateScreen,
           ),
           IconButton(
             icon: Icon(
@@ -226,12 +248,12 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
             ),
             onPressed: () =>
                 setState(() => _showHighContrastMode = !_showHighContrastMode),
-            tooltip: 'Tương phản cao',
+            tooltip: context.l10n.highContrast,
           ),
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () => _showHelp(context),
-            tooltip: 'Hướng dẫn',
+            tooltip: context.l10n.help,
           ),
         ],
       ),
@@ -285,7 +307,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           Expanded(
             child: TextField(
               decoration: InputDecoration(
-                hintText: 'Tìm Tâm hoặc Tâm Sở...',
+                hintText: context.l10n.searchCittaCetasika,
                 hintStyle: TextStyle(fontSize: isLandscape ? 13 : 14),
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: query.isNotEmpty
@@ -295,7 +317,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                           ref.read(matrixSearchQueryProvider.notifier).state =
                               '';
                         },
-                        tooltip: 'Xóa tìm kiếm',
+                        tooltip: context.l10n.clearSearch,
                       )
                     : null,
                 contentPadding: EdgeInsets.symmetric(
@@ -335,14 +357,14 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
               ref.read(matrixSearchTypeProvider.notifier).state =
                   idx == 0 ? SearchType.citta : SearchType.cetasika;
             },
-            children: const [
+            children: [
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8),
-                child: Text('Tâm'),
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Text(context.l10n.citta),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8),
-                child: Text('Tâm Sở'),
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Text(context.l10n.cetasika),
               ),
             ],
           ),
@@ -380,27 +402,31 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: Row(
         children: [
-          _filterChip(null, 'Tất cả', '🌐'),
-          _filterChip(BhumiGroup.akusala, 'Bất Thiện', VdpSymbols.akusala),
-          _filterChip(BhumiGroup.ahetuka, 'Vô Nhân', '⬜'),
+          _filterChip(null, context.l10n.allFilters, '🌐'),
+          _filterChip(
+            BhumiGroup.akusala,
+            context.l10n.unwholesome,
+            VdpSymbols.akusala,
+          ),
+          _filterChip(BhumiGroup.ahetuka, context.l10n.rootless, '⬜'),
           _filterChip(
             BhumiGroup.sobhanaKamavacara,
-            'Tịnh Hảo DG',
+            context.l10n.senseSphereBeautiful,
             VdpSymbols.sobhanaKama,
           ),
           _filterChip(
             BhumiGroup.rupavacara,
-            'Sắc Giới',
+            context.l10n.formSphere,
             VdpSymbols.rupavacara,
           ),
           _filterChip(
             BhumiGroup.arupavacara,
-            'Vô Sắc',
+            context.l10n.formlessSphere,
             VdpSymbols.arupavacara,
           ),
           _filterChip(
             BhumiGroup.lokuttara,
-            'Siêu Thế',
+            context.l10n.supramundane,
             VdpSymbols.lokuttara,
           ),
         ],
@@ -412,7 +438,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final sel = _filterBhumi == bhumi;
     final c = bhumi == null ? VdpColors.primary : bhumi.name.bhumiColor;
     return Padding(
-      padding: const EdgeInsets.only(right: 8),
+      padding: const EdgeInsetsDirectional.only(end: 8),
       child: FilterChip(
         label: Text(
           '$symbol $label',
@@ -447,7 +473,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       child: Row(
         children: [
           Text(
-            'Ký hiệu:',
+            context.l10n.legend,
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w600,
@@ -455,11 +481,23 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
             ),
           ),
           const SizedBox(width: 12),
-          _legendItem(VdpSymbols.always, 'Cố định', VdpColors.always),
+          _legendItem(
+            VdpSymbols.always,
+            context.l10n.associationAlways,
+            VdpColors.always,
+          ),
           const SizedBox(width: 16),
-          _legendItem(VdpSymbols.sometimes, 'Bất định', VdpColors.sometimes),
+          _legendItem(
+            VdpSymbols.sometimes,
+            context.l10n.associationSometimes,
+            VdpColors.sometimes,
+          ),
           const SizedBox(width: 16),
-          _legendItem(VdpSymbols.never, 'Không có', VdpColors.never),
+          _legendItem(
+            VdpSymbols.never,
+            context.l10n.associationNever,
+            VdpColors.never,
+          ),
         ],
       ),
     );
@@ -501,7 +539,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           const SizedBox(width: 8),
           Expanded(
             child: Text(
-              '${dataState.validationResult!.warnings.length} cảnh báo dữ liệu.',
+              context.l10n.dataWarningsCount(
+                dataState.validationResult!.warnings.length,
+              ),
               style: TextStyle(
                 fontSize: 12,
                 color: _isHC ? HCColors.textPrimary : Colors.orange.shade900,
@@ -510,7 +550,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           ),
           TextButton(
             onPressed: () => _showWarnings(dataState),
-            child: const Text('Xem', style: TextStyle(fontSize: 12)),
+            child: Text(
+              context.l10n.dataWarningTitle,
+              style: const TextStyle(fontSize: 12),
+            ),
           ),
           IconButton(
             icon: const Icon(Icons.close, size: 16),
@@ -518,7 +561,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
               ref.read(progressProvider.notifier).dismissWarning();
               setState(() {});
             },
-            tooltip: 'Ẩn',
+            tooltip: context.l10n.hide,
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
           ),
@@ -748,51 +791,42 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   void _showHelp(BuildContext ctx) {
-    showDialog(
+    showDialog<void>(
       context: ctx,
       builder: (_) => AlertDialog(
-        title: const Text('Hướng dẫn Bảng Tương Ưng'),
-        content: const SingleChildScrollView(
+        title: Text(ctx.l10n.matrixHelpTitle),
+        content: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                '📖 Cách đọc:',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                '📖 ${ctx.l10n.howToRead}',
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
+              Text(ctx.l10n.matrixHelpRead),
+              const SizedBox(height: 12),
               Text(
-                '• Hàng ngang: Tâm (Citta)\n'
-                '• Cột dọc: Tâm Sở (Cetasika)\n'
-                '• Ô giao nhau: Mối quan hệ',
+                '✦ ${ctx.l10n.symbols}',
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 8),
+              Text(ctx.l10n.matrixHelpSymbols),
+              const SizedBox(height: 12),
               Text(
-                '✦ Ký hiệu:',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                '💡 ${ctx.l10n.tips}',
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 8),
-              Text('✦ = Cố định\n◎ = Bất định\n✕ = Không có'),
-              SizedBox(height: 12),
-              Text(
-                '💡 Mẹo:',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              Text(
-                '• Nhấn Tâm → xem chi tiết\n'
-                '• Nhấn Tâm Sở → xem xung đột\n'
-                '• Dùng bộ lọc → thu hẹp\n'
-                '• Xoay ngang → xem rộng hơn',
-              ),
+              const SizedBox(height: 8),
+              Text(ctx.l10n.matrixHelpTips),
             ],
           ),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Đã hiểu'),
+            child: Text(ctx.l10n.understood),
           ),
         ],
       ),
@@ -803,7 +837,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
-        title: const Text('Cảnh báo Dữ liệu'),
+        title: Text(context.l10n.dataWarningTitle),
         content: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -818,7 +852,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                         const Text('⚠️ '),
                         Expanded(
                           child: Text(
-                            w.message,
+                            '${context.l10n.dataWarningTitle} (${w.code})',
                             style: const TextStyle(fontSize: 13),
                           ),
                         ),
@@ -832,7 +866,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Đóng'),
+            child: Text(context.l10n.close),
           ),
         ],
       ),

@@ -2,6 +2,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../l10n/l10n.dart';
 import 'providers/vithi_providers.dart';
 import 'widgets/vithi_header.dart';
 import 'widgets/vithi_timeline.dart';
@@ -19,7 +20,7 @@ class VithiScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: const Color(0xFF1A1A2E),
-      appBar: AppBar(title: const Text('Lộ Trình Tâm')),
+      appBar: AppBar(title: Text(context.l10n.mindProcessTitle)),
       body: vithiAsync.when(
         data: (vithi) => vithi == null
             ? const SizedBox()
@@ -42,11 +43,14 @@ class VithiScreen extends ConsumerWidget {
                     onReset: () =>
                         ref.read(activeStepIndexProvider.notifier).state = 0,
                   ),
-                  if (activeStep != null) VithiDetailPanel(step: activeStep),
+                  if (activeStep != null)
+                    VithiDetailPanel(vithi: vithi, step: activeStep),
                 ],
               ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('$e')),
+        error: (error, _) => Center(
+          child: Text(context.l10n.errorWithMessage(error.toString())),
+        ),
       ),
     );
   }

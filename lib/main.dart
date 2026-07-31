@@ -4,8 +4,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'core/localization/content_catalog.dart';
+import 'core/localization/locale_controller.dart';
 import 'core/theme/vdp_theme.dart';
 import 'data/repositories/vdp_repository.dart';
+import 'l10n/l10n.dart';
 import 'features/home/home_screen.dart';
 import 'features/onboarding/onboarding_screen.dart';
 import 'features/settings/settings_screen.dart';
@@ -25,19 +28,43 @@ class VdpApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final settings = ref.watch(settingsProvider);
+    final localeSettings = ref.watch(localeSettingsProvider);
+    final contentCatalogAsync =
+        ref.watch(contentCatalogProvider(localeSettings.contentLocale));
+    final contentCatalog = contentCatalogAsync.maybeWhen(
+      data: (catalog) => catalog,
+      orElse: () => localeSettings.contentLocale == 'vi'
+          ? ContentCatalog.vietnamese
+          : const ContentCatalog(locale: 'en', data: {}),
+    );
+
+    final effectiveLocale = localeSettings.uiLocale ??
+        resolveSupportedLocale(
+          WidgetsBinding.instance.platformDispatcher.locales,
+          AppLocalizations.supportedLocales,
+        );
+    final baseTheme = settings.highContrastMode
+        ? VdpTheme.highContrastTheme
+        : VdpTheme.lightTheme;
 
     return MaterialApp(
-      title: 'Vi Diệu Pháp',
+      onGenerateTitle: (context) => context.l10n.appName,
       debugShowCheckedModeBanner: false,
-      theme: settings.highContrastMode
-          ? VdpTheme.highContrastTheme
-          : VdpTheme.lightTheme,
+      locale: localeSettings.uiLocale,
+      supportedLocales: AppLocalizations.supportedLocales,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      localeListResolutionCallback: (preferred, supported) =>
+          resolveSupportedLocale(preferred, supported),
+      theme: VdpTheme.localizedTheme(baseTheme, effectiveLocale),
       builder: (context, child) {
-        return MediaQuery(
-          data: MediaQuery.of(context).copyWith(
-            textScaler: TextScaler.linear(settings.textScaleFactor),
+        return ContentCatalogScope(
+          catalog: contentCatalog,
+          child: MediaQuery(
+            data: MediaQuery.of(context).copyWith(
+              textScaler: TextScaler.linear(settings.textScaleFactor),
+            ),
+            child: child!,
           ),
-          child: child!,
         );
       },
       home: const _AppRoot(),
@@ -127,18 +154,18 @@ class _SplashScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Vi Diệu Pháp',
-              style: TextStyle(
+            Text(
+              context.l10n.appName,
+              style: const TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w900,
                 color: VdpColors.primary,
               ),
             ),
             const SizedBox(height: 6),
-            const Text(
-              'Abhidhamma Piṭaka',
-              style: TextStyle(
+            Text(
+              context.l10n.appTagline,
+              style: const TextStyle(
                 fontSize: 14,
                 fontStyle: FontStyle.italic,
                 color: VdpColors.primaryLight,
@@ -154,9 +181,12 @@ class _SplashScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Đang khởi tạo…',
-              style: TextStyle(fontSize: 12, color: VdpColors.primaryLight),
+            Text(
+              context.l10n.initializing,
+              style: const TextStyle(
+                fontSize: 12,
+                color: VdpColors.primaryLight,
+              ),
             ),
           ],
         ),

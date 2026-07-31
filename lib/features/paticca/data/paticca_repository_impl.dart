@@ -1,8 +1,9 @@
 // lib/features/paticca/data/paticca_repository_impl.dart
 import 'dart:convert';
+
 import 'package:flutter/services.dart';
-import '../../../../data/models/paticca_model.dart';
-import '../../../../data/repositories/vdp_repository.dart';
+
+import '../../../data/models/paticca_model.dart';
 
 class PaticcaRepositoryImpl {
   Future<List<PaticcaModel>> getAllPaticcas() async {

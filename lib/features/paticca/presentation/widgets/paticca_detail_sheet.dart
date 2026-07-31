@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import '../../../../core/localization/content_catalog.dart';
+import '../../../../core/localization/localized_content.dart';
 import '../../../../data/models/paticca_model.dart';
+import '../../../../l10n/l10n.dart';
 
 class PaticcaDetailSheet extends StatelessWidget {
   final PaticcaModel item;
@@ -18,24 +21,27 @@ class PaticcaDetailSheet extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('${item.namePali} (${item.nameVietnamese})',
+            Text('${item.namePali} (${item.localizedName(context)})',
                 style:
                     const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             const Divider(),
-            const Text('Chi tiết Nhân Duyên:',
-                style: TextStyle(fontWeight: FontWeight.bold)),
+            Text(context.l10n.conditionDetails,
+                style: const TextStyle(fontWeight: FontWeight.bold)),
             ...item.links.isEmpty
                 ? [
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 8),
-                      child: Text(
-                          'Đây là chi quả cuối của vòng Nhân Duyên kiếp này. Không khởi sanh điều kiện mới.'),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Text(context.l10n.lastConditionDescription),
                     )
                   ]
                 : item.links.map((link) => Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8),
-                      child: Text(
-                          '• Duyên sang: ${link.effectId}\n  Giải thích: ${link.explanation}'),
+                      child: Text(context.l10n.conditionLinkDescription(
+                        link.effectId,
+                        context.usesEnglishContent
+                            ? item.localizedDescription(context)
+                            : link.explanation,
+                      )),
                     )),
           ],
         ),

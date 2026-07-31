@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/paticca_providers.dart';
 import 'paticca_list_item.dart';
+import '../../../../../l10n/l10n.dart';
 import '../paticca_detail_sheet.dart';
 
 class PaticcaListView extends ConsumerWidget {
@@ -23,7 +24,9 @@ class PaticcaListView extends ConsumerWidget {
         ),
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (e, _) => Center(child: Text('Lỗi: $e')),
+      error: (error, _) => Center(
+        child: Text(context.l10n.errorWithMessage(error.toString())),
+      ),
     );
   }
 }

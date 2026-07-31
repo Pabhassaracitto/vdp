@@ -5,10 +5,12 @@
 
 import 'dart:math';
 
+import '../../../core/localization/content_catalog.dart';
 import '../../../data/models/cetasika_model.dart';
 import '../../../data/models/citta_model.dart';
 import '../../../data/models/study_module.dart';
 import '../../../data/repositories/vdp_repository.dart';
+import '../../../l10n/l10n.dart';
 import '../quiz_screen.dart' show QuizLevel, QuizQuestion, QuizQuestionType;
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -52,9 +54,12 @@ final class QuizGeneratorService {
     required StudyModule module,
     required VdpDataState dataState,
     required QuizLevel level,
+    required AppLocalizations l10n,
+    required ContentCatalog contentCatalog,
     Random? random,
   }) {
     final rng = random ?? Random();
+    final text = _QuizText(l10n, contentCatalog);
 
     // ── Safety Guard: IDs rỗng ─────────────────────────────────────────
     final hasIds = module.cittaIds.isNotEmpty || module.cetasikaIds.isNotEmpty;
@@ -99,6 +104,7 @@ final class QuizGeneratorService {
             moduleCetasikas: moduleCetasikas,
             rng: rng,
             maxCount: 5,
+            text: text,
           ),
         );
       } else {
@@ -108,6 +114,7 @@ final class QuizGeneratorService {
             moduleCetasikas: moduleCetasikas,
             rng: rng,
             maxCount: 5,
+            text: text,
           ),
         );
       }
@@ -121,6 +128,7 @@ final class QuizGeneratorService {
             moduleCittas: moduleCittas,
             rng: rng,
             maxCount: 5,
+            text: text,
           ),
         );
       } else {
@@ -130,6 +138,7 @@ final class QuizGeneratorService {
             moduleCittas: moduleCittas,
             rng: rng,
             maxCount: 5,
+            text: text,
           ),
         );
       }
@@ -143,6 +152,7 @@ final class QuizGeneratorService {
           moduleCetasikas: moduleCetasikas,
           rng: rng,
           maxCount: 3,
+          text: text,
         ),
       );
     }
@@ -156,6 +166,7 @@ final class QuizGeneratorService {
             moduleCittas: moduleCittas,
             rng: rng,
             maxCount: 3,
+            text: text,
           ),
         );
       } else {
@@ -164,6 +175,7 @@ final class QuizGeneratorService {
             moduleCittas: moduleCittas,
             rng: rng,
             maxCount: 3,
+            text: text,
           ),
         );
       }
@@ -204,6 +216,7 @@ final class QuizGeneratorService {
     required List<CetasikaModel> moduleCetasikas,
     required Random rng,
     required int maxCount,
+    required _QuizText text,
   }) {
     final questions = <QuizQuestion>[];
 
@@ -214,7 +227,7 @@ final class QuizGeneratorService {
     final moduleGroups = moduleCetasikas.map((c) => c.group).toSet().toList();
 
     for (final cs in pool.take(maxCount)) {
-      final correctLabel = _getGroupName(cs.group);
+      final correctLabel = text.groupName(cs.group);
 
       // Distractor = nhóm khác CÓ TRONG MODULE — không dùng nhóm ngoài module
       // Nếu module chỉ có 1 nhóm, bổ sung nhóm cố định từ Pāli canon
@@ -227,8 +240,8 @@ final class QuizGeneratorService {
           allGroups.where((g) => g != cs.group && !wrongGroups.contains(g));
 
       final distractors = [
-        ...wrongGroups.map(_getGroupName),
-        ...fallbackGroups.map(_getGroupName),
+        ...wrongGroups.map(text.groupName),
+        ...fallbackGroups.map(text.groupName),
       ]..shuffle(rng);
 
       // Cần ít nhất 3 distractors cho 4-option MCQ
@@ -243,14 +256,18 @@ final class QuizGeneratorService {
 
       questions.add(QuizQuestion(
         id: 'q_group_${cs.id}',
-        questionText:
-            'Tâm Sở "${cs.nameVietnamese}" (${cs.namePali}) thuộc nhóm nào?',
+        questionText: text.l10n.quizCetasikaGroupQuestion(
+          text.cetasikaName(cs),
+          cs.namePali,
+        ),
         options: opts,
         correctIndex: opts.indexOf(correctLabel),
         type: QuizQuestionType.cetasikaGroup,
-        explanation:
-            '"${cs.nameVietnamese}" thuộc ${_getGroupName(cs.group)}.\n'
-            '${cs.descriptionVi}',
+        explanation: text.l10n.quizCetasikaGroupExplanation(
+          text.cetasikaName(cs),
+          text.groupName(cs.group),
+          text.cetasikaDescription(cs),
+        ),
       ));
     }
 
@@ -263,6 +280,7 @@ final class QuizGeneratorService {
     required List<CetasikaModel> moduleCetasikas,
     required Random rng,
     required int maxCount,
+    required _QuizText text,
   }) {
     final questions = <QuizQuestion>[];
     final pool = List<CetasikaModel>.from(moduleCetasikas)..shuffle(rng);
@@ -274,7 +292,7 @@ final class QuizGeneratorService {
       final bool isTrue;
 
       if (makeCorrect) {
-        claimedGroup = _getGroupName(cs.group);
+        claimedGroup = text.groupName(cs.group);
         isTrue = true;
       } else {
         // Chọn nhóm sai từ canonical list
@@ -283,22 +301,27 @@ final class QuizGeneratorService {
             .toList()
           ..shuffle(rng);
         if (otherGroups.isEmpty) continue;
-        claimedGroup = _getGroupName(otherGroups.first);
+        claimedGroup = text.groupName(otherGroups.first);
         isTrue = false;
       }
 
-      final opts = ['Đúng', 'Sai'];
+      final opts = [text.l10n.trueLabel, text.l10n.falseLabel];
 
       questions.add(QuizQuestion(
         id: 'q_tf_group_${cs.id}',
-        questionText:
-            '"${cs.nameVietnamese}" (${cs.namePali}) thuộc $claimedGroup. '
-            'Đúng hay Sai?',
+        questionText: text.l10n.quizCetasikaClaim(
+          text.cetasikaName(cs),
+          cs.namePali,
+          claimedGroup,
+        ),
         options: opts,
         correctIndex: isTrue ? 0 : 1, // 0=Đúng, 1=Sai
         type: QuizQuestionType.cetasikaGroup,
-        explanation: '"${cs.nameVietnamese}" thuộc '
-            '${_getGroupName(cs.group)}.',
+        explanation: text.l10n.quizCetasikaGroupExplanation(
+          text.cetasikaName(cs),
+          text.groupName(cs.group),
+          text.cetasikaDescription(cs),
+        ),
       ));
     }
 
@@ -311,6 +334,7 @@ final class QuizGeneratorService {
     required List<CittaModel> moduleCittas,
     required Random rng,
     required int maxCount,
+    required _QuizText text,
   }) {
     final questions = <QuizQuestion>[];
     final pool = List<CittaModel>.from(moduleCittas)..shuffle(rng);
@@ -319,7 +343,7 @@ final class QuizGeneratorService {
     final moduleVedanas = moduleCittas.map((c) => c.vedana).toSet().toList();
 
     for (final citta in pool.take(maxCount)) {
-      final correctLabel = _getVedanaName(citta.vedana);
+      final correctLabel = text.vedanaName(citta.vedana);
 
       // Distractor từ vedana có trong module trước
       final wrongVedanas =
@@ -330,8 +354,8 @@ final class QuizGeneratorService {
           .where((v) => v != citta.vedana && !wrongVedanas.contains(v));
 
       final distractors = [
-        ...wrongVedanas.map(_getVedanaName),
-        ...fallbackVedanas.map(_getVedanaName),
+        ...wrongVedanas.map(text.vedanaName),
+        ...fallbackVedanas.map(text.vedanaName),
       ]..shuffle(rng);
 
       if (distractors.isEmpty) continue;
@@ -345,12 +369,16 @@ final class QuizGeneratorService {
 
       questions.add(QuizQuestion(
         id: 'q_vedana_${citta.id}',
-        questionText: 'Tâm "${citta.nameVietnamese}" có thọ gì?',
+        questionText: text.l10n.quizCittaFeelingQuestion(
+          text.cittaName(citta),
+        ),
         options: opts,
         correctIndex: opts.indexOf(correctLabel),
         type: QuizQuestionType.cittaVedana,
-        explanation:
-            '"${citta.nameVietnamese}" có ${_getVedanaName(citta.vedana)}.',
+        explanation: text.l10n.quizCittaFeelingExplanation(
+          text.cittaName(citta),
+          text.vedanaName(citta.vedana),
+        ),
       ));
     }
 
@@ -363,6 +391,7 @@ final class QuizGeneratorService {
     required List<CittaModel> moduleCittas,
     required Random rng,
     required int maxCount,
+    required _QuizText text,
   }) {
     final questions = <QuizQuestion>[];
     final pool = List<CittaModel>.from(moduleCittas)..shuffle(rng);
@@ -373,27 +402,31 @@ final class QuizGeneratorService {
       final bool isTrue;
 
       if (makeCorrect) {
-        claimedVedana = _getVedanaName(citta.vedana);
+        claimedVedana = text.vedanaName(citta.vedana);
         isTrue = true;
       } else {
         final others = Vedana.values.where((v) => v != citta.vedana).toList()
           ..shuffle(rng);
         if (others.isEmpty) continue;
-        claimedVedana = _getVedanaName(others.first);
+        claimedVedana = text.vedanaName(others.first);
         isTrue = false;
       }
 
-      final opts = ['Đúng', 'Sai'];
+      final opts = [text.l10n.trueLabel, text.l10n.falseLabel];
 
       questions.add(QuizQuestion(
         id: 'q_tf_vedana_${citta.id}',
-        questionText:
-            'Tâm "${citta.nameVietnamese}" có $claimedVedana. Đúng hay Sai?',
+        questionText: text.l10n.quizCittaFeelingClaim(
+          text.cittaName(citta),
+          claimedVedana,
+        ),
         options: opts,
         correctIndex: isTrue ? 0 : 1,
         type: QuizQuestionType.cittaVedana,
-        explanation:
-            '"${citta.nameVietnamese}" có ${_getVedanaName(citta.vedana)}.',
+        explanation: text.l10n.quizCittaFeelingExplanation(
+          text.cittaName(citta),
+          text.vedanaName(citta.vedana),
+        ),
       ));
     }
 
@@ -407,6 +440,7 @@ final class QuizGeneratorService {
     required List<CetasikaModel> moduleCetasikas,
     required Random rng,
     required int maxCount,
+    required _QuizText text,
   }) {
     final questions = <QuizQuestion>[];
 
@@ -444,22 +478,23 @@ final class QuizGeneratorService {
           moduleCetasikas.where((c) => c.id == conflictPartnerId).firstOrNull;
       if (conflictCs == null) continue;
 
-      const correctLabel = 'Không — chúng xung đột nhau';
+      final correctLabel = text.l10n.conflictNo;
       final opts = <String>[
         correctLabel,
-        'Có — luôn xuất hiện cùng nhau',
-        'Có — đôi khi cùng xuất hiện',
+        text.l10n.conflictAlwaysYes,
+        text.l10n.conflictSometimesYes,
       ]..shuffle(rng);
 
       questions.add(QuizQuestion(
         id: 'q_conflict_${cs.id}_$conflictPartnerId',
-        questionText: '"${cs.nameVietnamese}" và '
-            '"${conflictCs.nameVietnamese}" có thể cùng xuất hiện '
-            'trong một tâm không?',
+        questionText: text.l10n.quizConflictQuestion(
+          text.cetasikaName(cs),
+          text.cetasikaName(conflictCs),
+        ),
         options: opts,
         correctIndex: opts.indexOf(correctLabel),
         type: QuizQuestionType.conflictDetect,
-        explanation: validRule.explanation,
+        explanation: text.conflictExplanation(validRule),
       ));
     }
 
@@ -473,6 +508,7 @@ final class QuizGeneratorService {
     required List<CittaModel> moduleCittas,
     required Random rng,
     required int maxCount,
+    required _QuizText text,
   }) {
     final questions = <QuizQuestion>[];
     final pool = List<CittaModel>.from(moduleCittas)..shuffle(rng);
@@ -480,7 +516,7 @@ final class QuizGeneratorService {
     final moduleBhumis = moduleCittas.map((c) => c.bhumiGroup).toSet().toList();
 
     for (final citta in pool.take(maxCount)) {
-      final correctLabel = _getBhumiName(citta.bhumiGroup);
+      final correctLabel = text.bhumiName(citta.bhumiGroup);
 
       final wrongBhumis =
           moduleBhumis.where((b) => b != citta.bhumiGroup).toList();
@@ -490,8 +526,8 @@ final class QuizGeneratorService {
           .where((b) => b != citta.bhumiGroup && !wrongBhumis.contains(b));
 
       final distractors = [
-        ...wrongBhumis.map(_getBhumiName),
-        ...fallbackBhumis.map(_getBhumiName),
+        ...wrongBhumis.map(text.bhumiName),
+        ...fallbackBhumis.map(text.bhumiName),
       ]..shuffle(rng);
 
       if (distractors.length < 3) continue;
@@ -505,12 +541,14 @@ final class QuizGeneratorService {
 
       questions.add(QuizQuestion(
         id: 'q_bhumi_${citta.id}',
-        questionText: 'Tâm "${citta.nameVietnamese}" thuộc cõi giới nào?',
+        questionText: text.l10n.quizSphereQuestion(text.cittaName(citta)),
         options: opts,
         correctIndex: opts.indexOf(correctLabel),
         type: QuizQuestionType.cittaBhumi,
-        explanation:
-            '"${citta.nameVietnamese}" thuộc ${_getBhumiName(citta.bhumiGroup)}.',
+        explanation: text.l10n.quizSphereExplanation(
+          text.cittaName(citta),
+          text.bhumiName(citta.bhumiGroup),
+        ),
       ));
     }
 
@@ -523,6 +561,7 @@ final class QuizGeneratorService {
     required List<CittaModel> moduleCittas,
     required Random rng,
     required int maxCount,
+    required _QuizText text,
   }) {
     final questions = <QuizQuestion>[];
     final pool = List<CittaModel>.from(moduleCittas)..shuffle(rng);
@@ -533,7 +572,7 @@ final class QuizGeneratorService {
       final bool isTrue;
 
       if (makeCorrect) {
-        claimedBhumi = _getBhumiName(citta.bhumiGroup);
+        claimedBhumi = text.bhumiName(citta.bhumiGroup);
         isTrue = true;
       } else {
         final others = BhumiGroup.values
@@ -541,51 +580,87 @@ final class QuizGeneratorService {
             .toList()
           ..shuffle(rng);
         if (others.isEmpty) continue;
-        claimedBhumi = _getBhumiName(others.first);
+        claimedBhumi = text.bhumiName(others.first);
         isTrue = false;
       }
 
-      final opts = ['Đúng', 'Sai'];
+      final opts = [text.l10n.trueLabel, text.l10n.falseLabel];
 
       questions.add(QuizQuestion(
         id: 'q_tf_bhumi_${citta.id}',
-        questionText:
-            'Tâm "${citta.nameVietnamese}" thuộc $claimedBhumi. Đúng hay Sai?',
+        questionText: text.l10n.quizSphereClaim(
+          text.cittaName(citta),
+          claimedBhumi,
+        ),
         options: opts,
         correctIndex: isTrue ? 0 : 1,
         type: QuizQuestionType.cittaBhumi,
-        explanation:
-            '"${citta.nameVietnamese}" thuộc ${_getBhumiName(citta.bhumiGroup)}.',
+        explanation: text.l10n.quizSphereExplanation(
+          text.cittaName(citta),
+          text.bhumiName(citta.bhumiGroup),
+        ),
       ));
     }
 
     return questions;
   }
 
-  // ── Label Helpers (pure, no side-effects) ─────────────────────────────────
+}
 
-  static String _getGroupName(CetasikaGroup g) => switch (g) {
-        CetasikaGroup.sabbacittasadharana =>
-          '7 Biến Hành (Sabbacittasādhāraṇa)',
-        CetasikaGroup.pakinnaka => '6 Biệt Cảnh (Pakiṇṇaka)',
-        CetasikaGroup.akusala => '14 Bất Thiện (Akusala)',
-        CetasikaGroup.sobhana => '25 Tịnh Hảo (Sobhana)',
+class _QuizText {
+  final AppLocalizations l10n;
+  final ContentCatalog catalog;
+
+  const _QuizText(this.l10n, this.catalog);
+
+  String cittaName(CittaModel citta) => catalog.text(
+        'cittas',
+        citta.id,
+        'name',
+        citta.nameVietnamese,
+      );
+
+  String cetasikaName(CetasikaModel cetasika) => catalog.text(
+        'cetasikas',
+        cetasika.id,
+        'name',
+        cetasika.nameVietnamese,
+      );
+
+  String cetasikaDescription(CetasikaModel cetasika) => catalog.text(
+        'cetasikas',
+        cetasika.id,
+        'description',
+        cetasika.descriptionVi,
+      );
+
+  String groupName(CetasikaGroup group) => switch (group) {
+        CetasikaGroup.sabbacittasadharana => l10n.universalCetasikas,
+        CetasikaGroup.pakinnaka => l10n.occasionalCetasikas,
+        CetasikaGroup.akusala => l10n.unwholesomeCetasikas,
+        CetasikaGroup.sobhana => l10n.beautifulCetasikas,
       };
 
-  static String _getVedanaName(Vedana v) => switch (v) {
-        Vedana.pleasant => 'Lạc thọ (Sukha)',
-        Vedana.unpleasant => 'Khổ thọ (Dukkha)',
-        Vedana.neutral => 'Xả thọ (Upekkhā)',
-        Vedana.joy => 'Hỷ thọ (Somanassa)',
+  String vedanaName(Vedana feeling) => switch (feeling) {
+        Vedana.pleasant => l10n.pleasantFeeling,
+        Vedana.unpleasant => l10n.unpleasantFeeling,
+        Vedana.neutral => l10n.neutralFeeling,
+        Vedana.joy => l10n.joyfulFeeling,
       };
 
-  static String _getBhumiName(BhumiGroup b) => switch (b) {
-        BhumiGroup.akusala => 'Bất Thiện (Akusala)',
-        BhumiGroup.ahetuka => 'Vô Nhân (Ahetuka)',
-        BhumiGroup.sobhanaKamavacara =>
-          'Tịnh Hảo Dục Giới (Sobhana Kāmāvacara)',
-        BhumiGroup.rupavacara => 'Sắc Giới (Rūpāvacara)',
-        BhumiGroup.arupavacara => 'Vô Sắc Giới (Arūpāvacara)',
-        BhumiGroup.lokuttara => 'Siêu Thế (Lokuttara)',
+  String bhumiName(BhumiGroup sphere) => switch (sphere) {
+        BhumiGroup.akusala => l10n.unwholesome,
+        BhumiGroup.ahetuka => l10n.rootless,
+        BhumiGroup.sobhanaKamavacara => l10n.senseSphereBeautiful,
+        BhumiGroup.rupavacara => l10n.formSphere,
+        BhumiGroup.arupavacara => l10n.formlessSphere,
+        BhumiGroup.lokuttara => l10n.supramundane,
       };
+
+  String conflictExplanation(ConflictRule rule) {
+    if (catalog.locale == 'en') {
+      return rule.explanationPali ?? l10n.doctrinalConflicts;
+    }
+    return rule.explanation;
+  }
 }

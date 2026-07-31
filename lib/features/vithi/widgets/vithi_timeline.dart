@@ -1,6 +1,6 @@
 // lib/features/vithi/widgets/vithi_timeline.dart
 import 'package:flutter/material.dart';
-import '../../../../data/models/vithi_model.dart';
+import '../../../data/models/vithi_model.dart';
 import 'vithi_step_node.dart';
 
 class VithiTimeline extends StatelessWidget {

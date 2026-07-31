@@ -1,5 +1,6 @@
 // lib/features/paticca/presentation/screens/paticca_screen.dart
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import '../widgets/list/paticca_filter_bar.dart';
 import '../widgets/list/paticca_list_view.dart';
 
@@ -9,7 +10,7 @@ class PaticcaScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Nhân Duyên')),
+      appBar: AppBar(title: Text(context.l10n.conditionsTitle)),
       body: const Column(
         children: [
           PaticcaFilterBar(),

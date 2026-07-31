@@ -10,7 +10,8 @@
     <!-- Không cần internet - Offline-First -->
 
     <application
-        android:label="Vi Diệu Pháp"
+        android:label="AbhiDhamma"
+        android:localeConfig="@xml/locales_config"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 

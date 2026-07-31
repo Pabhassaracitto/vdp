@@ -1,6 +1,7 @@
 // lib/features/paticca/presentation/widgets/list/paticca_list_item.dart
 import 'package:flutter/material.dart';
 import 'package:vdp_app/data/models/paticca_model.dart';
+import '../../../../../core/localization/localized_content.dart';
 
 class PaticcaListItem extends StatelessWidget {
   final PaticcaModel item;
@@ -14,7 +15,7 @@ class PaticcaListItem extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: ListTile(
         leading: CircleAvatar(child: Text(item.order.toString())),
-        title: Text(item.nameVietnamese),
+        title: Text(item.localizedName(context)),
         subtitle: Text(item.namePali),
         onTap: onTap,
       ),

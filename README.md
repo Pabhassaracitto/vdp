@@ -1,6 +1,32 @@
-# ☸ Vi Diệu Pháp (VDP) — Flutter App
+# ☸ AbhiDhamma — Flutter App
 
 > **"Ứng dụng VDP không phải là từ điển số hóa. Đây là không gian để người học THẤY bằng mắt, HIỂU bằng tim, và TỰ MÌNH khám phá cấu trúc của Tâm — đúng như cách giảng sư King Milanda A đã dạy."**
+
+---
+
+## 🌐 Ngôn ngữ
+
+- Giao diện hỗ trợ 26 locale: `vi`, `en`, `zh`, `zh_TW`, `hi`, `my`,
+  `si`, `ar`, `bn`, `bo`, `de`, `es`, `fr`, `id`, `it`, `ja`, `km`, `ko`,
+  `lo`, `mn`, `mr`, `pt`, `ru`, `ta`, `te`, `th`.
+- Nội dung học hỗ trợ tiếng Việt và tiếng Anh; ngôn ngữ nội dung độc lập với
+  ngôn ngữ giao diện.
+- Mặc định theo ngôn ngữ thiết bị và cho phép chọn thủ công trong Cài đặt.
+- Pāḷi, ID và quan hệ giáo lý không bị thay đổi khi chuyển ngôn ngữ.
+- Font Noto được subset theo glyph UI và bundle sẵn để hoạt động offline.
+
+Kiểm tra tính toàn vẹn tài nguyên:
+
+```bash
+python3 tool/check_localizations.py
+```
+
+Tạo lại bản tiếng Anh có cấu trúc và font subset sau khi sửa tài nguyên:
+
+```bash
+python3 tool/generate_english_content.py
+python3 tool/subset_fonts.py  # cần fonttools và GitHub CLI
+```
 
 ---
 

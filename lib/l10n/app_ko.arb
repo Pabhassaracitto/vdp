@@ -1,0 +1,1233 @@
+{
+  "@@locale": "ko",
+  "appName": "AbhiDhamma",
+  "@appName": {
+    "description": "appName"
+  },
+  "appTagline": "Abhidhamma Piṭaka",
+  "@appTagline": {
+    "description": "appTagline"
+  },
+  "initializing": "초기화 중…",
+  "@initializing": {
+    "description": "initializing"
+  },
+  "loadingDoctrineData": "담마 데이터를 불러오고 검증하는 중…",
+  "@loadingDoctrineData": {
+    "description": "loadingDoctrineData"
+  },
+  "loadingTakingLonger": "Startup is taking longer than expected. Dhamma data may be being optimized for your device.",
+  "@loadingTakingLonger": {
+    "description": "loadingTakingLonger"
+  },
+  "unknownError": "Unknown error",
+  "@unknownError": {
+    "description": "unknownError"
+  },
+  "dataError": "Data error",
+  "@dataError": {
+    "description": "dataError"
+  },
+  "invalidData": "Invalid data",
+  "@invalidData": {
+    "description": "invalidData"
+  },
+  "invalidDataDescription": "The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.",
+  "@invalidDataDescription": {
+    "description": "invalidDataDescription"
+  },
+  "navMatrix": "매트릭스",
+  "@navMatrix": {
+    "description": "navMatrix"
+  },
+  "navStudy": "학습",
+  "@navStudy": {
+    "description": "navStudy"
+  },
+  "navConditions": "연기",
+  "@navConditions": {
+    "description": "navConditions"
+  },
+  "navMindProcess": "마음 과정",
+  "@navMindProcess": {
+    "description": "navMindProcess"
+  },
+  "navSettings": "설정",
+  "@navSettings": {
+    "description": "navSettings"
+  },
+  "cancel": "취소",
+  "@cancel": {
+    "description": "cancel"
+  },
+  "save": "저장",
+  "@save": {
+    "description": "save"
+  },
+  "delete": "삭제",
+  "@delete": {
+    "description": "delete"
+  },
+  "close": "닫기",
+  "@close": {
+    "description": "close"
+  },
+  "start": "시작",
+  "@start": {
+    "description": "start"
+  },
+  "next": "다음",
+  "@next": {
+    "description": "next"
+  },
+  "done": "완료",
+  "@done": {
+    "description": "done"
+  },
+  "skip": "건너뛰기",
+  "@skip": {
+    "description": "skip"
+  },
+  "apply": "적용",
+  "@apply": {
+    "description": "apply"
+  },
+  "undo": "실행 취소",
+  "@undo": {
+    "description": "undo"
+  },
+  "reset": "재설정",
+  "@reset": {
+    "description": "reset"
+  },
+  "all": "전체",
+  "@all": {
+    "description": "all"
+  },
+  "hide": "숨기기",
+  "@hide": {
+    "description": "hide"
+  },
+  "learn": "학습",
+  "@learn": {
+    "description": "learn"
+  },
+  "notes": "메모",
+  "@notes": {
+    "description": "notes"
+  },
+  "errorWithMessage": "Error: {message}",
+  "@errorWithMessage": {
+    "description": "errorWithMessage",
+    "placeholders": {
+      "message": {}
+    }
+  },
+  "languageSection": "언어",
+  "@languageSection": {
+    "description": "languageSection"
+  },
+  "interfaceLanguage": "인터페이스 언어",
+  "@interfaceLanguage": {
+    "description": "interfaceLanguage"
+  },
+  "interfaceLanguageSubtitle": "기기 언어를 따르거나 직접 선택",
+  "@interfaceLanguageSubtitle": {
+    "description": "interfaceLanguageSubtitle"
+  },
+  "contentLanguage": "학습 콘텐츠 언어",
+  "@contentLanguage": {
+    "description": "contentLanguage"
+  },
+  "contentLanguageSubtitle": "인터페이스 언어와 독립적입니다",
+  "@contentLanguageSubtitle": {
+    "description": "contentLanguageSubtitle"
+  },
+  "systemDefault": "시스템 기본값",
+  "@systemDefault": {
+    "description": "systemDefault"
+  },
+  "systemDefaultSubtitle": "이 기기에서 선택한 언어 사용",
+  "@systemDefaultSubtitle": {
+    "description": "systemDefaultSubtitle"
+  },
+  "languagePickerTitle": "Language / 언어",
+  "@languagePickerTitle": {
+    "description": "languagePickerTitle"
+  },
+  "languagePickerSearchHint": "언어 이름 또는 코드로 검색",
+  "@languagePickerSearchHint": {
+    "description": "languagePickerSearchHint"
+  },
+  "languageChangePreviewTitle": "인터페이스 언어를 변경할까요?",
+  "@languageChangePreviewTitle": {
+    "description": "languageChangePreviewTitle"
+  },
+  "languageChangePreviewBody": "인터페이스가 {language}(으)로 변경됩니다. 학습 내용은 바뀌지 않습니다.",
+  "@languageChangePreviewBody": {
+    "description": "languageChangePreviewBody",
+    "placeholders": {
+      "language": {}
+    }
+  },
+  "languageChangedTo": "언어가 {language}(으)로 변경되었습니다",
+  "@languageChangedTo": {
+    "description": "languageChangedTo",
+    "placeholders": {
+      "language": {}
+    }
+  },
+  "holdGlobeToReset": "Press and hold the globe for 3 seconds to restore the system language",
+  "@holdGlobeToReset": {
+    "description": "holdGlobeToReset"
+  },
+  "restoredSystemLanguage": "시스템 언어를 복원했습니다",
+  "@restoredSystemLanguage": {
+    "description": "restoredSystemLanguage"
+  },
+  "contentVietnamese": "베트남어",
+  "@contentVietnamese": {
+    "description": "contentVietnamese"
+  },
+  "contentEnglish": "영어",
+  "@contentEnglish": {
+    "description": "contentEnglish"
+  },
+  "translationReviewNotice": "English Dhamma content is an international study translation. Pāḷi terms remain authoritative.",
+  "@translationReviewNotice": {
+    "description": "translationReviewNotice"
+  },
+  "settingsAccessibility": "접근성",
+  "@settingsAccessibility": {
+    "description": "settingsAccessibility"
+  },
+  "highContrastMode": "고대비 모드",
+  "@highContrastMode": {
+    "description": "highContrastMode"
+  },
+  "highContrastSubtitle": "Increase color contrast for people with low vision",
+  "@highContrastSubtitle": {
+    "description": "highContrastSubtitle"
+  },
+  "screenReaderHints": "스크린 리더 힌트",
+  "@screenReaderHints": {
+    "description": "screenReaderHints"
+  },
+  "screenReaderHintsSubtitle": "Provide more detail for TalkBack and VoiceOver",
+  "@screenReaderHintsSubtitle": {
+    "description": "screenReaderHintsSubtitle"
+  },
+  "textSize": "글자 크기",
+  "@textSize": {
+    "description": "textSize"
+  },
+  "textScale": "글자 배율",
+  "@textScale": {
+    "description": "textScale"
+  },
+  "studyProgress": "학습 진행도",
+  "@studyProgress": {
+    "description": "studyProgress"
+  },
+  "unlockAllLessons": "모든 수업 잠금 해제",
+  "@unlockAllLessons": {
+    "description": "unlockAllLessons"
+  },
+  "unlockAllLessonsSubtitle": "The guided path builds a strong foundation. Experienced learners can unlock every lesson.",
+  "@unlockAllLessonsSubtitle": {
+    "description": "unlockAllLessonsSubtitle"
+  },
+  "resetProgress": "진행도 재설정",
+  "@resetProgress": {
+    "description": "resetProgress"
+  },
+  "resetProgressSubtitle": "Delete all study data",
+  "@resetProgressSubtitle": {
+    "description": "resetProgressSubtitle"
+  },
+  "showDataWarningAgain": "Show data warning again",
+  "@showDataWarningAgain": {
+    "description": "showDataWarningAgain"
+  },
+  "showDataWarningAgainSubtitle": "Restore the Matrix warning banner",
+  "@showDataWarningAgainSubtitle": {
+    "description": "showDataWarningAgainSubtitle"
+  },
+  "dataWarningEnabled": "Data warning enabled",
+  "@dataWarningEnabled": {
+    "description": "dataWarningEnabled"
+  },
+  "aboutApp": "앱 정보",
+  "@aboutApp": {
+    "description": "aboutApp"
+  },
+  "version": "버전",
+  "@version": {
+    "description": "version"
+  },
+  "sourceMaterial": "출처",
+  "@sourceMaterial": {
+    "description": "sourceMaterial"
+  },
+  "sourceMaterialValue": "King Milanda A curriculum — Abhidhamma",
+  "@sourceMaterialValue": {
+    "description": "sourceMaterialValue"
+  },
+  "editorialPrinciples": "Editorial principles",
+  "@editorialPrinciples": {
+    "description": "editorialPrinciples"
+  },
+  "resetProgressQuestion": "Reset progress?",
+  "@resetProgressQuestion": {
+    "description": "resetProgressQuestion"
+  },
+  "resetProgressWarning": "All study progress and quiz scores will be deleted. This action cannot be undone.",
+  "@resetProgressWarning": {
+    "description": "resetProgressWarning"
+  },
+  "progressResetSuccess": "Study progress reset",
+  "@progressResetSuccess": {
+    "description": "progressResetSuccess"
+  },
+  "unlockLessonsQuestion": "Unlock all lessons?",
+  "@unlockLessonsQuestion": {
+    "description": "unlockLessonsQuestion"
+  },
+  "unlockLessonsWarning": "The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.",
+  "@unlockLessonsWarning": {
+    "description": "unlockLessonsWarning"
+  },
+  "keepGuidedPath": "Keep guided path",
+  "@keepGuidedPath": {
+    "description": "keepGuidedPath"
+  },
+  "unlock": "Unlock",
+  "@unlock": {
+    "description": "unlock"
+  },
+  "modulesCompleted": "{completed} / {total} modules completed",
+  "@modulesCompleted": {
+    "description": "modulesCompleted",
+    "placeholders": {
+      "completed": {},
+      "total": {}
+    }
+  },
+  "mostRecentModule": "Most recent module: {module}",
+  "@mostRecentModule": {
+    "description": "mostRecentModule",
+    "placeholders": {
+      "module": {}
+    }
+  },
+  "lastStudied": "Last studied: {date}",
+  "@lastStudied": {
+    "description": "lastStudied",
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "today": "Today",
+  "@today": {
+    "description": "today"
+  },
+  "yesterday": "Yesterday",
+  "@yesterday": {
+    "description": "yesterday"
+  },
+  "daysAgo": "{count} days ago",
+  "@daysAgo": {
+    "description": "daysAgo",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "onboardingVisualTitle": "See Clearly",
+  "@onboardingVisualTitle": {
+    "description": "onboardingVisualTitle"
+  },
+  "onboardingVisualSubtitle": "Citta × Cetasika Matrix",
+  "@onboardingVisualSubtitle": {
+    "description": "onboardingVisualSubtitle"
+  },
+  "onboardingVisualBody": "Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.",
+  "@onboardingVisualBody": {
+    "description": "onboardingVisualBody"
+  },
+  "onboardingCausalityTitle": "Understand Deeply",
+  "@onboardingCausalityTitle": {
+    "description": "onboardingCausalityTitle"
+  },
+  "onboardingCausalitySubtitle": "Dependent Origination",
+  "@onboardingCausalitySubtitle": {
+    "description": "onboardingCausalitySubtitle"
+  },
+  "onboardingCausalityBody": "Explore the twelve links of dependent origination and classifications of kamma through connected learning views.",
+  "@onboardingCausalityBody": {
+    "description": "onboardingCausalityBody"
+  },
+  "onboardingExploreTitle": "Discover for Yourself",
+  "@onboardingExploreTitle": {
+    "description": "onboardingExploreTitle"
+  },
+  "onboardingExploreSubtitle": "A Non-linear Study Path",
+  "@onboardingExploreSubtitle": {
+    "description": "onboardingExploreSubtitle"
+  },
+  "onboardingExploreBody": "Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.",
+  "@onboardingExploreBody": {
+    "description": "onboardingExploreBody"
+  },
+  "beginExploring": "Begin exploring",
+  "@beginExploring": {
+    "description": "beginExploring"
+  },
+  "matrixTitle": "아비담마 매트릭스",
+  "@matrixTitle": {
+    "description": "matrixTitle"
+  },
+  "matrixSemantics": "Abhidhamma Matrix showing {count} cittas",
+  "@matrixSemantics": {
+    "description": "matrixSemantics",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "rotateScreen": "화면 회전",
+  "@rotateScreen": {
+    "description": "rotateScreen"
+  },
+  "rotationHint": "If the screen does not rotate, enable Auto-rotate in device settings.",
+  "@rotationHint": {
+    "description": "rotationHint"
+  },
+  "highContrast": "고대비",
+  "@highContrast": {
+    "description": "highContrast"
+  },
+  "help": "도움말",
+  "@help": {
+    "description": "help"
+  },
+  "searchCittaCetasika": "찌따 또는 쩨따시까 검색…",
+  "@searchCittaCetasika": {
+    "description": "searchCittaCetasika"
+  },
+  "clearSearch": "Clear search",
+  "@clearSearch": {
+    "description": "clearSearch"
+  },
+  "citta": "찌따",
+  "@citta": {
+    "description": "citta"
+  },
+  "cetasika": "쩨따시까",
+  "@cetasika": {
+    "description": "cetasika"
+  },
+  "unwholesome": "Unwholesome",
+  "@unwholesome": {
+    "description": "unwholesome"
+  },
+  "rootless": "Rootless",
+  "@rootless": {
+    "description": "rootless"
+  },
+  "senseSphereBeautiful": "Sense-sphere beautiful",
+  "@senseSphereBeautiful": {
+    "description": "senseSphereBeautiful"
+  },
+  "formSphere": "Form sphere",
+  "@formSphere": {
+    "description": "formSphere"
+  },
+  "formlessSphere": "Formless sphere",
+  "@formlessSphere": {
+    "description": "formlessSphere"
+  },
+  "supramundane": "Supramundane",
+  "@supramundane": {
+    "description": "supramundane"
+  },
+  "legend": "Legend:",
+  "@legend": {
+    "description": "legend"
+  },
+  "associationAlways": "Invariable",
+  "@associationAlways": {
+    "description": "associationAlways"
+  },
+  "associationSometimes": "Variable",
+  "@associationSometimes": {
+    "description": "associationSometimes"
+  },
+  "associationNever": "Absent",
+  "@associationNever": {
+    "description": "associationNever"
+  },
+  "dataWarningsCount": "{count} data warnings",
+  "@dataWarningsCount": {
+    "description": "dataWarningsCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "matrixHelpTitle": "Matrix guide",
+  "@matrixHelpTitle": {
+    "description": "matrixHelpTitle"
+  },
+  "howToRead": "How to read:",
+  "@howToRead": {
+    "description": "howToRead"
+  },
+  "matrixHelpRead": "• Rows: Citta\n• Columns: Cetasika\n• Intersections: association",
+  "@matrixHelpRead": {
+    "description": "matrixHelpRead"
+  },
+  "symbols": "Symbols:",
+  "@symbols": {
+    "description": "symbols"
+  },
+  "matrixHelpSymbols": "✦ = Invariable\n◎ = Variable\n✕ = Absent",
+  "@matrixHelpSymbols": {
+    "description": "matrixHelpSymbols"
+  },
+  "tips": "Tips:",
+  "@tips": {
+    "description": "tips"
+  },
+  "matrixHelpTips": "• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space",
+  "@matrixHelpTips": {
+    "description": "matrixHelpTips"
+  },
+  "understood": "Got it",
+  "@understood": {
+    "description": "understood"
+  },
+  "dataWarningTitle": "Data warning",
+  "@dataWarningTitle": {
+    "description": "dataWarningTitle"
+  },
+  "allFilters": "All",
+  "@allFilters": {
+    "description": "allFilters"
+  },
+  "defilements": "Defilements",
+  "@defilements": {
+    "description": "defilements"
+  },
+  "kamma": "깜마",
+  "@kamma": {
+    "description": "kamma"
+  },
+  "result": "결과",
+  "@result": {
+    "description": "result"
+  },
+  "conditionsTitle": "연기",
+  "@conditionsTitle": {
+    "description": "conditionsTitle"
+  },
+  "conditionDetails": "Dependent-origination details:",
+  "@conditionDetails": {
+    "description": "conditionDetails"
+  },
+  "lastConditionDescription": "This is the final resultant link in this life-cycle and starts no new condition.",
+  "@lastConditionDescription": {
+    "description": "lastConditionDescription"
+  },
+  "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
+  "@conditionLinkDescription": {
+    "description": "conditionLinkDescription",
+    "placeholders": {
+      "effect": {},
+      "explanation": {}
+    }
+  },
+  "kammaTitle": "Kamma",
+  "@kammaTitle": {
+    "description": "kammaTitle"
+  },
+  "mindProcessTitle": "마음 과정",
+  "@mindProcessTitle": {
+    "description": "mindProcessTitle"
+  },
+  "paliLabel": "Pāḷi:",
+  "@paliLabel": {
+    "description": "paliLabel"
+  },
+  "stopPronunciation": "Stop pronunciation",
+  "@stopPronunciation": {
+    "description": "stopPronunciation"
+  },
+  "listenPaliPronunciation": "Listen to Pāḷi pronunciation",
+  "@listenPaliPronunciation": {
+    "description": "listenPaliPronunciation"
+  },
+  "ttsUnavailable": "Speech synthesis is not supported on this device.",
+  "@ttsUnavailable": {
+    "description": "ttsUnavailable"
+  },
+  "dragHandleSemantics": "Drag to resize",
+  "@dragHandleSemantics": {
+    "description": "dragHandleSemantics"
+  },
+  "cittaNumber": "Citta {number}",
+  "@cittaNumber": {
+    "description": "cittaNumber",
+    "placeholders": {
+      "number": {}
+    }
+  },
+  "doctrine": "Dhamma explanation",
+  "@doctrine": {
+    "description": "doctrine"
+  },
+  "examples": "Examples",
+  "@examples": {
+    "description": "examples"
+  },
+  "fixedCetasikasCount": "Invariable cetasikas ({count})",
+  "@fixedCetasikasCount": {
+    "description": "fixedCetasikasCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "variableCetasikasCount": "Variable cetasikas ({count})",
+  "@variableCetasikasCount": {
+    "description": "variableCetasikasCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "personalNote": "Personal note",
+  "@personalNote": {
+    "description": "personalNote"
+  },
+  "personalNoteHint": "Enter your note…",
+  "@personalNoteHint": {
+    "description": "personalNoteHint"
+  },
+  "wholesome": "Wholesome",
+  "@wholesome": {
+    "description": "wholesome"
+  },
+  "functional": "Functional",
+  "@functional": {
+    "description": "functional"
+  },
+  "pleasantFeeling": "Pleasant bodily feeling",
+  "@pleasantFeeling": {
+    "description": "pleasantFeeling"
+  },
+  "unpleasantFeeling": "Painful bodily feeling",
+  "@unpleasantFeeling": {
+    "description": "unpleasantFeeling"
+  },
+  "neutralFeeling": "Equanimous feeling",
+  "@neutralFeeling": {
+    "description": "neutralFeeling"
+  },
+  "joyfulFeeling": "Joyful feeling",
+  "@joyfulFeeling": {
+    "description": "joyfulFeeling"
+  },
+  "alwaysAssociated": "Always associated",
+  "@alwaysAssociated": {
+    "description": "alwaysAssociated"
+  },
+  "mayBeAssociated": "May be associated",
+  "@mayBeAssociated": {
+    "description": "mayBeAssociated"
+  },
+  "fourfoldDefinition": "Fourfold definition",
+  "@fourfoldDefinition": {
+    "description": "fourfoldDefinition"
+  },
+  "characteristic": "Characteristic",
+  "@characteristic": {
+    "description": "characteristic"
+  },
+  "functionLabel": "Function",
+  "@functionLabel": {
+    "description": "functionLabel"
+  },
+  "manifestation": "Manifestation",
+  "@manifestation": {
+    "description": "manifestation"
+  },
+  "proximateCause": "Proximate cause",
+  "@proximateCause": {
+    "description": "proximateCause"
+  },
+  "doctrinalConflicts": "Doctrinal conflicts",
+  "@doctrinalConflicts": {
+    "description": "doctrinalConflicts"
+  },
+  "rulesCount": "{count} rules",
+  "@rulesCount": {
+    "description": "rulesCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "universalCetasikas": "7 universals",
+  "@universalCetasikas": {
+    "description": "universalCetasikas"
+  },
+  "occasionalCetasikas": "6 occasionals",
+  "@occasionalCetasikas": {
+    "description": "occasionalCetasikas"
+  },
+  "unwholesomeCetasikas": "14 unwholesome",
+  "@unwholesomeCetasikas": {
+    "description": "unwholesomeCetasikas"
+  },
+  "beautifulCetasikas": "25 beautiful",
+  "@beautifulCetasikas": {
+    "description": "beautifulCetasikas"
+  },
+  "rowCittaSemantics": "Citta row {displayIndex}: {name}; canonical number {order}; group {group}; feeling {feeling}. {action}",
+  "@rowCittaSemantics": {
+    "description": "rowCittaSemantics",
+    "placeholders": {
+      "displayIndex": {},
+      "name": {},
+      "order": {},
+      "group": {},
+      "feeling": {},
+      "action": {}
+    }
+  },
+  "cetasikaSemantics": "Cetasika {name} ({pali}), group {group}. {state} Tap for details.",
+  "@cetasikaSemantics": {
+    "description": "cetasikaSemantics",
+    "placeholders": {
+      "name": {},
+      "pali": {},
+      "group": {},
+      "state": {}
+    }
+  },
+  "selected": "Selected",
+  "@selected": {
+    "description": "selected"
+  },
+  "dimmedByConflict": "Dimmed because of a conflict",
+  "@dimmedByConflict": {
+    "description": "dimmedByConflict"
+  },
+  "matrixCornerSemantics": "Matrix corner: rows are cittas and columns are cetasikas",
+  "@matrixCornerSemantics": {
+    "description": "matrixCornerSemantics"
+  },
+  "associationSemantics": "{association}: citta {cittaId} with cetasika {cetasikaId}",
+  "@associationSemantics": {
+    "description": "associationSemantics",
+    "placeholders": {
+      "association": {},
+      "cittaId": {},
+      "cetasikaId": {}
+    }
+  },
+  "tapForDetails": "Tap for details",
+  "@tapForDetails": {
+    "description": "tapForDetails"
+  },
+  "studyPath": "학습 경로",
+  "@studyPath": {
+    "description": "studyPath"
+  },
+  "bookmarksAndNotes": "북마크와 메모",
+  "@bookmarksAndNotes": {
+    "description": "bookmarksAndNotes"
+  },
+  "overallProgress": "전체 진행도",
+  "@overallProgress": {
+    "description": "overallProgress"
+  },
+  "savedItemsCount": "{count} saved items",
+  "@savedItemsCount": {
+    "description": "savedItemsCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "cittaTab": "Cittas",
+  "@cittaTab": {
+    "description": "cittaTab"
+  },
+  "cetasikaTab": "Cetasikas",
+  "@cetasikaTab": {
+    "description": "cetasikaTab"
+  },
+  "notesTab": "Notes",
+  "@notesTab": {
+    "description": "notesTab"
+  },
+  "noBookmarkedCittas": "No bookmarked cittas",
+  "@noBookmarkedCittas": {
+    "description": "noBookmarkedCittas"
+  },
+  "bookmarkCittaHint": "Open a lesson and tap the bookmark icon to save one",
+  "@bookmarkCittaHint": {
+    "description": "bookmarkCittaHint"
+  },
+  "loadingCittas": "Loading cittas…",
+  "@loadingCittas": {
+    "description": "loadingCittas"
+  },
+  "noBookmarkedCetasikas": "No bookmarked cetasikas",
+  "@noBookmarkedCetasikas": {
+    "description": "noBookmarkedCetasikas"
+  },
+  "loadingCetasikas": "Loading cetasikas…",
+  "@loadingCetasikas": {
+    "description": "loadingCetasikas"
+  },
+  "noNotes": "No notes yet",
+  "@noNotes": {
+    "description": "noNotes"
+  },
+  "addNoteHint": "Tap the edit icon in a lesson to add a personal note",
+  "@addNoteHint": {
+    "description": "addNoteHint"
+  },
+  "deleteNoteQuestion": "Delete note?",
+  "@deleteNoteQuestion": {
+    "description": "deleteNoteQuestion"
+  },
+  "deleteNoteWarning": "This note will be permanently deleted. Are you sure?",
+  "@deleteNoteWarning": {
+    "description": "deleteNoteWarning"
+  },
+  "addNote": "Add note",
+  "@addNote": {
+    "description": "addNote"
+  },
+  "removeBookmark": "Remove bookmark",
+  "@removeBookmark": {
+    "description": "removeBookmark"
+  },
+  "editNote": "Edit note",
+  "@editNote": {
+    "description": "editNote"
+  },
+  "deleteNote": "Delete note",
+  "@deleteNote": {
+    "description": "deleteNote"
+  },
+  "noteUpdated": "Note updated",
+  "@noteUpdated": {
+    "description": "noteUpdated"
+  },
+  "noteSaved": "Note saved",
+  "@noteSaved": {
+    "description": "noteSaved"
+  },
+  "editNoteTitle": "Edit note",
+  "@editNoteTitle": {
+    "description": "editNoteTitle"
+  },
+  "addNoteTitle": "Add note",
+  "@addNoteTitle": {
+    "description": "addNoteTitle"
+  },
+  "studyNoteHint": "Write your note about this item…\n\nExample: this citta appears during meditation when…",
+  "@studyNoteHint": {
+    "description": "studyNoteHint"
+  },
+  "charactersCount": "{current} / {maximum} characters",
+  "@charactersCount": {
+    "description": "charactersCount",
+    "placeholders": {
+      "current": {},
+      "maximum": {}
+    }
+  },
+  "update": "Update",
+  "@update": {
+    "description": "update"
+  },
+  "saveNote": "Save note",
+  "@saveNote": {
+    "description": "saveNote"
+  },
+  "studyProgressPercent": "Study progress: {percent}%",
+  "@studyProgressPercent": {
+    "description": "studyProgressPercent",
+    "placeholders": {
+      "percent": {}
+    }
+  },
+  "modulesCompletedShort": "Modules\ncompleted",
+  "@modulesCompletedShort": {
+    "description": "modulesCompletedShort"
+  },
+  "recommendedNext": "Recommended next",
+  "@recommendedNext": {
+    "description": "recommendedNext"
+  },
+  "progressOverview": "Progress overview",
+  "@progressOverview": {
+    "description": "progressOverview"
+  },
+  "totalModules": "Total modules",
+  "@totalModules": {
+    "description": "totalModules"
+  },
+  "dueForReview": "Due for review",
+  "@dueForReview": {
+    "description": "dueForReview"
+  },
+  "learnTab": "학습",
+  "@learnTab": {
+    "description": "learnTab"
+  },
+  "reviewTab": "복습",
+  "@reviewTab": {
+    "description": "reviewTab"
+  },
+  "testTab": "시험",
+  "@testTab": {
+    "description": "testTab"
+  },
+  "moduleHasNoData": "This module has no citta/cetasika data. Please check the JSON data.",
+  "@moduleHasNoData": {
+    "description": "moduleHasNoData"
+  },
+  "cittasInModule": "Cittas in this module — {count}",
+  "@cittasInModule": {
+    "description": "cittasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "cetasikasInModule": "Cetasikas in this module — {count}",
+  "@cetasikasInModule": {
+    "description": "cetasikasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
+  "@reviewCetasikaQuestion": {
+    "description": "reviewCetasikaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "groupAnswer": "Group: {group}",
+  "@groupAnswer": {
+    "description": "groupAnswer",
+    "placeholders": {
+      "group": {}
+    }
+  },
+  "reviewCittaQuestion": "Which group and feeling does citta “{name}” have?",
+  "@reviewCittaQuestion": {
+    "description": "reviewCittaQuestion",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "cittaReviewAnswer": "Sphere: {sphere}\nFeeling: {feeling}\nPāḷi: {pali}",
+  "@cittaReviewAnswer": {
+    "description": "cittaReviewAnswer",
+    "placeholders": {
+      "sphere": {},
+      "feeling": {},
+      "pali": {}
+    }
+  },
+  "noReviewContent": "This module has no review content yet. Please come back later.",
+  "@noReviewContent": {
+    "description": "noReviewContent"
+  },
+  "reviewedCount": "{revealed} / {total} reviewed",
+  "@reviewedCount": {
+    "description": "reviewedCount",
+    "placeholders": {
+      "revealed": {},
+      "total": {}
+    }
+  },
+  "reviewComplete": "You reviewed all the content. Take the quiz to check your understanding.",
+  "@reviewComplete": {
+    "description": "reviewComplete"
+  },
+  "tapToReveal": "Tap to reveal the answer",
+  "@tapToReveal": {
+    "description": "tapToReveal"
+  },
+  "answerLabel": "Answer: {answer}",
+  "@answerLabel": {
+    "description": "answerLabel",
+    "placeholders": {
+      "answer": {}
+    }
+  },
+  "revealAnswer": "Reveal answer",
+  "@revealAnswer": {
+    "description": "revealAnswer"
+  },
+  "moduleQuizTitle": "Quiz\n{module}",
+  "@moduleQuizTitle": {
+    "description": "moduleQuizTitle",
+    "placeholders": {
+      "module": {}
+    }
+  },
+  "moduleContentCount": "{count} items in this module",
+  "@moduleContentCount": {
+    "description": "moduleContentCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "quizMaximumDescription": "Up to 10 multiple-choice questions covering this module",
+  "@quizMaximumDescription": {
+    "description": "quizMaximumDescription"
+  },
+  "startQuiz": "Start quiz",
+  "@startQuiz": {
+    "description": "startQuiz"
+  },
+  "cittasCount": "{count} cittas",
+  "@cittasCount": {
+    "description": "cittasCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "cetasikasCount": "{count} cetasikas",
+  "@cetasikasCount": {
+    "description": "cetasikasCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "noteForItem": "Note: {name}",
+  "@noteForItem": {
+    "description": "noteForItem",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "chooseLevel": "난이도 선택",
+  "@chooseLevel": {
+    "description": "chooseLevel"
+  },
+  "quizLevelDescription": "Each level generates up to {count} questions from this module",
+  "@quizLevelDescription": {
+    "description": "quizLevelDescription",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "insufficientQuizData": "This module does not have enough data to create questions.",
+  "@insufficientQuizData": {
+    "description": "insufficientQuizData"
+  },
+  "explanation": "해설",
+  "@explanation": {
+    "description": "explanation"
+  },
+  "nextQuestion": "다음 문제",
+  "@nextQuestion": {
+    "description": "nextQuestion"
+  },
+  "viewResults": "결과 보기",
+  "@viewResults": {
+    "description": "viewResults"
+  },
+  "correctAnswers": "{score} / {total} correct",
+  "@correctAnswers": {
+    "description": "correctAnswers",
+    "placeholders": {
+      "score": {},
+      "total": {}
+    }
+  },
+  "quizExcellent": "Excellent! You have mastered this module.",
+  "@quizExcellent": {
+    "description": "quizExcellent"
+  },
+  "quizTryAgain": "Review the material and try again.",
+  "@quizTryAgain": {
+    "description": "quizTryAgain"
+  },
+  "tryAgain": "다시 시도",
+  "@tryAgain": {
+    "description": "tryAgain"
+  },
+  "quizInsufficientDataMessage": "Module “{module}” does not have enough data to create questions.",
+  "@quizInsufficientDataMessage": {
+    "description": "quizInsufficientDataMessage",
+    "placeholders": {
+      "module": {}
+    }
+  },
+  "quizTypeCetasikaGroup": "Cetasika classification",
+  "@quizTypeCetasikaGroup": {
+    "description": "quizTypeCetasikaGroup"
+  },
+  "quizTypeFeeling": "Feeling recognition",
+  "@quizTypeFeeling": {
+    "description": "quizTypeFeeling"
+  },
+  "quizTypeConflict": "Doctrinal conflict",
+  "@quizTypeConflict": {
+    "description": "quizTypeConflict"
+  },
+  "quizTypeSphere": "Sphere",
+  "@quizTypeSphere": {
+    "description": "quizTypeSphere"
+  },
+  "beginner": "초급",
+  "@beginner": {
+    "description": "beginner"
+  },
+  "beginnerDescription": "Basic cetasika groups and feelings",
+  "@beginnerDescription": {
+    "description": "beginnerDescription"
+  },
+  "intermediate": "중급",
+  "@intermediate": {
+    "description": "intermediate"
+  },
+  "intermediateDescription": "Includes cetasika conflicts",
+  "@intermediateDescription": {
+    "description": "intermediateDescription"
+  },
+  "advanced": "고급",
+  "@advanced": {
+    "description": "advanced"
+  },
+  "advancedDescription": "Includes spheres and all question types",
+  "@advancedDescription": {
+    "description": "advancedDescription"
+  },
+  "trueLabel": "True",
+  "@trueLabel": {
+    "description": "trueLabel"
+  },
+  "falseLabel": "False",
+  "@falseLabel": {
+    "description": "falseLabel"
+  },
+  "trueOrFalse": "True or false?",
+  "@trueOrFalse": {
+    "description": "trueOrFalse"
+  },
+  "quizCetasikaGroupQuestion": "Which group contains “{name}” ({pali})?",
+  "@quizCetasikaGroupQuestion": {
+    "description": "quizCetasikaGroupQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "quizCetasikaGroupExplanation": "“{name}” belongs to {group}.\n{description}",
+  "@quizCetasikaGroupExplanation": {
+    "description": "quizCetasikaGroupExplanation",
+    "placeholders": {
+      "name": {},
+      "group": {},
+      "description": {}
+    }
+  },
+  "quizCetasikaClaim": "“{name}” ({pali}) belongs to {group}. True or false?",
+  "@quizCetasikaClaim": {
+    "description": "quizCetasikaClaim",
+    "placeholders": {
+      "name": {},
+      "pali": {},
+      "group": {}
+    }
+  },
+  "quizCittaFeelingQuestion": "What feeling accompanies citta “{name}”?",
+  "@quizCittaFeelingQuestion": {
+    "description": "quizCittaFeelingQuestion",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "quizCittaFeelingExplanation": "“{name}” has {feeling}.",
+  "@quizCittaFeelingExplanation": {
+    "description": "quizCittaFeelingExplanation",
+    "placeholders": {
+      "name": {},
+      "feeling": {}
+    }
+  },
+  "quizCittaFeelingClaim": "Citta “{name}” has {feeling}. True or false?",
+  "@quizCittaFeelingClaim": {
+    "description": "quizCittaFeelingClaim",
+    "placeholders": {
+      "name": {},
+      "feeling": {}
+    }
+  },
+  "conflictNo": "No — they conflict",
+  "@conflictNo": {
+    "description": "conflictNo"
+  },
+  "conflictAlwaysYes": "Yes — they always arise together",
+  "@conflictAlwaysYes": {
+    "description": "conflictAlwaysYes"
+  },
+  "conflictSometimesYes": "Yes — they sometimes arise together",
+  "@conflictSometimesYes": {
+    "description": "conflictSometimesYes"
+  },
+  "quizConflictQuestion": "Can “{first}” and “{second}” arise together in one citta?",
+  "@quizConflictQuestion": {
+    "description": "quizConflictQuestion",
+    "placeholders": {
+      "first": {},
+      "second": {}
+    }
+  },
+  "quizSphereQuestion": "To which sphere does citta “{name}” belong?",
+  "@quizSphereQuestion": {
+    "description": "quizSphereQuestion",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "quizSphereExplanation": "“{name}” belongs to {sphere}.",
+  "@quizSphereExplanation": {
+    "description": "quizSphereExplanation",
+    "placeholders": {
+      "name": {},
+      "sphere": {}
+    }
+  },
+  "quizSphereClaim": "Citta “{name}” belongs to {sphere}. True or false?",
+  "@quizSphereClaim": {
+    "description": "quizSphereClaim",
+    "placeholders": {
+      "name": {},
+      "sphere": {}
+    }
+  },
+  "phaseFoundation": "Phase 1 — Foundation",
+  "@phaseFoundation": {
+    "description": "phaseFoundation"
+  },
+  "phaseCausality": "Phase 2 — Causality",
+  "@phaseCausality": {
+    "description": "phaseCausality"
+  },
+  "phaseMastery": "Phase 3 — Mastery",
+  "@phaseMastery": {
+    "description": "phaseMastery"
+  },
+  "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
+  "@contentFallbackNotice": {
+    "description": "contentFallbackNotice"
+  }
+}

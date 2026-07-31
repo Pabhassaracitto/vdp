@@ -175,6 +175,63 @@ class VdpSymbols {
 }
 
 class VdpTheme {
+  static const _fontFallbacks = <String>[
+    'Sarabun',
+    'NotoSansApp',
+    'NotoSansArabicApp',
+    'NotoSansBengaliApp',
+    'NotoSerifTibetanApp',
+    'NotoSansDevanagariApp',
+    'NotoSansMyanmarApp',
+    'NotoSansSinhalaApp',
+    'NotoSansKhmerApp',
+    'NotoSansLaoApp',
+    'NotoSansTamilApp',
+    'NotoSansTeluguApp',
+    'NotoSansThaiApp',
+    'NotoSansSCApp',
+    'NotoSansTCApp',
+    'NotoSansJPApp',
+    'NotoSansKRApp',
+  ];
+
+  static String _fontFor(Locale locale) {
+    if (locale.languageCode == 'zh') {
+      return locale.countryCode == 'TW' ? 'NotoSansTCApp' : 'NotoSansSCApp';
+    }
+    return switch (locale.languageCode) {
+      'ar' => 'NotoSansArabicApp',
+      'bn' => 'NotoSansBengaliApp',
+      'bo' => 'NotoSerifTibetanApp',
+      'hi' || 'mr' => 'NotoSansDevanagariApp',
+      'my' => 'NotoSansMyanmarApp',
+      'si' => 'NotoSansSinhalaApp',
+      'km' => 'NotoSansKhmerApp',
+      'lo' => 'NotoSansLaoApp',
+      'ta' => 'NotoSansTamilApp',
+      'te' => 'NotoSansTeluguApp',
+      'th' => 'NotoSansThaiApp',
+      'ja' => 'NotoSansJPApp',
+      'ko' => 'NotoSansKRApp',
+      'ru' || 'mn' => 'NotoSansApp',
+      _ => 'Sarabun',
+    };
+  }
+
+  static ThemeData localizedTheme(ThemeData base, Locale locale) {
+    final family = _fontFor(locale);
+    return base.copyWith(
+      textTheme: base.textTheme.apply(
+        fontFamily: family,
+        fontFamilyFallback: _fontFallbacks,
+      ),
+      primaryTextTheme: base.primaryTextTheme.apply(
+        fontFamily: family,
+        fontFamilyFallback: _fontFallbacks,
+      ),
+    );
+  }
+
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     colorScheme: const ColorScheme.light(

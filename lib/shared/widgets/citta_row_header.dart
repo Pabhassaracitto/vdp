@@ -1,8 +1,10 @@
 // lib/shared/widgets/citta_row_header.dart
 
 import 'package:flutter/material.dart';
+import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/citta_model.dart';
+import '../../l10n/l10n.dart';
 
 class CittaRowHeader extends StatelessWidget {
   final CittaModel citta;
@@ -29,6 +31,7 @@ class CittaRowHeader extends StatelessWidget {
     final bhumiColor = citta.bhumiGroup.name.bhumiColor;
     final bhumiSymbol = citta.bhumiGroup.name.bhumiSymbol;
     final vedanaSymbol = _getVedanaSymbol(citta.vedana);
+    final localizedName = citta.localizedName(context);
 
     final double textFontSize = isLandscape ? 8.0 : 10.5;
     final double indexFontSize = isLandscape ? 8.0 : 10.0;
@@ -36,11 +39,14 @@ class CittaRowHeader extends StatelessWidget {
     final double vedanaFontSize = isLandscape ? 7.0 : 10.0;
 
     return Semantics(
-      label: 'Tâm hàng $displayIndex: ${citta.nameVietnamese}, '
-          'số gốc ${citta.orderIndex}, '
-          'nhóm ${_getBhumiName(citta.bhumiGroup)}, '
-          'thọ ${_getVedanaName(citta.vedana)}. '
-          '${isSelected ? "Đang được chọn" : "Nhấn để xem chi tiết"}',
+      label: context.l10n.rowCittaSemantics(
+        displayIndex,
+        localizedName,
+        citta.orderIndex,
+        citta.bhumiGroup.localizedName(context.l10n),
+        citta.vedana.localizedName(context.l10n),
+        isSelected ? context.l10n.selected : context.l10n.tapForDetails,
+      ),
       button: true,
       selected: isSelected,
       excludeSemantics: false,
@@ -54,8 +60,8 @@ class CittaRowHeader extends StatelessWidget {
                 : (useHighContrast
                     ? HCColors.surface
                     : bhumiColor.withValues(alpha: 0.08)),
-            border: Border(
-              left: BorderSide(
+            border: BorderDirectional(
+              start: BorderSide(
                 color: bhumiColor,
                 width: isLandscape ? 3 : 4,
               ),
@@ -65,7 +71,7 @@ class CittaRowHeader extends StatelessWidget {
                     : Colors.grey.shade200,
                 width: 0.5,
               ),
-              right: isSelected
+              end: isSelected
                   ? BorderSide(color: bhumiColor, width: 2)
                   : BorderSide.none,
             ),
@@ -97,7 +103,7 @@ class CittaRowHeader extends StatelessWidget {
                 // Tên Tâm
                 Expanded(
                   child: Text(
-                    citta.nameVietnamese,
+                    localizedName,
                     style: TextStyle(
                       fontSize: textFontSize,
                       height: 1.15,
@@ -165,23 +171,4 @@ class CittaRowHeader extends StatelessWidget {
     }
   }
 
-  String _getVedanaName(Vedana vedana) {
-    switch (vedana) {
-      case Vedana.pleasant: return 'Lạc thọ';
-      case Vedana.unpleasant: return 'Khổ thọ';
-      case Vedana.neutral: return 'Xả thọ';
-      case Vedana.joy: return 'Hỷ thọ';
-    }
-  }
-
-  String _getBhumiName(BhumiGroup bhumi) {
-    switch (bhumi) {
-      case BhumiGroup.akusala: return 'Bất Thiện';
-      case BhumiGroup.ahetuka: return 'Vô Nhân';
-      case BhumiGroup.sobhanaKamavacara: return 'Tịnh Hảo Dục Giới';
-      case BhumiGroup.rupavacara: return 'Sắc Giới';
-      case BhumiGroup.arupavacara: return 'Vô Sắc Giới';
-      case BhumiGroup.lokuttara: return 'Siêu Thế';
-    }
-  }
 }

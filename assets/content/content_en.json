@@ -1,0 +1,2013 @@
+{
+  "locale": "en",
+  "schemaVersion": 1,
+  "cittas": {
+    "CI_001": {
+      "name": "Greed-rooted consciousness with joy associated with wrong view unprompted",
+      "doctrinalNote": "Greed-rooted consciousness with joy associated with wrong view unprompted is classified in the unwholesome group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_002": {
+      "name": "Greed-rooted consciousness with joy associated with wrong view prompted",
+      "doctrinalNote": "Greed-rooted consciousness with joy associated with wrong view prompted is classified in the unwholesome group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_003": {
+      "name": "Greed-rooted consciousness with joy dissociated from wrong view unprompted",
+      "doctrinalNote": "Greed-rooted consciousness with joy dissociated from wrong view unprompted is classified in the unwholesome group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_004": {
+      "name": "Greed-rooted consciousness with joy dissociated from wrong view prompted",
+      "doctrinalNote": "Greed-rooted consciousness with joy dissociated from wrong view prompted is classified in the unwholesome group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_005": {
+      "name": "Greed-rooted consciousness with equanimity associated with wrong view unprompted",
+      "doctrinalNote": "Greed-rooted consciousness with equanimity associated with wrong view unprompted is classified in the unwholesome group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_006": {
+      "name": "Greed-rooted consciousness with equanimity associated with wrong view prompted",
+      "doctrinalNote": "Greed-rooted consciousness with equanimity associated with wrong view prompted is classified in the unwholesome group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_007": {
+      "name": "Greed-rooted consciousness with equanimity dissociated from wrong view unprompted",
+      "doctrinalNote": "Greed-rooted consciousness with equanimity dissociated from wrong view unprompted is classified in the unwholesome group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_008": {
+      "name": "Greed-rooted consciousness with equanimity dissociated from wrong view prompted",
+      "doctrinalNote": "Greed-rooted consciousness with equanimity dissociated from wrong view prompted is classified in the unwholesome group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_009": {
+      "name": "Hatred-rooted consciousness with displeasure associated with aversion unprompted",
+      "doctrinalNote": "Hatred-rooted consciousness with displeasure associated with aversion unprompted is classified in the unwholesome group and is accompanied by painful bodily feeling. Its canonical Pāḷi designation is Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_010": {
+      "name": "Hatred-rooted consciousness with displeasure associated with aversion prompted",
+      "doctrinalNote": "Hatred-rooted consciousness with displeasure associated with aversion prompted is classified in the unwholesome group and is accompanied by painful bodily feeling. Its canonical Pāḷi designation is Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_011": {
+      "name": "Delusion-rooted consciousness with equanimity associated with doubt",
+      "doctrinalNote": "Delusion-rooted consciousness with equanimity associated with doubt is classified in the unwholesome group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_012": {
+      "name": "Delusion-rooted consciousness with equanimity associated with restlessness",
+      "doctrinalNote": "Delusion-rooted consciousness with equanimity associated with restlessness is classified in the unwholesome group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ Uddhaccasampayuttaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_013": {
+      "name": "Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_014": {
+      "name": "Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_015": {
+      "name": "Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_016": {
+      "name": "Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_017": {
+      "name": "Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ",
+      "doctrinalNote": "Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ is classified in the rootless group and is accompanied by painful bodily feeling. Its canonical Pāḷi designation is Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_018": {
+      "name": "Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_019": {
+      "name": "Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_020": {
+      "name": "Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_021": {
+      "name": "Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_022": {
+      "name": "Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_023": {
+      "name": "Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_024": {
+      "name": "Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ",
+      "doctrinalNote": "Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ is classified in the rootless group and is accompanied by pleasant bodily feeling. Its canonical Pāḷi designation is Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_025": {
+      "name": "Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_026": {
+      "name": "Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ",
+      "doctrinalNote": "Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_027": {
+      "name": "Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ",
+      "doctrinalNote": "Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ is classified in the rootless group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_028": {
+      "name": "Five-sense-door adverting consciousness with equanimity",
+      "doctrinalNote": "Five-sense-door adverting consciousness with equanimity is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_029": {
+      "name": "Mind-door adverting consciousness with equanimity",
+      "doctrinalNote": "Mind-door adverting consciousness with equanimity is classified in the rootless group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_030": {
+      "name": "Somanassa-sahagataṃ hasituppāda-cittaṃ",
+      "doctrinalNote": "Somanassa-sahagataṃ hasituppāda-cittaṃ is classified in the rootless group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ hasituppāda-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_055": {
+      "name": "Great wholesome consciousness with joy associated with knowledge unprompted",
+      "doctrinalNote": "Great wholesome consciousness with joy associated with knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_056": {
+      "name": "Great wholesome consciousness with joy associated with knowledge prompted",
+      "doctrinalNote": "Great wholesome consciousness with joy associated with knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_057": {
+      "name": "Great wholesome consciousness with joy dissociated from knowledge unprompted",
+      "doctrinalNote": "Great wholesome consciousness with joy dissociated from knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_058": {
+      "name": "Great wholesome consciousness with joy dissociated from knowledge prompted",
+      "doctrinalNote": "Great wholesome consciousness with joy dissociated from knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_059": {
+      "name": "Great wholesome consciousness with equanimity associated with knowledge unprompted",
+      "doctrinalNote": "Great wholesome consciousness with equanimity associated with knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_060": {
+      "name": "Great wholesome consciousness with equanimity associated with knowledge prompted",
+      "doctrinalNote": "Great wholesome consciousness with equanimity associated with knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_061": {
+      "name": "Great wholesome consciousness with equanimity dissociated from knowledge unprompted",
+      "doctrinalNote": "Great wholesome consciousness with equanimity dissociated from knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_062": {
+      "name": "Great wholesome consciousness with equanimity dissociated from knowledge prompted",
+      "doctrinalNote": "Great wholesome consciousness with equanimity dissociated from knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_063": {
+      "name": "Great resultant consciousness with joy associated with knowledge unprompted",
+      "doctrinalNote": "Great resultant consciousness with joy associated with knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_064": {
+      "name": "Great resultant consciousness with joy associated with knowledge prompted",
+      "doctrinalNote": "Great resultant consciousness with joy associated with knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_065": {
+      "name": "Great resultant consciousness with joy dissociated from knowledge unprompted",
+      "doctrinalNote": "Great resultant consciousness with joy dissociated from knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_066": {
+      "name": "Great resultant consciousness with joy dissociated from knowledge prompted",
+      "doctrinalNote": "Great resultant consciousness with joy dissociated from knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_067": {
+      "name": "Great resultant consciousness with equanimity associated with knowledge unprompted",
+      "doctrinalNote": "Great resultant consciousness with equanimity associated with knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_068": {
+      "name": "Great resultant consciousness with equanimity associated with knowledge prompted",
+      "doctrinalNote": "Great resultant consciousness with equanimity associated with knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_069": {
+      "name": "Great resultant consciousness with equanimity dissociated from knowledge unprompted",
+      "doctrinalNote": "Great resultant consciousness with equanimity dissociated from knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_070": {
+      "name": "Great resultant consciousness with equanimity dissociated from knowledge prompted",
+      "doctrinalNote": "Great resultant consciousness with equanimity dissociated from knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_071": {
+      "name": "Great functional consciousness with joy associated with knowledge unprompted",
+      "doctrinalNote": "Great functional consciousness with joy associated with knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_072": {
+      "name": "Great functional consciousness with joy associated with knowledge prompted",
+      "doctrinalNote": "Great functional consciousness with joy associated with knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_073": {
+      "name": "Great functional consciousness with joy dissociated from knowledge unprompted",
+      "doctrinalNote": "Great functional consciousness with joy dissociated from knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_074": {
+      "name": "Great functional consciousness with joy dissociated from knowledge prompted",
+      "doctrinalNote": "Great functional consciousness with joy dissociated from knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by joy. Its canonical Pāḷi designation is Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_075": {
+      "name": "Great functional consciousness with equanimity associated with knowledge unprompted",
+      "doctrinalNote": "Great functional consciousness with equanimity associated with knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_076": {
+      "name": "Great functional consciousness with equanimity associated with knowledge prompted",
+      "doctrinalNote": "Great functional consciousness with equanimity associated with knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_077": {
+      "name": "Great functional consciousness with equanimity dissociated from knowledge unprompted",
+      "doctrinalNote": "Great functional consciousness with equanimity dissociated from knowledge unprompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_078": {
+      "name": "Great functional consciousness with equanimity dissociated from knowledge prompted",
+      "doctrinalNote": "Great functional consciousness with equanimity dissociated from knowledge prompted is classified in the sense-sphere beautiful group and is accompanied by equanimity. Its canonical Pāḷi designation is Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_079": {
+      "name": "Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_080": {
+      "name": "Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_081": {
+      "name": "Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_082": {
+      "name": "Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ is classified in the form sphere and is accompanied by pleasant bodily feeling. Its canonical Pāḷi designation is Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_083": {
+      "name": "Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ is classified in the form sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_084": {
+      "name": "Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_085": {
+      "name": "Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_086": {
+      "name": "Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_087": {
+      "name": "Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ is classified in the form sphere and is accompanied by pleasant bodily feeling. Its canonical Pāḷi designation is Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_088": {
+      "name": "Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ is classified in the form sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_089": {
+      "name": "Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_090": {
+      "name": "Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_091": {
+      "name": "Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ is classified in the form sphere and is accompanied by joy. Its canonical Pāḷi designation is Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_092": {
+      "name": "Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ is classified in the form sphere and is accompanied by pleasant bodily feeling. Its canonical Pāḷi designation is Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_093": {
+      "name": "Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ is classified in the form sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_094": {
+      "name": "Wholesome consciousness base of infinite space",
+      "doctrinalNote": "Wholesome consciousness base of infinite space is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Ākāsānañcāyatana-kusalaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_095": {
+      "name": "Wholesome consciousness base of infinite consciousness",
+      "doctrinalNote": "Wholesome consciousness base of infinite consciousness is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Viññāṇañcāyatana-kusalaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_096": {
+      "name": "Wholesome consciousness base of nothingness",
+      "doctrinalNote": "Wholesome consciousness base of nothingness is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Ākiñcaññāyatana-kusalaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_097": {
+      "name": "Wholesome consciousness base of neither-perception-nor-non-perception",
+      "doctrinalNote": "Wholesome consciousness base of neither-perception-nor-non-perception is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_098": {
+      "name": "Resultant consciousness base of infinite space",
+      "doctrinalNote": "Resultant consciousness base of infinite space is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Ākāsānañcāyatana-vipakaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_099": {
+      "name": "Resultant consciousness base of infinite consciousness",
+      "doctrinalNote": "Resultant consciousness base of infinite consciousness is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Viññāṇañcāyatana-vipakaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_100": {
+      "name": "Resultant consciousness base of nothingness",
+      "doctrinalNote": "Resultant consciousness base of nothingness is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Ākiñcaññāyatana-vipakaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_101": {
+      "name": "Resultant consciousness base of neither-perception-nor-non-perception",
+      "doctrinalNote": "Resultant consciousness base of neither-perception-nor-non-perception is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_102": {
+      "name": "Functional consciousness base of infinite space",
+      "doctrinalNote": "Functional consciousness base of infinite space is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Ākāsānañcāyatana-kiriyaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_103": {
+      "name": "Functional consciousness base of infinite consciousness",
+      "doctrinalNote": "Functional consciousness base of infinite consciousness is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Viññāṇañcāyatana-kiriyaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_104": {
+      "name": "Functional consciousness base of nothingness",
+      "doctrinalNote": "Functional consciousness base of nothingness is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Ākiñcaññāyatana-kiriyaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_105": {
+      "name": "Functional consciousness base of neither-perception-nor-non-perception",
+      "doctrinalNote": "Functional consciousness base of neither-perception-nor-non-perception is classified in the formless sphere and is accompanied by equanimity. Its canonical Pāḷi designation is Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_106": {
+      "name": "Sotāpatti-magga-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-magga-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sotāpatti-magga-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_107": {
+      "name": "Sotāpatti-magga-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-magga-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sotāpatti-magga-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_108": {
+      "name": "Sotāpatti-magga-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-magga-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sotāpatti-magga-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_109": {
+      "name": "Sotāpatti-magga-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-magga-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sotāpatti-magga-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_110": {
+      "name": "Sotāpatti-magga-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-magga-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sotāpatti-magga-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_111": {
+      "name": "Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_112": {
+      "name": "Sakadāgāmi-magga-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-magga-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sakadāgāmi-magga-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_113": {
+      "name": "Sakadāgāmi-magga-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-magga-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sakadāgāmi-magga-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_114": {
+      "name": "Sakadāgāmi-magga-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-magga-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sakadāgāmi-magga-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_115": {
+      "name": "Sakadāgāmi-magga-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-magga-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sakadāgāmi-magga-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_116": {
+      "name": "Anāgāmi-magga-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-magga-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Anāgāmi-magga-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_117": {
+      "name": "Anāgāmi-magga-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-magga-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Anāgāmi-magga-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_118": {
+      "name": "Anāgāmi-magga-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-magga-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Anāgāmi-magga-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_119": {
+      "name": "Anāgāmi-magga-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-magga-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Anāgāmi-magga-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_120": {
+      "name": "Anāgāmi-magga-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-magga-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Anāgāmi-magga-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_121": {
+      "name": "Arahatta-magga-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-magga-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Arahatta-magga-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_122": {
+      "name": "Arahatta-magga-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-magga-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Arahatta-magga-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_123": {
+      "name": "Arahatta-magga-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-magga-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Arahatta-magga-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_124": {
+      "name": "Arahatta-magga-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-magga-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Arahatta-magga-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_125": {
+      "name": "Arahatta-magga-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-magga-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Arahatta-magga-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_126": {
+      "name": "Sotāpatti-phala-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-phala-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sotāpatti-phala-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_127": {
+      "name": "Sotāpatti-phala-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-phala-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sotāpatti-phala-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_128": {
+      "name": "Sotāpatti-phala-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-phala-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sotāpatti-phala-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_129": {
+      "name": "Sotāpatti-phala-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-phala-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sotāpatti-phala-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_130": {
+      "name": "Sotāpatti-phala-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Sotāpatti-phala-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sotāpatti-phala-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_131": {
+      "name": "Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_132": {
+      "name": "Sakadāgāmi-phala-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-phala-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sakadāgāmi-phala-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_133": {
+      "name": "Sakadāgāmi-phala-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-phala-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Sakadāgāmi-phala-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_134": {
+      "name": "Sakadāgāmi-phala-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-phala-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sakadāgāmi-phala-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_135": {
+      "name": "Sakadāgāmi-phala-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Sakadāgāmi-phala-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Sakadāgāmi-phala-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_136": {
+      "name": "Anāgāmi-phala-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-phala-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Anāgāmi-phala-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_137": {
+      "name": "Anāgāmi-phala-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-phala-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Anāgāmi-phala-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_138": {
+      "name": "Anāgāmi-phala-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-phala-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Anāgāmi-phala-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_139": {
+      "name": "Anāgāmi-phala-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-phala-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Anāgāmi-phala-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_140": {
+      "name": "Anāgāmi-phala-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Anāgāmi-phala-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Anāgāmi-phala-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_141": {
+      "name": "Arahatta-phala-paṭhama-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-phala-paṭhama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Arahatta-phala-paṭhama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_142": {
+      "name": "Arahatta-phala-dutiya-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-phala-dutiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Arahatta-phala-dutiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_143": {
+      "name": "Arahatta-phala-tatiya-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-phala-tatiya-jhāna-cittaṃ is classified in the supramundane group and is accompanied by joy. Its canonical Pāḷi designation is Arahatta-phala-tatiya-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_144": {
+      "name": "Arahatta-phala-catuttha-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-phala-catuttha-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Arahatta-phala-catuttha-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    },
+    "CI_145": {
+      "name": "Arahatta-phala-pañcama-jhāna-cittaṃ",
+      "doctrinalNote": "Arahatta-phala-pañcama-jhāna-cittaṃ is classified in the supramundane group and is accompanied by equanimity. Its canonical Pāḷi designation is Arahatta-phala-pañcama-jhāna-cittaṃ.",
+      "examples": [
+        "Study this citta through its defining factors and its associations with cetasikas."
+      ]
+    }
+  },
+  "cetasikas": {
+    "CS_PHASSA": {
+      "name": "Contact",
+      "shortName": "Contact",
+      "description": "Contact (Phassa) is a universal mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to contact.",
+      "function": "Performs the mental function of contact within the associated citta.",
+      "manifestation": "Manifests as contact when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_VEDANA": {
+      "name": "Feeling",
+      "shortName": "Feeling",
+      "description": "Feeling (Vedanā) is a universal mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to feeling.",
+      "function": "Performs the mental function of feeling within the associated citta.",
+      "manifestation": "Manifests as feeling when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_SANNA": {
+      "name": "Perception",
+      "shortName": "Perception",
+      "description": "Perception (Saññā) is a universal mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to perception.",
+      "function": "Performs the mental function of perception within the associated citta.",
+      "manifestation": "Manifests as perception when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CETANA": {
+      "name": "Volition",
+      "shortName": "Volition",
+      "description": "Volition (Cetanā) is a universal mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to volition.",
+      "function": "Performs the mental function of volition within the associated citta.",
+      "manifestation": "Manifests as volition when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_EKAGGATA": {
+      "name": "One-pointedness",
+      "shortName": "One-pointedness",
+      "description": "One-pointedness (Ekaggatā) is a universal mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to one-pointedness.",
+      "function": "Performs the mental function of one-pointedness within the associated citta.",
+      "manifestation": "Manifests as one-pointedness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_JIVITINDRIYA": {
+      "name": "Mental life faculty",
+      "shortName": "Mental life faculty",
+      "description": "Mental life faculty (Jīvitindriya) is a universal mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to mental life faculty.",
+      "function": "Performs the mental function of mental life faculty within the associated citta.",
+      "manifestation": "Manifests as mental life faculty when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_MANASIKARA": {
+      "name": "Attention",
+      "shortName": "Attention",
+      "description": "Attention (Manasikāra) is a universal mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to attention.",
+      "function": "Performs the mental function of attention within the associated citta.",
+      "manifestation": "Manifests as attention when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_VITAKKA": {
+      "name": "Initial application",
+      "shortName": "Initial application",
+      "description": "Initial application (Vitakka) is an occasional mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to initial application.",
+      "function": "Performs the mental function of initial application within the associated citta.",
+      "manifestation": "Manifests as initial application when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_VICARA": {
+      "name": "Sustained application",
+      "shortName": "Sustained application",
+      "description": "Sustained application (Vicāra) is an occasional mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to sustained application.",
+      "function": "Performs the mental function of sustained application within the associated citta.",
+      "manifestation": "Manifests as sustained application when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_ADHIMOKKHA": {
+      "name": "Decision",
+      "shortName": "Decision",
+      "description": "Decision (Adhimokkha) is an occasional mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to decision.",
+      "function": "Performs the mental function of decision within the associated citta.",
+      "manifestation": "Manifests as decision when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_VIRIYA": {
+      "name": "Energy",
+      "shortName": "Energy",
+      "description": "Energy (Vīriya) is an occasional mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to energy.",
+      "function": "Performs the mental function of energy within the associated citta.",
+      "manifestation": "Manifests as energy when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_PITI": {
+      "name": "Rapture",
+      "shortName": "Rapture",
+      "description": "Rapture (Pīti) is an occasional mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to rapture.",
+      "function": "Performs the mental function of rapture within the associated citta.",
+      "manifestation": "Manifests as rapture when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CHANDA": {
+      "name": "Desire-to-act",
+      "shortName": "Desire-to-act",
+      "description": "Desire-to-act (Chanda) is an occasional mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to desire-to-act.",
+      "function": "Performs the mental function of desire-to-act within the associated citta.",
+      "manifestation": "Manifests as desire-to-act when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_MOHA": {
+      "name": "Delusion",
+      "shortName": "Delusion",
+      "description": "Delusion (Moha) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to delusion.",
+      "function": "Performs the mental function of delusion within the associated citta.",
+      "manifestation": "Manifests as delusion when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_AHIRIKA": {
+      "name": "Shamelessness",
+      "shortName": "Shamelessness",
+      "description": "Shamelessness (Ahirika) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to shamelessness.",
+      "function": "Performs the mental function of shamelessness within the associated citta.",
+      "manifestation": "Manifests as shamelessness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_ANOTTAPPA": {
+      "name": "Fearlessness of wrongdoing",
+      "shortName": "Fearlessness of wrongdoing",
+      "description": "Fearlessness of wrongdoing (Anottappa) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to fearlessness of wrongdoing.",
+      "function": "Performs the mental function of fearlessness of wrongdoing within the associated citta.",
+      "manifestation": "Manifests as fearlessness of wrongdoing when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_UDDHACCA": {
+      "name": "Restlessness",
+      "shortName": "Restlessness",
+      "description": "Restlessness (Uddhacca) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to restlessness.",
+      "function": "Performs the mental function of restlessness within the associated citta.",
+      "manifestation": "Manifests as restlessness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_LOBHA": {
+      "name": "Greed",
+      "shortName": "Greed",
+      "description": "Greed (Lobha) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to greed.",
+      "function": "Performs the mental function of greed within the associated citta.",
+      "manifestation": "Manifests as greed when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_DITTHI": {
+      "name": "Wrong view",
+      "shortName": "Wrong view",
+      "description": "Wrong view (Diṭṭhi) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to wrong view.",
+      "function": "Performs the mental function of wrong view within the associated citta.",
+      "manifestation": "Manifests as wrong view when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_MANA": {
+      "name": "Conceit",
+      "shortName": "Conceit",
+      "description": "Conceit (Māna) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to conceit.",
+      "function": "Performs the mental function of conceit within the associated citta.",
+      "manifestation": "Manifests as conceit when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_DOSA": {
+      "name": "Hatred",
+      "shortName": "Hatred",
+      "description": "Hatred (Dosa) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to hatred.",
+      "function": "Performs the mental function of hatred within the associated citta.",
+      "manifestation": "Manifests as hatred when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_ISSA": {
+      "name": "Envy",
+      "shortName": "Envy",
+      "description": "Envy (Issā) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to envy.",
+      "function": "Performs the mental function of envy within the associated citta.",
+      "manifestation": "Manifests as envy when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_MACCHARIYA": {
+      "name": "Avarice",
+      "shortName": "Avarice",
+      "description": "Avarice (Macchariya) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to avarice.",
+      "function": "Performs the mental function of avarice within the associated citta.",
+      "manifestation": "Manifests as avarice when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KUKKUCCA": {
+      "name": "Worry",
+      "shortName": "Worry",
+      "description": "Worry (Kukkucca) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to worry.",
+      "function": "Performs the mental function of worry within the associated citta.",
+      "manifestation": "Manifests as worry when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_THINA": {
+      "name": "Sloth",
+      "shortName": "Sloth",
+      "description": "Sloth (Thīna) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to sloth.",
+      "function": "Performs the mental function of sloth within the associated citta.",
+      "manifestation": "Manifests as sloth when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_MIDDHA": {
+      "name": "Torpor",
+      "shortName": "Torpor",
+      "description": "Torpor (Middha) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to torpor.",
+      "function": "Performs the mental function of torpor within the associated citta.",
+      "manifestation": "Manifests as torpor when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_VICIKICCHA": {
+      "name": "Doubt",
+      "shortName": "Doubt",
+      "description": "Doubt (Vicikicchā) is an unwholesome mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to doubt.",
+      "function": "Performs the mental function of doubt within the associated citta.",
+      "manifestation": "Manifests as doubt when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_SADDHA": {
+      "name": "Faith",
+      "shortName": "Faith",
+      "description": "Faith (Saddhā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to faith.",
+      "function": "Performs the mental function of faith within the associated citta.",
+      "manifestation": "Manifests as faith when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_SATI": {
+      "name": "Mindfulness",
+      "shortName": "Mindfulness",
+      "description": "Mindfulness (Sati) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to mindfulness.",
+      "function": "Performs the mental function of mindfulness within the associated citta.",
+      "manifestation": "Manifests as mindfulness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_HIRI": {
+      "name": "Moral shame",
+      "shortName": "Moral shame",
+      "description": "Moral shame (Hirī) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to moral shame.",
+      "function": "Performs the mental function of moral shame within the associated citta.",
+      "manifestation": "Manifests as moral shame when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_OTTAPPA": {
+      "name": "Moral dread",
+      "shortName": "Moral dread",
+      "description": "Moral dread (Ottappa) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to moral dread.",
+      "function": "Performs the mental function of moral dread within the associated citta.",
+      "manifestation": "Manifests as moral dread when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_ALOBHA": {
+      "name": "Non-greed",
+      "shortName": "Non-greed",
+      "description": "Non-greed (Alobha) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to non-greed.",
+      "function": "Performs the mental function of non-greed within the associated citta.",
+      "manifestation": "Manifests as non-greed when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_ADOSA": {
+      "name": "Non-hatred",
+      "shortName": "Non-hatred",
+      "description": "Non-hatred (Adosa) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to non-hatred.",
+      "function": "Performs the mental function of non-hatred within the associated citta.",
+      "manifestation": "Manifests as non-hatred when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_TATRAMAJJHATTATA": {
+      "name": "Equanimity",
+      "shortName": "Equanimity",
+      "description": "Equanimity (Tatramajjhattatā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to equanimity.",
+      "function": "Performs the mental function of equanimity within the associated citta.",
+      "manifestation": "Manifests as equanimity when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KAYAPASSADDHI": {
+      "name": "Tranquillity of mental factors",
+      "shortName": "Tranquillity of mental factors",
+      "description": "Tranquillity of mental factors (Kāya-passaddhi) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to tranquillity of mental factors.",
+      "function": "Performs the mental function of tranquillity of mental factors within the associated citta.",
+      "manifestation": "Manifests as tranquillity of mental factors when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CITTAPASSADDHI": {
+      "name": "Tranquillity of consciousness",
+      "shortName": "Tranquillity of consciousness",
+      "description": "Tranquillity of consciousness (Citta-passaddhi) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to tranquillity of consciousness.",
+      "function": "Performs the mental function of tranquillity of consciousness within the associated citta.",
+      "manifestation": "Manifests as tranquillity of consciousness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KAYALAHUTA": {
+      "name": "Lightness of mental factors",
+      "shortName": "Lightness of mental factors",
+      "description": "Lightness of mental factors (Kāya-lahutā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to lightness of mental factors.",
+      "function": "Performs the mental function of lightness of mental factors within the associated citta.",
+      "manifestation": "Manifests as lightness of mental factors when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CITTALAHUTA": {
+      "name": "Lightness of consciousness",
+      "shortName": "Lightness of consciousness",
+      "description": "Lightness of consciousness (Citta-lahutā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to lightness of consciousness.",
+      "function": "Performs the mental function of lightness of consciousness within the associated citta.",
+      "manifestation": "Manifests as lightness of consciousness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KAYAMUDUTA": {
+      "name": "Malleability of mental factors",
+      "shortName": "Malleability of mental factors",
+      "description": "Malleability of mental factors (Kāya-mudutā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to malleability of mental factors.",
+      "function": "Performs the mental function of malleability of mental factors within the associated citta.",
+      "manifestation": "Manifests as malleability of mental factors when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CITTAMUDUTA": {
+      "name": "Malleability of consciousness",
+      "shortName": "Malleability of consciousness",
+      "description": "Malleability of consciousness (Citta-mudutā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to malleability of consciousness.",
+      "function": "Performs the mental function of malleability of consciousness within the associated citta.",
+      "manifestation": "Manifests as malleability of consciousness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KAYAKAMMANNATA": {
+      "name": "Wieldiness of mental factors",
+      "shortName": "Wieldiness of mental factors",
+      "description": "Wieldiness of mental factors (Kāya-kammaññatā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to wieldiness of mental factors.",
+      "function": "Performs the mental function of wieldiness of mental factors within the associated citta.",
+      "manifestation": "Manifests as wieldiness of mental factors when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CITTAKAMMANNATA": {
+      "name": "Wieldiness of consciousness",
+      "shortName": "Wieldiness of consciousness",
+      "description": "Wieldiness of consciousness (Citta-kammaññatā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to wieldiness of consciousness.",
+      "function": "Performs the mental function of wieldiness of consciousness within the associated citta.",
+      "manifestation": "Manifests as wieldiness of consciousness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KAYAPAGUNNATA": {
+      "name": "Proficiency of mental factors",
+      "shortName": "Proficiency of mental factors",
+      "description": "Proficiency of mental factors (Kāya-pāguññatā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to proficiency of mental factors.",
+      "function": "Performs the mental function of proficiency of mental factors within the associated citta.",
+      "manifestation": "Manifests as proficiency of mental factors when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CITTAPAGUNNATA": {
+      "name": "Proficiency of consciousness",
+      "shortName": "Proficiency of consciousness",
+      "description": "Proficiency of consciousness (Citta-pāguññatā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to proficiency of consciousness.",
+      "function": "Performs the mental function of proficiency of consciousness within the associated citta.",
+      "manifestation": "Manifests as proficiency of consciousness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KAYUJUKATA": {
+      "name": "Rectitude of mental factors",
+      "shortName": "Rectitude of mental factors",
+      "description": "Rectitude of mental factors (Kāy'ujukatā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to rectitude of mental factors.",
+      "function": "Performs the mental function of rectitude of mental factors within the associated citta.",
+      "manifestation": "Manifests as rectitude of mental factors when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_CITTUJUKATA": {
+      "name": "Rectitude of consciousness",
+      "shortName": "Rectitude of consciousness",
+      "description": "Rectitude of consciousness (Citt'ujukatā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to rectitude of consciousness.",
+      "function": "Performs the mental function of rectitude of consciousness within the associated citta.",
+      "manifestation": "Manifests as rectitude of consciousness when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_SAMMAVACA": {
+      "name": "Right speech",
+      "shortName": "Right speech",
+      "description": "Right speech (Sammā-vācā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to right speech.",
+      "function": "Performs the mental function of right speech within the associated citta.",
+      "manifestation": "Manifests as right speech when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_SAMMAKAMMANTA": {
+      "name": "Right action",
+      "shortName": "Right action",
+      "description": "Right action (Sammā-kammanta) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to right action.",
+      "function": "Performs the mental function of right action within the associated citta.",
+      "manifestation": "Manifests as right action when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_SAMMAAJIVA": {
+      "name": "Right livelihood",
+      "shortName": "Right livelihood",
+      "description": "Right livelihood (Sammā-ājīva) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to right livelihood.",
+      "function": "Performs the mental function of right livelihood within the associated citta.",
+      "manifestation": "Manifests as right livelihood when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_KARUNA": {
+      "name": "Compassion",
+      "shortName": "Compassion",
+      "description": "Compassion (Karuṇā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to compassion.",
+      "function": "Performs the mental function of compassion within the associated citta.",
+      "manifestation": "Manifests as compassion when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_MUDITA": {
+      "name": "Appreciative joy",
+      "shortName": "Appreciative joy",
+      "description": "Appreciative joy (Muditā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to appreciative joy.",
+      "function": "Performs the mental function of appreciative joy within the associated citta.",
+      "manifestation": "Manifests as appreciative joy when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    },
+    "CS_PANNA": {
+      "name": "Wisdom faculty",
+      "shortName": "Wisdom faculty",
+      "description": "Wisdom faculty (Paññā) is a beautiful mental factor in the Abhidhamma analysis of mind.",
+      "characteristic": "The characteristic specific to wisdom faculty.",
+      "function": "Performs the mental function of wisdom faculty within the associated citta.",
+      "manifestation": "Manifests as wisdom faculty when the supporting conditions are present.",
+      "proximateCause": "Its associated citta, mental factors, object, and supporting conditions."
+    }
+  },
+  "rupas": {
+    "RP_001": {
+      "name": "Earth element",
+      "shortName": "Earth element",
+      "description": "Earth element (Pathavī-dhātu) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of earth element.",
+      "function": "Performs the material function associated with Pathavī-dhātu.",
+      "manifestation": "Manifests according to the conditions that produce earth element.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_002": {
+      "name": "Water element",
+      "shortName": "Water element",
+      "description": "Water element (Āpo-dhātu) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of water element.",
+      "function": "Performs the material function associated with Āpo-dhātu.",
+      "manifestation": "Manifests according to the conditions that produce water element.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_003": {
+      "name": "Fire element",
+      "shortName": "Fire element",
+      "description": "Fire element (Tejo-dhātu) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of fire element.",
+      "function": "Performs the material function associated with Tejo-dhātu.",
+      "manifestation": "Manifests according to the conditions that produce fire element.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_004": {
+      "name": "Air element",
+      "shortName": "Air element",
+      "description": "Air element (Vāyo-dhātu) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of air element.",
+      "function": "Performs the material function associated with Vāyo-dhātu.",
+      "manifestation": "Manifests according to the conditions that produce air element.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_005": {
+      "name": "Eye sensitivity",
+      "shortName": "Eye sensitivity",
+      "description": "Eye sensitivity (Cakkhu-pasāda) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of eye sensitivity.",
+      "function": "Performs the material function associated with Cakkhu-pasāda.",
+      "manifestation": "Manifests according to the conditions that produce eye sensitivity.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_006": {
+      "name": "Ear sensitivity",
+      "shortName": "Ear sensitivity",
+      "description": "Ear sensitivity (Sota-pasāda) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of ear sensitivity.",
+      "function": "Performs the material function associated with Sota-pasāda.",
+      "manifestation": "Manifests according to the conditions that produce ear sensitivity.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_007": {
+      "name": "Nose sensitivity",
+      "shortName": "Nose sensitivity",
+      "description": "Nose sensitivity (Ghāna-pasāda) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of nose sensitivity.",
+      "function": "Performs the material function associated with Ghāna-pasāda.",
+      "manifestation": "Manifests according to the conditions that produce nose sensitivity.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_008": {
+      "name": "Tongue sensitivity",
+      "shortName": "Tongue sensitivity",
+      "description": "Tongue sensitivity (Jivhā-pasāda) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of tongue sensitivity.",
+      "function": "Performs the material function associated with Jivhā-pasāda.",
+      "manifestation": "Manifests according to the conditions that produce tongue sensitivity.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_009": {
+      "name": "Body sensitivity",
+      "shortName": "Body sensitivity",
+      "description": "Body sensitivity (Kāya-pasāda) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of body sensitivity.",
+      "function": "Performs the material function associated with Kāya-pasāda.",
+      "manifestation": "Manifests according to the conditions that produce body sensitivity.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_010": {
+      "name": "Visible form",
+      "shortName": "Visible form",
+      "description": "Visible form (Rūpa (Gocara)) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of visible form.",
+      "function": "Performs the material function associated with Rūpa (Gocara).",
+      "manifestation": "Manifests according to the conditions that produce visible form.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_011": {
+      "name": "Sound",
+      "shortName": "Sound",
+      "description": "Sound (Sadda (Gocara)) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of sound.",
+      "function": "Performs the material function associated with Sadda (Gocara).",
+      "manifestation": "Manifests according to the conditions that produce sound.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_012": {
+      "name": "Odour",
+      "shortName": "Odour",
+      "description": "Odour (Gandha (Gocara)) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of odour.",
+      "function": "Performs the material function associated with Gandha (Gocara).",
+      "manifestation": "Manifests according to the conditions that produce odour.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_013": {
+      "name": "Taste",
+      "shortName": "Taste",
+      "description": "Taste (Rasa (Gocara)) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of taste.",
+      "function": "Performs the material function associated with Rasa (Gocara).",
+      "manifestation": "Manifests according to the conditions that produce taste.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_014": {
+      "name": "Femininity faculty",
+      "shortName": "Femininity faculty",
+      "description": "Femininity faculty (Itthi-bhāva) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of femininity faculty.",
+      "function": "Performs the material function associated with Itthi-bhāva.",
+      "manifestation": "Manifests according to the conditions that produce femininity faculty.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_015": {
+      "name": "Masculinity faculty",
+      "shortName": "Masculinity faculty",
+      "description": "Masculinity faculty (Purisa-bhāva) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of masculinity faculty.",
+      "function": "Performs the material function associated with Purisa-bhāva.",
+      "manifestation": "Manifests according to the conditions that produce masculinity faculty.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_016": {
+      "name": "Heart-base",
+      "shortName": "Heart-base",
+      "description": "Heart-base (Hadaya-vatthu) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of heart-base.",
+      "function": "Performs the material function associated with Hadaya-vatthu.",
+      "manifestation": "Manifests according to the conditions that produce heart-base.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_017": {
+      "name": "Material life faculty",
+      "shortName": "Material life faculty",
+      "description": "Material life faculty (Jīvitindriya (Rūpa)) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of material life faculty.",
+      "function": "Performs the material function associated with Jīvitindriya (Rūpa).",
+      "manifestation": "Manifests according to the conditions that produce material life faculty.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_018": {
+      "name": "Nutritive essence",
+      "shortName": "Nutritive essence",
+      "description": "Nutritive essence (Ojā) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of nutritive essence.",
+      "function": "Performs the material function associated with Ojā.",
+      "manifestation": "Manifests according to the conditions that produce nutritive essence.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_019": {
+      "name": "Space element",
+      "shortName": "Space element",
+      "description": "Space element (Ākāsa-dhātu) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of space element.",
+      "function": "Performs the material function associated with Ākāsa-dhātu.",
+      "manifestation": "Manifests according to the conditions that produce space element.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_020": {
+      "name": "Bodily intimation",
+      "shortName": "Bodily intimation",
+      "description": "Bodily intimation (Kāya-viññatti) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of bodily intimation.",
+      "function": "Performs the material function associated with Kāya-viññatti.",
+      "manifestation": "Manifests according to the conditions that produce bodily intimation.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_021": {
+      "name": "Verbal intimation",
+      "shortName": "Verbal intimation",
+      "description": "Verbal intimation (Vacī-viññatti) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of verbal intimation.",
+      "function": "Performs the material function associated with Vacī-viññatti.",
+      "manifestation": "Manifests according to the conditions that produce verbal intimation.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_022": {
+      "name": "Lightness of matter",
+      "shortName": "Lightness of matter",
+      "description": "Lightness of matter (Rūpassa lahutā) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of lightness of matter.",
+      "function": "Performs the material function associated with Rūpassa lahutā.",
+      "manifestation": "Manifests according to the conditions that produce lightness of matter.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_023": {
+      "name": "Malleability of matter",
+      "shortName": "Malleability of matter",
+      "description": "Malleability of matter (Rūpassa mudutā) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of malleability of matter.",
+      "function": "Performs the material function associated with Rūpassa mudutā.",
+      "manifestation": "Manifests according to the conditions that produce malleability of matter.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_024": {
+      "name": "Wieldiness of matter",
+      "shortName": "Wieldiness of matter",
+      "description": "Wieldiness of matter (Rūpassa kammaññatā) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of wieldiness of matter.",
+      "function": "Performs the material function associated with Rūpassa kammaññatā.",
+      "manifestation": "Manifests according to the conditions that produce wieldiness of matter.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_025": {
+      "name": "Production of matter",
+      "shortName": "Production of matter",
+      "description": "Production of matter (Upacaya) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of production of matter.",
+      "function": "Performs the material function associated with Upacaya.",
+      "manifestation": "Manifests according to the conditions that produce production of matter.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_026": {
+      "name": "Continuity of matter",
+      "shortName": "Continuity of matter",
+      "description": "Continuity of matter (Santati) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of continuity of matter.",
+      "function": "Performs the material function associated with Santati.",
+      "manifestation": "Manifests according to the conditions that produce continuity of matter.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_027": {
+      "name": "Ageing of matter",
+      "shortName": "Ageing of matter",
+      "description": "Ageing of matter (Jaratā) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of ageing of matter.",
+      "function": "Performs the material function associated with Jaratā.",
+      "manifestation": "Manifests according to the conditions that produce ageing of matter.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    },
+    "RP_028": {
+      "name": "Impermanence of matter",
+      "shortName": "Impermanence of matter",
+      "description": "Impermanence of matter (Aniccatā) is one of the twenty-eight kinds of material phenomena analysed in Abhidhamma.",
+      "characteristic": "The defining material characteristic of impermanence of matter.",
+      "function": "Performs the material function associated with Aniccatā.",
+      "manifestation": "Manifests according to the conditions that produce impermanence of matter.",
+      "proximateCause": "The material phenomena and producing conditions associated with it.",
+      "doctrinalNote": "Study this material phenomenon together with its causes, group, and sphere of occurrence."
+    }
+  },
+  "kammas": {
+    "KM_T_01": {
+      "name": "Immediately effective kamma",
+      "shortName": "Immediately effective kamma",
+      "description": "Kamma that produces its result in the same life; if it cannot mature, it becomes defunct.",
+      "doctrinalNote": "Kamma that produces its result in the same life; if it cannot mature, it becomes defunct.",
+      "examples": []
+    },
+    "KM_T_02": {
+      "name": "Subsequently effective kamma",
+      "shortName": "Subsequently effective kamma",
+      "description": "Kamma that produces its result in the immediately following life.",
+      "doctrinalNote": "Kamma that produces its result in the immediately following life.",
+      "examples": []
+    },
+    "KM_T_03": {
+      "name": "Indefinitely effective kamma",
+      "shortName": "Indefinitely effective kamma",
+      "description": "Kamma capable of producing results from the third life onward until final liberation.",
+      "doctrinalNote": "Kamma capable of producing results from the third life onward until final liberation.",
+      "examples": []
+    },
+    "KM_T_04": {
+      "name": "Defunct kamma",
+      "shortName": "Defunct kamma",
+      "description": "Kamma whose opportunity to produce a result has passed.",
+      "doctrinalNote": "Kamma whose opportunity to produce a result has passed.",
+      "examples": []
+    },
+    "KM_P_01": {
+      "name": "Reproductive kamma",
+      "shortName": "Reproductive kamma",
+      "description": "Kamma that generates rebirth and the resultant aggregates of a new life.",
+      "doctrinalNote": "Kamma that generates rebirth and the resultant aggregates of a new life.",
+      "examples": []
+    },
+    "KM_P_02": {
+      "name": "Supportive kamma",
+      "shortName": "Supportive kamma",
+      "description": "Kamma that supports and sustains the result of another kamma.",
+      "doctrinalNote": "Kamma that supports and sustains the result of another kamma.",
+      "examples": []
+    },
+    "KM_P_03": {
+      "name": "Obstructive kamma",
+      "shortName": "Obstructive kamma",
+      "description": "Kamma that obstructs or weakens the result of another kamma.",
+      "doctrinalNote": "Kamma that obstructs or weakens the result of another kamma.",
+      "examples": []
+    },
+    "KM_P_04": {
+      "name": "Destructive kamma",
+      "shortName": "Destructive kamma",
+      "description": "Kamma that cuts off the result of another kamma and replaces it with its own result.",
+      "doctrinalNote": "Kamma that cuts off the result of another kamma and replaces it with its own result.",
+      "examples": []
+    },
+    "KM_U_01": {
+      "name": "Weighty kamma",
+      "shortName": "Weighty kamma",
+      "description": "A very powerful wholesome or unwholesome kamma that takes priority in producing rebirth.",
+      "doctrinalNote": "A very powerful wholesome or unwholesome kamma that takes priority in producing rebirth.",
+      "examples": []
+    },
+    "KM_U_02": {
+      "name": "Death-proximate kamma",
+      "shortName": "Death-proximate kamma",
+      "description": "Kamma remembered or performed close to death, influencing the next rebirth.",
+      "doctrinalNote": "Kamma remembered or performed close to death, influencing the next rebirth.",
+      "examples": []
+    },
+    "KM_U_03": {
+      "name": "Habitual kamma",
+      "shortName": "Habitual kamma",
+      "description": "Kamma repeatedly performed until it becomes a strong habit.",
+      "doctrinalNote": "Kamma repeatedly performed until it becomes a strong habit.",
+      "examples": []
+    },
+    "KM_U_04": {
+      "name": "Cumulative kamma",
+      "shortName": "Cumulative kamma",
+      "description": "Accumulated kamma that produces a result when no stronger kamma takes priority.",
+      "doctrinalNote": "Accumulated kamma that produces a result when no stronger kamma takes priority.",
+      "examples": []
+    }
+  },
+  "paticcas": {
+    "PD_01": {
+      "name": "Ignorance",
+      "shortName": "Ignorance",
+      "description": "Not knowing the Four Noble Truths and the true nature of conditioned phenomena.",
+      "characteristic": "The characteristic of ignorance in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as ignorance when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "Not knowing the Four Noble Truths and the true nature of conditioned phenomena.",
+      "examples": []
+    },
+    "PD_02": {
+      "name": "Volitional formations",
+      "shortName": "Volitional formations",
+      "description": "Kammically active volitions conditioned by ignorance.",
+      "characteristic": "The characteristic of volitional formations in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as volitional formations when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "Kammically active volitions conditioned by ignorance.",
+      "examples": []
+    },
+    "PD_03": {
+      "name": "Consciousness",
+      "shortName": "Consciousness",
+      "description": "Rebirth-linking and resultant consciousness conditioned by formations.",
+      "characteristic": "The characteristic of consciousness in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as consciousness when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "Rebirth-linking and resultant consciousness conditioned by formations.",
+      "examples": []
+    },
+    "PD_04": {
+      "name": "Mind and matter",
+      "shortName": "Mind and matter",
+      "description": "Mental and material phenomena that arise supported by consciousness.",
+      "characteristic": "The characteristic of mind and matter in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as mind and matter when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "Mental and material phenomena that arise supported by consciousness.",
+      "examples": []
+    },
+    "PD_05": {
+      "name": "Six sense bases",
+      "shortName": "Six sense bases",
+      "description": "The eye, ear, nose, tongue, body, and mind bases.",
+      "characteristic": "The characteristic of six sense bases in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as six sense bases when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "The eye, ear, nose, tongue, body, and mind bases.",
+      "examples": []
+    },
+    "PD_06": {
+      "name": "Contact",
+      "shortName": "Contact",
+      "description": "The meeting of a sense base, its object, and the corresponding consciousness.",
+      "characteristic": "The characteristic of contact in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as contact when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "The meeting of a sense base, its object, and the corresponding consciousness.",
+      "examples": []
+    },
+    "PD_07": {
+      "name": "Feeling",
+      "shortName": "Feeling",
+      "description": "The pleasant, painful, or neutral experience born of contact.",
+      "characteristic": "The characteristic of feeling in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as feeling when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "The pleasant, painful, or neutral experience born of contact.",
+      "examples": []
+    },
+    "PD_08": {
+      "name": "Craving",
+      "shortName": "Craving",
+      "description": "Craving for sense pleasure, existence, or non-existence.",
+      "characteristic": "The characteristic of craving in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as craving when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "Craving for sense pleasure, existence, or non-existence.",
+      "examples": []
+    },
+    "PD_09": {
+      "name": "Clinging",
+      "shortName": "Clinging",
+      "description": "The intensified appropriation of objects, views, practices, or a doctrine of self.",
+      "characteristic": "The characteristic of clinging in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as clinging when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "The intensified appropriation of objects, views, practices, or a doctrine of self.",
+      "examples": []
+    },
+    "PD_10": {
+      "name": "Becoming",
+      "shortName": "Becoming",
+      "description": "The active kammic process and the resultant process of existence.",
+      "characteristic": "The characteristic of becoming in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as becoming when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "The active kammic process and the resultant process of existence.",
+      "examples": []
+    },
+    "PD_11": {
+      "name": "Birth",
+      "shortName": "Birth",
+      "description": "The arising of the aggregates in a new existence.",
+      "characteristic": "The characteristic of birth in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as birth when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "The arising of the aggregates in a new existence.",
+      "examples": []
+    },
+    "PD_12": {
+      "name": "Ageing and death",
+      "shortName": "Ageing and death",
+      "description": "The ageing, dissolution, sorrow, and suffering that follow birth.",
+      "characteristic": "The characteristic of ageing and death in dependent origination.",
+      "function": "Its conditioning function within the twelve-linked process.",
+      "manifestation": "Manifests as ageing and death when its conditions are present.",
+      "proximateCause": "The preceding and supporting conditions described in dependent origination.",
+      "doctrinalNote": "The ageing, dissolution, sorrow, and suffering that follow birth.",
+      "examples": []
+    }
+  },
+  "vithis": {
+    "VT_NGU_MON_RATLON": {
+      "name": "Atimahanta-ārammaṇa Pañcadvāra-vīthi",
+      "shortName": "Atimahanta-ārammaṇa Pañcadvāra-vīthi",
+      "description": "A cognitive series classified as Atimahanta-ārammaṇa Pañcadvāra-vīthi.",
+      "steps": {
+        "1": {
+          "name": "Atīta-bhavaṅga",
+          "description": "The Atīta-bhavaṅga stage in this cognitive process."
+        },
+        "2": {
+          "name": "Bhavaṅga-calana",
+          "description": "The Bhavaṅga-calana stage in this cognitive process."
+        },
+        "3": {
+          "name": "Bhavaṅgupaccheda",
+          "description": "The Bhavaṅgupaccheda stage in this cognitive process."
+        },
+        "4": {
+          "name": "Pañcadvārāvajjana",
+          "description": "The Pañcadvārāvajjana stage in this cognitive process."
+        },
+        "5": {
+          "name": "Dvipañca-viññāṇa",
+          "description": "The Dvipañca-viññāṇa stage in this cognitive process."
+        },
+        "6": {
+          "name": "Sampaṭicchana",
+          "description": "The Sampaṭicchana stage in this cognitive process."
+        },
+        "7": {
+          "name": "Santīraṇa",
+          "description": "The Santīraṇa stage in this cognitive process."
+        },
+        "8": {
+          "name": "Voṭṭhapana",
+          "description": "The Voṭṭhapana stage in this cognitive process."
+        },
+        "9": {
+          "name": "Javana (1–7)",
+          "description": "The Javana (1–7) stage in this cognitive process."
+        },
+        "10": {
+          "name": "Tadārammaṇa (1–2)",
+          "description": "The Tadārammaṇa (1–2) stage in this cognitive process."
+        },
+        "11": {
+          "name": "Post-vīthi Bhavaṅga",
+          "description": "The Post-vīthi Bhavaṅga stage in this cognitive process."
+        }
+      }
+    },
+    "VT_NGU_MON_LON": {
+      "name": "Mahanta-ārammaṇa Pañcadvāra-vīthi",
+      "shortName": "Mahanta-ārammaṇa Pañcadvāra-vīthi",
+      "description": "A cognitive series classified as Mahanta-ārammaṇa Pañcadvāra-vīthi.",
+      "steps": {
+        "1": {
+          "name": "Bhavaṅga-calana",
+          "description": "The Bhavaṅga-calana stage in this cognitive process."
+        },
+        "2": {
+          "name": "Bhavaṅgupaccheda",
+          "description": "The Bhavaṅgupaccheda stage in this cognitive process."
+        },
+        "3": {
+          "name": "Pañcadvārāvajjana",
+          "description": "The Pañcadvārāvajjana stage in this cognitive process."
+        },
+        "4": {
+          "name": "Dvipañca-viññāṇa",
+          "description": "The Dvipañca-viññāṇa stage in this cognitive process."
+        },
+        "5": {
+          "name": "Sampaṭicchana",
+          "description": "The Sampaṭicchana stage in this cognitive process."
+        },
+        "6": {
+          "name": "Santīraṇa",
+          "description": "The Santīraṇa stage in this cognitive process."
+        },
+        "7": {
+          "name": "Voṭṭhapana",
+          "description": "The Voṭṭhapana stage in this cognitive process."
+        },
+        "8": {
+          "name": "Javana (1–7)",
+          "description": "The Javana (1–7) stage in this cognitive process."
+        },
+        "9": {
+          "name": "Post-vīthi Bhavaṅga",
+          "description": "The Post-vīthi Bhavaṅga stage in this cognitive process."
+        }
+      }
+    },
+    "VT_Y_MON": {
+      "name": "Manodvāra-vīthi",
+      "shortName": "Manodvāra-vīthi",
+      "description": "A cognitive series classified as Manodvāra-vīthi.",
+      "steps": {
+        "1": {
+          "name": "Bhavaṅga-calana",
+          "description": "The Bhavaṅga-calana stage in this cognitive process."
+        },
+        "2": {
+          "name": "Bhavaṅgupaccheda",
+          "description": "The Bhavaṅgupaccheda stage in this cognitive process."
+        },
+        "3": {
+          "name": "Manodvārāvajjana",
+          "description": "The Manodvārāvajjana stage in this cognitive process."
+        },
+        "4": {
+          "name": "Javana (1–7)",
+          "description": "The Javana (1–7) stage in this cognitive process."
+        },
+        "5": {
+          "name": "Tadārammaṇa (tuỳ chọn)",
+          "description": "The Tadārammaṇa (tuỳ chọn) stage in this cognitive process."
+        },
+        "6": {
+          "name": "Post-vīthi Bhavaṅga",
+          "description": "The Post-vīthi Bhavaṅga stage in this cognitive process."
+        }
+      }
+    },
+    "VT_VITHIMUTTA": {
+      "name": "Vīthimutta-citta",
+      "shortName": "Vīthimutta-citta",
+      "description": "A cognitive series classified as Vīthimutta-citta.",
+      "steps": {
+        "1": {
+          "name": "Paṭisandhi-citta",
+          "description": "The Paṭisandhi-citta stage in this cognitive process."
+        },
+        "2": {
+          "name": "Bhavaṅga-citta",
+          "description": "The Bhavaṅga-citta stage in this cognitive process."
+        },
+        "3": {
+          "name": "Cuti-citta",
+          "description": "The Cuti-citta stage in this cognitive process."
+        }
+      }
+    }
+  },
+  "studyModules": {
+    "M1_BASICS": {
+      "title": "Seven universal cetasikas",
+      "description": "The seven mental factors present in every citta; the foundation for all later modules."
+    },
+    "M2_SI_PHAN": {
+      "title": "The delusion group",
+      "description": "Delusion, shamelessness, fearlessness of wrongdoing, and restlessness accompany every unwholesome citta."
+    },
+    "M3_TINH_HAO_BIEN_HANH": {
+      "title": "Beautiful universals",
+      "description": "The nineteen beautiful universal cetasikas present in every beautiful citta."
+    },
+    "M4_AKUSALA": {
+      "title": "Twelve unwholesome cittas",
+      "description": "Eight rooted in greed, two rooted in hatred, and two rooted in delusion."
+    },
+    "M5_SOBHANA": {
+      "title": "Sense-sphere beautiful cittas",
+      "description": "Twenty-four great wholesome, resultant, and functional cittas."
+    },
+    "M6_NGHIEP": {
+      "title": "Kamma classifications",
+      "description": "How kamma is classified and connected with cittas."
+    },
+    "M7_SIEU_THE": {
+      "title": "Supramundane cittas",
+      "description": "Path and fruition cittas leading beyond suffering."
+    },
+    "M8_NHAN_DUYEN": {
+      "title": "Twelve links of dependent origination",
+      "description": "The conditioned cycle and the way its links can cease."
+    },
+    "M9_SAC_PHAP": {
+      "title": "Material phenomena",
+      "description": "The twenty-eight kinds of matter and their relationship to citta and kamma."
+    },
+    "M10_LO_TRINH": {
+      "title": "The cognitive series",
+      "description": "The arising and ceasing of cittas in a cognitive process."
+    }
+  }
+}

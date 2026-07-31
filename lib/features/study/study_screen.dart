@@ -5,9 +5,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/study_module.dart';
 import '../../data/repositories/vdp_repository.dart';
+import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
 import 'module_detail_screen.dart';
 
@@ -25,19 +27,19 @@ class StudyScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           children: [
-            Text('Lộ Trình Học', style: TextStyle(fontSize: 18)),
+            Text(context.l10n.studyPath, style: const TextStyle(fontSize: 18)),
             Text(
-              'Adaptive Study Path',
-              style: TextStyle(fontSize: 11, color: Colors.white70),
+              context.l10n.appTagline,
+              style: const TextStyle(fontSize: 11, color: Colors.white70),
             ),
           ],
         ),
         actions: [
           // ── 🔖 Bookmark Button với Badge ────────────────────────────────
           Padding(
-            padding: EdgeInsets.only(right: 4),
+            padding: EdgeInsetsDirectional.only(end: 4),
             child: Badge(
               isLabelVisible: bookmarkCount > 0,
               label: Text(
@@ -47,7 +49,7 @@ class StudyScreen extends ConsumerWidget {
               backgroundColor: VdpColors.secondary,
               child: IconButton(
                 icon: const Icon(Icons.bookmark_rounded),
-                tooltip: 'Bookmark & Ghi chú',
+                tooltip: context.l10n.bookmarksAndNotes,
                 onPressed: () => _showBookmarksSheet(context, ref),
               ),
             ),
@@ -55,7 +57,7 @@ class StudyScreen extends ConsumerWidget {
           // ── 📊 Progress Button ───────────────────────────────────────────
           IconButton(
             icon: const Icon(Icons.bar_chart),
-            tooltip: 'Tiến độ tổng quan',
+            tooltip: context.l10n.overallProgress,
             onPressed: () => _showOverallProgress(context, progress),
           ),
         ],
@@ -173,7 +175,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Bookmark & Ghi chú',
+                        context.l10n.bookmarksAndNotes,
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w800,
@@ -181,7 +183,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                         ),
                       ),
                       Text(
-                        '$bookmarkCount mục đã lưu',
+                        context.l10n.savedItemsCount(bookmarkCount),
                         style: TextStyle(
                           fontSize: 12,
                           color: Theme.of(context).textTheme.bodySmall?.color,
@@ -227,7 +229,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Tâm'),
+                      Text(context.l10n.cittaTab),
                       if (progress.bookmarkedCittaIds.isNotEmpty) ...[
                         const SizedBox(width: 4),
                         _MiniCountBadge(
@@ -241,7 +243,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Tâm sở'),
+                      Text(context.l10n.cetasikaTab),
                       if (progress.bookmarkedCetasikaIds.isNotEmpty) ...[
                         const SizedBox(width: 4),
                         _MiniCountBadge(
@@ -255,7 +257,7 @@ class _BookmarksSheetState extends ConsumerState<_BookmarksSheet>
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Ghi chú'),
+                      Text(context.l10n.notesTab),
                       if (progress.personalNotes.isNotEmpty) ...[
                         const SizedBox(width: 4),
                         _MiniCountBadge(
@@ -339,10 +341,10 @@ class _CittaBookmarksList extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (bookmarkedIds.isEmpty) {
-      return const _EmptyState(
+      return _EmptyState(
         icon: Icons.bookmark_border_rounded,
-        title: 'Chưa có Tâm nào được bookmark',
-        subtitle: 'Vào màn hình học và nhấn 🔖 để lưu lại',
+        title: context.l10n.noBookmarkedCittas,
+        subtitle: context.l10n.bookmarkCittaHint,
       );
     }
 
@@ -351,12 +353,12 @@ class _CittaBookmarksList extends ConsumerWidget {
         cittas.where((c) => bookmarkedIds.contains(c.id)).toList();
 
     if (bookmarked.isEmpty) {
-      return const Center(
+      return Center(
         child: Padding(
-          padding: EdgeInsets.all(32),
+          padding: const EdgeInsets.all(32),
           child: Text(
-            'Đang tải dữ liệu Tâm...',
-            style: TextStyle(color: Colors.grey),
+            context.l10n.loadingCittas,
+            style: const TextStyle(color: Colors.grey),
           ),
         ),
       );
@@ -370,7 +372,7 @@ class _CittaBookmarksList extends ConsumerWidget {
         final citta = bookmarked[index];
         return _BookmarkItemCard(
           id: citta.id,
-          title: citta.nameVietnamese,
+          title: citta.localizedName(context),
           subtitle: citta.namePali,
           accentColor: VdpColors.primary,
           icon: '🧠',
@@ -400,10 +402,10 @@ class _CetasikaBookmarksList extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (bookmarkedIds.isEmpty) {
-      return const _EmptyState(
+      return _EmptyState(
         icon: Icons.bookmark_border_rounded,
-        title: 'Chưa có Tâm sở nào được bookmark',
-        subtitle: 'Vào màn hình học và nhấn 🔖 để lưu lại',
+        title: context.l10n.noBookmarkedCetasikas,
+        subtitle: context.l10n.bookmarkCittaHint,
       );
     }
 
@@ -412,12 +414,12 @@ class _CetasikaBookmarksList extends ConsumerWidget {
         cetasikas.where((c) => bookmarkedIds.contains(c.id)).toList();
 
     if (bookmarked.isEmpty) {
-      return const Center(
+      return Center(
         child: Padding(
-          padding: EdgeInsets.all(32),
+          padding: const EdgeInsets.all(32),
           child: Text(
-            'Đang tải dữ liệu Tâm Sở...',
-            style: TextStyle(color: Colors.grey),
+            context.l10n.loadingCetasikas,
+            style: const TextStyle(color: Colors.grey),
           ),
         ),
       );
@@ -431,7 +433,7 @@ class _CetasikaBookmarksList extends ConsumerWidget {
         final cetasika = bookmarked[index];
         return _BookmarkItemCard(
           id: cetasika.id,
-          title: cetasika.nameVietnamese,
+          title: cetasika.localizedName(context),
           subtitle: cetasika.namePali,
           accentColor: VdpColors.secondary,
           icon: '💎',
@@ -472,10 +474,10 @@ class _NotesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (notes.isEmpty) {
-      return const _EmptyState(
+      return _EmptyState(
         icon: Icons.edit_note_rounded,
-        title: 'Chưa có ghi chú nào',
-        subtitle: 'Nhấn ✏️ trong màn hình học để thêm ghi chú cá nhân',
+        title: context.l10n.noNotes,
+        subtitle: context.l10n.addNoteHint,
       );
     }
 
@@ -503,17 +505,17 @@ class _NotesList extends StatelessWidget {
       builder: (_) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: Text(
-          'Xóa ghi chú?',
+          context.l10n.deleteNoteQuestion,
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
         ),
         content: Text(
-          'Ghi chú này sẽ bị xóa vĩnh viễn. Bạn có chắc không?',
+          context.l10n.deleteNoteWarning,
           style: TextStyle(fontSize: 14),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: Text('Hủy'),
+            child: Text(context.l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -527,7 +529,7 @@ class _NotesList extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: Text('Xóa'),
+            child: Text(context.l10n.delete),
           ),
         ],
       ),
@@ -628,14 +630,14 @@ class _BookmarkItemCard extends StatelessWidget {
               _SmallIconButton(
                 icon: Icons.edit_note_rounded,
                 color: Colors.blueGrey,
-                tooltip: 'Thêm ghi chú',
+                tooltip: context.l10n.addNote,
                 onTap: onAddNote,
               ),
               const SizedBox(height: 4),
               _SmallIconButton(
                 icon: Icons.bookmark_remove_rounded,
                 color: Colors.red.shade400,
-                tooltip: 'Xóa bookmark',
+                tooltip: context.l10n.removeBookmark,
                 onTap: onRemove,
               ),
             ],
@@ -698,14 +700,14 @@ class _NoteItemCard extends StatelessWidget {
               _SmallIconButton(
                 icon: Icons.edit_rounded,
                 color: Colors.blueGrey.shade400,
-                tooltip: 'Sửa ghi chú',
+                tooltip: context.l10n.editNote,
                 onTap: onEdit,
               ),
               const SizedBox(width: 4),
               _SmallIconButton(
                 icon: Icons.delete_outline_rounded,
                 color: Colors.red.shade400,
-                tooltip: 'Xóa ghi chú',
+                tooltip: context.l10n.deleteNote,
                 onTap: onDelete,
               ),
             ],
@@ -831,7 +833,7 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
               Icon(Icons.check_circle_outline,
                   color: Theme.of(context).cardColor, size: 18),
               const SizedBox(width: 8),
-              Text(_isEditing ? 'Đã cập nhật ghi chú' : 'Đã lưu ghi chú'),
+              Text(_isEditing ? context.l10n.noteUpdated : context.l10n.noteSaved),
             ],
           ),
           backgroundColor: VdpColors.primary,
@@ -878,7 +880,7 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        _isEditing ? 'Sửa ghi chú' : 'Thêm ghi chú',
+                        _isEditing ? context.l10n.editNoteTitle : context.l10n.addNoteTitle,
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w800,
@@ -937,8 +939,7 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                   color: Theme.of(context).textTheme.bodyLarge?.color,
                 ),
                 decoration: InputDecoration(
-                  hintText: 'Nhập ghi chú của bạn về mục này...\n\n'
-                      'Ví dụ: Tâm này xuất hiện trong lúc thiền định khi...',
+                  hintText: context.l10n.studyNoteHint,
                   hintStyle: TextStyle(
                     color: Colors.grey.shade400,
                     fontSize: 13,
@@ -954,9 +955,9 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
 
             // ── Character count ────────────────────────────────────────
             Align(
-              alignment: Alignment.centerRight,
+              alignment: AlignmentDirectional.centerEnd,
               child: Text(
-                '$_charCount / $_maxChars ký tự',
+                context.l10n.charactersCount(_charCount, _maxChars),
                 style: TextStyle(
                   fontSize: 11,
                   color:
@@ -983,7 +984,7 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                       ),
                       padding: EdgeInsets.symmetric(vertical: 12),
                     ),
-                    child: Text('Hủy'),
+                    child: Text(context.l10n.cancel),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -1012,7 +1013,7 @@ class _NoteEditorDialogState extends State<_NoteEditorDialog> {
                             ),
                           )
                         : Text(
-                            _isEditing ? 'Cập nhật' : 'Lưu ghi chú',
+                            _isEditing ? context.l10n.update : context.l10n.saveNote,
                             style: TextStyle(fontWeight: FontWeight.w700),
                           ),
                   ),
@@ -1163,8 +1164,8 @@ class _ProgressSummaryBar extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [VdpColors.primary, VdpColors.primaryLight],
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
+          begin: AlignmentDirectional.centerStart,
+          end: AlignmentDirectional.centerEnd,
         ),
       ),
       child: Row(
@@ -1174,7 +1175,7 @@ class _ProgressSummaryBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Tiến độ học tập: $pct%',
+                  context.l10n.studyProgressPercent(pct),
                   style: TextStyle(
                     color: Theme.of(context).cardColor,
                     fontWeight: FontWeight.w700,
@@ -1207,7 +1208,7 @@ class _ProgressSummaryBar extends StatelessWidget {
                 ),
               ),
               Text(
-                'Module\nhoàn thành',
+                context.l10n.modulesCompletedShort,
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white70, fontSize: 10),
               ),
@@ -1253,7 +1254,7 @@ class _SmartRecommendation extends ConsumerWidget {
     final color = Color(next.colorCode);
 
     return Container(
-      margin: EdgeInsets.fromLTRB(16, 12, 16, 0),
+      margin: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
       padding: EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: color.withOpacity(0.08),
@@ -1269,11 +1270,11 @@ class _SmartRecommendation extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '💡 Nên học tiếp',
+                  '💡 ${context.l10n.recommendedNext}',
                   style: TextStyle(fontSize: 11, color: Colors.grey),
                 ),
                 Text(
-                  next.title,
+                  next.localizedTitle(context),
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
@@ -1296,7 +1297,7 @@ class _SmartRecommendation extends ConsumerWidget {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
             ),
-            child: Text('Học', style: TextStyle(fontSize: 13)),
+            child: Text(context.l10n.learn, style: const TextStyle(fontSize: 13)),
           ),
         ],
       ),
@@ -1322,19 +1323,19 @@ class _ModuleGraph extends ConsumerWidget {
       children: [
         const SizedBox(height: 8),
         _PhaseSection(
-            title: 'Pha 1 — Foundation',
+            title: context.l10n.phaseFoundation,
             phase: 1,
             modules: phase1,
             progress: progress),
         const SizedBox(height: 8),
         _PhaseSection(
-            title: 'Pha 2 — Causality',
+            title: context.l10n.phaseCausality,
             phase: 2,
             modules: phase2,
             progress: progress),
         const SizedBox(height: 8),
         _PhaseSection(
-            title: 'Pha 3 — Mastery',
+            title: context.l10n.phaseMastery,
             phase: 3,
             modules: phase3,
             progress: progress),
@@ -1509,7 +1510,7 @@ class _ModuleCard extends ConsumerWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    module.title,
+                    module.localizedTitle(context),
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w700,
@@ -1560,7 +1561,7 @@ class _OverallProgressSheet extends StatelessWidget {
             ),
           ),
           Text(
-            'Tổng Quan Tiến Độ',
+            context.l10n.progressOverview,
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 20),
@@ -1590,11 +1591,11 @@ class _OverallProgressSheet extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           _StatRow(
-            label: 'Tổng modules',
+            label: context.l10n.totalModules,
             value: '${kStudyModules.length}',
           ),
           _StatRow(
-            label: 'Cần ôn tập',
+            label: context.l10n.dueForReview,
             value:
                 '${kStudyModules.map((m) => StudyModule.fromJson(m)).where((m) => progress.isModuleDueForReview(m)).length}',
           ),
