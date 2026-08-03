@@ -1225,20 +1225,8 @@ class _SmartRecommendation extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final allModules = kStudyModules
-        .map((m) => StudyModule(
-              id: m['id'] as String,
-              title: m['title'] as String,
-              titlePali: m['titlePali'] as String,
-              description: m['description'] as String,
-              prerequisiteIds: List<String>.from(m['prerequisiteIds'] ?? []),
-              recommendedOrder: m['recommendedOrder'] as int,
-              colorCode: m['colorCode'] as int,
-              icon: m['icon'] as String,
-              isRequired: m['isRequired'] as bool? ?? false,
-              phase: m['phase'] as int? ?? 1,
-            ))
-        .toList();
+    final allModules =
+        kStudyModules.map((m) => StudyModule.fromJson(m)).toList();
 
     final nextModule = allModules
         .where((m) =>
@@ -1408,20 +1396,8 @@ class _ModuleCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final allModules = kStudyModules
-        .map((m) => StudyModule(
-              id: m['id'] as String,
-              title: m['title'] as String,
-              titlePali: m['titlePali'] as String,
-              description: m['description'] as String,
-              prerequisiteIds: List<String>.from(m['prerequisiteIds'] ?? []),
-              recommendedOrder: m['recommendedOrder'] as int,
-              colorCode: m['colorCode'] as int,
-              icon: m['icon'] as String,
-              isRequired: (m['isRequired'] as bool?) ?? false,
-              phase: (m['phase'] as int?) ?? 1,
-            ))
-        .toList();
+    final allModules =
+        kStudyModules.map((m) => StudyModule.fromJson(m)).toList();
 
     final module = allModules.firstWhere((m) => m.id == moduleData['id']);
     final isUnlocked = progress.isModuleUnlocked(module, allModules);

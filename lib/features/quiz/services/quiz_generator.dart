@@ -7,6 +7,8 @@ import 'dart:math';
 
 import '../../../data/models/cetasika_model.dart';
 import '../../../data/models/citta_model.dart';
+import '../../../data/models/kamma_model.dart';
+import '../../../data/models/rupa_model.dart';
 import '../../../data/models/study_module.dart';
 import '../../../data/repositories/vdp_repository.dart';
 import '../quiz_screen.dart' show QuizLevel, QuizQuestion, QuizQuestionType;
@@ -57,14 +59,17 @@ final class QuizGeneratorService {
     final rng = random ?? Random();
 
     // ── Safety Guard: IDs rỗng ─────────────────────────────────────────
-    final hasIds = module.cittaIds.isNotEmpty || module.cetasikaIds.isNotEmpty;
+    final hasIds = module.cittaIds.isNotEmpty ||
+        module.cetasikaIds.isNotEmpty ||
+        module.kammaIds.isNotEmpty ||
+        module.paticcaIds.isNotEmpty ||
+        module.rupaIds.isNotEmpty ||
+        module.vithiIds.isNotEmpty;
     if (!hasIds) {
-      // Trả về rỗng, không fallback DB
       return const [];
     }
 
     // ── SOURCE OF TRUTH: Chỉ lấy items thuộc module này ───────────────
-    // Lọc từ DB theo đúng ID list của module — không lấy thêm bất kỳ item nào khác
     final moduleCittas = _filterCittasByIds(
       allCittas: dataState.cittas,
       ids: module.cittaIds,
@@ -74,10 +79,27 @@ final class QuizGeneratorService {
       ids: module.cetasikaIds,
     );
 
-    // ── Safety Guard: Không tìm thấy trong DB ─────────────────────────
+    // Nếu module chỉ có Kamma/Rupa/Vithi/Paticca mà không có citta/cetasika,
+    // vẫn cho phép sinh quiz dạng generic từ citta đã bổ sung,
+    // hoặc fallback tạo câu hỏi về chính loại đó nếu có.
     if (moduleCittas.isEmpty && moduleCetasikas.isEmpty) {
-      // IDs có nhưng không match DB → trả về rỗng
-      return const [];
+      // Trường hợp module có kammaIds/rupaIds... nhưng chưa có citta → thử sinh câu hỏi generic
+      // Nếu dataState có rupa/paticca... thì vẫn trả về câu hỏi mặc định để tránh lỗi "chưa đủ dữ liệu"
+      // Ở đây ta cho phép trả về câu hỏi True/False placeholder từ nội dung module khác nếu cần
+      // Để đơn giản, nếu có kamma/rupa/paticca/vithi thì không coi là rỗng — tạo 1 câu hỏi mẫu
+      // Caller sẽ thấy có dữ liệu, UI học vẫn hiển thị đầy đủ.
+
+      // Nếu hoàn toàn không có citta/cetasika nào match DB, trả về rỗng để báo lỗi thực sự
+      // Nhưng nếu module có kammaIds etc thì vẫn cho phép quiz rỗng? Ta quyết định:
+      // Nếu module có bất kỳ kamma/paticca/rupa/vithi IDs nào → không return [] ngay, để tiếp tục
+      // logic bên dưới sẽ thử sinh từ citta/cetasika nếu có, nếu không sẽ fallback sang câu hỏi generic
+      if (module.kammaIds.isEmpty &&
+          module.paticcaIds.isEmpty &&
+          module.rupaIds.isEmpty &&
+          module.vithiIds.isEmpty) {
+        return const [];
+      }
+      // Nếu chỉ có kamma/rupa... mà citta rỗng, ta sẽ sinh câu hỏi generic ở cuối hàm
     }
 
     // Tổng số item module có
@@ -166,6 +188,74 @@ final class QuizGeneratorService {
             maxCount: 3,
           ),
         );
+      }
+    }
+
+    // ── Fallback: Nếu vẫn chưa có câu hỏi nhưng module có kamma/rupa/paticca/vithi
+    // thì tạo câu hỏi True/False generic từ các loại đó để tránh báo "chưa đủ dữ liệu"
+    if (questions.isEmpty) {
+      // Kamma fallback
+      if (module.kammaIds.isNotEmpty) {
+        final kammaPool = dataState.kammas.where((k) => module.kammaIds.contains(k.id)).toList()..shuffle(rng);
+        for (final k in kammaPool.take(5)) {
+          final opts = ['Đúng', 'Sai'];
+          // Hỏi đơn giản về Hiện Báo để có đáp án rõ ràng
+          final isHienBao = k.byTime == KammaByTime.ditthadhammavedaniya;
+          questions.add(QuizQuestion(
+            id: 'q_km_${k.id}',
+            questionText: 'Nghiệp "${k.nameVietnamese}" là Hiện Báo Nghiệp (cho quả ngay kiếp này). Đúng hay Sai?',
+            options: opts,
+            correctIndex: isHienBao ? 0 : 1,
+            type: QuizQuestionType.cetasikaGroup,
+            explanation: '${k.nameVietnamese}: ${k.descriptionVi}',
+          ));
+        }
+      }
+      // Paticca fallback
+      if (questions.isEmpty && module.paticcaIds.isNotEmpty) {
+        final paticcaPool = dataState.paticcas.where((p) => module.paticcaIds.contains(p.id)).toList()..shuffle(rng);
+        for (final p in paticcaPool.take(5)) {
+          final opts = ['Đúng', 'Sai'];
+          questions.add(QuizQuestion(
+            id: 'q_pd_${p.id}',
+            questionText: '"${p.nameVietnamese}" là chi số ${p.order} trong 12 Nhân Duyên. Đúng hay Sai?',
+            options: opts,
+            correctIndex: 0,
+            type: QuizQuestionType.cetasikaGroup,
+            explanation: p.descriptionVi,
+          ));
+        }
+      }
+      // Rupa fallback
+      if (questions.isEmpty && module.rupaIds.isNotEmpty) {
+        final rupaPool = dataState.rupas.where((r) => module.rupaIds.contains(r.id)).toList()..shuffle(rng);
+        for (final r in rupaPool.take(5)) {
+          final opts = ['Đúng', 'Sai'];
+          final isTứĐại = r.type == RupaType.mahaBhuta;
+          questions.add(QuizQuestion(
+            id: 'q_rp_${r.id}',
+            questionText: 'Sắc "${r.nameVietnamese}" (${r.namePali}) thuộc Tứ Đại. Đúng hay Sai?',
+            options: opts,
+            correctIndex: isTứĐại ? 0 : 1,
+            type: QuizQuestionType.cetasikaGroup,
+            explanation: r.descriptionVi,
+          ));
+        }
+      }
+      // Vithi fallback
+      if (questions.isEmpty && module.vithiIds.isNotEmpty) {
+        final vithiPool = dataState.vithis.where((v) => module.vithiIds.contains(v.id)).toList()..shuffle(rng);
+        for (final v in vithiPool.take(3)) {
+          final opts = ['Đúng', 'Sai'];
+          questions.add(QuizQuestion(
+            id: 'q_vt_${v.id}',
+            questionText: 'Lộ "${v.nameVietnamese}" có ${v.totalSteps} sát-na. Đúng hay Sai?',
+            options: opts,
+            correctIndex: 0,
+            type: QuizQuestionType.cittaBhumi,
+            explanation: v.descriptionVi,
+          ));
+        }
       }
     }
 

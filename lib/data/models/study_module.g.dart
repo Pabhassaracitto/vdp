@@ -24,6 +24,22 @@ _$StudyModuleImpl _$$StudyModuleImplFromJson(Map<String, dynamic> json) =>
               ?.map((e) => e as String)
               .toList() ??
           const [],
+      kammaIds: (json['kammaIds'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      paticcaIds: (json['paticcaIds'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      rupaIds: (json['rupaIds'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      vithiIds: (json['vithiIds'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
       recommendedOrder: (json['recommendedOrder'] as num).toInt(),
       colorCode: (json['colorCode'] as num).toInt(),
       icon: json['icon'] as String,
@@ -40,6 +56,10 @@ Map<String, dynamic> _$$StudyModuleImplToJson(_$StudyModuleImpl instance) =>
       'prerequisiteIds': instance.prerequisiteIds,
       'cittaIds': instance.cittaIds,
       'cetasikaIds': instance.cetasikaIds,
+      'kammaIds': instance.kammaIds,
+      'paticcaIds': instance.paticcaIds,
+      'rupaIds': instance.rupaIds,
+      'vithiIds': instance.vithiIds,
       'recommendedOrder': instance.recommendedOrder,
       'colorCode': instance.colorCode,
       'icon': instance.icon,

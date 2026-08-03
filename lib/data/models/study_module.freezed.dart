@@ -30,6 +30,14 @@ mixin _$StudyModule {
   List<String> get cittaIds =>
       throw _privateConstructorUsedError; // Danh sách Tâm Sở liên quan
   List<String> get cetasikaIds =>
+      throw _privateConstructorUsedError; // Danh sách Nghiệp liên quan (M6)
+  List<String> get kammaIds =>
+      throw _privateConstructorUsedError; // Danh sách Nhân Duyên liên quan (M8)
+  List<String> get paticcaIds =>
+      throw _privateConstructorUsedError; // Danh sách Sắc Pháp liên quan (M9)
+  List<String> get rupaIds =>
+      throw _privateConstructorUsedError; // Danh sách Lộ Trình Tâm liên quan (M10)
+  List<String> get vithiIds =>
       throw _privateConstructorUsedError; // Thứ tự khuyến nghị
   int get recommendedOrder =>
       throw _privateConstructorUsedError; // Màu sắc cho UI
@@ -63,6 +71,10 @@ abstract class $StudyModuleCopyWith<$Res> {
       List<String> prerequisiteIds,
       List<String> cittaIds,
       List<String> cetasikaIds,
+      List<String> kammaIds,
+      List<String> paticcaIds,
+      List<String> rupaIds,
+      List<String> vithiIds,
       int recommendedOrder,
       int colorCode,
       String icon,
@@ -92,6 +104,10 @@ class _$StudyModuleCopyWithImpl<$Res, $Val extends StudyModule>
     Object? prerequisiteIds = null,
     Object? cittaIds = null,
     Object? cetasikaIds = null,
+    Object? kammaIds = null,
+    Object? paticcaIds = null,
+    Object? rupaIds = null,
+    Object? vithiIds = null,
     Object? recommendedOrder = null,
     Object? colorCode = null,
     Object? icon = null,
@@ -126,6 +142,22 @@ class _$StudyModuleCopyWithImpl<$Res, $Val extends StudyModule>
       cetasikaIds: null == cetasikaIds
           ? _value.cetasikaIds
           : cetasikaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      kammaIds: null == kammaIds
+          ? _value.kammaIds
+          : kammaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      paticcaIds: null == paticcaIds
+          ? _value.paticcaIds
+          : paticcaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      rupaIds: null == rupaIds
+          ? _value.rupaIds
+          : rupaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      vithiIds: null == vithiIds
+          ? _value.vithiIds
+          : vithiIds // ignore: cast_nullable_to_non_nullable
               as List<String>,
       recommendedOrder: null == recommendedOrder
           ? _value.recommendedOrder
@@ -167,6 +199,10 @@ abstract class _$$StudyModuleImplCopyWith<$Res>
       List<String> prerequisiteIds,
       List<String> cittaIds,
       List<String> cetasikaIds,
+      List<String> kammaIds,
+      List<String> paticcaIds,
+      List<String> rupaIds,
+      List<String> vithiIds,
       int recommendedOrder,
       int colorCode,
       String icon,
@@ -194,6 +230,10 @@ class __$$StudyModuleImplCopyWithImpl<$Res>
     Object? prerequisiteIds = null,
     Object? cittaIds = null,
     Object? cetasikaIds = null,
+    Object? kammaIds = null,
+    Object? paticcaIds = null,
+    Object? rupaIds = null,
+    Object? vithiIds = null,
     Object? recommendedOrder = null,
     Object? colorCode = null,
     Object? icon = null,
@@ -228,6 +268,22 @@ class __$$StudyModuleImplCopyWithImpl<$Res>
       cetasikaIds: null == cetasikaIds
           ? _value._cetasikaIds
           : cetasikaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      kammaIds: null == kammaIds
+          ? _value._kammaIds
+          : kammaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      paticcaIds: null == paticcaIds
+          ? _value._paticcaIds
+          : paticcaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      rupaIds: null == rupaIds
+          ? _value._rupaIds
+          : rupaIds // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      vithiIds: null == vithiIds
+          ? _value._vithiIds
+          : vithiIds // ignore: cast_nullable_to_non_nullable
               as List<String>,
       recommendedOrder: null == recommendedOrder
           ? _value.recommendedOrder
@@ -264,6 +320,10 @@ class _$StudyModuleImpl implements _StudyModule {
       final List<String> prerequisiteIds = const [],
       final List<String> cittaIds = const [],
       final List<String> cetasikaIds = const [],
+      final List<String> kammaIds = const [],
+      final List<String> paticcaIds = const [],
+      final List<String> rupaIds = const [],
+      final List<String> vithiIds = const [],
       required this.recommendedOrder,
       required this.colorCode,
       required this.icon,
@@ -271,7 +331,11 @@ class _$StudyModuleImpl implements _StudyModule {
       this.phase = 1})
       : _prerequisiteIds = prerequisiteIds,
         _cittaIds = cittaIds,
-        _cetasikaIds = cetasikaIds;
+        _cetasikaIds = cetasikaIds,
+        _kammaIds = kammaIds,
+        _paticcaIds = paticcaIds,
+        _rupaIds = rupaIds,
+        _vithiIds = vithiIds;
 
   factory _$StudyModuleImpl.fromJson(Map<String, dynamic> json) =>
       _$$StudyModuleImplFromJson(json);
@@ -317,6 +381,38 @@ class _$StudyModuleImpl implements _StudyModule {
     return EqualUnmodifiableListView(_cetasikaIds);
   }
 
+  final List<String> _kammaIds;
+  @override
+  @JsonKey()
+  List<String> get kammaIds {
+    if (_kammaIds is EqualUnmodifiableListView) return _kammaIds;
+    return EqualUnmodifiableListView(_kammaIds);
+  }
+
+  final List<String> _paticcaIds;
+  @override
+  @JsonKey()
+  List<String> get paticcaIds {
+    if (_paticcaIds is EqualUnmodifiableListView) return _paticcaIds;
+    return EqualUnmodifiableListView(_paticcaIds);
+  }
+
+  final List<String> _rupaIds;
+  @override
+  @JsonKey()
+  List<String> get rupaIds {
+    if (_rupaIds is EqualUnmodifiableListView) return _rupaIds;
+    return EqualUnmodifiableListView(_rupaIds);
+  }
+
+  final List<String> _vithiIds;
+  @override
+  @JsonKey()
+  List<String> get vithiIds {
+    if (_vithiIds is EqualUnmodifiableListView) return _vithiIds;
+    return EqualUnmodifiableListView(_vithiIds);
+  }
+
 // Thứ tự khuyến nghị
   @override
   final int recommendedOrder;
@@ -337,7 +433,7 @@ class _$StudyModuleImpl implements _StudyModule {
 
   @override
   String toString() {
-    return 'StudyModule(id: $id, title: $title, titlePali: $titlePali, description: $description, prerequisiteIds: $prerequisiteIds, cittaIds: $cittaIds, cetasikaIds: $cetasikaIds, recommendedOrder: $recommendedOrder, colorCode: $colorCode, icon: $icon, isRequired: $isRequired, phase: $phase)';
+    return 'StudyModule(id: $id, title: $title, titlePali: $titlePali, description: $description, prerequisiteIds: $prerequisiteIds, cittaIds: $cittaIds, cetasikaIds: $cetasikaIds, kammaIds: $kammaIds, paticcaIds: $paticcaIds, rupaIds: $rupaIds, vithiIds: $vithiIds, recommendedOrder: $recommendedOrder, colorCode: $colorCode, icon: $icon, isRequired: $isRequired, phase: $phase)';
   }
 
   @override
@@ -356,6 +452,11 @@ class _$StudyModuleImpl implements _StudyModule {
             const DeepCollectionEquality().equals(other._cittaIds, _cittaIds) &&
             const DeepCollectionEquality()
                 .equals(other._cetasikaIds, _cetasikaIds) &&
+            const DeepCollectionEquality().equals(other._kammaIds, _kammaIds) &&
+            const DeepCollectionEquality()
+                .equals(other._paticcaIds, _paticcaIds) &&
+            const DeepCollectionEquality().equals(other._rupaIds, _rupaIds) &&
+            const DeepCollectionEquality().equals(other._vithiIds, _vithiIds) &&
             (identical(other.recommendedOrder, recommendedOrder) ||
                 other.recommendedOrder == recommendedOrder) &&
             (identical(other.colorCode, colorCode) ||
@@ -377,6 +478,10 @@ class _$StudyModuleImpl implements _StudyModule {
       const DeepCollectionEquality().hash(_prerequisiteIds),
       const DeepCollectionEquality().hash(_cittaIds),
       const DeepCollectionEquality().hash(_cetasikaIds),
+      const DeepCollectionEquality().hash(_kammaIds),
+      const DeepCollectionEquality().hash(_paticcaIds),
+      const DeepCollectionEquality().hash(_rupaIds),
+      const DeepCollectionEquality().hash(_vithiIds),
       recommendedOrder,
       colorCode,
       icon,
@@ -408,6 +513,10 @@ abstract class _StudyModule implements StudyModule {
       final List<String> prerequisiteIds,
       final List<String> cittaIds,
       final List<String> cetasikaIds,
+      final List<String> kammaIds,
+      final List<String> paticcaIds,
+      final List<String> rupaIds,
+      final List<String> vithiIds,
       required final int recommendedOrder,
       required final int colorCode,
       required final String icon,
@@ -430,7 +539,15 @@ abstract class _StudyModule implements StudyModule {
   @override
   List<String> get cittaIds; // Danh sách Tâm Sở liên quan
   @override
-  List<String> get cetasikaIds; // Thứ tự khuyến nghị
+  List<String> get cetasikaIds;
+  @override
+  List<String> get kammaIds;
+  @override
+  List<String> get paticcaIds;
+  @override
+  List<String> get rupaIds;
+  @override
+  List<String> get vithiIds; // Thứ tự khuyến nghị
   @override
   int get recommendedOrder; // Màu sắc cho UI
   @override
