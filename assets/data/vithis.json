@@ -7,11 +7,11 @@
       "nameShort": "Lộ Cảnh Rất Lớn",
       "dvara": "panca",
       "vithiType": "atimahanta",
-      "descriptionVi": "Lộ đầy đủ nhất — phát sinh khi cảnh ngũ tác động rất mạnh. Có đủ 17 sát-na: 2 hộ kiếp rúng động + 1 dứt dòng + 5 tâm vô nhân + 7 đổng tốc + 2 thập di.",
+      "descriptionVi": "Lộ Ngũ Môn Cảnh Rất Lớn (Atimahanta-ārammaṇa) là lộ đầy đủ nhất, xảy ra khi cảnh Ngũ (Rūpa, Sadda, Gandha, Rasa, Photthabba) cực mạnh, tồn tại qua 17 sát-na tâm từ Atīta-bhavaṅga đến hết Tadārammaṇa. Có đủ 2 Hộ Kiếp rúng động (Calana + Upaccheda) + 5 tâm Vô Nhân (Pañcadvārāvajjana, Dvipañca-viññāṇa, Sampaṭicchana, Santīraṇa, Voṭṭhapana) + 7 Javana tạo nghiệp (Tattha Javana 1=Diṭṭhadhammavedanīya, 7=Upapajjavedanīya, 2-6=Aparāpariya) + 2 Tadārammaṇa hưởng dư. Chỉ lộ này mới có Tadārammaṇa. Ví dụ: tiếng sét lớn, ánh sáng chói lòa.",
       "totalSteps": 17,
-      "arisingCondition": "Cảnh ngũ (sắc, thinh, khí, vị, xúc) tác động rất mạnh vào căn tương ứng",
-      "significance": "Lộ hoàn chỉnh nhất — 7 Javana tạo đủ nghiệp; Tadārammaṇa hưởng cảnh dư.",
-      "doctrinalNote": "Atimahanta = cảnh đủ lớn để có đủ Javana × 7 + Tadārammaṇa × 2.",
+      "arisingCondition": "Cảnh ngũ rất mạnh, rõ, mới, đập vào căn đủ sức làm Hộ Kiếp rúng động 2 lần (Atīta + Calana) + dứt dòng. Ví dụ: thấy tượng Phật lớn ngay trước mặt, nghe tiếng chuông chùa rất to.",
+      "significance": "Là lộ duy nhất tạo đủ 3 loại nghiệp thời gian (J1, J7, J2-6) và có Thập Di. Dùng để giảng về Tam Thời Nghiệp và cách Tadārammaṇa hưởng quả. Trong thực hành, khi cảnh rất lớn mà chánh niệm yếu thì 7 Javana bất thiện dễ sanh.",
+      "doctrinalNote": "Atimahanta = cảnh đủ 17 sát-na để có Tadā. Đây là lộ tiêu chuẩn dạy trong Abhidhamma. Nếu cảnh chỉ đủ 16, 15... thì thiếu Tadā hoặc thiếu Javana → thành Mahanta, Paritta, Atiparitta.",
       "orderIndex": 1,
       "steps": [
         {
@@ -209,7 +209,7 @@
           ],
           "repeatCount": 7,
           "isOptional": false,
-          "doctrinalNote": "7 lần cùng 1 loại tâm. Là phần duy nhất tạo nghiệp trong lộ trình."
+          "doctrinalNote": "7 Javana cùng loại tâm: J1=Diṭṭhadhammavedanīya (Hiện Báo có thể trổ kiếp này), J7=Upapajjavedanīya (Hậu Báo kiếp sau), J2-6=Aparāpariyavedanīya (Hậu Hậu Báo vô hạn). Đây là nơi tạo Kamma mới."
         },
         {
           "stepNumber": 10,
@@ -264,11 +264,11 @@
       "nameShort": "Lộ Cảnh Lớn",
       "dvara": "panca",
       "vithiType": "mahanta",
-      "descriptionVi": "Lộ Ngũ Môn có đủ 7 Đổng Tốc nhưng KHÔNG có Thập Di — cảnh không đủ lớn để Tadārammaṇa sanh.",
+      "descriptionVi": "Lộ Ngũ Môn Cảnh Lớn (Mahanta-ārammaṇa) xảy ra khi cảnh khá mạnh nhưng không đủ để có Thập Di. Có 2 Hộ Kiếp rúng + 5 Vô Nhân + 7 Javana = 14-15 sát-na (không có 2 Tadā). Sau Javana, tâm rơi thẳng vào Bhavanga. Đây là lộ phổ biến nhất trong đời sống hằng ngày khi chúng ta thấy, nghe rõ và phản ứng tạo nghiệp.",
       "totalSteps": 10,
-      "arisingCondition": "Cảnh ngũ đủ mạnh để có 7 Javana nhưng không đủ để tạo Tadārammaṇa",
-      "significance": "Lộ bình thường nhất — nghiệp được tạo đầy đủ qua 7 Javana.",
-      "doctrinalNote": "Khác VT_NGU_MON_RATLON duy nhất ở chỗ vắng 2 sát-na Tadārammaṇa.",
+      "arisingCondition": "Cảnh ngũ đủ mạnh để có 7 Javana nhưng không đủ để duy trì đến Tadā. Thường là cảnh vừa phải, rõ nhưng không cực mạnh.",
+      "significance": "Lộ này vẫn tạo đủ nghiệp qua 7 Javana, nhưng không có giai đoạn hưởng quả dư (Tadā). Hầu hết nghiệp hằng ngày của chúng ta được tạo trong lộ này.",
+      "doctrinalNote": "Mahanta = lớn. Phân biệt với Atimahanta chỉ ở vắng Tadā. Nếu học kỹ, còn chia Mahanta thành 2: có Atīta-bhavaṅga và không.",
       "orderIndex": 2,
       "steps": [
         {
@@ -477,11 +477,11 @@
       "nameShort": "Lộ Ý Môn",
       "dvara": "mano",
       "vithiType": "mano_vithi",
-      "descriptionVi": "Lộ Ý Môn phát sinh khi tâm tiếp xúc với cảnh Pháp qua ý môn — suy nghĩ, nhớ lại, tưởng tượng. Ngay sau Khán Ý Môn là 7 Đổng Tốc.",
+      "descriptionVi": "Lộ Ý Môn (Manodvārāvajjana-vīthi) là lộ tư duy thuần túy qua Ý Môn (Hadaya-vatthu), không qua 5 căn. Cảnh của nó là Dhammārammaṇa: 6 loại - 5 Pasāda + 16 Sukhuma-rūpa + Cetasika + Citta + Paññatti + Nibbāna. Lộ Ý Môn có 2 loại: Ý Môn thuần (Anu-bandha) tiếp nối ngay sau Lộ Ngũ Môn để biết rõ cảnh vừa rồi, và Ý Môn độc lập (Paṭibhāga) suy nghĩ, tưởng tượng, hồi nhớ, quán vipassanā. Cấu trúc: Bhavanga Calana-Upaccheda-Manodvārāvajjana (đóng vai Voṭṭhapana) + 7 Javana + (2 Tadā tùy). Chính trong lộ này mà chúng ta tạo Ý Nghiệp, và cũng là nơi sanh Thân-Khẩu Nghiệp qua ý định trước.",
       "totalSteps": 7,
-      "arisingCondition": "Cảnh Pháp (dhammārammaṇa) hiện ra trong ý môn — suy nghĩ, ký ức, tưởng tượng",
-      "significance": "Giải thích toàn bộ hoạt động tư duy nội tâm. Tạo Ý Nghiệp, và là nguồn gốc của Thân/Khẩu Nghiệp.",
-      "doctrinalNote": "Lộ Ý Môn bắt đầu từ Khán Ý Môn (CI_029), không qua Khán Ngũ Môn.",
+      "arisingCondition": "Bất kỳ khi nào có cảnh Pháp hiện ra trong Ý Môn: nhớ lại quá khứ, tưởng tượng tương lai, suy luận, quán vô thường, lúc ngủ mơ, lúc suy nghĩ lung tung.",
+      "significance": "Tất cả tư duy, thiền định (Samatha-Vipassanā), và Lộ Siêu Thế (Maggavīthi) đều là Ý Môn. Maggavīthi có cấu trúc: Parikamma-Upacāra-Anuloma-Gotrabhū-Magga-Phala-Phala (4-5 Javana chuẩn bị + 1 Magga + 2 Phala). Appanā-vīthi (An Chỉ) đắc thiền cũng là Ý Môn.",
+      "doctrinalNote": "Manodvārāvajjana (CI_029) vừa là Khán Ý Môn vừa là Xác Định (Voṭṭhapana) trong lộ Ý Môn - tiết kiệm 1 sát-na. Ý Môn là cửa ngõ giải thoát.",
       "orderIndex": 3,
       "steps": [
         {
@@ -647,11 +647,11 @@
       "nameShort": "Ngoài Lộ",
       "dvara": "vithimutta",
       "vithiType": "vithimutta",
-      "descriptionVi": "Vīthimutta là các Tâm hoạt động ngoài lộ trình tâm — không qua cửa nào. Gồm 3 phận sự: Tục Sinh (Paṭisandhi), Hộ Kiếp (Bhavaṅga), Tử (Cuti). Cả 3 dùng cùng 1 loại tâm.",
+      "descriptionVi": "Ngoài Lộ (Vīthimutta) là 3 tâm hoạt động ngoài lộ trình nhận thức: Paṭisandhi (Tục Sinh - sát-na đầu tiên nối từ Cuti kiếp trước), Bhavanga (Hộ Kiếp - dòng tâm duy trì kiếp sống giữa các lộ, sanh diệt liên tiếp vô số lần, như dòng sông), Cuti (Tử - sát-na cuối cùng, khi Rūpa-Jīvitindriya + Nāma-Jīvitindriya diệt). Cả 3 dùng cùng 1 loại tâm quả (Vipāka) giống nhau trong 1 kiếp: ví dụ CI_063 Mahāvipāka Ñāṇasampayutta Somanassa Asaṅkhārika làm cả 3 phận sự. Có 19 loại tâm có thể làm Vīthimutta: 2 Santīraṇa Upekkhā + 8 Mahāvipāka + 5 Rūpa Vipāka + 4 Arūpa Vipāka. Vīthimutta không tạo nghiệp mới, là quả của nghiệp quá khứ.",
       "totalSteps": 3,
-      "arisingCondition": "Tục Sinh: khi kiếp trước chấm dứt. Hộ Kiếp: giữa các lộ. Tử: khi Sắc Mạng Quyền diệt.",
-      "significance": "Giải thích cơ chế tái sanh và liên kết giữa các kiếp sống.",
-      "doctrinalNote": "Tâm Vīthimutta không tạo nghiệp mới — là Tâm Quả Vô Ký.",
+      "arisingCondition": "Paṭisandhi: khi Cuti kiếp trước diệt + Kamma-bhava đủ duyên + có căn + có cha mẹ (trừ hóa sanh). Bhavanga: giữa 2 lộ, khi ngủ say, ngất. Cuti: khi hết tuổi thọ (Āyukkhaya), hết nghiệp (Kammakkhaya), hay cả hai.",
+      "significance": "Giải thích cơ chế tái sinh, liên tục của dòng tâm thức, và cái chết. Bhavanga là nền tảng mà Freud sau này gọi là vô thức. Hiểu Vīthimutta để không sợ chết - chỉ là 1 sát-na chuyển tiếp, ngay sau đó Paṭisandhi kiếp mới sanh nếu còn phiền não.",
+      "doctrinalNote": "Bhavanga = Bhava + Anga = chi phần của kiếp sống. Bhavanga-sota chảy như sông, mỗi sát-na 3 tiểu: Uppāda-Ṭhiti-Bhanga. Khi có cảnh gõ cửa, Bhavanga-calana rúng động. Vīthimutta là quả, không phải nhân mới - điểm khác biệt cốt lõi với lộ tạo nghiệp (Javana).",
       "orderIndex": 4,
       "steps": [
         {

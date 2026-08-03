@@ -367,9 +367,15 @@ final List<Map<String, dynamic>> kStudyModules = [
   },
   {
     'id': 'M7_SIEU_THE',
-    'title': 'Tâm Siêu Thế',
-    'titlePali': 'Lokuttara Citta',
-    'description': '8 Tâm Đạo + 8 Tâm Quả Siêu Thế. Con đường thoát khổ.',
+    'title': 'Tâm Siêu Thế (40)',
+    'titlePali': 'Lokuttara Citta (40)',
+    'description': '40 Tâm Siêu Thế = 8 loại x 5 bậc thiền. 8 loại: 4 Đạo (Sotāpatti, Sakadāgāmi, Anāgāmi, Arahatta) + 4 Quả. Mỗi loại có 5 sắc thái thiền: Sơ (Tầm Tứ Hỷ Lạc Định) → Nhị (Tứ Hỷ Lạc Định) → Tam (Hỷ Lạc Định) → Tứ (Lạc Định) → Ngũ (Xả Định).\n\n'
+        'Đạo Tâm: chỉ sanh 1 sát-na duy nhất, làm phận sự đoạn kiết sử. Phala Tâm: có thể nhập Phala-samāpatti hàng tháng để hưởng an lạc Niết Bàn.\n\n'
+        'Nhập Lưu: đoạn Thân Kiến-Hoài Nghi-Giới Cấm Thủ, không đọa ác đạo, tối đa 7 kiếp.\n'
+        'Nhất Lai: giảm Tham Sân thô, còn 1 kiếp Dục Giới.\n'
+        'Bất Lai: đoạn Dục Ái + Sân, không về Dục Giới, sanh Tịnh Cư Thiên.\n'
+        'A-la-hán: đoạn 5 thượng phần (Sắc Ái, Vô Sắc Ái, Mạn, Trạo Cử, Vô Minh), không tạo nghiệp mới, quả là Kiriya, nhập Bát Niết Bàn.\n\n'
+        'Lộ Siêu Thế (Maggavīthi): Parikamma-Upacāra-Anuloma-Gotrabhū (Chuẩn bị- Cận Hành-Thuận Thứ-Chuyển Tộc, là 4 Mahākusala/Kriyā Trí) → Magga (1 sát-na) → Phala (2-3 sát-na) → Bhavanga. Niết Bàn là cảnh (Ārammaṇa) của cả Đạo và Quả.',
     'prerequisiteIds': ['M5_SOBHANA'],
     'recommendedOrder': 7,
     'colorCode': 0xFFB8860B,
@@ -544,9 +550,21 @@ final List<Map<String, dynamic>> kStudyModules = [
   },
   {
     'id': 'M10_LO_TRINH',
-    'title': 'Lộ Trình Tâm 17 Sát-na',
-    'titlePali': 'Vīthicitta (17)',
-    'description': 'Lộ trình sinh diệt của Tâm trong 17 sát-na nhận thức: Ngũ Môn, Ý Môn và Ngoài Lộ.',
+    'title': 'Lộ Trình Tâm (17 Sát-na)',
+    'titlePali': 'Vīthicitta (17) & Vīthimutta (3)',
+    'description': 'Vīthi = Lộ trình nhận thức qua 6 môn. Vīthimutta = Ngoài lộ (Tục Sinh-Hộ Kiếp-Tử).\n\n'
+        'Ngũ Môn Lộ (Pañcadvāra) có 4 loại theo cảnh lớn nhỏ:\n'
+        '- Atimahanta (Rất Lớn): 17 sát-na: Atīta-Bhavaṅga + Calana + Upaccheda + Pañcadvārāvajjana + Dvipañca-viññāṇa + Sampaṭicchana + Santīraṇa + Voṭṭhapana + 7 Javana + 2 Tadārammaṇa + Bhavanga. Chỉ lộ này có Tadā.\n'
+        '- Mahanta (Lớn): đủ 7 Javana, không Tadā.\n'
+        '- Paritta (Nhỏ): đến Voṭṭhapana rồi rơi vào Bhavanga, không có Javana (cảnh quá yếu).\n'
+        '- Atiparitta (Rất nhỏ): chỉ rúng động Bhavanga rồi dứt, không thành lộ.\n\n'
+        'Ý Môn Lộ (Manodvāra) có 2 nhánh:\n'
+        '- Anubandha (phụ thuộc): tiếp nối sau Ngũ Môn để biết rõ cảnh ngũ vừa qua.\n'
+        '- Paṭibhāga (độc lập): suy nghĩ, nhớ, tưởng tượng, thiền Samatha-Vipassanā.\n'
+        'Cấu trúc: Calana-Upaccheda-Manodvārāvajjana (kiêm Voṭṭhapana) + 7 Javana + (2 Tadā). 7 Javana chính là nơi tạo Kamma (J1=Hiện Báo, J7=Hậu Báo, J2-6=Hậu Hậu Báo).\n\n'
+        'Appanā-vīthi (An Chỉ): đắc thiền (Jhāna) và Siêu Thế (Magga). Lộ Siêu Thế: Parikamma-Upacāra-Anuloma-Gotrabhū (Chuẩn bị) + Magga (1) + Phala (2-3) + Bhavanga.\n\n'
+        'Vīthimutta (3): Paṭisandhi (tục sinh) - sát-na đầu kiếp, Bhavanga (hộ kiếp - dòng vô thức giữa các lộ, ví như sông), Cuti (tử) - sát-na cuối, Rūpa-Jīvita + Nāma-Jīvita diệt. Cả 3 dùng cùng 1 tâm quả (19 loại: 2 Santīraṇa Upekkhā + 8 Mahāvipāka + 9 Mahaggata Vipāka). Vīthimutta là quả, không tạo nghiệp mới.\n\n'
+        'Hiểu Vīthi để thấy: Tâm sanh-diệt chớp nhoáng, không có Ngã, chỉ có tiến trình pháp. Thực hành hộ trì 6 căn ngay tại Voṭṭhapana-Javana để không tạo bất thiện.',
     'prerequisiteIds': ['M9_SAC_PHAP'],
     'recommendedOrder': 10,
     'colorCode': 0xFF2D6A8F,
