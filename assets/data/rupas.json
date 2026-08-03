@@ -14,7 +14,7 @@
         "utu",
         "ahara"
       ],
-      "descriptionVi": "Địa Đại là yếu tố cứng chắc hoặc mềm mại của vật chất — nền tảng chống đỡ cho các sắc pháp trong cùng nhóm (kalāpa). Một trong Tứ Đại, luôn đồng sanh với 3 Đại còn lại.",
+      "descriptionVi": "Địa Đại là yếu tố cứng chắc hoặc mềm mại của vật chất — nền tảng chống đỡ cho các sắc pháp trong cùng nhóm (kalāpa). Một trong Tứ Đại, luôn đồng sanh với 3 Đại còn lại. Thuộc Nhóm 8 Pháp Bất Ly (Avinibbhoga-rūpa): Địa-Thủy-Hỏa-Phong + Sắc + Hương + Vị + Vật Thực - 8 pháp không bao giờ tách rời trong 1 kalāpa.",
       "descriptionPali": "Pathavī: đất, nền tảng. Pathavī-dhātu: Địa giới — yếu tố đất.",
       "trangThai": "Cứng hay mềm — đặc tính cứng chắc hoặc mềm mại của vật chất",
       "phanSu": "Làm nền tảng chống đỡ cho các sắc pháp đồng nhóm (kalāpa)",
@@ -24,7 +24,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Tứ Đại luôn đồng sanh, không tách rời. Cõi Vô Sắc không có Sắc pháp."
+      "doctrinalNote": "Tứ Đại luôn đồng sanh, không tách rời. Cõi Vô Sắc không có Sắc pháp. | Kalāpa: Kalāpa mẫu: Tứ Đại (4) + Sắc + Hương + Vị + Vật Thực (8 bất ly) + ... Luôn có trong mọi kalāpa."
     },
     {
       "id": "RP_002",
@@ -40,7 +40,7 @@
         "utu",
         "ahara"
       ],
-      "descriptionVi": "Thủy Đại là yếu tố kết dính — làm cho các sắc pháp trong cùng kalāpa không bị rã rời. Thủy Đại không thể cảm nhận trực tiếp qua xúc giác.",
+      "descriptionVi": "Thủy Đại là yếu tố kết dính — làm cho các sắc pháp trong cùng kalāpa không bị rã rời. Thủy Đại không thể cảm nhận trực tiếp qua xúc giác. Thuộc Nhóm 8 Pháp Bất Ly (Avinibbhoga-rūpa): Địa-Thủy-Hỏa-Phong + Sắc + Hương + Vị + Vật Thực - 8 pháp không bao giờ tách rời trong 1 kalāpa.",
       "descriptionPali": "Āpo: nước, chất lỏng. Āpo-dhātu: Thủy giới — yếu tố kết dính.",
       "trangThai": "Chảy hay kết dính — yếu tố keo tụ của vật chất",
       "phanSu": "Kết dính các sắc pháp trong cùng kalāpa",
@@ -50,7 +50,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Thủy Đại là Đại duy nhất không thể cảm nhận trực tiếp qua thân xúc."
+      "doctrinalNote": "Thủy Đại là Đại duy nhất không thể cảm nhận trực tiếp qua thân xúc. | Kalāpa: Có trong mọi kalāpa 8 pháp bất ly. Kalāpa thuần Tứ Đại gọi là Suddhāṭṭhaka-kalāpa."
     },
     {
       "id": "RP_003",
@@ -66,7 +66,7 @@
         "utu",
         "ahara"
       ],
-      "descriptionVi": "Hỏa Đại là yếu tố nhiệt độ — nóng hay lạnh. Làm chín muồi, nuôi dưỡng các sắc pháp và điều tiết thân nhiệt.",
+      "descriptionVi": "Hỏa Đại là yếu tố nhiệt độ — nóng hay lạnh. Làm chín muồi, nuôi dưỡng các sắc pháp và điều tiết thân nhiệt. Thuộc Nhóm 8 Pháp Bất Ly (Avinibbhoga-rūpa): Địa-Thủy-Hỏa-Phong + Sắc + Hương + Vị + Vật Thực - 8 pháp không bao giờ tách rời trong 1 kalāpa.",
       "descriptionPali": "Tejo: lửa, nhiệt. Tejo-dhātu: Hoả giới — yếu tố nhiệt độ.",
       "trangThai": "Nóng hay lạnh — yếu tố nhiệt độ của vật chất",
       "phanSu": "Làm chín muồi, nuôi dưỡng các sắc pháp đồng nhóm",
@@ -76,7 +76,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Hỏa Đại khi đứng độc lập (Utu) tạo ra Sắc do Thời tiết (Utu-samuṭṭhāna-rūpa)."
+      "doctrinalNote": "Hỏa Đại khi đứng độc lập (Utu) tạo ra Sắc do Thời tiết (Utu-samuṭṭhāna-rūpa). | Kalāpa: Kalāpa do Thời Tiết (Utu) tạo: Hỏa Đại đứng riêng tạo Utu-samuṭṭhāna. Trong thân người, nhiệt độ 37°C là Utu."
     },
     {
       "id": "RP_004",
@@ -92,7 +92,7 @@
         "utu",
         "ahara"
       ],
-      "descriptionVi": "Phong Đại là yếu tố chuyển động và căng phồng. Hơi thở (assāsa-passāsa) là biểu hiện rõ nhất của Phong Đại.",
+      "descriptionVi": "Phong Đại là yếu tố chuyển động và căng phồng. Hơi thở (assāsa-passāsa) là biểu hiện rõ nhất của Phong Đại. Thuộc Nhóm 8 Pháp Bất Ly (Avinibbhoga-rūpa): Địa-Thủy-Hỏa-Phong + Sắc + Hương + Vị + Vật Thực - 8 pháp không bao giờ tách rời trong 1 kalāpa.",
       "descriptionPali": "Vāyo: gió, khí. Vāyo-dhātu: Phong giới — yếu tố vận động.",
       "trangThai": "Căng phồng hay chuyển động — yếu tố vận động của vật chất",
       "phanSu": "Nâng đỡ và làm cho vật chất chuyển động",
@@ -102,7 +102,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Trong thiền Ānāpānasati, hơi thở (Phong Đại) là đề mục tu tập chính."
+      "doctrinalNote": "Trong thiền Ānāpānasati, hơi thở (Phong Đại) là đề mục tu tập chính. | Kalāpa: Hơi thở vào-ra là Vāyo do Tâm tạo (Cittaja). Phong Đại trong tim là kammaja."
     },
     {
       "id": "RP_005",
@@ -125,7 +125,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Chỉ do Nghiệp tạo. Không có ở cõi Vô Sắc."
+      "doctrinalNote": "Chỉ do Nghiệp tạo. Không có ở cõi Vô Sắc. | Kalāpa: Có trong Cakkhu-dasaka-kalāpa (10 pháp): 8 bất ly + Jīvitindriya + Cakkhu-pasāda. Do Nghiệp tạo, tồn tại 17 tâm."
     },
     {
       "id": "RP_006",
@@ -148,7 +148,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Phạm Thiên Sắc Giới có Nhĩ Căn vì giao tiếp bằng âm thanh."
+      "doctrinalNote": "Phạm Thiên Sắc Giới có Nhĩ Căn vì giao tiếp bằng âm thanh. | Kalāpa: Có trong Sota-dasaka-kalāpa. Người điếc bẩm sinh thiếu Sota-pasāda."
     },
     {
       "id": "RP_007",
@@ -170,7 +170,7 @@
       "presentInBhumi": [
         "kamavacara"
       ],
-      "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên Sắc Giới không có Tỷ Căn."
+      "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên Sắc Giới không có Tỷ Căn. | Kalāpa: Ghāna-dasaka-kalāpa chỉ có ở Dục Giới. Phạm Thiên không có."
     },
     {
       "id": "RP_008",
@@ -192,7 +192,7 @@
       "presentInBhumi": [
         "kamavacara"
       ],
-      "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên không ăn uống nên không có Thiệt Căn."
+      "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên không ăn uống nên không có Thiệt Căn. | Kalāpa: Jivhā-dasaka-kalāpa cũng chỉ Dục Giới. Người bệnh mất vị thiếu."
     },
     {
       "id": "RP_009",
@@ -215,7 +215,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Phạm Thiên Sắc Giới có Thân Căn. Cõi Vô Tưởng không có."
+      "doctrinalNote": "Phạm Thiên Sắc Giới có Thân Căn. Cõi Vô Tưởng không có. | Kalāpa: Kāya-dasaka-kalāpa lan khắp thân trừ chỗ chai. Là căn cứ để cảm thọ Xúc."
     },
     {
       "id": "RP_010",
@@ -241,7 +241,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Sắc Cảnh (màu sắc) khác với Sắc Pháp (vật chất nói chung)."
+      "doctrinalNote": "Sắc Cảnh (màu sắc) khác với Sắc Pháp (vật chất nói chung). | Kalāpa: Là đất cảnh, do 4 nhân tạo. Cảnh của Ngũ Môn Lộ. Trong Kalāpa không có pasāda mà có gocara."
     },
     {
       "id": "RP_011",
@@ -267,7 +267,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": " | Kalāpa: Âm thanh do Tâm và Utu tạo. Sadda không có trong kalāpa nghiệp mà là cittaja/utuja Navaka-kalāpa (9 pháp: 8 bất ly + sadda)."
     },
     {
       "id": "RP_012",
@@ -292,7 +292,7 @@
       "presentInBhumi": [
         "kamavacara"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": " | Kalāpa: Gandha là cảnh khí, thường do Utu tạo (mùi hoa, mùi thức ăn). Có trong 8 bất ly của ngoại cảnh."
     },
     {
       "id": "RP_013",
@@ -317,7 +317,7 @@
       "presentInBhumi": [
         "kamavacara"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": " | Kalāpa: Rasa là vị, có trong vật thực - Ojā. Khi ăn, Ojā trong thức ăn tạo 8 bất ly mới trong thân."
     },
     {
       "id": "RP_014",
@@ -339,7 +339,7 @@
       "presentInBhumi": [
         "kamavacara"
       ],
-      "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên Sắc Giới không có phái tính."
+      "doctrinalNote": "Chỉ có ở cõi Dục Giới. Phạm Thiên Sắc Giới không có phái tính. | Kalāpa: Itthi-bhāva-dasaka-kalāpa: 8 bất ly + Jīvita + Itthi-bhāva. Quyết định từ Paṭisandhi. Không có ở Phạm Thiên và người vô tính (ubhatobyañjanaka)."
     },
     {
       "id": "RP_015",
@@ -361,7 +361,7 @@
       "presentInBhumi": [
         "kamavacara"
       ],
-      "doctrinalNote": "Chỉ có ở cõi Dục Giới."
+      "doctrinalNote": "Chỉ có ở cõi Dục Giới. | Kalāpa: Purisa-bhāva-dasaka tương tự. Một người chỉ có 1 trong 2 bhāva, không có cả hai."
     },
     {
       "id": "RP_016",
@@ -384,7 +384,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Cõi Vô Sắc không có Ý Vật. Đây là sắc quan trọng nhất trong hệ thần kinh Abhidhamma."
+      "doctrinalNote": "Cõi Vô Sắc không có Ý Vật. Đây là sắc quan trọng nhất trong hệ thần kinh Abhidhamma. | Kalāpa: Hadaya-dasaka-kalāpa (10 pháp) nằm trong buồng tim, kích thước bằng hạt bí. Là vật nương cho 75 tâm Ý Môn (trừ 10 song thức). Cõi Vô Sắc không có."
     },
     {
       "id": "RP_017",
@@ -407,7 +407,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Tuổi thọ sắc pháp = 17 sát-na tâm. Khi Sắc Mạng Quyền diệt, sắc do Nghiệp tạo cũng diệt."
+      "doctrinalNote": "Tuổi thọ sắc pháp = 17 sát-na tâm. Khi Sắc Mạng Quyền diệt, sắc do Nghiệp tạo cũng diệt. | Kalāpa: Có trong mọi kalāpa do Nghiệp tạo (Kammaja-kalāpa). Jīvitindriya duy trì sắc nghiệp cho đến sát-na diệt của kalāpa."
     },
     {
       "id": "RP_018",
@@ -433,7 +433,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Ojā trong vật thực (Kabaḷīkāra-āhāra) là 1 trong 4 loại vật thực theo Abhidhamma."
+      "doctrinalNote": "Ojā trong vật thực (Kabaḷīkāra-āhāra) là 1 trong 4 loại vật thực theo Abhidhamma. | Kalāpa: Ojā có 2 loại: Ojā trong kalāpa (āhāra-samura) và Ojā trong vật thực ngoài (kabala). Ojā tạo ra Āhāraja-ojaṭṭhamaka-kalāpa (8 pháp)."
     },
     {
       "id": "RP_019",
@@ -459,7 +459,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Ākāsa-dhātu (Sắc pháp) ≠ Hư không tuyệt đối trong triết học."
+      "doctrinalNote": "Ākāsa-dhātu (Sắc pháp) ≠ Hư không tuyệt đối trong triết học. | Kalāpa: Ākāsa-kalāpa là 9 pháp? Thực ra ākāsa là pariccheda-rupa, không lệ thuộc kalāpa, nó phân ranh kalāpa. Không có thực tính riêng như Tứ Đại."
     },
     {
       "id": "RP_020",
@@ -482,7 +482,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Chỉ do Tâm tạo. Là cơ sở của Thân Nghiệp (Kāya-kamma)."
+      "doctrinalNote": "Chỉ do Tâm tạo. Là cơ sở của Thân Nghiệp (Kāya-kamma). | Kalāpa: Kāya-viññatti: chuyển động thân do Tâm tạo, là Cittaja-vikāra. Có trong Kāya-viññatti-navaka/lasaka kalāpa 12-13 pháp có thêm Vikāra 3."
     },
     {
       "id": "RP_021",
@@ -505,7 +505,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Chỉ do Tâm tạo. Là cơ sở của Khẩu Nghiệp (Vacī-kamma)."
+      "doctrinalNote": "Chỉ do Tâm tạo. Là cơ sở của Khẩu Nghiệp (Vacī-kamma). | Kalāpa: Vacī-viññatti: tương tự, là phương tiện Khẩu Nghiệp. Khi nói, tạo kalāpa âm thanh (Sadda-navaka) + Vacī-viññatti-dvādasaka (12 pháp)."
     },
     {
       "id": "RP_022",
@@ -530,7 +530,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Không do Nghiệp tạo. Tuỳ thuộc sức khoẻ và điều kiện hiện tại."
+      "doctrinalNote": "Không do Nghiệp tạo. Tuỳ thuộc sức khoẻ và điều kiện hiện tại. | Kalāpa: Lahutā là một trong 3 Vikāra-rupa (biến hóa sắc): nhẹ, mềm, thích ứng. Chỉ có trong Cittaja, Utuja, Āhāraja kalāpa, không có trong Kammaja."
     },
     {
       "id": "RP_023",
@@ -555,7 +555,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": " | Kalāpa: Mudutā đi chung với Lahutā và Kammaññatā, 3 pháp luôn đồng sanh. Trong thiền, khi định mạnh thì 3 Vikāra này mạnh mẽ."
     },
     {
       "id": "RP_024",
@@ -580,7 +580,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": " | Kalāpa: Kammaññatā là thích nghiệp - sắc dễ sử dụng. Người bệnh nặng mất 3 Vikāra này - thân trì trệ."
     },
     {
       "id": "RP_025",
@@ -606,7 +606,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Tứ Lakkhaṇa Sắc là tướng trạng của mọi sắc pháp, không phải sắc độc lập."
+      "doctrinalNote": "Tứ Lakkhaṇa Sắc là tướng trạng của mọi sắc pháp, không phải sắc độc lập. | Kalāpa: Upacaya-Santati là Jāti-rupa: sanh. Upacaya là lần sanh đầu của kalāpa trong đời (từ Paṭisandhi đến khi đầy đủ căn), Santati là sanh tiếp sau đó."
     },
     {
       "id": "RP_026",
@@ -632,7 +632,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Santati giải thích tại sao chúng ta cảm nhận sự vật là bền vững — thực ra là dòng sanh-diệt liên tiếp."
+      "doctrinalNote": "Santati giải thích tại sao chúng ta cảm nhận sự vật là bền vững — thực ra là dòng sanh-diệt liên tiếp. | Kalāpa: Santati duy trì dòng, giải thích tà kiến thường hằng. Thực ra mỗi kalāpa sinh-diệt liên tiếp, không có cái gì bền vững."
     },
     {
       "id": "RP_027",
@@ -658,7 +658,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Jaratā là hiện tướng rõ nhất của Vô Thường (Anicca) trong Sắc pháp."
+      "doctrinalNote": "Jaratā là hiện tướng rõ nhất của Vô Thường (Anicca) trong Sắc pháp. | Kalāpa: Jaratā là biến dị, già. Sau khi kalāpa tồn tại ~ 34 tâm tiểu sát-na thì vào Jaratā."
     },
     {
       "id": "RP_028",
@@ -684,7 +684,7 @@
         "kamavacara",
         "rupavacara"
       ],
-      "doctrinalNote": "Thấy rõ tướng Diệt là bước đầu của Thiền Quán (Vipassanā)."
+      "doctrinalNote": "Thấy rõ tướng Diệt là bước đầu của Thiền Quán (Vipassanā). | Kalāpa: Aniccatā là diệt. Sắc diệt tại sát-na thứ 17 tâm = 51 tiểu sắc. Thấy Aniccatā là cửa ngõ Vipassanā."
     }
   ]
 }

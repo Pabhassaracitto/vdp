@@ -10,13 +10,14 @@
       "byPriority": null,
       "byResult": null,
       "orderIndex": 1,
-      "descriptionVi": "Nghiệp cho quả ngay trong kiếp sống hiện tại. Nếu không trổ kịp thì trở thành Vô Hiệu Nghiệp (Ahosi).",
+      "descriptionVi": "Nghiệp cho quả ngay trong kiếp sống hiện tại, tại sát-na Javana thứ nhất trong 7 Javana. Nếu không đủ duyên trổ trong kiếp này thì trở thành Vô Hiệu Nghiệp (Ahosi). Đây là nghiệp có thời hạn ngắn nhất.",
       "examples": [
         "Bố thí cúng dường với tâm trong sạch và được hưởng lợi lộc ngay trong đời này",
-        "5 Vô Gián Nghiệp (giết cha, giết mẹ, giết A-la-hán, làm Phật chảy máu, phá hoà hợp Tăng) cho quả địa ngục ngay kiếp kế"
+        "Người làm ác bị quả báo nhãn tiền ngay trong kiếp hiện tại",
+        "Angulimala gặp Phật và chứng A-la-hán ngay trong kiếp đó do Hiện Báo thiện mạnh"
       ],
-      "relatedCittaIds": [],
-      "doctrinalNote": "Hiện Báo Nghiệp chỉ có 1 cơ hội trổ quả trong cùng kiếp sống. Không trổ được → thành Ahosi."
+      "relatedCittaIds": ["CI_001", "CI_055"],
+      "doctrinalNote": "Javana 1 = Hiện Báo. Chỉ có 1 cơ hội trổ quả. Nếu không trổ kịp → Ahosi. Bậc A-la-hán không còn tạo Hiện Báo mới."
     },
     {
       "id": "KM_T_02",
@@ -28,12 +29,13 @@
       "byPriority": null,
       "byResult": null,
       "orderIndex": 2,
-      "descriptionVi": "Nghiệp cho quả trong kiếp tái sanh kế tiếp. Nếu kiếp kế không trổ thì thành Vô Hiệu Nghiệp.",
+      "descriptionVi": "Nghiệp cho quả trong kiếp tái sanh kế tiếp, tại sát-na Javana thứ 7. Nếu kiếp kế không đủ duyên trổ thì thành Vô Hiệu Nghiệp. Chỉ có một kiếp để trổ.",
       "examples": [
-        "Người tu thiền trong kiếp này tái sanh làm Phạm Thiên trong kiếp sau"
+        "Người tu thiền trong kiếp này tái sanh làm Phạm Thiên trong kiếp sau",
+        "Cận tử nghiệp thiện mạnh → tục sinh cõi lành ngay kiếp kế"
       ],
-      "relatedCittaIds": [],
-      "doctrinalNote": "Chỉ có 1 lần cơ hội (kiếp tiếp theo). Không trổ được → Ahosi."
+      "relatedCittaIds": ["CI_056", "CI_080"],
+      "doctrinalNote": "Javana 7 = Hậu Báo. Nếu Trọng Nghiệp không có, Cận Tử Nghiệp không có, Thường Nghiệp sẽ quyết định, nhưng Hậu Báo vẫn ưu tiên trổ ở Javana 7."
     },
     {
       "id": "KM_T_03",
@@ -45,12 +47,13 @@
       "byPriority": null,
       "byResult": null,
       "orderIndex": 3,
-      "descriptionVi": "Nghiệp cho quả từ kiếp thứ 3 trở đi, không có thời hạn — tồn tại cho đến khi chứng Niết Bàn. Loại nghiệp phổ biến nhất.",
+      "descriptionVi": "Nghiệp cho quả từ kiếp thứ 3 trở đi, không có thời hạn, tại 5 Javana giữa (2-6). Tồn tại cho đến khi chứng Niết Bàn. Đây là loại nghiệp phổ biến nhất, tạo nên kho nghiệp vô tận của chúng ta.",
       "examples": [
-        "Nghiệp bố thí xây chùa trong kiếp trước cho quả phú quý nhiều kiếp sau"
+        "Nghiệp bố thí xây chùa trong kiếp trước cho quả phú quý nhiều kiếp sau",
+        "Nghiệp tu học Vi Diệu Pháp nhiều kiếp tạo duyên gặp lại Giáo Pháp"
       ],
       "relatedCittaIds": [],
-      "doctrinalNote": "Không hết hạn — lý do dòng nghiệp luân hồi rất phức tạp."
+      "doctrinalNote": "5 Javana giữa = Hậu Hậu Báo. Không hết hạn - lý do luân hồi bất tận. Chỉ khi chứng A-la-hán và Bát Niết Bàn thì tất cả Hậu Hậu Báo còn lại thành Ahosi."
     },
     {
       "id": "KM_T_04",
@@ -62,12 +65,13 @@
       "byPriority": null,
       "byResult": null,
       "orderIndex": 4,
-      "descriptionVi": "Nghiệp đã hết cơ hội cho quả — Hiện Báo không trổ trong kiếp này, Hậu Báo không trổ trong kiếp kế. Khi chứng A-la-hán tất cả nghiệp tương lai đều thành Vô Hiệu.",
+      "descriptionVi": "Nghiệp đã hết cơ hội cho quả: Hiện Báo không trổ trong kiếp này, Hậu Báo không trổ trong kiếp kế, hoặc Hậu Hậu Báo chưa trổ nhưng hành giả đã chứng A-la-hán. Ahosi không phải bị hủy diệt mà hết duyên.",
       "examples": [
-        "Bậc A-la-hán: tất cả nghiệp chưa trổ đều thành Ahosi sau Niết Bàn cuối"
+        "Bậc A-la-hán nhập Niết Bàn: tất cả nghiệp chưa trổ đều thành Ahosi",
+        "Angulimala sau khi chứng A-la-hán, các ác nghiệp giết người còn lại thành Ahosi (chỉ trả dư báo nhẹ)"
       ],
       "relatedCittaIds": [],
-      "doctrinalNote": "Ahosi = 'đã qua rồi' — không phải bị huỷ mà là hết thời cơ trổ quả."
+      "doctrinalNote": "Ahosi = 'đã qua rồi, không còn'. Khi Niết Bàn, vòng nghiệp khép lại."
     },
     {
       "id": "KM_P_01",
@@ -79,64 +83,69 @@
       "byPriority": null,
       "byResult": null,
       "orderIndex": 1,
-      "descriptionVi": "Nghiệp tạo ra quả tục sinh — quyết định cõi tái sanh và duy trì đời sống (Tục Sinh + Hộ Kiếp + Tử).",
+      "descriptionVi": "Nghiệp tạo ra quả tục sinh - quyết định cõi tái sanh, sắc nghiệp (kammaja-rupa), và duy trì dòng hộ kiếp + tử. Là nghiệp kiến trúc sư xây nhà mới cho kiếp sau. Mạnh nhất trong nhóm phận sự.",
       "examples": [
-        "Nghiệp thiện dục giới → tục sinh làm người hay chư thiên",
-        "Nghiệp đắc thiền → tục sinh làm Phạm Thiên"
+        "Thiện dục giới → tục sinh làm người tam nhân hoặc chư thiên",
+        "Đắc Ngũ Thiền Sắc Giới → tục sinh Phạm Thiên Vô Tưởng hoặc Hữu Tưởng",
+        "Bất thiện Trọng Nghiệp → tục sinh địa ngục Avici ngay kiếp kế"
       ],
-      "relatedCittaIds": ["CI_055", "CI_059", "CI_001", "CI_009"],
-      "doctrinalNote": "Janaka-kamma quyết định toàn bộ nền tảng đời sống."
+      "relatedCittaIds": ["CI_055", "CI_059", "CI_001", "CI_009", "CI_063"],
+      "doctrinalNote": "Janaka = cha đẻ. Quyết định Patisandhi, Bhavanga, Cuti cùng một loại tâm quả. Tương ứng với Sanh-Hữu trong Duyên Khởi."
     },
     {
       "id": "KM_P_02",
       "namePali": "Upatthambhaka-kamma",
-      "nameVietnamese": "Bổ Trợ Nghiệp",
-      "nameShort": "Bổ Trợ",
+      "nameVietnamese": "Trì Nghiệp / Bổ Trợ Nghiệp",
+      "nameShort": "Trì Nghiệp",
       "byTime": null,
       "byFunction": "upatthambhaka",
       "byPriority": null,
       "byResult": null,
       "orderIndex": 2,
-      "descriptionVi": "Nghiệp hỗ trợ, nuôi dưỡng cho nghiệp Sanh (Janaka) tiếp tục trổ quả — không tự tạo quả mới mà gia tăng, kéo dài quả đang có.",
+      "descriptionVi": "Nghiệp hỗ trợ, nuôi dưỡng cho Sanh Nghiệp tiếp tục trổ quả - không tự tạo quả mới mà làm cho quả đang có được sung mãn, kéo dài, hạnh phúc hơn. Giống người mẹ nuôi con.",
       "examples": [
-        "Người tu thiện mỗi ngày → Bổ Trợ Nghiệp tăng thêm tuổi thọ, sức khoẻ"
+        "Người sinh ra giàu sang nhờ Sanh Nghiệp thiện + được chăm sóc sức khỏe tốt nhờ Trì Nghiệp thiện",
+        "Tu tập Tứ Vô Lượng Tâm → Trì Nghiệp làm cho Sanh Nghiệp thiện được bền vững"
       ],
-      "relatedCittaIds": [],
-      "doctrinalNote": "Không phải người gieo hạt mà là người tưới nước cho hạt đã gieo."
+      "relatedCittaIds": ["CI_055", "CI_056"],
+      "doctrinalNote": "Upatthambhaka = nâng đỡ. Thiện hỗ trợ thiện, bất thiện hỗ trợ bất thiện. Không tạo quả mới."
     },
     {
       "id": "KM_P_03",
       "namePali": "Upapīḷaka-kamma",
-      "nameVietnamese": "Cản Trở Nghiệp",
-      "nameShort": "Cản Trở",
+      "nameVietnamese": "Cản Trở Nghiệp / Chướng Nghiệp",
+      "nameShort": "Chướng Nghiệp",
       "byTime": null,
       "byFunction": "upapilaka",
       "byPriority": null,
       "byResult": null,
       "orderIndex": 3,
-      "descriptionVi": "Nghiệp ngăn cản, làm giảm sức mạnh của nghiệp khác đang trổ quả.",
+      "descriptionVi": "Nghiệp ngăn cản, làm giảm sức mạnh, làm suy yếu quả của nghiệp khác đang trổ. Không cắt đứt hoàn toàn mà làm cho quả bị méo mó, yếu kém, đau khổ hơn.",
       "examples": [
-        "Người giàu nhưng hay bệnh — Cản Trở Nghiệp làm giảm hưởng thụ"
+        "Người giàu sang do Sanh Nghiệp thiện nhưng hay bệnh tật, yểu mạng do Chướng Nghiệp bất thiện chen vào",
+        "Người khổ cảnh nhưng được giúp đỡ nhờ Chướng Nghiệp thiện làm giảm quả khổ"
       ],
       "relatedCittaIds": [],
-      "doctrinalNote": "Giải thích tại sao người làm thiện vẫn gặp khó khăn."
+      "doctrinalNote": "Upapilaka = áp bức. Giải thích tại sao quả thiện không trọn vẹn hoặc quả ác không quá nặng."
     },
     {
       "id": "KM_P_04",
       "namePali": "Upaghātaka-kamma",
-      "nameVietnamese": "Đoạn Đứt Nghiệp",
-      "nameShort": "Đoạn Đứt",
+      "nameVietnamese": "Đoạn Đứt Nghiệp / Sát Nghiệp",
+      "nameShort": "Sát Nghiệp",
       "byTime": null,
       "byFunction": "upaghataka",
       "byPriority": null,
       "byResult": null,
       "orderIndex": 4,
-      "descriptionVi": "Nghiệp cực mạnh phá huỷ hoàn toàn nghiệp đang trổ quả — cắt đứt luồng quả và thay thế quả mới.",
+      "descriptionVi": "Nghiệp cực mạnh phá hủy hoàn toàn quả của Sanh Nghiệp cũ và thay thế bằng quả của chính nó. Như đao phủ chặt đứt. Mạnh nhất trong việc thay đổi vận mệnh đột ngột.",
       "examples": [
-        "Người giàu sang đột ngột mất toàn bộ tài sản — Đoạn Đứt Nghiệp cắt Sanh Nghiệp cũ"
+        "Người giàu sang đột ngột phá sản, mất mạng do Sát Nghiệp bất thiện mới",
+        "Devadatta đang hưởng phước làm vương tử nhưng bị Sát Nghiệp ác do chia rẽ Tăng → đọa địa ngục ngay trong kiếp đó",
+        "Cận tử nghiệp cực mạnh có thể thành Sát Nghiệp"
       ],
-      "relatedCittaIds": [],
-      "doctrinalNote": "Loại nghiệp mạnh nhất trong nhóm Phận Sự. Giải thích sự thay đổi đột ngột trong cuộc đời."
+      "relatedCittaIds": ["CI_009", "CI_010"],
+      "doctrinalNote": "Upaghataka = giết chết. Sát Nghiệp có thể là thiện hoặc bất thiện. Trong trường hợp bất thiện Trọng Nghiệp, nó chắc chắn là Sát Nghiệp."
     },
     {
       "id": "KM_U_01",
@@ -148,13 +157,14 @@
       "byPriority": "garuka",
       "byResult": null,
       "orderIndex": 1,
-      "descriptionVi": "Nghiệp cực nặng — ưu tiên số 1 quyết định tục sinh. Gồm: Thiện Trọng Nghiệp (đắc 5 thiền chứng) và Bất Thiện Trọng Nghiệp (5 Vô Gián Nghiệp).",
+      "descriptionVi": "Nghiệp cực nặng, ưu tiên số 1 quyết định tục sinh. Thiện Trọng Nghiệp: Đắc 5 thiền chứng (Rupavacara + Arupavacara) và Tứ Đạo Siêu Thế. Bất Thiện Trọng Nghiệp: 5 Vô Gián Nghiệp (giết cha, mẹ, A-la-hán, làm Phật chảy máu, phá hòa hợp Tăng) + Tà kiến cố định.",
       "examples": [
-        "THIỆN: Chứng đắc Nhị thiền → tục sinh cõi Phạm Thiên Nhị Thiền",
-        "BẤT THIỆN: Phạm tội giết mẹ → địa ngục Avīci"
+        "Thiện: Chứng Sơ Thiền → chết tái sanh Sơ Thiền Phạm Thiên; Chứng Nhị Thiền → Nhị Thiền Phạm Thiên...",
+        "Bất thiện: Đề-bà-đạt-đa phạm cả 3 Trọng Nghiệp → đọa Avici",
+        "Vua Ajatasattu giết cha → Trọng Nghiệp không thể chứng Đạo trong kiếp đó"
       ],
-      "relatedCittaIds": ["CI_080", "CI_081", "CI_082", "CI_083", "CI_084"],
-      "doctrinalNote": "Garuka-kamma luôn cho quả tục sinh — không bao giờ Ahosi."
+      "relatedCittaIds": ["CI_080", "CI_081", "CI_082", "CI_083", "CI_084", "CI_085", "CI_089", "CI_093"],
+      "doctrinalNote": "Garuka = nặng. Luôn cho quả tục sinh, không bao giờ Ahosi. Pháp đối trị duy nhất của Bất Thiện Trọng Nghiệp là Thiện Trọng Nghiệp Siêu Thế (Đạo Quả)."
     },
     {
       "id": "KM_U_02",
@@ -166,48 +176,129 @@
       "byPriority": "asanna",
       "byResult": null,
       "orderIndex": 2,
-      "descriptionVi": "Nghiệp hoặc cảnh hiện ra lúc lâm chung — cho quả tục sinh nếu không có Trọng Nghiệp.",
+      "descriptionVi": "Nghiệp, cảnh nghiệp (kamma-nimitta) hoặc cảnh thú (gati-nimitta) hiện ra lúc lâm chung, trong 5 Javana cuối trước Tử Tâm. Nếu không có Trọng Nghiệp, Cận Tử Nghiệp quyết định tục sinh. Rất quan trọng trong hộ niệm.",
       "examples": [
-        "Lúc hấp hối nhớ lại thiện nghiệp bố thí → tục sinh thiện",
-        "Lúc hấp hối thấy cảnh địa ngục → tục sinh khổ"
+        "Lúc hấp hối nhớ lại cảnh bố thí, tụng kinh → tâm thiện Dục Giới → tục sinh thiện",
+        "Lúc hấp hối thấy lửa địa ngục, cảnh máu me → tâm bất thiện → tục sinh khổ",
+        "Câu chuyện bà Mallika: Cận tử thấy cảnh địa ngục do 1 ác nghiệp nhỏ nhưng được Phật gia hộ nhớ lại thiện nghiệp → sau 7 ngày địa ngục lên cõi trời"
       ],
-      "relatedCittaIds": [],
-      "doctrinalNote": "Giải thích tầm quan trọng của việc chuẩn bị tâm lúc lâm chung."
+      "relatedCittaIds": ["CI_001", "CI_009", "CI_055"],
+      "doctrinalNote": "Asanna = gần kề tử. Vì vậy hộ niệm, đọc kinh, nhắc thiện pháp lúc lâm chung là tối quan trọng. Cận Tử Nghiệp thiện có thể là Trì Nghiệp giúp Sanh Nghiệp thiện chưa trổ."
     },
     {
       "id": "KM_U_03",
       "namePali": "Āciṇṇa-kamma",
-      "nameVietnamese": "Thường Nghiệp",
+      "nameVietnamese": "Thường Nghiệp / Tập Quán Nghiệp",
       "nameShort": "Thường Nghiệp",
       "byTime": null,
       "byFunction": null,
       "byPriority": "acinna",
       "byResult": null,
       "orderIndex": 3,
-      "descriptionVi": "Nghiệp làm đi làm lại nhiều lần, trở thành thói quen, tích luỹ sức mạnh qua sự lặp lại.",
+      "descriptionVi": "Nghiệp làm đi làm lại nhiều lần, trở thành thói quen, tích lũy sức mạnh qua sự lặp lại. Nếu không có Trọng Nghiệp và Cận Tử Nghiệp, Thường Nghiệp sẽ làm Sanh Nghiệp. Tích lũy qua nhiều kiếp.",
       "examples": [
-        "Người suốt đời làm nghề sát sinh → Thường Nghiệp bất thiện mạnh",
-        "Người hằng ngày tụng kinh, thiền định → Thường Nghiệp thiện mạnh"
+        "Người đồ tể cả đời sát sinh → Thường Nghiệp bất thiện rất mạnh → tục sinh khổ",
+        "Người hằng ngày tụng kinh, thiền định, giữ giới → Thường Nghiệp thiện → tục sinh lành, dễ gặp Phật Pháp kiếp sau",
+        "Thầy Tissa xuất gia từ nhỏ, cả đời giữ giới → Thường Nghiệp thiện mạnh → dù Cận tử có chút bất an, vẫn tục sinh chư thiên"
       ],
       "relatedCittaIds": [],
-      "doctrinalNote": "Lý do Đức Phật dạy phải thường xuyên làm thiện, tu tập."
+      "doctrinalNote": "Acinna = đã làm thường xuyên. Đức Phật dạy: Hãy làm phước chớ mệt mỏi. Chính Thường Nghiệp tạo nên tính cách và cõi tái sinh mặc định."
     },
     {
       "id": "KM_U_04",
       "namePali": "Kaṭattā-kamma",
-      "nameVietnamese": "Dồn Tích Nghiệp",
+      "nameVietnamese": "Dồn Tích Nghiệp / Khinh Tiểu Nghiệp",
       "nameShort": "Dồn Tích",
       "byTime": null,
       "byFunction": null,
       "byPriority": "katatta",
       "byResult": null,
       "orderIndex": 4,
-      "descriptionVi": "Tất cả nghiệp còn lại — không đủ mạnh thành Trọng, không kịp thành Cận Tử, không đủ quen thành Thường. Là 'kho nghiệp dự phòng'.",
+      "descriptionVi": "Tất cả nghiệp còn lại - lẻ tẻ, yếu, không đủ mạnh thành Trọng, không gần tử để thành Cận Tử, không đủ thường xuyên để thành Thường Nghiệp. Là kho nghiệp dự phòng khổng lồ, sẽ trổ khi có cơ hội khi 3 nghiệp trên không đủ duyên.",
       "examples": [
-        "Những hành động thiện/ác bình thường, lẻ tẻ trong cuộc sống hằng ngày"
+        "Những hành động thiện/ác bất chợt, vô tình trong đời sống hằng ngày",
+        "Một lần bố thí nhỏ từ nhiều kiếp trước vẫn nằm trong Dồn Tích, đợi đủ duyên trổ quả lớn"
       ],
       "relatedCittaIds": [],
-      "doctrinalNote": "Loại nghiệp yếu nhất nhưng chiếm phần lớn tổng lượng nghiệp của chúng ta."
+      "doctrinalNote": "Katatta = đã được chất chứa. Dù yếu nhưng chiếm phần lớn tổng lượng nghiệp. Khi hết Trọng-Cận-Thường, Dồn Tích sẽ lên làm Sanh Nghiệp - vì vậy không có nghiệp nào thật sự vô ích."
+    },
+    {
+      "id": "KM_Q_01",
+      "namePali": "Akusala-kamma",
+      "nameVietnamese": "Bất Thiện Nghiệp (cho quả khổ)",
+      "nameShort": "BT quả khổ",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "akusala",
+      "orderIndex": 1,
+      "descriptionVi": "Nghiệp bất thiện tạo bởi 12 Tâm Bất Thiện (Tham-Sân-Si). Cho quả là 7 Tâm Quả Bất Thiện Vô Nhân: 4 Xả + 1 Khổ Thân + Tiếp Thâu + Quan Sát Xả Bất Thiện. Quả trổ ở 4 ác thú: địa ngục, ngạ quỷ, súc sanh, atula.",
+      "examples": [
+        "Tâm Tham trộm cắp → quả bần cùng, bị mất cắp",
+        "Tâm Sân chửi rủa → quả thân xấu xí, bệnh hoạn",
+        "Tâm Si không học Pháp → quả vô nhân nhị nhân, trí tuệ kém"
+      ],
+      "relatedCittaIds": ["CI_001", "CI_002", "CI_003", "CI_004", "CI_005", "CI_006", "CI_007", "CI_008", "CI_009", "CI_010", "CI_011", "CI_012"],
+      "doctrinalNote": "Akusala = bất thiện. Nhân: Lobha-Dosa-Moha. Quả: khổ. Nơi cho quả: 4 ác đạo. Đối trị bằng Alobha-Adosa-Amoha."
+    },
+    {
+      "id": "KM_Q_02",
+      "namePali": "Kāmāvacara-kusala-kamma",
+      "nameVietnamese": "Thiện Dục Giới (cho quả an vui Dục Giới)",
+      "nameShort": "Thiện DG",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "kusala_duggati",
+      "orderIndex": 2,
+      "descriptionVi": "8 Tâm Đại Thiện (Mahakusala) làm nhân. Cho quả 8 Tâm Đại Quả (Mahavipaka) + 8 Tâm Quả Thiện Vô Nhân Dục Giới. Quả: người tam-nhị nhân an vui, chư thiên Dục Giới 6 cõi. Tuỳ theo Trí, Hỷ, Trợ mà quả khác nhau.",
+      "examples": [
+        "Bố thí với Trí + Hỷ → tục sinh tam nhân, thông minh, giàu sang, hoan hỷ",
+        "Giữ giới với Xả + Ly Trí → tục sinh nhị nhân, an vui nhưng trí kém",
+        "Cung kính Tam Bảo → chư thiên Tứ Đại Thiên Vương, Đao Lợi..."
+      ],
+      "relatedCittaIds": ["CI_055", "CI_056", "CI_057", "CI_058", "CI_059", "CI_060", "CI_061", "CI_062"],
+      "doctrinalNote": "Kusala = thiện, Duggati = thiện nhưng vẫn trong Dục Giới (so với Sắc/Vô Sắc cao hơn). Đây là nền tảng để phát triển thiền định và Đạo Quả."
+    },
+    {
+      "id": "KM_Q_03",
+      "namePali": "Rūpāvacara-Arūpāvacara-kusala-kamma",
+      "nameVietnamese": "Thiện Đáo Đại (cho quả Sắc/Vô Sắc Giới)",
+      "nameShort": "Thiện Đáo Đại",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "kusala_uggata",
+      "orderIndex": 3,
+      "descriptionVi": "Nghiệp đắc thiền: 5 Thiền Sắc Giới (Rupavacara Kusala) + 4 Thiền Vô Sắc Giới. Cho quả là 5 Sắc Giới Quả + 4 Vô Sắc Giới Quả, tục sinh các cõi Phạm Thiên tương ứng: Sơ Thiền 3 cõi, Nhị Thiền 3 cõi, Tam Thiền 3 cõi, Tứ Thiền 7 cõi (gồm Vô Tưởng), Vô Sắc 4 cõi. Tuổi thọ từ 1/3 đại kiếp đến 84.000 đại kiếp.",
+      "examples": [
+        "Đắc Sơ Thiền ly dục → Sơ Thiền Phạm Thiên: Phạm Chúng, Phạm Phụ, Đại Phạm - 1/3 kiếp",
+        "Đắc Tứ Thiền Xả Niệm Thanh Tịnh → Quảng Quả Thiên, 500 đại kiếp",
+        "Đắc Không Vô Biên Xứ → tục sinh Không Vô Biên Xứ Thiên, 20.000 đại kiếp",
+        "Nếu đắc thiền nhưng có Tham ái cõi thiền (Jhana-nikanti) → vẫn còn luân hồi trong thiền sắc"
+      ],
+      "relatedCittaIds": ["CI_079", "CI_080", "CI_081", "CI_082", "CI_083", "CI_084", "CI_085", "CI_086", "CI_087", "CI_088", "CI_089", "CI_090", "CI_091", "CI_092"],
+      "doctrinalNote": "Uggata = cao thượng. Thiện Đáo Đại cho quả an vui cao hơn Dục Giới nhưng vẫn còn trong Tam Giới, vẫn vô thường, vẫn phải xả thiền khi hết tuổi thọ để tái sinh."
+    },
+    {
+      "id": "KM_Q_04",
+      "namePali": "Lokuttara-kamma / Magga-cetanā",
+      "nameVietnamese": "Siêu Thế Nghiệp - Tư Siêu Thế (cho quả Niết Bàn)",
+      "nameShort": "Siêu Thế",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "lokuttara",
+      "orderIndex": 4,
+      "descriptionVi": "Tư (Cetanā) trong 4 Tâm Đạo Siêu Thế (không phải Tâm Quả). Không còn cho quả trong Tam Giới mà cho quả là 4 Tâm Quả Siêu Thế (Phala) và Niết Bàn. Nghiệp duy nhất có khả năng cắt đứt vòng luân hồi, đoạn trừ phiền não tận gốc. Không còn tích lũy thành Kamma mới sau khi chứng A-la-hán.",
+      "examples": [
+        "Tuệ Quán Vô Thường-Khổ-Vô Ngã đến thuần thục → Nhập Lưu Đạo Tâm → đoạn Thân Kiến, Hoài Nghi, Giới Cấm Thủ",
+        "Nhất Lai Đạo → giảm nhẹ Tham Sân",
+        "Bất Lai Đạo → đoạn tận Sân và Dục Ái",
+        "A-la-hán Đạo → đoạn tận Si, Ngã Mạn, Hôn Trầm, Vô Tàm Vô Quý còn lại"
+      ],
+      "relatedCittaIds": ["CI_106", "CI_107", "CI_108", "CI_109", "CI_110", "CI_111", "CI_112", "CI_113", "CI_114", "CI_115", "CI_116", "CI_117", "CI_118", "CI_119", "CI_120", "CI_121", "CI_122", "CI_123", "CI_124", "CI_125"],
+      "doctrinalNote": "Lokuttara = vượt khỏi thế gian. Magga-cetanā là Tư duy nhất không tạo Kamma mới trong vòng luân hồi mà cho quả vượt Tam Giới. A-la-hán gọi là Kiriya (duy tác) không tạo nghiệp."
     }
   ]
 }

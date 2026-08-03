@@ -302,9 +302,10 @@ final List<Map<String, dynamic>> kStudyModules = [
   },
   {
     'id': 'M6_NGHIEP',
-    'title': 'Nghiệp (12 loại)',
-    'titlePali': 'Kamma (12)',
-    'description': 'Phân loại Nghiệp theo thời gian, phận sự, ưu tiên và cách chúng liên kết với Tâm.',
+    'title': 'Nghiệp (16 loại)',
+    'titlePali': 'Kamma (16)',
+    'description':
+        'Phân loại Nghiệp theo 4 phương diện: Thời gian trổ (4) - Phận sự (4) - Thứ tự ưu tiên (4) - Nơi cho quả (4). Hiểu nghiệp để làm chủ tái sinh.',
     'prerequisiteIds': ['M4_AKUSALA', 'M5_SOBHANA'],
     'recommendedOrder': 6,
     'colorCode': 0xFFB8860B,
@@ -357,7 +358,11 @@ final List<Map<String, dynamic>> kStudyModules = [
       'KM_U_01',
       'KM_U_02',
       'KM_U_03',
-      'KM_U_04'
+      'KM_U_04',
+      'KM_Q_01',
+      'KM_Q_02',
+      'KM_Q_03',
+      'KM_Q_04'
     ],
   },
   {
@@ -468,9 +473,11 @@ final List<Map<String, dynamic>> kStudyModules = [
   },
   {
     'id': 'M9_SAC_PHAP',
-    'title': 'Sắc Pháp',
+    'title': 'Sắc Pháp (28)',
     'titlePali': 'Rūpa Dhamma',
-    'description': '28 loại Sắc và mối quan hệ với Tâm, Nghiệp. Cõi Vô Sắc không có Sắc.',
+    'description': '28 Sắc Pháp chia 4 nhóm lớn: 4 Đại Hiển (Mahābhūta) là nền tảng, 5 Sắc Thần Kinh (Pasāda), 7 Sắc Cảnh (Gocara - Sắc, Thinh, Khí, Vị, Xúc là 3 Đại), 5 Sắc Đặc Biệt (Bhāva 2, Hadaya 1, Jīvita 1, Āhāra 1), 1 Hư Không Giới, 2 Biểu Tri, 3 Biến Hóa (Lahutā-Mudutā-Kammaññatā), 4 Tướng (Upacaya-Santati-Jaratā-Aniccatā).\n\n'
+        'Sắc tụ thành đoàn 8-12 sắc gọi là Kalāpa (tổng hợp sắc). 9 Kalāpa do Nghiệp tạo (cơ thể), 8 do Tâm tạo (cử động, nói), 4 do thời tiết (Utu), 2 do vật thực (Ojā). Tuổi thọ sắc = 17 sát-na tâm = 51 sắc tiểu sát-na. Cõi Vô Sắc không có sắc.\n\n'
+        'Học Rūpa để thấy thân này là sắc do 4 nhân tạo - vô ngã, vô thường, là đối tượng của thiền định (niệm thân) và quán.',
     'prerequisiteIds': ['M8_NHAN_DUYEN'],
     'recommendedOrder': 9,
     'colorCode': 0xFF1A4A8B,
