@@ -10,11 +10,11 @@
       "kiep": "past",
       "causeId": null,
       "effectId": "PD_02",
-      "descriptionVi": "Vô Minh là sự không biết về Tứ Diệu Đế, Tam Tướng, nghiệp quả và Thập Nhị Nhân Duyên. Là căn nguyên đầu tiên của vòng luân hồi. Không có Vô Minh thì Hành không sanh, vòng nhân duyên không thành.",
-      "trangThai": "Không hiểu biết — mờ ám đối với thực tính pháp (Tứ Đế, Tam Tướng)",
-      "phanSu": "Che ngăn sự sáng suốt — làm điều kiện cho Hành sanh khởi",
-      "thanhTuu": "Có sự mê mờ, tối tăm — tiếp tục tạo Hành (nghiệp) trong vô thức",
-      "nhanGan": "Không khéo tác ý (Ayoniso-manasikāra); không gặp bậc Hiền trí, không nghe Chánh Pháp",
+      "descriptionVi": "Vô Minh (Avijjā) là không biết Tứ Diệu Đế, không biết Nhân Quả, không biết Tam Tướng Vô Thường-Khổ-Vô Ngã, không biết Duyên Khởi. Có 8 đối tượng không biết: Khổ Đế, Tập Đế, Diệt Đế, Đạo Đế, tiền kiếp, hậu kiếp, cả hai, và Duyên Khởi. Avijjā là căn gốc quá khứ, đồng sanh với Moha + Ahiri + Anottappa + Uddhacca trong 12 tâm Bất Thiện. Trong Toát Yếu, Avijjā + Taṇhā là 2 Căn (mūla) của luân hồi - Avijjā như gốc rễ, Taṇhā như nhựa sống. Đoạn Avijjā bằng Đạo Tuệ.",
+      "trangThai": "Tối tăm, che đậy thực tính - lakkhaṇa: không biết (aññāṇa)",
+      "phanSu": "Làm si mê, ngăn che trí tuệ - rasa: che đậy, không cho thấy Tứ Đế",
+      "thanhTuu": "Tà kiến, hoài nghi khởi lên - paccupaṭṭhāna: tối tăm, mê mờ",
+      "nhanGan": "Ayoniso-manasikāra (phi như lý tác ý) + không gần bậc thiện tri thức, không nghe Diệu Pháp",
       "links": [
         {
           "causeId": "PD_01",
@@ -32,9 +32,10 @@
         "CS_MOHA"
       ],
       "examples": [
-        "Không biết thân này là Vô Thường → chấp thân làm Ngã → tạo nghiệp để bảo vệ ngã"
+        "Không biết thân này do Danh Sắc duyên nhau → chấp Ngã → tạo Saṅkhāra để bảo vệ Ngã",
+        "Không biết Khổ Đế là Danh Sắc → tìm cầu hạnh phúc trong Danh Sắc → Luân hồi"
       ],
-      "doctrinalNote": "Avijjā không có điểm khởi đầu (anamatagga). Diệt Vô Minh = chứng Tứ Đạo."
+      "doctrinalNote": "Trong Toát Yếu 20 chi: Avijjā quá khứ là 5 uẩn quá khứ tóm gọn = 1 chi nhưng chứa cả Hành cũ. 4 pháp Tóm Lược: Avijjā-Taṇhā là Phiền Não quá khứ-hiện tại làm nhân quá khứ. Diệt Avijjā = chứng A-la-hán Đạo."
     },
     {
       "id": "PD_02",
@@ -46,11 +47,11 @@
       "kiep": "past",
       "causeId": "PD_01",
       "effectId": "PD_03",
-      "descriptionVi": "Hành là những hành động tạo nghiệp — Tư (Cetanā) trong 3 cửa Thân, Khẩu, Ý. Có 3 loại: Phúc Hành (thiện), Phi Phúc Hành (bất thiện), Bất Động Hành (thiền đáo đại).",
-      "trangThai": "Tác động, điều hành — sự cố ý tạo tác trong thân, khẩu, ý",
-      "phanSu": "Tạo nghiệp — tích luỹ nghiệp lực sẽ cho quả tục sinh kiếp sau",
-      "thanhTuu": "Nghiệp được tích luỹ — sẽ kéo Thức vào tái sanh",
-      "nhanGan": "Vô Minh làm điều kiện (không có Vô Minh thì Hành là siêu thế — không tạo nghiệp mới)",
+      "descriptionVi": "Hành (Saṅkhārā) chính là Cetanā (Tư) trong 3 nghiệp môn Thân-Khẩu-Ý tạo nghiệp. Có 3: Puññābhisaṅkhāra (Phúc Hành - 8 Mahākusala + 5 Rūpāvacara Kusala), Apuññābhisaṅkhāra (Phi Phúc Hành - 12 Akusala), Āneñjābhisaṅkhāra (Bất Động Hành - 4 Arūpa Kusala). Khi có Avijjā thì Cetanā là nghiệp luân hồi; khi không có Avijjā (A-la-hán) thì Cetanā là Kiriya không tạo nghiệp mới.",
+      "trangThai": "Cố ý tạo tác, tập hợp - lakkhaṇa: cetayati (suy tư, cố ý)",
+      "phanSu": "Tích lũy nghiệp lực - rasa: tích tập, chuẩn bị cho quả tương lai",
+      "thanhTuu": "Nghiệp được hình thành, sẽ kéo Viññāṇa vào tái sinh",
+      "nhanGan": "Avijjā làm duyên - không có Avijjā thì không có Hành luân hồi",
       "links": [
         {
           "causeId": "PD_02",
@@ -72,10 +73,11 @@
         "CS_CETANA"
       ],
       "examples": [
-        "Bố thí với tâm thiện → Phúc Hành → Thức tục sinh vào cõi lành",
-        "Đắc thiền → Bất Động Hành → Thức tục sinh làm Phạm Thiên"
+        "Bố thí với Mahākusala Ñāṇasampayutta → Phúc Hành → cho quả người tam nhân",
+        "Sát sinh với Dosa-mūla → Phi Phúc Hành → quả khổ",
+        "Đắc Tứ Thiền Sắc Giới → Bất Động Hành → Phạm Thiên quả"
       ],
-      "doctrinalNote": "Saṅkhāra trong Nhân Duyên = Tư Tâm sở (Cetanā) tạo nghiệp."
+      "doctrinalNote": "Toát Yếu: Saṅkhāra quá khứ tóm gọn 5 nhân quá khứ: Avijjā+Taṇhā+Upādāna (Phiền Não) + Saṅkhāra+Bhava (Nghiệp) = Kamma quá khứ. Saṅkhāra là Kamma-vatta."
     },
     {
       "id": "PD_03",
@@ -87,11 +89,11 @@
       "kiep": "present",
       "causeId": "PD_02",
       "effectId": "PD_04",
-      "descriptionVi": "Thức ở đây chủ yếu chỉ Tục Sinh Thức (Paṭisandhi-citta) — Tâm đầu tiên nối tiếp từ kiếp trước vào kiếp này, mang theo hạt giống nghiệp.",
-      "trangThai": "Biết cảnh — Tâm tục sinh nương vào danh-sắc mới",
-      "phanSu": "Tái sanh — khởi đầu kiếp sống mới",
-      "thanhTuu": "Kiếp sống mới được hình thành — Danh Sắc có mặt",
-      "nhanGan": "Nghiệp (Hành) làm điều kiện; cần có Danh Sắc nương trú",
+      "descriptionVi": "Thức (Viññāṇa) trong Duyên Khởi là Quả Thức (Vipāka), đặc biệt là Paṭisandhi-citta (Tục Sinh Tâm) đầu tiên của kiếp mới, nối từ Cuti kiếp trước. Gồm 19 loại có thể làm Tục Sinh: 2 Upekkhā Santīraṇa bất thiện/thiện (người nhị nhân), 8 Mahāvipāka (người tam nhân và chư thiên Dục Giới), 5 Rūpāvacara Vipāka, 4 Arūpāvacara Vipāka. Thức và Danh Sắc nương nhau như 2 bó lau.",
+      "trangThai": "Biết cảnh tục sinh - lakkhaṇa: viññāṇa",
+      "phanSu": "Làm duyên cho Danh Sắc phát triển trong thai bào - rasa: dẫn dắt",
+      "thanhTuu": "Kiếp sống mới được kiến lập",
+      "nhanGan": "Saṅkhāra (nghiệp) làm duyên + có Vatthu (đối tượng) và Ārammaṇa",
       "links": [
         {
           "causeId": "PD_03",
@@ -113,9 +115,11 @@
       ],
       "relatedCetasikaIds": [],
       "examples": [
-        "Giây phút thụ thai: Tục Sinh Thức xuất hiện → Danh Sắc phát sinh → kiếp mới bắt đầu"
+        "Paṭisandhi Santīraṇa Xả Bất Thiện → súc sinh, ngạ quỷ",
+        "Paṭisandhi Mahāvipāka tam nhân → người trí, chư thiên",
+        "Paṭisandhi Rūpāvacara → Phạm Thiên Sắc Giới"
       ],
-      "doctrinalNote": "Thức và Danh Sắc nương nhau mà tồn tại — giống 2 bó lau nương vào nhau."
+      "doctrinalNote": "Toát Yếu: Viññāṇa-Nāmarūpa-Saḷāyatana-Phassa-Vedanā là 5 Quả hiện tại (Vipāka-vaṭṭa). Viññāṇa tương ứng với Jāti tương lai trong vòng 3 kiếp."
     },
     {
       "id": "PD_04",
@@ -127,11 +131,11 @@
       "kiep": "present",
       "causeId": "PD_03",
       "effectId": "PD_05",
-      "descriptionVi": "Danh Sắc là toàn bộ thân-tâm: Sắc (thân vật chất — 4 Đại và các sắc phái sinh) và Danh (Tâm + Tâm sở).",
-      "trangThai": "Tồn tại — thân tâm hiện hữu và phát triển",
-      "phanSu": "Làm nền tảng cho Thức hoạt động và điều kiện cho Lục Nhập phát triển",
-      "thanhTuu": "Lục Căn (6 giác quan) được hình thành đầy đủ",
-      "nhanGan": "Thức làm điều kiện; Sắc do 4 nguồn tạo ra",
+      "descriptionVi": "Danh Sắc (Nāmarūpa) là toàn bộ 5 Uẩn trong thai bào: Nāma = Tâm + Cetasika (trừ Thức tục sinh đã kể) - chủ yếu Cetasika đồng sanh với Paṭisandhi: Phassa, Vedanā, Saññā, Cetanā, Ekaggatā, Jīvitindriya, Manasikāra. Rūpa = sắc do Kamma tạo (Kammaja): 3 nhóm Kalāpa cơ bản - Kāya-dasaka (10: 8 bất ly + Jivita + Kāya-pasāda), Bhāva-dasaka (10), Hadaya-dasaka (10). Trong thai nhi, sắc từ từ phát triển theo 4 trạng thái: Kalala (tuần 1), Abbuda (tuần 2), Pesi (tuần 3), Ghana (tuần 4) rồi Pasākha (5 chi).",
+      "trangThai": "Tồn tại nương nhau - lakkhaṇa: nương tựa",
+      "phanSu": "Làm nền cho Saḷāyatana",
+      "thanhTuu": "Thân tâm hình thành",
+      "nhanGan": "Viññāṇa làm duyên + Kamma tạo sắc",
       "links": [
         {
           "causeId": "PD_04",
@@ -150,9 +154,10 @@
         "CS_MANASIKARA"
       ],
       "examples": [
-        "Thai nhi: Thức tục sinh → Danh Sắc phát triển dần từ noãn, phôi, thai đủ tháng"
+        "Thai nhi 1 tháng: chỉ có Hadaya + Kāya căn bản",
+        "Người Vô Tưởng: chỉ có Rūpa, không có Nāma (tâm diệt)"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": "Nāmarūpa trong Nhân Quả đồng thời - Nāma không tách Rūpa, Rūpa không tách Nāma ở giai đoạn này. Trong Toát Yếu 20 chi, Nāmarūpa là Quả hiện tại."
     },
     {
       "id": "PD_05",
@@ -164,11 +169,11 @@
       "kiep": "present",
       "causeId": "PD_04",
       "effectId": "PD_06",
-      "descriptionVi": "Lục Nhập là 6 cơ quan tiếp nhận cảnh: Nhãn Xứ, Nhĩ Xứ, Tỷ Xứ, Thiệt Xứ, Thân Xứ, Ý Xứ — 6 cửa để Tâm tiếp nhận 6 cảnh.",
-      "trangThai": "Sẵn sàng tiếp nhận — 6 cửa để cảnh đi vào",
-      "phanSu": "Làm cửa (dvāra) cho Tâm tiếp xúc với cảnh bên ngoài",
-      "thanhTuu": "Xúc (Phassa) được hình thành — Tâm tiếp xúc được với cảnh",
-      "nhanGan": "Danh Sắc đầy đủ làm điều kiện",
+      "descriptionVi": "Lục Nhập (Saḷāyatana) là 6 căn (Ajjhattikāyatana): Nhãn, Nhĩ, Tỷ, Thiệt, Thân (5 Pasāda) + Ý (Hadaya-vatthu làm môn). 5 căn ngoại là cảnh tương ứng: Sắc, Thinh, Khí, Vị, Xúc (ngoại). Khi thai đủ 3-4 tháng, 5 Pasāda dần đầy đủ. Ý Nhập gồm 89 tâm theo môn khác nhau. Lục Nhập là cửa để Tâm tiếp xúc ngoại cảnh, là nơi 6 thức hoạt động.",
+      "trangThai": "Cửa ngõ, sản sinh xúc - lakkhaṇa: āyatana",
+      "phanSu": "Thu thập cảnh",
+      "thanhTuu": "Phassa sẵn sàng sanh",
+      "nhanGan": "Nāmarūpa làm duyên",
       "links": [
         {
           "causeId": "PD_05",
@@ -181,9 +186,10 @@
       "relatedCittaIds": [],
       "relatedCetasikaIds": [],
       "examples": [
-        "Đứa trẻ sơ sinh: Lục Căn đủ → bắt đầu tiếp xúc với thế giới bên ngoài"
+        "Đứa bé sinh ra đủ 5 Pasāda → thấy, nghe, ngửi, nếm, xúc chạm ngay",
+        "Người mù: Nhãn Pasāda không hoạt động nhưng Ý môn vẫn tưởng tượng cảnh sắc"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": "Saḷāyatana là nơi trú của 6 thức. Trong thiền Minh Sát, hộ trì 6 căn (Indriya-saṃvara) là thực hành cắt dòng Duyên Khởi ngay tại đây."
     },
     {
       "id": "PD_06",
@@ -195,11 +201,11 @@
       "kiep": "present",
       "causeId": "PD_05",
       "effectId": "PD_07",
-      "descriptionVi": "Xúc là sự gặp gỡ, tiếp xúc giữa 3 yếu tố: Căn + Cảnh + Thức. Là điều kiện để Thọ sanh lên.",
-      "trangThai": "Tiếp xúc — sự gặp gỡ của Căn, Cảnh và Thức",
-      "phanSu": "Gom thâu Căn, Cảnh, Thức lại — tạo điều kiện cho Thọ sanh khởi",
-      "thanhTuu": "Tâm, Tâm sở, Căn, Cảnh hội tụ lại",
-      "nhanGan": "Phải có đủ 3: Căn + Cảnh + Thức",
+      "descriptionVi": "Xúc (Phassa) là Tâm Sở Phassa - sự hội tụ của 3: Vatthu (Căn) + Ārammaṇa (Cảnh) + Viññāṇa (Thức). Ví dụ: Nhãn Pasāda + Sắc cảnh + Nhãn Thức → Nhãn Xúc. Có 6 Xúc tương ứng 6 căn. Xúc có mặt trong mọi tâm (7 Biến Hành), là duyên gần nhất cho Thọ nhất định phải sanh.",
+      "trangThai": "Chạm xúc - lakkhaṇa: phusati",
+      "phanSu": "Kết hợp 3 pháp (Căn-Cảnh-Thức)",
+      "thanhTuu": "Sanh Thọ",
+      "nhanGan": "Saḷāyatana",
       "links": [
         {
           "causeId": "PD_06",
@@ -214,9 +220,10 @@
         "CS_PHASSA"
       ],
       "examples": [
-        "Mắt thấy cảnh đẹp: Nhãn Căn + Sắc Cảnh + Nhãn Thức → Nhãn Xúc → Thọ Hỷ"
+        "Mắt thấy tượng Phật: Nhãn Xúc → Thọ Xả",
+        "Tai nghe nhạc kích dục: Nhĩ Xúc → Thọ Hỷ bất thiện"
       ],
-      "doctrinalNote": "Phassa trong Nhân Duyên = Tâm Sở Xúc (CS_PHASSA)."
+      "doctrinalNote": "Trong Toát Yếu, Phassa-Vedanā là Quả hiện tại nhưng rất gần Nhân hiện tại (Taṇhā). Đây là điểm chuyển tiếp ViPāka → Kilesa. Tu tập tại Phassa = không cho tham-sân khởi theo cảnh."
     },
     {
       "id": "PD_07",
@@ -228,11 +235,11 @@
       "kiep": "present",
       "causeId": "PD_06",
       "effectId": "PD_08",
-      "descriptionVi": "Thọ là cảm giác phát sinh sau Xúc — Hỷ, Ưu, Lạc, Khổ, Xả. Đây là điểm quan trọng nhất trong thực hành thiền: dừng ở Thọ, không để Thọ dẫn đến Ái.",
-      "trangThai": "Cảm nhận — thọ hưởng cảnh tốt xấu trung tính sau Xúc",
-      "phanSu": "Thọ hưởng cảnh — tạo điều kiện cho Ái sanh khởi nếu phi như lý tác ý",
-      "thanhTuu": "Kinh nghiệm vui, khổ, trung tính được hình thành trong tâm",
-      "nhanGan": "Xúc làm điều kiện",
+      "descriptionVi": "Thọ (Vedanā) là Tâm Sở Thọ - cảm giác sau Xúc: Hỷ (Somanassa - 62 tâm), Ưu (Domanassa - 2 tâm Sân), Lạc (Sukha - 1 Thân Thiện), Khổ (Dukkha - 1 Thân Bất Thiện), Xả (Upekkhā - 55 tâm). Trong Ngũ Uẩn, Thọ Uẩn quan trọng nhất vì là điểm có thể dừng luân hồi. Nếu chánh niệm tỉnh giác tại Thọ (Vedanānupassanā), Thọ không thành duyên cho Ái; nếu thất niệm, Thọ duyên Ái.",
+      "trangThai": "Cảm thọ - lakkhaṇa: vedayati",
+      "phanSu": "Hưởng cảnh",
+      "thanhTuu": "Ái có thể sanh nếu không có chánh niệm",
+      "nhanGan": "Phassa",
       "links": [
         {
           "causeId": "PD_07",
@@ -247,9 +254,10 @@
         "CS_VEDANA"
       ],
       "examples": [
-        "Nghe lời khen (Xúc) → Thọ Hỷ → không Chánh Niệm → Ái dục (muốn nghe thêm)"
+        "Ăn món ngon → Thọ Lạc → nếu chánh niệm: chỉ biết lạc, không tham → không Ái; nếu thất niệm: muốn ăn nữa → Ái Dục",
+        "Nghe chê → Thọ Ưu → nếu không chánh niệm → Sân, Muốn không nghe → Vibhava-taṇhā"
       ],
-      "doctrinalNote": "Đây là điểm mấu chốt trong Tứ Niệm Xứ — dừng lại ở Thọ, không để Thọ dẫn đến Ái."
+      "doctrinalNote": "Đây là cửa ngõ thực hành: Trong Kinh Satipaṭṭhāna, Đức Phật dạy: Vedanāsu Vedanānupassī. Dừng lại ở Thọ = cắt vòng luân hồi. Trong Toát Yếu, Vedanā là Quả hiện tại cuối cùng trước khi chuyển sang Nhân hiện tại (Ái)."
     },
     {
       "id": "PD_08",
@@ -261,11 +269,11 @@
       "kiep": "present",
       "causeId": "PD_07",
       "effectId": "PD_09",
-      "descriptionVi": "Ái là sự khát ái, tham muốn. Có 3 loại: Dục Ái (khát ái 5 dục), Hữu Ái (muốn tiếp tục tồn tại), Vô Hữu Ái (muốn không tồn tại). Ái là Tập Đế — căn nguyên của Khổ.",
-      "trangThai": "Khát ái — sự ham muốn dính mắc do Thọ tạo ra",
-      "phanSu": "Bám víu vào đối tượng — tạo điều kiện cho Thủ sanh khởi",
-      "thanhTuu": "Thủ (bám chặt) được hình thành; dòng luân hồi tiếp tục",
-      "nhanGan": "Thọ (đặc biệt Thọ Hỷ và Thọ Lạc) làm điều kiện",
+      "descriptionVi": "Ái (Taṇhā) là Tâm Sở Tham (Lobha) ở mức độ khao khát. Có 3: Kāma-taṇhā (Ái Dục - khát 5 trần), Bhava-taṇhā (Hữu Ái - khát được tồn tại, dính với Thường Kiến, tham thiền), Vibhava-taṇhā (Phi Hữu Ái - khát không tồn tại, dính với Đoạn Kiến). Có 108 Ái tính theo Tổ: 3 Ái x 6 trần (Sắc-Thinh-Khí-Vị-Xúc-Pháp) x 3 thời x 3 xứ (nội-ngoại-cả hai) = 108. Ái chính là Samudaya Sacca (Tập Đế) trong Tứ Đế.",
+      "trangThai": "Khao khát, đói khát - lakkhaṇa: taṇhā",
+      "phanSu": "Tìm cầu, dính mắc cảnh",
+      "thanhTuu": "Thủ hình thành, vòng mới bắt đầu",
+      "nhanGan": "Vedanā + Avijjā",
       "links": [
         {
           "causeId": "PD_08",
@@ -289,10 +297,11 @@
         "CS_LOBHA"
       ],
       "examples": [
-        "Thấy thức ăn ngon → Ái Dục: muốn ăn thêm",
-        "Gặp cảnh khổ → Ái Vô Hữu: muốn không tồn tại"
+        "Thấy xe đẹp → Kāma-taṇhā → muốn mua",
+        "Tu thiền có hỷ lạc → Bhava-taṇhā → muốn ở mãi trong thiền",
+        "Đau khổ quá → Vibhava-taṇhā → muốn tự tử để hết khổ (đoạn kiến)"
       ],
-      "doctrinalNote": "Ái = Tập Đế trong Tứ Diệu Đế. Diệt Ái = Diệt Khổ = Niết Bàn."
+      "doctrinalNote": "Toát Yếu: Taṇhā + Avijjā là 2 Căn (Mūla). Taṇhā là gốc hiện tại tạo Nhân tương lai giống như Avijjā quá khứ đã tạo Nhân quá khứ. Diệt Taṇhā bằng A-na-hàm Đạo (đối với Kāma) và A-la-hán Đạo (đối với Bhava/Vibhava)."
     },
     {
       "id": "PD_09",
@@ -304,11 +313,11 @@
       "kiep": "present",
       "causeId": "PD_08",
       "effectId": "PD_10",
-      "descriptionVi": "Thủ là sự bám chặt, nắm giữ mạnh hơn Ái. Có 4 loại: Dục Thủ, Kiến Thủ, Giới Cấm Thủ, Ngã Luận Thủ.",
-      "trangThai": "Bám chặt — sự nắm giữ mạnh mẽ, không buông rời",
-      "phanSu": "Bám chặt vào đối tượng — tạo điều kiện cho Hữu sanh khởi",
-      "thanhTuu": "Hữu (Bhava) được hình thành — nghiệp cho tái sanh tích luỹ",
-      "nhanGan": "Ái làm điều kiện — Thủ là Ái được tăng cường, củng cố",
+      "descriptionVi": "Thủ (Upādāna) là Ái ở mức độ mạnh - bám chặt không buông. Pali: Upā + ādāna = lấy một cách mạnh mẽ. Có 4: Kāmupādāna (Dục Thủ - bám 5 dục), Diṭṭhupādāna (Kiến Thủ - bám tà kiến 62 loại, trừ Giới Cấm và Ngã Luận), Sīlabbatupādāna (Giới Cấm Thủ - bám nghi lễ sai lầm cho là giải thoát), Attavādupādāna (Ngã Luận Thủ - bám vào Ngã, thân kiến 20). Về Tâm Sở, Dục Thủ = Lobha mạnh, 3 Thủ còn lại = Diṭṭhi.",
+      "trangThai": "Bám chặt, nắm giữ - lakkhaṇa: upādiyati",
+      "phanSu": "Không buông bỏ, chấp giữ mạnh",
+      "thanhTuu": "Bhava hình thành",
+      "nhanGan": "Taṇhā",
       "links": [
         {
           "causeId": "PD_09",
@@ -324,9 +333,10 @@
         "CS_DITTHI"
       ],
       "examples": [
-        "Không chỉ muốn có tiền (Ái) mà còn không thể buông tiền ra (Thủ)"
+        "Không chỉ thích rượu (Taṇhā) mà không thể bỏ rượu, nghiện rượu (Thủ)",
+        "Không chỉ tin tà kiến mà còn cố chấp, tranh luận bảo vệ tà kiến đến chết"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": "Nếu Taṇhā là bàn tay với tới, thì Upādāna là bàn tay nắm chặt. Trong Toát Yếu, Taṇhā-Upādāna là 2 Phiền Não hiện tại làm nhân cho Kamma hiện tại (Bhava)."
     },
     {
       "id": "PD_10",
@@ -338,11 +348,11 @@
       "kiep": "present",
       "causeId": "PD_09",
       "effectId": "PD_11",
-      "descriptionVi": "Hữu gồm 2 phần: Nghiệp Hữu (nghiệp tích luỹ sẽ tạo tái sanh) và Sanh Hữu (cõi giới sẽ tái sanh vào). Có 3 cõi Hữu: Dục Hữu, Sắc Hữu, Vô Sắc Hữu.",
-      "trangThai": "Hiện hữu — nghiệp lực tích luỹ, sẵn sàng tạo tái sanh",
-      "phanSu": "Tạo điều kiện cho Sanh diễn ra trong kiếp tương lai",
-      "thanhTuu": "Tái sanh sẽ xảy ra trong cõi phù hợp với nghiệp",
-      "nhanGan": "Thủ làm điều kiện — Thủ là nhiên liệu cho Hữu",
+      "descriptionVi": "Hữu (Bhava) có 2: Kamma-bhava (Nghiệp Hữu - chính là Cetanā trong Saṅkhāra và nay là Cetanā trong Thủ - tức là mọi thiện ác nghiệp đang tích lũy sẽ cho quả tương lai, gồm 29 loại: 8 Mahākusala, 12 Akusala, 5 Rūpa Kusala, 4 Arūpa Kusala) và Upapatti-bhava (Sanh Hữu - 31 cõi - là quả của Kamma-bhava). Có 3 cõi Hữu khác: Kāma-bhava (Dục Hữu 11 cõi), Rūpa-bhava (16 cõi Sắc), Arūpa-bhava (4 cõi Vô Sắc). Bhava tương ứng với Saṅkhāra quá khứ nhưng ở hiện tại.",
+      "trangThai": "Hiện hữu, trở thành - lakkhaṇa: bhavati",
+      "phanSu": "Làm duyên cho Jāti",
+      "thanhTuu": "Sanh phải xảy ra",
+      "nhanGan": "Upādāna",
       "links": [
         {
           "causeId": "PD_10",
@@ -357,9 +367,10 @@
         "CS_CETANA"
       ],
       "examples": [
-        "Người suốt đời bố thí → Hữu thiện dục giới → Sanh làm người giàu kiếp sau"
+        "Suốt đời hành thiền Tứ Thiền → Kamma-bhava Rūpa → Upapatti-bhava Quảng Quả Thiên (500 kiếp)",
+        "Chấp Ngã Luận Thủ mạnh → Kamma-bhava tà → Upapatti-bhava ác thú"
       ],
-      "doctrinalNote": null
+      "doctrinalNote": "Toát Yếu 20 chi: Bhava là 3 Nhân hiện tại cuối cùng (cùng với Taṇhā-Upādāna). Bhava = Kamma-bhava là nhân, Upapatti-bhava là quả tương lai gần. Bhava chính là Kamma-vatta hiện tại."
     },
     {
       "id": "PD_11",
@@ -371,11 +382,11 @@
       "kiep": "future",
       "causeId": "PD_10",
       "effectId": "PD_12",
-      "descriptionVi": "Sanh là sự tái sanh — Tục Sinh Thức xuất hiện trong kiếp mới, Danh Sắc hình thành, các Uẩn khởi sanh. Tất cả khổ đau đều bắt đầu từ đây.",
-      "trangThai": "Tục sinh — Thức tái sanh vào cõi giới mới",
-      "phanSu": "Khởi đầu kiếp sống mới — kéo theo toàn bộ Khổ",
-      "thanhTuu": "Khổ (Lão-Tử) hiện ra",
-      "nhanGan": "Hữu (nghiệp lực) làm điều kiện",
+      "descriptionVi": "Sanh (Jāti) là Paṭisandhi (Tục Sinh) + sự phát triển Nāmarūpa trong thai mẹ + sự xuất hiện của 5 Uẩn mới. Jāti không chỉ là sinh ra mà là sự khởi lên của Khổ Uẩn. Jāti bao gồm cả thai sanh, noãn sanh, thấp sanh, hóa sanh. Jāti là quả trực tiếp của Bhava (Kamma-bhava). Ngay khi sanh, Lão-Tử đã ngầm chứa.",
+      "trangThai": "Khởi lên của 5 Uẩn mới - lakkhaṇa: jāyati",
+      "phanSu": "Kiến tạo kiếp mới, mang Khổ đến",
+      "thanhTuu": "Lão Tử chắc chắn sẽ đến",
+      "nhanGan": "Bhava",
       "links": [
         {
           "causeId": "PD_11",
@@ -397,9 +408,10 @@
       ],
       "relatedCetasikaIds": [],
       "examples": [
-        "Giây phút thụ thai = Sanh — mọi khổ theo sau"
+        "Tục Sinh vào thai mẹ lúc cha mẹ giao hợp cuối tinh dịch + kammaja sắc + Cuti kiếp trước diệt → Paṭisandhi",
+        "Hóa sanh Phạm Thiên: không qua thai mà hiện ra đầy đủ sắc căn"
       ],
-      "doctrinalNote": "Vòng tròn 3 kiếp được kết nối ở đây — Sanh tương ứng với PD_03 ở chiều quả kiếp sau."
+      "doctrinalNote": "Trong 3 thời: Jāti-Jarāmaraṇa là Quả tương lai, tương ứng với Viññāṇa-Nāmarūpa-Saḷāyatana-Phassa-Vedanā hiện tại. Toát Yếu 20 chi: Jāti tương lai = Viññāṇa hiện tại."
     },
     {
       "id": "PD_12",
@@ -411,19 +423,20 @@
       "kiep": "future",
       "causeId": "PD_11",
       "effectId": null,
-      "descriptionVi": "Lão Tử — Lão: già nua, biến hoại; Tử: chết. Kèm theo là Sầu, Bi, Khổ, Ưu, Não — tất cả khổ đau trong đời. Là quả cuối, kết thúc 1 kiếp và bắt đầu vòng luân hồi mới nếu chưa giải thoát.",
-      "trangThai": "Già và Chết — biến hoại và hoại diệt tất yếu của mọi thân tâm hữu vi",
-      "phanSu": "Kết thúc một kiếp sống — tiếp tục vòng luân hồi mới nếu chưa giải thoát",
-      "thanhTuu": "Một kiếp kết thúc — nếu chưa giải thoát thì vòng luân hồi tiếp tục",
-      "nhanGan": "Sanh làm điều kiện — đã có Sanh tất có Lão Tử",
+      "descriptionVi": "Lão Tử (Jarāmaraṇa) không chỉ già-chết mà bao gồm cả Sầu (Soka - sầu muộn), Bi (Parideva - khóc than), Khổ Thân (Dukkha - khổ thân), Ưu (Domanassa - khổ tâm), Não (Upāyāsa - thất vọng cùng cực). Tổng cộng 7 pháp Khổ. Lão là Jaratā-rūpa (biến dị sắc), Tử là Cuti-citta (tử tâm) + Aniccatā-rūpa (diệt sắc) + Kamma-bhavanga diệt. Nếu không đoạn Duyên Khởi, Lão-Tử kiếp này lại làm duyên cho Avijjā mới → vòng 12 lại tiếp.",
+      "trangThai": "Già, chết, biến hoại - lakkhaṇa: jīrati, mīyati",
+      "phanSu": "Kết thúc kiếp, làm duyên cho luân hồi tiếp nếu còn phiền não",
+      "thanhTuu": "Luân hồi tiếp diễn hoặc chấm dứt nếu Đạo Quả sanh",
+      "nhanGan": "Jāti",
       "links": [],
       "relatedCittaIds": [],
       "relatedCetasikaIds": [],
       "examples": [
-        "Mọi chúng sanh đã sanh đều phải già và chết",
-        "Khi Vô Minh và Ái được đoạn trừ → Lão Tử không còn tiếp diễn"
+        "Già: tóc bạc, da nhăn, mắt mờ, Jaratā sắc",
+        "Chết: Sắc mạng quyền (Rūpa Jīvita) diệt + Danh mạng quyền diệt + Cuti Tâm",
+        "Sầu Bi Khổ Ưu Não: thân nhân chết, thất bại, bệnh tật"
       ],
-      "doctrinalNote": "Giải thoát = diệt Vô Minh (PD_01) và Ái (PD_08) = chứng Niết Bàn."
+      "doctrinalNote": "Toát Yếu chấm dứt tại đây: Nếu Avijjā-Taṇhā-Upādāna bị đoạn bằng Đạo Tuệ, thì Saṅkhāra-Bhava không tạo, Jāti-Jarāmaraṇa không còn = Niết Bàn. Đây chính là Mục đích của Toát Yếu Duyên Khởi: thấy 12 chi chỉ là 3 vòng - Kilesa-Kamma-Vipāka xoay vòng không đầu. 20 chi Tóm Lược: Quá khứ 5 nhân (Avijjā+Saṅkhāra+Taṇhā+Upādāna+Bhava) + Hiện tại 5 quả (Viññāṇa+Nāmarūpa+Saḷāyatana+Phassa+Vedanā) + Hiện tại 5 nhân (Taṇhā+Upādāna+Bhava+Avijjā+Saṅkhāra - trả lại) + Tương lai 5 quả (Viññāṇa+Nāmarūpa+Saḷāyatana+Phassa+Vedanā+Jāti+Jarāmaraṇa)."
     }
   ]
 }

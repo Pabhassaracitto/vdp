@@ -421,9 +421,16 @@ final List<Map<String, dynamic>> kStudyModules = [
   },
   {
     'id': 'M8_NHAN_DUYEN',
-    'title': '12 Nhân Duyên',
-    'titlePali': 'Paṭicca-samuppāda',
-    'description': 'Vòng luân hồi: 12 chi phần Nhân Duyên và cách phá vỡ.',
+    'title': '12 Nhân Duyên (Toát Yếu)',
+    'titlePali': 'Paṭicca-samuppāda Saṅkhepa',
+    'description': 'Toát Yếu Duyên Khởi: 12 chi tóm thành 20 chi, 3 thời, 2 căn, 3 vòng, 4 tóm lược.\n\n'
+        '12 Chi: 1.Av masses 2.Hành 3.Thức 4.Danh Sắc 5.Lục Nhập 6.Xúc 7.Thọ 8.Ái 9.Thủ 10.Hữu 11.Sanh 12.Lão Tử (+Sầu Bi Khổ Ưu Não).\n\n'
+        '3 Thời: Quá khứ (1-2: Vô Minh-Hành là nhân), Hiện tại (3-10: 5 Quả 3-7 + 3 Nhân 8-10), Tương lai (11-12: Quả).\n'
+        '2 Căn (Mūla): Vô Minh (gốc quá khứ) và Ái (gốc hiện tại) - như rễ cây và nhựa sống.\n'
+        '3 Vòng (Vaṭṭa): Phiền Não (Avijjā-Taṇhā-Upādāna) → Nghiệp (Saṅkhāra-Bhava) → Quả (Viññāṇa...Vedanā-Jāti-Jarā) xoay không đầu.\n\n'
+        '4 Tóm Lược: Nhân quá khứ (5: Vô Minh-Hành-Ái-Thủ-Hữu), Quả hiện tại (5: Thức-Danh Sắc-Lục Nhập-Xúc-Thọ), Nhân hiện tại (5: Ái-Thủ-Hữu-Vô Minh-Hành), Quả tương lai (5: Thức...Lão Tử).\n'
+        '20 Chi Tóm Lược quét 3 vòng 12 chi nhưng đủ để thấy tính vô ngã - chỉ pháp, không có chúng sinh.\n\n'
+        'Thực hành: Dừng tại Thọ (Vedanā) bằng chánh niệm - không cho Thọ duyên Ái. Đoạn Ái (Nhập Lưu diệt Kiến Thủ, Nhất Lai giảm Tham, Bất Lai diệt Dục Ái, A-la-hán diệt Hữu-Vô Hữu Ái) và Vô Minh (Tuệ Đạo) = Niết Bàn.',
     'prerequisiteIds': ['M6_NGHIEP'],
     'recommendedOrder': 8,
     'colorCode': 0xFF4A1A8B,
