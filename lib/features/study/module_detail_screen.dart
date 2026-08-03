@@ -603,19 +603,22 @@ class _CittaStudyCard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isBookmarked = ref.watch(progressProvider).bookmarkedCittaIds.contains(citta.id);
+    final alwaysCount = citta.cetasikaAssociations.where((a) => a.type == AssociationType.always).length;
     return Container(
-        margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.all(13),
+        margin: const EdgeInsets.only(bottom: 12),
+        padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
             color: color.withOpacity(0.05),
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(12),
             border: Border.all(color: color.withOpacity(0.2))),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Expanded(
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(citta.nameVietnamese, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
-              Text(citta.namePali, style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color)),
+              Text(citta.nameVietnamese, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+              Text(citta.namePali, style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color, fontWeight: FontWeight.w500)),
+              Text('Order: #${citta.orderIndex} • Module: ${citta.moduleId}',
+                  style: TextStyle(fontSize: 10, color: Colors.grey.shade500)),
             ])),
             IconButton(
                 icon: Icon(isBookmarked ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
@@ -630,14 +633,33 @@ class _CittaStudyCard extends ConsumerWidget {
                 constraints: const BoxConstraints(),
                 padding: const EdgeInsets.only(left: 4)),
           ]),
-          const SizedBox(height: 6),
+          const SizedBox(height: 8),
           if (citta.doctrinalNote != null && citta.doctrinalNote!.isNotEmpty)
-            Text(citta.doctrinalNote!, style: const TextStyle(fontSize: 13, height: 1.5, color: Colors.black87)),
-          const SizedBox(height: 6),
-          Wrap(spacing: 6, runSpacing: 4, children: [
+            Text(citta.doctrinalNote!, style: const TextStyle(fontSize: 13, height: 1.6, color: Colors.black87)),
+          const SizedBox(height: 8),
+          Wrap(spacing: 6, runSpacing: 6, children: [
             _InfoChip(label: _getVedanaLabel(citta.vedana), color: _getVedanaColor(citta.vedana)),
             _InfoChip(label: _getBhumiLabel(citta.bhumiGroup), color: color),
+            _InfoChip(label: 'FK: ${citta.function.name}', color: Colors.blueGrey),
+            _InfoChip(label: '$alwaysCount TS đồng sanh luôn', color: Colors.teal),
           ]),
+          if (citta.examples != null && citta.examples!.isNotEmpty) ...[
+            const SizedBox(height: 10),
+            Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.grey.shade200)),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('Ví dụ đời thường',
+                      style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: color)),
+                  const SizedBox(height: 4),
+                  ...citta.examples!.take(2).map((e) => Padding(
+                      padding: const EdgeInsets.only(bottom: 3),
+                      child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Text('• ', style: TextStyle(color: color)),
+                        Expanded(child: Text(e, style: const TextStyle(fontSize: 12, height: 1.5))),
+                      ]))),
+                ])),
+          ],
           _NotePreview(itemId: citta.id),
         ]));
   }
@@ -662,10 +684,10 @@ class _CittaStudyCard extends ConsumerWidget {
   }
 
   static String _getVedanaLabel(Vedana v) => switch (v) {
-        Vedana.pleasant => '😊 Lạc thọ',
-        Vedana.unpleasant => '😔 Khổ thọ',
-        Vedana.neutral => '😐 Xả thọ',
-        Vedana.joy => '😄 Hỷ thọ',
+        Vedana.pleasant => '😊 Lạc thọ (Sukha)',
+        Vedana.unpleasant => '😔 Khổ thọ (Dukkha)',
+        Vedana.neutral => '😐 Xả thọ (Upekkhā)',
+        Vedana.joy => '😄 Hỷ thọ (Somanassa)',
       };
   static Color _getVedanaColor(Vedana v) => switch (v) {
         Vedana.pleasant => Colors.green,
@@ -674,16 +696,16 @@ class _CittaStudyCard extends ConsumerWidget {
         Vedana.joy => Colors.orange,
       };
   static String _getBhumiLabel(BhumiGroup b) => switch (b) {
-        BhumiGroup.akusala => '🔴 Bất Thiện',
-        BhumiGroup.ahetuka => '⚪ Vô Nhân',
-        BhumiGroup.sobhanaKamavacara => '🟢 Tịnh Hảo DG',
-        BhumiGroup.rupavacara => '🔵 Sắc Giới',
-        BhumiGroup.arupavacara => '🟣 Vô Sắc Giới',
-        BhumiGroup.lokuttara => '✨ Siêu Thế',
+        BhumiGroup.akusala => '🔴 Bất Thiện (Akusala)',
+        BhumiGroup.ahetuka => '⚪ Vô Nhân (Ahetuka)',
+        BhumiGroup.sobhanaKamavacara => '🟢 Tịnh Hảo DG (Sobhana)',
+        BhumiGroup.rupavacara => '🔵 Sắc Giới (Rūpa)',
+        BhumiGroup.arupavacara => '🟣 Vô Sắc (Arūpa)',
+        BhumiGroup.lokuttara => '✨ Siêu Thế (Lokuttara)',
       };
 }
 
-// ─── Cetasika Card ────────────────────────────────────────────────────────────
+// ─── Cetasika Card — Enriched with Tứ Nghĩa (Lakkhaṇa) ─────────────────────────
 
 class _CetasikaStudyCard extends ConsumerWidget {
   final CetasikaModel cetasika;
@@ -694,44 +716,96 @@ class _CetasikaStudyCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final isBookmarked = ref.watch(progressProvider).bookmarkedCetasikaIds.contains(cetasika.id);
     return Container(
-        margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.all(13),
+        margin: const EdgeInsets.only(bottom: 12),
+        padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
             color: color.withOpacity(0.05),
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(12),
             border: Border.all(color: color.withOpacity(0.2))),
-        child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(color: color.withOpacity(0.1), borderRadius: BorderRadius.circular(8)),
-              child: Text(cetasika.symbol, style: const TextStyle(fontSize: 22))),
-          const SizedBox(width: 12),
-          Expanded(
-              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Expanded(
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(cetasika.nameVietnamese, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
-                Text(cetasika.namePali, style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color)),
-              ])),
-              IconButton(
-                  icon: Icon(isBookmarked ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
-                      color: isBookmarked ? VdpColors.secondary : Colors.grey.shade400, size: 20),
-                  onPressed: () => ref.read(progressProvider.notifier).toggleCetasikaBookmark(cetasika.id),
-                  constraints: const BoxConstraints(),
-                  padding: EdgeInsets.zero),
-              IconButton(
-                  icon: const Icon(Icons.edit_note_rounded, size: 20, color: Colors.grey),
-                  onPressed: () => _showNoteEditor(context, ref),
-                  constraints: const BoxConstraints(),
-                  padding: const EdgeInsets.only(left: 4)),
-            ]),
-            const SizedBox(height: 4),
-            Text(cetasika.descriptionVi, style: const TextStyle(fontSize: 13, height: 1.5, color: Colors.black87)),
-            const SizedBox(height: 6),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(color: color.withOpacity(0.12), borderRadius: BorderRadius.circular(10)),
+                child: Text(cetasika.symbol, style: const TextStyle(fontSize: 24))),
+            const SizedBox(width: 12),
+            Expanded(
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Expanded(
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text(cetasika.nameVietnamese, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+                  Text(cetasika.namePali,
+                      style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color, fontWeight: FontWeight.w500)),
+                  if (cetasika.ipaTranscription != null)
+                    Text('[${cetasika.ipaTranscription}]',
+                        style: TextStyle(fontSize: 10, color: Colors.grey.shade500, fontFamily: 'monospace')),
+                ])),
+                IconButton(
+                    icon: Icon(isBookmarked ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
+                        color: isBookmarked ? VdpColors.secondary : Colors.grey.shade400, size: 20),
+                    onPressed: () => ref.read(progressProvider.notifier).toggleCetasikaBookmark(cetasika.id),
+                    constraints: const BoxConstraints(),
+                    padding: EdgeInsets.zero),
+                IconButton(
+                    icon: const Icon(Icons.edit_note_rounded, size: 20, color: Colors.grey),
+                    onPressed: () => _showNoteEditor(context, ref),
+                    constraints: const BoxConstraints(),
+                    padding: const EdgeInsets.only(left: 4)),
+              ]),
+              const SizedBox(height: 6),
+              Text(cetasika.descriptionVi,
+                  style: const TextStyle(fontSize: 13, height: 1.6, color: Colors.black87)),
+            ])),
+          ]),
+          const SizedBox(height: 10),
+          Wrap(spacing: 6, runSpacing: 6, children: [
             _InfoChip(label: _getGroupName(cetasika.group), color: color),
-            _NotePreview(itemId: cetasika.id),
-          ])),
+            if (cetasika.akusalaSubGroup != null)
+              _InfoChip(label: cetasika.akusalaSubGroup!.name, color: Colors.red.shade400),
+            if (cetasika.sobhanaSubGroup != null)
+              _InfoChip(label: cetasika.sobhanaSubGroup!.name, color: Colors.green.shade600),
+            _InfoChip(label: '#${cetasika.traditionalOrder}', color: Colors.grey),
+          ]),
+          if (cetasika.trangThai != null || cetasika.phanSu != null || cetasika.thanhTuu != null || cetasika.nhanGan != null)
+            Container(
+                margin: const EdgeInsets.only(top: 12),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: color.withOpacity(0.15))),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('Tứ Nghĩa (Catubbidha)',
+                      style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: color)),
+                  const SizedBox(height: 8),
+                  if (cetasika.trangThai != null) _LakkhaLine(icon: '🎯', label: 'Trạng Thái (Lakkhaṇa)', text: cetasika.trangThai!),
+                  if (cetasika.phanSu != null) _LakkhaLine(icon: '⚙️', label: 'Phận Sự (Rasa)', text: cetasika.phanSu!),
+                  if (cetasika.thanhTuu != null) _LakkhaLine(icon: '✅', label: 'Thành Tựu (Paccupaṭṭhāna)', text: cetasika.thanhTuu!),
+                  if (cetasika.nhanGan != null) _LakkhaLine(icon: '🌱', label: 'Nhân Gần (Padaṭṭhāna)', text: cetasika.nhanGan!),
+                ])),
+          if (cetasika.conflictRules.isNotEmpty)
+            Container(
+                margin: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Colors.red.shade50,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.red.shade100)),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Row(children: [
+                    Icon(Icons.warning_amber_rounded, size: 14, color: Colors.red.shade400),
+                    const SizedBox(width: 6),
+                    Text('Xung đột giáo lý',
+                        style: TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: Colors.red.shade700)),
+                  ]),
+                  const SizedBox(height: 6),
+                  ...cetasika.conflictRules.map((r) => Padding(
+                      padding: const EdgeInsets.only(bottom: 4),
+                      child: Text('• ${r.explanation}',
+                          style: TextStyle(fontSize: 11, height: 1.4, color: Colors.red.shade800)))),
+                ])),
+          _NotePreview(itemId: cetasika.id),
         ]));
   }
 
@@ -755,11 +829,34 @@ class _CetasikaStudyCard extends ConsumerWidget {
   }
 
   static String _getGroupName(CetasikaGroup g) => switch (g) {
-        CetasikaGroup.sabbacittasadharana => '7 Biến Hành',
-        CetasikaGroup.pakinnaka => '6 Biệt Cảnh',
-        CetasikaGroup.akusala => '14 Bất Thiện',
-        CetasikaGroup.sobhana => '25 Tịnh Hảo',
+        CetasikaGroup.sabbacittasadharana => '7 Biến Hành (Sabbacittasādhāraṇa)',
+        CetasikaGroup.pakinnaka => '6 Biệt Cảnh (Pakiṇṇaka)',
+        CetasikaGroup.akusala => '14 Bất Thiện (Akusala)',
+        CetasikaGroup.sobhana => '25 Tịnh Hảo (Sobhana)',
       };
+}
+
+class _LakkhaLine extends StatelessWidget {
+  final String icon;
+  final String label;
+  final String text;
+  const _LakkhaLine({required this.icon, required this.label, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+        padding: const EdgeInsets.only(bottom: 6),
+        child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(icon, style: const TextStyle(fontSize: 12)),
+          const SizedBox(width: 6),
+          Expanded(
+              child: RichText(
+                  text: TextSpan(style: const TextStyle(fontSize: 12, height: 1.5, color: Colors.black87), children: [
+            TextSpan(text: '$label: ', style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 11)),
+            TextSpan(text: text),
+          ]))),
+        ]));
+  }
 }
 
 // ─── Kamma Card ───────────────────────────────────────────────────────────────
@@ -772,37 +869,79 @@ class _KammaStudyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final group = () {
-      if (kamma.byTime != null) return '⏰ ${kamma.byTime!.name}';
-      if (kamma.byFunction != null) return '⚙️ ${kamma.byFunction!.name}';
-      if (kamma.byPriority != null) return '🎯 ${kamma.byPriority!.name}';
-      if (kamma.byResult != null) return '🌍 ${kamma.byResult!.name}';
+      if (kamma.byTime != null) return '⏰ Thời Gian: ${kamma.byTime!.name} (Javana ${kamma.orderIndex})';
+      if (kamma.byFunction != null) return '⚙️ Phận Sự: ${kamma.byFunction!.name}';
+      if (kamma.byPriority != null) return '🎯 Ưu Tiên: ${kamma.byPriority!.name}';
+      if (kamma.byResult != null) return '🌍 Nơi Quả: ${kamma.byResult!.name}';
       return '⚖️ Nghiệp';
     }();
 
     return Container(
-        margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.all(13),
+        margin: const EdgeInsets.only(bottom: 12),
+        padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
-            color: color.withOpacity(0.05), borderRadius: BorderRadius.circular(10), border: Border.all(color: color.withOpacity(0.2))),
+            color: color.withOpacity(0.05), borderRadius: BorderRadius.circular(12), border: Border.all(color: color.withOpacity(0.2))),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Text(kamma.nameVietnamese, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700)),
-          Text(kamma.namePali, style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color)),
-          const SizedBox(height: 6),
-          Text(kamma.descriptionVi, style: const TextStyle(fontSize: 13, height: 1.5)),
-          const SizedBox(height: 6),
-          Wrap(spacing: 6, children: [
+          Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(color: color.withOpacity(0.12), borderRadius: BorderRadius.circular(8)),
+                child: const Text('⚖️', style: TextStyle(fontSize: 20))),
+            const SizedBox(width: 10),
+            Expanded(
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(kamma.nameVietnamese, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+              Text(kamma.namePali, style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color, fontWeight: FontWeight.w500)),
+            ])),
+          ]),
+          const SizedBox(height: 8),
+          Text(kamma.descriptionVi, style: const TextStyle(fontSize: 13, height: 1.7)),
+          const SizedBox(height: 10),
+          Wrap(spacing: 6, runSpacing: 6, children: [
             _InfoChip(label: group, color: color),
             _InfoChip(label: kamma.nameShort, color: Colors.brown),
+            _InfoChip(label: '#${kamma.orderIndex}', color: Colors.grey),
           ]),
           if (kamma.examples.isNotEmpty) ...[
-            const SizedBox(height: 6),
-            Text('Ví dụ: ${kamma.examples.first}', style: TextStyle(fontSize: 12, color: Colors.grey.shade600, fontStyle: FontStyle.italic)),
+            const SizedBox(height: 12),
+            Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all(color: Colors.grey.shade200)),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('Ví dụ thực tế',
+                      style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: color)),
+                  const SizedBox(height: 6),
+                  ...kamma.examples.map((e) => Padding(
+                      padding: const EdgeInsets.only(bottom: 4),
+                      child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Text('• ', style: TextStyle(color: color, fontWeight: FontWeight.bold)),
+                        Expanded(child: Text(e, style: const TextStyle(fontSize: 12, height: 1.5))),
+                      ]))),
+                ])),
+          ],
+          if (kamma.relatedCittaIds.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text('Tâm liên quan: ${kamma.relatedCittaIds.join(", ")}',
+                style: TextStyle(fontSize: 11, color: Colors.grey.shade600, fontStyle: FontStyle.italic)),
+          ],
+          if (kamma.doctrinalNote != null) ...[
+            const SizedBox(height: 8),
+            Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(color: Colors.amber.shade50, borderRadius: BorderRadius.circular(6), border: Border.all(color: Colors.amber.shade100)),
+                child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  const Text('💡', style: TextStyle(fontSize: 12)),
+                  const SizedBox(width: 6),
+                  Expanded(
+                      child: Text(kamma.doctrinalNote!,
+                          style: TextStyle(fontSize: 11, height: 1.5, color: Colors.amber.shade900, fontStyle: FontStyle.italic))),
+                ])),
           ]
         ]));
   }
 }
 
-// ─── Paticca Card ─────────────────────────────────────────────────────────────
+// ─── Paticca Card — Enriched Toát Yếu ────────────────────────────────────────
 
 class _PaticcaStudyCard extends StatelessWidget {
   final PaticcaModel paticca;
@@ -812,34 +951,96 @@ class _PaticcaStudyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.all(13),
+        margin: const EdgeInsets.only(bottom: 12),
+        padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
-            color: color.withOpacity(0.05), borderRadius: BorderRadius.circular(10), border: Border.all(color: color.withOpacity(0.2))),
+            color: color.withOpacity(0.05), borderRadius: BorderRadius.circular(12), border: Border.all(color: color.withOpacity(0.25))),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Row(children: [
             Container(
-                width: 28,
-                height: 28,
-                decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+                width: 32,
+                height: 32,
+                decoration: BoxDecoration(color: color, shape: BoxShape.circle, boxShadow: [BoxShadow(color: color.withOpacity(0.3), blurRadius: 4)]),
                 alignment: Alignment.center,
-                child: Text('${paticca.order}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13))),
-            const SizedBox(width: 10),
+                child: Text('${paticca.order}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14))),
+            const SizedBox(width: 12),
             Expanded(
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(paticca.nameVietnamese, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700)),
-              Text(paticca.namePali, style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color)),
+              Text(paticca.nameVietnamese, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
+              Text(paticca.namePali, style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color, fontWeight: FontWeight.w600)),
             ])),
           ]),
-          const SizedBox(height: 8),
-          Text(paticca.descriptionVi, style: const TextStyle(fontSize: 13, height: 1.5)),
-          const SizedBox(height: 6),
-          Wrap(spacing: 6, runSpacing: 4, children: [
-            _InfoChip(label: 'Vòng ${paticca.vatta.name}', color: Colors.deepPurple),
-            _InfoChip(label: 'Kiếp ${paticca.kiep.name}', color: Colors.teal),
+          const SizedBox(height: 10),
+          Text(paticca.descriptionVi, style: const TextStyle(fontSize: 13, height: 1.7)),
+          const SizedBox(height: 10),
+          Wrap(spacing: 6, runSpacing: 6, children: [
+            _InfoChip(label: 'Vòng ${paticca.vatta.name} (${_vattaVi(paticca.vatta)})', color: Colors.deepPurple),
+            _InfoChip(label: 'Kiếp ${paticca.kiep.name} (${_kiepVi(paticca.kiep)})', color: Colors.teal),
+            if (paticca.causeId != null) _InfoChip(label: 'Nhân: ${paticca.causeId}', color: Colors.grey),
+            if (paticca.effectId != null) _InfoChip(label: 'Quả: ${paticca.effectId}', color: Colors.blueGrey),
           ]),
+          if (paticca.links.isNotEmpty) ...[
+            const SizedBox(height: 10),
+            Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all(color: color.withOpacity(0.15))),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('Công thức Pali', style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: color)),
+                  const SizedBox(height: 4),
+                  ...paticca.links.map((l) => Padding(
+                      padding: const EdgeInsets.only(bottom: 4),
+                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Text(l.explanationPali ?? '', style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: color, fontWeight: FontWeight.w600)),
+                        Text(l.explanation, style: const TextStyle(fontSize: 12, height: 1.5)),
+                      ]))),
+                ])),
+          ],
+          if (paticca.trangThai != null || paticca.phanSu != null)
+            Container(
+                margin: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8), border: Border.all(color: color.withOpacity(0.15))),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('Tứ Nghĩa', style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: color)),
+                  const SizedBox(height: 6),
+                  if (paticca.trangThai != null) _LakkhaLine(icon: '🎯', label: 'Trạng Thái', text: paticca.trangThai!),
+                  if (paticca.phanSu != null) _LakkhaLine(icon: '⚙️', label: 'Phận Sự', text: paticca.phanSu!),
+                  if (paticca.thanhTuu != null) _LakkhaLine(icon: '✅', label: 'Thành Tựu', text: paticca.thanhTuu!),
+                  if (paticca.nhanGan != null) _LakkhaLine(icon: '🌱', label: 'Nhân Gần', text: paticca.nhanGan!),
+                ])),
+          if (paticca.examples.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            ...paticca.examples.take(2).map((e) => Padding(
+                padding: const EdgeInsets.only(bottom: 3),
+                child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text('• ', style: TextStyle(color: color, fontWeight: FontWeight.bold)),
+                  Expanded(child: Text(e, style: TextStyle(fontSize: 12, height: 1.5, color: Colors.grey.shade700, fontStyle: FontStyle.italic))),
+                ]))),
+          ],
+          if (paticca.doctrinalNote != null) ...[
+            const SizedBox(height: 8),
+            Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(color: Colors.deepPurple.shade50, borderRadius: BorderRadius.circular(6), border: Border.all(color: Colors.deepPurple.shade100)),
+                child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  const Text('📜', style: TextStyle(fontSize: 12)),
+                  const SizedBox(width: 6),
+                  Expanded(child: Text(paticca.doctrinalNote!, style: TextStyle(fontSize: 11, height: 1.5, color: Colors.deepPurple.shade900, fontStyle: FontStyle.italic))),
+                ])),
+          ]
         ]));
   }
+
+  String _vattaVi(PaticcaVatta v) => switch (v) {
+        PaticcaVatta.kilesa => 'Phiền Não',
+        PaticcaVatta.kamma => 'Nghiệp',
+        PaticcaVatta.vipaka => 'Quả',
+      };
+  String _kiepVi(PaticcaKiep k) => switch (k) {
+        PaticcaKiep.past => 'Quá khứ',
+        PaticcaKiep.present => 'Hiện tại',
+        PaticcaKiep.future => 'Tương lai',
+      };
 }
 
 // ─── Rupa Card ────────────────────────────────────────────────────────────────
