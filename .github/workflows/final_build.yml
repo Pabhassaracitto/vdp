@@ -59,7 +59,15 @@ jobs:
       - run: |
           flutter build apk --release --target-platform android-arm64 -v
           ls build/app/outputs/flutter-apk/
-          mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/VDP-Android-ARM64-${{ github.ref_name }}.apk
+          
+          # Xác định tag/phiên bản phù hợp
+          TAG_NAME="${{ github.ref_name }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
+            TAG_NAME="${{ github.event.inputs.version }}"
+          fi
+
+          mkdir -p build/app/outputs/flutter-apk/VDP-Android-ARM64-${TAG_NAME}
+          mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/VDP-Android-ARM64-${TAG_NAME}.apk
       - uses: actions/upload-artifact@v4
         with:
           name: android-apk
@@ -101,7 +109,7 @@ jobs:
         with:
           channel: 'stable'
           cache: true
-      - run: mkdir -p assets/animations assets/audio/assets/data
+      - run: mkdir -p assets/animations assets/audio assets/data
       - run: flutter config --no-enable-swift-package-manager
       - run: flutter precache --ios
       - run: flutter pub get
