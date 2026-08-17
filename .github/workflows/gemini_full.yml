@@ -58,10 +58,8 @@ jobs:
       - run: dart run flutter_launcher_icons || true
       - name: Build APK & Rename safely
         run: |
-          # Build APK bình thường (không dùng -v)
           flutter build apk --release --target-platform android-arm64
           
-          # Xác định version và thay thế ký tự / thành -
           RAW_VERSION="${{ github.ref_name }}"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
             RAW_VERSION="${{ github.event.inputs.version }}"
@@ -204,13 +202,23 @@ jobs:
   create-release:
     name: Create Release
     needs: [build-android, build-windows, build-ios, build-linux, build-web]
-    if: always() && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')
+    if: always() && !cancelled() && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
+        continue-on-error: true
         with:
           path: artifacts
+      - name: Check if any artifact exists
+        id: check_artifacts
+        run: |
+          if [ -d "artifacts" ] && [ -n "$(ls -A artifacts 2>/dev/null)" ]; then
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          fi
       - uses: softprops/action-gh-release@v2
+        if: steps.check_artifacts.outputs.has_files == 'true'
         with:
           name: Release ${{ github.ref_name }}
           files: |
