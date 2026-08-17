@@ -122,12 +122,24 @@ jobs:
       - run: flutter precache --ios
       - run: flutter pub get
       - run: dart run flutter_launcher_icons || true
+      - name: Fix iOS deployment target
+        run: |
+          sed -i.bak "s/platform :ios, .*/platform :ios, '14.0'/" ios/Podfile || true
+          echo "post_install do |installer|" >> ios/Podfile || true
+          echo "  installer.pods_project.targets.each do |target|" >> ios/Podfile || true
+          echo "    flutter_additional_ios_build_settings(target)" >> ios/Podfile || true
+          echo "    target.build_configurations.each do |config|" >> ios/Podfile || true
+          echo "      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'" >> ios/Podfile || true
+          echo "    end" >> ios/Podfile || true
+          echo "  end" >> ios/Podfile || true
+          echo "end" >> ios/Podfile || true
       - run: |
           cd ios
           pod repo update
           pod install
       - run: flutter build ios --release --no-codesign --no-pub
-      - run: |
+      - name: Create IPA with safe version
+        run: |
           RAW_VERSION="${{ github.ref_name }}"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
             RAW_VERSION="${{ github.event.inputs.version }}"
@@ -159,7 +171,8 @@ jobs:
       - run: mkdir -p assets/animations assets/audio assets/data
       - run: flutter pub get
       - run: flutter build linux --release
-      - run: |
+      - name: Zip Linux with safe version
+        run: |
           RAW_VERSION="${{ github.ref_name }}"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
             RAW_VERSION="${{ github.event.inputs.version }}"
@@ -185,7 +198,8 @@ jobs:
           cache: true
       - run: flutter pub get
       - run: flutter build web --release
-      - run: |
+      - name: Zip Web with safe version
+        run: |
           RAW_VERSION="${{ github.ref_name }}"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
             RAW_VERSION="${{ github.event.inputs.version }}"
