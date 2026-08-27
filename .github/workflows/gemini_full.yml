@@ -1,0 +1,250 @@
+name: Flutter Full Build - Android, iOS, Windows, Linux, Web
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      build_android:
+        description: 'Build Android?'
+        type: boolean
+        default: false
+      build_ios:
+        description: 'Build iOS?'
+        type: boolean
+        default: true
+      build_windows:
+        description: 'Build Windows?'
+        type: boolean
+        default: false
+      build_linux:
+        description: 'Build Linux?'
+        type: boolean
+        default: false
+      build_web:
+        description: 'Build Web?'
+        type: boolean
+        default: false
+      branch:
+        description: 'Branch to build from'
+        type: string
+        default: 'main'
+      version:
+        description: 'Release version tag (e.g., v1.0)'
+        type: string
+        default: 'v0.1'
+
+permissions:
+  contents: write
+
+jobs:
+  build-android:
+    name: Build Android APK
+    if: (startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')) || github.event.inputs.build_android == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+      - run: mkdir -p assets/animations assets/audio assets/data
+      - run: flutter pub get
+      - run: dart run flutter_launcher_icons || true
+      - name: Build APK & Rename safely
+        run: |
+          flutter build apk --release --target-platform android-arm64
+          
+          RAW_VERSION="${{ github.ref_name }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
+            RAW_VERSION="${{ github.event.inputs.version }}"
+          fi
+          CLEAN_VERSION=$(echo "$RAW_VERSION" | sed 's/\//-/g')
+
+          mv build/app/outputs/flutter-apk/app-release.apk "build/app/outputs/flutter-apk/VDP-Android-ARM64-${CLEAN_VERSION}.apk"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android-apk
+          path: build/app/outputs/flutter-apk/VDP-Android-ARM64-*.apk
+
+  build-windows:
+    name: Build Windows App
+    if: (startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')) || github.event.inputs.build_windows == 'true'
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: false
+      - run: flutter config --enable-windows-desktop
+      - shell: bash
+        run: mkdir -p assets/animations assets/audio assets/data
+      - run: flutter pub get
+      - run: flutter build windows --release
+        shell: bash
+      - shell: powershell
+        run: |
+          $rawVersion = "${{ github.ref_name }}"
+          if ("${{ github.event_name }}" -eq "workflow_dispatch" -and "${{ github.event.inputs.version }}" -ne "") {
+            $rawVersion = "${{ github.event.inputs.version }}"
+          }
+          $cleanVersion = $rawVersion -replace '[/\\:]', '-'
+          $p = "$env:GITHUB_WORKSPACE\build\windows\x64\runner\Release"
+          if (Test-Path "$p\*.exe") { 
+            Compress-Archive -Path "$p\*" -DestinationPath "VDP-Windows-${cleanVersion}.zip" 
+          } else { 
+            Write-Host "No Windows release"; exit 1 
+          }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-zip
+          path: VDP-Windows-*.zip
+
+  build-ios:
+    name: Build iOS IPA (sideload)
+    continue-on-error: true
+    if: (startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')) || github.event.inputs.build_ios == 'true'
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+      - run: mkdir -p assets/animations assets/audio assets/data
+      - run: flutter config --no-enable-swift-package-manager
+      - run: flutter precache --ios
+      - run: flutter pub get
+      - run: dart run flutter_launcher_icons || true
+      - name: Fix iOS deployment target
+        run: |
+          sed -i.bak "s/platform :ios, .*/platform :ios, '14.0'/" ios/Podfile || true
+          # Insert deployment target into existing post_install block; avoid duplicate hooks
+          python3 << 'PY'
+import re
+with open('ios/Podfile') as f: content = f.read()
+# If there's already a post_install with flutter settings, inject IPHONEOS line inside it
+if "post_install do |installer|" in content and "IPHONEOS_DEPLOYMENT_TARGET" not in content:
+    content = content.replace(
+        "flutter_additional_ios_build_settings(target)",
+        "flutter_additional_ios_build_settings(target)
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'"
+    )
+with open('ios/Podfile', 'w') as f: f.write(content)
+PY
+      - run: |
+          cd ios
+          pod repo update
+          pod install
+      - run: flutter build ios --release --no-codesign --no-pub
+      - name: Create IPA with safe version
+        run: |
+          RAW_VERSION="${{ github.ref_name }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
+            RAW_VERSION="${{ github.event.inputs.version }}"
+          fi
+          CLEAN_VERSION=$(echo "$RAW_VERSION" | sed 's/\//-/g')
+
+          mkdir -p Payload
+          cp -r build/ios/iphoneos/Runner.app Payload/
+          zip -r "VDP-iOS-${CLEAN_VERSION}.ipa" Payload
+          rm -rf Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ios-ipa
+          path: VDP-iOS-*.ipa
+
+  build-linux:
+    name: Build Linux App
+    if: (startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')) || github.event.inputs.build_linux == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libjson-glib-dev
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - run: flutter config --enable-linux-desktop
+      - run: mkdir -p assets/animations assets/audio assets/data
+      - run: flutter pub get
+      - run: flutter build linux --release
+      - name: Zip Linux with safe version
+        run: |
+          RAW_VERSION="${{ github.ref_name }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
+            RAW_VERSION="${{ github.event.inputs.version }}"
+          fi
+          CLEAN_VERSION=$(echo "$RAW_VERSION" | sed 's/\//-/g')
+
+          cd build/linux/x64/release/bundle
+          zip -r "../../../../../VDP-Linux-${CLEAN_VERSION}.zip" .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-zip
+          path: VDP-Linux-*.zip
+
+  build-web:
+    name: Build Web App
+    if: (startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')) || github.event.inputs.build_web == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+      - run: flutter pub get
+      - run: flutter build web --release
+      - name: Zip Web with safe version
+        run: |
+          RAW_VERSION="${{ github.ref_name }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.version }}" ]; then
+            RAW_VERSION="${{ github.event.inputs.version }}"
+          fi
+          CLEAN_VERSION=$(echo "$RAW_VERSION" | sed 's/\//-/g')
+
+          cd build/web
+          zip -r "../../VDP-Web-${CLEAN_VERSION}.zip" .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-zip
+          path: VDP-Web-*.zip
+
+  create-release:
+    name: Create Release
+    needs: [build-android, build-windows, build-ios, build-linux, build-web]
+    if: always() && !cancelled() && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          path: artifacts
+      - name: Check if any artifact exists
+        id: check_artifacts
+        run: |
+          if [ -d "artifacts" ] && [ -n "$(ls -A artifacts 2>/dev/null)" ]; then
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          fi
+      - uses: softprops/action-gh-release@v2
+        if: steps.check_artifacts.outputs.has_files == 'true'
+        with:
+          name: Release ${{ github.ref_name }}
+          files: |
+            artifacts/**/*.apk
+            artifacts/**/*.zip
+            artifacts/**/*.ipa
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
