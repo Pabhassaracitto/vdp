@@ -1,0 +1,391 @@
+# -*- coding: utf-8 -*-
+"""Authored lesson content for M9_SAC_PHAP and M10_LO_TRINH (Vietnamese source)."""
+
+SAC = "VDP-SacPhap.pdf"
+LO = "VDP-LoTrinhTam.pdf"
+
+
+def ref(file, page, note=None):
+    d = {"file": file, "page": page}
+    if note:
+        d["note"] = note
+    return d
+
+
+M9_VI = {
+    "title": "Sắc Pháp (Rūpa)",
+    "description": "28 sắc pháp: Tứ đại, sắc y đại sinh, 11 nhóm sắc và bốn nhân sanh sắc.",
+    "translationStatus": "reviewed",
+    "lessonSections": [
+        {
+            "id": "M9_S01",
+            "title": "Sắc pháp là gì?",
+            "summary": "Rūpa từ căn “Rup”: cái gì bị tan vỡ, biến đổi và hoại diệt.",
+            "body": [
+                "Rūpa có căn từ “Rup” nghĩa là bị tan vỡ, phân tán. Sắc là cái gì thay hình đổi dạng do ảnh hưởng của những điều kiện vật lý nghịch chiều như nóng, lạnh, cứng, mềm.",
+                "Sắc là những gì luôn biến đổi và hoại diệt. Sắc chỉ tồn tại trong 17 chặp tư tưởng, tức 17 sát-na tâm.",
+                "Tài liệu ví: Sắc biến đổi nhanh chóng đến nỗi ta không thể gõ hai lần đúng vào một nơi.",
+                "Nghĩa gần nhất của Sắc là: hình thể, phần vật chất, cơ thể vật chất, vật vô tri giác.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_RUPA", "term": "Sắc pháp", "pali": "Rūpa", "meaning": "Vật chất, cái bị biến hoại"},
+            ],
+            "sourceRefs": [ref(SAC, 4, "RŪPA – SẮC PHÁP: căn từ Rup, tồn tại 17 sát na tâm")],
+        },
+        {
+            "id": "M9_S02",
+            "title": "Tám đặc tính của Sắc",
+            "summary": "Vô nhân, hữu duyên, cảnh lậu, cấu tạo, tại thế, thuộc dục giới, không có đối tượng, không thể bị trừ.",
+            "body": [
+                "1. Vô nhân (Ahetuka): sắc không có liên hệ gì về nhân (nhân tương ưng).",
+                "2. Hữu duyên (Sappaccaya): sắc có 4 duyên liên hệ là nghiệp, tâm, thời tiết và vật thực.",
+                "3. Cảnh lậu (Sāsava): vì sắc là cảnh của các lậu hoặc.",
+                "4. Cấu tạo (Saṅkhata): vì được cấu thành bởi 4 duyên nói trên.",
+                "5. Tại thế (Lokiya): trực thuộc thế gian (Dục giới, Sắc giới). 6. Thuộc dục giới (Kāmāvacara): là cảnh của dục ái, phạm vi ngũ trần. 7. Không có đối tượng (Anārammaṇa): sắc không thể biết cảnh. 8. Không thể bị trừ (Appahātabba): sắc không là đối tượng sát trừ.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_AHETUKA_R", "term": "Vô nhân", "pali": "Ahetuka", "meaning": "Sắc không tương ưng với nhân"},
+                {"id": "TERM_ANARAMMANA", "term": "Không có đối tượng", "pali": "Anārammaṇa", "meaning": "Sắc không biết cảnh"},
+            ],
+            "sourceRefs": [ref(SAC, 4, "ĐẶC TÍNH CỦA SẮC có 8")],
+        },
+        {
+            "id": "M9_S03",
+            "title": "Hai phần: Tứ đại và Sắc y đại sinh",
+            "summary": "4 sắc Tứ đại + 24 sắc Y đại sinh = 28 sắc.",
+            "body": [
+                "Sắc pháp có hai phần: Bốn Đại chánh yếu (Mahābhūtāni) và những chuyển hóa của sắc, tức Sắc y đại sinh (Upādāyarūpāni).",
+                "Sắc Tứ đại có 4: Địa (Paṭhavī), Thủy (Āpo), Hỏa (Tejo), Phong (Vāyo).",
+                "Sắc Y đại sinh có 24.",
+                "Tổng cộng: 24 sắc Y đại sinh + 4 sắc Tứ đại = 28 sắc.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_MAHABHUTA", "term": "Tứ đại", "pali": "Mahābhūtāni", "meaning": "Bốn đại chánh yếu: Đất, Nước, Lửa, Gió"},
+                {"id": "TERM_UPADAYA", "term": "Sắc y đại sinh", "pali": "Upādāyarūpāni", "meaning": "24 sắc nương Tứ đại mà sanh"},
+            ],
+            "sourceRefs": [
+                ref(SAC, 2, "Cattāri mahābhūtāni… dvidhampetaṁ rūpaṁ"),
+                ref(SAC, 4, "SẮC PHÂN LOẠI có 2: Tứ đại 4, Y đại sinh 24"),
+                ref(SAC, 7, "TỔNG CỘNG CÓ 28 SẮC"),
+            ],
+        },
+        {
+            "id": "M9_S04",
+            "title": "Tứ đại hiển — bốn nguyên tố chánh yếu",
+            "summary": "Đất nâng đỡ, Nước làm dính liền, Lửa là nhiệt, Gió là di động.",
+            "body": [
+                "Paṭhavī-dhātu (Địa đại), căn từ “puth”: nới rộng, duỗi ra. Đặc tính là cứng hoặc mềm; khả năng nâng đỡ, chịu đựng các sắc đồng sanh. Sắc nào thành chỗ cho các sắc đồng sanh nương nhờ thì gọi là Đất.",
+                "Āpo-dhātu (Thủy đại): nguyên tố có đặc tính làm dính liền các sắc lại với nhau.",
+                "Tejo-dhātu (Hỏa đại): nguyên tố nhiệt, bao hàm cả nóng và lạnh.",
+                "Vāyo-dhātu (Phong đại): nguyên tố di động, chuyển động.",
+                "Lưu ý: Cảnh Xúc (phoṭṭhabba) nằm trong ba đại — Đất, Lửa, Gió — ngoại trừ nguyên tố Nước có đặc tính làm dính liền.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_PATHAVI", "term": "Địa đại", "pali": "Paṭhavī-dhātu", "meaning": "Cứng/mềm, nâng đỡ"},
+                {"id": "TERM_APO", "term": "Thủy đại", "pali": "Āpo-dhātu", "meaning": "Làm dính liền"},
+                {"id": "TERM_TEJO", "term": "Hỏa đại", "pali": "Tejo-dhātu", "meaning": "Nhiệt: nóng và lạnh"},
+                {"id": "TERM_VAYO", "term": "Phong đại", "pali": "Vāyo-dhātu", "meaning": "Di động"},
+            ],
+            "sourceRefs": [
+                ref(SAC, 2, "Paṭhavīdhātu… bhūtarūpaṁ; cảnh Xúc trong ba đại"),
+                ref(SAC, 5, "Paṭhavi-dhātu: căn từ puth, trạng thái, phận sự"),
+            ],
+        },
+        {
+            "id": "M9_S05",
+            "title": "Mười một nhóm sắc",
+            "summary": "Từ Sắc tứ đại đến Sắc tứ tướng: 11 nhóm gom thành 28 sắc.",
+            "body": [
+                "1. Sắc tứ đại (Bhūtarūpa): 4. 2. Sắc thần kinh (Pasādarūpa): Mắt, Tai, Mũi, Lưỡi, Thân — 5.",
+                "3. Sắc cảnh giới (Gocararūpa): Sắc, Thinh, Hương, Vị và Xúc. 4. Sắc tánh (Bhāvarūpa): Nam tánh và Nữ tánh — 2.",
+                "5. Sắc ý vật (Hadayarūpa): Sắc Ý vật — 1. 6. Sắc mạng quyền (Jīvitarūpa): khả năng sống — 1. 7. Sắc vật thực (Āhārarūpa): tính chất dinh dưỡng — 1.",
+                "8. Sắc hư không / phân giới hạn (Paricchedarūpa): Ākāsa-dhātu — 1. 9. Sắc biểu tri (Viññattirūpa): Thân biểu tri và Khẩu biểu tri — 2.",
+                "10. Sắc đặc biệt / biến hóa (Vikārarūpa): Khinh (lahutā), Nhu (mudutā), Thích nghiệp (kammaññatā) — 3. 11. Sắc tứ tướng (Lakkhaṇarūpa): Sinh, Tiến (tục), Dị (lão), Diệt (vô thường) — 4.",
+                "Tài liệu ghi: “Mười một hiện tượng của Sắc pháp được xem là hai mươi tám, tùy theo đặc tính cá biệt cố hữu.”",
+            ],
+            "keyTerms": [
+                {"id": "TERM_PASADA", "term": "Sắc thần kinh", "pali": "Pasādarūpa", "meaning": "5 sắc nhạy: nhãn, nhĩ, tỷ, thiệt, thân"},
+                {"id": "TERM_GOCARA", "term": "Sắc cảnh giới", "pali": "Gocararūpa", "meaning": "Sắc, thinh, hương, vị, xúc"},
+                {"id": "TERM_HADAYA", "term": "Sắc ý vật", "pali": "Hadayavatthu", "meaning": "Nơi nương của ý thức"},
+                {"id": "TERM_VINNATTI", "term": "Sắc biểu tri", "pali": "Viññattirūpa", "meaning": "Thân biểu tri và Khẩu biểu tri"},
+                {"id": "TERM_LAKKHANA", "term": "Sắc tứ tướng", "pali": "Lakkhaṇarūpa", "meaning": "Sinh, Tiến, Dị, Diệt"},
+            ],
+            "sourceRefs": [
+                ref(SAC, 2, "Liệt kê nhóm 1–7"),
+                ref(SAC, 3, "Liệt kê nhóm 8–11, tổng 28 sắc"),
+                ref(SAC, 7, "Sắc Hư không, Biểu tri, Đặc biệt, Tứ tướng"),
+            ],
+        },
+        {
+            "id": "M9_S06",
+            "title": "Sắc rõ và Sắc không rõ",
+            "summary": "18 sắc rõ (nipphanna) và 10 sắc không rõ.",
+            "body": [
+                "Sắc rõ có 18: tính từ sắc Đất cho đến sắc Vật thực.",
+                "Sắc không rõ có 10: từ sắc Hư không cho đến sắc Diệt (sắc vô thường) cuối cùng.",
+                "Mười tám sắc rõ được gom lại theo các cách: theo đặc tính cố hữu (sabhāvarūpa), theo đặc tướng tiêu biểu (salakkhaṇarūpa), như được cấu tạo do nhân duyên (nipphannarūpa), như luôn biến đổi (rūparūpa), và như thích nghi để suy niệm (sammasanarūpa).",
+            ],
+            "keyTerms": [
+                {"id": "TERM_NIPPHANNA", "term": "Sắc rõ", "pali": "Nipphannarūpa", "meaning": "18 sắc thành tựu do nhân duyên"},
+                {"id": "TERM_ANIPPHANNA", "term": "Sắc không rõ", "pali": "Anipphannarūpa", "meaning": "10 sắc còn lại"},
+            ],
+            "sourceRefs": [
+                ref(SAC, 3, "Iti ca aṭṭhārasavidhampetaṁ sabhāvarūpaṁ…"),
+                ref(SAC, 16, "Sắc rõ 18, Sắc không rõ 10"),
+            ],
+        },
+        {
+            "id": "M9_S07",
+            "title": "Bốn nhân sanh Sắc — Rūpasamuṭṭhāna",
+            "summary": "Nghiệp 18 sắc, Tâm 15, Quý tiết 13, Vật thực 12.",
+            "body": [
+                "“Kammaṃ, cittaṃ, utu, āhāro cāti cattāri rūpasamuṭṭhānāni nāma” — Sắc pháp khởi sanh bằng bốn phương cách: Nghiệp, Tâm, Thời tiết (quý tiết) và Vật thực.",
+                "Sắc do Nghiệp sanh: 18 sắc. 25 loại thiện và bất thiện nghiệp thuộc Dục giới và Sắc giới tạo nên sắc nghiệp trong từng chặp tư tưởng, bắt đầu từ lúc Thức tục sinh khởi sanh.",
+                "Sắc do Tâm sanh: 15 sắc. 75 loại tâm (trừ các tâm Quả Vô sắc giới và ngũ song thức) tạo sắc do tâm, ngay từ chặp Hộ kiếp (bhavaṅga) đầu tiên.",
+                "Sắc do Thời tiết (quý tiết) sanh: 13 sắc. Hỏa đại — bao hàm cả nóng và lạnh — khi đến giai đoạn trụ thì tạo sắc bên trong lẫn bên ngoài.",
+                "Sắc do Vật thực sanh: 12 sắc. Vật thực (Ojā — tinh chất dinh dưỡng) khi tiêu hóa đến giai đoạn trụ thì tạo sắc do vật thực.",
+                "Phân bổ riêng: Sắc Ý vật và các sắc quyền chỉ do Nghiệp sanh; hai sắc Biểu tri chỉ do Tâm sanh; Tiếng (thinh) do Tâm và Thời tiết; ba sắc Khinh–Nhu–Thích nghiệp do Thời tiết, Tâm và Vật thực; 8 sắc Bất ly và sắc Hư không do cả bốn nhân. Riêng Sắc tứ tướng không do nhân nào tạo.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_SAMUTTHANA", "term": "Nhân sanh sắc", "pali": "Rūpasamuṭṭhāna", "meaning": "Bốn nguồn sanh sắc"},
+                {"id": "TERM_UTU", "term": "Quý tiết / thời tiết", "pali": "Utu", "meaning": "Hỏa đại ở giai đoạn trụ"},
+                {"id": "TERM_OJA", "term": "Vật thực", "pali": "Ojā / Āhāra", "meaning": "Tinh chất dinh dưỡng"},
+            ],
+            "sourceRefs": [
+                ref(SAC, 24, "Rūpasamuṭṭhāna-naya: Kamma, Citta, Utu, Āhāra"),
+                ref(SAC, 25, "Sắc do vật thực; phân bổ riêng; 18-15-13-12"),
+                ref(SAC, 26, "4 nhân sanh SẮC: 18 / 15 / 13 / 12"),
+            ],
+        },
+    ],
+    "reviewCards": [
+        {"id": "M9_R01", "front": "Rūpa có căn từ gì và nghĩa là gì?", "back": "Căn “Rup”: bị tan vỡ, phân tán — cái gì thay hình đổi dạng do điều kiện vật lý nghịch chiều.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_R02", "front": "Sắc tồn tại bao lâu?", "back": "Sắc chỉ tồn tại trong 17 chặp tư tưởng, tức 17 sát-na tâm.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_R03", "front": "Sắc có mấy đặc tính? Kể vài đặc tính.", "back": "8 đặc tính: Vô nhân, Hữu duyên, Cảnh lậu, Cấu tạo, Tại thế, Thuộc dục giới, Không có đối tượng, Không thể bị trừ.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_R04", "front": "Vì sao nói Sắc là “Anārammaṇa”?", "back": "Vì sắc không thể biết cảnh — không có đối tượng.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_R05", "front": "Sắc pháp chia thành hai phần nào?", "back": "Sắc Tứ đại (Mahābhūtāni) có 4, và Sắc Y đại sinh (Upādāyarūpāni) có 24.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_R06", "front": "Tổng cộng có bao nhiêu sắc?", "back": "28 sắc = 4 sắc Tứ đại + 24 sắc Y đại sinh.", "sourceRefs": [ref(SAC, 7)]},
+        {"id": "M9_R07", "front": "Đặc tính và phận sự của Địa đại?", "back": "Đặc tính: cứng hoặc mềm. Phận sự: nâng đỡ, duy trì, làm chỗ nương cho các sắc đồng sanh.", "sourceRefs": [ref(SAC, 5)]},
+        {"id": "M9_R08", "front": "Cảnh Xúc (phoṭṭhabba) gồm mấy đại?", "back": "Ba đại: Đất, Lửa, Gió — trừ Nước (Āpo) vì Nước có đặc tính làm dính liền.", "sourceRefs": [ref(SAC, 2)]},
+        {"id": "M9_R09", "front": "Sắc thần kinh (Pasādarūpa) gồm những gì?", "back": "5 sắc: Nhãn, Nhĩ, Tỷ, Thiệt, Thân thần kinh.", "sourceRefs": [ref(SAC, 2)]},
+        {"id": "M9_R10", "front": "Sắc tánh (Bhāvarūpa) gồm mấy sắc?", "back": "2 sắc: Nữ tánh (Itthatta) và Nam tánh (Purisatta).", "sourceRefs": [ref(SAC, 2)]},
+        {"id": "M9_R11", "front": "Sắc biểu tri (Viññatti) gồm những gì?", "back": "2 sắc: Thân biểu tri (Kāyaviññatti) và Khẩu biểu tri (Vacīviññatti).", "sourceRefs": [ref(SAC, 3)]},
+        {"id": "M9_R12", "front": "Sắc đặc biệt / biến hóa (Vikārarūpa) gồm mấy sắc?", "back": "3 sắc: Khinh (lahutā), Nhu (mudutā), Thích nghiệp (kammaññatā).", "sourceRefs": [ref(SAC, 3), ref(SAC, 7)]},
+        {"id": "M9_R13", "front": "Sắc tứ tướng (Lakkhaṇarūpa) gồm những gì?", "back": "4: Sinh (upacaya), Tiến/tục (santati), Dị/lão (jaratā), Diệt/vô thường (aniccatā).", "sourceRefs": [ref(SAC, 3), ref(SAC, 7)]},
+        {"id": "M9_R14", "front": "Có bao nhiêu sắc rõ và sắc không rõ?", "back": "18 sắc rõ (từ Đất đến Vật thực) và 10 sắc không rõ (từ Hư không đến sắc Diệt).", "sourceRefs": [ref(SAC, 16)]},
+        {"id": "M9_R15", "front": "Bốn nhân sanh sắc là gì?", "back": "Nghiệp (Kamma), Tâm (Citta), Thời tiết/quý tiết (Utu), Vật thực (Āhāra).", "sourceRefs": [ref(SAC, 24)]},
+        {"id": "M9_R16", "front": "Số sắc do mỗi nhân sanh?", "back": "Nghiệp 18, Tâm 15, Quý tiết 13, Vật thực 12.", "sourceRefs": [ref(SAC, 25), ref(SAC, 26)]},
+        {"id": "M9_R17", "front": "Sắc nào chỉ do Tâm sanh?", "back": "Hai sắc Biểu tri: Thân biểu tri và Khẩu biểu tri.", "sourceRefs": [ref(SAC, 25)]},
+        {"id": "M9_R18", "front": "Sắc nào không do nhân nào tạo?", "back": "Sắc tứ tướng (Lakkhaṇarūpa) — vì hoàn toàn cố hữu dính liền theo các pháp.", "sourceRefs": [ref(SAC, 25)]},
+        {"id": "M9_R19", "front": "Sắc do nghiệp sanh bắt đầu từ lúc nào?", "back": "Từ khi Thức tục sinh (paṭisandhi) khởi sanh, rồi tiếp diễn từng chặp tư tưởng.", "sourceRefs": [ref(SAC, 24)]},
+        {"id": "M9_R20", "front": "Sắc do tâm sanh bắt đầu từ lúc nào?", "back": "Ngay vào lúc chặp Hộ kiếp (bhavaṅga) đầu tiên khởi phát.", "sourceRefs": [ref(SAC, 24)]},
+    ],
+    "quizSeeds": [
+        {"id": "M9_Q01", "type": "mcq", "question": "Căn từ “Rup” của chữ Rūpa nghĩa là gì?", "correctAnswer": "Bị tan vỡ, phân tán", "distractors": ["Nắm giữ, bám víu", "Chiếu sáng, hiển lộ", "Nâng đỡ, duy trì"], "explanation": "Rūpa từ căn Rup: bị tan vỡ, phân tán — cái gì thay hình đổi dạng.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_Q02", "type": "mcq", "question": "Sắc pháp tồn tại trong bao nhiêu sát-na tâm?", "correctAnswer": "17 sát-na tâm", "distractors": ["7 sát-na tâm", "12 sát-na tâm", "28 sát-na tâm"], "explanation": "Sắc chỉ tồn tại trong 17 chặp tư tưởng hay 17 sát na tâm.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_Q03", "type": "mcq", "question": "Tổng số sắc pháp là bao nhiêu?", "correctAnswer": "28 sắc", "distractors": ["24 sắc", "18 sắc", "11 sắc"], "explanation": "24 sắc Y đại sinh + 4 sắc Tứ đại = 28 sắc.", "sourceRefs": [ref(SAC, 7)]},
+        {"id": "M9_Q04", "type": "mcq", "question": "Sắc Y đại sinh (Upādāyarūpāni) có bao nhiêu sắc?", "correctAnswer": "24 sắc", "distractors": ["28 sắc", "18 sắc", "4 sắc"], "explanation": "Sắc phân loại có 2: Tứ đại 4, Y đại sinh 24.", "sourceRefs": [ref(SAC, 4)]},
+        {"id": "M9_Q05", "type": "mcq", "question": "Đặc tính của Địa đại (Paṭhavī) là gì?", "correctAnswer": "Cứng hoặc mềm", "distractors": ["Nóng hoặc lạnh", "Dính liền", "Chuyển động"], "explanation": "Paṭhavī có đặc tính cứng/mềm, khả năng nâng đỡ các sắc đồng sanh.", "sourceRefs": [ref(SAC, 5)]},
+        {"id": "M9_Q06", "type": "mcq", "question": "Đại nào KHÔNG nằm trong cảnh Xúc (phoṭṭhabba)?", "correctAnswer": "Thủy đại (Āpo)", "distractors": ["Địa đại (Paṭhavī)", "Hỏa đại (Tejo)", "Phong đại (Vāyo)"], "explanation": "Cảnh Xúc nằm trong ba đại, ngoại trừ nguyên tố Nước có đặc tính làm dính liền.", "sourceRefs": [ref(SAC, 2)]},
+        {"id": "M9_Q07", "type": "mcq", "question": "Sắc thần kinh (Pasādarūpa) có bao nhiêu sắc?", "correctAnswer": "5 sắc", "distractors": ["4 sắc", "7 sắc", "2 sắc"], "explanation": "Mắt, Tai, Mũi, Lưỡi, Thân — 5 sắc thần kinh.", "sourceRefs": [ref(SAC, 2)]},
+        {"id": "M9_Q08", "type": "mcq", "question": "Sắc tứ tướng (Lakkhaṇarūpa) gồm những gì?", "correctAnswer": "Sinh, Tiến, Dị, Diệt", "distractors": ["Khinh, Nhu, Thích nghiệp, Hư không", "Đất, Nước, Lửa, Gió", "Sắc, Thinh, Hương, Vị"], "explanation": "Lakkhaṇarūpa có 4: Sinh (upacaya), Tiến (santati), Dị (jaratā), Diệt (aniccatā).", "sourceRefs": [ref(SAC, 7)]},
+        {"id": "M9_Q09", "type": "mcq", "question": "Sắc đặc biệt / biến hóa (Vikārarūpa) gồm mấy sắc?", "correctAnswer": "3: Khinh, Nhu, Thích nghiệp", "distractors": ["2: Thân biểu tri, Khẩu biểu tri", "4: Sinh, Tiến, Dị, Diệt", "5: năm sắc thần kinh"], "explanation": "Vikārarūpa: Sắc Khinh (lahutā), Sắc Nhu (mudutā), Sắc Thích nghiệp (kammaññatā).", "sourceRefs": [ref(SAC, 7)]},
+        {"id": "M9_Q10", "type": "mcq", "question": "Có bao nhiêu “sắc rõ” (nipphannarūpa)?", "correctAnswer": "18 sắc", "distractors": ["10 sắc", "24 sắc", "28 sắc"], "explanation": "Sắc rõ: từ Đất đến sắc Vật thực = 18; 10 sắc còn lại là sắc không rõ.", "sourceRefs": [ref(SAC, 16)]},
+        {"id": "M9_Q11", "type": "mcq", "question": "Bốn nhân sanh sắc (rūpasamuṭṭhāna) là gì?", "correctAnswer": "Nghiệp, Tâm, Thời tiết, Vật thực", "distractors": ["Tham, Sân, Si, Vô minh", "Đất, Nước, Lửa, Gió", "Sinh, Tiến, Dị, Diệt"], "explanation": "Kammaṃ, cittaṃ, utu, āhāro cāti cattāri rūpasamuṭṭhānāni nāma.", "sourceRefs": [ref(SAC, 24)]},
+        {"id": "M9_Q12", "type": "mcq", "question": "Nghiệp làm sanh khởi bao nhiêu sắc?", "correctAnswer": "18 sắc", "distractors": ["15 sắc", "13 sắc", "12 sắc"], "explanation": "Theo thứ tự: Nghiệp 18, Tâm 15, Quý tiết 13, Vật thực 12.", "sourceRefs": [ref(SAC, 25), ref(SAC, 26)]},
+        {"id": "M9_Q13", "type": "mcq", "question": "Tâm làm sanh khởi bao nhiêu sắc?", "correctAnswer": "15 sắc", "distractors": ["18 sắc", "13 sắc", "12 sắc"], "explanation": "Aṭṭhārasa paṇṇarasa terasa dvādasāti — 18, 15, 13, 12 theo thứ tự Nghiệp, Tâm, Quý tiết, Vật thực.", "sourceRefs": [ref(SAC, 25)]},
+        {"id": "M9_Q14", "type": "mcq", "question": "Vật thực (Āhāra) làm sanh khởi bao nhiêu sắc?", "correctAnswer": "12 sắc", "distractors": ["13 sắc", "15 sắc", "18 sắc"], "explanation": "Vật thực sanh 12 sắc — ít nhất trong bốn nhân.", "sourceRefs": [ref(SAC, 26)]},
+        {"id": "M9_Q15", "type": "mcq", "question": "Sắc nào CHỈ do Tâm sanh?", "correctAnswer": "Hai sắc Biểu tri", "distractors": ["Sắc Ý vật", "Năm sắc Thần kinh", "Sắc Mạng quyền"], "explanation": "Viññattidvayaṃ cittajam eva — hai sắc biểu tri chỉ sanh khởi do Tâm.", "sourceRefs": [ref(SAC, 25)]},
+        {"id": "M9_Q16", "type": "mcq", "question": "Sắc nào KHÔNG do nhân nào tạo ra?", "correctAnswer": "Sắc tứ tướng (Lakkhaṇarūpa)", "distractors": ["Sắc hư không (Ākāsa)", "Sắc vật thực (Ojā)", "Sắc mạng quyền"], "explanation": "Lakkhaṇarūpāni na kutoci jāyanti — các đặc tướng của sắc không do nguyên nhân nào tạo.", "sourceRefs": [ref(SAC, 25)]},
+    ],
+}
+
+
+M10_VI = {
+    "title": "Lộ Trình Tâm (Cittavīthi)",
+    "description": "Lộ ngũ môn 17 sát-na, vai trò từng sát-na, lộ ý môn và tâm Na cảnh.",
+    "translationStatus": "reviewed",
+    "lessonSections": [
+        {
+            "id": "M10_S01",
+            "title": "Lộ trình tâm là gì? — Sáu nhóm sáu",
+            "summary": "Cittavīthi: dòng tâm diễn tiến theo trật tự cố định khi bắt cảnh.",
+            "body": [
+                "Về sự tổng hợp lộ trình của tâm, cần biết sáu nhóm, mỗi nhóm sáu thứ: 6 Vật (vatthu), 6 Môn (dvāra), 6 Cảnh (ālambana), 6 Thức (viññāṇa), 6 Lộ trình (vīthi), và 6 Sự trình bày của đối tượng (visayappavatti).",
+                "Sáu thức là: Nhãn thức, Nhĩ thức, Tỷ thức, Thiệt thức, Thân thức và Ý thức.",
+                "Theo môn, lộ trình tâm có 6: lộ qua Nhãn môn, Nhĩ môn, Tỷ môn, Thiệt môn, Thân môn và Ý môn.",
+                "Đối với tâm thoát ly ngoài lộ trình, đối tượng hiện khởi có ba: Nghiệp (kamma), Nghiệp tướng (kammanimitta) và Thú tướng (gatinimitta).",
+            ],
+            "keyTerms": [
+                {"id": "TERM_CITTAVITHI", "term": "Lộ trình tâm", "pali": "Cittavīthi", "meaning": "Dòng diễn tiến của tâm khi bắt cảnh"},
+                {"id": "TERM_DVARA", "term": "Môn", "pali": "Dvāra", "meaning": "Cửa qua đó tâm tiếp nhận cảnh"},
+                {"id": "TERM_VATTHU", "term": "Vật", "pali": "Vatthu", "meaning": "Sắc làm nơi nương cho tâm"},
+            ],
+            "sourceRefs": [ref(LO, 2, "Cha vatthūni, cha dvārāni… chachakkāni veditabbāni")],
+        },
+        {
+            "id": "M10_S02",
+            "title": "Phân loại đối tượng (cảnh)",
+            "summary": "Qua 5 môn: Rất lớn, Lớn, Nhỏ, Rất nhỏ. Qua Ý môn: Rõ và Không rõ.",
+            "body": [
+                "Đối tượng được trình bày theo sáu hình thức.",
+                "Ngang qua năm môn có bốn loại cảnh: Rất lớn (atimahanta), Lớn (mahanta), Nhỏ (paritta) và Rất nhỏ (atiparitta).",
+                "Ngang qua Ý môn có hai loại: Rõ (vibhūta) và Không rõ (avibhūta).",
+                "Độ “lớn/nhỏ” của cảnh quyết định lộ tâm sẽ đi trọn vẹn tới đâu — cảnh càng lớn thì lộ càng đầy đủ chặng.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_ATIMAHANTA", "term": "Cảnh rất lớn", "pali": "Atimahanta-ārammaṇa", "meaning": "Cảnh mạnh nhất, cho lộ đủ 17 sát-na"},
+                {"id": "TERM_VIBHUTA", "term": "Cảnh rõ", "pali": "Vibhūta-ārammaṇa", "meaning": "Cảnh rõ qua ý môn"},
+            ],
+            "sourceRefs": [ref(LO, 2, "Atimahantaṁ, mahantaṁ, parittaṁ atiparittaṁ… chadhā visayappavatti")],
+        },
+        {
+            "id": "M10_S03",
+            "title": "Lộ ngũ môn cảnh Rất lớn — 17 sát-na",
+            "summary": "H / 1-V, 2-R, 3-D / 4-K, 5-N, 6-T, 7-Q, 8-X, 9→15-J, 16-17-N.",
+            "body": [
+                "Lộ chót Na cảnh có đúng 17 sát-na tâm, ký hiệu: H / 1-V, 2-R, 3-D / 4-K, 5-N, 6-T, 7-Q, 8-X, 9→15 J, 16-17 N.",
+                "H là Hộ kiếp (hữu phần) — tâm khi chưa có đối tượng nào xâm nhập, ví dụ lúc ngủ say. Hộ kiếp là “tâm chủ”.",
+                "Ba sát-na hộ kiếp đầu: V = Hộ kiếp Vừa qua (Atītabhavaṅga), R = Hộ kiếp Rúng động (Bhavaṅgacalana), D = Hộ kiếp Dứt dòng (Bhavaṅgupaccheda).",
+                "Mười bốn tâm khách còn lại: K = Khán ngũ môn (Pañcadvārāvajjana), N = Nhãn thức (Cakkhuviññāṇa), T = Tiếp thâu (Sampaṭicchana), Q = Quan sát (Santīraṇa), X = Xác định (Voṭṭhapana), 7 sát-na J = Đổng lực (Javana), 2 sát-na N = Na cảnh (Tadālambana).",
+                "Lộ này có 7 chặng, 14 tâm khách, 46 thứ tâm Dục giới (54 tâm Dục giới trừ 4 đôi thức), xảy ra với 8 hạng người (4 phàm + 4 Thánh Quả) và trong 11 cõi Dục giới.",
+                "Ví dụ trái xoài giúp nhớ trọn 17 sát-na: nằm ngủ dưới gốc xoài = Hộ kiếp; trái xoài rụng = Hộ kiếp vừa qua; bị âm thanh tác động = Hộ kiếp rúng động; giật mình ngồi dậy = Hộ kiếp dứt dòng.",
+                "Đưa mắt hướng về nơi có tiếng động = Khán ngũ môn; nhìn thấy trái xoài = Nhãn thức; bước đến nhặt = Tiếp thâu; săm soi xem xét = Quan sát; thấy xoài chín = Xác định.",
+                "Cạp trái xoài 7 miếng = 7 sát-na Đổng lực; ăn xong chép miệng 2 cái = 2 sát-na Na cảnh; nằm xuống ngủ tiếp = Hộ kiếp cơ bản hiện khởi trở lại.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_BHAVANGA", "term": "Hộ kiếp / Hữu phần", "pali": "Bhavaṅga", "meaning": "Dòng tâm nền, tâm chủ"},
+                {"id": "TERM_PANCADVARA", "term": "Khán ngũ môn", "pali": "Pañcadvārāvajjana", "meaning": "Hướng tâm về cảnh nơi năm môn"},
+                {"id": "TERM_SAMPATICCHANA", "term": "Tiếp thâu", "pali": "Sampaṭicchana", "meaning": "Tiếp nhận cảnh vào dòng tâm thức"},
+                {"id": "TERM_SANTIRANA", "term": "Quan sát", "pali": "Santīraṇa", "meaning": "Quan sát cảnh"},
+                {"id": "TERM_VOTTHAPANA", "term": "Xác định", "pali": "Voṭṭhapana", "meaning": "Xác định cảnh là gì"},
+                {"id": "TERM_TADALAMBANA", "term": "Na cảnh", "pali": "Tadālambana", "meaning": "Hưởng cảnh dư sót của Đổng lực"},
+            ],
+            "sourceRefs": [ref(LO, 10, "I.1.1/ CHÓT NA CẢNH: Có 17 Sát na tâm; ký hiệu và chú giải")],
+        },
+        {
+            "id": "M10_S04",
+            "title": "Vai trò từng chặng",
+            "summary": "Mỗi chặng có phận sự riêng: từ làm rõ cảnh đến hưởng cảnh dư.",
+            "body": [
+                "Khán ngũ môn và Ngũ song thức: ngoài phận sự riêng còn có phận sự làm cho cảnh lộ rõ.",
+                "Tiếp thâu, Quan sát và Khán ý môn: làm thêm công tác hoàn chỉnh cảnh.",
+                "Đổng lực (Javana): hưởng trọn cảnh — đây là chặng xử lý cảnh, nơi tâm thiện hay bất thiện sanh khởi.",
+                "Na cảnh (Tadālambana): hưởng cảnh dư sót của Đổng lực.",
+                "Đổng lực trong lộ Ngũ môn luôn là các tâm Dục giới: 12 tâm Bất thiện + 8 tâm Đại thiện Dục giới Tịnh hảo + 8 tâm Duy tác Dục giới + 1 tâm Ưng cúng Vi tiếu = 29 tâm Đổng lực Dục giới.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_JAVANA_M10", "term": "Đổng lực", "pali": "Javana", "meaning": "Chặng hưởng trọn cảnh, tạo nghiệp"},
+            ],
+            "sourceRefs": [ref(LO, 11, "GHI CHÚ: phận sự từng chặng; 29 tâm Đổng lực Dục giới")],
+        },
+        {
+            "id": "M10_S06",
+            "title": "Bảy sát-na Đổng lực và Nghiệp",
+            "summary": "Javana lưu giữ hạt giống nghiệp; mỗi sát-na cho một loại nghiệp thời.",
+            "body": [
+                "Javana có căn từ “Ju”: chạy nhanh. Javana tiềm ẩn sức mạnh và lưu giữ hạt giống nghiệp (Bījakamma).",
+                "Sát-na thứ 1: yếu nhất vì sanh đầu tiên, không có sự hỗ trợ của các sát-na đồng loại — chỉ cho quả ngay trong kiếp hiện tại, tức Hiện báo nghiệp.",
+                "Sát-na thứ 7: yếu thứ nhì vì sắp cận kề sự diệt — chỉ cho quả trong kiếp kế tới, tức Sanh báo nghiệp.",
+                "Sát-na thứ 2 đến thứ 6: cho quả bất định ngày giờ, kể từ kiếp thứ 2 về sau cho đến khi Niết-bàn, tức Hậu báo nghiệp. Riêng sát-na thứ 4 mạnh nhất vì ở giai đoạn cực thịnh và là sát-na Quyền.",
+                "Đây chính là cầu nối giữa Lộ trình tâm (M10) và Nghiệp thời (M6).",
+            ],
+            "keyTerms": [
+                {"id": "TERM_BIJAKAMMA", "term": "Hạt giống nghiệp", "pali": "Bījakamma", "meaning": "Năng lực nghiệp lưu trong Javana"},
+            ],
+            "sourceRefs": [ref(LO, 11, "LỰC CỦA 7 SÁT NA ĐỔNG TỐC")],
+        },
+        {
+            "id": "M10_S07",
+            "title": "Tâm Na cảnh (Tadālambana)",
+            "summary": "Hưởng cảnh dư của Đổng lực; chỉ sanh trong cõi Dục giới.",
+            "body": [
+                "Tadā: chính cái đó; Ārammaṇa: cảnh. Tadālambana nghĩa là “chính cảnh cũ”. Các tên đồng nghĩa: Đồng sở duyên, Mót, Thập di.",
+                "Nhiệm vụ: hưởng cảnh dư từ Đổng lực. Cần 2 sát-na Na cảnh vì cảnh của Đổng lực quá lớn — làm trớn cho chậm lại để trở về lộ trình tâm bình thường.",
+                "Nhân sanh Na cảnh có 2: cảnh Rất lớn thuộc lộ Ngũ môn, và cảnh Rất rõ thuộc lộ Ý môn.",
+                "Ba điều kiện: Đổng lực phải là Đổng lực Dục giới; người thuộc Dục giới; cảnh của lộ tâm phải thuộc Dục giới. Na cảnh không sanh trong cảnh Đáo đại và Siêu thế.",
+                "Tâm làm việc Na cảnh có 11: 8 tâm Đại quả Dục giới Tịnh hảo + 3 tâm Quan sát Vô nhân. Na cảnh không có khả năng tạo nghiệp vì thuộc về Tâm Quả, chỉ hưởng cảnh tàn dư.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_TADALAMBANA_2", "term": "Na cảnh", "pali": "Tadālambana", "meaning": "Đồng sở duyên — hưởng cảnh dư sót"},
+            ],
+            "sourceRefs": [ref(LO, 12, "I.1.2/ TÂM NA CẢNH – TADĀLAMBANA CITTA")],
+        },
+        {
+            "id": "M10_S08",
+            "title": "Lộ Ý môn (Manodvāra-vīthi)",
+            "summary": "Phát khởi từ nội phần; lộ thông thường và lộ đặc biệt.",
+            "body": [
+                "Ý môn chính là tâm Hộ kiếp (tâm Hữu phần). Quy trình diễn biến được phát khởi từ nội phần thuộc ý thức.",
+                "Lộ ý môn thông thường có 2 loại: Lộ ý môn Bình nhật (dòng tâm thức diễn hoạt hằng ngày, gồm 4 loại theo cảnh Rất rõ, Rõ, Không rõ, Rất không rõ) và Lộ ý môn Cận tử (diễn hoạt lúc lâm chung, gồm Tử rồi tục sinh và Tử rồi Niết-bàn).",
+                "Lộ ý môn bình nhật đầy đủ: HKVQ – R – D – KYM – 7J – 2Na – H. Có 10 sát-na tâm khách (1 Khán ý môn + 7 Đổng lực + 2 Na cảnh) và 3 chặng.",
+                "Thứ tâm của lộ này có 41: Khán ý môn + 29 Đổng lực Dục giới + 11 tâm Na cảnh. Xảy ra với 8 hạng người, trong 11 cõi Dục giới.",
+                "Lộ ý môn đặc biệt có 10 loại, gồm: Lộ Đắc Thiền, Lộ Đắc Đạo, Lộ Hiện Thông, Lộ Nhập Thiền An Chỉ, Lộ Nhập Thiền Quả, Lộ Nhập Thiền Diệt, Lộ Nhập Niết Bàn Liên Thiền, Lộ Nhập Niết Bàn Liên Thông, Lộ Nhập Niết Bàn Phản Kháng Chi Thiền, và Lộ Đắc Đạo Tột Mạng.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_MANODVARA", "term": "Lộ ý môn", "pali": "Manodvāra-vīthi", "meaning": "Lộ tâm khởi từ ý môn"},
+                {"id": "TERM_MANODVARAVAJJANA", "term": "Khán ý môn", "pali": "Manodvārāvajjana", "meaning": "Tâm hướng về cảnh nơi ý môn"},
+            ],
+            "sourceRefs": [
+                ref(LO, 23, "Lộ ý môn: phân loại thông thường và đặc biệt"),
+                ref(LO, 26, "Lộ ý môn thời bình nhật: 10 sát na, 3 chặng, 41 thứ tâm"),
+            ],
+        },
+        {
+            "id": "M10_S09",
+            "title": "Vīthimutta — chưa có nguồn trong tài liệu này",
+            "summary": "source_missing: VDP-LoTrinhTam.pdf không đề cập trực tiếp Vīthimutta.",
+            "body": [
+                "Dataset của app có mục VT_VITHIMUTTA (Lộ ngoài: Tục sinh / Hộ kiếp / Tử).",
+                "Tuy nhiên, khi rà soát toàn văn bản trích xuất từ VDP-LoTrinhTam.pdf (62 trang), không tìm thấy phần trình bày riêng về “Vīthimutta / tâm ngoại lộ”. Vì vậy phần này được đánh dấu source_missing thay vì suy diễn.",
+                "Điểm liên quan duy nhất tìm được: đối với tâm thoát ly ngoài lộ trình, đối tượng hiện khởi có ba là Nghiệp, Nghiệp tướng và Thú tướng (VDP-LoTrinhTam.pdf trang 2).",
+                "TODO: bổ sung từ tài liệu khác (có thể VDP-NguoiVaCoi.pdf) hoặc từ bản giảng đầy đủ, sau khi xác minh nguồn.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_VITHIMUTTA", "term": "Tâm ngoại lộ", "pali": "Vīthimutta", "meaning": "source_missing — chưa có căn cứ trong PDF hiện có"},
+            ],
+            "sourceRefs": [ref(LO, 2, "Vīthimuttānaṁ… kamma-kammanimitta-gatinimitta-vasena tividhā")],
+        },
+    ],
+    "reviewCards": [
+        {"id": "M10_R01", "front": "“Sáu nhóm sáu” trong lộ trình tâm gồm những gì?", "back": "6 Vật, 6 Môn, 6 Cảnh, 6 Thức, 6 Lộ trình, 6 Sự trình bày của đối tượng.", "sourceRefs": [ref(LO, 2)]},
+        {"id": "M10_R02", "front": "Cảnh qua năm môn được chia mấy loại?", "back": "Bốn: Rất lớn, Lớn, Nhỏ, Rất nhỏ. Qua Ý môn có hai: Rõ và Không rõ.", "sourceRefs": [ref(LO, 2)]},
+        {"id": "M10_R03", "front": "Lộ ngũ môn cảnh Rất lớn có bao nhiêu sát-na?", "back": "17 sát-na tâm (chót Na cảnh).", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_R04", "front": "Ba sát-na hộ kiếp đầu lộ ngũ môn tên là gì?", "back": "Hộ kiếp Vừa qua (Atītabhavaṅga), Hộ kiếp Rúng động (Bhavaṅgacalana), Hộ kiếp Dứt dòng (Bhavaṅgupaccheda).", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_R05", "front": "Kể thứ tự 7 chặng của lộ ngũ môn cảnh rất lớn.", "back": "Khán ngũ môn → Ngũ song thức → Tiếp thâu → Quan sát → Xác định → Đổng lực → Na cảnh.", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_R06", "front": "Lộ 17 sát-na có bao nhiêu tâm khách?", "back": "14 tâm khách (không kể 3 sát-na hộ kiếp — hộ kiếp là tâm chủ).", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_R07", "front": "Phận sự của Khán ngũ môn (Pañcadvārāvajjana)?", "back": "Hướng tâm về cảnh nơi năm môn, đồng thời làm cho cảnh lộ rõ.", "sourceRefs": [ref(LO, 10), ref(LO, 11)]},
+        {"id": "M10_R08", "front": "Phận sự của Đổng lực (Javana)?", "back": "Xử lý và hưởng trọn cảnh — nơi tâm thiện/bất thiện sanh khởi và tạo nghiệp.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_R09", "front": "Có bao nhiêu tâm Đổng lực trong lộ Ngũ môn?", "back": "29 tâm Dục giới: 12 Bất thiện + 8 Đại thiện + 8 Duy tác Dục giới + 1 Ưng cúng Vi tiếu.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_R10", "front": "Trong ví dụ trái xoài, “cạp 7 miếng” tượng trưng cho gì?", "back": "7 sát-na Đổng lực (Javana).", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_R12", "front": "Javana lưu giữ điều gì?", "back": "Hạt giống nghiệp — Bījakamma. Căn từ “Ju”: chạy nhanh.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_R13", "front": "Sát-na Đổng lực nào mạnh nhất và vì sao?", "back": "Sát-na thứ 4, vì ở giai đoạn cực thịnh và là sát-na Quyền.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_R14", "front": "Tadālambana nghĩa đen là gì?", "back": "Tadā: chính cái đó; Ārammaṇa: cảnh → “chính cảnh cũ”. Đồng nghĩa: Đồng sở duyên, Mót, Thập di.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_R15", "front": "Vì sao cần đúng 2 sát-na Na cảnh?", "back": "Vì cảnh của Đổng lực quá lớn — Na cảnh làm trớn cho chậm lại để trở về lộ trình tâm bình thường.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_R16", "front": "Bao nhiêu tâm làm việc Na cảnh?", "back": "11 tâm Quả Dục giới: 8 Đại quả Dục giới Tịnh hảo + 3 Quan sát Vô nhân.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_R17", "front": "Na cảnh có tạo nghiệp không?", "back": "Không. Na cảnh thuộc Tâm Quả, chỉ hưởng cảnh tàn dư, không thuộc về nhân.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_R18", "front": "Ý môn là tâm gì?", "back": "Ý môn chính là tâm Hộ kiếp (tâm Hữu phần).", "sourceRefs": [ref(LO, 23)]},
+        {"id": "M10_R19", "front": "Lộ ý môn bình nhật đầy đủ có bao nhiêu sát-na khách?", "back": "10 sát-na: 1 Khán ý môn + 7 Đổng lực + 2 Na cảnh; gồm 3 chặng.", "sourceRefs": [ref(LO, 26)]},
+        {"id": "M10_R20", "front": "Lộ ý môn đặc biệt có bao nhiêu loại?", "back": "10 loại, gồm Lộ Đắc Thiền, Lộ Đắc Đạo, Lộ Hiện Thông, Lộ Nhập Thiền An Chỉ, Lộ Nhập Thiền Quả, Lộ Nhập Thiền Diệt…", "sourceRefs": [ref(LO, 23)]},
+        {"id": "M10_R21", "front": "Với tâm ngoài lộ trình, đối tượng hiện khởi có mấy loại?", "back": "Ba: Nghiệp (kamma), Nghiệp tướng (kammanimitta), Thú tướng (gatinimitta).", "sourceRefs": [ref(LO, 2)]},
+    ],
+    "quizSeeds": [
+        {"id": "M10_Q01", "type": "mcq", "question": "Lộ ngũ môn cảnh Rất lớn (chót Na cảnh) có bao nhiêu sát-na tâm?", "correctAnswer": "17 sát-na", "distractors": ["15 sát-na", "14 sát-na", "10 sát-na"], "explanation": "H / 1-V, 2-R, 3-D / 4-K, 5-N, 6-T, 7-Q, 8-X, 9→15 J, 16-17 N = 17 sát-na.", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_Q02", "type": "mcq", "question": "Trong lộ 17 sát-na, có bao nhiêu tâm khách?", "correctAnswer": "14 tâm khách", "distractors": ["17 tâm khách", "11 tâm khách", "7 tâm khách"], "explanation": "Không kể 3 sát-na Hộ kiếp vừa qua, Rúng động, Dứt dòng — vì hộ kiếp là tâm chủ.", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_Q03", "type": "mcq", "question": "Tâm nào hướng về cảnh đầu tiên trong lộ ngũ môn?", "correctAnswer": "Khán ngũ môn (Pañcadvārāvajjana)", "distractors": ["Nhãn thức (Cakkhuviññāṇa)", "Tiếp thâu (Sampaṭicchana)", "Khán ý môn (Manodvārāvajjana)"], "explanation": "Khán ngũ môn sanh lên để hướng về cảnh nơi năm môn.", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_Q04", "type": "mcq", "question": "Chặng nào đứng ngay sau Tiếp thâu (Sampaṭicchana)?", "correctAnswer": "Quan sát (Santīraṇa)", "distractors": ["Xác định (Voṭṭhapana)", "Đổng lực (Javana)", "Na cảnh (Tadālambana)"], "explanation": "Thứ tự: K – N – T – Q – X – J – Na.", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_Q05", "type": "mcq", "question": "Lộ ngũ môn cảnh Rất lớn có bao nhiêu chặng?", "correctAnswer": "7 chặng", "distractors": ["5 chặng", "3 chặng", "17 chặng"], "explanation": "Khán ngũ môn, Ngũ song thức, Tiếp thâu, Quan sát, Xác định, Đổng lực, Na cảnh.", "sourceRefs": [ref(LO, 10)]},
+        {"id": "M10_Q06", "type": "mcq", "question": "Chặng nào có phận sự “hưởng trọn cảnh”?", "correctAnswer": "Đổng lực (Javana)", "distractors": ["Na cảnh (Tadālambana)", "Quan sát (Santīraṇa)", "Tiếp thâu (Sampaṭicchana)"], "explanation": "Đổng lực hưởng trọn cảnh; Na cảnh chỉ hưởng cảnh dư sót.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_Q07", "type": "mcq", "question": "Có bao nhiêu tâm Đổng lực trong lộ Ngũ môn?", "correctAnswer": "29 tâm Dục giới", "distractors": ["41 tâm", "11 tâm", "12 tâm"], "explanation": "12 Bất thiện + 8 Đại thiện DGTH + 8 Duy tác Dục giới + 1 Ưng cúng Vi tiếu = 29.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_Q08", "type": "mcq", "question": "Sát-na Đổng lực nào mạnh nhất?", "correctAnswer": "Sát-na thứ 4", "distractors": ["Sát-na thứ 1", "Sát-na thứ 7", "Sát-na thứ 6"], "explanation": "Sát-na thứ 4 mạnh nhất vì ở giai đoạn cực thịnh và là sát-na Quyền.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_Q09", "type": "mcq", "question": "Javana có căn từ nào và nghĩa là gì?", "correctAnswer": "Căn “Ju” — chạy nhanh", "distractors": ["Căn “Rup” — tan vỡ", "Căn “Muh” — mê mờ", "Căn “Puth” — duỗi ra"], "explanation": "Javana từ căn JU: chạy nhanh, đổng lực, đổng tốc.", "sourceRefs": [ref(LO, 11)]},
+        {"id": "M10_Q10", "type": "mcq", "question": "Tadālambana (Na cảnh) làm phận sự gì?", "correctAnswer": "Hưởng cảnh dư sót của Đổng lực", "distractors": ["Xác định cảnh là gì", "Tiếp thâu cảnh vào dòng tâm", "Hướng tâm về cảnh"], "explanation": "Tadā: chính cái đó, Ārammaṇa: cảnh — Na cảnh mót lại cảnh cũ từ Đổng lực.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_Q11", "type": "mcq", "question": "Bao nhiêu tâm có thể làm việc Na cảnh?", "correctAnswer": "11 tâm Quả Dục giới", "distractors": ["29 tâm Đổng lực", "19 tâm tục sinh", "8 tâm Đại quả"], "explanation": "8 tâm Đại quả Dục giới Tịnh hảo + 3 tâm Quan sát Vô nhân = 11.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_Q12", "type": "mcq", "question": "Na cảnh có tạo nghiệp không?", "correctAnswer": "Không, vì Na cảnh là Tâm Quả", "distractors": ["Có, vì Na cảnh hưởng cảnh", "Có, nhưng chỉ nghiệp nhẹ", "Chỉ tạo nghiệp lúc cận tử"], "explanation": "Na cảnh thuộc về Tâm Quả chứ không thuộc về nhân, chỉ hưởng cảnh tàn dư.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_Q13", "type": "mcq", "question": "Na cảnh sanh khởi trong cõi nào?", "correctAnswer": "Chỉ trong cõi Dục giới", "distractors": ["Cả ba cõi", "Chỉ cõi Sắc giới", "Cõi Vô sắc giới"], "explanation": "Na cảnh không sanh trong cảnh Đáo đại và Siêu thế; chỉ sanh trong cõi Dục giới.", "sourceRefs": [ref(LO, 12)]},
+        {"id": "M10_Q14", "type": "mcq", "question": "Ý môn thực chất là tâm gì?", "correctAnswer": "Tâm Hộ kiếp (Hữu phần)", "distractors": ["Tâm Khán ngũ môn", "Tâm Quan sát", "Tâm Tục sinh"], "explanation": "Ý môn: là tâm hộ kiếp (còn gọi là tâm Hữu phần).", "sourceRefs": [ref(LO, 23)]},
+        {"id": "M10_Q15", "type": "mcq", "question": "Lộ ý môn bình nhật đầy đủ có bao nhiêu sát-na khách?", "correctAnswer": "10 sát-na", "distractors": ["17 sát-na", "8 sát-na", "14 sát-na"], "explanation": "1 Khán ý môn + 7 Đổng tốc + 2 Na cảnh = 10 sát-na, gồm 3 chặng.", "sourceRefs": [ref(LO, 26)]},
+        {"id": "M10_Q16", "type": "mcq", "question": "Với tâm ngoài lộ trình (vīthimutta), đối tượng hiện khởi có mấy loại?", "correctAnswer": "Ba: Nghiệp, Nghiệp tướng, Thú tướng", "distractors": ["Bốn: Rất lớn, Lớn, Nhỏ, Rất nhỏ", "Hai: Rõ và Không rõ", "Sáu: sáu cảnh"], "explanation": "Vīthimuttānaṁ pana kamma-kammanimitta-gatinimitta-vasena tividhā hoti visayappavatti.", "sourceRefs": [ref(LO, 2)]},
+        {"id": "M10_Q17", "type": "mcq", "question": "Cảnh qua Ý môn được chia thành mấy loại?", "correctAnswer": "Hai: Rõ (vibhūta) và Không rõ (avibhūta)", "distractors": ["Bốn: Rất lớn, Lớn, Nhỏ, Rất nhỏ", "Ba: Nghiệp, Nghiệp tướng, Thú tướng", "Sáu loại"], "explanation": "Ngang qua 5 Môn: Rất lớn, Lớn, Nhỏ, Rất nhỏ; ngang qua Ý môn: Rõ và không rõ.", "sourceRefs": [ref(LO, 2)]},
+    ],
+}

@@ -1,6 +1,6 @@
 {
   "locale": "en",
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cittas": {
     "CI_001": {
       "name": "Greed-rooted consciousness with joy associated with wrong view unprompted",
@@ -1971,43 +1971,66 @@
   "studyModules": {
     "M1_BASICS": {
       "title": "Seven universal cetasikas",
-      "description": "The seven mental factors present in every citta; the foundation for all later modules."
+      "description": "The seven mental factors present in every citta; the foundation for all later modules.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M2_SI_PHAN": {
       "title": "The delusion group",
-      "description": "Delusion, shamelessness, fearlessness of wrongdoing, and restlessness accompany every unwholesome citta."
+      "description": "Delusion, shamelessness, fearlessness of wrongdoing, and restlessness accompany every unwholesome citta.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M3_TINH_HAO_BIEN_HANH": {
       "title": "Beautiful universals",
-      "description": "The nineteen beautiful universal cetasikas present in every beautiful citta."
+      "description": "The nineteen beautiful universal cetasikas present in every beautiful citta.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M4_AKUSALA": {
       "title": "Twelve unwholesome cittas",
-      "description": "Eight rooted in greed, two rooted in hatred, and two rooted in delusion."
+      "description": "Eight rooted in greed, two rooted in hatred, and two rooted in delusion.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M5_SOBHANA": {
       "title": "Sense-sphere beautiful cittas",
-      "description": "Twenty-four great wholesome, resultant, and functional cittas."
+      "description": "Twenty-four great wholesome, resultant, and functional cittas.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M6_NGHIEP": {
       "title": "Kamma classifications",
-      "description": "How kamma is classified and connected with cittas."
+      "description": "How kamma is classified and connected with cittas.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M7_SIEU_THE": {
       "title": "Supramundane cittas",
-      "description": "Path and fruition cittas leading beyond suffering."
+      "description": "Path and fruition cittas leading beyond suffering.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M8_NHAN_DUYEN": {
       "title": "Twelve links of dependent origination",
-      "description": "The conditioned cycle and the way its links can cease."
+      "description": "The conditioned cycle and the way its links can cease.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M9_SAC_PHAP": {
       "title": "Material phenomena",
-      "description": "The twenty-eight kinds of matter and their relationship to citta and kamma."
+      "description": "The twenty-eight kinds of matter and their relationship to citta and kamma.",
+      "translationStatus": "source_only",
+      "needsReview": true
     },
     "M10_LO_TRINH": {
       "title": "The cognitive series",
-      "description": "The arising and ceasing of cittas in a cognitive process."
+      "description": "The arising and ceasing of cittas in a cognitive process.",
+      "translationStatus": "source_only",
+      "needsReview": true
     }
-  }
+  },
+  "fallbackLocale": "vi",
+  "lessonTranslationStatus": "source_only",
+  "lessonTranslationNote": "Study module titles/descriptions are English. lessonSections, reviewCards and quizSeeds are not translated yet and resolve to the Vietnamese source through the en -> vi content fallback chain."
 }

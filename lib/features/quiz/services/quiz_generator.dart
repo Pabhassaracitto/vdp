@@ -8,7 +8,12 @@ import 'dart:math';
 import '../../../core/localization/content_catalog.dart';
 import '../../../data/models/cetasika_model.dart';
 import '../../../data/models/citta_model.dart';
+import '../../../data/models/kamma_model.dart';
+import '../../../data/models/lesson_content.dart';
+import '../../../data/models/paticca_model.dart';
+import '../../../data/models/rupa_model.dart';
 import '../../../data/models/study_module.dart';
+import '../../../data/models/vithi_model.dart';
 import '../../../data/repositories/vdp_repository.dart';
 import '../../../l10n/l10n.dart';
 import '../quiz_screen.dart' show QuizLevel, QuizQuestion, QuizQuestionType;
@@ -24,6 +29,15 @@ const _kMinItemsForMcq3 = 3;
 
 /// Số câu hỏi tối đa mỗi bài quiz.
 const _kMaxQuestions = 10;
+
+/// Số câu tối đa lấy từ `quizSeeds` khi module *cũng* sinh được câu tự động.
+///
+/// Seed (có nguồn PDF) luôn được ưu tiên, nhưng nếu lấy trọn 10 câu seed thì
+/// quiz sinh tự động từ citta/cetasika sẽ không bao giờ xuất hiện nữa. Giữ lại
+/// vài chỗ cho câu tự động vừa bảo toàn hành vi cũ, vừa làm bài quiz đa dạng
+/// hơn qua mỗi lần làm (seed đã được shuffle nên mỗi lần là một tập khác).
+/// Khi module không sinh được câu nào thì seed vẫn được lấp đủ [_kMaxQuestions].
+const _kMaxSeedQuestions = 7;
 
 // ─── Quiz Generator Service ───────────────────────────────────────────────────
 
@@ -61,9 +75,25 @@ final class QuizGeneratorService {
     final rng = random ?? Random();
     final text = _QuizText(l10n, contentCatalog);
 
-    // ── Safety Guard: IDs rỗng ─────────────────────────────────────────
+    // ── Ưu tiên 1: quizSeeds có nguồn từ PDF (assets/content) ───────────
+    // Seed là câu hỏi đã biên soạn, có sourceRefs → chính xác hơn câu sinh tự
+    // động. Nếu module chưa có seed thì list rỗng và toàn bộ luồng cũ chạy
+    // nguyên vẹn (không phá quiz sinh từ citta/cetasika).
+    final seedQuestions = _seedQuestions(
+      module: module,
+      contentCatalog: contentCatalog,
+      rng: rng,
+    );
+
+    final genericItems = _genericItemsForModule(
+      module: module,
+      dataState: dataState,
+      text: text,
+    );
+
+    // ── Safety Guard: module không có bất kỳ item nào ──────────────────
     final hasIds = module.cittaIds.isNotEmpty || module.cetasikaIds.isNotEmpty;
-    if (!hasIds) {
+    if (!hasIds && genericItems.isEmpty && seedQuestions.isEmpty) {
       // Trả về rỗng, không fallback DB
       return const [];
     }
@@ -80,13 +110,17 @@ final class QuizGeneratorService {
     );
 
     // ── Safety Guard: Không tìm thấy trong DB ─────────────────────────
-    if (moduleCittas.isEmpty && moduleCetasikas.isEmpty) {
+    if (moduleCittas.isEmpty &&
+        moduleCetasikas.isEmpty &&
+        genericItems.isEmpty &&
+        seedQuestions.isEmpty) {
       // IDs có nhưng không match DB → trả về rỗng
       return const [];
     }
 
     // Tổng số item module có
-    final totalItems = moduleCittas.length + moduleCetasikas.length;
+    final totalItems =
+        moduleCittas.length + moduleCetasikas.length + genericItems.length;
 
     // ── Safety Guard: Quyết định loại câu hỏi theo số lượng item ──────
     final canUseMcq4 = totalItems >= _kMinItemsForMcq4;
@@ -181,11 +215,94 @@ final class QuizGeneratorService {
       }
     }
 
-    // ── Shuffle + giới hạn ─────────────────────────────────────────────
+    // Q-Type 5: Generic module content for M6/M8/M9/M10.
+    // Các câu hỏi vẫn lấy option trong chính module, không dùng toàn DB ngoài module.
+    if (genericItems.isNotEmpty) {
+      questions.addAll(
+        _generateGenericContentMcq(
+          items: genericItems,
+          rng: rng,
+          maxCount: _kMaxQuestions,
+          text: text,
+        ),
+      );
+    }
+
+    // ── Ghép seed + câu sinh tự động ───────────────────────────────────
+    // Seed luôn được giữ trước (ưu tiên nội dung có nguồn), phần còn lại của
+    // bài quiz được lấp bằng câu sinh tự động cho tới _kMaxQuestions.
     questions.shuffle(rng);
-    return questions.length > _kMaxQuestions
-        ? questions.sublist(0, _kMaxQuestions)
-        : questions;
+    if (seedQuestions.isEmpty) {
+      return questions.length > _kMaxQuestions
+          ? questions.sublist(0, _kMaxQuestions)
+          : questions;
+    }
+
+    // Nếu có câu tự động thì chừa chỗ cho chúng; nếu không thì seed lấp hết.
+    final seedBudget =
+        questions.isEmpty ? _kMaxQuestions : _kMaxSeedQuestions;
+    final combined = <QuizQuestion>[
+      ...seedQuestions.take(seedBudget),
+    ];
+    for (final question in questions) {
+      if (combined.length >= _kMaxQuestions) break;
+      combined.add(question);
+    }
+    // Còn thiếu (ít câu tự động hơn dự kiến) → bù thêm bằng seed chưa dùng.
+    for (final seed in seedQuestions.skip(seedBudget)) {
+      if (combined.length >= _kMaxQuestions) break;
+      combined.add(seed);
+    }
+    combined.shuffle(rng);
+    return combined;
+  }
+
+  // ── Authored quiz seeds ────────────────────────────────────────────────────
+
+  /// Chuyển [LessonQuizSeed] (assets/content) thành [QuizQuestion].
+  ///
+  /// Chỉ nhận `type == 'mcq'`; loại khác bị bỏ qua an toàn để bản dịch sau này
+  /// thêm loại mới mà không làm vỡ app cũ.
+  static List<QuizQuestion> _seedQuestions({
+    required StudyModule module,
+    required ContentCatalog contentCatalog,
+    required Random rng,
+  }) {
+    final seeds = contentCatalog.moduleLesson(module.id).quizSeeds;
+    if (seeds.isEmpty) return const [];
+
+    final questions = <QuizQuestion>[];
+    for (final seed in seeds) {
+      if (seed.type != 'mcq') continue;
+
+      // Bỏ distractor trùng đáp án đúng để tránh 2 lựa chọn cùng đúng.
+      final distractors = seed.distractors
+          .where((d) => d != seed.correctAnswer)
+          .toSet()
+          .toList();
+      if (distractors.isEmpty) continue;
+
+      final options = <String>[seed.correctAnswer, ...distractors]..shuffle(rng);
+      final correctIndex = options.indexOf(seed.correctAnswer);
+      if (correctIndex < 0) continue;
+
+      final sourceNote = seed.sourceRefs.isEmpty
+          ? ''
+          : '\n\n📄 ${seed.sourceRefs.map((r) => r.label).join(', ')}';
+
+      questions.add(
+        QuizQuestion(
+          id: seed.id,
+          questionText: seed.question,
+          options: options,
+          correctIndex: correctIndex,
+          type: QuizQuestionType.moduleContent,
+          explanation: '${seed.explanation}$sourceNote'.trim(),
+        ),
+      );
+    }
+    questions.shuffle(rng);
+    return questions;
   }
 
   // ── Filter helpers (Source of Truth enforced) ─────────────────────────────
@@ -208,6 +325,63 @@ final class QuizGeneratorService {
     if (ids.isEmpty) return const [];
     final idSet = ids.toSet();
     return allCetasikas.where((c) => idSet.contains(c.id)).toList();
+  }
+
+  /// Nội dung generic cho các module hiện không dùng cittaIds/cetasikaIds.
+  /// Vẫn giữ boundary theo module: M6 chỉ lấy kammas, M8 chỉ lấy paticcas, ...
+  static List<_GenericQuizItem> _genericItemsForModule({
+    required StudyModule module,
+    required VdpDataState dataState,
+    required _QuizText text,
+  }) {
+    switch (module.id) {
+      case 'M6_NGHIEP':
+        final items = List<KammaModel>.from(dataState.kammas)
+          ..sort((a, b) => a.orderIndex.compareTo(b.orderIndex));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.kammaName(item),
+                  pali: item.namePali,
+                  description: text.kammaDescription(item),
+                ))
+            .toList(growable: false);
+      case 'M8_NHAN_DUYEN':
+        final items = List<PaticcaModel>.from(dataState.paticcas)
+          ..sort((a, b) => a.order.compareTo(b.order));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.paticcaName(item),
+                  pali: item.namePali,
+                  description: text.paticcaDescription(item),
+                ))
+            .toList(growable: false);
+      case 'M9_SAC_PHAP':
+        final items = List<RupaModel>.from(dataState.rupas)
+          ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.rupaName(item),
+                  pali: item.namePali,
+                  description: text.rupaDescription(item),
+                ))
+            .toList(growable: false);
+      case 'M10_LO_TRINH':
+        final items = List<VithiModel>.from(dataState.vithis)
+          ..sort((a, b) => a.orderIndex.compareTo(b.orderIndex));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.vithiName(item),
+                  pali: item.namePali,
+                  description: text.vithiDescription(item),
+                ))
+            .toList(growable: false);
+      default:
+        return const [];
+    }
   }
 
   // ── Q-Type 1a: Cetasika Group — MCQ 4 options ─────────────────────────────
@@ -605,7 +779,64 @@ final class QuizGeneratorService {
     return questions;
   }
 
+  // ── Q-Type 5: Generic Content — MCQ 4 options ────────────────────────────
+
+  static List<QuizQuestion> _generateGenericContentMcq({
+    required List<_GenericQuizItem> items,
+    required Random rng,
+    required int maxCount,
+    required _QuizText text,
+  }) {
+    if (items.length < _kMinItemsForMcq4) return const [];
+
+    final questions = <QuizQuestion>[];
+    final pool = List<_GenericQuizItem>.from(items)..shuffle(rng);
+
+    for (final item in pool.take(maxCount)) {
+      final distractors = items
+          .where((candidate) => candidate.id != item.id)
+          .map((candidate) => candidate.name)
+          .toSet()
+          .toList()
+        ..shuffle(rng);
+
+      if (distractors.length < 3) continue;
+
+      final opts = <String>[
+        item.name,
+        distractors[0],
+        distractors[1],
+        distractors[2],
+      ]..shuffle(rng);
+
+      questions.add(QuizQuestion(
+        id: 'q_content_${item.id}',
+        questionText: text.genericContentQuestion(item.description),
+        options: opts,
+        correctIndex: opts.indexOf(item.name),
+        type: QuizQuestionType.moduleContent,
+        explanation: text.genericContentExplanation(item),
+      ));
+    }
+
+    return questions;
+  }
 }
+
+class _GenericQuizItem {
+  final String id;
+  final String name;
+  final String pali;
+  final String description;
+
+  const _GenericQuizItem({
+    required this.id,
+    required this.name,
+    required this.pali,
+    required this.description,
+  });
+}
+
 
 class _QuizText {
   final AppLocalizations l10n;
@@ -633,6 +864,74 @@ class _QuizText {
         'description',
         cetasika.descriptionVi,
       );
+
+  String kammaName(KammaModel item) => catalog.text(
+        'kammas',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String kammaDescription(KammaModel item) => catalog.text(
+        'kammas',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String paticcaName(PaticcaModel item) => catalog.text(
+        'paticcas',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String paticcaDescription(PaticcaModel item) => catalog.text(
+        'paticcas',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String rupaName(RupaModel item) => catalog.text(
+        'rupas',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String rupaDescription(RupaModel item) => catalog.text(
+        'rupas',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String vithiName(VithiModel item) => catalog.text(
+        'vithis',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String vithiDescription(VithiModel item) => catalog.text(
+        'vithis',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String genericContentQuestion(String description) {
+    if (catalog.locale == 'en') {
+      return 'Which item matches this description?\n\n$description';
+    }
+    return 'Mô tả sau ứng với mục nào?\n\n$description';
+  }
+
+  String genericContentExplanation(_GenericQuizItem item) {
+    final prefix = item.pali.isEmpty ? item.name : '${item.name} (${item.pali})';
+    return '$prefix: ${item.description}';
+  }
 
   String groupName(CetasikaGroup group) => switch (group) {
         CetasikaGroup.sabbacittasadharana => l10n.universalCetasikas,
