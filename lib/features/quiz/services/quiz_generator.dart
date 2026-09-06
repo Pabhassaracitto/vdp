@@ -9,6 +9,7 @@ import '../../../core/localization/content_catalog.dart';
 import '../../../data/models/cetasika_model.dart';
 import '../../../data/models/citta_model.dart';
 import '../../../data/models/kamma_model.dart';
+import '../../../data/models/lesson_content.dart';
 import '../../../data/models/paticca_model.dart';
 import '../../../data/models/rupa_model.dart';
 import '../../../data/models/study_module.dart';
@@ -28,6 +29,15 @@ const _kMinItemsForMcq3 = 3;
 
 /// Số câu hỏi tối đa mỗi bài quiz.
 const _kMaxQuestions = 10;
+
+/// Số câu tối đa lấy từ `quizSeeds` khi module *cũng* sinh được câu tự động.
+///
+/// Seed (có nguồn PDF) luôn được ưu tiên, nhưng nếu lấy trọn 10 câu seed thì
+/// quiz sinh tự động từ citta/cetasika sẽ không bao giờ xuất hiện nữa. Giữ lại
+/// vài chỗ cho câu tự động vừa bảo toàn hành vi cũ, vừa làm bài quiz đa dạng
+/// hơn qua mỗi lần làm (seed đã được shuffle nên mỗi lần là một tập khác).
+/// Khi module không sinh được câu nào thì seed vẫn được lấp đủ [_kMaxQuestions].
+const _kMaxSeedQuestions = 7;
 
 // ─── Quiz Generator Service ───────────────────────────────────────────────────
 
@@ -65,6 +75,16 @@ final class QuizGeneratorService {
     final rng = random ?? Random();
     final text = _QuizText(l10n, contentCatalog);
 
+    // ── Ưu tiên 1: quizSeeds có nguồn từ PDF (assets/content) ───────────
+    // Seed là câu hỏi đã biên soạn, có sourceRefs → chính xác hơn câu sinh tự
+    // động. Nếu module chưa có seed thì list rỗng và toàn bộ luồng cũ chạy
+    // nguyên vẹn (không phá quiz sinh từ citta/cetasika).
+    final seedQuestions = _seedQuestions(
+      module: module,
+      contentCatalog: contentCatalog,
+      rng: rng,
+    );
+
     final genericItems = _genericItemsForModule(
       module: module,
       dataState: dataState,
@@ -73,7 +93,7 @@ final class QuizGeneratorService {
 
     // ── Safety Guard: module không có bất kỳ item nào ──────────────────
     final hasIds = module.cittaIds.isNotEmpty || module.cetasikaIds.isNotEmpty;
-    if (!hasIds && genericItems.isEmpty) {
+    if (!hasIds && genericItems.isEmpty && seedQuestions.isEmpty) {
       // Trả về rỗng, không fallback DB
       return const [];
     }
@@ -92,7 +112,8 @@ final class QuizGeneratorService {
     // ── Safety Guard: Không tìm thấy trong DB ─────────────────────────
     if (moduleCittas.isEmpty &&
         moduleCetasikas.isEmpty &&
-        genericItems.isEmpty) {
+        genericItems.isEmpty &&
+        seedQuestions.isEmpty) {
       // IDs có nhưng không match DB → trả về rỗng
       return const [];
     }
@@ -207,11 +228,81 @@ final class QuizGeneratorService {
       );
     }
 
-    // ── Shuffle + giới hạn ─────────────────────────────────────────────
+    // ── Ghép seed + câu sinh tự động ───────────────────────────────────
+    // Seed luôn được giữ trước (ưu tiên nội dung có nguồn), phần còn lại của
+    // bài quiz được lấp bằng câu sinh tự động cho tới _kMaxQuestions.
     questions.shuffle(rng);
-    return questions.length > _kMaxQuestions
-        ? questions.sublist(0, _kMaxQuestions)
-        : questions;
+    if (seedQuestions.isEmpty) {
+      return questions.length > _kMaxQuestions
+          ? questions.sublist(0, _kMaxQuestions)
+          : questions;
+    }
+
+    // Nếu có câu tự động thì chừa chỗ cho chúng; nếu không thì seed lấp hết.
+    final seedBudget =
+        questions.isEmpty ? _kMaxQuestions : _kMaxSeedQuestions;
+    final combined = <QuizQuestion>[
+      ...seedQuestions.take(seedBudget),
+    ];
+    for (final question in questions) {
+      if (combined.length >= _kMaxQuestions) break;
+      combined.add(question);
+    }
+    // Còn thiếu (ít câu tự động hơn dự kiến) → bù thêm bằng seed chưa dùng.
+    for (final seed in seedQuestions.skip(seedBudget)) {
+      if (combined.length >= _kMaxQuestions) break;
+      combined.add(seed);
+    }
+    combined.shuffle(rng);
+    return combined;
+  }
+
+  // ── Authored quiz seeds ────────────────────────────────────────────────────
+
+  /// Chuyển [LessonQuizSeed] (assets/content) thành [QuizQuestion].
+  ///
+  /// Chỉ nhận `type == 'mcq'`; loại khác bị bỏ qua an toàn để bản dịch sau này
+  /// thêm loại mới mà không làm vỡ app cũ.
+  static List<QuizQuestion> _seedQuestions({
+    required StudyModule module,
+    required ContentCatalog contentCatalog,
+    required Random rng,
+  }) {
+    final seeds = contentCatalog.moduleLesson(module.id).quizSeeds;
+    if (seeds.isEmpty) return const [];
+
+    final questions = <QuizQuestion>[];
+    for (final seed in seeds) {
+      if (seed.type != 'mcq') continue;
+
+      // Bỏ distractor trùng đáp án đúng để tránh 2 lựa chọn cùng đúng.
+      final distractors = seed.distractors
+          .where((d) => d != seed.correctAnswer)
+          .toSet()
+          .toList();
+      if (distractors.isEmpty) continue;
+
+      final options = <String>[seed.correctAnswer, ...distractors]..shuffle(rng);
+      final correctIndex = options.indexOf(seed.correctAnswer);
+      if (correctIndex < 0) continue;
+
+      final sourceNote = seed.sourceRefs.isEmpty
+          ? ''
+          : '\n\n📄 ${seed.sourceRefs.map((r) => r.label).join(', ')}';
+
+      questions.add(
+        QuizQuestion(
+          id: seed.id,
+          questionText: seed.question,
+          options: options,
+          correctIndex: correctIndex,
+          type: QuizQuestionType.moduleContent,
+          explanation: '${seed.explanation}$sourceNote'.trim(),
+        ),
+      );
+    }
+    questions.shuffle(rng);
+    return questions;
   }
 
   // ── Filter helpers (Source of Truth enforced) ─────────────────────────────

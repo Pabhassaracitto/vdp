@@ -12,6 +12,7 @@ import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/models/kamma_model.dart';
+import '../../data/models/lesson_content.dart';
 import '../../data/models/paticca_model.dart';
 import '../../data/models/rupa_model.dart';
 import '../../data/models/study_module.dart';
@@ -96,6 +97,12 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
         moduleRupas.length +
         moduleVithis.length;
 
+    // ── Authored lesson content (assets/content/content_<locale>.json) ──────
+    // Separate from the entity dataset above: this is the narrative lesson
+    // layer, resolved through the content-language fallback chain. Empty is a
+    // valid state — the tabs then fall back to the generated experience.
+    final lesson = widget.moduleData.lessonContent(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: color,
@@ -133,6 +140,7 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
                 // Tab 1: Học tập — hiển thị đầy đủ thông tin Tâm/Tâm Sở
                 _StudyTab(
                   module: widget.moduleData,
+                  lesson: lesson,
                   cittas: moduleCittas,
                   cetasikas: moduleCetasikas,
                   kammas: moduleKammas,
@@ -144,6 +152,7 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
                 // Tab 2: Blur/Reveal Active Recall
                 _BlurRevealTab(
                   module: widget.moduleData,
+                  lesson: lesson,
                   cittas: moduleCittas,
                   cetasikas: moduleCetasikas,
                   kammas: moduleKammas,
@@ -155,7 +164,11 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
                   onResetAll: () => setState(() => _revealedItems.clear()),
                 ),
                 // Tab 3: Quiz entry point
-                _QuizTab(module: widget.moduleData, totalItems: totalModuleItems),
+                _QuizTab(
+                  module: widget.moduleData,
+                  totalItems: totalModuleItems,
+                  seedCount: lesson.quizSeeds.length,
+                ),
               ],
             ),
     );
@@ -236,6 +249,7 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
 
 class _StudyTab extends StatelessWidget {
   final StudyModule module;
+  final ModuleLessonContent lesson;
   final List<CittaModel> cittas;
   final List<CetasikaModel> cetasikas;
   final List<KammaModel> kammas;
@@ -246,6 +260,7 @@ class _StudyTab extends StatelessWidget {
 
   const _StudyTab({
     required this.module,
+    required this.lesson,
     required this.cittas,
     required this.cetasikas,
     required this.kammas,
@@ -258,7 +273,10 @@ class _StudyTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = Color(module.colorCode);
-    final hasContent = totalModuleItems > 0;
+    final sections = lesson.sections;
+    // The module is "empty" only when there is neither authored lesson text
+    // nor any dataset entity to show.
+    final hasContent = totalModuleItems > 0 || sections.isNotEmpty;
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -270,6 +288,15 @@ class _StudyTab extends StatelessWidget {
           extraItemCount: totalModuleItems - cittas.length - cetasikas.length,
         ),
         const SizedBox(height: 20),
+
+        // ── Authored lesson (source-backed narrative) ────────────────────
+        if (sections.isNotEmpty) ...[
+          _SectionHeader(context.l10n.learn, color),
+          ...sections.map(
+            (section) => _LessonSectionCard(section: section, color: color),
+          ),
+          const SizedBox(height: 16),
+        ],
 
         // ── Empty state ──────────────────────────────────────────────────
         if (!hasContent) ...[
@@ -394,6 +421,7 @@ class _StudyTab extends StatelessWidget {
 
 class _BlurRevealTab extends StatelessWidget {
   final StudyModule module;
+  final ModuleLessonContent lesson;
   final List<CittaModel> cittas;
   final List<CetasikaModel> cetasikas;
   final List<KammaModel> kammas;
@@ -406,6 +434,7 @@ class _BlurRevealTab extends StatelessWidget {
 
   const _BlurRevealTab({
     required this.module,
+    required this.lesson,
     required this.cittas,
     required this.cetasikas,
     required this.kammas,
@@ -421,8 +450,18 @@ class _BlurRevealTab extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = Color(module.colorCode);
 
-    // Xây dựng danh sách recall items từ dữ liệu type-safe
+    // Xây dựng danh sách recall items từ dữ liệu type-safe.
+    // Authored review cards đi trước (có nguồn PDF), sau đó mới tới các thẻ
+    // sinh tự động từ dataset — không thay thế, chỉ bổ sung.
     final allItems = <_RecallItem>[
+      ...lesson.reviewCards.map(
+        (card) => _RecallItem(
+          id: 'lc_${card.id}',
+          hint: '📖',
+          question: card.front,
+          answer: card.back,
+        ),
+      ),
       // Cetasika items — hỏi về ý nghĩa & nhóm
       ...cetasikas.map(
         (cs) => _RecallItem(
@@ -790,7 +829,16 @@ class _BlurRevealCard extends StatelessWidget {
 class _QuizTab extends StatelessWidget {
   final StudyModule module;
   final int totalItems;
-  const _QuizTab({required this.module, required this.totalItems});
+
+  /// Number of authored, source-backed quiz seeds available for this module.
+  /// Zero means the quiz is fully generated from the dataset (legacy path).
+  final int seedCount;
+
+  const _QuizTab({
+    required this.module,
+    required this.totalItems,
+    this.seedCount = 0,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -824,6 +872,22 @@ class _QuizTab extends StatelessWidget {
                 color: Colors.grey.shade500,
               ),
             ),
+            if (seedCount > 0) ...[
+              const SizedBox(height: 6),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.menu_book_rounded, size: 14, color: color),
+                  const SizedBox(width: 6),
+                  Flexible(
+                    child: Text(
+                      '${context.l10n.sourceMaterial} · $seedCount',
+                      style: TextStyle(fontSize: 12, color: color),
+                    ),
+                  ),
+                ],
+              ),
+            ],
             const SizedBox(height: 12),
             Text(
               context.l10n.quizMaximumDescription,
@@ -1042,6 +1106,148 @@ String _reviewPrompt(
 }
 
 // ─── Generic domain Study Card ───────────────────────────────────────────────
+
+// ─── Authored lesson section card ────────────────────────────────────────────
+
+/// Renders one [LessonSection] from `assets/content/content_<locale>.json`.
+///
+/// Collapsed by default so a module with many sections stays scannable on a
+/// phone; the summary line is always visible.
+class _LessonSectionCard extends StatelessWidget {
+  final LessonSection section;
+  final Color color;
+
+  const _LessonSectionCard({required this.section, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: color.withOpacity(0.2)),
+      ),
+      child: Theme(
+        // Remove the default ExpansionTile divider lines.
+        data: theme.copyWith(dividerColor: Colors.transparent),
+        child: ExpansionTile(
+          tilePadding: const EdgeInsets.symmetric(horizontal: 13),
+          childrenPadding:
+              const EdgeInsets.fromLTRB(13, 0, 13, 13),
+          expandedCrossAxisAlignment: CrossAxisAlignment.start,
+          leading: Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: color.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: const Text('📖', style: TextStyle(fontSize: 20)),
+          ),
+          title: Text(
+            section.title,
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
+          ),
+          subtitle: section.summary.isEmpty
+              ? null
+              : Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(
+                    section.summary,
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      height: 1.45,
+                      color: theme.textTheme.bodySmall?.color,
+                    ),
+                  ),
+                ),
+          children: [
+            // ── Body paragraphs ──────────────────────────────────────────
+            ...section.body.map(
+              (paragraph) => Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: Text(
+                  paragraph,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    height: 1.6,
+                    color: theme.textTheme.bodyLarge?.color,
+                  ),
+                ),
+              ),
+            ),
+
+            // ── Key terms (Pāli stays stable across languages) ───────────
+            if (section.keyTerms.isNotEmpty) ...[
+              const SizedBox(height: 2),
+              ...section.keyTerms.map(
+                (term) => Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: 13,
+                        height: 1.5,
+                        color: theme.textTheme.bodyLarge?.color,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: term.pali.isEmpty ? term.term : term.pali,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w700,
+                            fontStyle: FontStyle.italic,
+                            color: color,
+                          ),
+                        ),
+                        if (term.term.isNotEmpty &&
+                            term.term != term.pali)
+                          TextSpan(text: ' — ${term.term}'),
+                        if (term.meaning.isNotEmpty)
+                          TextSpan(text: ': ${term.meaning}'),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+
+            // ── Source references (auditability) ─────────────────────────
+            if (section.sourceRefs.isNotEmpty) ...[
+              const SizedBox(height: 4),
+              Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                children: [
+                  for (final ref in section.sourceRefs)
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: color.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: Text(
+                        ref.label,
+                        style: TextStyle(
+                          fontSize: 10.5,
+                          color: color,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
 
 class _GenericStudyCard extends StatelessWidget {
   final String symbol;

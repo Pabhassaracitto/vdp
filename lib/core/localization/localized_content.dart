@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/models/kamma_model.dart';
+import '../../data/models/lesson_content.dart';
 import '../../data/models/paticca_model.dart';
 import '../../data/models/rupa_model.dart';
 import '../../data/models/study_module.dart';
@@ -122,17 +123,14 @@ extension LocalizedVithiContent on VithiModel {
 }
 
 extension LocalizedStudyModuleContent on StudyModule {
-  String localizedTitle(BuildContext context) => context.contentCatalog.text(
-        'studyModules',
-        id,
-        'title',
-        title,
-      );
+  String localizedTitle(BuildContext context) =>
+      context.contentCatalog.moduleText(id, 'title', title);
   String localizedDescription(BuildContext context) =>
-      context.contentCatalog.text(
-        'studyModules',
-        id,
-        'description',
-        description,
-      );
+      context.contentCatalog.moduleText(id, 'description', description);
+
+  /// Authored lesson content (sections / review cards / quiz seeds) for this
+  /// module in the active content language, or
+  /// [ModuleLessonContent.empty] when nothing has been authored yet.
+  ModuleLessonContent lessonContent(BuildContext context) =>
+      context.contentCatalog.moduleLesson(id);
 }
