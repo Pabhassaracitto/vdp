@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../zenglish"
+		},
+		{
+			"path": "../../../vdp.worktrees/dev_hermes"
+		},
+		{
+			"path": "../../../palineti"
+		}
+	],
+	"settings": {}
+}
