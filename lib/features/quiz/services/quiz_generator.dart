@@ -8,7 +8,11 @@ import 'dart:math';
 import '../../../core/localization/content_catalog.dart';
 import '../../../data/models/cetasika_model.dart';
 import '../../../data/models/citta_model.dart';
+import '../../../data/models/kamma_model.dart';
+import '../../../data/models/paticca_model.dart';
+import '../../../data/models/rupa_model.dart';
 import '../../../data/models/study_module.dart';
+import '../../../data/models/vithi_model.dart';
 import '../../../data/repositories/vdp_repository.dart';
 import '../../../l10n/l10n.dart';
 import '../quiz_screen.dart' show QuizLevel, QuizQuestion, QuizQuestionType;
@@ -61,9 +65,15 @@ final class QuizGeneratorService {
     final rng = random ?? Random();
     final text = _QuizText(l10n, contentCatalog);
 
-    // ── Safety Guard: IDs rỗng ─────────────────────────────────────────
+    final genericItems = _genericItemsForModule(
+      module: module,
+      dataState: dataState,
+      text: text,
+    );
+
+    // ── Safety Guard: module không có bất kỳ item nào ──────────────────
     final hasIds = module.cittaIds.isNotEmpty || module.cetasikaIds.isNotEmpty;
-    if (!hasIds) {
+    if (!hasIds && genericItems.isEmpty) {
       // Trả về rỗng, không fallback DB
       return const [];
     }
@@ -80,13 +90,16 @@ final class QuizGeneratorService {
     );
 
     // ── Safety Guard: Không tìm thấy trong DB ─────────────────────────
-    if (moduleCittas.isEmpty && moduleCetasikas.isEmpty) {
+    if (moduleCittas.isEmpty &&
+        moduleCetasikas.isEmpty &&
+        genericItems.isEmpty) {
       // IDs có nhưng không match DB → trả về rỗng
       return const [];
     }
 
     // Tổng số item module có
-    final totalItems = moduleCittas.length + moduleCetasikas.length;
+    final totalItems =
+        moduleCittas.length + moduleCetasikas.length + genericItems.length;
 
     // ── Safety Guard: Quyết định loại câu hỏi theo số lượng item ──────
     final canUseMcq4 = totalItems >= _kMinItemsForMcq4;
@@ -181,6 +194,19 @@ final class QuizGeneratorService {
       }
     }
 
+    // Q-Type 5: Generic module content for M6/M8/M9/M10.
+    // Các câu hỏi vẫn lấy option trong chính module, không dùng toàn DB ngoài module.
+    if (genericItems.isNotEmpty) {
+      questions.addAll(
+        _generateGenericContentMcq(
+          items: genericItems,
+          rng: rng,
+          maxCount: _kMaxQuestions,
+          text: text,
+        ),
+      );
+    }
+
     // ── Shuffle + giới hạn ─────────────────────────────────────────────
     questions.shuffle(rng);
     return questions.length > _kMaxQuestions
@@ -208,6 +234,63 @@ final class QuizGeneratorService {
     if (ids.isEmpty) return const [];
     final idSet = ids.toSet();
     return allCetasikas.where((c) => idSet.contains(c.id)).toList();
+  }
+
+  /// Nội dung generic cho các module hiện không dùng cittaIds/cetasikaIds.
+  /// Vẫn giữ boundary theo module: M6 chỉ lấy kammas, M8 chỉ lấy paticcas, ...
+  static List<_GenericQuizItem> _genericItemsForModule({
+    required StudyModule module,
+    required VdpDataState dataState,
+    required _QuizText text,
+  }) {
+    switch (module.id) {
+      case 'M6_NGHIEP':
+        final items = List<KammaModel>.from(dataState.kammas)
+          ..sort((a, b) => a.orderIndex.compareTo(b.orderIndex));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.kammaName(item),
+                  pali: item.namePali,
+                  description: text.kammaDescription(item),
+                ))
+            .toList(growable: false);
+      case 'M8_NHAN_DUYEN':
+        final items = List<PaticcaModel>.from(dataState.paticcas)
+          ..sort((a, b) => a.order.compareTo(b.order));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.paticcaName(item),
+                  pali: item.namePali,
+                  description: text.paticcaDescription(item),
+                ))
+            .toList(growable: false);
+      case 'M9_SAC_PHAP':
+        final items = List<RupaModel>.from(dataState.rupas)
+          ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.rupaName(item),
+                  pali: item.namePali,
+                  description: text.rupaDescription(item),
+                ))
+            .toList(growable: false);
+      case 'M10_LO_TRINH':
+        final items = List<VithiModel>.from(dataState.vithis)
+          ..sort((a, b) => a.orderIndex.compareTo(b.orderIndex));
+        return items
+            .map((item) => _GenericQuizItem(
+                  id: item.id,
+                  name: text.vithiName(item),
+                  pali: item.namePali,
+                  description: text.vithiDescription(item),
+                ))
+            .toList(growable: false);
+      default:
+        return const [];
+    }
   }
 
   // ── Q-Type 1a: Cetasika Group — MCQ 4 options ─────────────────────────────
@@ -605,7 +688,64 @@ final class QuizGeneratorService {
     return questions;
   }
 
+  // ── Q-Type 5: Generic Content — MCQ 4 options ────────────────────────────
+
+  static List<QuizQuestion> _generateGenericContentMcq({
+    required List<_GenericQuizItem> items,
+    required Random rng,
+    required int maxCount,
+    required _QuizText text,
+  }) {
+    if (items.length < _kMinItemsForMcq4) return const [];
+
+    final questions = <QuizQuestion>[];
+    final pool = List<_GenericQuizItem>.from(items)..shuffle(rng);
+
+    for (final item in pool.take(maxCount)) {
+      final distractors = items
+          .where((candidate) => candidate.id != item.id)
+          .map((candidate) => candidate.name)
+          .toSet()
+          .toList()
+        ..shuffle(rng);
+
+      if (distractors.length < 3) continue;
+
+      final opts = <String>[
+        item.name,
+        distractors[0],
+        distractors[1],
+        distractors[2],
+      ]..shuffle(rng);
+
+      questions.add(QuizQuestion(
+        id: 'q_content_${item.id}',
+        questionText: text.genericContentQuestion(item.description),
+        options: opts,
+        correctIndex: opts.indexOf(item.name),
+        type: QuizQuestionType.moduleContent,
+        explanation: text.genericContentExplanation(item),
+      ));
+    }
+
+    return questions;
+  }
 }
+
+class _GenericQuizItem {
+  final String id;
+  final String name;
+  final String pali;
+  final String description;
+
+  const _GenericQuizItem({
+    required this.id,
+    required this.name,
+    required this.pali,
+    required this.description,
+  });
+}
+
 
 class _QuizText {
   final AppLocalizations l10n;
@@ -633,6 +773,74 @@ class _QuizText {
         'description',
         cetasika.descriptionVi,
       );
+
+  String kammaName(KammaModel item) => catalog.text(
+        'kammas',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String kammaDescription(KammaModel item) => catalog.text(
+        'kammas',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String paticcaName(PaticcaModel item) => catalog.text(
+        'paticcas',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String paticcaDescription(PaticcaModel item) => catalog.text(
+        'paticcas',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String rupaName(RupaModel item) => catalog.text(
+        'rupas',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String rupaDescription(RupaModel item) => catalog.text(
+        'rupas',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String vithiName(VithiModel item) => catalog.text(
+        'vithis',
+        item.id,
+        'name',
+        item.nameVietnamese,
+      );
+
+  String vithiDescription(VithiModel item) => catalog.text(
+        'vithis',
+        item.id,
+        'description',
+        item.descriptionVi,
+      );
+
+  String genericContentQuestion(String description) {
+    if (catalog.locale == 'en') {
+      return 'Which item matches this description?\n\n$description';
+    }
+    return 'Mô tả sau ứng với mục nào?\n\n$description';
+  }
+
+  String genericContentExplanation(_GenericQuizItem item) {
+    final prefix = item.pali.isEmpty ? item.name : '${item.name} (${item.pali})';
+    return '$prefix: ${item.description}';
+  }
 
   String groupName(CetasikaGroup group) => switch (group) {
         CetasikaGroup.sabbacittasadharana => l10n.universalCetasikas,

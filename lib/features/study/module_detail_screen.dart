@@ -6,11 +6,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/localization/content_catalog.dart';
 import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
+import '../../data/models/kamma_model.dart';
+import '../../data/models/paticca_model.dart';
+import '../../data/models/rupa_model.dart';
 import '../../data/models/study_module.dart';
+import '../../data/models/vithi_model.dart';
 import '../../data/repositories/vdp_repository.dart';
 import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
@@ -66,6 +71,31 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
       ids: widget.moduleData.cetasikaIds,
     );
 
+    // Các module M6/M8/M9/M10 dùng dữ liệu theo domain riêng
+    // (Nghiệp / Nhân duyên / Sắc pháp / Lộ trình tâm), không ép vào citta/cetasika.
+    final moduleKammas = _filterKammas(
+      allKammas: dataState.kammas,
+      moduleId: widget.moduleData.id,
+    );
+    final modulePaticcas = _filterPaticcas(
+      allPaticcas: dataState.paticcas,
+      moduleId: widget.moduleData.id,
+    );
+    final moduleRupas = _filterRupas(
+      allRupas: dataState.rupas,
+      moduleId: widget.moduleData.id,
+    );
+    final moduleVithis = _filterVithis(
+      allVithis: dataState.vithis,
+      moduleId: widget.moduleData.id,
+    );
+    final totalModuleItems = moduleCittas.length +
+        moduleCetasikas.length +
+        moduleKammas.length +
+        modulePaticcas.length +
+        moduleRupas.length +
+        moduleVithis.length;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: color,
@@ -105,18 +135,27 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
                   module: widget.moduleData,
                   cittas: moduleCittas,
                   cetasikas: moduleCetasikas,
+                  kammas: moduleKammas,
+                  paticcas: modulePaticcas,
+                  rupas: moduleRupas,
+                  vithis: moduleVithis,
+                  totalModuleItems: totalModuleItems,
                 ),
                 // Tab 2: Blur/Reveal Active Recall
                 _BlurRevealTab(
                   module: widget.moduleData,
                   cittas: moduleCittas,
                   cetasikas: moduleCetasikas,
+                  kammas: moduleKammas,
+                  paticcas: modulePaticcas,
+                  rupas: moduleRupas,
+                  vithis: moduleVithis,
                   revealedItems: _revealedItems,
                   onReveal: (id) => setState(() => _revealedItems.add(id)),
                   onResetAll: () => setState(() => _revealedItems.clear()),
                 ),
                 // Tab 3: Quiz entry point
-                _QuizTab(module: widget.moduleData),
+                _QuizTab(module: widget.moduleData, totalItems: totalModuleItems),
               ],
             ),
     );
@@ -147,6 +186,50 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
     final lookup = {for (final c in allCetasikas) c.id: c};
     return ids.map((id) => lookup[id]).whereType<CetasikaModel>().toList();
   }
+
+  /// M6 hiện học toàn bộ bảng phân loại Nghiệp có trong dataset.
+  static List<KammaModel> _filterKammas({
+    required List<KammaModel> allKammas,
+    required String moduleId,
+  }) {
+    if (moduleId != 'M6_NGHIEP') return const [];
+    final items = List<KammaModel>.from(allKammas);
+    items.sort((a, b) => a.orderIndex.compareTo(b.orderIndex));
+    return items;
+  }
+
+  /// M8 hiện học toàn bộ 12 chi Nhân duyên có trong dataset.
+  static List<PaticcaModel> _filterPaticcas({
+    required List<PaticcaModel> allPaticcas,
+    required String moduleId,
+  }) {
+    if (moduleId != 'M8_NHAN_DUYEN') return const [];
+    final items = List<PaticcaModel>.from(allPaticcas);
+    items.sort((a, b) => a.order.compareTo(b.order));
+    return items;
+  }
+
+  /// M9 hiện học toàn bộ 28 Sắc pháp có trong dataset.
+  static List<RupaModel> _filterRupas({
+    required List<RupaModel> allRupas,
+    required String moduleId,
+  }) {
+    if (moduleId != 'M9_SAC_PHAP') return const [];
+    final items = List<RupaModel>.from(allRupas);
+    items.sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
+    return items;
+  }
+
+  /// M10 hiện học toàn bộ các mẫu Lộ trình tâm có trong dataset.
+  static List<VithiModel> _filterVithis({
+    required List<VithiModel> allVithis,
+    required String moduleId,
+  }) {
+    if (moduleId != 'M10_LO_TRINH') return const [];
+    final items = List<VithiModel>.from(allVithis);
+    items.sort((a, b) => a.orderIndex.compareTo(b.orderIndex));
+    return items;
+  }
 }
 
 // ─── Tab 1: Study ────────────────────────────────────────────────────────────
@@ -155,23 +238,37 @@ class _StudyTab extends StatelessWidget {
   final StudyModule module;
   final List<CittaModel> cittas;
   final List<CetasikaModel> cetasikas;
+  final List<KammaModel> kammas;
+  final List<PaticcaModel> paticcas;
+  final List<RupaModel> rupas;
+  final List<VithiModel> vithis;
+  final int totalModuleItems;
 
   const _StudyTab({
     required this.module,
     required this.cittas,
     required this.cetasikas,
+    required this.kammas,
+    required this.paticcas,
+    required this.rupas,
+    required this.vithis,
+    required this.totalModuleItems,
   });
 
   @override
   Widget build(BuildContext context) {
     final color = Color(module.colorCode);
-    final hasContent = cittas.isNotEmpty || cetasikas.isNotEmpty;
+    final hasContent = totalModuleItems > 0;
 
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
         // ── Module Header Card ───────────────────────────────────────────
-        _ModuleHeaderCard(module: module, color: color),
+        _ModuleHeaderCard(
+          module: module,
+          color: color,
+          extraItemCount: totalModuleItems - cittas.length - cetasikas.length,
+        ),
         const SizedBox(height: 20),
 
         // ── Empty state ──────────────────────────────────────────────────
@@ -218,6 +315,72 @@ class _StudyTab extends StatelessWidget {
             ...cetasikas.map(
               (cs) => _CetasikaStudyCard(cetasika: cs, color: color),
             ),
+            const SizedBox(height: 16),
+          ],
+
+          // ── Nghiệp / Nhân duyên / Sắc pháp / Lộ trình tâm ─────────────
+          if (kammas.isNotEmpty) ...[
+            _SectionHeader(
+              _moduleSectionTitle(context, vi: 'Nghiệp', en: 'Kamma', count: kammas.length),
+              color,
+            ),
+            ...kammas.map(
+              (item) => _GenericStudyCard(
+                symbol: '⚖️',
+                title: item.localizedName(context),
+                pali: item.namePali,
+                description: item.localizedDescription(context),
+                color: color,
+              ),
+            ),
+            const SizedBox(height: 16),
+          ],
+          if (paticcas.isNotEmpty) ...[
+            _SectionHeader(
+              _moduleSectionTitle(context, vi: 'Nhân duyên', en: 'Dependent origination', count: paticcas.length),
+              color,
+            ),
+            ...paticcas.map(
+              (item) => _GenericStudyCard(
+                symbol: '🔄',
+                title: item.localizedName(context),
+                pali: item.namePali,
+                description: item.localizedDescription(context),
+                color: color,
+              ),
+            ),
+            const SizedBox(height: 16),
+          ],
+          if (rupas.isNotEmpty) ...[
+            _SectionHeader(
+              _moduleSectionTitle(context, vi: 'Sắc pháp', en: 'Material phenomena', count: rupas.length),
+              color,
+            ),
+            ...rupas.map(
+              (item) => _GenericStudyCard(
+                symbol: '🧱',
+                title: item.localizedName(context),
+                pali: item.namePali,
+                description: item.localizedDescription(context),
+                color: color,
+              ),
+            ),
+            const SizedBox(height: 16),
+          ],
+          if (vithis.isNotEmpty) ...[
+            _SectionHeader(
+              _moduleSectionTitle(context, vi: 'Lộ trình tâm', en: 'Cognitive processes', count: vithis.length),
+              color,
+            ),
+            ...vithis.map(
+              (item) => _GenericStudyCard(
+                symbol: '📊',
+                title: item.localizedName(context),
+                pali: item.namePali,
+                description: item.localizedDescription(context),
+                color: color,
+              ),
+            ),
           ],
         ],
 
@@ -233,6 +396,10 @@ class _BlurRevealTab extends StatelessWidget {
   final StudyModule module;
   final List<CittaModel> cittas;
   final List<CetasikaModel> cetasikas;
+  final List<KammaModel> kammas;
+  final List<PaticcaModel> paticcas;
+  final List<RupaModel> rupas;
+  final List<VithiModel> vithis;
   final Set<String> revealedItems;
   final void Function(String) onReveal;
   final VoidCallback onResetAll;
@@ -241,6 +408,10 @@ class _BlurRevealTab extends StatelessWidget {
     required this.module,
     required this.cittas,
     required this.cetasikas,
+    required this.kammas,
+    required this.paticcas,
+    required this.rupas,
+    required this.vithis,
     required this.revealedItems,
     required this.onReveal,
     required this.onResetAll,
@@ -275,6 +446,62 @@ class _BlurRevealTab extends StatelessWidget {
             c.vedana.localizedName(context.l10n),
             c.namePali,
           ),
+        ),
+      ),
+      ...kammas.map(
+        (item) => _RecallItem(
+          id: 'km_${item.id}',
+          hint: '⚖️',
+          question: _reviewPrompt(
+            context,
+            viType: 'nghiệp',
+            enType: 'kamma',
+            name: item.localizedName(context),
+            pali: item.namePali,
+          ),
+          answer: item.localizedDescription(context),
+        ),
+      ),
+      ...paticcas.map(
+        (item) => _RecallItem(
+          id: 'pd_${item.id}',
+          hint: '🔄',
+          question: _reviewPrompt(
+            context,
+            viType: 'chi nhân duyên',
+            enType: 'dependent-origination link',
+            name: item.localizedName(context),
+            pali: item.namePali,
+          ),
+          answer: item.localizedDescription(context),
+        ),
+      ),
+      ...rupas.map(
+        (item) => _RecallItem(
+          id: 'rp_${item.id}',
+          hint: '🧱',
+          question: _reviewPrompt(
+            context,
+            viType: 'sắc pháp',
+            enType: 'material phenomenon',
+            name: item.localizedName(context),
+            pali: item.namePali,
+          ),
+          answer: item.localizedDescription(context),
+        ),
+      ),
+      ...vithis.map(
+        (item) => _RecallItem(
+          id: 'vt_${item.id}',
+          hint: '📊',
+          question: _reviewPrompt(
+            context,
+            viType: 'lộ trình tâm',
+            enType: 'cognitive process',
+            name: item.localizedName(context),
+            pali: item.namePali,
+          ),
+          answer: item.localizedDescription(context),
         ),
       ),
     ];
@@ -562,12 +789,12 @@ class _BlurRevealCard extends StatelessWidget {
 
 class _QuizTab extends StatelessWidget {
   final StudyModule module;
-  const _QuizTab({required this.module});
+  final int totalItems;
+  const _QuizTab({required this.module, required this.totalItems});
 
   @override
   Widget build(BuildContext context) {
     final color = Color(module.colorCode);
-    final totalItems = module.cittaIds.length + module.cetasikaIds.length;
 
     return Center(
       child: Padding(
@@ -644,8 +871,13 @@ class _QuizTab extends StatelessWidget {
 class _ModuleHeaderCard extends StatelessWidget {
   final StudyModule module;
   final Color color;
+  final int extraItemCount;
 
-  const _ModuleHeaderCard({required this.module, required this.color});
+  const _ModuleHeaderCard({
+    required this.module,
+    required this.color,
+    this.extraItemCount = 0,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -697,19 +929,26 @@ class _ModuleHeaderCard extends StatelessWidget {
           ],
           const SizedBox(height: 10),
           // Stats row
-          Row(
+          Wrap(
+            spacing: 8,
+            runSpacing: 6,
             children: [
               _StatChip(
                 icon: Icons.psychology_rounded,
                 label: context.l10n.cittasCount(module.cittaIds.length),
                 color: color,
               ),
-              const SizedBox(width: 8),
               _StatChip(
                 icon: Icons.auto_awesome_rounded,
                 label: context.l10n.cetasikasCount(module.cetasikaIds.length),
                 color: color,
               ),
+              if (extraItemCount > 0)
+                _StatChip(
+                  icon: Icons.library_books_rounded,
+                  label: context.l10n.moduleContentCount(extraItemCount),
+                  color: color,
+                ),
             ],
           ),
         ],
@@ -774,6 +1013,106 @@ class _SectionHeader extends StatelessWidget {
           color: color,
           letterSpacing: 0.2,
         ),
+      ),
+    );
+  }
+}
+
+String _moduleSectionTitle(
+  BuildContext context, {
+  required String vi,
+  required String en,
+  required int count,
+}) {
+  final label = context.usesEnglishContent ? en : vi;
+  return '$label — $count';
+}
+
+String _reviewPrompt(
+  BuildContext context, {
+  required String viType,
+  required String enType,
+  required String name,
+  required String pali,
+}) {
+  if (context.usesEnglishContent) {
+    return 'What should you remember about the $enType “$name” ($pali)?';
+  }
+  return 'Cần ghi nhớ gì về $viType “$name” ($pali)?';
+}
+
+// ─── Generic domain Study Card ───────────────────────────────────────────────
+
+class _GenericStudyCard extends StatelessWidget {
+  final String symbol;
+  final String title;
+  final String pali;
+  final String description;
+  final Color color;
+
+  const _GenericStudyCard({
+    required this.symbol,
+    required this.title,
+    required this.pali,
+    required this.description,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(13),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.05),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: color.withOpacity(0.2)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: color.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Text(symbol, style: const TextStyle(fontSize: 22)),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                if (pali.isNotEmpty)
+                  Text(
+                    pali,
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontStyle: FontStyle.italic,
+                      color: color,
+                    ),
+                  ),
+                const SizedBox(height: 6),
+                Text(
+                  description,
+                  style: const TextStyle(
+                    fontSize: 13,
+                    height: 1.5,
+                    color: Colors.black87,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

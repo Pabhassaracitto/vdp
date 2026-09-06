@@ -26,6 +26,7 @@ enum QuizQuestionType {
   cittaVedana, // Tâm A có thọ gì?
   conflictDetect, // Tâm Sở A và B có thể cùng xuất hiện không?
   cittaBhumi, // Tâm A thuộc cõi nào?
+  moduleContent, // Nội dung module ngoài Tâm/Tâm sở (Nghiệp/Sắc/Lộ trình...)
 }
 
 // ─── Model (public — dùng bởi QuizGeneratorService) ──────────────────────────
@@ -493,6 +494,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         QuizQuestionType.cittaVedana => context.l10n.quizTypeFeeling,
         QuizQuestionType.conflictDetect => context.l10n.quizTypeConflict,
         QuizQuestionType.cittaBhumi => context.l10n.quizTypeSphere,
+        QuizQuestionType.moduleContent => context.l10n.learnTab,
       };
 }
 
