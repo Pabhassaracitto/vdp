@@ -1,4 +1,5 @@
-name: Flutter Full Build - Android, iOS, Windows, Linux, Web
+name: VDP | Flutter Full Build - Android, iOS, Windows, Linux, Web
+
 on:
   push:
     tags:
@@ -33,11 +34,14 @@ on:
         description: 'Release version tag (e.g., v1.0)'
         type: string
         default: 'v0.1'
+
 permissions:
   contents: write
+
 env:
   RELEASE_VERSION: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.version || github.ref_name }}
   CHECKOUT_REF: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.branch || github.ref }}
+
 jobs:
   build-android:
     name: Build Android APK
@@ -49,36 +53,45 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECKOUT_REF }}
+
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           cache: true
+
       - name: Create empty asset directories if missing
         run: mkdir -p assets/animations assets/audio assets/data
+
       - name: Get dependencies
         run: flutter pub get
+
       - name: Generate launcher icons
         run: dart run flutter_launcher_icons || true
+
       - name: Build APK and rename safely
         shell: bash
         run: |
           set -euo pipefail
           CLEAN_VERSION=$(printf '%s' "$RELEASE_VERSION" | sed 's#[/\\:]#-#g')
+
           flutter build apk --release --target-platform android-arm64
           test -f build/app/outputs/flutter-apk/app-release.apk
           mv build/app/outputs/flutter-apk/app-release.apk "build/app/outputs/flutter-apk/VDP-Android-ARM64-${CLEAN_VERSION}.apk"
+
       - name: Upload Android artifact
         uses: actions/upload-artifact@v4
         with:
           name: VDP-Android-APK
           path: build/app/outputs/flutter-apk/VDP-Android-ARM64-*.apk
           if-no-files-found: error
+
   build-windows:
     name: Build Windows App
     continue-on-error: true
@@ -89,41 +102,51 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECKOUT_REF }}
+
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           cache: false
+
       - name: Enable Windows desktop
         run: flutter config --enable-windows-desktop
+
       - name: Create empty asset directories if missing
         shell: bash
         run: mkdir -p assets/animations assets/audio assets/data
+
       - name: Get dependencies
         run: flutter pub get
+
       - name: Build Windows
         shell: bash
         run: flutter build windows --release
+
       - name: Zip Windows build safely
         shell: powershell
         run: |
           $cleanVersion = $env:RELEASE_VERSION -replace '[/\\:]', '-'
           $releaseDir = "$env:GITHUB_WORKSPACE\build\windows\x64\runner\Release"
           $zipPath = "$env:GITHUB_WORKSPACE\VDP-Windows-x64-$cleanVersion.zip"
+
           if (Test-Path "$releaseDir\*.exe") {
             Compress-Archive -Path "$releaseDir\*" -DestinationPath $zipPath -Force
           } else {
             Write-Host "No Windows release executable found in $releaseDir"
             exit 1
           }
+
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
         with:
           name: VDP-Windows-ZIP
           path: VDP-Windows-x64-*.zip
           if-no-files-found: error
+
   build-ios:
     name: Build iOS IPA (no codesign)
     continue-on-error: true
@@ -134,85 +157,108 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECKOUT_REF }}
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           cache: true
+
       - name: Create empty asset directories if missing
         run: mkdir -p assets/animations assets/audio assets/data
+
       - name: Disable Swift Package Manager if supported
         run: flutter config --no-enable-swift-package-manager || true
+
       - name: Precache iOS artifacts
         run: flutter precache --ios
+
       - name: Get dependencies
         run: flutter pub get
+
       - name: Generate launcher icons
         run: dart run flutter_launcher_icons || true
+
       - name: Ensure iOS Podfile deployment target
         shell: bash
         run: |
           set -euo pipefail
+
           if [ ! -f ios/Podfile ]; then
             flutter create . --platforms=ios
           fi
+
           python3 <<'PY'
           import re
           from pathlib import Path
+
           path = Path("ios/Podfile")
           if not path.exists():
               raise SystemExit("ios/Podfile not found")
+
           content = path.read_text()
           lines = content.splitlines()
           new_lines = []
           platform_done = False
+
           for line in lines:
               stripped = line.strip()
               if stripped.startswith("platform :ios") or stripped.startswith("# platform :ios"):
-                  new_lines.append("platform :ios, '14.0'")
+                  new_lines.append("platform :ios, '15.0'")
                   platform_done = True
               else:
                   new_lines.append(line)
+
           if not platform_done:
-              new_lines.insert(0, "platform :ios, '14.0'")
+              new_lines.insert(0, "platform :ios, '15.0'")
+
           content = "\n".join(new_lines) + "\n"
-          # If a deployment target exists but is lower, force it to 14.0.
+
+          # If a deployment target exists but is lower, force it to 15.0.
           content = re.sub(
               r"config\.build_settings\[['\"]IPHONEOS_DEPLOYMENT_TARGET['\"]\]\s*=\s*['\"][^'\"]+['\"]",
-              "config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'",
+              "config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'",
               content,
           )
-          target_line = "config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'"
+
+          target_line = "config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'"
           if target_line not in content:
               content = content.replace(
                   "flutter_additional_ios_build_settings(target)",
                   "flutter_additional_ios_build_settings(target)\n      " + target_line,
               )
+
           path.write_text(content)
           PY
+
       - name: Install CocoaPods
         run: |
           cd ios
           pod install --repo-update
+
       - name: Build iOS without codesign
         run: flutter build ios --release --no-codesign --no-pub
+
       - name: Create IPA safely
         shell: bash
         run: |
           set -euo pipefail
           CLEAN_VERSION=$(printf '%s' "$RELEASE_VERSION" | sed 's#[/\\:]#-#g')
+
           test -d build/ios/iphoneos/Runner.app
           rm -rf Payload
           mkdir -p Payload
           cp -R build/ios/iphoneos/Runner.app Payload/
           zip -r "VDP-iOS-NoCodesign-${CLEAN_VERSION}.ipa" Payload
           rm -rf Payload
+
       - name: Upload iOS artifact
         uses: actions/upload-artifact@v4
         with:
           name: VDP-iOS-IPA
           path: VDP-iOS-NoCodesign-*.ipa
           if-no-files-found: error
+
   build-linux:
     name: Build Linux App
     continue-on-error: true
@@ -223,37 +269,47 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECKOUT_REF }}
+
       - name: Install Linux dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y clang cmake ninja-build pkg-config zip libgtk-3-dev liblzma-dev libstdc++-12-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libjson-glib-dev
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           cache: true
+
       - name: Enable Linux desktop
         run: flutter config --enable-linux-desktop
+
       - name: Create empty asset directories if missing
         run: mkdir -p assets/animations assets/audio assets/data
+
       - name: Get dependencies
         run: flutter pub get
+
       - name: Build Linux
         run: flutter build linux --release
+
       - name: Zip Linux build safely
         shell: bash
         run: |
           set -euo pipefail
           CLEAN_VERSION=$(printf '%s' "$RELEASE_VERSION" | sed 's#[/\\:]#-#g')
+
           test -d build/linux/x64/release/bundle
           cd build/linux/x64/release/bundle
           zip -r "$GITHUB_WORKSPACE/VDP-Linux-x64-${CLEAN_VERSION}.zip" .
+
       - name: Upload Linux artifact
         uses: actions/upload-artifact@v4
         with:
           name: VDP-Linux-ZIP
           path: VDP-Linux-x64-*.zip
           if-no-files-found: error
+
   build-web:
     name: Build Web App
     continue-on-error: true
@@ -266,29 +322,36 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECKOUT_REF }}
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           cache: true
+
       - name: Get dependencies
         run: flutter pub get
+
       - name: Build Web
         run: flutter build web --release
+
       - name: Zip Web build safely
         shell: bash
         run: |
           set -euo pipefail
           CLEAN_VERSION=$(printf '%s' "$RELEASE_VERSION" | sed 's#[/\\:]#-#g')
+
           test -d build/web
           cd build/web
           zip -r "$GITHUB_WORKSPACE/VDP-Web-${CLEAN_VERSION}.zip" .
+
       - name: Upload Web artifact
         uses: actions/upload-artifact@v4
         with:
           name: VDP-Web-ZIP
           path: VDP-Web-*.zip
           if-no-files-found: error
+
   create-release:
     name: Create or Update Release
     needs: [build-android, build-windows, build-ios, build-linux, build-web]
@@ -300,6 +363,7 @@ jobs:
         continue-on-error: true
         with:
           path: artifacts
+
       - name: Check if any artifact exists
         id: check_artifacts
         shell: bash
@@ -309,6 +373,7 @@ jobs:
           else
             echo "has_files=false" >> "$GITHUB_OUTPUT"
           fi
+
       - name: Create or update GitHub Release
         if: steps.check_artifacts.outputs.has_files == 'true'
         uses: softprops/action-gh-release@v2
