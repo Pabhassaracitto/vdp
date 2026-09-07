@@ -193,9 +193,13 @@
   "@contentEnglish": {
     "description": "contentEnglish"
   },
-  "translationReviewNotice": "English Dhamma content is an international study translation. Pāḷi terms remain authoritative.",
+  "translationReviewNotice": "本語言的法義內容為國際學習譯本。巴利語術語仍為準據。",
   "@translationReviewNotice": {
     "description": "translationReviewNotice"
+  },
+  "contentDraftNotice": "此譯本為草稿，尚待教義審核。依用前請對照巴利原文核實。",
+  "@contentDraftNotice": {
+    "description": "contentDraftNotice"
   },
   "settingsAccessibility": "輔助使用",
   "@settingsAccessibility": {

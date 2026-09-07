@@ -57,3 +57,9 @@ macos/
 /.grapuco/config.json
 # Extracted plain text from reference/*.pdf (regenerate with tool/extract_pdf_text.py)
 .pdfextract/
+
+# Translation worksheets (regenerate with tool/content/init_locale.py).
+# These are large TODO scaffolds, not deliverables; only the --strip output in
+# assets/content/ ships. Translators who want to hand a worksheet around should
+# share the single file, not commit 3.7 MB of placeholders.
+/l10n_work/

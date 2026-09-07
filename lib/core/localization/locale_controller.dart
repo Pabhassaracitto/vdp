@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'content_languages.dart';
+
 const _uiLocalePreferenceKey = 'abhidhamma_ui_locale';
 const _contentLocalePreferenceKey = 'abhidhamma_content_locale';
 
@@ -37,12 +39,20 @@ class LocaleSettingsController extends StateNotifier<LocaleSettings> {
   LocaleSettingsController()
       : super(LocaleSettings(
           uiLocale: null,
-          contentLocale:
-              ui.PlatformDispatcher.instance.locale.languageCode == 'vi'
-                  ? 'vi'
-                  : 'en',
+          contentLocale: _deviceContentLocale(),
         )) {
     _load();
+  }
+
+  /// Best content language for this device, honouring the registry so a locale
+  /// is only auto-selected once its content has actually shipped.
+  static String _deviceContentLocale() {
+    final locale = ui.PlatformDispatcher.instance.locale;
+    return defaultContentLocaleFor(
+      languageCode: locale.languageCode,
+      countryCode: locale.countryCode,
+      scriptCode: locale.scriptCode,
+    );
   }
 
   Future<void> _load() async {
@@ -50,10 +60,13 @@ class LocaleSettingsController extends StateNotifier<LocaleSettings> {
     final savedUiTag = prefs.getString(_uiLocalePreferenceKey);
     final savedContent = prefs.getString(_contentLocalePreferenceKey);
 
+    // A saved language that has since been withdrawn (e.g. a draft pulled for
+    // doctrinal review) must not strand the learner on missing content.
+    final saved = contentLanguageFor(savedContent);
     state = LocaleSettings(
       uiLocale: AppLanguage.fromTag(savedUiTag)?.locale,
-      contentLocale: savedContent == 'vi' || savedContent == 'en'
-          ? savedContent!
+      contentLocale: saved != null && saved.isSelectable
+          ? saved.tag
           : state.contentLocale,
       loaded: true,
     );
@@ -75,11 +88,16 @@ class LocaleSettingsController extends StateNotifier<LocaleSettings> {
     }
   }
 
+  /// Switches the study-content language.
+  ///
+  /// Silently ignores tags that are not selectable, so a stale deep link or an
+  /// old preference can never point the catalog at a file that does not exist.
   Future<void> setContentLocale(String languageCode) async {
-    if (languageCode != 'vi' && languageCode != 'en') return;
-    state = state.copyWith(contentLocale: languageCode);
+    final language = contentLanguageFor(languageCode);
+    if (language == null || !language.isSelectable) return;
+    state = state.copyWith(contentLocale: language.tag);
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_contentLocalePreferenceKey, languageCode);
+    await prefs.setString(_contentLocalePreferenceKey, language.tag);
   }
 }
 

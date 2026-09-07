@@ -157,7 +157,11 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get translationReviewNotice =>
-      'English Dhamma content is an international study translation. Pāḷi terms remain authoritative.';
+      'මෙම භාෂාවේ ධම්ම අන්තර්ගතය ජාත්‍යන්තර අධ්‍යයන පරිවර්තනයකි. පාළි යෙදුම් ප්‍රමාණික ලෙස පවතී.';
+
+  @override
+  String get contentDraftNotice =>
+      'මෙම පරිවර්තනය ධර්ම සමාලෝචනය බලාපොරොත්තුවෙන් සිටින කෙටුම්පතකි. විශ්වාස කිරීමට පෙර පාළි සමඟ පරීක්ෂා කරන්න.';
 
   @override
   String get settingsAccessibility => 'ප්‍රවේශ්‍යතාව';

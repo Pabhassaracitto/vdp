@@ -193,9 +193,13 @@
   "@contentEnglish": {
     "description": "contentEnglish"
   },
-  "translationReviewNotice": "English Dhamma content is an international study translation. Pāḷi terms remain authoritative.",
+  "translationReviewNotice": "Dhamma content in this language is an international study translation. Pāḷi terms remain authoritative.",
   "@translationReviewNotice": {
     "description": "translationReviewNotice"
+  },
+  "contentDraftNotice": "This translation is a draft awaiting doctrinal review. Verify against the Pāḷi before relying on it.",
+  "@contentDraftNotice": {
+    "description": "contentDraftNotice"
   },
   "settingsAccessibility": "إمكانية الوصول",
   "@settingsAccessibility": {

@@ -424,8 +424,14 @@ abstract class AppLocalizations {
   /// translationReviewNotice
   ///
   /// In en, this message translates to:
-  /// **'English Dhamma content is an international study translation. Pāḷi terms remain authoritative.'**
+  /// **'Dhamma content in this language is an international study translation. Pāḷi terms remain authoritative.'**
   String get translationReviewNotice;
+
+  /// contentDraftNotice
+  ///
+  /// In en, this message translates to:
+  /// **'This translation is a draft awaiting doctrinal review. Verify against the Pāḷi before relying on it.'**
+  String get contentDraftNotice;
 
   /// settingsAccessibility
   ///
