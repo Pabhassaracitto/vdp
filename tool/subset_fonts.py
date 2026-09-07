@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ARB = ROOT / "lib" / "l10n"
+CONTENT = ROOT / "assets" / "content"
 OUT = ROOT / "assets" / "fonts" / "subsets"
 CACHE = Path("/tmp/abhidhamma_noto_sources")
 
@@ -51,6 +52,23 @@ def github_file(directory: str, filename: str) -> Path:
     return destination
 
 
+def collect_strings(node) -> list[str]:
+    """Every string anywhere in a decoded JSON document."""
+    if isinstance(node, str):
+        return [node]
+    if isinstance(node, list):
+        return [s for item in node for s in collect_strings(item)]
+    if isinstance(node, dict):
+        return [
+            s
+            for key, value in node.items()
+            # `_src_*` blocks are translator scaffolding, never rendered.
+            if not str(key).startswith("_src")
+            for s in collect_strings(value)
+        ]
+    return []
+
+
 def text_for(locales: list[str]) -> str:
     values: list[str] = []
     for locale in locales:
@@ -59,6 +77,17 @@ def text_for(locales: list[str]) -> str:
             value for key, value in data.items()
             if not key.startswith("@") and isinstance(value, str)
         )
+
+        # Study content is far larger than the UI and introduces glyphs the ARB
+        # never used — a Japanese lesson needs hundreds of kanji that no button
+        # label contains. Subsetting from the ARB alone renders that content as
+        # tofu boxes, so every shipped content_<locale>.json feeds the subset
+        # for its script.
+        content_file = CONTENT / f"content_{locale}.json"
+        if content_file.exists():
+            values.extend(
+                collect_strings(json.loads(content_file.read_text(encoding="utf-8")))
+            )
     # Native language names and Pāḷi diacritics are shared across every
     # picker. Supplying them to every source is harmless: pyftsubset retains
     # only glyphs that actually exist in that source font.

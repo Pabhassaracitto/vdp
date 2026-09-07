@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../l10n/l10n.dart';
+import 'content_languages.dart';
 import 'locale_controller.dart';
 
 class LanguageSettingsSection extends ConsumerWidget {
@@ -10,6 +11,10 @@ class LanguageSettingsSection extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final settings = ref.watch(localeSettingsProvider);
+    // Fall back to English rather than crashing if a preference somehow holds
+    // a tag that is no longer in the registry.
+    final activeContent = contentLanguageFor(settings.contentLocale) ??
+        contentLanguageFor('en')!;
     final currentLanguage = settings.uiLocale == null
         ? context.l10n.systemDefault
         : AppLanguage.fromTag(
@@ -36,16 +41,22 @@ class LanguageSettingsSection extends ConsumerWidget {
           subtitle: Text(context.l10n.contentLanguageSubtitle),
           trailing: DropdownButtonHideUnderline(
             child: DropdownButton<String>(
-              value: settings.contentLocale,
+              value: activeContent.tag,
+              // Endonyms are stable across every UI locale, so the learner can
+              // always recognise their own language here.
               items: [
-                DropdownMenuItem(
-                  value: 'vi',
-                  child: Text(context.l10n.contentVietnamese),
-                ),
-                DropdownMenuItem(
-                  value: 'en',
-                  child: Text(context.l10n.contentEnglish),
-                ),
+                for (final language in selectableContentLanguages)
+                  DropdownMenuItem(
+                    value: language.tag,
+                    child: Directionality(
+                      textDirection: TextDirection.ltr,
+                      child: Text(
+                        language.statusBadge == null
+                            ? language.nativeName
+                            : '${language.nativeName} · ${language.statusBadge}',
+                      ),
+                    ),
+                  ),
               ],
               onChanged: (value) {
                 if (value != null) {
@@ -57,11 +68,17 @@ class LanguageSettingsSection extends ConsumerWidget {
             ),
           ),
         ),
-        if (settings.contentLocale == 'en')
+        // Any content language other than the Vietnamese source is a
+        // translation, so the Pāḷi-is-authoritative notice applies to all of
+        // them. Draft languages get the stronger unreviewed warning.
+        if (activeContent.status != ContentTranslationStatus.source)
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(72, 0, 20, 12),
             child: Text(
-              context.l10n.translationReviewNotice,
+              activeContent.needsReviewWarning
+                  ? '${context.l10n.contentDraftNotice}\n'
+                      '${context.l10n.translationReviewNotice}'
+                  : context.l10n.translationReviewNotice,
               style: Theme.of(context).textTheme.bodySmall,
             ),
           ),

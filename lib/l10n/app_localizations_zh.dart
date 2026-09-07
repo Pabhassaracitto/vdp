@@ -156,8 +156,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get contentEnglish => '英语';
 
   @override
-  String get translationReviewNotice =>
-      'English Dhamma content is an international study translation. Pāḷi terms remain authoritative.';
+  String get translationReviewNotice => '本语言的法义内容为国际学习译本。巴利语术语仍为准据。';
+
+  @override
+  String get contentDraftNotice => '此译本为草稿，尚待教义审核。依用前请对照巴利原文核实。';
 
   @override
   String get settingsAccessibility => '无障碍';
@@ -1084,8 +1086,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get contentEnglish => '英語';
 
   @override
-  String get translationReviewNotice =>
-      'English Dhamma content is an international study translation. Pāḷi terms remain authoritative.';
+  String get translationReviewNotice => '本語言的法義內容為國際學習譯本。巴利語術語仍為準據。';
+
+  @override
+  String get contentDraftNotice => '此譯本為草稿，尚待教義審核。依用前請對照巴利原文核實。';
 
   @override
   String get settingsAccessibility => '輔助使用';

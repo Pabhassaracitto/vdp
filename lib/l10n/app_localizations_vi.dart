@@ -158,7 +158,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get translationReviewNotice =>
-      'Nội dung giáo lý tiếng Anh là bản dịch học tập quốc tế. Thuật ngữ Pāḷi vẫn là căn cứ chính.';
+      'Nội dung giáo lý ở ngôn ngữ này là bản dịch học tập quốc tế. Thuật ngữ Pāḷi vẫn là căn cứ chính.';
+
+  @override
+  String get contentDraftNotice =>
+      'Bản dịch này là bản nháp, đang chờ duyệt giáo lý. Hãy đối chiếu với Pāḷi trước khi sử dụng.';
 
   @override
   String get settingsAccessibility => 'Trợ năng';

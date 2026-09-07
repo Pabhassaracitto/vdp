@@ -9,13 +9,16 @@
 - Giao diện hỗ trợ 26 locale: `vi`, `en`, `zh`, `zh_TW`, `hi`, `my`,
   `si`, `ar`, `bn`, `bo`, `de`, `es`, `fr`, `id`, `it`, `ja`, `km`, `ko`,
   `lo`, `mn`, `mr`, `pt`, `ru`, `ta`, `te`, `th`.
-- Nội dung học hỗ trợ tiếng Việt và tiếng Anh; ngôn ngữ nội dung độc lập với
-  ngôn ngữ giao diện.
+- Nội dung học hiện có tiếng Việt (nguồn) và tiếng Anh; ngôn ngữ nội dung
+  **độc lập** với ngôn ngữ giao diện.
+- 5 ngôn ngữ nội dung ưu tiên đang triển khai — Hindi, Chinese, Sinhala,
+  Myanmar, Nhật: xem [`doc/localization_content_plan.md`](doc/localization_content_plan.md).
 - Mặc định theo ngôn ngữ thiết bị và cho phép chọn thủ công trong Cài đặt.
 - Pāḷi, ID và quan hệ giáo lý không bị thay đổi khi chuyển ngôn ngữ.
-- Font Noto được subset theo glyph UI và bundle sẵn để hoạt động offline.
+- Font Noto được subset theo glyph thực dùng (UI **và** nội dung) và bundle sẵn
+  để hoạt động offline.
 
-Kiểm tra tính toàn vẹn tài nguyên:
+Kiểm tra tính toàn vẹn tài nguyên (bao gồm cả bản dịch nội dung):
 
 ```bash
 python3 tool/check_localizations.py
@@ -26,6 +29,15 @@ Tạo lại bản tiếng Anh có cấu trúc và font subset sau khi sửa tài
 ```bash
 python3 tool/generate_english_content.py
 python3 tool/subset_fonts.py  # cần fonttools và GitHub CLI
+```
+
+Thêm một ngôn ngữ nội dung mới — xem [`tool/content/README.md`](tool/content/README.md):
+
+```bash
+python3 tool/content/build_glossary.py            # chốt thuật ngữ Pāḷi trước
+python3 tool/content/init_locale.py hi            # sinh worksheet dịch
+python3 tool/content/check_content_locale.py hi --glossary
+python3 tool/content/init_locale.py hi --strip    # đưa vào bản phát hành
 ```
 
 ---

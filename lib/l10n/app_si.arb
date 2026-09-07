@@ -193,9 +193,13 @@
   "@contentEnglish": {
     "description": "contentEnglish"
   },
-  "translationReviewNotice": "English Dhamma content is an international study translation. Pāḷi terms remain authoritative.",
+  "translationReviewNotice": "මෙම භාෂාවේ ධම්ම අන්තර්ගතය ජාත්‍යන්තර අධ්‍යයන පරිවර්තනයකි. පාළි යෙදුම් ප්‍රමාණික ලෙස පවතී.",
   "@translationReviewNotice": {
     "description": "translationReviewNotice"
+  },
+  "contentDraftNotice": "මෙම පරිවර්තනය ධර්ම සමාලෝචනය බලාපොරොත්තුවෙන් සිටින කෙටුම්පතකි. විශ්වාස කිරීමට පෙර පාළි සමඟ පරීක්ෂා කරන්න.",
+  "@contentDraftNotice": {
+    "description": "contentDraftNotice"
   },
   "settingsAccessibility": "ප්‍රවේශ්‍යතාව",
   "@settingsAccessibility": {

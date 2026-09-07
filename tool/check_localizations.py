@@ -52,21 +52,77 @@ def main() -> int:
     content = json.loads(
         (ROOT / "assets" / "content" / "content_en.json").read_text(encoding="utf-8")
     )
+    # Counts are derived from assets/data rather than hardcoded, so this never
+    # drifts when the dataset grows (kammas went 12 -> 16 when the fourth
+    # Kammacatukka group was added, and this check silently broke).
+    data_dir = ROOT / "assets" / "data"
     expected_counts = {
-        "cittas": 121, "cetasikas": 52, "rupas": 28, "kammas": 12,
-        "paticcas": 12, "vithis": 4, "studyModules": 10,
+        section: len(json.loads((data_dir / filename).read_text(encoding="utf-8"))[key])
+        for section, (filename, key) in {
+            "cittas": ("cittas.json", "cittas"),
+            "cetasikas": ("cetasikas.json", "cetasikas"),
+            "rupas": ("rupas.json", "rupas"),
+            "kammas": ("kammas.json", "kammas"),
+            "paticcas": ("paticca.json", "paticcas"),
+            "vithis": ("vithis.json", "vithis"),
+        }.items()
     }
+    expected_counts["studyModules"] = 10
     for section, expected in expected_counts.items():
         actual = len(content.get(section, {}))
         if actual != expected:
             errors.append(f"English content {section}: expected {expected}, got {actual}")
 
+    errors.extend(check_content_locales())
+
     if errors:
         print("Localization integrity check failed:", file=sys.stderr)
         print("\n".join(f"- {error}" for error in errors), file=sys.stderr)
         return 1
-    print(f"OK: {len(files)} locales, {len(template_messages)} UI keys, vi/en content")
+    shipped = sorted(
+        path.stem.removeprefix("content_")
+        for path in (ROOT / "assets" / "content").glob("content_*.json")
+    )
+    print(
+        f"OK: {len(files)} locales, {len(template_messages)} UI keys, "
+        f"content [{', '.join(shipped)}]"
+    )
     return 0
+
+
+def check_content_locales() -> list[str]:
+    """Run the translation validator over every shipped content_*.json.
+
+    Keeps this script the single command a contributor has to remember: it now
+    covers UI resources *and* study-content translations. Only hard failures
+    are surfaced here; soft warnings are a reviewer concern, available via
+    `python3 tool/content/check_content_locale.py --all`.
+    """
+    sys.path.insert(0, str(ROOT / "tool" / "content"))
+    try:
+        import check_content_locale as validator
+    except Exception as error:  # pragma: no cover - defensive
+        return [f"could not load the content validator: {error}"]
+
+    content_dir = ROOT / "assets" / "content"
+    try:
+        source = json.loads(
+            (content_dir / "content_vi.json").read_text(encoding="utf-8")
+        )
+        entities = validator.load_vi_entities()
+    except Exception as error:  # pragma: no cover - defensive
+        return [f"could not load the Vietnamese source: {error}"]
+
+    errors: list[str] = []
+    for path in sorted(content_dir.glob("content_*.json")):
+        locale = path.stem.removeprefix("content_")
+        if locale == "vi":
+            continue  # the source of truth is not a translation of anything
+        report = validator.check_locale(
+            locale, str(path), source, entities, min_coverage=0.0
+        )
+        errors.extend(f"content {locale}: {message}" for message in report.hard)
+    return errors
 
 
 if __name__ == "__main__":
