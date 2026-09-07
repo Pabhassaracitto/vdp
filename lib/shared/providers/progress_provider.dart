@@ -76,6 +76,10 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
       : super(UserProgress(
           moduleProgress: const {},
           lastStudied: DateTime.now(),
+          // FIX: Mở khóa tất cả module ngay từ đầu để tránh lỗi
+          // "đã thêm đầy đủ tài liệu nhưng module vẫn báo chưa đủ dữ liệu"
+          // do bị khóa bởi prereq.
+          allModulesUnlocked: true,
         )) {
     _load();
   }

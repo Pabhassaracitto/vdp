@@ -1686,6 +1686,34 @@
       "description": "Accumulated kamma that produces a result when no stronger kamma takes priority.",
       "doctrinalNote": "Accumulated kamma that produces a result when no stronger kamma takes priority.",
       "examples": []
+    },
+    "KM_R_01": {
+      "name": "Unwholesome kamma",
+      "shortName": "Unwholesome",
+      "description": "Unwholesome kamma producing suffering - 12 unwholesome cittas produce 7 unwholesome rootless resultants and rebirth in 4 woeful planes.",
+      "doctrinalNote": "Akusala-kamma is the cause of dukkha, belonging to sense-sphere, resulting in woeful planes.",
+      "examples": []
+    },
+    "KM_R_02": {
+      "name": "Sense-sphere wholesome kamma",
+      "shortName": "Sense wholesome",
+      "description": "Wholesome sense-sphere kamma producing happy sense-sphere results - 8 great wholesome cittas produce 8 great resultants and 7 wholesome rootless, rebirth as human or 6 deva planes.",
+      "doctrinalNote": "Kusala Duggati: wholesome resulting in happy sense-sphere, foundation for all merit.",
+      "examples": []
+    },
+    "KM_R_03": {
+      "name": "Form-sphere wholesome kamma",
+      "shortName": "Form wholesome",
+      "description": "Wholesome form-sphere kamma (5 form jhanas) producing form-sphere results - rebirth in 16 Brahma form planes, result is 5 form-sphere resultant cittas.",
+      "doctrinalNote": "Rupavacara-kamma belongs to exalted, beyond sense-sphere, giving result corresponding to jhana attained.",
+      "examples": []
+    },
+    "KM_R_04": {
+      "name": "Supramundane kamma (Path kamma)",
+      "shortName": "Supramundane",
+      "description": "Supramundane kamma is the 4 Path cittas (Magga) - eradicating defilements and giving supramundane results as 4 Fruition cittas (Phala) and Nibbana, ending samsara.",
+      "doctrinalNote": "Lokuttara-kamma does not give rebirth in three planes but gives Nibbana - ultimate goal of VDP.",
+      "examples": []
     }
   },
   "paticcas": {
