@@ -110,8 +110,17 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           );
 
           if (!validation.isValid) {
+            // FIX: Dù validation fail vẫn giữ data để module không bị rỗng,
+            // chỉ đánh dấu validationFailed để UI có thể hiện cảnh báo.
+            // Trước đây return sớm làm data rỗng -> module báo "chưa đủ dữ liệu".
             state = state.copyWith(
               status: DataLoadStatus.validationFailed,
+              cittas: cittas,
+              cetasikas: cetasikas,
+              rupas: rupas,
+              kammas: kammas,
+              paticcas: paticcas,
+              vithis: vithis,
               validationResult: validation,
               errorMessage: 'Vi phạm quy tắc giáo lý:\n'
                   '${validation.errors.map((e) => '• ${e.message}').join('\n')}',
@@ -121,6 +130,29 @@ class VdpRepository extends StateNotifier<VdpDataState> {
         } catch (e) {
           // Validate lỗi → vẫn load, bỏ qua validate
         }
+      }
+
+      // FIX: Nếu tất cả đều rỗng thì báo lỗi rõ ràng, không để loaded rỗng
+      // làm module tưởng là đã load nhưng không có gì để tạo câu hỏi.
+      final allEmpty = cittas.isEmpty &&
+          cetasikas.isEmpty &&
+          rupas.isEmpty &&
+          kammas.isEmpty &&
+          paticcas.isEmpty &&
+          vithis.isEmpty;
+      if (allEmpty) {
+        state = state.copyWith(
+          status: DataLoadStatus.error,
+          cittas: cittas,
+          cetasikas: cetasikas,
+          rupas: rupas,
+          kammas: kammas,
+          paticcas: paticcas,
+          vithis: vithis,
+          validationResult: validation,
+          errorMessage: 'Chưa có dữ liệu — kiểm tra assets/data/ (6 files rỗng)',
+        );
+        return;
       }
 
       state = state.copyWith(

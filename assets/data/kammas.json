@@ -84,7 +84,12 @@
         "Nghiệp thiện dục giới → tục sinh làm người hay chư thiên",
         "Nghiệp đắc thiền → tục sinh làm Phạm Thiên"
       ],
-      "relatedCittaIds": ["CI_055", "CI_059", "CI_001", "CI_009"],
+      "relatedCittaIds": [
+        "CI_055",
+        "CI_059",
+        "CI_001",
+        "CI_009"
+      ],
       "doctrinalNote": "Janaka-kamma quyết định toàn bộ nền tảng đời sống."
     },
     {
@@ -153,7 +158,13 @@
         "THIỆN: Chứng đắc Nhị thiền → tục sinh cõi Phạm Thiên Nhị Thiền",
         "BẤT THIỆN: Phạm tội giết mẹ → địa ngục Avīci"
       ],
-      "relatedCittaIds": ["CI_080", "CI_081", "CI_082", "CI_083", "CI_084"],
+      "relatedCittaIds": [
+        "CI_080",
+        "CI_081",
+        "CI_082",
+        "CI_083",
+        "CI_084"
+      ],
       "doctrinalNote": "Garuka-kamma luôn cho quả tục sinh — không bao giờ Ahosi."
     },
     {
@@ -208,6 +219,97 @@
       ],
       "relatedCittaIds": [],
       "doctrinalNote": "Loại nghiệp yếu nhất nhưng chiếm phần lớn tổng lượng nghiệp của chúng ta."
+    },
+    {
+      "id": "KM_R_01",
+      "namePali": "Akusala-kamma",
+      "nameVietnamese": "Bất Thiện Nghiệp",
+      "nameShort": "Bất Thiện",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "akusala",
+      "orderIndex": 1,
+      "descriptionVi": "Nghiệp bất thiện cho quả khổ — 12 tâm bất thiện tạo 7 quả bất thiện vô nhân và tục sinh 4 cảnh khổ (địa ngục, ngạ quỷ, súc sanh, a-tu-la).",
+      "examples": [
+        "Sát sanh, trộm cắp, tà dâm, nói dối — cho quả tái sanh cảnh khổ",
+        "Tâm tham, sân, si tạo nghiệp bất thiện"
+      ],
+      "relatedCittaIds": [
+        "CI_001",
+        "CI_009",
+        "CI_011"
+      ],
+      "doctrinalNote": "Akusala-kamma là nhân của khổ đế, thuộc Dục giới, cho quả trong Dục giới khổ cảnh."
+    },
+    {
+      "id": "KM_R_02",
+      "namePali": "Kāmāvacara-kusala-kamma",
+      "nameVietnamese": "Dục Giới Thiện Nghiệp",
+      "nameShort": "Dục Thiện",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "kusala_duggati",
+      "orderIndex": 2,
+      "descriptionVi": "Nghiệp thiện Dục giới cho quả vui Dục giới — 8 tâm đại thiện tạo 8 đại quả và 7 quả thiện vô nhân, tục sinh làm người hoặc 6 cõi trời Dục giới.",
+      "examples": [
+        "Bố thí, trì giới, hành thiền Dục giới — cho quả người, trời Dục giới",
+        "Thập thiện nghiệp: thân 3, khẩu 4, ý 3"
+      ],
+      "relatedCittaIds": [
+        "CI_055",
+        "CI_056",
+        "CI_063"
+      ],
+      "doctrinalNote": "Kusala Duggati: thiện cho quả cõi vui Dục giới, nền tảng cho tất cả phước thiện."
+    },
+    {
+      "id": "KM_R_03",
+      "namePali": "Rūpāvacara-kusala-kamma",
+      "nameVietnamese": "Sắc Giới Thiện Nghiệp",
+      "nameShort": "Sắc Thiện",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "kusala_uggata",
+      "orderIndex": 3,
+      "descriptionVi": "Nghiệp thiện Sắc giới (5 tầng thiền Sắc) cho quả Sắc giới — tục sinh 16 cõi Phạm Thiên Sắc giới, quả là 5 tâm quả Sắc giới.",
+      "examples": [
+        "Chứng Sơ thiền Sắc giới → tục sinh cõi Phạm Chúng Thiên",
+        "Chứng Ngũ thiền → tục sinh cõi Quảng Quả Thiên"
+      ],
+      "relatedCittaIds": [
+        "CI_080",
+        "CI_081",
+        "CI_082",
+        "CI_083",
+        "CI_084"
+      ],
+      "doctrinalNote": "Rūpāvacara-kamma thuộc Đáo Đại, vượt khỏi Dục giới, cho quả tương ứng tầng thiền đã chứng."
+    },
+    {
+      "id": "KM_R_04",
+      "namePali": "Lokuttara-kamma / Magga-kamma",
+      "nameVietnamese": "Siêu Thế Nghiệp (Đạo Nghiệp)",
+      "nameShort": "Siêu Thế",
+      "byTime": null,
+      "byFunction": null,
+      "byPriority": null,
+      "byResult": "lokuttara",
+      "orderIndex": 4,
+      "descriptionVi": "Nghiệp Siêu thế là 4 tâm Đạo (Magga) — đoạn trừ phiền não và cho quả Siêu thế là 4 tâm Quả (Phala) và Niết Bàn, chấm dứt luân hồi.",
+      "examples": [
+        "Tu tập Bát Chánh Đạo chứng Sơ Đạo → đoạn 3 kiết sử, không còn đọa 4 khổ cảnh",
+        "Tứ Đạo cho Tứ Quả — con đường duy nhất thoát khổ"
+      ],
+      "relatedCittaIds": [
+        "CI_106",
+        "CI_107",
+        "CI_108",
+        "CI_109"
+      ],
+      "doctrinalNote": "Lokuttara-kamma không cho quả tục sinh trong tam giới mà cho quả Niết Bàn — mục đích tối hậu của VDP."
     }
   ]
 }

@@ -132,7 +132,8 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
           ],
         ),
       ),
-      body: dataState.status == DataLoadStatus.loading
+      body: dataState.status == DataLoadStatus.loading ||
+              dataState.status == DataLoadStatus.initial
           ? const Center(child: CircularProgressIndicator())
           : TabBarView(
               controller: _tabController,
@@ -274,9 +275,11 @@ class _StudyTab extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = Color(module.colorCode);
     final sections = lesson.sections;
-    // The module is "empty" only when there is neither authored lesson text
-    // nor any dataset entity to show.
-    final hasContent = totalModuleItems > 0 || sections.isNotEmpty;
+    // FIX: Module is empty only when there is neither authored lesson text
+    // (sections / reviewCards / quizSeeds) nor any dataset entity.
+    // Trước đây chỉ check sections, nên nếu tài liệu chỉ có quizSeeds/reviewCards
+    // mà không có sections thì vẫn bị coi là rỗng -> báo "chưa đủ dữ liệu".
+    final hasContent = totalModuleItems > 0 || lesson.isNotEmpty;
 
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -843,6 +846,10 @@ class _QuizTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = Color(module.colorCode);
+    // FIX: Tính tổng số mục thực tế có thể tạo câu hỏi (entity + seeds)
+    // để tránh hiển thị 0 khi tài liệu đã đầy đủ nhưng entity count =0 do
+    // repository chưa load xong.
+    final effectiveTotal = totalItems + seedCount;
 
     return Center(
       child: Padding(
@@ -866,7 +873,7 @@ class _QuizTab extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              context.l10n.moduleContentCount(totalItems),
+              context.l10n.moduleContentCount(effectiveTotal),
               style: TextStyle(
                 fontSize: 13,
                 color: Colors.grey.shade500,

@@ -217,9 +217,34 @@ final class QuizGeneratorService {
 
     // Q-Type 5: Generic module content for M6/M8/M9/M10.
     // Các câu hỏi vẫn lấy option trong chính module, không dùng toàn DB ngoài module.
+    // FIX: Thêm True/False fallback khi < 4 items để không bao giờ trả về rỗng.
     if (genericItems.isNotEmpty) {
+      if (genericItems.length >= _kMinItemsForMcq4) {
+        questions.addAll(
+          _generateGenericContentMcq(
+            items: genericItems,
+            rng: rng,
+            maxCount: _kMaxQuestions,
+            text: text,
+          ),
+        );
+      } else {
+        questions.addAll(
+          _generateGenericContentTrueFalse(
+            items: genericItems,
+            rng: rng,
+            maxCount: _kMaxQuestions,
+            text: text,
+          ),
+        );
+      }
+    }
+
+    // ── FIX: Nếu vẫn chưa có câu nào nhưng có generic items < min, thử mọi cách ─
+    // Đảm bảo module M10 (4 vithi) và M6 (16 kamma) luôn đủ dữ liệu.
+    if (questions.isEmpty && genericItems.isNotEmpty) {
       questions.addAll(
-        _generateGenericContentMcq(
+        _generateGenericContentTrueFalse(
           items: genericItems,
           rng: rng,
           maxCount: _kMaxQuestions,
@@ -821,6 +846,55 @@ final class QuizGeneratorService {
 
     return questions;
   }
+
+  // ── Q-Type 5b: Generic Content — True/False fallback (Safety Guard) ──────
+  // FIX: Khi module có < 4 items (ví dụ M10 chỉ 4 vithi, nếu thiếu 1 sẽ còn 3),
+  // vẫn tạo được câu hỏi True/False thay vì trả về rỗng.
+
+  static List<QuizQuestion> _generateGenericContentTrueFalse({
+    required List<_GenericQuizItem> items,
+    required Random rng,
+    required int maxCount,
+    required _QuizText text,
+  }) {
+    if (items.isEmpty) return const [];
+
+    final questions = <QuizQuestion>[];
+    final pool = List<_GenericQuizItem>.from(items)..shuffle(rng);
+
+    for (final item in pool.take(maxCount)) {
+      final makeCorrect = rng.nextBool();
+      final String claimedName;
+      final bool isTrue;
+
+      if (makeCorrect) {
+        claimedName = item.name;
+        isTrue = true;
+      } else {
+        final others = items.where((c) => c.id != item.id).toList()
+          ..shuffle(rng);
+        if (others.isEmpty) continue;
+        claimedName = others.first.name;
+        isTrue = false;
+      }
+
+      final opts = [text.l10n.trueLabel, text.l10n.falseLabel];
+
+      questions.add(QuizQuestion(
+        id: 'q_tf_content_${item.id}_${isTrue ? 't' : 'f'}',
+        questionText: text.genericContentClaim(
+          description: item.description,
+          claimedName: claimedName,
+        ),
+        options: opts,
+        correctIndex: isTrue ? 0 : 1,
+        type: QuizQuestionType.moduleContent,
+        explanation: text.genericContentExplanation(item),
+      ));
+    }
+
+    return questions;
+  }
 }
 
 class _GenericQuizItem {
@@ -926,6 +1000,16 @@ class _QuizText {
       return 'Which item matches this description?\n\n$description';
     }
     return 'Mô tả sau ứng với mục nào?\n\n$description';
+  }
+
+  String genericContentClaim({
+    required String description,
+    required String claimedName,
+  }) {
+    if (catalog.locale == 'en') {
+      return 'Does this description match "$claimedName"?\n\n$description';
+    }
+    return 'Mô tả sau có phải của "$claimedName" không?\n\n$description';
   }
 
   String genericContentExplanation(_GenericQuizItem item) {

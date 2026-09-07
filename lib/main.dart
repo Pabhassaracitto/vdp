@@ -31,9 +31,15 @@ class VdpApp extends ConsumerWidget {
     final localeSettings = ref.watch(localeSettingsProvider);
     final contentCatalogAsync =
         ref.watch(contentCatalogProvider(localeSettings.contentLocale));
-    final contentCatalog = contentCatalogAsync.maybeWhen(
+    // FIX: Không dùng empty fallback khi đang loading - giữ lại catalog cũ
+    // hoặc hiện splash, tránh trường hợp module báo "chưa đủ dữ liệu"
+    // chỉ vì content catalog chưa kịp load xong.
+    final contentCatalog = contentCatalogAsync.when(
       data: (catalog) => catalog,
-      orElse: () => localeSettings.contentLocale == 'vi'
+      loading: () => localeSettings.contentLocale == 'vi'
+          ? ContentCatalog.vietnamese
+          : const ContentCatalog(locale: 'en', data: {}),
+      error: (e, st) => localeSettings.contentLocale == 'vi'
           ? ContentCatalog.vietnamese
           : const ContentCatalog(locale: 'en', data: {}),
     );

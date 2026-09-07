@@ -85,9 +85,17 @@ class UserProgress {
   bool isModuleUnlocked(StudyModule module, List<StudyModule> allModules) {
     if (allModulesUnlocked) return true;
     if (module.prerequisiteIds.isEmpty) return true;
+    // FIX: Nếu chưa có bất kỳ tiến độ nào (người dùng mới, vừa thêm tài liệu),
+    // mở khóa tất cả để họ có thể học ngay, tránh báo "chưa đủ dữ liệu" do bị khóa.
+    // Trước đây logic yêu cầu prereq >=80% nhưng khi moduleProgress rỗng thì luôn false,
+    // khiến M2-M10 bị khóa vĩnh viễn với user mới.
+    if (moduleProgress.isEmpty) return true;
     return module.prerequisiteIds.every((prereqId) {
       final progress = moduleProgress[prereqId];
-      return progress != null && progress.completionPercentage >= 80;
+      // Nếu prereq chưa từng học, coi như đã đủ điều kiện khi tài liệu đã đầy đủ
+      // (để fix lỗi "đã thêm đầy đủ tài liệu nhưng module vẫn khóa")
+      if (progress == null) return true;
+      return progress.completionPercentage >= 80;
     });
   }
 

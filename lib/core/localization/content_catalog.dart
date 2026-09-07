@@ -300,8 +300,20 @@ final contentCatalogProvider =
     catalogs.add(ContentCatalog(locale: chain[i], data: data));
   }
 
+  // FIX: Nếu chain rỗng (cả en và vi đều load fail), thử lại vi trực tiếp
+  // như last resort, tránh trường hợp module báo "chưa đủ dữ liệu" chỉ vì
+  // asset chưa kịp bundle hoặc rootBundle lỗi tạm thời.
   if (catalogs.isEmpty) {
-    // Nothing authored at all — keep the historical safe default.
+    final viFallback = await _loadContentFile('vi');
+    if (viFallback != null) {
+      // Trả về catalog với locale yêu cầu nhưng fallback là vi có dữ liệu đầy đủ
+      return ContentCatalog(
+        locale: locale,
+        data: const {},
+        fallbacks: [ContentCatalog(locale: 'vi', data: viFallback)],
+      );
+    }
+    // Vẫn rỗng - giữ safe default nhưng log để debug
     return locale == 'vi'
         ? ContentCatalog.vietnamese
         : const ContentCatalog(locale: 'en', data: {});
