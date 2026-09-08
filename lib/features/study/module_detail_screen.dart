@@ -351,7 +351,7 @@ class _StudyTab extends StatelessWidget {
           // ── Nghiệp / Nhân duyên / Sắc pháp / Lộ trình tâm ─────────────
           if (kammas.isNotEmpty) ...[
             _SectionHeader(
-              _moduleSectionTitle(context, vi: 'Nghiệp', en: 'Kamma', count: kammas.length),
+              context.l10n.kammasInModule(kammas.length),
               color,
             ),
             ...kammas.map(
@@ -367,7 +367,7 @@ class _StudyTab extends StatelessWidget {
           ],
           if (paticcas.isNotEmpty) ...[
             _SectionHeader(
-              _moduleSectionTitle(context, vi: 'Nhân duyên', en: 'Dependent origination', count: paticcas.length),
+              context.l10n.paticcasInModule(paticcas.length),
               color,
             ),
             ...paticcas.map(
@@ -383,7 +383,7 @@ class _StudyTab extends StatelessWidget {
           ],
           if (rupas.isNotEmpty) ...[
             _SectionHeader(
-              _moduleSectionTitle(context, vi: 'Sắc pháp', en: 'Material phenomena', count: rupas.length),
+              context.l10n.rupasInModule(rupas.length),
               color,
             ),
             ...rupas.map(
@@ -399,7 +399,7 @@ class _StudyTab extends StatelessWidget {
           ],
           if (vithis.isNotEmpty) ...[
             _SectionHeader(
-              _moduleSectionTitle(context, vi: 'Lộ trình tâm', en: 'Cognitive processes', count: vithis.length),
+              context.l10n.vithisInModule(vithis.length),
               color,
             ),
             ...vithis.map(
@@ -494,12 +494,9 @@ class _BlurRevealTab extends StatelessWidget {
         (item) => _RecallItem(
           id: 'km_${item.id}',
           hint: '⚖️',
-          question: _reviewPrompt(
-            context,
-            viType: 'nghiệp',
-            enType: 'kamma',
-            name: item.localizedName(context),
-            pali: item.namePali,
+          question: context.l10n.reviewKammaQuestion(
+            item.localizedName(context),
+            item.namePali,
           ),
           answer: item.localizedDescription(context),
         ),
@@ -508,12 +505,9 @@ class _BlurRevealTab extends StatelessWidget {
         (item) => _RecallItem(
           id: 'pd_${item.id}',
           hint: '🔄',
-          question: _reviewPrompt(
-            context,
-            viType: 'chi nhân duyên',
-            enType: 'dependent-origination link',
-            name: item.localizedName(context),
-            pali: item.namePali,
+          question: context.l10n.reviewPaticcaQuestion(
+            item.localizedName(context),
+            item.namePali,
           ),
           answer: item.localizedDescription(context),
         ),
@@ -522,12 +516,9 @@ class _BlurRevealTab extends StatelessWidget {
         (item) => _RecallItem(
           id: 'rp_${item.id}',
           hint: '🧱',
-          question: _reviewPrompt(
-            context,
-            viType: 'sắc pháp',
-            enType: 'material phenomenon',
-            name: item.localizedName(context),
-            pali: item.namePali,
+          question: context.l10n.reviewRupaQuestion(
+            item.localizedName(context),
+            item.namePali,
           ),
           answer: item.localizedDescription(context),
         ),
@@ -536,12 +527,9 @@ class _BlurRevealTab extends StatelessWidget {
         (item) => _RecallItem(
           id: 'vt_${item.id}',
           hint: '📊',
-          question: _reviewPrompt(
-            context,
-            viType: 'lộ trình tâm',
-            enType: 'cognitive process',
-            name: item.localizedName(context),
-            pali: item.namePali,
+          question: context.l10n.reviewVithiQuestion(
+            item.localizedName(context),
+            item.namePali,
           ),
           answer: item.localizedDescription(context),
         ),
@@ -1087,29 +1075,6 @@ class _SectionHeader extends StatelessWidget {
       ),
     );
   }
-}
-
-String _moduleSectionTitle(
-  BuildContext context, {
-  required String vi,
-  required String en,
-  required int count,
-}) {
-  final label = context.usesEnglishContent ? en : vi;
-  return '$label — $count';
-}
-
-String _reviewPrompt(
-  BuildContext context, {
-  required String viType,
-  required String enType,
-  required String name,
-  required String pali,
-}) {
-  if (context.usesEnglishContent) {
-    return 'What should you remember about the $enType “$name” ($pali)?';
-  }
-  return 'Cần ghi nhớ gì về $viType “$name” ($pali)?';
 }
 
 // ─── Generic domain Study Card ───────────────────────────────────────────────

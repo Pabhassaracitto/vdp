@@ -159,11 +159,11 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get translationReviewNotice =>
-      'Dhamma content in this language is an international study translation. Pāḷi terms remain authoritative.';
+      'இந்த மொழியில் உள்ள தம்ம உள்ளடக்கம் ஒரு சர்வதேச கற்றல் மொழிபெயர்ப்பு. பாலி சொற்களே அதிகாரப்பூர்வமாக இருக்கும்.';
 
   @override
   String get contentDraftNotice =>
-      'This translation is a draft awaiting doctrinal review. Verify against the Pāḷi before relying on it.';
+      'இந்த மொழிபெயர்ப்பு கோட்பாட்டு மறுஆய்வுக்குக் காத்திருக்கும் வரைவு. நம்புவதற்கு முன் பாலியுடன் சரிபார்க்கவும்.';
 
   @override
   String get settingsAccessibility => 'அணுகல்தன்மை';
@@ -710,8 +710,48 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return 'Kamma — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return 'Dependent origination — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return 'Material phenomena — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return 'Cognitive processes — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'What does cetasika “$name” ($pali) mean?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return 'What should you remember about the kamma “$name” ($pali)?';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return 'What should you remember about the dependent-origination link “$name” ($pali)?';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return 'What should you remember about the material phenomenon “$name” ($pali)?';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return 'What should you remember about the cognitive process “$name” ($pali)?';
   }
 
   @override

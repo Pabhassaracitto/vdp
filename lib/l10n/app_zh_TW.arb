@@ -915,9 +915,69 @@
       "count": {}
     }
   },
+  "kammasInModule": "業 — {count}",
+  "@kammasInModule": {
+    "description": "kammasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "paticcasInModule": "緣起 — {count}",
+  "@paticcasInModule": {
+    "description": "paticcasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "rupasInModule": "色法 — {count}",
+  "@rupasInModule": {
+    "description": "rupasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "vithisInModule": "心路過程 — {count}",
+  "@vithisInModule": {
+    "description": "vithisInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
   "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewKammaQuestion": "關於業「{name}」（{pali}），應該記住什麼？",
+  "@reviewKammaQuestion": {
+    "description": "reviewKammaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewPaticcaQuestion": "關於緣起支「{name}」（{pali}），應該記住什麼？",
+  "@reviewPaticcaQuestion": {
+    "description": "reviewPaticcaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewRupaQuestion": "關於色法「{name}」（{pali}），應該記住什麼？",
+  "@reviewRupaQuestion": {
+    "description": "reviewRupaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewVithiQuestion": "關於心路過程「{name}」（{pali}），應該記住什麼？",
+  "@reviewVithiQuestion": {
+    "description": "reviewVithiQuestion",
     "placeholders": {
       "name": {},
       "pali": {}

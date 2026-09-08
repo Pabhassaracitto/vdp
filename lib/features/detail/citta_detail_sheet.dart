@@ -414,7 +414,9 @@ class _CetasikaChip extends StatelessWidget {
         : VdpSymbols.sometimes;
 
     return Tooltip(
-      message: (!context.usesEnglishContent ? note : null) ??
+      // `note` is Vietnamese-only dataset text; other languages get the
+      // localized association label rather than untranslated Vietnamese.
+      message: (context.showsVietnameseSourceText ? note : null) ??
           (type == AssociationType.always
               ? context.l10n.alwaysAssociated
               : context.l10n.mayBeAssociated),

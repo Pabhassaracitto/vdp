@@ -193,11 +193,11 @@
   "@contentEnglish": {
     "description": "contentEnglish"
   },
-  "translationReviewNotice": "Dhamma content in this language is an international study translation. Pāḷi terms remain authoritative.",
+  "translationReviewNotice": "இந்த மொழியில் உள்ள தம்ம உள்ளடக்கம் ஒரு சர்வதேச கற்றல் மொழிபெயர்ப்பு. பாலி சொற்களே அதிகாரப்பூர்வமாக இருக்கும்.",
   "@translationReviewNotice": {
     "description": "translationReviewNotice"
   },
-  "contentDraftNotice": "This translation is a draft awaiting doctrinal review. Verify against the Pāḷi before relying on it.",
+  "contentDraftNotice": "இந்த மொழிபெயர்ப்பு கோட்பாட்டு மறுஆய்வுக்குக் காத்திருக்கும் வரைவு. நம்புவதற்கு முன் பாலியுடன் சரிபார்க்கவும்.",
   "@contentDraftNotice": {
     "description": "contentDraftNotice"
   },
@@ -915,9 +915,69 @@
       "count": {}
     }
   },
+  "kammasInModule": "Kamma — {count}",
+  "@kammasInModule": {
+    "description": "kammasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "paticcasInModule": "Dependent origination — {count}",
+  "@paticcasInModule": {
+    "description": "paticcasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "rupasInModule": "Material phenomena — {count}",
+  "@rupasInModule": {
+    "description": "rupasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "vithisInModule": "Cognitive processes — {count}",
+  "@vithisInModule": {
+    "description": "vithisInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
   "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewKammaQuestion": "What should you remember about the kamma “{name}” ({pali})?",
+  "@reviewKammaQuestion": {
+    "description": "reviewKammaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewPaticcaQuestion": "What should you remember about the dependent-origination link “{name}” ({pali})?",
+  "@reviewPaticcaQuestion": {
+    "description": "reviewPaticcaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewRupaQuestion": "What should you remember about the material phenomenon “{name}” ({pali})?",
+  "@reviewRupaQuestion": {
+    "description": "reviewRupaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewVithiQuestion": "What should you remember about the cognitive process “{name}” ({pali})?",
+  "@reviewVithiQuestion": {
+    "description": "reviewVithiQuestion",
     "placeholders": {
       "name": {},
       "pali": {}

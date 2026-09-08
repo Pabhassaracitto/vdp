@@ -193,11 +193,11 @@
   "@contentEnglish": {
     "description": "contentEnglish"
   },
-  "translationReviewNotice": "Dhamma content in this language is an international study translation. Pāḷi terms remain authoritative.",
+  "translationReviewNotice": "ខ្លឹមសារធម៌ជាភាសានេះ គឺជាការបកប្រែសម្រាប់ការសិក្សាអន្តរជាតិ។ ពាក្យបាលីនៅតែជាមូលដ្ឋានយោង។",
   "@translationReviewNotice": {
     "description": "translationReviewNotice"
   },
-  "contentDraftNotice": "This translation is a draft awaiting doctrinal review. Verify against the Pāḷi before relying on it.",
+  "contentDraftNotice": "ការបកប្រែនេះជាសេចក្តីព្រាង កំពុងរង់ចាំការត្រួតពិនិត្យខាងធម៌។ សូមផ្ទៀងផ្ទាត់នឹងបាលីមុនពេលប្រើប្រាស់។",
   "@contentDraftNotice": {
     "description": "contentDraftNotice"
   },
@@ -915,9 +915,69 @@
       "count": {}
     }
   },
+  "kammasInModule": "Kamma — {count}",
+  "@kammasInModule": {
+    "description": "kammasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "paticcasInModule": "Dependent origination — {count}",
+  "@paticcasInModule": {
+    "description": "paticcasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "rupasInModule": "Material phenomena — {count}",
+  "@rupasInModule": {
+    "description": "rupasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "vithisInModule": "Cognitive processes — {count}",
+  "@vithisInModule": {
+    "description": "vithisInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
   "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewKammaQuestion": "What should you remember about the kamma “{name}” ({pali})?",
+  "@reviewKammaQuestion": {
+    "description": "reviewKammaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewPaticcaQuestion": "What should you remember about the dependent-origination link “{name}” ({pali})?",
+  "@reviewPaticcaQuestion": {
+    "description": "reviewPaticcaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewRupaQuestion": "What should you remember about the material phenomenon “{name}” ({pali})?",
+  "@reviewRupaQuestion": {
+    "description": "reviewRupaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewVithiQuestion": "What should you remember about the cognitive process “{name}” ({pali})?",
+  "@reviewVithiQuestion": {
+    "description": "reviewVithiQuestion",
     "placeholders": {
       "name": {},
       "pali": {}

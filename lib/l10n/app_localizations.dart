@@ -1402,11 +1402,59 @@ abstract class AppLocalizations {
   /// **'Cetasikas in this module — {count}'**
   String cetasikasInModule(Object count);
 
+  /// kammasInModule
+  ///
+  /// In en, this message translates to:
+  /// **'Kamma — {count}'**
+  String kammasInModule(Object count);
+
+  /// paticcasInModule
+  ///
+  /// In en, this message translates to:
+  /// **'Dependent origination — {count}'**
+  String paticcasInModule(Object count);
+
+  /// rupasInModule
+  ///
+  /// In en, this message translates to:
+  /// **'Material phenomena — {count}'**
+  String rupasInModule(Object count);
+
+  /// vithisInModule
+  ///
+  /// In en, this message translates to:
+  /// **'Cognitive processes — {count}'**
+  String vithisInModule(Object count);
+
   /// reviewCetasikaQuestion
   ///
   /// In en, this message translates to:
   /// **'What does cetasika “{name}” ({pali}) mean?'**
   String reviewCetasikaQuestion(Object name, Object pali);
+
+  /// reviewKammaQuestion
+  ///
+  /// In en, this message translates to:
+  /// **'What should you remember about the kamma “{name}” ({pali})?'**
+  String reviewKammaQuestion(Object name, Object pali);
+
+  /// reviewPaticcaQuestion
+  ///
+  /// In en, this message translates to:
+  /// **'What should you remember about the dependent-origination link “{name}” ({pali})?'**
+  String reviewPaticcaQuestion(Object name, Object pali);
+
+  /// reviewRupaQuestion
+  ///
+  /// In en, this message translates to:
+  /// **'What should you remember about the material phenomenon “{name}” ({pali})?'**
+  String reviewRupaQuestion(Object name, Object pali);
+
+  /// reviewVithiQuestion
+  ///
+  /// In en, this message translates to:
+  /// **'What should you remember about the cognitive process “{name}” ({pali})?'**
+  String reviewVithiQuestion(Object name, Object pali);
 
   /// groupAnswer
   ///

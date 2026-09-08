@@ -171,7 +171,7 @@ Lộ ngũ môn 17 sát-na, vai trò từng sát-na, lộ ý môn và tâm Na c�
 
 | Module | Gap | Handling |
 | --- | --- | --- |
-| M6_NGHIEP | `assets/data/kammas.json` ships 12 kammas, but `VDP-Nghiep.pdf` teaches the full Kammacatukka of 16 (4 groups of 4). The 4th group, *Lãnh vực trổ quả*, has no dataset entities. | Taught in lesson section `M6_S06` instead of being forced into the dataset. The dataset is left unchanged. |
+| M6_NGHIEP | none — `assets/data/kammas.json` ships all 16 kammas of the Kammacatukka (4 groups of four), matching `VDP-Nghiep.pdf`. | No workaround needed; `M6_S06` teaches the grouping directly from the dataset. |
 | M10_LO_TRINH | `assets/data/vithis.json` contains `VT_VITHIMUTTA`, but `VDP-LoTrinhTam.pdf` has **no** dedicated Vīthimutta (ngoại lộ) section. A grep for `vīthimutta` / `ngoại lộ` across all 11 extracted PDFs returned no relevant hit. | Section `M10_S09` documents this explicitly as `source_missing` with a TODO. Candidate follow-up source: `VDP-NguoiVaCoi.pdf`. |
 | All modules (English) | Lesson prose is **not translated to English**. | `content_en.json` marks each module `translationStatus: "source_only"`, `needsReview: true`. The runtime `en -> vi` fallback chain serves the Vietnamese source, so no module is ever empty. |
 

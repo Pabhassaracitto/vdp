@@ -65,7 +65,10 @@ extension LocalizedCetasikaContent on CetasikaModel {
     String field,
     String? fallback,
   ) {
-    if (fallback == null && !context.usesEnglishContent) return null;
+    // A missing Vietnamese source value does not mean the field is missing
+    // everywhere: a translation may still supply it. Only skip the catalog
+    // lookup for Vietnamese itself, where the dataset is the source of truth.
+    if (fallback == null && context.showsVietnameseSourceText) return null;
     final translated = context.contentCatalog.text(
       'cetasikas',
       id,

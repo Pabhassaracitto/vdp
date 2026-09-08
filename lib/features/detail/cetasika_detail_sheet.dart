@@ -304,9 +304,12 @@ class _ConflictRuleCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            context.usesEnglishContent
-                ? (rule.explanationPali ?? context.l10n.doctrinalConflicts)
-                : rule.explanation,
+            // `rule.explanation` is Vietnamese-only dataset prose. For every
+            // other language prefer the Pāḷi explanation, which is
+            // language-neutral, and fall back to a localized label.
+            context.showsVietnameseSourceText
+                ? rule.explanation
+                : (rule.explanationPali ?? context.l10n.doctrinalConflicts),
             style: const TextStyle(fontSize: 13),
           ),
           if (rule.explanationPali != null)

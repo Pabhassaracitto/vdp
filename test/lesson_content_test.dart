@@ -1,6 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vdp_app/core/localization/content_catalog.dart';
+import 'package:vdp_app/core/localization/content_languages.dart';
 import 'package:vdp_app/data/models/lesson_content.dart';
 import 'package:vdp_app/data/models/study_module.dart';
 
@@ -38,7 +41,22 @@ void main() {
     expect(resolveContentLocaleChain('en'), ['en', 'vi']);
   });
 
-  for (final locale in ['vi', 'en']) {
+  // Derived from the registry so a newly shipped content language is covered
+  // automatically instead of silently escaping these assertions.
+  final shippedLocales = selectableContentLanguages.map((l) => l.tag).toList();
+
+  test('shipped content locales all have an asset bundled', () {
+    expect(shippedLocales, contains('vi'));
+    for (final locale in shippedLocales) {
+      expect(
+        File('assets/content/content_$locale.json').existsSync(),
+        isTrue,
+        reason: '$locale is selectable but has no bundled content asset',
+      );
+    }
+  });
+
+  for (final locale in shippedLocales) {
     test('every module has lesson content in "$locale"', () async {
       final container = ProviderContainer();
       addTearDown(container.dispose);

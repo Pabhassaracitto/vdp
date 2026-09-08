@@ -193,6 +193,10 @@ class VdpTheme {
     'NotoSansTCApp',
     'NotoSansJPApp',
     'NotoSansKRApp',
+    // Last resort: the Dual Encoding shapes in [VdpSymbols]. Kept at the end
+    // so a language font always wins for ordinary text.
+    'NotoSansSymbolsApp',
+    'NotoSansSymbols1App',
   ];
 
   static String _fontFor(Locale locale) {

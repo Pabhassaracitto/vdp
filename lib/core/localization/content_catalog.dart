@@ -360,5 +360,17 @@ class ContentCatalogScope extends InheritedWidget {
 
 extension ContentCatalogContext on BuildContext {
   ContentCatalog get contentCatalog => ContentCatalogScope.of(this);
-  bool get usesEnglishContent => contentCatalog.locale == 'en';
+
+  /// Whether raw Vietnamese strings from `assets/data/*.json` are appropriate
+  /// to display directly.
+  ///
+  /// A few model fields (conflict explanations, association notes) exist only
+  /// in Vietnamese in the dataset and have no per-locale override yet. Showing
+  /// them is right for a Vietnamese reader and wrong for everyone else, who
+  /// gets a localized ARB string instead.
+  ///
+  /// This replaces the old `usesEnglishContent` flag, which asked
+  /// `locale == 'en'` and therefore routed *every* non-Vietnamese locale
+  /// (hi, zh, si, my, ja, …) into the Vietnamese branch.
+  bool get showsVietnameseSourceText => contentCatalog.locale == 'vi';
 }

@@ -707,8 +707,48 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return 'Nghiệp — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return 'Nhân duyên — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return 'Sắc pháp — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return 'Lộ trình tâm — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'Tâm Sở “$name” ($pali) có nghĩa là gì?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return 'Cần ghi nhớ gì về nghiệp “$name” ($pali)?';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return 'Cần ghi nhớ gì về chi nhân duyên “$name” ($pali)?';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return 'Cần ghi nhớ gì về sắc pháp “$name” ($pali)?';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return 'Cần ghi nhớ gì về lộ trình tâm “$name” ($pali)?';
   }
 
   @override
