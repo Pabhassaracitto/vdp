@@ -706,8 +706,48 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return '业 — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return '缘起 — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return '色法 — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return '心路过程 — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'What does cetasika “$name” ($pali) mean?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return '关于业“$name”（$pali），应该记住什么？';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return '关于缘起支“$name”（$pali），应该记住什么？';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return '关于色法“$name”（$pali），应该记住什么？';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return '关于心路过程“$name”（$pali），应该记住什么？';
   }
 
   @override
@@ -1636,8 +1676,48 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return '業 — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return '緣起 — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return '色法 — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return '心路過程 — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'What does cetasika “$name” ($pali) mean?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return '關於業「$name」（$pali），應該記住什麼？';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return '關於緣起支「$name」（$pali），應該記住什麼？';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return '關於色法「$name」（$pali），應該記住什麼？';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return '關於心路過程「$name」（$pali），應該記住什麼？';
   }
 
   @override

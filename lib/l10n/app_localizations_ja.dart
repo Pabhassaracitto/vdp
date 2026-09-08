@@ -707,8 +707,48 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return '業 — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return '縁起 — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return '色法 — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return '心路過程 — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'What does cetasika “$name” ($pali) mean?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return '業「$name」（$pali）について何を覚えておくべきですか？';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return '縁起の支分「$name」（$pali）について何を覚えておくべきですか？';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return '色法「$name」（$pali）について何を覚えておくべきですか？';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return '心路過程「$name」（$pali）について何を覚えておくべきですか？';
   }
 
   @override

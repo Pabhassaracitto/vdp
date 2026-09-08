@@ -915,9 +915,69 @@
       "count": {}
     }
   },
+  "kammasInModule": "業 — {count}",
+  "@kammasInModule": {
+    "description": "kammasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "paticcasInModule": "縁起 — {count}",
+  "@paticcasInModule": {
+    "description": "paticcasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "rupasInModule": "色法 — {count}",
+  "@rupasInModule": {
+    "description": "rupasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "vithisInModule": "心路過程 — {count}",
+  "@vithisInModule": {
+    "description": "vithisInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
   "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewKammaQuestion": "業「{name}」（{pali}）について何を覚えておくべきですか？",
+  "@reviewKammaQuestion": {
+    "description": "reviewKammaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewPaticcaQuestion": "縁起の支分「{name}」（{pali}）について何を覚えておくべきですか？",
+  "@reviewPaticcaQuestion": {
+    "description": "reviewPaticcaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewRupaQuestion": "色法「{name}」（{pali}）について何を覚えておくべきですか？",
+  "@reviewRupaQuestion": {
+    "description": "reviewRupaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewVithiQuestion": "心路過程「{name}」（{pali}）について何を覚えておくべきですか？",
+  "@reviewVithiQuestion": {
+    "description": "reviewVithiQuestion",
     "placeholders": {
       "name": {},
       "pali": {}

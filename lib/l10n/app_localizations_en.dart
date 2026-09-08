@@ -711,8 +711,48 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return 'Kamma — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return 'Dependent origination — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return 'Material phenomena — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return 'Cognitive processes — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'What does cetasika “$name” ($pali) mean?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return 'What should you remember about the kamma “$name” ($pali)?';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return 'What should you remember about the dependent-origination link “$name” ($pali)?';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return 'What should you remember about the material phenomenon “$name” ($pali)?';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return 'What should you remember about the cognitive process “$name” ($pali)?';
   }
 
   @override

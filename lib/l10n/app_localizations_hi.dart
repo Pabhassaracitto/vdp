@@ -709,8 +709,48 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return 'कम्म — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return 'प्रतीत्यसमुत्पाद — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return 'रूप — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return 'चित्त प्रक्रिया — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'What does cetasika “$name” ($pali) mean?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return 'कम्म “$name” ($pali) के बारे में क्या याद रखना चाहिए?';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return 'प्रतीत्यसमुत्पाद की कड़ी “$name” ($pali) के बारे में क्या याद रखना चाहिए?';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return 'रूप “$name” ($pali) के बारे में क्या याद रखना चाहिए?';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return 'चित्त प्रक्रिया “$name” ($pali) के बारे में क्या याद रखना चाहिए?';
   }
 
   @override

@@ -1,6 +1,18 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vdp_app/core/localization/content_catalog.dart';
+
+/// Canonical entity counts, read from the dataset rather than hard-coded.
+///
+/// Hard-coding them meant a doctrinal correction (kammas went 12 → 16) left
+/// this test asserting a count the data no longer had.
+Future<int> _datasetCount(String file, String key) async {
+  final raw = await File('assets/data/$file.json').readAsString();
+  return (jsonDecode(raw) as Map<String, dynamic>)[key].length as int;
+}
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -11,12 +23,20 @@ void main() {
 
     final catalog = await container.read(contentCatalogProvider('en').future);
     expect(catalog.locale, 'en');
-    expect(catalog.data['cittas'], hasLength(121));
-    expect(catalog.data['cetasikas'], hasLength(52));
-    expect(catalog.data['rupas'], hasLength(28));
-    expect(catalog.data['kammas'], hasLength(12));
-    expect(catalog.data['paticcas'], hasLength(12));
-    expect(catalog.data['vithis'], hasLength(4));
+    for (final entry in {
+      'cittas': 'cittas',
+      'cetasikas': 'cetasikas',
+      'rupas': 'rupas',
+      'kammas': 'kammas',
+      'paticcas': 'paticca',
+      'vithis': 'vithis',
+    }.entries) {
+      expect(
+        catalog.data[entry.key],
+        hasLength(await _datasetCount(entry.value, entry.key)),
+        reason: 'English overlay must cover every ${entry.key} in the dataset',
+      );
+    }
     expect(catalog.data['studyModules'], hasLength(10));
   });
 

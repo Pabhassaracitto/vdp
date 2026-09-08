@@ -915,9 +915,69 @@
       "count": {}
     }
   },
+  "kammasInModule": "कम्म — {count}",
+  "@kammasInModule": {
+    "description": "kammasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "paticcasInModule": "प्रतीत्यसमुत्पाद — {count}",
+  "@paticcasInModule": {
+    "description": "paticcasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "rupasInModule": "रूप — {count}",
+  "@rupasInModule": {
+    "description": "rupasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "vithisInModule": "चित्त प्रक्रिया — {count}",
+  "@vithisInModule": {
+    "description": "vithisInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
   "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewKammaQuestion": "कम्म “{name}” ({pali}) के बारे में क्या याद रखना चाहिए?",
+  "@reviewKammaQuestion": {
+    "description": "reviewKammaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewPaticcaQuestion": "प्रतीत्यसमुत्पाद की कड़ी “{name}” ({pali}) के बारे में क्या याद रखना चाहिए?",
+  "@reviewPaticcaQuestion": {
+    "description": "reviewPaticcaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewRupaQuestion": "रूप “{name}” ({pali}) के बारे में क्या याद रखना चाहिए?",
+  "@reviewRupaQuestion": {
+    "description": "reviewRupaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewVithiQuestion": "चित्त प्रक्रिया “{name}” ({pali}) के बारे में क्या याद रखना चाहिए?",
+  "@reviewVithiQuestion": {
+    "description": "reviewVithiQuestion",
     "placeholders": {
       "name": {},
       "pali": {}

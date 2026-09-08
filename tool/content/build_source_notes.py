@@ -31,13 +31,12 @@ page in `reference/`. This document is the flattened audit trail.
 
 """
 
-GAPS = """
+GAPS_TEMPLATE = """
 ## Known gaps
 
 | Module | Gap | Handling |
 | --- | --- | --- |
-| M6_NGHIEP | `assets/data/kammas.json` ships 12 kammas, but `VDP-Nghiep.pdf` teaches the full Kammacatukka of 16 (4 groups of 4). The 4th group, *Lãnh vực trổ quả*, has no dataset entities. | Taught in lesson section `M6_S06` instead of being forced into the dataset. The dataset is left unchanged. |
-| M10_LO_TRINH | `assets/data/vithis.json` contains `VT_VITHIMUTTA`, but `VDP-LoTrinhTam.pdf` has **no** dedicated Vīthimutta (ngoại lộ) section. A grep for `vīthimutta` / `ngoại lộ` across all 11 extracted PDFs returned no relevant hit. | Section `M10_S09` documents this explicitly as `source_missing` with a TODO. Candidate follow-up source: `VDP-NguoiVaCoi.pdf`. |
+{kamma_gap}| M10_LO_TRINH | `assets/data/vithis.json` contains `VT_VITHIMUTTA`, but `VDP-LoTrinhTam.pdf` has **no** dedicated Vīthimutta (ngoại lộ) section. A grep for `vīthimutta` / `ngoại lộ` across all 11 extracted PDFs returned no relevant hit. | Section `M10_S09` documents this explicitly as `source_missing` with a TODO. Candidate follow-up source: `VDP-NguoiVaCoi.pdf`. |
 | All modules (English) | Lesson prose is **not translated to English**. | `content_en.json` marks each module `translationStatus: "source_only"`, `needsReview: true`. The runtime `en -> vi` fallback chain serves the Vietnamese source, so no module is ever empty. |
 
 ## PDFs not used for lesson content
@@ -48,9 +47,37 @@ cited by the current content. They remain available for the gaps above.
 """
 
 
+def kamma_gap_row() -> str:
+    """Describe the Kammacatukka coverage using the dataset, not a fixed number.
+
+    This row used to hard-code "ships 12 kammas"; the dataset has since grown
+    to the full 16, so the generated audit trail contradicted the data it was
+    supposed to document.
+    """
+    kammas = json.load(
+        open(os.path.join(ROOT, "assets", "data", "kammas.json"), encoding="utf-8")
+    )["kammas"]
+    groups = sorted({k["id"].split("_")[1] for k in kammas})
+    if len(kammas) >= 16 and len(groups) >= 4:
+        return (
+            f"| M6_NGHIEP | none — `assets/data/kammas.json` ships all {len(kammas)} "
+            f"kammas of the Kammacatukka ({len(groups)} groups of four), matching "
+            "`VDP-Nghiep.pdf`. | No workaround needed; `M6_S06` teaches the "
+            "grouping directly from the dataset. |\n"
+        )
+    return (
+        f"| M6_NGHIEP | `assets/data/kammas.json` ships {len(kammas)} kammas, but "
+        "`VDP-Nghiep.pdf` teaches the full Kammacatukka of 16 (4 groups of 4). | "
+        "The shortfall is taught in lesson section `M6_S06` instead of being "
+        "forced into the dataset. |\n"
+    )
+
+
 def main() -> None:
     data = json.load(open(VI, encoding="utf-8"))
     modules = data["studyModules"]
+
+    gaps = GAPS_TEMPLATE.format(kamma_gap=kamma_gap_row())
 
     lines = [HEADER]
 
@@ -94,7 +121,7 @@ def main() -> None:
             lines.append(f"| `{section['id']}` | {section['title']} | {refs} |")
         lines.append("")
 
-    lines.append(GAPS)
+    lines.append(gaps)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as handle:

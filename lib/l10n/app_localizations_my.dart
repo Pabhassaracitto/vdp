@@ -711,8 +711,48 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String kammasInModule(Object count) {
+    return 'ကမ္မ — $count';
+  }
+
+  @override
+  String paticcasInModule(Object count) {
+    return 'ပဋိစ္စသမုပ္ပါဒ် — $count';
+  }
+
+  @override
+  String rupasInModule(Object count) {
+    return 'ရုပ် — $count';
+  }
+
+  @override
+  String vithisInModule(Object count) {
+    return 'စိတ်အစဉ် — $count';
+  }
+
+  @override
   String reviewCetasikaQuestion(Object name, Object pali) {
     return 'What does cetasika “$name” ($pali) mean?';
+  }
+
+  @override
+  String reviewKammaQuestion(Object name, Object pali) {
+    return 'ကမ္မ “$name” ($pali) အကြောင်း ဘာကို မှတ်သားရမလဲ။';
+  }
+
+  @override
+  String reviewPaticcaQuestion(Object name, Object pali) {
+    return 'ပဋိစ္စသမုပ္ပါဒ် အင်္ဂါ “$name” ($pali) အကြောင်း ဘာကို မှတ်သားရမလဲ။';
+  }
+
+  @override
+  String reviewRupaQuestion(Object name, Object pali) {
+    return 'ရုပ် “$name” ($pali) အကြောင်း ဘာကို မှတ်သားရမလဲ။';
+  }
+
+  @override
+  String reviewVithiQuestion(Object name, Object pali) {
+    return 'စိတ်အစဉ် “$name” ($pali) အကြောင်း ဘာကို မှတ်သားရမလဲ။';
   }
 
   @override

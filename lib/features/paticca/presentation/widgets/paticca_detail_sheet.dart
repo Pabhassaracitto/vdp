@@ -38,9 +38,11 @@ class PaticcaDetailSheet extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       child: Text(context.l10n.conditionLinkDescription(
                         link.effectId,
-                        context.usesEnglishContent
-                            ? item.localizedDescription(context)
-                            : link.explanation,
+                        // `link.explanation` is Vietnamese-only dataset prose;
+                        // the localized description is translated per locale.
+                        context.showsVietnameseSourceText
+                            ? link.explanation
+                            : item.localizedDescription(context),
                       )),
                     )),
           ],

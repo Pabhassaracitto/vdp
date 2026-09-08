@@ -118,3 +118,12 @@ flutter:
     - family: NotoSansKRApp
       fonts:
         - asset: assets/fonts/subsets/NotoSansKRApp.ttf
+    # Dual Encoding shapes (✦ ◎ ✕). These Dingbats exist in none of the
+    # language fonts, so without this family they render as tofu everywhere.
+    - family: NotoSansSymbolsApp
+      fonts:
+        - asset: assets/fonts/subsets/NotoSansSymbolsApp.ttf
+    # Miscellaneous Symbols: ☸ (splash/home/settings), ⚖, ⚙.
+    - family: NotoSansSymbols1App
+      fonts:
+        - asset: assets/fonts/subsets/NotoSansSymbols1App.ttf

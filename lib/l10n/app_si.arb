@@ -915,9 +915,69 @@
       "count": {}
     }
   },
+  "kammasInModule": "කම්ම — {count}",
+  "@kammasInModule": {
+    "description": "kammasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "paticcasInModule": "පටිච්චසමුප්පාදය — {count}",
+  "@paticcasInModule": {
+    "description": "paticcasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "rupasInModule": "රූප — {count}",
+  "@rupasInModule": {
+    "description": "rupasInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "vithisInModule": "චිත්ත වීථිය — {count}",
+  "@vithisInModule": {
+    "description": "vithisInModule",
+    "placeholders": {
+      "count": {}
+    }
+  },
   "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewKammaQuestion": "කම්ම “{name}” ({pali}) ගැන මතක තබා ගත යුත්තේ කුමක්ද?",
+  "@reviewKammaQuestion": {
+    "description": "reviewKammaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewPaticcaQuestion": "පටිච්චසමුප්පාද අංගය “{name}” ({pali}) ගැන මතක තබා ගත යුත්තේ කුමක්ද?",
+  "@reviewPaticcaQuestion": {
+    "description": "reviewPaticcaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewRupaQuestion": "රූපය “{name}” ({pali}) ගැන මතක තබා ගත යුත්තේ කුමක්ද?",
+  "@reviewRupaQuestion": {
+    "description": "reviewRupaQuestion",
+    "placeholders": {
+      "name": {},
+      "pali": {}
+    }
+  },
+  "reviewVithiQuestion": "චිත්ත වීථිය “{name}” ({pali}) ගැන මතක තබා ගත යුත්තේ කුමක්ද?",
+  "@reviewVithiQuestion": {
+    "description": "reviewVithiQuestion",
     "placeholders": {
       "name": {},
       "pali": {}
