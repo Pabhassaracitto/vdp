@@ -7,16 +7,20 @@ import 'package:vdp_app/core/localization/content_languages.dart';
 import 'package:vdp_app/data/models/lesson_content.dart';
 import 'package:vdp_app/data/models/study_module.dart';
 
-/// The 10 study modules the app ships. Kept as a literal list (rather than
+/// The 14 study modules the app ships. Kept as a literal list (rather than
 /// derived from [kStudyModules]) so a typo in either place is caught.
 const _moduleIds = <String>[
   'M1_BASICS',
+  'M11_BIET_CANH',
   'M2_SI_PHAN',
-  'M3_TINH_HAO_BIEN_HANH',
   'M4_AKUSALA',
+  'M12_VO_NHAN',
+  'M3_TINH_HAO_BIEN_HANH',
   'M5_SOBHANA',
-  'M6_NGHIEP',
+  'M13_SAC_GIOI',
+  'M14_VO_SAC_GIOI',
   'M7_SIEU_THE',
+  'M6_NGHIEP',
   'M8_NHAN_DUYEN',
   'M9_SAC_PHAP',
   'M10_LO_TRINH',

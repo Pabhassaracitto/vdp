@@ -35,8 +35,17 @@ class MatrixCornerHeader extends StatelessWidget {
       label: context.l10n.matrixCornerSemantics,
       header: true,
       child: Container(
-        width: width,
-        constraints: BoxConstraints(minHeight: height),
+        // FIX (cột Tâm bị ẩn): phải khoá CHÍNH XÁC width × height.
+        //
+        // Stack bên dưới chỉ chứa children dạng Positioned (không có child
+        // nào tham gia việc định kích thước), nên RenderStack tự co giãn theo
+        // `constraints.biggest`. Với `minHeight` không có max, ô góc này phình
+        // ra chiếm trọn chiều cao còn lại của cột trái, ép ListView danh sách
+        // Tâm phía dưới về 0px → cột Tâm biến mất hoàn toàn.
+        //
+        // Khoá tight còn giữ ô góc thẳng hàng với hàng header Tâm Sở bên phải
+        // (bên đó dùng SizedBox(height: cetasikaHeaderHeight) — cũng là tight).
+        constraints: BoxConstraints.tightFor(width: width, height: height),
         decoration: BoxDecoration(
           color: bgColor,
           border: Border(

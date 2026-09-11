@@ -20,8 +20,8 @@ page in `reference/`. This document is the flattened audit trail.
 | `VDP-Nghiep.pdf` | 2, 3, 4 | M6_NGHIEP |
 | `VDP-SacPhap.pdf` | 2, 3, 4, 5, 7, 16, 24, 25, 26 | M9_SAC_PHAP |
 | `VDP-SoDoNghiep.pdf` | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 | M6_NGHIEP |
-| `VDP-Tam.pdf` | 9, 10, 11, 14, 18, 19, 51, 52, 53 | M4_AKUSALA, M5_SOBHANA, M7_SIEU_THE |
-| `VDP-TamSo.pdf` | 3, 4, 5, 6, 10, 12, 15, 16, 18, 31, 34, 35, 36, 55, 84 | M1_BASICS, M2_SI_PHAN, M3_TINH_HAO_BIEN_HANH |
+| `VDP-Tam.pdf` | 9, 10, 11, 14, 15, 16, 17, 18, 19, 35, 36, 37, 48, 50, 51, 52, 53 | M12_VO_NHAN, M13_SAC_GIOI, M14_VO_SAC_GIOI, M4_AKUSALA, M5_SOBHANA, M7_SIEU_THE |
+| `VDP-TamSo.pdf` | 3, 4, 5, 6, 10, 12, 15, 16, 18, 20, 23, 24, 25, 27, 29, 31, 34, 35, 36, 37, 39, 42, 43, 45, 46, 48, 49, 52, 55, 80, 82, 84, 88 | M11_BIET_CANH, M1_BASICS, M2_SI_PHAN, M3_TINH_HAO_BIEN_HANH, M4_AKUSALA |
 | `VDP-ToatYeuVeDuyen.pdf` | 2, 3, 4, 5, 6, 7, 8 | M8_NHAN_DUYEN |
 
 ## Per-module detail
@@ -39,6 +39,20 @@ Bảy tâm sở có mặt trong mọi tâm — nền tảng bắt buộc trướ
 | `M1_S03` | Tưởng (Saññā) và Tư (Cetanā) | `VDP-TamSo.pdf` p.10 — I.3/ TÂM SỞ TƯỞNG – SAÑÑĀ; `VDP-TamSo.pdf` p.12 — I.4/ TÂM SỞ TƯ – CETANĀ, nhiệm vụ đặc biệt, tạo nghiệp |
 | `M1_S04` | Nhất hành, Mạng quyền, Tác ý | `VDP-TamSo.pdf` p.15 — I.5/ TÂM SỞ NHẤT HÀNH (ĐỊNH) – EKAGGATĀ; `VDP-TamSo.pdf` p.16 — I.6/ TÂM SỞ MẠNG QUYỀN – JĪVITINDRIYA; 3 và 51 sát na tiểu; `VDP-TamSo.pdf` p.18 — 7/ TÂM SỞ TÁC Ý – MANASIKĀRA; tứ ý nghĩa |
 
+### M11_BIET_CANH — 6 Tâm Sở Biệt Cảnh (Pakiṇṇaka)
+
+Tầm, Tứ, Thắng Giải, Cần, Hỷ, Dục — nhóm Tợ tha chỉ có mặt trong một số tâm, thiện lẫn bất thiện.
+
+*5 lesson sections · 12 review cards · 12 quiz seeds*
+
+| Section | Title | Sources |
+| --- | --- | --- |
+| `M11_S01` | Nhóm Biệt cảnh trong Tợ tha | `VDP-TamSo.pdf` p.3 — II. TÂM SỞ BIỆT CẢNH – PAKIṆṆAKA CETASIKA, có 6: Tầm, Tứ, Thắng giải, Cần, Hỷ, Dục |
+| `M11_S02` | Tầm (Vitakka) và Tứ (Vicāra) | `VDP-TamSo.pdf` p.20 — II.1 TÂM SỞ TẦM – VITAKKA CETASIKA; đặc tính chánh yếu và tứ ý nghĩa; `VDP-TamSo.pdf` p.23 — II.2 TÂM SỞ TỨ – VICĀRA CETASIKA; phân biệt Tầm–Tứ; không có trong Ngũ song thức |
+| `M11_S03` | Thắng giải (Adhimokkha) | `VDP-TamSo.pdf` p.24 — II.3 TÂM SỞ THẮNG GIẢI – ADHIMOKKHO CETASIKA; tứ ý nghĩa; phán quyết tà/chánh; có mặt trong 110 tâm |
+| `M11_S04` | Cần (Vīriya) | `VDP-TamSo.pdf` p.25 — II.4 TÂM SỞ CẦN – VIRIYA CETASIKA; tứ ý nghĩa; Tứ Chánh cần; 4 khía cạnh |
+| `M11_S05` | Hỷ (Pīti) và Dục (Chanda) | `VDP-TamSo.pdf` p.27 — II.5 TÂM SỞ HỶ – PĪTI CETASIKA; 5 loại hỷ; 3 thể tánh; `VDP-TamSo.pdf` p.29 — II.6. TÂM SỞ DỤC – CHANDA CETASIKA; 3 loại dục; không có trong 2 tâm Si và 18 tâm Vô nhân |
+
 ### M2_SI_PHAN — Si Phần (Mocatuka)
 
 Bốn tâm sở Bất thiện Biến hành: Si, Vô tàm, Vô quý, Phóng dật.
@@ -51,23 +65,11 @@ Bốn tâm sở Bất thiện Biến hành: Si, Vô tàm, Vô quý, Phóng dật
 | `M2_S02` | Vô tàm và Vô quý | `VDP-TamSo.pdf` p.34 — I.2/ TÂM SỞ VÔ TÀM – AHIRIKA CETASIKA; `VDP-TamSo.pdf` p.35 — VÔ TÀM + VÔ QUÝ: cả 2 luôn đi chung |
 | `M2_S03` | Phóng dật (Uddhacca) | `VDP-TamSo.pdf` p.36 — I.4 TÂM SỞ PHÓNG DẬT – UDDHACCA CETASIKA |
 
-### M3_TINH_HAO_BIEN_HANH — Tịnh Hảo Biến Hành (Sobhanasādhāraṇa)
-
-19 tâm sở Tịnh hảo có mặt trong mọi tâm tịnh hảo.
-
-*3 lesson sections · 12 review cards · 12 quiz seeds*
-
-| Section | Title | Sources |
-| --- | --- | --- |
-| `M3_S01` | Nhóm Tâm sở Tịnh hảo | `VDP-TamSo.pdf` p.55 — Nhóm 3: TÂM SỞ TỊNH HẢO – SOBHANA CETASIKA, có 25 tâm, chia 4 nhóm |
-| `M3_S02` | Danh sách 19 Tịnh hảo Biến hành | `VDP-TamSo.pdf` p.55 — I. SOBHANASĀDHĀRAṆĀ – TÂM SỞ TỊNH HẢO BIẾN HÀNH, có 19: danh sách đầy đủ |
-| `M3_S03` | Hai nhóm còn lại: Vô lượng phần và Tuệ quyền | `VDP-TamSo.pdf` p.55 — III. APPAMAÑÑĀ – VÔ LƯỢNG PHẦN, có 2 tâm; IV. PAÑÑINDRIYA – TUỆ QUYỀN, có 1 tâm; `VDP-TamSo.pdf` p.84 — III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYACETASIKA |
-
 ### M4_AKUSALA — 12 Tâm Bất Thiện (Akusala Citta)
 
-8 tâm Tham, 2 tâm Sân, 2 tâm Si — nguyên nhân của Khổ.
+8 tâm Tham, 2 tâm Sân, 2 tâm Si — nguyên nhân của Khổ. Kèm 10 tâm sở Bất thiện đặc thù: Tham phần (3), Sân phần (4), Hôn phần (2), Hoài nghi (1) — cùng 4 tâm sở Si phần (M2) là đủ 14 tâm sở Bất thiện.
 
-*4 lesson sections · 14 review cards · 12 quiz seeds*
+*5 lesson sections · 20 review cards · 20 quiz seeds*
 
 | Section | Title | Sources |
 | --- | --- | --- |
@@ -75,6 +77,33 @@ Bốn tâm sở Bất thiện Biến hành: Si, Vô tàm, Vô quý, Phóng dật
 | `M4_S02` | Tám tâm Tham (Lobhamūla citta) | `VDP-Tam.pdf` p.10 — TÂM THAM – LOBHAMŪLA CITTA có 8: danh sách Pāli đầy đủ; `VDP-Tam.pdf` p.11 — Cho quả khác biệt; cách gom nhóm 8 tâm tham |
 | `M4_S03` | Hai tâm Sân (Dosamūla citta) | `VDP-Tam.pdf` p.14 — TÂM SÂN – DOSAMŪLACITTA có 2; 4 nhân sanh tâm sân |
 | `M4_S04` | Hai tâm Si (Mohamūla citta) | `VDP-Tam.pdf` p.14 — TÂM SI – MOHAMŪLA CITTA có 2; 2 nhân sanh tâm si |
+| `M4_S05` | Mười tâm sở Bất thiện đặc thù | `VDP-TamSo.pdf` p.37 — II/ TÂM SỞ THAM PHẦN – II.1 TÂM SỞ THAM: LOBHA CETASIKA; tứ ý nghĩa; `VDP-TamSo.pdf` p.39 — II.2 TÂM SỞ TÀ KIẾN – DIṬṬHI CETASIKA; có mặt trong 4 tâm Tham hợp tà; `VDP-TamSo.pdf` p.42 — II.3 TÂM SỞ NGÃ MẠN – MĀNA CETASIKA; 9 sự ỷ hơn–bằng–thua; `VDP-TamSo.pdf` p.43 — III/ TÂM SỞ SÂN PHẦN; III.1 TÂM SỞ SÂN – DOSA CETASIKA; nguyên nhân phát khởi tâm sân; `VDP-TamSo.pdf` p.45 — III.2 TÂM SỞ TẬT (GANH TỴ) – ISSĀ CETASIKA; `VDP-TamSo.pdf` p.46 — III.3 TÂM SỞ LẬN – MACCHARIYA CETASIKA; 5 loại bỏn xẻn; `VDP-TamSo.pdf` p.48 — III.4 TÂM SỞ HỐI – KUKKUCCA CETASIKA; `VDP-TamSo.pdf` p.49 — IV.1 TÂM SỞ HÔN TRẦM – THĪNA CETASIKA; IV.2 TÂM SỞ THỤY MIÊN – MIDDHA CETASIKA; `VDP-TamSo.pdf` p.52 — V/ TÂM SỞ HOÀI NGHI – VICIKICCHĀ CETASIKA; phân loại nghi |
+
+### M12_VO_NHAN — 18 Tâm Vô Nhân (Ahetuka Citta)
+
+15 Tâm Quả Vô Nhân (7 quả bất thiện + 8 quả thiện) và 3 Tâm Duy Tác Vô Nhân — tâm không có nhân thiện/bất thiện đồng sanh.
+
+*4 lesson sections · 10 review cards · 10 quiz seeds*
+
+| Section | Title | Sources |
+| --- | --- | --- |
+| `M12_S01` | Tâm Vô nhân là gì? | `VDP-Tam.pdf` p.15 — B. TÂM VÔ NHÂN – AHETUKA CITTA gồm 18 Tâm; định nghĩa, 6 nhân, 2 loại |
+| `M12_S02` | Bảy Tâm quả bất thiện vô nhân | `VDP-Tam.pdf` p.16 — a/ TÂM QUẢ BẤT THIỆN VÔ NHÂN: 7 tâm — 5 thức, tiếp thâu, quan sát |
+| `M12_S03` | Tám Tâm quả thiện vô nhân | `VDP-Tam.pdf` p.16 — b/ TÂM QUẢ THIỆN VÔ NHÂN: 8 tâm — 5 thức, tiếp thâu, 2 quan sát |
+| `M12_S04` | Ba Tâm duy tác vô nhân | `VDP-Tam.pdf` p.15 — 2. TÂM DUY TÁC VÔ NHÂN – AHETUKA KIRIYA CITTA: có 3; `VDP-Tam.pdf` p.17 — a/ TÂM KHÁN NGŨ MÔN; b/ TÂM KHÁN Ý MÔN — phận sự và 3 nhân sanh |
+
+### M3_TINH_HAO_BIEN_HANH — 25 Tâm Sở Tịnh Hảo (Sobhana Cetasika)
+
+25 tâm sở Tịnh hảo: 19 Biến hành có mặt trong mọi tâm tịnh hảo, cùng Giới phần (3), Vô lượng phần (2) và Tuệ quyền (1).
+
+*4 lesson sections · 18 review cards · 18 quiz seeds*
+
+| Section | Title | Sources |
+| --- | --- | --- |
+| `M3_S01` | Nhóm Tâm sở Tịnh hảo | `VDP-TamSo.pdf` p.55 — Nhóm 3: TÂM SỞ TỊNH HẢO – SOBHANA CETASIKA, có 25 tâm, chia 4 nhóm |
+| `M3_S02` | Danh sách 19 Tịnh hảo Biến hành | `VDP-TamSo.pdf` p.55 — I. SOBHANASĀDHĀRAṆĀ – TÂM SỞ TỊNH HẢO BIẾN HÀNH, có 19: danh sách đầy đủ |
+| `M3_S03` | Hai nhóm còn lại: Vô lượng phần và Tuệ quyền | `VDP-TamSo.pdf` p.55 — III. APPAMAÑÑĀ – VÔ LƯỢNG PHẦN, có 2 tâm; IV. PAÑÑINDRIYA – TUỆ QUYỀN, có 1 tâm; `VDP-TamSo.pdf` p.84 — III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYACETASIKA |
+| `M3_S04` | Giới phần: Chánh Ngữ, Chánh Nghiệp, Chánh Mạng | `VDP-TamSo.pdf` p.80 — II/ TÂM SỞ GIỚI PHẦN – VIRATI CETASIKA; II.1 TÂM SỞ CHÁNH NGỮ – SAMMĀVĀCĀ: 4 loại lời nói cần kiêng; `VDP-TamSo.pdf` p.82 — II.2 TÂM SỞ CHÁNH NGHIỆP – SAMMĀKAMMANTĀ; II.3 TÂM SỞ CHÁNH MẠNG – SAMMĀAJJIVĀ; 3 thân ác nghiệp |
 
 ### M5_SOBHANA — Tâm Dục Giới Tịnh Hảo (Sobhaṇa Kāmāvacara)
 
@@ -87,6 +116,42 @@ Bốn tâm sở Bất thiện Biến hành: Si, Vô tàm, Vô quý, Phóng dật
 | `M5_S01` | Ba nhóm của 24 tâm Dục giới Tịnh hảo | `VDP-Tam.pdf` p.18 — C. TÂM DỤC GIỚI TỊNH HẢO – 3 loại, gồm 24 Tâm |
 | `M5_S02` | Tám tâm Đại thiện | `VDP-Tam.pdf` p.19 — I. TÂM ĐẠI THIỆN DỤC GIỚI TỊNH HẢO – danh sách 8 tâm Pāli |
 | `M5_S03` | Phạm vi xuất hiện của tâm Dục giới Tịnh hảo | `VDP-Tam.pdf` p.18 — a/ Làm được 10 phước thiện; b/ Có mặt trong nhiều loại chúng sanh |
+
+### M13_SAC_GIOI — 15 Tâm Sắc Giới (Rūpāvacara Citta)
+
+Tâm Thiện, Tâm Quả và Tâm Duy Tác Sắc giới qua 5 tầng Thiền — tâm lưu chuyển trong Sắc giới.
+
+*3 lesson sections · 10 review cards · 10 quiz seeds*
+
+| Section | Title | Sources |
+| --- | --- | --- |
+| `M13_S01` | Tâm Đáo đại và vị trí của Tâm Sắc giới | `VDP-Tam.pdf` p.35 — II. TÂM ĐÁO ĐẠI – MAHAGGATACITTA 27 Tâm; II.1 TÂM SẮC GIỚI – RŪPĀVACARACITTA: 3 nhóm |
+| `M13_S02` | Ba nhóm × năm tầng Thiền | `VDP-Tam.pdf` p.36 — II.1 TÂM SẮC GIỚI – RŪPĀVACARACITTA: 3 nhóm, gồm 15 tâm; danh sách Pāli 1.1–1.5, 2.1–2.5, 3.1–3.5; `VDP-Tam.pdf` p.37 — RŪPĀVACARA-KUSALA — danh sách 5 tầng thiền thiện |
+| `M13_S03` | Lợi ích của tu Thiền chỉ | `VDP-Tam.pdf` p.50 — SỰ LỢI ÍCH CỦA TU THIỀN CHỈ có 5 |
+
+### M14_VO_SAC_GIOI — 12 Tâm Vô Sắc Giới (Arūpāvacara Citta)
+
+Tâm Thiện, Tâm Quả và Tâm Duy Tác Vô Sắc giới qua 4 xứ thiền: Không Vô Biên, Thức Vô Biên, Vô Sở Hữu, Phi Tưởng Phi Phi Tưởng.
+
+*3 lesson sections · 10 review cards · 10 quiz seeds*
+
+| Section | Title | Sources |
+| --- | --- | --- |
+| `M14_S01` | Tâm Vô sắc là gì? | `VDP-Tam.pdf` p.48 — II.2 TÂM VÔ SẮC GIỚI – ARŪPĀVACARACITTA: 3 nghĩa của Tâm Vô sắc; 4 loại |
+| `M14_S02` | Bốn xứ thiền Vô sắc | `VDP-Tam.pdf` p.48 — 1/ KHÔNG VÔ BIÊN XỨ – ĀKĀSĀNAÑCĀYAṬANA; 2/ THỨC VÔ BIÊN XỨ — cách tu tập; `VDP-Tam.pdf` p.50 — TÓM LẠI: đối tượng của 4 Tâm thiền Vô sắc; thiền vô sắc có 2 chi Xả và Định |
+| `M14_S03` | Ba nhóm × bốn xứ | `VDP-Tam.pdf` p.36 — II.2 TÂM VÔ SẮC GIỚI – ARŪPĀVACARACITTA, 3 nhóm, gồm 12 tâm; `VDP-Tam.pdf` p.51 — 1/ TÂM THIỆN VÔ SẮC GIỚI có 4; 2/ TÂM QUẢ VÔ SẮC GIỚI; 3/ TÂM DUY TÁC VÔ SẮC GIỚI — tâm của bậc A la hán |
+
+### M7_SIEU_THE — Tâm Siêu Thế (Lokuttara Citta)
+
+4 Tâm Đạo và 4 Tâm Quả Siêu thế; tính rộng thành 40 tâm.
+
+*3 lesson sections · 12 review cards · 12 quiz seeds*
+
+| Section | Title | Sources |
+| --- | --- | --- |
+| `M7_S01` | Tâm Siêu thế là gì? | `VDP-Tam.pdf` p.51 — III. LOKUTTARA CITTĀNI – TÂM SIÊU THẾ, có 40 tâm; 2 nhóm |
+| `M7_S02` | Bốn Tâm Đạo và bốn Tâm Quả | `VDP-Tam.pdf` p.51 — Danh sách 4 Tâm Đạo và 4 Tâm Quả kèm tên Việt; `VDP-Tam.pdf` p.53 — 8 chi đạo đồng sanh — Bát Chánh Đạo |
+| `M7_S03` | Tâm Sơ Đạo (Sotāpattimagga) | `VDP-Tam.pdf` p.51 — Sơ Đạo: 8 chi đạo, sát trừ 3 phiền não, không còn rơi cảnh khổ; `VDP-Tam.pdf` p.52 — NHÂN SANH TÂM ĐẠO, có 4; chú ý cõi Vô sắc |
 
 ### M6_NGHIEP — Nghiệp (Kamma)
 
@@ -104,18 +169,6 @@ Bốn tâm sở Bất thiện Biến hành: Si, Vô tàm, Vô quý, Phóng dật
 | `M6_S06` | Nhóm 4 — Lãnh vực trổ quả | `VDP-Nghiep.pdf` p.3 — Nghiệp Thiện Dục giới: ba môn; Bố thí, Trì giới, Hành thiền; `VDP-Nghiep.pdf` p.4 — Nghiệp Thiện Sắc giới/Vô sắc giới; 10 việc thiện; `VDP-SoDoNghiep.pdf` p.14 — Lãnh vực nghiệp — Nghiệp Bất thiện thuộc Dục giới; `VDP-SoDoNghiep.pdf` p.15 — Nghiệp Thiện thuộc Dục giới |
 | `M6_S07` | Nghiệp theo Môn: Thân, Khẩu, Ý | `VDP-Nghiep.pdf` p.2 — Thân nghiệp — kāyakamma; `VDP-Nghiep.pdf` p.3 — Khẩu nghiệp, Ý nghiệp và các căn; `VDP-SoDoNghiep.pdf` p.14 — Bất thiện nghiệp theo Môn; `VDP-SoDoNghiep.pdf` p.15 — Thiện nghiệp theo Môn |
 | `M6_S08` | Nghiệp liên hệ với Tâm | `VDP-SoDoNghiep.pdf` p.2 — Chi pháp nhân Sanh nghiệp: 28 tâm; tâm quả tục sinh 19; `VDP-SoDoNghiep.pdf` p.3 — Tư tâm sở dẫn tái sanh; Nghiệp làm cho Sắc sanh khởi — 18 sắc |
-
-### M7_SIEU_THE — Tâm Siêu Thế (Lokuttara Citta)
-
-4 Tâm Đạo và 4 Tâm Quả Siêu thế; tính rộng thành 40 tâm.
-
-*3 lesson sections · 12 review cards · 12 quiz seeds*
-
-| Section | Title | Sources |
-| --- | --- | --- |
-| `M7_S01` | Tâm Siêu thế là gì? | `VDP-Tam.pdf` p.51 — III. LOKUTTARA CITTĀNI – TÂM SIÊU THẾ, có 40 tâm; 2 nhóm |
-| `M7_S02` | Bốn Tâm Đạo và bốn Tâm Quả | `VDP-Tam.pdf` p.51 — Danh sách 4 Tâm Đạo và 4 Tâm Quả kèm tên Việt; `VDP-Tam.pdf` p.53 — 8 chi đạo đồng sanh — Bát Chánh Đạo |
-| `M7_S03` | Tâm Sơ Đạo (Sotāpattimagga) | `VDP-Tam.pdf` p.51 — Sơ Đạo: 8 chi đạo, sát trừ 3 phiền não, không còn rơi cảnh khổ; `VDP-Tam.pdf` p.52 — NHÂN SANH TÂM ĐẠO, có 4; chú ý cõi Vô sắc |
 
 ### M8_NHAN_DUYEN — Thập Nhị Duyên Khởi (Paṭiccasamuppāda)
 

@@ -24,20 +24,26 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 sys.path.insert(0, HERE)
 
 import m1_m5_m7  # noqa: E402
+import m11_m14  # noqa: E402
 import m6_m8  # noqa: E402
 import m9_m10  # noqa: E402
 
 SCHEMA_VERSION = 2
 
-# Module id -> authored Vietnamese content. Order matches the app's module list.
+# Module id -> authored Vietnamese content. Order matches the app's module list
+# (recommendedOrder in lib/data/models/study_module.dart).
 MODULES = [
     ("M1_BASICS", m1_m5_m7.M1_VI),
+    ("M11_BIET_CANH", m11_m14.M11_VI),
     ("M2_SI_PHAN", m1_m5_m7.M2_VI),
-    ("M3_TINH_HAO_BIEN_HANH", m1_m5_m7.M3_VI),
     ("M4_AKUSALA", m1_m5_m7.M4_VI),
+    ("M12_VO_NHAN", m11_m14.M12_VI),
+    ("M3_TINH_HAO_BIEN_HANH", m1_m5_m7.M3_VI),
     ("M5_SOBHANA", m1_m5_m7.M5_VI),
-    ("M6_NGHIEP", m6_m8.M6_VI),
+    ("M13_SAC_GIOI", m11_m14.M13_VI),
+    ("M14_VO_SAC_GIOI", m11_m14.M14_VI),
     ("M7_SIEU_THE", m1_m5_m7.M7_VI),
+    ("M6_NGHIEP", m6_m8.M6_VI),
     ("M8_NHAN_DUYEN", m6_m8.M8_VI),
     ("M9_SAC_PHAP", m9_m10.M9_VI),
     ("M10_LO_TRINH", m9_m10.M10_VI),

@@ -214,8 +214,8 @@ M2_VI = {
 
 
 M3_VI = {
-    "title": "Tịnh Hảo Biến Hành (Sobhanasādhāraṇa)",
-    "description": "19 tâm sở Tịnh hảo có mặt trong mọi tâm tịnh hảo.",
+    "title": "25 Tâm Sở Tịnh Hảo (Sobhana Cetasika)",
+    "description": "25 tâm sở Tịnh hảo: 19 Biến hành có mặt trong mọi tâm tịnh hảo, cùng Giới phần (3), Vô lượng phần (2) và Tuệ quyền (1).",
     "translationStatus": "reviewed",
     "lessonSections": [
         {
@@ -276,6 +276,27 @@ M3_VI = {
                 ref(TS, 84, "III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYACETASIKA"),
             ],
         },
+        {
+            "id": "M3_S04",
+            "title": "Giới phần: Chánh Ngữ, Chánh Nghiệp, Chánh Mạng",
+            "summary": "Virati: tiết chế, kiêng cữ, tránh xa — 3 tâm sở ngăn trừ ác về lời nói, thân hành và mạng sống.",
+            "body": [
+                "Virati là sự tiết chế, kiêng cữ, tránh xa. Giới phần (Viratiyo) có 3 tâm sở: Chánh Ngữ (Sammāvācā), Chánh Nghiệp (Sammākammanto) và Chánh Mạng (Sammā-ājīvo).",
+                "Chánh Ngữ là sự tiết chế, kiêng cữ, tránh xa thuộc về lời nói: không nói giả dối (musāvāda), không nói đâm thọc chia rẽ (pisuṇāvācā), không nói thô lỗ cộc cằn (pharusavācā) và không nói nhảm nhí vô ích (samphappalāpa).",
+                "Chánh Nghiệp là việc làm chân chánh: kiêng tránh, đoạn trừ ba thân ác nghiệp là sát sanh, trộm cắp và tà hạnh trong các dục.",
+                "Chánh Mạng là sự nuôi mạng sống chân chánh: không dùng thân ác, khẩu ác để nuôi mạng sống (sát sanh, trộm cắp, nói láo… vì lợi dưỡng).",
+                "Khác với 19 tâm sở Tịnh hảo Biến hành, ba tâm sở Giới phần chỉ có mặt tùy trường hợp, không có trong mọi tâm tịnh hảo — ví dụ trong tâm đại thiện khi giữ giới hay buông bỏ lòng tham",
+            ],
+            "keyTerms": [
+                {"id": "TERM_SAMMAVACA_M3", "term": "Chánh Ngữ", "pali": "Sammāvācā", "meaning": "Lời nói chân chánh — tránh 4 lời ác"},
+                {"id": "TERM_SAMMAKAMMANTA_M3", "term": "Chánh Nghiệp", "pali": "Sammākammanto", "meaning": "Việc làm chân chánh — tránh 3 thân ác"},
+                {"id": "TERM_SAMMAAJIVA_M3", "term": "Chánh Mạng", "pali": "Sammā-ājīvo", "meaning": "Nuôi mạng sống chân chánh"},
+            ],
+            "sourceRefs": [
+                ref(TS, 80, "II/ TÂM SỞ GIỚI PHẦN – VIRATI CETASIKA; II.1 TÂM SỞ CHÁNH NGỮ – SAMMĀVĀCĀ: 4 loại lời nói cần kiêng"),
+                ref(TS, 82, "II.2 TÂM SỞ CHÁNH NGHIỆP – SAMMĀKAMMANTĀ; II.3 TÂM SỞ CHÁNH MẠNG – SAMMĀAJJIVĀ; 3 thân ác nghiệp"),
+            ],
+        },
     ],
     "reviewCards": [
         {"id": "M3_R01", "front": "Sobhana nghĩa là gì?", "back": "Chói sáng, Rực rỡ, Tịnh hảo. Tịnh: sạch, thanh tịnh; Hảo: tốt, đẹp, khéo, đúng.", "sourceRefs": [ref(TS, 55)]},
@@ -290,6 +311,12 @@ M3_VI = {
         {"id": "M3_R10", "front": "Hai tâm sở cuối cùng của nhóm 19?", "back": "Chánh thân (Kāyujjukatā) và Chánh tâm (Cittujjukatā).", "sourceRefs": [ref(TS, 55)]},
         {"id": "M3_R11", "front": "Bốn nhóm của 25 tâm sở Tịnh hảo là gì?", "back": "Tịnh hảo Biến hành 19 + Giới phần 3 + Vô lượng phần 2 + Tuệ quyền 1 = 25.", "sourceRefs": [ref(TS, 55)]},
         {"id": "M3_R12", "front": "Vô lượng phần (Appamaññā) gồm những tâm sở nào?", "back": "2 tâm sở: Bi (Karunā) và Tùy hỷ (Muditā).", "sourceRefs": [ref(TS, 55), ref(TS, 84)]},
+        {"id": "M3_R13", "front": "Chánh Ngữ (Sammāvācā) kiêng tránh những loại lời nói nào?", "back": "4 loại: giả dối (musāvāda), đâm thọc chia rẽ (pisuṇāvācā), thô lỗ cộc cằn (pharusavācā), nhảm nhí vô ích (samphappalāpa).", "sourceRefs": [ref(TS, 80)]},
+        {"id": "M3_R14", "front": "Chánh Nghiệp (Sammākammanto) đoạn trừ ba thân ác nghiệp nào?", "back": "Sát sanh, trộm cắp, tà hạnh trong các dục.", "sourceRefs": [ref(TS, 82)]},
+        {"id": "M3_R15", "front": "Chánh Mạng (Sammā-ājīvo) là gì?", "back": "Sự nuôi mạng sống chân chánh — không dùng thân ác, khẩu ác để nuôi mạng sống.", "sourceRefs": [ref(TS, 82)]},
+        {"id": "M3_R16", "front": "Tâm Bi (Karunā) là gì?", "back": "Làm rung động trái tim tốt đẹp qua dấu hiệu đau khổ của chúng sanh khác; mong muốn chúng sanh thoát khổ, bài trừ đau khổ.", "sourceRefs": [ref(TS, 84)]},
+        {"id": "M3_R17", "front": "Tâm Hỷ / Tùy hỷ (Muditā) là gì?", "back": "Sự hoan hỷ với hạnh phúc, sự thành đạt của người khác — không ganh tỵ.", "sourceRefs": [ref(TS, 84)]},
+        {"id": "M3_R18", "front": "Đặc tính của Tuệ quyền (Paññindriya)?", "back": "Hiểu biết thông suốt, thấu suốt, xuyên thấu — thấu rõ thực tính pháp đúng như nó thật là; trí tuệ đi đến đâu thì vô minh tan đến đó.", "sourceRefs": [ref(TS, 88)]},
     ],
     "quizSeeds": [
         {"id": "M3_Q01", "type": "mcq", "question": "Tâm sở Tịnh hảo Biến hành có bao nhiêu?", "correctAnswer": "19", "distractors": ["25", "14", "7"], "explanation": "Sobhanasādhāraṇā có 19; toàn bộ nhóm Tịnh hảo mới là 25.", "sourceRefs": [ref(TS, 55)]},
@@ -304,13 +331,19 @@ M3_VI = {
         {"id": "M3_Q10", "type": "mcq", "question": "Tàm (Hiri) đối nghịch với tâm sở nào?", "correctAnswer": "Vô tàm (Ahirika)", "distractors": ["Vô quý (Anottappa)", "Phóng dật (Uddhacca)", "Si (Moha)"], "explanation": "Hiri ↔ Ahirika; Ottappa ↔ Anottappa.", "sourceRefs": [ref(TS, 55), ref(TS, 34)]},
         {"id": "M3_Q11", "type": "mcq", "question": "Vô lượng phần (Appamaññā) gồm mấy tâm sở?", "correctAnswer": "2 — Bi và Tùy hỷ", "distractors": ["4 — Từ, Bi, Hỷ, Xả", "3 — Bi, Tùy hỷ, Hành xả", "1 — chỉ có Bi"], "explanation": "III. APPAMAÑÑĀ – VÔ LƯỢNG PHẦN, có 2 tâm: Karunā và Muditā.", "sourceRefs": [ref(TS, 55)]},
         {"id": "M3_Q12", "type": "mcq", "question": "Tuệ quyền (Paññindriya) gồm mấy tâm sở?", "correctAnswer": "1", "distractors": ["2", "3", "19"], "explanation": "IV. PAÑÑINDRIYA – TUỆ QUYỀN, có 1 tâm.", "sourceRefs": [ref(TS, 55)]},
+        {"id": "M3_Q13", "type": "mcq", "question": "Tâm sở Chánh Ngữ thuộc nhóm nào của 25 Tâm sở Tịnh hảo?", "correctAnswer": "Giới phần (Viratiyo)", "distractors": ["Vô lượng phần (Appamaññā)", "Tịnh hảo Biến hành (Sobhanasādhāraṇā)", "Tuệ quyền (Paññindriya)"], "explanation": "Giới phần có 3: Chánh Ngữ, Chánh Nghiệp, Chánh Mạng.", "sourceRefs": [ref(TS, 55), ref(TS, 80)]},
+        {"id": "M3_Q14", "type": "mcq", "question": "Bốn loại lời nói mà Chánh Ngữ kiêng tránh?", "correctAnswer": "Giả dối, đâm thọc, thô lỗ, nhảm nhí vô ích", "distractors": ["Giả dối, đâm thọc, thô lỗ, khen ngợi", "Nói dối, hứa suông, chửi rủa, than van", "Giả dối, chia sẻ pháp, thô lỗ, im lặng"], "explanation": "Musāvāda, pisuṇāvācā, pharusavācā, samphappalāpa.", "sourceRefs": [ref(TS, 80)]},
+        {"id": "M3_Q15", "type": "mcq", "question": "Ba thân ác nghiệp mà Chánh Nghiệp tránh xa?", "correctAnswer": "Sát sanh, trộm cắp, tà hạnh trong các dục", "distractors": ["Sát sanh, trộm cắp, uống rượu", "Nói láo, trộm cắp, sát sanh", "Sát sanh, tà kiến, trộm cắp"], "explanation": "Sammākammanto: kiêng tránh, đoạn trừ tà nghiệp — 3 thân ác.", "sourceRefs": [ref(TS, 82)]},
+        {"id": "M3_Q16", "type": "mcq", "question": "Sammā-ājīvo là tâm sở nào?", "correctAnswer": "Chánh Mạng", "distractors": ["Chánh Nghiệp", "Chánh Ngữ", "Chánh Tinh tấn"], "explanation": "Ajjivo: sự nuôi mạng sống; sammā-ajjivo: nuôi mạng chân chánh.", "sourceRefs": [ref(TS, 82)]},
+        {"id": "M3_Q17", "type": "mcq", "question": "Tùy hỷ (Muditā) khác Bi (Karunā) ở điểm nào?", "correctAnswer": "Bi hướng đến chúng sanh đang khổ; Tùy hỷ vui theo hạnh phúc của người khác", "distractors": ["Bi vui theo hạnh phúc; Tùy hỷ thương xót khổ", "Cả hai đều hướng đến chúng sanh đang khổ", "Cả hai đều vui theo hạnh phúc người khác"], "explanation": "Karunā: rung động trước đau khổ, mong chúng sanh thoát khổ. Muditā: hoan hỷ với phần hơn của người.", "sourceRefs": [ref(TS, 84)]},
+        {"id": "M3_Q18", "type": "mcq", "question": "Tuệ quyền (Paññindriya) có đặc tính gì?", "correctAnswer": "Hiểu biết thông suốt, xuyên thấu — loại trừ vô minh", "distractors": ["Ghi nhớ, không quên cảnh thiện", "Quân bình các pháp đồng sanh", "Ghê sợ tội lỗi"], "explanation": "Pa + ña: hiểu biết trọn vẹn, chân chánh; trí tuệ đi đến đâu vô minh tan đến đó.", "sourceRefs": [ref(TS, 88)]},
     ],
 }
 
 
 M4_VI = {
     "title": "12 Tâm Bất Thiện (Akusala Citta)",
-    "description": "8 tâm Tham, 2 tâm Sân, 2 tâm Si — nguyên nhân của Khổ.",
+    "description": "8 tâm Tham, 2 tâm Sân, 2 tâm Si — nguyên nhân của Khổ. Kèm 10 tâm sở Bất thiện đặc thù: Tham phần (3), Sân phần (4), Hôn phần (2), Hoài nghi (1) — cùng 4 tâm sở Si phần (M2) là đủ 14 tâm sở Bất thiện.",
     "translationStatus": "reviewed",
     "lessonSections": [
         {
@@ -387,6 +420,42 @@ M4_VI = {
             ],
             "sourceRefs": [ref(TAM, 14, "TÂM SI – MOHAMŪLA CITTA có 2; 2 nhân sanh tâm si")],
         },
+        {
+            "id": "M4_S05",
+            "title": "Mười tâm sở Bất thiện đặc thù",
+            "summary": "Ngoài 4 tâm sở Si phần: Tham phần 3, Sân phần 4, Hôn phần 2, Hoài nghi 1 — đủ 14 tâm sở Bất thiện.",
+            "body": [
+                "14 tâm sở Bất thiện chia 5 nhóm: Si phần 4 (Si, Vô tàm, Vô quý, Phóng dật — học ở module M2), Tham phần 3 (Tham, Tà kiến, Ngã mạn), Sân phần 4 (Sân, Tật, Lận, Hối), Hôn phần 2 (Hôn trầm, Thụy miên) và Hoài nghi 1.",
+                "Tham (Lobha) từ căn “Lub”: bám chặt vào, cột lại, khát vọng, ái luyến — thái độ bám chặt vào các đối tượng được coi là tốt, đẹp, mĩ miều, hấp dẫn. Tham có mặt trong cả 8 tâm Tham.",
+                "Tà kiến (Diṭṭhi) là bám giữ, nắm chặt các quan kiến sai lầm — có mặt trong 4 tâm Tham hợp tà. Ngã mạn (Māna) là tự đắc, tự kiêu, so sánh hơn–bằng–thua — có mặt trong 4 tâm Tham ly tà.",
+                "Sân (Dosa) từ căn “Du”: khó chịu — nóng giận, phẫn nộ, làm thân tâm nóng nảy, thiêu đốt, hủy diệt đối tượng; có mặt trong 2 tâm Sân (thọ ưu).",
+                "Tật (Issā) là ganh tỵ với sự thành công, phần hơn của người khác. Lận (Macchariya) là bỏn xẻn, giấu kín sự thành đạt của mình, không muốn chia sẻ. Hối (Kukkucca) là trạng thái bồn chồn, hối tiếc việc đã làm sai hoặc việc tốt chưa làm. Cả ba chỉ có thể khởi trong 2 tâm Sân.",
+                "Hôn trầm (Thīna) là trạng thái co rút như lông gà trước ngọn lửa — ươn yếu, trì trệ, mất linh hoạt; đối nghịch với Tinh tấn. Thụy miên (Middha) là bần thần, dã dượi, buồn ngủ, che đậy tâm. Cả hai có mặt trong 5 tâm Bất thiện hữu trợ (4 tâm Tham hữu trợ + 1 tâm Sân hữu trợ).",
+                "Hoài nghi (Vicikicchā) là nghi ngờ, phân vân, lưỡng lự, không quyết đoán — chỉ có mặt trong tâm Si thọ xả hợp Hoài nghi.",
+            ],
+            "keyTerms": [
+                {"id": "TERM_LOBHA_M4", "term": "Tham", "pali": "Lobha", "meaning": "Bám chặt vào cảnh được coi là đẹp, hấp dẫn"},
+                {"id": "TERM_DITTHI_M4", "term": "Tà kiến", "pali": "Diṭṭhi", "meaning": "Bám giữ quan điểm sai lầm"},
+                {"id": "TERM_MANA_M4", "term": "Ngã mạn", "pali": "Māna", "meaning": "Tự đắc, so sánh hơn–bằng–thua"},
+                {"id": "TERM_DOSA_M4", "term": "Sân", "pali": "Dosa", "meaning": "Khó chịu, nóng giận, thiêu đốt"},
+                {"id": "TERM_ISSA_M4", "term": "Tật", "pali": "Issā", "meaning": "Ganh tỵ sự thành đạt của người khác"},
+                {"id": "TERM_MACCHARIYA_M4", "term": "Lận", "pali": "Macchariya", "meaning": "Bỏn xẻn, giấu kín phần hơn của mình"},
+                {"id": "TERM_KUKKUCCA_M4", "term": "Hối", "pali": "Kukkucca", "meaning": "Bồn chồn, hối tiếc việc đã làm / chưa làm"},
+                {"id": "TERM_THINA_M4", "term": "Hôn trầm", "pali": "Thīna", "meaning": "Co rút, ươn yếu, trì trệ — đối nghịch Tinh tấn"},
+                {"id": "TERM_MIDDHA_M4", "term": "Thụy miên", "pali": "Middha", "meaning": "Bần thần, buồn ngủ, che đậy tâm"},
+            ],
+            "sourceRefs": [
+                ref(TS, 37, "II/ TÂM SỞ THAM PHẦN – II.1 TÂM SỞ THAM: LOBHA CETASIKA; tứ ý nghĩa"),
+                ref(TS, 39, "II.2 TÂM SỞ TÀ KIẾN – DIṬṬHI CETASIKA; có mặt trong 4 tâm Tham hợp tà"),
+                ref(TS, 42, "II.3 TÂM SỞ NGÃ MẠN – MĀNA CETASIKA; 9 sự ỷ hơn–bằng–thua"),
+                ref(TS, 43, "III/ TÂM SỞ SÂN PHẦN; III.1 TÂM SỞ SÂN – DOSA CETASIKA; nguyên nhân phát khởi tâm sân"),
+                ref(TS, 45, "III.2 TÂM SỞ TẬT (GANH TỴ) – ISSĀ CETASIKA"),
+                ref(TS, 46, "III.3 TÂM SỞ LẬN – MACCHARIYA CETASIKA; 5 loại bỏn xẻn"),
+                ref(TS, 48, "III.4 TÂM SỞ HỐI – KUKKUCCA CETASIKA"),
+                ref(TS, 49, "IV.1 TÂM SỞ HÔN TRẦM – THĪNA CETASIKA; IV.2 TÂM SỞ THỤY MIÊN – MIDDHA CETASIKA"),
+                ref(TS, 52, "V/ TÂM SỞ HOÀI NGHI – VICIKICCHĀ CETASIKA; phân loại nghi"),
+            ],
+        },
     ],
     "reviewCards": [
         {"id": "M4_R01", "front": "Tâm Bất thiện có bao nhiêu và phân thế nào?", "back": "12 tâm: 8 tâm Tham (Lobha), 2 tâm Sân (Dosa), 2 tâm Si (Moha).", "sourceRefs": [ref(TAM, 9)]},
@@ -403,6 +472,12 @@ M4_VI = {
         {"id": "M4_R12", "front": "Si hoài nghi đặc biệt là nghi về những gì?", "back": "Phật, Pháp, Tăng, Tam học (giới–định–tuệ), quá khứ, vị lai, hiện tại và duyên sinh.", "sourceRefs": [ref(TAM, 14)]},
         {"id": "M4_R13", "front": "Hai nhân sanh tâm Si?", "back": "Phi như lý tác ý; và Pháp lậu làm nền tảng (Dục lậu, Hữu lậu, Kiến lậu, Vô minh lậu).", "sourceRefs": [ref(TAM, 14)]},
         {"id": "M4_R14", "front": "Cả 2 tâm Si có thọ gì?", "back": "Đều là Thọ xả (upekkhā-sahagataṃ).", "sourceRefs": [ref(TAM, 14)]},
+        {"id": "M4_R15", "front": "Tham phần gồm những tâm sở nào?", "back": "3: Tham (Lobha), Tà kiến (Diṭṭhi), Ngã mạn (Māna).", "sourceRefs": [ref(TS, 37), ref(TS, 39), ref(TS, 42)]},
+        {"id": "M4_R16", "front": "Tà kiến và Ngã mạn có mặt trong những tâm nào?", "back": "Tà kiến: 4 tâm Tham hợp tà. Ngã mạn: 4 tâm Tham ly tà.", "sourceRefs": [ref(TS, 39), ref(TS, 42)]},
+        {"id": "M4_R17", "front": "Sân phần gồm những tâm sở nào?", "back": "4: Sân (Dosa), Tật (Issā), Lận (Macchariya), Hối (Kukkucca) — chỉ khởi trong 2 tâm Sân (thọ ưu).", "sourceRefs": [ref(TS, 43), ref(TS, 45), ref(TS, 46), ref(TS, 48)]},
+        {"id": "M4_R18", "front": "Hôn trầm và Thụy miên có đặc tính gì?", "back": "Hôn trầm: co rút, ươn yếu, trì trệ — đối nghịch Tinh tấn. Thụy miên: bần thần, buồn ngủ, che đậy tâm. Cả hai có trong 5 tâm Bất thiện hữu trợ.", "sourceRefs": [ref(TS, 49)]},
+        {"id": "M4_R19", "front": "Hoài nghi (Vicikicchā) có mặt trong tâm nào?", "back": "Chỉ trong tâm Si thọ xả hợp Hoài nghi (1 trong 2 tâm Si).", "sourceRefs": [ref(TS, 52)]},
+        {"id": "M4_R20", "front": "14 tâm sở Bất thiện chia làm mấy nhóm?", "back": "5 nhóm: Si phần 4, Tham phần 3, Sân phần 4, Hôn phần 2, Hoài nghi 1.", "sourceRefs": [ref(TS, 31), ref(TS, 37)]},
     ],
     "quizSeeds": [
         {"id": "M4_Q01", "type": "mcq", "question": "12 tâm Bất thiện được phân thế nào?", "correctAnswer": "8 Tham + 2 Sân + 2 Si", "distractors": ["6 Tham + 4 Sân + 2 Si", "8 Tham + 2 Si + 2 Hoài nghi", "4 Tham + 4 Sân + 4 Si"], "explanation": "Akusala citta 12: Lobha 8, Dosa 2, Moha 2.", "sourceRefs": [ref(TAM, 9)]},
@@ -417,6 +492,14 @@ M4_VI = {
         {"id": "M4_Q10", "type": "mcq", "question": "Hai nhân sanh tâm Si là gì?", "correctAnswer": "Phi như lý tác ý và Pháp lậu làm nền tảng", "distractors": ["Tánh quen sân và gặp cảnh xấu", "Nghiệp quá khứ và cảnh duyên", "Vô tàm và Vô quý"], "explanation": "1. Phi như lý tác ý; 2. Pháp lậu (Dục lậu, Hữu lậu, Kiến lậu, Vô minh lậu).", "sourceRefs": [ref(TAM, 14)]},
         {"id": "M4_Q11", "type": "mcq", "question": "Theo tài liệu, tâm tham nào cho quả mạnh hơn?", "correctAnswer": "Thọ hỷ mạnh hơn thọ xả", "distractors": ["Thọ xả mạnh hơn thọ hỷ", "Hữu trợ mạnh hơn vô trợ", "Ly tà mạnh hơn hợp tà"], "explanation": "Cho quả khác biệt: 1. HỶ hơn XẢ; 2. VÔ TRỢ hơn HỮU TRỢ; 3. TÀ KIẾN hơn LY TÀ.", "sourceRefs": [ref(TAM, 11)]},
         {"id": "M4_Q12", "type": "mcq", "question": "Trạng thái (lakkhaṇa) của Tâm là gì?", "correctAnswer": "Biết cảnh", "distractors": ["Hưởng cảnh", "Nhớ cảnh", "Tạo nghiệp"], "explanation": "Tứ ý nghĩa của Tâm — a. TRẠNG THÁI: biết cảnh.", "sourceRefs": [ref(TAM, 9)]},
+        {"id": "M4_Q13", "type": "mcq", "question": "Tham phần gồm mấy tâm sở?", "correctAnswer": "3 — Tham, Tà kiến, Ngã mạn", "distractors": ["4 — Tham, Tà kiến, Ngã mạn, Tật", "2 — Tham, Tà kiến", "1 — chỉ Tham"], "explanation": "II/ TÂM SỞ THAM PHẦN: Lobha, Diṭṭhi, Māna.", "sourceRefs": [ref(TS, 37)]},
+        {"id": "M4_Q14", "type": "mcq", "question": "Tà kiến (Diṭṭhi) có mặt trong những tâm nào?", "correctAnswer": "4 tâm Tham hợp tà", "distractors": ["4 tâm Tham ly tà", "2 tâm Sân", "Tâm Si hoài nghi"], "explanation": "Diṭṭhi-sampayutta: 4 tâm tham hợp tà kiến.", "sourceRefs": [ref(TS, 39)]},
+        {"id": "M4_Q15", "type": "mcq", "question": "Ngã mạn (Māna) có mặt trong những tâm nào?", "correctAnswer": "4 tâm Tham ly tà", "distractors": ["4 tâm Tham hợp tà", "Cả 8 tâm Tham", "2 tâm Sân"], "explanation": "Māna tương ưng 4 tâm Tham ly tà (vô trợ/hữu trợ × hỷ/xả).", "sourceRefs": [ref(TS, 42)]},
+        {"id": "M4_Q16", "type": "mcq", "question": "Sân phần gồm những tâm sở nào?", "correctAnswer": "Sân, Tật, Lận, Hối", "distractors": ["Sân, Tật, Lận, Hối, Hôn trầm", "Sân, Hoài nghi", "Sân, Tật, Lận"], "explanation": "III/ TÂM SỞ SÂN PHẦN: Dosa, Issā, Macchariya, Kukkucca.", "sourceRefs": [ref(TS, 43), ref(TS, 45), ref(TS, 46), ref(TS, 48)]},
+        {"id": "M4_Q17", "type": "mcq", "question": "Tật (Issā) là gì?", "correctAnswer": "Ganh tỵ với sự thành công, phần hơn của người khác", "distractors": ["Bỏn xẻn, giấu kín phần hơn của mình", "Hối tiếc việc đã làm", "Nóng giận, phẫn nộ"], "explanation": "ISSĀ: không chịu được khi thấy người khác hơn mình.", "sourceRefs": [ref(TS, 45)]},
+        {"id": "M4_Q18", "type": "mcq", "question": "Lận (Macchariya) là gì?", "correctAnswer": "Bỏn xẻn — giấu kín, không chia sẻ điều tốt mình có", "distractors": ["Ganh tỵ sự thành đạt của người", "Nói lời đâm thọc", "Trạng thái buồn ngủ"], "explanation": "MACCHARIYA: đừng, không được cho điều cao quý, tốt đẹp của mình.", "sourceRefs": [ref(TS, 46)]},
+        {"id": "M4_Q19", "type": "mcq", "question": "Hôn trầm (Thīna) đối nghịch với pháp nào?", "correctAnswer": "Tinh tấn", "distractors": ["Trí tuệ", "Niệm", "Tín"], "explanation": "Đối nghịch với Hôn trầm là Tinh tấn (vīriya).", "sourceRefs": [ref(TS, 49)]},
+        {"id": "M4_Q20", "type": "mcq", "question": "Hoài nghi (Vicikicchā) thuộc tâm nào?", "correctAnswer": "Tâm Si thọ xả hợp Hoài nghi", "distractors": ["Tâm Si thọ xả Phóng dật", "Tâm Sân thọ ưu hợp phẫn", "Tâm Tham thọ xả hợp tà"], "explanation": "Vicikicchā chỉ tương ứng 1 tâm: Upekkhā-sahagataṃ vicikicchā-sampayuttaṃ.", "sourceRefs": [ref(TS, 52)]},
     ],
 }
 
