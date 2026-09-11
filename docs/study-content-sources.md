@@ -21,7 +21,7 @@ page in `reference/`. This document is the flattened audit trail.
 | `VDP-SacPhap.pdf` | 2, 3, 4, 5, 7, 16, 24, 25, 26 | M9_SAC_PHAP |
 | `VDP-SoDoNghiep.pdf` | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 | M6_NGHIEP |
 | `VDP-Tam.pdf` | 9, 10, 11, 14, 15, 16, 17, 18, 19, 35, 36, 37, 48, 50, 51, 52, 53 | M12_VO_NHAN, M13_SAC_GIOI, M14_VO_SAC_GIOI, M4_AKUSALA, M5_SOBHANA, M7_SIEU_THE |
-| `VDP-TamSo.pdf` | 3, 4, 5, 6, 10, 12, 15, 16, 18, 20, 23, 24, 25, 27, 29, 31, 34, 35, 36, 37, 39, 42, 43, 45, 46, 48, 49, 52, 55, 80, 82, 84, 88 | M11_BIET_CANH, M1_BASICS, M2_SI_PHAN, M3_TINH_HAO_BIEN_HANH, M4_AKUSALA |
+| `VDP-TamSo.pdf` | 3, 4, 5, 6, 10, 12, 15, 16, 18, 20, 23, 24, 25, 27, 29, 31, 34, 35, 36, 37, 39, 42, 43, 45, 46, 48, 49, 52, 55, 56, 59, 65, 66, 67, 69, 71, 72, 74, 75, 76, 77, 78, 80, 82, 84, 85, 86, 87, 88, 89 | M11_BIET_CANH, M1_BASICS, M2_SI_PHAN, M3_TINH_HAO_BIEN_HANH, M4_AKUSALA |
 | `VDP-ToatYeuVeDuyen.pdf` | 2, 3, 4, 5, 6, 7, 8 | M8_NHAN_DUYEN |
 
 ## Per-module detail
@@ -96,7 +96,7 @@ Bốn tâm sở Bất thiện Biến hành: Si, Vô tàm, Vô quý, Phóng dật
 
 25 tâm sở Tịnh hảo: 19 Biến hành có mặt trong mọi tâm tịnh hảo, cùng Giới phần (3), Vô lượng phần (2) và Tuệ quyền (1).
 
-*4 lesson sections · 18 review cards · 18 quiz seeds*
+*7 lesson sections · 20 review cards · 20 quiz seeds*
 
 | Section | Title | Sources |
 | --- | --- | --- |
@@ -104,6 +104,9 @@ Bốn tâm sở Bất thiện Biến hành: Si, Vô tàm, Vô quý, Phóng dật
 | `M3_S02` | Danh sách 19 Tịnh hảo Biến hành | `VDP-TamSo.pdf` p.55 — I. SOBHANASĀDHĀRAṆĀ – TÂM SỞ TỊNH HẢO BIẾN HÀNH, có 19: danh sách đầy đủ |
 | `M3_S03` | Hai nhóm còn lại: Vô lượng phần và Tuệ quyền | `VDP-TamSo.pdf` p.55 — III. APPAMAÑÑĀ – VÔ LƯỢNG PHẦN, có 2 tâm; IV. PAÑÑINDRIYA – TUỆ QUYỀN, có 1 tâm; `VDP-TamSo.pdf` p.84 — III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYACETASIKA |
 | `M3_S04` | Giới phần: Chánh Ngữ, Chánh Nghiệp, Chánh Mạng | `VDP-TamSo.pdf` p.80 — II/ TÂM SỞ GIỚI PHẦN – VIRATI CETASIKA; II.1 TÂM SỞ CHÁNH NGỮ – SAMMĀVĀCĀ: 4 loại lời nói cần kiêng; `VDP-TamSo.pdf` p.82 — II.2 TÂM SỞ CHÁNH NGHIỆP – SAMMĀKAMMANTĀ; II.3 TÂM SỞ CHÁNH MẠNG – SAMMĀAJJIVĀ; 3 thân ác nghiệp |
+| `M3_S05` | Bảy tâm sở đầu: Tín, Niệm, Tàm, Quý, Vô tham, Vô sân, Hành xả | `VDP-TamSo.pdf` p.56 — I.1 TÍN – SADDHA: Saṁ + dah; Tà tín và Chánh tín; `VDP-TamSo.pdf` p.59 — I.2 TÂM SỞ NIỆM – SATI: thực trạng không quên; đối với ác pháp và thiện pháp; `VDP-TamSo.pdf` p.65 — I.3 TÂM SỞ TÀM – HIRI: 5 pháp làm phát sanh Tàm; `VDP-TamSo.pdf` p.66 — I.4 TÂM SỞ QUÝ – OTTAPPA: 4 pháp làm phát sanh Quý; kết Tàm – Quý là hai pháp trắng; `VDP-TamSo.pdf` p.67 — I.5 TÂM SỞ VÔ THAM – ALOBHA: như nước lăn trên lá sen; một trong 3 nhân thiện; `VDP-TamSo.pdf` p.69 — I.6 TÂM SỞ VÔ SÂN – ADOSA: không hận; mát mẻ, từ tâm; `VDP-TamSo.pdf` p.71 — I.7 TÂM SỞ HÀNH XẢ – TATRAMAJJHATTATĀ: tatra + majjhattatā, quân bình |
+| `M3_S06` | Sáu cặp song đôi Thân – Tâm (số 8 đến 19) | `VDP-TamSo.pdf` p.72 — I.8–I.9 TỊNH THÂN – TỊNH TÂM: Kāya là nhóm tâm sở, không phải thân xác; trị phóng dật; `VDP-TamSo.pdf` p.74 — I.10–I.11 KHINH THÂN – KHINH TÂM: nhẹ nhàng; nghịch nghĩa với Hôn trầm – Thụy miên; `VDP-TamSo.pdf` p.75 — I.12–I.13 NHU THÂN – NHU TÂM: mudu = mềm dẻo; các pháp làm tâm cứng cỏi; `VDP-TamSo.pdf` p.76 — I.14–I.15 THÍCH THÂN – THÍCH TÂM: dễ sử dụng; nghịch nghĩa với Tham dục – Sân hận – Hoài nghi; `VDP-TamSo.pdf` p.77 — I.16–I.17 THUẦN THÂN – THUẦN TÂM; I.18–I.19 CHÁNH THÂN – CHÁNH TÂM: uju = ngay thẳng; `VDP-TamSo.pdf` p.78 — Tứ ý nghĩa Chánh thân – Chánh tâm; kết: 19 tâm sở đồng phát sanh cùng tất cả tâm sở tịnh hảo |
+| `M3_S07` | Vô lượng phần và Tuệ quyền: Bi, Tùy hỷ, Tuệ | `VDP-TamSo.pdf` p.84 — III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYA; III.1 TÂM SỞ BI – KARUNĀ: kar + una; tứ ý nghĩa; `VDP-TamSo.pdf` p.85 — Bi phối hợp với Thọ; kẻ thù trực tiếp – gián tiếp của Bi; `VDP-TamSo.pdf` p.86 — III.2 Tâm sở Tùy hỷ – MUDITĀ: căn mud; kẻ thù trực tiếp là ganh tỵ; `VDP-TamSo.pdf` p.87 — Phần kết Vô lượng phần: Bi – Tùy hỷ là 2 trong Tứ Vô lượng tâm; Từ = Vô sân, Xả = Hành xả; `VDP-TamSo.pdf` p.88 — IV/ TÂM SỞ TUỆ QUYỀN – PAÑÑINDRIYA: pa + ña; indriya; đặc tính trí tuệ; ngũ quyền; `VDP-TamSo.pdf` p.89 — Phân loại trí; Tam tuệ: Văn – Tư – Tu (suttamayā, cintāmayā, bhāvanāmayā) |
 
 ### M5_SOBHANA — Tâm Dục Giới Tịnh Hảo (Sobhaṇa Kāmāvacara)
 
