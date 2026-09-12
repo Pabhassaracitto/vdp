@@ -365,6 +365,15 @@ jobs:
     if: always() && !cancelled() && (startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     steps:
+      # Checkout FIRST: actions/checkout cleans the workspace before cloning
+      # (git clean -ffdx / empties a non-git dir), so it must run BEFORE the
+      # artifacts are downloaded — otherwise the downloaded artifacts/ folder
+      # gets wiped and the release step finds no files to upload.
+      - name: Checkout the built ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.CHECKOUT_REF }}
+
       - name: Download all artifacts
         uses: actions/download-artifact@v4
         continue-on-error: true
@@ -380,12 +389,6 @@ jobs:
           else
             echo "has_files=false" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Checkout the built ref
-        if: steps.check_artifacts.outputs.has_files == 'true'
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.CHECKOUT_REF }}
 
       - name: Point release tag at the built commit
         if: steps.check_artifacts.outputs.has_files == 'true'
