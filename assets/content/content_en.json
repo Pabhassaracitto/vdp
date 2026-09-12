@@ -2080,6 +2080,24 @@
       "description": "The arising and ceasing of cittas in a cognitive process.",
       "translationStatus": "source_only",
       "needsReview": true
+    },
+    "M15_TAM_SO_PHOI_HOP": {
+      "title": "Cetasika combinations (saṅgaha)",
+      "description": "How the 52 cetasikas combine with each class of citta: akusala, ahetuka, kāmāvacara sobhana, jhāna and lokuttara.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M16_NGUOI_VA_COI": {
+      "title": "Individuals and realms",
+      "description": "Twelve kinds of persons and the 31 planes of existence: the four realms, the hells, the human continents and the sense, form and formless heavens.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M17_DUYEN_CHI_TIET": {
+      "title": "Dependent origination: links 3-12 in detail",
+      "description": "From consciousness conditioning mentality-materiality through to birth and ageing-death, with the three periods and twenty modes.",
+      "translationStatus": "source_only",
+      "needsReview": true
     }
   },
   "fallbackLocale": "vi",
