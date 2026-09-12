@@ -62,4 +62,3 @@ macos/
 # These are large TODO scaffolds, not deliverables; only the --strip output in
 # assets/content/ ships. Translators who want to hand a worksheet around should
 # share the single file, not commit 3.7 MB of placeholders.
-/l10n_work/

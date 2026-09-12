@@ -1,0 +1,334 @@
+# Pāḷi glossary — agree these BEFORE translating prose.
+"# Keep Pāḷi unchanged. One agreed rendering per term, used consistently everywhere."
+"# hi: Rewata Dhamma, Abhidharma Prakasini (Hindi, Varanasi 1967)"
+# zh: 摂阿毘達磨義論 (classical Chinese Abhidhamma rendering)
+# zh_TW: 摂阿毘達磨義論 (traditional-script Chinese rendering)
+"# si: Sri Lankan Abhidhamma teaching tradition (Sangaha, Sinhala script)"
+# my: Myanmar let-than manual tradition (Abhidhammattha Sangaha)
+# ja: 南伝大蔵経 65: 摂阿毘達磨義論 (tr. Mizuno Kogen) — avoid Mahayana senses
+
+pali,category,vietnamese,english,hi,zh,zh_TW,si,my,ja,refs
+Adhimokkha,cetasikas,Thắng Giải,Decision,,,,,,,CS_ADHIMOKKHA
+Adosa,cetasikas,Vô Sân,Non-hatred,,,,,,,CS_ADOSA
+Ahirika,cetasikas,Vô Tàm,Shamelessness,,,,,,,CS_AHIRIKA M2_SI_PHAN/M2_S02
+Alobha,cetasikas,Vô Tham,Non-greed,,,,,,,CS_ALOBHA
+Anottappa,cetasikas,Vô Quý,Fearlessness of wrongdoing,,,,,,,CS_ANOTTAPPA M2_SI_PHAN/M2_S02
+Cetanā,cetasikas,Tư,Volition,,,,,,,CS_CETANA M1_BASICS/M1_S03 M6_NGHIEP/M6_S01
+Chanda,cetasikas,Dục,Desire-to-act,,,,,,,CS_CHANDA
+Citt'ujukatā,cetasikas,Chánh Tâm,Rectitude of consciousness,,,,,,,CS_CITTUJUKATA
+Citta-kammaññatā,cetasikas,Thích Tâm,Wieldiness of consciousness,,,,,,,CS_CITTAKAMMANNATA
+Citta-lahutā,cetasikas,Khinh Tâm,Lightness of consciousness,,,,,,,CS_CITTALAHUTA
+Citta-mudutā,cetasikas,Nhu Tâm,Malleability of consciousness,,,,,,,CS_CITTAMUDUTA
+Citta-passaddhi,cetasikas,Tịnh Tâm,Tranquillity of consciousness,,,,,,,CS_CITTAPASSADDHI
+Citta-pāguññatā,cetasikas,Thuần Tâm,Proficiency of consciousness,,,,,,,CS_CITTAPAGUNNATA
+Diṭṭhi,cetasikas,Tà Kiến,Wrong view,,,,,,,CS_DITTHI
+Dosa,cetasikas,Sân,Hatred,,,,,,,CS_DOSA M4_AKUSALA/M4_S03
+Ekaggatā,cetasikas,Nhất hành (Định),One-pointedness,,,,,,,CS_EKAGGATA M1_BASICS/M1_S04
+Hirī,cetasikas,Tàm,Moral shame,,,,,,,CS_HIRI
+Issā,cetasikas,Tật,Envy,,,,,,,CS_ISSA
+Jīvitindriya,cetasikas,Mạng quyền,Mental life faculty,,,,,,,CS_JIVITINDRIYA M1_BASICS/M1_S04
+Karuṇā,cetasikas,Bi,Compassion,,,,,,,CS_KARUNA
+Kukkucca,cetasikas,Hối,Worry,,,,,,,CS_KUKKUCCA
+Kāy'ujukatā,cetasikas,Chánh Thân,Rectitude of mental factors,,,,,,,CS_KAYUJUKATA
+Kāya-kammaññatā,cetasikas,Thích Thân,Wieldiness of mental factors,,,,,,,CS_KAYAKAMMANNATA
+Kāya-lahutā,cetasikas,Khinh Thân,Lightness of mental factors,,,,,,,CS_KAYALAHUTA
+Kāya-mudutā,cetasikas,Nhu Thân,Malleability of mental factors,,,,,,,CS_KAYAMUDUTA
+Kāya-passaddhi,cetasikas,Tịnh Thân,Tranquillity of mental factors,,,,,,,CS_KAYAPASSADDHI
+Kāya-pāguññatā,cetasikas,Thuần Thân,Proficiency of mental factors,,,,,,,CS_KAYAPAGUNNATA
+Lobha,cetasikas,Tham,Greed,,,,,,,CS_LOBHA M4_AKUSALA/M4_S02
+Macchariya,cetasikas,Lận,Avarice,,,,,,,CS_MACCHARIYA
+Manasikāra,cetasikas,Tác ý,Attention,,,,,,,CS_MANASIKARA M1_BASICS/M1_S04
+Middha,cetasikas,Thụy Miên,Torpor,,,,,,,CS_MIDDHA
+Moha,cetasikas,Si,Delusion,,,,,,,CS_MOHA M4_AKUSALA/M4_S04 M8_NHAN_DUYEN/M8_S06
+Muditā,cetasikas,Tùy Hỷ,Appreciative joy,,,,,,,CS_MUDITA M3_TINH_HAO_BIEN_HANH/M3_S03
+Māna,cetasikas,Ngã Mạn,Conceit,,,,,,,CS_MANA
+Ottappa,cetasikas,Quý,Moral dread,,,,,,,CS_OTTAPPA M3_TINH_HAO_BIEN_HANH/M3_S02
+Paññā,cetasikas,Tuệ quyền,Wisdom faculty,,,,,,,CS_PANNA
+Phassa,cetasikas,Xúc,Contact,,,,,,,CS_PHASSA PD_06 M1_BASICS/M1_S02
+Pīti,cetasikas,Hỷ,Rapture,,,,,,,CS_PITI
+Saddhā,cetasikas,Tín,Faith,,,,,,,CS_SADDHA M3_TINH_HAO_BIEN_HANH/M3_S02
+Sammā-kammanta,cetasikas,Chánh Nghiệp,Right action,,,,,,,CS_SAMMAKAMMANTA
+Sammā-vācā,cetasikas,Chánh Ngữ,Right speech,,,,,,,CS_SAMMAVACA
+Sammā-ājīva,cetasikas,Chánh Mạng,Right livelihood,,,,,,,CS_SAMMAAJIVA
+Sati,cetasikas,Niệm,Mindfulness,,,,,,,CS_SATI M3_TINH_HAO_BIEN_HANH/M3_S02
+Saññā,cetasikas,Tưởng,Perception,,,,,,,CS_SANNA M1_BASICS/M1_S03
+Tatramajjhattatā,cetasikas,Hành Xả,Equanimity,,,,,,,CS_TATRAMAJJHATTATA M3_TINH_HAO_BIEN_HANH/M3_S02
+Thīna,cetasikas,Hôn Trầm,Sloth,,,,,,,CS_THINA
+Uddhacca,cetasikas,Phóng Dật,Restlessness,,,,,,,CS_UDDHACCA M2_SI_PHAN/M2_S03
+Vedanā,cetasikas,Thọ,Feeling,,,,,,,CS_VEDANA PD_07 M1_BASICS/M1_S02
+Vicikicchā,cetasikas,Hoài Nghi,Doubt,,,,,,,CS_VICIKICCHA M4_AKUSALA/M4_S04
+Vicāra,cetasikas,Tứ,Sustained application,,,,,,,CS_VICARA
+Vitakka,cetasikas,Tầm,Initial application,,,,,,,CS_VITAKKA
+Vīriya,cetasikas,Cần,Energy,,,,,,,CS_VIRIYA
+Abhijjhā,keyTerm,Tham ác,,,,,,,,M6_NGHIEP/M6_S07
+Ahetuka,keyTerm,Vô nhân,,,,,,,,M9_SAC_PHAP/M9_S02
+Ahosikamma,keyTerm,Vô hiệu nghiệp,,,,,,,,M6_NGHIEP/M6_S05
+Akusala cetasika,keyTerm,Tâm sở Bất thiện,,,,,,,,M2_SI_PHAN/M2_S01
+Akusala citta,keyTerm,Tâm Bất thiện,,,,,,,,M4_AKUSALA/M4_S01
+Anipphannarūpa,keyTerm,Sắc không rõ,,,,,,,,M9_SAC_PHAP/M9_S06
+Anāgāmi,keyTerm,Bất lai / A-na-hàm,,,,,,,,M7_SIEU_THE/M7_S02
+Anārammaṇa,keyTerm,Không có đối tượng,,,,,,,,M9_SAC_PHAP/M9_S02
+Aparāpariyavedanīyakamma,keyTerm,Hậu báo nghiệp,,,,,,,,M6_NGHIEP/M6_S05
+Appamaññā,keyTerm,Vô lượng phần,,,,,,,,M3_TINH_HAO_BIEN_HANH/M3_S03
+Apuññābhisaṅkhāra,keyTerm,Phi phúc hành,,,,,,,,M8_NHAN_DUYEN/M8_S07
+Arahatta,keyTerm,Vô sanh / A-la-hán,,,,,,,,M7_SIEU_THE/M7_S02
+Arūpāvacarakusala,keyTerm,Nghiệp Thiện Vô sắc giới,,,,,,,,M6_NGHIEP/M6_S06
+Asaṅkhārika,keyTerm,Vô trợ,,,,,,,,M4_AKUSALA/M4_S02
+Atimahanta-ārammaṇa,keyTerm,Cảnh rất lớn,,,,,,,,M10_LO_TRINH/M10_S02
+Ayoniso manasikāra,keyTerm,Phi như lý tác ý,,,,,,,,M4_AKUSALA/M4_S04
+Aññasamāna,keyTerm,Tợ tha,,,,,,,,M1_BASICS/M1_S01
+Bhavaṅga,keyTerm,Hộ kiếp / Hữu phần,,,,,,,,M10_LO_TRINH/M10_S03
+Bījakamma,keyTerm,Hạt giống nghiệp,,,,,,,,M10_LO_TRINH/M10_S06
+Catusaṅkhepa,keyTerm,Bốn phân hạng,,,,,,,,M8_NHAN_DUYEN/M8_S04
+Citta,keyTerm,Tâm,,,,,,,,M4_AKUSALA/M4_S01
+Cittavīthi,keyTerm,Lộ trình tâm,,,,,,,,M10_LO_TRINH/M10_S01
+Diṭṭhadhammavedanīyakamma,keyTerm,Hiện báo nghiệp,,,,,,,,M6_NGHIEP/M6_S05
+Diṭṭhigatasampayutta,keyTerm,Hợp tà kiến,,,,,,,,M4_AKUSALA/M4_S02
+Domanassa,keyTerm,Thọ ưu,,,,,,,,M4_AKUSALA/M4_S03
+Dve mūlāni,keyTerm,Hai nhân gốc,,,,,,,,M8_NHAN_DUYEN/M8_S05
+Dvihetuka,keyTerm,Người Nhị nhân,,,,,,,,M6_NGHIEP/M6_S08
+Dvāra,keyTerm,Môn,,,,,,,,M10_LO_TRINH/M10_S01
+Garukakamma,keyTerm,Trọng nghiệp,,,,,,,,M6_NGHIEP/M6_S04
+Gocararūpa,keyTerm,Sắc cảnh giới,,,,,,,,M9_SAC_PHAP/M9_S05
+Hadayavatthu,keyTerm,Sắc ý vật,,,,,,,,M9_SAC_PHAP/M9_S05
+Hiri,keyTerm,Tàm,,,,,,,,M3_TINH_HAO_BIEN_HANH/M3_S02
+Janakakamma,keyTerm,Sanh nghiệp,,,,,,,,M6_NGHIEP/M6_S03
+Javana,keyTerm,Đổng lực,,,,,,,,M6_NGHIEP/M6_S05 M10_LO_TRINH/M10_S04
+Kamma,keyTerm,Nghiệp,,,,,,,,M6_NGHIEP/M6_S01
+Kammacatukka,keyTerm,Bốn nhóm Nghiệp,,,,,,,,M6_NGHIEP/M6_S02
+Kammaja-rūpa,keyTerm,Sắc nghiệp,,,,,,,,M6_NGHIEP/M6_S08
+Kammavaṭṭa,keyTerm,Nghiệp luân,,,,,,,,M8_NHAN_DUYEN/M8_S05
+Karunā,keyTerm,Bi,,,,,,,,M3_TINH_HAO_BIEN_HANH/M3_S03
+Kaṭattākamma,keyTerm,Khinh thiểu nghiệp,,,,,,,,M6_NGHIEP/M6_S04
+Kilesavaṭṭa,keyTerm,Phiền não luân,,,,,,,,M8_NHAN_DUYEN/M8_S05
+Kāmāvacara,keyTerm,Dục giới,,,,,,,,M5_SOBHANA/M5_S03
+Kāmāvacarakusala,keyTerm,Nghiệp Thiện Dục giới,,,,,,,,M6_NGHIEP/M6_S06
+Kāyakamma,keyTerm,Thân nghiệp,,,,,,,,M6_NGHIEP/M6_S01
+Lakkhaṇarūpa,keyTerm,Sắc tứ tướng,,,,,,,,M9_SAC_PHAP/M9_S05
+Lokuttara,keyTerm,Siêu thế,,,,,,,,M7_SIEU_THE/M7_S01
+Magga citta,keyTerm,Tâm Đạo,,,,,,,,M7_SIEU_THE/M7_S01
+Mahābhūtāni,keyTerm,Tứ đại,,,,,,,,M9_SAC_PHAP/M9_S03
+Mahākiriya citta,keyTerm,Tâm Đại duy tác,,,,,,,,M5_SOBHANA/M5_S01
+Mahākusala citta,keyTerm,Tâm Đại thiện,,,,,,,,M5_SOBHANA/M5_S01
+Mahāvipāka citta,keyTerm,Tâm Đại quả,,,,,,,,M5_SOBHANA/M5_S01
+Manodvārāvajjana,keyTerm,Khán ý môn,,,,,,,,M10_LO_TRINH/M10_S08
+Manokamma,keyTerm,Ý nghiệp,,,,,,,,M6_NGHIEP/M6_S01
+Mocatuka,keyTerm,Si phần,,,,,,,,M2_SI_PHAN/M2_S01
+Musāvāda,keyTerm,Nói dối,,,,,,,,M6_NGHIEP/M6_S07
+Nipphannarūpa,keyTerm,Sắc rõ,,,,,,,,M9_SAC_PHAP/M9_S06
+Ojā / Āhāra,keyTerm,Vật thực,,,,,,,,M9_SAC_PHAP/M9_S07
+Paccaya,keyTerm,Duyên,,,,,,,,M8_NHAN_DUYEN/M8_S01
+Pakiṇṇaka,keyTerm,Biệt cảnh,,,,,,,,M1_BASICS/M1_S01
+Pasādarūpa,keyTerm,Sắc thần kinh,,,,,,,,M9_SAC_PHAP/M9_S05
+Pañcadvārāvajjana,keyTerm,Khán ngũ môn,,,,,,,,M10_LO_TRINH/M10_S03
+Paññindriya,keyTerm,Tuệ quyền,,,,,,,,M3_TINH_HAO_BIEN_HANH/M3_S03
+Paṭhavī-dhātu,keyTerm,Địa đại,,,,,,,,M9_SAC_PHAP/M9_S04
+Paṭiccasamuppāda,keyTerm,Duyên khởi,,,,,,,,M8_NHAN_DUYEN/M8_S01
+Paṭigha,keyTerm,Phẫn,,,,,,,,M4_AKUSALA/M4_S03
+Paṭisandhi viññāṇa,keyTerm,Thức tục sinh,,,,,,,,M6_NGHIEP/M6_S03
+Paṭṭhāna,keyTerm,Duyên hệ tương quan,,,,,,,,M8_NHAN_DUYEN/M8_S01
+Phala citta,keyTerm,Tâm Quả,,,,,,,,M7_SIEU_THE/M7_S01
+Puññābhisaṅkhāra,keyTerm,Phúc hành,,,,,,,,M8_NHAN_DUYEN/M8_S07
+Pāṇātipāta,keyTerm,Sát sanh,,,,,,,,M6_NGHIEP/M6_S07
+Rūpa,keyTerm,Sắc pháp,,,,,,,,M9_SAC_PHAP/M9_S01
+Rūpasamuṭṭhāna,keyTerm,Nhân sanh sắc,,,,,,,,M9_SAC_PHAP/M9_S07
+Rūpāvacarakusala,keyTerm,Nghiệp Thiện Sắc giới,,,,,,,,M6_NGHIEP/M6_S06
+Sabbacittasādhāraṇa,keyTerm,Biến hành,,,,,,,,M1_BASICS/M1_S01
+Sakadāgāmi,keyTerm,Nhứt lai / Tư-đà-hàm,,,,,,,,M7_SIEU_THE/M7_S02
+Sakkāyadiṭṭhi,keyTerm,Thân kiến,,,,,,,,M7_SIEU_THE/M7_S03
+Sammādiṭṭhi,keyTerm,Chánh kiến,,,,,,,,M6_NGHIEP/M6_S07
+Sampaṭicchana,keyTerm,Tiếp thâu,,,,,,,,M10_LO_TRINH/M10_S03
+Santīraṇa,keyTerm,Quan sát,,,,,,,,M10_LO_TRINH/M10_S03
+Sasaṅkhārika,keyTerm,Hữu trợ,,,,,,,,M4_AKUSALA/M4_S02
+Sobhana,keyTerm,Tịnh hảo,,,,,,,,M3_TINH_HAO_BIEN_HANH/M3_S01
+Sotāpatti,keyTerm,Nhập lưu / Tu-đà-hoàn,,,,,,,,M7_SIEU_THE/M7_S02
+Sīlabbataparāmāsa,keyTerm,Giới cấm thủ,,,,,,,,M7_SIEU_THE/M7_S03
+Tadālambana,keyTerm,Na cảnh,,,,,,,,M10_LO_TRINH/M10_S03 M10_LO_TRINH/M10_S07
+Tayo addhā,keyTerm,Ba thời,,,,,,,,M8_NHAN_DUYEN/M8_S03
+Tihetuka,keyTerm,Người Tam nhân,,,,,,,,M6_NGHIEP/M6_S08
+Tisandhi,keyTerm,Ba mối liên hệ,,,,,,,,M8_NHAN_DUYEN/M8_S04
+Upaghātakakamma,keyTerm,Đoạn nghiệp,,,,,,,,M6_NGHIEP/M6_S03
+Upapajjavedanīyakamma,keyTerm,Sanh báo nghiệp,,,,,,,,M6_NGHIEP/M6_S05
+Upapīḷakakamma,keyTerm,Chướng nghiệp,,,,,,,,M6_NGHIEP/M6_S03
+Upatthambhakakamma,keyTerm,Trì nghiệp,,,,,,,,M6_NGHIEP/M6_S03
+Upādāyarūpāni,keyTerm,Sắc y đại sinh,,,,,,,,M9_SAC_PHAP/M9_S03
+Utu,keyTerm,Quý tiết / thời tiết,,,,,,,,M9_SAC_PHAP/M9_S07
+Vacīkamma,keyTerm,Khẩu nghiệp,,,,,,,,M6_NGHIEP/M6_S01
+Vatthu,keyTerm,Vật,,,,,,,,M10_LO_TRINH/M10_S01
+Vibhūta-ārammaṇa,keyTerm,Cảnh rõ,,,,,,,,M10_LO_TRINH/M10_S02
+Vijjā,keyTerm,Minh,,,,,,,,M8_NHAN_DUYEN/M8_S06
+Vipākavaṭṭa,keyTerm,Quả luân,,,,,,,,M8_NHAN_DUYEN/M8_S05
+Viratiyo,keyTerm,Giới phần,,,,,,,,M3_TINH_HAO_BIEN_HANH/M3_S01
+Viññattirūpa,keyTerm,Sắc biểu tri,,,,,,,,M9_SAC_PHAP/M9_S05
+Voṭṭhapana,keyTerm,Xác định,,,,,,,,M10_LO_TRINH/M10_S03
+Vīsatākārā,keyTerm,Hai mươi phương cách,,,,,,,,M8_NHAN_DUYEN/M8_S04
+Vīthimutta,keyTerm,Tâm ngoại lộ,,,,,,,,M10_LO_TRINH/M10_S09
+Ñāṇasampayutta,keyTerm,Hợp trí,,,,,,,,M5_SOBHANA/M5_S02
+Ñāṇavippayutta,keyTerm,Ly trí,,,,,,,,M5_SOBHANA/M5_S02
+Āciṇṇakamma,keyTerm,Thường nghiệp,,,,,,,,M6_NGHIEP/M6_S04
+Ānantariyakamma,keyTerm,Vô gián nghiệp,,,,,,,,M6_NGHIEP/M6_S04
+Āneñjābhisaṅkhāra,keyTerm,Bất động hành,,,,,,,,M8_NHAN_DUYEN/M8_S07
+Āsannakamma,keyTerm,Cận tử nghiệp,,,,,,,,M6_NGHIEP/M6_S04
+Aniccatā,rupas,Vô Thường Sắc (Diệt Tướng),Impermanence of matter,,,,,,,RP_028
+Cakkhu-pasāda,rupas,Nhãn Thần Kinh,Eye sensitivity,,,,,,,RP_005
+Gandha (Gocara),rupas,Khí Cảnh,Odour,,,,,,,RP_012
+Ghāna-pasāda,rupas,Tỷ Thần Kinh,Nose sensitivity,,,,,,,RP_007
+Hadaya-vatthu,rupas,Ý Vật,Heart-base,,,,,,,RP_016
+Itthi-bhāva,rupas,Nữ Căn,Femininity faculty,,,,,,,RP_014
+Jaratā,rupas,Lão Sắc (Dị Tướng),Ageing of matter,,,,,,,RP_027
+Jivhā-pasāda,rupas,Thiệt Thần Kinh,Tongue sensitivity,,,,,,,RP_008
+Jīvitindriya (Rūpa),rupas,Sắc Mạng Quyền,Material life faculty,,,,,,,RP_017
+Kāya-pasāda,rupas,Thân Thần Kinh,Body sensitivity,,,,,,,RP_009
+Kāya-viññatti,rupas,Thân Biểu Tri,Bodily intimation,,,,,,,RP_020
+Ojā,rupas,Vật Thực (Dinh Dưỡng),Nutritive essence,,,,,,,RP_018
+Pathavī-dhātu,rupas,Địa Đại,Earth element,,,,,,,RP_001
+Purisa-bhāva,rupas,Nam Căn,Masculinity faculty,,,,,,,RP_015
+Rasa (Gocara),rupas,Vị Cảnh,Taste,,,,,,,RP_013
+Rūpa (Gocara),rupas,Sắc Cảnh,Visible form,,,,,,,RP_010
+Rūpassa kammaññatā,rupas,Thích Sắc,Wieldiness of matter,,,,,,,RP_024
+Rūpassa lahutā,rupas,Khinh Sắc,Lightness of matter,,,,,,,RP_022
+Rūpassa mudutā,rupas,Nhu Sắc,Malleability of matter,,,,,,,RP_023
+Sadda (Gocara),rupas,Thinh Cảnh,Sound,,,,,,,RP_011
+Santati,rupas,Tục Sắc (Trú Tướng),Continuity of matter,,,,,,,RP_026
+Sota-pasāda,rupas,Nhĩ Thần Kinh,Ear sensitivity,,,,,,,RP_006
+Tejo-dhātu,rupas,Hỏa Đại,Fire element,,,,,,,RP_003 M9_SAC_PHAP/M9_S04
+Upacaya,rupas,Tích Sắc (Sanh Tướng),Production of matter,,,,,,,RP_025
+Vacī-viññatti,rupas,Ngữ Biểu Tri,Verbal intimation,,,,,,,RP_021
+Vāyo-dhātu,rupas,Phong Đại,Air element,,,,,,,RP_004 M9_SAC_PHAP/M9_S04
+Ākāsa-dhātu,rupas,Hư Không Giới,Space element,,,,,,,RP_019
+Āpo-dhātu,rupas,Thủy Đại,Water element,,,,,,,RP_002 M9_SAC_PHAP/M9_S04
+Avijjā,paticcas,Vô Minh,Ignorance,,,,,,,PD_01 M8_NHAN_DUYEN/M8_S02
+Bhava,paticcas,Hữu,Becoming,,,,,,,PD_10
+Jarāmaraṇa,paticcas,Lão Tử,Ageing and death,,,,,,,PD_12 M8_NHAN_DUYEN/M8_S02
+Jāti,paticcas,Sanh,Birth,,,,,,,PD_11
+Nāmarūpa,paticcas,Danh Sắc,Mind and matter,,,,,,,PD_04 M8_NHAN_DUYEN/M8_S02
+Saḷāyatana,paticcas,Lục Nhập,Six sense bases,,,,,,,PD_05 M8_NHAN_DUYEN/M8_S02
+Saṅkhārā,paticcas,Hành,Volitional formations,,,,,,,PD_02 M8_NHAN_DUYEN/M8_S02
+Taṇhā,paticcas,Ái,Craving,,,,,,,PD_08
+Upādāna,paticcas,Thủ,Clinging,,,,,,,PD_09
+Viññāṇa,paticcas,Thức,Consciousness,,,,,,,PD_03 M8_NHAN_DUYEN/M8_S02
+Ahosi-kamma,kammas,Vô Hiệu Nghiệp,Defunct kamma,,,,,,,KM_T_04
+Akusala-kamma,kammas,Bất Thiện Nghiệp,Unwholesome kamma,,,,,,,KM_R_01
+Aparāpariyavedanīya-kamma,kammas,Hậu Hậu Báo Nghiệp,Indefinitely effective kamma,,,,,,,KM_T_03
+Diṭṭhadhammavedanīya-kamma,kammas,Hiện Báo Nghiệp,Immediately effective kamma,,,,,,,KM_T_01
+Garuka-kamma,kammas,Trọng Nghiệp,Weighty kamma,,,,,,,KM_U_01
+Janaka-kamma,kammas,Sanh Nghiệp,Reproductive kamma,,,,,,,KM_P_01
+Kaṭattā-kamma,kammas,Dồn Tích Nghiệp,Cumulative kamma,,,,,,,KM_U_04
+Kāmāvacara-kusala-kamma,kammas,Dục Giới Thiện Nghiệp,Sense-sphere wholesome kamma,,,,,,,KM_R_02
+Lokuttara-kamma / Magga-kamma,kammas,Siêu Thế Nghiệp (Đạo Nghiệp),Supramundane kamma (Path kamma),,,,,,,KM_R_04
+Rūpāvacara-kusala-kamma,kammas,Sắc Giới Thiện Nghiệp,Form-sphere wholesome kamma,,,,,,,KM_R_03
+Upaghātaka-kamma,kammas,Đoạn Đứt Nghiệp,Destructive kamma,,,,,,,KM_P_04
+Upapajjavedanīya-kamma,kammas,Hậu Báo Nghiệp,Subsequently effective kamma,,,,,,,KM_T_02
+Upapīḷaka-kamma,kammas,Cản Trở Nghiệp,Obstructive kamma,,,,,,,KM_P_03
+Upatthambhaka-kamma,kammas,Bổ Trợ Nghiệp,Supportive kamma,,,,,,,KM_P_02
+Āciṇṇa-kamma,kammas,Thường Nghiệp,Habitual kamma,,,,,,,KM_U_03
+Āsanna-kamma,kammas,Cận Tử Nghiệp,Death-proximate kamma,,,,,,,KM_U_02
+Atimahanta-ārammaṇa Pañcadvāra-vīthi,vithis,Lộ Ngũ Môn Cảnh Rất Lớn,Atimahanta-ārammaṇa Pañcadvāra-vīthi,,,,,,,VT_NGU_MON_RATLON
+Mahanta-ārammaṇa Pañcadvāra-vīthi,vithis,Lộ Ngũ Môn Cảnh Lớn,Mahanta-ārammaṇa Pañcadvāra-vīthi,,,,,,,VT_NGU_MON_LON
+Manodvāra-vīthi,vithis,Lộ Ý Môn,Manodvāra-vīthi,,,,,,,VT_Y_MON M10_LO_TRINH/M10_S08
+Vīthimutta-citta,vithis,Lộ Ngoài (Tục Sinh / Hộ Kiếp / Tử),Vīthimutta-citta,,,,,,,VT_VITHIMUTTA
+Anāgāmi-magga-catuttha-jhāna-cittaṃ,cittas,Tâm Bất Lai Đạo Tứ Thiền,Anāgāmi-magga-catuttha-jhāna-cittaṃ,,,,,,,CI_119
+Anāgāmi-magga-dutiya-jhāna-cittaṃ,cittas,Tâm Bất Lai Đạo Nhị Thiền,Anāgāmi-magga-dutiya-jhāna-cittaṃ,,,,,,,CI_117
+Anāgāmi-magga-pañcama-jhāna-cittaṃ,cittas,Tâm Bất Lai Đạo Ngũ Thiền,Anāgāmi-magga-pañcama-jhāna-cittaṃ,,,,,,,CI_120
+Anāgāmi-magga-paṭhama-jhāna-cittaṃ,cittas,Tâm Bất Lai Đạo Sơ Thiền,Anāgāmi-magga-paṭhama-jhāna-cittaṃ,,,,,,,CI_116
+Anāgāmi-magga-tatiya-jhāna-cittaṃ,cittas,Tâm Bất Lai Đạo Tam Thiền,Anāgāmi-magga-tatiya-jhāna-cittaṃ,,,,,,,CI_118
+Anāgāmi-phala-catuttha-jhāna-cittaṃ,cittas,Tâm Bất Lai Quả Tứ Thiền,Anāgāmi-phala-catuttha-jhāna-cittaṃ,,,,,,,CI_139
+Anāgāmi-phala-dutiya-jhāna-cittaṃ,cittas,Tâm Bất Lai Quả Nhị Thiền,Anāgāmi-phala-dutiya-jhāna-cittaṃ,,,,,,,CI_137
+Anāgāmi-phala-pañcama-jhāna-cittaṃ,cittas,Tâm Bất Lai Quả Ngũ Thiền,Anāgāmi-phala-pañcama-jhāna-cittaṃ,,,,,,,CI_140
+Anāgāmi-phala-paṭhama-jhāna-cittaṃ,cittas,Tâm Bất Lai Quả Sơ Thiền,Anāgāmi-phala-paṭhama-jhāna-cittaṃ,,,,,,,CI_136
+Anāgāmi-phala-tatiya-jhāna-cittaṃ,cittas,Tâm Bất Lai Quả Tam Thiền,Anāgāmi-phala-tatiya-jhāna-cittaṃ,,,,,,,CI_138
+Arahatta-magga-catuttha-jhāna-cittaṃ,cittas,Tâm A-la-hán Đạo Tứ Thiền,Arahatta-magga-catuttha-jhāna-cittaṃ,,,,,,,CI_124
+Arahatta-magga-dutiya-jhāna-cittaṃ,cittas,Tâm A-la-hán Đạo Nhị Thiền,Arahatta-magga-dutiya-jhāna-cittaṃ,,,,,,,CI_122
+Arahatta-magga-pañcama-jhāna-cittaṃ,cittas,Tâm A-la-hán Đạo Ngũ Thiền,Arahatta-magga-pañcama-jhāna-cittaṃ,,,,,,,CI_125
+Arahatta-magga-paṭhama-jhāna-cittaṃ,cittas,Tâm A-la-hán Đạo Sơ Thiền,Arahatta-magga-paṭhama-jhāna-cittaṃ,,,,,,,CI_121
+Arahatta-magga-tatiya-jhāna-cittaṃ,cittas,Tâm A-la-hán Đạo Tam Thiền,Arahatta-magga-tatiya-jhāna-cittaṃ,,,,,,,CI_123
+Arahatta-phala-catuttha-jhāna-cittaṃ,cittas,Tâm A-la-hán Quả Tứ Thiền,Arahatta-phala-catuttha-jhāna-cittaṃ,,,,,,,CI_144
+Arahatta-phala-dutiya-jhāna-cittaṃ,cittas,Tâm A-la-hán Quả Nhị Thiền,Arahatta-phala-dutiya-jhāna-cittaṃ,,,,,,,CI_142
+Arahatta-phala-pañcama-jhāna-cittaṃ,cittas,Tâm A-la-hán Quả Ngũ Thiền,Arahatta-phala-pañcama-jhāna-cittaṃ,,,,,,,CI_145
+Arahatta-phala-paṭhama-jhāna-cittaṃ,cittas,Tâm A-la-hán Quả Sơ Thiền,Arahatta-phala-paṭhama-jhāna-cittaṃ,,,,,,,CI_141
+Arahatta-phala-tatiya-jhāna-cittaṃ,cittas,Tâm A-la-hán Quả Tam Thiền,Arahatta-phala-tatiya-jhāna-cittaṃ,,,,,,,CI_143
+Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ,cittas,Tâm Sân Thọ Ưu Hợp Phẫn Vô Trợ,Hatred-rooted consciousness with displeasure associated with aversion unprompted,,,,,,,CI_009
+Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ,cittas,Tâm Sân Thọ Ưu Hợp Phẫn Hữu Trợ,Hatred-rooted consciousness with displeasure associated with aversion prompted,,,,,,,CI_010
+Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ,cittas,Thân Thức Thọ Khổ Quả Bất Thiện Vô Nhân,Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ,,,,,,,CI_017
+Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ,cittas,Tâm Duy Tác Phi Tưởng Phi Phi Tưởng Xứ,Functional consciousness base of neither-perception-nor-non-perception,,,,,,,CI_105
+Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ,cittas,Tâm Thiện Phi Tưởng Phi Phi Tưởng Xứ,Wholesome consciousness base of neither-perception-nor-non-perception,,,,,,,CI_097
+Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ,cittas,Tâm Quả Thiện Phi Tưởng Phi Phi Tưởng Xứ,Resultant consciousness base of neither-perception-nor-non-perception,,,,,,,CI_101
+Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ,cittas,Tâm Duy Tác Sắc Giới Tứ Thiền,Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ,,,,,,,CI_092
+Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ,cittas,Tâm Duy Tác Sắc Giới Nhị Thiền,Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ,,,,,,,CI_090
+Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ,cittas,Tâm Duy Tác Sắc Giới Ngũ Thiền,Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ,,,,,,,CI_093
+Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ,cittas,Tâm Duy Tác Sắc Giới Sơ Thiền,Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ,,,,,,,CI_089
+Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ,cittas,Tâm Duy Tác Sắc Giới Tam Thiền,Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ,,,,,,,CI_091
+Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ,cittas,Tâm Thiện Sắc Giới Tứ Thiền,Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ,,,,,,,CI_082
+Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ,cittas,Tâm Thiện Sắc Giới Nhị Thiền,Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ,,,,,,,CI_080
+Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ,cittas,Tâm Thiện Sắc Giới Ngũ Thiền,Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ,,,,,,,CI_083
+Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ,cittas,Tâm Thiện Sắc Giới Sơ Thiền,Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ,,,,,,,CI_079
+Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ,cittas,Tâm Thiện Sắc Giới Tam Thiền,Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ,,,,,,,CI_081
+Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ,cittas,Tâm Quả Thiện Sắc Giới Tứ Thiền,Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ,,,,,,,CI_087
+Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ,cittas,Tâm Quả Thiện Sắc Giới Nhị Thiền,Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ,,,,,,,CI_085
+Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ,cittas,Tâm Quả Thiện Sắc Giới Ngũ Thiền,Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ,,,,,,,CI_088
+Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ,cittas,Tâm Quả Thiện Sắc Giới Sơ Thiền,Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ,,,,,,,CI_084
+Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ,cittas,Tâm Quả Thiện Sắc Giới Tam Thiền,Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ,,,,,,,CI_086
+Sakadāgāmi-magga-catuttha-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Đạo Tứ Thiền,Sakadāgāmi-magga-catuttha-jhāna-cittaṃ,,,,,,,CI_114
+Sakadāgāmi-magga-dutiya-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Đạo Nhị Thiền,Sakadāgāmi-magga-dutiya-jhāna-cittaṃ,,,,,,,CI_112
+Sakadāgāmi-magga-pañcama-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Đạo Ngũ Thiền,Sakadāgāmi-magga-pañcama-jhāna-cittaṃ,,,,,,,CI_115
+Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Đạo Sơ Thiền,Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ,,,,,,,CI_111
+Sakadāgāmi-magga-tatiya-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Đạo Tam Thiền,Sakadāgāmi-magga-tatiya-jhāna-cittaṃ,,,,,,,CI_113
+Sakadāgāmi-phala-catuttha-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Quả Tứ Thiền,Sakadāgāmi-phala-catuttha-jhāna-cittaṃ,,,,,,,CI_134
+Sakadāgāmi-phala-dutiya-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Quả Nhị Thiền,Sakadāgāmi-phala-dutiya-jhāna-cittaṃ,,,,,,,CI_132
+Sakadāgāmi-phala-pañcama-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Quả Ngũ Thiền,Sakadāgāmi-phala-pañcama-jhāna-cittaṃ,,,,,,,CI_135
+Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Quả Sơ Thiền,Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ,,,,,,,CI_131
+Sakadāgāmi-phala-tatiya-jhāna-cittaṃ,cittas,Tâm Nhứt Lai Quả Tam Thiền,Sakadāgāmi-phala-tatiya-jhāna-cittaṃ,,,,,,,CI_133
+Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ,cittas,Tâm Tham Thọ Hỷ Hợp Tà Vô Trợ,Greed-rooted consciousness with joy associated with wrong view unprompted,,,,,,,CI_001
+Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ,cittas,Tâm Tham Thọ Hỷ Hợp Tà Hữu Trợ,Greed-rooted consciousness with joy associated with wrong view prompted,,,,,,,CI_002
+Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ,cittas,Tâm Tham Thọ Hỷ Ly Tà Vô Trợ,Greed-rooted consciousness with joy dissociated from wrong view unprompted,,,,,,,CI_003
+Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ,cittas,Tâm Tham Thọ Hỷ Ly Tà Hữu Trợ,Greed-rooted consciousness with joy dissociated from wrong view prompted,,,,,,,CI_004
+Somanassa-sahagataṃ hasituppāda-cittaṃ,cittas,Ưng Cúng Vi Tiếu Thọ Hỷ (Tâm Sinh Tiếu A-la-hán),Somanassa-sahagataṃ hasituppāda-cittaṃ,,,,,,,CI_030
+Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,cittas,Quan Sát Thọ Hỷ Quả Thiện Vô Nhân,Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,,,,,,,CI_027
+Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Hỷ Hợp Trí Vô Trợ,Great wholesome consciousness with joy associated with knowledge unprompted,,,,,,,CI_055 CI_063 CI_071
+Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Hỷ Hợp Trí Hữu Trợ,Great wholesome consciousness with joy associated with knowledge prompted,,,,,,,CI_056 CI_064 CI_072
+Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Hỷ Ly Trí Vô Trợ,Great wholesome consciousness with joy dissociated from knowledge unprompted,,,,,,,CI_057 CI_065 CI_073
+Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Hỷ Ly Trí Hữu Trợ,Great wholesome consciousness with joy dissociated from knowledge prompted,,,,,,,CI_058 CI_066 CI_074
+Sotāpatti-magga-catuttha-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Đạo Tứ Thiền,Sotāpatti-magga-catuttha-jhāna-cittaṃ,,,,,,,CI_109
+Sotāpatti-magga-dutiya-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Đạo Nhị Thiền,Sotāpatti-magga-dutiya-jhāna-cittaṃ,,,,,,,CI_107
+Sotāpatti-magga-pañcama-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Đạo Ngũ Thiền,Sotāpatti-magga-pañcama-jhāna-cittaṃ,,,,,,,CI_110
+Sotāpatti-magga-paṭhama-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Đạo Sơ Thiền,Sotāpatti-magga-paṭhama-jhāna-cittaṃ,,,,,,,CI_106
+Sotāpatti-magga-tatiya-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Đạo Tam Thiền,Sotāpatti-magga-tatiya-jhāna-cittaṃ,,,,,,,CI_108
+Sotāpatti-phala-catuttha-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Quả Tứ Thiền,Sotāpatti-phala-catuttha-jhāna-cittaṃ,,,,,,,CI_129
+Sotāpatti-phala-dutiya-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Quả Nhị Thiền,Sotāpatti-phala-dutiya-jhāna-cittaṃ,,,,,,,CI_127
+Sotāpatti-phala-pañcama-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Quả Ngũ Thiền,Sotāpatti-phala-pañcama-jhāna-cittaṃ,,,,,,,CI_130
+Sotāpatti-phala-paṭhama-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Quả Sơ Thiền,Sotāpatti-phala-paṭhama-jhāna-cittaṃ,,,,,,,CI_126
+Sotāpatti-phala-tatiya-jhāna-cittaṃ,cittas,Tâm Nhập Lưu Quả Tam Thiền,Sotāpatti-phala-tatiya-jhāna-cittaṃ,,,,,,,CI_128
+Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ,cittas,Thân Thức Thọ Lạc Quả Thiện Vô Nhân,Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ,,,,,,,CI_024
+Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ,cittas,Nhãn Thức Thọ Xả Quả Bất Thiện Vô Nhân,Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ,,,,,,,CI_013
+Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ,cittas,Tỷ Thức Thọ Xả Quả Bất Thiện Vô Nhân,Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ,,,,,,,CI_015
+Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ,cittas,Thiệt Thức Thọ Xả Quả Bất Thiện Vô Nhân,Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ,,,,,,,CI_016
+Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ,cittas,Tiếp Thâu Thọ Xả Quả Bất Thiện Vô Nhân,Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ,,,,,,,CI_018
+Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ,cittas,Quan Sát Thọ Xả Quả Bất Thiện Vô Nhân,Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ,,,,,,,CI_019
+Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ,cittas,Nhĩ Thức Thọ Xả Quả Bất Thiện Vô Nhân,Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ,,,,,,,CI_014
+Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ,cittas,Tâm Tham Thọ Xả Hợp Tà Vô Trợ,Greed-rooted consciousness with equanimity associated with wrong view unprompted,,,,,,,CI_005
+Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ,cittas,Tâm Tham Thọ Xả Hợp Tà Hữu Trợ,Greed-rooted consciousness with equanimity associated with wrong view prompted,,,,,,,CI_006
+Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ,cittas,Tâm Tham Thọ Xả Ly Tà Vô Trợ,Greed-rooted consciousness with equanimity dissociated from wrong view unprompted,,,,,,,CI_007
+Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ,cittas,Tâm Tham Thọ Xả Ly Tà Hữu Trợ,Greed-rooted consciousness with equanimity dissociated from wrong view prompted,,,,,,,CI_008
+Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ,cittas,Nhãn Thức Thọ Xả Quả Thiện Vô Nhân,Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ,,,,,,,CI_020
+Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ,cittas,Tỷ Thức Thọ Xả Quả Thiện Vô Nhân,Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ,,,,,,,CI_022
+Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ,cittas,Thiệt Thức Thọ Xả Quả Thiện Vô Nhân,Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ,,,,,,,CI_023
+Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ,cittas,Tiếp Thâu Thọ Xả Quả Thiện Vô Nhân,Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ,,,,,,,CI_025
+Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,cittas,Quan Sát Thọ Xả Quả Thiện Vô Nhân,Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,,,,,,,CI_026
+Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ,cittas,Nhĩ Thức Thọ Xả Quả Thiện Vô Nhân,Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ,,,,,,,CI_021
+Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ,cittas,Khán Ý Môn Thọ Xả,Mind-door adverting consciousness with equanimity,,,,,,,CI_029
+Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ,cittas,Khán Ngũ Môn Thọ Xả,Five-sense-door adverting consciousness with equanimity,,,,,,,CI_028
+Upekkhā-sahagataṃ Uddhaccasampayuttaṃ,cittas,Tâm Si Thọ Xả Hợp Phóng Dật,Delusion-rooted consciousness with equanimity associated with restlessness,,,,,,,CI_012
+Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ,cittas,Tâm Si Thọ Xả Hợp Hoài Nghi,Delusion-rooted consciousness with equanimity associated with doubt,,,,,,,CI_011
+Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Xả Hợp Trí Vô Trợ,Great wholesome consciousness with equanimity associated with knowledge unprompted,,,,,,,CI_059 CI_067 CI_075
+Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Xả Hợp Trí Hữu Trợ,Great wholesome consciousness with equanimity associated with knowledge prompted,,,,,,,CI_060 CI_068 CI_076
+Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Xả Ly Trí Vô Trợ,Great wholesome consciousness with equanimity dissociated from knowledge unprompted,,,,,,,CI_061 CI_069 CI_077
+Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ,cittas,Tâm Đại Thiện Thọ Xả Ly Trí Hữu Trợ,Great wholesome consciousness with equanimity dissociated from knowledge prompted,,,,,,,CI_062 CI_070 CI_078
+Viññāṇañcāyatana-kiriyaa-cittaṃ,cittas,Tâm Duy Tác Thức Vô Biên Xứ,Functional consciousness base of infinite consciousness,,,,,,,CI_103
+Viññāṇañcāyatana-kusalaa-cittaṃ,cittas,Tâm Thiện Thức Vô Biên Xứ,Wholesome consciousness base of infinite consciousness,,,,,,,CI_095
+Viññāṇañcāyatana-vipakaa-cittaṃ,cittas,Tâm Quả Thiện Thức Vô Biên Xứ,Resultant consciousness base of infinite consciousness,,,,,,,CI_099
+Ākiñcaññāyatana-kiriyaa-cittaṃ,cittas,Tâm Duy Tác Vô Sở Hữu Xứ,Functional consciousness base of nothingness,,,,,,,CI_104
+Ākiñcaññāyatana-kusalaa-cittaṃ,cittas,Tâm Thiện Vô Sở Hữu Xứ,Wholesome consciousness base of nothingness,,,,,,,CI_096
+Ākiñcaññāyatana-vipakaa-cittaṃ,cittas,Tâm Quả Thiện Vô Sở Hữu Xứ,Resultant consciousness base of nothingness,,,,,,,CI_100
+Ākāsānañcāyatana-kiriyaa-cittaṃ,cittas,Tâm Duy Tác Không Vô Biên Xứ,Functional consciousness base of infinite space,,,,,,,CI_102
+Ākāsānañcāyatana-kusalaa-cittaṃ,cittas,Tâm Thiện Không Vô Biên Xứ,Wholesome consciousness base of infinite space,,,,,,,CI_094
+Ākāsānañcāyatana-vipakaa-cittaṃ,cittas,Tâm Quả Thiện Không Vô Biên Xứ,Resultant consciousness base of infinite space,,,,,,,CI_098
