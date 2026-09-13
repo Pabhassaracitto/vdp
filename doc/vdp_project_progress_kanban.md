@@ -70,6 +70,7 @@ Sprint: [Phase 2] — Tối ưu hóa giao diện Bảng Tương Ưng landscape (
 ✅ DATA-04: Tích hợp Dữ liệu M5 (Rupa, Kamma, Paticca, Vithi) vào VdpRepository (2026-07-02)
 ✅ M3-T5A: Bookmark & Notes backend — UserProgress mở rộng 3 field, ProgressNotifier thêm 7 methods, persist SharedPreferences, bookmarkCountProvider (2026-07-03)
 ✅ M3+M4: Soạn thảo Manual QA Checklist (2026-07-05)
+✅ M5-T3: Lộ trình Tâm 17 sát-na — lựa chọn mẫu lộ, timeline mở rộng Javana/Thập Di, điều khiển tự động phát và chi tiết sát-na (2026-09-12)
 
 🚫 Blocked / Issues (Điểm nghẽn / Lỗi nghiêm trọng)
 Nơi ghi nhận các vấn đề đang bị tắc nghẽn chưa thể giải quyết ngay (do thiếu thư viện, đợi API từ backend, hoặc dính bug từ bên thứ 3).

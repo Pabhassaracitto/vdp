@@ -108,7 +108,7 @@
 |---------|----------|-------|
 | M5-T1 | Flowchart Nhân Duyên | Trực quan hóa 12 Nhân Duyên |
 | M5-T2 | Kamma Trace | Liên kết N-M giữa Tâm và Nghiệp |
-| M5-T3 | Lộ trình Tâm 17 sát-na | Animation lộ trình nhận thức |
+| M5-T3 | Lộ trình Tâm 17 sát-na | Animation lộ trình nhận thức — ✅ DONE (2026-09-12) |
 | M5-T4 | Sắc Pháp module | 28 loại Sắc |
 | M5-T5 | Export / Share | Chia sẻ tiến độ hoặc biểu đồ |
 
@@ -503,7 +503,7 @@ Ví dụ: **M1-T3** (Fix ID mismatch)
 | M4-T4 | Text scale test | TODO | | |
 | M5-T1 | Nhân Duyên | LATER | | |
 | M5-T2 | Kamma Trace | LATER | | |
-| M5-T3 | Lộ trình 17 | LATER | | |
+| M5-T3 | Lộ trình 17 | DONE | Interactive 17-moment player, model selector, and playback controls | 2026-09-12 |
 | M5-T4 | Sắc Pháp | LATER | | |
 | M5-T5 | Export/Share | LATER | | |
 | M6-T1 | App icon | LATER | | |

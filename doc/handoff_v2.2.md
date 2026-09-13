@@ -25,3 +25,18 @@
 - **121/121 Tâm** ✅
 - **52/52 Tâm Sở** ✅
 - **Rupa, Kamma, Paticca, Vithi** ✅ Đã tích hợp vào Repository
+
+---
+
+### v2.3 — 2026-09-12
+
+#### Completed
+| Task | Nội dung | Status |
+|------|----------|--------|
+| M5-T3 | Lộ Trình Tâm 17 sát-na: chọn mẫu lộ, timeline mở rộng, tự động phát, chi tiết phận sự và tâm có thể sanh | ✅ DONE |
+
+#### Implementation notes
+- Timeline mở rộng dữ liệu `repeatCount` thành từng sát-na riêng (đặc biệt 7 Javana và 2 Tadārammaṇa).
+- Dòng Hộ Kiếp tiếp diễn sau lộ được hiển thị riêng, không bị tính nhầm vào chuỗi tương tác.
+- Hỗ trợ chọn toàn bộ mẫu lộ trong dataset, điều hướng trước/sau/đặt lại/tự động phát và semantics cho screen reader.
+- Giao diện tuân theo light/high-contrast theme, không dùng nền tối cố định.
