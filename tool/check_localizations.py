@@ -67,7 +67,14 @@ def main() -> int:
             "vithis": ("vithis.json", "vithis"),
         }.items()
     }
-    expected_counts["studyModules"] = 10
+    # Derive the study-module count from kStudyModules so this never drifts
+    # when a module is added (it silently broke at 10 when M11–M14 landed).
+    study_module_dart = (ROOT / "lib" / "data" / "models" / "study_module.dart").read_text(
+        encoding="utf-8"
+    )
+    expected_counts["studyModules"] = len(
+        re.findall(r"^\s*'id': '(M\d+_([A-Z_]+))',$", study_module_dart, re.MULTILINE)
+    )
     for section, expected in expected_counts.items():
         actual = len(content.get(section, {}))
         if actual != expected:

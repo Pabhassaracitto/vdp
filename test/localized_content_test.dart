@@ -37,7 +37,7 @@ void main() {
         reason: 'English overlay must cover every ${entry.key} in the dataset',
       );
     }
-    expect(catalog.data['studyModules'], hasLength(10));
+    expect(catalog.data['studyModules'], hasLength(17));
   });
 
   test('content selection changes text without changing canonical IDs', () async {

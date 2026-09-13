@@ -2003,21 +2003,33 @@
       "translationStatus": "source_only",
       "needsReview": true
     },
+    "M11_BIET_CANH": {
+      "title": "The six occasional cetasikas",
+      "description": "Vitakka, vicāra, adhimokkha, vīriya, pīti and chanda — the Aññasamāna group present only in some cittas, wholesome and unwholesome alike.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
     "M2_SI_PHAN": {
       "title": "The delusion group",
       "description": "Delusion, shamelessness, fearlessness of wrongdoing, and restlessness accompany every unwholesome citta.",
       "translationStatus": "source_only",
       "needsReview": true
     },
-    "M3_TINH_HAO_BIEN_HANH": {
-      "title": "Beautiful universals",
-      "description": "The nineteen beautiful universal cetasikas present in every beautiful citta.",
+    "M4_AKUSALA": {
+      "title": "The twelve unwholesome cittas",
+      "description": "Eight greed-rooted, two hatred-rooted and two delusion-rooted cittas — the cause of suffering. Includes the ten specific unwholesome cetasikas (greed group, hatred group, torpor group and doubt) which, with the four delusion-group cetasikas of M2, complete the fourteen unwholesome cetasikas.",
       "translationStatus": "source_only",
       "needsReview": true
     },
-    "M4_AKUSALA": {
-      "title": "Twelve unwholesome cittas",
-      "description": "Eight rooted in greed, two rooted in hatred, and two rooted in delusion.",
+    "M12_VO_NHAN": {
+      "title": "The eighteen rootless cittas",
+      "description": "Fifteen rootless resultants (seven unwholesome-result, eight wholesome-result) and three rootless functionals — cittas with no wholesome or unwholesome root co-arising.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M3_TINH_HAO_BIEN_HANH": {
+      "title": "The twenty-five beautiful cetasikas",
+      "description": "The nineteen beautiful universals present in every beautiful citta, plus the three abstinences, the two illimitables and the wisdom faculty.",
       "translationStatus": "source_only",
       "needsReview": true
     },
@@ -2027,15 +2039,27 @@
       "translationStatus": "source_only",
       "needsReview": true
     },
-    "M6_NGHIEP": {
-      "title": "Kamma classifications",
-      "description": "How kamma is classified and connected with cittas.",
+    "M13_SAC_GIOI": {
+      "title": "The fifteen form-sphere cittas",
+      "description": "Rūpāvacara kusala, vipāka and kiriyā across the five jhānas — cittas that frequent the form realm.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M14_VO_SAC_GIOI": {
+      "title": "The twelve formless-sphere cittas",
+      "description": "Arūpāvacara kusala, vipāka and kiriyā across the four formless attainments: base of infinite space, infinite consciousness, nothingness, and neither-perception-nor-non-perception.",
       "translationStatus": "source_only",
       "needsReview": true
     },
     "M7_SIEU_THE": {
       "title": "Supramundane cittas",
       "description": "Path and fruition cittas leading beyond suffering.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M6_NGHIEP": {
+      "title": "Kamma classifications",
+      "description": "How kamma is classified and connected with cittas.",
       "translationStatus": "source_only",
       "needsReview": true
     },
@@ -2054,6 +2078,24 @@
     "M10_LO_TRINH": {
       "title": "The cognitive series",
       "description": "The arising and ceasing of cittas in a cognitive process.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M15_TAM_SO_PHOI_HOP": {
+      "title": "Cetasika combinations (saṅgaha)",
+      "description": "How the 52 cetasikas combine with each class of citta: akusala, ahetuka, kāmāvacara sobhana, jhāna and lokuttara.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M16_NGUOI_VA_COI": {
+      "title": "Individuals and realms",
+      "description": "Twelve kinds of persons and the 31 planes of existence: the four realms, the hells, the human continents and the sense, form and formless heavens.",
+      "translationStatus": "source_only",
+      "needsReview": true
+    },
+    "M17_DUYEN_CHI_TIET": {
+      "title": "Dependent origination: links 3-12 in detail",
+      "description": "From consciousness conditioning mentality-materiality through to birth and ageing-death, with the three periods and twenty modes.",
       "translationStatus": "source_only",
       "needsReview": true
     }
