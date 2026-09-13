@@ -163,6 +163,7 @@ flutter run
 - [x] Quiz 3 cấp
 
 ### 🔜 Pha 2 — Causality
+- [x] 24 Duyên Hệ (Paṭṭhāna naya) — dữ liệu + tab riêng trong Nhân Duyên (chờ duyệt thuật ngữ)
 - [ ] Flow Layer (12 Nhân Duyên / 16 Nghiệp — Flowchart tương tác)
 - [ ] Kamma Trace N-M (Matrix Tâm ↔ Flow Nghiệp)
 - [ ] Proactive Conflict Guard 4 tầng

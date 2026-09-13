@@ -423,6 +423,80 @@ class AppLocalizationsVi extends AppLocalizations {
   String get conditionsTitle => 'Nhân Duyên';
 
   @override
+  String get conditionsTabLinks => '12 Chi';
+
+  @override
+  String get conditionsTabPaccaya => '24 Duyên Hệ';
+
+  @override
+  String get paccayaTitle => '24 Duyên Hệ (Paṭṭhāna)';
+
+  @override
+  String get paccayaIntro => 'Phần B của Paccaya-saṅgaha-vibhāga: các pháp trợ duyên cho nhau như thế nào. Phần A là 12 chi Duyên khởi.';
+
+  @override
+  String get paccayaDefinition => 'Định nghĩa';
+
+  @override
+  String get paccayaConditioningStates => 'Pháp năng duyên';
+
+  @override
+  String get paccayaConditionedStates => 'Pháp sở duyên';
+
+  @override
+  String get paccayaSubdivisions => 'Chi phần';
+
+  @override
+  String get paccayaInPaticca => 'Vận hành trong các chi';
+
+  @override
+  String get paccayaEmpty => 'Không có duyên hệ nào khớp bộ lọc.';
+
+  @override
+  String get paccayaSearchHint => 'Tìm duyên hệ…';
+
+  @override
+  String get paccayaSourceNotice => 'Nguồn: Paṭṭhāna (Abhidhamma Piṭaka VII) và Thanh Tịnh Đạo chương XVII. Không có tài liệu Pa-Auk liệt kê 24 duyên; thuật ngữ tiếng Việt đang chờ bậc trưởng lão duyệt.';
+
+  @override
+  String get paccayaSources => 'Nguồn';
+
+  @override
+  String paccayaCount(Object count) {
+    return '$count duyên hệ';
+  }
+
+  @override
+  String get relatedDhammas => 'Pháp liên hệ';
+
+  @override
+  String get paccayaGroupRootObject => 'Nhân & Cảnh';
+
+  @override
+  String get paccayaGroupContinuity => 'Tương tục';
+
+  @override
+  String get paccayaGroupConascence => 'Câu sanh & Y chỉ';
+
+  @override
+  String get paccayaGroupTimeRelation => 'Thứ tự sanh';
+
+  @override
+  String get paccayaGroupKammaVipaka => 'Nghiệp & Quả';
+
+  @override
+  String get paccayaGroupGeneral => 'Bao quát';
+
+  @override
+  String get kiepPast => 'Kiếp quá khứ';
+
+  @override
+  String get kiepPresent => 'Kiếp hiện tại';
+
+  @override
+  String get kiepFuture => 'Kiếp vị lai';
+
+  @override
   String get conditionDetails => 'Chi tiết Nhân Duyên:';
 
   @override

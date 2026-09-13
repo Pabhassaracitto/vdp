@@ -541,6 +541,105 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Duyên sang: {effect}\n  Giải thích: {explanation}",
+  "conditionsTabLinks": "12 Chi",
+  "@conditionsTabLinks": {
+    "description": "conditionsTabLinks"
+  },
+  "conditionsTabPaccaya": "24 Duyên Hệ",
+  "@conditionsTabPaccaya": {
+    "description": "conditionsTabPaccaya"
+  },
+  "paccayaTitle": "24 Duyên Hệ (Paṭṭhāna)",
+  "@paccayaTitle": {
+    "description": "paccayaTitle"
+  },
+  "paccayaIntro": "Phần B của Paccaya-saṅgaha-vibhāga: các pháp trợ duyên cho nhau như thế nào. Phần A là 12 chi Duyên khởi.",
+  "@paccayaIntro": {
+    "description": "paccayaIntro"
+  },
+  "paccayaDefinition": "Định nghĩa",
+  "@paccayaDefinition": {
+    "description": "paccayaDefinition"
+  },
+  "paccayaConditioningStates": "Pháp năng duyên",
+  "@paccayaConditioningStates": {
+    "description": "paccayaConditioningStates"
+  },
+  "paccayaConditionedStates": "Pháp sở duyên",
+  "@paccayaConditionedStates": {
+    "description": "paccayaConditionedStates"
+  },
+  "paccayaSubdivisions": "Chi phần",
+  "@paccayaSubdivisions": {
+    "description": "paccayaSubdivisions"
+  },
+  "paccayaInPaticca": "Vận hành trong các chi",
+  "@paccayaInPaticca": {
+    "description": "paccayaInPaticca"
+  },
+  "paccayaEmpty": "Không có duyên hệ nào khớp bộ lọc.",
+  "@paccayaEmpty": {
+    "description": "paccayaEmpty"
+  },
+  "paccayaSearchHint": "Tìm duyên hệ…",
+  "@paccayaSearchHint": {
+    "description": "paccayaSearchHint"
+  },
+  "paccayaSourceNotice": "Nguồn: Paṭṭhāna (Abhidhamma Piṭaka VII) và Thanh Tịnh Đạo chương XVII. Không có tài liệu Pa-Auk liệt kê 24 duyên; thuật ngữ tiếng Việt đang chờ bậc trưởng lão duyệt.",
+  "@paccayaSourceNotice": {
+    "description": "paccayaSourceNotice"
+  },
+  "paccayaSources": "Nguồn",
+  "@paccayaSources": {
+    "description": "paccayaSources"
+  },
+  "paccayaCount": "{count} duyên hệ",
+  "@paccayaCount": {
+    "description": "paccayaCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "relatedDhammas": "Pháp liên hệ",
+  "@relatedDhammas": {
+    "description": "relatedDhammas"
+  },
+  "paccayaGroupRootObject": "Nhân & Cảnh",
+  "@paccayaGroupRootObject": {
+    "description": "paccayaGroupRootObject"
+  },
+  "paccayaGroupContinuity": "Tương tục",
+  "@paccayaGroupContinuity": {
+    "description": "paccayaGroupContinuity"
+  },
+  "paccayaGroupConascence": "Câu sanh & Y chỉ",
+  "@paccayaGroupConascence": {
+    "description": "paccayaGroupConascence"
+  },
+  "paccayaGroupTimeRelation": "Thứ tự sanh",
+  "@paccayaGroupTimeRelation": {
+    "description": "paccayaGroupTimeRelation"
+  },
+  "paccayaGroupKammaVipaka": "Nghiệp & Quả",
+  "@paccayaGroupKammaVipaka": {
+    "description": "paccayaGroupKammaVipaka"
+  },
+  "paccayaGroupGeneral": "Bao quát",
+  "@paccayaGroupGeneral": {
+    "description": "paccayaGroupGeneral"
+  },
+  "kiepPast": "Kiếp quá khứ",
+  "@kiepPast": {
+    "description": "kiepPast"
+  },
+  "kiepPresent": "Kiếp hiện tại",
+  "@kiepPresent": {
+    "description": "kiepPresent"
+  },
+  "kiepFuture": "Kiếp vị lai",
+  "@kiepFuture": {
+    "description": "kiepFuture"
+  },
   "@conditionLinkDescription": {
     "description": "conditionLinkDescription",
     "placeholders": {

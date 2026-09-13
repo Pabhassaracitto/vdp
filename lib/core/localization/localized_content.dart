@@ -4,6 +4,7 @@ import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/models/kamma_model.dart';
 import '../../data/models/lesson_content.dart';
+import '../../data/models/paccaya_model.dart';
 import '../../data/models/paticca_model.dart';
 import '../../data/models/rupa_model.dart';
 import '../../data/models/study_module.dart';
@@ -91,6 +92,21 @@ extension LocalizedKammaContent on KammaModel {
       context.contentCatalog.text('kammas', id, 'name', nameVietnamese);
   String localizedDescription(BuildContext context) =>
       context.contentCatalog.text('kammas', id, 'description', descriptionVi);
+}
+
+extension LocalizedPaccayaContent on PaccayaModel {
+  /// 24 Duyên Hệ chưa có bản dịch theo ngôn ngữ nội dung — tiếng Việt là
+  /// nguồn gốc (xem docs/study-content-sources.md). Khi nội dung dịch được
+  /// bổ sung vào content_*.json thì chỉ cần thêm nhánh đọc ở đây.
+  String localizedName(BuildContext context) => context.contentCatalog.text(
+        'paccayas',
+        id,
+        'name',
+        nameVietnamese,
+      );
+
+  String localizedDefinition(BuildContext context) => context.contentCatalog
+      .text('paccayas', id, 'definition', definitionVi);
 }
 
 extension LocalizedPaticcaContent on PaticcaModel {

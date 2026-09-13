@@ -901,6 +901,174 @@ abstract class AppLocalizations {
   /// **'Dependent Origination'**
   String get conditionsTitle;
 
+  /// conditionsTabLinks
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'12 Links'**
+  String get conditionsTabLinks;
+
+  /// conditionsTabPaccaya
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'24 Conditions'**
+  String get conditionsTabPaccaya;
+
+  /// paccayaTitle
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'The 24 Conditional Relations (Patthana)'**
+  String get paccayaTitle;
+
+  /// paccayaIntro
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.'**
+  String get paccayaIntro;
+
+  /// paccayaDefinition
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Definition'**
+  String get paccayaDefinition;
+
+  /// paccayaConditioningStates
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Conditioning states (paccaya-dhamma)'**
+  String get paccayaConditioningStates;
+
+  /// paccayaConditionedStates
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Conditioned states (paccayuppanna)'**
+  String get paccayaConditionedStates;
+
+  /// paccayaSubdivisions
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Subdivisions'**
+  String get paccayaSubdivisions;
+
+  /// paccayaInPaticca
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Operates in these links'**
+  String get paccayaInPaticca;
+
+  /// paccayaEmpty
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'No condition matches this filter.'**
+  String get paccayaEmpty;
+
+  /// paccayaSearchHint
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Search a condition…'**
+  String get paccayaSearchHint;
+
+  /// paccayaSourceNotice
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.'**
+  String get paccayaSourceNotice;
+
+  /// paccayaSources
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Sources'**
+  String get paccayaSources;
+
+  /// paccayaCount
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'{count} conditions'**
+  String paccayaCount(Object count);
+
+  /// relatedDhammas
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Related dhammas'**
+  String get relatedDhammas;
+
+  /// paccayaGroupRootObject
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Root & object'**
+  String get paccayaGroupRootObject;
+
+  /// paccayaGroupContinuity
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Continuity'**
+  String get paccayaGroupContinuity;
+
+  /// paccayaGroupConascence
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Conascence & support'**
+  String get paccayaGroupConascence;
+
+  /// paccayaGroupTimeRelation
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Arising order'**
+  String get paccayaGroupTimeRelation;
+
+  /// paccayaGroupKammaVipaka
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Kamma & result'**
+  String get paccayaGroupKammaVipaka;
+
+  /// paccayaGroupGeneral
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'General'**
+  String get paccayaGroupGeneral;
+
+  /// kiepPast
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Past life'**
+  String get kiepPast;
+
+  /// kiepPresent
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'This life'**
+  String get kiepPresent;
+
+  /// kiepFuture
+  ///
+  /// In en, this message translates to:
+  ///
+  /// **'Future life'**
+  String get kiepFuture;
+
   /// conditionDetails
   ///
   /// In en, this message translates to:

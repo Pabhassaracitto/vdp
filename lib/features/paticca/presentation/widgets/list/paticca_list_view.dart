@@ -19,6 +19,7 @@ class PaticcaListView extends ConsumerWidget {
           item: list[index],
           onTap: () => showModalBottomSheet(
             context: context,
+            isScrollControlled: true,
             builder: (_) => PaticcaDetailSheet(item: list[index]),
           ),
         ),
