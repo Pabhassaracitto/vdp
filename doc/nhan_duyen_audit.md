@@ -103,8 +103,8 @@ cho đối chiếu Anh ngữ. Mỗi mục trong JSON có `sourceRefs` + `confide
 | --- | --- | --- | --- |
 | M8-T1 | Duyệt thuật ngữ + chi pháp 24 duyên với bậc trưởng lão | **CAO** | `meta.reviewStatus` = `needs_senior_review`. Chốt xong thì đổi thành `reviewed`. |
 | M8-T2 | Điền `operatesInPaticca` cho 10 duyên còn trống | CAO | Cần đối chiếu Thanh Tịnh Đạo XVII §§65–104 từng chi; hiện mới có 52 cặp duyên–chi, và PC_17 (Thiền duyên) chưa gắn chi nào. |
-| M8-T3 | Bài học cho 10 chi còn lại (Thức → Lão Tử) | CAO | `content_vi.json` M8 mới có `M8_S01`…`M8_S07`; nguồn: `VDP-ToatYeuVeDuyen.pdf` p.9–26. |
-| M8-T4 | Thêm section nội dung học cho 24 duyên hệ | TRUNG BÌNH | Cần nguồn duyệt xong (M8-T1). Có thể tạo module `M15_PATTHANA` hoặc mở rộng M8. |
+| ~~M8-T3~~ | ~~Bài học cho 10 chi còn lại (Thức → Lão Tử)~~ | **ĐÃ CÓ TRÊN `main`** | PR #5 (`f3228e1`) đã thêm module `M17_DUYEN_CHI_TIET` — "Duyên Khởi: Các Chi 3–12" (`lib/data/models/study_module.dart:522` trên `origin/main`). Nhánh này rẽ từ `43b48ed` nên chưa thấy. |
+| M8-T4 | Thêm section nội dung học cho 24 duyên hệ | TRUNG BÌNH | Cần nguồn duyệt xong (M8-T1). **ID module phải từ `M18_` trở đi** — `M15_TAM_SO_PHOI_HOP`, `M16_NGUOI_VA_COI`, `M17_DUYEN_CHI_TIET` đã được dùng trên `main` (PR #5); hoặc mở rộng chính `M8_NHAN_DUYEN`. |
 | M8-T5 | Flowchart 12 chi (`PaticcaViewTab.flowchart`) | TRUNG BÌNH | State + logic highlight xuôi/ngược đã có sẵn trong `paticca_flowchart_state.dart`, chỉ thiếu widget. |
 | M8-T6 | Sơ đồ 3 kiếp (`PaticcaViewTab.threeKiep`) | TRUNG BÌNH | Dữ liệu `kiep` đã có trong từng chi. |
 | M8-T7 | "Tầng 4: Duyên xung đột (Vô Minh + Trí Tuệ)" | THẤP | `blueprint.md:77` — cần rule trong validator. |
@@ -121,6 +121,12 @@ PASS — 24 Duyên Hệ
   • nguồn canonical: 24/24
   • liên kết 12 chi: 52 cặp duyên–chi
 ```
+
+### Ghi chú về `main`
+
+Nhánh này rẽ từ `43b48ed` (tag `0.4.3`). `origin/main` đang hơn 1 commit (`f3228e1`, PR #5)
+và **không trùng file nào** với thay đổi ở đây (`git diff --name-only 43b48ed origin/main`
+so với `git diff --name-only 43b48ed HEAD` → giao rỗng), nên PR về `main` dự kiến không xung đột.
 
 `flutter analyze` / `flutter test` **không chạy được ở sandbox này** vì host tải
 Flutter SDK (`storage.googleapis.com`) bị chặn — cần chạy lại trên máy có SDK:
