@@ -506,7 +506,7 @@ Ví dụ: **M1-T3** (Fix ID mismatch)
 | M5-T1c | Nhân Duyên — 24 Duyên Hệ (Paṭṭhāna) | DONE (2026-09-12) | `assets/data/paccayas.json` + tab riêng; **chờ duyệt thuật ngữ** (M8-T1) |
 | M5-T1d | Nhân Duyên — Flowchart 12 chi | TODO | M8-T5; state đã có, thiếu widget |
 | M5-T1e | Nhân Duyên — Sơ đồ 3 kiếp | TODO | M8-T6 |
-| M5-T1f | Nhân Duyên — Bài học 10 chi còn lại | TODO | M8-T3; nguồn `VDP-ToatYeuVeDuyen.pdf` p.9–26 |
+| M5-T1f | Nhân Duyên — Bài học 10 chi còn lại | DONE trên `main` | Module `M17_DUYEN_CHI_TIET` (PR #5, `f3228e1`) |
 | M5-T2 | Kamma Trace | LATER | | |
 | M5-T3 | Lộ trình 17 | DONE | Interactive 17-moment player, model selector, and playback controls | 2026-09-12 |
 | M5-T4 | Sắc Pháp | LATER | | |
