@@ -422,6 +422,80 @@ class AppLocalizationsTh extends AppLocalizations {
   String get conditionsTitle => 'ปฏิจจสมุปบาท';
 
   @override
+  String get conditionsTabLinks => '12 Links';
+
+  @override
+  String get conditionsTabPaccaya => '24 Conditions';
+
+  @override
+  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+
+  @override
+  String get paccayaIntro => 'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+
+  @override
+  String get paccayaDefinition => 'Definition';
+
+  @override
+  String get paccayaConditioningStates => 'Conditioning states (paccaya-dhamma)';
+
+  @override
+  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+
+  @override
+  String get paccayaSubdivisions => 'Subdivisions';
+
+  @override
+  String get paccayaInPaticca => 'Operates in these links';
+
+  @override
+  String get paccayaEmpty => 'No condition matches this filter.';
+
+  @override
+  String get paccayaSearchHint => 'Search a condition…';
+
+  @override
+  String get paccayaSourceNotice => 'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+
+  @override
+  String get paccayaSources => 'Sources';
+
+  @override
+  String paccayaCount(Object count) {
+    return '$count conditions';
+  }
+
+  @override
+  String get relatedDhammas => 'Related dhammas';
+
+  @override
+  String get paccayaGroupRootObject => 'Root & object';
+
+  @override
+  String get paccayaGroupContinuity => 'Continuity';
+
+  @override
+  String get paccayaGroupConascence => 'Conascence & support';
+
+  @override
+  String get paccayaGroupTimeRelation => 'Arising order';
+
+  @override
+  String get paccayaGroupKammaVipaka => 'Kamma & result';
+
+  @override
+  String get paccayaGroupGeneral => 'General';
+
+  @override
+  String get kiepPast => 'Past life';
+
+  @override
+  String get kiepPresent => 'This life';
+
+  @override
+  String get kiepFuture => 'Future life';
+
+  @override
   String get conditionDetails => 'Dependent-origination details:';
 
   @override

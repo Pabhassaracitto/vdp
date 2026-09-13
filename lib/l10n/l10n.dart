@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../data/models/cetasika_model.dart';
+import '../data/models/paccaya_model.dart';
 import '../data/models/citta_model.dart';
 import 'app_localizations.dart';
 
@@ -70,6 +71,19 @@ extension LocalizedAssociationType on AssociationType {
       AssociationType.always => l10n.associationAlways,
       AssociationType.sometimes => l10n.associationSometimes,
       AssociationType.never => l10n.associationNever,
+    };
+  }
+}
+
+extension LocalizedPaccayaGroup on PaccayaGroup {
+  String localizedName(AppLocalizations l10n) {
+    return switch (this) {
+      PaccayaGroup.rootObject => l10n.paccayaGroupRootObject,
+      PaccayaGroup.continuity => l10n.paccayaGroupContinuity,
+      PaccayaGroup.conascence => l10n.paccayaGroupConascence,
+      PaccayaGroup.timeRelation => l10n.paccayaGroupTimeRelation,
+      PaccayaGroup.kammaVipaka => l10n.paccayaGroupKammaVipaka,
+      PaccayaGroup.general => l10n.paccayaGroupGeneral,
     };
   }
 }

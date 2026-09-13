@@ -50,6 +50,17 @@ Gom tất cả các ý tưởng, tính năng sẽ làm trong tương lai nhưng 
 [ ] Tích hợp API/SDK từ bên thứ ba (OpenAI, Firebase, RESTful API)
 [ ] Chạy lệnh kiểm tra mã nguồn toàn cục để đạt 0 lỗi
 
+🧭 Tab Nhân Duyên (chi tiết: doc/nhan_duyen_audit.md)
+[x] M5-T1b: Detail sheet 12 chi dùng hết dữ liệu (Tứ Nghĩa, ví dụ, kiếp/vatta) (2026-09-12)
+[x] M5-T1c: 24 Duyên Hệ (Paṭṭhāna) — dữ liệu + tab riêng + i18n (2026-09-12)
+[ ] M8-T1: Duyệt thuật ngữ & chi pháp 24 duyên với bậc trưởng lão (meta.reviewStatus = needs_senior_review)
+[ ] M8-T2: Điền operatesInPaticca cho 10 duyên còn trống (đối chiếu Thanh Tịnh Đạo XVII §§65–104)
+[ ] M8-T3: Bài học cho 10 chi còn lại (Thức → Lão Tử)
+[ ] M8-T4: Section nội dung học cho 24 duyên hệ
+[ ] M5-T1d: Flowchart 12 chi (state sẵn, thiếu widget)
+[ ] M5-T1e: Sơ đồ 3 kiếp
+[ ] M8-T8: Đưa 24 duyên vào VdpDataValidator
+
 🚧 In Progress (Đang thực hiện)
 Chỉ kéo tối đa 1-2 task từ mục To Do xuống đây để tập trung giải quyết, tránh ôm đồm.
 [ ] Tối ưu hóa tương tác người dùng trên Bảng Tương Ưng.
@@ -71,6 +82,7 @@ Sprint: [Phase 2] — Tối ưu hóa giao diện Bảng Tương Ưng landscape (
 ✅ M3-T5A: Bookmark & Notes backend — UserProgress mở rộng 3 field, ProgressNotifier thêm 7 methods, persist SharedPreferences, bookmarkCountProvider (2026-07-03)
 ✅ M3+M4: Soạn thảo Manual QA Checklist (2026-07-05)
 ✅ M5-T3: Lộ trình Tâm 17 sát-na — lựa chọn mẫu lộ, timeline mở rộng Javana/Thập Di, điều khiển tự động phát và chi tiết sát-na (2026-09-12)
+✅ M5-T1b + M5-T1c: Tab Nhân Duyên — detail sheet 12 chi đầy đủ + 24 Duyên Hệ (Paṭṭhāna) (2026-09-12)
 
 🚫 Blocked / Issues (Điểm nghẽn / Lỗi nghiêm trọng)
 Nơi ghi nhận các vấn đề đang bị tắc nghẽn chưa thể giải quyết ngay (do thiếu thư viện, đợi API từ backend, hoặc dính bug từ bên thứ 3).
