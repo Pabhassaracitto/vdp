@@ -3483,9 +3483,9 @@
           "title": "Place of the unwholesome cittas within the 121 cittas",
           "summary": "Summary of this section.",
           "body": [
-            "This paragraph explains Citta: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
+            "This paragraph explains Citta: its characteristic, function and role within the citta as taught in the Abhidhamma.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
-            "This paragraph explains Lobha: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
+            "This paragraph explains Lobha: its characteristic, function and role within the citta as taught in the Abhidhamma.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
           ],
@@ -3498,7 +3498,7 @@
             },
             {
               "id": "TERM_AKUSALACITTA",
-              "term": "Akusala citta",
+              "term": "Unwholesome citta",
               "pali": "Akusala citta",
               "meaning": "Related to Akusala citta"
             }
@@ -3517,7 +3517,7 @@
           "summary": "Summary of this section.",
           "body": [
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
-            "This paragraph explains somanassa: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
+            "This paragraph explains somanassa: its characteristic, function and role within the citta as taught in the Abhidhamma.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
@@ -3525,19 +3525,19 @@
           "keyTerms": [
             {
               "id": "TERM_LOBHA_M4",
-              "term": "Tham",
+              "term": "Greed",
               "pali": "Lobha",
               "meaning": "Related to Lobha"
             },
             {
               "id": "TERM_ASANKHARIKA",
-              "term": "Asaṅkhārika",
+              "term": "Unprompted",
               "pali": "Asaṅkhārika",
               "meaning": "Related to Asaṅkhārika"
             },
             {
               "id": "TERM_SASANKHARIKA",
-              "term": "Sasaṅkhārika",
+              "term": "Prompted",
               "pali": "Sasaṅkhārika",
               "meaning": "Related to Sasaṅkhārika"
             },
@@ -3569,25 +3569,25 @@
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
-            "This paragraph explains domanassa: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
+            "This paragraph explains domanassa: its characteristic, function and role within the citta as taught in the Abhidhamma.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
           ],
           "keyTerms": [
             {
               "id": "TERM_DOSA_M4",
-              "term": "Dosa",
+              "term": "Hatred",
               "pali": "Dosa",
               "meaning": "Related to Dosa"
             },
             {
               "id": "TERM_PATIGHA",
-              "term": "Paṭigha",
+              "term": "Repulsion",
               "pali": "Paṭigha",
               "meaning": "Related to Paṭigha"
             },
             {
               "id": "TERM_DOMANASSA",
-              "term": "Domanassa",
+              "term": "Painful feeling",
               "pali": "Domanassa",
               "meaning": "Related to Domanassa"
             }
@@ -3608,24 +3608,24 @@
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
-            "This paragraph explains 1: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma."
+            "This paragraph explains 1: its characteristic, function and role within the citta as taught in the Abhidhamma."
           ],
           "keyTerms": [
             {
               "id": "TERM_MOHA_M4",
-              "term": "Si",
+              "term": "Delusion",
               "pali": "Moha",
               "meaning": "Related to Moha"
             },
             {
               "id": "TERM_VICIKICCHA",
-              "term": "Vicikicchā",
+              "term": "Doubt",
               "pali": "Vicikicchā",
               "meaning": "Related to Vicikicchā"
             },
             {
               "id": "TERM_AYONISO",
-              "term": "Ayoniso manasikāra",
+              "term": "Unwise attention",
               "pali": "Ayoniso manasikāra",
               "meaning": "Related to Ayoniso manasikāra"
             }
@@ -3640,118 +3640,40 @@
         },
         {
           "id": "M4_S05",
-          "title": "The ten specific unwholesome cetasikas",
+          "title": "Fourteen unwholesome mental factors — five groups",
           "summary": "Summary of this section.",
           "body": [
             "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
-            "This paragraph explains Lobha: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
-            "This paragraph explains Diṭṭhi: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
-            "This paragraph explains Dosa: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
-            "This paragraph explains Issā: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
-            "This paragraph explains Thīna: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma.",
-            "This paragraph explains Vicikicchā: its characteristic, function, manifestation and proximate cause as taught in the Abhidhamma."
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Lobhatuka: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
           ],
           "keyTerms": [
             {
-              "id": "TERM_LOBHA_M4",
-              "term": "Tham",
-              "pali": "Lobha",
-              "meaning": "Related to Lobha"
+              "id": "TERM_AKUSALA_NGU_M4",
+              "term": "Unwholesome (five meanings)",
+              "pali": "Akusala",
+              "meaning": "Related to Akusala"
             },
             {
-              "id": "TERM_DITTHI_M4",
-              "term": "Diṭṭhi",
-              "pali": "Diṭṭhi",
-              "meaning": "Related to Diṭṭhi"
+              "id": "TERM_LOBHA_NHOM_M4",
+              "term": "Greed group",
+              "pali": "Lobhatuka cetasika",
+              "meaning": "Related to Lobhatuka cetasika"
             },
             {
-              "id": "TERM_MANA_M4",
-              "term": "Māna",
-              "pali": "Māna",
-              "meaning": "Related to Māna"
-            },
-            {
-              "id": "TERM_DOSA_M4",
-              "term": "Dosa",
-              "pali": "Dosa",
-              "meaning": "Related to Dosa"
-            },
-            {
-              "id": "TERM_ISSA_M4",
-              "term": "Issā",
-              "pali": "Issā",
-              "meaning": "Related to Issā"
-            },
-            {
-              "id": "TERM_MACCHARIYA_M4",
-              "term": "Macchariya",
-              "pali": "Macchariya",
-              "meaning": "Related to Macchariya"
-            },
-            {
-              "id": "TERM_KUKKUCCA_M4",
-              "term": "Kukkucca",
-              "pali": "Kukkucca",
-              "meaning": "Related to Kukkucca"
-            },
-            {
-              "id": "TERM_THINA_M4",
-              "term": "Thīna",
-              "pali": "Thīna",
-              "meaning": "Related to Thīna"
-            },
-            {
-              "id": "TERM_MIDDHA_M4",
-              "term": "Middha",
-              "pali": "Middha",
-              "meaning": "Related to Middha"
+              "id": "TERM_DOSA_NHOM_M4",
+              "term": "Hatred group",
+              "pali": "Dosatuka cetasika",
+              "meaning": "Related to Dosatuka cetasika"
             }
           ],
           "sourceRefs": [
             {
               "file": "VDP-TamSo.pdf",
-              "page": 37,
-              "note": "II/ TÂM SỞ THAM PHẦN – II.1 TÂM SỞ THAM: LOBHA CETASIKA; tứ ý nghĩa"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 39,
-              "note": "II.2 TÂM SỞ TÀ KIẾN – DIṬṬHI CETASIKA; có mặt trong 4 tâm Tham hợp tà"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 42,
-              "note": "II.3 TÂM SỞ NGÃ MẠN – MĀNA CETASIKA; 9 sự ỷ hơn–bằng–thua"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 43,
-              "note": "III/ TÂM SỞ SÂN PHẦN; III.1 TÂM SỞ SÂN – DOSA CETASIKA; nguyên nhân phát khởi tâm sân"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 45,
-              "note": "III.2 TÂM SỞ TẬT (GANH TỴ) – ISSĀ CETASIKA"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 46,
-              "note": "III.3 TÂM SỞ LẬN – MACCHARIYA CETASIKA; 5 loại bỏn xẻn"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 48,
-              "note": "III.4 TÂM SỞ HỐI – KUKKUCCA CETASIKA"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 49,
-              "note": "IV.1 TÂM SỞ HÔN TRẦM – THĪNA CETASIKA; IV.2 TÂM SỞ THỤY MIÊN – MIDDHA CETASIKA"
-            },
-            {
-              "file": "VDP-TamSo.pdf",
-              "page": 52,
-              "note": "V/ TÂM SỞ HOÀI NGHI – VICIKICCHĀ CETASIKA; phân loại nghi"
+              "page": 31,
+              "note": "Nhóm 2: TÂM SỞ BẤT THIỆN – AKUSALA CETASIKA (14 tâm); AKUSALA có 5 nghĩa; 5 nhóm: Si phần 4, Tham phần 3, Sân phần 4, Hôn phần 2, Hoài nghi 1"
             }
           ]
         },
@@ -3774,19 +3696,19 @@
           "keyTerms": [
             {
               "id": "TERM_LOBHA_DIṬṬHI_M4",
-              "term": "Tham",
+              "term": "Greed",
               "pali": "Lobha",
               "meaning": "Related to Lobha"
             },
             {
               "id": "TERM_DITTHI_M4",
-              "term": "Diṭṭhi",
+              "term": "Wrong view",
               "pali": "Diṭṭhi",
               "meaning": "Related to Diṭṭhi"
             },
             {
               "id": "TERM_SAKKAYA_M4",
-              "term": "Sakkāyadiṭṭhi",
+              "term": "Personality view",
               "pali": "Sakkāyadiṭṭhi",
               "meaning": "Related to Sakkāyadiṭṭhi"
             },
@@ -3835,7 +3757,7 @@
           "keyTerms": [
             {
               "id": "TERM_DOSA_NHOM_SAN_M4",
-              "term": "Dosa",
+              "term": "Hatred",
               "pali": "Dosa",
               "meaning": "Related to Dosa"
             },
@@ -3897,25 +3819,25 @@
           "keyTerms": [
             {
               "id": "TERM_THINA_M4",
-              "term": "Thīna",
+              "term": "Sloth",
               "pali": "Thīna",
               "meaning": "Related to Thīna"
             },
             {
               "id": "TERM_MIDDHA_M4",
-              "term": "Middha",
+              "term": "Torpor",
               "pali": "Middha",
               "meaning": "Related to Middha"
             },
             {
               "id": "TERM_THINA_MIDDHA_M4",
-              "term": "Thīna + Middha",
+              "term": "Sloth-torpor (pair)",
               "pali": "Thīna + Middha",
               "meaning": "Related to Thīna + Middha"
             },
             {
               "id": "TERM_VICIKICCHA_M4",
-              "term": "Vicikicchā",
+              "term": "Doubt",
               "pali": "Vicikicchā",
               "meaning": "Related to Vicikicchā"
             }
