@@ -1,53 +1,72 @@
 // lib/features/vithi/providers/vithi_providers.dart
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import '../../../data/models/vithi_model.dart';
 import '../../../data/repositories/vithi_repository.dart';
+import '../utils/vithi_moment.dart';
 
-// ── Loại lộ đang được chọn ──────────────────────────────────
-final selectedVithiTypeProvider = StateProvider<VithiDvara>(
-  (ref) => VithiDvara.panca,
-);
+/// ID of the cognitive process currently shown by the player.
+///
+/// Selection must use the model ID, rather than just [VithiDvara], because the
+/// bundled data includes multiple five-door processes (for different object
+/// strengths).
+final selectedVithiIdProvider = StateProvider<String?>((ref) => null);
 
-// ── Bước đang active (0-based index trong steps list) ────────
+/// Zero-based index in the expanded, visual sequence of moments.
 final activeStepIndexProvider = StateProvider<int>((ref) => 0);
 
-// ── Trạng thái auto-play ─────────────────────────────────────
+/// State exposed to the playback controls.
 enum PlaybackState { idle, playing, paused }
 
 final playbackStateProvider = StateProvider<PlaybackState>(
   (ref) => PlaybackState.idle,
 );
 
-// ── Data: tất cả VithiModel ──────────────────────────────────
+/// All bundled cognitive-process models.
 final allVithisProvider = FutureProvider<List<VithiModel>>((ref) async {
   final repo = ref.read(vithiRepositoryProvider);
   return repo.loadAll();
 });
 
-// ── VithiModel đang hiển thị (theo type đã chọn) ─────────────
+/// The process currently displayed by the player.
 final currentVithiProvider = Provider<AsyncValue<VithiModel?>>((ref) {
   final allAsync = ref.watch(allVithisProvider);
-  final selectedType = ref.watch(selectedVithiTypeProvider);
+  final selectedId = ref.watch(selectedVithiIdProvider);
 
   return allAsync.whenData((vithis) {
-    try {
-      return vithis.firstWhere((v) => v.dvara == selectedType);
-    } catch (_) {
-      return vithis.isNotEmpty ? vithis.first : null;
+    if (vithis.isEmpty) return null;
+    if (selectedId == null) return vithis.first;
+
+    for (final vithi in vithis) {
+      if (vithi.id == selectedId) return vithi;
     }
+    return vithis.first;
   });
 });
 
-// ── Step hiện tại đang active ─────────────────────────────────
-final activeStepProvider = Provider<VithiStep?>((ref) {
-  final vithiAsync = ref.watch(currentVithiProvider);
-  final idx = ref.watch(activeStepIndexProvider);
+/// Expanded moments, including seven distinct Javana tiles where applicable.
+final currentVithiMomentsProvider = Provider<List<VithiMoment>>((ref) {
+  final current = ref.watch(currentVithiProvider);
+  return current.whenOrNull(
+        data: (vithi) =>
+            vithi == null ? const <VithiMoment>[] : VithiMomentSequence.fromVithi(vithi),
+      ) ??
+      const <VithiMoment>[];
+});
 
-  return vithiAsync.whenOrNull(
-    data: (vithi) {
-      if (vithi == null || idx >= vithi.steps.length) return null;
-      return vithi.steps[idx];
-    },
-  );
+/// The expanded moment being studied, or null while data is loading / an index
+/// is temporarily outside the current process after switching selections.
+final activeVithiMomentProvider = Provider<VithiMoment?>((ref) {
+  final moments = ref.watch(currentVithiMomentsProvider);
+  final index = ref.watch(activeStepIndexProvider);
+  if (index < 0 || index >= moments.length) return null;
+  return moments[index];
+});
+
+/// Compatibility provider for consumers that only need the compact source
+/// step. The player itself uses [activeVithiMomentProvider] to preserve the
+/// occurrence number of repeated stages such as Javana 1–7.
+final activeStepProvider = Provider<VithiStep?>((ref) {
+  return ref.watch(activeVithiMomentProvider)?.step;
 });

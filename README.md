@@ -169,7 +169,7 @@ flutter run
 - [ ] Progress tracking nâng cao
 
 ### 🔜 Pha 3 — Mastery
-- [ ] Lộ trình 17 sát-na (Vīthicitta)
+- [x] Lộ trình 17 sát-na (Vīthicitta) — trình diễn tương tác, chọn loại lộ và tự động phát
 - [ ] Pali Pronunciation (IPA + Audio)
 - [ ] Smart Hints (Dwell > 3s hoặc error > 2 lần)
 - [ ] Virtual Teacher (Optional, có thể tắt)
