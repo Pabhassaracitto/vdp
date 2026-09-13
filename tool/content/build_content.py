@@ -25,6 +25,7 @@ sys.path.insert(0, HERE)
 
 import m1_m5_m7  # noqa: E402
 import m11_m14  # noqa: E402
+import m15_m16_m17  # noqa: E402
 import m6_m8  # noqa: E402
 import m9_m10  # noqa: E402
 
@@ -43,8 +44,11 @@ MODULES = [
     ("M13_SAC_GIOI", m11_m14.M13_VI),
     ("M14_VO_SAC_GIOI", m11_m14.M14_VI),
     ("M7_SIEU_THE", m1_m5_m7.M7_VI),
+    ("M15_TAM_SO_PHOI_HOP", m15_m16_m17.M15_VI),
     ("M6_NGHIEP", m6_m8.M6_VI),
+    ("M16_NGUOI_VA_COI", m15_m16_m17.M16_VI),
     ("M8_NHAN_DUYEN", m6_m8.M8_VI),
+    ("M17_DUYEN_CHI_TIET", m15_m16_m17.M17_VI),
     ("M9_SAC_PHAP", m9_m10.M9_VI),
     ("M10_LO_TRINH", m9_m10.M10_VI),
 ]

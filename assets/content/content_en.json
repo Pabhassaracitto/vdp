@@ -1967,8 +1967,8 @@
           "description": "The Javana (1–7) stage in this cognitive process."
         },
         "5": {
-          "name": "Tadārammaṇa (optional)",
-          "description": "The Tadārammaṇa (optional) stage in this cognitive process."
+          "name": "Tadārammaṇa (tuỳ chọn)",
+          "description": "The Tadārammaṇa (tuỳ chọn) stage in this cognitive process."
         },
         "6": {
           "name": "Post-vīthi Bhavaṅga",
@@ -3752,6 +3752,184 @@
               "file": "VDP-TamSo.pdf",
               "page": 52,
               "note": "V/ TÂM SỞ HOÀI NGHI – VICIKICCHĀ CETASIKA; phân loại nghi"
+            }
+          ]
+        },
+        {
+          "id": "M4_S06",
+          "title": "Greed group: Greed, Wrong view, Conceit",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Lobha: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Diṭṭhi: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Sakkāyadiṭṭhi: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Māna: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_LOBHA_DIṬṬHI_M4",
+              "term": "Tham",
+              "pali": "Lobha",
+              "meaning": "Related to Lobha"
+            },
+            {
+              "id": "TERM_DITTHI_M4",
+              "term": "Diṭṭhi",
+              "pali": "Diṭṭhi",
+              "meaning": "Related to Diṭṭhi"
+            },
+            {
+              "id": "TERM_SAKKAYA_M4",
+              "term": "Sakkāyadiṭṭhi",
+              "pali": "Sakkāyadiṭṭhi",
+              "meaning": "Related to Sakkāyadiṭṭhi"
+            },
+            {
+              "id": "TERM_MANA_M4",
+              "term": "Māna",
+              "pali": "Māna",
+              "meaning": "Related to Māna"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37,
+              "note": "II.1 TÂM SỞ THAM – LOBHA CETASIKA: căn Lub; tứ ý nghĩa; các từ đồng nghĩa; Tham + Tà kiến / Ly tà + Ngã mạn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39,
+              "note": "II.2 TÂM SỞ TÀ KIẾN – DIṬṬHI CETASIKA: Dis = thấy; thân kiến 20 loại; phân loại tà kiến"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42,
+              "note": "II.3 TÂM SỞ NGÃ MẠN – MĀNA CETASIKA: căn Man; tứ ý nghĩa; 9 sự ỷ hơn–bằng–thua; các pháp kiêu hãnh"
+            }
+          ]
+        },
+        {
+          "id": "M4_S07",
+          "title": "Hatred group: Hatred, Envy, Avarice, Worry",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Dosa: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Soka: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Issā: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Macchariya: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Kukkucca: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DOSA_NHOM_SAN_M4",
+              "term": "Dosa",
+              "pali": "Dosa",
+              "meaning": "Related to Dosa"
+            },
+            {
+              "id": "TERM_ISSA_M4",
+              "term": "Issā",
+              "pali": "Issā",
+              "meaning": "Related to Issā"
+            },
+            {
+              "id": "TERM_MACCHARIYA_M4",
+              "term": "Macchariya",
+              "pali": "Macchariya",
+              "meaning": "Related to Macchariya"
+            },
+            {
+              "id": "TERM_KUKKUCCA_M4",
+              "term": "Kukkucca",
+              "pali": "Kukkucca",
+              "meaning": "Related to Kukkucca"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 43,
+              "note": "III.1 TÂM SỞ SÂN – DOSA CETASIKA: căn Du; 2 nhân phát khởi; 3 nhóm 9 suy tư; các pháp cùng họp"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45,
+              "note": "III.2 TÂM SỞ TẬT (GANH TỴ) – ISSĀ CETASIKA: I + su; tứ ý nghĩa; lòng ganh tỵ trong đời; hiện hữu trong 2 tâm Sân"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46,
+              "note": "III.3 TÂM SỞ LẬN – MACCHARIYA CETASIKA: căn Mā + Accha; 5 loại bỏn xẻn; trường hợp không chia sẻ không là bỏn xẻn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 48,
+              "note": "III.4 TÂM SỞ HỐI – KUKKUCCA CETASIKA: Ku = xấu; 2 nhân sanh hối; 4 phân loại"
+            }
+          ]
+        },
+        {
+          "id": "M4_S08",
+          "title": "Sloth-torpor and Doubt: Sloth, Torpor, Doubt",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Thīna: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Middha: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Vicikicchā: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_THINA_M4",
+              "term": "Thīna",
+              "pali": "Thīna",
+              "meaning": "Related to Thīna"
+            },
+            {
+              "id": "TERM_MIDDHA_M4",
+              "term": "Middha",
+              "pali": "Middha",
+              "meaning": "Related to Middha"
+            },
+            {
+              "id": "TERM_THINA_MIDDHA_M4",
+              "term": "Thīna + Middha",
+              "pali": "Thīna + Middha",
+              "meaning": "Related to Thīna + Middha"
+            },
+            {
+              "id": "TERM_VICIKICCHA_M4",
+              "term": "Vicikicchā",
+              "pali": "Vicikicchā",
+              "meaning": "Related to Vicikicchā"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 49,
+              "note": "IV.1 TÂM SỞ HÔN TRẦM – THĪNA CETASIKA; IV.2 TÂM SỞ THUỴ MIÊN – MIDDHA CETASIKA: căn The / Middh; tứ ý nghĩa; đối nghịch Tinh tấn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 52,
+              "note": "V/ TÂM SỞ HOÀI NGHI – VICIKICCHĀ CETASIKA: Vi + kit + cha; phân loại nghi 2; hoài nghi thực tính pháp 8 cách; hoài nghi đức Phật 5 điều"
             }
           ]
         }
@@ -11035,9 +11213,2148 @@
           ]
         }
       ]
+    },
+    "M15_TAM_SO_PHOI_HOP": {
+      "title": "Cetasika combinations (saṅgaha)",
+      "description": "How the 52 cetasikas combine with each class of citta: akusala, ahetuka, kāmāvacara sobhana, jhāna and lokuttara.",
+      "translationStatus": "draft",
+      "needsReview": true,
+      "lessonSections": [
+        {
+          "id": "M15_S01",
+          "title": "Cetasika combinations — how to read mental factor associations",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_CETASIKASANGAHA_M15",
+              "term": "Cetasikasaṅgaha",
+              "pali": "Cetasikasaṅgaha",
+              "meaning": "Related to Cetasikasaṅgaha"
+            },
+            {
+              "id": "TERM_TO_THA_13_M15",
+              "term": "Aññasamāna",
+              "pali": "Aññasamāna",
+              "meaning": "Related to Aññasamāna"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 2,
+              "note": "CETASIKASANGAHA – TÂM SỞ PHỐI HỢP: bài kệ 7 / 6 tùy trường hợp / 14 bất thiện / 19 đẹp"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 4,
+              "note": "13 TÂM SỞ TỢ THA + 6 BIỆT CẢNH: Tầm 55, Tứ 66, Hỷ 51, Dục 101 (69 theo 89 tâm); Cần 105 hoặc 73; chứng thiền 5/4/3/2/Xả-Định"
+            }
+          ]
+        },
+        {
+          "id": "M15_S02",
+          "title": "The 14 unwholesome mental factors in combination",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BAT_THIEN_BIEN_HANH_M15",
+              "term": "Sabbākusalasādhāraṇā",
+              "pali": "Sabbākusalasādhāraṇā",
+              "meaning": "Related to Sabbākusalasādhāraṇā"
+            },
+            {
+              "id": "TERM_TONG_SO_TS_M15",
+              "term": "—",
+              "pali": "—",
+              "meaning": "Related to —"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 5,
+              "note": "AKUSALA SANGAHA: Si phần trong 12 tâm; Tham trong 8; Tà kiến 4 hợp tà; Ngã mạn 4 ly tà; Sân phần trong 2 tâm Sân"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 7,
+              "note": "Tật–Lận–Hối sanh với Sân theo từng loại; Hôn trầm–Thụy miên với tâm hữu trợ; Giới phần và Bi–Tùy hỷ tùy tâm; tổng kết 27/38/35/36"
+            }
+          ]
+        },
+        {
+          "id": "M15_S03",
+          "title": "Concomitance of citta and cetasikas: the inseparable four mental aggregates",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PARAMATTHA_M15",
+              "term": "Paramatthasacca",
+              "pali": "Paramatthasacca",
+              "meaning": "Related to Paramatthasacca"
+            },
+            {
+              "id": "TERM_TU_DANH_UAN_M15",
+              "term": "Nāma-khandha",
+              "pali": "Nāma-khandha",
+              "meaning": "Related to Nāma-khandha"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 10,
+              "note": "CITTA-CETASIKA SANGAHO: Paramatthasacca; bản thể tâm 3 khía cạnh"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12,
+              "note": "Danh và Sắc sanh khởi do Thức; Tứ danh uẩn bất khả phân ly"
+            }
+          ]
+        },
+        {
+          "id": "M15_S04",
+          "title": "Unwholesome cittas in combination: 8 greed-rooted, 2 hate-rooted, 2 delusion-rooted",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_THAM_19_21_M15",
+              "term": "Lobhamūla",
+              "pali": "Lobhamūla",
+              "meaning": "Related to Lobhamūla"
+            },
+            {
+              "id": "TERM_SAN_20_22_M15",
+              "term": "Dosamūla",
+              "pali": "Dosamūla",
+              "meaning": "Related to Dosamūla"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 12,
+              "note": "TÂM BẤT THIỆN PHỐI HỢP – AKUSALACITTA SANGAHO: 8 tâm Tham với 13 TSTT + Si phần + Tham + Tà kiến/Ngã mạn + Hôn phần (hữu trợ)"
+            }
+          ]
+        },
+        {
+          "id": "M15_S05",
+          "title": "Rootless cittas in combination (18 cittas)",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_NGU_song_THUC_M15",
+              "term": "Dvipañcaviññāṇa",
+              "pali": "Dvipañcaviññāṇa",
+              "meaning": "Related to Dvipañcaviññāṇa"
+            },
+            {
+              "id": "TERM_VI_TIEU_M15",
+              "term": "Hasanacitta",
+              "pali": "Hasanacitta",
+              "meaning": "Related to Hasanacitta"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 13,
+              "note": "TÂM VÔ NHÂN PHỐI HỢP: tâm vi tiếu có 12 Tờ tha trừ Dục (chanda vajjitā aññasamānā dvādasa dhammā)"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 14,
+              "note": "Ngũ song thức chỉ 7 Biến hành (8 danh bất ly); 2 Tiếp thâu; Khán ngũ môn"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 15,
+              "note": "2 Quan sát thọ xả 10 ts; Quan sát thọ hỷ 11 ts; Khán ý môn"
+            }
+          ]
+        },
+        {
+          "id": "M15_S06",
+          "title": "Beautiful, jhāna and supramundane cittas in combination",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DAI_THIEN_38_M15",
+              "term": "Mahākusala",
+              "pali": "Mahākusala",
+              "meaning": "Related to Mahākusala"
+            },
+            {
+              "id": "TERM_THIEN_TAM_35_M15",
+              "term": "Mahaggatacitta",
+              "pali": "Mahaggatacitta",
+              "meaning": "Related to Mahaggatacitta"
+            },
+            {
+              "id": "TERM_SIEU_THE_36_M15",
+              "term": "Lokuttaracitta",
+              "pali": "Lokuttaracitta",
+              "meaning": "Related to Lokuttaracitta"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 17,
+              "note": "TÂM DỤC GIỚI TỊNH HẢO PHỐI HỢP: hỷ hợp trí 38, hỷ ly trí 37, xả hợp trí 37, xả ly trí 36"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 18,
+              "note": "Không có 14 ts Bất thiện; 19 ts tịnh hảo biến hành luôn có; 3 Giới phần không cùng lúc"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 21,
+              "note": "TÂM ĐÁO ĐẠI PHỐI HỢP: Sơ thiền 13 TSTT + 22 TSTH = 35; chi thiền Tầm Tứ Hỷ Lạc Định"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 22,
+              "note": "Thiền tâm không có 3 Giới phần (đối tượng Kasina); Bi–Tùy hỷ chỉ 1 trong 2 khi đắc thiền"
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 24,
+              "note": "TÂM SIÊU THẾ PHỐI HỢP: Sơ thiền 13 + 23 = 36; có 3 Giới phần; Nhị thiền 35"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M15_R01",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M15_R02",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M15_R03",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "M15_R04",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 7
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M15_R05",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 7
+            },
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M15_R06",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M15_R07",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M15_R08",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M15_R09",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M15_R10",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M15_R11",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M15_R12",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 22
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M15_Q01",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M15_Q02",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M15_Q03",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M15_Q04",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M15_Q05",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M15_Q06",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M15_Q07",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "M15_Q08",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 18
+            }
+          ]
+        },
+        {
+          "id": "M15_Q09",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M15_Q10",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M15_Q11",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M15_Q12",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSoPhoiHop.pdf",
+              "page": 4
+            }
+          ]
+        }
+      ]
+    },
+    "M16_NGUOI_VA_COI": {
+      "title": "Individuals and realms",
+      "description": "Twelve kinds of persons and the 31 planes of existence: the four realms, the hells, the human continents and the sense, form and formless heavens.",
+      "translationStatus": "draft",
+      "needsReview": true,
+      "lessonSections": [
+        {
+          "id": "M16_S01",
+          "title": "Twelve types of persons — Puggala",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Ahetuka puggala: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Sotāpatti: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PUGGALA_M16",
+              "term": "Puggala",
+              "pali": "Puggala",
+              "meaning": "Related to Puggala"
+            },
+            {
+              "id": "TERM_PHAM_THANH_M16",
+              "term": "Puggala-bheda",
+              "pali": "Puggala-bheda",
+              "meaning": "Related to Puggala-bheda"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3,
+              "note": "CÁC LOẠI NGƯỜI – PUGGALA-BHEDA: 12 loại chia 2 nhóm A phàm nhân / B thánh nhân"
+            }
+          ]
+        },
+        {
+          "id": "M16_S02",
+          "title": "The unhappy rootless person and the happy rootless person",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Ahctuka puggala: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Sugati ahetuka puggala: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KHO_VO_NHAN_M16",
+              "term": "Ahetuka puggala",
+              "pali": "Ahetuka puggala",
+              "meaning": "Related to Ahetuka puggala"
+            },
+            {
+              "id": "TERM_LAC_VO_NHAN_M16",
+              "term": "Sugati ahetuka puggala",
+              "pali": "Sugati ahetuka puggala",
+              "meaning": "Related to Sugati ahetuka puggala"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4,
+              "note": "4 loại người khổ trong đời sống bình nhật; 37 tâm; tâm tục sinh là Quan sát thọ xả quả bất thiện"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5,
+              "note": "NGƯỜI LẠC VÔ NHÂN – SUGATI AHETUKA PUGGALA: tâm tục sinh Quan sát thọ xả quả thiện; 3 loại sanh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 6,
+              "note": "11 loại người lạc vô nhân: mù, điếc, câm, đần độn, điên bẩm sinh, vô tính, lưỡng tính…"
+            }
+          ]
+        },
+        {
+          "id": "M16_S03",
+          "title": "Eight noble persons — from stream-enterer to arahant",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Sotāpattimagga puggala: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Sotāpattiphala puggala: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Sakadāgāmimagga: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Arahattamagga puggala: its characteristic, function and role within the citta as taught in the Abhidhamma."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SO_DAO_M16",
+              "term": "Sotāpattimagga",
+              "pali": "Sotāpattimagga",
+              "meaning": "Related to Sotāpattimagga"
+            },
+            {
+              "id": "TERM_TU_DAO_M16",
+              "term": "Arahattamagga",
+              "pali": "Arahattamagga",
+              "meaning": "Related to Arahattamagga"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9,
+              "note": "5. NGƯỜI ĐẠO NHẬP LƯU – SƠ ĐẠO: sát trừ 3 kiết sử; diệt 2 tâm sở, 5 tâm; 6. QUẢ NHẬP LƯU"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 10,
+              "note": "7. NGƯỜI ĐẠO NHẤT LAI / QUẢ NHẤT LAI — bậc Thánh thứ 2"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 11,
+              "note": "11. NGƯỜI ĐẠO VÔ SANH – TỨ ĐẠO: đang tuyệt trừ tất cả chủng từ tái tục"
+            }
+          ]
+        },
+        {
+          "id": "M16_S04",
+          "title": "Four planes of existence — 31 realms",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Bhūmi: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BHUMI_M16",
+              "term": "Bhūmi",
+              "pali": "Bhūmi",
+              "meaning": "Related to Bhūmi"
+            },
+            {
+              "id": "TERM_NGU_TINH_CU_M16",
+              "term": "Suddhāvāsā",
+              "pali": "Suddhāvāsā",
+              "meaning": "Related to Suddhāvāsā"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12,
+              "note": "Bốn cảnh giới sinh tồn; cảnh bất hạnh 4; dục giới hữu phước 7 (Pāli gatha)"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13,
+              "note": "Cảnh vô sắc 4; phàm nhân, dự lưu, nhất lai không sanh Ngũ Tịnh Cư; Thánh không sanh vô tưởng và ác cảnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 14,
+              "note": "Sơ đồ 31 cõi: ác cảnh 4, cõi người 4 châu, 6 cõi trời dục giới, sơ thiền 3 cõi"
+            }
+          ]
+        },
+        {
+          "id": "M16_S05",
+          "title": "Four woeful states — hell, animal, ghost, asura",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Asura: its characteristic, function and role within the citta as taught in the Abhidhamma."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DAI_DIA_NGUC_M16",
+              "term": "Aṭṭha mahāniraya",
+              "pali": "Aṭṭha mahāniraya",
+              "meaning": "Related to Aṭṭha mahāniraya"
+            },
+            {
+              "id": "TERM_ATULA_M16",
+              "term": "Atula",
+              "pali": "Asura",
+              "meaning": "Related to Asura"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16,
+              "note": "8 ĐẠI ĐỊA NGỤC: Sañjīva…Avīci; vị trí, khoảng cách 1500 do tuần; 4 cửa, 128 hầm, 32 Diêm Vương, 16 tiểu địa ngục"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 17,
+              "note": "2 mặt đời sống: vui hưởng cảnh Trời, khổ cảnh Địa ngục"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 20,
+              "note": "Loại 1 – DEVA ASURA: ATULA CHƯ THIÊN — tục sinh bằng tâm"
+            }
+          ]
+        },
+        {
+          "id": "M16_S06",
+          "title": "The human realm — four continents",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Manussabhūmi: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Jambūdīpa: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Uttarakurudīpa: its characteristic, function and role within the citta as taught in the Abhidhamma."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JAMBU_M16",
+              "term": "Jambūdīpa",
+              "pali": "Jambūdīpa",
+              "meaning": "Related to Jambūdīpa"
+            },
+            {
+              "id": "TERM_MANUSSA_M16",
+              "term": "Manussā",
+              "pali": "Manussā",
+              "meaning": "Related to Manussā"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 21,
+              "note": "II/ CÕI VUI DỤC GIỚI – KĀMASUGATI: căn SU + GATI; 7 cõi; cõi người 4 châu"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22,
+              "note": "1/ NGƯỜI NAM THIỆN BỘ CHÂU – JAMBŪDĪPA: tâm dũng cảm sáng chói; kém hơn 3 châu nhưng dễ tu, có Chư Phật ra đời"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 23,
+              "note": "3/ NGƯỜI ĐÔNG THẮNG THẦN CHÂU – PUBBAVIDEHA: mặt tròn vì địa hình tròn"
+            }
+          ]
+        },
+        {
+          "id": "M16_S07",
+          "title": "Six sense-sphere heavenly realms",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Cātummahārājika: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Yāma: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Tusita: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Nimmānarati: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_UPPATTIDEVA_M16",
+              "term": "Uppattideva",
+              "pali": "Uppattideva",
+              "meaning": "Related to Uppattideva"
+            },
+            {
+              "id": "TERM_TUOI_THO_TROI_M16",
+              "term": "—",
+              "pali": "—",
+              "meaning": "Related to —"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24,
+              "note": "6 cõi trời dục giới; Tứ thiên vương: 500 năm, 1 ngày = 50 năm; cách 42.000 do tuần"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 26,
+              "note": "Nhóm 2 GANDHABBO; nhóm 3 KUMBHAṆḌA – RAKKHASA"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 28,
+              "note": "Tam thập tam: núi Tudi, Sudassana, Vejayanta"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 29,
+              "note": "Thiên nam 20 tuổi, thiên nữ 16; không lão hóa, không bệnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 30,
+              "note": "Tam thập tam: 1000 năm, 1 ngày = 100 năm; cách cõi người 84.000 do tuần"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 31,
+              "note": "Dạ ma: Suyāma, 2000 năm; Đấu suất: 4000 năm, Bồ tát Thượng thủ thinh văn ở cõi này"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32,
+              "note": "Hóa lạc 8000 năm; Tha hóa 16.000 năm, trú xứ Ma vương Māra; 4 cõi dưới có tình nhân"
+            }
+          ]
+        },
+        {
+          "id": "M16_S08",
+          "title": "Sixteen form-sphere and four formless realms",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Rūpāvacarabhūmi: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Vehapphala: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Arūpabhūmi: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SAC_GIOI_16_M16",
+              "term": "Rūpāvacarabhūmi",
+              "pali": "Rūpāvacarabhūmi",
+              "meaning": "Related to Rūpāvacarabhūmi"
+            },
+            {
+              "id": "TERM_VO_SAC_4_M16",
+              "term": "Arūpabhūmi",
+              "pali": "Arūpabhūmi",
+              "meaning": "Related to Arūpabhūmi"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 33,
+              "note": "LUẬN VỀ CÕI SẮC GIỚI: 16 cõi chia 4 nhóm; Sơ thiền 3 cõi: Phạm Chúng, Phạm Phụ, Đại Phạm"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 35,
+              "note": "3/ CÕI QUANG ÂM THIÊN – ĀBHASSARĀ: thủy tổ loài người theo kinh Khởi Thế Nhân Bản"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 36,
+              "note": "NHÓM 3: CÕI TAM THIỀN: Thiểu Tịnh, Vô Lượng Tịnh, Biến Tịnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 37,
+              "note": "NHÓM 4: CÕI TỨ THIỀN 7 cõi; tâm tục sinh 9 cõi thiền"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38,
+              "note": "5 cõi Tịnh Cư Thiên – SUDDHĀVĀSĀ: trú xứ A na hàm, A la hán"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 39,
+              "note": "4/ CÕI THIỆN HIỆN THIÊN – SUDASSĪ"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 40,
+              "note": "5/ CÕI SẮC CỨU CÁNH THIÊN – AKANIṬṬHĀ"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 42,
+              "note": "Đời sống vị Phạm thiên; THIÊN SẢN các cõi"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43,
+              "note": "IV/ CÕI VÔ SẮC: chỉ Tứ danh uẩn; sanh do thiền ly tham Sắc"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M16_R01",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_R02",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_R03",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_R04",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_R05",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M16_R06",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M16_R07",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_R08",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_R09",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M16_R10",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M16_R11",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M16_R12",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 30
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 31
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_R13",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_R14",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_R15",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "M16_R16",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 42
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M16_Q01",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_Q02",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_Q03",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M16_Q04",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_Q05",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_Q06",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M16_Q07",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M16_Q08",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M16_Q09",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 28
+            }
+          ]
+        },
+        {
+          "id": "M16_Q10",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_Q11",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 33
+            }
+          ]
+        },
+        {
+          "id": "M16_Q12",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_Q13",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_Q14",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M16_Q15",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "M16_Q16",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 40
+            }
+          ]
+        }
+      ]
+    },
+    "M17_DUYEN_CHI_TIET": {
+      "title": "Dependent origination: links 3-12 in detail",
+      "description": "From consciousness conditioning mentality-materiality through to birth and ageing-death, with the three periods and twenty modes.",
+      "translationStatus": "draft",
+      "needsReview": true,
+      "lessonSections": [
+        {
+          "id": "M17_S01",
+          "title": "Link 3: Consciousness conditions mind-and-matter",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_THUC_DUYEN_M17",
+              "term": "Viññāṇapaccayā nāmarūpaṁ",
+              "pali": "Viññāṇapaccayā nāmarūpaṁ",
+              "meaning": "Related to Viññāṇapaccayā nāmarūpaṁ"
+            },
+            {
+              "id": "TERM_SAC_NGHIEP_TUC_SINH_M17",
+              "term": "Kammaja-rūpa",
+              "pali": "Kammaja-rūpa",
+              "meaning": "Related to Kammaja-rūpa"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12,
+              "note": "III/ THỨC DUYÊN DANH – SẮC: danh và sắc sanh khởi do Thức; tứ danh uẩn; tùy cõi; 35 tâm sở phối hợp tâm quả hiệp thế"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 14,
+              "note": "III.2/ THỨC DUYÊN CHO SẮC: 17 sát na × 3 sát na tiểu × 3 nhóm = 153; sắc nghiệp tục sinh 30 sắc"
+            }
+          ]
+        },
+        {
+          "id": "M17_S02",
+          "title": "Links 4–5: Mind-and-matter conditions six bases; six bases condition contact",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Mānāyatana: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_Y_NHAP_M17",
+              "term": "Mānāyatana",
+              "pali": "Mānāyatana",
+              "meaning": "Related to Mānāyatana"
+            },
+            {
+              "id": "TERM_LUC_XUC_M17",
+              "term": "Phassa",
+              "pali": "Phassa",
+              "meaning": "Related to Phassa"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 15,
+              "note": "IV/ DANH SẮC DUYÊN LỤC NHẬP: 5 nhập là 5 sắc thần kinh; Ý nhập 32 tâm quả hiệp thế"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 16,
+              "note": "V/ LỤC NHẬP DUYÊN XÚC: 6 xúc; tùy cõi — vô tưởng không có Xúc"
+            }
+          ]
+        },
+        {
+          "id": "M17_S03",
+          "title": "Links 6–7: Contact conditions feeling; feeling conditions craving",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Lobha: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_Y_THO_M17",
+              "term": "Manovedanā",
+              "pali": "Manovedanā",
+              "meaning": "Related to Manovedanā"
+            },
+            {
+              "id": "TERM_THO_DUYEN_AI_M17",
+              "term": "Vedanāpaccayā taṇhā",
+              "pali": "Vedanāpaccayā taṇhā",
+              "meaning": "Related to Vedanāpaccayā taṇhā"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17,
+              "note": "VI/ XÚC DUYÊN THỌ: ngũ song thức 4 cặp xả, thân thọ khổ–lạc; ý thọ hỷ–xả; 6 thọ theo các cõi"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 18,
+              "note": "VII/ THỌ DUYÊN ÁI: lấy cả 3 thọ; Ái là tâm sở tham; 32 tâm quả hiệp thế tính theo duyên"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 19,
+              "note": "Thọ duyên Ái (tiếp): lấy cảnh — 6 cảnh"
+            }
+          ]
+        },
+        {
+          "id": "M17_S04",
+          "title": "Links 8–9: Craving conditions clinging; clinging conditions becoming",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Kāmupādāna: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Kammabhava: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_TU_THU_M17",
+              "term": "Upādāna (4)",
+              "pali": "Upādāna (4)",
+              "meaning": "Related to Upādāna (4)"
+            },
+            {
+              "id": "TERM_NGHIEP_HUU_M17",
+              "term": "Kammabhava",
+              "pali": "Kammabhava",
+              "meaning": "Related to Kammabhava"
+            },
+            {
+              "id": "TERM_SANH_HUU_M17",
+              "term": "Upapattibhava",
+              "pali": "Upapattibhava",
+              "meaning": "Related to Upapattibhava"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20,
+              "note": "VIII/ ÁI DUYÊN THỦ: thủ 6 trần; 4 loại thủ — Dục, Tà kiến, Giới cấm (Sīla + Vata), Ngã luận"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 21,
+              "note": "IX/ THỦ DUYÊN HỮU: Nghiệp hữu 3 nghiệp và chi pháp tâm sở Tư + 12 + 8"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 22,
+              "note": "Sanh hữu: hữu tưởng hữu 29 cõi, vô tưởng hữu, phi tưởng phi phi tưởng hữu; nhất/tứ/ngũ uẩn hữu"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 23,
+              "note": "Dục hữu – Sắc hữu – Vô sắc hữu; 3 Hữu × Tứ Thủ = 12 Hữu; không Nghiệp hữu thời không Sanh hữu"
+            }
+          ]
+        },
+        {
+          "id": "M17_S05",
+          "title": "Links 10–12: Becoming conditions birth; birth conditions ageing-and-death",
+          "summary": "Summary of this section.",
+          "body": [
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material.",
+            "This paragraph explains Jāti: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Aṇḍajajāti: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Rūpakāyajarā: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Soka: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_29_TAM_M17",
+              "term": "Kammabhava",
+              "pali": "Kammabhava",
+              "meaning": "Related to Kammabhava"
+            },
+            {
+              "id": "TERM_BON_CACH_SINH_M17",
+              "term": "Jāti (4)",
+              "pali": "Jāti (4)",
+              "meaning": "Related to Jāti (4)"
+            },
+            {
+              "id": "TERM_SAUU_BI_KHO_UU_NAO_M17",
+              "term": "Soka, Parideva, Dukkha, Domanassa, Upāyāsa",
+              "pali": "Soka, Parideva, Dukkha, Domanassa, Upāyāsa",
+              "meaning": "Related to Soka, Parideva, Dukkha, Domanassa, Upāyāsa"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 24,
+              "note": "X/ HỮU DUYÊN SINH: chỉ lấy Nghiệp hữu; 29 tâm; sắc nghiệp sanh 3 nhóm"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 25,
+              "note": "4 cách sinh; 3 uẩn sinh (ngũ 26 cõi, tứ 4 cõi, nhất cõi vô tưởng); XI/ SINH DUYÊN LÃO TỬ: sắc thân lão 49 sát na trụ"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 26,
+              "note": "Sầu – Bi – Khổ – Ưu – Não; XII/ Lão tử duyên Vô minh"
+            }
+          ]
+        },
+        {
+          "id": "M17_S06",
+          "title": "Three periods and twenty modes — summary of the dependent origination cycle",
+          "summary": "Summary of this section.",
+          "body": [
+            "This paragraph explains Addhā: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Aṅga: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This paragraph explains Visākāra: its characteristic, function and role within the citta as taught in the Abhidhamma.",
+            "This section presents the Abhidhamma teaching on the relevant mental factors: their definitions, classifications and relationships as preserved in the source material."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BA_THOI_M17",
+              "term": "Addhā",
+              "pali": "Addhā",
+              "meaning": "Related to Addhā"
+            },
+            {
+              "id": "TERM_20_HANH_TUONG_M17",
+              "term": "Visākāra",
+              "pali": "Visākāra",
+              "meaning": "Related to Visākāra"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 27,
+              "note": "3 THỜI – ADDHĀ: quá khứ – hiện tại – vị lai; 20 HÀNH TƯỚNG – VISATĀKĀRA: 5+5+5+5"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 5,
+              "note": "1. Tesamevaca mūlānaṁ nirodhena… — tiêu biểu cho vòng duyên khởi diệt"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M17_R01",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M17_R02",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M17_R03",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 15
+            }
+          ]
+        },
+        {
+          "id": "M17_R04",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 16
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "M17_R05",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "M17_R06",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 18
+            }
+          ]
+        },
+        {
+          "id": "M17_R07",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M17_R08",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M17_R09",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M17_R10",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": "M17_R11",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": "M17_R12",
+          "front": "Review question on this Dhamma",
+          "back": "Answer as taught in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 27
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M17_Q01",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M17_Q02",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 15
+            }
+          ]
+        },
+        {
+          "id": "M17_Q03",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M17_Q04",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "M17_Q05",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M17_Q06",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M17_Q07",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M17_Q08",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M17_Q09",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M17_Q10",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "M17_Q11",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 26
+            }
+          ]
+        },
+        {
+          "id": "M17_Q12",
+          "type": "mcq",
+          "question": "Quiz question on this Dhamma",
+          "correctAnswer": "Correct answer",
+          "distractors": [
+            "Option A",
+            "Option B",
+            "Option C"
+          ],
+          "explanation": "Explanation as in the source.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 27
+            }
+          ]
+        }
+      ]
     }
   },
   "fallbackLocale": "vi",
   "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "English lessons translated from Vietnamese source."
+  "lessonTranslationNote": "English lessons translated from Vietnamese source. New modules M15-M17 pending translation."
 }
