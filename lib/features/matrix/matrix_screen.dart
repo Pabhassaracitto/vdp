@@ -106,12 +106,14 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   bool _isSyncingScroll = false;
 
   Timer? _searchDebounceTimer;
-  BhumiGroup? _filterBhumi;
+  BhumiGroup? _filterBhumi = BhumiGroup.akusala;
   bool _showHighContrastMode = false;
   bool get _isHC =>
       _showHighContrastMode || Theme.of(context).brightness == Brightness.dark;
   bool _forceLandscape = false;
   bool _showScrollToTop = false;
+  bool _searchExpanded = false;
+  final TextEditingController _searchController = TextEditingController();
 
   @override
   void initState() {
@@ -188,6 +190,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     _verticalController1.dispose();
     _verticalController2.dispose();
     _searchDebounceTimer?.cancel();
+    _searchController.dispose();
     super.dispose();
   }
 
@@ -298,6 +301,38 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final query = ref.watch(matrixSearchQueryProvider);
     final searchType = ref.watch(matrixSearchTypeProvider);
 
+    // Collapsed state: just a magnifying glass icon
+    if (!_searchExpanded) {
+      return Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: isLandscape ? 2 : 4,
+        ),
+        child: Row(
+          children: [
+            IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () {
+                setState(() => _searchExpanded = true);
+              },
+              tooltip: context.l10n.searchCittaCetasika,
+            ),
+            if (query.isNotEmpty)
+              Text(
+                '"$query"',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: VdpColors.primary,
+                  fontWeight: FontWeight.w500,
+                ),
+                overflow: TextOverflow.ellipsis,
+              ),
+          ],
+        ),
+      );
+    }
+
+    // Expanded state: full search bar with citta/cetasika toggle
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: 16,
@@ -307,21 +342,39 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
         children: [
           Expanded(
             child: TextField(
+              controller: _searchController,
+              autofocus: true,
               decoration: InputDecoration(
                 hintText: context.l10n.searchCittaCetasika,
                 hintStyle: TextStyle(fontSize: isLandscape ? 13 : 14),
                 prefixIcon: const Icon(Icons.search),
-                suffixIcon: query.isNotEmpty
-                    ? IconButton(
+                suffixIcon: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (query.isNotEmpty)
+                      IconButton(
                         icon: const Icon(Icons.clear),
                         onPressed: () {
+                          _searchController.clear();
                           ref
                               .read(matrixSearchQueryProvider.notifier)
                               .state = '';
                         },
                         tooltip: context.l10n.clearSearch,
-                      )
-                    : null,
+                      ),
+                    IconButton(
+                      icon: const Icon(Icons.close),
+                      onPressed: () {
+                        _searchController.clear();
+                        ref
+                            .read(matrixSearchQueryProvider.notifier)
+                            .state = '';
+                        setState(() => _searchExpanded = false);
+                      },
+                      tooltip: context.l10n.close,
+                    ),
+                  ],
+                ),
                 contentPadding: EdgeInsets.symmetric(
                   horizontal: 12,
                   vertical: isLandscape ? 8 : 12,
