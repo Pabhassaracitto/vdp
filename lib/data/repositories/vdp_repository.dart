@@ -10,6 +10,7 @@ import '../../core/validators/data_validator.dart';
 import '../models/cetasika_model.dart';
 import '../models/citta_model.dart';
 import '../models/kamma_model.dart';
+import '../models/paccaya_model.dart';
 import '../models/paticca_model.dart';
 import '../models/rupa_model.dart';
 import '../models/vithi_model.dart';
@@ -30,6 +31,7 @@ class VdpDataState {
   final List<RupaModel> rupas;
   final List<KammaModel> kammas;
   final List<PaticcaModel> paticcas;
+  final List<PaccayaModel> paccayas;
   final List<VithiModel> vithis;
   final ValidationResult? validationResult;
   final String? errorMessage;
@@ -41,6 +43,7 @@ class VdpDataState {
     this.rupas = const [],
     this.kammas = const [],
     this.paticcas = const [],
+    this.paccayas = const [],
     this.vithis = const [],
     this.validationResult,
     this.errorMessage,
@@ -53,6 +56,7 @@ class VdpDataState {
     List<RupaModel>? rupas,
     List<KammaModel>? kammas,
     List<PaticcaModel>? paticcas,
+    List<PaccayaModel>? paccayas,
     List<VithiModel>? vithis,
     ValidationResult? validationResult,
     String? errorMessage,
@@ -64,6 +68,7 @@ class VdpDataState {
       rupas: rupas ?? this.rupas,
       kammas: kammas ?? this.kammas,
       paticcas: paticcas ?? this.paticcas,
+      paccayas: paccayas ?? this.paccayas,
       vithis: vithis ?? this.vithis,
       validationResult: validationResult ?? this.validationResult,
       errorMessage: errorMessage ?? this.errorMessage,
@@ -91,6 +96,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
         _loadRupas(),
         _loadKammas(),
         _loadPaticcas(),
+        _loadPaccayas(),
         _loadVithis(),
       ]);
 
@@ -99,7 +105,8 @@ class VdpRepository extends StateNotifier<VdpDataState> {
       final rupas = results[2] as List<RupaModel>;
       final kammas = results[3] as List<KammaModel>;
       final paticcas = results[4] as List<PaticcaModel>;
-      final vithis = results[5] as List<VithiModel>;
+      final paccayas = results[5] as List<PaccayaModel>;
+      final vithis = results[6] as List<VithiModel>;
 
       ValidationResult? validation;
       if (cittas.isNotEmpty && cetasikas.isNotEmpty) {
@@ -120,6 +127,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
               rupas: rupas,
               kammas: kammas,
               paticcas: paticcas,
+              paccayas: paccayas,
               vithis: vithis,
               validationResult: validation,
               errorMessage: 'Vi phạm quy tắc giáo lý:\n'
@@ -139,6 +147,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           rupas.isEmpty &&
           kammas.isEmpty &&
           paticcas.isEmpty &&
+          paccayas.isEmpty &&
           vithis.isEmpty;
       if (allEmpty) {
         state = state.copyWith(
@@ -148,6 +157,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
           rupas: rupas,
           kammas: kammas,
           paticcas: paticcas,
+          paccayas: paccayas,
           vithis: vithis,
           validationResult: validation,
           errorMessage: 'Chưa có dữ liệu — kiểm tra assets/data/ (6 files rỗng)',
@@ -162,6 +172,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
         rupas: rupas,
         kammas: kammas,
         paticcas: paticcas,
+        paccayas: paccayas,
         vithis: vithis,
         validationResult: validation,
         errorMessage: cittas.isEmpty && cetasikas.isEmpty
@@ -229,6 +240,24 @@ class VdpRepository extends StateNotifier<VdpDataState> {
       return list
           .map((e) => KammaModel.fromJson(e as Map<String, dynamic>))
           .toList();
+    } catch (e) {
+      return [];
+    }
+  }
+
+  /// 24 Duyên Hệ (Paṭṭhāna naya) — assets/data/paccayas.json.
+  Future<List<PaccayaModel>> _loadPaccayas() async {
+    try {
+      final raw = await rootBundle.loadString('assets/data/paccayas.json');
+      final decoded = json.decode(raw);
+      final list = (decoded as Map<String, dynamic>)['paccayas'] as List?;
+      if (list == null) return [];
+      final parsed = list
+          .whereType<Map<String, dynamic>>()
+          .map(PaccayaModel.fromJson)
+          .toList();
+      parsed.sort((a, b) => a.order.compareTo(b.order));
+      return parsed;
     } catch (e) {
       return [];
     }

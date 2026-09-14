@@ -1,0 +1,642 @@
+{
+  "meta": {
+    "title": "24 Duyên Hệ — Paṭṭhāna Naya (Định Luật Duyên Hệ Tương Quan)",
+    "schemaVersion": 1,
+    "sourcePolicy": "Thứ tự ưu tiên: (1) Paṭṭhāna (Abhidhamma Piṭaka VII) — Paccayuddesa/Paccayaniddesa; (2) Thanh Tịnh Đạo (Visuddhimagga) chương XVII; (3) Abhidhammattha-saṅgaha chương VIII phần Paṭṭhānanayo; (4) U Nārada, Conditional Relations (PTS). KHÔNG tìm được tài liệu Pa-Auk liệt kê 24 duyên — xem docs/study-content-sources.md.",
+    "groupNote": "Trường `group` là phân nhóm sư phạm do ứng dụng đặt ra để lọc UI, KHÔNG phải phân loại gốc trong Paṭṭhāna. Thứ tự gốc được giữ nguyên ở trường `order`.",
+    "reviewStatus": "needs_senior_review"
+  },
+  "paccayas": [
+    {
+      "id": "PC_01",
+      "order": 1,
+      "namePali": "Hetu-paccaya",
+      "nameVietnamese": "Nhân Duyên",
+      "nameShort": "Nhân",
+      "nameEnglish": "Root condition",
+      "group": "root_object",
+      "definitionVi": "Sáu nhân (hetu) trợ cho các pháp tương ưng với nhân và cho sắc pháp do nhân ấy sanh, theo cách vững chắc như gốc rễ của cây.",
+      "paccayaDhamma": "6 nhân: tham, sân, si, vô tham, vô sân, vô si.",
+      "paccayuppanna": "Các danh pháp tương ưng nhân (citta + cetasika) và sắc do tâm ấy sanh (pavatti) hoặc sắc nghiệp lúc tục sanh.",
+      "paliFormula": "Hetu hetusampayuttakānaṃ dhammānaṃ taṃ samuṭṭhānānañca rūpānaṃ hetupaccayena paccayo.",
+      "subdivisions": [],
+      "examples": [
+        "Tâm tham có 2 nhân tham và si: hai nhân này làm cho cả cụm tâm ấy mang tính bất thiện.",
+        "Tâm vô nhân (ahetuka) không có nhân nên không được trợ bởi nhân duyên — như 2 tâm tiếp thâu."
+      ],
+      "operatesInPaticca": [],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_LOBHA", "CS_DOSA", "CS_MOHA", "CS_ALOBHA", "CS_ADOSA", "CS_PANNA"],
+      "doctrinalNote": "Chỉ 6 tâm sở căn bản mới là nhân; các tâm sở còn lại dù mạnh cũng chỉ trợ bằng những duyên khác.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Hetupaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"},
+        {"source": "Visuddhimagga ch. XVII (Paññābhūminiddesa)", "locator": "PTS iii 532–533 (Pe Maung Tin tr., q.3)", "confidence": "commentarial"}
+      ]
+    },
+    {
+      "id": "PC_02",
+      "order": 2,
+      "namePali": "Ārammaṇa-paccaya",
+      "nameVietnamese": "Cảnh Duyên",
+      "nameShort": "Cảnh",
+      "nameEnglish": "Object condition",
+      "group": "root_object",
+      "definitionVi": "Cảnh trợ cho tâm và tâm sở bằng cách làm chỗ nương để tâm biết đến; không có cảnh thì không có tâm sanh khởi.",
+      "paccayaDhamma": "6 cảnh: sắc, thinh, khí, vị, xúc, pháp (gồm cả Niết-bàn và chế định).",
+      "paccayuppanna": "89 tâm (trừ 2 ngũ thức thân? — chính xác: trừ tâm không bắt cảnh) và 52 tâm sở.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Một hình ảnh (sắc cảnh) làm cảnh duyên cho nhãn thức và các tâm sở đi kèm.",
+        "Niết-bàn làm cảnh duyên cho tâm Siêu thế."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_07"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Theo Thanh Tịnh Đạo XVII, Vô minh làm cảnh duyên cho Hành thiện khi hành giả quán sát vô minh bằng trí tuệ.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Ārammaṇapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"},
+        {"source": "Visuddhimagga ch. XVII", "locator": "§XVII.102 (Ñāṇamoli tr., The Path of Purification)", "confidence": "commentarial"}
+      ]
+    },
+    {
+      "id": "PC_03",
+      "order": 3,
+      "namePali": "Adhipati-paccaya",
+      "nameVietnamese": "Trưởng Duyên",
+      "nameShort": "Trưởng",
+      "nameEnglish": "Predominance condition",
+      "group": "root_object",
+      "definitionVi": "Pháp đứng đầu, được chú trọng nhất trong một lúc, trợ cho các pháp câu sanh hoặc trợ như cảnh được coi trọng.",
+      "paccayaDhamma": "4 trưởng câu sanh: dục (chanda), cần (viriya), tâm (citta), thẩm (vīmaṃsā = tuệ, paññā); và cảnh trưởng (cảnh được coi trọng).",
+      "paccayuppanna": "Các danh pháp câu sanh; với cảnh trưởng là 84 tâm (trừ tâm quả vô nhân...) và tâm sở tương ưng.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Sahajāt'ādhipati", "nameVi": "Câu sanh trưởng", "note": "Một trong 4 pháp dục–cần–tâm–thẩm nổi trội trong một sát-na tâm."},
+        {"namePali": "Ārammaṇ'ādhipati", "nameVi": "Cảnh trưởng", "note": "Cảnh được coi trọng, chi phối tâm đang bắt cảnh ấy."}
+      ],
+      "examples": [
+        "Khi hành giả nỗ lực tinh cần mạnh nhất, cần là trưởng duyên cho cả cụm tâm thiền.",
+        "Người tham đắm một vật quý: vật ấy làm cảnh trưởng cho tâm tham."
+      ],
+      "operatesInPaticca": ["PD_01"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_CHANDA", "CS_VIRIYA", "CS_PANNA"],
+      "doctrinalNote": "Không có trưởng duyên ở 18 tâm vô nhân và ở các tâm chỉ có một trưởng khả hữu.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Adhipatipaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_04",
+      "order": 4,
+      "namePali": "Anantara-paccaya",
+      "nameVietnamese": "Vô Gián Duyên",
+      "nameShort": "Vô Gián",
+      "nameEnglish": "Proximity condition",
+      "group": "continuity",
+      "definitionVi": "Tâm và tâm sở vừa diệt nhường chỗ, trợ cho tâm và tâm sở kế tiếp sanh lên không gián đoạn.",
+      "paccayaDhamma": "Tâm và tâm sở vừa diệt (trừ tâm tử của vị A-la-hán).",
+      "paccayuppanna": "Tâm và tâm sở sanh liền sau đó.",
+      "paliFormula": "Purimā purimā kusalā dhammā pacchimānaṃ pacchimānaṃ kusalānaṃ dhammānaṃ anantarapaccayena paccayo.",
+      "subdivisions": [],
+      "examples": [
+        "Nhãn thức diệt làm vô gián duyên cho tâm tiếp thâu trong lộ ngũ môn.",
+        "Tâm tục sanh diệt làm vô gián duyên cho tâm hộ kiếp thứ nhất."
+      ],
+      "operatesInPaticca": ["PD_03"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Vô gián duyên là nền của tính liên tục dòng tâm thức — không có khoảng hở giữa hai sát-na tâm.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Anantarapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_05",
+      "order": 5,
+      "namePali": "Samanantara-paccaya",
+      "nameVietnamese": "Đẳng Vô Gián Duyên",
+      "nameShort": "Đẳng Vô Gián",
+      "nameEnglish": "Contiguity condition",
+      "group": "continuity",
+      "definitionVi": "Đồng nghĩa với vô gián duyên, nhấn mạnh sự kế cận sát-na không có khoảng xen.",
+      "paccayaDhamma": "Tâm và tâm sở vừa diệt.",
+      "paccayuppanna": "Tâm và tâm sở liền sau.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Cùng một quan hệ được gọi là vô gián duyên khi nói về 'dứt nhường chỗ', và là đẳng vô gián khi nói về 'kế cận sát-na'."
+      ],
+      "operatesInPaticca": ["PD_03"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Hai duyên này cùng một thực tính, chỉ khác cách trình bày — như hai mặt của một đồng tiền.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Samanantarapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_06",
+      "order": 6,
+      "namePali": "Sahajāta-paccaya",
+      "nameVietnamese": "Câu Sanh Duyên",
+      "nameShort": "Câu Sanh",
+      "nameEnglish": "Conascence condition",
+      "group": "conascence",
+      "definitionVi": "Pháp trợ cho pháp khác bằng cách cùng sanh lên trong một sát-na, như ba cây gậy chống nhau mà đứng.",
+      "paccayaDhamma": "4 danh uẩn câu sanh; 4 đại chủng; tâm và tâm sở lúc tục sanh; danh và sắc lúc tục sanh.",
+      "paccayuppanna": "Các danh pháp câu sanh với nhau, sắc tâm, sắc nghiệp lúc tục sanh, và danh–sắc hỗ trợ lúc tục sanh.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Trong một sát-na tâm tham: thọ, tưởng, hành và thức cùng sanh và trợ nhau.",
+        "Lúc tục sanh, tâm tục sanh và sắc nghiệp trợ nhau bằng câu sanh duyên."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_04", "PD_06", "PD_08"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Đây là duyên được dùng nhiều nhất để giải thích sự đồng thời của danh và sắc trong một sát-na.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Sahajātapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_07",
+      "order": 7,
+      "namePali": "Aññamañña-paccaya",
+      "nameVietnamese": "Hỗ Tương Duyên",
+      "nameShort": "Hỗ Tương",
+      "nameEnglish": "Mutuality condition",
+      "group": "conascence",
+      "definitionVi": "Các pháp câu sanh trợ lẫn nhau hai chiều: pháp này vừa là năng duyên vừa là sở duyên của pháp kia.",
+      "paccayaDhamma": "4 danh uẩn câu sanh; 4 đại chủng; danh và sắc lúc tục sanh.",
+      "paccayuppanna": "Chính các pháp ấy — quan hệ hai chiều.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Bốn đại chủng: đất trợ nước, nước cũng trợ lại đất — không pháp nào đứng riêng."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_04", "PD_06", "PD_08"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Hỗ tương duyên luôn đi kèm câu sanh duyên, nhưng hẹp hơn: sắc tâm không hỗ tương với tâm.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Aññamaññapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_08",
+      "order": 8,
+      "namePali": "Nissaya-paccaya",
+      "nameVietnamese": "Y Chỉ Duyên",
+      "nameShort": "Y Chỉ",
+      "nameEnglish": "Support condition",
+      "group": "conascence",
+      "definitionVi": "Pháp trợ cho pháp khác bằng cách làm chỗ nương, như cây nương vào đất, tranh nương vào vải.",
+      "paccayaDhamma": "4 danh uẩn câu sanh; 4 đại chủng; 6 vật (nhãn, nhĩ, tỷ, thiệt, thân, ý vật).",
+      "paccayuppanna": "Các danh pháp câu sanh; sắc y đại sinh; 7 giới thức tương ưng cùng tâm sở.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Sahajāta-nissaya", "nameVi": "Câu sanh y chỉ", "note": "Nương nhau trong cùng một sát-na."},
+        {"namePali": "Purejāta-nissaya (vatthu)", "nameVi": "Tiền sanh y chỉ — vật", "note": "6 vật sanh trước làm chỗ nương cho 7 giới thức."},
+        {"namePali": "Vatthārammaṇa-purejāta-nissaya", "nameVi": "Vật-cảnh tiền sanh y chỉ", "note": "Ý vật vừa là chỗ nương vừa là cảnh cho tâm ý giới."}
+      ],
+      "examples": [
+        "Nhãn vật làm y chỉ duyên cho nhãn thức và các tâm sở đi kèm.",
+        "Ý vật (hadaya-vatthu) làm y chỉ cho toàn bộ tâm ý giới trong đời sống ngũ uẩn."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_05", "PD_06"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Khác cận y duyên: y chỉ là chỗ nương trực tiếp, còn cận y là trợ lực mạnh từ xa.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Nissayapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_09",
+      "order": 9,
+      "namePali": "Upanissaya-paccaya",
+      "nameVietnamese": "Cận Y Duyên",
+      "nameShort": "Cận Y",
+      "nameEnglish": "Decisive support condition",
+      "group": "time_relation",
+      "definitionVi": "Pháp trợ một cách mạnh mẽ, có sức lôi kéo quyết định, như một chỗ nương thật vững.",
+      "paccayaDhamma": "Cảnh được chú ý mạnh; tâm vừa diệt; các yếu tố tự nhiên như đức tin, giới, thời tiết, thức ăn, bạn hữu.",
+      "paccayuppanna": "Tâm và tâm sở sanh sau.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Ārammaṇ'ūpanissaya", "nameVi": "Cảnh cận y", "note": "Một cảnh mạnh làm động lực quyết định cho tâm sanh sau."},
+        {"namePali": "Anantar'ūpanissaya", "nameVi": "Vô gián cận y", "note": "Đồng nghĩa với vô gián duyên xét về sức trợ."},
+        {"namePali": "Pakat'ūpanissaya", "nameVi": "Thường cận y", "note": "Điều kiện tự nhiên: đức tin, giới hạnh, khí hậu, bạn bè, nghiệp cũ."}
+      ],
+      "examples": [
+        "Thọ lạc làm thường cận y duyên cho ái — vì có thọ dễ chịu nên khát ái sanh mạnh.",
+        "Đức tin làm cận y duyên cho việc bố thí; tham làm cận y cho việc trộm cắp."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_02", "PD_07", "PD_10", "PD_11"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_VEDANA"],
+      "doctrinalNote": "Thọ duyên Ái trong Thập Nhị Nhân Duyên được giải thích chủ yếu qua thường cận y duyên.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Upanissayapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"},
+        {"source": "Visuddhimagga ch. XVII", "locator": "§XVII.65–104 (Ñāṇamoli tr.)", "confidence": "commentarial"}
+      ]
+    },
+    {
+      "id": "PC_10",
+      "order": 10,
+      "namePali": "Purejāta-paccaya",
+      "nameVietnamese": "Tiền Sanh Duyên",
+      "nameShort": "Tiền Sanh",
+      "nameEnglish": "Prenascence condition",
+      "group": "time_relation",
+      "definitionVi": "Pháp sắc sanh trước và còn đang trụ, trợ cho danh pháp sanh sau, như mặt trời có trước mới chiếu sáng.",
+      "paccayaDhamma": "6 vật (sắc) và 6 cảnh (18 sắc rõ) đã sanh trước.",
+      "paccayuppanna": "Tâm và tâm sở sanh sau.",
+      "paliFormula": "Cakkhāyatanaṃ cakkhuviññāṇadhātuyā taṃ sampayuttakānañca dhammānaṃ purejātapaccayena paccayo.",
+      "subdivisions": [
+        {"namePali": "Vatthu-purejāta", "nameVi": "Vật tiền sanh", "note": "6 vật trợ cho 7 giới thức."},
+        {"namePali": "Ārammaṇa-purejāta", "nameVi": "Cảnh tiền sanh", "note": "18 sắc rõ trợ cho 54 tâm dục giới và 50 tâm sở."}
+      ],
+      "examples": [
+        "Nhãn vật phải có trước, nhãn thức mới sanh được.",
+        "Một cảnh sắc hiện tại (17 sát-na) làm cảnh tiền sanh cho lộ nhãn môn."
+      ],
+      "operatesInPaticca": ["PD_05", "PD_06"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Tiền sanh duyên chỉ có ở sắc pháp; danh pháp không thể làm tiền sanh duyên.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Purejātapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_11",
+      "order": 11,
+      "namePali": "Pacchājāta-paccaya",
+      "nameVietnamese": "Hậu Sanh Duyên",
+      "nameShort": "Hậu Sanh",
+      "nameEnglish": "Postnascence condition",
+      "group": "time_relation",
+      "definitionVi": "Danh pháp sanh sau trợ và duy trì cho sắc pháp đã sanh trước, như cơn mưa nuôi cây đã trồng.",
+      "paccayaDhamma": "85 tâm (trừ 2 ngũ thức thân và tâm tục sanh? — chính xác: 85 tâm dục, sắc, vô sắc, siêu thế trừ tục sanh) và 52 tâm sở.",
+      "paccayuppanna": "Thân sắc nghiệp sanh trước (sắc thân đang trụ).",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Tâm và tâm sở trong đời sống trợ cho sắc thân đã có, giữ thân không hư hoại.",
+        "Cảm giác đói thúc đẩy việc ăn uống — danh pháp sanh sau nuôi thân sanh trước."
+      ],
+      "operatesInPaticca": ["PD_04"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Chỉ danh pháp sanh sau mới trợ sắc pháp sanh trước; không có chiều ngược lại.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Pacchājātapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_12",
+      "order": 12,
+      "namePali": "Āsevana-paccaya",
+      "nameVietnamese": "Trùng Dụng Duyên",
+      "nameShort": "Trùng Dụng",
+      "nameEnglish": "Repetition condition",
+      "group": "continuity",
+      "definitionVi": "Đổng lực sát-na trước trợ cho đổng lực sát-na sau bằng cách được lặp lại, khiến tâm càng lúc càng mạnh.",
+      "paccayaDhamma": "Đổng lực tâm và tâm sở đi trước (trừ đổng lực thứ 7 và đổng lực siêu thế? — chính xác: trừ đổng lực cuối và đổng lực đạo).",
+      "paccayuppanna": "Đổng lực tâm và tâm sở sanh liền sau.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Trong 7 sát-na đổng lực, sát-na thứ nhất trợ sát-na thứ hai bằng trùng dụng duyên.",
+        "Học thuộc lòng: lặp lại nhiều lần nên lần sau dễ hơn — cùng nguyên lý."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_07"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Đổng lực siêu thế (đạo tâm) không làm trùng dụng duyên vì chỉ sanh một sát-na.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Āsevanapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_13",
+      "order": 13,
+      "namePali": "Kamma-paccaya",
+      "nameVietnamese": "Nghiệp Duyên",
+      "nameShort": "Nghiệp",
+      "nameEnglish": "Kamma condition",
+      "group": "kamma_vipaka",
+      "definitionVi": "Tư tâm sở trợ cho các pháp tương ưng và sắc pháp do nghiệp sanh, hoặc trợ cho quả sanh ở sát-na khác.",
+      "paccayaDhamma": "Tâm sở Tư (cetanā) thiện và bất thiện hiệp thế.",
+      "paccayuppanna": "Câu sanh nghiệp: tâm + tâm sở câu sanh và sắc tâm. Dị thời nghiệp: tâm quả, tâm sở quả và sắc nghiệp lúc tục sanh.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Sahajāta-kamma", "nameVi": "Câu sanh nghiệp", "note": "Tư trợ các pháp cùng sanh trong một sát-na."},
+        {"namePali": "Nānākkhaṇika-kamma", "nameVi": "Dị thời nghiệp", "note": "Tư trong sát-na tạo nghiệp trợ quả ở sát-na khác — nền của tái sanh."}
+      ],
+      "examples": [
+        "Tư trong một hành động bố thí trợ cho tâm quả và sắc nghiệp ở kiếp sau (dị thời nghiệp).",
+        "Tư trong tâm tham ngay sát-na ấy làm cho cả cụm tâm thành bất thiện (câu sanh nghiệp)."
+      ],
+      "operatesInPaticca": ["PD_02", "PD_03", "PD_09", "PD_10"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_CETANA"],
+      "doctrinalNote": "Hành duyên Thức và Hữu duyên Sanh trong 12 chi được giải thích bằng dị thời nghiệp duyên.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Kammapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_14",
+      "order": 14,
+      "namePali": "Vipāka-paccaya",
+      "nameVietnamese": "Quả Duyên",
+      "nameShort": "Quả",
+      "nameEnglish": "Result condition",
+      "group": "kamma_vipaka",
+      "definitionVi": "Danh pháp là quả trợ cho nhau và cho sắc nghiệp bằng cách an tịnh, không gắng gượng.",
+      "paccayaDhamma": "36 tâm quả (vô nhân + dục giới tịnh hảo + đáo đại) và 38 tâm sở tương ưng.",
+      "paccayuppanna": "Các danh pháp quả câu sanh và sắc nghiệp do chúng sanh.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Tâm tục sanh là quả, trợ cho sắc nghiệp sanh cùng lúc.",
+        "Nhãn thức là tâm quả — trợ các tâm sở câu sanh bằng quả duyên, không tạo nghiệp mới."
+      ],
+      "operatesInPaticca": ["PD_03", "PD_04", "PD_05", "PD_06", "PD_11"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Tâm quả không tạo nghiệp mới — đây là điểm then chốt để hiểu 'quả không sanh quả'.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Vipākapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_15",
+      "order": 15,
+      "namePali": "Āhāra-paccaya",
+      "nameVietnamese": "Vật Thực Duyên",
+      "nameShort": "Thực",
+      "nameEnglish": "Nutriment condition",
+      "group": "kamma_vipaka",
+      "definitionVi": "Pháp nuôi dưỡng, trợ cho các pháp khác được lớn mạnh và tồn tại.",
+      "paccayaDhamma": "Đoàn thực (sắc) và 3 danh thực: xúc, tư, thức.",
+      "paccayuppanna": "Sắc thực trợ thân sắc; 3 danh thực trợ tâm, tâm sở và sắc do tâm sanh.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Rūp'āhāra", "nameVi": "Sắc thực (đoàn thực)", "note": "Vật thực nuôi thân."},
+        {"namePali": "Nām'āhāra", "nameVi": "Danh thực", "note": "Xúc thực, tư thực, thức thực."}
+      ],
+      "examples": [
+        "Thức ăn nuôi dưỡng thân sắc — đoàn thực.",
+        "Tư thực: ý chí nuôi dưỡng nghiệp và kéo dài vòng sanh tử."
+      ],
+      "operatesInPaticca": ["PD_02", "PD_09"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_PHASSA", "CS_CETANA"],
+      "doctrinalNote": "Liên hệ với Tứ Thực trong Kinh tạng (SN 12.63) — pháp môn quán thực.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Āhārapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_16",
+      "order": 16,
+      "namePali": "Indriya-paccaya",
+      "nameVietnamese": "Quyền Duyên",
+      "nameShort": "Quyền",
+      "nameEnglish": "Faculty condition",
+      "group": "kamma_vipaka",
+      "definitionVi": "Pháp có quyền chi phối trong lãnh vực của mình, trợ cho các pháp tương ưng hoặc tương ứng.",
+      "paccayaDhamma": "20 quyền: 5 sắc quyền (ngũ căn), mạng quyền sắc, và 14 danh quyền (thọ, tín, cần, niệm, định, tuệ, tri vị tri, tri dĩ tri, tri cụ tri + ý quyền...).",
+      "paccayuppanna": "Sắc quyền trợ 7 giới thức; danh quyền trợ tâm và tâm sở câu sanh; mạng quyền sắc trợ sắc nghiệp.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Purejāta-indriya", "nameVi": "Tiền sanh quyền", "note": "5 sắc quyền trợ cho thức tương ưng."},
+        {"namePali": "Jīvit'indriya", "nameVi": "Mạng quyền sắc", "note": "Duy trì sắc nghiệp cùng nhóm."},
+        {"namePali": "Sahajāta-indriya", "nameVi": "Câu sanh quyền", "note": "14 danh quyền trợ tâm và tâm sở câu sanh."}
+      ],
+      "examples": [
+        "Nhãn quyền chi phối nhãn thức — không có nhãn quyền thì không có thấy.",
+        "Định quyền làm chủ cả cụm tâm thiền."
+      ],
+      "operatesInPaticca": ["PD_05"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_SADDHA", "CS_VIRIYA", "CS_SATI", "CS_EKAGGATA", "CS_PANNA"],
+      "doctrinalNote": "5 quyền (tín, cần, niệm, định, tuệ) phải được quân bình trong hành thiền.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Indriyapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_17",
+      "order": 17,
+      "namePali": "Jhāna-paccaya",
+      "nameVietnamese": "Thiền Duyên",
+      "nameShort": "Thiền",
+      "nameEnglish": "Jhāna condition",
+      "group": "kamma_vipaka",
+      "definitionVi": "Bảy chi thiền (tầm, tứ, hỷ, thọ, nhất tâm) trợ cho các pháp tương ưng bằng cách quán sát cảnh một cách sâu sát.",
+      "paccayaDhamma": "7 chi thiền: tầm, tứ, hỷ, lạc, ưu, xả, nhất tâm.",
+      "paccayuppanna": "Tâm và tâm sở tương ưng (trừ 2 ngũ thức thân), và sắc do tâm ấy sanh.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Tầm đưa tâm đến cảnh — là thiền duyên cho các tâm sở cùng sanh.",
+        "Ở thiền thứ hai, tứ đã vắng nhưng hỷ và nhất tâm vẫn làm thiền duyên."
+      ],
+      "operatesInPaticca": [],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_VITAKKA", "CS_VICARA", "CS_PITI", "CS_EKAGGATA"],
+      "doctrinalNote": "Không chỉ giới hạn ở thiền định: 7 chi thiền hoạt động trong cả tâm thường.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Jhānapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_18",
+      "order": 18,
+      "namePali": "Magga-paccaya",
+      "nameVietnamese": "Đồ Đạo Duyên",
+      "nameShort": "Đồ Đạo",
+      "nameEnglish": "Path condition",
+      "group": "kamma_vipaka",
+      "definitionVi": "12 chi đạo trợ cho các pháp tương ưng bằng cách dẫn đi, như con đường đưa đến nơi.",
+      "paccayaDhamma": "12 chi đạo: chánh kiến, chánh tư duy, chánh ngữ, chánh nghiệp, chánh mạng, chánh tinh tấn, chánh niệm, chánh định và tà kiến, tà tư duy, tà tinh tấn, tà nhất tâm.",
+      "paccayuppanna": "Tâm và tâm sở tương ưng (trừ 2 ngũ thức thân), và sắc do tâm ấy sanh.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Chánh kiến trong tâm thiện dẫn cả cụm tâm đi về hướng thiện.",
+        "Tà kiến trong tâm tham dẫn tâm ấy đi về hướng bất thiện — đạo duyên có hai mặt."
+      ],
+      "operatesInPaticca": ["PD_01"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": ["CS_PANNA", "CS_VITAKKA", "CS_VIRIYA", "CS_SATI", "CS_EKAGGATA"],
+      "doctrinalNote": "Đạo duyên hoạt động ở cả thiện và bất thiện — không chỉ ở Bát Chánh Đạo siêu thế.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Maggapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_19",
+      "order": 19,
+      "namePali": "Sampayutta-paccaya",
+      "nameVietnamese": "Tương Ưng Duyên",
+      "nameShort": "Tương Ưng",
+      "nameEnglish": "Association condition",
+      "group": "conascence",
+      "definitionVi": "Các danh pháp trợ nhau bằng cách hòa hợp: cùng một cảnh, cùng một vật, cùng sanh cùng diệt.",
+      "paccayaDhamma": "4 danh uẩn câu sanh.",
+      "paccayuppanna": "Chính 4 danh uẩn ấy — quan hệ hai chiều.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Thọ và tưởng trong một sát-na tâm hòa hợp với nhau — cùng biết một cảnh."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_06", "PD_08"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Chỉ danh pháp mới tương ưng; sắc pháp không có cảnh, vật, sanh diệt chung nên không tương ưng.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Sampayuttapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_20",
+      "order": 20,
+      "namePali": "Vippayutta-paccaya",
+      "nameVietnamese": "Bất Tương Ưng Duyên",
+      "nameShort": "Bất Tương Ưng",
+      "nameEnglish": "Dissociation condition",
+      "group": "conascence",
+      "definitionVi": "Danh trợ sắc hoặc sắc trợ danh bằng cách khác loại, không hòa hợp — như nước trợ cho hoa sen mọc.",
+      "paccayaDhamma": "Danh pháp (khi trợ sắc) hoặc sắc pháp (khi trợ danh).",
+      "paccayuppanna": "Sắc pháp (câu sanh hoặc sanh trước) hoặc danh pháp câu sanh / sanh sau.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Sahajāta-vippayutta", "nameVi": "Câu sanh bất tương ưng", "note": "Danh và sắc câu sanh trợ nhau khác loại — lúc tục sanh."},
+        {"namePali": "Purejāta-vippayutta", "nameVi": "Tiền sanh bất tương ưng", "note": "6 vật sanh trước trợ 7 giới thức."},
+        {"namePali": "Pacchājāta-vippayutta", "nameVi": "Hậu sanh bất tương ưng", "note": "Danh pháp sanh sau trợ thân sắc sanh trước."}
+      ],
+      "examples": [
+        "Ý vật (sắc) trợ tâm ý giới (danh) — hai loại khác nhau nên là bất tương ưng duyên.",
+        "Lúc tục sanh, tâm tục sanh và sắc nghiệp câu sanh nhưng khác loại."
+      ],
+      "operatesInPaticca": ["PD_04", "PD_05"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Đây là duyên diễn tả quan hệ danh–sắc, trụ cột của phân tích Danh Sắc trong 12 chi.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Vippayuttapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_21",
+      "order": 21,
+      "namePali": "Atthi-paccaya",
+      "nameVietnamese": "Hiện Hữu Duyên",
+      "nameShort": "Hiện Hữu",
+      "nameEnglish": "Presence condition",
+      "group": "general",
+      "definitionVi": "Pháp đang hiện hữu — dù câu sanh hay tiền sanh — trợ cho pháp khác bằng sự có mặt của mình.",
+      "paccayaDhamma": "Gồm các pháp của 5 duyên: câu sanh, tiền sanh, hậu sanh, vật thực, quyền.",
+      "paccayuppanna": "Các pháp được 5 duyên ấy trợ.",
+      "paliFormula": null,
+      "subdivisions": [
+        {"namePali": "Sahajāta-atthi", "nameVi": "Câu sanh hiện hữu", "note": "Hiện hữu trong cùng sát-na."},
+        {"namePali": "Purejāta-atthi", "nameVi": "Tiền sanh hiện hữu", "note": "Sắc sanh trước còn đang trụ."},
+        {"namePali": "Pacchājāta-atthi", "nameVi": "Hậu sanh hiện hữu", "note": "Danh sanh sau đang hiện hữu."},
+        {"namePali": "Āhāra-atthi", "nameVi": "Vật thực hiện hữu", "note": "Đoàn thực đang hiện hữu."},
+        {"namePali": "Indriya-atthi", "nameVi": "Quyền hiện hữu", "note": "Mạng quyền sắc đang hiện hữu."}
+      ],
+      "examples": [
+        "Nhãn vật đang có mặt nên nhãn thức sanh được — hiện hữu duyên.",
+        "Bốn đại chủng đang hiện hữu trợ cho sắc y đại sinh."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_04", "PD_06"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Hiện hữu duyên rộng nhất trong 24 duyên — bao trùm 5 duyên khác.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Atthipaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_22",
+      "order": 22,
+      "namePali": "Natthi-paccaya",
+      "nameVietnamese": "Vô Hữu Duyên",
+      "nameShort": "Vô Hữu",
+      "nameEnglish": "Absence condition",
+      "group": "continuity",
+      "definitionVi": "Tâm và tâm sở vừa diệt — vì đã không còn — nên nhường chỗ cho tâm kế tiếp sanh lên.",
+      "paccayaDhamma": "Tâm và tâm sở vừa diệt.",
+      "paccayuppanna": "Tâm và tâm sở sanh liền sau.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Nhãn thức phải diệt thì tâm tiếp thâu mới sanh được."
+      ],
+      "operatesInPaticca": ["PD_03"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Cùng phạm vi với vô gián duyên, nhưng nhấn mạnh sự vắng mặt của tâm trước.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Natthipaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_23",
+      "order": 23,
+      "namePali": "Vigata-paccaya",
+      "nameVietnamese": "Ly Khứ Duyên",
+      "nameShort": "Ly Khứ",
+      "nameEnglish": "Disappearance condition",
+      "group": "continuity",
+      "definitionVi": "Đồng nghĩa với vô hữu duyên: pháp đã ra đi nên trợ cho pháp kế tiếp.",
+      "paccayaDhamma": "Tâm và tâm sở vừa diệt.",
+      "paccayuppanna": "Tâm và tâm sở sanh liền sau.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Tâm hộ kiếp vừa diệt (đã ly khứ) trợ cho tâm hộ kiếp kế tiếp."
+      ],
+      "operatesInPaticca": ["PD_03"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Một thực tính, hai cách nói: vô hữu nhấn mạnh 'không còn', ly khứ nhấn mạnh 'đã đi'.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Vigatapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    },
+    {
+      "id": "PC_24",
+      "order": 24,
+      "namePali": "Avigata-paccaya",
+      "nameVietnamese": "Bất Ly Duyên",
+      "nameShort": "Bất Ly",
+      "nameEnglish": "Non-disappearance condition",
+      "group": "general",
+      "definitionVi": "Đồng nghĩa với hiện hữu duyên: pháp chưa mất đi nên vẫn trợ cho pháp khác.",
+      "paccayaDhamma": "Gồm các pháp của 5 duyên: câu sanh, tiền sanh, hậu sanh, vật thực, quyền.",
+      "paccayuppanna": "Các pháp được 5 duyên ấy trợ.",
+      "paliFormula": null,
+      "subdivisions": [],
+      "examples": [
+        "Ý vật chưa hoại nên tâm ý giới còn sanh được."
+      ],
+      "operatesInPaticca": ["PD_01", "PD_04", "PD_06"],
+      "relatedCittaIds": [],
+      "relatedCetasikaIds": [],
+      "doctrinalNote": "Cặp 21–24 (hiện hữu / vô hữu / ly khứ / bất ly) khép lại 24 duyên bằng hai cặp đồng nghĩa.",
+      "sourceRefs": [
+        {"source": "Paṭṭhāna, Paccayaniddesa — Avigatapaccayaniddesa", "locator": "Abhidhamma Piṭaka VII", "confidence": "canonical"}
+      ]
+    }
+  ]
+}

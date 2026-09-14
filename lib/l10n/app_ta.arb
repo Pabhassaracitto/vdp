@@ -541,6 +541,105 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
+  "conditionsTabLinks": "12 Links",
+  "@conditionsTabLinks": {
+    "description": "conditionsTabLinks"
+  },
+  "conditionsTabPaccaya": "24 Conditions",
+  "@conditionsTabPaccaya": {
+    "description": "conditionsTabPaccaya"
+  },
+  "paccayaTitle": "The 24 Conditional Relations (Patthana)",
+  "@paccayaTitle": {
+    "description": "paccayaTitle"
+  },
+  "paccayaIntro": "Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.",
+  "@paccayaIntro": {
+    "description": "paccayaIntro"
+  },
+  "paccayaDefinition": "Definition",
+  "@paccayaDefinition": {
+    "description": "paccayaDefinition"
+  },
+  "paccayaConditioningStates": "Conditioning states (paccaya-dhamma)",
+  "@paccayaConditioningStates": {
+    "description": "paccayaConditioningStates"
+  },
+  "paccayaConditionedStates": "Conditioned states (paccayuppanna)",
+  "@paccayaConditionedStates": {
+    "description": "paccayaConditionedStates"
+  },
+  "paccayaSubdivisions": "Subdivisions",
+  "@paccayaSubdivisions": {
+    "description": "paccayaSubdivisions"
+  },
+  "paccayaInPaticca": "Operates in these links",
+  "@paccayaInPaticca": {
+    "description": "paccayaInPaticca"
+  },
+  "paccayaEmpty": "No condition matches this filter.",
+  "@paccayaEmpty": {
+    "description": "paccayaEmpty"
+  },
+  "paccayaSearchHint": "Search a condition…",
+  "@paccayaSearchHint": {
+    "description": "paccayaSearchHint"
+  },
+  "paccayaSourceNotice": "Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.",
+  "@paccayaSourceNotice": {
+    "description": "paccayaSourceNotice"
+  },
+  "paccayaSources": "Sources",
+  "@paccayaSources": {
+    "description": "paccayaSources"
+  },
+  "paccayaCount": "{count} conditions",
+  "@paccayaCount": {
+    "description": "paccayaCount",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "relatedDhammas": "Related dhammas",
+  "@relatedDhammas": {
+    "description": "relatedDhammas"
+  },
+  "paccayaGroupRootObject": "Root & object",
+  "@paccayaGroupRootObject": {
+    "description": "paccayaGroupRootObject"
+  },
+  "paccayaGroupContinuity": "Continuity",
+  "@paccayaGroupContinuity": {
+    "description": "paccayaGroupContinuity"
+  },
+  "paccayaGroupConascence": "Conascence & support",
+  "@paccayaGroupConascence": {
+    "description": "paccayaGroupConascence"
+  },
+  "paccayaGroupTimeRelation": "Arising order",
+  "@paccayaGroupTimeRelation": {
+    "description": "paccayaGroupTimeRelation"
+  },
+  "paccayaGroupKammaVipaka": "Kamma & result",
+  "@paccayaGroupKammaVipaka": {
+    "description": "paccayaGroupKammaVipaka"
+  },
+  "paccayaGroupGeneral": "General",
+  "@paccayaGroupGeneral": {
+    "description": "paccayaGroupGeneral"
+  },
+  "kiepPast": "Past life",
+  "@kiepPast": {
+    "description": "kiepPast"
+  },
+  "kiepPresent": "This life",
+  "@kiepPresent": {
+    "description": "kiepPresent"
+  },
+  "kiepFuture": "Future life",
+  "@kiepFuture": {
+    "description": "kiepFuture"
+  },
   "@conditionLinkDescription": {
     "description": "conditionLinkDescription",
     "placeholders": {

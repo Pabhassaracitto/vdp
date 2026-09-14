@@ -106,7 +106,7 @@
 
 | Task ID | Tên task | Mô tả |
 |---------|----------|-------|
-| M5-T1 | Flowchart Nhân Duyên | Trực quan hóa 12 Nhân Duyên |
+| M5-T1 | Nhân Duyên (12 chi + 24 Duyên Hệ) | Tách nhỏ thành M8-T1…M8-T10 — xem `doc/nhan_duyen_audit.md` |
 | M5-T2 | Kamma Trace | Liên kết N-M giữa Tâm và Nghiệp |
 | M5-T3 | Lộ trình Tâm 17 sát-na | Animation lộ trình nhận thức — ✅ DONE (2026-09-12) |
 | M5-T4 | Sắc Pháp module | 28 loại Sắc |
@@ -501,7 +501,12 @@ Ví dụ: **M1-T3** (Fix ID mismatch)
 | M4-T2 | High contrast | TODO | | |
 | M4-T3 | Screen reader | TODO | | |
 | M4-T4 | Text scale test | TODO | | |
-| M5-T1 | Nhân Duyên | LATER | | |
+| M5-T1a | Nhân Duyên — danh sách 12 chi | DONE | UI + filter vatta (đã có từ trước) |
+| M5-T1b | Nhân Duyên — detail sheet dùng hết dữ liệu | DONE (2026-09-12) | Tứ Nghĩa, ví dụ, ghi chú, kiếp/vatta, duyên hệ liên quan |
+| M5-T1c | Nhân Duyên — 24 Duyên Hệ (Paṭṭhāna) | DONE (2026-09-12) | `assets/data/paccayas.json` + tab riêng; **chờ duyệt thuật ngữ** (M8-T1) |
+| M5-T1d | Nhân Duyên — Flowchart 12 chi | TODO | M8-T5; state đã có, thiếu widget |
+| M5-T1e | Nhân Duyên — Sơ đồ 3 kiếp | TODO | M8-T6 |
+| M5-T1f | Nhân Duyên — Bài học 10 chi còn lại | DONE trên `main` | Module `M17_DUYEN_CHI_TIET` (PR #5, `f3228e1`) |
 | M5-T2 | Kamma Trace | LATER | | |
 | M5-T3 | Lộ trình 17 | DONE | Interactive 17-moment player, model selector, and playback controls | 2026-09-12 |
 | M5-T4 | Sắc Pháp | LATER | | |
