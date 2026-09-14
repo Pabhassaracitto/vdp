@@ -996,20 +996,20 @@ class _QuizText {
       );
 
   String genericContentQuestion(String description) {
-    if (catalog.locale == 'en') {
-      return 'Which item matches this description?\n\n$description';
+    if (catalog.locale == 'vi') {
+      return 'Mô tả sau ứng với mục nào?\n\n$description';
     }
-    return 'Mô tả sau ứng với mục nào?\n\n$description';
+    return 'Which item matches this description?\n\n$description';
   }
 
   String genericContentClaim({
     required String description,
     required String claimedName,
   }) {
-    if (catalog.locale == 'en') {
-      return 'Does this description match "$claimedName"?\n\n$description';
+    if (catalog.locale == 'vi') {
+      return 'Mô tả sau có phải của "$claimedName" không?\n\n$description';
     }
-    return 'Mô tả sau có phải của "$claimedName" không?\n\n$description';
+    return 'Does this description match "$claimedName"?\n\n$description';
   }
 
   String genericContentExplanation(_GenericQuizItem item) {
@@ -1041,9 +1041,9 @@ class _QuizText {
       };
 
   String conflictExplanation(ConflictRule rule) {
-    if (catalog.locale == 'en') {
-      return rule.explanationPali ?? l10n.doctrinalConflicts;
+    if (catalog.locale == 'vi') {
+      return rule.explanation;
     }
-    return rule.explanation;
+    return rule.explanationPali ?? l10n.doctrinalConflicts;
   }
 }
