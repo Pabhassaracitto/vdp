@@ -110,7 +110,7 @@ cho đối chiếu Anh ngữ. Mỗi mục trong JSON có `sourceRefs` + `confide
 | M8-T7 | "Tầng 4: Duyên xung đột (Vô Minh + Trí Tuệ)" | THẤP | `blueprint.md:77` — cần rule trong validator. |
 | M8-T8 | Đưa 24 duyên vào `VdpDataValidator` | THẤP | Hiện chỉ validate cittas/cetasikas; có thể thêm rule "đủ 24 duyên, thứ tự đúng". |
 | M8-T9 | Quiz / review cards cho 24 duyên | THẤP | Sau M8-T4. |
-| M8-T10 | Dịch tiếng Anh nội dung 24 duyên | THẤP | `content_en.json` đang `source_only` cho toàn bộ module. |
+| M8-T10 | Dịch nhãn UI + nội dung 24 duyên | THẤP | 24 khoá i18n mới hiện **giữ bản tiếng Anh ở 24 locale** (đúng quy ước repo — `bo` đang có 235/275 khoá giống EN); `vi` đã dịch thật. `tool/check_localizations.py` PASS. `content_en.json` vẫn `source_only` cho toàn bộ module. |
 
 ### Kiểm chứng đã chạy trong môi trường này
 
@@ -120,6 +120,15 @@ PASS — 24 Duyên Hệ
   • 24/24 duyên, thứ tự khớp Paccayuddesa
   • nguồn canonical: 24/24
   • liên kết 12 chi: 52 cặp duyên–chi
+```
+
+### Gate của repo đã chạy sau khi rebase lên `origin/main`
+
+```
+$ python3 tool/check_localizations.py
+OK: 26 locales, 299 UI keys, content [en, vi]
+$ python3 tool/check_paccaya_data.py
+PASS — 24 Duyên Hệ (24/24, canonical 24/24, 52 cặp duyên–chi)
 ```
 
 ### Ghi chú về `main`
