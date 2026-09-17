@@ -282,6 +282,7 @@ Lộ ngũ môn 17 sát-na, vai trò từng sát-na, lộ ý môn và tâm Na c�
 | M6_NGHIEP | none — `assets/data/kammas.json` ships all 16 kammas of the Kammacatukka (4 groups of four), matching `VDP-Nghiep.pdf`. | No workaround needed; `M6_S06` teaches the grouping directly from the dataset. |
 | M10_LO_TRINH | `assets/data/vithis.json` contains `VT_VITHIMUTTA`, but `VDP-LoTrinhTam.pdf` has **no** dedicated Vīthimutta (ngoại lộ) section. A grep for `vīthimutta` / `ngoại lộ` across all 11 extracted PDFs returned no relevant hit. | Section `M10_S09` documents this explicitly as `source_missing` with a TODO. Candidate follow-up source: `VDP-NguoiVaCoi.pdf`. |
 | All modules (English) | Lesson prose is **not translated to English**. | `content_en.json` marks each module `translationStatus: "source_only"`, `needsReview: true`. The runtime `en -> vi` fallback chain serves the Vietnamese source, so no module is ever empty. |
+| Conditions & Mind Process tabs (English) | The English entity overlay used to be template prose and missed the 24 Paṭṭhāna conditions entirely, so `en` mode fell back to the Vietnamese dataset. | Normalised on 2026-09-17: `tool/content/build_english_entities.py` ships fully-authored English for `paticcas` / `paccayas` / `vithis` (Tứ Nghĩa, examples, process context, step notes). `check_content_locale.py` validates the `paccayas` section and `test/localized_content_test.dart` pins completeness. |
 
 ## PDFs not used for lesson content
 

@@ -95,9 +95,10 @@ extension LocalizedKammaContent on KammaModel {
 }
 
 extension LocalizedPaccayaContent on PaccayaModel {
-  /// 24 Duyên Hệ chưa có bản dịch theo ngôn ngữ nội dung — tiếng Việt là
-  /// nguồn gốc (xem docs/study-content-sources.md). Khi nội dung dịch được
-  /// bổ sung vào content_*.json thì chỉ cần thêm nhánh đọc ở đây.
+  /// The 24 Duyên Hệ are served through the same locale chain as every other
+  /// entity: `content_en.json` carries the English overlay (see
+  /// tool/content/build_english_entities.py), Vietnamese stays canonical in
+  /// assets/data/paccayas.json, and further languages translate on top.
   String localizedName(BuildContext context) => context.contentCatalog.text(
         'paccayas',
         id,
@@ -105,8 +106,73 @@ extension LocalizedPaccayaContent on PaccayaModel {
         nameVietnamese,
       );
 
+  String localizedShortName(BuildContext context) =>
+      context.contentCatalog.text('paccayas', id, 'shortName', nameShort);
+
   String localizedDefinition(BuildContext context) => context.contentCatalog
       .text('paccayas', id, 'definition', definitionVi);
+
+  /// Pháp làm năng duyên (paccaya-dhamma).
+  String localizedPaccayaDhamma(BuildContext context) =>
+      context.contentCatalog.text(
+        'paccayas',
+        id,
+        'paccayaDhamma',
+        paccayaDhamma,
+      );
+
+  /// Pháp được duyên (paccayuppanna).
+  String localizedPaccayuppanna(BuildContext context) =>
+      context.contentCatalog.text(
+        'paccayas',
+        id,
+        'paccayuppanna',
+        paccayuppanna,
+      );
+
+  String? localizedDoctrinalNote(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'paccayas',
+        id,
+        'doctrinalNote',
+        doctrinalNote,
+      );
+
+  List<String>? localizedExamples(BuildContext context) =>
+      context.contentCatalog.optionalTextList(
+        'paccayas',
+        id,
+        'examples',
+        examples,
+      );
+
+  /// Tiêu đề + ghi chú của một chi phần nhỏ (subdivision), tra qua catalog với
+  /// khoá là tên Pāḷi (bất biến giữa các ngôn ngữ).
+  String localizedSubdivisionName(
+    BuildContext context,
+    PaccayaSubdivision subdivision,
+  ) =>
+      context.contentCatalog.nestedText(
+        'paccayas',
+        id,
+        'subdivisions',
+        subdivision.namePali,
+        'name',
+        subdivision.nameVi,
+      );
+
+  String? localizedSubdivisionNote(
+    BuildContext context,
+    PaccayaSubdivision subdivision,
+  ) =>
+      context.contentCatalog.optionalNestedText(
+        'paccayas',
+        id,
+        'subdivisions',
+        subdivision.namePali,
+        'note',
+        subdivision.note.isEmpty ? null : subdivision.note,
+      );
 }
 
 extension LocalizedPaticcaContent on PaticcaModel {
@@ -114,6 +180,50 @@ extension LocalizedPaticcaContent on PaticcaModel {
       context.contentCatalog.text('paticcas', id, 'name', nameVietnamese);
   String localizedDescription(BuildContext context) => context.contentCatalog
       .text('paticcas', id, 'description', descriptionVi);
+
+  /// Tứ Nghĩa — đặc tướng / phận sự / thành tựu / nhân gần.
+  String? localizedCharacteristic(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'paticcas',
+        id,
+        'characteristic',
+        trangThai,
+      );
+
+  String? localizedFunction(BuildContext context) =>
+      context.contentCatalog.optionalText('paticcas', id, 'function', phanSu);
+
+  String? localizedManifestation(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'paticcas',
+        id,
+        'manifestation',
+        thanhTuu,
+      );
+
+  String? localizedProximateCause(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'paticcas',
+        id,
+        'proximateCause',
+        nhanGan,
+      );
+
+  List<String>? localizedExamples(BuildContext context) =>
+      context.contentCatalog.optionalTextList(
+        'paticcas',
+        id,
+        'examples',
+        examples,
+      );
+
+  String? localizedDoctrinalNote(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'paticcas',
+        id,
+        'doctrinalNote',
+        doctrinalNote,
+      );
 }
 
 extension LocalizedVithiContent on VithiModel {
@@ -138,6 +248,45 @@ extension LocalizedVithiContent on VithiModel {
         step.stepNumber.toString(),
         'description',
         step.description,
+      );
+
+  /// Bối cảnh phát sinh lộ — dataset chỉ có tiếng Việt, các ngôn ngữ khác đọc
+  /// qua overlay (en trước); trả `null` thay vì lộ tiếng Việt.
+  String? localizedArisingCondition(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'vithis',
+        id,
+        'arisingCondition',
+        arisingCondition,
+      );
+
+  String? localizedSignificance(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'vithis',
+        id,
+        'significance',
+        significance,
+      );
+
+  String? localizedDoctrinalNote(BuildContext context) =>
+      context.contentCatalog.optionalText(
+        'vithis',
+        id,
+        'doctrinalNote',
+        doctrinalNote,
+      );
+
+  String? localizedStepDoctrinalNote(
+    BuildContext context,
+    VithiStep step,
+  ) =>
+      context.contentCatalog.optionalNestedText(
+        'vithis',
+        id,
+        'steps',
+        step.stepNumber.toString(),
+        'doctrinalNote',
+        step.doctrinalNote,
       );
 }
 

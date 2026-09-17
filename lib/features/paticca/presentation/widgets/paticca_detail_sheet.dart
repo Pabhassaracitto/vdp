@@ -21,6 +21,10 @@ class PaticcaDetailSheet extends ConsumerWidget {
     final l10n = context.l10n;
     final relatedPaccayas =
         ref.watch(paccayasForPaticcaProvider(item.id)).valueOrNull ?? const [];
+    // Văn bản tuỳ chọn đọc qua catalog: tiếng Việt từ dataset, ngôn ngữ khác
+    // từ overlay tiếng Anh; chưa dịch thì ẩn mục thay vì rò tiếng Việt.
+    final localizedExamples = item.localizedExamples(context) ?? const [];
+    final doctrinalNote = item.localizedDoctrinalNote(context);
 
     return SafeArea(
       child: Container(
@@ -89,9 +93,9 @@ class PaticcaDetailSheet extends ConsumerWidget {
                   child: Text(l10n.lastConditionDescription,
                       style: theme.textTheme.bodySmall),
                 ),
-              if (item.examples.isNotEmpty) ...[
+              if (localizedExamples.isNotEmpty) ...[
                 _heading(context, l10n.examples),
-                for (final example in item.examples)
+                for (final example in localizedExamples)
                   Padding(
                     padding: const EdgeInsets.only(bottom: 6),
                     child:
@@ -112,7 +116,7 @@ class PaticcaDetailSheet extends ConsumerWidget {
                     for (final paccaya in relatedPaccayas)
                       ActionChip(
                         label: Text(
-                          '${paccaya.order}. ${paccaya.nameVietnamese}',
+                          '${paccaya.order}. ${paccaya.localizedName(context)}',
                         ),
                         visualDensity: VisualDensity.compact,
                         onPressed: () => showModalBottomSheet(
@@ -124,9 +128,8 @@ class PaticcaDetailSheet extends ConsumerWidget {
                   ],
                 ),
               ],
-              if (item.doctrinalNote != null &&
-                  item.doctrinalNote!.isNotEmpty)
-                _section(context, l10n.notes, item.doctrinalNote!),
+              if (doctrinalNote != null && doctrinalNote.isNotEmpty)
+                _section(context, l10n.notes, doctrinalNote),
             ],
           ),
         ),
@@ -136,12 +139,16 @@ class PaticcaDetailSheet extends ConsumerWidget {
 
   /// Tứ Nghĩa (lakkhaṇa / rasa / paccupaṭṭhāna / padaṭṭhāna) — cùng chuẩn với
   /// CetasikaDetailSheet để người học gặp lại một cấu trúc quen thuộc.
+  ///
+  /// Đọc qua content catalog: với tiếng Việt lấy từ dataset, với ngôn ngữ khác
+  /// lấy overlay (en) và tự ẩn hàng khi chưa có bản dịch — không bao giờ hiển
+  /// thị văn bản nguồn tiếng Việt cho người đọc ngôn ngữ khác.
   Widget _fourAspects(BuildContext context, AppLocalizations l10n) {
     final rows = <(String, String?)>[
-      (l10n.characteristic, item.trangThai),
-      (l10n.functionLabel, item.phanSu),
-      (l10n.manifestation, item.thanhTuu),
-      (l10n.proximateCause, item.nhanGan),
+      (l10n.characteristic, item.localizedCharacteristic(context)),
+      (l10n.functionLabel, item.localizedFunction(context)),
+      (l10n.manifestation, item.localizedManifestation(context)),
+      (l10n.proximateCause, item.localizedProximateCause(context)),
     ].where((row) => (row.$2 ?? '').isNotEmpty).toList();
     if (rows.isEmpty) return const SizedBox.shrink();
 

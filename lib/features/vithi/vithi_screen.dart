@@ -219,44 +219,51 @@ class _VithiContextCard extends StatelessWidget {
       ),
       child: Theme(
         data: theme.copyWith(dividerColor: Colors.transparent),
-        child: ExpansionTile(
-          tilePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 3),
-          childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-          leading: Icon(Icons.menu_book_outlined, color: accent, semanticLabel: ''),
-          title: Text(
-            VithiUiText.backgroundTitle(context),
-            style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w800),
-          ),
-          subtitle: Text(
-            vithi.arisingCondition ?? vithi.localizedDescription(context),
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: theme.textTheme.bodySmall,
-          ),
-          children: [
-            if (vithi.arisingCondition?.isNotEmpty ?? false)
-              _ContextItem(
-                icon: Icons.bolt_outlined,
-                title: VithiUiText.arisingCondition(context),
-                body: vithi.arisingCondition!,
-                color: accent,
-              ),
-            if (vithi.significance?.isNotEmpty ?? false)
-              _ContextItem(
-                icon: Icons.stars_outlined,
-                title: VithiUiText.significance(context),
-                body: vithi.significance!,
-                color: accent,
-              ),
-            if (vithi.doctrinalNote?.isNotEmpty ?? false)
-              _ContextItem(
-                icon: Icons.lightbulb_outline_rounded,
-                title: VithiUiText.doctrinalNote(context),
-                body: vithi.doctrinalNote!,
-                color: accent,
-              ),
-          ],
-        ),
+        child: Builder(builder: (context) {
+          // Bối cảnh lộ: đọc qua catalog — tiếng Việt từ dataset, ngôn ngữ khác
+          // từ overlay tiếng Anh; mục chưa dịch sẽ tự ẩn, không rò tiếng Việt.
+          final arisingCondition = vithi.localizedArisingCondition(context);
+          final significance = vithi.localizedSignificance(context);
+          final doctrinalNote = vithi.localizedDoctrinalNote(context);
+          return ExpansionTile(
+            tilePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 3),
+            childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+            leading: Icon(Icons.menu_book_outlined, color: accent, semanticLabel: ''),
+            title: Text(
+              VithiUiText.backgroundTitle(context),
+              style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w800),
+            ),
+            subtitle: Text(
+              arisingCondition ?? vithi.localizedDescription(context),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: theme.textTheme.bodySmall,
+            ),
+            children: [
+              if (arisingCondition != null && arisingCondition.isNotEmpty)
+                _ContextItem(
+                  icon: Icons.bolt_outlined,
+                  title: VithiUiText.arisingCondition(context),
+                  body: arisingCondition,
+                  color: accent,
+                ),
+              if (significance != null && significance.isNotEmpty)
+                _ContextItem(
+                  icon: Icons.stars_outlined,
+                  title: VithiUiText.significance(context),
+                  body: significance,
+                  color: accent,
+                ),
+              if (doctrinalNote != null && doctrinalNote.isNotEmpty)
+                _ContextItem(
+                  icon: Icons.lightbulb_outline_rounded,
+                  title: VithiUiText.doctrinalNote(context),
+                  body: doctrinalNote,
+                  color: accent,
+                ),
+            ],
+          );
+        }),
       ),
     );
   }

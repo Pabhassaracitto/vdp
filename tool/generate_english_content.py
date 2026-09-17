@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-"""Build the reviewed English study overlay without touching doctrinal IDs.
+"""SUPERSEDED - do not run.
 
-The structural JSON under assets/data remains the single source of truth for
-relationships and validation. This overlay contains display text only.
+This was the original one-shot English generator. It rewrites the WHOLE
+`content_en.json` from template tables, which would destroy the reviewed study
+modules and the hand-reviewed entity overlay now shipped in that file.
+
+The English overlay is maintained by `tool/content/build_english_entities.py`
+(entity sections: paticcas / paccayas / vithis) and
+`tool/content/build_content.py` (study modules). Keep this file only as
+historical reference for the naming tables it contributed.
 """
 from __future__ import annotations
 

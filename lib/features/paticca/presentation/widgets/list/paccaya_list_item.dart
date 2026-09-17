@@ -1,6 +1,7 @@
 // lib/features/paticca/presentation/widgets/list/paccaya_list_item.dart
 import 'package:flutter/material.dart';
 
+import '../../../../../core/localization/localized_content.dart';
 import '../../../../../l10n/l10n.dart';
 import 'package:vdp_app/data/models/paccaya_model.dart';
 
@@ -24,7 +25,7 @@ class PaccayaListItem extends StatelessWidget {
             style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
           ),
         ),
-        title: Text(item.nameVietnamese,
+        title: Text(item.localizedName(context),
             style: const TextStyle(fontWeight: FontWeight.w600)),
         subtitle: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,7 +36,7 @@ class PaccayaListItem extends StatelessWidget {
               children: [
                 Flexible(
                   child: Text(
-                    item.definitionVi,
+                    item.localizedDefinition(context),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: theme.textTheme.bodySmall,
@@ -50,7 +51,7 @@ class PaccayaListItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Text(
-              item.nameShort,
+              item.localizedShortName(context),
               style: theme.textTheme.labelSmall,
               textAlign: TextAlign.right,
             ),
