@@ -153,7 +153,16 @@ class ContentCatalog {
   /// * Within an item, each field falls back independently, so a half-finished
   ///   translation degrades field-by-field instead of dropping the whole entry.
   List<Map<String, Object?>> _mergedItems(String moduleId, String key) {
-    final chain = _chain;
+    return _mergedItemsWithChain(moduleId, key, _chain);
+  }
+
+  /// Same as [_mergedItems] but with an explicit catalog chain, so callers
+  /// can exclude certain fallback locales (e.g. Vietnamese lesson content).
+  List<Map<String, Object?>> _mergedItemsWithChain(
+    String moduleId,
+    String key,
+    List<ContentCatalog> chain,
+  ) {
     final byCatalog = [
       for (final catalog in chain) catalog._rawItems(moduleId, key),
     ];
@@ -225,19 +234,33 @@ class ContentCatalog {
 
   /// Authored lesson content for [moduleId], merged across the locale chain.
   ///
-  /// Returns [ModuleLessonContent.empty] when nothing is authored yet; callers
-  /// must treat that as "fall back to the generated experience", never as an
-  /// error.
+  /// Lesson content (sections, review cards, quiz seeds) is authored narrative
+  /// text that must be intentionally translated for each content language.
+  /// Unlike entity strings (which fall back field-by-field), lesson content
+  /// should NOT fall back to the Vietnamese source when the user has selected
+  /// a different content language — showing untranslated Vietnamese to an
+  /// English learner would violate the Accuracy-First principle.
+  ///
+  /// Returns [ModuleLessonContent.empty] when nothing is authored in the
+  /// selected language; callers must treat that as "fall back to the generated
+  /// experience", never as an error.
   ModuleLessonContent moduleLesson(String moduleId) {
-    final sections = _mergedItems(moduleId, 'lessonSections')
+    // For lesson content, exclude Vietnamese from the merge chain unless the
+    // user explicitly selected Vietnamese. This prevents untranslated vi
+    // content from appearing in other language modes.
+    final lessonChain = locale == 'vi'
+        ? _chain
+        : _chain.where((c) => c.locale != 'vi').toList();
+
+    final sections = _mergedItemsWithChain(moduleId, 'lessonSections', lessonChain)
         .map(LessonSection.tryParse)
         .whereType<LessonSection>()
         .toList(growable: false);
-    final cards = _mergedItems(moduleId, 'reviewCards')
+    final cards = _mergedItemsWithChain(moduleId, 'reviewCards', lessonChain)
         .map(LessonReviewCard.tryParse)
         .whereType<LessonReviewCard>()
         .toList(growable: false);
-    final seeds = _mergedItems(moduleId, 'quizSeeds')
+    final seeds = _mergedItemsWithChain(moduleId, 'quizSeeds', lessonChain)
         .map(LessonQuizSeed.tryParse)
         .whereType<LessonQuizSeed>()
         .toList(growable: false);
@@ -258,13 +281,32 @@ class ContentCatalog {
   /// Falls back to [vietnameseFallback] (the Dart-side `kStudyModules` value)
   /// so behaviour is unchanged when nothing is translated.
   String moduleText(String moduleId, String field, String vietnameseFallback) {
-    for (final catalog in _chain) {
+    // When the content locale is not Vietnamese, skip the Vietnamese fallback
+    // to prevent untranslated text from leaking into other language modes.
+    // Only Vietnamese itself should resolve Vietnamese source strings.
+    final effectiveChain = locale == 'vi'
+        ? _chain
+        : _chain.where((c) => c.locale != 'vi').toList();
+    for (final catalog in effectiveChain) {
       final modules = catalog.data['studyModules'];
       if (modules is! Map) continue;
       final module = modules[moduleId];
       if (module is! Map) continue;
       final value = module[field];
       if (value is String && value.trim().isNotEmpty) return value.trim();
+    }
+    // If no translation found and locale is not Vietnamese, return the Pali
+    // title or a generic placeholder instead of the Vietnamese fallback.
+    if (locale != 'vi' && field == 'title') {
+      // Try to get the Pali title as a last resort (it's universal)
+      for (final catalog in effectiveChain) {
+        final modules = catalog.data['studyModules'];
+        if (modules is! Map) continue;
+        final module = modules[moduleId];
+        if (module is! Map) continue;
+        final pali = module['titlePali'];
+        if (pali is String && pali.trim().isNotEmpty) return pali.trim();
+      }
     }
     return vietnameseFallback;
   }
