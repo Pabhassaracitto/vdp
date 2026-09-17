@@ -1,6 +1,7 @@
 // lib/features/paticca/presentation/widgets/paticca_detail_sheet.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vdp_app/core/localization/content_catalog.dart';
 
 import '../../../../core/localization/localized_content.dart';
 import '../../../../data/models/paticca_model.dart';

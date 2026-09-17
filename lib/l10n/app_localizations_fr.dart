@@ -426,6 +426,18 @@ class AppLocalizationsFr extends AppLocalizations {
   String get conditionsTitle => 'Coproduction conditionnée';
 
   @override
+  String get conditionDetails => 'Dependent-origination details:';
+
+  @override
+  String get lastConditionDescription =>
+      'This is the final resultant link in this life-cycle and starts no new condition.';
+
+  @override
+  String conditionLinkDescription(Object effect, Object explanation) {
+    return '• Conditions: $effect\n  Explanation: $explanation';
+  }
+
+  @override
   String get conditionsTabLinks => '12 Links';
 
   @override
@@ -435,13 +447,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
 
   @override
-  String get paccayaIntro => 'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+  String get paccayaIntro =>
+      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
 
   @override
   String get paccayaDefinition => 'Definition';
 
   @override
-  String get paccayaConditioningStates => 'Conditioning states (paccaya-dhamma)';
+  String get paccayaConditioningStates =>
+      'Conditioning states (paccaya-dhamma)';
 
   @override
   String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
@@ -459,7 +473,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get paccayaSearchHint => 'Search a condition…';
 
   @override
-  String get paccayaSourceNotice => 'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+  String get paccayaSourceNotice =>
+      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
 
   @override
   String get paccayaSources => 'Sources';
@@ -498,18 +513,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get kiepFuture => 'Future life';
-
-  @override
-  String get conditionDetails => 'Dependent-origination details:';
-
-  @override
-  String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
-
-  @override
-  String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
-  }
 
   @override
   String get kammaTitle => 'Kamma';

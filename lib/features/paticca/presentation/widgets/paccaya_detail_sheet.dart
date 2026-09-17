@@ -1,7 +1,6 @@
 // lib/features/paticca/presentation/widgets/paccaya_detail_sheet.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../../../core/localization/localized_content.dart';
 import '../../../../data/models/paccaya_model.dart';
 import '../../../../l10n/l10n.dart';
@@ -71,7 +70,7 @@ class PaccayaDetailSheet extends ConsumerWidget {
               _section(
                 context,
                 context.l10n.paccayaDefinition,
-                item.localizedDescription(context),
+               item.localizedDefinition(context),
               ),
               _section(
                 context,

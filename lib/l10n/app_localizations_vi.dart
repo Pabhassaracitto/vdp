@@ -423,6 +423,18 @@ class AppLocalizationsVi extends AppLocalizations {
   String get conditionsTitle => 'Nhân Duyên';
 
   @override
+  String get conditionDetails => 'Chi tiết Nhân Duyên:';
+
+  @override
+  String get lastConditionDescription =>
+      'Đây là chi quả cuối của vòng Nhân Duyên kiếp này và không khởi sanh điều kiện mới.';
+
+  @override
+  String conditionLinkDescription(Object effect, Object explanation) {
+    return '• Duyên sang: $effect\n  Giải thích: $explanation';
+  }
+
+  @override
   String get conditionsTabLinks => '12 Chi';
 
   @override
@@ -432,7 +444,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get paccayaTitle => '24 Duyên Hệ (Paṭṭhāna)';
 
   @override
-  String get paccayaIntro => 'Phần B của Paccaya-saṅgaha-vibhāga: các pháp trợ duyên cho nhau như thế nào. Phần A là 12 chi Duyên khởi.';
+  String get paccayaIntro =>
+      'Phần B của Paccaya-saṅgaha-vibhāga: các pháp trợ duyên cho nhau như thế nào. Phần A là 12 chi Duyên khởi.';
 
   @override
   String get paccayaDefinition => 'Định nghĩa';
@@ -456,7 +469,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get paccayaSearchHint => 'Tìm duyên hệ…';
 
   @override
-  String get paccayaSourceNotice => 'Nguồn: Paṭṭhāna (Abhidhamma Piṭaka VII) và Thanh Tịnh Đạo chương XVII. Không có tài liệu Pa-Auk liệt kê 24 duyên; thuật ngữ tiếng Việt đang chờ bậc trưởng lão duyệt.';
+  String get paccayaSourceNotice =>
+      'Nguồn: Paṭṭhāna (Abhidhamma Piṭaka VII) và Thanh Tịnh Đạo chương XVII. Không có tài liệu Pa-Auk liệt kê 24 duyên; thuật ngữ tiếng Việt đang chờ bậc trưởng lão duyệt.';
 
   @override
   String get paccayaSources => 'Nguồn';
@@ -495,18 +509,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get kiepFuture => 'Kiếp vị lai';
-
-  @override
-  String get conditionDetails => 'Chi tiết Nhân Duyên:';
-
-  @override
-  String get lastConditionDescription =>
-      'Đây là chi quả cuối của vòng Nhân Duyên kiếp này và không khởi sanh điều kiện mới.';
-
-  @override
-  String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Duyên sang: $effect\n  Giải thích: $explanation';
-  }
 
   @override
   String get kammaTitle => 'Nghiệp (Kamma)';

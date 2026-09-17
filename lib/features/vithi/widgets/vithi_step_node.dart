@@ -1,6 +1,7 @@
 // lib/features/vithi/widgets/vithi_step_node.dart
 
 import 'package:flutter/material.dart';
+import 'package:vdp_app/data/models/vithi_model.dart';
 
 import '../../../core/localization/localized_content.dart';
 import '../../../core/theme/vdp_theme.dart';
