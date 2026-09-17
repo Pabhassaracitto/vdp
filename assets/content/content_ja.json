@@ -1,0 +1,7 @@
+{
+  "locale": "ja",
+  "schemaVersion": 2,
+  "fallbackLocale": "en",
+  "translationStatus": "draft",
+  "note": "Generated from the translation worksheet by tool/content/init_locale.py --strip. Untranslated fields are omitted on purpose: they resolve through the runtime fallback chain to English, then to the Vietnamese source."
+}
