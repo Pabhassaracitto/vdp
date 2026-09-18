@@ -33,7 +33,44 @@ jobs:
         run: flutter pub get
 
       - name: Analyze
-        run: flutter analyze
+        id: analyze
+        run: |
+          flutter analyze > analyze_output.txt 2>&1
+          code=$?
+          cat analyze_output.txt
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit $code
 
+      - name: Publish analyze output to job summary
+        if: always() && steps.analyze.outcome == 'failure'
+        run: |
+          {
+            echo "### flutter analyze (exit ${{ steps.analyze.outputs.code }})"
+            echo ''
+            echo '```text'
+            cat analyze_output.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Test
+        id: test
+        if: always()
+        run: |
+          flutter test > test_output.txt 2>&1
+          code=$?
+          tail -n 100 test_output.txt
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit $code
+
+      - name: Publish test output to job summary
+        if: always() && steps.test.outcome == 'failure'
+        run: |
+          {
+            echo "### flutter test (exit ${{ steps.test.outputs.code }})"
+            echo ''
+            echo '```text'
+            tail -n 400 test_output.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Test
         run: flutter test
