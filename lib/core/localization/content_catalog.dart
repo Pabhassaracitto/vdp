@@ -126,6 +126,73 @@ class ContentCatalog {
     return vietnameseFallback;
   }
 
+  // ── Optional prose (Accuracy-First) ────────────────────────────────────────
+
+  /// Like [text], but for prose fields that may simply be absent.
+  ///
+  /// For a Vietnamese reader the dataset value is the source of truth, so it
+  /// is returned directly. For every other content locale the value must come
+  /// from the locale chain (typically the English overlay); when nothing is
+  /// authored there the method returns `null` instead of the Vietnamese
+  /// source. Callers hide the UI block rather than leak untranslated
+  /// Vietnamese into, say, an English learner's screen.
+  String? optionalText(
+    String section,
+    String id,
+    String field,
+    String? vietnameseFallback,
+  ) {
+    if (locale == 'vi') return vietnameseFallback;
+    for (final catalog in _chain) {
+      if (catalog.locale == 'vi') break;
+      final value = catalog._entityField(section, id, field);
+      if (value is String && value.trim().isNotEmpty) return value;
+    }
+    return null;
+  }
+
+  /// Like [optionalText] for string-list fields (examples, …).
+  List<String>? optionalTextList(
+    String section,
+    String id,
+    String field,
+    List<String>? vietnameseFallback,
+  ) {
+    if (locale == 'vi') return vietnameseFallback;
+    for (final catalog in _chain) {
+      if (catalog.locale == 'vi') break;
+      final value = catalog._entityField(section, id, field);
+      if (value is List) {
+        final strings = value.whereType<String>().toList(growable: false);
+        if (strings.isNotEmpty) return strings;
+      }
+    }
+    return null;
+  }
+
+  /// Like [nestedText] but returning `null` instead of the Vietnamese source
+  /// when no locale in the chain (Vietnamese excluded) has authored the value.
+  String? optionalNestedText(
+    String section,
+    String id,
+    String nestedCollection,
+    String nestedId,
+    String field,
+    String? vietnameseFallback,
+  ) {
+    if (locale == 'vi') return vietnameseFallback;
+    for (final catalog in _chain) {
+      if (catalog.locale == 'vi') break;
+      final collection = catalog._entityField(section, id, nestedCollection);
+      if (collection is! Map) continue;
+      final nested = collection[nestedId];
+      if (nested is! Map) continue;
+      final value = nested[field];
+      if (value is String && value.trim().isNotEmpty) return value;
+    }
+    return null;
+  }
+
   // ── Lesson content (Học / Ôn tập / Kiểm tra) ───────────────────────────────
 
   /// Catalogs to consult, highest priority first.
@@ -145,19 +212,16 @@ class ContentCatalog {
         .toList(growable: false);
   }
 
-  /// Merges one collection across the fallback chain.
+  /// Merges one collection across the fallback chain [chain].
   ///
   /// * Item order comes from the *base-most* catalog that defines the
   ///   collection (Vietnamese is the structural source of truth), so a partial
   ///   translation never silently truncates a module.
   /// * Within an item, each field falls back independently, so a half-finished
   ///   translation degrades field-by-field instead of dropping the whole entry.
-  List<Map<String, Object?>> _mergedItems(String moduleId, String key) {
-    return _mergedItemsWithChain(moduleId, key, _chain);
-  }
-
-  /// Same as [_mergedItems] but with an explicit catalog chain, so callers
-  /// can exclude certain fallback locales (e.g. Vietnamese lesson content).
+  ///
+  /// The chain is explicit so callers can exclude certain fallback locales
+  /// (e.g. Vietnamese lesson content when another language is selected).
   List<Map<String, Object?>> _mergedItemsWithChain(
     String moduleId,
     String key,

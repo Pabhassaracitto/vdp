@@ -66,7 +66,8 @@ VIETNAMESE_CHARS = re.compile(
     r"ÒÓỎÕỌỒỐỔỖỘỜỚỞỠỢÙÚỦŨỤỪỨỬỮỰỲÝỶỸỴ]"
 )
 
-ENTITY_SECTIONS = ["cittas", "cetasikas", "rupas", "kammas", "paticcas", "vithis"]
+ENTITY_SECTIONS = ["cittas", "cetasikas", "rupas", "kammas", "paticcas",
+                   "paccayas", "vithis"]
 
 
 class Report:
@@ -152,8 +153,8 @@ def check_glossary(data: dict, locale: str, report: Report) -> None:
 
     data_dir = os.path.join(ROOT, "assets", "data")
     specs = [("cetasikas", "cetasikas.json"), ("rupas", "rupas.json"),
-             ("paticcas", "paticca.json"), ("kammas", "kammas.json"),
-             ("vithis", "vithis.json")]
+             ("paticcas", "paticca.json"), ("paccayas", "paccayas.json"),
+             ("kammas", "kammas.json"), ("vithis", "vithis.json")]
     for section, filename in specs:
         translated = data.get(section) or {}
         if not isinstance(translated, dict) or not translated:
@@ -488,6 +489,11 @@ def load_vi_entities() -> dict[str, dict]:
                       "function": "phanSu", "manifestation": "thanhTuu",
                       "proximateCause": "nhanGan", "doctrinalNote": "doctrinalNote",
                       "examples": "examples"}),
+        "paccayas": ("paccayas.json", "paccayas",
+                     {"name": "nameVietnamese", "shortName": "nameShort",
+                      "definition": "definitionVi", "paccayaDhamma": "paccayaDhamma",
+                      "paccayuppanna": "paccayuppanna",
+                      "doctrinalNote": "doctrinalNote", "examples": "examples"}),
         "vithis": ("vithis.json", "vithis",
                    {"name": "nameVietnamese", "shortName": "nameShort",
                     "description": "descriptionVi"}),

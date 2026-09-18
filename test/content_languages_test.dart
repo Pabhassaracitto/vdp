@@ -96,10 +96,13 @@ void main() {
 
   group('defaultContentLocaleFor', () {
     test('falls back to English for an unshipped language', () {
-      // Hindi is `planned` today, so a Hindi device must still get a usable
-      // catalog rather than an empty one.
-      expect(defaultContentLocaleFor(languageCode: 'hi'), 'en');
+      // French is not a registered content language, so a French device must
+      // still get a usable catalog rather than an empty one.
+      expect(defaultContentLocaleFor(languageCode: 'fr'), 'en');
       expect(defaultContentLocaleFor(languageCode: 'xx'), 'en');
+      // Hindi shipped as a selectable draft, so a Hindi device now gets Hindi
+      // (previously asserted 'en' while Hindi was still `planned`).
+      expect(defaultContentLocaleFor(languageCode: 'hi'), 'hi');
     });
 
     test('a Vietnamese device gets Vietnamese content', () {

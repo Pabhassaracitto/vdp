@@ -30,7 +30,9 @@ class VithiDetailPanel extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final step = moment.step;
-    final doctrinalNote = step.doctrinalNote;
+    // Ghi chú giáo lý đọc qua catalog: tiếng Việt từ dataset, ngôn ngữ khác từ
+    // overlay tiếng Anh; chưa dịch thì ẩn mục thay vì rò tiếng Việt.
+    final doctrinalNote = vithi.localizedStepDoctrinalNote(context, step);
     final roleColor = VithiColorMapper.colorForRole(step.role);
     final theme = Theme.of(context);
     final cittaById = <String, CittaModel>{

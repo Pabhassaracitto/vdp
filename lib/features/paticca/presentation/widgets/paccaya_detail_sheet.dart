@@ -1,6 +1,8 @@
 // lib/features/paticca/presentation/widgets/paccaya_detail_sheet.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vdp_app/core/localization/content_catalog.dart';
+
 import '../../../../core/localization/localized_content.dart';
 import '../../../../data/models/paccaya_model.dart';
 import '../../../../l10n/l10n.dart';
@@ -19,6 +21,8 @@ class PaccayaDetailSheet extends ConsumerWidget {
     final linkedPaticcas = paticcas
         .where((p) => item.operatesInPaticca.contains(p.id))
         .toList();
+    final localizedExamples = item.localizedExamples(context) ?? const [];
+    final doctrinalNote = item.localizedDoctrinalNote(context);
 
     return SafeArea(
       child: Container(
@@ -48,14 +52,19 @@ class PaccayaDetailSheet extends ConsumerWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          item.nameVietnamese,
+                          item.localizedName(context),
                           style: theme.textTheme.titleLarge,
                         ),
                         Text(item.namePali, style: theme.textTheme.bodyMedium),
-                        Text(
-                          item.nameEnglish,
-                          style: theme.textTheme.bodySmall,
-                        ),
+                        // Tên tiếng Anh chỉ còn là thông tin bổ sung cho người
+                        // đọc tiếng Việt; với ngôn ngữ nội dung khác nó trùng
+                        // với tiêu đề đã bản địa hoá.
+                        if (context.showsVietnameseSourceText &&
+                            item.nameEnglish.isNotEmpty)
+                          Text(
+                            item.nameEnglish,
+                            style: theme.textTheme.bodySmall,
+                          ),
                       ],
                     ),
                   ),
@@ -75,12 +84,12 @@ class PaccayaDetailSheet extends ConsumerWidget {
               _section(
                 context,
                 context.l10n.paccayaConditioningStates,
-                item.paccayaDhamma,
+                item.localizedPaccayaDhamma(context),
               ),
               _section(
                 context,
                 context.l10n.paccayaConditionedStates,
-                item.paccayuppanna,
+                item.localizedPaccayuppanna(context),
               ),
               if (item.paliFormula != null && item.paliFormula!.isNotEmpty)
                 _section(
@@ -92,26 +101,11 @@ class PaccayaDetailSheet extends ConsumerWidget {
               if (item.subdivisions.isNotEmpty) ...[
                 _heading(context, context.l10n.paccayaSubdivisions),
                 for (final sub in item.subdivisions)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '${sub.nameVi} — ${sub.namePali}',
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        if (sub.note.isNotEmpty)
-                          Text(sub.note, style: theme.textTheme.bodySmall),
-                      ],
-                    ),
-                  ),
+                  _subdivisionBlock(context, sub),
               ],
-              if (item.examples.isNotEmpty) ...[
+              if (localizedExamples.isNotEmpty) ...[
                 _heading(context, context.l10n.examples),
-                for (final example in item.examples)
+                for (final example in localizedExamples)
                   Padding(
                     padding: const EdgeInsets.only(bottom: 6),
                     child: Text('• $example',
@@ -127,16 +121,15 @@ class PaccayaDetailSheet extends ConsumerWidget {
                     for (final paticca in linkedPaticcas)
                       Chip(
                         label: Text(
-                          '${paticca.order}. ${paticca.nameVietnamese}',
+                          '${paticca.order}. ${paticca.localizedName(context)}',
                         ),
                         visualDensity: VisualDensity.compact,
                       ),
                   ],
                 ),
               ],
-              if (item.doctrinalNote != null &&
-                  item.doctrinalNote!.isNotEmpty)
-                _section(context, context.l10n.doctrine, item.doctrinalNote!),
+              if (doctrinalNote != null && doctrinalNote.isNotEmpty)
+                _section(context, context.l10n.doctrine, doctrinalNote),
               if (item.sourceRefs.isNotEmpty) ...[
                 _heading(context, context.l10n.paccayaSources),
                 for (final source in item.sourceRefs)
@@ -151,6 +144,29 @@ class PaccayaDetailSheet extends ConsumerWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// Một chi phần nhỏ của duyên — tiêu đề bản địa hoá + tên Pāḷi, kèm ghi chú
+  /// nếu có (đọc qua catalog, không lộ tiếng Việt cho ngôn ngữ khác).
+  Widget _subdivisionBlock(BuildContext context, PaccayaSubdivision sub) {
+    final theme = Theme.of(context);
+    final note = item.localizedSubdivisionNote(context, sub);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            '${item.localizedSubdivisionName(context, sub)} — ${sub.namePali}',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          if (note != null && note.isNotEmpty)
+            Text(note, style: theme.textTheme.bodySmall),
+        ],
       ),
     );
   }

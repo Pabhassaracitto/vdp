@@ -10,6 +10,7 @@ Full plan and rationale: [`doc/localization_content_plan.md`](../../doc/localiza
 | Script | Purpose |
 |---|---|
 | `build_content.py` | Serialises the authored Vietnamese source (`m1_m5_m7.py`, `m6_m8.py`, `m9_m10.py`) into `content_vi.json`. **Vietnamese is the source of truth.** |
+| `build_english_entities.py` | Normalises the English overlay for the Conditions and Mind Process tabs (`paticcas` / `paccayas` / `vithis`): merges fully-authored English into `content_en.json` without touching the reviewed study modules. `--check` gates staleness. |
 | `build_source_notes.py` | Regenerates `docs/study-content-sources.md`, the audit trail. Run after `build_content.py`. |
 | `build_glossary.py` | Builds the 324-headword Pāḷi glossary every translation must key to. |
 | `init_locale.py` | Scaffolds / refreshes a translation worksheet, and promotes it to a shippable file. |
