@@ -212,19 +212,16 @@ class ContentCatalog {
         .toList(growable: false);
   }
 
-  /// Merges one collection across the fallback chain.
+  /// Merges one collection across the fallback chain [chain].
   ///
   /// * Item order comes from the *base-most* catalog that defines the
   ///   collection (Vietnamese is the structural source of truth), so a partial
   ///   translation never silently truncates a module.
   /// * Within an item, each field falls back independently, so a half-finished
   ///   translation degrades field-by-field instead of dropping the whole entry.
-  List<Map<String, Object?>> _mergedItems(String moduleId, String key) {
-    return _mergedItemsWithChain(moduleId, key, _chain);
-  }
-
-  /// Same as [_mergedItems] but with an explicit catalog chain, so callers
-  /// can exclude certain fallback locales (e.g. Vietnamese lesson content).
+  ///
+  /// The chain is explicit so callers can exclude certain fallback locales
+  /// (e.g. Vietnamese lesson content when another language is selected).
   List<Map<String, Object?>> _mergedItemsWithChain(
     String moduleId,
     String key,

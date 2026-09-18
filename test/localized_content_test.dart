@@ -82,7 +82,7 @@ void main() {
     final catalog = await container.read(contentCatalogProvider('en').future);
     final paticcas = catalog.data['paticcas'] as Map<String, dynamic>;
 
-    for (final item in await _datasetItems('paticca.json', 'paticcas')) {
+    for (final item in await _datasetItems('paticca', 'paticcas')) {
       final id = item['id'] as String;
       final entry = paticcas[id] as Map<String, dynamic>;
       for (final field in ['name', 'shortName', 'description']) {
@@ -108,7 +108,7 @@ void main() {
     addTearDown(container.dispose);
     final catalog = await container.read(contentCatalogProvider('en').future);
     final paccayas = catalog.data['paccayas'] as Map<String, dynamic>;
-    final dataset = await _datasetItems('paccayas.json', 'paccayas');
+    final dataset = await _datasetItems('paccayas', 'paccayas');
 
     expect(paccayas, hasLength(dataset.length));
     for (final item in dataset) {
@@ -144,7 +144,7 @@ void main() {
     final catalog = await container.read(contentCatalogProvider('en').future);
     final vithis = catalog.data['vithis'] as Map<String, dynamic>;
 
-    for (final item in await _datasetItems('vithis.json', 'vithis')) {
+    for (final item in await _datasetItems('vithis', 'vithis')) {
       final id = item['id'] as String;
       final entry = vithis[id] as Map<String, dynamic>;
       for (final field in ['name', 'shortName', 'description']) {
