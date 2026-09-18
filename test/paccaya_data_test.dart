@@ -47,7 +47,8 @@ void main() {
 
   final cetasikaIds = _ids('cetasikas');
   final cittaIds = _ids('cittas');
-  final paticcaIds = _ids('paticcas');
+  // The 12-links dataset file is `paticca.json` (singular) with key `paticcas`.
+  final paticcaIds = _ids('paticca', 'paticcas');
 
   test('dataset ships exactly the 24 conditions in canonical order', () {
     expect(models, hasLength(24),
@@ -107,9 +108,10 @@ void main() {
   });
 }
 
-Set<String> _ids(String entity) {
+Set<String> _ids(String entity, [String? key]) {
   final file = File('assets/data/$entity.json');
   final raw = json.decode(file.readAsStringSync()) as Map<String, dynamic>;
-  final list = (raw[entity] as List<dynamic>).cast<Map<String, dynamic>>();
+  final list = (raw[key ?? entity] as List<dynamic>? ?? const [])
+      .cast<Map<String, dynamic>>();
   return list.map((item) => item['id'] as String).toSet();
 }
