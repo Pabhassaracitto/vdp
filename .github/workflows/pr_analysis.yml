@@ -39,46 +39,98 @@ jobs:
           exit 0
 
       - name: Report analyze findings
+        if: always()
         run: |
-          python3 - > analyze_report.txt << 'PY'
+          python3 > analyze_report.txt << 'PY'
           import json, os, sys
           ws = os.environ.get('GITHUB_WORKSPACE', '')
-          try:
-              items = json.load(open('analyze.json'))
-          except Exception as e:
-              print(f"Could not parse analyzer output: {e}")
-              sys.exit(0)
+
+          def findings():
+              out = []
+              try:
+                  raw = open('analyze.json', encoding='utf-8', errors='replace').read()
+              except Exception as e:
+                  out.append(('info', 'META', f'cannot read analyze.json: {e}', '', 0))
+                  return out
+              parsed = 0
+              for n, line in enumerate(raw.splitlines(), 1):
+                  line = line.strip()
+                  if not line:
+                      continue
+                  try:
+                      it = json.loads(line)
+                  except Exception:
+                      out.append(('info', 'META', f'unparsed line {n}: {line[:120]}', '', 0))
+                      continue
+                  parsed += 1
+                  sev = str(it.get('severity', 'INFO')).lower()
+                  code = str(it.get('code') or '')
+                  msg = str(it.get('message') or it.get('error') or '').strip()
+                  loc = it.get('location') or {}
+                  f = str(loc.get('file') or '').replace(ws + '/', '')
+                  ln = loc.get('startLine')
+                  if not isinstance(ln, int):
+                      ln = 0
+                  rng = (loc.get('range') or {}).get('start') or {}
+                  if not ln and isinstance(rng.get('line'), int):
+                      ln = rng['line'] + 1  # machine protocol lines are 0-based
+                  out.append((sev, code, msg, f, ln))
+              if parsed == 0:
+                  out.append(('info', 'META', 'no machine-readable findings parsed (empty output?)', '', 0))
+              return out
+
+          items = findings()
           counts = {}
-          for it in items:
-              s = it.get('severity', 'info')
-              counts[s] = counts.get(s, 0) + 1
-          total = len(items)
-          print(f"flutter analyze: {total} findings — " + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
+          for sev, code, msg, f, ln in items:
+              counts[sev] = counts.get(sev, 0) + 1
+          print(f"flutter analyze: {len(items)} findings — "
+                + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
           print()
-          for it in items[:80]:
-              loc = it['location']['file'].replace(ws + '/', '')
-              line = it['location']['startLine']
-              print(f"- [{it['severity']}] `{loc}:{line}` {it.get('code','')}: {it.get('message','').strip()}")
-          if total > 80:
-              print(f"\n… and {total - 80} more findings")
+          for sev, code, msg, f, ln in items[:100]:
+              where = f" `{f}:{ln}`" if f else ""
+              print(f"- [{sev}]{where} {code}: {msg}")
+          if len(items) > 100:
+              print(f"\n… and {len(items) - 100} more findings")
           PY
           cat analyze_report.txt >> "$GITHUB_STEP_SUMMARY"
-          # Emit up to 10 findings as annotations (GitHub caps 10/step)
-          python3 - << 'PY'
+
+      - name: Emit analyzer annotations
+        if: always()
+        run: |
+          python3 << 'PY'
           import json, os
           ws = os.environ.get('GITHUB_WORKSPACE', '')
-          items = json.load(open('analyze.json'))
-          for it in items[:10]:
-              f = it['location']['file'].replace(ws + '/', '')
-              line = it['location']['startLine']
-              msg = f"{it['severity']} {it.get('code','')}: {it.get('message','').strip()[:250]}"
-              print(f"::error file={f},line={line}::{msg}")
-          if len(items) > 10:
-              print(f"::error::… and {len(items) - 10} more analyzer findings — full list in the PR comment")
+          lines = []
+          try:
+              for line in open('analyze.json', encoding='utf-8', errors='replace'):
+                  line = line.strip()
+                  if not line:
+                      continue
+                  try:
+                      it = json.loads(line)
+                  except Exception:
+                      continue
+                  loc = it.get('location') or {}
+                  f = str(loc.get('file') or '').replace(ws + '/', '')
+                  ln = loc.get('startLine')
+                  if not isinstance(ln, int):
+                      ln = ((loc.get('range') or {}).get('start') or {}).get('line', -1)
+                      ln = ln + 1 if isinstance(ln, int) else 0
+                  sev = str(it.get('severity') or 'error').lower()
+                  kind = 'error' if 'error' in sev else 'warning'
+                  msg = f"{it.get('code','')}: {str(it.get('message','')).strip()[:250]}"
+                  lines.append(f"::{kind} file={f},line={max(ln,1)}::{msg}")
+          except Exception as e:
+              lines.append(f"::error::cannot read analyze.json: {e}")
+          for l in lines[:10]:
+              print(l)
+          if len(lines) > 10:
+              print(f"::error::… and {len(lines) - 10} more analyzer findings — full list in the PR comment")
           PY
 
       - name: Test
         id: test
+        if: always()
         run: |
           set +e
           flutter test > test_output.txt 2>&1
@@ -86,6 +138,7 @@ jobs:
           exit 0
 
       - name: Report test results
+        if: always()
         run: |
           {
             echo
@@ -95,9 +148,10 @@ jobs:
             echo '```'
           } >> analyze_report.txt
           tail -n 25 test_output.txt
-          grep '\[E\]' test_output.txt | sort -u | head -10 | while IFS= read -r line; do
+          grep '\[E\]' test_output.txt | sort -u | head -10 > failed_tests.txt || true
+          while IFS= read -r line; do
             printf '::error::%s\n' "${line:0:280}"
-          done
+          done < failed_tests.txt
 
       - name: Comment results on PR
         if: always()
@@ -108,6 +162,8 @@ jobs:
           [ -z "$PR" ] && { echo "no open PR for ${GITHUB_REF_NAME}; skipping comment"; exit 0; }
           {
             echo "## CI analysis report — commit \`${GITHUB_SHA:0:7}\`"
+            echo
+            echo "analyze exit: \`${{ steps.analyze.outputs.code }}\` · test exit: \`${{ steps.test.outputs.code }}\`"
             echo
             tail -c 55000 analyze_report.txt
           } > comment.md
