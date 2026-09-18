@@ -1,0 +1,39 @@
+name: Flutter Analysis (analyze + test)
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analysis:
+    name: flutter analyze + flutter test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Flutter version
+        run: flutter --version
+
+      # Asset dirs referenced by pubspec.yaml but not present in git
+      # (same workaround as full_build.yml).
+      - name: Ensure asset dirs
+        run: mkdir -p assets/animations assets/audio assets/data
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Test
+        run: flutter test
