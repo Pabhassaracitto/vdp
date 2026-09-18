@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   analysis:
@@ -21,9 +22,6 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Flutter version
-        run: flutter --version
-
       # Asset dirs referenced by pubspec.yaml but not present in git
       # (same workaround as full_build.yml).
       - name: Ensure asset dirs
@@ -35,42 +33,88 @@ jobs:
       - name: Analyze
         id: analyze
         run: |
-          flutter analyze > analyze_output.txt 2>&1
-          code=$?
-          cat analyze_output.txt
-          echo "code=$code" >> "$GITHUB_OUTPUT"
-          exit $code
+          set +e
+          flutter analyze --machine > analyze.json
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          exit 0
 
-      - name: Publish analyze output to job summary
-        if: always() && steps.analyze.outcome == 'failure'
+      - name: Report analyze findings
         run: |
-          {
-            echo "### flutter analyze (exit ${{ steps.analyze.outputs.code }})"
-            echo ''
-            echo '```text'
-            cat analyze_output.txt
-            echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
+          python3 - > analyze_report.txt << 'PY'
+          import json, os, sys
+          ws = os.environ.get('GITHUB_WORKSPACE', '')
+          try:
+              items = json.load(open('analyze.json'))
+          except Exception as e:
+              print(f"Could not parse analyzer output: {e}")
+              sys.exit(0)
+          counts = {}
+          for it in items:
+              s = it.get('severity', 'info')
+              counts[s] = counts.get(s, 0) + 1
+          total = len(items)
+          print(f"flutter analyze: {total} findings — " + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
+          print()
+          for it in items[:80]:
+              loc = it['location']['file'].replace(ws + '/', '')
+              line = it['location']['startLine']
+              print(f"- [{it['severity']}] `{loc}:{line}` {it.get('code','')}: {it.get('message','').strip()}")
+          if total > 80:
+              print(f"\n… and {total - 80} more findings")
+          PY
+          cat analyze_report.txt >> "$GITHUB_STEP_SUMMARY"
+          # Emit up to 10 findings as annotations (GitHub caps 10/step)
+          python3 - << 'PY'
+          import json, os
+          ws = os.environ.get('GITHUB_WORKSPACE', '')
+          items = json.load(open('analyze.json'))
+          for it in items[:10]:
+              f = it['location']['file'].replace(ws + '/', '')
+              line = it['location']['startLine']
+              msg = f"{it['severity']} {it.get('code','')}: {it.get('message','').strip()[:250]}"
+              print(f"::error file={f},line={line}::{msg}")
+          if len(items) > 10:
+              print(f"::error::… and {len(items) - 10} more analyzer findings — full list in the PR comment")
+          PY
 
       - name: Test
         id: test
-        if: always()
         run: |
+          set +e
           flutter test > test_output.txt 2>&1
-          code=$?
-          tail -n 100 test_output.txt
-          echo "code=$code" >> "$GITHUB_OUTPUT"
-          exit $code
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          exit 0
 
-      - name: Publish test output to job summary
-        if: always() && steps.test.outcome == 'failure'
+      - name: Report test results
         run: |
           {
-            echo "### flutter test (exit ${{ steps.test.outputs.code }})"
-            echo ''
+            echo
+            echo "## flutter test"
             echo '```text'
-            tail -n 400 test_output.txt
+            tail -n 80 test_output.txt
             echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
-      - name: Test
-        run: flutter test
+          } >> analyze_report.txt
+          tail -n 25 test_output.txt
+          grep '\[E\]' test_output.txt | sort -u | head -10 | while IFS= read -r line; do
+            printf '::error::%s\n' "${line:0:280}"
+          done
+
+      - name: Comment results on PR
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR=$(gh pr list --state open --head "${GITHUB_REF_NAME}" --json number --jq '.[0].number // empty')
+          [ -z "$PR" ] && { echo "no open PR for ${GITHUB_REF_NAME}; skipping comment"; exit 0; }
+          {
+            echo "## CI analysis report — commit \`${GITHUB_SHA:0:7}\`"
+            echo
+            tail -c 55000 analyze_report.txt
+          } > comment.md
+          gh pr comment "$PR" --body-file comment.md
+
+      - name: Verdict
+        if: always()
+        run: |
+          echo "analyze=${{ steps.analyze.outputs.code }} test=${{ steps.test.outputs.code }}"
+          [ "${{ steps.analyze.outputs.code }}" = "0" ] && [ "${{ steps.test.outputs.code }}" = "0" ]
