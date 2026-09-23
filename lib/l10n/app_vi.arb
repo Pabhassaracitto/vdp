@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "Mục này chưa được dịch; đang hiển thị nội dung học tiếng Anh.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "Nghe toàn bộ",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "Danh sách nghe",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "Nghe từ đây",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "Đang nghe",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "Tắt lặp",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "Lặp mục này",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "Lặp cả danh sách",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "Nghe lại",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "Tốc độ",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "Tiếp tục nghe",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "phút",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "Phát",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "Tạm dừng",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "Mục trước",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

@@ -1054,4 +1054,46 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'Listen to all';
+
+  @override
+  String get listeningQueue => 'Listening list';
+
+  @override
+  String get listenFromHere => 'Listen from here';
+
+  @override
+  String get nowPlaying => 'Now playing';
+
+  @override
+  String get repeatOff => 'Repeat off';
+
+  @override
+  String get repeatOne => 'Repeat one section';
+
+  @override
+  String get repeatAll => 'Repeat all';
+
+  @override
+  String get listenAgain => 'Listen again';
+
+  @override
+  String get playbackSpeed => 'Speed';
+
+  @override
+  String get resumeListening => 'Resume listening';
+
+  @override
+  String get minutesShort => 'min';
+
+  @override
+  String get playAudio => 'Play';
+
+  @override
+  String get pauseAudio => 'Pause';
+
+  @override
+  String get previousTrack => 'Previous section';
 }

@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "ཡོངས་རྫོགས་ཉོན།",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "ཉོན་ཐོ།",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "འདི་ནས་ཉོན།",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "ད་ལྟ་གཏོང་བཞིན་པ།",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "བསྐྱར་མི་གཏོང།",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "ཚན་པ་འདི་བསྐྱར་གཏོང་།",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "ཡོངས་རྫོགས་བསྐྱར་གཏོང་།",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "ལོག་ཏེ་ཉོན།",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "མགྱོགས་ཚད།",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "ཉོན་མཐུད།",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "སྐར་མ།",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "གཏོང་།",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "མཚམས་འཇོག",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "སྔོན་མའི་ཚན་པ།",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

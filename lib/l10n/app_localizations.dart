@@ -1942,6 +1942,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This item is not translated yet; showing the English study text.'**
   String get contentFallbackNotice;
+
+  /// listenAll
+  ///
+  /// In en, this message translates to:
+  /// **'Listen to all'**
+  String get listenAll;
+
+  /// listeningQueue
+  ///
+  /// In en, this message translates to:
+  /// **'Listening list'**
+  String get listeningQueue;
+
+  /// listenFromHere
+  ///
+  /// In en, this message translates to:
+  /// **'Listen from here'**
+  String get listenFromHere;
+
+  /// nowPlaying
+  ///
+  /// In en, this message translates to:
+  /// **'Now playing'**
+  String get nowPlaying;
+
+  /// repeatOff
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat off'**
+  String get repeatOff;
+
+  /// repeatOne
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat one section'**
+  String get repeatOne;
+
+  /// repeatAll
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat all'**
+  String get repeatAll;
+
+  /// listenAgain
+  ///
+  /// In en, this message translates to:
+  /// **'Listen again'**
+  String get listenAgain;
+
+  /// playbackSpeed
+  ///
+  /// In en, this message translates to:
+  /// **'Speed'**
+  String get playbackSpeed;
+
+  /// resumeListening
+  ///
+  /// In en, this message translates to:
+  /// **'Resume listening'**
+  String get resumeListening;
+
+  /// minutesShort
+  ///
+  /// In en, this message translates to:
+  /// **'min'**
+  String get minutesShort;
+
+  /// playAudio
+  ///
+  /// In en, this message translates to:
+  /// **'Play'**
+  String get playAudio;
+
+  /// pauseAudio
+  ///
+  /// In en, this message translates to:
+  /// **'Pause'**
+  String get pauseAudio;
+
+  /// previousTrack
+  ///
+  /// In en, this message translates to:
+  /// **'Previous section'**
+  String get previousTrack;
 }
 
 class _AppLocalizationsDelegate

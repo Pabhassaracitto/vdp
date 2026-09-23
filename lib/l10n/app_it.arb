@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "Ascolta tutto",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "Elenco di ascolto",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "Ascolta da qui",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "In riproduzione",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "Ripetizione disattivata",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "Ripeti questa sezione",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "Ripeti tutto",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "Ascolta di nuovo",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "Velocità",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "Continua ad ascoltare",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "min",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "Riproduci",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "Pausa",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "Sezione precedente",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

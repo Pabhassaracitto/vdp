@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "සියල්ල අසන්න",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "ඇසීමේ ලැයිස්තුව",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "මෙතැනින් අසන්න",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "දැන් වාදනය වේ",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "නැවත නැවත නැත",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "මෙම කොටස නැවත නැවත",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "සියල්ල නැවත නැවත",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "නැවත අසන්න",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "වේගය",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "ඇසීම දිගටම",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "මිනිත්තු",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "වාදනය කරන්න",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "නවත්තන්න",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "කලින් කොටස",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

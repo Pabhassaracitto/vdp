@@ -1050,4 +1050,46 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'すべて再生';
+
+  @override
+  String get listeningQueue => '再生リスト';
+
+  @override
+  String get listenFromHere => 'ここから再生';
+
+  @override
+  String get nowPlaying => '再生中';
+
+  @override
+  String get repeatOff => 'リピートなし';
+
+  @override
+  String get repeatOne => 'このセクションをリピート';
+
+  @override
+  String get repeatAll => 'すべてリピート';
+
+  @override
+  String get listenAgain => 'もう一度聞く';
+
+  @override
+  String get playbackSpeed => '再生速度';
+
+  @override
+  String get resumeListening => '続きから再生';
+
+  @override
+  String get minutesShort => '分';
+
+  @override
+  String get playAudio => '再生';
+
+  @override
+  String get pauseAudio => '一時停止';
+
+  @override
+  String get previousTrack => '前のセクション';
 }

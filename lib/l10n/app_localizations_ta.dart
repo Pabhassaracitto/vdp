@@ -1053,4 +1053,46 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'அனைத்தையும் கேளுங்கள்';
+
+  @override
+  String get listeningQueue => 'கேட்கும் பட்டியல்';
+
+  @override
+  String get listenFromHere => 'இங்கிருந்து கேளுங்கள்';
+
+  @override
+  String get nowPlaying => 'இப்போது ஒலிக்கிறது';
+
+  @override
+  String get repeatOff => 'மீளொலி அணைப்பு';
+
+  @override
+  String get repeatOne => 'இந்தப் பகுதியை மீளொலி';
+
+  @override
+  String get repeatAll => 'அனைத்தையும் மீளொலி';
+
+  @override
+  String get listenAgain => 'மீண்டும் கேளுங்கள்';
+
+  @override
+  String get playbackSpeed => 'வேகம்';
+
+  @override
+  String get resumeListening => 'தொடர்ந்து கேளுங்கள்';
+
+  @override
+  String get minutesShort => 'நிமி';
+
+  @override
+  String get playAudio => 'ஒலிக்கச் செய்';
+
+  @override
+  String get pauseAudio => 'இடைநிறுத்து';
+
+  @override
+  String get previousTrack => 'முந்தையப் பகுதி';
 }

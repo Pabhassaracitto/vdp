@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "すべて再生",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "再生リスト",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "ここから再生",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "再生中",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "リピートなし",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "このセクションをリピート",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "すべてリピート",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "もう一度聞く",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "再生速度",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "続きから再生",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "分",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "再生",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "一時停止",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "前のセクション",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

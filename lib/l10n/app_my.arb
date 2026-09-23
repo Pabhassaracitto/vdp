@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "အားလုံး နားထောင်ရန်",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "နားထောင်စရာ စာရင်း",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "ဒီကနေ နားထောင်ရန်",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "ဖွင့်နေသည်",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "ထပ်ဖွင့်ခြင်း ပိတ်ရန်",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "ဒီအပိုင်းကို ထပ်ဖွင့်ရန်",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "စာရင်းအားလုံး ထပ်ဖွင့်ရန်",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "နောက်တစ်ခေါက် နားထောင်ရန်",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "အမြန်နှုန်း",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "နားထောင်မှု ဆက်ရန်",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "မိနစ်",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "ဖွင့်ရန်",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "ခဏရပ်ရန်",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "အရင်အပိုင်း",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

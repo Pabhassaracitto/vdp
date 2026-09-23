@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "Слушать всё",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "Список прослушивания",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "Слушать отсюда",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "Сейчас играет",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "Повтор выключен",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "Повторять этот раздел",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "Повторять всё",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "Послушать ещё раз",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "Скорость",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "Продолжить слушать",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "мин",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "Воспроизвести",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "Пауза",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "Предыдущий раздел",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

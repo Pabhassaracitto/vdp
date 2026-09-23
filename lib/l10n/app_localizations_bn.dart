@@ -1053,4 +1053,46 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'সব শুনুন';
+
+  @override
+  String get listeningQueue => 'শোনার তালিকা';
+
+  @override
+  String get listenFromHere => 'এখান থেকে শুনুন';
+
+  @override
+  String get nowPlaying => 'এখন চলছে';
+
+  @override
+  String get repeatOff => 'পুনরাবৃত্তি বন্ধ';
+
+  @override
+  String get repeatOne => 'এই অংশটি পুনরাবৃত্তি করুন';
+
+  @override
+  String get repeatAll => 'সব পুনরাবৃত্তি করুন';
+
+  @override
+  String get listenAgain => 'আবার শুনুন';
+
+  @override
+  String get playbackSpeed => 'গতি';
+
+  @override
+  String get resumeListening => 'শোনা চালিয়ে যান';
+
+  @override
+  String get minutesShort => 'মিনিট';
+
+  @override
+  String get playAudio => 'চালান';
+
+  @override
+  String get pauseAudio => 'থামান';
+
+  @override
+  String get previousTrack => 'আগের অংশ';
 }

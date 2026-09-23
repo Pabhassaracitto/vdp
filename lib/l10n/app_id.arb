@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "Dengarkan semua",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "Daftar dengar",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "Dengarkan dari sini",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "Sedang diputar",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "Ulangi nonaktif",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "Ulangi bagian ini",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "Ulangi semua",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "Dengarkan lagi",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "Kecepatan",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "Lanjutkan mendengarkan",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "mnt",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "Putar",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "Jeda",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "Bagian sebelumnya",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

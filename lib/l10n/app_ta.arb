@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "அனைத்தையும் கேளுங்கள்",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "கேட்கும் பட்டியல்",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "இங்கிருந்து கேளுங்கள்",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "இப்போது ஒலிக்கிறது",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "மீளொலி அணைப்பு",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "இந்தப் பகுதியை மீளொலி",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "அனைத்தையும் மீளொலி",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "மீண்டும் கேளுங்கள்",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "வேகம்",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "தொடர்ந்து கேளுங்கள்",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "நிமி",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "ஒலிக்கச் செய்",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "இடைநிறுத்து",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "முந்தையப் பகுதி",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

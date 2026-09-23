@@ -43,3 +43,14 @@
 - [x] `Memory`: Chuyển đổi liên tục giữa các màn hình (Study -> Quiz -> Home) trong thời gian dài xem có bị rò rỉ bộ nhớ (lag/giật).
 - [ ] `Empty State`: Kiểm tra màn hình khi chưa có dữ liệu (ví dụ: chưa có bookmark nào, chưa học module nào).
 => Trong phần cài đặt chỗ: 4/5 module hoàn thành đang hiện là 9200% trong khi phải là 92% mới đúng. => done
+## 6. Nghe bài học (VDP | AUDIO — P1, xem doc/audio_plan.md)
+- [ ] `Phát cơ bản`: Mở module có nội dung → tab Học → "Nghe toàn bộ" phát lần lượt các mục; mini player bám đáy (hiện ở cả 3 tab Học/Ôn tập/Kiểm tra).
+- [ ] `Danh sách`: "Danh sách nghe (n)" hiển thị đủ mục đánh số + thời lượng ≈; tap hàng / nút ▶ phát từ đúng mục đó; hàng đang nghe sáng kèm "Đang nghe · đoạn a/b".
+- [ ] `Lặp`: 3 chế độ Tắt / Mục này / Cả danh sách hoạt động đúng (hết mục lặp lại / hết danh sách quay mục 1); "Nghe lại ×2/×3/×5" phát lại đúng số lượt rồi đi tiếp.
+- [ ] `Tốc độ`: 5 preset 0.75×–2.0× đổi ngay khi đang phát; chip trên mini player xoay vòng được; thoát app mở lại tốc độ được giữ.
+- [ ] `Nghe dở`: Ngắt giữa mục 3 → mở lại module → "Tiếp tục nghe" phát đúng mục + đoạn; thoát module (thoát tab bài học) là pause + lưu.
+- [ ] `Highlight`: Paragraph đang đọc được tô sáng trong tab Học; section đang nghe tự mở; cuộn theo khi đoạn ra khỏi khung nhìn (không giật khi đang lướt tay).
+- [ ] `Pāli`: Tới mục "Từ khóa" nghe thuật ngữ bằng giọng Pāli (như nút phát âm Pāli ở detail sheet); đang nghe bài mà bấm phát âm Pāli ở detail sheet → phiên nghe tự pause (không nói chồng).
+- [ ] `Screen Reader`: Mọi nút nghe (play/pause/next/prev/lặp/tốc độ/danh sách) có semantics + tooltip đầy đủ.
+- [ ] `Fallback`: Thiết bị/không có giọng TTS phù hợp → toast nhẹ, không crash; locale chưa dịch UI vẫn hiện tiếng Anh đúng chuẩn.
+- [ ] `Nền tảng*: Test tay tốc độ trên cả Android + iOS (thang TTS khác nhau — tts_rate.dart); pause/resume không nhảy chữ; TTS đọc hết mọi đoạn của section dài (không nuốt chữ).

@@ -20,6 +20,10 @@ import '../../data/models/vithi_model.dart';
 import '../../data/repositories/vdp_repository.dart';
 import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
+import '../audio/providers/audio_player_provider.dart';
+import '../audio/widgets/audio_controls_common.dart';
+import '../audio/widgets/mini_player_bar.dart';
+import '../audio/widgets/playlist_sheet.dart';
 import '../quiz/quiz_screen.dart';
 
 // ─── Screen ───────────────────────────────────────────────────────────────────
@@ -48,6 +52,8 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
 
   @override
   void dispose() {
+    // Mini player sống trong module (P1) — thoát là pause + lưu vị trí nghe dở.
+    ref.read(audioPlayerProvider.notifier).onModuleClosed();
     _tabController.dispose();
     super.dispose();
   }
@@ -135,9 +141,12 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
       body: dataState.status == DataLoadStatus.loading ||
               dataState.status == DataLoadStatus.initial
           ? const Center(child: CircularProgressIndicator())
-          : TabBarView(
-              controller: _tabController,
+          : Column(
               children: [
+                Expanded(
+                  child: TabBarView(
+                    controller: _tabController,
+                    children: [
                 // Tab 1: Học tập — hiển thị đầy đủ thông tin Tâm/Tâm Sở
                 _StudyTab(
                   module: widget.moduleData,
@@ -169,6 +178,14 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
                   module: widget.moduleData,
                   totalItems: totalModuleItems,
                   seedCount: lesson.quizSeeds.length,
+                ),
+                    ],
+                  ),
+                ),
+                // Thanh nghe bám đáy — hiện ở cả 3 tab (plan §5.1).
+                MiniPlayerBar(
+                  moduleId: widget.moduleData.id,
+                  color: color,
                 ),
               ],
             ),
@@ -248,7 +265,7 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
 
 // ─── Tab 1: Study ────────────────────────────────────────────────────────────
 
-class _StudyTab extends StatelessWidget {
+class _StudyTab extends ConsumerStatefulWidget {
   final StudyModule module;
   final ModuleLessonContent lesson;
   final List<CittaModel> cittas;
@@ -272,9 +289,71 @@ class _StudyTab extends StatelessWidget {
   });
 
   @override
+  ConsumerState<_StudyTab> createState() => _StudyTabState();
+}
+
+class _StudyTabState extends ConsumerState<_StudyTab> {
+  /// Auto-expand section khi tới lượt đang nghe (plan §5.4).
+  final Map<String, ExpansionTileController> _tileControllers = {};
+
+  /// Anchor cho auto-scroll paragraph đang đọc (mắt-nhìn-tai-nghe — H5).
+  final Map<String, GlobalKey> _cueKeys = {};
+  bool _prepared = false;
+
+  ExpansionTileController _controllerFor(String sectionId) =>
+      _tileControllers.putIfAbsent(sectionId, () => ExpansionTileController());
+
+  GlobalKey _keyFor(String sectionId, String cueRef) =>
+      _cueKeys.putIfAbsent('$sectionId|$cueRef', () => GlobalKey());
+
+  @override
   Widget build(BuildContext context) {
+    final module = widget.module;
+    final lesson = widget.lesson;
+    final cittas = widget.cittas;
+    final cetasikas = widget.cetasikas;
+    final kammas = widget.kammas;
+    final paticcas = widget.paticcas;
+    final rupas = widget.rupas;
+    final vithis = widget.vithis;
+    final totalModuleItems = widget.totalModuleItems;
     final color = Color(module.colorCode);
     final sections = lesson.sections;
+
+    // Chuẩn bị playlist 1 lần cho tab Học (idempotent — rebuild vô hại).
+    if (!_prepared && sections.isNotEmpty) {
+      _prepared = true;
+      Future<void>.microtask(() {
+        if (!mounted) return;
+        ref.read(audioPlayerProvider.notifier).prepareModule(
+              moduleId: module.id,
+              moduleTitle: module.localizedTitle(context),
+              contentLocaleTag: context.contentCatalog.locale,
+              sections: sections,
+            );
+      });
+    }
+
+    // Tới cue mới → mở section + cuộn paragraph đang đọc vào khung nhìn.
+    ref.listen(audioPlayerProvider.select((s) => s.currentCueKey), (prev, next) {
+      if (next == null || next == prev) return;
+      final sectionId = next.split('|').first;
+      _tileControllers[sectionId]?.expand();
+      // Chờ animation ExpansionTile xong rồi mới cuộn để không giật.
+      Future<void>.delayed(const Duration(milliseconds: 280), () {
+        if (mounted) _scrollCueIntoView(next);
+      });
+    });
+
+    // Lỗi engine TTS → báo nhẹ, không crash (plan §11).
+    ref.listen(audioPlayerProvider.select((s) => s.error), (prev, next) {
+      if (next == AudioErrorKind.none || next == prev) return;
+      final text = audioErrorText(context, next);
+      if (text == null) return;
+      ScaffoldMessenger.of(context)
+        ..hideCurrentSnackBar()
+        ..showSnackBar(SnackBar(content: Text(text)));
+    });
     // FIX: Module is empty only when there is neither authored lesson text
     // (sections / reviewCards / quizSeeds) nor any dataset entity.
     // Trước đây chỉ check sections, nên nếu tài liệu chỉ có quizSeeds/reviewCards
@@ -292,11 +371,26 @@ class _StudyTab extends StatelessWidget {
         ),
         const SizedBox(height: 20),
 
+        // ── Nghe bài học: danh sách + nút nghe (doc/audio_plan.md §5.1) ──
+        if (sections.isNotEmpty) ...[
+          _ListenActionsRow(
+            module: module,
+            sections: sections,
+            color: color,
+          ),
+          const SizedBox(height: 16),
+        ],
+
         // ── Authored lesson (source-backed narrative) ────────────────────
         if (sections.isNotEmpty) ...[
           _SectionHeader(context.l10n.learn, color),
           ...sections.map(
-            (section) => _LessonSectionCard(section: section, color: color),
+            (section) => _LessonSectionCard(
+              section: section,
+              color: color,
+              tileController: _controllerFor(section.id),
+              keyFor: (cueRef) => _keyFor(section.id, cueRef),
+            ),
           ),
           const SizedBox(height: 16),
         ],
@@ -415,6 +509,98 @@ class _StudyTab extends StatelessWidget {
         ],
 
         const SizedBox(height: 40),
+      ],
+    );
+  }
+
+  /// Cuộn paragraph đang đọc vào khung nhìn nếu nó đang nằm ngoài màn hình
+  /// (tôn trọng thao tác cuộn tay — chỉ cuộn khi thật sự cần).
+  void _scrollCueIntoView(String cueKey) {
+    final ctx = _cueKeys[cueKey]?.currentContext;
+    if (ctx == null || !ctx.mounted) return;
+    final box = ctx.findRenderObject() as RenderBox?;
+    if (box == null || !box.attached) return;
+    final top = box.localToGlobal(Offset.zero).dy;
+    final screenHeight = MediaQuery.of(context).size.height;
+    const topBound = 150; // dưới AppBar + TabBar
+    final bottomBound = screenHeight - 150; // trên mini player
+    final visible = top >= topBound && top <= bottomBound;
+    if (visible) return;
+    Scrollable.ensureVisible(
+      ctx,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeOut,
+      alignment: 0.35,
+    );
+  }
+}
+
+/// Hàng nút nghe dưới module header: "Nghe toàn bộ / Tiếp tục nghe" +
+/// "Danh sách nghe (n)" (plan §5.1).
+class _ListenActionsRow extends ConsumerWidget {
+  final StudyModule module;
+  final List<LessonSection> sections;
+  final Color color;
+
+  const _ListenActionsRow({
+    required this.module,
+    required this.sections,
+    required this.color,
+  });
+
+  /// Chuẩn bị playlist trước khi phát/mở sheet (idempotent).
+  Future<void> _prepare(BuildContext context, WidgetRef ref) {
+    return ref.read(audioPlayerProvider.notifier).prepareModule(
+          moduleId: module.id,
+          moduleTitle: module.localizedTitle(context),
+          contentLocaleTag: context.contentCatalog.locale,
+          sections: sections,
+        );
+  }
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final state = ref.watch(audioPlayerProvider);
+    final isThisModule = state.moduleId == module.id && state.hasSession;
+    final queueCount = isThisModule ? state.playlist.length : sections.length;
+    final canResume = isThisModule && state.canResume;
+
+    return Row(
+      children: [
+        Expanded(
+          child: FilledButton.icon(
+            onPressed: () async {
+              await _prepare(context, ref);
+              await ref
+                  .read(audioPlayerProvider.notifier)
+                  .playAll(resume: canResume);
+            },
+            style: FilledButton.styleFrom(backgroundColor: color),
+            icon: const Icon(Icons.headphones_rounded),
+            label: Text(
+              canResume
+                  ? context.l10n.resumeListening
+                  : context.l10n.listenAll,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: OutlinedButton.icon(
+            onPressed: () async {
+              await _prepare(context, ref);
+              PlaylistSheet.show(context, color: color, moduleId: module.id);
+            },
+            icon: const Icon(Icons.queue_music_rounded),
+            label: Text(
+              '${context.l10n.listeningQueue} ($queueCount)',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ),
       ],
     );
   }
@@ -1085,15 +1271,30 @@ class _SectionHeader extends StatelessWidget {
 ///
 /// Collapsed by default so a module with many sections stays scannable on a
 /// phone; the summary line is always visible.
-class _LessonSectionCard extends StatelessWidget {
+class _LessonSectionCard extends ConsumerWidget {
   final LessonSection section;
   final Color color;
 
-  const _LessonSectionCard({required this.section, required this.color});
+  /// Điều khiển auto-expand khi tới lượt section đang nghe (plan §5.4).
+  final ExpansionTileController tileController;
+
+  /// Sinh GlobalKey cho từng cue — neo auto-scroll paragraph đang đọc.
+  final GlobalKey Function(String cueRef) keyFor;
+
+  const _LessonSectionCard({
+    required this.section,
+    required this.color,
+    required this.tileController,
+    required this.keyFor,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final audio = ref.watch(audioPlayerProvider);
+    final activeRef = audio.currentSectionId == section.id
+        ? audio.currentCue?.highlightRef
+        : null;
 
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
@@ -1106,6 +1307,7 @@ class _LessonSectionCard extends StatelessWidget {
         // Remove the default ExpansionTile divider lines.
         data: theme.copyWith(dividerColor: Colors.transparent),
         child: ExpansionTile(
+          controller: tileController,
           tilePadding: const EdgeInsets.symmetric(horizontal: 13),
           childrenPadding:
               const EdgeInsets.fromLTRB(13, 0, 13, 13),
@@ -1118,13 +1320,24 @@ class _LessonSectionCard extends StatelessWidget {
             ),
             child: const Text('📖', style: TextStyle(fontSize: 20)),
           ),
-          title: Text(
-            section.title,
-            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
+          title: Row(
+            children: [
+              Expanded(
+                child: Text(
+                  section.title,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              _SectionListenButton(section: section, color: color),
+            ],
           ),
           subtitle: section.summary.isEmpty
               ? null
               : Padding(
+                  key: keyFor('summary'),
                   padding: const EdgeInsets.only(top: 4),
                   child: Text(
                     section.summary,
@@ -1132,55 +1345,80 @@ class _LessonSectionCard extends StatelessWidget {
                       fontSize: 12.5,
                       height: 1.45,
                       color: theme.textTheme.bodySmall?.color,
+                      backgroundColor: activeRef == 'summary'
+                          ? color.withOpacity(0.15)
+                          : null,
+                      fontWeight: activeRef == 'summary'
+                          ? FontWeight.w700
+                          : FontWeight.w400,
                     ),
                   ),
                 ),
           children: [
             // ── Body paragraphs ──────────────────────────────────────────
-            ...section.body.map(
-              (paragraph) => Padding(
+            for (var i = 0; i < section.body.length; i++)
+              Padding(
+                key: keyFor('body:$i'),
                 padding: const EdgeInsets.only(bottom: 10),
                 child: Text(
-                  paragraph,
+                  section.body[i],
                   style: TextStyle(
                     fontSize: 13.5,
                     height: 1.6,
                     color: theme.textTheme.bodyLarge?.color,
+                    backgroundColor: activeRef == 'body:$i'
+                        ? color.withOpacity(0.15)
+                        : null,
+                    fontWeight: activeRef == 'body:$i'
+                        ? FontWeight.w700
+                        : FontWeight.w400,
                   ),
                 ),
               ),
-            ),
 
             // ── Key terms (Pāli stays stable across languages) ───────────
             if (section.keyTerms.isNotEmpty) ...[
               const SizedBox(height: 2),
-              ...section.keyTerms.map(
-                (term) => Padding(
-                  padding: const EdgeInsets.only(bottom: 6),
-                  child: RichText(
-                    text: TextSpan(
-                      style: TextStyle(
-                        fontSize: 13,
-                        height: 1.5,
-                        color: theme.textTheme.bodyLarge?.color,
-                      ),
-                      children: [
-                        TextSpan(
-                          text: term.pali.isEmpty ? term.term : term.pali,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontStyle: FontStyle.italic,
-                            color: color,
+              Container(
+                key: keyFor('terms'),
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                decoration: BoxDecoration(
+                  color: activeRef == 'terms' ? color.withOpacity(0.12) : null,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ...section.keyTerms.map(
+                      (term) => Padding(
+                        padding: const EdgeInsets.only(bottom: 6),
+                        child: RichText(
+                          text: TextSpan(
+                            style: TextStyle(
+                              fontSize: 13,
+                              height: 1.5,
+                              color: theme.textTheme.bodyLarge?.color,
+                            ),
+                            children: [
+                              TextSpan(
+                                text: term.pali.isEmpty ? term.term : term.pali,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontStyle: FontStyle.italic,
+                                  color: color,
+                                ),
+                              ),
+                              if (term.term.isNotEmpty &&
+                                  term.term != term.pali)
+                                TextSpan(text: ' — ${term.term}'),
+                              if (term.meaning.isNotEmpty)
+                                TextSpan(text: ': ${term.meaning}'),
+                            ],
                           ),
                         ),
-                        if (term.term.isNotEmpty &&
-                            term.term != term.pali)
-                          TextSpan(text: ' — ${term.term}'),
-                        if (term.meaning.isNotEmpty)
-                          TextSpan(text: ': ${term.meaning}'),
-                      ],
+                      ),
                     ),
-                  ),
+                  ],
                 ),
               ),
             ],
@@ -1215,6 +1453,42 @@ class _LessonSectionCard extends StatelessWidget {
               ),
             ],
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Nút ▶/⏸ trên từng section card (plan §5.1). Gọi playFrom để:
+/// phát từ mục này trong hàng đợi của module / toggle nếu đang là mục hiện tại.
+class _SectionListenButton extends ConsumerWidget {
+  final LessonSection section;
+  final Color color;
+
+  const _SectionListenButton({required this.section, required this.color});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final audio = ref.watch(audioPlayerProvider);
+    final isCurrent = audio.currentSectionId == section.id;
+    final isPlaying = isCurrent && audio.isPlaying;
+
+    return Semantics(
+      button: true,
+      label: isPlaying
+          ? context.l10n.pauseAudio
+          : context.l10n.listenFromHere,
+      child: IconButton(
+        tooltip: isPlaying
+            ? context.l10n.pauseAudio
+            : context.l10n.listenFromHere,
+        visualDensity: VisualDensity.compact,
+        onPressed: () =>
+            ref.read(audioPlayerProvider.notifier).playFrom(section.id),
+        icon: Icon(
+          isPlaying ? Icons.pause_circle_filled : Icons.play_circle_fill,
+          color: color,
+          size: 26,
         ),
       ),
     );
