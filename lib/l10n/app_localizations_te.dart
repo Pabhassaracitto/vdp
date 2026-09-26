@@ -1053,4 +1053,46 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'అన్నీ వినండి';
+
+  @override
+  String get listeningQueue => 'వినే జాబితా';
+
+  @override
+  String get listenFromHere => 'ఇక్కడి నుండి వినండి';
+
+  @override
+  String get nowPlaying => 'ఇప్పుడు ప్లే అవుతోంది';
+
+  @override
+  String get repeatOff => 'రిపీట్ ఆఫ్';
+
+  @override
+  String get repeatOne => 'ఈ భాగాన్ని రిపీట్ చేయి';
+
+  @override
+  String get repeatAll => 'అన్నీ రిపీట్ చేయి';
+
+  @override
+  String get listenAgain => 'మళ్ళీ వినండి';
+
+  @override
+  String get playbackSpeed => 'వేగం';
+
+  @override
+  String get resumeListening => 'వినడం కొనసాగించండి';
+
+  @override
+  String get minutesShort => 'నిమి';
+
+  @override
+  String get playAudio => 'ప్లే చేయి';
+
+  @override
+  String get pauseAudio => 'పాజ్ చేయి';
+
+  @override
+  String get previousTrack => 'మునుపటి భాగం';
 }

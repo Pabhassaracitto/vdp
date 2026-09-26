@@ -1054,4 +1054,46 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'ཡོངས་རྫོགས་ཉོན།';
+
+  @override
+  String get listeningQueue => 'ཉོན་ཐོ།';
+
+  @override
+  String get listenFromHere => 'འདི་ནས་ཉོན།';
+
+  @override
+  String get nowPlaying => 'ད་ལྟ་གཏོང་བཞིན་པ།';
+
+  @override
+  String get repeatOff => 'བསྐྱར་མི་གཏོང།';
+
+  @override
+  String get repeatOne => 'ཚན་པ་འདི་བསྐྱར་གཏོང་།';
+
+  @override
+  String get repeatAll => 'ཡོངས་རྫོགས་བསྐྱར་གཏོང་།';
+
+  @override
+  String get listenAgain => 'ལོག་ཏེ་ཉོན།';
+
+  @override
+  String get playbackSpeed => 'མགྱོགས་ཚད།';
+
+  @override
+  String get resumeListening => 'ཉོན་མཐུད།';
+
+  @override
+  String get minutesShort => 'སྐར་མ།';
+
+  @override
+  String get playAudio => 'གཏོང་།';
+
+  @override
+  String get pauseAudio => 'མཚམས་འཇོག';
+
+  @override
+  String get previousTrack => 'སྔོན་མའི་ཚན་པ།';
 }

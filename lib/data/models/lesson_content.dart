@@ -64,6 +64,38 @@ class LessonSourceRef {
   String get label => page == null ? file : '$file p.$page';
 }
 
+// ─── Optional recorded-audio reference ────────────────────────────────────────
+
+/// Optional pointer to a pre-rendered audio file for one lesson section.
+///
+/// The listening experience does NOT depend on this: a section without
+/// [LessonAudioRef] is read aloud by the text-to-speech player. The field is a
+/// forward-compatible contract for an offline voice pipeline (e.g. sherpa-onnx
+/// exports) so recorded audio can slot in without a schema migration.
+@immutable
+class LessonAudioRef {
+  /// Asset path, e.g. `assets/audio/vi/M1_S01.mp3`.
+  final String file;
+
+  /// Exact length when known, used for honest duration display in the queue.
+  final int? durationSec;
+
+  const LessonAudioRef({required this.file, this.durationSec});
+
+  static LessonAudioRef? tryParse(Object? raw) {
+    if (raw is! Map) return null;
+    final file = _str(raw['file']);
+    if (file.isEmpty) return null;
+    final durationSec = raw['durationSec'];
+    return LessonAudioRef(
+      file: file,
+      durationSec: durationSec is int
+          ? durationSec
+          : (durationSec is num ? durationSec.toInt() : null),
+    );
+  }
+}
+
 // ─── Key term ─────────────────────────────────────────────────────────────────
 
 /// A Pāli/Vietnamese glossary entry attached to a lesson section.
@@ -117,6 +149,9 @@ class LessonSection {
   final List<LessonKeyTerm> keyTerms;
   final List<LessonSourceRef> sourceRefs;
 
+  /// Optional pre-rendered audio for this section (null = speak via TTS).
+  final LessonAudioRef? audioRef;
+
   const LessonSection({
     required this.id,
     required this.title,
@@ -124,6 +159,7 @@ class LessonSection {
     required this.body,
     required this.keyTerms,
     required this.sourceRefs,
+    this.audioRef,
   });
 
   static LessonSection? tryParse(Map<String, Object?> raw) {
@@ -136,6 +172,7 @@ class LessonSection {
       body: _strList(raw['body']),
       keyTerms: LessonKeyTerm.parseList(raw['keyTerms']),
       sourceRefs: LessonSourceRef.parseList(raw['sourceRefs']),
+      audioRef: LessonAudioRef.tryParse(raw['audioRef']),
     );
   }
 

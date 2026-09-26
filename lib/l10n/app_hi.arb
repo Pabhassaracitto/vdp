@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "पूरा सुनें",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "सुनने की सूची",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "यहाँ से सुनें",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "अभी चल रहा है",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "दोहराना बंद",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "इसी अनुभाग को दोहराएँ",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "पूरी सूची दोहराएँ",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "फिर से सुनें",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "गति",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "सुनना जारी रखें",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "मिनट",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "चलाएँ",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "रोकें",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "पिछला अनुभाग",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

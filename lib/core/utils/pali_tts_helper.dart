@@ -48,6 +48,9 @@ class PaliTtsHelper {
       // Không hỗ trợ → thoát nhẹ nhàng
       if (_initState == _TtsInitState.unavailable) return false;
 
+      // Nhường focus âm thanh: dừng phiên nghe bài học trước khi đọc Pāli.
+      onBeforeSpeak?.call();
+
       // Dừng bất kỳ phát âm nào đang chạy
       await _tts.stop();
 
@@ -65,6 +68,11 @@ class PaliTtsHelper {
       await _tts.stop();
     } catch (e) {}
   }
+
+  /// Hook điều phối focus âm thanh — được gán bởi AudioPlayerNotifier để
+  /// core không phụ thuộc features: trước khi phát một từ Pāli, phiên nghe
+  /// bài học đang chạy (nếu có) được pause, tránh hai engine nói chồng nhau.
+  static void Function()? onBeforeSpeak;
 
   /// Giải phóng tài nguyên TTS — gọi khi app tắt hẳn.
   Future<void> dispose() async {

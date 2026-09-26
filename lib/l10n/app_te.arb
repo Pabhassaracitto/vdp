@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "అన్నీ వినండి",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "వినే జాబితా",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "ఇక్కడి నుండి వినండి",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "ఇప్పుడు ప్లే అవుతోంది",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "రిపీట్ ఆఫ్",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "ఈ భాగాన్ని రిపీట్ చేయి",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "అన్నీ రిపీట్ చేయి",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "మళ్ళీ వినండి",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "వేగం",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "వినడం కొనసాగించండి",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "నిమి",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "ప్లే చేయి",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "పాజ్ చేయి",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "మునుపటి భాగం",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

@@ -1053,4 +1053,46 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'Dengarkan semua';
+
+  @override
+  String get listeningQueue => 'Daftar dengar';
+
+  @override
+  String get listenFromHere => 'Dengarkan dari sini';
+
+  @override
+  String get nowPlaying => 'Sedang diputar';
+
+  @override
+  String get repeatOff => 'Ulangi nonaktif';
+
+  @override
+  String get repeatOne => 'Ulangi bagian ini';
+
+  @override
+  String get repeatAll => 'Ulangi semua';
+
+  @override
+  String get listenAgain => 'Dengarkan lagi';
+
+  @override
+  String get playbackSpeed => 'Kecepatan';
+
+  @override
+  String get resumeListening => 'Lanjutkan mendengarkan';
+
+  @override
+  String get minutesShort => 'mnt';
+
+  @override
+  String get playAudio => 'Putar';
+
+  @override
+  String get pauseAudio => 'Jeda';
+
+  @override
+  String get previousTrack => 'Bagian sebelumnya';
 }

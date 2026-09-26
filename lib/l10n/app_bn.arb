@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "সব শুনুন",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "শোনার তালিকা",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "এখান থেকে শুনুন",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "এখন চলছে",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "পুনরাবৃত্তি বন্ধ",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "এই অংশটি পুনরাবৃত্তি করুন",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "সব পুনরাবৃত্তি করুন",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "আবার শুনুন",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "গতি",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "শোনা চালিয়ে যান",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "মিনিট",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "চালান",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "থামান",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "আগের অংশ",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

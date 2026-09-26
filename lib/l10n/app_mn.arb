@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "Бүгдийг сонсох",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "Сонсох жагсаалт",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "Эндээс сонсох",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "Тоглож байна",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "Давтахгүй",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "Энэ хэсгийг давтах",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "Бүгдийг давтах",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "Дахин сонсох",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "Хурд",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "Үргэлжлүүлэн сонсох",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "мин",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "Тоглох",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "Түр зогсоо",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "Өмнөх хэсэг",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

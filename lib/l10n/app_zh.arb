@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "全部收听",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "收听列表",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "从此处收听",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "正在播放",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "关闭重复",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "循环本节",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "循环全部",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "再听一遍",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "语速",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "继续收听",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "分钟",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "播放",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "暂停",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "上一节",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "모두 듣기",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "듣기 목록",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "여기서 듣기",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "재생 중",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "반복 꺼짐",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "이 단락 반복",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "모두 반복",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "다시 듣기",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "속도",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "이어서 듣기",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "분",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "재생",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "일시정지",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "이전 단락",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

@@ -1054,4 +1054,46 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'အားလုံး နားထောင်ရန်';
+
+  @override
+  String get listeningQueue => 'နားထောင်စရာ စာရင်း';
+
+  @override
+  String get listenFromHere => 'ဒီကနေ နားထောင်ရန်';
+
+  @override
+  String get nowPlaying => 'ဖွင့်နေသည်';
+
+  @override
+  String get repeatOff => 'ထပ်ဖွင့်ခြင်း ပိတ်ရန်';
+
+  @override
+  String get repeatOne => 'ဒီအပိုင်းကို ထပ်ဖွင့်ရန်';
+
+  @override
+  String get repeatAll => 'စာရင်းအားလုံး ထပ်ဖွင့်ရန်';
+
+  @override
+  String get listenAgain => 'နောက်တစ်ခေါက် နားထောင်ရန်';
+
+  @override
+  String get playbackSpeed => 'အမြန်နှုန်း';
+
+  @override
+  String get resumeListening => 'နားထောင်မှု ဆက်ရန်';
+
+  @override
+  String get minutesShort => 'မိနစ်';
+
+  @override
+  String get playAudio => 'ဖွင့်ရန်';
+
+  @override
+  String get pauseAudio => 'ခဏရပ်ရန်';
+
+  @override
+  String get previousTrack => 'အရင်အပိုင်း';
 }

@@ -1053,4 +1053,46 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'सर्व ऐका';
+
+  @override
+  String get listeningQueue => 'ऐकण्याची यादी';
+
+  @override
+  String get listenFromHere => 'इथून ऐका';
+
+  @override
+  String get nowPlaying => 'आता चालू आहे';
+
+  @override
+  String get repeatOff => 'पुनरावृत्ती बंद';
+
+  @override
+  String get repeatOne => 'हा विभाग पुन्हा ऐका';
+
+  @override
+  String get repeatAll => 'सर्व पुन्हा ऐका';
+
+  @override
+  String get listenAgain => 'पुन्हा ऐका';
+
+  @override
+  String get playbackSpeed => 'वेग';
+
+  @override
+  String get resumeListening => 'पुढे ऐका';
+
+  @override
+  String get minutesShort => 'मि.';
+
+  @override
+  String get playAudio => 'चालू करा';
+
+  @override
+  String get pauseAudio => 'थांबा';
+
+  @override
+  String get previousTrack => 'मागील विभाग';
 }

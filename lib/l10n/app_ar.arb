@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "استمع إلى الكل",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "قائمة الاستماع",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "استمع من هنا",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "قيد التشغيل",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "إيقاف التكرار",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "تكرار هذا القسم",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "تكرار الكل",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "استمع مرة أخرى",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "السرعة",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "متابعة الاستماع",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "دقيقة",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "تشغيل",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "إيقاف مؤقت",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "القسم السابق",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

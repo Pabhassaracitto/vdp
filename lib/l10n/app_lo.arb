@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "ຟັງທັງໝົດ",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "ລາຍການຟັງ",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "ຟັງຈາກນີ້",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "ກຳລັງຫຼິ້ນ",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "ປິດການທຳຊ້ຳ",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "ທຳຊ້ຳພາກນີ້",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "ທຳຊ້ຳທັງໝົດ",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "ຟັງອີກຄັ້ງ",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "ຄວາມໄວ",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "ສືບຕໍ່ຟັງ",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "ນາທີ",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "ຫຼິ້ນ",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "ຢຸດຊົ່ວຄາວ",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "ພາກກ່ອນ",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

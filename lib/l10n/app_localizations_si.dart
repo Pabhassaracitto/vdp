@@ -1051,4 +1051,46 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'සියල්ල අසන්න';
+
+  @override
+  String get listeningQueue => 'ඇසීමේ ලැයිස්තුව';
+
+  @override
+  String get listenFromHere => 'මෙතැනින් අසන්න';
+
+  @override
+  String get nowPlaying => 'දැන් වාදනය වේ';
+
+  @override
+  String get repeatOff => 'නැවත නැවත නැත';
+
+  @override
+  String get repeatOne => 'මෙම කොටස නැවත නැවත';
+
+  @override
+  String get repeatAll => 'සියල්ල නැවත නැවත';
+
+  @override
+  String get listenAgain => 'නැවත අසන්න';
+
+  @override
+  String get playbackSpeed => 'වේගය';
+
+  @override
+  String get resumeListening => 'ඇසීම දිගටම';
+
+  @override
+  String get minutesShort => 'මිනිත්තු';
+
+  @override
+  String get playAudio => 'වාදනය කරන්න';
+
+  @override
+  String get pauseAudio => 'නවත්තන්න';
+
+  @override
+  String get previousTrack => 'කලින් කොටස';
 }
