@@ -4,7 +4,7 @@
 // bấm thân thanh mở full player. Chip tốc độ xoay vòng tại chỗ (thói quen H3),
 // nút lặp xoay 3 chế độ (H2), nút next cho nghe liền mạch (H1).
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide RepeatMode; // use audio RepeatMode
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../l10n/l10n.dart';

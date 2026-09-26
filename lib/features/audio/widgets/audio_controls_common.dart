@@ -3,7 +3,7 @@
 // Dùng chung cho mini player / playlist sheet / full player sheet: preset tốc độ,
 // nhãn lặp, định dạng hiển thị (plan §5–§6).
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide RepeatMode; // use audio RepeatMode
 
 import '../../../l10n/l10n.dart';
 import '../models/audio_track.dart';

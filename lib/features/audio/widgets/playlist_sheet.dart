@@ -4,7 +4,7 @@
 // đánh số, thời lượng ≈ (H7), tap hàng = phát từ đây (H6), hàng đang nghe
 // sáng lên kèm vị trí. Khu Tùy chọn: lặp 3 chế độ + 5 preset tốc độ.
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide RepeatMode; // use audio RepeatMode
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../l10n/l10n.dart';

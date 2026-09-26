@@ -195,7 +195,7 @@ class TtsTrackPlayer implements TrackPlayer {
     if (_initialized) return;
     try {
       // speak() chỉ resolve khi đọc xong — cần cho vòng phát theo câu.
-      await _engine.setAwaitSpeakCompletion(true);
+      await _engine.awaitSpeakCompletion(true);
       await _engine.setVolume(1.0);
       await _engine.setPitch(1.0);
       await setSpeed(_speed);

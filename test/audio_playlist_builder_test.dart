@@ -159,7 +159,7 @@ void main() {
           CueSpan('Hai từ'),
         ],
       );
-      expect(cue.wordCount, 5);
+      expect(cue.wordCount, 6); // "Ba từ ở đây" (4) + "Hai từ" (2).
       expect(cue.plainText, 'Ba từ ở đây Hai từ');
     });
   });

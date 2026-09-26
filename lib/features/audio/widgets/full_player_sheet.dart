@@ -3,7 +3,7 @@
 // Bảng điều khiển đầy đủ (plan §5.3): transport ⏮/⏯/⏭, lặp xoay 3 chế độ,
 // "Nghe lại ×N" cho học thuộc (H2), preset tốc độ (H3), vị trí mục/đoạn.
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide RepeatMode; // use audio RepeatMode
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../l10n/l10n.dart';
