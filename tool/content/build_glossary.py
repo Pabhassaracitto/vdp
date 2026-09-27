@@ -57,7 +57,7 @@ DATA = os.path.join(ROOT, "assets", "data")
 CONTENT = os.path.join(ROOT, "assets", "content")
 WORK = os.path.join(ROOT, "l10n_work")
 
-DEFAULT_LOCALES = ["hi", "zh", "zh_TW", "si", "my", "ja"]
+DEFAULT_LOCALES = ["hi", "zh", "zh_TW", "si", "my", "ja", "th"]
 
 # Reference works a reviewer should key each language to. Surfaced in the CSV
 # header so the translator knows which tradition to follow rather than
@@ -69,6 +69,7 @@ AUTHORITIES = {
     "si": "Sri Lankan Abhidhamma teaching tradition (Sangaha, Sinhala script)",
     "my": "Myanmar let-than manual tradition (Abhidhammattha Sangaha)",
     "ja": "南伝大蔵経 65: 摂阿毘達磨義論 (tr. Mizuno Kogen) — avoid Mahayana senses",
+    "th": "Thai Abhidhamma tradition (Abhidhammattha Sangaha, Thai script)",
 }
 
 # section -> (file, json key, English gloss source in content_en.json)

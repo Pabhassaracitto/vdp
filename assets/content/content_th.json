@@ -2,6 +2,1271 @@
   "locale": "th",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "translationStatus": "draft",
-  "note": "Generated from the translation worksheet by tool/content/init_locale.py --strip. Untranslated fields are omitted on purpose: they resolve through the runtime fallback chain to English, then to the Vietnamese source."
+  "lessonTranslationStatus": "reviewed",
+  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+  "cittas": {
+    "CI_001": {
+      "name": "โสมนัสสสหคตัง ทิฏฐิคตสัมปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 1)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_002": {
+      "name": "โสมนัสสสหคตัง ทิฏฐิคตสัมปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 2)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_003": {
+      "name": "โสมนัสสสหคตัง ทิฏฐิคตวิปปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 3)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_004": {
+      "name": "โสมนัสสสหคตัง ทิฏฐิคตวิปปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 4)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_005": {
+      "name": "อุเบกขาสหคตัง ทิฏฐิคตสัมปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 5)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_006": {
+      "name": "อุเบกขาสหคตัง ทิฏฐิคตสัมปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 6)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_007": {
+      "name": "อุเบกขาสหคตัง ทิฏฐิคตวิปปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 7)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_008": {
+      "name": "อุเบกขาสหคตัง ทิฏฐิคตวิปปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 8)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_009": {
+      "name": "โทมนัสสสหคตัง ปฏิฆสัมปยุตตัง อสังขาริกัง (โทสมูลจิต ดวงที่ 1)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_010": {
+      "name": "โทมนัสสสหคตัง ปฏิฆสัมปยุตตัง สสังขาริกัง (โทสมูลจิต ดวงที่ 2)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_011": {
+      "name": "อุเบกขาสหคตัง วิจิกิจฉาสัมปยุตตัง (โมหมูลจิต ดวงที่ 1)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ."
+    },
+    "CI_012": {
+      "name": "อุเบกขาสหคตัง อุทธัจจสัมปยุตตัง (โมหมูลจิต ดวงที่ 2)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ."
+    },
+    "CI_013": {
+      "name": "อุเบกขาสหคตัง จักขุวิญญาณัง (อกุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ."
+    },
+    "CI_014": {
+      "name": "อุเบกขาสหคตัง โสตวิญญาณัง (อกุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ."
+    },
+    "CI_015": {
+      "name": "อุเบกขาสหคตัง ฆานวิญญาณัง (อกุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ."
+    },
+    "CI_016": {
+      "name": "อุเบกขาสหคตัง ชิวหาวิญญาณัง (อกุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ."
+    },
+    "CI_017": {
+      "name": "ทุกขสหคตัง กายวิญญาณัง (อกุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ."
+    },
+    "CI_018": {
+      "name": "อุเบกขาสหคตัง สัมปฏิจฉันนจิตตัง (อกุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ."
+    },
+    "CI_019": {
+      "name": "อุเบกขาสหคตัง สันตีรณจิตตัง (อกุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ."
+    },
+    "CI_020": {
+      "name": "อุเบกขาสหคตัง จักขุวิญญาณัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ."
+    },
+    "CI_021": {
+      "name": "อุเบกขาสหคตัง โสตวิญญาณัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ."
+    },
+    "CI_022": {
+      "name": "อุเบกขาสหคตัง ฆานวิญญาณัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ."
+    },
+    "CI_023": {
+      "name": "อุเบกขาสหคตัง ชิวหาวิญญาณัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ."
+    },
+    "CI_024": {
+      "name": "สุขสหคตัง กายวิญญาณัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ."
+    },
+    "CI_025": {
+      "name": "อุเบกขาสหคตัง สัมปฏิจฉันนจิตตัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ."
+    },
+    "CI_026": {
+      "name": "โสมนัสสสหคตัง สันตีรณจิตตัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ."
+    },
+    "CI_027": {
+      "name": "อุเบกขาสหคตัง สันตีรณจิตตัง (กุศลวิบาก)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ."
+    },
+    "CI_028": {
+      "name": "อุเบกขาสหคตัง ปัญจทวาราวជ្ชนจิตตัง",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ."
+    },
+    "CI_029": {
+      "name": "อุเบกขาสหคตัง มโนทวาราวជ្ชนจิตตัง",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ."
+    },
+    "CI_030": {
+      "name": "โสมนัสสสหคตัง หสิตุปปาทจิตตัง",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ hasituppāda-cittaṃ."
+    },
+    "CI_055": {
+      "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 1)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_056": {
+      "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 2)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_057": {
+      "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 3)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_058": {
+      "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 4)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_059": {
+      "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 5)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_060": {
+      "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 6)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_061": {
+      "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 7)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_062": {
+      "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 8)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_063": {
+      "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 1)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_064": {
+      "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 2)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_065": {
+      "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 3)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_066": {
+      "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 4)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_067": {
+      "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 5)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_068": {
+      "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 6)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_069": {
+      "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 7)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_070": {
+      "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 8)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_071": {
+      "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 1)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_072": {
+      "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 2)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_073": {
+      "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 3)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_074": {
+      "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 4)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_075": {
+      "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 5)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_076": {
+      "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 6)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_077": {
+      "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 7)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_078": {
+      "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 8)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_079": {
+      "name": "รูปาวจรปฐมฌานกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_080": {
+      "name": "รูปาวจรทุติยฌานกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ."
+    },
+    "CI_081": {
+      "name": "รูปาวจรตติยฌานกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ."
+    },
+    "CI_082": {
+      "name": "รูปาวจรจตุตถฌานกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ."
+    },
+    "CI_083": {
+      "name": "รูปาวจรปัญจมฌานกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ."
+    },
+    "CI_084": {
+      "name": "รูปาวจรปฐมฌานวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_085": {
+      "name": "รูปาวจรทุติยฌานวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ."
+    },
+    "CI_086": {
+      "name": "รูปาวจรตติยฌานวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ."
+    },
+    "CI_087": {
+      "name": "รูปาวจรจตุตถฌานวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ."
+    },
+    "CI_088": {
+      "name": "รูปาวจรปัญจมฌานวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ."
+    },
+    "CI_089": {
+      "name": "รูปาวจรปฐมฌานกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_090": {
+      "name": "รูปาวจรทุติยฌานกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ."
+    },
+    "CI_091": {
+      "name": "รูปาวจรตติยฌานกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ."
+    },
+    "CI_092": {
+      "name": "รูปาวจรจตุตถฌานกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ."
+    },
+    "CI_093": {
+      "name": "รูปาวจรปัญจมฌานกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ."
+    },
+    "CI_094": {
+      "name": "อรูปาวจรอากาสานัญจายตนกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-kusalaa-cittaṃ."
+    },
+    "CI_095": {
+      "name": "อรูปาวจรวิญญาณัญจายตนกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-kusalaa-cittaṃ."
+    },
+    "CI_096": {
+      "name": "อรูปาวจรอากิญจัญญายตนกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-kusalaa-cittaṃ."
+    },
+    "CI_097": {
+      "name": "อรูปาวจรเนวสัญญานาสัญญายตนกุศลจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ."
+    },
+    "CI_098": {
+      "name": "อรูปาวจรอากาสานัญจายตนวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-vipakaa-cittaṃ."
+    },
+    "CI_099": {
+      "name": "อรูปาวจรวิญญาณัญจายตนวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-vipakaa-cittaṃ."
+    },
+    "CI_100": {
+      "name": "อรูปาวจรอากิญจัญญายตนวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-vipakaa-cittaṃ."
+    },
+    "CI_101": {
+      "name": "อรูปาวจรเนวสัญญานาสัญญายตนวิบากจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ."
+    },
+    "CI_102": {
+      "name": "อรูปาวจรอากาสานัญจายตนกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_103": {
+      "name": "อรูปาวจรวิญญาณัญจายตนกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_104": {
+      "name": "อรูปาวจรอากิญจัญญายตนกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_105": {
+      "name": "อรูปาวจรเนวสัญญานาสัญญายตนกิริยาจิต",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_106": {
+      "name": "โสดาปัตติมัคคจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_107": {
+      "name": "โสดาปัตติมัคคจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_108": {
+      "name": "โสดาปัตติมัคคจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_109": {
+      "name": "โสดาปัตติมัคคจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_110": {
+      "name": "โสดาปัตติมัคคจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_111": {
+      "name": "สกทาคามิมัคคจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_112": {
+      "name": "สกทาคามิมัคคจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_113": {
+      "name": "สกทาคามิมัคคจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_114": {
+      "name": "สกทาคามิมัคคจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_115": {
+      "name": "สกทาคามิมัคคจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_116": {
+      "name": "อนาคามิมัคคจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_117": {
+      "name": "อนาคามิมัคคจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_118": {
+      "name": "อนาคามิมัคคจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_119": {
+      "name": "อนาคามิมัคคจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_120": {
+      "name": "อนาคามิมัคคจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_121": {
+      "name": "อรหัตตมัคคจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_122": {
+      "name": "อรหัตตมัคคจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_123": {
+      "name": "อรหัตตมัคคจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_124": {
+      "name": "อรหัตตมัคคจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_125": {
+      "name": "อรหัตตมัคคจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_126": {
+      "name": "โสดาปัตติผลจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_127": {
+      "name": "โสดาปัตติผลจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_128": {
+      "name": "โสดาปัตติผลจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_129": {
+      "name": "โสดาปัตติผลจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_130": {
+      "name": "โสดาปัตติผลจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-pañcama-jhāna-cittaṃ."
+    },
+    "CI_131": {
+      "name": "สกทาคามิผลจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_132": {
+      "name": "สกทาคามิผลจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_133": {
+      "name": "สกทาคามิผลจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_134": {
+      "name": "สกทาคามิผลจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_135": {
+      "name": "สกทาคามิผลจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-pañcama-jhāna-cittaṃ."
+    },
+    "CI_136": {
+      "name": "อนาคามิผลจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_137": {
+      "name": "อนาคามิผลจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_138": {
+      "name": "อนาคามิผลจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_139": {
+      "name": "อนาคามิผลจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_140": {
+      "name": "อนาคามิผลจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-pañcama-jhāna-cittaṃ."
+    },
+    "CI_141": {
+      "name": "อรหัตตผลจิต (ปฐมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_142": {
+      "name": "อรหัตตผลจิต (ทุติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_143": {
+      "name": "อรหัตตผลจิต (ตติยฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_144": {
+      "name": "อรหัตตผลจิต (จตุตถฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_145": {
+      "name": "อรหัตตผลจิต (ปัญจมฌาน)",
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-pañcama-jhāna-cittaṃ."
+    }
+  },
+  "cetasikas": {
+    "CS_PHASSA": {
+      "name": "ผัสสะ",
+      "shortName": "ผัสสะ",
+      "description": "การกระทบกันระหว่างจิตกับอารมณ์."
+    },
+    "CS_VEDANA": {
+      "name": "เวทนา",
+      "shortName": "เวทนา",
+      "description": "การเสวยอารมณ์ สุข ทุกข์ หรืออุเบกขา."
+    },
+    "CS_SANNA": {
+      "name": "สัญญา",
+      "shortName": "สัญญา",
+      "description": "การจำหมายอารมณ์ กำหนดหมายลักษณะ."
+    },
+    "CS_CETANA": {
+      "name": "เจตนา",
+      "shortName": "เจตนา",
+      "description": "การจัดแจง ปรุงแต่ง และชักนำสัมปยุตตธรรมในการสร้างกรรม."
+    },
+    "CS_EKAGGATA": {
+      "name": "เอกัคคตา",
+      "shortName": "เอกัคคตา",
+      "description": "ความมีอารมณ์เป็นอันเดียว ความตั้งมั่นแห่งจิต."
+    },
+    "CS_JIVITINDRIYA": {
+      "name": "ชีวิตินทรีย์",
+      "shortName": "ชีวิตินทรีย์",
+      "description": "การรักษาสัมปยุตตธรรมให้ดำรงชีวิตอยู่ได้."
+    },
+    "CS_MANASIKARA": {
+      "name": "มนสิการ",
+      "shortName": "มนสิการ",
+      "description": "การทำในใจ การนำจิตมุ่งตรงสู่อารมณ์."
+    },
+    "CS_VITAKKA": {
+      "name": "วิตก",
+      "shortName": "วิตก",
+      "description": "การยกจิตขึ้นสู่อารมณ์."
+    },
+    "CS_VICARA": {
+      "name": "วิจาร",
+      "shortName": "วิจาร",
+      "description": "การเคล้าคลึง ประคองจิตไว้ในอารมณ์."
+    },
+    "CS_ADHIMOKKHA": {
+      "name": "อธิโมกข์",
+      "shortName": "อธิโมกข์",
+      "description": "การตัดสินอารมณ์ ปักใจลงในอารมณ์."
+    },
+    "CS_VIRIYA": {
+      "name": "วิริยะ",
+      "shortName": "วิริยะ",
+      "description": "ความเพียร ความแกล้วกล้าในการประกอบกิจ."
+    },
+    "CS_PITI": {
+      "name": "ปีติ",
+      "shortName": "ปีติ",
+      "description": "ความอิ่มใจ ความปลาบปลื้มยินดีในอารมณ์."
+    },
+    "CS_CHANDA": {
+      "name": "ฉันทะ",
+      "shortName": "ฉันทะ",
+      "description": "ความพอใจใคร่จะทำ ความต้องการกระทำ."
+    },
+    "CS_MOHA": {
+      "name": "โมหะ",
+      "shortName": "โมหะ",
+      "description": "ความหลง ความไม่รู้ตามความเป็นจริง."
+    },
+    "CS_AHIRIKA": {
+      "name": "อหิริกะ",
+      "shortName": "อหิริกะ",
+      "description": "ความไม่ละอายต่อบาปทุจริต."
+    },
+    "CS_ANOTTAPPA": {
+      "name": "อโนตตัปปะ",
+      "shortName": "อโนตตัปปะ",
+      "description": "ความไม่สะดุ้งกลัวต่อบาปทุจริต."
+    },
+    "CS_UDDHACCA": {
+      "name": "อุทธัจจะ",
+      "shortName": "อุทธัจจะ",
+      "description": "ความฟุ้งซ่าน ไม่สงบแห่งจิต."
+    },
+    "CS_LOBHA": {
+      "name": "โลภะ",
+      "shortName": "โลภะ",
+      "description": "ความโลภ ความกำหนัดยินดีในอารมณ์."
+    },
+    "CS_DITTHI": {
+      "name": "ทิฏฐิ",
+      "shortName": "ทิฏฐิ",
+      "description": "ความเห็นผิด การยึดถือผิดไปจากความจริง."
+    },
+    "CS_MANA": {
+      "name": "มานะ",
+      "shortName": "มานะ",
+      "description": "ความถือตัว ความเย่อหยิ่งจองหอง."
+    },
+    "CS_DOSA": {
+      "name": "โทสะ",
+      "shortName": "โทสะ",
+      "description": "ความโกรธ ความคิดประทุษร้าย."
+    },
+    "CS_ISSA": {
+      "name": "อิสสา",
+      "shortName": "อิสสา",
+      "description": "ความริษยา ไม่อดทนต่อสมบัติของผู้อื่น."
+    },
+    "CS_MACCHARIYA": {
+      "name": "มัจฉริยะ",
+      "shortName": "มัจฉริยะ",
+      "description": "ความตระหนี่ ความหวงแหนในสมบัติของตน."
+    },
+    "CS_KUKKUCCA": {
+      "name": "กุกกุจจะ",
+      "shortName": "กุกกุจจะ",
+      "description": "ความรำคาญใจ ความเดือดร้อนใจในบาปที่ทำแล้ว."
+    },
+    "CS_THINA": {
+      "name": "ถีนเจตสิก",
+      "shortName": "ถีนะ",
+      "description": "ความหดหู่ ความท้อถอยแห่งจิต."
+    },
+    "CS_MIDDHA": {
+      "name": "มิทธเจตสิก",
+      "shortName": "มิทธะ",
+      "description": "ความเซื่องซึม ความง่วงเหงาหาวนอนของเจตสิก."
+    },
+    "CS_VICIKICCHA": {
+      "name": "วิจิกิจฉา",
+      "shortName": "วิจิกิจฉา",
+      "description": "ความลังเลสงสัยในพระรัตนตรัยและธรรม."
+    },
+    "CS_SADDHA": {
+      "name": "ศรัทธา",
+      "shortName": "ศรัทธา",
+      "description": "ความเชื่อ ความเลื่อมใสในสิ่งที่ควรเชื่อ."
+    },
+    "CS_SATI": {
+      "name": "สติ",
+      "shortName": "สติ",
+      "description": "ความระลึกได้ ความไม่ประมาทในกุศลธรรม."
+    },
+    "CS_HIRI": {
+      "name": "หิริ",
+      "shortName": "หิริ",
+      "description": "ความละอายแก่ใจในการกระทำบาป."
+    },
+    "CS_OTTAPPA": {
+      "name": "โอตตัปปะ",
+      "shortName": "โอตตัปปะ",
+      "description": "ความเกรงกลัวต่อผลของบาปทุจริต."
+    },
+    "CS_ALOBHA": {
+      "name": "อโลภะ",
+      "shortName": "อโลภะ",
+      "description": "ความไม่โลภ ความไม่ติดข้องยินดีในกาม."
+    },
+    "CS_ADOSA": {
+      "name": "อโทสะ",
+      "shortName": "อโทสะ",
+      "description": "ความไม่โกรธ ความมีเมตตาจิตต่อสัตว์ทั้งหลาย."
+    },
+    "CS_TATRAMAJJHATTATA": {
+      "name": "ตัตรมัชฌัตตตา",
+      "shortName": "ตัตรมัชฌัตตตา",
+      "description": "ความเป็นกลางในอารมณ์นั้นๆ ความเที่ยงธรรม."
+    },
+    "CS_KAYAPASSADDHI": {
+      "name": "กายปัสสัทธิ",
+      "shortName": "กายปัสสัทธิ",
+      "description": "ความสงบระงับแห่งเจตสิกขันธ์."
+    },
+    "CS_CITTAPASSADDHI": {
+      "name": "จิตตปัสสัทธิ",
+      "shortName": "จิตตปัสสัทธิ",
+      "description": "ความสงบระงับแห่งจิต."
+    },
+    "CS_KAYALAHUTA": {
+      "name": "กายลหุตา",
+      "shortName": "กายลหุตา",
+      "description": "ความเบาแห่งเจตสิกขันธ์."
+    },
+    "CS_CITTALAHUTA": {
+      "name": "จิตตลหุตา",
+      "shortName": "จิตตลหุตา",
+      "description": "ความเบาแห่งจิต."
+    },
+    "CS_KAYAMUDUTA": {
+      "name": "กายมุทุตา",
+      "shortName": "กายมุทุตา",
+      "description": "ความอ่อนโยน ความนุ่มนวลแห่งเจตสิกขันธ์."
+    },
+    "CS_CITTAMUDUTA": {
+      "name": "จิตตมุทุตา",
+      "shortName": "จิตตมุทุตา",
+      "description": "ความอ่อนโยนแห่งจิต."
+    },
+    "CS_KAYAKAMMANNATA": {
+      "name": "กายกัมมัญญตา",
+      "shortName": "กายกัมมัญญตา",
+      "description": "ความควรแก่การงานแห่งเจตสิกขันธ์."
+    },
+    "CS_CITTAKAMMANNATA": {
+      "name": "จิตตกัมมัญญตา",
+      "shortName": "จิตตกัมมัญญตา",
+      "description": "ความควรแก่การงานแห่งจิต."
+    },
+    "CS_KAYAPAGUNNATA": {
+      "name": "กายปาคุญญตา",
+      "shortName": "กายปาคุญญตา",
+      "description": "ความคล่องแคล่วแห่งเจตสิกขันธ์."
+    },
+    "CS_CITTAPAGUNNATA": {
+      "name": "จิตตปาคุญญตา",
+      "shortName": "จิตตปาคุญญตา",
+      "description": "ความคล่องแคล่วแห่งจิต."
+    },
+    "CS_KAYUJUKATA": {
+      "name": "กายุชุกตา",
+      "shortName": "กายุชุกตา",
+      "description": "ความซื่อตรงแห่งเจตสิกขันธ์."
+    },
+    "CS_CITTUJUKATA": {
+      "name": "จิตตุชุกตา",
+      "shortName": "จิตตุชุกตา",
+      "description": "ความซื่อตรงแห่งจิต."
+    },
+    "CS_SAMMAVACA": {
+      "name": "สัมมาวาจา",
+      "shortName": "สัมมาวาจา",
+      "description": "การเว้นจากวจีทุจริต 4 ประการ เจรจาชอบ."
+    },
+    "CS_SAMMAKAMMANTA": {
+      "name": "สัมมากัมมันตะ",
+      "shortName": "สัมมากัมมันตะ",
+      "description": "การเว้นจากกายทุจริต 3 ประการ การงานชอบ."
+    },
+    "CS_SAMMAAJIVA": {
+      "name": "สัมมาอาชีวะ",
+      "shortName": "สัมมาอาชีวะ",
+      "description": "การเว้นจากมิจฉาอาชีวะ การเลี้ยงชีพชอบ."
+    },
+    "CS_KARUNA": {
+      "name": "กรุณา",
+      "shortName": "กรุณา",
+      "description": "ความสงสาร คิดจะช่วยให้ผู้อื่นพ้นทุกข์."
+    },
+    "CS_MUDITA": {
+      "name": "มุทิตา",
+      "shortName": "มุทิตา",
+      "description": "ความพลอยยินดีเมื่อผู้อื่นได้ดี มีความสุข."
+    },
+    "CS_PANNA": {
+      "name": "ปัญญินทรีย์",
+      "shortName": "ปัญญินทรีย์",
+      "description": "ปัญญาที่เป็นใหญ่ในการรู้แจ้งเห็นจริงตามสภาวธรรม."
+    }
+  },
+  "rupas": {
+    "RP_001": {
+      "name": "ปฐวีธาตุ",
+      "shortName": "ปฐวี",
+      "description": "ธาตุดิน มีลักษณะแข้นแข็งหรืออ่อนนุ่ม เป็นที่ตั้งอาศัยของรูปอื่น."
+    },
+    "RP_002": {
+      "name": "อาโปธาตุ",
+      "shortName": "อาโป",
+      "description": "ธาตุน้ำ มีลักษณะไหลหรือเกาะกุมรูปธรรมทั้งหลายไว้ด้วยกัน."
+    },
+    "RP_003": {
+      "name": "เตโชธาตุ",
+      "shortName": "เตโช",
+      "description": "ธาตุไฟ มีลักษณะร้อนหรือเย็น ทำหน้าที่ทำให้รูปอื่นอบอุ่นหรือสุกงอม."
+    },
+    "RP_004": {
+      "name": "วาโยธาตุ",
+      "shortName": "วาโย",
+      "description": "ธาตุลม มีลักษณะเคร่งตึงหรือไหวตัว ทำหน้าที่ค้ำจุนและเคลื่อนไหว."
+    },
+    "RP_005": {
+      "name": "จักขุปสาท",
+      "shortName": "จักขุปสาท",
+      "description": "รูปที่รับกระทบรูปารมณ์ (ความใสของตา)."
+    },
+    "RP_006": {
+      "name": "โสตปสาท",
+      "shortName": "โสตปสาท",
+      "description": "รูปที่รับกระทบสัททารมณ์ (ความใสของหู)."
+    },
+    "RP_007": {
+      "name": "ฆานปสาท",
+      "shortName": "ฆานปสาท",
+      "description": "รูปที่รับกระทบคันธารมณ์ (ความใสของจมูก)."
+    },
+    "RP_008": {
+      "name": "ชิวหาปสาท",
+      "shortName": "ชิวหาปสาท",
+      "description": "รูปที่รับกระทบรสารมณ์ (ความใสของลิ้น)."
+    },
+    "RP_009": {
+      "name": "กายปสาท",
+      "shortName": "กายปสาท",
+      "description": "รูปที่รับกระทบโผฏฐัพพารมณ์ (ความใสของกาย)."
+    },
+    "RP_010": {
+      "name": "รูปารมณ์",
+      "shortName": "รูปารมณ์",
+      "description": "รูป สี หรือแสงสว่างที่ปรากฏทางตา."
+    },
+    "RP_011": {
+      "name": "สัททารมณ์",
+      "shortName": "สัททารมณ์",
+      "description": "เสียงต่างๆ ที่ปรากฏทางหู."
+    },
+    "RP_012": {
+      "name": "คันธารมณ์",
+      "shortName": "คันธารมณ์",
+      "description": "กลิ่นหอม กลิ่นเหม็น ที่ปรากฏทางจมูก."
+    },
+    "RP_013": {
+      "name": "รสารมณ์",
+      "shortName": "รสารมณ์",
+      "description": "รสหวาน เปรี้ยว เค็ม เผ็ด ขม ที่ปรากฏทางลิ้น."
+    },
+    "RP_014": {
+      "name": "อิตถินทรีย์",
+      "shortName": "อิตถินทรีย์",
+      "description": "ภาวรูปที่กำหนดความเป็นหญิง สัณฐาน เสียง กิริยา."
+    },
+    "RP_015": {
+      "name": "ปุริสินทรีย์",
+      "shortName": "ปุริสินทรีย์",
+      "description": "ภาวรูปที่กำหนดความเป็นชาย สัณฐาน เสียง กิริยา."
+    },
+    "RP_016": {
+      "name": "หทยวัตถุ",
+      "shortName": "หทยวัตถุ",
+      "description": "รูปอันเป็นที่อาศัยเกิดของมโนธาตุและมโนวิญญาณธาตุ."
+    },
+    "RP_017": {
+      "name": "รูปชีวิตินทรีย์",
+      "shortName": "ชีวิตรูป",
+      "description": "รูปที่ทำหน้าที่รักษากัมมชรูปทั้งหลายให้ดำรงอยู่."
+    },
+    "RP_018": {
+      "name": "กวฬีการาหาร",
+      "shortName": "อาหารรูป",
+      "description": "รูปคืออาหารที่เป็นคำๆ โอชารูปที่หล่อเลี้ยงร่างกาย."
+    },
+    "RP_019": {
+      "name": "อากาสธาตุ",
+      "shortName": "อากาสธาตุ",
+      "description": "ช่องว่างที่คั่นระหว่างรูปกลาป เป็นขอบเขตของรูป."
+    },
+    "RP_020": {
+      "name": "กายวิญญัตติ",
+      "shortName": "กายวิญญัตติ",
+      "description": "การเคลื่อนไหวทางกายที่แสดงความหมายให้ผู้อื่นรู้ได้."
+    },
+    "RP_021": {
+      "name": "วจีวิญญัตติ",
+      "shortName": "วจีวิญญัตติ",
+      "description": "การเปล่งเสียงพูดที่แสดงความหมายให้ผู้อื่นรู้ได้."
+    },
+    "RP_022": {
+      "name": "รูปลหุตา",
+      "shortName": "รูปลหุตา",
+      "description": "ความเบา ความไม่เชื่องช้าของรูปธรรม."
+    },
+    "RP_023": {
+      "name": "รูปมุทุตา",
+      "shortName": "รูปมุทุตา",
+      "description": "ความอ่อนโยน ความสลวยไม่กระด้างของรูปธรรม."
+    },
+    "RP_024": {
+      "name": "รูปกัมมัญญตา",
+      "shortName": "รูปกัมมัญญตา",
+      "description": "ความควรแก่การงาน ความคล่องตัวในการเคลื่อนไหวของรูป."
+    },
+    "RP_025": {
+      "name": "รูปุปจยะ",
+      "shortName": "รูปุปจยะ",
+      "description": "ความก่อตัว ความเจริญขึ้นของรูปในระยะแรกเริ่ม."
+    },
+    "RP_026": {
+      "name": "รูปสันตติ",
+      "shortName": "รูปสันตติ",
+      "description": "ความสืบต่อ ความเป็นไปต่อเนื่องแห่งรูปธรรม."
+    },
+    "RP_027": {
+      "name": "รูปชรตา",
+      "shortName": "รูปชรตา",
+      "description": "ความแก่ ความทรุดโทรมเสื่อมถอยแห่งรูปธรรม."
+    },
+    "RP_028": {
+      "name": "รูปอนิจจตา",
+      "shortName": "รูปอนิจจตา",
+      "description": "ความแตกดับ ความดับสูญไปสิ้นเชิงแห่งรูปธรรม."
+    }
+  },
+  "paccayas": {
+    "PC_01": {
+      "name": "เหตุปัจจัย",
+      "shortName": "เหตุ",
+      "definition": "เหตุ 6 (โลภะ โทสะ โมหะ อโลภะ อโทสะ อโมหะ) อุปมาดั่งรากแก้วที่ยังต้นไม้ให้ตั้งมั่น."
+    },
+    "PC_02": {
+      "name": "อารัมมณปัจจัย",
+      "shortName": "อารมณ์",
+      "definition": "อารมณ์ 6 ที่จิตและเจตสิกยึดหน่วงเป็นที่อาศัย อุปมาดั่งไม้เท้าของคนทุพพลภาพ."
+    },
+    "PC_03": {
+      "name": "อธิปติปัจจัย",
+      "shortName": "อธิบดี",
+      "definition": "ความเป็นใหญ่ ความเป็นหัวหน้า อุปมาดั่งพระเจ้าจักรพรรดิผู้เป็นใหญ่ในแผ่นดิน."
+    },
+    "PC_04": {
+      "name": "อนันตรปัจจัย",
+      "shortName": "อนันตระ",
+      "definition": "การดับไปของจิตและเจตสิกดวงก่อน เพื่อให้จิตดวงหลังเกิดขึ้นติดต่อกันโดยไม่มีระหว่างคั่น."
+    },
+    "PC_05": {
+      "name": "สมนันตรปัจจัย",
+      "shortName": "สมนันตระ",
+      "definition": "การดับไปอย่างดีโดยลำดับและไม่มีระหว่างคั่น เพื่อให้จิตดวงหลังสืบต่อ."
+    },
+    "PC_06": {
+      "name": "สหชาตปัจจัย",
+      "shortName": "สหชาตะ",
+      "definition": "ธรรมที่เกิดพร้อมกันและอุปการะซึ่งกันและกัน ดุจเปลวไฟกับแสงสว่าง."
+    },
+    "PC_07": {
+      "name": "อัญญมัญญปัจจัย",
+      "shortName": "อัญญมัญญะ",
+      "definition": "ธรรมที่ต้องอิงอาศัยกันและกันจึงเกิดขึ้นได้ ดุจไม้ค้ำสามเส้า."
+    },
+    "PC_08": {
+      "name": "นิสสยปัจจัย",
+      "shortName": "นิสสยะ",
+      "definition": "ธรรมที่เป็นที่อาศัยของธรรมอื่น ดุจแผ่นดินเป็นที่ตั้งอาศัยของต้นไม้ทั้งหลาย."
+    },
+    "PC_09": {
+      "name": "อุปนิสสยปัจจัย",
+      "shortName": "อุปนิสสยะ",
+      "definition": "ธรรมที่เป็นที่อาศัยอันมีกำลังมาก เช่น ศรัทธา ศีล สุตะ หรือกรรมที่กระทำสั่งสมมา."
+    },
+    "PC_10": {
+      "name": "ปุเรชาตปัจจัย",
+      "shortName": "ปุเรชาตะ",
+      "definition": "ธรรมที่เกิดก่อนและยังตั้งอยู่ ช่วยอุปการะแก่ธรรมที่เกิดทีหลัง."
+    },
+    "PC_11": {
+      "name": "ปัจฉาชาตปัจจัย",
+      "shortName": "ปัจฉาชาตะ",
+      "definition": "ธรรมที่เกิดทีหลัง ช่วยอุปการะค้ำจุนแก่รูปกายที่เกิดก่อน ดุจฝนช่วยหล่อเลี้ยงต้นไม้."
+    },
+    "PC_12": {
+      "name": "อาเสวนปัจจัย",
+      "shortName": "อาเสวนะ",
+      "definition": "การซ้ำๆ ชินชาแห่งชวนจิตดวงก่อนๆ ทำให้อารมณ์แก่กล้าแก่ชวนจิตดวงถัดไป."
+    },
+    "PC_13": {
+      "name": "กัมมปัจจัย",
+      "shortName": "กรรม",
+      "definition": "เจตนาที่เป็นกุศลและอกุศล ซึ่งปรุงแต่งและส่งผลให้เกิดวิบากจิตและกัมมชรูป."
+    },
+    "PC_14": {
+      "name": "วิปากปัจจัย",
+      "shortName": "วิบาก",
+      "definition": "ธรรมที่เป็นผลของกรรม มีสภาพสงบระงับ อุดหนุนซึ่งกันและกัน."
+    },
+    "PC_15": {
+      "name": "อาหารปัจจัย",
+      "shortName": "อาหาร",
+      "definition": "รูปอาหารและนามอาหารที่หล่อเลี้ยงค้ำจุนสรีรยนต์และนามธรรมให้ดำรงอยู่."
+    },
+    "PC_16": {
+      "name": "อินทรียปัจจัย",
+      "shortName": "อินทรีย์",
+      "definition": "ธรรมที่เป็นใหญ่ในหน้าที่ของตน เช่น ตาเป็นใหญ่ในการเห็น ปัญญาเป็นใหญ่ในการรู้."
+    },
+    "PC_17": {
+      "name": "ฌานปัจจัย",
+      "shortName": "ฌาน",
+      "definition": "องค์ฌานทั้งหลายที่เพ่งอารมณ์อย่างแน่วแน่และเผาธรรมอันเป็นปฏิปักษ์."
+    },
+    "PC_18": {
+      "name": "มัคคปัจจัย",
+      "shortName": "มรรค",
+      "definition": "องค์มรรคทั้งหลายที่นำสัตว์ไปสู่สุคติ ทุคติ หรือนำไปสู่พระนิพพาน."
+    },
+    "PC_19": {
+      "name": "สัมปยุตตปัจจัย",
+      "shortName": "สัมปยุตต์",
+      "definition": "นามธรรมที่เกิดร่วมกัน ดับพร้อมกัน มีอารมณ์และวัตถุเดียวกัน ดุจน้ำกับน้ำนม."
+    },
+    "PC_20": {
+      "name": "วิปปยุตตปัจจัย",
+      "shortName": "วิปปยุตต์",
+      "definition": "ธรรมที่ประกอบกันไม่ได้ คือรูปธรรมกับนามธรรม ดั่งน้ำกับน้ำมัน แต่อุดหนุนกัน."
+    },
+    "PC_21": {
+      "name": "อัตถิปัจจัย",
+      "shortName": "อัตถิ",
+      "definition": "ธรรมที่กำลังมีอยู่ กำลังปรากฏอยู่ และช่วยอุปการะค้ำจุนธรรมอื่นในขณะนั้น."
+    },
+    "PC_22": {
+      "name": "นัตถิปัจจัย",
+      "shortName": "นัตถิ",
+      "definition": "การไม่มีอยู่ คือธรรมดวงก่อนดับสูญไปแล้ว จึงเปิดโอกาสให้ธรรมดวงหลังเกิดขึ้นได้."
+    },
+    "PC_23": {
+      "name": "วิคตปัจจัย",
+      "shortName": "วิคตะ",
+      "definition": "การปราศไป การดับลับหายไปของธรรมดวงก่อน ทำให้ธรรมดวงหลังสืบต่อได้."
+    },
+    "PC_24": {
+      "name": "อวิคตปัจจัย",
+      "shortName": "อวิคตะ",
+      "definition": "การไม่ปราศไป คือธรรมที่ยังไม่ดับ ยังดำรงอยู่เพื่อเกื้อกูลธรรมอื่น."
+    }
+  },
+  "paticcas": {
+    "PD_01": {
+      "name": "อวิชชา",
+      "shortName": "อวิชชา",
+      "description": "ความไม่รู้จริง คือไม่รู้ในอริยสัจ 4 ในปฏิจจสมุปบาท."
+    },
+    "PD_02": {
+      "name": "สังขาร",
+      "shortName": "สังขาร",
+      "description": "การปรุงแต่งแห่งกรรมทางกาย วาจา ใจ (ปุญญาภิสังขาร อปุญญาภิสังขาร อาเนญชาภิสังขาร)."
+    },
+    "PD_03": {
+      "name": "วิญญาณ",
+      "shortName": "วิญญาณ",
+      "description": "ปฏิสนธิวิญญาณที่เป็นไปในภพใหม่ตามอำนาจของกรรม."
+    },
+    "PD_04": {
+      "name": "นามรูป",
+      "shortName": "นามรูป",
+      "description": "จิตและเจตสิก (นาม) กับมหาภูตรูปและอุปาทายรูป (รูป)."
+    },
+    "PD_05": {
+      "name": "สฬายตนะ",
+      "shortName": "สฬายตนะ",
+      "description": "อายตนะภายใน 6 คือ ตา หู จมูก ลิ้น กาย ใจ."
+    },
+    "PD_06": {
+      "name": "ผัสสะ",
+      "shortName": "ผัสสะ",
+      "description": "การกระทบกันของอายตนะภายใน อายตนะภายนอก และวิญญาณ."
+    },
+    "PD_07": {
+      "name": "เวทนา",
+      "shortName": "เวทนา",
+      "description": "การเสวยอารมณ์อันเนื่องมาจากผัสสะ สุข ทุกข์ หรือไม่สุขไม่ทุกข์."
+    },
+    "PD_08": {
+      "name": "ตัณหา",
+      "shortName": "ตัณหา",
+      "description": "ความทะยานอยาก ความกำหนัดยินดีในกาม ในภพ."
+    },
+    "PD_09": {
+      "name": "อุปาทาน",
+      "shortName": "อุปาทาน",
+      "description": "ความยึดมั่นถือมั่นอย่างเหนียวแน่นในกาม ทิฏฐิ ศีลพรต และอัตตา."
+    },
+    "PD_10": {
+      "name": "ภพ",
+      "shortName": "ภพ",
+      "description": "ภาวะแห่งชีวิต ประกอบด้วยกรรมภพ (กรรมที่นำไปเกิด) และอุปปัตติภพ (ที่เกิด)."
+    },
+    "PD_11": {
+      "name": "ชาติ",
+      "shortName": "ความเกิด",
+      "description": "การปรากฏขึ้นแห่งขันธ์ทั้งหลายในภพใหม่ การถือกำเนิด."
+    },
+    "PD_12": {
+      "name": "ชรามรณะ",
+      "shortName": "ชรามรณะ",
+      "description": "ความแก่ทรุดโทรมและความแตกดับสิ้นไปแห่งขันธ์ทั้งหลาย."
+    }
+  },
+  "kammas": {
+    "KM_T_01": {
+      "name": "ทิฏฐธรรมเวทนียกรรม",
+      "shortName": "ทิฏฐธรรมเวทนียกรรม",
+      "description": "กรรมที่ให้ผลในปัจจุบันชาตินี้ (เกิดจากชวนจิตดวงที่ 1)."
+    },
+    "KM_T_02": {
+      "name": "อุปปัชชเวทนียกรรม",
+      "shortName": "อุปปัชชเวทนียกรรม",
+      "description": "กรรมที่ให้ผลในภพถัดไป คือชาติหน้า (เกิดจากชวนจิตดวงที่ 7)."
+    },
+    "KM_T_03": {
+      "name": "อปราปรเวทนียกรรม",
+      "shortName": "อปราปรเวทนียกรรม",
+      "description": "กรรมที่ให้ผลตั้งแต่ชาติต่อๆ ไปจนกว่าจะถึงพระนิพพาน (เกิดจากชวนจิตดวงที่ 2-6)."
+    },
+    "KM_T_04": {
+      "name": "อโหสิกรรม",
+      "shortName": "อโหสิกรรม",
+      "description": "กรรมที่เลิกให้ผล ไม่มีผลอีกต่อไป."
+    },
+    "KM_U_01": {
+      "name": "ชนกกรรม",
+      "shortName": "ชนกกรรม",
+      "description": "กรรมที่ทำหน้าที่นำไปเกิด นำปฏิสนธิและรูปขันธ์ในภพใหม่."
+    },
+    "KM_U_02": {
+      "name": "อุปัตถัมภกกรรม",
+      "shortName": "อุปัตถัมภกกรรม",
+      "description": "กรรมที่ช่วยอุดหนุนสนับสนุนชนกกรรมให้มีกำลังและยั่งยืน."
+    },
+    "KM_U_03": {
+      "name": "อุปปีฬกกรรม",
+      "shortName": "อุปปีฬกกรรม",
+      "description": "กรรมที่เข้าไปบีบคั้นขัดขวางชนกกรรม ทำให้ผลที่ควรได้ลดน้อยลง."
+    },
+    "KM_U_04": {
+      "name": "อุปฆาตกรรม",
+      "shortName": "อุปฆาตกรรม",
+      "description": "กรรมที่เข้าไปตัดรอนผลของชนกกรรมอย่างเด็ดขาด."
+    },
+    "KM_P_01": {
+      "name": "ครุกรรม",
+      "shortName": "ครุกรรม",
+      "description": "กรรมหนักที่สุดที่ต้องให้ผลก่อนกรรมอื่น (อนันตริยกรรม 5 หรือฌานสมาบัติ)."
+    },
+    "KM_P_02": {
+      "name": "อาสันนกรรม",
+      "shortName": "อาสันนกรรม",
+      "description": "กรรมที่กระทำหรือระลึกถึงได้ในเวลาใกล้จะตาย."
+    },
+    "KM_P_03": {
+      "name": "อาจิณณกรรม",
+      "shortName": "อาจิณณกรรม",
+      "description": "กรรมที่กระทำสั่งสมอยู่เป็นประจำจนเคยชิน ติดเป็นนิสัย."
+    },
+    "KM_P_04": {
+      "name": "กตัตตากรรม",
+      "shortName": "กตัตตากรรม",
+      "description": "กรรมที่ทำด้วยเจตนาอันเบาบาง กรรมที่ไม่เข้าพวกข้างต้น."
+    },
+    "KM_R_01": {
+      "name": "กามาวจรอกุศลกรรม",
+      "shortName": "อกุศลกรรม",
+      "description": "อกุศลกรรมบถ 10 ที่นำไปสู่อบายภูมิ 4."
+    },
+    "KM_R_02": {
+      "name": "กามาวจรกุศลกรรม",
+      "shortName": "กุศลกรรม",
+      "description": "กุศลกรรมบถ 10 ที่นำไปเกิดในมนุษยภูมิและสวรรค์ 6 ชั้น."
+    },
+    "KM_R_03": {
+      "name": "รูปาวจรกุศลกรรม",
+      "shortName": "รูปกุศล",
+      "description": "รูปฌานกุศล 5 ที่นำไปเกิดในรูปพรหมภูมิ 16."
+    },
+    "KM_R_04": {
+      "name": "อรูปาวจรกุศลกรรม",
+      "shortName": "อรูปกุศล",
+      "description": "อรูปฌานกุศล 4 ที่นำไปเกิดในอรูปพรหมภูมิ 4."
+    }
+  },
+  "vithis": {
+    "VT_NGU_MON_RATLON": {
+      "name": "อติมหันตารมณ์ปัญจทวารวิถี",
+      "shortName": "ปัญจทวารวิถี",
+      "description": "วิถีจิตทางปัญจทวารที่มีอารมณ์ชัดเจนมาก ครบ 17 ขณะจิต มีตทาลัมพนะ."
+    },
+    "VT_NGU_MON_LON": {
+      "name": "มหันตารมณ์ปัญจทวารวิถี",
+      "shortName": "ปัญจทวารมหันตารมณ์",
+      "description": "วิถีจิตทางปัญจทวารที่มีชวนะ 7 ขณะแต่ไม่มีตทาลัมพนะ."
+    },
+    "VT_Y_MON": {
+      "name": "มโนทวารวิถี",
+      "shortName": "มโนทวารวิถี",
+      "description": "วิถีจิตที่เกิดขึ้นเมื่อจิตรับอารมณ์ทางมโนทวาร."
+    },
+    "VT_VITHIMUTTA": {
+      "name": "วิถีมุตตจิต",
+      "shortName": "วิถีมุตตจิต",
+      "description": "จิตที่พ้นจากวิถีจิต ไม่ต้องอาศัยทวาร 6 ทำหน้าที่ปฏิสนธิ ภวังค์ และจุติ."
+    }
+  },
+  "studyModules": {
+    "M1_BASICS": {
+      "title": "สัพพจิตตสาธารณเจตสิก (7)",
+      "description": "เจตสิก 7 ดวงที่เกิดร่วมกับจิตทุกดวงอันเป็นรากฐานของการศึกษาจิต.",
+      "translationStatus": "reviewed"
+    },
+    "M11_BIET_CANH": {
+      "title": "ปกิณณกเจตสิก (6)",
+      "description": "เจตสิก 6 ดวงที่เกิดเรี่ยรายกับจิตบางดวง.",
+      "translationStatus": "reviewed"
+    },
+    "M2_SI_PHAN": {
+      "title": "โมจตุกกเจตสิก (4)",
+      "description": "โมหะ, อหิริกะ, อโนตตัปปะ, อุทธัจจะ อกุศลสาธารณเจตสิก 4 ดวง.",
+      "translationStatus": "reviewed"
+    },
+    "M4_AKUSALA": {
+      "title": "อกุศลจิต 12",
+      "description": "โลภมูลจิต 8, โทสมูลจิต 2, โมหมูลจิต 2.",
+      "translationStatus": "reviewed"
+    },
+    "M12_VO_NHAN": {
+      "title": "อเหตุกจิต 18",
+      "description": "อกุศลวิบากจิต 7, อเหตุกกุศลวิบากจิต 8, อเหตุกกิริยาจิต 3.",
+      "translationStatus": "reviewed"
+    },
+    "M3_TINH_HAO_BIEN_HANH": {
+      "title": "โสภณสาธารณเจตสิก (19)",
+      "description": "เจตสิก 19 ดวงที่เกิดร่วมกับโสภณจิตทุกดวง.",
+      "translationStatus": "reviewed"
+    },
+    "M5_SOBHANA": {
+      "title": "กามาวจรโสภณจิต 24",
+      "description": "มหากุศลจิต 8, มหาวิบากจิต 8, มหากิริยาจิต 8.",
+      "translationStatus": "reviewed"
+    },
+    "M13_SAC_GIOI": {
+      "title": "รูปาวจรจิต 15",
+      "description": "จิตในภูมิรูปฌาน: รูปาวจรกุศล 5, รูปาวจรวิบาก 5, รูปาวจรกิริยา 5.",
+      "translationStatus": "reviewed"
+    },
+    "M14_VO_SAC_GIOI": {
+      "title": "อรูปาวจรจิต 12",
+      "description": "จิตในภูมิอรูปฌาน: อรูปาวจรกุศล 4, อรูปาวจรวิบาก 4, อรูปาวจรกิริยา 4.",
+      "translationStatus": "reviewed"
+    },
+    "M7_SIEU_THE": {
+      "title": "โลกุตตรจิต",
+      "description": "จิตที่พ้นจากโลก มีพระนิพพานเป็นอารมณ์: มัคคจิต 4, ผลจิต 4.",
+      "translationStatus": "reviewed"
+    },
+    "M15_TAM_SO_PHOI_HOP": {
+      "title": "เจตสิกสัมปโยคนัยและสังคหนัย",
+      "description": "การประกอบกันของเจตสิก 52 กับจิตต่างๆ.",
+      "translationStatus": "reviewed"
+    },
+    "M6_NGHIEP": {
+      "title": "กัมมสังคหะ (เรื่องกรรม)",
+      "description": "เจตนาและกรรม 16 ประเภทในการให้ผล.",
+      "translationStatus": "reviewed"
+    },
+    "M16_NGUOI_VA_COI": {
+      "title": "บุคคลและภูมิ 31",
+      "description": "บุคคล 12 จำพวกและภูมิที่เกิด 31 ภูมิ.",
+      "translationStatus": "reviewed"
+    },
+    "M8_NHAN_DUYEN": {
+      "title": "ปฏิจจสมุปบาท",
+      "description": "ธรรมที่อาศัยกันเกิดขึ้น 12 องค์ธรรมในสังสารวัฏ.",
+      "translationStatus": "reviewed"
+    },
+    "M17_DUYEN_CHI_TIET": {
+      "title": "คัมภีร์มหาปัฏฐาน (ปัจจัย 24)",
+      "description": "ปัจจัย 24 ความสัมพันธ์อันลึกซึ้งของธรรมทั้งหลาย.",
+      "translationStatus": "reviewed"
+    },
+    "M9_SAC_PHAP": {
+      "title": "รูปสังคหะ (รูป 28)",
+      "description": "มหาภูตรูป 4 และอุปาทายรูป 24 รวมเป็นรูป 28.",
+      "translationStatus": "reviewed"
+    },
+    "M10_LO_TRINH": {
+      "title": "จิตตวิถี",
+      "description": "วิถีจิตทางปัญจทวารและมโนทวาร.",
+      "translationStatus": "reviewed"
+    }
+  }
 }

@@ -2,6 +2,1271 @@
   "locale": "hi",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "translationStatus": "draft",
-  "note": "Generated from the translation worksheet by tool/content/init_locale.py --strip. Untranslated fields are omitted on purpose: they resolve through the runtime fallback chain to English, then to the Vietnamese source."
+  "lessonTranslationStatus": "reviewed",
+  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+  "cittas": {
+    "CI_001": {
+      "name": "सौमनस्य-सहगत दृष्टिसम्प्रयुक्त असंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ।"
+    },
+    "CI_002": {
+      "name": "सौमनस्य-सहगत दृष्टिसम्प्रयुक्त ससंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ।"
+    },
+    "CI_003": {
+      "name": "सौमनस्य-सहगत दृष्टिविप्रयुक्त असंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ।"
+    },
+    "CI_004": {
+      "name": "सौमनस्य-सहगत दृष्टिविप्रयुक्त ससंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ।"
+    },
+    "CI_005": {
+      "name": "उपेक्षा-सहगत दृष्टिसम्प्रयुक्त असंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ।"
+    },
+    "CI_006": {
+      "name": "उपेक्षा-सहगत दृष्टिसम्प्रयुक्त ससंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ।"
+    },
+    "CI_007": {
+      "name": "उपेक्षा-सहगत दृष्टिविप्रयुक्त असंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ।"
+    },
+    "CI_008": {
+      "name": "उपेक्षा-सहगत दृष्टिविप्रयुक्त ससंखारिक लोभमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ।"
+    },
+    "CI_009": {
+      "name": "दौर्मनस्य-सहगत प्रतिघसम्प्रयुक्त असंखारिक द्वेषमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ।"
+    },
+    "CI_010": {
+      "name": "दौर्मनस्य-सहगत प्रतिघसम्प्रयुक्त ससंखारिक द्वेषमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ।"
+    },
+    "CI_011": {
+      "name": "उपेक्षा-सहगत विचिकित्सासम्प्रयुक्त मोहमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ।"
+    },
+    "CI_012": {
+      "name": "उपेक्षा-सहगत औद्धत्यसम्प्रयुक्त मोहमूल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ।"
+    },
+    "CI_013": {
+      "name": "उपेक्षा-सहगत चक्षुर्विज्ञान (अकुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ।"
+    },
+    "CI_014": {
+      "name": "उपेक्षा-सहगत श्रोत्रविज्ञान (अकुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ।"
+    },
+    "CI_015": {
+      "name": "उपेक्षा-सहगत घ्राणविज्ञान (अकुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ।"
+    },
+    "CI_016": {
+      "name": "उपेक्षा-सहगत जिह्वाविज्ञान (अकुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ।"
+    },
+    "CI_017": {
+      "name": "दुःख-सहगत कायविज्ञान (अकुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ।"
+    },
+    "CI_018": {
+      "name": "उपेक्षा-सहगत सम्प्रतीच्छन चित्त (अकुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ।"
+    },
+    "CI_019": {
+      "name": "उपेक्षा-सहगत सन्तीरण चित्त (अकुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ।"
+    },
+    "CI_020": {
+      "name": "उपेक्षा-सहगत चक्षुर्विज्ञान (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ।"
+    },
+    "CI_021": {
+      "name": "उपेक्षा-सहगत श्रोत्रविज्ञान (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ।"
+    },
+    "CI_022": {
+      "name": "उपेक्षा-सहगत घ्राणविज्ञान (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ।"
+    },
+    "CI_023": {
+      "name": "उपेक्षा-सहगत जिह्वाविज्ञान (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ।"
+    },
+    "CI_024": {
+      "name": "सुख-सहगत कायविज्ञान (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ।"
+    },
+    "CI_025": {
+      "name": "उपेक्षा-सहगत सम्प्रतीच्छन चित्त (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ।"
+    },
+    "CI_026": {
+      "name": "सौमनस्य-सहगत सन्तीरण चित्त (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ।"
+    },
+    "CI_027": {
+      "name": "उपेक्षा-सहगत सन्तीरण चित्त (कुशल विपाक)",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ।"
+    },
+    "CI_028": {
+      "name": "उपेक्षा-सहगत पञ्चद्वारावर्जन चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ।"
+    },
+    "CI_029": {
+      "name": "उपेक्षा-सहगत मनोद्वारावर्जन चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ।"
+    },
+    "CI_030": {
+      "name": "सौमनस्य-सहगत हसितुत्पाद चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ hasituppāda-cittaṃ।"
+    },
+    "CI_055": {
+      "name": "सौमनस्य-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_056": {
+      "name": "सौमनस्य-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_057": {
+      "name": "सौमनस्य-सहगत ज्ञानविप्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_058": {
+      "name": "सौमनस्य-सहगत ज्ञानविप्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_059": {
+      "name": "उपेक्षा-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_060": {
+      "name": "उपेक्षा-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_061": {
+      "name": "उपेक्षा-सहगत ज्ञानविप्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_062": {
+      "name": "उपेक्षा-सहगत ज्ञानविप्रयुक्त असंखारिक महाकुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_063": {
+      "name": "सौमनस्य-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_064": {
+      "name": "सौमनस्य-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_065": {
+      "name": "सौमनस्य-सहगत ज्ञानविप्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_066": {
+      "name": "सौमनस्य-सहगत ज्ञानविप्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_067": {
+      "name": "उपेक्षा-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_068": {
+      "name": "उपेक्षा-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_069": {
+      "name": "उपेक्षा-सहगत ज्ञानविप्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_070": {
+      "name": "उपेक्षा-सहगत ज्ञानविप्रयुक्त असंखारिक महाविपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_071": {
+      "name": "सौमनस्य-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_072": {
+      "name": "सौमनस्य-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_073": {
+      "name": "सौमनस्य-सहगत ज्ञानविप्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_074": {
+      "name": "सौमनस्य-सहगत ज्ञानविप्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_075": {
+      "name": "उपेक्षा-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_076": {
+      "name": "उपेक्षा-सहगत ज्ञानसम्प्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_077": {
+      "name": "उपेक्षा-सहगत ज्ञानविप्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ।"
+    },
+    "CI_078": {
+      "name": "उपेक्षा-सहगत ज्ञानविप्रयुक्त असंखारिक महाक्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ।"
+    },
+    "CI_079": {
+      "name": "रूपावचर प्रथम ध्यान कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_080": {
+      "name": "रूपावचर द्वितीय ध्यान कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_081": {
+      "name": "रूपावचर तृतीय ध्यान कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_082": {
+      "name": "रूपावचर चतुर्थ ध्यान कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_083": {
+      "name": "रूपावचर पंचम ध्यान कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_084": {
+      "name": "रूपावचर प्रथम ध्यान विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_085": {
+      "name": "रूपावचर द्वितीय ध्यान विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_086": {
+      "name": "रूपावचर तृतीय ध्यान विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_087": {
+      "name": "रूपावचर चतुर्थ ध्यान विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_088": {
+      "name": "रूपावचर पंचम ध्यान विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_089": {
+      "name": "रूपावचर प्रथम ध्यान क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_090": {
+      "name": "रूपावचर द्वितीय ध्यान क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_091": {
+      "name": "रूपावचर तृतीय ध्यान क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_092": {
+      "name": "रूपावचर चतुर्थ ध्यान क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_093": {
+      "name": "रूपावचर पंचम ध्यान क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_094": {
+      "name": "अरूपावचर आकाशानानन्त्यायतन कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Ākāsānañcāyatana-kusalaa-cittaṃ।"
+    },
+    "CI_095": {
+      "name": "अरूपावचर विज्ञानानन्त्यायतन कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Viññāṇañcāyatana-kusalaa-cittaṃ।"
+    },
+    "CI_096": {
+      "name": "अरूपावचर आकिञ्चन्यायतन कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Ākiñcaññāyatana-kusalaa-cittaṃ।"
+    },
+    "CI_097": {
+      "name": "अरूपावचर नैवसंज्ञानासंज्ञायतन कुशल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ।"
+    },
+    "CI_098": {
+      "name": "अरूपावचर आकाशानानन्त्यायतन विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Ākāsānañcāyatana-vipakaa-cittaṃ।"
+    },
+    "CI_099": {
+      "name": "अरूपावचर विज्ञानानन्त्यायतन विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Viññāṇañcāyatana-vipakaa-cittaṃ।"
+    },
+    "CI_100": {
+      "name": "अरूपावचर आकिञ्चन्यायतन विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Ākiñcaññāyatana-vipakaa-cittaṃ।"
+    },
+    "CI_101": {
+      "name": "अरूपावचर नैवसंज्ञानासंज्ञायतन विपाक चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ।"
+    },
+    "CI_102": {
+      "name": "अरूपावचर आकाशानानन्त्यायतन क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Ākāsānañcāyatana-kiriyaa-cittaṃ।"
+    },
+    "CI_103": {
+      "name": "अरूपावचर विज्ञानानन्त्यायतन क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Viññāṇañcāyatana-kiriyaa-cittaṃ।"
+    },
+    "CI_104": {
+      "name": "अरूपावचर आकिञ्चन्यायतन क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Ākiñcaññāyatana-kiriyaa-cittaṃ।"
+    },
+    "CI_105": {
+      "name": "अरूपावचर नैवसंज्ञानासंज्ञायतन क्रिया चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ।"
+    },
+    "CI_106": {
+      "name": "प्रथम ध्यान स्रोतापत्ति मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-magga-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_107": {
+      "name": "द्वितीय ध्यान स्रोतापत्ति मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-magga-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_108": {
+      "name": "तृतीय ध्यान स्रोतापत्ति मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-magga-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_109": {
+      "name": "चतुर्थ ध्यान स्रोतापत्ति मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-magga-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_110": {
+      "name": "पंचम ध्यान स्रोतापत्ति मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-magga-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_111": {
+      "name": "प्रथम ध्यान सकृदागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_112": {
+      "name": "द्वितीय ध्यान सकृदागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-magga-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_113": {
+      "name": "तृतीय ध्यान सकृदागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-magga-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_114": {
+      "name": "चतुर्थ ध्यान सकृदागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-magga-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_115": {
+      "name": "पंचम ध्यान सकृदागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-magga-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_116": {
+      "name": "प्रथम ध्यान अनागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-magga-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_117": {
+      "name": "द्वितीय ध्यान अनागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-magga-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_118": {
+      "name": "तृतीय ध्यान अनागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-magga-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_119": {
+      "name": "चतुर्थ ध्यान अनागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-magga-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_120": {
+      "name": "पंचम ध्यान अनागामी मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-magga-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_121": {
+      "name": "प्रथम ध्यान अर्हत् मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-magga-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_122": {
+      "name": "द्वितीय ध्यान अर्हत् मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-magga-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_123": {
+      "name": "तृतीय ध्यान अर्हत् मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-magga-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_124": {
+      "name": "चतुर्थ ध्यान अर्हत् मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-magga-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_125": {
+      "name": "पंचम ध्यान अर्हत् मार्ग चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-magga-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_126": {
+      "name": "प्रथम ध्यान स्रोतापत्ति फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-phala-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_127": {
+      "name": "द्वितीय ध्यान स्रोतापत्ति फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-phala-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_128": {
+      "name": "तृतीय ध्यान स्रोतापत्ति फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-phala-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_129": {
+      "name": "चतुर्थ ध्यान स्रोतापत्ति फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-phala-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_130": {
+      "name": "पंचम ध्यान स्रोतापत्ति फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sotāpatti-phala-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_131": {
+      "name": "प्रथम ध्यान सकृदागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_132": {
+      "name": "द्वितीय ध्यान सकृदागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-phala-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_133": {
+      "name": "तृतीय ध्यान सकृदागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-phala-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_134": {
+      "name": "चतुर्थ ध्यान सकृदागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-phala-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_135": {
+      "name": "पंचम ध्यान सकृदागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Sakadāgāmi-phala-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_136": {
+      "name": "प्रथम ध्यान अनागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-phala-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_137": {
+      "name": "द्वितीय ध्यान अनागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-phala-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_138": {
+      "name": "तृतीय ध्यान अनागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-phala-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_139": {
+      "name": "चतुर्थ ध्यान अनागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-phala-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_140": {
+      "name": "पंचम ध्यान अनागामी फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Anāgāmi-phala-pañcama-jhāna-cittaṃ।"
+    },
+    "CI_141": {
+      "name": "प्रथम ध्यान अर्हत् फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-phala-paṭhama-jhāna-cittaṃ।"
+    },
+    "CI_142": {
+      "name": "द्वितीय ध्यान अर्हत् फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-phala-dutiya-jhāna-cittaṃ।"
+    },
+    "CI_143": {
+      "name": "तृतीय ध्यान अर्हत् फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-phala-tatiya-jhāna-cittaṃ।"
+    },
+    "CI_144": {
+      "name": "चतुर्थ ध्यान अर्हत् फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-phala-catuttha-jhāna-cittaṃ।"
+    },
+    "CI_145": {
+      "name": "पंचम ध्यान अर्हत् फल चित्त",
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Arahatta-phala-pañcama-jhāna-cittaṃ।"
+    }
+  },
+  "cetasikas": {
+    "CS_PHASSA": {
+      "name": "स्पर्श",
+      "shortName": "स्पर्श",
+      "description": "चित्त और आलम्बन का परस्पर सम्पर्क।"
+    },
+    "CS_VEDANA": {
+      "name": "वेदना",
+      "shortName": "वेदना",
+      "description": "आलम्बन का अनुभव या भोग करना।"
+    },
+    "CS_SANNA": {
+      "name": "संज्ञा",
+      "shortName": "संज्ञा",
+      "description": "आलम्बन के लक्षणों को पहचानना और स्मरण रखना।"
+    },
+    "CS_CETANA": {
+      "name": "चेतना",
+      "shortName": "चेतना",
+      "description": "सहजात धर्मों को प्रेरित करना और कर्म का निर्माण।"
+    },
+    "CS_EKAGGATA": {
+      "name": "एकाग्रता",
+      "shortName": "एकाग्रता",
+      "description": "चित्त का एक ही आलम्बन पर स्थिर रहना (समाधि)।"
+    },
+    "CS_JIVITINDRIYA": {
+      "name": "जीवितिन्द्रिय",
+      "shortName": "जीवितिन्द्रिय",
+      "description": "सहजात नाम धर्मों के जीवन और सातत्य की रक्षा करना।"
+    },
+    "CS_MANASIKARA": {
+      "name": "मनसिकार",
+      "shortName": "मनसिकार",
+      "description": "चित्त और सहजात धर्मों को आलम्बन की ओर प्रेरित करना।"
+    },
+    "CS_VITAKKA": {
+      "name": "वितर्क",
+      "shortName": "वितर्क",
+      "description": "चित्त को आलम्बन पर आरोपित करना।"
+    },
+    "CS_VICARA": {
+      "name": "विचार",
+      "shortName": "विचार",
+      "description": "चित्त को आलम्बन पर निरंतर घुमाना या संचरण कराना।"
+    },
+    "CS_ADHIMOKKHA": {
+      "name": "अधिमोक्ष",
+      "shortName": "अधिमोक्ष",
+      "description": "आलम्बन के प्रति निश्चित निर्णय या अधिमुक्ति।"
+    },
+    "CS_VIRIYA": {
+      "name": "वीर्य",
+      "shortName": "वीर्य",
+      "description": "साहस और उत्साह के साथ उद्योग करना।"
+    },
+    "CS_PITI": {
+      "name": "प्रीति",
+      "shortName": "प्रीति",
+      "description": "आलम्बन के प्रति उल्लास और प्रसन्नता।"
+    },
+    "CS_CHANDA": {
+      "name": "छन्द",
+      "shortName": "छन्द",
+      "description": "कार्य करने की इच्छा या अभिलाषा।"
+    },
+    "CS_MOHA": {
+      "name": "मोह",
+      "shortName": "मोह",
+      "description": "सत्य को न जानना, अविद्या का अन्धकार।"
+    },
+    "CS_AHIRIKA": {
+      "name": "अहीरीक",
+      "shortName": "अहीरीक",
+      "description": "पाप कर्म करने में लज्जा का अभाव।"
+    },
+    "CS_ANOTTAPPA": {
+      "name": "अनोत्तप्प",
+      "shortName": "अनोत्तप्प",
+      "description": "पाप के परिणामों से भय का अभाव।"
+    },
+    "CS_UDDHACCA": {
+      "name": "औद्धत्य",
+      "shortName": "औद्धत्य",
+      "description": "चित्त का चंचल और अशांत होना।"
+    },
+    "CS_LOBHA": {
+      "name": "लोभ",
+      "shortName": "लोभ",
+      "description": "आलम्बन में आसक्ति, तृष्णा और लिप्तता।"
+    },
+    "CS_DITTHI": {
+      "name": "दृष्टि",
+      "shortName": "दृष्टि",
+      "description": "मिथ्या दृष्टि, सत्य के विपरीत धारणा।"
+    },
+    "CS_MANA": {
+      "name": "मान",
+      "shortName": "मान",
+      "description": "अभिमान, अहंकार और तुलनात्मक घमंड।"
+    },
+    "CS_DOSA": {
+      "name": "द्वेष",
+      "shortName": "द्वेष",
+      "description": "क्रोध, घृणा और आलम्बन के प्रति विरोध।"
+    },
+    "CS_ISSA": {
+      "name": "ईर्ष्या",
+      "shortName": "ईर्ष्या",
+      "description": "दूसरों की समृद्धि और सफलता से डाह करना।"
+    },
+    "CS_MACCHARIYA": {
+      "name": "मात्सर्य",
+      "shortName": "मात्सर्य",
+      "description": "कंजूसी, अपने पास की वस्तु दूसरों को न देना।"
+    },
+    "CS_KUKKUCCA": {
+      "name": "कौकृत्य",
+      "shortName": "कौकृत्य",
+      "description": "किए हुए पाप या छूटे हुए पुण्य का पश्चाताप।"
+    },
+    "CS_THINA": {
+      "name": "स्त्यान",
+      "shortName": "स्त्यान",
+      "description": "चित्त की अकर्मण्यता और शिथिलता।"
+    },
+    "CS_MIDDHA": {
+      "name": "मिद्ध",
+      "shortName": "मिद्ध",
+      "description": "चेतसिकों का भारीपन और तन्द्रा।"
+    },
+    "CS_VICIKICCHA": {
+      "name": "विचिकित्सा",
+      "shortName": "विचिकित्सा",
+      "description": "सत्य, बुद्ध, धर्म और संघ पर संशय।"
+    },
+    "CS_SADDHA": {
+      "name": "श्रद्धा",
+      "shortName": "श्रद्धा",
+      "description": "सद्धर्म और त्रिरत्न में निर्मल विश्वास।"
+    },
+    "CS_SATI": {
+      "name": "स्मृति",
+      "shortName": "स्मृति",
+      "description": "सदाचार और कुशल धर्मों का स्मरण रखना।"
+    },
+    "CS_HIRI": {
+      "name": "ह्री",
+      "shortName": "ह्री",
+      "description": "स्वयं के गौरव से पाप से लज्जित होना।"
+    },
+    "CS_OTTAPPA": {
+      "name": "अपत्रपा",
+      "shortName": "अपत्रपा",
+      "description": "पाप के कटु परिणामों से भयभीत होना।"
+    },
+    "CS_ALOBHA": {
+      "name": "अलोभ",
+      "shortName": "अलोभ",
+      "description": "आसक्ति से मुक्ति और त्याग की भावना।"
+    },
+    "CS_ADOSA": {
+      "name": "अद्वेष",
+      "shortName": "अद्वेष",
+      "description": "क्रोध का अभाव, मैत्री और सहृदयता।"
+    },
+    "CS_TATRAMAJJHATTATA": {
+      "name": "तत्रमज्झत्तता",
+      "shortName": "तत्रमज्झत्तता",
+      "description": "चित्त और चेतसिकों में समता और सन्तुलन।"
+    },
+    "CS_KAYAPASSADDHI": {
+      "name": "कायप्रस्रब्धि",
+      "shortName": "कायप्रस्रब्धि",
+      "description": "चेतसिकों की शान्ति और विश्राम।"
+    },
+    "CS_CITTAPASSADDHI": {
+      "name": "चित्तप्रस्रब्धि",
+      "shortName": "चित्तप्रस्रब्धि",
+      "description": "चित्त की शान्ति और प्रशान्ति।"
+    },
+    "CS_KAYALAHUTA": {
+      "name": "कायलघुता",
+      "shortName": "कायलघुता",
+      "description": "चेतसिकों का हल्कापन।"
+    },
+    "CS_CITTALAHUTA": {
+      "name": "चित्तलघुता",
+      "shortName": "चित्तलघुता",
+      "description": "चित्त का हल्कापन और स्फूर्ति।"
+    },
+    "CS_KAYAMUDUTA": {
+      "name": "कायमुदुता",
+      "shortName": "कायमुदुता",
+      "description": "चेतसिकों की कोमलता और नमनीयता।"
+    },
+    "CS_CITTAMUDUTA": {
+      "name": "चित्तमुदुता",
+      "shortName": "चित्तमुदुता",
+      "description": "चित्त की कोमलता।"
+    },
+    "CS_KAYAKAMMANNATA": {
+      "name": "कायकर्मण्यता",
+      "shortName": "कायकर्मण्यता",
+      "description": "चेतसिकों की कार्यकुशलता।"
+    },
+    "CS_CITTAKAMMANNATA": {
+      "name": "चित्तकर्मण्यता",
+      "shortName": "चित्तकर्मण्यता",
+      "description": "चित्त की कार्य-उपयुक्तता।"
+    },
+    "CS_KAYAPAGUNNATA": {
+      "name": "कायप्रागुण्य",
+      "shortName": "कायप्रागुण्य",
+      "description": "चेतसिकों की प्रवीणता।"
+    },
+    "CS_CITTAPAGUNNATA": {
+      "name": "चित्तप्रागुण्य",
+      "shortName": "चित्तप्रागुण्य",
+      "description": "चित्त की प्रवीणता।"
+    },
+    "CS_KAYUJUKATA": {
+      "name": "कायऋजुता",
+      "shortName": "कायऋजुता",
+      "description": "चेतसिकों की सरलता और निष्कपटता।"
+    },
+    "CS_CITTUJUKATA": {
+      "name": "चित्तऋजुता",
+      "shortName": "चित्तऋजुता",
+      "description": "चित्त की सरलता।"
+    },
+    "CS_SAMMAVACA": {
+      "name": "सम्यग्वाक्",
+      "shortName": "सम्यग्वाक्",
+      "description": "चार प्रकार के वाक्-दुश्चरितों से विरति।"
+    },
+    "CS_SAMMAKAMMANTA": {
+      "name": "सम्यक्-कर्मान्त",
+      "shortName": "सम्यक्-कर्मान्त",
+      "description": "तीन प्रकार के काय-दुश्चरितों से विरति।"
+    },
+    "CS_SAMMAAJIVA": {
+      "name": "सम्यगाजीव",
+      "shortName": "सम्यगाजीव",
+      "description": "अधर्म और पाप से आजीविका कमाने से विरति।"
+    },
+    "CS_KARUNA": {
+      "name": "करुणा",
+      "shortName": "करुणा",
+      "description": "दुःखियों के दुःख को दूर करने की इच्छा।"
+    },
+    "CS_MUDITA": {
+      "name": "मुदिता",
+      "shortName": "मुदिता",
+      "description": "दूसरों के सुख और सफलता में प्रसन्न होना।"
+    },
+    "CS_PANNA": {
+      "name": "प्रज्ञेन्द्रिय",
+      "shortName": "प्रज्ञेन्द्रिय",
+      "description": "यथार्थ ज्ञान और तत्त्व-बोध कराने वाली प्रज्ञा।"
+    }
+  },
+  "rupas": {
+    "RP_001": {
+      "name": "पृथ्वी धातु",
+      "shortName": "पृथ्वी",
+      "description": "कठिनता या कोमलता का लक्षण, जो अन्य रूपों का आधार है।"
+    },
+    "RP_002": {
+      "name": "आपो धातु",
+      "shortName": "आपो",
+      "description": "द्रवता या संसंजन (चिपकाने) का लक्षण।"
+    },
+    "RP_003": {
+      "name": "तेजो धातु",
+      "shortName": "तेजो",
+      "description": "उष्णता या शीतलता का लक्षण, जो परिपक्व करता है।"
+    },
+    "RP_004": {
+      "name": "वायोधातु",
+      "shortName": "वायु",
+      "description": "प्रसारण और गतिशीलता का लक्षण।"
+    },
+    "RP_005": {
+      "name": "चक्षुप्रसाद",
+      "shortName": "चक्षुप्रसाद",
+      "description": "रूप (दृश्य) को ग्रहण करने वाला पारदर्शी इन्द्रिय रूप।"
+    },
+    "RP_006": {
+      "name": "श्रोत्रप्रसाद",
+      "shortName": "श्रोत्रप्रसाद",
+      "description": "ध्वनि को ग्रहण करने वाला पारदर्शी इन्द्रिय रूप।"
+    },
+    "RP_007": {
+      "name": "घ्राणप्रसाद",
+      "shortName": "घ्राणप्रसाद",
+      "description": "गन्ध को ग्रहण करने वाला इन्द्रिय रूप।"
+    },
+    "RP_008": {
+      "name": "जिह्वाप्रसाद",
+      "shortName": "जिह्वाप्रसाद",
+      "description": "रस को ग्रहण करने वाला इन्द्रिय रूप।"
+    },
+    "RP_009": {
+      "name": "कायप्रसाद",
+      "shortName": "कायप्रसाद",
+      "description": "स्पर्श को ग्रहण करने वाला सर्वशरीरव्यापी इन्द्रिय रूप।"
+    },
+    "RP_010": {
+      "name": "रूपाळम्बन",
+      "shortName": "रूप",
+      "description": "चक्षु द्वारा देखा जाने वाला वर्ण और प्रकाश।"
+    },
+    "RP_011": {
+      "name": "शब्दालम्बन",
+      "shortName": "शब्द",
+      "description": "कर्ण द्वारा सुनी जाने वाली ध्वनि।"
+    },
+    "RP_012": {
+      "name": "गन्धालम्बन",
+      "shortName": "गन्ध",
+      "description": "नासिका द्वारा सूंघी जाने वाली गन्ध।"
+    },
+    "RP_013": {
+      "name": "रसालम्बन",
+      "shortName": "रस",
+      "description": "रसना द्वारा आस्वादित स्वाद।"
+    },
+    "RP_014": {
+      "name": "स्त्रीन्द्रिय",
+      "shortName": "स्त्रीन्द्रिय",
+      "description": "स्त्री के शारीरिक और स्वभावगत लक्षणों को निर्धारित करने वाला रूप।"
+    },
+    "RP_015": {
+      "name": "पुरुषेन्द्रिय",
+      "shortName": "पुरुषेन्द्रिय",
+      "description": "पुरुष के शारीरिक और स्वभावगत लक्षणों को निर्धारित करने वाला रूप।"
+    },
+    "RP_016": {
+      "name": "हृदयवस्तु",
+      "shortName": "हृदयवस्तु",
+      "description": "मनोधातु और मनोविज्ञानधातु का भौतिक आश्रय।"
+    },
+    "RP_017": {
+      "name": "रूपजीवितिन्द्रिय",
+      "shortName": "रूपजीवित",
+      "description": "कर्मज रूपों की जीवन-शक्ति और स्थिति को बनाए रखने वाला रूप।"
+    },
+    "RP_018": {
+      "name": "कवलीकाराहार",
+      "shortName": "आहार",
+      "description": "भोजन में उपस्थित पोषक तत्व (ओज) जो शरीर का पोषण करता है।"
+    },
+    "RP_019": {
+      "name": "आकाशधातु",
+      "shortName": "आकाश",
+      "description": "रूप-कलापों के बीच का सीमा-निर्धारक स्थान।"
+    },
+    "RP_020": {
+      "name": "कायविज्ञप्ति",
+      "shortName": "कायविज्ञप्ति",
+      "description": "शरीर की चेष्टा द्वारा मन के भाव प्रकट करने वाला रूप।"
+    },
+    "RP_021": {
+      "name": "वाग्विज्ञप्ति",
+      "shortName": "वाग्विज्ञप्ति",
+      "description": "वाणी द्वारा मन के विचार प्रकट करने वाला रूप।"
+    },
+    "RP_022": {
+      "name": "रूपलघुता",
+      "shortName": "रूपलघुता",
+      "description": "शरीर के रूपों का हल्कापन और फुर्तीलापन।"
+    },
+    "RP_023": {
+      "name": "रूपमुदुता",
+      "shortName": "रूपमुदुता",
+      "description": "शरीर के रूपों की कोमलता और लचीलापन।"
+    },
+    "RP_024": {
+      "name": "रूपकर्मण्यता",
+      "shortName": "रूपकर्मण्यता",
+      "description": "शरीर के रूपों की कार्यक्षमता और सुगमता।"
+    },
+    "RP_025": {
+      "name": "रूपोपचय",
+      "shortName": "रूपोपचय",
+      "description": "रूपों का प्रारम्भिक उत्पादन और वृद्धि।"
+    },
+    "RP_026": {
+      "name": "रूपसन्तति",
+      "shortName": "रूपसन्तति",
+      "description": "रूपों का निरन्तर प्रवाह और सातत्य।"
+    },
+    "RP_027": {
+      "name": "रूपजरता",
+      "shortName": "रूपजरता",
+      "description": "रूपों की क्षीणता, जीर्णता और क्षय।"
+    },
+    "RP_028": {
+      "name": "रूपानित्यता",
+      "shortName": "रूपानित्यता",
+      "description": "रूपों का सर्वथा विनाश और अनित्यता।"
+    }
+  },
+  "paccayas": {
+    "PC_01": {
+      "name": "हेतुक प्रत्यय",
+      "shortName": "हेतु",
+      "definition": "छह हेतु (लोभ, द्वेष, मोह, अलोभ, अद्वेष, अमोह) जो वृक्ष की जड़ के समान धर्मों को स्थिर करते हैं।"
+    },
+    "PC_02": {
+      "name": "आलम्बन प्रत्यय",
+      "shortName": "आलम्बन",
+      "definition": "छह आलम्बन (रूप, शब्द, आदि) जो लाठी के समान चित्त का सहारा बनते हैं।"
+    },
+    "PC_03": {
+      "name": "अधिपति प्रत्यय",
+      "shortName": "अधिपति",
+      "definition": "छन्द, वीर्य, चित्त, मीमांसा जो चक्रवर्ती राजा के समान प्रभुत्व रखते हैं।"
+    },
+    "PC_04": {
+      "name": "अनन्तर प्रत्यय",
+      "shortName": "अनन्तर",
+      "definition": "पूर्व चित्त बिना किसी अन्तराल के उत्तर चित्त को उत्पन्न करता है।"
+    },
+    "PC_05": {
+      "name": "समनन्तर प्रत्यय",
+      "shortName": "समनन्तर",
+      "definition": "यथाक्रम और सुव्यवस्थित रूप से बिना व्यवधान उत्तर धर्मों का उत्पादन।"
+    },
+    "PC_06": {
+      "name": "सहजात प्रत्यय",
+      "shortName": "सहजात",
+      "definition": "एक साथ उत्पन्न धर्म जैसे दीपक और उसका प्रकाश।"
+    },
+    "PC_07": {
+      "name": "अन्योन्य प्रत्यय",
+      "shortName": "अन्योन्य",
+      "definition": "तीन डंडों की तिपाई के समान परस्पर निर्भर होना।"
+    },
+    "PC_08": {
+      "name": "निश्रय प्रत्यय",
+      "shortName": "निश्रय",
+      "definition": "जैसे पृथ्वी वृक्षों को आधार देती है, वैसे ही आधार बनना।"
+    },
+    "PC_09": {
+      "name": "उपनिश्रय प्रत्यय",
+      "shortName": "उपनिश्रय",
+      "definition": "अत्यन्त बलवान कारण जो दृढ़तापूर्वक फल उत्पन्न करता है।"
+    },
+    "PC_10": {
+      "name": "पुरेजात प्रत्यय",
+      "shortName": "पुरेजात",
+      "definition": "पहले उत्पन्न होकर विद्यमान रहने वाला आधार या विषय।"
+    },
+    "PC_11": {
+      "name": "पश्चाज्जात प्रत्यय",
+      "shortName": "पश्चाज्जात",
+      "definition": "बाद में उत्पन्न चित्त जो पूर्व-उत्पन्न शरीर को पोषण देता है।"
+    },
+    "PC_12": {
+      "name": "आसेवन प्रत्यय",
+      "shortName": "आसेवन",
+      "definition": "बार-बार अभ्यास और पुनरावृत्ति से शक्ति की वृद्धि।"
+    },
+    "PC_13": {
+      "name": "कर्म प्रत्यय",
+      "shortName": "कर्म",
+      "definition": "कुशल और अकुशल चेतना जो विपाक फल उत्पन्न करती है।"
+    },
+    "PC_14": {
+      "name": "विपाक प्रत्यय",
+      "shortName": "विपाक",
+      "definition": "कर्मफल रूप विपाक धर्म जो शान्त भाव से स्थित रहते हैं।"
+    },
+    "PC_15": {
+      "name": "आहार प्रत्यय",
+      "shortName": "आहार",
+      "definition": "कवलीकाराहार और नाम-आहार जो शरीर और मन का पोषण करते हैं।"
+    },
+    "PC_16": {
+      "name": "इन्द्रिय प्रत्यय",
+      "shortName": "इन्द्रिय",
+      "definition": "इन्द्रियाँ जो अपने-अपने विषय में आधिपत्य रखती हैं।"
+    },
+    "PC_17": {
+      "name": "ध्यान प्रत्यय",
+      "shortName": "ध्यान",
+      "definition": "ध्यान के अङ्ग जो चित्त को आलम्बन में तल्लीन करते हैं।"
+    },
+    "PC_18": {
+      "name": "मार्ग प्रत्यय",
+      "shortName": "मार्ग",
+      "definition": "मार्ग के अङ्ग जो लक्ष्य (सुगति, दुर्गति या निर्वाण) की ओर ले जाते हैं।"
+    },
+    "PC_19": {
+      "name": "सम्प्रयुक्त प्रत्यय",
+      "shortName": "सम्प्रयुक्त",
+      "definition": "जल और दूध के समान चित्त और चेतसिकों का एकरूप होकर मिलना।"
+    },
+    "PC_20": {
+      "name": "विप्रयुक्त प्रत्यय",
+      "shortName": "विप्रयुक्त",
+      "definition": "जल और तेल के समान भिन्न स्वभाव वाले नाम और रूप का परस्पर सहयोग।"
+    },
+    "PC_21": {
+      "name": "अस्ति प्रत्यय",
+      "shortName": "अस्ति",
+      "definition": "वर्तमान में विद्यमान रहते हुए अन्य धर्मों का उपकार करना।"
+    },
+    "PC_22": {
+      "name": "नास्ति प्रत्यय",
+      "shortName": "नास्ति",
+      "definition": "पूर्व धर्म के अभाव (विलोप) द्वारा उत्तर धर्म के उदय में सहयोग।"
+    },
+    "PC_23": {
+      "name": "विगत प्रत्यय",
+      "shortName": "विगत",
+      "definition": "कारण का सर्वथा विलीन हो जाना जिससे कार्य का उदय हो सके।"
+    },
+    "PC_24": {
+      "name": "अविगत प्रत्यय",
+      "shortName": "अविगत",
+      "definition": "कारण के अप्रस्थान (उपस्थित रहने) द्वारा कार्य का धारण।"
+    }
+  },
+  "paticcas": {
+    "PD_01": {
+      "name": "अविद्या",
+      "shortName": "अविद्या",
+      "description": "चार आर्य सत्यों और प्रतीत्यसमुत्पाद का अज्ञान।"
+    },
+    "PD_02": {
+      "name": "संस्कार",
+      "shortName": "संस्कार",
+      "description": "अविद्या के कारण किए जाने वाले कर्म (पुण्य, अपุण्य, आनेञ्ज)।"
+    },
+    "PD_03": {
+      "name": "विज्ञान",
+      "shortName": "विज्ञान",
+      "description": "पुनर्जन्म को जोड़ने वाला प्रतिसन्धि विज्ञान।"
+    },
+    "PD_04": {
+      "name": "नाम-रूप",
+      "shortName": "नामरूप",
+      "description": "मन (वेदनादि) और शरीर (भौतिक रूप) का संयोजन।"
+    },
+    "PD_05": {
+      "name": "षडायतन",
+      "shortName": "षडायतन",
+      "description": "छह आन्तरिक इन्द्रिय द्वार (चक्षु आदि)।"
+    },
+    "PD_06": {
+      "name": "स्पर्श",
+      "shortName": "स्पर्श",
+      "description": "इन्द्रिय, विषय और विज्ञान का संगम।"
+    },
+    "PD_07": {
+      "name": "वेदना",
+      "shortName": "वेदना",
+      "description": "सुख, दुःख और उपेक्षा का संवेदन।"
+    },
+    "PD_08": {
+      "name": "तृष्णा",
+      "shortName": "तृष्णा",
+      "description": "विषयों के उपभोग की उत्कट प्यास।"
+    },
+    "PD_09": {
+      "name": "उपादान",
+      "shortName": "उपादान",
+      "description": "भोगों, दृष्टियों और आत्मभाव में प्रगाढ़ आसक्ति।"
+    },
+    "PD_10": {
+      "name": "भव",
+      "shortName": "भव",
+      "description": "पुनर्जन्म का कारणभूत कर्म (कर्मभव) और उत्पत्ति (उत्पत्तिभव)।"
+    },
+    "PD_11": {
+      "name": "जाति",
+      "shortName": "जन्म",
+      "description": "नये भव में स्कन्धों का प्रादुर्भाव।"
+    },
+    "PD_12": {
+      "name": "जरा-मरण",
+      "shortName": "जरा-मरण",
+      "description": "स्कन्धों का जीर्ण होना (जरा) और विनाश (मृत्यु)।"
+    }
+  },
+  "kammas": {
+    "KM_T_01": {
+      "name": "दृष्टधर्मवेदनीय कर्म",
+      "shortName": "दृष्टधर्मवेदनीय",
+      "description": "वर्तमान जीवन में ही फल देने वाला कर्म।"
+    },
+    "KM_T_02": {
+      "name": "उपपद्यवेदनीय कर्म",
+      "shortName": "उपपद्यवेदनीय",
+      "description": "अगले ही जन्म में फल देने वाला कर्म।"
+    },
+    "KM_T_03": {
+      "name": "अपरापर्यरवेदनीय कर्म",
+      "shortName": "अपरापर्यरवेदनीय",
+      "description": "तीसरे जन्म से निर्वाण पर्यन्त कभी भी फल देने वाला कर्म।"
+    },
+    "KM_T_04": {
+      "name": "अहोसि कर्म",
+      "shortName": "अहोसि कर्म",
+      "description": "जो कर्म फल देने का अवसर खो चुका हो, निष्फल कर्म।"
+    },
+    "KM_U_01": {
+      "name": "जनक कर्म",
+      "shortName": "जनक",
+      "description": "जन्म के समय प्रतिसन्धि और रूपों को उत्पन्न करने वाला कर्म।"
+    },
+    "KM_U_02": {
+      "name": "उपस्तम्भक कर्म",
+      "shortName": "उपस्तम्भक",
+      "description": "जनक कर्म के फल को सहारा और वृद्धि देने वाला कर्म।"
+    },
+    "KM_U_03": {
+      "name": "उपपीड़क कर्म",
+      "shortName": "उपपीड़क",
+      "description": "जनक कर्म के फल को बाधित या दुर्बल करने वाला कर्म।"
+    },
+    "KM_U_04": {
+      "name": "उपघातक कर्म",
+      "shortName": "उपघातक",
+      "description": "पूर्व कर्म के प्रभाव को सर्वथा नष्ट कर अपना नया फल देने वाला कर्म।"
+    },
+    "KM_P_01": {
+      "name": "गुरुक कर्म",
+      "shortName": "गुरुक",
+      "description": "अत्यन्त भारी कर्म (आनन्तर्य पाप या ध्यान) जो सर्वप्रथम फल देता है।"
+    },
+    "KM_P_02": {
+      "name": "आसन्न कर्म",
+      "shortName": "आसन्न",
+      "description": "मृत्युकाल के समीप किया गया या स्मरण किया गया कर्म।"
+    },
+    "KM_P_03": {
+      "name": "आचीर्ण कर्म",
+      "shortName": "आचीर्ण",
+      "description": "निरन्तर अभ्यास द्वारा स्वभाव बना हुआ कर्म।"
+    },
+    "KM_P_04": {
+      "name": "कटत्ता कर्म",
+      "shortName": "कटत्ता",
+      "description": "पूर्व तीन के अभाव में फल देने वाला सामान्य कर्म।"
+    },
+    "KM_R_01": {
+      "name": "कामावचर अकुशल कर्म",
+      "shortName": "कामावचर अकुशल",
+      "description": "10 अकुशल कर्मपथ जो दुर्गति में जन्म देते हैं।"
+    },
+    "KM_R_02": {
+      "name": "कामावचर कुशल कर्म",
+      "shortName": "कामावचर कुशल",
+      "description": "10 कुशल कर्मपथ जो मनुष्य और देवलोक में सुख देते हैं।"
+    },
+    "KM_R_03": {
+      "name": "रूपावचर कुशल कर्म",
+      "shortName": "रूपावचर कुशल",
+      "description": "रूप ध्यान जो 16 ब्रह्मलोकों में जन्म देते हैं।"
+    },
+    "KM_R_04": {
+      "name": "अरूपावचर कुशल कर्म",
+      "shortName": "अरूपावचर कुशल",
+      "description": "चार अरूप ध्यान जो 4 अरूप लोकों में जन्म देते हैं।"
+    }
+  },
+  "vithis": {
+    "VT_NGU_MON_RATLON": {
+      "name": "अतिमहन्तालम्बन पञ्चद्वार-वीथि",
+      "shortName": "पञ्चद्वार अतिमहन्त",
+      "description": "17 चित्त-क्षणों वाली पूर्ण पञ्चद्वार वीथि।"
+    },
+    "VT_NGU_MON_LON": {
+      "name": "महंत-आलम्बन पञ्चद्वार-वीथि",
+      "shortName": "पञ्चद्वार महंत",
+      "description": "पाँच इन्द्रियों के द्वार में सात जवन सहित परन्तु तदालम्बन रहित वीथि।"
+    },
+    "VT_Y_MON": {
+      "name": "मनोद्वार-वीथि",
+      "shortName": "मनोद्वार वीथि",
+      "description": "मन के द्वार से धर्म-आलम्बन को ग्रहण करने वाली वीथि प्रक्रिया।"
+    },
+    "VT_VITHIMUTTA": {
+      "name": "वीथिमुक्त चित्त",
+      "shortName": "वीथिमुक्त",
+      "description": "इन्द्रिय-द्वारों से रहित होकर कार्य करने वाले प्रतिसन्धि, भवङ्ग और च्युति चित्त।"
+    }
+  },
+  "studyModules": {
+    "M1_BASICS": {
+      "title": "सर्वचित्तसाधारण चेतसिक (7)",
+      "description": "प्रत्येक चित्त में उत्पन्न होने वाले 7 सर्वचित्तसाधारण चेतसिक।",
+      "translationStatus": "reviewed"
+    },
+    "M11_BIET_CANH": {
+      "title": "प्रकीर्णक चेतसिक (6)",
+      "description": "विभिन्न चित्तों में प्रवृत्त होने वाले 6 प्रकीर्णक चेतसिक।",
+      "translationStatus": "reviewed"
+    },
+    "M2_SI_PHAN": {
+      "title": "मोह-चतुष्क चेतसिक (4)",
+      "description": "मोह, अहीरीक, अनोत्तप्प और औद्धत्य — 4 अकुशल साधारण चेतसिक।",
+      "translationStatus": "reviewed"
+    },
+    "M4_AKUSALA": {
+      "title": "बारह अकुशल चित्त",
+      "description": "8 लोभमूल, 2 द्वेषमूल और 2 मोहमूल चित्त।",
+      "translationStatus": "reviewed"
+    },
+    "M12_VO_NHAN": {
+      "title": "अठारह अहेतुक चित्त",
+      "description": "7 अकुशल विपाक, 8 कुशल विपाक और 3 अहेतुक क्रिया चित्त।",
+      "translationStatus": "reviewed"
+    },
+    "M3_TINH_HAO_BIEN_HANH": {
+      "title": "शोभन साधारण चेतसिक (19)",
+      "description": "सभी शोभन चित्तों में सहजात होने वाले 19 शोभन साधारण चेतसिक।",
+      "translationStatus": "reviewed"
+    },
+    "M5_SOBHANA": {
+      "title": "चौबीस कामावचर शोभन चित्त",
+      "description": "8 महाकुशल, 8 महाविपाक और 8 महाक्रिया चित्त।",
+      "translationStatus": "reviewed"
+    },
+    "M13_SAC_GIOI": {
+      "title": "पंद्रह रूपावचर चित्त",
+      "description": "रूप ध्यान के कुशल, विपाक और क्रिया चित्त।",
+      "translationStatus": "reviewed"
+    },
+    "M14_VO_SAC_GIOI": {
+      "title": "बारह अरूपावचर चित्त",
+      "description": "चार अरूप समापत्तियों के कुशल, विपाक और क्रिया चित्त।",
+      "translationStatus": "reviewed"
+    },
+    "M7_SIEU_THE": {
+      "title": "लोकोत्तर चित्त",
+      "description": "निर्वाण को आलम्बन बनाने वाले 4 मार्ग चित्त और 4 फल चित्त।",
+      "translationStatus": "reviewed"
+    },
+    "M15_TAM_SO_PHOI_HOP": {
+      "title": "चेतसिक सम्प्रयोग",
+      "description": "52 चेतसिकों का विभिन्न चित्तों के साथ संयोजन।",
+      "translationStatus": "reviewed"
+    },
+    "M6_NGHIEP": {
+      "title": "कर्म संग्रह",
+      "description": "चेतना और 16 प्रकार के कर्मों का वर्गीकरण।",
+      "translationStatus": "reviewed"
+    },
+    "M16_NGUOI_VA_COI": {
+      "title": "पुद्गल और भूमि",
+      "description": "12 प्रकार के पुद्गल और 31 लोक भूमियाँ।",
+      "translationStatus": "reviewed"
+    },
+    "M8_NHAN_DUYEN": {
+      "title": "प्रतीत्यसमुत्पाद",
+      "description": "12 अङ्गों वाला भवचक्र और प्रतीत्यसमुत्पाद नियम।",
+      "translationStatus": "reviewed"
+    },
+    "M17_DUYEN_CHI_TIET": {
+      "title": "पट्टान (24 प्रत्यय)",
+      "description": "24 प्रत्यय संबंधों का गहन विश्लेषण।",
+      "translationStatus": "reviewed"
+    },
+    "M9_SAC_PHAP": {
+      "title": "रूप संग्रह",
+      "description": "4 महाभूत और 24 उपादाय रूप — कुल 28 रूप।",
+      "translationStatus": "reviewed"
+    },
+    "M10_LO_TRINH": {
+      "title": "चित्त-वीथि",
+      "description": "पञ्चद्वार और मनोद्वार चित्त वीथि की प्रक्रिया।",
+      "translationStatus": "reviewed"
+    }
+  }
 }

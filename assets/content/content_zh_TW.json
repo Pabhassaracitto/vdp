@@ -2,6 +2,2732 @@
   "locale": "zh_TW",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "translationStatus": "draft",
-  "note": "Generated from the translation worksheet by tool/content/init_locale.py --strip. Untranslated fields are omitted on purpose: they resolve through the runtime fallback chain to English, then to the Vietnamese source."
+  "lessonTranslationStatus": "reviewed",
+  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+  "cittas": {
+    "CI_001": {
+      "name": "悅俱邪見相應無行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
+    },
+    "CI_002": {
+      "name": "悅俱邪見相應有行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
+    },
+    "CI_003": {
+      "name": "悅俱邪見不相應無行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
+    },
+    "CI_004": {
+      "name": "悅俱邪見不相應有行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
+    },
+    "CI_005": {
+      "name": "捨俱邪見相應無行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
+    },
+    "CI_006": {
+      "name": "捨俱邪見相應有行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
+    },
+    "CI_007": {
+      "name": "捨俱邪見不相應無行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
+    },
+    "CI_008": {
+      "name": "捨俱邪見不相應有行貪根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
+    },
+    "CI_009": {
+      "name": "憂俱瞋恚相應無行瞋根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。"
+    },
+    "CI_010": {
+      "name": "憂俱瞋恚相應有行瞋根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。"
+    },
+    "CI_011": {
+      "name": "捨俱疑相應癡根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。"
+    },
+    "CI_012": {
+      "name": "捨俱掉舉相應癡根心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。"
+    },
+    "CI_013": {
+      "name": "捨俱眼識（不善異熟）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ。"
+    },
+    "CI_014": {
+      "name": "捨俱耳識（不善異熟）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ。"
+    },
+    "CI_015": {
+      "name": "捨俱鼻識（不善異熟）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ。"
+    },
+    "CI_016": {
+      "name": "捨俱舌識（不善異熟）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ。"
+    },
+    "CI_017": {
+      "name": "苦俱身識（不善異熟）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ。"
+    },
+    "CI_018": {
+      "name": "捨俱領受心（不善異熟）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ。"
+    },
+    "CI_019": {
+      "name": "捨俱推度心（不善異熟）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ。"
+    },
+    "CI_020": {
+      "name": "捨俱眼識（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ。"
+    },
+    "CI_021": {
+      "name": "捨俱耳識（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ。"
+    },
+    "CI_022": {
+      "name": "捨俱鼻識（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ。"
+    },
+    "CI_023": {
+      "name": "捨俱舌識（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ。"
+    },
+    "CI_024": {
+      "name": "樂俱身識（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ。"
+    },
+    "CI_025": {
+      "name": "捨俱領受心（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ。"
+    },
+    "CI_026": {
+      "name": "悅俱推度心（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
+    },
+    "CI_027": {
+      "name": "捨俱推度心（善異熟無因）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
+    },
+    "CI_028": {
+      "name": "捨俱五門轉向心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ。"
+    },
+    "CI_029": {
+      "name": "捨俱意門轉向心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ。"
+    },
+    "CI_030": {
+      "name": "悅俱生笑心（阿羅漢笑心）",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ hasituppāda-cittaṃ。"
+    },
+    "CI_055": {
+      "name": "悅俱智相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_056": {
+      "name": "悅俱智相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_057": {
+      "name": "悅俱智不相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_058": {
+      "name": "悅俱智不相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_059": {
+      "name": "捨俱智相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_060": {
+      "name": "捨俱智相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_061": {
+      "name": "捨俱智不相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_062": {
+      "name": "捨俱智不相應無行大善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_063": {
+      "name": "悅俱智相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_064": {
+      "name": "悅俱智相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_065": {
+      "name": "悅俱智不相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_066": {
+      "name": "悅俱智不相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_067": {
+      "name": "捨俱智相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_068": {
+      "name": "捨俱智相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_069": {
+      "name": "捨俱智不相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_070": {
+      "name": "捨俱智不相應無行大異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_071": {
+      "name": "悅俱智相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_072": {
+      "name": "悅俱智相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_073": {
+      "name": "悅俱智不相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_074": {
+      "name": "悅俱智不相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_075": {
+      "name": "捨俱智相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_076": {
+      "name": "捨俱智相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_077": {
+      "name": "捨俱智不相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
+    },
+    "CI_078": {
+      "name": "捨俱智不相應無行大唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
+    },
+    "CI_079": {
+      "name": "色界初禅善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_080": {
+      "name": "色界第二禅善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_081": {
+      "name": "色界第三禅善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_082": {
+      "name": "色界第四禅善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_083": {
+      "name": "色界第五禅善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_084": {
+      "name": "色界初禅異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_085": {
+      "name": "色界第二禅異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_086": {
+      "name": "色界第三禅異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_087": {
+      "name": "色界第四禅異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_088": {
+      "name": "色界第五禅異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_089": {
+      "name": "色界初禅唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_090": {
+      "name": "色界第二禅唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_091": {
+      "name": "色界第三禅唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_092": {
+      "name": "色界第四禅唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_093": {
+      "name": "色界第五禅唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_094": {
+      "name": "無色界空无边处善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Ākāsānañcāyatana-kusalaa-cittaṃ。"
+    },
+    "CI_095": {
+      "name": "無色界识无边处善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Viññāṇañcāyatana-kusalaa-cittaṃ。"
+    },
+    "CI_096": {
+      "name": "無色界无所有处善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Ākiñcaññāyatana-kusalaa-cittaṃ。"
+    },
+    "CI_097": {
+      "name": "無色界非想非非想处善心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ。"
+    },
+    "CI_098": {
+      "name": "無色界空无边处異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Ākāsānañcāyatana-vipakaa-cittaṃ。"
+    },
+    "CI_099": {
+      "name": "無色界识无边处異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Viññāṇañcāyatana-vipakaa-cittaṃ。"
+    },
+    "CI_100": {
+      "name": "無色界无所有处異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Ākiñcaññāyatana-vipakaa-cittaṃ。"
+    },
+    "CI_101": {
+      "name": "無色界非想非非想处異熟心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ。"
+    },
+    "CI_102": {
+      "name": "無色界空无边处唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Ākāsānañcāyatana-kiriyaa-cittaṃ。"
+    },
+    "CI_103": {
+      "name": "無色界识无边处唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Viññāṇañcāyatana-kiriyaa-cittaṃ。"
+    },
+    "CI_104": {
+      "name": "無色界无所有处唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Ākiñcaññāyatana-kiriyaa-cittaṃ。"
+    },
+    "CI_105": {
+      "name": "無色界非想非非想处唯作心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ。"
+    },
+    "CI_106": {
+      "name": "初禅須陀洹道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-magga-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_107": {
+      "name": "第二禅須陀洹道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-magga-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_108": {
+      "name": "第三禅須陀洹道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-magga-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_109": {
+      "name": "第四禅須陀洹道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-magga-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_110": {
+      "name": "第五禅須陀洹道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-magga-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_111": {
+      "name": "初禅斯陀含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_112": {
+      "name": "第二禅斯陀含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-magga-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_113": {
+      "name": "第三禅斯陀含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-magga-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_114": {
+      "name": "第四禅斯陀含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-magga-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_115": {
+      "name": "第五禅斯陀含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-magga-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_116": {
+      "name": "初禅阿那含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-magga-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_117": {
+      "name": "第二禅阿那含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-magga-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_118": {
+      "name": "第三禅阿那含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-magga-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_119": {
+      "name": "第四禅阿那含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-magga-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_120": {
+      "name": "第五禅阿那含道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-magga-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_121": {
+      "name": "初禅阿羅漢道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-magga-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_122": {
+      "name": "第二禅阿羅漢道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-magga-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_123": {
+      "name": "第三禅阿羅漢道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-magga-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_124": {
+      "name": "第四禅阿羅漢道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-magga-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_125": {
+      "name": "第五禅阿羅漢道心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-magga-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_126": {
+      "name": "初禅須陀洹果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-phala-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_127": {
+      "name": "第二禅須陀洹果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-phala-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_128": {
+      "name": "第三禅須陀洹果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-phala-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_129": {
+      "name": "第四禅須陀洹果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-phala-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_130": {
+      "name": "第五禅須陀洹果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sotāpatti-phala-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_131": {
+      "name": "初禅斯陀含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_132": {
+      "name": "第二禅斯陀含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-phala-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_133": {
+      "name": "第三禅斯陀含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-phala-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_134": {
+      "name": "第四禅斯陀含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-phala-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_135": {
+      "name": "第五禅斯陀含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Sakadāgāmi-phala-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_136": {
+      "name": "初禅阿那含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-phala-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_137": {
+      "name": "第二禅阿那含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-phala-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_138": {
+      "name": "第三禅阿那含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-phala-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_139": {
+      "name": "第四禅阿那含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-phala-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_140": {
+      "name": "第五禅阿那含果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Anāgāmi-phala-pañcama-jhāna-cittaṃ。"
+    },
+    "CI_141": {
+      "name": "初禅阿羅漢果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-phala-paṭhama-jhāna-cittaṃ。"
+    },
+    "CI_142": {
+      "name": "第二禅阿羅漢果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-phala-dutiya-jhāna-cittaṃ。"
+    },
+    "CI_143": {
+      "name": "第三禅阿羅漢果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-phala-tatiya-jhāna-cittaṃ。"
+    },
+    "CI_144": {
+      "name": "第四禅阿羅漢果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-phala-catuttha-jhāna-cittaṃ。"
+    },
+    "CI_145": {
+      "name": "第五禅阿羅漢果心",
+      "doctrinalNote": "阿毗達摩法數之心識分類：Arahatta-phala-pañcama-jhāna-cittaṃ。"
+    }
+  },
+  "cetasikas": {
+    "CS_PHASSA": {
+      "name": "觸",
+      "shortName": "觸",
+      "description": "心與所緣相接觸。"
+    },
+    "CS_VEDANA": {
+      "name": "受",
+      "shortName": "受",
+      "description": "領納與感受所緣之味。"
+    },
+    "CS_SANNA": {
+      "name": "想",
+      "shortName": "想",
+      "description": "標記者、記取所緣相狀。"
+    },
+    "CS_CETANA": {
+      "name": "思",
+      "shortName": "思",
+      "description": "策勵心與相應法造作業。"
+    },
+    "CS_EKAGGATA": {
+      "name": "一境性",
+      "shortName": "一境性",
+      "description": "心專注於單一所緣，不分散亂。"
+    },
+    "CS_JIVITINDRIYA": {
+      "name": "命根",
+      "shortName": "命根",
+      "description": "維持俱生名法的壽命與存續。"
+    },
+    "CS_MANASIKARA": {
+      "name": "作意",
+      "shortName": "作意",
+      "description": "指引心朝向所緣，如舵手行船。"
+    },
+    "CS_VITAKKA": {
+      "name": "尋",
+      "shortName": "尋",
+      "description": "將心投向所緣，初步思維。"
+    },
+    "CS_VICARA": {
+      "name": "伺",
+      "shortName": "伺",
+      "description": "在所緣上持續審察巡迴。"
+    },
+    "CS_ADHIMOKKHA": {
+      "name": "勝解",
+      "shortName": "勝解",
+      "description": "對所緣作出確定義決，無猶豫。"
+    },
+    "CS_VIRIYA": {
+      "name": "精進",
+      "shortName": "精進",
+      "description": "勇猛精進，支持相應法不退墮。"
+    },
+    "CS_PITI": {
+      "name": "喜",
+      "shortName": "喜",
+      "description": "對所緣感到歡喜與喜悅。"
+    },
+    "CS_CHANDA": {
+      "name": "一欲",
+      "shortName": "一欲",
+      "description": "欲作意願，願去行動或作為。"
+    },
+    "CS_MOHA": {
+      "name": "癡",
+      "shortName": "癡",
+      "description": "無明蒙昧，不能了知真實法。"
+    },
+    "CS_AHIRIKA": {
+      "name": "無慚",
+      "shortName": "無慚",
+      "description": "造作惡業而不自感羞恥。"
+    },
+    "CS_ANOTTAPPA": {
+      "name": "無愧",
+      "shortName": "無愧",
+      "description": "對惡行及其果報無所畏懼。"
+    },
+    "CS_UDDHACCA": {
+      "name": "掉舉",
+      "shortName": "掉舉",
+      "description": "心神散亂動盪，不能靜止。"
+    },
+    "CS_LOBHA": {
+      "name": "貪",
+      "shortName": "貪",
+      "description": "對所緣執著渴求，貪戀執取。"
+    },
+    "CS_DITTHI": {
+      "name": "邪見",
+      "shortName": "邪見",
+      "description": "顛倒見解，執常斷或我見。"
+    },
+    "CS_MANA": {
+      "name": "慢",
+      "shortName": "慢",
+      "description": "驕傲自大，與他人作高下比較。"
+    },
+    "CS_DOSA": {
+      "name": "瞋",
+      "shortName": "瞋",
+      "description": "憤怒排斥，對所緣殘暴不悅。"
+    },
+    "CS_ISSA": {
+      "name": "嫉",
+      "shortName": "嫉",
+      "description": "見他人繁榮成就而生妒忌。"
+    },
+    "CS_MACCHARIYA": {
+      "name": "慳",
+      "shortName": "慳",
+      "description": "自私吝嗇，不願與他人分享。"
+    },
+    "CS_KUKKUCCA": {
+      "name": "惡作",
+      "shortName": "惡作",
+      "description": "追悔已作惡或未作善。"
+    },
+    "CS_THINA": {
+      "name": "昏沉",
+      "shortName": "昏沉",
+      "description": "心識萎靡不振，缺乏精進。"
+    },
+    "CS_MIDDHA": {
+      "name": "睡眠",
+      "shortName": "睡眠",
+      "description": "心所沈重困頓，昏昏欲睡。"
+    },
+    "CS_VICIKICCHA": {
+      "name": "疑",
+      "shortName": "疑",
+      "description": "猶豫動搖，疑佛法僧等真理。"
+    },
+    "CS_SADDHA": {
+      "name": "信",
+      "shortName": "信",
+      "description": "清淨信心，信受佛法僧及業果。"
+    },
+    "CS_SATI": {
+      "name": "念",
+      "shortName": "念",
+      "description": "對善法明記不忘，專注不失。"
+    },
+    "CS_HIRI": {
+      "name": "慚",
+      "shortName": "慚",
+      "description": "以內在自尊羞恥於惡行。"
+    },
+    "CS_OTTAPPA": {
+      "name": "愧",
+      "shortName": "愧",
+      "description": "見惡報及他人呵責而畏懼造惡。"
+    },
+    "CS_ALOBHA": {
+      "name": "無貪",
+      "shortName": "無貪",
+      "description": "不執著所緣，樂善好施。"
+    },
+    "CS_ADOSA": {
+      "name": "無瞋",
+      "shortName": "無瞋",
+      "description": "無有怨恨，具慈愛善意。"
+    },
+    "CS_TATRAMAJJHATTATA": {
+      "name": "中捨性",
+      "shortName": "中捨性",
+      "description": "平等中正，平衡心與諸心所。"
+    },
+    "CS_KAYAPASSADDHI": {
+      "name": "身輕安",
+      "shortName": "身輕安",
+      "description": "心所安詳寧靜，無熱惱。"
+    },
+    "CS_CITTAPASSADDHI": {
+      "name": "心輕安",
+      "shortName": "心輕安",
+      "description": "心識安詳寧靜，寂然止息。"
+    },
+    "CS_KAYALAHUTA": {
+      "name": "身輕快性",
+      "shortName": "身輕快性",
+      "description": "心所輕快不滯，除重怠。"
+    },
+    "CS_CITTALAHUTA": {
+      "name": "心輕快性",
+      "shortName": "心輕快性",
+      "description": "心識輕敏靈巧，離怠惰。"
+    },
+    "CS_KAYAMUDUTA": {
+      "name": "身柔軟性",
+      "shortName": "身柔軟性",
+      "description": "心所調順柔軟，除剛強。"
+    },
+    "CS_CITTAMUDUTA": {
+      "name": "心柔軟性",
+      "shortName": "心柔軟性",
+      "description": "心識柔順不執，離頑劣。"
+    },
+    "CS_KAYAKAMMANNATA": {
+      "name": "身適業性",
+      "shortName": "身適業性",
+      "description": "心所堪能行善，勝任自如。"
+    },
+    "CS_CITTAKAMMANNATA": {
+      "name": "心適業性",
+      "shortName": "心適業性",
+      "description": "心識堪能勝任，堪作善業。"
+    },
+    "CS_KAYAPAGUNNATA": {
+      "name": "身練達性",
+      "shortName": "身練達性",
+      "description": "心所熟練純善，離諸過失。"
+    },
+    "CS_CITTAPAGUNNATA": {
+      "name": "心練達性",
+      "shortName": "心練達性",
+      "description": "心識純熟練達，無病健全。"
+    },
+    "CS_KAYUJUKATA": {
+      "name": "身正直性",
+      "shortName": "身正直性",
+      "description": "心所直率無欺，離諂曲詐。"
+    },
+    "CS_CITTUJUKATA": {
+      "name": "心正直性",
+      "shortName": "心正直性",
+      "description": "心識坦誠中正，無邪諂妄。"
+    },
+    "CS_SAMMAVACA": {
+      "name": "正語",
+      "shortName": "正語",
+      "description": "離妄語、兩舌、惡口、綺語四語惡。"
+    },
+    "CS_SAMMAKAMMANTA": {
+      "name": "正業",
+      "shortName": "正業",
+      "description": "離殺生、偷盜、邪婬三身惡行。"
+    },
+    "CS_SAMMAAJIVA": {
+      "name": "正命",
+      "shortName": "正命",
+      "description": "離邪命營生，正當合法謀生。"
+    },
+    "CS_KARUNA": {
+      "name": "悲",
+      "shortName": "悲",
+      "description": "願拔除一切受苦眾生之苦。"
+    },
+    "CS_MUDITA": {
+      "name": "隨喜",
+      "shortName": "隨喜",
+      "description": "欣慰隨喜他人的繁榮成就與安樂。"
+    },
+    "CS_PANNA": {
+      "name": "慧根",
+      "shortName": "慧根",
+      "description": "如實通達無常、苦、無我之無漏智慧。"
+    }
+  },
+  "rupas": {
+    "RP_001": {
+      "name": "地界",
+      "shortName": "地界",
+      "description": "硬或軟的特性，作為其他俱生色的立足與支持基礎。"
+    },
+    "RP_002": {
+      "name": "水界",
+      "shortName": "水界",
+      "description": "流動或凝聚的特性，使伴隨色聚聚合而不分散。"
+    },
+    "RP_003": {
+      "name": "火界",
+      "shortName": "火界",
+      "description": "冷或熱的特性，主成熟與溫養一切物質。"
+    },
+    "RP_004": {
+      "name": "風界",
+      "shortName": "風界",
+      "description": "支持與波動的特性，主物質的張力與運動。"
+    },
+    "RP_005": {
+      "name": "眼淨色",
+      "shortName": "眼淨色",
+      "description": "對光色所緣敏感的眼根清淨透明色法。"
+    },
+    "RP_006": {
+      "name": "耳淨色",
+      "shortName": "耳淨色",
+      "description": "對聲音所緣敏感的耳根清淨透明色法。"
+    },
+    "RP_007": {
+      "name": "鼻淨色",
+      "shortName": "鼻淨色",
+      "description": "對香氣所緣敏感的鼻根清淨透明色法。"
+    },
+    "RP_008": {
+      "name": "舌淨色",
+      "shortName": "舌淨色",
+      "description": "對味道所緣敏感的舌根清淨透明色法。"
+    },
+    "RP_009": {
+      "name": "身淨色",
+      "shortName": "身淨色",
+      "description": "遍布全身對觸覺敏感的清淨透明色法。"
+    },
+    "RP_010": {
+      "name": "色所緣",
+      "shortName": "色所緣",
+      "description": "眼根所見之顏色與光明。"
+    },
+    "RP_011": {
+      "name": "聲所緣",
+      "shortName": "聲所緣",
+      "description": "耳根所聞之聲音。"
+    },
+    "RP_012": {
+      "name": "香所緣",
+      "shortName": "香所緣",
+      "description": "鼻根所嗅之氣味。"
+    },
+    "RP_013": {
+      "name": "味所緣",
+      "shortName": "味所緣",
+      "description": "舌根所嚐之酸甜苦辣等味。"
+    },
+    "RP_014": {
+      "name": "女根色",
+      "shortName": "女根色",
+      "description": "決定女性身體形態、語音、行為等女性特徵之色法。"
+    },
+    "RP_015": {
+      "name": "男根色",
+      "shortName": "男根色",
+      "description": "決定男性身體形態、語音、行為等男性特徵之色法。"
+    },
+    "RP_016": {
+      "name": "心所依處",
+      "shortName": "心基",
+      "description": "意界與意識界（心識）生起的物質依托處。"
+    },
+    "RP_017": {
+      "name": "命根色",
+      "shortName": "命根色",
+      "description": "維持業生色法壽命與存續的色法機能。"
+    },
+    "RP_018": {
+      "name": "段食",
+      "shortName": "段食",
+      "description": "食物中的食素（營養），維持身體滋長。"
+    },
+    "RP_019": {
+      "name": "空界",
+      "shortName": "空界",
+      "description": "界限與分劃色聚之間的虛空空間。"
+    },
+    "RP_020": {
+      "name": "身表",
+      "shortName": "身表",
+      "description": "因心意而通過身體動作表達意圖之色法。"
+    },
+    "RP_021": {
+      "name": "語表",
+      "shortName": "語表",
+      "description": "因心意而通過言語聲音表達意圖之色法。"
+    },
+    "RP_022": {
+      "name": "色輕快性",
+      "shortName": "色輕快性",
+      "description": "色身無重滯、敏捷靈活的變異狀態。"
+    },
+    "RP_023": {
+      "name": "色柔軟性",
+      "shortName": "色柔軟性",
+      "description": "色身柔軟順從、無僵硬的變異狀態。"
+    },
+    "RP_024": {
+      "name": "色適業性",
+      "shortName": "色適業性",
+      "description": "色身適於動作與作業、勝任活動的變異狀態。"
+    },
+    "RP_025": {
+      "name": "色積聚",
+      "shortName": "色積聚",
+      "description": "生命初期諸根初生與生長之色法生相。"
+    },
+    "RP_026": {
+      "name": "色相續",
+      "shortName": "色相續",
+      "description": "根色完全後物質不斷繼續產生之相。"
+    },
+    "RP_027": {
+      "name": "色老性",
+      "shortName": "色老性",
+      "description": "物質成熟趨向老化變質之衰老相。"
+    },
+    "RP_028": {
+      "name": "色無常性",
+      "shortName": "色無常性",
+      "description": "物質完全碎裂瓦解與滅盡之壞滅相。"
+    }
+  },
+  "paccayas": {
+    "PC_01": {
+      "name": "因緣",
+      "shortName": "因緣",
+      "definition": "貪、瞋、癡、無貪、無瞋、無癡六根如樹根般穩固俱生名色。"
+    },
+    "PC_02": {
+      "name": "所緣緣",
+      "shortName": "所緣緣",
+      "definition": "色、聲、香、味、觸、法六所緣如手杖引心心所攀附生起。"
+    },
+    "PC_03": {
+      "name": "增上緣",
+      "shortName": "增上緣",
+      "definition": "欲、精進、心、審察四增上如輪王統攝一切俱生法。"
+    },
+    "PC_04": {
+      "name": "無間緣",
+      "shortName": "無間緣",
+      "definition": "前滅之心心所毫無間隔地開闢道路引後心生起。"
+    },
+    "PC_05": {
+      "name": "等無間緣",
+      "shortName": "等無間緣",
+      "definition": "前心以完全等同且井然有序之次第導引後心相續。"
+    },
+    "PC_06": {
+      "name": "俱生緣",
+      "shortName": "俱生緣",
+      "definition": "同生之名色如燈生光、四柱立廈般相互資助支持。"
+    },
+    "PC_07": {
+      "name": "相互緣",
+      "shortName": "相互緣",
+      "definition": "俱生名色如三腳架支柱般彼此相互依賴共立。"
+    },
+    "PC_08": {
+      "name": "依止緣",
+      "shortName": "依止緣",
+      "definition": "如大地載植樹木、畫布受敷丹青般作為所依支柱。"
+    },
+    "PC_09": {
+      "name": "親依止緣",
+      "shortName": "親依止緣",
+      "definition": "強有力的因緣、所緣或積習如暴風沛雨般強力驅遣引生後法。"
+    },
+    "PC_10": {
+      "name": "前生緣",
+      "shortName": "前生緣",
+      "definition": "先已生起且正現住之根身與所緣為後生識作依托。"
+    },
+    "PC_11": {
+      "name": "後生緣",
+      "shortName": "後生緣",
+      "definition": "後生之心心所如潤澤春雨般輔助滋養先已生之色身。"
+    },
+    "PC_12": {
+      "name": "習行緣",
+      "shortName": "習行緣",
+      "definition": "前前同類速行不斷熏習重複使後後速行力量純熟強固。"
+    },
+    "PC_13": {
+      "name": "業緣",
+      "shortName": "業緣",
+      "definition": "善與不善之思心所造作成熟，引生後後異熟果報。"
+    },
+    "PC_14": {
+      "name": "異熟緣",
+      "shortName": "異熟緣",
+      "definition": "業報所感之異熟名法安穩寂靜無為地互為滋養資助。"
+    },
+    "PC_15": {
+      "name": "食緣",
+      "shortName": "食緣",
+      "definition": "段食及三名食（觸、意思、識）支持滋養肉身與精神命脈。"
+    },
+    "PC_16": {
+      "name": "根緣",
+      "shortName": "根緣",
+      "definition": "二十二根在各自管轄領域中發揮統治宰制支配作用。"
+    },
+    "PC_17": {
+      "name": "禪那緣",
+      "shortName": "禪那緣",
+      "definition": "尋、伺、喜、樂、一境性等支緊密繫縛心於所緣寂靜內觀。"
+    },
+    "PC_18": {
+      "name": "道緣",
+      "shortName": "道緣",
+      "definition": "正見等八正道支引領眾生脫離輪迴導向解脫涅槃。"
+    },
+    "PC_19": {
+      "name": "相應緣",
+      "shortName": "相應緣",
+      "definition": "心與心所同生、同滅、同所依、同所緣，如水乳交融般無別。"
+    },
+    "PC_20": {
+      "name": "不相應緣",
+      "shortName": "不相應緣",
+      "definition": "名法與色法體性相異（如油與水），卻互相依存扶持。"
+    },
+    "PC_21": {
+      "name": "有緣",
+      "shortName": "有緣",
+      "definition": "正現存之法以其現有存在狀態，支持其他同時現存之法。"
+    },
+    "PC_22": {
+      "name": "無有緣",
+      "shortName": "無有緣",
+      "definition": "前心心所滅去不復存在，唯以此“斷滅空位”給後心讓出生起機會。"
+    },
+    "PC_23": {
+      "name": "離去緣",
+      "shortName": "離去緣",
+      "definition": "前法離去、消逝與退讓，促成後法生起無阻。"
+    },
+    "PC_24": {
+      "name": "不離去緣",
+      "shortName": "不離去緣",
+      "definition": "法未曾離去、正處於當前現住狀態，繼續維持伴隨法。"
+    }
+  },
+  "paticcas": {
+    "PD_01": {
+      "name": "無明",
+      "shortName": "無明",
+      "description": "不了知四聖諦、三世因果與十二緣起之愚癡蒙昧。"
+    },
+    "PD_02": {
+      "name": "行",
+      "shortName": "行",
+      "description": "以無明為緣而造作身、口、意善惡諸業。"
+    },
+    "PD_03": {
+      "name": "識",
+      "shortName": "識",
+      "description": "由業力牽引於母胎初起之結生識及六識身。"
+    },
+    "PD_04": {
+      "name": "名色",
+      "shortName": "名色",
+      "description": "精神諸蘊（受想行）與物質諸蘊於結生時俱起生展。"
+    },
+    "PD_05": {
+      "name": "六處",
+      "shortName": "六處",
+      "description": "眼耳鼻舌身意六入處，領受境界之門戶。"
+    },
+    "PD_06": {
+      "name": "觸",
+      "shortName": "觸",
+      "description": "根、境、識三者和合碰觸，引發受領。"
+    },
+    "PD_07": {
+      "name": "受",
+      "shortName": "受",
+      "description": "觸所緣後所感受之苦、樂、捨之味。"
+    },
+    "PD_08": {
+      "name": "愛",
+      "shortName": "愛",
+      "description": "對可愛境界之貪愛渴求與執念。"
+    },
+    "PD_09": {
+      "name": "取",
+      "shortName": "取",
+      "description": "執著所愛不捨，頑強固執如火捉薪。"
+    },
+    "PD_10": {
+      "name": "有",
+      "shortName": "有",
+      "description": "引發後世生存之業有與受生所依之生有。"
+    },
+    "PD_11": {
+      "name": "生",
+      "shortName": "生",
+      "description": "諸蘊於各生存界之最初顯現受生。"
+    },
+    "PD_12": {
+      "name": "老死",
+      "shortName": "老死",
+      "description": "諸蘊衰邁成熟而衰老，命根斷絕破損而命終。"
+    }
+  },
+  "kammas": {
+    "KM_T_01": {
+      "name": "現法受業",
+      "shortName": "現法受業",
+      "description": "第一速行所造，於現生結成果報之業。"
+    },
+    "KM_T_02": {
+      "name": "次生受業",
+      "shortName": "次生受業",
+      "description": "第七速行所造，於緊隨之來世結成果報之業。"
+    },
+    "KM_T_03": {
+      "name": "後後便受業",
+      "shortName": "後後便受業",
+      "description": "中五速行所造，從第三生起至證涅槃前皆可感果之業。"
+    },
+    "KM_T_04": {
+      "name": "既有業",
+      "shortName": "廢業",
+      "description": "已造作但失去感果機緣或已被對治而不再受報之業。"
+    },
+    "KM_U_01": {
+      "name": "生產業",
+      "shortName": "生產業",
+      "description": "引生結生識及名色之業，產生一期生命的果報。"
+    },
+    "KM_U_02": {
+      "name": "支持業",
+      "shortName": "支持業",
+      "description": "輔助支持生產業所感果報，使樂受或苦受增盛延續。"
+    },
+    "KM_U_03": {
+      "name": "阻礙業",
+      "shortName": "阻礙業",
+      "description": "壓迫阻礙生產業，縮短其福壽或消減其惡報。"
+    },
+    "KM_U_04": {
+      "name": "毀壞業",
+      "shortName": "毀壞業",
+      "description": "以更強業力徹底切斷摧毀原有生產業之相續果報。"
+    },
+    "KM_P_01": {
+      "name": "重業",
+      "shortName": "重業",
+      "description": "力量至重之業（如五逆罪或深妙禪定），必優先先受報。"
+    },
+    "KM_P_02": {
+      "name": "臨死業",
+      "shortName": "臨死業",
+      "description": "臨命終時憶起或造作之業，引向次生結生。"
+    },
+    "KM_P_03": {
+      "name": "慣行業",
+      "shortName": "慣行業",
+      "description": "生前經常重複熏習、積習成性之堅強業習。"
+    },
+    "KM_P_04": {
+      "name": "已作業",
+      "shortName": "已作業",
+      "description": "除上述三者之外，偶爾所作而未加深習之零散舊業。"
+    },
+    "KM_R_01": {
+      "name": "欲界不善業",
+      "shortName": "欲界不善",
+      "description": "十惡業道，能感四惡趣苦果。"
+    },
+    "KM_R_02": {
+      "name": "欲界善業",
+      "shortName": "欲界善",
+      "description": "十善業道，感人界與六欲天善趣樂果。"
+    },
+    "KM_R_03": {
+      "name": "色界善業",
+      "shortName": "色界善",
+      "description": "五禪色界善心，感得色界十六梵天果報。"
+    },
+    "KM_R_04": {
+      "name": "無色界善業",
+      "shortName": "無色界善",
+      "description": "四無色定善心，感得無色界四天果報。"
+    }
+  },
+  "vithis": {
+    "VT_NGU_MON_RATLON": {
+      "name": "極極大所緣五門心路",
+      "shortName": "五門極極大所緣",
+      "description": "十七心剎那具足之完整五門心路，至彼所緣而滅。"
+    },
+    "VT_NGU_MON_LON": {
+      "name": "極大所緣五門心路",
+      "shortName": "五門極大所緣",
+      "description": "五門極大所緣心路，具足七速行但無彼所緣。"
+    },
+    "VT_Y_MON": {
+      "name": "意門心路",
+      "shortName": "意門心路",
+      "description": "心識通過意門接觸法所緣所生起之心路過程。"
+    },
+    "VT_VITHIMUTTA": {
+      "name": "離路心",
+      "shortName": "離路心",
+      "description": "不由任何根門、運作於認知過程之外的結生、有分、死心。"
+    }
+  },
+  "studyModules": {
+    "M1_BASICS": {
+      "title": "七遍一切心心所",
+      "description": "每一個心識中必然生起的七個普遍心所，構成一切心識活動的基石。",
+      "translationStatus": "reviewed",
+      "lessonSections": [
+        {
+          "id": "M1_S01",
+          "title": "通一切心心所與遍一切心心所",
+          "summary": "通一切心心所包含七遍一切心心所與六別境心心所，隨相應心而轉為善或不善。",
+          "body": [
+            "Aññasamāna（通一切/同他）：Añña意為「其他」，Samāna意為「共同」——即與其他心共同。它們隨與之相伴的心而顯現為善或不善。",
+            "通一切心心所分為兩組：遍一切心心所（Sabbacittasādhāraṇa）共七種，別境心所（Pakiṇṇaka）共六種。",
+            "七遍一切心心所為：觸（Phassa）、受（Vedanā）、想（Saññā）、思（Cetanā）、一境性（Ekaggatā）、命根（Jīvitindriya）與作意（Manasikāra）。",
+            "之所以稱為「遍行」，是因為這七種心所必定生起於每一個心識之中，無一例外。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_ANNASAMANA",
+              "term": "通一切心所",
+              "pali": "Aññasamāna",
+              "meaning": "隨相伴的心而顯現為善或不善的心所。"
+            },
+            {
+              "id": "TERM_SABBACITTA",
+              "term": "遍一切心心所",
+              "pali": "Sabbacittasādhāraṇa",
+              "meaning": "必定伴隨一切心識生起的七種共中心所。"
+            },
+            {
+              "id": "TERM_PAKINNAKA",
+              "term": "別境心所",
+              "pali": "Pakiṇṇaka",
+              "meaning": "只生起於特定心識的六種偶發心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3,
+              "note": "TÂM SỞ TỢ THA – AÑÑASAMĀNA; liệt kê Biến hành 7 và Biệt cảnh 6"
+            }
+          ]
+        },
+        {
+          "id": "M1_S02",
+          "title": "觸（Phassa）與受（Vedanā）",
+          "summary": "觸是心識與所緣的接觸，觸為受的食糧，緣觸而生起感受。",
+          "body": [
+            "Phassa源於詞根「phas」：意為接觸、碰觸。每當心識與所緣相遇，觸心所即行運作。",
+            "在五蘊世間：當根（眼耳鼻舌身）與境（色聲香味觸）相遇，識即生起——此時觸心所當下現前。每一根門僅觸及各自的專屬境。",
+            "在四名蘊世間（無色界）：即使無物質色法，只要心與所緣相接，觸心所即自然生起。",
+            "Vedanā源於詞根「vid」：意為領納、體驗。當所緣觸及心流時，受心所負責承受並體驗該所緣。",
+            "重要因果關係：觸是受的食糧（觸食）——因觸為緣而生起感受（觸緣受）。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PHASSA_M1",
+              "term": "觸",
+              "pali": "Phassa",
+              "meaning": "心識與所緣之間的接觸與撞擊。"
+            },
+            {
+              "id": "TERM_VEDANA_M1",
+              "term": "受",
+              "pali": "Vedanā",
+              "meaning": "領納並體驗所緣滋味的心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 4,
+              "note": "I.1/ TÂM SỞ XÚC – PHASSA"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 5,
+              "note": "Xúc phân theo cõi và theo hướng"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 6,
+              "note": "I.2/ TÂM SỞ THỌ – VEDANĀ; Xúc là vật thực cho Thọ"
+            }
+          ]
+        },
+        {
+          "id": "M1_S03",
+          "title": "想（Saññā）與思（Cetanā）",
+          "summary": "想負責標識與辨識相狀；思統領俱生法造作業，思即是業之本質。",
+          "body": [
+            "Saññā = saṃ + ñā：認識曾經知曉之事物，通過標識與印記再認所緣。",
+            "想依性類可分三種：不善想、善想、無記想；依所緣對象可分六種（色想、聲想等）。",
+            "Cetanā（思）、Citta（心）與Cetasika（心所）均源自詞根「CIT」：意為思量、知覺。思是最關鍵的造作心所。",
+            "思之殊勝功用：不僅履行自身職責，更能調動組織俱生一切心心所共同活動——佛陀開示「我說思即是業」。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SANNA_M1",
+              "term": "想",
+              "pali": "Saññā",
+              "meaning": "識別並標明所緣相狀的心所。"
+            },
+            {
+              "id": "TERM_CETANA_M1",
+              "term": "思",
+              "pali": "Cetanā",
+              "meaning": "統攝俱生心法、造作善惡行業之意志心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 10,
+              "note": "I.3/ TÂM SỞ TƯỞNG – SAÑÑĀ"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 12,
+              "note": "I.4/ TÂM SỞ TƯ – CETANĀ, nhiệm vụ đặc biệt, tạo nghiệp"
+            }
+          ]
+        },
+        {
+          "id": "M1_S04",
+          "title": "一境性（Ekaggatā）、命根（Jīvitindriya）與作意（Manasikāra）",
+          "summary": "一境性專住所緣，命根維持名色生命相續，作意引導心識導向所緣。",
+          "body": [
+            "Ekaggatā：eka（單一）+ agga（焦點/峰頂）→ 心之一境性，即定。將心與心所系縛安住於單一所緣，保持心流不散亂動搖。",
+            "Jīvitindriya：Jīvita是壽命（維持名法之生存），Indriya是根（統御支配諸俱生法）。命根統管俱生法的存續。",
+            "命根分兩種：名命根維持名法存在三個小剎那（生、住、滅）；色命根維持物質色法存在五十一個小剎那（十七心剎那×三小剎那）。",
+            "Manasikāra：Manasī（在心中）+ kāra（造作）→ 在心中造作，即注意力。作意將對象導引為心識之所緣。",
+            "作意之四種相義：特相是指引俱生法面向所緣；作用是系縛心心所於所緣上；現起是直接面對所緣；近因是所緣本身。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_EKAGGATA_M1",
+              "term": "一境性",
+              "pali": "Ekaggatā",
+              "meaning": "心專一安住於單一所緣的定力心所。"
+            },
+            {
+              "id": "TERM_JIVITINDRIYA_M1",
+              "term": "命根",
+              "pali": "Jīvitindriya",
+              "meaning": "維持俱生名法與色法存續相續的支配力心所。"
+            },
+            {
+              "id": "TERM_MANASIKARA_M1",
+              "term": "作意",
+              "pali": "Manasikāra",
+              "meaning": "把持心與心所引向特定所緣的注意心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 15,
+              "note": "I.5/ TÂM SỞ NHẤT HÀNH (ĐỊNH) – EKAGGATĀ"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 16,
+              "note": "I.6/ TÂM SỞ MẠNG QUYỀN – JĪVITINDRIYA; 3 và 51 sát na tiểu"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 18,
+              "note": "7/ TÂM SỞ TÁC Ý – MANASIKĀRA; tứ ý nghĩa"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M1_R01",
+          "front": "「Aññasamāna」（通一切/同他）是什麼意思？",
+          "back": "Añña意為「其他」，Samāna意為「共同」→「與其他心共同」。它們隨與之俱生的心識而轉為善或不善。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M1_R02",
+          "front": "列舉七個遍一切心心所（Sabbacittasādhāraṇa）。",
+          "back": "觸（Phassa）、受（Vedanā）、想（Saññā）、思（Cetanā）、一境性（Ekaggatā）、命根（Jīvitindriya）、作意（Manasikāra）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M1_R03",
+          "front": "為什麼它們被稱為「遍一切心心所」？",
+          "back": "因為這七個心所必定生起於每一個心識之中，沒有任何例外。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M1_R04",
+          "front": "別境心所（Pakiṇṇaka）共有幾種？",
+          "back": "共6種：尋（Vitakka）、伺（Vicāra）、勝解（Adhimokkha）、精進（Vīriya）、喜（Pīti）、欲（Chanda）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M1_R05",
+          "front": "「觸」（Phassa）源於哪個詞根，其含義為何？",
+          "back": "源於詞根「phas」，意為碰觸、接觸或與所緣相遇。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M1_R06",
+          "front": "觸（Phassa）與受（Vedanā）之間有何關係？",
+          "back": "觸是受的食糧（觸食）——以觸為緣，方能生起感受（觸緣受）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M1_R07",
+          "front": "「想」（Saññā）在詞源上如何解析？",
+          "back": "Saññā = saṃ + ñā：認識曾經知曉的事物，通過標記和相狀以便日後憶起再認。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M1_R08",
+          "front": "思（Cetanā）、心（Citta）與心所（Cetasika）源自哪個詞根？",
+          "back": "均源自詞根「CIT」：意為知覺、思考或思量。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M1_R09",
+          "front": "為什麼「思」（Cetanā）在業的造作中被視為最核心的心所？",
+          "back": "因為思不僅統攝並協調諸俱生心所，而且思的意志本身即構成業（「我說思即是業」）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M1_R10",
+          "front": "「一境性」（Ekaggatā）在詞源上如何解析？",
+          "back": "Eka（單一）+ agga（頂端/焦點）→ 心之一境性、心的定止與專注於一處。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 15
+            }
+          ]
+        },
+        {
+          "id": "M1_R11",
+          "front": "名命根維持精神名法存續多長時間？",
+          "back": "維持三個小剎那：生（uppāda）、住（ṭhiti）與滅（bhaṅga）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M1_R12",
+          "front": "色命根維持物質色法存續多長時間？",
+          "back": "維持五十一個小剎那 = 十七個心識剎那 × 三小剎那。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M1_R13",
+          "front": "「作意」（Manasikāra）在詞源上如何解析？",
+          "back": "Manasi（在心中）+ kāra（造作/作為）→ 在心中造作，指引心識導向所緣的注意力。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 18
+            }
+          ]
+        },
+        {
+          "id": "M1_R14",
+          "front": "作意（Manasikāra）的作用（kicca）是什麼？",
+          "back": "統馭並指引心識及俱生心所精準投向所緣對象。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 18
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M1_Q01",
+          "type": "mcq",
+          "question": "遍一切心心所（Sabbacittasādhāraṇa）共有多少個？",
+          "correctAnswer": "7",
+          "distractors": [
+            "6",
+            "13",
+            "19"
+          ],
+          "explanation": "遍一切心心所共有7個，必定俱生於每一個心識之中：觸、受、想、思、一境性、命根與作意。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M1_Q02",
+          "type": "mcq",
+          "question": "下列哪一個心所不屬於七遍一切心心所？",
+          "correctAnswer": "尋（Vitakka）",
+          "distractors": [
+            "觸（Phassa）",
+            "作意（Manasikāra）",
+            "命根（Jīvitindriya）"
+          ],
+          "explanation": "尋（Vitakka）屬於六個別境心所（Pakiṇṇaka）之一，並非七遍行心所。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M1_Q03",
+          "type": "mcq",
+          "question": "「Aññasamāna」（通一切/同他）是什麼意思？",
+          "correctAnswer": "與其他心共同——隨所伴隨之心的性質而顯現為善或不善",
+          "distractors": [
+            "恆常為善",
+            "恆常為不善",
+            "僅生起於出世間心"
+          ],
+          "explanation": "通一切心所本身在倫理上是非決定的，隨其所相伴的心識之善惡而轉變為善或不善。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M1_Q04",
+          "type": "mcq",
+          "question": "「觸」（Phassa）的核心定義是什麼？",
+          "correctAnswer": "心識與所緣對象之間的碰觸或相遇",
+          "distractors": [
+            "體驗所緣的苦樂感受",
+            "憶持所緣的標識",
+            "心專注於單一焦點"
+          ],
+          "explanation": "觸的特相是接觸所緣（phusanā）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M1_Q05",
+          "type": "mcq",
+          "question": "「觸食」（phassāhāra）是什麼意思？",
+          "correctAnswer": "觸作為滋養生起感受的條件與食糧",
+          "distractors": [
+            "觸負責滋養物質色法",
+            "觸是想的食糧",
+            "觸僅助緣思心所"
+          ],
+          "explanation": "佛經指出「觸緣受」，觸是感受得以生起的不可或缺的資糧。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M1_Q06",
+          "type": "mcq",
+          "question": "「想」（Saññā）的主要作用是什麼？",
+          "correctAnswer": "通過先前獲知的相狀與記號進行辨識與標記",
+          "distractors": [
+            "體驗樂受或苦受",
+            "造作善惡行業",
+            "維持心識的存續"
+          ],
+          "explanation": "想心所為對象做標記，以便日後再次遇到時能夠辨識再認。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M1_Q07",
+          "type": "mcq",
+          "question": "哪一個心所構成了「業」的本質？",
+          "correctAnswer": "思（Cetanā）",
+          "distractors": [
+            "想（Saññā）",
+            "受（Vedanā）",
+            "作意（Manasikāra）"
+          ],
+          "explanation": "佛陀開示：「諸比丘，我說思即是業」（Cetanāhaṃ bhikkhave kammaṃ vadāmi）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M1_Q08",
+          "type": "mcq",
+          "question": "「一境性」（Ekaggatā）源於哪些詞語？",
+          "correctAnswer": "eka（單一）+ agga（焦點/頂峰）",
+          "distractors": [
+            "eka（單一）+ gata（去到）",
+            "esa（尋求）+ agga（頂峰）",
+            "eka（單一）+ ganthā（結縛）"
+          ],
+          "explanation": "Ekaggatā字面意為心集中於單一焦點的一境性（定）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 15
+            }
+          ]
+        },
+        {
+          "id": "M1_Q09",
+          "type": "mcq",
+          "question": "色命根維持物質色法存續多少個小剎那？",
+          "correctAnswer": "51小剎那",
+          "distractors": [
+            "3小剎那",
+            "17小剎那",
+            "7小剎那"
+          ],
+          "explanation": "一個色法持續17個心識剎那，每個心剎那含生、住、滅3小剎那，共51小剎那。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M1_Q10",
+          "type": "mcq",
+          "question": "名命根維持精神名法存續多少個小剎那？",
+          "correctAnswer": "3小剎那：生、住、滅",
+          "distractors": [
+            "51小剎那",
+            "17心剎那",
+            "7速行剎那"
+          ],
+          "explanation": "精神名法僅持續1個心識剎那，包含生、住、滅3個極微細的小剎那。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M1_Q11",
+          "type": "mcq",
+          "question": "作意（Manasikāra）的作用（kicca）是什麼？",
+          "correctAnswer": "調馭並引導俱生心心所導向所緣對象",
+          "distractors": [
+            "體驗所緣的滋味",
+            "記憶所緣的特徵",
+            "統攝諸法的存續"
+          ],
+          "explanation": "作意猶如舵手，負責將相伴的心法準確引向目標所緣。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 18
+            }
+          ]
+        },
+        {
+          "id": "M1_Q12",
+          "type": "mcq",
+          "question": "在無色界（僅有四名蘊、無色法）中，「觸」如何生起？",
+          "correctAnswer": "純粹通過心識與法所緣之間的碰觸而生起",
+          "distractors": [
+            "仍必須依賴眼耳等六種物質根身",
+            "無色界中不存在觸心所",
+            "需要淨色根作為物質支撐"
+          ],
+          "explanation": "在無色界中完全沒有物質肉身，觸心所純粹生起於心識與精神所緣的接合中。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 4
+            }
+          ]
+        }
+      ]
+    },
+    "M11_BIET_CANH": {
+      "title": "六別境心所（Pakiṇṇaka）",
+      "description": "尋、伺、勝解、精進、喜、欲六種別境心所，隨所伴隨之心的性質而顯現為善或不善。",
+      "translationStatus": "reviewed",
+      "lessonSections": [
+        {
+          "id": "M11_S01",
+          "title": "通一切心所中的別境心所",
+          "summary": "別境心所共有六種，只散見於特定心識之中，倫理上隨所伴隨之心的善惡而轉變。",
+          "body": [
+            "通一切心心所（Aññasamāna，同他心所）分為兩組：七遍一切心心所與六別境心心所（Pakiṇṇaka）。",
+            "之所以稱為「別境」，是因為這六種心所並非生起於一切心，而是僅選擇性地散見於特定的心識之中。",
+            "六別境心所為：1. 尋（Vitakka），2. 伺（Vicāra），3. 勝解（Adhimokkha），4. 精進（Vīriya），5. 喜（Pīti），6. 欲（Chanda）。",
+            "因為屬於通一切心所，它們本身非純善亦非純惡：伴隨善心則成為善，伴隨惡心則成為不善。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PAKINNAKA_M11",
+              "term": "別境心所",
+              "pali": "Pakiṇṇaka",
+              "meaning": "僅生起於特定心識之中的六種偶發心所。"
+            },
+            {
+              "id": "TERM_ANNASAMANA_M11",
+              "term": "通一切心所",
+              "pali": "Aññasamāna",
+              "meaning": "倫理性質非決定、隨俱生心善惡而轉化的十三心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3,
+              "note": "II. TÂM SỞ BIỆT CẢNH – PAKIṆṆAKA CETASIKA, có 6: Tầm, Tứ, Thắng giải, Cần, Hỷ, Dục"
+            }
+          ]
+        },
+        {
+          "id": "M11_S02",
+          "title": "尋（Vitakka）與伺（Vicāra）",
+          "summary": "尋將心引向所緣，伺令心持續審查撫摩所緣；二者皆不生於雙五識。",
+          "body": [
+            "Vitakka：前綴「Vi」（殊勝/特別）+ 詞根「takk」（思忖、思惟）→ 專門的尋思，將心識投向對象。",
+            "尋的主要特相：將俱生諸心所引向並安置於所緣之上，猶如將諸心法直接投向目標。",
+            "尋之四種相義：特相是將俱生法導向所緣；作用是令心心所撞擊所緣；現起是心引至所緣相見；近因是所緣及三名蘊。",
+            "Vicāra：前綴「Vi」+ 詞根「car」（遊行、徘徊）→ 伺察，在所緣上反復盤旋審查，緊密貼合撫摩所緣。",
+            "經典生動比喻：尋如蜂直投蓮花，如大鳥展翅升空，如擊鐘之聲；伺如蜂在蓮花上徘徊盤旋，如鳥在空中滑翔翱翔，如鐘聲綿延餘韻。",
+            "尋與伺完全不生起於雙五識（十識），因為雙五識只是機械地受所緣撞擊而生起，無需尋思觀察。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_VITAKKA",
+              "term": "尋",
+              "pali": "Vitakka",
+              "meaning": "將心識與心所投向所緣的尋思心所。"
+            },
+            {
+              "id": "TERM_VICARA",
+              "term": "伺",
+              "pali": "Vicāra",
+              "meaning": "在所緣上反復盤旋審查、緊密貼合的審察心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 20,
+              "note": "II.1 TÂM SỞ TẦM – VITAKKA CETASIKA; đặc tính chánh yếu và tứ ý nghĩa"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 23,
+              "note": "II.2 TÂM SỞ TỨ – VICĀRA CETASIKA; phân biệt Tầm–Tứ; không có trong Ngũ song thức"
+            }
+          ]
+        },
+        {
+          "id": "M11_S03",
+          "title": "勝解（Adhimokkha）",
+          "summary": "勝解令心識擺脫猶疑、決斷判定所緣；存在於一百一十個心識之中。",
+          "body": [
+            "Adhimokkha：前綴「Adhi」+ 詞根「muc」（釋放、解脫）→ 使心擺脫懷疑猶疑而確信果斷，即勝解、確立判定。",
+            "勝解之四相義：特相是堅決決斷打破猶豫；作用是令心對所緣確定無疑；現起是果斷決定之狀態；近因是需要判決的所緣。",
+            "判決分為兩類：邪勝解（以是為非、以非為是）與正勝解（如實確立是非）。",
+            "勝解不生於雙五識（10心）及疑相應癡根心（1心）——共扣除11心，遍存於其餘110個心識之中（121 − 11 = 110）。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_ADHIMOKKHA",
+              "term": "勝解",
+              "pali": "Adhimokkha",
+              "meaning": "對所緣斷定無疑、確立堅信的心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 24,
+              "note": "II.3 TÂM SỞ THẮNG GIẢI – ADHIMOKKHO CETASIKA; tứ ý nghĩa; phán quyết tà/chánh; có mặt trong 110 tâm"
+            }
+          ]
+        },
+        {
+          "id": "M11_S04",
+          "title": "精進（Vīriya）",
+          "summary": "精進是勇悍堅持的努力，支持俱生法不後退，以四正勤為最高實踐。",
+          "body": [
+            "Vīriya：源於「Vīra」（勇士、勤奮者）→ 努力、勤勉、策勵、支持俱生心法堅忍不拔。",
+            "精進之四相義：特相是勇悍支持；作用是支助俱生法不萎靡退轉；現起是不後退沉淪；近因是令人悚懼警醒的所緣（生老病死等逼迫苦境）。",
+            "精進分邪精進（如勤勉從事欺詐惡事）與正精進（四正勤）。",
+            "四正勤：已生惡令斷滅、未生惡令不生、未生善令生起、已生善令增長鞏固。",
+            "精進之四階段：精進根（統治力）、精進力（不可動搖之力量）、精進覺支（導向開悟）、正精進（斬斷輪迴證達涅槃）。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_VIRIYA",
+              "term": "精進",
+              "pali": "Vīriya",
+              "meaning": "勇悍策勉心識與俱生法不懈努力的心所。"
+            },
+            {
+              "id": "TERM_SAMMAPADHANA",
+              "term": "四正勤",
+              "pali": "Sammāpadhāna",
+              "meaning": "斷惡生善的四種圓滿正精進修行。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 25,
+              "note": "II.4 TÂM SỞ CẦN – VIRIYA CETASIKA; tứ ý nghĩa; Tứ Chánh cần; 4 khía cạnh"
+            }
+          ]
+        },
+        {
+          "id": "M11_S05",
+          "title": "喜（Pīti）與欲（Chanda）",
+          "summary": "喜是心生歡喜愉悅，具有五級層次；欲是意欲作為，善法欲是解脫之動力。",
+          "body": [
+            "Pīti：源於「Pī」（歡悅）→ 歡喜、適悅、心曠神怡、身心暢快喜樂。",
+            "修定之五種喜：小喜（汗毛豎立微喜）、剎那喜（如電光閃現之瞬喜）、繼起喜/海潮喜（如波浪拍岸之湧喜）、踴躍喜（身輕騰空之飄喜）、遍滿喜（遍布充盈全身的深妙喜）。",
+            "依性類分三種喜：善喜（隨喜他人善業、禪定喜支）、不善喜（沉溺五欲之樂、戰勝仇敵之狂喜）、無記喜（阿羅漢之唯作喜）。",
+            "Chanda：源於詞根「Chad」（意願、樂意）→ 欲作、欲求，本身中性非善非惡。",
+            "欲分三種：貪欲（執取五欲之貪，五蓋之一屬不善）、善法欲（如意足之一，向往布施、持戒、禪修之善意樂）、唯作欲（阿羅漢之作意思願）。",
+            "欲不生於二癡根心及十八無因心——這些心屬於機械受緣觸擊之過程，無主動意欲活動。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PITI",
+              "term": "喜",
+              "pali": "Pīti",
+              "meaning": "對所緣感到歡悅喜受的心所。"
+            },
+            {
+              "id": "TERM_CHANDA",
+              "term": "欲",
+              "pali": "Chanda",
+              "meaning": "意欲去作、採取行動的意願心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 27,
+              "note": "II.5 TÂM SỞ HỶ – PĪTI CETASIKA; 5 loại hỷ; 3 thể tánh"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 29,
+              "note": "II.6. TÂM SỞ DỤC – CHANDA CETASIKA; 3 loại dục; không có trong 2 tâm Si và 18 tâm Vô nhân"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M11_R01",
+          "front": "「別境」（Pakiṇṇaka）是什麼意思？",
+          "back": "指僅散見生起於特定心識之中，而非生起於一切心識的心所。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M11_R02",
+          "front": "六個別境心所（Pakiṇṇaka）分別是哪六個？",
+          "back": "尋（Vitakka）、伺（Vicāra）、勝解（Adhimokkha）、精進（Vīriya）、喜（Pīti）、欲（Chanda）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M11_R03",
+          "front": "「尋」（Vitakka）在詞源上如何解析？",
+          "back": "前綴「Vi」（特殊）+ 詞根「takk」（思量）→ 專門的尋思，將心識引向所緣。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M11_R04",
+          "front": "尋（Vitakka）的主要特相是什麼？",
+          "back": "將心識與俱生心所舉起並安放在所緣目標之上。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M11_R05",
+          "front": "「伺」（Vicāra）的含義與作用是什麼？",
+          "back": "在所緣上反復巡視、審查並緊密貼合撫摩所緣。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "M11_R06",
+          "front": "經典中用哪些比喻來區別尋與伺？",
+          "back": "尋如蜂投花、鳥展翅、擊鐘聲；伺如蜂盤旋、鳥滑翔、鐘聲餘響。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "M11_R07",
+          "front": "尋與伺在哪些心識中完全不生起？",
+          "back": "雙五識（十識：眼耳鼻舌身識）中完全不生起尋與伺。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "M11_R08",
+          "front": "「勝解」（Adhimokkha）是什麼意思？",
+          "back": "Adhi + muc（釋放）→ 令心擺脫猶豫疑惑，堅決果斷決定所緣。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M11_R09",
+          "front": "勝解（Adhimokkha）存在於多少個心識之中？",
+          "back": "存在於110個心中（121心扣除10雙五識與1疑相應癡心）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M11_R10",
+          "front": "精進（Vīriya）的四相義是什麼？",
+          "back": "特相是勤勉勇悍；作用是支持俱生法；現起是不後退沉淪；近因是悚懼警醒之因。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": "M11_R11",
+          "front": "什麼是「四正勤」（Sammāpadhāna）？",
+          "back": "已生惡令斷除、未生惡令不生、未生善令生起、已生善令增長。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": "M11_R12",
+          "front": "「欲」（Chanda）可以分為哪三類？",
+          "back": "貪欲（不善染著）、善法欲（善法意願/如意足）、唯作欲（阿羅漢無執欲作）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 29
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M11_Q01",
+          "type": "mcq",
+          "question": "別境心所（Pakiṇṇaka）共有多少個？",
+          "correctAnswer": "6個",
+          "distractors": [
+            "7個",
+            "14個",
+            "25個"
+          ],
+          "explanation": "別境心所共有6個：尋、伺、勝解、精進、喜、欲。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M11_Q02",
+          "type": "mcq",
+          "question": "下列哪一個心所不屬於別境心所？",
+          "correctAnswer": "作意（Manasikāra）",
+          "distractors": [
+            "尋（Vitakka）",
+            "喜（Pīti）",
+            "勝解（Adhimokkha）"
+          ],
+          "explanation": "作意（Manasikāra）屬於七遍行心所，而非別境心所。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M11_Q03",
+          "type": "mcq",
+          "question": "「尋」（Vitakka）的首要功用是什麼？",
+          "correctAnswer": "將心識與俱生心所投向安立於所緣之上",
+          "distractors": [
+            "在所緣上反復盤旋巡視",
+            "對所緣做最終決斷",
+            "領納所緣的苦樂感受"
+          ],
+          "explanation": "尋的作用是舉心投向所緣（ārammaṇe cittassa abhiniropana-lakkhaṇo）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M11_Q04",
+          "type": "mcq",
+          "question": "哪一個比喻恰當地形容了「伺」（Vicāra）？",
+          "correctAnswer": "蜜蜂在蓮花上方盤旋巡視",
+          "distractors": [
+            "蜜蜂從遠處直投蓮花",
+            "大鳥用力拍翅騰空",
+            "銅鐘初受敲擊的瞬間"
+          ],
+          "explanation": "伺如蜂在花上盤旋撫摩，體現持續審察撫摩所緣之義。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "M11_Q05",
+          "type": "mcq",
+          "question": "在哪些心識中心所「尋」與「伺」完全缺席？",
+          "correctAnswer": "雙五識（十識）",
+          "distractors": [
+            "大善心",
+            "八貪根心",
+            "初禪心"
+          ],
+          "explanation": "雙五識由於極度單純直接，無需尋伺心所。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "M11_Q06",
+          "type": "mcq",
+          "question": "「勝解」（Adhimokkha）在字面上的根本涵義是什麼？",
+          "correctAnswer": "解脫疑慮而達成果斷堅決的判定",
+          "distractors": [
+            "深沉寧靜的專注力",
+            "對所緣感到喜悅",
+            "抑制不善業的生起"
+          ],
+          "explanation": "勝解是擺脫猶豫搖擺而決然堅信其境。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M11_Q07",
+          "type": "mcq",
+          "question": "勝解（Adhimokkha）存在於多少個心識之中？",
+          "correctAnswer": "110個心識",
+          "distractors": [
+            "121個",
+            "89個",
+            "54個"
+          ],
+          "explanation": "在121心中，扣除10個雙五識與1個疑相應心，共110心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M11_Q08",
+          "type": "mcq",
+          "question": "四正勤（Sammāpadhāna）的內容是什麼？",
+          "correctAnswer": "斷已生惡、防未生惡、生未生善、增已生善",
+          "distractors": [
+            "正見、正思惟、正語、正業",
+            "慈悲喜捨四無量心",
+            "身受心法四念處"
+          ],
+          "explanation": "四正勤是精進修行的圓滿四項要求。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": "M11_Q09",
+          "type": "mcq",
+          "question": "在禪修經論中，喜（Pīti）被劃分為幾個層次等級？",
+          "correctAnswer": "5個層次：從小喜至遍滿喜",
+          "distractors": [
+            "3個",
+            "4個",
+            "8個"
+          ],
+          "explanation": "五種喜為小喜、剎那喜、繼起喜、踴躍喜與遍滿喜。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 27
+            }
+          ]
+        },
+        {
+          "id": "M11_Q10",
+          "type": "mcq",
+          "question": "阿羅漢心識中所生起的「喜」屬於何種性質？",
+          "correctAnswer": "唯作無記喜（kiriya）",
+          "distractors": [
+            "染污不善喜",
+            "產生善業報的善喜",
+            "五蓋所攝的貪喜"
+          ],
+          "explanation": "阿羅漢的一切心行皆是無業報的唯作（kiriya）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 27
+            }
+          ]
+        },
+        {
+          "id": "M11_Q11",
+          "type": "mcq",
+          "question": "阿羅漢願意去弘法利生的心理動能稱為什麼？",
+          "correctAnswer": "唯作欲（kiriya-chanda）",
+          "distractors": [
+            "執著染求的貪欲",
+            "造作後世善果的善法欲",
+            "受疑障蔽的癡心"
+          ],
+          "explanation": "阿羅漢無貪亦無新造善業，其意樂純為唯作法欲。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 29
+            }
+          ]
+        },
+        {
+          "id": "M11_Q12",
+          "type": "mcq",
+          "question": "在哪些心識中心所「欲」（Chanda）完全不存在？",
+          "correctAnswer": "2個癡根心及18個無因心",
+          "distractors": [
+            "所有大善心",
+            "8個貪根心",
+            "色界禪心"
+          ],
+          "explanation": "癡根心被蒙昧主導，無因心機械反映，二者皆無欲（Chanda）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 29
+            }
+          ]
+        }
+      ]
+    },
+    "M2_SI_PHAN": {
+      "title": "癡分心所（Mocatuka）",
+      "description": "十四不善心所中的四個普遍不善心所（癡、無慚、無愧、掉舉），遍存於一切不善心識中。",
+      "translationStatus": "reviewed",
+      "lessonSections": [
+        {
+          "id": "M2_S01",
+          "title": "不善心所與癡分心所",
+          "summary": "不善心所共有十四種，其中癡分四心所遍生於一切十二不善心。",
+          "body": [
+            "不善心所（Akusala cetasika）共有十四種。",
+            "不善（Akusala）具有五種義蘊：(1) 病患——引生痛苦；(2) 醜陋——鄙惡不淨；(3) 不善巧——被貪瞋癡遮蔽理智；(4) 過失——有過咎；(5) 招感苦果。",
+            "癡分心所（Mocatuka cetasika）共有四種：癡（Moha）、無慚（Ahirika）、無愧（Anottappa）、掉舉（Uddhacca）。",
+            "這四個心所被稱為「通一切不善心所」（不善遍行），因為它們普遍存在於一切十二不善心之中，作為不善心理活動的前導與基石。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_AKUSALA_CET",
+              "term": "不善心所",
+              "pali": "Akusala cetasika",
+              "meaning": "與不善心相應、造作惡業的十四種心所。"
+            },
+            {
+              "id": "TERM_MOCATUKA",
+              "term": "癡分心所",
+              "pali": "Mocatuka",
+              "meaning": "以癡為首的四個通一切不善心所（癡、無慚、無愧、掉舉）。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31,
+              "note": "I/ TÂM SỞ SI PHẦN – MOCATUCACETASIKA; 5 nghĩa của Akusala"
+            }
+          ]
+        },
+        {
+          "id": "M2_S02",
+          "title": "無慚與無愧",
+          "summary": "無慚是不自恥惡行，無愧是不畏懼惡果，二者總是形影相隨。",
+          "body": [
+            "無慚（Ahirika）：對於惡行不感到羞恥，造作惡業時不知自恥的心態。",
+            "無愧（Anottappa）：對惡行的後報毫無畏懼與顧忌，不畏惡果的心態。",
+            "經典論典強調：無慚與無愧必定同生並起——凡有無顧忌之處，必有無羞恥，二者密不可分。",
+            "此二心所直接對抗美遍行中的「慚」（Hiri）與「愧」（Ottappa）二種出世護法。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_AHIRIKA",
+              "term": "無慚",
+              "pali": "Ahirika",
+              "meaning": "對惡行無羞恥之心。"
+            },
+            {
+              "id": "TERM_ANOTTAPPA",
+              "term": "無愧",
+              "pali": "Anottappa",
+              "meaning": "對惡業後果無怖畏顧忌之心。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 34,
+              "note": "I.2/ TÂM SỞ VÔ TÀM – AHIRIKA CETASIKA"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 35,
+              "note": "VÔ TÀM + VÔ QUÝ: cả 2 luôn đi chung"
+            }
+          ]
+        },
+        {
+          "id": "M2_S03",
+          "title": "掉舉（Uddhacca）",
+          "summary": "掉舉是心不寂靜、動搖散亂的狀態，遍行十二不善心，障蔽禪定樂支。",
+          "body": [
+            "Uddhacca：U（向上）+ 詞根 dhu（搖動、震動）→ 向上浮動、動盪不寧、散亂掉舉。",
+            "論中生動比喻：猶如馬蹄剛觸地便急遽騰空移向別處；如魚脫水拼命掙扎；如心剛緣一境又被拉扯到別處；如聚雲被風吹散；如微塵隨風飛揚。",
+            "修學綱要：掉舉遍在於全部十二不善心中；與四名蘊相應；與色蘊不相應；性類屬不善；全分攝入不善本性中。",
+            "掉舉是五蓋之一（掉悔蓋），在禪支中直接與「樂」（Sukha）相對立。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_UDDHACCA",
+              "term": "掉舉",
+              "pali": "Uddhacca",
+              "meaning": "心浮躁動盪、無法安止於單一所緣的散亂心所。"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36,
+              "note": "I.4 TÂM SỞ PHÓNG DẬT – UDDHACCA CETASIKA"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M2_R01",
+          "front": "不善心所（Akusala cetasika）共有多少種？",
+          "back": "共有十四種不善心所。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": "M2_R02",
+          "front": "「不善」（Akusala）在阿毗達摩中有哪五種義蘊？",
+          "back": "病患（引生痛苦）；醜陋不淨；不善巧（障蔽理智）；有過失；招感苦報。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": "M2_R03",
+          "front": "癡分心所（Mocatuka）包含哪四種心所？",
+          "back": "癡（Moha）、無慚（Ahirika）、無愧（Anottappa）、掉舉（Uddhacca）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": "M2_R04",
+          "front": "為什麼癡分心所被稱為「通一切不善心所」（不善遍行）？",
+          "back": "因為這四個心所必定生起於全部十二不善心的每一個心識之中。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": "M2_R05",
+          "front": "什麼是「無慚」（Ahirika）？",
+          "back": "對於造作惡行不知羞恥、無慚愧心的心理狀態。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 34
+            }
+          ]
+        },
+        {
+          "id": "M2_R06",
+          "front": "什麼是「無愧」（Anottappa）？",
+          "back": "對惡行的可怕異熟果報毫無懼怕、不畏罪果的心態。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M2_R07",
+          "front": "無慚與無愧能否單獨分開生起？",
+          "back": "不能。二者在一切不善心中必然同生並起，形影不離。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M2_R08",
+          "front": "「掉舉」（Uddhacca）在詞源上如何解析？",
+          "back": "U（向上）+ 詞根 dhu（搖動）→ 向上浮動、心浮躁動搖、散亂不寧。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": "M2_R09",
+          "front": "論中用哪些生動的比喻來形容掉舉（Uddhacca）？",
+          "back": "馬蹄觸地即離、魚躍出水撲騰、浮雲隨風吹散、塵土隨風飛揚。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": "M2_R10",
+          "front": "掉舉作為五蓋之一，直接障蔽對抗哪一個禪支？",
+          "back": "掉舉直接對抗障蔽禪定中的「樂」（Sukha）禪支。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M2_Q01",
+          "type": "mcq",
+          "question": "癡分心所（Mocatuka）包含多少種心所？",
+          "correctAnswer": "4種",
+          "distractors": [
+            "3種",
+            "7種",
+            "14種"
+          ],
+          "explanation": "癡分心所共有4種：癡、無慚、無愧、掉舉。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": "M2_Q02",
+          "type": "mcq",
+          "question": "為什麼癡分心所被稱為「通一切不善心所」？",
+          "correctAnswer": "因為它們生起於全部12個不善心之中",
+          "distractors": [
+            "因為它們能生起於善心中",
+            "因為它們只生起於癡根心",
+            "因為它們是出世間法"
+          ],
+          "explanation": "癡分四心所遍行於全部十二不善心，無一例外。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": "M2_Q03",
+          "type": "mcq",
+          "question": "不善心所（Akusala cetasika）總共有多少種？",
+          "correctAnswer": "14種",
+          "distractors": [
+            "7種",
+            "12種",
+            "52種"
+          ],
+          "explanation": "不善心所總計14種（癡分4、貪分3、瞋分4、昏沉、睡眠、疑）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": "M2_Q04",
+          "type": "mcq",
+          "question": "「無慚」（Ahirika）的具體含義是什麼？",
+          "correctAnswer": "對造作惡行不知羞恥",
+          "distractors": [
+            "對惡果感到恐懼",
+            "心散亂動搖",
+            "對業果愚昧不知"
+          ],
+          "explanation": "無慚是以對惡行不感羞恥為特相。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 34
+            }
+          ]
+        },
+        {
+          "id": "M2_Q05",
+          "type": "mcq",
+          "question": "無慚與無愧之間的關係如何？",
+          "correctAnswer": "它們在所有不善心中必定形影相隨一同生起",
+          "distractors": [
+            "無慚只在貪根心，無愧只在瞋根心",
+            "二者輪流交替生起",
+            "可以單獨生起"
+          ],
+          "explanation": "無慚與無愧屬於不善遍行，在一切不善心識中必定同時俱生。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M2_Q06",
+          "type": "mcq",
+          "question": "掉舉（Uddhacca）的心理狀態是什麼？",
+          "correctAnswer": "心浮躁動搖、散亂不寧、無法定止",
+          "distractors": [
+            "昏暗沉淪、精神萎靡",
+            "強烈執著、貪愛難捨",
+            "憂惱忿恨、對抗排斥"
+          ],
+          "explanation": "掉舉的特相即是如被風吹動的灰塵般動盪不寧。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": "M2_Q07",
+          "type": "mcq",
+          "question": "掉舉（Uddhacca）存在於多少個不善心中？",
+          "correctAnswer": "全部12個不善心",
+          "distractors": [
+            "僅2個癡根心",
+            "僅8個貪根心",
+            "僅1個掉舉相應心"
+          ],
+          "explanation": "掉舉是通一切不善心所之一，遍存於全部12不善心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": "M2_Q08",
+          "type": "mcq",
+          "question": "阿毗達摩中闡釋了「不善」（Akusala）的幾種義蘊？",
+          "correctAnswer": "5種義蘊",
+          "distractors": [
+            "2種",
+            "3種",
+            "8種"
+          ],
+          "explanation": "不善具五義：病患、醜陋、不善巧、有過失、招感苦報。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": "M2_Q09",
+          "type": "mcq",
+          "question": "掉舉直接障蔽對抗哪一個禪支？",
+          "correctAnswer": "樂（Sukha）",
+          "distractors": [
+            "尋（Vitakka）",
+            "喜（Pīti）",
+            "一境性（Ekaggatā）"
+          ],
+          "explanation": "在五蓋中，掉舉追悔蓋直接障礙並破壞禪支中的樂（Sukha）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": "M2_Q10",
+          "type": "mcq",
+          "question": "癡分四心所在不善法中扮演什麼角色？",
+          "correctAnswer": "充當一切不善心識的前導和普遍基石",
+          "distractors": [
+            "僅是偶發生起的伴隨者",
+            "只負責製造色法",
+            "中和不善的惡性"
+          ],
+          "explanation": "癡分四心所是一切罪惡與不善活動的根本前驅與基石。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 36
+            }
+          ]
+        }
+      ]
+    },
+    "M4_AKUSALA": {
+      "title": "十二不善心",
+      "description": "八貪根心、二瞋根心與二癡根心。",
+      "translationStatus": "reviewed"
+    },
+    "M12_VO_NHAN": {
+      "title": "十八無因心",
+      "description": "七不善異熟心、八善異熟無因心與三無因唯作心。",
+      "translationStatus": "reviewed"
+    },
+    "M3_TINH_HAO_BIEN_HANH": {
+      "title": "十九遍一切美心所",
+      "description": "十九個遍一切美心心所，一切美心所共有。",
+      "translationStatus": "reviewed"
+    },
+    "M5_SOBHANA": {
+      "title": "二十四欲界美心",
+      "description": "八大善心、八大異熟心與八大唯作心。",
+      "translationStatus": "reviewed"
+    },
+    "M13_SAC_GIOI": {
+      "title": "十五色界心",
+      "description": "色界五禪善心、異熟心與唯作心。",
+      "translationStatus": "reviewed"
+    },
+    "M14_VO_SAC_GIOI": {
+      "title": "十二無色界心",
+      "description": "四無色定善心、異熟心與唯作心。",
+      "translationStatus": "reviewed"
+    },
+    "M7_SIEU_THE": {
+      "title": "出世間心",
+      "description": "四道心與四果心（或廣說四十心）。",
+      "translationStatus": "reviewed"
+    },
+    "M15_TAM_SO_PHOI_HOP": {
+      "title": "心所相應組合",
+      "description": "五十二心所與諸心的相應與配合規則。",
+      "translationStatus": "reviewed"
+    },
+    "M6_NGHIEP": {
+      "title": "業之概要",
+      "description": "思心所與十六種業的分類和感果法則。",
+      "translationStatus": "reviewed"
+    },
+    "M16_NGUOI_VA_COI": {
+      "title": "人與生存界",
+      "description": "十二種人與三十一界的業果輪迴流轉。",
+      "translationStatus": "reviewed"
+    },
+    "M8_NHAN_DUYEN": {
+      "title": "緣起之概要",
+      "description": "十二緣起支與生死流轉還原之法則。",
+      "translationStatus": "reviewed"
+    },
+    "M17_DUYEN_CHI_TIET": {
+      "title": "發趣法二十四緣",
+      "description": "二十四緣系統關係與法法相依的深細解析。",
+      "translationStatus": "reviewed"
+    },
+    "M9_SAC_PHAP": {
+      "title": "色法之概要",
+      "description": "四大種與二十四所造色，共二十八種物質現象。",
+      "translationStatus": "reviewed"
+    },
+    "M10_LO_TRINH": {
+      "title": "心路過程",
+      "description": "五門心路與意門心路的生滅流轉次第。",
+      "translationStatus": "reviewed"
+    }
+  }
 }

@@ -157,10 +157,10 @@ void main() {
       final container = ProviderContainer();
       addTearDown(container.dispose);
 
-      // No content_my.json ships yet, so the catalog must transparently fall
-      // through to English rather than come back empty.
-      final catalog = await container.read(contentCatalogProvider('my').future);
-      expect(catalog.locale, 'my');
+      // An unauthored locale (e.g. 'fr') has no content_<tag>.json, so the
+      // catalog must transparently fall through to English rather than come back empty.
+      final catalog = await container.read(contentCatalogProvider('fr').future);
+      expect(catalog.locale, 'fr');
       expect(
         catalog.text('cetasikas', 'CS_PHASSA', 'name', 'Xúc'),
         'Contact',

@@ -2,6 +2,1271 @@
   "locale": "si",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "translationStatus": "draft",
-  "note": "Generated from the translation worksheet by tool/content/init_locale.py --strip. Untranslated fields are omitted on purpose: they resolve through the runtime fallback chain to English, then to the Vietnamese source."
+  "lessonTranslationStatus": "reviewed",
+  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+  "cittas": {
+    "CI_001": {
+      "name": "සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_002": {
+      "name": "සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_003": {
+      "name": "සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්ත අසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_004": {
+      "name": "සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්ත සසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_005": {
+      "name": "උපෙක්ඛා සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_006": {
+      "name": "උපෙක්ඛා සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_007": {
+      "name": "උපෙක්ඛා සහගත දිට්ඨිගත විප්පයුත්ත අසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_008": {
+      "name": "උපෙක්ඛා සහගත දිට්ඨිගත විප්පයුත්ත සසංඛාරික ලෝභමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_009": {
+      "name": "දෝමනස්ස සහගත පටිඝ සම්පයුත්ත අසංඛාරික දෝසමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ."
+    },
+    "CI_010": {
+      "name": "දෝමනස්ස සහගත පටිඝ සම්පයුත්ත සසංඛාරික දෝසමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ."
+    },
+    "CI_011": {
+      "name": "උපෙක්ඛා සහගත විචිකිච්ඡා සම්පයුත්ත මෝහමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ."
+    },
+    "CI_012": {
+      "name": "උපෙක්ඛා සහගත උද්ධච්ච සම්පයුත්ත මෝහමූල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ."
+    },
+    "CI_013": {
+      "name": "උපෙක්ඛා සහගත චක්ඛුවිඤ්ඤාණය (අකුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ."
+    },
+    "CI_014": {
+      "name": "උපෙක්ඛා සහගත සෝතවිඤ්ඤාණය (අකුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ."
+    },
+    "CI_015": {
+      "name": "උපෙක්ඛා සහගත ඝානවිඤ්ඤාණය (අකුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ."
+    },
+    "CI_016": {
+      "name": "උපෙක්ඛා සහගත ජිව්හාවිඤ්ඤාණය (අකුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ."
+    },
+    "CI_017": {
+      "name": "දුක්ඛ සහගත කායවිඤ්ඤාණය (අකුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ."
+    },
+    "CI_018": {
+      "name": "උපෙක්ඛා සහගත සම්පටිච්ඡන සිත (අකුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ."
+    },
+    "CI_019": {
+      "name": "උපෙක්ඛා සහගත සන්තීරණ සිත (අකුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ."
+    },
+    "CI_020": {
+      "name": "උපෙක්ඛා සහගත චක්ඛුවිඤ්ඤාණය (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ."
+    },
+    "CI_021": {
+      "name": "උපෙක්ඛා සහගත සෝතවිඤ්ඤාණය (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ."
+    },
+    "CI_022": {
+      "name": "උපෙක්ඛා සහගත ඝානවිඤ්ඤාණය (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ."
+    },
+    "CI_023": {
+      "name": "උපෙක්ඛා සහගත ජිව්හාවිඤ්ඤාණය (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ."
+    },
+    "CI_024": {
+      "name": "සුඛ සහගත කායවිඤ්ඤාණය (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ."
+    },
+    "CI_025": {
+      "name": "උපෙක්ඛා සහගත සම්පටිච්ඡන සිත (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ."
+    },
+    "CI_026": {
+      "name": "සෝමනස්ස සහගත සන්තීරණ සිත (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ."
+    },
+    "CI_027": {
+      "name": "උපෙක්ඛා සහගත සන්තීරණ සිත (කුසල් විපාක)",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ."
+    },
+    "CI_028": {
+      "name": "උපෙක්ඛා සහගත පංචද්වාරාවජ්ජන සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ."
+    },
+    "CI_029": {
+      "name": "උපෙක්ඛා සහගත මනෝද්වාරාවජ්ජන සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ."
+    },
+    "CI_030": {
+      "name": "සෝමනස්ස සහගත හසිතොප්පාද සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ hasituppāda-cittaṃ."
+    },
+    "CI_055": {
+      "name": "සෝමනස්ස සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_056": {
+      "name": "සෝමනස්ස සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_057": {
+      "name": "සෝමනස්ස සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_058": {
+      "name": "සෝමනස්ස සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_059": {
+      "name": "උපෙක්ඛා සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_060": {
+      "name": "උපෙක්ඛා සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_061": {
+      "name": "උපෙක්ඛා සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_062": {
+      "name": "උපෙක්ඛා සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_063": {
+      "name": "සෝමනස්ස සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_064": {
+      "name": "සෝමනස්ස සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_065": {
+      "name": "සෝමනස්ස සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_066": {
+      "name": "සෝමනස්ස සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_067": {
+      "name": "උපෙක්ඛා සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_068": {
+      "name": "උපෙක්ඛා සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_069": {
+      "name": "උපෙක්ඛා සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_070": {
+      "name": "උපෙක්ඛා සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_071": {
+      "name": "සෝමනස්ස සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_072": {
+      "name": "සෝමනස්ස සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_073": {
+      "name": "සෝමනස්ස සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_074": {
+      "name": "සෝමනස්ස සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_075": {
+      "name": "උපෙක්ඛා සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_076": {
+      "name": "උපෙක්ඛා සහගත ඥාන සම්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_077": {
+      "name": "උපෙක්ඛා සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
+    },
+    "CI_078": {
+      "name": "උපෙක්ඛා සහගත ඥාන විප්පයුත්ත අසංඛාරික මහා ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
+    },
+    "CI_079": {
+      "name": "රූපාවචර ප්‍රථම ධ්‍යාන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_080": {
+      "name": "රූපාවචර දුතිය ධ්‍යාන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ."
+    },
+    "CI_081": {
+      "name": "රූපාවචර තතිය ධ්‍යාන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ."
+    },
+    "CI_082": {
+      "name": "රූපාවචර චතුත්ථ ධ්‍යාන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ."
+    },
+    "CI_083": {
+      "name": "රූපාවචර පංචම ධ්‍යාන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ."
+    },
+    "CI_084": {
+      "name": "රූපාවචර ප්‍රථම ධ්‍යාන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_085": {
+      "name": "රූපාවචර දුතිය ධ්‍යාන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ."
+    },
+    "CI_086": {
+      "name": "රූපාවචර තතිය ධ්‍යාන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ."
+    },
+    "CI_087": {
+      "name": "රූපාවචර චතුත්ථ ධ්‍යාන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ."
+    },
+    "CI_088": {
+      "name": "රූපාවචර පංචම ධ්‍යාන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ."
+    },
+    "CI_089": {
+      "name": "රූපාවචර ප්‍රථම ධ්‍යාන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_090": {
+      "name": "රූපාවචර දුතිය ධ්‍යාන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ."
+    },
+    "CI_091": {
+      "name": "රූපාවචර තතිය ධ්‍යාන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ."
+    },
+    "CI_092": {
+      "name": "රූපාවචර චතුත්ථ ධ්‍යාන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ."
+    },
+    "CI_093": {
+      "name": "රූපාවචර පංචම ධ්‍යාන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ."
+    },
+    "CI_094": {
+      "name": "අරූපාවචර ආකාසානඤ්චායතන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Ākāsānañcāyatana-kusalaa-cittaṃ."
+    },
+    "CI_095": {
+      "name": "අරූපාවචර විඤ්ඤාණඤ්චායතන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Viññāṇañcāyatana-kusalaa-cittaṃ."
+    },
+    "CI_096": {
+      "name": "අරූපාවචර ආකිඤ්චඤ්ඤායතන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Ākiñcaññāyatana-kusalaa-cittaṃ."
+    },
+    "CI_097": {
+      "name": "අරූපාවචර නෙවසඤ්ඤානාසඤ්ඤායතන කුසල් සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ."
+    },
+    "CI_098": {
+      "name": "අරූපාවචර ආකාසානඤ්චායතන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Ākāsānañcāyatana-vipakaa-cittaṃ."
+    },
+    "CI_099": {
+      "name": "අරූපාවචර විඤ්ඤාණඤ්චායතන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Viññāṇañcāyatana-vipakaa-cittaṃ."
+    },
+    "CI_100": {
+      "name": "අරූපාවචර ආකිඤ්චඤ්ඤායතන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Ākiñcaññāyatana-vipakaa-cittaṃ."
+    },
+    "CI_101": {
+      "name": "අරූපාවචර නෙවසඤ්ඤානාසඤ්ඤායතන විපාක සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ."
+    },
+    "CI_102": {
+      "name": "අරූපාවචර ආකාසානඤ්චායතන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Ākāsānañcāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_103": {
+      "name": "අරූපාවචර විඤ්ඤාණඤ්චායතන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Viññāṇañcāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_104": {
+      "name": "අරූපාවචර ආකිඤ්චඤ්ඤායතන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Ākiñcaññāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_105": {
+      "name": "අරූපාවචර නෙවසඤ්ඤානාසඤ්ඤායතන ක්‍රියා සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ."
+    },
+    "CI_106": {
+      "name": "ප්‍රථම ධ්‍යාන සෝතාපත්ති මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_107": {
+      "name": "දුතිය ධ්‍යාන සෝතාපත්ති මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_108": {
+      "name": "තතිය ධ්‍යාන සෝතාපත්ති මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_109": {
+      "name": "චතුත්ථ ධ්‍යාන සෝතාපත්ති මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_110": {
+      "name": "පංචම ධ්‍යාන සෝතාපත්ති මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_111": {
+      "name": "ප්‍රථම ධ්‍යාන සකදාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_112": {
+      "name": "දුතිය ධ්‍යාන සකදාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_113": {
+      "name": "තතිය ධ්‍යාන සකදාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_114": {
+      "name": "චතුත්ථ ධ්‍යාන සකදාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_115": {
+      "name": "පංචම ධ්‍යාන සකදාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_116": {
+      "name": "ප්‍රථම ධ්‍යාන අනාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_117": {
+      "name": "දුතිය ධ්‍යාන අනාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_118": {
+      "name": "තතිය ධ්‍යාන අනාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_119": {
+      "name": "චතුත්ථ ධ්‍යාන අනාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_120": {
+      "name": "පංචම ධ්‍යාන අනාගාමී මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_121": {
+      "name": "ප්‍රථම ධ්‍යාන අරහත් මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-magga-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_122": {
+      "name": "දුතිය ධ්‍යාන අරහත් මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-magga-dutiya-jhāna-cittaṃ."
+    },
+    "CI_123": {
+      "name": "තතිය ධ්‍යාන අරහත් මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-magga-tatiya-jhāna-cittaṃ."
+    },
+    "CI_124": {
+      "name": "චතුත්ථ ධ්‍යාන අරහත් මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-magga-catuttha-jhāna-cittaṃ."
+    },
+    "CI_125": {
+      "name": "පංචම ධ්‍යාන අරහත් මාර්ග සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-magga-pañcama-jhāna-cittaṃ."
+    },
+    "CI_126": {
+      "name": "ප්‍රථම ධ්‍යාන සෝතාපත්ති ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_127": {
+      "name": "දුතිය ධ්‍යාන සෝතාපත්ති ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_128": {
+      "name": "තතිය ධ්‍යාන සෝතාපත්ති ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_129": {
+      "name": "චතුත්ථ ධ්‍යාන සෝතාපත්ති ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_130": {
+      "name": "පංචම ධ්‍යාන සෝතාපත්ති ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sotāpatti-phala-pañcama-jhāna-cittaṃ."
+    },
+    "CI_131": {
+      "name": "ප්‍රථම ධ්‍යාන සකදාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_132": {
+      "name": "දුතිය ධ්‍යාන සකදාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_133": {
+      "name": "තතිය ධ්‍යාන සකදාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_134": {
+      "name": "චතුත්ථ ධ්‍යාන සකදාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_135": {
+      "name": "පංචම ධ්‍යාන සකදාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Sakadāgāmi-phala-pañcama-jhāna-cittaṃ."
+    },
+    "CI_136": {
+      "name": "ප්‍රථම ධ්‍යාන අනාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_137": {
+      "name": "දුතිය ධ්‍යාන අනාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_138": {
+      "name": "තතිය ධ්‍යාන අනාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_139": {
+      "name": "චතුත්ථ ධ්‍යාන අනාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_140": {
+      "name": "පංචම ධ්‍යාන අනාගාමී ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Anāgāmi-phala-pañcama-jhāna-cittaṃ."
+    },
+    "CI_141": {
+      "name": "ප්‍රථම ධ්‍යාන අරහත් ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-phala-paṭhama-jhāna-cittaṃ."
+    },
+    "CI_142": {
+      "name": "දුතිය ධ්‍යාන අරහත් ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-phala-dutiya-jhāna-cittaṃ."
+    },
+    "CI_143": {
+      "name": "තතිය ධ්‍යාන අරහත් ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-phala-tatiya-jhāna-cittaṃ."
+    },
+    "CI_144": {
+      "name": "චතුත්ථ ධ්‍යාන අරහත් ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-phala-catuttha-jhāna-cittaṃ."
+    },
+    "CI_145": {
+      "name": "පංචම ධ්‍යාන අරහත් ඵල සිත",
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Arahatta-phala-pañcama-jhāna-cittaṃ."
+    }
+  },
+  "cetasikas": {
+    "CS_PHASSA": {
+      "name": "ඵස්ස",
+      "shortName": "ඵස්ස",
+      "description": "සිත සහ අරමුණ අතර ස්පර්ශය."
+    },
+    "CS_VEDANA": {
+      "name": "වේදනා",
+      "shortName": "වේදනා",
+      "description": "අරමුණේ රසය විඳීම."
+    },
+    "CS_SANNA": {
+      "name": "සඤ්ඤා",
+      "shortName": "සඤ්ඤා",
+      "description": "අරමුණ හඳුනාගැනීම සහ සටහන් කරගැනීම."
+    },
+    "CS_CETANA": {
+      "name": "චේතනා",
+      "shortName": "චේතනා",
+      "description": "සම්ප්‍රයුක්ත ධර්මයන් මෙහෙයවීම සහ කර්ම සකස් කිරීම."
+    },
+    "CS_EKAGGATA": {
+      "name": "ඒකග්ගතා",
+      "shortName": "ඒකග්ගතා",
+      "description": "සිත එක් අරමුණක තැන්පත් කිරීම."
+    },
+    "CS_JIVITINDRIYA": {
+      "name": "ජීවිතින්ද්‍රිය",
+      "shortName": "ජීවිතින්ද්‍රිය",
+      "description": "නාම ධර්මයන්ගේ පැවැත්ම පවත්වා ගැනීම."
+    },
+    "CS_MANASIKARA": {
+      "name": "මනසිකාර",
+      "shortName": "මනසිකාර",
+      "description": "සිත අරමුණ වෙත යොමු කිරීම."
+    },
+    "CS_VITAKKA": {
+      "name": "විතක්ක",
+      "shortName": "විතක්ක",
+      "description": "සිත අරමුණ වෙත එසවීම."
+    },
+    "CS_VICARA": {
+      "name": "විචාර",
+      "shortName": "විචාර",
+      "description": "අරමුණෙහි සිත යෙදවීම, පිරිමැදීම."
+    },
+    "CS_ADHIMOKKHA": {
+      "name": "අධිමොක්ඛ",
+      "shortName": "අධිමොක්ඛ",
+      "description": "අරමුණ පිළිබඳ නිශ්චය කිරීම."
+    },
+    "CS_VIRIYA": {
+      "name": "වීරිය",
+      "shortName": "වීරිය",
+      "description": "අලස නොවී වීර්යය වැඩීම."
+    },
+    "CS_PITI": {
+      "name": "පීති",
+      "shortName": "පීති",
+      "description": "අරමුණ කෙරෙහි ප්‍රීතිවීම."
+    },
+    "CS_CHANDA": {
+      "name": "ඡන්ද",
+      "shortName": "ඡන්ද",
+      "description": "ක්‍රියා කිරීමේ කැමැත්ත."
+    },
+    "CS_MOHA": {
+      "name": "මෝහ",
+      "shortName": "මෝහ",
+      "description": "යථාර්ථය නොදන්නා මුළාව."
+    },
+    "CS_AHIRIKA": {
+      "name": "අහිරික",
+      "shortName": "අහිරික",
+      "description": "පවට ලැජ්ජා නොවීම."
+    },
+    "CS_ANOTTAPPA": {
+      "name": "අනොත්තප්ප",
+      "shortName": "අනොත්තප්ප",
+      "description": "පවට බිය නොවීම."
+    },
+    "CS_UDDHACCA": {
+      "name": "උද්ධච්ච",
+      "shortName": "උද්ධච්ච",
+      "description": "සිතේ නොසන්සුන්කම, විසිරීම."
+    },
+    "CS_LOBHA": {
+      "name": "ලෝභ",
+      "shortName": "ලෝභ",
+      "description": "අරමුණෙහි ඇලීම, ආශාව."
+    },
+    "CS_DITTHI": {
+      "name": "දිට්ඨි",
+      "shortName": "දිට්ඨි",
+      "description": "වැරදි දැක්ම, මිච්ඡා දිට්ඨිය."
+    },
+    "CS_MANA": {
+      "name": "මාන",
+      "shortName": "මාන",
+      "description": "අහංකාරය, මානය."
+    },
+    "CS_DOSA": {
+      "name": "දෝස",
+      "shortName": "දෝස",
+      "description": "තරහව, ද්වේෂය, ක්‍රෝධය."
+    },
+    "CS_ISSA": {
+      "name": "ඉස්සා",
+      "shortName": "ඉස්සා",
+      "description": "අන් අයගේ දියුණුවට ඊර්ෂ්‍යා කිරීම."
+    },
+    "CS_MACCHARIYA": {
+      "name": "මච්ඡරිය",
+      "shortName": "මච්ඡරිය",
+      "description": "තමන්ගේ සම්පත් අනුන්ට දීමට මසුරුකම."
+    },
+    "CS_KUKKUCCA": {
+      "name": "කුක්කුච්ච",
+      "shortName": "කුක්කුච්ච",
+      "description": "කළ නපුර හෝ නොකළ යහපත ගැන පසුතැවීම."
+    },
+    "CS_THINA": {
+      "name": "ථීන",
+      "shortName": "ථීන",
+      "description": "සිතේ හැකිලීම, අලසබව."
+    },
+    "CS_MIDDHA": {
+      "name": "මිද්ධ",
+      "shortName": "මිද්ධ",
+      "description": "චෛතසිකයන්ගේ නිදිමතබව සහ බරබව."
+    },
+    "CS_VICIKICCHA": {
+      "name": "විචිකිච්ඡා",
+      "shortName": "විචිකිච්ඡා",
+      "description": "ධර්මය පිළිබඳ සැකය, අවිශ්වාසය."
+    },
+    "CS_SADDHA": {
+      "name": "සද්ධා",
+      "shortName": "සද්ධා",
+      "description": "ත්‍රිවිධ රත්නය කෙරෙහි ශ්‍රද්ධාව."
+    },
+    "CS_SATI": {
+      "name": "සති",
+      "shortName": "සති",
+      "description": "කුසල් ධර්මයන්හි සිහිය පිහිටුවීම."
+    },
+    "CS_HIRI": {
+      "name": "හිරි",
+      "shortName": "හිරි",
+      "description": "පවට ලැජ්ජාවීම."
+    },
+    "CS_OTTAPPA": {
+      "name": "ඔත්තප්ප",
+      "shortName": "ඔත්තප්ප",
+      "description": "පවට බියවීම."
+    },
+    "CS_ALOBHA": {
+      "name": "අලෝභ",
+      "shortName": "අලෝභ",
+      "description": "අරමුණෙහි නොඇලීම, ත්‍යාගශීලීබව."
+    },
+    "CS_ADOSA": {
+      "name": "අදෝස",
+      "shortName": "අදෝස",
+      "description": "ද්වේෂය නැතිකම, මෛත්‍රිය."
+    },
+    "CS_TATRAMAJJHATTATA": {
+      "name": "තත්‍රමජ්ඣත්තතා",
+      "shortName": "තත්‍රමජ්ඣත්තතා",
+      "description": "සිතෙහි මැදහත් බව, උපේක්ෂාව."
+    },
+    "CS_KAYAPASSADDHI": {
+      "name": "කායපස්සද්ධි",
+      "shortName": "කායපස්සද්ධි",
+      "description": "චෛතසිකයන්ගේ සංසිඳීම."
+    },
+    "CS_CITTAPASSADDHI": {
+      "name": "චිත්තපස්සද්ධි",
+      "shortName": "චිත්තපස්සද්ධි",
+      "description": "සිතේ සංසිඳීම."
+    },
+    "CS_KAYALAHUTA": {
+      "name": "කායලහුතා",
+      "shortName": "කායලහුතා",
+      "description": "චෛතසිකයන්ගේ සැහැල්ලු බව."
+    },
+    "CS_CITTALAHUTA": {
+      "name": "චිත්තලහුතා",
+      "shortName": "චිත්තලහුතා",
+      "description": "සිතේ සැහැල්ලු බව."
+    },
+    "CS_KAYAMUDUTA": {
+      "name": "කායමුදුතා",
+      "shortName": "කායමුදුතා",
+      "description": "චෛතසිකයන්ගේ මෘදුබව."
+    },
+    "CS_CITTAMUDUTA": {
+      "name": "චිත්තමුදුතා",
+      "shortName": "චිත්තමුදුතා",
+      "description": "සිතේ මෘදුබව."
+    },
+    "CS_KAYAKAMMANNATA": {
+      "name": "කායකම්මඤ්ඤතා",
+      "shortName": "කායකම්මඤ්ඤතා",
+      "description": "චෛතසිකයන්ගේ ක්‍රියාශීලී බව."
+    },
+    "CS_CITTAKAMMANNATA": {
+      "name": "චිත්තකම්මඤ්ඤතා",
+      "shortName": "චිත්තකම්මඤ්ඤතා",
+      "description": "සිතේ සුදුසු බව."
+    },
+    "CS_KAYAPAGUNNATA": {
+      "name": "කායපාගුඤ්ඤතා",
+      "shortName": "කායපාගුඤ්ඤතා",
+      "description": "චෛතසිකයන්ගේ ප්‍රවීණබව."
+    },
+    "CS_CITTAPAGUNNATA": {
+      "name": "චිත්තපාගුඤ්ඤතා",
+      "shortName": "චිත්තපාගුඤ්ඤතා",
+      "description": "සිතේ ප්‍රවීණබව."
+    },
+    "CS_KAYUJUKATA": {
+      "name": "කායඋජ්ජුකතා",
+      "shortName": "කායඋජ්ජුකතා",
+      "description": "චෛතසිකයන්ගේ අවංකබව."
+    },
+    "CS_CITTUJUKATA": {
+      "name": "චිත්තඋජ්ජුකතා",
+      "shortName": "චිත්තඋජ්ජුකතා",
+      "description": "සිතේ අවංකබව."
+    },
+    "CS_SAMMAVACA": {
+      "name": "සම්මාවාචා",
+      "shortName": "සම්මාවාචා",
+      "description": "සතර වාග් දුශ්චරිතයෙන් වැළකීම."
+    },
+    "CS_SAMMAKAMMANTA": {
+      "name": "සම්මාකම්මන්ත",
+      "shortName": "සම්මාකම්මන්ත",
+      "description": "තුන් කාය දුශ්චරිතයෙන් වැළකීම."
+    },
+    "CS_SAMMAAJIVA": {
+      "name": "සම්මාආජීව",
+      "shortName": "සම්මාආජීව",
+      "description": "වැරදි දිවි පැවැත්මෙන් වැළකීම."
+    },
+    "CS_KARUNA": {
+      "name": "කරුණා",
+      "shortName": "කරුණා",
+      "description": "දුක්ඛිත සත්වයන්ගේ දුක නිවීමේ කැමැත්ත."
+    },
+    "CS_MUDITA": {
+      "name": "මුදිතා",
+      "shortName": "මුදිතා",
+      "description": "අන් අයගේ සතුට දැක සතුටුවීම."
+    },
+    "CS_PANNA": {
+      "name": "පඤ්ඤින්ද්‍රිය",
+      "shortName": "පඤ්ඤින්ද්‍රිය",
+      "description": "යථාර්ථය අවබෝධ කරවන ප්‍රඥාව."
+    }
+  },
+  "rupas": {
+    "RP_001": {
+      "name": "පඨවී ධාතුව",
+      "shortName": "පඨවී",
+      "description": "තද බව හෝ මෘදු බව ලක්ෂණය කොට ඇති ආධාරක ධාතුව."
+    },
+    "RP_002": {
+      "name": "ආපෝ ධාතුව",
+      "shortName": "ආපෝ",
+      "description": "වැගිරෙන හෝ එක්තැන් කරන ස්වභාවය."
+    },
+    "RP_003": {
+      "name": "තේජෝ ධාතුව",
+      "shortName": "තේජෝ",
+      "description": "උණුසුම් බව හෝ සිසිල් බව ලක්ෂණය කොට ඇත්තා වූ ධාතුව."
+    },
+    "RP_004": {
+      "name": "වායෝ ධාතුව",
+      "shortName": "වායෝ",
+      "description": "චලනය සහ පිම්බීම ලක්ෂණය කොට ඇත්තා වූ ධාතුව."
+    },
+    "RP_005": {
+      "name": "චක්ඛුප්‍රසාද",
+      "shortName": "ඇස",
+      "description": "රූපාරම්මණ ග්‍රහණය කරගන්නා ඇසේ පිරිසිදු ප්‍රසාද රූපය."
+    },
+    "RP_006": {
+      "name": "සෝතප්‍රසාද",
+      "shortName": "කන",
+      "description": "ශබ්දය ග්‍රහණය කරගන්නා කනේ පිරිසිදු ප්‍රසාද රූපය."
+    },
+    "RP_007": {
+      "name": "ඝානප්‍රසාද",
+      "shortName": "නාසය",
+      "description": "ගඳ සුවඳ ග්‍රහණය කරගන්නා නාසයේ ප්‍රසාද රූපය."
+    },
+    "RP_008": {
+      "name": "ජිව්හාප්‍රසාද",
+      "shortName": "දිව",
+      "description": "රසය ග්‍රහණය කරගන්නා දිවේ ප්‍රසාද රූපය."
+    },
+    "RP_009": {
+      "name": "කායප්‍රසාද",
+      "shortName": "කය",
+      "description": "ස්පර්ශය ග්‍රහණය කරගන්නා මුළු සිරුරෙහි පැතිරි ප්‍රසාද රූපය."
+    },
+    "RP_010": {
+      "name": "රූපාරම්මණ",
+      "shortName": "රූපය",
+      "description": "ඇසට පෙනෙන වර්ණ සහ ආලෝකය."
+    },
+    "RP_011": {
+      "name": "සද්දාරම්මණ",
+      "shortName": "ශබ්දය",
+      "description": "කනට ඇසෙන සියලු ශබ්ද."
+    },
+    "RP_012": {
+      "name": "ගන්ධාරම්මණ",
+      "shortName": "ගඳසුවඳ",
+      "description": "නාසයට දැනෙන සියලු ගන්ධයන්."
+    },
+    "RP_013": {
+      "name": "රසාරම්මණ",
+      "shortName": "රසය",
+      "description": "දිවට දැනෙන සියලු රසයන්."
+    },
+    "RP_014": {
+      "name": "ඉත්ථින්ද්‍රිය",
+      "shortName": "ස්ත්‍රීභාවය",
+      "description": "ස්ත්‍රී ලක්ෂණ ඇති කරවන රූපය."
+    },
+    "RP_015": {
+      "name": "පුරිසින්ද්‍රිය",
+      "shortName": "පුරුෂභාවය",
+      "description": "පුරුෂ ලක්ෂණ ඇති කරවන රූපය."
+    },
+    "RP_016": {
+      "name": "හදයවත්ථු",
+      "shortName": "හදයවත්ථුව",
+      "description": "සිතට ආධාරක වන රූපය."
+    },
+    "RP_017": {
+      "name": "ජීවිතින්ද්‍රිය රූප",
+      "shortName": "ජීවිතින්ද්‍රිය",
+      "description": "කර්මජ රූපයන්ගේ ආයුෂ පවත්වා ගන්නා රූපය."
+    },
+    "RP_018": {
+      "name": "කබලිංකාරාහාර",
+      "shortName": "ආහාර",
+      "description": "ශරීරය පෝෂණය කරන ඕජස් රූපය."
+    },
+    "RP_019": {
+      "name": "ආකාශ ධාතුව",
+      "shortName": "අවකාශය",
+      "description": "රූප කලාපයන් වෙන් කර දක්වන හිස් අවකාශය."
+    },
+    "RP_020": {
+      "name": "කායවිඤ්ඤත්ති",
+      "shortName": "කායවිඥප්තිය",
+      "description": "කයින් අදහස් ප්‍රකාශ කරන රූපය."
+    },
+    "RP_021": {
+      "name": "වචීවිඤ්ඤත්ති",
+      "shortName": "වාග්විඥප්තිය",
+      "description": "වචනයෙන් අදහස් ප්‍රකාශ කරන රූපය."
+    },
+    "RP_022": {
+      "name": "රූපලහුතා",
+      "shortName": "රූපයේ සැහැල්ලුබව",
+      "description": "රූපයේ බර නැති සැහැල්ලු ස්වභාවය."
+    },
+    "RP_023": {
+      "name": "රූපමුදුතා",
+      "shortName": "රූපයේ මෘදුබව",
+      "description": "රූපයේ රළු නොවන මෘදු ස්වභාවය."
+    },
+    "RP_024": {
+      "name": "රූපකම්මඤ්ඤතා",
+      "shortName": "රූපයේ කර්මණ්‍යතාව",
+      "description": "ක්‍රියාවට සුදුසු වූ රූපයේ ස්වභාවය."
+    },
+    "RP_025": {
+      "name": "රූපෝපචය",
+      "shortName": "රූප උපචය",
+      "description": "රූපයන්ගේ මුල් උපත සහ වර්ධනය."
+    },
+    "RP_026": {
+      "name": "රූපසන්තති",
+      "shortName": "රූප පරම්පරාව",
+      "description": "රූපයන්ගේ නොකැඩී පැවැත්ම."
+    },
+    "RP_027": {
+      "name": "රූපජරතා",
+      "shortName": "රූපයේ දිරාපත්වීම",
+      "description": "රූපයන්ගේ මුකුලිතවීම සහ වයස්ගතවීම."
+    },
+    "RP_028": {
+      "name": "රූපානිච්චතා",
+      "shortName": "රූපයේ බිඳීයාම",
+      "description": "රූපයන්ගේ සහමුලින්ම විනාශවීම."
+    }
+  },
+  "paccayas": {
+    "PC_01": {
+      "name": "හේතු ප්‍රත්‍යය",
+      "shortName": "හේතු",
+      "definition": "ලෝභ, දෝස, මෝහ, අලෝභ, අදෝස, අමෝහ යන මුල් හය ගසක මුල් මෙන් ආධාරක වන ධර්මය."
+    },
+    "PC_02": {
+      "name": "ආරම්මණ ප්‍රත්‍යය",
+      "shortName": "ආරම්මණ",
+      "definition": "රූපාදී අරමුණු සිතට සැරයටියක් මෙන් උපකාර වන ධර්මය."
+    },
+    "PC_03": {
+      "name": "අධිපති ප්‍රත්‍යය",
+      "shortName": "අධිපති",
+      "definition": "ඡන්ද, චිත්ත, වීරිය, වීමංසා යන අධිපති ධර්ම සක්විති රජෙකු මෙන් ප්‍රධාන වන ධර්මය."
+    },
+    "PC_04": {
+      "name": "අනන්තර ප්‍රත්‍යය",
+      "shortName": "අනන්තර",
+      "definition": "පෙර නිරුද්ධ වූ සිත නොපමාව ඊළඟ සිත ඉපදවීමට උපකාර වීම."
+    },
+    "PC_05": {
+      "name": "සමනන්තර ප්‍රත්‍යය",
+      "shortName": "සමනන්තර",
+      "definition": "මනාකොට අතරක් නැතිව ඊළඟ සිතට අවකාශ සලසන ධර්මය."
+    },
+    "PC_06": {
+      "name": "සහජාත ප්‍රත්‍යය",
+      "shortName": "සහජාත",
+      "definition": "එක්ව උපදින නාම රූප පහන සහ ආලෝකය මෙන් උපකාර වීම."
+    },
+    "PC_07": {
+      "name": "අඤ්ඤමඤ්ඤ ප්‍රත්‍යය",
+      "shortName": "අන්‍යෝන්‍ය",
+      "definition": "තුන්පයින් සිටි මුට්ටියක් මෙන් එකිනෙකාට උපකාර වීම."
+    },
+    "PC_08": {
+      "name": "නිස්සය ප්‍රත්‍යය",
+      "shortName": "නිස්සය",
+      "definition": "පොළොව ගස්කොළන් දරා සිටින්නාක් මෙන් ආධාර වීම."
+    },
+    "PC_09": {
+      "name": "උපනිස්සය ප්‍රත්‍යය",
+      "shortName": "උපනිස්සය",
+      "definition": "බලවත් හේතුවක් වී අනෙක් ධර්මයන් ඉපදවීමට උපකාර වීම."
+    },
+    "PC_10": {
+      "name": "පුරේජාත ප්‍රත්‍යය",
+      "shortName": "පුරේජාත",
+      "definition": "කලින් ඉපිද දැනට පවතිමින් පසුව උපදින සිත්වලට උපකාර වීම."
+    },
+    "PC_11": {
+      "name": "පච්ඡාජාත ප්‍රත්‍යය",
+      "shortName": "පච්ඡාජාත",
+      "definition": "පසුව ඉපදී කලින් උපන් රූප කයට උපකාර වීම."
+    },
+    "PC_12": {
+      "name": "ආසේවන ප්‍රත්‍යය",
+      "shortName": "ආසේවන",
+      "definition": "නැවත නැවත පුරුදු වීමෙන් පසු සිත්වලට බලය ලබා දීම."
+    },
+    "PC_13": {
+      "name": "කම්ම ප්‍රත්‍යය",
+      "shortName": "කර්ම",
+      "definition": "කුසලාකුසල චේතනාව විපාක ඉපදවීම සඳහා උපකාර වීම."
+    },
+    "PC_14": {
+      "name": "විපාක ප්‍රත්‍යය",
+      "shortName": "විපාක",
+      "definition": "කර්මයේ ඵලය වන විපාක ධර්මයන් අන්‍යෝන්‍ය වශයෙන් උපකාර වීම."
+    },
+    "PC_15": {
+      "name": "ආහාර ප්‍රත්‍යය",
+      "shortName": "ආහාර",
+      "definition": "ශරීරය සහ සිත පෝෂණය කරන සතර ආහාරයන්ගේ උපකාරය."
+    },
+    "PC_16": {
+      "name": "ඉන්ද්‍රිය ප්‍රත්‍යය",
+      "shortName": "ඉන්ද්‍රිය",
+      "definition": "තම තමන්ගේ කටයුතු පිළිබඳ ප්‍රධානත්වය දරන ඉන්ද්‍රිය ධර්මයන්ගේ උපකාරය."
+    },
+    "PC_17": {
+      "name": "ධ්‍යාන ප්‍රත්‍යය",
+      "shortName": "ධ්‍යාන",
+      "definition": "ධ්‍යාන අංග සිත අරමුණෙහි තදින් ඇලවීම සඳහා උපකාර වීම."
+    },
+    "PC_18": {
+      "name": "මාර්ග ප්‍රත්‍යය",
+      "shortName": "මාර්ග",
+      "definition": "නිවන කරා හෝ යම් ගතියක් කරා ගෙනයන මාර්ග අංගයන්ගේ උපකාරය."
+    },
+    "PC_19": {
+      "name": "සම්පයුත්ත ප්‍රත්‍යය",
+      "shortName": "සම්පයුක්ත",
+      "definition": "දිය සහ කිරි මෙන් එකට මුසුව ඉපදී නිරුද්ධ වන ධර්ම."
+    },
+    "PC_20": {
+      "name": "විප්පයුත්ත ප්‍රත්‍යය",
+      "shortName": "විප්‍රයුක්ත",
+      "definition": "දිය සහ තෙල් මෙන් එකට නොමුසුව නාම සහ රූප උපකාර වීම."
+    },
+    "PC_21": {
+      "name": "අත්ථි ප්‍රත්‍යය",
+      "shortName": "ඇතිබව",
+      "definition": "දැනට පවතින ස්වභාවයෙන්ම අනෙක් ධර්මයන්ට ආධාර වීම."
+    },
+    "PC_22": {
+      "name": "නත්ථි ප්‍රත්‍යය",
+      "shortName": "නැතිබව",
+      "definition": "නිරුද්ධ වී නැතිවීමෙන්ම ඊළඟ ධර්මයට ඉඩ ලබාදීම."
+    },
+    "PC_23": {
+      "name": "විගත ප්‍රත්‍යය",
+      "shortName": "පහවයාම",
+      "definition": "පෙර ධර්මයන්ගේ පහව යාමෙන්ම පසු ධර්මයන්ගේ පහළවීමට අවකාශ සැලසීම."
+    },
+    "PC_24": {
+      "name": "අවිගත ප්‍රත්‍යය",
+      "shortName": "නොපහවයාම",
+      "definition": "නොපහව පවතින ස්වභාවයෙන්ම උපකාර වීම."
+    }
+  },
+  "paticcas": {
+    "PD_01": {
+      "name": "අවිද්‍යා",
+      "shortName": "අවිද්‍යාව",
+      "description": "චතුරාර්ය සත්‍යය නොදන්නා මුළාව."
+    },
+    "PD_02": {
+      "name": "සංස්කාර",
+      "shortName": "සංස්කාර",
+      "description": "කුසලාකුසල චේතනාවන් මගින් කර්ම රැස් කිරීම."
+    },
+    "PD_03": {
+      "name": "විඥාන",
+      "shortName": "විඤ්ඤාණය",
+      "description": "නව භවයක පිළිසිඳ ගන්නා ප්‍රතිසන්ධි විඤ්ඤාණය ඇතුළු සිත්."
+    },
+    "PD_04": {
+      "name": "නාම-රූප",
+      "shortName": "නාමරූප",
+      "description": "සිත, චෛතසික (නාම) සහ භෞතික ශරීරය (රූප)."
+    },
+    "PD_05": {
+      "name": "සළායතන",
+      "shortName": "සළායතන",
+      "description": "ඇස, කන, නාසය, දිව, කය, මන යන ආයතන හය."
+    },
+    "PD_06": {
+      "name": "ඵස්ස",
+      "shortName": "ස්පර්ශය",
+      "description": "ද්වාරය, අරමුණ සහ විඤ්ඤාණය එක්වීම."
+    },
+    "PD_07": {
+      "name": "වේදනා",
+      "shortName": "වේදනාව",
+      "description": "ස්පර්ශයෙන් උපදින සැප, දුක් හෝ මැදහත් විඳීම."
+    },
+    "PD_08": {
+      "name": "තණ්හා",
+      "shortName": "තෘෂ්ණාව",
+      "description": "අරමුණුවලට ඇති ඇල්ම සහ දැඩි ආශාව."
+    },
+    "PD_09": {
+      "name": "උපාදාන",
+      "shortName": "උපාදානය",
+      "description": "තෘෂ්ණාව දැඩිවීමෙන් ඇතිවන දැඩි අල්ලාගැනීම."
+    },
+    "PD_10": {
+      "name": "භව",
+      "shortName": "භවය",
+      "description": "නැවත ඉපදීමට මුල්වන කර්මභවය සහ උප්පත්තිභවය."
+    },
+    "PD_11": {
+      "name": "ජාති",
+      "shortName": "ඉපදීම",
+      "description": "නව භවයක ස්කන්ධයන්ගේ පහළවීම හෙවත් ජාතිය."
+    },
+    "PD_12": {
+      "name": "ජරා-මරණ",
+      "shortName": "ජරා මරණ",
+      "description": "ස්කන්ධයන්ගේ දිරාපත්වීම (ජරා) සහ බිඳීයාම (මරණ)."
+    }
+  },
+  "kammas": {
+    "KM_T_01": {
+      "name": "දිට්ඨධම්මවේදනීය කර්ම",
+      "shortName": "දිට්ඨධම්මවේදනීය",
+      "description": "මෙම ආත්මයේදීම විපාක දෙන කර්මය."
+    },
+    "KM_T_02": {
+      "name": "උපපජ්ජවේදනීය කර්ම",
+      "shortName": "උපපජ්ජවේදනීය",
+      "description": "ඊළඟ ආත්මයේදී විපාක දෙන කර්මය."
+    },
+    "KM_T_03": {
+      "name": "අපරාපරියවේදනීය කර්ම",
+      "shortName": "අපරාපරියවේදනීය",
+      "description": "තුන්වන ආත්මයේ සිට නිවන් දකින තුරු විපාක දෙන කර්මය."
+    },
+    "KM_T_04": {
+      "name": "අහෝසි කර්ම",
+      "shortName": "අහෝසි",
+      "description": "විපාක දීමට අවස්ථාවක් නොලැබී අහෝසි වී ගිය කර්මය."
+    },
+    "KM_U_01": {
+      "name": "ජනක කර්ම",
+      "shortName": "ජනක",
+      "description": "නව භවයක උත්පත්තිය (ප්‍රතිසන්ධිය) ලබා දෙන කර්මය."
+    },
+    "KM_U_02": {
+      "name": "උපත්ථම්භක කර්ම",
+      "shortName": "උපත්ථම්භක",
+      "description": "ජනක කර්මයට සහාය දී විපාකය වැඩි දියුණු කරන කර්මය."
+    },
+    "KM_U_03": {
+      "name": "උපපීළක කර්ම",
+      "shortName": "උපපීළක",
+      "description": "ජනක කර්මයේ විපාකයට බාධා පමුණුවන කර්මය."
+    },
+    "KM_U_04": {
+      "name": "උපඝාතක කර්ම",
+      "shortName": "උපඝාතක",
+      "description": "මුල් කර්මයේ විපාකය සම්පූර්ණයෙන්ම කපා දමන කර්මය."
+    },
+    "KM_P_01": {
+      "name": "ගරුක කර්ම",
+      "shortName": "ගරුක",
+      "description": "පළමුවෙන්ම විපාක දෙන ඉතා බරපතල කර්ම (පංචානන්තර්ය හෝ ධ්‍යාන)."
+    },
+    "KM_P_02": {
+      "name": "ආසන්න කර්ම",
+      "shortName": "ආසන්න",
+      "description": "මරණාසන්න මොහොතේදී සිහිවන හෝ කරන කර්මය."
+    },
+    "KM_P_03": {
+      "name": "ආචිණ්ණ කර්ම",
+      "shortName": "ආචිණ්ණ",
+      "description": "නිතර නිතර පුරුදු පුහුණු කළ කර්මය."
+    },
+    "KM_P_04": {
+      "name": "කටත්තා කර්ම",
+      "shortName": "කටත්තා",
+      "description": "ඉහත කර්ම තුන නොමැති විට විපාක දෙන සුළු කර්ම."
+    },
+    "KM_R_01": {
+      "name": "කාමාවචර අකුසල් කර්ම",
+      "shortName": "කාම අකුසල්",
+      "description": "සතර අපායෙහි උපත ලබා දෙන දස අකුසල් කර්ම."
+    },
+    "KM_R_02": {
+      "name": "කාමාවචර කුසල් කර්ම",
+      "shortName": "කාම කුසල්",
+      "description": "මනුෂ්‍ය සහ දිව්‍ය ලෝකවල උත්පත්තිය දෙන දස පුණ්‍ය ක්‍රියා."
+    },
+    "KM_R_03": {
+      "name": "රූපාවචර කුසල් කර්ම",
+      "shortName": "රූප කුසල්",
+      "description": "රූප බඹලොව උත්පත්තිය දෙන රූප ධ්‍යාන කුසල්."
+    },
+    "KM_R_04": {
+      "name": "අරූපාවචර කුසල් කර්ම",
+      "shortName": "අරූප කුසල්",
+      "description": "අරූප බඹලොව උත්පත්තිය දෙන අරූප ධ්‍යාන කුසල්."
+    }
+  },
+  "vithis": {
+    "VT_NGU_MON_RATLON": {
+      "name": "අතිමහන්තාරම්මණ පංචද්වාර වීථි",
+      "shortName": "අතිමහන්ත පංචද්වාර",
+      "description": "චිත්තක්ෂණ 17ක් සම්පූර්ණ වන තදාරම්මණ සහිත පංචද්වාර වීථිය."
+    },
+    "VT_NGU_MON_LON": {
+      "name": "මහන්තාරම්මණ පංචද්වාර වීථි",
+      "shortName": "පංචද්වාර මහන්ත",
+      "description": "ජවන සතක් පමණක් පහළ වන, තදාරම්මණ රහිත පංචද්වාරික වීථිය."
+    },
+    "VT_Y_MON": {
+      "name": "මනෝද්වාර වීථි",
+      "shortName": "මනෝද්වාර වීථිය",
+      "description": "මනෝද්වාරය හරහා ධර්මාරම්මණ ග්‍රහණය කරමින් පහළ වන සිතුවිලි මාලාව."
+    },
+    "VT_VITHIMUTTA": {
+      "name": "වීථිමුක්ත සිත්",
+      "shortName": "වීථිමුක්ත",
+      "description": "ද්වාර විමුක්තව පවතින ප්‍රතිසන්ධි, භවාංග සහ චුති සිත්."
+    }
+  },
+  "studyModules": {
+    "M1_BASICS": {
+      "title": "සබ්බචිත්තසාධාරණ චෛතසික (7)",
+      "description": "සියලු සිත්හි යෙදෙන සර්වචිත්ත සාධාරණ චෛතසික 7.",
+      "translationStatus": "reviewed"
+    },
+    "M11_BIET_CANH": {
+      "title": "ප්‍රකීර්ණක චෛතසික (6)",
+      "description": "අවශ්‍ය පරිදි යෙදෙන ප්‍රකීර්ණක චෛතසික 6.",
+      "translationStatus": "reviewed"
+    },
+    "M2_SI_PHAN": {
+      "title": "මෝහ චතුක්ක චෛතසික (4)",
+      "description": "මෝහ, අහිරික, අනොත්තප්ප, උද්ධච්ච යන අකුසල සාධාරණ 4.",
+      "translationStatus": "reviewed"
+    },
+    "M4_AKUSALA": {
+      "title": "දොළොස් අකුසල් සිත්",
+      "description": "ලෝභමූල 8, ද්වේෂමූල 2, මෝහමූල 2 අකුසල් සිත්.",
+      "translationStatus": "reviewed"
+    },
+    "M12_VO_NHAN": {
+      "title": "දහඅට අහේතුක සිත්",
+      "description": "අකුසල් විපාක 7, කුසල් විපාක 8, අහේතුක ක්‍රියා 3.",
+      "translationStatus": "reviewed"
+    },
+    "M3_TINH_HAO_BIEN_HANH": {
+      "title": "ශෝභන සාධාරණ චෛතසික (19)",
+      "description": "සියලු ශෝභන සිත්හි යෙදෙන චෛතසික 19.",
+      "translationStatus": "reviewed"
+    },
+    "M5_SOBHANA": {
+      "title": "කාවාවචර ශෝභන සිත් (24)",
+      "description": "මහා කුසල් 8, මහා විපාක 8, මහා ක්‍රියා 8.",
+      "translationStatus": "reviewed"
+    },
+    "M13_SAC_GIOI": {
+      "title": "රූපාවචර සිත් (15)",
+      "description": "රූප ධ්‍යාන කුසල්, විපාක, ක්‍රියා සිත් 15.",
+      "translationStatus": "reviewed"
+    },
+    "M14_VO_SAC_GIOI": {
+      "title": "අරූපාවචර සිත් (12)",
+      "description": "අරූප ධ්‍යාන කුසල්, විපාක, ක්‍රියා සිත් 12.",
+      "translationStatus": "reviewed"
+    },
+    "M7_SIEU_THE": {
+      "title": "ලෝකෝත්තර සිත්",
+      "description": "නිවන් අරමුණු කරන මාර්ග සිත් 4 සහ ඵල සිත් 4.",
+      "translationStatus": "reviewed"
+    },
+    "M15_TAM_SO_PHOI_HOP": {
+      "title": "චෛතසික සංග්‍රහය (සම්ප්‍රයෝග)",
+      "description": "චෛතසික 52 සිත් හා යෙදෙන ක්‍රමය.",
+      "translationStatus": "reviewed"
+    },
+    "M6_NGHIEP": {
+      "title": "කර්ම සංග්‍රහය",
+      "description": "චේතනාව සහ කර්ම 16 විග්‍රහය.",
+      "translationStatus": "reviewed"
+    },
+    "M16_NGUOI_VA_COI": {
+      "title": "පුද්ගල සහ භූමි",
+      "description": "පුද්ගලයන් 12 දෙනා සහ තිස්එක් තලය.",
+      "translationStatus": "reviewed"
+    },
+    "M8_NHAN_DUYEN": {
+      "title": "පටිච්චසමුප්පාදය",
+      "description": "භව චක්‍රය සහ හේතුඵල ධර්මතා 12.",
+      "translationStatus": "reviewed"
+    },
+    "M17_DUYEN_CHI_TIET": {
+      "title": "පට්ඨාන (ප්‍රත්‍ය 24)",
+      "description": "විසිහතර ප්‍රත්‍ය ධර්ම විවරණය.",
+      "translationStatus": "reviewed"
+    },
+    "M9_SAC_PHAP": {
+      "title": "රූප සංග්‍රහය",
+      "description": "මහාභූත 4 සහ උපාදාය රූප 24 — රූප 28.",
+      "translationStatus": "reviewed"
+    },
+    "M10_LO_TRINH": {
+      "title": "චිත්ත වීථි",
+      "description": "පංචද්වාර සහ මනෝද්වාර වීථි ක්‍රමය.",
+      "translationStatus": "reviewed"
+    }
+  }
 }
