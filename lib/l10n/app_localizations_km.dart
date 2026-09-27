@@ -1053,4 +1053,46 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'ស្ដាប់ទាំងអស់';
+
+  @override
+  String get listeningQueue => 'បញ្ជីស្ដាប់';
+
+  @override
+  String get listenFromHere => 'ស្ដាប់ពីទីនេះ';
+
+  @override
+  String get nowPlaying => 'កំពុងចាក់';
+
+  @override
+  String get repeatOff => 'មិនធ្វើម្ដងទៀតទេ';
+
+  @override
+  String get repeatOne => 'ធ្វើម្ដងទៀតផ្នែកនេះ';
+
+  @override
+  String get repeatAll => 'ធ្វើម្ដងទៀតទាំងអស់';
+
+  @override
+  String get listenAgain => 'ស្ដាប់ម្ដងទៀត';
+
+  @override
+  String get playbackSpeed => 'ល្បឿន';
+
+  @override
+  String get resumeListening => 'បន្តស្ដាប់';
+
+  @override
+  String get minutesShort => 'នាទី';
+
+  @override
+  String get playAudio => 'ចាក់';
+
+  @override
+  String get pauseAudio => 'ផ្អាក';
+
+  @override
+  String get previousTrack => 'ផ្នែកមុន';
 }

@@ -1051,4 +1051,46 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'ฟังทั้งหมด';
+
+  @override
+  String get listeningQueue => 'รายการที่จะฟัง';
+
+  @override
+  String get listenFromHere => 'ฟังจากตรงนี้';
+
+  @override
+  String get nowPlaying => 'กำลังเล่น';
+
+  @override
+  String get repeatOff => 'ปิดการวนซ้ำ';
+
+  @override
+  String get repeatOne => 'วนซ้ำส่วนนี้';
+
+  @override
+  String get repeatAll => 'วนซ้ำทั้งหมด';
+
+  @override
+  String get listenAgain => 'ฟังอีกครั้ง';
+
+  @override
+  String get playbackSpeed => 'ความเร็ว';
+
+  @override
+  String get resumeListening => 'ฟังต่อ';
+
+  @override
+  String get minutesShort => 'นาที';
+
+  @override
+  String get playAudio => 'เล่น';
+
+  @override
+  String get pauseAudio => 'หยุดชั่วคราว';
+
+  @override
+  String get previousTrack => 'ส่วนก่อนหน้า';
 }

@@ -1049,4 +1049,46 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'Mục này chưa được dịch; đang hiển thị nội dung học tiếng Anh.';
+
+  @override
+  String get listenAll => 'Nghe toàn bộ';
+
+  @override
+  String get listeningQueue => 'Danh sách nghe';
+
+  @override
+  String get listenFromHere => 'Nghe từ đây';
+
+  @override
+  String get nowPlaying => 'Đang nghe';
+
+  @override
+  String get repeatOff => 'Tắt lặp';
+
+  @override
+  String get repeatOne => 'Lặp mục này';
+
+  @override
+  String get repeatAll => 'Lặp cả danh sách';
+
+  @override
+  String get listenAgain => 'Nghe lại';
+
+  @override
+  String get playbackSpeed => 'Tốc độ';
+
+  @override
+  String get resumeListening => 'Tiếp tục nghe';
+
+  @override
+  String get minutesShort => 'phút';
+
+  @override
+  String get playAudio => 'Phát';
+
+  @override
+  String get pauseAudio => 'Tạm dừng';
+
+  @override
+  String get previousTrack => 'Mục trước';
 }

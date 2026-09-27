@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "सर्व ऐका",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "ऐकण्याची यादी",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "इथून ऐका",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "आता चालू आहे",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "पुनरावृत्ती बंद",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "हा विभाग पुन्हा ऐका",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "सर्व पुन्हा ऐका",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "पुन्हा ऐका",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "वेग",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "पुढे ऐका",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "मि.",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "चालू करा",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "थांबा",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "मागील विभाग",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "ฟังทั้งหมด",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "รายการที่จะฟัง",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "ฟังจากตรงนี้",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "กำลังเล่น",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "ปิดการวนซ้ำ",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "วนซ้ำส่วนนี้",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "วนซ้ำทั้งหมด",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "ฟังอีกครั้ง",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "ความเร็ว",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "ฟังต่อ",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "นาที",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "เล่น",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "หยุดชั่วคราว",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "ส่วนก่อนหน้า",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

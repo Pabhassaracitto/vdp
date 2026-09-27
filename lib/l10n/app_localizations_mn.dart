@@ -1054,4 +1054,46 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'Бүгдийг сонсох';
+
+  @override
+  String get listeningQueue => 'Сонсох жагсаалт';
+
+  @override
+  String get listenFromHere => 'Эндээс сонсох';
+
+  @override
+  String get nowPlaying => 'Тоглож байна';
+
+  @override
+  String get repeatOff => 'Давтахгүй';
+
+  @override
+  String get repeatOne => 'Энэ хэсгийг давтах';
+
+  @override
+  String get repeatAll => 'Бүгдийг давтах';
+
+  @override
+  String get listenAgain => 'Дахин сонсох';
+
+  @override
+  String get playbackSpeed => 'Хурд';
+
+  @override
+  String get resumeListening => 'Үргэлжлүүлэн сонсох';
+
+  @override
+  String get minutesShort => 'мин';
+
+  @override
+  String get playAudio => 'Тоглох';
+
+  @override
+  String get pauseAudio => 'Түр зогсоо';
+
+  @override
+  String get previousTrack => 'Өмнөх хэсэг';
 }

@@ -1392,5 +1392,61 @@
   "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
+  },
+  "listenAll": "ស្ដាប់ទាំងអស់",
+  "@listenAll": {
+    "description": "listenAll"
+  },
+  "listeningQueue": "បញ្ជីស្ដាប់",
+  "@listeningQueue": {
+    "description": "listeningQueue"
+  },
+  "listenFromHere": "ស្ដាប់ពីទីនេះ",
+  "@listenFromHere": {
+    "description": "listenFromHere"
+  },
+  "nowPlaying": "កំពុងចាក់",
+  "@nowPlaying": {
+    "description": "nowPlaying"
+  },
+  "repeatOff": "មិនធ្វើម្ដងទៀតទេ",
+  "@repeatOff": {
+    "description": "repeatOff"
+  },
+  "repeatOne": "ធ្វើម្ដងទៀតផ្នែកនេះ",
+  "@repeatOne": {
+    "description": "repeatOne"
+  },
+  "repeatAll": "ធ្វើម្ដងទៀតទាំងអស់",
+  "@repeatAll": {
+    "description": "repeatAll"
+  },
+  "listenAgain": "ស្ដាប់ម្ដងទៀត",
+  "@listenAgain": {
+    "description": "listenAgain"
+  },
+  "playbackSpeed": "ល្បឿន",
+  "@playbackSpeed": {
+    "description": "playbackSpeed"
+  },
+  "resumeListening": "បន្តស្ដាប់",
+  "@resumeListening": {
+    "description": "resumeListening"
+  },
+  "minutesShort": "នាទី",
+  "@minutesShort": {
+    "description": "minutesShort"
+  },
+  "playAudio": "ចាក់",
+  "@playAudio": {
+    "description": "playAudio"
+  },
+  "pauseAudio": "ផ្អាក",
+  "@pauseAudio": {
+    "description": "pauseAudio"
+  },
+  "previousTrack": "ផ្នែកមុន",
+  "@previousTrack": {
+    "description": "previousTrack"
   }
 }

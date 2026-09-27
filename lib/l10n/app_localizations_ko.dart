@@ -1051,4 +1051,46 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => '모두 듣기';
+
+  @override
+  String get listeningQueue => '듣기 목록';
+
+  @override
+  String get listenFromHere => '여기서 듣기';
+
+  @override
+  String get nowPlaying => '재생 중';
+
+  @override
+  String get repeatOff => '반복 꺼짐';
+
+  @override
+  String get repeatOne => '이 단락 반복';
+
+  @override
+  String get repeatAll => '모두 반복';
+
+  @override
+  String get listenAgain => '다시 듣기';
+
+  @override
+  String get playbackSpeed => '속도';
+
+  @override
+  String get resumeListening => '이어서 듣기';
+
+  @override
+  String get minutesShort => '분';
+
+  @override
+  String get playAudio => '재생';
+
+  @override
+  String get pauseAudio => '일시정지';
+
+  @override
+  String get previousTrack => '이전 단락';
 }

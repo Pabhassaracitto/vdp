@@ -1055,4 +1055,46 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'Tout écouter';
+
+  @override
+  String get listeningQueue => 'Liste d’écoute';
+
+  @override
+  String get listenFromHere => 'Écouter depuis ici';
+
+  @override
+  String get nowPlaying => 'Lecture en cours';
+
+  @override
+  String get repeatOff => 'Répétition désactivée';
+
+  @override
+  String get repeatOne => 'Répéter cette section';
+
+  @override
+  String get repeatAll => 'Tout répéter';
+
+  @override
+  String get listenAgain => 'Réécouter';
+
+  @override
+  String get playbackSpeed => 'Vitesse';
+
+  @override
+  String get resumeListening => 'Reprendre l’écoute';
+
+  @override
+  String get minutesShort => 'min';
+
+  @override
+  String get playAudio => 'Lire';
+
+  @override
+  String get pauseAudio => 'Pause';
+
+  @override
+  String get previousTrack => 'Section précédente';
 }

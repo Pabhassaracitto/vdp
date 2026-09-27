@@ -1051,4 +1051,46 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'استمع إلى الكل';
+
+  @override
+  String get listeningQueue => 'قائمة الاستماع';
+
+  @override
+  String get listenFromHere => 'استمع من هنا';
+
+  @override
+  String get nowPlaying => 'قيد التشغيل';
+
+  @override
+  String get repeatOff => 'إيقاف التكرار';
+
+  @override
+  String get repeatOne => 'تكرار هذا القسم';
+
+  @override
+  String get repeatAll => 'تكرار الكل';
+
+  @override
+  String get listenAgain => 'استمع مرة أخرى';
+
+  @override
+  String get playbackSpeed => 'السرعة';
+
+  @override
+  String get resumeListening => 'متابعة الاستماع';
+
+  @override
+  String get minutesShort => 'دقيقة';
+
+  @override
+  String get playAudio => 'تشغيل';
+
+  @override
+  String get pauseAudio => 'إيقاف مؤقت';
+
+  @override
+  String get previousTrack => 'القسم السابق';
 }

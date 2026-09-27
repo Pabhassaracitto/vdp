@@ -1054,4 +1054,46 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'ຟັງທັງໝົດ';
+
+  @override
+  String get listeningQueue => 'ລາຍການຟັງ';
+
+  @override
+  String get listenFromHere => 'ຟັງຈາກນີ້';
+
+  @override
+  String get nowPlaying => 'ກຳລັງຫຼິ້ນ';
+
+  @override
+  String get repeatOff => 'ປິດການທຳຊ້ຳ';
+
+  @override
+  String get repeatOne => 'ທຳຊ້ຳພາກນີ້';
+
+  @override
+  String get repeatAll => 'ທຳຊ້ຳທັງໝົດ';
+
+  @override
+  String get listenAgain => 'ຟັງອີກຄັ້ງ';
+
+  @override
+  String get playbackSpeed => 'ຄວາມໄວ';
+
+  @override
+  String get resumeListening => 'ສືບຕໍ່ຟັງ';
+
+  @override
+  String get minutesShort => 'ນາທີ';
+
+  @override
+  String get playAudio => 'ຫຼິ້ນ';
+
+  @override
+  String get pauseAudio => 'ຢຸດຊົ່ວຄາວ';
+
+  @override
+  String get previousTrack => 'ພາກກ່ອນ';
 }

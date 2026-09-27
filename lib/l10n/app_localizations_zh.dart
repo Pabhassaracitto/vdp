@@ -1049,9 +1049,50 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => '全部收听';
+
+  @override
+  String get listeningQueue => '收听列表';
+
+  @override
+  String get listenFromHere => '从此处收听';
+
+  @override
+  String get nowPlaying => '正在播放';
+
+  @override
+  String get repeatOff => '关闭重复';
+
+  @override
+  String get repeatOne => '循环本节';
+
+  @override
+  String get repeatAll => '循环全部';
+
+  @override
+  String get listenAgain => '再听一遍';
+
+  @override
+  String get playbackSpeed => '语速';
+
+  @override
+  String get resumeListening => '继续收听';
+
+  @override
+  String get minutesShort => '分钟';
+
+  @override
+  String get playAudio => '播放';
+
+  @override
+  String get pauseAudio => '暂停';
+
+  @override
+  String get previousTrack => '上一节';
 }
 
-/// The translations for Chinese, as used in Taiwan (`zh_TW`).
 class AppLocalizationsZhTw extends AppLocalizationsZh {
   AppLocalizationsZhTw() : super('zh_TW');
 
@@ -2096,4 +2137,46 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => '全部收聽';
+
+  @override
+  String get listeningQueue => '收聽清單';
+
+  @override
+  String get listenFromHere => '從此處收聽';
+
+  @override
+  String get nowPlaying => '正在播放';
+
+  @override
+  String get repeatOff => '關閉重複';
+
+  @override
+  String get repeatOne => '循環本節';
+
+  @override
+  String get repeatAll => '循環全部';
+
+  @override
+  String get listenAgain => '再聽一遍';
+
+  @override
+  String get playbackSpeed => '語速';
+
+  @override
+  String get resumeListening => '繼續收聽';
+
+  @override
+  String get minutesShort => '分鐘';
+
+  @override
+  String get playAudio => '播放';
+
+  @override
+  String get pauseAudio => '暫停';
+
+  @override
+  String get previousTrack => '上一節';
 }

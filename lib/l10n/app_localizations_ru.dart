@@ -1052,4 +1052,46 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get contentFallbackNotice =>
       'This item is not translated yet; showing the English study text.';
+
+  @override
+  String get listenAll => 'Слушать всё';
+
+  @override
+  String get listeningQueue => 'Список прослушивания';
+
+  @override
+  String get listenFromHere => 'Слушать отсюда';
+
+  @override
+  String get nowPlaying => 'Сейчас играет';
+
+  @override
+  String get repeatOff => 'Повтор выключен';
+
+  @override
+  String get repeatOne => 'Повторять этот раздел';
+
+  @override
+  String get repeatAll => 'Повторять всё';
+
+  @override
+  String get listenAgain => 'Послушать ещё раз';
+
+  @override
+  String get playbackSpeed => 'Скорость';
+
+  @override
+  String get resumeListening => 'Продолжить слушать';
+
+  @override
+  String get minutesShort => 'мин';
+
+  @override
+  String get playAudio => 'Воспроизвести';
+
+  @override
+  String get pauseAudio => 'Пауза';
+
+  @override
+  String get previousTrack => 'Предыдущий раздел';
 }
