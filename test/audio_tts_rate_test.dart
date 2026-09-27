@@ -10,10 +10,10 @@ import 'package:vdp_app/features/audio/players/tts_rate.dart';
 
 void main() {
   group('engineSpeechRate', () {
-    test('Android: 1.0× = 1.0, 2.0× = 2.0 (thang gốc)', () {
-      expect(engineSpeechRate(1.0, isIOS: false), 1.0);
-      expect(engineSpeechRate(2.0, isIOS: false), 2.0);
-      expect(engineSpeechRate(0.75, isIOS: false), 0.75);
+    test('Android: 1.0× = 0.5, không chạy ở tốc độ tối đa', () {
+      expect(engineSpeechRate(1.0, isIOS: false), 0.5);
+      expect(engineSpeechRate(2.0, isIOS: false), 1.0);
+      expect(engineSpeechRate(0.75, isIOS: false), 0.375);
     });
 
     test('iOS: 1.0× = 0.5 (AVSpeechUtteranceDefaultSpeechRate)', () {
@@ -23,7 +23,7 @@ void main() {
     });
 
     test('kẹp ngoài khoảng preset (0.5–2.0)', () {
-      expect(engineSpeechRate(0.1, isIOS: false), 0.5);
+      expect(engineSpeechRate(0.1, isIOS: false), 0.25);
       expect(engineSpeechRate(9.9, isIOS: true), 1.0);
     });
   });
