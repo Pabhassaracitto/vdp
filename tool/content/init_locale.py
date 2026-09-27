@@ -82,7 +82,7 @@ TODO = "TODO"
 
 # Locales this project has committed to. Keep in sync with
 # lib/core/localization/content_languages.dart.
-PRIORITY_LOCALES = ["hi", "zh", "zh_TW", "si", "my", "ja"]
+PRIORITY_LOCALES = ["hi", "zh", "zh_TW", "si", "my", "ja", "th"]
 
 # section -> (data file, json key, {target field: source field})
 # Only display text is listed. IDs, groups, numeric orders and relationship

@@ -222,16 +222,42 @@ class VdpTheme {
     };
   }
 
-  static ThemeData localizedTheme(ThemeData base, Locale locale) {
+  static List<String> buildFontFallbacks({String? contentLocale}) {
+    if (contentLocale == null || contentLocale.isEmpty) {
+      return _fontFallbacks;
+    }
+    final parts = contentLocale.split(RegExp(r'[-_]'));
+    final lang = parts[0];
+    final country = parts.length > 1 ? parts[1].toUpperCase() : null;
+    final contentFont = (lang == 'zh' && country == 'TW')
+        ? 'NotoSansTCApp'
+        : _fontFor(Locale(lang, country));
+
+    if (contentFont == 'Sarabun') {
+      return _fontFallbacks;
+    }
+
+    return [
+      contentFont,
+      ..._fontFallbacks.where((f) => f != contentFont),
+    ];
+  }
+
+  static ThemeData localizedTheme(
+    ThemeData base,
+    Locale locale, {
+    String? contentLocale,
+  }) {
     final family = _fontFor(locale);
+    final fallbacks = buildFontFallbacks(contentLocale: contentLocale);
     return base.copyWith(
       textTheme: base.textTheme.apply(
         fontFamily: family,
-        fontFamilyFallback: _fontFallbacks,
+        fontFamilyFallback: fallbacks,
       ),
       primaryTextTheme: base.primaryTextTheme.apply(
         fontFamily: family,
-        fontFamilyFallback: _fontFallbacks,
+        fontFamilyFallback: fallbacks,
       ),
     );
   }

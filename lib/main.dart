@@ -61,7 +61,11 @@ class VdpApp extends ConsumerWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       localeListResolutionCallback: (preferred, supported) =>
           resolveSupportedLocale(preferred, supported),
-      theme: VdpTheme.localizedTheme(baseTheme, effectiveLocale),
+      theme: VdpTheme.localizedTheme(
+        baseTheme,
+        effectiveLocale,
+        contentLocale: localeSettings.contentLocale,
+      ),
       builder: (context, child) {
         return ContentCatalogScope(
           catalog: contentCatalog,
