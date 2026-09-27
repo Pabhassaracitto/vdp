@@ -203,6 +203,27 @@ class FullPlayerSheet extends ConsumerWidget {
             ),
             const SizedBox(height: 8),
 
+            // ── Hẹn giờ tắt (thuộc phiên nghe, không thuộc sheet) ─────────
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(context.l10n.sleepTimer),
+                const SizedBox(width: 8),
+                PopupMenuButton<int?>(
+                  tooltip: context.l10n.sleepTimer,
+                  onSelected: (minutes) => notifier.setSleepTimer(
+                    minutes == null ? null : Duration(minutes: minutes),
+                  ),
+                  itemBuilder: (_) => [
+                    PopupMenuItem<int?>(value: null, child: Text(context.l10n.sleepTimerOff)),
+                    const PopupMenuItem<int?>(value: 15, child: Text('15 phút')),
+                    const PopupMenuItem<int?>(value: 30, child: Text('30 phút')),
+                    const PopupMenuItem<int?>(value: 60, child: Text('60 phút')),
+                  ],
+                  child: const Icon(Icons.timer_outlined),
+                ),
+              ],
+            ),
             // ── Tốc độ ────────────────────────────────────────────────────
             Wrap(
               alignment: WrapAlignment.center,

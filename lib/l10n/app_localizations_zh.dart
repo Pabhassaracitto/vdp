@@ -1081,6 +1081,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get resumeListening => '继续收听';
 
   @override
+  String get continueListening => '继续收听';
+
+  @override
+  String get sleepTimer => '睡眠定时器';
+
+  @override
+  String get sleepTimerOff => '关闭';
+
+  @override
   String get minutesShort => '分钟';
 
   @override

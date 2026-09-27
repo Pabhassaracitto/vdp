@@ -1086,6 +1086,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get resumeListening => 'Continuar escuchando';
 
   @override
+  String get continueListening => 'Continuar escuchando';
+
+  @override
+  String get sleepTimer => 'Temporizador';
+
+  @override
+  String get sleepTimerOff => 'Apagado';
+
+  @override
   String get minutesShort => 'min';
 
   @override

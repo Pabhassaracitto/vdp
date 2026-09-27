@@ -1085,6 +1085,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get resumeListening => 'শোনা চালিয়ে যান';
 
   @override
+  String get continueListening => 'শোনা চালিয়ে যান';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'মিনিট';
 
   @override

@@ -1086,6 +1086,15 @@ class AppLocalizationsMn extends AppLocalizations {
   String get resumeListening => 'Үргэлжлүүлэн сонсох';
 
   @override
+  String get continueListening => 'Үргэлжлүүлэн сонсох';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'мин';
 
   @override

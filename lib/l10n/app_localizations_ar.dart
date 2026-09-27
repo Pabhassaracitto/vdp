@@ -1083,6 +1083,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get resumeListening => 'متابعة الاستماع';
 
   @override
+  String get continueListening => 'متابعة الاستماع';
+
+  @override
+  String get sleepTimer => 'مؤقت النوم';
+
+  @override
+  String get sleepTimerOff => 'إيقاف';
+
+  @override
   String get minutesShort => 'دقيقة';
 
   @override

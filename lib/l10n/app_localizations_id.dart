@@ -1085,6 +1085,15 @@ class AppLocalizationsId extends AppLocalizations {
   String get resumeListening => 'Lanjutkan mendengarkan';
 
   @override
+  String get continueListening => 'Lanjutkan mendengarkan';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'mnt';
 
   @override

@@ -1085,6 +1085,15 @@ class AppLocalizationsTe extends AppLocalizations {
   String get resumeListening => 'వినడం కొనసాగించండి';
 
   @override
+  String get continueListening => 'వినడం కొనసాగించండి';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'నిమి';
 
   @override

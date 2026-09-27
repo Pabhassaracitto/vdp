@@ -1081,6 +1081,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get resumeListening => 'Tiếp tục nghe';
 
   @override
+  String get continueListening => 'Tiếp tục nghe';
+
+  @override
+  String get sleepTimer => 'Hẹn giờ tắt';
+
+  @override
+  String get sleepTimerOff => 'Tắt';
+
+  @override
   String get minutesShort => 'phút';
 
   @override

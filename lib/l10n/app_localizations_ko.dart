@@ -1083,6 +1083,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get resumeListening => '이어서 듣기';
 
   @override
+  String get continueListening => '계속 듣기';
+
+  @override
+  String get sleepTimer => '취침 타이머';
+
+  @override
+  String get sleepTimerOff => '끔';
+
+  @override
   String get minutesShort => '분';
 
   @override

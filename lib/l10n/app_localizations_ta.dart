@@ -1085,6 +1085,15 @@ class AppLocalizationsTa extends AppLocalizations {
   String get resumeListening => 'தொடர்ந்து கேளுங்கள்';
 
   @override
+  String get continueListening => 'தொடர்ந்து கேளுங்கள்';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'நிமி';
 
   @override

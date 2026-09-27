@@ -1086,6 +1086,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get resumeListening => 'Weiterhören';
 
   @override
+  String get continueListening => 'Weiterhören';
+
+  @override
+  String get sleepTimer => 'Schlaftimer';
+
+  @override
+  String get sleepTimerOff => 'Aus';
+
+  @override
   String get minutesShort => 'Min.';
 
   @override

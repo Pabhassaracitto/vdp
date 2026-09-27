@@ -1083,6 +1083,15 @@ class AppLocalizationsTh extends AppLocalizations {
   String get resumeListening => 'ฟังต่อ';
 
   @override
+  String get continueListening => 'ฟังต่อ';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'นาที';
 
   @override

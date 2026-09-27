@@ -1448,5 +1448,49 @@
   "previousTrack": "Mục trước",
   "@previousTrack": {
     "description": "previousTrack"
+  },
+  "sleepTimer": "Hẹn giờ tắt",
+  "@sleepTimer": {
+    "description": "sleepTimer"
+  },
+  "sleepTimerOff": "Tắt",
+  "@sleepTimerOff": {
+    "description": "sleepTimerOff"
+  },
+  "sleepTimer15": "15 phút",
+  "@sleepTimer15": {
+    "description": "sleepTimer15"
+  },
+  "sleepTimer30": "30 phút",
+  "@sleepTimer30": {
+    "description": "sleepTimer30"
+  },
+  "sleepTimer60": "60 phút",
+  "@sleepTimer60": {
+    "description": "sleepTimer60"
+  },
+  "sleepTimerRemaining": "Hẹn giờ tắt: còn {minutes} phút",
+  "@sleepTimerRemaining": {
+    "description": "sleepTimerRemaining"
+  },
+  "audioModelUnavailable": "Chưa có giọng neural; đang dùng giọng thiết bị",
+  "@audioModelUnavailable": {
+    "description": "audioModelUnavailable"
+  },
+  "realDuration": "Thời lượng",
+  "@realDuration": {
+    "description": "realDuration"
+  },
+  "estimatedDuration": "Thời lượng ước tính",
+  "@estimatedDuration": {
+    "description": "estimatedDuration"
+  },
+  "continueListening": "Tiếp tục nghe",
+  "@continueListening": {
+    "description": "continueListening"
+  },
+  "audioBackgroundLimit": "Nghe nền phụ thuộc vào engine giọng đã cài",
+  "@audioBackgroundLimit": {
+    "description": "audioBackgroundLimit"
   }
 }

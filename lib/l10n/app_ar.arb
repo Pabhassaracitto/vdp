@@ -1448,5 +1448,49 @@
   "previousTrack": "القسم السابق",
   "@previousTrack": {
     "description": "previousTrack"
+  },
+  "sleepTimer": "Sleep timer",
+  "@sleepTimer": {
+    "description": "sleepTimer"
+  },
+  "sleepTimerOff": "Off",
+  "@sleepTimerOff": {
+    "description": "sleepTimerOff"
+  },
+  "sleepTimer15": "15 minutes",
+  "@sleepTimer15": {
+    "description": "sleepTimer15"
+  },
+  "sleepTimer30": "30 minutes",
+  "@sleepTimer30": {
+    "description": "sleepTimer30"
+  },
+  "sleepTimer60": "60 minutes",
+  "@sleepTimer60": {
+    "description": "sleepTimer60"
+  },
+  "sleepTimerRemaining": "Sleep timer: {minutes} min",
+  "@sleepTimerRemaining": {
+    "description": "sleepTimerRemaining"
+  },
+  "audioModelUnavailable": "Neural voice unavailable; using device voice",
+  "@audioModelUnavailable": {
+    "description": "audioModelUnavailable"
+  },
+  "realDuration": "Duration",
+  "@realDuration": {
+    "description": "realDuration"
+  },
+  "estimatedDuration": "Estimated duration",
+  "@estimatedDuration": {
+    "description": "estimatedDuration"
+  },
+  "continueListening": "Continue listening",
+  "@continueListening": {
+    "description": "continueListening"
+  },
+  "audioBackgroundLimit": "Background audio depends on the installed voice engine",
+  "@audioBackgroundLimit": {
+    "description": "audioBackgroundLimit"
   }
 }

@@ -2003,6 +2003,12 @@ abstract class AppLocalizations {
   /// **'Resume listening'**
   String get resumeListening;
 
+  /// continueListening
+  String get continueListening;
+
+  String get sleepTimer;
+  String get sleepTimerOff;
+
   /// minutesShort
   ///
   /// In en, this message translates to:

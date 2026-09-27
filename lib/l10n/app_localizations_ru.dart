@@ -1084,6 +1084,15 @@ class AppLocalizationsRu extends AppLocalizations {
   String get resumeListening => 'Продолжить слушать';
 
   @override
+  String get continueListening => 'Продолжить слушать';
+
+  @override
+  String get sleepTimer => 'Таймер сна';
+
+  @override
+  String get sleepTimerOff => 'Выкл.';
+
+  @override
   String get minutesShort => 'мин';
 
   @override

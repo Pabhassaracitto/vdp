@@ -12,6 +12,7 @@ import '../../data/repositories/vdp_repository.dart';
 import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
 import 'module_detail_screen.dart';
+import '../audio/widgets/continue_listening_card.dart';
 
 // ══════════════════════════════════════════════════════════════════════════════
 // STUDY SCREEN (AppBar + Bookmark Sheet)
@@ -66,6 +67,12 @@ class StudyScreen extends ConsumerWidget {
         children: [
           _ProgressSummaryBar(progress: progress),
           _SmartRecommendation(progress: progress),
+          ContinueListeningCard(
+            modules: kStudyModules.map((m) => StudyModule.fromJson(Map<String, dynamic>.from(m))).toList(),
+            onOpen: (module) => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => ModuleDetailScreen(moduleData: module)),
+            ),
+          ),
           Expanded(
             child: SingleChildScrollView(
               padding: EdgeInsets.all(16),

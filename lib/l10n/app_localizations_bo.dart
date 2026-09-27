@@ -1086,6 +1086,15 @@ class AppLocalizationsBo extends AppLocalizations {
   String get resumeListening => 'ཉོན་མཐུད།';
 
   @override
+  String get continueListening => 'ཉན་མུ་མཐུད།';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'སྐར་མ།';
 
   @override
