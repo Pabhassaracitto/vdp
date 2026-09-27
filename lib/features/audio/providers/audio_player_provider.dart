@@ -55,6 +55,7 @@ class AudioPlayerState {
   final ListeningPosition? savedPosition;
 
   final AudioErrorKind error;
+  final DateTime? sleepTimerEndsAt;
 
   const AudioPlayerState({
     this.moduleId,
@@ -70,6 +71,7 @@ class AudioPlayerState {
     this.finishedTrackIds = const {},
     this.savedPosition,
     this.error = AudioErrorKind.none,
+    this.sleepTimerEndsAt,
   });
 
   bool get hasSession => moduleId != null && playlist.isNotEmpty;
@@ -126,6 +128,7 @@ class AudioPlayerState {
     Set<String>? finishedTrackIds,
     ListeningPosition? savedPosition,
     AudioErrorKind? error,
+    Object? sleepTimerEndsAt = _unset,
   }) {
     return AudioPlayerState(
       moduleId: moduleId ?? this.moduleId,
@@ -143,6 +146,9 @@ class AudioPlayerState {
       finishedTrackIds: finishedTrackIds ?? this.finishedTrackIds,
       savedPosition: savedPosition ?? this.savedPosition,
       error: error ?? this.error,
+      sleepTimerEndsAt: identical(sleepTimerEndsAt, _unset)
+          ? this.sleepTimerEndsAt
+          : sleepTimerEndsAt as DateTime?,
     );
   }
 }
@@ -163,6 +169,9 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
         }
       },
       pause: pause,
+      onFinished: () {
+        if (mounted) state = state.copyWith(sleepTimerEndsAt: null);
+      },
     );
     unawaited(_initializePlatformServices());
     // Audio Coordinator (plan §11): phát từ Pāli ở detail sheet → pause phiên nghe.
@@ -179,8 +188,10 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   Future<void> setSleepTimer(Duration? duration) async {
     if (duration == null) {
       _sleepTimer.cancel();
+      state = state.copyWith(sleepTimerEndsAt: null);
     } else {
       _sleepTimer.start(duration);
+      state = state.copyWith(sleepTimerEndsAt: DateTime.now().add(duration));
     }
   }
 

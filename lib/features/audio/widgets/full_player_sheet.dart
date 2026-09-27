@@ -11,6 +11,13 @@ import '../providers/audio_player_provider.dart';
 import 'audio_controls_common.dart';
 import 'playlist_sheet.dart';
 
+String _sleepTimerLabel(BuildContext context, DateTime? deadline) {
+  if (deadline == null) return context.l10n.sleepTimer;
+  final seconds = deadline.difference(DateTime.now()).inSeconds;
+  final minutes = ((seconds.clamp(0, 86400) + 59) ~/ 60).clamp(1, 1440);
+  return '${context.l10n.sleepTimer}: $minutes ${context.l10n.minutesShort}';
+}
+
 class FullPlayerSheet extends ConsumerWidget {
   const FullPlayerSheet({super.key, required this.color, required this.moduleId});
 
@@ -207,7 +214,15 @@ class FullPlayerSheet extends ConsumerWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(context.l10n.sleepTimer),
+                Text(
+                  _sleepTimerLabel(context, state.sleepTimerEndsAt),
+                  style: TextStyle(
+                    color: state.sleepTimerEndsAt == null ? null : color,
+                    fontWeight: state.sleepTimerEndsAt == null
+                        ? FontWeight.normal
+                        : FontWeight.w700,
+                  ),
+                ),
                 const SizedBox(width: 8),
                 PopupMenuButton<int?>(
                   tooltip: context.l10n.sleepTimer,
@@ -215,12 +230,22 @@ class FullPlayerSheet extends ConsumerWidget {
                     minutes == null ? null : Duration(minutes: minutes),
                   ),
                   itemBuilder: (_) => [
-                    PopupMenuItem<int?>(value: null, child: Text(context.l10n.sleepTimerOff)),
-                    const PopupMenuItem<int?>(value: 15, child: Text('15 phút')),
-                    const PopupMenuItem<int?>(value: 30, child: Text('30 phút')),
-                    const PopupMenuItem<int?>(value: 60, child: Text('60 phút')),
+                    PopupMenuItem<int?>(
+                      value: null,
+                      child: Text(context.l10n.sleepTimerOff),
+                    ),
+                    for (final minutes in const [15, 30, 60])
+                      PopupMenuItem<int?>(
+                        value: minutes,
+                        child: Text('$minutes ${context.l10n.minutesShort}'),
+                      ),
                   ],
-                  child: const Icon(Icons.timer_outlined),
+                  child: Icon(
+                    state.sleepTimerEndsAt == null
+                        ? Icons.timer_outlined
+                        : Icons.timer,
+                    color: state.sleepTimerEndsAt == null ? null : color,
+                  ),
                 ),
               ],
             ),
