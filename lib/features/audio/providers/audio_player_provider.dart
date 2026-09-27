@@ -253,7 +253,9 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     required List<LessonSection> sections,
   }) async {
     // Đổi module giữa chừng → đóng phiên cũ (không "player ma").
-    if (state.hasSession && state.moduleId != moduleId) {
+    if (state.hasSession &&
+        (state.moduleId != moduleId ||
+            state.contentLocaleTag != contentLocaleTag)) {
       await _player.stop();
     }
     _sections = sections;
