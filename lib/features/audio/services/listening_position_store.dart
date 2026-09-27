@@ -14,19 +14,29 @@ import 'package:shared_preferences/shared_preferences.dart';
 class ListeningPosition {
   final String trackId;
   final int cueIndex;
+  final int? positionMs;
+  final DateTime? updatedAt;
 
-  const ListeningPosition({required this.trackId, this.cueIndex = 0});
+  const ListeningPosition({required this.trackId, this.cueIndex = 0, this.positionMs, this.updatedAt});
 
-  Map<String, Object?> toJson() => {'trackId': trackId, 'cueIndex': cueIndex};
+  Map<String, Object?> toJson() => {
+    'trackId': trackId, 'cueIndex': cueIndex,
+    if (positionMs != null) 'positionMs': positionMs,
+    if (updatedAt != null) 'updatedAt': updatedAt!.toIso8601String(),
+  };
 
   static ListeningPosition? tryParse(Object? raw) {
     if (raw is! Map) return null;
     final trackId = raw['trackId'];
     if (trackId is! String || trackId.trim().isEmpty) return null;
     final cueIndex = raw['cueIndex'];
+    final positionMs = raw['positionMs'];
+    final updatedAt = raw['updatedAt'];
     return ListeningPosition(
       trackId: trackId,
       cueIndex: cueIndex is int ? cueIndex : 0,
+      positionMs: positionMs is num ? positionMs.toInt() : null,
+      updatedAt: updatedAt is String ? DateTime.tryParse(updatedAt) : null,
     );
   }
 }
@@ -49,6 +59,7 @@ class SharedPrefsListeningPositionStore implements ListeningPositionStore {
   static const _speedKey = 'audio.speed';
   static const _repeatKey = 'audio.repeatMode';
   static String _posKey(String moduleId) => 'audio.pos.$moduleId';
+  static const _lastModuleKey = 'audio.lastModuleId';
 
   @override
   Future<double?> loadSpeed() async {
@@ -90,5 +101,12 @@ class SharedPrefsListeningPositionStore implements ListeningPositionStore {
   Future<void> savePosition(String moduleId, ListeningPosition position) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_posKey(moduleId), jsonEncode(position.toJson()));
+    await prefs.setString(_lastModuleKey, moduleId);
+  }
+
+  /// Used by the app-level Continue Listening row; absent on pre-P2 installs.
+  static Future<String?> loadLastModuleId() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString(_lastModuleKey);
   }
 }

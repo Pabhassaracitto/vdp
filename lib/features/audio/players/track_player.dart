@@ -29,6 +29,10 @@ class TrackPlayerEvent {
   const TrackPlayerEvent(this.type, {this.cueIndex = -1});
 }
 
+abstract class VolumeControllable {
+  Future<void> setVolume(double volume);
+}
+
 abstract class TrackPlayer {
   /// Sự kiện cue/hoàn tất/lỗi — broadcast.
   Stream<TrackPlayerEvent> get events;

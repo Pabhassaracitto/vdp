@@ -1085,6 +1085,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get resumeListening => 'Continuar ouvindo';
 
   @override
+  String get continueListening => 'Continuar ouvindo';
+
+  @override
+  String get sleepTimer => 'Temporizador';
+
+  @override
+  String get sleepTimerOff => 'Desligado';
+
+  @override
   String get minutesShort => 'min';
 
   @override

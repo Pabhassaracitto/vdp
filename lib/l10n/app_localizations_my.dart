@@ -1086,6 +1086,15 @@ class AppLocalizationsMy extends AppLocalizations {
   String get resumeListening => 'နားထောင်မှု ဆက်ရန်';
 
   @override
+  String get continueListening => 'ဆက်လက်နားထောင်ရန်';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'မိနစ်';
 
   @override

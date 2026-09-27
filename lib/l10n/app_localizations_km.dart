@@ -1085,6 +1085,15 @@ class AppLocalizationsKm extends AppLocalizations {
   String get resumeListening => 'បន្តស្ដាប់';
 
   @override
+  String get continueListening => 'បន្តស្តាប់';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'នាទី';
 
   @override

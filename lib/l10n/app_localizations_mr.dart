@@ -1085,6 +1085,15 @@ class AppLocalizationsMr extends AppLocalizations {
   String get resumeListening => 'पुढे ऐका';
 
   @override
+  String get continueListening => 'ऐकणे सुरू ठेवा';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'मि.';
 
   @override

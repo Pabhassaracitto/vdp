@@ -1086,6 +1086,15 @@ class AppLocalizationsLo extends AppLocalizations {
   String get resumeListening => 'ສືບຕໍ່ຟັງ';
 
   @override
+  String get continueListening => 'ສືບຕໍ່ຟັງ';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'ນາທີ';
 
   @override

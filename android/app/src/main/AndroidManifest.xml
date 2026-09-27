@@ -9,6 +9,9 @@
 
     <!-- Không cần internet - Offline-First -->
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
     <application
         android:label="AbhiDhamma"
         android:localeConfig="@xml/locales_config"

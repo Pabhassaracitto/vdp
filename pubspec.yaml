@@ -1,6 +1,6 @@
 name: vdp_app
 description: AbhiDhamma - an interactive Abhidhamma study app based on the King Milanda A curriculum
-version: 0.2.0+5
+version: 0.3.0+6
 publish_to: 'none'
 
 environment:
@@ -19,8 +19,10 @@ dependencies:
   # Local Storage
   shared_preferences: ^2.2.2
   
-  # Audio (Pali pronunciation)
+  # Audio (P1 playback + P2 background session)
   just_audio: ^0.9.36
+  audio_session: ^0.1.23
+  audio_service: ^0.18.15
   
   # UI & Animation
   flutter_animate: ^4.3.0
@@ -38,6 +40,7 @@ dependencies:
   
   # Utils
   collection: ^1.18.0
+  crypto: ^3.0.3
   path_provider: ^2.1.2
   intl: ^0.20.2
 

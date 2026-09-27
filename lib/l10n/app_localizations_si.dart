@@ -1083,6 +1083,15 @@ class AppLocalizationsSi extends AppLocalizations {
   String get resumeListening => 'ඇසීම දිගටම';
 
   @override
+  String get continueListening => 'දිගටම සවන් දෙන්න';
+
+  @override
+  String get sleepTimer => 'Sleep timer';
+
+  @override
+  String get sleepTimerOff => 'Off';
+
+  @override
   String get minutesShort => 'මිනිත්තු';
 
   @override

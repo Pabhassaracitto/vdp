@@ -10,20 +10,27 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:audio_service/audio_service.dart';
+
+import '../services/audio_handler.dart';
 
 import '../../../core/utils/pali_tts_helper.dart';
 import '../../../data/models/lesson_content.dart';
 import '../data/playlist_builder.dart';
 import '../models/audio_track.dart';
 import '../players/track_player.dart';
-import '../players/tts_track_player.dart';
+import '../players/sherpa_tts_track_player.dart';
+import '../services/audio_session_service.dart';
 import '../services/listening_position_store.dart';
+import '../services/sleep_timer.dart';
 
 enum RepeatMode { off, one, all }
 
 enum PlayerStatus { idle, playing, paused }
 
 enum AudioErrorKind { none, engineUnavailable, voiceUnavailable }
+
+AudioHandler? _audioHandler;
 
 @immutable
 class AudioPlayerState {
@@ -144,10 +151,20 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   AudioPlayerNotifier({
     TrackPlayer? player,
     ListeningPositionStore? store,
-  })  : _player = player ?? TtsTrackPlayer(),
+  })  : _player = player ?? SherpaTtsTrackPlayer(),
         _store = store ?? const SharedPrefsListeningPositionStore(),
         super(const AudioPlayerState()) {
     _eventSub = _player.events.listen(_onPlayerEvent);
+    _sleepTimer = SleepTimer(
+      setVolume: (volume) async {
+        final player = _player;
+        if (player is VolumeControllable) {
+          await (player as VolumeControllable).setVolume(volume);
+        }
+      },
+      pause: pause,
+    );
+    unawaited(_initializePlatformServices());
     // Audio Coordinator (plan §11): phát từ Pāli ở detail sheet → pause phiên nghe.
     PaliTtsHelper.onBeforeSpeak = _pauseForFocus;
   }
@@ -155,6 +172,45 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   final TrackPlayer _player;
   final ListeningPositionStore _store;
   StreamSubscription<TrackPlayerEvent>? _eventSub;
+  late final SleepTimer _sleepTimer;
+
+  SleepTimer get sleepTimer => _sleepTimer;
+
+  Future<void> setSleepTimer(Duration? duration) async {
+    if (duration == null) {
+      _sleepTimer.cancel();
+    } else {
+      _sleepTimer.start(duration);
+    }
+  }
+
+  Future<void> _initializePlatformServices() async {
+    // Native plugins are unavailable in pure Dart tests. Treat that as a
+    // platform capability, not a playback failure; the TrackPlayer remains
+    // fully testable and the app initializes these services on a real device.
+    try {
+      await VdpAudioSession.instance.configure(
+        pause: pause,
+        isPlaying: () => state.isPlaying,
+      );
+      _audioHandler ??= await AudioService.init(
+        builder: () => VdpAudioHandler(
+          onPlay: togglePlayPause,
+          onPause: pause,
+          onNext: next,
+          onPrevious: previous,
+          onSeek: (_) async {},
+        ),
+        config: const AudioServiceConfig(
+          androidNotificationChannelId: 'com.vdp.audio',
+          androidNotificationChannelName: 'VDP listening',
+          androidNotificationOngoing: true,
+        ),
+      );
+    } catch (_) {
+      // CI/unit tests and unsupported platforms have no native plugin.
+    }
+  }
 
   // Tham số prepare để các lệnh play tự đảm bảo playlist đã sẵn sàng.
   List<LessonSection>? _sections;
@@ -264,6 +320,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     if (state.isPlaying) {
       await pause();
     } else if (state.currentIndex >= 0) {
+      await _sleepTimer.restoreVolume();
       await _player.play();
       state = state.copyWith(status: PlayerStatus.playing, error: AudioErrorKind.none);
     } else {
@@ -359,6 +416,8 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       PaliTtsHelper.onBeforeSpeak = null;
     }
     _eventSub?.cancel();
+    _sleepTimer.dispose();
+    unawaited(VdpAudioSession.instance.dispose());
     unawaited(_player.dispose());
     super.dispose();
   }
@@ -388,6 +447,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       contentLocaleTag: state.contentLocaleTag,
     );
     await _player.setSpeed(state.speed);
+    await _sleepTimer.restoreVolume();
     if (startCue > 0) await _player.seekCue(startCue);
     await _player.play();
   }
@@ -469,6 +529,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     final position = ListeningPosition(
       trackId: trackId,
       cueIndex: state.currentCueIndex,
+      updatedAt: DateTime.now(),
     );
     state = state.copyWith(savedPosition: position);
     await _store.savePosition(moduleId, position);

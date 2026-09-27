@@ -54,3 +54,14 @@
 - [ ] `Screen Reader`: Mọi nút nghe (play/pause/next/prev/lặp/tốc độ/danh sách) có semantics + tooltip đầy đủ.
 - [ ] `Fallback`: Thiết bị/không có giọng TTS phù hợp → toast nhẹ, không crash; locale chưa dịch UI vẫn hiện tiếng Anh đúng chuẩn.
 - [ ] `Nền tảng*: Test tay tốc độ trên cả Android + iOS (thang TTS khác nhau — tts_rate.dart); pause/resume không nhảy chữ; TTS đọc hết mọi đoạn của section dài (không nuốt chữ).
+
+## 7. Audio P2 — implementation and device QA
+- [x] `audio_session`: speech focus, interruption and becoming-noisy pause are wired.
+- [x] `audio_service`: one handler forwards OS play/pause/next/previous commands; Android foreground media permission and iOS audio background mode added.
+- [x] `Sleep timer`: session-owned 15/30/60 minute API, three-second fade and volume restore are implemented; automated cancellation test added.
+- [x] `Continue listening`: app-level row reads `audio.lastModuleId`; legacy `audio.pos.<moduleId>` JSON remains readable and now accepts optional timestamp metadata.
+- [x] `Sherpa boundary`: per-cue async backend, cache key (text/locale/model/speed), cancellation token and P1 fallback implemented.
+- [ ] `Sherpa Vietnamese model`: **not enabled**. No model/WAV is committed. Legal/model verification is documented in `doc/audio_p2_model.md`; fill publisher license, URL and SHA-256 before distribution.
+- [ ] Android device: install a verified model externally, lock screen, headset unplug, Bluetooth controls, interruption, resume, seek/duration and Pāli switching.
+- [ ] iOS device: background audio, lock screen, route change, interruption and fallback TTS limitations.
+- [ ] Flutter analyze/test: sandbox has no Flutter SDK (`flutter: command not found`), therefore not run here. Run `flutter gen-l10n`, `flutter analyze`, `flutter test` and the device cases above on a Flutter-enabled CI/device.
