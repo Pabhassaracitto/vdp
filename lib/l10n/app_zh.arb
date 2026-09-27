@@ -1389,7 +1389,7 @@
   "@phaseMastery": {
     "description": "phaseMastery"
   },
-  "contentFallbackNotice": "This item is not translated yet; showing the English study text.",
+  "contentFallbackNotice": "此项目尚未翻译，当前显示英文学习内容。",
   "@contentFallbackNotice": {
     "description": "contentFallbackNotice"
   },
@@ -1449,39 +1449,39 @@
   "@previousTrack": {
     "description": "previousTrack"
   },
-  "sleepTimer": "Sleep timer",
+  "sleepTimer": "睡眠定时器",
   "@sleepTimer": {
     "description": "sleepTimer"
   },
-  "sleepTimerOff": "Off",
+  "sleepTimerOff": "关闭",
   "@sleepTimerOff": {
     "description": "sleepTimerOff"
   },
-  "sleepTimer15": "15 minutes",
+  "sleepTimer15": "15 分钟",
   "@sleepTimer15": {
     "description": "sleepTimer15"
   },
-  "sleepTimer30": "30 minutes",
+  "sleepTimer30": "30 分钟",
   "@sleepTimer30": {
     "description": "sleepTimer30"
   },
-  "sleepTimer60": "60 minutes",
+  "sleepTimer60": "60 分钟",
   "@sleepTimer60": {
     "description": "sleepTimer60"
   },
-  "sleepTimerRemaining": "Sleep timer: {minutes} min",
+  "sleepTimerRemaining": "睡眠定时器：剩余 {minutes} 分钟",
   "@sleepTimerRemaining": {
     "description": "sleepTimerRemaining"
   },
-  "audioModelUnavailable": "Neural voice unavailable; using device voice",
+  "audioModelUnavailable": "神经语音不可用，正在使用设备语音",
   "@audioModelUnavailable": {
     "description": "audioModelUnavailable"
   },
-  "realDuration": "Duration",
+  "realDuration": "时长",
   "@realDuration": {
     "description": "realDuration"
   },
-  "estimatedDuration": "Estimated duration",
+  "estimatedDuration": "预计时长",
   "@estimatedDuration": {
     "description": "estimatedDuration"
   },

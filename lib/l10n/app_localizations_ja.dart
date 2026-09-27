@@ -1048,8 +1048,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get phaseMastery => 'Phase 3 — Mastery';
 
   @override
-  String get contentFallbackNotice =>
-      'This item is not translated yet; showing the English study text.';
+  String get contentFallbackNotice => 'この項目はまだ翻訳されていないため、英語の学習内容を表示しています。';
 
   @override
   String get listenAll => 'すべて再生';

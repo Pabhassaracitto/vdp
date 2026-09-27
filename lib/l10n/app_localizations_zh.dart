@@ -1047,8 +1047,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get phaseMastery => 'Phase 3 — Mastery';
 
   @override
-  String get contentFallbackNotice =>
-      'This item is not translated yet; showing the English study text.';
+  String get contentFallbackNotice => '此项目尚未翻译，当前显示英文学习内容。';
 
   @override
   String get listenAll => '全部收听';
@@ -2144,8 +2143,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get phaseMastery => 'Phase 3 — Mastery';
 
   @override
-  String get contentFallbackNotice =>
-      'This item is not translated yet; showing the English study text.';
+  String get contentFallbackNotice => '此項目尚未翻譯，目前顯示英文學習內容。';
 
   @override
   String get listenAll => '全部收聽';
@@ -2176,6 +2174,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get resumeListening => '繼續收聽';
+
+  @override
+  String get sleepTimer => '睡眠計時器';
+
+  @override
+  String get sleepTimerOff => '關閉';
 
   @override
   String get minutesShort => '分鐘';
