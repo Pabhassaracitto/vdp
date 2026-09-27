@@ -7,13 +7,16 @@ class SleepTimer {
     required Future<void> Function(double volume) setVolume,
     required Future<void> Function() pause,
     DateTime Function()? now,
+    void Function()? onFinished,
   })  : _setVolume = setVolume,
         _pause = pause,
+        _onFinished = onFinished,
         _now = now ?? DateTime.now;
 
   final Future<void> Function(double) _setVolume;
   final Future<void> Function() _pause;
   final DateTime Function() _now;
+  final void Function()? _onFinished;
   Timer? _timer;
   DateTime? _deadline;
   double _previousVolume = 1.0;
@@ -59,6 +62,7 @@ class SleepTimer {
         await _setVolume(value);
       }
       await _pause();
+      _onFinished?.call();
     } finally {
       _timer = null;
       _deadline = null;

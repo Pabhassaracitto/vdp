@@ -255,6 +255,23 @@ void main() {
     });
   });
 
+  group('hẹn giờ tắt', () {
+    test('lưu hạn giờ trong state và cho phép hủy', () async {
+      await prepare();
+      final before = DateTime.now();
+
+      await notifier.setSleepTimer(const Duration(minutes: 15));
+      expect(notifier.state.sleepTimerEndsAt, isNotNull);
+      expect(
+        notifier.state.sleepTimerEndsAt!.difference(before).inMinutes,
+        inInclusiveRange(14, 15),
+      );
+
+      await notifier.setSleepTimer(null);
+      expect(notifier.state.sleepTimerEndsAt, isNull);
+    });
+  });
+
   group('lặp (bắt buộc)', () {
     test('RepeatMode.one → phát lại đúng mục vô hạn', () async {
       await prepare();
