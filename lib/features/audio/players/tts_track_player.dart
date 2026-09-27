@@ -43,6 +43,7 @@ class TtsTrackPlayer implements TrackPlayer {
   String _contentLocaleTag = 'vi';
   String? _mainVoice;
   String? _paliVoice;
+  List<String> _supportedLanguages = const [];
   bool _initialized = false;
   bool _running = false;
   double _speed = 1.0;
@@ -60,10 +61,15 @@ class TtsTrackPlayer implements TrackPlayer {
     required String contentLocaleTag,
   }) async {
     await stop();
+    final localeChanged = _contentLocaleTag != contentLocaleTag;
+    final wasInitialized = _initialized;
     _cues = List.unmodifiable(cues);
     _contentLocaleTag = contentLocaleTag;
     _cursor = _Cursor.start;
     await _ensureInitialized();
+    // flutter_tts giữ ngôn ngữ đã set giữa các lần load. Vì vậy đổi ngôn ngữ
+    // nội dung phải chọn và áp dụng lại giọng, kể cả engine đã khởi tạo.
+    if (localeChanged && wasInitialized) await _configureMainVoice();
   }
 
   @override
@@ -191,6 +197,23 @@ class TtsTrackPlayer implements TrackPlayer {
 
   // ─── Khởi tạo engine ──────────────────────────────────────────────────────
 
+  Future<void> _configureMainVoice() async {
+    _mainVoice = pickTtsLanguage(
+      preferred: [
+        ...ttsVoiceChain(_contentLocaleTag),
+        ...kUniversalVoiceFallbacks,
+      ],
+      supported: _supportedLanguages,
+    );
+    if (_mainVoice == null) {
+      _events.add(
+        const TrackPlayerEvent(TrackPlayerEventType.voiceUnavailable),
+      );
+      return;
+    }
+    await _engine.setLanguage(_mainVoice!);
+  }
+
   Future<void> _ensureInitialized() async {
     if (_initialized) return;
     try {
@@ -200,26 +223,15 @@ class TtsTrackPlayer implements TrackPlayer {
       await _engine.setPitch(1.0);
       await setSpeed(_speed);
 
-      final supported = parseTtsLanguageList(await _engine.getLanguages);
-
-      // Giọng nội dung: dò theo chuỗi locale của VĂN BẢN (fallback cuối: en).
-      _mainVoice = pickTtsLanguage(
-        preferred: [...ttsVoiceChain(_contentLocaleTag), ...kUniversalVoiceFallbacks],
-        supported: supported,
-      );
+      _supportedLanguages =
+          parseTtsLanguageList(await _engine.getLanguages);
       // Giọng Pāli: cùng chuỗi với PaliTtsHelper.
       _paliVoice = pickTtsLanguage(
         preferred: kPaliVoiceChain,
-        supported: supported,
+        supported: _supportedLanguages,
       );
-
-      if (_mainVoice == null) {
-        _events.add(TrackPlayerEvent(TrackPlayerEventType.voiceUnavailable));
-        _initialized = true;
-        return;
-      }
-      await _engine.setLanguage(_mainVoice!);
       _initialized = true;
+      await _configureMainVoice();
     } catch (_) {
       _initialized = true;
       _events.add(TrackPlayerEvent(TrackPlayerEventType.engineUnavailable));

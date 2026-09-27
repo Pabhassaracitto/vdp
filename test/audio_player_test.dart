@@ -20,6 +20,7 @@ class FakeTrackPlayer implements TrackPlayer {
       StreamController<TrackPlayerEvent>.broadcast();
   int loadCount = 0;
   int playCount = 0;
+  String? loadedLocale;
   double speed = 1.0;
 
   @override
@@ -31,7 +32,8 @@ class FakeTrackPlayer implements TrackPlayer {
     required String contentLocaleTag,
   }) async {
     loadCount++;
-    log.add('load:${cues.length}');
+    loadedLocale = contentLocaleTag;
+    log.add('load:${cues.length}:$contentLocaleTag');
   }
 
   @override
@@ -164,6 +166,23 @@ void main() {
       expect(notifier.state.repeatMode, RepeatMode.one);
       expect(notifier.state.canResume, isTrue);
       expect(player.speed, 1.25); // đã ép engine theo thói quen
+    });
+
+    test('đổi ngôn ngữ dừng giọng cũ và load locale mới', () async {
+      await prepare();
+      await notifier.playAll(resume: false);
+      expect(player.loadedLocale, 'vi');
+
+      await notifier.prepareModule(
+        moduleId: 'M1_BASICS',
+        moduleTitle: 'Basics',
+        contentLocaleTag: 'si',
+        sections: _sections(2),
+      );
+      expect(player.log, contains('stop'));
+
+      await notifier.playAll(resume: false);
+      expect(player.loadedLocale, 'si');
     });
 
     test('idempotent — gọi lại không reset phiên đang nghe', () async {
