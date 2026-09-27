@@ -1052,8 +1052,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get phaseMastery => 'Phase 3 — Mastery';
 
   @override
-  String get contentFallbackNotice =>
-      'This item is not translated yet; showing the English study text.';
+  String get contentFallbackNotice => 'ဤအကြောင်းအရာကို မဘာသာပြန်ရသေးသဖြင့် အင်္ဂလိပ်စာကို ပြထားပါသည်။';
 
   @override
   String get listenAll => 'အားလုံး နားထောင်ရန်';
@@ -1089,10 +1088,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get continueListening => 'ဆက်လက်နားထောင်ရန်';
 
   @override
-  String get sleepTimer => 'Sleep timer';
+  String get sleepTimer => 'အလိုအလျောက်ပိတ်ချိန်';
 
   @override
-  String get sleepTimerOff => 'Off';
+  String get sleepTimerOff => 'ပိတ်';
 
   @override
   String get minutesShort => 'မိနစ်';
