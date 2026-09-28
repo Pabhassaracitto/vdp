@@ -152,12 +152,16 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
               Container(
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade50,
+                  color: Theme.of(context).colorScheme.surfaceContainerHighest,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
                   cetasika.localizedDescription(context),
-                  style: const TextStyle(fontSize: 15, height: 1.7),
+                  style: TextStyle(
+                    fontSize: 15,
+                    height: 1.7,
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
                 ),
               ),
 
@@ -175,10 +179,11 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                 Container(
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).bottomSheetTheme.backgroundColor ??
-                        Theme.of(context).colorScheme.surface,
+                    color: Theme.of(context).colorScheme.surfaceContainerHighest,
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.grey.shade200),
+                    border: Border.all(
+                      color: Theme.of(context).colorScheme.outline,
+                    ),
                   ),
                   child: Column(
                     children: [

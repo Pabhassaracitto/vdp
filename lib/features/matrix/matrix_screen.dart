@@ -20,6 +20,7 @@ import '../../shared/widgets/citta_row_header.dart';
 import '../../shared/widgets/matrix_corner_header.dart';
 import '../detail/cetasika_detail_sheet.dart';
 import '../detail/citta_detail_sheet.dart';
+import '../settings/settings_screen.dart';
 
 final selectedCittaProvider = StateProvider<String?>((ref) => null);
 final selectedCetasikaProvider = StateProvider<String?>((ref) => null);
@@ -107,9 +108,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
 
   Timer? _searchDebounceTimer;
   BhumiGroup? _filterBhumi = BhumiGroup.akusala;
-  bool _showHighContrastMode = false;
-  bool get _isHC =>
-      _showHighContrastMode || Theme.of(context).brightness == Brightness.dark;
+  // High contrast/dark mode is app-wide and owned by settingsProvider.
+  // Matrix widgets derive it from the active theme instead of maintaining a
+  // second, screen-local mode that can get out of sync with Settings.
+  bool get _isHC => Theme.of(context).brightness == Brightness.dark;
   bool _forceLandscape = false;
   bool _showScrollToTop = false;
   bool _searchExpanded = false;
@@ -247,10 +249,14 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           ),
           IconButton(
             icon: Icon(
-              _showHighContrastMode ? Icons.contrast : Icons.contrast_outlined,
+              _isHC ? Icons.contrast : Icons.contrast_outlined,
             ),
-            onPressed: () =>
-                setState(() => _showHighContrastMode = !_showHighContrastMode),
+            onPressed: () {
+              final settings = ref.read(settingsProvider);
+              ref.read(settingsProvider.notifier).state = settings.copyWith(
+                highContrastMode: !settings.highContrastMode,
+              );
+            },
             tooltip: context.l10n.highContrast,
           ),
           IconButton(
@@ -508,7 +514,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
         side: BorderSide(
           color: sel
               ? c
-              : (_showHighContrastMode
+              : (_isHC
                   ? HCColors.textMuted
                   : Colors.grey.shade300),
         ),
