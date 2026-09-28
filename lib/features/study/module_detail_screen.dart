@@ -887,17 +887,20 @@ class _BlurRevealCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
     return Semantics(
       label: '${item.question}. ${isRevealed ? context.l10n.answerLabel(item.answer) : context.l10n.tapToReveal}',
       button: !isRevealed,
       child: Container(
         margin: const EdgeInsets.only(bottom: 14),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: scheme.surface,
           borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: scheme.outline.withOpacity(0.5)),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.06),
+              color: theme.shadowColor.withOpacity(0.12),
               blurRadius: 8,
               offset: const Offset(0, 2),
             ),
@@ -954,10 +957,10 @@ class _BlurRevealCard extends StatelessWidget {
                       padding: const EdgeInsets.all(14),
                       child: Text(
                         item.answer,
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 14,
                           height: 1.6,
-                          color: Colors.black87,
+                          color: scheme.onSurface,
                         ),
                       ),
                     )
@@ -1555,10 +1558,10 @@ class _GenericStudyCard extends StatelessWidget {
                 const SizedBox(height: 6),
                 Text(
                   description,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 13,
                     height: 1.5,
-                    color: Colors.black87,
+                    color: Theme.of(context).colorScheme.onSurface,
                   ),
                 ),
               ],
@@ -1659,10 +1662,10 @@ class _CittaStudyCard extends ConsumerWidget {
           if (doctrinalNote != null)
             Text(
               doctrinalNote,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13,
                 height: 1.5,
-                color: Colors.black87,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
           const SizedBox(height: 6),
@@ -1835,10 +1838,10 @@ class _CetasikaStudyCard extends ConsumerWidget {
                 const SizedBox(height: 4),
                 Text(
                   cetasika.localizedDescription(context),
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 13,
                     height: 1.5,
-                    color: Colors.black87,
+                    color: Theme.of(context).colorScheme.onSurface,
                   ),
                 ),
                 const SizedBox(height: 6),
@@ -1957,10 +1960,10 @@ class _NotePreview extends ConsumerWidget {
             Expanded(
               child: Text(
                 note,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 12,
                   height: 1.4,
-                  color: Colors.black87,
+                  color: Theme.of(context).colorScheme.onSurface,
                 ),
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
