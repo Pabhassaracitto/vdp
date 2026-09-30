@@ -4732,9 +4732,893 @@
       ]
     },
     "M16_NGUOI_VA_COI": {
-      "title": "人與生存界",
-      "description": "十二種人與三十一界的業果輪迴流轉。",
-      "translationStatus": "reviewed"
+      "title": "人與界地（Puggala – Bhūmi）",
+      "description": "十二類人與三十一生存界：四類界地——四惡趣、欲界七善趣、色界十六地與無色界四地。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M16_S01",
+          "title": "十二類人——Puggala",
+          "summary": "四類凡夫與八類聖者——人是由業力所制約、具有名色（或僅名、僅色）的有情。",
+          "body": [
+            "Puggala源自“Pun + gala”，意為“人”。人是由業力所制約而形成、具有名與色，或僅有名、僅有色的有情。",
+            "十二類人分為兩組。A組——凡夫：1. 苦趣無因人（Ahetuka puggala）；2. 善趣無因人（Sugati ahetuka puggala）；3. 二因人（Dvihetuka puggala）；4. 三因人（Tihetuka puggala）。",
+            "B組——聖者：四聖階的道者與果者——須陀洹（預流，Sotāpatti）、斯陀含（一來，Sakadāgāmi）、阿那含（不來，Anāgāmi）、阿羅漢果（Arahatta）——四道加四果，共八類。",
+            "依世俗諦而言，有人類、天神、梵天等；依勝義諦而言，只有名與色，並不存在一個恆常不變的“人”。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PUGGALA_M16",
+              "term": "人 (補特伽羅)",
+              "pali": "Puggala",
+              "meaning": "由業力所制約而形成、具有名色的有情"
+            },
+            {
+              "id": "TERM_PHAM_THANH_M16",
+              "term": "人之分別",
+              "pali": "Puggala-bheda",
+              "meaning": "四類凡夫加八類聖者，共十二類"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3,
+              "note": "CÁC LOẠI NGƯỜI – PUGGALA-BHEDA: 12 loại chia 2 nhóm A phàm nhân / B thánh nhân"
+            }
+          ]
+        },
+        {
+          "id": "M16_S02",
+          "title": "苦趣無因人與善趣無因人",
+          "summary": "苦趣者以捨俱不善異熟推度心結生，善趣者以捨俱善異熟推度心結生；善趣無因人分為十一類。",
+          "body": [
+            "苦趣無因人（Ahetuka puggala）在日常生命中有四類：苦多樂少的有情、純受苦的有情、身體受苦且飢渴的有情，以及勞苦困頓、恆常恐懼的有情；他們很難生起善心。",
+            "苦趣無因人的結生心是捨俱不善異熟無因推度心——它是十一不善心（八貪根心、二瞋根心及一疑相應痴根心）的果報。掉舉相應痴根心動盪而微弱，不能產生結生果，只能在日常生命中產生果報。",
+            "苦趣無因人在日常生命中可生起三十七心：十二不善心，加十七無因心（十八無因心除去阿羅漢笑心），再加八欲界美善心（四智相應、四智不相應）；並有五十二心所。",
+            "善趣無因人（Sugati ahetuka puggala）比苦趣者享有更多安樂，不承受苦趣者那樣的痛苦。其結生心為捨俱善異熟無因推度心，執行結生、有分與死亡的作用。其住處為人界及四大王天的低層。",
+            "善趣無因人的出生方式有三種：胎生（人界）；化生（四大王天，不經母胎而當下化現）；色化生（無想天，結生時只有色法，即命根色、業生色與性根色）。",
+            "善趣無因人有十一類，包括：先天盲者（Jaccandha——出生時沒有眼淨色神經系統，即妊娠最初三個月內未生眼淨色）、先天聾者、先天無嗅覺神經者、先天智力低下者、先天啞者、先天精神失常者、無性者（Paṇḍaka——沒有男性或女性生殖器官）、兩性者（Ubhatobyañjana）等。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KHO_VO_NHAN_M16",
+              "term": "無因人",
+              "pali": "Ahetuka puggala",
+              "meaning": "以捨俱不善異熟無因推度心結生"
+            },
+            {
+              "id": "TERM_LAC_VO_NHAN_M16",
+              "term": "善趣無因人",
+              "pali": "Sugati ahetuka puggala",
+              "meaning": "十一類先天缺陷者；以捨俱善異熟推度心結生"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4,
+              "note": "4 loại người khổ trong đời sống bình nhật; 37 tâm; tâm tục sinh là Quan sát thọ xả quả bất thiện"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5,
+              "note": "NGƯỜI LẠC VÔ NHÂN – SUGATI AHETUKA PUGGALA: tâm tục sinh Quan sát thọ xả quả thiện; 3 loại sanh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 6,
+              "note": "11 loại người lạc vô nhân: mù, điếc, câm, đần độn, điên bẩm sinh, vô tính, lưỡng tính…"
+            }
+          ]
+        },
+        {
+          "id": "M16_S03",
+          "title": "八類聖者——從預流到阿羅漢",
+          "summary": "預流道斷除三結、二心所與五心；阿羅漢道則徹底斷盡一切導致再生的種子。",
+          "body": [
+            "預流道者——初道（Sotāpattimagga puggala）：正在斷除身見、疑、戒禁取三種煩惱結；初次證悟涅槃，並從道心正在生起、具有生住滅三個小剎那的當下即算為預流道者。",
+            "在初道，二心所被斷除：邪見與疑；五心被斷除：四個邪見相應貪根心（二喜俱、二捨俱）及一個疑相應痴根心。",
+            "預流果者——初果（Sotāpattiphala puggala）：已經證得預流道者，又稱初果、預流果、須陀洹果；從初果心第一次生起，直至證得第二道的心路中更淨心滅去的剎那，均屬此類。",
+            "其後依次是：一來道者——第二道（Sakadāgāmimagga）與一來果者——第二果，為第二聖階；不來道者——第三道（Anāgāmimagga）與不來果者。",
+            "阿羅漢道者——第四道（Arahattamagga puggala）：正在徹底斷除一切再生種子，達到無生；最終成為阿羅漢果者——第四聖階。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SO_DAO_M16",
+              "term": "須陀洹道",
+              "pali": "Sotāpattimagga",
+              "meaning": "斷除身見、疑、戒禁取；滅除二心所與五心"
+            },
+            {
+              "id": "TERM_TU_DAO_M16",
+              "term": "阿羅漢道",
+              "pali": "Arahattamagga",
+              "meaning": "徹底斷除一切再生種子，達到無生"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9,
+              "note": "5. NGƯỜI ĐẠO NHẬP LƯU – SƠ ĐẠO: sát trừ 3 kiết sử; diệt 2 tâm sở, 5 tâm; 6. QUẢ NHẬP LƯU"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 10,
+              "note": "7. NGƯỜI ĐẠO NHẤT LAI / QUẢ NHẤT LAI — bậc Thánh thứ 2"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 11,
+              "note": "11. NGƯỜI ĐẠO VÔ SANH – TỨ ĐẠO: đang tuyệt trừ tất cả chủng từ tái tục"
+            }
+          ]
+        },
+        {
+          "id": "M16_S04",
+          "title": "四類生存界——三十一界",
+          "summary": "四惡趣、欲界七善趣、色界十六地、無色界四地；聖者不生惡趣與無想天。",
+          "body": [
+            "四類生存界（Bhūmi）為：1. 惡趣地（Apāyabhūmi）；2. 欲界善趣地（Kāmasugatibhūmi）；3. 色界地（Rūpāvacarabhūmi）；4. 無色界地（Arūpāvacarabhūmi）。",
+            "惡趣地有四處：地獄、畜生、餓鬼與阿修羅。",
+            "欲界善趣地有七處：人界、四大王天、三十三天、夜摩天、兜率天、化樂天及他化自在天。",
+            "色界有十六地，按禪那層次分為四組：初禪三地（梵眾天、梵輔天、大梵天）；第二禪三地；第三禪三地；第四禪七地。",
+            "無色界有四地：空無邊處、識無邊處、無所有處、非想非非想處。",
+            "應當記住：一來者、預流者及凡夫不會投生於淨居天（Suddhāvāsā，即五淨居天）；聖者不生於無想天，也不墮入諸惡趣。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BHUMI_M16",
+              "term": "界地 (生存界)",
+              "pali": "Bhūmi",
+              "meaning": "四類：惡趣地、欲界善趣地、色界地、無色界地"
+            },
+            {
+              "id": "TERM_NGU_TINH_CU_M16",
+              "term": "五淨居天",
+              "pali": "Suddhāvāsā",
+              "meaning": "五個清淨住處；僅不來者與阿羅漢可生於此"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12,
+              "note": "Bốn cảnh giới sinh tồn; cảnh bất hạnh 4; dục giới hữu phước 7 (Pāli gatha)"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13,
+              "note": "Cảnh vô sắc 4; phàm nhân, dự lưu, nhất lai không sanh Ngũ Tịnh Cư; Thánh không sanh vô tưởng và ác cảnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 14,
+              "note": "Sơ đồ 31 cõi: ác cảnh 4, cõi người 4 châu, 6 cõi trời dục giới, sơ thiền 3 cõi"
+            }
+          ]
+        },
+        {
+          "id": "M16_S05",
+          "title": "四惡趣——地獄、畜生、餓鬼、阿修羅",
+          "summary": "八大地獄彼此相隔一千五百由旬；每座有四門、十六小地獄；天阿修羅以心結生。",
+          "body": [
+            "地獄界有八大地獄：1. Sañjīva（等活），2. Kālasutta（黑繩），3. Saṅghāta（眾合），4. Roriva，5. Mahāroriva，6. Tāpana，7. Mahātāpana，8. Avīci（無間）。",
+            "其位置在地球內部深處。每座大地獄相隔一千五百由旬（一由旬等於二十公里），依次層層相疊。",
+            "每座大地獄有四門（8 × 4 = 32門）；每門有四個地獄坑（32 × 4 = 128坑），並由一位閻王治理（共32位）；每座大地獄另有十六小地獄，稱為Ussada（增盛地獄）。",
+            "畜生界與餓鬼界遍佈各處，生命有苦樂兩面；例如四大王天既有享受天界之樂的一面，也有承受地獄般苦境的一面。",
+            "阿修羅（Asura）：其中天阿修羅（Deva Asura）以心結生，屬於天神的低層眷屬，不喜光明。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DAI_DIA_NGUC_M16",
+              "term": "八大地獄",
+              "pali": "Aṭṭha mahāniraya",
+              "meaning": "從Sañjīva至Avīci，彼此相隔一千五百由旬"
+            },
+            {
+              "id": "TERM_ATULA_M16",
+              "term": "阿修羅",
+              "pali": "Asura",
+              "meaning": "第四惡趣；其中天阿修羅以心結生"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16,
+              "note": "8 ĐẠI ĐỊA NGỤC: Sañjīva…Avīci; vị trí, khoảng cách 1500 do tuần; 4 cửa, 128 hầm, 32 Diêm Vương, 16 tiểu địa ngục"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 17,
+              "note": "2 mặt đời sống: vui hưởng cảnh Trời, khổ cảnh Địa ngục"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 20,
+              "note": "Loại 1 – DEVA ASURA: ATULA CHƯ THIÊN — tục sinh bằng tâm"
+            }
+          ]
+        },
+        {
+          "id": "M16_S06",
+          "title": "人界——四大洲",
+          "summary": "Manussā是心明亮而勇敢的有情；南贍部洲雖苦較多，卻易於修行，且有諸佛出世。",
+          "body": [
+            "Kāmasugati由SU與GATI構成，意為善趣、良好的再生住處。凡與欲愛——色愛、聲愛、香愛、味愛、觸愛、法愛——相應並俱生的樂趣，稱為欲界之樂。",
+            "人界（Manussabhūmi）：Manussannaṃ etesanti = Manussā，即被稱為“人”的有情，因為其心明亮而勇敢。人依所居四洲分為四類。",
+            "1. 閻浮提（南贍部洲，Jambūdīpa）：我們這類人所居之洲；Jambū指古印度常見的一種樹。此洲人的心與其他三洲不同：行善時勇敢明亮，作惡時也格外兇猛。",
+            "此洲不及其他三洲，因為居民勞作更為艱辛、痛苦更多；然而這裡更容易修行，也有諸佛出世。善的一面，眾生能夠修成正等正覺、獨覺、上首聲聞、大聲聞、普通聲聞、轉輪王，並能證得禪那與勝智神通。惡的一面，則可能弒父、弒母、殺阿羅漢、出佛身血及破和合僧。",
+            "2. 北俱盧洲（Uttarakurudīpa）；3. 東勝身洲（Pubbavidehadīpa，居民面形圓，因其地形亦圓）；4. 西牛貨洲（Aparagoyānadīpa）。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JAMBU_M16",
+              "term": "閻浮提 (南贍部洲)",
+              "pali": "Jambūdīpa",
+              "meaning": "我們所居的人洲；雖苦卻易修行，並有諸佛出世"
+            },
+            {
+              "id": "TERM_MANUSSA_M16",
+              "term": "人趣",
+              "pali": "Manussā",
+              "meaning": "心明亮而勇敢的有情"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 21,
+              "note": "II/ CÕI VUI DỤC GIỚI – KĀMASUGATI: căn SU + GATI; 7 cõi; cõi người 4 châu"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22,
+              "note": "1/ NGƯỜI NAM THIỆN BỘ CHÂU – JAMBŪDĪPA: tâm dũng cảm sáng chói; kém hơn 3 châu nhưng dễ tu, có Chư Phật ra đời"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 23,
+              "note": "3/ NGƯỜI ĐÔNG THẮNG THẦN CHÂU – PUBBAVIDEHA: mặt tròn vì địa hình tròn"
+            }
+          ]
+        },
+        {
+          "id": "M16_S07",
+          "title": "欲界六天",
+          "summary": "壽命從四大王天的五百天年至他化自在天的一萬六千天年，逐層加倍；魔王住在最高天。",
+          "body": [
+            "欲界六天的天神屬於Uppattideva——投生於天界以享受自己所造之業果的天神，與入定的梵天不同。",
+            "1. 四大王天（Cātummahārājika）：因四位統領天眾的天王而得名；位於Sineru（須彌山）山腰，距人間四萬二千由旬。壽命五百天年，一天等於人間五十年，共為人間九百一十二萬五千年。此天有多個天神群體，包括地居天、乾闥婆（Gandhabba，依有香氣的樹木而居）及羅剎類鳩槃荼（Kumbhaṇḍa）等。",
+            "2. 三十三天（Tāvatiṃsa，即忉利天）：位於須彌山頂；圓形山頂中央是七寶所成的善見城（Sudassana），城中有天帝釋的最勝殿（Vejayanta）。壽命一千天年，一晝夜等於人間一百年。天子容貌如二十歲青年，天女如十六歲少女；不衰老、無疾病，飲食清淨。",
+            "3. 夜摩天（Yāma）：此天之主名為Suyāma；位於空中；壽命二千天年，一天等於人間二百年，共為人間一億四千六百萬年。",
+            "4. 兜率天（Tusita）：心清涼、常行善行者的住處；上首聲聞的菩薩亦住於此。壽命四千天年，一天等於人間四百年。",
+            "5. 化樂天（Nimmānarati）：壽命八千天年，一天等於人間八百年。6. 他化自在天（Paranimmitavasavattī）：壽命一萬六千天年，一天等於人間一千六百年；此天也是魔王Māra的住處。",
+            "化樂天與他化自在天不像下四天那樣有固定伴侶（四大王天、三十三天、夜摩天、兜率天的天神皆有伴侶）；這兩天的天子天女欲樂生起時，會化現伴侶。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_UPPATTIDEVA_M16",
+              "term": "生天神",
+              "pali": "Uppattideva",
+              "meaning": "投生天界以享受自己所造業果的天神"
+            },
+            {
+              "id": "TERM_TUOI_THO_TROI_M16",
+              "term": "欲界六天壽命",
+              "pali": "—",
+              "meaning": "500 → 1,000 → 2,000 → 4,000 → 8,000 → 16,000天年（一天等於人間50至1,600年）"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24,
+              "note": "6 cõi trời dục giới; Tứ thiên vương: 500 năm, 1 ngày = 50 năm; cách 42.000 do tuần"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 26,
+              "note": "Nhóm 2 GANDHABBO; nhóm 3 KUMBHAṆḌA – RAKKHASA"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 28,
+              "note": "Tam thập tam: núi Tudi, Sudassana, Vejayanta"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 29,
+              "note": "Thiên nam 20 tuổi, thiên nữ 16; không lão hóa, không bệnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 30,
+              "note": "Tam thập tam: 1000 năm, 1 ngày = 100 năm; cách cõi người 84.000 do tuần"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 31,
+              "note": "Dạ ma: Suyāma, 2000 năm; Đấu suất: 4000 năm, Bồ tát Thượng thủ thinh văn ở cõi này"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32,
+              "note": "Hóa lạc 8000 năm; Tha hóa 16.000 năm, trú xứ Ma vương Māra; 4 cõi dưới có tình nhân"
+            }
+          ]
+        },
+        {
+          "id": "M16_S08",
+          "title": "色界十六地與無色界四地",
+          "summary": "色界按禪那分四組；五淨居天只是不來者與阿羅漢的住處；無色界只有四名蘊。",
+          "body": [
+            "色界地（Rūpāvacarabhūmi）有十六地，按禪那層次分為四組；它們位於空中三個各自分開的區域，由七寶構成，恆放光明。",
+            "第一組——初禪三天：梵眾天（Brahmapārisajjā，大梵天的會眾與隨從）；梵輔天（Brahmapurohitā，擔任顧問的梵天）；大梵天（Mahābrahmā，最殊勝的梵天，在宇宙形成時最先出現）。",
+            "第二組——第二禪三天：少光天、無量光天、光音天（Ābhassarā，光明從身上放射；依《起世因本經》，人類始祖為光音天的梵天）。第三組——第三禪三天：少淨天、無量淨天、遍淨天。",
+            "第四組——第四禪七天：廣果天（Vehapphala）、無想天（Asaññasatta，只有色法），以及五淨居天（Suddhāvāsā）：無煩天（Avihā）、無熱天（Atappā）、善見天（Sudassā）、善現天（Sudassī）、色究竟天（Akaṇiṭṭhā）。",
+            "淨居天是不來者與阿羅漢的清淨住處；投生於此者不僅證得色界第五禪，還必須至少已是第三果聖者。五天從低至高層層相疊；色究竟天在色界中具最高的戒、定、慧功德。",
+            "九禪天的結生心如下：初禪三天由初禪善心之力投生；第二禪三天與第三禪三天，則分別由相應層次的禪那之力投生。",
+            "無色界（Arūpabhūmi）有四地：空無邊處、識無邊處、無所有處、非想非非想處。此界只有受、想、行、識四名蘊，沒有色蘊；名蘊從結生心開始，依無間緣相續生滅。無色梵天由離貪禪修之力投生，即修習對色法的離貪並厭離色法。",
+            "梵天生活中不顯現男女相，但色身形相似男性；他們雖喜愛天宮與花園，卻沒有欲貪蓋，因為在人間時已修習離欲之法；聖者梵天則入果定。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SAC_GIOI_16_M16",
+              "term": "色界十六地",
+              "pali": "Rūpāvacarabhūmi",
+              "meaning": "初禪3 + 第二禪3 + 第三禪3 + 第四禪7（廣果、無想、五淨居）"
+            },
+            {
+              "id": "TERM_VO_SAC_4_M16",
+              "term": "無色界四地",
+              "pali": "Arūpabhūmi",
+              "meaning": "只有四名蘊而無色蘊；由厭離色法的禪修之力投生"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 33,
+              "note": "LUẬN VỀ CÕI SẮC GIỚI: 16 cõi chia 4 nhóm; Sơ thiền 3 cõi: Phạm Chúng, Phạm Phụ, Đại Phạm"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 35,
+              "note": "3/ CÕI QUANG ÂM THIÊN – ĀBHASSARĀ: thủy tổ loài người theo kinh Khởi Thế Nhân Bản"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 36,
+              "note": "NHÓM 3: CÕI TAM THIỀN: Thiểu Tịnh, Vô Lượng Tịnh, Biến Tịnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 37,
+              "note": "NHÓM 4: CÕI TỨ THIỀN 7 cõi; tâm tục sinh 9 cõi thiền"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38,
+              "note": "5 cõi Tịnh Cư Thiên – SUDDHĀVĀSĀ: trú xứ A na hàm, A la hán"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 39,
+              "note": "4/ CÕI THIỆN HIỆN THIÊN – SUDASSĪ"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 40,
+              "note": "5/ CÕI SẮC CỨU CÁNH THIÊN – AKANIṬṬHĀ"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 42,
+              "note": "Đời sống vị Phạm thiên; THIÊN SẢN các cõi"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43,
+              "note": "IV/ CÕI VÔ SẮC: chỉ Tứ danh uẩn; sanh do thiền ly tham Sắc"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M16_R01",
+          "front": "Puggala是什麼意思？人分為多少類？",
+          "back": "意為人，即由業力所制約、具有名色（或僅名、僅色）的有情；共十二類：四類凡夫與八類聖者。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_R02",
+          "front": "四類凡夫是什麼？",
+          "back": "苦趣無因人、善趣無因人、二因人、三因人。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_R03",
+          "front": "苦趣無因人的結生心是什麼？",
+          "back": "捨俱不善異熟無因推度心，是十一不善心（八貪、二瞋、一疑相應痴）的果報。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_R04",
+          "front": "為什麼掉舉相應痴根心不能產生結生果？",
+          "back": "因為它動盪而微弱，只能在日常生命中產生果報。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_R05",
+          "front": "善趣無因人的結生心是什麼？",
+          "back": "捨俱善異熟無因推度心，執行結生、有分與死亡的作用。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M16_R06",
+          "front": "初道滅除哪些心所與心？",
+          "back": "二心所：邪見與疑。五心：四邪見相應貪根心與一疑相應痴根心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M16_R07",
+          "front": "四類生存界是什麼？",
+          "back": "1. 惡趣地；2. 欲界善趣地；3. 色界地；4. 無色界地。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_R08",
+          "front": "四惡趣是什麼？",
+          "back": "地獄、畜生、餓鬼、阿修羅。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_R09",
+          "front": "八大地獄叫什麼？",
+          "back": "1 Sañjīva，2 Kālasutta，3 Saṅghāta，4 Roriva，5 Mahāroriva，6 Tāpana，7 Mahātāpana，8 Avīci。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M16_R10",
+          "front": "為什麼說南贍部洲容易修行？",
+          "back": "此洲人的善心勇敢明亮，能修成正等正覺、獨覺、聲聞、轉輪王等，也有諸佛出世；儘管這裡比其他三洲更苦。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M16_R11",
+          "front": "人界的四大洲是什麼？",
+          "back": "閻浮提（南贍部洲，Jambūdīpa）、北俱盧洲（Uttarakuru）、東勝身洲（Pubbavideha）、西牛貨洲（Aparagoyāna）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M16_R12",
+          "front": "欲界六天的壽命各是多少？",
+          "back": "四大王天500、三十三天1,000、夜摩天2,000、兜率天4,000、化樂天8,000、他化自在天16,000天年。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 30
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 31
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_R13",
+          "front": "魔王Māra住在哪一界？",
+          "back": "他化自在天（Paranimmitavasavattī），即欲界最高天。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_R14",
+          "front": "五淨居天是什麼？誰能生於此？",
+          "back": "無煩天、無熱天、善見天、善現天、色究竟天，是不來者與阿羅漢的住處。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_R15",
+          "front": "無色界有色蘊嗎？",
+          "back": "沒有；只有受、想、行、識四名蘊，並由厭離色法的禪修之力投生。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "M16_R16",
+          "front": "梵天有欲貪嗎？",
+          "back": "沒有欲貪蓋；他們在人間時已修習離欲之法，但仍喜愛天宮與花園。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 42
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M16_Q01",
+          "type": "mcq",
+          "question": "人（Puggala）共有多少類？",
+          "correctAnswer": "12——4類凡夫加8類聖者",
+          "distractors": [
+            "8——只有8類聖者",
+            "4——只有4類凡夫",
+            "31——依界地數目計算"
+          ],
+          "explanation": "凡夫有苦趣無因人、善趣無因人、二因人、三因人；聖者有四道與四果。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_Q02",
+          "type": "mcq",
+          "question": "苦趣無因人的結生心是哪一種？",
+          "correctAnswer": "捨俱不善異熟無因推度心",
+          "distractors": [
+            "捨俱善異熟無因推度心",
+            "領受心",
+            "五門轉向心"
+          ],
+          "explanation": "它是十一不善心的果報；掉舉相應痴根心因動盪而微弱，不能產生結生果。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_Q03",
+          "type": "mcq",
+          "question": "初道斷除哪三結？",
+          "correctAnswer": "身見、疑、戒禁取",
+          "distractors": [
+            "貪、瞋、痴",
+            "身見、慢、嫉",
+            "疑、掉舉、昏沉"
+          ],
+          "explanation": "同時滅除邪見與疑二心所，以及四邪見相應貪根心與一疑相應痴根心，共五心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M16_Q04",
+          "type": "mcq",
+          "question": "惡趣地（Apāya）包括哪些界？",
+          "correctAnswer": "地獄、畜生、餓鬼、阿修羅",
+          "distractors": [
+            "地獄、餓鬼、畜生、人界",
+            "地獄、阿修羅、夜摩天、兜率天",
+            "餓鬼、畜生、無想天、無色界"
+          ],
+          "explanation": "它們是四類生存界中的四惡趣。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_Q05",
+          "type": "mcq",
+          "question": "欲界善趣地有多少界？",
+          "correctAnswer": "7",
+          "distractors": [
+            "4",
+            "6",
+            "11"
+          ],
+          "explanation": "一人界加欲界六天，共七界。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_Q06",
+          "type": "mcq",
+          "question": "八大地獄彼此相隔多少由旬？",
+          "correctAnswer": "1,500由旬",
+          "distractors": [
+            "42,000由旬",
+            "1,000由旬",
+            "84,000由旬"
+          ],
+          "explanation": "八大地獄依次相疊，位於地球內部深處；一由旬等於二十公里。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M16_Q07",
+          "type": "mcq",
+          "question": "哪一洲容易修行且有諸佛出世？",
+          "correctAnswer": "閻浮提（南贍部洲，Jambūdīpa）",
+          "distractors": [
+            "北俱盧洲",
+            "東勝身洲",
+            "西牛貨洲"
+          ],
+          "explanation": "此洲雖比其他三洲更苦，但人心勇敢明亮，能修成正等正覺、獨覺等。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M16_Q08",
+          "type": "mcq",
+          "question": "四大王天的一天等於人間多少年？",
+          "correctAnswer": "50年",
+          "distractors": [
+            "100年",
+            "200年",
+            "400年"
+          ],
+          "explanation": "五百天年 × 18,250人間年 = 9,125,000人間年。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M16_Q09",
+          "type": "mcq",
+          "question": "天帝釋住在哪一界？",
+          "correctAnswer": "三十三天（忉利天）",
+          "distractors": [
+            "四大王天",
+            "夜摩天",
+            "化樂天"
+          ],
+          "explanation": "三十三天位於須彌山頂，有善見城與最勝殿。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 28
+            }
+          ]
+        },
+        {
+          "id": "M16_Q10",
+          "type": "mcq",
+          "question": "哪一界是魔王Māra的住處？",
+          "correctAnswer": "他化自在天",
+          "distractors": [
+            "化樂天",
+            "兜率天",
+            "光音天"
+          ],
+          "explanation": "這是欲界最高天，壽命一萬六千天年。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_Q11",
+          "type": "mcq",
+          "question": "色界有多少地，分為幾組？",
+          "correctAnswer": "16地，按禪那層次分為4組",
+          "distractors": [
+            "15地，分為3組",
+            "12地，分為4組",
+            "16地，分為2組"
+          ],
+          "explanation": "初禪三地、第二禪三地、第三禪三地、第四禪七地。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 33
+            }
+          ]
+        },
+        {
+          "id": "M16_Q12",
+          "type": "mcq",
+          "question": "誰能投生五淨居天？",
+          "correctAnswer": "阿那含（不來者）與阿羅漢",
+          "distractors": [
+            "一切聖者",
+            "修得第五禪的凡夫",
+            "只有初果者"
+          ],
+          "explanation": "Suddhāvāsā是清淨住處；凡夫、預流者及一來者不能生於此。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_Q13",
+          "type": "mcq",
+          "question": "無想天（Asaññasatta）的特殊之處是什麼？",
+          "correctAnswer": "只有色法，沒有名法",
+          "distractors": [
+            "只有名法，沒有色法",
+            "名色兼有",
+            "名色皆無"
+          ],
+          "explanation": "結生時只有命根色、業生色與性根色；聖者不生於此界。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_Q14",
+          "type": "mcq",
+          "question": "依《起世因本經》，人類始祖是誰？",
+          "correctAnswer": "光音天的梵天",
+          "distractors": [
+            "摩奴王",
+            "大梵天",
+            "四大王天的天神"
+          ],
+          "explanation": "世界毀滅後，光音天的梵天來到世間，以地味為食而生活。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M16_Q15",
+          "type": "mcq",
+          "question": "無色梵天因何種力量投生？",
+          "correctAnswer": "離貪禪修——厭離色法",
+          "distractors": [
+            "慈心禪",
+            "佈施業",
+            "初禪定心"
+          ],
+          "explanation": "Virāgabhāvanā即修習對色法的離貪，因而不再喜愛色法。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "M16_Q16",
+          "type": "mcq",
+          "question": "色究竟天（Akaṇiṭṭhā）有何特徵？",
+          "correctAnswer": "在色界中具最高的戒、定、慧功德",
+          "distractors": [
+            "第四禪諸天中的最低處",
+            "魔王的住處",
+            "沒有光明的天界"
+          ],
+          "explanation": "它是五淨居天中最高的一天；五天從低至高層層相疊。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 40
+            }
+          ]
+        }
+      ]
     },
     "M8_NHAN_DUYEN": {
       "title": "緣起之概要",
