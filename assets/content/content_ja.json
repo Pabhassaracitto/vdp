@@ -2660,9 +2660,1012 @@
       ]
     },
     "M4_AKUSALA": {
-      "title": "十二不善心",
-      "description": "貪根心8、瞋根心2、痴根心2の12不善心。",
-      "translationStatus": "reviewed"
+      "title": "十二不善心（Akusala Citta）",
+      "description": "貪心8・瞋心2・痴心2は苦の原因である。特有の不善心所10と、M2で学ぶ痴分4を合わせて十四不善心所となる。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M4_S01",
+          "title": "121心における不善心の位置",
+          "summary": "欲界心54の内訳は、不善心12、無因心18、欲界浄好心24である。",
+          "body": [
+            "心（Citta）は121心あり、欲界心54、色界心15、無色界心12、出世間心40（広説）に分かれる。",
+            "欲界心54は、不善心12、無因心18（果報心15・唯作心3）、欲界浄好心24の三群からなる。",
+            "不善心12は、貪（Lobha）8、瞋（Dosa）2、痴（Moha）2である。",
+            "心の四義は、特相が所縁を知ること、作用が心所を導くこと、現起が絶えず連続すること、近因が名・色・所縁である。",
+            "心を生じさせる四因は、過去業、所縁縁、心所、依処である。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_CITTA_M4",
+              "term": "心",
+              "pali": "Citta",
+              "meaning": "所縁を知るもの"
+            },
+            {
+              "id": "TERM_AKUSALACITTA",
+              "term": "不善心",
+              "pali": "Akusala citta",
+              "meaning": "12心：貪8＋瞋2＋痴2"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9,
+              "note": "Phân loại TÂM – 121 tâm; Tâm Dục giới 54; tứ ý nghĩa; bốn nhân sanh tâm"
+            }
+          ]
+        },
+        {
+          "id": "M4_S02",
+          "title": "八貪根心（Lobhamūla citta）",
+          "summary": "受（喜・捨）、邪見（相応・不相応）、行（無行・有行）で2×2×2＝8に分ける。",
+          "body": [
+            "貪心とは所縁を欲し執着する心である。Lobhaは語根Lubに由来し、固着、結縛、渇望、愛着を意味する。",
+            "八貪心は、喜俱／捨俱、邪見相応／邪見不相応、無行／有行という三対で分類される。",
+            "第一心の例は『Somanassa-sahagataṃ diṭṭhigatasampayuttaṃ asaṅkhārikaṃ』、すなわち喜俱・邪見相応・無行の貪心である。",
+            "1～4は喜俱、5～8は捨俱。1・2・5・6は邪見相応、3・4・7・8は不相応。1・3・5・7は無行、2・4・6・8は有行である。",
+            "果報の強さは、喜が捨より、無行が有行より、邪見相応が不相応より強い。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_LOBHA_M4",
+              "term": "貪",
+              "pali": "Lobha",
+              "meaning": "所縁に固着し執着すること"
+            },
+            {
+              "id": "TERM_ASANKHARIKA",
+              "term": "無行",
+              "pali": "Asaṅkhārika",
+              "meaning": "勧めや刺激を必要としない"
+            },
+            {
+              "id": "TERM_SASANKHARIKA",
+              "term": "有行",
+              "pali": "Sasaṅkhārika",
+              "meaning": "勧めや刺激を伴う"
+            },
+            {
+              "id": "TERM_DITTHIGATA",
+              "term": "邪見相応",
+              "pali": "Diṭṭhigatasampayutta",
+              "meaning": "邪見と相応すること"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10,
+              "note": "TÂM THAM – LOBHAMŪLA CITTA có 8: danh sách Pāli đầy đủ"
+            },
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 11,
+              "note": "Cho quả khác biệt; cách gom nhóm 8 tâm tham"
+            }
+          ]
+        },
+        {
+          "id": "M4_S03",
+          "title": "二瞋根心（Dosamūla citta）",
+          "summary": "いずれも憂俱・瞋恚相応で、無行か有行かが異なる。",
+          "body": [
+            "瞋心は瞋を根とし、不快、不満、挫折を本質とする。強まれば憎悪、憤怒、悪意となる。",
+            "第一瞋心は『Domanassa-sahagataṃ paṭighasampayuttaṃ asaṅkhārikaṃ』、憂俱・瞋恚相応・無行で、怒りが速やかに生じる。",
+            "第二瞋心は同じだが有行（sasaṅkhārikaṃ）で、より遅く生じる。",
+            "憂受（domanassa）は受蘊に属し、不安、いら立ち、不快の感受である。",
+            "瞋心の四因は、怒りやすい性質、深く考えないこと、学習知識の不足、好ましくない所縁にしばしば会うことである。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DOSA_M4",
+              "term": "瞋",
+              "pali": "Dosa",
+              "meaning": "怒り、不満"
+            },
+            {
+              "id": "TERM_PATIGHA",
+              "term": "瞋恚",
+              "pali": "Paṭigha",
+              "meaning": "怒り、いら立ち、憤慨"
+            },
+            {
+              "id": "TERM_DOMANASSA",
+              "term": "憂受",
+              "pali": "Domanassa",
+              "meaning": "不安で不快な感受"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14,
+              "note": "TÂM SÂN – DOSAMŪLACITTA có 2; 4 nhân sanh tâm sân"
+            }
+          ]
+        },
+        {
+          "id": "M4_S04",
+          "title": "二痴根心（Mohamūla citta）",
+          "summary": "捨俱疑相応心と捨俱掉挙相応心である。",
+          "body": [
+            "第一痴心は『Upekkhā-sahagataṃ vicikicchāsampayuttaṃ』、捨俱疑相応で、ためらいを特相とする。",
+            "疑には通常の疑と、仏・法・僧・三学（戒定慧）・過去・未来・現在・縁起に対する特別な疑がある。",
+            "第二痴心は『Upekkhā-sahagataṃ uddhaccasampayuttaṃ』、捨俱掉挙相応で、心が動揺する。",
+            "痴心の二因は、真実に沿わない非如理作意と、欲漏・有漏・見漏・無明漏を基盤とすることである。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_MOHA_M4",
+              "term": "痴",
+              "pali": "Moha",
+              "meaning": "迷い、錯誤"
+            },
+            {
+              "id": "TERM_VICIKICCHA",
+              "term": "疑",
+              "pali": "Vicikicchā",
+              "meaning": "ためらい、疑う状態"
+            },
+            {
+              "id": "TERM_AYONISO",
+              "term": "非如理作意",
+              "pali": "Ayoniso manasikāra",
+              "meaning": "真実に即さない作意"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14,
+              "note": "TÂM SI – MOHAMŪLA CITTA có 2; 2 nhân sanh tâm si"
+            }
+          ]
+        },
+        {
+          "id": "M4_S05",
+          "title": "十四不善心所――五群",
+          "summary": "痴分4、貪分3、瞋分4、昏沈分2、疑1を、共起関係によってまとめる。",
+          "body": [
+            "Akusala（不善）には、病的で苦を招く、美しくなく汚れている、貪瞋痴に覆われ不巧みである、過失を犯す、苦果を生む、という五義がある。",
+            "十四不善心所は、痴分4（痴・無慚・無愧・掉挙）、貪分3（貪・邪見・慢）、瞋分4（瞋・嫉・慳・悪作）、昏沈分2（惛沈・睡眠）、疑1に分かれる。",
+            "痴分の四心所は十二不善心すべてにあるため、不善遍行心所と呼ばれる。",
+            "貪分は所縁に執着する貪と共起する心所を、瞋分は所縁を排斥する瞋と共起する心所をまとめた群である。",
+            "痴分以外の四群はすべての不善心にあるわけではなく、それぞれに適した心にだけ生じる。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_AKUSALA_NGU_M4",
+              "term": "不善（五義）",
+              "pali": "Akusala",
+              "meaning": "病的、不美、不巧、過失、苦果を生む"
+            },
+            {
+              "id": "TERM_LOBHA_NHOM_M4",
+              "term": "貪分",
+              "pali": "Lobhatuka cetasika",
+              "meaning": "貪と共起する貪・邪見・慢の三法"
+            },
+            {
+              "id": "TERM_DOSA_NHOM_M4",
+              "term": "瞋分",
+              "pali": "Dosatuka cetasika",
+              "meaning": "瞋と共起する瞋・嫉・慳・悪作の四法"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31,
+              "note": "Nhóm 2: TÂM SỞ BẤT THIỆN – AKUSALA CETASIKA (14 tâm); AKUSALA có 5 nghĩa; 5 nhóm: Si phần 4, Tham phần 3, Sân phần 4, Hôn phần 2, Hoài nghi 1"
+            }
+          ]
+        },
+        {
+          "id": "M4_S06",
+          "title": "貪分：貪・邪見・慢",
+          "summary": "貪と共起する三心所。所縁への固着、誤見への執着、比較による高慢である。",
+          "body": [
+            "貪（Lobha）は語根Lubに由来し、固着、結縛、渇望、愛着を意味する。眼耳鼻舌身意を通じ、好ましく魅力的と見なす所縁に執着する。",
+            "貪心所の四義は、所縁への執着を特相とし、心を所縁に付着させることを作用とし、所縁を放さないことを現起とし、束縛する法を好むことを近因とする。",
+            "類義語にはPema、Taṇhā、Rāga、Piya、Kāya、Nandiがある。取（Upādāna）は強い把持、すなわち強化された貪である。",
+            "貪と邪見の結合は誤った見解や迷信への執着である。邪見を離れ慢を伴う貪は、自分のものを執取し、勝・等・劣を比較する。",
+            "邪見（Diṭṭhi）は事実と法の自性に合わない誤った認識である。",
+            "有身見は五蘊ごとに、蘊を我と見る、我の中に蘊を見る、我が蘊を持つ、蘊の中に我を見る、の四種があり、合計二十種である。",
+            "邪見には通常の邪見と特定の邪見がある。特定のものには、すべてを偶然として因果を否定する無因見や、死後は断絶し行為に果報がないとする断見などがある。",
+            "慢（Māna）は自負、自高、自満、また自己と他者を比較して優越・劣等を抱くことである。",
+            "九慢は、優れた者・等しい者・劣った者がそれぞれ自分を勝・等・劣とみなす九通りである。",
+            "慢は出自、家系、健康、若さ、寿命、利益、尊敬、名誉、従者、財産、容姿、学問、弁才、戒、禅定、名声、地位などを縁に生じる。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_LOBHA_DIṬṬHI_M4",
+              "term": "貪",
+              "pali": "Lobha",
+              "meaning": "魅力的な所縁への執着。八貪心すべてにある"
+            },
+            {
+              "id": "TERM_DITTHI_M4",
+              "term": "邪見",
+              "pali": "Diṭṭhi",
+              "meaning": "法の自性を誤って見る。四邪見相応貪心にある"
+            },
+            {
+              "id": "TERM_SAKKAYA_M4",
+              "term": "有身見",
+              "pali": "Sakkāyadiṭṭhi",
+              "meaning": "四種の我見×五蘊＝二十種"
+            },
+            {
+              "id": "TERM_MANA_M4",
+              "term": "慢",
+              "pali": "Māna",
+              "meaning": "勝・等・劣を比較する九慢。四邪見不相応貪心にある"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37,
+              "note": "II.1 TÂM SỞ THAM – LOBHA CETASIKA: căn Lub; tứ ý nghĩa; các từ đồng nghĩa; Tham + Tà kiến / Ly tà + Ngã mạn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39,
+              "note": "II.2 TÂM SỞ TÀ KIẾN – DIṬṬHI CETASIKA: Dis = thấy; thân kiến 20 loại; phân loại tà kiến"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42,
+              "note": "II.3 TÂM SỞ NGÃ MẠN – MĀNA CETASIKA: căn Man; tứ ý nghĩa; 9 sự ỷ hơn–bằng–thua; các pháp kiêu hãnh"
+            }
+          ]
+        },
+        {
+          "id": "M4_S07",
+          "title": "瞋分：瞋・嫉・慳・悪作",
+          "summary": "瞋と共起する、排斥・嫉妬・物惜しみ・後悔の四心所。",
+          "body": [
+            "瞋（Dosa）は不快を意味する語根Duに由来する。心身を熱く粗暴にし、所縁を焼き滅ぼし、悪業と自己・他者への害として現れる。",
+            "瞋心の二因は、自己を第一とする我愛と、自分に属するものを愛する我所愛である。",
+            "この二因を過去・現在・未来について考え、他者が自分、親しい人を害した、または敵を利したという九種の思考が生じる。",
+            "瞋と同類の法には、愁、悲泣、憂、害、悪意、怒、驚愕、恐怖がある。",
+            "嫉（Issā）は他人の成功や優位に耐えられないこと。二瞋心にのみ生じ、憂受と相応する。",
+            "嫉妬は同業・同じ環境・同じ志向の者の間で、富、利益、信仰、名声、供養などをめぐって生じやすい。",
+            "慳（Macchariya）は自分の優れたものを他人に与えず、現さない物惜しみである。",
+            "自分の成功を隠し、所有物を共有せず、他人の布施を妨げ、布施を見たり自ら施した後に惜しむ。",
+            "五慳は住処・親族・利得・容姿名声・法に関する慳である。有害な物や悪事の資金を与えないことは慳ではない。",
+            "悪作（Kukkucca）は誤った行為のために落ち着かず、不安になり、過去を後悔する状態である。",
+            "後悔の二因は、すでに行った悪と行わなかった善。悪作には、すべきでないことをすべきと思う等、罪と無罪を取り違える四種がある。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DOSA_NHOM_SAN_M4",
+              "term": "瞋",
+              "pali": "Dosa",
+              "meaning": "不快と焼灼。二つの憂俱瞋心にある"
+            },
+            {
+              "id": "TERM_ISSA_M4",
+              "term": "嫉",
+              "pali": "Issā",
+              "meaning": "他人の成功への嫉妬。二瞋心にのみ生じる"
+            },
+            {
+              "id": "TERM_MACCHARIYA_M4",
+              "term": "慳",
+              "pali": "Macchariya",
+              "meaning": "五種の物惜しみ。二瞋心にのみ生じる"
+            },
+            {
+              "id": "TERM_KUKKUCCA_M4",
+              "term": "悪作",
+              "pali": "Kukkucca",
+              "meaning": "行った悪・しなかった善への後悔。二瞋心にのみ生じる"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 43,
+              "note": "III.1 TÂM SỞ SÂN – DOSA CETASIKA: căn Du; 2 nhân phát khởi; 3 nhóm 9 suy tư; các pháp cùng họp"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45,
+              "note": "III.2 TÂM SỞ TẬT (GANH TỴ) – ISSĀ CETASIKA: I + su; tứ ý nghĩa; lòng ganh tỵ trong đời; hiện hữu trong 2 tâm Sân"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46,
+              "note": "III.3 TÂM SỞ LẬN – MACCHARIYA CETASIKA: căn Mā + Accha; 5 loại bỏn xẻn; trường hợp không chia sẻ không là bỏn xẻn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 48,
+              "note": "III.4 TÂM SỞ HỐI – KUKKUCCA CETASIKA: Ku = xấu; 2 nhân sanh hối; 4 phân loại"
+            }
+          ]
+        },
+        {
+          "id": "M4_S08",
+          "title": "昏沈分と疑：惛沈・睡眠・疑",
+          "summary": "惛沈と睡眠は心を重く鈍くし、疑は心を決定不能にする。",
+          "body": [
+            "惛沈（Thīna）は暗く沈むこと。語根The（収縮）に由来し、火の前の羽毛のように縮み、弱く怠惰で、心と心所を停滞させる。",
+            "四義は、心の弱さと不活発が特相、精進を捨てることが作用、心の退縮が現起、不巧みな作意が近因であり、精進と反対である。",
+            "睡眠（Middha）は活動不能を意味する語根Middhに由来し、眠気、倦怠、活力の喪失によって心を覆う。",
+            "惛沈と睡眠は常に共生し、四有行貪心と一有行瞋心という五有行不善心にある。相応する心・心所を重く鈍くし、身軽安・心軽安と反対である。",
+            "疑（Vicikicchā）は疑惑、ためらい、決断不能であり、捨俱疑相応痴心にのみある。",
+            "疑には通常と特別の二種がある。特別の疑は、仏・法・僧・三学・過去・未来・現在・縁起という八対象に関する。",
+            "仏への五疑は、一切智の証得、仏光が隠所を照らすこと、阿毘達磨思惟時の六色光、神通による外道調伏、三十二大人相の具足に関する疑である。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_THINA_M4",
+              "term": "惛沈",
+              "pali": "Thīna",
+              "meaning": "火前の羽毛のように縮み停滞する。精進と反対"
+            },
+            {
+              "id": "TERM_MIDDHA_M4",
+              "term": "睡眠",
+              "pali": "Middha",
+              "meaning": "眠気と倦怠で心を覆う"
+            },
+            {
+              "id": "TERM_THINA_MIDDHA_M4",
+              "term": "昏沈分（二）",
+              "pali": "Thīna + Middha",
+              "meaning": "五有行不善心（貪4＋瞋1）に共生する"
+            },
+            {
+              "id": "TERM_VICIKICCHA_M4",
+              "term": "疑",
+              "pali": "Vicikicchā",
+              "meaning": "疑相応痴心のみにあり、法の自性への八疑がある"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 49,
+              "note": "IV.1 TÂM SỞ HÔN TRẦM – THĪNA CETASIKA; IV.2 TÂM SỞ THUỴ MIÊN – MIDDHA CETASIKA: căn The / Middh; tứ ý nghĩa; đối nghịch Tinh tấn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 52,
+              "note": "V/ TÂM SỞ HOÀI NGHI – VICIKICCHĀ CETASIKA: Vi + kit + cha; phân loại nghi 2; hoài nghi thực tính pháp 8 cách; hoài nghi đức Phật 5 điều"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M4_R01",
+          "front": "不善心はいくつあり、どう分類されるか。",
+          "back": "12心：貪8、瞋2、痴2。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R02",
+          "front": "欲界心はいくつで、どの群からなるか。",
+          "back": "54心：不善12＋無因18＋欲界浄好24。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R03",
+          "front": "心の四義は何か。",
+          "back": "特相：所縁を知る。作用：心所を導く。現起：不断の連続。近因：名・色・所縁。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R04",
+          "front": "心を生じさせる四因は何か。",
+          "back": "過去業、所縁縁、心所、依処。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R05",
+          "front": "八貪心は何対で分類されるか。",
+          "back": "喜／捨、邪見相応／不相応、無行／有行の三対。2×2×2＝8。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_R06",
+          "front": "Lobhaはどの語根から来るか。",
+          "back": "Lub。固着、結縛、渇望、愛着を意味する。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_R07",
+          "front": "果報の強さではどの貪心が強いか。",
+          "back": "喜は捨より、無行は有行より、邪見相応は不相応より強い。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "M4_R08",
+          "front": "AsaṅkhārikaとSasaṅkhārikaの意味は何か。",
+          "back": "前者は無行、後者は勧めを伴う有行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_R09",
+          "front": "二瞋心の相違は何か。",
+          "back": "両方とも憂俱・瞋恚相応だが、無行（速い）と有行（遅い）が異なる。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R10",
+          "front": "瞋心の四因は何か。",
+          "back": "怒りやすさ、浅い思考、知識不足、好ましくない所縁との頻繁な遭遇。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R11",
+          "front": "二痴心の名称は何か。",
+          "back": "捨俱疑相応痴心と捨俱掉挙相応痴心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R12",
+          "front": "特別な疑は何を疑うか。",
+          "back": "仏・法・僧・三学・過去・未来・現在・縁起。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R13",
+          "front": "痴心の二因は何か。",
+          "back": "非如理作意と、四漏を基盤とすること。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R14",
+          "front": "二痴心はいずれも何受か。",
+          "back": "いずれも捨受俱。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R15",
+          "front": "貪分の心所は何か。",
+          "back": "貪・邪見・慢の三つ。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "M4_R16",
+          "front": "邪見と慢はどの心にあるか。",
+          "back": "邪見は四邪見相応貪心、慢は四邪見不相応貪心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "M4_R17",
+          "front": "瞋分の心所は何か。",
+          "back": "瞋・嫉・慳・悪作。二つの憂俱瞋心だけに生じる。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 43
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 48
+            }
+          ]
+        },
+        {
+          "id": "M4_R18",
+          "front": "惛沈と睡眠の特相は何か。",
+          "back": "惛沈は収縮・停滞し精進と反対。睡眠は倦怠で心を覆う。両者は五有行不善心にある。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 49
+            }
+          ]
+        },
+        {
+          "id": "M4_R19",
+          "front": "疑はどの心にあるか。",
+          "back": "捨俱疑相応痴心だけにある。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 52
+            }
+          ]
+        },
+        {
+          "id": "M4_R20",
+          "front": "十四不善心所は何群に分かれるか。",
+          "back": "五群：痴分4、貪分3、瞋分4、昏沈分2、疑1。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M4_Q01",
+          "type": "mcq",
+          "question": "十二不善心はどう分類されるか。",
+          "correctAnswer": "貪8＋瞋2＋痴2",
+          "distractors": [
+            "貪6＋瞋4＋痴2",
+            "貪8＋痴2＋疑2",
+            "貪4＋瞋4＋痴4"
+          ],
+          "explanation": "十二不善心は貪8、瞋2、痴2である。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_Q02",
+          "type": "mcq",
+          "question": "欲界心はいくつか。",
+          "correctAnswer": "54",
+          "distractors": [
+            "12",
+            "24",
+            "121"
+          ],
+          "explanation": "欲界心54は不善12＋無因18＋欲界浄好24。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_Q03",
+          "type": "mcq",
+          "question": "八貪心を分ける三対は何か。",
+          "correctAnswer": "喜／捨―邪見相応／不相応―無行／有行",
+          "distractors": [
+            "善／不善―因／果―内／外",
+            "喜／憂―智相応／不相応―速／遅",
+            "欲界／色界―因／果―無行／有行"
+          ],
+          "explanation": "2×2×2＝8貪心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_Q04",
+          "type": "mcq",
+          "question": "Asaṅkhārikaṃの意味は何か。",
+          "correctAnswer": "無行――勧めを要しない",
+          "distractors": [
+            "有行――勧めを伴う",
+            "邪見相応",
+            "喜俱"
+          ],
+          "explanation": "Asaṅkhārikaは無行、Sasaṅkhārikaは有行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_Q05",
+          "type": "mcq",
+          "question": "Lobhaはどの語根に由来するか。",
+          "correctAnswer": "Lub――固着する",
+          "distractors": [
+            "Muh――迷う",
+            "Ju――速く走る",
+            "Rup――壊れる"
+          ],
+          "explanation": "lubhatīti lobha、固着するので貪という。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_Q06",
+          "type": "mcq",
+          "question": "瞋心は何受か。",
+          "correctAnswer": "憂受（domanassa）",
+          "distractors": [
+            "喜受（somanassa）",
+            "捨受（upekkhā）",
+            "苦受（dukkha）"
+          ],
+          "explanation": "二瞋心はいずれも憂俱・瞋恚相応。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q07",
+          "type": "mcq",
+          "question": "瞋心はいくつか。",
+          "correctAnswer": "2",
+          "distractors": [
+            "1",
+            "4",
+            "8"
+          ],
+          "explanation": "二瞋根心は無行と有行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q08",
+          "type": "mcq",
+          "question": "二痴心は何受か。",
+          "correctAnswer": "捨受（upekkhā）",
+          "distractors": [
+            "憂受",
+            "喜受",
+            "一つは喜、一つは捨"
+          ],
+          "explanation": "両方とも捨俱で、疑相応と掉挙相応。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q09",
+          "type": "mcq",
+          "question": "どの痴心がVicikicchāと相応するか。",
+          "correctAnswer": "捨俱疑相応痴心",
+          "distractors": [
+            "捨俱掉挙相応痴心",
+            "捨俱邪見相応貪心",
+            "憂俱瞋恚相応瞋心"
+          ],
+          "explanation": "捨俱疑相応で、ためらいを特相とする。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q10",
+          "type": "mcq",
+          "question": "痴心を生じる二因は何か。",
+          "correctAnswer": "非如理作意と漏を基盤とすること",
+          "distractors": [
+            "怒りやすさと悪い所縁",
+            "過去業と所縁縁",
+            "無慚と無愧"
+          ],
+          "explanation": "非如理作意と、欲漏・有漏・見漏・無明漏である。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q11",
+          "type": "mcq",
+          "question": "教材では、どの貪心の果報が強いか。",
+          "correctAnswer": "喜俱は捨俱より強い",
+          "distractors": [
+            "捨俱は喜俱より強い",
+            "有行は無行より強い",
+            "邪見不相応は相応より強い"
+          ],
+          "explanation": "喜は捨より、無行は有行より、邪見相応は不相応より強い。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "M4_Q12",
+          "type": "mcq",
+          "question": "心の特相（lakkhaṇa）は何か。",
+          "correctAnswer": "所縁を知る",
+          "distractors": [
+            "所縁を受ける",
+            "所縁を記憶する",
+            "業を作る"
+          ],
+          "explanation": "心の特相は所縁を知ること。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_Q13",
+          "type": "mcq",
+          "question": "貪分はいくつの心所からなるか。",
+          "correctAnswer": "3――貪・邪見・慢",
+          "distractors": [
+            "4――貪・邪見・慢・嫉",
+            "2――貪・邪見",
+            "1――貪のみ"
+          ],
+          "explanation": "貪分はLobha、Diṭṭhi、Māna。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37
+            }
+          ]
+        },
+        {
+          "id": "M4_Q14",
+          "type": "mcq",
+          "question": "邪見（Diṭṭhi）はどの心にあるか。",
+          "correctAnswer": "四邪見相応貪心",
+          "distractors": [
+            "四邪見不相応貪心",
+            "二瞋心",
+            "疑相応痴心"
+          ],
+          "explanation": "邪見は四邪見相応貪心にある。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39
+            }
+          ]
+        },
+        {
+          "id": "M4_Q15",
+          "type": "mcq",
+          "question": "慢（Māna）はどの心にあるか。",
+          "correctAnswer": "四邪見不相応貪心",
+          "distractors": [
+            "四邪見相応貪心",
+            "八貪心すべて",
+            "二瞋心"
+          ],
+          "explanation": "慢は四邪見不相応貪心と相応する。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "M4_Q16",
+          "type": "mcq",
+          "question": "瞋分の心所は何か。",
+          "correctAnswer": "瞋・嫉・慳・悪作",
+          "distractors": [
+            "瞋・嫉・慳・悪作・惛沈",
+            "瞋・疑",
+            "瞋・嫉・慳"
+          ],
+          "explanation": "瞋分はDosa、Issā、Macchariya、Kukkucca。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 43
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 48
+            }
+          ]
+        },
+        {
+          "id": "M4_Q17",
+          "type": "mcq",
+          "question": "嫉（Issā）とは何か。",
+          "correctAnswer": "他人の成功や優位への嫉妬",
+          "distractors": [
+            "自分の優位を隠す物惜しみ",
+            "行為への後悔",
+            "怒りと憤慨"
+          ],
+          "explanation": "嫉は他人が自分より優れることに耐えられないこと。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45
+            }
+          ]
+        },
+        {
+          "id": "M4_Q18",
+          "type": "mcq",
+          "question": "慳（Macchariya）とは何か。",
+          "correctAnswer": "物惜しみ――自分の良いものを隠し共有しないこと",
+          "distractors": [
+            "他人の成功への嫉妬",
+            "離間語を話すこと",
+            "眠気の状態"
+          ],
+          "explanation": "慳は自分の貴重なものを与えず現さないこと。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46
+            }
+          ]
+        },
+        {
+          "id": "M4_Q19",
+          "type": "mcq",
+          "question": "惛沈（Thīna）は何と反対か。",
+          "correctAnswer": "精進",
+          "distractors": [
+            "智慧",
+            "念",
+            "信"
+          ],
+          "explanation": "惛沈は精進（vīriya）と反対。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 49
+            }
+          ]
+        },
+        {
+          "id": "M4_Q20",
+          "type": "mcq",
+          "question": "疑（Vicikicchā）はどの心に属するか。",
+          "correctAnswer": "捨俱疑相応痴心",
+          "distractors": [
+            "捨俱掉挙相応痴心",
+            "憂俱瞋恚相応瞋心",
+            "捨俱邪見相応貪心"
+          ],
+          "explanation": "疑は捨俱疑相応痴心だけに相応する。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 52
+            }
+          ]
+        }
+      ]
     },
     "M12_VO_NHAN": {
       "title": "十八無因心",
