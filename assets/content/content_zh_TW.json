@@ -2700,9 +2700,1019 @@
       "translationStatus": "reviewed"
     },
     "M6_NGHIEP": {
-      "title": "業之概要",
-      "description": "思心所與十六種業的分類和感果法則。",
-      "translationStatus": "reviewed"
+      "title": "業 — Kamma",
+      "description": "說明業的定義、四組分類（十六種）以及業與心的關係。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M6_S01",
+          "title": "什麼是業？",
+          "summary": "業是有意志的行為；其究竟法是思心所（Cetanā）。",
+          "body": [
+            "Kamma（業）意為行為、意志造作。業的究竟法正是思心所（Cetanā），即有意的造作。",
+            "佛陀教導：「Cetanāhaṃ, bhikkhave, kammaṃ vadāmi」——「諸比丘，我說思即是業。」",
+            "業通過身、口、意三門生起。其中意業最為重要，因為身體與語言都受心支配。",
+            "令業生起的六因是：貪、瞋、癡（三不善因）與無貪、無瞋、無癡（三善因）。資料引述：「Lobho nidānaṃ kammānaṃ samudayāya」——貪是令諸業生起之因。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMMA",
+              "term": "業",
+              "pali": "Kamma",
+              "meaning": "有意志的行為、意志造作"
+            },
+            {
+              "id": "TERM_CETANA",
+              "term": "思",
+              "pali": "Cetanā",
+              "meaning": "意志心所——業的究竟法"
+            },
+            {
+              "id": "TERM_KAYAKAMMA",
+              "term": "身業",
+              "pali": "Kāyakamma",
+              "meaning": "通過身門所造之業"
+            },
+            {
+              "id": "TERM_VACIKAMMA",
+              "term": "口業 (語業)",
+              "pali": "Vacīkamma",
+              "meaning": "通過口門所造之業"
+            },
+            {
+              "id": "TERM_MANOKAMMA",
+              "term": "意業",
+              "pali": "Manokamma",
+              "meaning": "通過意門所造之業——最為重要"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "KAMMA – NGHIỆP: định nghĩa, Cetanā, 6 nhân, Ý nghiệp tối trọng"
+            }
+          ]
+        },
+        {
+          "id": "M6_S02",
+          "title": "業之四分群——Kammacatukka",
+          "summary": "十六種業分為四組：作用、成熟次序、成熟時間與成熟處所。",
+          "body": [
+            "Kammacatukka把業分成四組，每組四種，共十六種。",
+            "第一組——依作用（kiccavasena）：生產業、支持業、阻礙業、毀壞業。",
+            "第二組——依力量或成熟次序（pākadānapariyāyena）：重業、臨死業、慣行業、既作業。",
+            "第三組——依成熟時間（pākakālavasena）：現法受業、次生受業、後後受業、廢業。",
+            "第四組——依成熟處所或界地（pākaṭṭhānavasena）：不善業、欲界善業、色界善業、無色界善業。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMMACATUKKA",
+              "term": "業之四分群",
+              "pali": "Kammacatukka",
+              "meaning": "十六種業分為四組"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1,
+              "note": "SƠ ĐỒ NGHIỆP: 16 loại phân thành 4 nhóm"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2,
+              "note": "Kammacatuka — bốn cách phân loại kèm Pāli"
+            }
+          ]
+        },
+        {
+          "id": "M6_S03",
+          "title": "第一組——依業的作用",
+          "summary": "生產、支持、阻礙、毀壞：業對生命所起的四種作用。",
+          "body": [
+            "生產業（生業，Janakakamma）：在結生時產生名蘊與色蘊，並令異熟心生起，也就是結生識（Paṭisandhi viññāṇa）。",
+            "支持業（Upatthambhakakamma）：協助、滋養並支持生產業，使諸蘊相續。支持業與生產業同屬善或不善，並持續至死心出現。",
+            "阻礙業（Upapīḷakakamma）：妨礙、削弱生產業的力量並延遲其成熟。阻礙業的性質總與生產業相反。資料明確指出：色界與無色界中沒有阻礙業。",
+            "毀壞業（截斷業，Upaghātakakamma）：截斷其他業或其他業的果。毀壞業強於阻礙業——阻礙業只是妨礙，毀壞業則能消滅生產業。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JANAKA",
+              "term": "生產業 (生業)",
+              "pali": "Janakakamma",
+              "meaning": "產生結生果報之業"
+            },
+            {
+              "id": "TERM_UPATTHAMBHAKA",
+              "term": "支持業",
+              "pali": "Upatthambhakakamma",
+              "meaning": "助緣並滋養其他業之業"
+            },
+            {
+              "id": "TERM_UPAPILAKA",
+              "term": "阻礙業",
+              "pali": "Upapīḷakakamma",
+              "meaning": "妨礙並削弱其他業之業"
+            },
+            {
+              "id": "TERM_UPAGHATAKA",
+              "term": "毀壞業 (截斷業)",
+              "pali": "Upaghātakakamma",
+              "meaning": "截斷並消滅其他業之業"
+            },
+            {
+              "id": "TERM_PATISANDHI",
+              "term": "結生識",
+              "pali": "Paṭisandhi viññāṇa",
+              "meaning": "連接至新一期生命的心識"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "Sanh nghiệp — Janakakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 4,
+              "note": "Trì nghiệp — Upatthambhakakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5,
+              "note": "Chướng nghiệp và Đoạn nghiệp"
+            }
+          ]
+        },
+        {
+          "id": "M6_S04",
+          "title": "第二組——依力量與成熟次序",
+          "summary": "重業優先成熟，其次為臨死業、慣行業，最後是既作業。",
+          "body": [
+            "重業（Garukakamma）：極重而必定感果，其他業無法阻止。不善方面包括五逆重罪（弑母、弑父、殺阿羅漢、破和合僧、出佛身血）與決定邪見；善的重業則是九種廣大善心（色界禪與無色界禪）。",
+            "依資料所列，不善重業的力量次序為：決定邪見最強，其次是破和合僧、出佛身血，之後依父母戒德而為弑父或弑母。",
+            "臨死業（近死業，Āsannakamma）：臨近死亡時生起的善業或不善業，是一生最後運行的心路，並成為新生命的條件。有時會出現相反的情形：平日行善者臨終憶起惡行而生於苦趣，反之亦然；但先前所造的業並不會因此消失。",
+            "慣行業（數作業，Āciṇṇakamma）：經常實行而成為習慣的善行或惡行，形成個人的生活傾向。若無重業，臨終憶起慣常所作之事時，此業便轉成臨死業。",
+            "既作業（輕微業、積聚業，Kaṭattākamma）：不屬於上述三類的輕微行為，通常不感果；只有在沒有重業或慣行業成熟時才會感果。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_GARUKA",
+              "term": "重業",
+              "pali": "Garukakamma",
+              "meaning": "極重且必定感果之業"
+            },
+            {
+              "id": "TERM_ANANTARIYA",
+              "term": "無間業 (五逆罪)",
+              "pali": "Ānantariyakamma",
+              "meaning": "五種逆重罪"
+            },
+            {
+              "id": "TERM_ASANNA",
+              "term": "臨死業 (近死業)",
+              "pali": "Āsannakamma",
+              "meaning": "臨終時生起之業"
+            },
+            {
+              "id": "TERM_ACINNA",
+              "term": "慣行業 (數作業)",
+              "pali": "Āciṇṇakamma",
+              "meaning": "由習慣與反覆行為形成之業"
+            },
+            {
+              "id": "TERM_KATATTA",
+              "term": "既作業 (輕微業)",
+              "pali": "Kaṭattākamma",
+              "meaning": "輕微而積聚之業"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6,
+              "note": "Trọng nghiệp — Garukakamma, Ngũ nghịch đại tội"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7,
+              "note": "Tà kiến nhất định, Trọng nghiệp thiện"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 8,
+              "note": "Cận tử nghiệp và Thường nghiệp"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 9,
+              "note": "Khinh thiểu nghiệp — Kaṭattākamma"
+            }
+          ]
+        },
+        {
+          "id": "M6_S05",
+          "title": "第三組——依成熟時間分類的業",
+          "summary": "依七個速行剎那，把業按成熟時間分成四種。",
+          "body": [
+            "果報時業（Pākakālakamma）依據心路中的七個速行（Javana）剎那而判定。",
+            "第一個速行剎那最弱（最初生起，尚無同類剎那支持）→只能在今生成熟，即現法受業（Diṭṭhadhammavedanīyakamma）。若今生沒有感果，便成為廢業。",
+            "第七個速行剎那次弱（臨近息滅）→在下一生感果，即次生受業（Upapajjavedanīyakamma）。若到第二生結束仍未感果，便成為廢業。",
+            "第二至第六的五個速行剎那→感果時間不定，從第三生起直至涅槃，稱為後後受業（Aparāpariyavedanīyakamma）。其中第四剎那處於最盛階段，力量最強。",
+            "廢業（Ahosikamma）：已經造作卻不再感果的業。資料強調，後後受業若尚未感果，通常不會失效——「Aparāparavedanīyaṃ pana vipākaṃ adatvā na nassati」。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JAVANA",
+              "term": "速行",
+              "pali": "Javana",
+              "meaning": "處理所緣的七個剎那，也是儲存業種之處"
+            },
+            {
+              "id": "TERM_DITTHADHAMMA",
+              "term": "現法受業",
+              "pali": "Diṭṭhadhammavedanīyakamma",
+              "meaning": "在今生立即感果之業"
+            },
+            {
+              "id": "TERM_UPAPAJJA",
+              "term": "次生受業",
+              "pali": "Upapajjavedanīyakamma",
+              "meaning": "在下一生感果之業"
+            },
+            {
+              "id": "TERM_APARAPARIYA",
+              "term": "後後受業",
+              "pali": "Aparāpariyavedanīyakamma",
+              "meaning": "從第三生起感果之業"
+            },
+            {
+              "id": "TERM_AHOSI",
+              "term": "廢業",
+              "pali": "Ahosikamma",
+              "meaning": "已無機會感果之業"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10,
+              "note": "Nghiệp thời — Pākakālakamma, 7 sát na Javana, Hiện báo nghiệp"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 11,
+              "note": "Sanh báo nghiệp — Upapajjavedanīyakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 12,
+              "note": "Hậu báo nghiệp — Aparāpariyavedanīyakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 13,
+              "note": "Vô hiệu nghiệp — Ahosikamma"
+            }
+          ]
+        },
+        {
+          "id": "M6_S06",
+          "title": "第四組——依成熟界地",
+          "summary": "不善業、欲界善業、色界善業與無色界善業。",
+          "body": [
+            "不善業屬於欲界：其法為十二不善心與思心所相應。除掉舉相應心以外，不善業能導致結生於惡趣；但在一期生命中，十二不善心都能產生果報。",
+            "欲界善業：其法為八種欲界大善心與思心所相應，能導致結生於欲界善趣。",
+            "色界善業：純屬意業，由禪修成就，依禪支分為五階。",
+            "無色界善業：同樣是由禪修而成的意業，依禪修所緣分為四階。",
+            "資料也列出欲界十福業事：布施、持戒、修習、禮敬尊長、服務、迴向功德、隨喜功德、聽法、說法與正直己見。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMAVACARA_K",
+              "term": "欲界善業",
+              "pali": "Kāmāvacarakusala",
+              "meaning": "八種大善心與思心所"
+            },
+            {
+              "id": "TERM_RUPAVACARA_K",
+              "term": "色界善業",
+              "pali": "Rūpāvacarakusala",
+              "meaning": "由色界禪產生的意業，共五階"
+            },
+            {
+              "id": "TERM_ARUPAVACARA_K",
+              "term": "無色界善業",
+              "pali": "Arūpāvacarakusala",
+              "meaning": "由無色界禪產生的意業，共四階"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3,
+              "note": "Nghiệp Thiện Dục giới: ba môn; Bố thí, Trì giới, Hành thiền"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 4,
+              "note": "Nghiệp Thiện Sắc giới/Vô sắc giới; 10 việc thiện"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14,
+              "note": "Lãnh vực nghiệp — Nghiệp Bất thiện thuộc Dục giới"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 15,
+              "note": "Nghiệp Thiện thuộc Dục giới"
+            }
+          ]
+        },
+        {
+          "id": "M6_S07",
+          "title": "依門分類：身、口、意業",
+          "summary": "十不善業與十善業依身、口、意三門分類。",
+          "body": [
+            "身門不善業有三種：殺生（Pāṇātipāta）、不與取（Adinnādāna）、欲邪行（Kāmesumicchācāra）。",
+            "口門不善業有四種：妄語（Musāvāda）、兩舌（Pisuṇavācā）、惡口（Pharusavācā）、綺語或無益語（Samphappalāpa）。",
+            "意門不善業有三種：貪欲（Abhijjhā）、瞋恚（Byāpāda）、邪見（Micchādiṭṭhi）。這些精神行為直接通過心完成，不必經由身體或語言。",
+            "依根而言，殺生、惡口與瞋恚源於瞋根；欲邪行、貪欲與邪見源於貪根；其餘四業則可能源於這兩種根。",
+            "善業方面，善身業是遠離上述三種身惡業（由正業、正命心所實行）；善語業是遠離四種惡語（正語、正命）；善意業包括無貪欲（Anabhijjhā）、無瞋恚（Abyāpāda）與正見（Sammādiṭṭhi）。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PANATIPATA",
+              "term": "殺生",
+              "pali": "Pāṇātipāta",
+              "meaning": "第一種身門不善業"
+            },
+            {
+              "id": "TERM_MUSAVADA",
+              "term": "妄語",
+              "pali": "Musāvāda",
+              "meaning": "第一種口門不善業"
+            },
+            {
+              "id": "TERM_ABHIJJHA",
+              "term": "貪欲",
+              "pali": "Abhijjhā",
+              "meaning": "意門不善業"
+            },
+            {
+              "id": "TERM_SAMMADITTHI",
+              "term": "正見",
+              "pali": "Sammādiṭṭhi",
+              "meaning": "善意業——正確的見解"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2,
+              "note": "Thân nghiệp — kāyakamma"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3,
+              "note": "Khẩu nghiệp, Ý nghiệp và các căn"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14,
+              "note": "Bất thiện nghiệp theo Môn"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 15,
+              "note": "Thiện nghiệp theo Môn"
+            }
+          ]
+        },
+        {
+          "id": "M6_S08",
+          "title": "業與心的關係",
+          "summary": "說明哪一種心造哪一種業，以及產生哪一種結生異熟心。",
+          "body": [
+            "能造生產業的心共有二十八種：十一不善心（十二不善心中除去捨俱掉舉相應癡根心，因為該心不能產生結生果）、八欲界大善心、五色界善心與四無色界善心。",
+            "能執行結生作用的異熟心共有十九種：兩個捨俱無因推度心（善異熟與不善異熟）、八欲界大異熟心、五色界異熟心與四無色界異熟心。",
+            "十一不善心中的思心所產生捨俱不善異熟無因推度心，令眾生結生為苦趣的無因者（畜生、餓鬼、阿修羅、地獄眾生）。",
+            "四種智不相應欲界善心若思不圓滿，則產生捨俱善異熟無因推度心，結生為善趣無因者；思圓滿則結生為二因者。四種智相應欲界善心若思圓滿，則結生為三因者。",
+            "業也能令色法生起：共有十八種業生色，即八不離色、五淨色、一空界、一命根色、一心所依處色與兩種性根色。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_TIHETUKA",
+              "term": "三因人",
+              "pali": "Tihetuka",
+              "meaning": "以無貪、無瞋、無癡三因為結生因者"
+            },
+            {
+              "id": "TERM_DVIHETUKA",
+              "term": "二因人",
+              "pali": "Dvihetuka",
+              "meaning": "以二因結生、缺少無癡者"
+            },
+            {
+              "id": "TERM_KAMMAJA_RUPA",
+              "term": "業生色",
+              "pali": "Kammaja-rūpa",
+              "meaning": "由業產生的十八種色法"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "Chi pháp nhân Sanh nghiệp: 28 tâm; tâm quả tục sinh 19"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 3,
+              "note": "Tư tâm sở dẫn tái sanh; Nghiệp làm cho Sắc sanh khởi — 18 sắc"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M6_R01",
+          "front": "業的究竟法是什麼？",
+          "back": "思心所（Cetanā），即有意的造作。「Cetanāhaṃ, bhikkhave, kammaṃ vadāmi」。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R02",
+          "front": "業通過幾個門生起？哪一門最重要？",
+          "back": "三個門：身、口、意。意業最為重要。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R03",
+          "front": "Kammacatukka共有多少種業，分成幾組？",
+          "back": "十六種，分為四組：作用、成熟次序、成熟時間與成熟界地。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "id": "M6_R04",
+          "front": "依作用分類的四種業是什麼？",
+          "back": "生產業（Janaka）、支持業（Upatthambhaka）、阻礙業（Upapīḷaka）、毀壞業（Upaghātaka）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R05",
+          "front": "生產業起什麼作用？",
+          "back": "在結生時產生名蘊與色蘊，並令結生識（Paṭisandhi viññāṇa）生起。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R06",
+          "front": "阻礙業與毀壞業有何不同？",
+          "back": "阻礙業妨礙、削弱並延遲生產業；毀壞業力量更強，能截斷並消滅生產業。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_R07",
+          "front": "哪些界中沒有阻礙業？",
+          "back": "色界與無色界中沒有阻礙業。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_R08",
+          "front": "依成熟次序（力量）分類的四種業是什麼？",
+          "back": "重業（Garuka）、臨死業（Āsanna）、慣行業（Āciṇṇa）、既作業（Kaṭattā）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R09",
+          "front": "五無間業（Ānantariyakamma）包括什麼？",
+          "back": "弑母、弑父、殺阿羅漢、破和合僧、出佛身血。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_R10",
+          "front": "哪一種不善重業最強？",
+          "back": "決定邪見業（Niyatamicchādiṭṭhikamma）最強，其次是破和合僧。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_R11",
+          "front": "善重業的所攝法是什麼？",
+          "back": "九種廣大善心（五色界善心加四無色界善心）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "M6_R12",
+          "front": "依成熟時間分類的業以什麼為依據？",
+          "back": "依據心路中的七個速行（Javana）剎那。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_R13",
+          "front": "第一個速行剎那產生哪一種業？",
+          "back": "現法受業（Diṭṭhadhammavedanīyakamma），在今生立即感果。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_R14",
+          "front": "第七個速行剎那產生哪一種業？",
+          "back": "次生受業（Upapajjavedanīyakamma），在下一生感果。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "M6_R15",
+          "front": "第二至第六個速行剎那產生哪一種業？",
+          "back": "後後受業（Aparāpariyavedanīyakamma），從第三生起至涅槃前感果；第四剎那最強。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M6_R16",
+          "front": "什麼是廢業（Ahosikamma）？",
+          "back": "已經造作卻不再有機會感果的業；後後受業若尚未感果則不會失效。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M6_R17",
+          "front": "業的四種成熟界地是什麼？",
+          "back": "不善業、欲界善業、色界善業、無色界善業。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R18",
+          "front": "十不善業如何依門分類？",
+          "back": "身三（殺生、不與取、欲邪行）；口四（妄語、兩舌、惡口、綺語）；意三（貪欲、瞋恚、邪見）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R19",
+          "front": "能造生產業的心共有多少種？",
+          "back": "二十八種：十一不善心、八欲界大善心、五色界善心、四無色界善心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R20",
+          "front": "為什麼捨俱掉舉相應癡根心不能造生產業？",
+          "back": "因為該心不能產生結生果，無法產生結生識。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M6_Q01",
+          "type": "mcq",
+          "question": "業（Kamma）的究竟法是哪一種心所？",
+          "correctAnswer": "思心所（Cetanā）",
+          "distractors": [
+            "觸心所（Phassa）",
+            "受心所（Vedanā）",
+            "想心所（Saññā）"
+          ],
+          "explanation": "佛陀教導：「Cetanāhaṃ, bhikkhave, kammaṃ vadāmi」——思即是業。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q02",
+          "type": "mcq",
+          "question": "造業的三個門中，哪一門最為重要？",
+          "correctAnswer": "意門",
+          "distractors": [
+            "身門",
+            "口門",
+            "三門同等重要"
+          ],
+          "explanation": "資料明確指出：意業最為重要。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q03",
+          "type": "mcq",
+          "question": "Kammacatukka把業分成多少種？",
+          "correctAnswer": "十六種，分為四組",
+          "distractors": [
+            "十二種，分為三組",
+            "二十種，分為五組",
+            "八種，分為兩組"
+          ],
+          "explanation": "業的分類圖把業分成四組，每組四種，共十六種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "id": "M6_Q04",
+          "type": "mcq",
+          "question": "哪一種業在結生時產生名蘊與色蘊？",
+          "correctAnswer": "生產業（Janakakamma）",
+          "distractors": [
+            "支持業（Upatthambhakakamma）",
+            "阻礙業（Upapīḷakakamma）",
+            "毀壞業（Upaghātakakamma）"
+          ],
+          "explanation": "生產業在結生時令異熟心生起，即令結生識生起。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q05",
+          "type": "mcq",
+          "question": "哪一種業力量更強，能截斷生產業與支持業？",
+          "correctAnswer": "毀壞業（Upaghātakakamma）",
+          "distractors": [
+            "阻礙業（Upapīḷakakamma）",
+            "支持業（Upatthambhakakamma）",
+            "既作業（Kaṭattākamma）"
+          ],
+          "explanation": "毀壞業強於阻礙業：阻礙業只是妨礙，毀壞業則消滅生產業。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_Q06",
+          "type": "mcq",
+          "question": "阻礙業不存在於哪些界？",
+          "correctAnswer": "色界與無色界",
+          "distractors": [
+            "欲界",
+            "四惡趣",
+            "人界"
+          ],
+          "explanation": "資料指出，阻礙業不存在於色界或無色界。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_Q07",
+          "type": "mcq",
+          "question": "五逆重罪屬於哪一種業？",
+          "correctAnswer": "重業（Garukakamma）",
+          "distractors": [
+            "臨死業（Āsannakamma）",
+            "慣行業（Āciṇṇakamma）",
+            "既作業（Kaṭattākamma）"
+          ],
+          "explanation": "五逆重罪是無間業（Ānantariyakamma），屬於不善方面的重業。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_Q08",
+          "type": "mcq",
+          "question": "依資料所述，哪一種不善重業力量最強？",
+          "correctAnswer": "決定邪見業（Niyatamicchādiṭṭhikamma）",
+          "distractors": [
+            "弑母",
+            "弑父",
+            "出佛身血"
+          ],
+          "explanation": "力量次序為：決定邪見最強，其次破和合僧，第三為出佛身血。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_Q09",
+          "type": "mcq",
+          "question": "善重業的所攝法是什麼？",
+          "correctAnswer": "九種廣大善心",
+          "distractors": [
+            "八種欲界大善心",
+            "十二不善心",
+            "八出世間心"
+          ],
+          "explanation": "善重業是九種廣大善心（五色界加四無色界）。出世間心雖高尚，卻因能斷除有業而不列入。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "M6_Q10",
+          "type": "mcq",
+          "question": "果報時業（Pākakālakamma）依據什麼判定？",
+          "correctAnswer": "心路中的七個速行（Javana）剎那",
+          "distractors": [
+            "三個有分剎那",
+            "兩個彼所緣剎那",
+            "結生心"
+          ],
+          "explanation": "業成熟的時間取決於心路中的七個速行剎那。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q11",
+          "type": "mcq",
+          "question": "第一個速行剎那產生哪一種業？",
+          "correctAnswer": "現法受業——在今生立即感果",
+          "distractors": [
+            "次生受業——在下一生感果",
+            "後後受業——從第三生起感果",
+            "廢業"
+          ],
+          "explanation": "第一剎那最弱，因為它最初生起，尚無同類剎那支持，所以只能在今生感果。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q12",
+          "type": "mcq",
+          "question": "第七個速行剎那產生哪一種業？",
+          "correctAnswer": "次生受業（Upapajjavedanīyakamma）",
+          "distractors": [
+            "現法受業",
+            "後後受業",
+            "廢業"
+          ],
+          "explanation": "第七剎那臨近息滅，力量次弱，因此只在緊隨的下一生感果。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q13",
+          "type": "mcq",
+          "question": "七個速行剎那中，哪一個力量最強？",
+          "correctAnswer": "第四剎那",
+          "distractors": [
+            "第一剎那",
+            "第七剎那",
+            "第二剎那"
+          ],
+          "explanation": "第四剎那處於最盛階段，且處於主導地位，因此力量最強。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q14",
+          "type": "mcq",
+          "question": "能造生產業的心共有多少種？",
+          "correctAnswer": "二十八種心",
+          "distractors": [
+            "十九種心",
+            "十二種心",
+            "八種心"
+          ],
+          "explanation": "二十八種心＝十一不善心＋八欲界大善心＋五色界善心＋四無色界善心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q15",
+          "type": "mcq",
+          "question": "為什麼只有十一種而非十二種不善心能造生產業？",
+          "correctAnswer": "因為捨俱掉舉相應癡根心不能產生結生果",
+          "distractors": [
+            "因為瞋根心不能感果",
+            "因為離邪見貪根心不能感果",
+            "因為疑相應癡根心不能感果"
+          ],
+          "explanation": "捨俱掉舉相應癡根心被排除，因為它不能產生結生果，也無法產生結生識。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q16",
+          "type": "mcq",
+          "question": "有多少種異熟心能執行結生作用？",
+          "correctAnswer": "十九種心",
+          "distractors": [
+            "二十八種心",
+            "十二種心",
+            "十一種心"
+          ],
+          "explanation": "十九種心＝兩個捨俱無因推度心＋八欲界大異熟心＋五色界異熟心＋四無色界異熟心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q17",
+          "type": "mcq",
+          "question": "業能令多少種色法生起？",
+          "correctAnswer": "十八種色法",
+          "distractors": [
+            "十五種色法",
+            "十三種色法",
+            "十二種色法"
+          ],
+          "explanation": "十八業生色＝八不離色＋五淨色＋一空界＋一命根色＋一心所依處色＋兩種性根色。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M6_Q18",
+          "type": "mcq",
+          "question": "口門不善業共有幾種？",
+          "correctAnswer": "四種",
+          "distractors": [
+            "三種",
+            "五種",
+            "七種"
+          ],
+          "explanation": "即妄語、兩舌、惡口與綺語或無益語。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14
+            }
+          ]
+        }
+      ]
     },
     "M16_NGUOI_VA_COI": {
       "title": "人與生存界",
