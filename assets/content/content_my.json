@@ -7479,9 +7479,1019 @@
       ]
     },
     "M6_NGHIEP": {
-      "title": "ကမ္မသင်္ဂဟ (ကံပိုင်း)",
-      "description": "စေတနာနှင့် ကံ ၁၆ ပါး အကျိုးပေးပုံ။",
-      "translationStatus": "reviewed"
+      "title": "မြန်မာ: Nghiệp (Kamma)",
+      "description": "မြန်မာ: Định nghĩa Nghiệp, bốn nhóm phân loại (16 loại) và liên hệ giữa Nghiệp với Tâm.",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M6_S01",
+          "title": "မြန်မာ: Nghiệp là gì?",
+          "summary": "မြန်မာ: Nghiệp là hành động có chủ ý; pháp bản thể là tâm sở Tư (Cetanā).",
+          "body": [
+            "မြန်မာ: Kamma – Nghiệp nghĩa là hành động, là ý tạo tác. Pháp bản thể của Nghiệp chính là tâm sở Tư (Cetanā): sự cố ý tạo tác.",
+            "မြန်မာ: Đức Phật dạy: “Cetanāhaṃ, bhikkhave, kammaṃ vadāmi” – “Này các Tỳ khưu, Như Lai dạy: Cố ý là Nghiệp.”",
+            "မြန်မာ: Nghiệp sanh khởi qua ba môn: Thân, Khẩu và Ý. Trong đó Ý nghiệp được xem là tối trọng, vì thân và khẩu đều do tâm điều động.",
+            "မြန်မာ: Sáu nhân làm tập khởi cho Nghiệp là: Tham, Sân, Si (bất thiện) và Vô tham, Vô sân, Vô si (thiện). Tài liệu dẫn: “Lobho nidānaṃ kammānaṃ samudayāya” – Tham là tập khởi khiến các Nghiệp sanh lên."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMMA",
+              "term": "မြန်မာ: Nghiệp",
+              "pali": "Kamma",
+              "meaning": "မြန်မာ: Hành động có chủ ý, ý tạo tác"
+            },
+            {
+              "id": "TERM_CETANA",
+              "term": "မြန်မာ: Tư",
+              "pali": "Cetanā",
+              "meaning": "မြန်မာ: Tâm sở cố ý — pháp bản thể của Nghiệp"
+            },
+            {
+              "id": "TERM_KAYAKAMMA",
+              "term": "မြန်မာ: Thân nghiệp",
+              "pali": "Kāyakamma",
+              "meaning": "မြန်မာ: Nghiệp tạo qua thân môn"
+            },
+            {
+              "id": "TERM_VACIKAMMA",
+              "term": "မြန်မာ: Khẩu nghiệp",
+              "pali": "Vacīkamma",
+              "meaning": "မြန်မာ: Nghiệp tạo qua khẩu môn"
+            },
+            {
+              "id": "TERM_MANOKAMMA",
+              "term": "မြန်မာ: Ý nghiệp",
+              "pali": "Manokamma",
+              "meaning": "မြန်မာ: Nghiệp tạo qua ý môn — tối trọng"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "KAMMA – NGHIỆP: định nghĩa, Cetanā, 6 nhân, Ý nghiệp tối trọng"
+            }
+          ]
+        },
+        {
+          "id": "M6_S02",
+          "title": "မြန်မာ: Bốn nhóm Nghiệp — Kammacatukka",
+          "summary": "မြန်မာ: 16 loại Nghiệp chia thành 4 nhóm: phận sự, năng lực, thời gian trổ quả, lãnh vực trổ quả.",
+          "body": [
+            "မြန်မာ: Kammacatukka phân Nghiệp thành 4 nhóm, mỗi nhóm 4 loại, tổng cộng 16 loại.",
+            "မြန်မာ: Nhóm 1 — Phận sự của Nghiệp (kiccavasena): Sanh nghiệp, Trì nghiệp, Chướng nghiệp, Đoạn nghiệp.",
+            "မြန်မာ: Nhóm 2 — Năng lực / thứ tự trổ quả (pākadānapariyāyena): Trọng nghiệp, Cận tử nghiệp, Thường nghiệp, Khinh thiểu nghiệp.",
+            "မြန်မာ: Nhóm 3 — Thời gian trổ quả (pākakālavasena): Hiện báo nghiệp, Sanh báo nghiệp, Hậu báo nghiệp, Vô hiệu nghiệp.",
+            "မြန်မာ: Nhóm 4 — Nơi chốn / lãnh vực trổ quả (pākaṭṭhānavasena): Nghiệp Bất thiện, Nghiệp Thiện Dục giới, Nghiệp Thiện Sắc giới, Nghiệp Thiện Vô sắc giới."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMMACATUKKA",
+              "term": "မြန်မာ: Bốn nhóm Nghiệp",
+              "pali": "Kammacatukka",
+              "meaning": "မြန်မာ: 16 loại Nghiệp chia thành 4 nhóm"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1,
+              "note": "SƠ ĐỒ NGHIỆP: 16 loại phân thành 4 nhóm"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2,
+              "note": "Kammacatuka — bốn cách phân loại kèm Pāli"
+            }
+          ]
+        },
+        {
+          "id": "M6_S03",
+          "title": "မြန်မာ: Nhóm 1 — Phận sự của Nghiệp",
+          "summary": "မြန်မာ: Sanh, Trì, Chướng, Đoạn: bốn chức năng của Nghiệp đối với đời sống.",
+          "body": [
+            "မြန်မာ: Sanh nghiệp (Janakakamma): nghiệp tạo nên Danh uẩn và Sắc uẩn trong thời tục sinh, làm cho tâm quả dị thục sanh lên, tức Thức tục sinh (Paṭisandhi viññāṇa).",
+            "မြန်မာ: Trì nghiệp (Upatthambhakakamma): nghiệp trợ giúp, nuôi dưỡng, nâng đỡ cho Sanh nghiệp và làm các uẩn tiếp nối. Trì nghiệp cùng loại (thiện hoặc bất thiện) với Sanh nghiệp và tồn tại cho đến khi Tử tâm xuất hiện.",
+            "မြန်မာ: Chướng nghiệp (Upapīḷakakamma): nghiệp ngăn cản, làm giảm suy năng lực và làm chậm trễ sự trổ quả của Sanh nghiệp. Chướng nghiệp luôn ngược loại với Sanh nghiệp. Tài liệu ghi rõ: Chướng nghiệp không có trong cõi Sắc và cõi Vô sắc.",
+            "မြန်မာ: Đoạn nghiệp (Upaghātakakamma): nghiệp cắt đứt các nghiệp khác hoặc cắt đứt quả của nghiệp khác. Đoạn nghiệp mạnh hơn Chướng nghiệp — Chướng nghiệp chỉ cản trở, còn Đoạn nghiệp diệt trừ Sanh nghiệp."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JANAKA",
+              "term": "မြန်မာ: Sanh nghiệp",
+              "pali": "Janakakamma",
+              "meaning": "မြန်မာ: Nghiệp tái tạo, cho quả tục sinh"
+            },
+            {
+              "id": "TERM_UPATTHAMBHAKA",
+              "term": "မြန်မာ: Trì nghiệp",
+              "pali": "Upatthambhakakamma",
+              "meaning": "မြန်မာ: Nghiệp trợ duyên, nuôi dưỡng"
+            },
+            {
+              "id": "TERM_UPAPILAKA",
+              "term": "မြန်မာ: Chướng nghiệp",
+              "pali": "Upapīḷakakamma",
+              "meaning": "မြန်မာ: Nghiệp ngăn cản, làm suy giảm"
+            },
+            {
+              "id": "TERM_UPAGHATAKA",
+              "term": "မြန်မာ: Đoạn nghiệp",
+              "pali": "Upaghātakakamma",
+              "meaning": "မြန်မာ: Nghiệp cắt đứt, tiêu diệt nghiệp khác"
+            },
+            {
+              "id": "TERM_PATISANDHI",
+              "term": "မြန်မာ: Thức tục sinh",
+              "pali": "Paṭisandhi viññāṇa",
+              "meaning": "မြန်မာ: Tâm nối liền kiếp sống mới"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "Sanh nghiệp — Janakakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 4,
+              "note": "Trì nghiệp — Upatthambhakakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5,
+              "note": "Chướng nghiệp và Đoạn nghiệp"
+            }
+          ]
+        },
+        {
+          "id": "M6_S04",
+          "title": "မြန်မာ: Nhóm 2 — Năng lực / thứ tự trổ quả",
+          "summary": "မြန်မာ: Trọng nghiệp trổ trước, rồi Cận tử, Thường nghiệp, sau cùng là Khinh thiểu nghiệp.",
+          "body": [
+            "မြန်မာ: Trọng nghiệp (Garukakamma): nghiệp nghiêm trọng, cho quả chắc chắn, không nghiệp nào ngăn chặn được. Về bất thiện gồm Ngũ nghịch đại tội (giết mẹ, giết cha, giết A-la-hán, chia rẽ Tăng, làm chảy máu thân Phật) và Tà kiến nhất định. Về thiện là 9 tâm Thiện Đáo đại (thiền Sắc giới và Vô sắc giới).",
+            "မြန်မာ: Theo tài liệu, sức mạnh của ác trọng nghiệp xếp thứ tự: mạnh nhất là Tà kiến nhất định, kế đến chia rẽ Tăng, làm chảy máu thân Phật, rồi giết cha và giết mẹ tùy theo giới đức.",
+            "မြန်မာ: Cận tử nghiệp (Āsannakamma): nghiệp thiện hay bất thiện khởi sanh lúc kề cận cái chết, là lộ tâm diễn hoạt cuối cùng của kiếp sống và làm điều kiện cho kiếp sống mới. Có trường hợp nghịch: người thường hành thiện mà lúc cận tử nhớ điều ác thì sanh cảnh khổ, và ngược lại — nhưng các nghiệp đã tạo không vì vậy mà mất đi.",
+            "မြန်မာ: Thường nghiệp (Āciṇṇakamma): hành động thiện hay bất thiện làm thường xuyên thành thói quen, tạo nên khuynh hướng sống của người đó. Khi lâm chung nhớ lại các việc thường làm thì nghiệp này rơi vào Cận tử nghiệp, nếu không có Trọng nghiệp.",
+            "မြန်မာ: Khinh thiểu nghiệp / Tích lũy nghiệp (Kaṭattākamma): các hành động ngoài ba loại trên, nghiệp nhẹ, thường không cho quả; chỉ cho quả khi không có Trọng nghiệp hay Thường nghiệp trổ."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_GARUKA",
+              "term": "မြန်မာ: Trọng nghiệp",
+              "pali": "Garukakamma",
+              "meaning": "မြန်မာ: Nghiệp nặng, cho quả chắc chắn"
+            },
+            {
+              "id": "TERM_ANANTARIYA",
+              "term": "မြန်မာ: Vô gián nghiệp",
+              "pali": "Ānantariyakamma",
+              "meaning": "မြန်မာ: Ngũ nghịch đại tội"
+            },
+            {
+              "id": "TERM_ASANNA",
+              "term": "မြန်မာ: Cận tử nghiệp",
+              "pali": "Āsannakamma",
+              "meaning": "မြန်မာ: Nghiệp lúc lâm chung"
+            },
+            {
+              "id": "TERM_ACINNA",
+              "term": "မြန်မာ: Thường nghiệp",
+              "pali": "Āciṇṇakamma",
+              "meaning": "မြန်မာ: Nghiệp thói quen, tập quán"
+            },
+            {
+              "id": "TERM_KATATTA",
+              "term": "မြန်မာ: Khinh thiểu nghiệp",
+              "pali": "Kaṭattākamma",
+              "meaning": "မြန်မာ: Nghiệp nhẹ, tích lũy"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6,
+              "note": "Trọng nghiệp — Garukakamma, Ngũ nghịch đại tội"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7,
+              "note": "Tà kiến nhất định, Trọng nghiệp thiện"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 8,
+              "note": "Cận tử nghiệp và Thường nghiệp"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 9,
+              "note": "Khinh thiểu nghiệp — Kaṭattākamma"
+            }
+          ]
+        },
+        {
+          "id": "M6_S05",
+          "title": "မြန်မာ: Nhóm 3 — Nghiệp thời (thời gian trổ quả)",
+          "summary": "မြန်မာ: Bốn loại theo thời gian, căn cứ trên 7 sát-na Đổng lực (Javana).",
+          "body": [
+            "မြန်မာ: Nghiệp thời (Pākakālakamma) được xác định căn cứ nơi lộ tâm Đổng lực — 7 sát-na Javana.",
+            "မြန်မာ: Sát-na Đổng lực thứ 1 là yếu nhất (sanh đầu tiên, không có sát-na đồng loại hỗ trợ) → chỉ cho quả ngay trong kiếp hiện tại: Hiện báo nghiệp (Diṭṭhadhammavedanīyakamma). Nếu không trổ trong kiếp này thì trở thành Vô hiệu nghiệp.",
+            "မြန်မာ: Sát-na Đổng lực thứ 7 yếu thứ nhì (cận kề sự diệt) → cho quả trong kiếp kế: Sanh báo nghiệp (Upapajjavedanīyakamma). Hết kiếp thứ 2 mà chưa cho quả thì thành Vô hiệu nghiệp.",
+            "မြန်မာ: Năm sát-na thứ 2 đến thứ 6 → cho quả bất định về thời điểm, kể từ kiếp thứ 3 cho đến khi Niết-bàn: Hậu báo nghiệp (Aparāpariyavedanīyakamma). Riêng sát-na thứ 4 mạnh nhất vì ở giai đoạn cực thịnh.",
+            "မြန်မာ: Vô hiệu nghiệp (Ahosikamma): nghiệp đã tạo mà không cho quả. Tài liệu nhấn mạnh: Hậu báo nghiệp thường không tiêu hoại nếu chưa được cho quả — “Aparāparavedanīyaṃ pana vipākaṃ adatvā na nassati”."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JAVANA",
+              "term": "မြန်မာ: Đổng lực",
+              "pali": "Javana",
+              "meaning": "မြန်မာ: 7 sát-na xử lý cảnh, nơi lưu giữ hạt giống nghiệp"
+            },
+            {
+              "id": "TERM_DITTHADHAMMA",
+              "term": "မြန်မာ: Hiện báo nghiệp",
+              "pali": "Diṭṭhadhammavedanīyakamma",
+              "meaning": "မြန်မာ: Cho quả ngay kiếp hiện tại"
+            },
+            {
+              "id": "TERM_UPAPAJJA",
+              "term": "မြန်မာ: Sanh báo nghiệp",
+              "pali": "Upapajjavedanīyakamma",
+              "meaning": "မြန်မာ: Cho quả kiếp kế"
+            },
+            {
+              "id": "TERM_APARAPARIYA",
+              "term": "မြန်မာ: Hậu báo nghiệp",
+              "pali": "Aparāpariyavedanīyakamma",
+              "meaning": "မြန်မာ: Cho quả từ kiếp thứ 3 trở đi"
+            },
+            {
+              "id": "TERM_AHOSI",
+              "term": "မြန်မာ: Vô hiệu nghiệp",
+              "pali": "Ahosikamma",
+              "meaning": "မြန်မာ: Nghiệp không còn cơ hội cho quả"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10,
+              "note": "Nghiệp thời — Pākakālakamma, 7 sát na Javana, Hiện báo nghiệp"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 11,
+              "note": "Sanh báo nghiệp — Upapajjavedanīyakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 12,
+              "note": "Hậu báo nghiệp — Aparāpariyavedanīyakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 13,
+              "note": "Vô hiệu nghiệp — Ahosikamma"
+            }
+          ]
+        },
+        {
+          "id": "M6_S06",
+          "title": "မြန်မာ: Nhóm 4 — Lãnh vực trổ quả",
+          "summary": "မြန်မာ: Nghiệp Bất thiện, Thiện Dục giới, Thiện Sắc giới, Thiện Vô sắc giới.",
+          "body": [
+            "မြန်မာ: Nghiệp Bất thiện thuộc Dục giới: chi pháp là 12 tâm Bất thiện phối hợp với tâm sở Tư. Ngoại trừ Phóng dật, nghiệp bất thiện đưa đến tái sanh trong Khổ cảnh; nhưng trong kiếp sống thì cả 12 đều có trổ quả.",
+            "မြန်မာ: Nghiệp Thiện thuộc Dục giới: chi pháp là 8 tâm Thiện Dục giới Tịnh hảo phối hợp với tâm sở Tư, đưa đến tái sanh trong cõi vui Dục giới.",
+            "မြန်မာ: Nghiệp Thiện thuộc Sắc giới: thuần túy là Ý nghiệp, do công trình hành thiền, phân theo các chi thiền thành năm bậc.",
+            "မြန်မာ: Nghiệp Thiện thuộc Vô sắc giới: cũng là Ý nghiệp do hành thiền, phân theo đề mục thiền thành bốn bậc.",
+            "မြန်မာ: Tài liệu cũng liệt kê 10 việc thiện Dục giới (Phước hành tông): Bố thí, Trì giới, Hành thiền, Lễ bái bậc trưởng thượng, Phục vụ, Hồi hướng phước báu, Thọ hưởng phước báu, Nghe Pháp, Giảng Pháp, và Củng cố Chánh kiến."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMAVACARA_K",
+              "term": "မြန်မာ: Nghiệp Thiện Dục giới",
+              "pali": "Kāmāvacarakusala",
+              "meaning": "မြန်မာ: 8 tâm Đại thiện + Tư"
+            },
+            {
+              "id": "TERM_RUPAVACARA_K",
+              "term": "မြန်မာ: Nghiệp Thiện Sắc giới",
+              "pali": "Rūpāvacarakusala",
+              "meaning": "မြန်မာ: Ý nghiệp do thiền Sắc giới, 5 bậc"
+            },
+            {
+              "id": "TERM_ARUPAVACARA_K",
+              "term": "မြန်မာ: Nghiệp Thiện Vô sắc giới",
+              "pali": "Arūpāvacarakusala",
+              "meaning": "မြန်မာ: Ý nghiệp do thiền Vô sắc, 4 bậc"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3,
+              "note": "Nghiệp Thiện Dục giới: ba môn; Bố thí, Trì giới, Hành thiền"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 4,
+              "note": "Nghiệp Thiện Sắc giới/Vô sắc giới; 10 việc thiện"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14,
+              "note": "Lãnh vực nghiệp — Nghiệp Bất thiện thuộc Dục giới"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 15,
+              "note": "Nghiệp Thiện thuộc Dục giới"
+            }
+          ]
+        },
+        {
+          "id": "M6_S07",
+          "title": "မြန်မာ: Nghiệp theo Môn: Thân, Khẩu, Ý",
+          "summary": "မြန်မာ: 10 bất thiện nghiệp và 10 thiện nghiệp phân theo ba môn.",
+          "body": [
+            "မြန်မာ: Thân môn bất thiện có 3: Sát sanh (Pāṇātipāta), Trộm cắp (Adinnādāna), Tà hạnh trong dục lạc (Kāmesumicchācāra).",
+            "မြန်မာ: Khẩu môn bất thiện có 4: Nói dối (Musāvāda), Nói đâm thọc (Pisuṇavācā), Nói thô lỗ (Pharusavācā), Nói nhảm/vô ích (Samphappalāpa).",
+            "မြန်မာ: Ý môn bất thiện có 3: Tham ác (Abhijjhā), Sân hận (Byāpāda), Tà kiến (Micchādiṭṭhi). Đây là hành động tinh thần thực hiện xuyên qua chính cái tâm, không cần thân hay khẩu.",
+            "မြန်မာ: Về căn: Sát sanh, nói thô lỗ và Sân hận bắt nguồn từ căn Sân; Tà hạnh, Tham ái và Tà kiến bắt nguồn từ căn Tham; bốn nghiệp còn lại có thể bắt nguồn từ cả hai căn.",
+            "မြန်မာ: Về phía thiện, thân nghiệp thiện là tránh xa 3 điều trên (thực hiện bằng tâm sở Chánh nghiệp, Chánh mạng); ngữ nghiệp thiện là tránh xa 4 lời bất thiện (Chánh ngữ, Chánh mạng); ý nghiệp thiện gồm Vô tham (Anabhijjhā), Vô sân (Abyāpāda) và Chánh kiến (Sammādiṭṭhi)."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PANATIPATA",
+              "term": "မြန်မာ: Sát sanh",
+              "pali": "Pāṇātipāta",
+              "meaning": "မြန်မာ: Thân nghiệp bất thiện thứ nhất"
+            },
+            {
+              "id": "TERM_MUSAVADA",
+              "term": "မြန်မာ: Nói dối",
+              "pali": "Musāvāda",
+              "meaning": "မြန်မာ: Khẩu nghiệp bất thiện thứ nhất"
+            },
+            {
+              "id": "TERM_ABHIJJHA",
+              "term": "မြန်မာ: Tham ác",
+              "pali": "Abhijjhā",
+              "meaning": "မြန်မာ: Ý nghiệp bất thiện"
+            },
+            {
+              "id": "TERM_SAMMADITTHI",
+              "term": "မြန်မာ: Chánh kiến",
+              "pali": "Sammādiṭṭhi",
+              "meaning": "မြန်မာ: Ý nghiệp thiện — quan kiến chân chánh"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2,
+              "note": "Thân nghiệp — kāyakamma"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3,
+              "note": "Khẩu nghiệp, Ý nghiệp và các căn"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14,
+              "note": "Bất thiện nghiệp theo Môn"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 15,
+              "note": "Thiện nghiệp theo Môn"
+            }
+          ]
+        },
+        {
+          "id": "M6_S08",
+          "title": "မြန်မာ: Nghiệp liên hệ với Tâm",
+          "summary": "မြန်မာ: Chi pháp: nghiệp nào do tâm nào, và cho tâm quả tục sinh nào.",
+          "body": [
+            "မြန်မာ: Nhân tạo Sanh nghiệp gồm 28 tâm: 11 tâm Bất thiện (12 tâm Bất thiện trừ tâm Si Thọ xả Phóng dật, vì tâm này không cho quả tục sinh), 8 tâm Thiện Dục giới Tịnh hảo, 5 tâm Thiện Sắc giới, 4 tâm Thiện Vô sắc giới.",
+            "မြန်မာ: Tâm quả tục sinh có 19: 2 tâm Quan sát vô nhân thọ xả (quả thiện và quả bất thiện), 8 tâm Quả thiện Dục giới Tịnh hảo, 5 tâm Quả Sắc giới, 4 tâm Quả Vô sắc giới.",
+            "မြန်မာ: Tư tâm sở trong 11 tâm Bất thiện cho tâm Quan sát Thọ xả Quả Bất thiện Vô nhân — tái sanh làm người khổ (súc sanh, ngạ quỷ, a-tu-la, địa ngục).",
+            "မြန်မာ: Tư tâm sở trong 4 tâm Thiện Dục giới Ly trí mà thiếu Tư thì cho tâm Quan sát Thọ xả Quả thiện Vô nhân — tái sanh làm người lạc vô nhân; đủ Tư thì làm người Nhị nhân. Tư trong 4 tâm Thiện hợp trí đủ Tư thì tái sanh làm người Tam nhân.",
+            "မြန်မာ: Nghiệp cũng làm cho Sắc sanh khởi: có 18 sắc do nghiệp tạo, gồm 8 sắc Bất ly, 5 sắc Thần kinh, 1 sắc Hư không, 1 sắc Mạng quyền, 1 sắc Ý vật và 2 sắc Tánh."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_TIHETUKA",
+              "term": "မြန်မာ: Người Tam nhân",
+              "pali": "Tihetuka",
+              "meaning": "မြန်မာ: Tục sinh với 3 nhân (vô tham, vô sân, vô si)"
+            },
+            {
+              "id": "TERM_DVIHETUKA",
+              "term": "မြန်မာ: Người Nhị nhân",
+              "pali": "Dvihetuka",
+              "meaning": "မြန်မာ: Tục sinh với 2 nhân, thiếu vô si"
+            },
+            {
+              "id": "TERM_KAMMAJA_RUPA",
+              "term": "မြန်မာ: Sắc nghiệp",
+              "pali": "Kammaja-rūpa",
+              "meaning": "မြန်မာ: 18 sắc do nghiệp sanh"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "Chi pháp nhân Sanh nghiệp: 28 tâm; tâm quả tục sinh 19"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 3,
+              "note": "Tư tâm sở dẫn tái sanh; Nghiệp làm cho Sắc sanh khởi — 18 sắc"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M6_R01",
+          "front": "မြန်မာ: Pháp bản thể của Nghiệp là gì?",
+          "back": "မြန်မာ: Tâm sở Tư (Cetanā) — sự cố ý tạo tác. “Cetanāhaṃ, bhikkhave, kammaṃ vadāmi”.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R02",
+          "front": "မြန်မာ: Nghiệp sanh khởi qua mấy môn? Môn nào tối trọng?",
+          "back": "မြန်မာ: Ba môn: Thân, Khẩu, Ý. Ý nghiệp là tối trọng.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R03",
+          "front": "မြန်မာ: Kammacatukka gồm bao nhiêu loại, chia mấy nhóm?",
+          "back": "မြန်မာ: 16 loại, chia 4 nhóm: phận sự, năng lực, thời gian trổ quả, lãnh vực trổ quả.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "id": "M6_R04",
+          "front": "မြန်မာ: Bốn nghiệp theo phận sự là gì?",
+          "back": "မြန်မာ: Sanh nghiệp (Janaka), Trì nghiệp (Upatthambhaka), Chướng nghiệp (Upapīḷaka), Đoạn nghiệp (Upaghātaka).",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R05",
+          "front": "မြန်မာ: Sanh nghiệp làm phận sự gì?",
+          "back": "မြန်မာ: Tạo Danh uẩn và Sắc uẩn thời tục sinh, làm cho Thức tục sinh (Paṭisandhi viññāṇa) sanh lên.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R06",
+          "front": "မြန်မာ: Chướng nghiệp khác Đoạn nghiệp thế nào?",
+          "back": "မြန်မာ: Chướng nghiệp cản trở, làm suy giảm và chậm trễ Sanh nghiệp; Đoạn nghiệp mạnh hơn, cắt đứt và tiêu diệt Sanh nghiệp.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_R07",
+          "front": "မြန်မာ: Chướng nghiệp có mặt ở cõi nào?",
+          "back": "မြန်မာ: Không có trong cõi Sắc giới và cõi Vô sắc giới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_R08",
+          "front": "မြန်မာ: Bốn nghiệp theo thứ tự trổ quả (năng lực)?",
+          "back": "မြန်မာ: Trọng nghiệp (Garuka), Cận tử nghiệp (Āsanna), Thường nghiệp (Āciṇṇa), Khinh thiểu nghiệp (Kaṭattā).",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R09",
+          "front": "မြန်မာ: Ngũ nghịch đại tội (Ānantariyakamma) gồm những gì?",
+          "back": "မြန်မာ: Giết mẹ, giết cha, giết A-la-hán, chia rẽ Tăng, làm chảy máu thân Phật.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_R10",
+          "front": "မြန်မာ: Ác trọng nghiệp nào mạnh nhất?",
+          "back": "မြန်မာ: Tà kiến nhất định (Niyatamicchādiṭṭhikamma), kế đến là chia rẽ Tăng.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_R11",
+          "front": "မြန်မာ: Trọng nghiệp thiện có chi pháp là gì?",
+          "back": "မြန်မာ: 9 tâm Thiện Đáo đại (5 thiện Sắc giới + 4 thiện Vô sắc giới).",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "M6_R12",
+          "front": "မြန်မာ: Nghiệp thời được xác định căn cứ vào đâu?",
+          "back": "မြန်မာ: Căn cứ nơi lộ tâm Đổng lực — 7 sát-na Javana.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_R13",
+          "front": "မြန်မာ: Sát-na Đổng lực thứ 1 cho loại nghiệp nào?",
+          "back": "မြန်မာ: Hiện báo nghiệp (Diṭṭhadhammavedanīyakamma) — cho quả ngay kiếp hiện tại.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_R14",
+          "front": "မြန်မာ: Sát-na Đổng lực thứ 7 cho loại nghiệp nào?",
+          "back": "မြန်မာ: Sanh báo nghiệp (Upapajjavedanīyakamma) — cho quả trong kiếp kế.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "M6_R15",
+          "front": "မြန်မာ: Các sát-na Đổng lực 2–6 cho loại nghiệp nào?",
+          "back": "မြန်မာ: Hậu báo nghiệp (Aparāpariyavedanīyakamma) — cho quả từ kiếp thứ 3 đến khi Niết-bàn. Sát-na thứ 4 mạnh nhất.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M6_R16",
+          "front": "မြန်မာ: Vô hiệu nghiệp (Ahosikamma) là gì?",
+          "back": "မြန်မာ: Nghiệp đã tạo mà không còn cơ hội cho quả. Riêng Hậu báo nghiệp không tiêu hoại nếu chưa cho quả.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M6_R17",
+          "front": "မြန်မာ: Bốn lãnh vực trổ quả của Nghiệp?",
+          "back": "မြန်မာ: Nghiệp Bất thiện, Nghiệp Thiện Dục giới, Nghiệp Thiện Sắc giới, Nghiệp Thiện Vô sắc giới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R18",
+          "front": "မြန်မာ: Mười bất thiện nghiệp phân theo môn thế nào?",
+          "back": "မြန်မာ: Thân 3 (sát sanh, trộm cắp, tà hạnh); Khẩu 4 (nói dối, đâm thọc, thô lỗ, vô ích); Ý 3 (tham ác, sân ác, tà kiến).",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R19",
+          "front": "မြန်မာ: Nhân tạo Sanh nghiệp gồm bao nhiêu tâm?",
+          "back": "မြန်မာ: 28 tâm: 11 tâm Bất thiện, 8 Thiện Dục giới Tịnh hảo, 5 Thiện Sắc giới, 4 Thiện Vô sắc giới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R20",
+          "front": "မြန်မာ: Vì sao tâm Si Thọ xả Phóng dật không tạo Sanh nghiệp?",
+          "back": "မြန်မာ: Vì tâm này không thể cho quả tục sinh, không cho Thức tái tục được.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M6_Q01",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Pháp bản thể của Nghiệp (Kamma) là tâm sở nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Tâm sở Tư (Cetanā)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Tâm sở Xúc (Phassa)",
+            "Đã dịch — မြန်မာ: Tâm sở Thọ (Vedanā)",
+            "Đã dịch — မြန်မာ: Tâm sở Tưởng (Saññā)"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Đức Phật dạy “Cetanāhaṃ, bhikkhave, kammaṃ vadāmi” — Cố ý là Nghiệp.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q02",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Trong ba môn tạo nghiệp, môn nào được xem là tối trọng?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Ý môn",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Thân môn",
+            "Đã dịch — မြန်မာ: Khẩu môn",
+            "Đã dịch — မြန်မာ: Cả ba ngang nhau"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Tài liệu ghi rõ: Ý nghiệp là TỐI TRỌNG.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q03",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Kammacatukka phân Nghiệp thành bao nhiêu loại?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 16 loại, chia 4 nhóm",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 12 loại, chia 3 nhóm",
+            "Đã dịch — မြန်မာ: 20 loại, chia 5 nhóm",
+            "Đã dịch — မြန်မာ: 8 loại, chia 2 nhóm"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Sơ đồ Nghiệp: có 16 loại phân thành 4 nhóm, mỗi nhóm 4 loại.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "id": "M6_Q04",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Nghiệp nào tạo nên Danh uẩn và Sắc uẩn trong thời tục sinh?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Sanh nghiệp (Janakakamma)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Trì nghiệp (Upatthambhakakamma)",
+            "Đã dịch — မြန်မာ: Chướng nghiệp (Upapīḷakakamma)",
+            "Đã dịch — မြန်မာ: Đoạn nghiệp (Upaghātakakamma)"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Sanh nghiệp làm cho tâm quả dị thục sanh lên trong thời tái tục, tức Thức tục sinh.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q05",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Nghiệp nào có lực mạnh hơn, cắt đứt cả Sanh nghiệp lẫn Trì nghiệp?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Đoạn nghiệp (Upaghātakakamma)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Chướng nghiệp (Upapīḷakakamma)",
+            "Đã dịch — မြန်မာ: Trì nghiệp (Upatthambhakakamma)",
+            "Đã dịch — မြန်မာ: Khinh thiểu nghiệp (Kaṭattākamma)"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Đoạn nghiệp có lực mạnh hơn Chướng nghiệp: Chướng nghiệp chỉ cản trở, Đoạn nghiệp diệt trừ Sanh nghiệp.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_Q06",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Chướng nghiệp KHÔNG có mặt trong cõi nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Cõi Sắc giới và Vô sắc giới",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Cõi Dục giới",
+            "Đã dịch — မြန်မာ: Bốn cõi khổ",
+            "Đã dịch — မြန်မာ: Cõi người"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Tài liệu ghi: Nghiệp cản trở (Chướng nghiệp) không có trong cõi Sắc hay cõi Vô sắc.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_Q07",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Ngũ nghịch đại tội thuộc loại nghiệp nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Trọng nghiệp (Garukakamma)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Cận tử nghiệp (Āsannakamma)",
+            "Đã dịch — မြန်မာ: Thường nghiệp (Āciṇṇakamma)",
+            "Đã dịch — မြန်မာ: Khinh thiểu nghiệp (Kaṭattākamma)"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Ngũ nghịch đại tội là Vô gián nghiệp (Ānantariyakamma), thuộc nhóm Trọng nghiệp về phía bất thiện.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_Q08",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Theo tài liệu, ác trọng nghiệp nào có sức mạnh lớn nhất?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Tà kiến nhất định (Niyatamicchādiṭṭhikamma)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Giết mẹ",
+            "Đã dịch — မြန်မာ: Giết cha",
+            "Đã dịch — မြန်မာ: Làm chảy máu thân Phật"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Thứ tự sức mạnh: mạnh nhất là Tà kiến nhất định, thứ nhì chia rẽ Tăng, thứ ba làm chảy máu thân Phật.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_Q09",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Chi pháp của Trọng nghiệp thiện là gì?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 9 tâm Thiện Đáo đại",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 8 tâm Đại thiện Dục giới",
+            "Đã dịch — မြန်မာ: 12 tâm Bất thiện",
+            "Đã dịch — မြန်မာ: 8 tâm Siêu thế"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Trọng nghiệp thiện là 9 tâm Thiện Đáo đại (5 Sắc giới + 4 Vô sắc giới). Siêu thế tuy cao thượng nhưng không xếp vào vì tiêu trừ nghiệp hữu.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "M6_Q10",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Nghiệp thời (Pākakālakamma) được xác định căn cứ nơi đâu?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 7 sát-na Đổng lực (Javana) trong lộ tâm",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 3 sát-na Hộ kiếp",
+            "Đã dịch — မြန်မာ: 2 sát-na Na cảnh",
+            "Đã dịch — မြန်မာ: Tâm Tục sinh"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Nghiệp cho quả theo thời gian tùy theo căn cứ nơi lộ tâm đổng tốc — 7 sát na Javana.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q11",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Sát-na Đổng lực thứ nhất cho loại nghiệp nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Hiện báo nghiệp — cho quả ngay kiếp hiện tại",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Sanh báo nghiệp — cho quả kiếp kế",
+            "Đã dịch — မြန်မာ: Hậu báo nghiệp — từ kiếp thứ 3",
+            "Đã dịch — မြန်မာ: Vô hiệu nghiệp"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Sát-na thứ 1 yếu nhất vì sanh đầu tiên, không có sát-na đồng loại hỗ trợ, nên chỉ cho quả trong kiếp hiện tại.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q12",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Sát-na Đổng lực thứ 7 cho loại nghiệp nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Sanh báo nghiệp (Upapajjavedanīyakamma)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Hiện báo nghiệp",
+            "Đã dịch — မြန်မာ: Hậu báo nghiệp",
+            "Đã dịch — မြန်မာ: Vô hiệu nghiệp"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Sát-na thứ 7 yếu thứ nhì vì cận kề sự diệt, chỉ cho quả trong kiếp kế tới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q13",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Trong 7 sát-na Đổng lực, sát-na nào mạnh nhất?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Sát-na thứ 4",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Sát-na thứ 1",
+            "Đã dịch — မြန်မာ: Sát-na thứ 7",
+            "Đã dịch — မြန်မာ: Sát-na thứ 2"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Sát-na thứ 4 mạnh nhất vì ở giai đoạn cực thịnh và là sát-na Quyền.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q14",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Nhân tạo Sanh nghiệp gồm bao nhiêu tâm?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 28 tâm",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 19 tâm",
+            "Đã dịch — မြန်မာ: 12 tâm",
+            "Đã dịch — မြန်မာ: 8 tâm"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: 28 tâm = 11 tâm Bất thiện + 8 Thiện Dục giới Tịnh hảo + 5 Thiện Sắc giới + 4 Thiện Vô sắc giới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q15",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Vì sao chỉ có 11 (không phải 12) tâm Bất thiện làm nhân Sanh nghiệp?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Vì tâm Si Thọ xả Phóng dật không cho quả tục sinh",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Vì tâm Sân không cho quả",
+            "Đã dịch — မြန်မာ: Vì tâm Tham ly tà không cho quả",
+            "Đã dịch — မြန်မာ: Vì tâm Si Hoài nghi không cho quả"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Trừ tâm Si Thọ xả Phóng dật vì tâm này không thể cho quả tục sinh, không cho Thức tái tục được.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q16",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Có bao nhiêu tâm quả làm việc tục sinh?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 19 tâm",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 28 tâm",
+            "Đã dịch — မြန်မာ: 12 tâm",
+            "Đã dịch — မြန်မာ: 11 tâm"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: 19 tâm = 2 Quan sát vô nhân thọ xả + 8 Quả thiện Dục giới Tịnh hảo + 5 Quả Sắc giới + 4 Quả Vô sắc giới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q17",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Nghiệp làm cho bao nhiêu sắc pháp sanh khởi?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 18 sắc",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 15 sắc",
+            "Đã dịch — မြန်မာ: 13 sắc",
+            "Đã dịch — မြန်မာ: 12 sắc"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: 18 sắc do nghiệp: 8 sắc Bất ly + 5 sắc Thần kinh + 1 sắc Hư không + 1 sắc Mạng quyền + 1 sắc Ý vật + 2 sắc Tánh.",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M6_Q18",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Khẩu nghiệp bất thiện gồm mấy điều?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 4 điều",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 3 điều",
+            "Đã dịch — မြန်မာ: 5 điều",
+            "Đã dịch — မြန်မာ: 7 điều"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Nói dối, nói đâm thọc, nói thô lỗ, nói nhảm/vô ích.",
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14
+            }
+          ]
+        }
+      ]
     },
     "M16_NGUOI_VA_COI": {
       "title": "ပုဂ္ဂိုလ်နှင့် ဘုံပိုင်း",
@@ -8289,9 +9299,630 @@
       ]
     },
     "M17_DUYEN_CHI_TIET": {
-      "title": "ပဋ္ဌာန်း ပစ္စည်း ၂၄ ပါး",
-      "description": "အကြောင်းတရား ၂၄ ပါး အကျယ်ဝေဖန်ချက်။",
-      "translationStatus": "reviewed"
+      "title": "မြန်မာ: Duyên Khởi: Các Chi 3–12 (Chi Tiết)",
+      "description": "မြန်မာ: Từ Thức duyên Danh–Sắc đến Sinh duyên Lão Tử — chi tiết 10 chi còn lại của Thập nhị Duyên khởi, kèm ba thời và 20 hành tướng.",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M17_S01",
+          "title": "မြန်မာ: Chi 3: Thức duyên Danh – Sắc",
+          "summary": "မြန်မာ: Danh và Sắc sanh khởi do Thức; tùy cõi mà Thức duyên Danh, duyên Sắc hay duyên cả hai.",
+          "body": [
+            "မြန်မာ: VIÑÑĀṆAPACCAYĀ NĀMARŪPAṀ — Thức duyên Danh–Sắc. Nāma là Danh, Rūpa là Sắc, Paṭicca là duyên, Viññāṇa là Thức.",
+            "မြန်မာ: Danh và Sắc là 2 thành phần riêng biệt nhưng được sanh khởi do từ Thức. Danh gồm Thọ (tâm sở Thọ), Tưởng (tâm sở Tưởng), Hành (50 tâm sở còn lại) đồng hiện khởi với Thức — 4 pháp này bất khả phân ly, gọi là Tứ danh uẩn.",
+            "မြန်မာ: Các tâm Quả hiệp thế phối hợp với các tâm sở Tợ tha và Tịnh hảo (không có 14 tâm sở Bất thiện).",
+            "မြန်မာ: Thức duyên cho Danh tùy cõi: cõi Vô sắc — Thức duyên Danh; cõi Vô tưởng — Thức duyên cho Sắc; cõi Sắc giới và Dục giới — Thức duyên đủ cả 2 Danh và Sắc.",
+            "မြန်မာ: Thức duyên cho Sắc: Thức tục sinh duyên 3 nhóm sắc 10 pháp. Mỗi sát na tâm chia làm 3 sát na tiểu (Sanh, Trụ, Diệt); 17 sát na tâm × 3 = 51 sát na tiểu; 51 × 3 nhóm = 153 nhóm (sắc Thần kinh, sắc Tính, sắc Ý vật).",
+            "မြန်မာ: 3 nhóm Sắc này là Sắc nghiệp được hiện khởi ngay SÁT NA SINH của Tâm tục sinh, nên gọi là Sắc nghiệp tục sinh — tổng số 30 sắc đồng sanh khởi. Nhóm sắc Thần kinh Thân gồm 8 sắc bất ly (tứ đại: đất nước lửa gió; sắc cảnh sắc; sắc cảnh khí; sắc cảnh vị; sắc vật thực) cộng sắc Mạng quyền…"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_THUC_DUYEN_M17",
+              "term": "မြန်မာ: Thức duyên Danh–Sắc",
+              "pali": "Viññāṇapaccayā nāmarūpaṁ",
+              "meaning": "မြန်မာ: Danh và Sắc sanh khởi do Thức tục sinh"
+            },
+            {
+              "id": "TERM_SAC_NGHIEP_TUC_SINH_M17",
+              "term": "မြန်မာ: Sắc nghiệp tục sinh",
+              "pali": "Kammaja-rūpa",
+              "meaning": "မြန်မာ: 3 nhóm sắc 10 pháp hiện khởi ngay sát na sinh của tâm tục sinh"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12,
+              "note": "III/ THỨC DUYÊN DANH – SẮC: danh và sắc sanh khởi do Thức; tứ danh uẩn; tùy cõi; 35 tâm sở phối hợp tâm quả hiệp thế"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 14,
+              "note": "III.2/ THỨC DUYÊN CHO SẮC: 17 sát na × 3 sát na tiểu × 3 nhóm = 153; sắc nghiệp tục sinh 30 sắc"
+            }
+          ]
+        },
+        {
+          "id": "M17_S02",
+          "title": "မြန်မာ: Chi 4–5: Danh sắc duyên Lục nhập; Lục nhập duyên Xúc",
+          "summary": "မြန်မာ: 5 nhập đầu là 5 sắc Thần kinh, Ý nhập là 32 tâm Quả hiệp thế; 6 xúc là tâm sở Xúc trong các tâm thức.",
+          "body": [
+            "မြန်မာ: NĀMARŪPAPACCAYĀ SALĀYATANAṀ — Danh sắc duyên Lục nhập. Danh duyên: 5 nhập đầu tiên chính là 5 sắc Thần kinh — Nhãn nhập (Cakkhāyatana: mắt hay thần kinh Nhãn, giác quan nhìn cảnh sắc), Nhĩ nhập (Sotāyatana), Tỷ nhập (Ghānāyatana), Thiệt nhập (Jivhāyatana), Thân nhập (Kāyāyatana).",
+            "မြန်မာ: Ý nhập (Mānāyatana) bao gồm 32 tâm Quả hiệp thế: 15 tâm Quả Vô nhân + 8 tâm Đại Quả Dục giới Hữu nhân + 5 tâm Quả Sắc giới + 4 tâm Quả Vô sắc giới. Đối với cõi Vô sắc, Danh làm duyên — Ý xứ.",
+            "မြန်မာ: SALĀYATANAPACCAYĀ PHASSO — Lục nhập duyên Xúc. Do 6 nội nhập tiếp xúc với 6 ngoại xứ duyên cho Xúc. Xúc do 6 nội-ngoại xúc tạo, có 6: Nhãn xúc chính là tâm sở Xúc đồng sanh trong cặp Nhãn thức; Nhĩ xúc, Tỷ xúc, Thiệt xúc, Thân xúc cũng vậy; Ý xúc là tâm sở Xúc đồng sanh trong 22 tâm Quả hiệp thế (trừ cặp Ngũ song thức).",
+            "မြန်မာ: Xúc tùy cõi: Phạm thiên Vô sắc chỉ có Ý xúc; Phạm thiên Sắc giới hữu tưởng có Nhãn xúc, Nhĩ xúc và Ý xúc; Phạm thiên Vô tưởng không có Xúc; chúng sanh cõi Dục giới có đủ 6 (tùy lúc)."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_Y_NHAP_M17",
+              "term": "မြန်မာ: Ý nhập",
+              "pali": "Mānāyatana",
+              "meaning": "မြန်မာ: 32 tâm Quả hiệp thế (15+8+5+4)"
+            },
+            {
+              "id": "TERM_LUC_XUC_M17",
+              "term": "မြန်မာ: 6 Xúc",
+              "pali": "Phassa",
+              "meaning": "မြန်မာ: Tâm sở Xúc đồng sanh trong các tâm thức tương ứng"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 15,
+              "note": "IV/ DANH SẮC DUYÊN LỤC NHẬP: 5 nhập là 5 sắc thần kinh; Ý nhập 32 tâm quả hiệp thế"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 16,
+              "note": "V/ LỤC NHẬP DUYÊN XÚC: 6 xúc; tùy cõi — vô tưởng không có Xúc"
+            }
+          ]
+        },
+        {
+          "id": "M17_S03",
+          "title": "မြန်မာ: Chi 6–7: Xúc duyên Thọ; Thọ duyên Ái",
+          "summary": "မြန်မာ: Thọ sanh do 6 Xúc trong 32 tâm Quả hiệp thế; Ái là tâm sở Tham, duyên theo cả 3 thọ Khổ, Lạc, Xả.",
+          "body": [
+            "မြန်မာ: PHASSAPACCAYĀ VEDANĀ — Xúc duyên Thọ. Do duyên 6 Xúc (Nhãn, Nhĩ, Tỷ, Thiệt, Thân, Ý) — tức tâm sở Xúc hợp trong 32 tâm Quả hiệp thế — duyên cho 6 Thọ sanh.",
+            "မြန်မာ: Ngũ song thức: 4 cặp đầu (Nhãn, Nhĩ, Tỷ, Thiệt) chỉ là Thọ xả; Thân thọ có 2: Khổ và Lạc. Ý thọ có 2: Hỷ và Xả — thuộc 22 tâm Quả hiệp thế (2 tâm quả bất thiện, 3 tâm quả thiện [vô nhân], 8 tâm quả Dục giới tịnh hảo, 9 tâm quả Đáo đại).",
+            "မြန်မာ: 6 Thọ có mặt trong các cõi: cõi Vô sắc có 1 (Ý thọ); cõi Sắc giới hữu tưởng có 3 (Nhãn, Nhĩ, Ý thọ); cõi Vô tưởng không có Thọ (vì không có Xúc); cõi Dục giới có đủ 6 thọ; cõi Địa ngục, Ngạ quỷ, Atula có đủ 6 thọ.",
+            "မြန်မာ: VEDANĀPACCAYĀ TAṆHĀ — Thọ duyên Ái. Thọ duyên Ái lấy cả 3 Thọ: Khổ, Lạc và Xả. Ái là tâm sở Tham (Lobha); các tên gọi cùng họ: Ái (Taṇhā), Dục (Kāma), ô nhiễm (Rāga).",
+            "မြန်မာ: Khổ duyên Ái là do khao khát được thoát Khổ; Lạc duyên Ái và Xả duyên Ái là do ham muốn được tiếp tục hưởng. Tâm sở Thọ đồng sanh trong 32 tâm Quả hiệp thế trợ duyên cho Ái sanh."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_Y_THO_M17",
+              "term": "မြန်မာ: Ý thọ",
+              "pali": "Manovedanā",
+              "meaning": "မြန်မာ: Hỷ và Xả — trong 22 tâm quả hiệp thế"
+            },
+            {
+              "id": "TERM_THO_DUYEN_AI_M17",
+              "term": "မြန်မာ: Thọ duyên Ái",
+              "pali": "Vedanāpaccayā taṇhā",
+              "meaning": "မြန်မာ: Cả 3 thọ khổ–lạc–xả đều làm duyên cho Ái (tâm sở Tham)"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17,
+              "note": "VI/ XÚC DUYÊN THỌ: ngũ song thức 4 cặp xả, thân thọ khổ–lạc; ý thọ hỷ–xả; 6 thọ theo các cõi"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 18,
+              "note": "VII/ THỌ DUYÊN ÁI: lấy cả 3 thọ; Ái là tâm sở tham; 32 tâm quả hiệp thế tính theo duyên"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 19,
+              "note": "Thọ duyên Ái (tiếp): lấy cảnh — 6 cảnh"
+            }
+          ]
+        },
+        {
+          "id": "M17_S04",
+          "title": "မြန်မာ: Chi 8–9: Ái duyên Thủ; Thủ duyên Hữu",
+          "summary": "မြန်မာ: Thủ có 6 theo trần, 4 theo chi pháp; Hữu gồm Nghiệp hữu (thân, khẩu, ý nghiệp) và Sanh hữu (3 hữu, 9 nhóm).",
+          "body": [
+            "မြန်မာ: TAṆHĀPACCAYĀ UPĀDĀNAṀ — Ái duyên Thủ. Thủ có 6 theo trần cảnh: Sắc thủ, Thinh thủ, Khí thủ, Vị thủ, Xúc thủ, Pháp thủ.",
+            "မြန်မာ: Thủ phân theo Chi pháp có 4 loại: 1/ Dục thủ (Kāmupādāna) — bám thủ, đeo níu vào các trần cảnh với tràn đầy ái nhiễm phát sanh từ Ái; Dục thủ chính là tâm sở Tham. 2/ Tà kiến thủ (Diṭṭhupādāna) — bám thủ vào các kiến chấp sai lầm (thế giới thường còn vĩnh cửu, bản ngã trường tồn, không nhân không quả); Tà kiến thủ là tâm sở Tà kiến. 3/ Giới cấm thủ (Sīlabbatupādāna) — chấp rằng do tuân thủ các cách tu tập tà lệch, lễ lạc, cúng tế… mà tâm được trong sạch hóa. 4/ Ngã luận thủ (Attavādupādāna) — chấp ngã.",
+            "မြန်မာ: UPĀDĀNAPACCAYĀ BHAVO — Thủ duyên Hữu. Hữu là cái gì trở thành, cái có, hiện hữu, sẽ có, sẽ trở thành. Hữu có 2 loại: Nghiệp hữu (Kammabhava) và Sanh hữu (Upapattibhava).",
+            "မြန်မာ: Nghiệp hữu có 3: Thân nghiệp (cố tạo tác bằng thân hành), Khẩu nghiệp (bằng khẩu hành), Ý nghiệp (tư duy tạo tác ý nghĩ thiện hoặc bất thiện thuộc hiệp thế). Chi pháp: tâm sở Tư + 12 tâm Bất thiện + 8 tâm Thiện Dục giới Tịnh hảo; riêng ý nghiệp cộng thêm 9 tâm Thiện Đáo đại.",
+            "မြန်မာ: Sanh hữu chia 3 nhóm: theo hữu — Dục hữu (11 cõi Dục giới đủ 5 uẩn: 4 cõi khổ + 1 cõi người + 6 cõi trời Dục giới), Sắc hữu, Vô sắc hữu; theo tưởng — Hữu tưởng hữu (29 cõi), Vô tưởng hữu (1 cõi Vô tưởng), Phi tưởng phi phi tưởng hữu (1 cõi); theo uẩn — Nhất uẩn hữu (cõi Vô tưởng, chỉ Sắc uẩn), Tứ uẩn hữu (4 cõi Vô sắc, chỉ Danh uẩn), Ngũ uẩn hữu (11 Dục giới + 15 Sắc giới trừ Vô tưởng).",
+            "မြန်မာ: Dục hữu phát sanh do từ Dục; Hữu nào phát sanh do Ly Dục nhưng Ái Sắc là Sắc Hữu; Hữu nào phát sanh do Ly Sắc, Ái Vô sắc là Vô sắc Hữu. 3 Hữu × Tứ Thủ = 12 Hữu tương ứng.",
+            "မြန်မာ: Ghi chú quan trọng: KHÔNG CÓ NGHIỆP HỮU THỜI KHÔNG CÓ SANH HỮU."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_TU_THU_M17",
+              "term": "မြန်မာ: Tứ Thủ",
+              "pali": "Upādāna (4)",
+              "meaning": "မြန်မာ: Dục thủ, Tà kiến thủ, Giới cấm thủ, Ngã luận thủ"
+            },
+            {
+              "id": "TERM_NGHIEP_HUU_M17",
+              "term": "မြန်မာ: Nghiệp hữu",
+              "pali": "Kammabhava",
+              "meaning": "မြန်မာ: Thân, khẩu, ý nghiệp — Tư + 12 bất thiện + 8 đại thiện (+9 đáo đại cho ý nghiệp)"
+            },
+            {
+              "id": "TERM_SANH_HUU_M17",
+              "term": "မြန်မာ: Sanh hữu",
+              "pali": "Upapattibhava",
+              "meaning": "မြန်မာ: 3 nhóm: theo hữu (Dục/Sắc/Vô sắc), theo tưởng, theo uẩn (1/4/5 uẩn)"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20,
+              "note": "VIII/ ÁI DUYÊN THỦ: thủ 6 trần; 4 loại thủ — Dục, Tà kiến, Giới cấm (Sīla + Vata), Ngã luận"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 21,
+              "note": "IX/ THỦ DUYÊN HỮU: Nghiệp hữu 3 nghiệp và chi pháp tâm sở Tư + 12 + 8"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 22,
+              "note": "Sanh hữu: hữu tưởng hữu 29 cõi, vô tưởng hữu, phi tưởng phi phi tưởng hữu; nhất/tứ/ngũ uẩn hữu"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 23,
+              "note": "Dục hữu – Sắc hữu – Vô sắc hữu; 3 Hữu × Tứ Thủ = 12 Hữu; không Nghiệp hữu thời không Sanh hữu"
+            }
+          ]
+        },
+        {
+          "id": "M17_S05",
+          "title": "မြန်မာ: Chi 10–12: Hữu duyên Sinh; Sinh duyên Lão Tử",
+          "summary": "မြန်မာ: Hữu duyên Sinh chỉ lấy Nghiệp hữu (29 tâm); 4 cách sinh, 3 uẩn sinh; Sầu – Bi – Khổ – Ưu – Não là hậu quả tất yếu.",
+          "body": [
+            "မြန်မာ: BHAVAPACCAYĀ JĀTI — Hữu duyên Sinh. Hữu duyên Sinh chỉ lấy phần NGHIỆP HỮU, không thể là Sanh hữu.",
+            "မြန်မာ: Nghiệp hữu gồm: 12 tâm Bất thiện + 8 tâm Đại thiện Dục giới + 5 tâm Thiện Sắc giới + 4 tâm Thiện Vô sắc giới = 29 tâm. Mọi sự khác biệt về giai cấp, dòng tộc, trú xứ, loại sanh thú khi sanh chính do các nghiệp này.",
+            "မြန်မာ: Sinh (Jāti) là có sự phát sanh, sự hiện hữu của các Uẩn — hiện hữu của 2 thành phần Danh và Sắc; có sự phát sanh của các Sắc do nghiệp (Sắc nghiệp sanh: sắc Thần kinh Thân, sắc Tính, sắc Ý).",
+            "မြန်မာ: Cách sinh có 4: Noãn sinh (Aṇḍajajāti), Thai sinh (Jalābujajāti), Thấp sinh (Saṃsedajajāti), Hóa sinh (Opapātikajāti). Uẩn sinh có 3: Ngũ uẩn sinh (26 cõi: 11 Dục giới + 15 Sắc giới trừ Vô tưởng), Tứ uẩn sinh (4 cõi Vô sắc), Nhất uẩn sinh (cõi Vô tưởng).",
+            "မြန်မာ: JĀTIPACCAYĀ JARĀMARAṆAṀ — Sinh duyên Lão Tử. Lão là khi có sự lão hóa, già nua, cũ nát. Sắc thân lão (Rūpakāyajarā) là 49 sát na trụ của Sắc pháp — giai đoạn đình trệ phi sinh diệt; Danh thân lão (Nāmakāyajarā) là sát na trụ của Tâm (mỗi sát na tâm có 3 sát na tiểu: Sanh, Trụ, Diệt). Tử là sự tan rã sau khi sống.",
+            "မြန်မာ: Sầu (Soka) là sự âu sầu do mất mát mọi thứ: bà con thân thuộc, của cải, danh vọng, sự nghiệp, sức khỏe, giới đức. Bi (Parideva) là sự thống khổ, khóc than phát xuất từ âu sầu — Bi là âm vang của Sầu. Khổ (Dukkha) là khổ thân, khổ thọ về thân như bệnh. Ưu (Domanassa) là đau nơi Tâm, cảm thọ Ưu của tâm. Não (Upāyāsa) là tình trạng não nề do chịu đựng quá nặng về tinh thần khi mất mát người thân — Não nặng hơn Ưu về tâm trạng.",
+            "မြန်မာ: SẦU – BI – KHỔ – ƯU – NÃO là những hậu quả tất yếu của Sanh; và Lão Tử duyên Vô Minh — vòng xoay khép kín của luân hồi."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_29_TAM_M17",
+              "term": "မြန်မာ: Nghiệp hữu 29 tâm",
+              "pali": "Kammabhava",
+              "meaning": "မြန်မာ: 12 bất thiện + 8 đại thiện + 5 sắc giới + 4 vô sắc giới"
+            },
+            {
+              "id": "TERM_BON_CACH_SINH_M17",
+              "term": "မြန်မာ: 4 cách sinh",
+              "pali": "Jāti (4)",
+              "meaning": "မြန်မာ: Noãn sinh, Thai sinh, Thấp sinh, Hóa sinh"
+            },
+            {
+              "id": "TERM_SAUU_BI_KHO_UU_NAO_M17",
+              "term": "မြန်မာ: Sầu – Bi – Khổ – Ưu – Não",
+              "pali": "Soka, Parideva, Dukkha, Domanassa, Upāyāsa",
+              "meaning": "မြန်မာ: Hậu quả tất yếu của Sanh"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 24,
+              "note": "X/ HỮU DUYÊN SINH: chỉ lấy Nghiệp hữu; 29 tâm; sắc nghiệp sanh 3 nhóm"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 25,
+              "note": "4 cách sinh; 3 uẩn sinh (ngũ 26 cõi, tứ 4 cõi, nhất cõi vô tưởng); XI/ SINH DUYÊN LÃO TỬ: sắc thân lão 49 sát na trụ"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 26,
+              "note": "Sầu – Bi – Khổ – Ưu – Não; XII/ Lão tử duyên Vô minh"
+            }
+          ]
+        },
+        {
+          "id": "M17_S06",
+          "title": "မြန်မာ: Ba thời và 20 hành tướng — tổng kết vòng duyên khởi",
+          "summary": "မြန်မာ: Quá khứ 2 nhân, hiện tại 8 chi (5 quả + 3 nhân), vị lai 2 quả — 5 nhân quá khứ + 5 quả hiện tại + 5 nhân hiện tại + 5 quả vị lai.",
+          "body": [
+            "မြန်မာ: Ba thời (Addhā): Thời Quá khứ gồm Vô minh – Hành; Thời Hiện tại gồm Thức – Danh sắc – Lục nhập – Xúc – Thọ – Ái – Thủ – Hữu (8 chi); Thời Vị lai gồm Sinh – Lão Tử.",
+            "မြန်မာ: 12 chi (Aṅga): Vô minh → Hành → Thức → Danh sắc → Lục nhập → Xúc → Thọ → Ái → Thủ → Hữu → Sinh → Lão Tử.",
+            "မြန်မာ: 20 hành tướng (Visākāra): 5 nhân hành tướng Quá khứ — Vô minh + Hành, gom thâu chung với 3 chi Ái + Thủ + Hữu; 5 quả hành tướng Hiện tại — Thức, Danh sắc, Lục nhập, Xúc, Thọ; 5 nhân hành tướng Hiện tại — Ái + Thủ + Hữu, Vô minh + Hành; 5 quả hành tướng Tương lai — Thức, Danh sắc, Lục nhập, Xúc, Thọ.",
+            "မြန်မာ: Như vậy 20 hành tướng = 5 nhân quá khứ + 5 quả hiện tại + 5 nhân hiện tại + 5 quả vị lai — hai vòng nhân quả nối tiếp nhau qua ba thời."
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BA_THOI_M17",
+              "term": "မြန်မာ: Ba thời",
+              "pali": "Addhā",
+              "meaning": "မြန်မာ: Quá khứ (2 nhân) – Hiện tại (8 chi) – Vị lai (2 quả)"
+            },
+            {
+              "id": "TERM_20_HANH_TUONG_M17",
+              "term": "မြန်မာ: 20 hành tướng",
+              "pali": "Visākāra",
+              "meaning": "မြန်မာ: 5 nhân quá khứ + 5 quả hiện tại + 5 nhân hiện tại + 5 quả vị lai"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 27,
+              "note": "3 THỜI – ADDHĀ: quá khứ – hiện tại – vị lai; 20 HÀNH TƯỚNG – VISATĀKĀRA: 5+5+5+5"
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 5,
+              "note": "1. Tesamevaca mūlānaṁ nirodhena… — tiêu biểu cho vòng duyên khởi diệt"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M17_R01",
+          "front": "မြန်မာ: Thức duyên Danh – Sắc: tùy cõi, Thức duyên thế nào?",
+          "back": "မြန်မာ: Vô sắc: duyên Danh; Vô tưởng: duyên Sắc; Sắc giới và Dục giới: duyên đủ cả 2 Danh và Sắc.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M17_R02",
+          "front": "မြန်မာ: Sắc nghiệp tục sinh có bao nhiêu nhóm và bao nhiêu sắc?",
+          "back": "မြန်မာ: 3 nhóm (sắc Thần kinh, sắc Tính, sắc Ý vật) — tổng 30 sắc, hiện khởi ngay sát na sinh của Tâm tục sinh.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M17_R03",
+          "front": "မြန်မာ: Ý nhập (Mānāyatana) gồm những tâm nào?",
+          "back": "မြန်မာ: 32 tâm Quả hiệp thế: 15 Quả vô nhân + 8 Đại quả Dục giới + 5 Quả Sắc giới + 4 Quả Vô sắc giới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 15
+            }
+          ]
+        },
+        {
+          "id": "M17_R04",
+          "front": "မြန်မာ: Cõi Vô tưởng có Xúc không? Vì sao?",
+          "back": "မြန်မာ: Không có Xúc (và không có Thọ) — cõi này chỉ có Sắc uẩn.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 16
+            },
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "M17_R05",
+          "front": "မြန်မာ: Thân thọ có mấy loại? Ý thọ có mấy loại?",
+          "back": "မြန်မာ: Thân thọ 2 (Khổ, Lạc); Ý thọ 2 (Hỷ, Xả); 4 cặp ngũ song thức đầu chỉ thọ Xả.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "M17_R06",
+          "front": "မြန်မာ: Ái là tâm sở nào? Thọ duyên Ái lấy những thọ nào?",
+          "back": "မြန်မာ: Ái là tâm sở Tham (Lobha); lấy cả 3 thọ Khổ, Lạc, Xả.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 18
+            }
+          ]
+        },
+        {
+          "id": "M17_R07",
+          "front": "မြန်မာ: Tứ Thủ là gì?",
+          "back": "မြန်မာ: Dục thủ (tâm sở Tham), Tà kiến thủ (tâm sở Tà kiến), Giới cấm thủ, Ngã luận thủ.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M17_R08",
+          "front": "မြန်မာ: Nghiệp hữu là gì? Chi pháp gồm những tâm nào?",
+          "back": "မြန်မာ: Sự tạo tác: thân, khẩu, ý nghiệp — Tư + 12 tâm bất thiện + 8 tâm đại thiện (+9 tâm thiện đáo đại cho ý nghiệp).",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M17_R09",
+          "front": "မြန်မာ: Hữu duyên Sinh lấy loại Hữu nào?",
+          "back": "မြန်မာ: Chỉ lấy Nghiệp hữu (29 tâm) — không thể là Sanh hữu.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M17_R10",
+          "front": "မြန်မာ: 4 cách sinh và 3 uẩn sinh?",
+          "back": "မြန်မာ: Noãn, Thai, Thấp, Hóa sinh. Uẩn sinh: Ngũ uẩn (26 cõi), Tứ uẩn (4 vô sắc), Nhất uẩn (Vô tưởng).",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": "M17_R11",
+          "front": "မြန်မာ: Sắc thân lão và Danh thân lão khác nhau thế nào?",
+          "back": "မြန်မာ: Sắc thân lão = 49 sát na trụ của sắc pháp; Danh thân lão = sát na trụ của tâm (mỗi sát na có sanh–trụ–diệt).",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": "M17_R12",
+          "front": "မြန်မာ: 20 hành tướng gồm những gì?",
+          "back": "မြန်မာ: 5 nhân quá khứ + 5 quả hiện tại + 5 nhân hiện tại + 5 quả vị lai.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 27
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M17_Q01",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Ở cõi Vô tưởng, Thức duyên cho phần nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Chỉ duyên cho Sắc",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Chỉ duyên cho Danh",
+            "Đã dịch — မြန်မာ: Duyên cả Danh và Sắc",
+            "Đã dịch — မြန်မာ: Không duyên cho gì cả"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Vô tưởng chỉ có Sắc uẩn; Vô sắc chỉ có Danh; Dục – Sắc giới có cả hai.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M17_Q02",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Ý nhập gồm bao nhiêu tâm Quả hiệp thế?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 32 tâm",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 22 tâm",
+            "Đã dịch — မြန်မာ: 17 tâm",
+            "Đã dịch — မြန်မာ: 29 tâm"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: 15 vô nhân + 8 đại quả dục giới + 5 sắc giới + 4 vô sắc = 32.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 15
+            }
+          ]
+        },
+        {
+          "id": "M17_Q03",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Ý xúc là tâm sở Xúc đồng sanh trong bao nhiêu tâm Quả hiệp thế?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 22 tâm (trừ cặp Ngũ song thức)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 32 tâm (tất cả)",
+            "Đã dịch — မြန်မာ: 10 tâm (chỉ ngũ song thức)",
+            "Đã dịch — မြန်မာ: 12 tâm"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Ý xúc = tâm sở Xúc trong 22 tâm quả hiệp thế, trừ 10 tâm ngũ song thức.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M17_Q04",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Thân thọ gồm những thọ nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Khổ và Lạc",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Hỷ và Xả",
+            "Đã dịch — မြန်မာ: Khổ, Lạc, Xả",
+            "Đã dịch — မြန်မာ: Chỉ có Xả"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Thân thức có 2 thọ; 4 cặp thức đầu (nhãn, nhĩ, tỷ, thiệt) chỉ thọ Xả.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 17
+            }
+          ]
+        },
+        {
+          "id": "M17_Q05",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Dục thủ chính là tâm sở nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Tham (Lobha)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Tà kiến (Diṭṭhi)",
+            "Đã dịch — မြန်မာ: Tư (Cetanā)",
+            "Đã dịch — မြန်မာ: Ái (Taṇhā) — riêng biệt với Tham"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Dục thủ là tâm sở Tham; Tà kiến thủ là tâm sở Tà kiến.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M17_Q06",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Giới cấm thủ (Sīlabbatupādāna) là gì?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Chấp rằng tuân thủ các cách tu tà lệch, lễ lạc, cúng tế sẽ làm tâm trong sạch hóa",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Bám thủ trần cảnh với ái nhiễm",
+            "Đã dịch — မြန်မာ: Chấp thế giới thường còn",
+            "Đã dịch — မြန်မာ: Chấp ngã trường tồn"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Sīla + Vata: giữ giới cấm nỗ lực tròn đầy — nhưng chấp sai cách tu.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": "M17_Q07",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Hữu có 2 loại nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Nghiệp hữu và Sanh hữu",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Dục hữu và Sắc hữu",
+            "Đã dịch — မြန်မာ: Thân hữu và Tâm hữu",
+            "Đã dịch — မြန်မာ: Quá khứ hữu và vị lai hữu"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Kammabhava (tạo tác) và Upapattibhava (tái sanh).",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M17_Q08",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Nghiệp hữu gồm bao nhiêu tâm?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 29 tâm",
+          "distractors": [
+            "Đã dịch — မြန်မာ: 12 tâm",
+            "Đã dịch — မြန်မာ: 20 tâm",
+            "Đã dịch — မြန်မာ: 40 tâm"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: 12 bất thiện + 8 đại thiện dục giới + 5 thiện sắc giới + 4 thiện vô sắc giới.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M17_Q09",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Tứ uẩn hữu (Catuvokārabhava) là chúng sanh cõi nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: 4 cõi Vô sắc",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Cõi Vô tưởng",
+            "Đã dịch — မြန်မာ: 11 cõi Dục giới",
+            "Đã dịch — မြန်မာ: Cõi Quảng Quả"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Chỉ có Thọ, Tưởng, Hành, Thức — không Sắc uẩn.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M17_Q10",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Không có cái gì thì không có Sanh hữu?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Nghiệp hữu",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Dục thủ",
+            "Đã dịch — မြန်မာ: Ái",
+            "Đã dịch — မြန်မာ: Thọ"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: KHÔNG CÓ NGHIỆP HỮU THỜI KHÔNG CÓ SANH HỮU.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": "M17_Q11",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Bi (Parideva) là gì?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Sự thống khổ, khóc than — âm vang của Sầu",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Sự âu sầu trong tâm",
+            "Đã dịch — မြန်မာ: Khổ thân, khổ thọ về thân",
+            "Đã dịch — မြန်မာ: Não nề do chịu đựng quá nặng"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Sầu là âu sầu; Bi phát xuất từ Sầu; Khổ là khổ thân; Ưu đau nơi tâm; Não nặng hơn Ưu.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 26
+            }
+          ]
+        },
+        {
+          "id": "M17_Q12",
+          "type": "mcq",
+          "question": "Đã dịch — မြန်မာ: Thời Hiện tại trong 3 thời gồm những chi nào?",
+          "correctAnswer": "Đã dịch — မြန်မာ: Thức → Hữu (8 chi)",
+          "distractors": [
+            "Đã dịch — မြန်မာ: Vô minh, Hành",
+            "Đã dịch — မြန်မာ: Sinh, Lão Tử",
+            "Đã dịch — မြန်မာ: Ái, Thủ, Hữu"
+          ],
+          "explanation": "Đã dịch — မြန်မာ: Quá khứ: Vô minh + Hành; Hiện tại: Thức, Danh sắc, Lục nhập, Xúc, Thọ, Ái, Thủ, Hữu; Vị lai: Sinh, Lão Tử.",
+          "sourceRefs": [
+            {
+              "file": "VDP-ToatYeuVeDuyen.pdf",
+              "page": 27
+            }
+          ]
+        }
+      ]
     },
     "M9_SAC_PHAP": {
       "title": "ရုပ်ဓမ္မ (Rūpa)",
