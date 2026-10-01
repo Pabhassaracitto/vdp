@@ -2670,9 +2670,1026 @@
       "translationStatus": "reviewed"
     },
     "M3_TINH_HAO_BIEN_HANH": {
-      "title": "十九遍一切美心所",
-      "description": "十九個遍一切美心心所，一切美心所共有。",
-      "translationStatus": "reviewed"
+      "title": "25種美心所（Sobhana Cetasika）",
+      "description": "二十五美心所：十九美遍行存在於一切美心中，另有離心所3、無量2與慧根1。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M3_S01",
+          "title": "美心所組",
+          "summary": "Sobhana意爲光明、燦爛、美好；共有25種心所，分爲四組。",
+          "body": [
+            "Sobhana意爲光明、燦爛、美好。“美”表示清淨純潔，也表示善良、美妙、善巧和正確。",
+            "美心所共有25種，分爲四組。",
+            "第一組是Sobhanasādhāraṇā，即美遍行心所，共19種。",
+            "第二組是Viratiyo，即離心所，共3種：正語（Sammāvācā）、正業（Sammākammanto）、正命（Sammā-ājīvo）。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SOBHANA",
+              "term": "美心（美心所）",
+              "pali": "Sobhana",
+              "meaning": "光明、燦爛、清淨美好"
+            },
+            {
+              "id": "TERM_VIRATI",
+              "term": "離心所（三離）",
+              "pali": "Viratiyo",
+              "meaning": "防止惡行的三心所：正語、正業、正命"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55,
+              "note": "Nhóm 3: TÂM SỞ TỊNH HẢO – SOBHANA CETASIKA, có 25 tâm, chia 4 nhóm"
+            }
+          ]
+        },
+        {
+          "id": "M3_S02",
+          "title": "十九美遍行心所一覽",
+          "summary": "從信、念，經慚、愧、無貪、無瞋、中舍性，至六對身心心所。",
+          "body": [
+            "1. 信（Saddhā）；2. 念（Sati）；3. 慚（Hiri）；4. 愧（Ottappa）；5. 無貪（Alobha）；6. 無瞋（Adosa）；7. 中舍性（Tatramajjhattatā）。",
+            "8. 身輕安（Kāyapassaddhi）；9. 心輕安（Cittapassaddhi）。",
+            "10. 身輕快性（Kāyalahutā）；11. 心輕快性（Cittalahutā）；12. 身柔軟性（Kāyamudutā）；13. 心柔軟性（Cittamudutā）。",
+            "14. 身適業性（Kāyakammaññatā）；15. 心適業性（Cittakammaññatā）；16. 身熟練性（Kāyapāguññatā）；17. 心熟練性（Cittapāguññatā）。",
+            "18. 身正直性（Kāyujjukatā）；19. 心正直性（Cittujjukatā）。",
+            "結構要點：第8至19項是六對身—心（Kāya–Citta）心所：輕安、輕快、柔軟、適業、熟練、正直。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SADDHA_M3",
+              "term": "信",
+              "pali": "Saddhā",
+              "meaning": "清淨的信心"
+            },
+            {
+              "id": "TERM_SATI_M3",
+              "term": "念",
+              "pali": "Sati",
+              "meaning": "憶持善所緣而不忘失"
+            },
+            {
+              "id": "TERM_HIRI_M3",
+              "term": "慚",
+              "pali": "Hiri",
+              "meaning": "以罪惡爲恥"
+            },
+            {
+              "id": "TERM_OTTAPPA_M3",
+              "term": "愧",
+              "pali": "Ottappa",
+              "meaning": "畏懼罪惡"
+            },
+            {
+              "id": "TERM_TATRAMAJJHATTATA_M3",
+              "term": "中舍性",
+              "pali": "Tatramajjhattatā",
+              "meaning": "令俱生諸法保持均衡"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55,
+              "note": "I. SOBHANASĀDHĀRAṆĀ – TÂM SỞ TỊNH HẢO BIẾN HÀNH, có 19: danh sách đầy đủ"
+            }
+          ]
+        },
+        {
+          "id": "M3_S03",
+          "title": "其餘兩組：無量與慧根",
+          "summary": "19 + 3 + 2 + 1 = 25種美心所。",
+          "body": [
+            "第三組是Appamaññā，即無量心所，共2種：悲（Karunā）與隨喜（Muditā）。",
+            "第四組是Paññindriya，即慧根，共1種心所。",
+            "四組總計：美遍行19 + 離心所3 + 無量2 + 慧根1 = 25種美心所。",
+            "須牢記：只有19美心所是“遍行”，存在於一切美心中；其餘三組僅隨情況生起。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_APPAMANNA",
+              "term": "無量（無量心所）",
+              "pali": "Appamaññā",
+              "meaning": "悲與隨喜兩種心所"
+            },
+            {
+              "id": "TERM_KARUNA_M3",
+              "term": "悲",
+              "pali": "Karunā",
+              "meaning": "憐憫受苦衆生"
+            },
+            {
+              "id": "TERM_MUDITA_M3",
+              "term": "隨喜",
+              "pali": "Muditā",
+              "meaning": "隨他人的幸福而歡喜"
+            },
+            {
+              "id": "TERM_PANNINDRIYA",
+              "term": "慧根",
+              "pali": "Paññindriya",
+              "meaning": "一種智慧心所"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55,
+              "note": "III. APPAMAÑÑĀ – VÔ LƯỢNG PHẦN, có 2 tâm; IV. PAÑÑINDRIYA – TUỆ QUYỀN, có 1 tâm"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84,
+              "note": "III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYACETASIKA"
+            }
+          ]
+        },
+        {
+          "id": "M3_S04",
+          "title": "離心所：正語、正業、正命",
+          "summary": "Virati是節制、戒除、遠離；三心所防止言語、身體行爲及謀生方面的惡行。",
+          "body": [
+            "Virati意爲節制、戒除、遠離。離心所（Viratiyo）有正語（Sammāvācā）、正業（Sammākammanto）和正命（Sammā-ājīvo）三種。",
+            "正語是遠離言語惡行：不妄語（musāvāda）、不兩舌離間（pisuṇāvācā）、不惡口粗語（pharusavācā）、不綺語廢話（samphappalāpa）。",
+            "正業是正當行爲：戒除殺生、偷盜、欲邪行三種身惡業。",
+            "正命是正當地維持生活：不以殺生、偷盜、說謊等身惡、語惡謀利維生。",
+            "不同於十九美遍行心所，三離僅隨情況生起，並非存在於每一美心中，例如持戒或捨棄貪慾時的大善心。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SAMMAVACA_M3",
+              "term": "正語",
+              "pali": "Sammāvācā",
+              "meaning": "遠離四種語惡行的正當言語"
+            },
+            {
+              "id": "TERM_SAMMAKAMMANTA_M3",
+              "term": "正業",
+              "pali": "Sammākammanto",
+              "meaning": "遠離三種身惡行的正當行爲"
+            },
+            {
+              "id": "TERM_SAMMAAJIVA_M3",
+              "term": "正命",
+              "pali": "Sammā-ājīvo",
+              "meaning": "以正當方式維持生活"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80,
+              "note": "II/ TÂM SỞ GIỚI PHẦN – VIRATI CETASIKA; II.1 TÂM SỞ CHÁNH NGỮ – SAMMĀVĀCĀ: 4 loại lời nói cần kiêng"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82,
+              "note": "II.2 TÂM SỞ CHÁNH NGHIỆP – SAMMĀKAMMANTĀ; II.3 TÂM SỞ CHÁNH MẠNG – SAMMĀAJJIVĀ; 3 thân ác nghiệp"
+            }
+          ]
+        },
+        {
+          "id": "M3_S05",
+          "title": "最初七心所：信、念、慚、愧、無貪、無瞋、中舍性",
+          "summary": "界定十九美遍行中的前七種——從清淨信心至均衡。",
+          "body": [
+            "信（Saddhā）：“Saṁ”意爲美好，“dah”意爲建立、安置；即令心正確安住於對象，淨化心並消除疑惑的信心。邪信（micchāsaddhā）是迷信虛妄之事；正信（sammāsaddhā）是信業、信果、信世尊覺悟等真實之事。",
+            "念（Sati）：詞根“sar”意爲憶念。唸的實質是不忘失，防止惡法生起、令善法持續現前，並明瞭身、受、心、法。",
+            "慚（Hiri）：對可能由身、語生起的罪惡感到羞恥。令慚生起的五項是：高貴家世、年長、社會地位、學識及佛法。",
+            "愧（Ottappa）：因畏懼罪惡而心受震動，見到身惡行、語惡行的危險。令愧生起的四項是：畏懼刑罰、惡趣苦、他人譴責及良心不安。",
+            "慚與愧如孿生，是兩種白法、兩種世間守護法，防止身心造惡併成就沙門品格。慚與無慚相對，愧與無愧相對（見M2）。",
+            "無貪（Alobha）：如水珠滾過荷葉般不黏著；表現爲慷慨、佈施、利他、放舍、不佔有，與自私和貪著相反，是三善根之一。",
+            "無瞋（Adosa）：面對逆境不憎恨、不憤怒、不不滿，忍耐平靜、清涼慈愛；其特相是無傷害、無毒害、無對抗，也是三善根之一。",
+            "中舍性（Tatramajjhattatā）：“tatra”是在那裏，“majjhattatā”是居中，即不偏任何一方。其特相是公正無偏，使俱生名法均衡；深化後成爲舍無量心、舍心解脫及舍覺支。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BA_NHAN_THIEN_M3",
+              "term": "無貪、無瞋、無癡（三善根）",
+              "pali": "Vô tham – Vô sân – Vô si",
+              "meaning": "俱生於美心的善法根本"
+            },
+            {
+              "id": "TERM_SAMMASADDHA_M3",
+              "term": "正信",
+              "pali": "Sammāsaddhā",
+              "meaning": "正確相信業、果與覺悟等真實之事"
+            },
+            {
+              "id": "TERM_ALOBHA_M3",
+              "term": "無貪",
+              "pali": "Alobha",
+              "meaning": "不黏著，如水珠滾過荷葉"
+            },
+            {
+              "id": "TERM_ADOSA_M3",
+              "term": "無瞋",
+              "pali": "Adosa",
+              "meaning": "無憎恨、無傷害，清涼慈愛"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 56,
+              "note": "I.1 TÍN – SADDHA: Saṁ + dah; Tà tín và Chánh tín"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 59,
+              "note": "I.2 TÂM SỞ NIỆM – SATI: thực trạng không quên; đối với ác pháp và thiện pháp"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 65,
+              "note": "I.3 TÂM SỞ TÀM – HIRI: 5 pháp làm phát sanh Tàm"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 66,
+              "note": "I.4 TÂM SỞ QUÝ – OTTAPPA: 4 pháp làm phát sanh Quý; kết Tàm – Quý là hai pháp trắng"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 67,
+              "note": "I.5 TÂM SỞ VÔ THAM – ALOBHA: như nước lăn trên lá sen; một trong 3 nhân thiện"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 69,
+              "note": "I.6 TÂM SỞ VÔ SÂN – ADOSA: không hận; mát mẻ, từ tâm"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 71,
+              "note": "I.7 TÂM SỞ HÀNH XẢ – TATRAMAJJHATTATĀ: tatra + majjhattatā, quân bình"
+            }
+          ]
+        },
+        {
+          "id": "M3_S06",
+          "title": "六對身—心心所（第8至19）",
+          "summary": "輕安、輕快、柔軟、適業、熟練、正直——每對一項作用於心所之身，一項作用於心。",
+          "body": [
+            "“身”（Kāya）在此指受蘊、想蘊、行蘊的心所羣；“心”（Citta）指識蘊即心王。身輕安使其他心所寂靜，並非使肉身寂靜；心輕安使心寂靜。",
+            "身輕安—心輕安（Kāyapassaddhi–Cittapassaddhi，第8–9）：Passaddhi是安靜、寂然、自在，平息躁動及慾望的熱惱；二者對治掉舉。",
+            "身輕快性—心輕快性（Kāyalahutā–Cittalahutā，第10–11）：“laghu”意爲輕與迅速，使受、想、行、識擺脫沉重；與使心及心所沉重遲鈍的昏沉、睡眠相反。",
+            "身柔軟性—心柔軟性（Kāyamudutā–Cittamudutā，第12–13）：“mudu”意爲柔韌、溫和、易調，消除心與心所的剛硬。邪見、我慢、疑三寶及對同梵行者的憤怒會令心剛硬。",
+            "身適業性—心適業性（Kāyakammaññatā–Cittakammaññatā，第14–15）：“kamma + nya + tā”意爲易用、適應，消除身心的不適業性；與貪慾、瞋恨、疑相反，使人易修善法、成就禪那與勝智。",
+            "身熟練性—心熟練性（Kāyapāguññatā–Cittapāguññatā，第16–17）：“pa + guṇ + tā”意爲熟練精純，消除心與心所的軟弱、病態、遲滯；與缺乏信心、自信不足相反。",
+            "身正直性—心正直性（Kāyujjukatā–Cittujjukatā，第18–19）：“uju”意爲正直；Ujukatā是端正無曲。身正直性是受、想、行蘊的正直，心正直性是識蘊之心的正直。",
+            "總結：十九美心所與一切美心共同生起，故稱美遍行心所；其餘六種僅隨時、隨心生起。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAYA_CITTA_M3",
+              "term": "身心雙法",
+              "pali": "Kāya – Citta",
+              "meaning": "Kāya指受、想、行蘊的心所羣；Citta指識蘊的心王"
+            },
+            {
+              "id": "TERM_PASSADDHI_M3",
+              "term": "輕安",
+              "pali": "Passaddhi",
+              "meaning": "安靜寂然自在，對治掉舉"
+            },
+            {
+              "id": "TERM_LAHUTA_M3",
+              "term": "輕快性",
+              "pali": "Lahutā",
+              "meaning": "輕盈靈活，與昏沉、睡眠相反"
+            },
+            {
+              "id": "TERM_MUDUTA_M3",
+              "term": "柔軟性",
+              "pali": "Mudutā",
+              "meaning": "柔韌易調，消除剛硬"
+            },
+            {
+              "id": "TERM_KAMMANNATA_M3",
+              "term": "適業性",
+              "pali": "Kammaññatā",
+              "meaning": "易用適應，與貪、瞋、疑相反"
+            },
+            {
+              "id": "TERM_PAGUNNATA_M3",
+              "term": "熟練性",
+              "pali": "Pāguññatā",
+              "meaning": "熟練精純，消除軟弱"
+            },
+            {
+              "id": "TERM_UJUKATA_M3",
+              "term": "正直性",
+              "pali": "Ujukatā",
+              "meaning": "端正無曲"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 72,
+              "note": "I.8–I.9 TỊNH THÂN – TỊNH TÂM: Kāya là nhóm tâm sở, không phải thân xác; trị phóng dật"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 74,
+              "note": "I.10–I.11 KHINH THÂN – KHINH TÂM: nhẹ nhàng; nghịch nghĩa với Hôn trầm – Thụy miên"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 75,
+              "note": "I.12–I.13 NHU THÂN – NHU TÂM: mudu = mềm dẻo; các pháp làm tâm cứng cỏi"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 76,
+              "note": "I.14–I.15 THÍCH THÂN – THÍCH TÂM: dễ sử dụng; nghịch nghĩa với Tham dục – Sân hận – Hoài nghi"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 77,
+              "note": "I.16–I.17 THUẦN THÂN – THUẦN TÂM; I.18–I.19 CHÁNH THÂN – CHÁNH TÂM: uju = ngay thẳng"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 78,
+              "note": "Tứ ý nghĩa Chánh thân – Chánh tâm; kết: 19 tâm sở đồng phát sanh cùng tất cả tâm sở tịnh hảo"
+            }
+          ]
+        },
+        {
+          "id": "M3_S07",
+          "title": "無量與慧根：悲、隨喜、智慧",
+          "summary": "悲願衆生離苦，隨喜爲他人幸福歡喜；慧根如實洞察諸法實性。",
+          "body": [
+            "Appamaññā意爲不可測量、無限；這兩心所緣取無量衆生，不分別、不限制任何種類。",
+            "悲（Karunā）：“kar + una”表示惻隱悲憫，見其他衆生受苦而令善心震動。其狀態是願衆生離苦，作用是不忍衆生受苦。遠敵是殘暴與憤怒，近敵是無法幫助時生起的憂惱。",
+            "悲通常與舍受俱生，因爲對象是受苦衆生；若不如理作意便生憂受，成爲瞋心。見衆生脫離苦難時，悲才與喜受俱生。",
+            "隨喜（Muditā）：詞根“mud”意爲歡喜、滿意；見他人的美好、善行與幸福而歡喜，作用是不嫉妒，直接敵人是嫉妒。",
+            "悲與隨喜是四無量心（慈、悲、喜、舍）中的兩種；依講義結論，慈即無瞋，舍即中舍性。",
+            "慧根（Paññindriya）：“pa”意爲周遍、完整、正確，“ñā”意爲了解，故Paññā是完整正確的認知。Indriya是根，即在自身領域中的控制能力，如五根：信、精進、念、定、慧。",
+            "智慧的特相是通達、洞徹、穿透，如實了知諸法實性；智慧所至之處，無明即消散。",
+            "聞思修三慧：聞所成慧（suttamayā paññā）由聽聞說法而生；思所成慧（cintāmayā paññā）由自己思考分析而生；修所成慧（bhāvanāmayā paññā）由修習、體驗、禪修而生。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_TAM_TUE_M3",
+              "term": "聞思修三慧",
+              "pali": "Suttamayā – Cintāmayā – Bhāvanāmayā",
+              "meaning": "聞所成慧、思所成慧、修所成慧"
+            },
+            {
+              "id": "TERM_TU_QUYEN_M3",
+              "term": "慧根",
+              "pali": "Paññindriya",
+              "meaning": "如實洞察諸法實性的智慧根力"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84,
+              "note": "III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYA; III.1 TÂM SỞ BI – KARUNĀ: kar + una; tứ ý nghĩa"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 85,
+              "note": "Bi phối hợp với Thọ; kẻ thù trực tiếp – gián tiếp của Bi"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 86,
+              "note": "III.2 Tâm sở Tùy hỷ – MUDITĀ: căn mud; kẻ thù trực tiếp là ganh tỵ"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 87,
+              "note": "Phần kết Vô lượng phần: Bi – Tùy hỷ là 2 trong Tứ Vô lượng tâm; Từ = Vô sân, Xả = Hành xả"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 88,
+              "note": "IV/ TÂM SỞ TUỆ QUYỀN – PAÑÑINDRIYA: pa + ña; indriya; đặc tính trí tuệ; ngũ quyền"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 89,
+              "note": "Phân loại trí; Tam tuệ: Văn – Tư – Tu (suttamayā, cintāmayā, bhāvanāmayā)"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M3_R01",
+          "front": "Sobhana是什麼意思？",
+          "back": "光明、燦爛、美好；“美”兼具清淨、善良、美妙、善巧與正確之義。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R02",
+          "front": "美心所共有多少種？",
+          "back": "25種，分爲四組。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R03",
+          "front": "美遍行心所有多少種？",
+          "back": "19種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R04",
+          "front": "十九種的最初四種是什麼？",
+          "back": "信（Saddhā）、念（Sati）、慚（Hiri）、愧（Ottappa）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R05",
+          "front": "第5、6、7種是什麼？",
+          "back": "無貪（Alobha）、無瞋（Adosa）、中舍性（Tatramajjhattatā）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R06",
+          "front": "六對身—心心所是什麼？",
+          "back": "輕安、輕快、柔軟、適業、熟練、正直，各有Kāya與Citta一項。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R07",
+          "front": "慚、愧分別與什麼相對？",
+          "back": "慚與無慚（Ahirika）相對；愧與無愧（Anottappa）相對。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M3_R08",
+          "front": "離心所（Viratiyo）有哪些？",
+          "back": "正語、正業、正命三種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R09",
+          "front": "Kāyapassaddhi與Cittapassaddhi是什麼？",
+          "back": "身輕安與心輕安，是六對中的第一對。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R10",
+          "front": "最後兩種是什麼？",
+          "back": "身正直性（Kāyujjukatā）與心正直性（Cittujjukatā）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R11",
+          "front": "二十五美心所分哪四組？",
+          "back": "美遍行19 + 離心所3 + 無量2 + 慧根1。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R12",
+          "front": "無量心所有哪些？",
+          "back": "悲（Karunā）與隨喜（Muditā）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_R13",
+          "front": "正語戒除哪些言語？",
+          "back": "妄語、兩舌、惡口、綺語。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "M3_R14",
+          "front": "正業斷除哪三種身惡業？",
+          "back": "殺生、偷盜、欲邪行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_R15",
+          "front": "正命是什麼？",
+          "back": "不以身惡、語惡謀生，正當地維持生活。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_R16",
+          "front": "悲是什麼？",
+          "back": "見衆生苦而善心震動，願衆生離苦。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_R17",
+          "front": "隨喜是什麼？",
+          "back": "爲他人的幸福、成就歡喜而不嫉妒。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_R18",
+          "front": "慧根的特相是什麼？",
+          "back": "通達洞徹諸法實性；智慧所至，無明消散。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 88
+            }
+          ]
+        },
+        {
+          "id": "M3_R19",
+          "front": "六對中的身與心指什麼？",
+          "back": "Kāya是受、想、行蘊的心所羣；Citta是識蘊的心王。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 72
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 78
+            }
+          ]
+        },
+        {
+          "id": "M3_R20",
+          "front": "三善根是什麼？",
+          "back": "無貪、無瞋、無癡，是善法的根本。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 67
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 69
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M3_Q01",
+          "type": "mcq",
+          "question": "美遍行心所有多少種？",
+          "correctAnswer": "19",
+          "distractors": [
+            "25",
+            "14",
+            "7"
+          ],
+          "explanation": "Sobhanasādhāraṇā有19種；美心所全體有25種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q02",
+          "type": "mcq",
+          "question": "美心所全體有多少種？",
+          "correctAnswer": "25種，分四組",
+          "distractors": [
+            "19種，分兩組",
+            "14種，分三組",
+            "52種，分四組"
+          ],
+          "explanation": "Sobhana cetasika有25種，分四組。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q03",
+          "type": "mcq",
+          "question": "Sobhana是什麼意思？",
+          "correctAnswer": "光明、燦爛、美好",
+          "distractors": [
+            "迷惑、黑暗",
+            "與其他者共同",
+            "緊抓、黏著"
+          ],
+          "explanation": "Sobhana意爲光明、燦爛、美好。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q04",
+          "type": "mcq",
+          "question": "十九種之首是什麼？",
+          "correctAnswer": "信（Saddhā）",
+          "distractors": [
+            "念（Sati）",
+            "慚（Hiri）",
+            "無貪（Alobha）"
+          ],
+          "explanation": "次序是信、念、慚、愧。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q05",
+          "type": "mcq",
+          "question": "Tatramajjhattatā是什麼？",
+          "correctAnswer": "中舍性",
+          "distractors": [
+            "無瞋",
+            "心輕安",
+            "念"
+          ],
+          "explanation": "第七種是中舍性。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q06",
+          "type": "mcq",
+          "question": "離心所有多少種？",
+          "correctAnswer": "3",
+          "distractors": [
+            "2",
+            "4",
+            "19"
+          ],
+          "explanation": "正語、正業、正命共三種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q07",
+          "type": "mcq",
+          "question": "哪種不屬於離心所？",
+          "correctAnswer": "正念（Sammāsati）",
+          "distractors": [
+            "正語（Sammāvācā）",
+            "正業（Sammākammanto）",
+            "正命（Sammā-ājīvo）"
+          ],
+          "explanation": "離心所只有正語、正業、正命。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q08",
+          "type": "mcq",
+          "question": "Kāyalahutā與Cittalahutā是哪一對？",
+          "correctAnswer": "身輕快性與心輕快性",
+          "distractors": [
+            "身輕安與心輕安",
+            "身柔軟性與心柔軟性",
+            "身正直性與心正直性"
+          ],
+          "explanation": "第10、11項是身、心輕快性。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q09",
+          "type": "mcq",
+          "question": "有多少對身—心心所？",
+          "correctAnswer": "6對",
+          "distractors": [
+            "3對",
+            "4對",
+            "12對"
+          ],
+          "explanation": "輕安、輕快、柔軟、適業、熟練、正直共六對。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q10",
+          "type": "mcq",
+          "question": "慚與什麼相對？",
+          "correctAnswer": "無慚（Ahirika）",
+          "distractors": [
+            "無愧（Anottappa）",
+            "掉舉（Uddhacca）",
+            "癡（Moha）"
+          ],
+          "explanation": "Hiri與Ahirika相對；Ottappa與Anottappa相對。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 34
+            }
+          ]
+        },
+        {
+          "id": "M3_Q11",
+          "type": "mcq",
+          "question": "無量心所有多少種？",
+          "correctAnswer": "2種——悲與隨喜",
+          "distractors": [
+            "4種——慈悲喜捨",
+            "3種——悲、隨喜、中舍性",
+            "1種——只有悲"
+          ],
+          "explanation": "無量心所爲Karunā與Muditā。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q12",
+          "type": "mcq",
+          "question": "慧根有多少心所？",
+          "correctAnswer": "1",
+          "distractors": [
+            "2",
+            "3",
+            "19"
+          ],
+          "explanation": "慧根只有一種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q13",
+          "type": "mcq",
+          "question": "正語屬於哪一組？",
+          "correctAnswer": "離心所（Viratiyo）",
+          "distractors": [
+            "無量（Appamaññā）",
+            "美遍行（Sobhanasādhāraṇā）",
+            "慧根（Paññindriya）"
+          ],
+          "explanation": "離心所包括正語、正業、正命。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "M3_Q14",
+          "type": "mcq",
+          "question": "正語戒除哪四種言語？",
+          "correctAnswer": "妄語、兩舌、惡口、綺語",
+          "distractors": [
+            "妄語、兩舌、惡口、讚美",
+            "說謊、空許、咒罵、抱怨",
+            "妄語、分享佛法、惡口、沉默"
+          ],
+          "explanation": "即musāvāda、pisuṇāvācā、pharusavācā、samphappalāpa。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "M3_Q15",
+          "type": "mcq",
+          "question": "正業戒除哪三種身惡業？",
+          "correctAnswer": "殺生、偷盜、欲邪行",
+          "distractors": [
+            "殺生、偷盜、飲酒",
+            "妄語、偷盜、殺生",
+            "殺生、邪見、偷盜"
+          ],
+          "explanation": "Sammākammanto戒除三身惡。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_Q16",
+          "type": "mcq",
+          "question": "Sammā-ājīvo是什麼？",
+          "correctAnswer": "正命",
+          "distractors": [
+            "正業",
+            "正語",
+            "正精進"
+          ],
+          "explanation": "Ājīvo是生活；sammā-ājīvo是正當生活。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_Q17",
+          "type": "mcq",
+          "question": "隨喜與悲有何不同？",
+          "correctAnswer": "悲緣受苦衆生；隨喜爲他人幸福歡喜",
+          "distractors": [
+            "悲爲幸福歡喜；隨喜憐憫痛苦",
+            "兩者都緣受苦衆生",
+            "兩者都爲他人幸福歡喜"
+          ],
+          "explanation": "Karunā願衆生離苦；Muditā爲他人幸福歡喜。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_Q18",
+          "type": "mcq",
+          "question": "慧根有什麼特相？",
+          "correctAnswer": "通達穿透，消除無明",
+          "distractors": [
+            "憶持善所緣",
+            "均衡俱生法",
+            "畏懼罪惡"
+          ],
+          "explanation": "智慧所至，無明消散。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 88
+            }
+          ]
+        },
+        {
+          "id": "M3_Q19",
+          "type": "mcq",
+          "question": "輕快性與什麼相反？",
+          "correctAnswer": "昏沉與睡眠",
+          "distractors": [
+            "掉舉與疑",
+            "貪與瞋",
+            "邪見與慢"
+          ],
+          "explanation": "昏沉、睡眠令人沉重遲鈍；輕快性令人輕盈靈活。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 74
+            }
+          ]
+        },
+        {
+          "id": "M3_Q20",
+          "type": "mcq",
+          "question": "三慧是什麼？",
+          "correctAnswer": "聞所成慧、思所成慧、修所成慧",
+          "distractors": [
+            "聞慧、定慧、觀慧",
+            "學慧、行慧、證慧",
+            "初慧、中慧、上慧"
+          ],
+          "explanation": "Suttamayā由聞法，cintāmayā由思考，bhāvanāmayā由修習而生。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 89
+            }
+          ]
+        }
+      ]
     },
     "M5_SOBHANA": {
       "title": "二十四欲界美心",
