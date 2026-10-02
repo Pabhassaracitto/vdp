@@ -2660,9 +2660,1012 @@
       ]
     },
     "M4_AKUSALA": {
-      "title": "十二不善心",
-      "description": "貪根心8、瞋根心2、痴根心2の12不善心。",
-      "translationStatus": "reviewed"
+      "title": "十二不善心（Akusala Citta）",
+      "description": "貪心8・瞋心2・痴心2は苦の原因である。特有の不善心所10と、M2で学ぶ痴分4を合わせて十四不善心所となる。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M4_S01",
+          "title": "121心における不善心の位置",
+          "summary": "欲界心54の内訳は、不善心12、無因心18、欲界浄好心24である。",
+          "body": [
+            "心（Citta）は121心あり、欲界心54、色界心15、無色界心12、出世間心40（広説）に分かれる。",
+            "欲界心54は、不善心12、無因心18（果報心15・唯作心3）、欲界浄好心24の三群からなる。",
+            "不善心12は、貪（Lobha）8、瞋（Dosa）2、痴（Moha）2である。",
+            "心の四義は、特相が所縁を知ること、作用が心所を導くこと、現起が絶えず連続すること、近因が名・色・所縁である。",
+            "心を生じさせる四因は、過去業、所縁縁、心所、依処である。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_CITTA_M4",
+              "term": "心",
+              "pali": "Citta",
+              "meaning": "所縁を知るもの"
+            },
+            {
+              "id": "TERM_AKUSALACITTA",
+              "term": "不善心",
+              "pali": "Akusala citta",
+              "meaning": "12心：貪8＋瞋2＋痴2"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9,
+              "note": "Phân loại TÂM – 121 tâm; Tâm Dục giới 54; tứ ý nghĩa; bốn nhân sanh tâm"
+            }
+          ]
+        },
+        {
+          "id": "M4_S02",
+          "title": "八貪根心（Lobhamūla citta）",
+          "summary": "受（喜・捨）、邪見（相応・不相応）、行（無行・有行）で2×2×2＝8に分ける。",
+          "body": [
+            "貪心とは所縁を欲し執着する心である。Lobhaは語根Lubに由来し、固着、結縛、渇望、愛着を意味する。",
+            "八貪心は、喜俱／捨俱、邪見相応／邪見不相応、無行／有行という三対で分類される。",
+            "第一心の例は『Somanassa-sahagataṃ diṭṭhigatasampayuttaṃ asaṅkhārikaṃ』、すなわち喜俱・邪見相応・無行の貪心である。",
+            "1～4は喜俱、5～8は捨俱。1・2・5・6は邪見相応、3・4・7・8は不相応。1・3・5・7は無行、2・4・6・8は有行である。",
+            "果報の強さは、喜が捨より、無行が有行より、邪見相応が不相応より強い。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_LOBHA_M4",
+              "term": "貪",
+              "pali": "Lobha",
+              "meaning": "所縁に固着し執着すること"
+            },
+            {
+              "id": "TERM_ASANKHARIKA",
+              "term": "無行",
+              "pali": "Asaṅkhārika",
+              "meaning": "勧めや刺激を必要としない"
+            },
+            {
+              "id": "TERM_SASANKHARIKA",
+              "term": "有行",
+              "pali": "Sasaṅkhārika",
+              "meaning": "勧めや刺激を伴う"
+            },
+            {
+              "id": "TERM_DITTHIGATA",
+              "term": "邪見相応",
+              "pali": "Diṭṭhigatasampayutta",
+              "meaning": "邪見と相応すること"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10,
+              "note": "TÂM THAM – LOBHAMŪLA CITTA có 8: danh sách Pāli đầy đủ"
+            },
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 11,
+              "note": "Cho quả khác biệt; cách gom nhóm 8 tâm tham"
+            }
+          ]
+        },
+        {
+          "id": "M4_S03",
+          "title": "二瞋根心（Dosamūla citta）",
+          "summary": "いずれも憂俱・瞋恚相応で、無行か有行かが異なる。",
+          "body": [
+            "瞋心は瞋を根とし、不快、不満、挫折を本質とする。強まれば憎悪、憤怒、悪意となる。",
+            "第一瞋心は『Domanassa-sahagataṃ paṭighasampayuttaṃ asaṅkhārikaṃ』、憂俱・瞋恚相応・無行で、怒りが速やかに生じる。",
+            "第二瞋心は同じだが有行（sasaṅkhārikaṃ）で、より遅く生じる。",
+            "憂受（domanassa）は受蘊に属し、不安、いら立ち、不快の感受である。",
+            "瞋心の四因は、怒りやすい性質、深く考えないこと、学習知識の不足、好ましくない所縁にしばしば会うことである。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DOSA_M4",
+              "term": "瞋",
+              "pali": "Dosa",
+              "meaning": "怒り、不満"
+            },
+            {
+              "id": "TERM_PATIGHA",
+              "term": "瞋恚",
+              "pali": "Paṭigha",
+              "meaning": "怒り、いら立ち、憤慨"
+            },
+            {
+              "id": "TERM_DOMANASSA",
+              "term": "憂受",
+              "pali": "Domanassa",
+              "meaning": "不安で不快な感受"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14,
+              "note": "TÂM SÂN – DOSAMŪLACITTA có 2; 4 nhân sanh tâm sân"
+            }
+          ]
+        },
+        {
+          "id": "M4_S04",
+          "title": "二痴根心（Mohamūla citta）",
+          "summary": "捨俱疑相応心と捨俱掉挙相応心である。",
+          "body": [
+            "第一痴心は『Upekkhā-sahagataṃ vicikicchāsampayuttaṃ』、捨俱疑相応で、ためらいを特相とする。",
+            "疑には通常の疑と、仏・法・僧・三学（戒定慧）・過去・未来・現在・縁起に対する特別な疑がある。",
+            "第二痴心は『Upekkhā-sahagataṃ uddhaccasampayuttaṃ』、捨俱掉挙相応で、心が動揺する。",
+            "痴心の二因は、真実に沿わない非如理作意と、欲漏・有漏・見漏・無明漏を基盤とすることである。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_MOHA_M4",
+              "term": "痴",
+              "pali": "Moha",
+              "meaning": "迷い、錯誤"
+            },
+            {
+              "id": "TERM_VICIKICCHA",
+              "term": "疑",
+              "pali": "Vicikicchā",
+              "meaning": "ためらい、疑う状態"
+            },
+            {
+              "id": "TERM_AYONISO",
+              "term": "非如理作意",
+              "pali": "Ayoniso manasikāra",
+              "meaning": "真実に即さない作意"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14,
+              "note": "TÂM SI – MOHAMŪLA CITTA có 2; 2 nhân sanh tâm si"
+            }
+          ]
+        },
+        {
+          "id": "M4_S05",
+          "title": "十四不善心所――五群",
+          "summary": "痴分4、貪分3、瞋分4、昏沈分2、疑1を、共起関係によってまとめる。",
+          "body": [
+            "Akusala（不善）には、病的で苦を招く、美しくなく汚れている、貪瞋痴に覆われ不巧みである、過失を犯す、苦果を生む、という五義がある。",
+            "十四不善心所は、痴分4（痴・無慚・無愧・掉挙）、貪分3（貪・邪見・慢）、瞋分4（瞋・嫉・慳・悪作）、昏沈分2（惛沈・睡眠）、疑1に分かれる。",
+            "痴分の四心所は十二不善心すべてにあるため、不善遍行心所と呼ばれる。",
+            "貪分は所縁に執着する貪と共起する心所を、瞋分は所縁を排斥する瞋と共起する心所をまとめた群である。",
+            "痴分以外の四群はすべての不善心にあるわけではなく、それぞれに適した心にだけ生じる。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_AKUSALA_NGU_M4",
+              "term": "不善（五義）",
+              "pali": "Akusala",
+              "meaning": "病的、不美、不巧、過失、苦果を生む"
+            },
+            {
+              "id": "TERM_LOBHA_NHOM_M4",
+              "term": "貪分",
+              "pali": "Lobhatuka cetasika",
+              "meaning": "貪と共起する貪・邪見・慢の三法"
+            },
+            {
+              "id": "TERM_DOSA_NHOM_M4",
+              "term": "瞋分",
+              "pali": "Dosatuka cetasika",
+              "meaning": "瞋と共起する瞋・嫉・慳・悪作の四法"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31,
+              "note": "Nhóm 2: TÂM SỞ BẤT THIỆN – AKUSALA CETASIKA (14 tâm); AKUSALA có 5 nghĩa; 5 nhóm: Si phần 4, Tham phần 3, Sân phần 4, Hôn phần 2, Hoài nghi 1"
+            }
+          ]
+        },
+        {
+          "id": "M4_S06",
+          "title": "貪分：貪・邪見・慢",
+          "summary": "貪と共起する三心所。所縁への固着、誤見への執着、比較による高慢である。",
+          "body": [
+            "貪（Lobha）は語根Lubに由来し、固着、結縛、渇望、愛着を意味する。眼耳鼻舌身意を通じ、好ましく魅力的と見なす所縁に執着する。",
+            "貪心所の四義は、所縁への執着を特相とし、心を所縁に付着させることを作用とし、所縁を放さないことを現起とし、束縛する法を好むことを近因とする。",
+            "類義語にはPema、Taṇhā、Rāga、Piya、Kāya、Nandiがある。取（Upādāna）は強い把持、すなわち強化された貪である。",
+            "貪と邪見の結合は誤った見解や迷信への執着である。邪見を離れ慢を伴う貪は、自分のものを執取し、勝・等・劣を比較する。",
+            "邪見（Diṭṭhi）は事実と法の自性に合わない誤った認識である。",
+            "有身見は五蘊ごとに、蘊を我と見る、我の中に蘊を見る、我が蘊を持つ、蘊の中に我を見る、の四種があり、合計二十種である。",
+            "邪見には通常の邪見と特定の邪見がある。特定のものには、すべてを偶然として因果を否定する無因見や、死後は断絶し行為に果報がないとする断見などがある。",
+            "慢（Māna）は自負、自高、自満、また自己と他者を比較して優越・劣等を抱くことである。",
+            "九慢は、優れた者・等しい者・劣った者がそれぞれ自分を勝・等・劣とみなす九通りである。",
+            "慢は出自、家系、健康、若さ、寿命、利益、尊敬、名誉、従者、財産、容姿、学問、弁才、戒、禅定、名声、地位などを縁に生じる。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_LOBHA_DIṬṬHI_M4",
+              "term": "貪",
+              "pali": "Lobha",
+              "meaning": "魅力的な所縁への執着。八貪心すべてにある"
+            },
+            {
+              "id": "TERM_DITTHI_M4",
+              "term": "邪見",
+              "pali": "Diṭṭhi",
+              "meaning": "法の自性を誤って見る。四邪見相応貪心にある"
+            },
+            {
+              "id": "TERM_SAKKAYA_M4",
+              "term": "有身見",
+              "pali": "Sakkāyadiṭṭhi",
+              "meaning": "四種の我見×五蘊＝二十種"
+            },
+            {
+              "id": "TERM_MANA_M4",
+              "term": "慢",
+              "pali": "Māna",
+              "meaning": "勝・等・劣を比較する九慢。四邪見不相応貪心にある"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37,
+              "note": "II.1 TÂM SỞ THAM – LOBHA CETASIKA: căn Lub; tứ ý nghĩa; các từ đồng nghĩa; Tham + Tà kiến / Ly tà + Ngã mạn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39,
+              "note": "II.2 TÂM SỞ TÀ KIẾN – DIṬṬHI CETASIKA: Dis = thấy; thân kiến 20 loại; phân loại tà kiến"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42,
+              "note": "II.3 TÂM SỞ NGÃ MẠN – MĀNA CETASIKA: căn Man; tứ ý nghĩa; 9 sự ỷ hơn–bằng–thua; các pháp kiêu hãnh"
+            }
+          ]
+        },
+        {
+          "id": "M4_S07",
+          "title": "瞋分：瞋・嫉・慳・悪作",
+          "summary": "瞋と共起する、排斥・嫉妬・物惜しみ・後悔の四心所。",
+          "body": [
+            "瞋（Dosa）は不快を意味する語根Duに由来する。心身を熱く粗暴にし、所縁を焼き滅ぼし、悪業と自己・他者への害として現れる。",
+            "瞋心の二因は、自己を第一とする我愛と、自分に属するものを愛する我所愛である。",
+            "この二因を過去・現在・未来について考え、他者が自分、親しい人を害した、または敵を利したという九種の思考が生じる。",
+            "瞋と同類の法には、愁、悲泣、憂、害、悪意、怒、驚愕、恐怖がある。",
+            "嫉（Issā）は他人の成功や優位に耐えられないこと。二瞋心にのみ生じ、憂受と相応する。",
+            "嫉妬は同業・同じ環境・同じ志向の者の間で、富、利益、信仰、名声、供養などをめぐって生じやすい。",
+            "慳（Macchariya）は自分の優れたものを他人に与えず、現さない物惜しみである。",
+            "自分の成功を隠し、所有物を共有せず、他人の布施を妨げ、布施を見たり自ら施した後に惜しむ。",
+            "五慳は住処・親族・利得・容姿名声・法に関する慳である。有害な物や悪事の資金を与えないことは慳ではない。",
+            "悪作（Kukkucca）は誤った行為のために落ち着かず、不安になり、過去を後悔する状態である。",
+            "後悔の二因は、すでに行った悪と行わなかった善。悪作には、すべきでないことをすべきと思う等、罪と無罪を取り違える四種がある。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DOSA_NHOM_SAN_M4",
+              "term": "瞋",
+              "pali": "Dosa",
+              "meaning": "不快と焼灼。二つの憂俱瞋心にある"
+            },
+            {
+              "id": "TERM_ISSA_M4",
+              "term": "嫉",
+              "pali": "Issā",
+              "meaning": "他人の成功への嫉妬。二瞋心にのみ生じる"
+            },
+            {
+              "id": "TERM_MACCHARIYA_M4",
+              "term": "慳",
+              "pali": "Macchariya",
+              "meaning": "五種の物惜しみ。二瞋心にのみ生じる"
+            },
+            {
+              "id": "TERM_KUKKUCCA_M4",
+              "term": "悪作",
+              "pali": "Kukkucca",
+              "meaning": "行った悪・しなかった善への後悔。二瞋心にのみ生じる"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 43,
+              "note": "III.1 TÂM SỞ SÂN – DOSA CETASIKA: căn Du; 2 nhân phát khởi; 3 nhóm 9 suy tư; các pháp cùng họp"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45,
+              "note": "III.2 TÂM SỞ TẬT (GANH TỴ) – ISSĀ CETASIKA: I + su; tứ ý nghĩa; lòng ganh tỵ trong đời; hiện hữu trong 2 tâm Sân"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46,
+              "note": "III.3 TÂM SỞ LẬN – MACCHARIYA CETASIKA: căn Mā + Accha; 5 loại bỏn xẻn; trường hợp không chia sẻ không là bỏn xẻn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 48,
+              "note": "III.4 TÂM SỞ HỐI – KUKKUCCA CETASIKA: Ku = xấu; 2 nhân sanh hối; 4 phân loại"
+            }
+          ]
+        },
+        {
+          "id": "M4_S08",
+          "title": "昏沈分と疑：惛沈・睡眠・疑",
+          "summary": "惛沈と睡眠は心を重く鈍くし、疑は心を決定不能にする。",
+          "body": [
+            "惛沈（Thīna）は暗く沈むこと。語根The（収縮）に由来し、火の前の羽毛のように縮み、弱く怠惰で、心と心所を停滞させる。",
+            "四義は、心の弱さと不活発が特相、精進を捨てることが作用、心の退縮が現起、不巧みな作意が近因であり、精進と反対である。",
+            "睡眠（Middha）は活動不能を意味する語根Middhに由来し、眠気、倦怠、活力の喪失によって心を覆う。",
+            "惛沈と睡眠は常に共生し、四有行貪心と一有行瞋心という五有行不善心にある。相応する心・心所を重く鈍くし、身軽安・心軽安と反対である。",
+            "疑（Vicikicchā）は疑惑、ためらい、決断不能であり、捨俱疑相応痴心にのみある。",
+            "疑には通常と特別の二種がある。特別の疑は、仏・法・僧・三学・過去・未来・現在・縁起という八対象に関する。",
+            "仏への五疑は、一切智の証得、仏光が隠所を照らすこと、阿毘達磨思惟時の六色光、神通による外道調伏、三十二大人相の具足に関する疑である。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_THINA_M4",
+              "term": "惛沈",
+              "pali": "Thīna",
+              "meaning": "火前の羽毛のように縮み停滞する。精進と反対"
+            },
+            {
+              "id": "TERM_MIDDHA_M4",
+              "term": "睡眠",
+              "pali": "Middha",
+              "meaning": "眠気と倦怠で心を覆う"
+            },
+            {
+              "id": "TERM_THINA_MIDDHA_M4",
+              "term": "昏沈分（二）",
+              "pali": "Thīna + Middha",
+              "meaning": "五有行不善心（貪4＋瞋1）に共生する"
+            },
+            {
+              "id": "TERM_VICIKICCHA_M4",
+              "term": "疑",
+              "pali": "Vicikicchā",
+              "meaning": "疑相応痴心のみにあり、法の自性への八疑がある"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 49,
+              "note": "IV.1 TÂM SỞ HÔN TRẦM – THĪNA CETASIKA; IV.2 TÂM SỞ THUỴ MIÊN – MIDDHA CETASIKA: căn The / Middh; tứ ý nghĩa; đối nghịch Tinh tấn"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 52,
+              "note": "V/ TÂM SỞ HOÀI NGHI – VICIKICCHĀ CETASIKA: Vi + kit + cha; phân loại nghi 2; hoài nghi thực tính pháp 8 cách; hoài nghi đức Phật 5 điều"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M4_R01",
+          "front": "不善心はいくつあり、どう分類されるか。",
+          "back": "12心：貪8、瞋2、痴2。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R02",
+          "front": "欲界心はいくつで、どの群からなるか。",
+          "back": "54心：不善12＋無因18＋欲界浄好24。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R03",
+          "front": "心の四義は何か。",
+          "back": "特相：所縁を知る。作用：心所を導く。現起：不断の連続。近因：名・色・所縁。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R04",
+          "front": "心を生じさせる四因は何か。",
+          "back": "過去業、所縁縁、心所、依処。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_R05",
+          "front": "八貪心は何対で分類されるか。",
+          "back": "喜／捨、邪見相応／不相応、無行／有行の三対。2×2×2＝8。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_R06",
+          "front": "Lobhaはどの語根から来るか。",
+          "back": "Lub。固着、結縛、渇望、愛着を意味する。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_R07",
+          "front": "果報の強さではどの貪心が強いか。",
+          "back": "喜は捨より、無行は有行より、邪見相応は不相応より強い。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "M4_R08",
+          "front": "AsaṅkhārikaとSasaṅkhārikaの意味は何か。",
+          "back": "前者は無行、後者は勧めを伴う有行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_R09",
+          "front": "二瞋心の相違は何か。",
+          "back": "両方とも憂俱・瞋恚相応だが、無行（速い）と有行（遅い）が異なる。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R10",
+          "front": "瞋心の四因は何か。",
+          "back": "怒りやすさ、浅い思考、知識不足、好ましくない所縁との頻繁な遭遇。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R11",
+          "front": "二痴心の名称は何か。",
+          "back": "捨俱疑相応痴心と捨俱掉挙相応痴心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R12",
+          "front": "特別な疑は何を疑うか。",
+          "back": "仏・法・僧・三学・過去・未来・現在・縁起。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R13",
+          "front": "痴心の二因は何か。",
+          "back": "非如理作意と、四漏を基盤とすること。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R14",
+          "front": "二痴心はいずれも何受か。",
+          "back": "いずれも捨受俱。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_R15",
+          "front": "貪分の心所は何か。",
+          "back": "貪・邪見・慢の三つ。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "M4_R16",
+          "front": "邪見と慢はどの心にあるか。",
+          "back": "邪見は四邪見相応貪心、慢は四邪見不相応貪心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "M4_R17",
+          "front": "瞋分の心所は何か。",
+          "back": "瞋・嫉・慳・悪作。二つの憂俱瞋心だけに生じる。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 43
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 48
+            }
+          ]
+        },
+        {
+          "id": "M4_R18",
+          "front": "惛沈と睡眠の特相は何か。",
+          "back": "惛沈は収縮・停滞し精進と反対。睡眠は倦怠で心を覆う。両者は五有行不善心にある。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 49
+            }
+          ]
+        },
+        {
+          "id": "M4_R19",
+          "front": "疑はどの心にあるか。",
+          "back": "捨俱疑相応痴心だけにある。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 52
+            }
+          ]
+        },
+        {
+          "id": "M4_R20",
+          "front": "十四不善心所は何群に分かれるか。",
+          "back": "五群：痴分4、貪分3、瞋分4、昏沈分2、疑1。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 31
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M4_Q01",
+          "type": "mcq",
+          "question": "十二不善心はどう分類されるか。",
+          "correctAnswer": "貪8＋瞋2＋痴2",
+          "distractors": [
+            "貪6＋瞋4＋痴2",
+            "貪8＋痴2＋疑2",
+            "貪4＋瞋4＋痴4"
+          ],
+          "explanation": "十二不善心は貪8、瞋2、痴2である。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_Q02",
+          "type": "mcq",
+          "question": "欲界心はいくつか。",
+          "correctAnswer": "54",
+          "distractors": [
+            "12",
+            "24",
+            "121"
+          ],
+          "explanation": "欲界心54は不善12＋無因18＋欲界浄好24。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_Q03",
+          "type": "mcq",
+          "question": "八貪心を分ける三対は何か。",
+          "correctAnswer": "喜／捨―邪見相応／不相応―無行／有行",
+          "distractors": [
+            "善／不善―因／果―内／外",
+            "喜／憂―智相応／不相応―速／遅",
+            "欲界／色界―因／果―無行／有行"
+          ],
+          "explanation": "2×2×2＝8貪心。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_Q04",
+          "type": "mcq",
+          "question": "Asaṅkhārikaṃの意味は何か。",
+          "correctAnswer": "無行――勧めを要しない",
+          "distractors": [
+            "有行――勧めを伴う",
+            "邪見相応",
+            "喜俱"
+          ],
+          "explanation": "Asaṅkhārikaは無行、Sasaṅkhārikaは有行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_Q05",
+          "type": "mcq",
+          "question": "Lobhaはどの語根に由来するか。",
+          "correctAnswer": "Lub――固着する",
+          "distractors": [
+            "Muh――迷う",
+            "Ju――速く走る",
+            "Rup――壊れる"
+          ],
+          "explanation": "lubhatīti lobha、固着するので貪という。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M4_Q06",
+          "type": "mcq",
+          "question": "瞋心は何受か。",
+          "correctAnswer": "憂受（domanassa）",
+          "distractors": [
+            "喜受（somanassa）",
+            "捨受（upekkhā）",
+            "苦受（dukkha）"
+          ],
+          "explanation": "二瞋心はいずれも憂俱・瞋恚相応。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q07",
+          "type": "mcq",
+          "question": "瞋心はいくつか。",
+          "correctAnswer": "2",
+          "distractors": [
+            "1",
+            "4",
+            "8"
+          ],
+          "explanation": "二瞋根心は無行と有行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q08",
+          "type": "mcq",
+          "question": "二痴心は何受か。",
+          "correctAnswer": "捨受（upekkhā）",
+          "distractors": [
+            "憂受",
+            "喜受",
+            "一つは喜、一つは捨"
+          ],
+          "explanation": "両方とも捨俱で、疑相応と掉挙相応。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q09",
+          "type": "mcq",
+          "question": "どの痴心がVicikicchāと相応するか。",
+          "correctAnswer": "捨俱疑相応痴心",
+          "distractors": [
+            "捨俱掉挙相応痴心",
+            "捨俱邪見相応貪心",
+            "憂俱瞋恚相応瞋心"
+          ],
+          "explanation": "捨俱疑相応で、ためらいを特相とする。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q10",
+          "type": "mcq",
+          "question": "痴心を生じる二因は何か。",
+          "correctAnswer": "非如理作意と漏を基盤とすること",
+          "distractors": [
+            "怒りやすさと悪い所縁",
+            "過去業と所縁縁",
+            "無慚と無愧"
+          ],
+          "explanation": "非如理作意と、欲漏・有漏・見漏・無明漏である。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 14
+            }
+          ]
+        },
+        {
+          "id": "M4_Q11",
+          "type": "mcq",
+          "question": "教材では、どの貪心の果報が強いか。",
+          "correctAnswer": "喜俱は捨俱より強い",
+          "distractors": [
+            "捨俱は喜俱より強い",
+            "有行は無行より強い",
+            "邪見不相応は相応より強い"
+          ],
+          "explanation": "喜は捨より、無行は有行より、邪見相応は不相応より強い。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "M4_Q12",
+          "type": "mcq",
+          "question": "心の特相（lakkhaṇa）は何か。",
+          "correctAnswer": "所縁を知る",
+          "distractors": [
+            "所縁を受ける",
+            "所縁を記憶する",
+            "業を作る"
+          ],
+          "explanation": "心の特相は所縁を知ること。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Tam.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M4_Q13",
+          "type": "mcq",
+          "question": "貪分はいくつの心所からなるか。",
+          "correctAnswer": "3――貪・邪見・慢",
+          "distractors": [
+            "4――貪・邪見・慢・嫉",
+            "2――貪・邪見",
+            "1――貪のみ"
+          ],
+          "explanation": "貪分はLobha、Diṭṭhi、Māna。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 37
+            }
+          ]
+        },
+        {
+          "id": "M4_Q14",
+          "type": "mcq",
+          "question": "邪見（Diṭṭhi）はどの心にあるか。",
+          "correctAnswer": "四邪見相応貪心",
+          "distractors": [
+            "四邪見不相応貪心",
+            "二瞋心",
+            "疑相応痴心"
+          ],
+          "explanation": "邪見は四邪見相応貪心にある。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 39
+            }
+          ]
+        },
+        {
+          "id": "M4_Q15",
+          "type": "mcq",
+          "question": "慢（Māna）はどの心にあるか。",
+          "correctAnswer": "四邪見不相応貪心",
+          "distractors": [
+            "四邪見相応貪心",
+            "八貪心すべて",
+            "二瞋心"
+          ],
+          "explanation": "慢は四邪見不相応貪心と相応する。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "M4_Q16",
+          "type": "mcq",
+          "question": "瞋分の心所は何か。",
+          "correctAnswer": "瞋・嫉・慳・悪作",
+          "distractors": [
+            "瞋・嫉・慳・悪作・惛沈",
+            "瞋・疑",
+            "瞋・嫉・慳"
+          ],
+          "explanation": "瞋分はDosa、Issā、Macchariya、Kukkucca。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 43
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 48
+            }
+          ]
+        },
+        {
+          "id": "M4_Q17",
+          "type": "mcq",
+          "question": "嫉（Issā）とは何か。",
+          "correctAnswer": "他人の成功や優位への嫉妬",
+          "distractors": [
+            "自分の優位を隠す物惜しみ",
+            "行為への後悔",
+            "怒りと憤慨"
+          ],
+          "explanation": "嫉は他人が自分より優れることに耐えられないこと。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 45
+            }
+          ]
+        },
+        {
+          "id": "M4_Q18",
+          "type": "mcq",
+          "question": "慳（Macchariya）とは何か。",
+          "correctAnswer": "物惜しみ――自分の良いものを隠し共有しないこと",
+          "distractors": [
+            "他人の成功への嫉妬",
+            "離間語を話すこと",
+            "眠気の状態"
+          ],
+          "explanation": "慳は自分の貴重なものを与えず現さないこと。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 46
+            }
+          ]
+        },
+        {
+          "id": "M4_Q19",
+          "type": "mcq",
+          "question": "惛沈（Thīna）は何と反対か。",
+          "correctAnswer": "精進",
+          "distractors": [
+            "智慧",
+            "念",
+            "信"
+          ],
+          "explanation": "惛沈は精進（vīriya）と反対。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 49
+            }
+          ]
+        },
+        {
+          "id": "M4_Q20",
+          "type": "mcq",
+          "question": "疑（Vicikicchā）はどの心に属するか。",
+          "correctAnswer": "捨俱疑相応痴心",
+          "distractors": [
+            "捨俱掉挙相応痴心",
+            "憂俱瞋恚相応瞋心",
+            "捨俱邪見相応貪心"
+          ],
+          "explanation": "疑は捨俱疑相応痴心だけに相応する。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 52
+            }
+          ]
+        }
+      ]
     },
     "M12_VO_NHAN": {
       "title": "18の無因心（Ahetuka Citta）",
@@ -3095,9 +4098,1026 @@
       ]
     },
     "M3_TINH_HAO_BIEN_HANH": {
-      "title": "美心遍心所（19）",
-      "description": "すべての美心に共通する19の美遍心所。",
-      "translationStatus": "reviewed"
+      "title": "二十五浄善心所（Sobhana Cetasika）",
+      "description": "すべての浄善心にある十九遍一切心所と、離心所3・無量2・慧根1。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M3_S01",
+          "title": "浄善心所のグループ",
+          "summary": "Sobhanaは光り輝く清らかな善を意味し、25心所が四群に分かれる。",
+          "body": [
+            "Sobhanaは光り輝き清らかで善いこと。「浄」は清浄・純粋、「善」は善良・美妙・巧み・正しいことです。",
+            "浄善心所は25種で、四群に分かれます。",
+            "第一群Sobhanasādhāraṇāは浄善遍一切心心所で19種です。",
+            "第二群Viratiyoは離心所（三離）で、正語（Sammāvācā）、正業（Sammākammanto）、正命（Sammā-ājīvo）の3種です。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SOBHANA",
+              "term": "浄善",
+              "pali": "Sobhana",
+              "meaning": "光り輝き清らかで善いこと"
+            },
+            {
+              "id": "TERM_VIRATI",
+              "term": "離心所（三離）",
+              "pali": "Viratiyo",
+              "meaning": "正語・正業・正命の三心所"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55,
+              "note": "Nhóm 3: TÂM SỞ TỊNH HẢO – SOBHANA CETASIKA, có 25 tâm, chia 4 nhóm"
+            }
+          ]
+        },
+        {
+          "id": "M3_S02",
+          "title": "十九の浄善遍一切心心所",
+          "summary": "信・念から慚・愧・無貪・無瞋・中捨性を経て六対の身心心所に至る。",
+          "body": [
+            "1. 信（Saddhā）、2. 念（Sati）、3. 慚（Hiri）、4. 愧（Ottappa）、5. 無貪（Alobha）、6. 無瞋（Adosa）、7. 中捨性（Tatramajjhattatā）。",
+            "8. 身軽安（Kāyapassaddhi）、9. 心軽安（Cittapassaddhi）。",
+            "10. 身軽快性（Kāyalahutā）、11. 心軽快性（Cittalahutā）、12. 身柔軟性（Kāyamudutā）、13. 心柔軟性（Cittamudutā）。",
+            "14. 身適業性（Kāyakammaññatā）、15. 心適業性（Cittakammaññatā）、16. 身熟練性（Kāyapāguññatā）、17. 心熟練性（Cittapāguññatā）。",
+            "18. 身正直性（Kāyujjukatā）、19. 心正直性（Cittujjukatā）。",
+            "第8～19は軽安・軽快・柔軟・適業・熟練・正直という六対の身・心（Kāya–Citta）心所です。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SADDHA_M3",
+              "term": "信",
+              "pali": "Saddhā",
+              "meaning": "清浄な信心"
+            },
+            {
+              "id": "TERM_SATI_M3",
+              "term": "念",
+              "pali": "Sati",
+              "meaning": "善い対象を忘れず保持すること"
+            },
+            {
+              "id": "TERM_HIRI_M3",
+              "term": "慚",
+              "pali": "Hiri",
+              "meaning": "悪を自ら恥じること"
+            },
+            {
+              "id": "TERM_OTTAPPA_M3",
+              "term": "愧",
+              "pali": "Ottappa",
+              "meaning": "悪を恐れること"
+            },
+            {
+              "id": "TERM_TATRAMAJJHATTATA_M3",
+              "term": "中捨性",
+              "pali": "Tatramajjhattatā",
+              "meaning": "倶生法を均衡させること"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55,
+              "note": "I. SOBHANASĀDHĀRAṆĀ – TÂM SỞ TỊNH HẢO BIẾN HÀNH, có 19: danh sách đầy đủ"
+            }
+          ]
+        },
+        {
+          "id": "M3_S03",
+          "title": "残る二群：無量と慧根",
+          "summary": "19 + 3 + 2 + 1 = 25浄善心所。",
+          "body": [
+            "第三群Appamaññāは無量心所で、悲（Karunā）と随喜（Muditā）の2種です。",
+            "第四群Paññindriyaは慧根で、1心所です。",
+            "浄善遍一切19 + 離心所3 + 無量2 + 慧根1 = 25です。",
+            "19種だけがすべての浄善心にある遍一切で、残る三群は場合に応じて生じます。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_APPAMANNA",
+              "term": "無量",
+              "pali": "Appamaññā",
+              "meaning": "悲と随喜の二心所"
+            },
+            {
+              "id": "TERM_KARUNA_M3",
+              "term": "悲",
+              "pali": "Karunā",
+              "meaning": "苦しむ衆生を憐れむこと"
+            },
+            {
+              "id": "TERM_MUDITA_M3",
+              "term": "随喜",
+              "pali": "Muditā",
+              "meaning": "他者の幸福を共に喜ぶこと"
+            },
+            {
+              "id": "TERM_PANNINDRIYA",
+              "term": "慧根",
+              "pali": "Paññindriya",
+              "meaning": "一つの智慧心所"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55,
+              "note": "III. APPAMAÑÑĀ – VÔ LƯỢNG PHẦN, có 2 tâm; IV. PAÑÑINDRIYA – TUỆ QUYỀN, có 1 tâm"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84,
+              "note": "III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYACETASIKA"
+            }
+          ]
+        },
+        {
+          "id": "M3_S04",
+          "title": "離心所：正語・正業・正命",
+          "summary": "Viratiは節制・禁戒・遠離。語・身体行為・生計の悪を防ぐ三心所。",
+          "body": [
+            "Viratiは節制・禁戒・遠離です。離心所（Viratiyo）は正語、正業、正命の3種です。",
+            "正語は妄語（musāvāda）、離間語（pisuṇāvācā）、粗悪語（pharusavācā）、無益な雑談（samphappalāpa）を離れます。",
+            "正業は殺生・偸盗・欲邪行の三身悪業を断ちます。",
+            "正命は殺生・偸盗・虚言などの身悪・口悪で利益を得ず、正しく生活します。",
+            "三離は十九遍一切と違い、持戒や貪りを捨てる大善心など、状況に応じてのみ生じます。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SAMMAVACA_M3",
+              "term": "正語",
+              "pali": "Sammāvācā",
+              "meaning": "四語悪を離れる正しい言葉"
+            },
+            {
+              "id": "TERM_SAMMAKAMMANTA_M3",
+              "term": "正業",
+              "pali": "Sammākammanto",
+              "meaning": "三身悪を離れる正しい行為"
+            },
+            {
+              "id": "TERM_SAMMAAJIVA_M3",
+              "term": "正命",
+              "pali": "Sammā-ājīvo",
+              "meaning": "正しく生活すること"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80,
+              "note": "II/ TÂM SỞ GIỚI PHẦN – VIRATI CETASIKA; II.1 TÂM SỞ CHÁNH NGỮ – SAMMĀVĀCĀ: 4 loại lời nói cần kiêng"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82,
+              "note": "II.2 TÂM SỞ CHÁNH NGHIỆP – SAMMĀKAMMANTĀ; II.3 TÂM SỞ CHÁNH MẠNG – SAMMĀAJJIVĀ; 3 thân ác nghiệp"
+            }
+          ]
+        },
+        {
+          "id": "M3_S05",
+          "title": "初めの七心所",
+          "summary": "十九心所の初めの七つを清浄な信から均衡まで定義する。",
+          "body": [
+            "信（Saddhā）：「Saṁ」は善美、「dah」は確立・安置。心を対象に正しく置き、清めて疑いを除きます。邪信は虚偽への迷信、正信は業・果・世尊の悟りへの正しい信です。",
+            "念（Sati）：語根「sar」は想起。悪法を防ぎ善法を持続させ、身・受・心・法を忘れず明瞭に覚知します。",
+            "慚（Hiri）：身口の罪悪を自ら恥じます。家系、年齢、社会的地位、学識、仏法の五つが慚を生じさせます。",
+            "愧（Ottappa）：身口悪行の危険を見て恐れます。刑罰、悪趣苦、非難、良心の呵責への恐れが愧を生じさせます。",
+            "慚と愧は双生の二白法・世間守護法で悪を防ぎます。慚は無慚、愧は無愧と対立します（M2参照）。",
+            "無貪（Alobha）：蓮葉の水滴のように執着せず、寛大・布施・利他・放捨として現れます。利己・貪着に対立する三善根の一つです。",
+            "無瞋（Adosa）：逆境にも憎まず怒らず、忍耐強く平静で慈しみをもちます。無害・非対立を特徴とする三善根の一つです。",
+            "中捨性（Tatramajjhattatā）：「tatra」はそこ、「majjhattatā」は中間。公平で倶生名法を均衡させ、発展すると捨無量心・捨心解脱・捨覚支になります。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BA_NHAN_THIEN_M3",
+              "term": "無貪・無瞋・無痴（三善根）",
+              "pali": "Vô tham – Vô sân – Vô si",
+              "meaning": "浄善心に倶生する善の根本"
+            },
+            {
+              "id": "TERM_SAMMASADDHA_M3",
+              "term": "正信",
+              "pali": "Sammāsaddhā",
+              "meaning": "業・果・悟りへの正しい信"
+            },
+            {
+              "id": "TERM_ALOBHA_M3",
+              "term": "無貪",
+              "pali": "Alobha",
+              "meaning": "蓮葉の水滴のような非執着"
+            },
+            {
+              "id": "TERM_ADOSA_M3",
+              "term": "無瞋",
+              "pali": "Adosa",
+              "meaning": "憎まず害さない慈しみ"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 56,
+              "note": "I.1 TÍN – SADDHA: Saṁ + dah; Tà tín và Chánh tín"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 59,
+              "note": "I.2 TÂM SỞ NIỆM – SATI: thực trạng không quên; đối với ác pháp và thiện pháp"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 65,
+              "note": "I.3 TÂM SỞ TÀM – HIRI: 5 pháp làm phát sanh Tàm"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 66,
+              "note": "I.4 TÂM SỞ QUÝ – OTTAPPA: 4 pháp làm phát sanh Quý; kết Tàm – Quý là hai pháp trắng"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 67,
+              "note": "I.5 TÂM SỞ VÔ THAM – ALOBHA: như nước lăn trên lá sen; một trong 3 nhân thiện"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 69,
+              "note": "I.6 TÂM SỞ VÔ SÂN – ADOSA: không hận; mát mẻ, từ tâm"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 71,
+              "note": "I.7 TÂM SỞ HÀNH XẢ – TATRAMAJJHATTATĀ: tatra + majjhattatā, quân bình"
+            }
+          ]
+        },
+        {
+          "id": "M3_S06",
+          "title": "六対の身・心心所（第8～19）",
+          "summary": "軽安・軽快・柔軟・適業・熟練・正直の各一対。",
+          "body": [
+            "身（Kāya）は受・想・行蘊の心所群、心（Citta）は識蘊の心王です。身軽安は肉体でなく心所を、心軽安は心を静めます。",
+            "身軽安・心軽安（第8–9）：Passaddhiは静穏・自在で、動揺と欲望の熱を鎮め、掉挙を対治します。",
+            "身軽快性・心軽快性（第10–11）：「laghu」は軽く速いこと。受・想・行・識の重さを除き、昏沈・睡眠と対立します。",
+            "身柔軟性・心柔軟性（第12–13）：「mudu」は柔らかく調えやすいこと。邪見、慢、三宝への疑い、同梵行者への怒りによる硬直を除きます。",
+            "身適業性・心適業性（第14–15）：使いやすく適応する状態で、貪欲・瞋恚・疑と対立し、善法・禅定・勝智を修しやすくします。",
+            "身熟練性・心熟練性（第16–17）：熟達・洗練で、心と心所の弱さ・病・停滞を除き、信や自信の欠如と対立します。",
+            "身正直性・心正直性（第18–19）：「uju」は真っ直ぐ。身は受・想・行蘊、心は識蘊の屈曲なき正直さです。",
+            "十九心所はすべての浄善心と生じるため遍一切と呼ばれ、残る六つは時と心に応じて生じます。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAYA_CITTA_M3",
+              "term": "身・心二法",
+              "pali": "Kāya – Citta",
+              "meaning": "Kāyaは心所群、Cittaは識蘊の心王"
+            },
+            {
+              "id": "TERM_PASSADDHI_M3",
+              "term": "軽安",
+              "pali": "Passaddhi",
+              "meaning": "静穏自在で掉挙を対治"
+            },
+            {
+              "id": "TERM_LAHUTA_M3",
+              "term": "軽快性",
+              "pali": "Lahutā",
+              "meaning": "軽やかで昏沈・睡眠と反対"
+            },
+            {
+              "id": "TERM_MUDUTA_M3",
+              "term": "柔軟性",
+              "pali": "Mudutā",
+              "meaning": "柔らかく硬直を除く"
+            },
+            {
+              "id": "TERM_KAMMANNATA_M3",
+              "term": "適業性",
+              "pali": "Kammaññatā",
+              "meaning": "使いやすく貪・瞋・疑と反対"
+            },
+            {
+              "id": "TERM_PAGUNNATA_M3",
+              "term": "熟練性",
+              "pali": "Pāguññatā",
+              "meaning": "熟達して弱さを除く"
+            },
+            {
+              "id": "TERM_UJUKATA_M3",
+              "term": "正直性",
+              "pali": "Ujukatā",
+              "meaning": "曲がらない正直さ"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 72,
+              "note": "I.8–I.9 TỊNH THÂN – TỊNH TÂM: Kāya là nhóm tâm sở, không phải thân xác; trị phóng dật"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 74,
+              "note": "I.10–I.11 KHINH THÂN – KHINH TÂM: nhẹ nhàng; nghịch nghĩa với Hôn trầm – Thụy miên"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 75,
+              "note": "I.12–I.13 NHU THÂN – NHU TÂM: mudu = mềm dẻo; các pháp làm tâm cứng cỏi"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 76,
+              "note": "I.14–I.15 THÍCH THÂN – THÍCH TÂM: dễ sử dụng; nghịch nghĩa với Tham dục – Sân hận – Hoài nghi"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 77,
+              "note": "I.16–I.17 THUẦN THÂN – THUẦN TÂM; I.18–I.19 CHÁNH THÂN – CHÁNH TÂM: uju = ngay thẳng"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 78,
+              "note": "Tứ ý nghĩa Chánh thân – Chánh tâm; kết: 19 tâm sở đồng phát sanh cùng tất cả tâm sở tịnh hảo"
+            }
+          ]
+        },
+        {
+          "id": "M3_S07",
+          "title": "無量と慧根：悲・随喜・智慧",
+          "summary": "悲は離苦を願い、随喜は幸福を喜び、慧根は実性を洞察する。",
+          "body": [
+            "Appamaññāは計量不能・無限で、二心所は区別なく無量の衆生を対象とします。",
+            "悲（Karunā）は苦しむ衆生を見て善心を震わせ、離苦を願います。遠敵は残酷と怒り、近敵は助けられないときの悲嘆です。",
+            "悲は通常、苦しむ衆生を対象として捨受と倶生します。如理作意しなければ憂受・瞋心となり、離苦を見たときのみ喜受と倶生します。",
+            "随喜（Muditā）：語根「mud」は喜び。他者の美点・善・幸福を喜び、嫉妬しません。直接の敵は嫉妬です。",
+            "悲と随喜は四無量心の二つで、慈は無瞋、捨は中捨性に当たります。",
+            "慧根（Paññindriya）：「pa」は遍く完全で正しいこと、「ñā」は知ること。Paññāは正しい理解、Indriyaは自己領域を制御する根です（信・精進・念・定・慧）。",
+            "智慧は諸法の実性をありのままに通達・洞察します。智慧が至るところ無明は消えます。",
+            "聞所成慧は聞法、思所成慧は考察、修所成慧は修習・体験・瞑想によって生じます。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_TAM_TUE_M3",
+              "term": "聞思修三慧",
+              "pali": "Suttamayā – Cintāmayā – Bhāvanāmayā",
+              "meaning": "聞所成慧・思所成慧・修所成慧"
+            },
+            {
+              "id": "TERM_TU_QUYEN_M3",
+              "term": "慧根",
+              "pali": "Paññindriya",
+              "meaning": "諸法の実性を洞察する智慧の能力"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84,
+              "note": "III/ TÂM SỞ VÔ LƯỢNG PHẦN – APPAMAÑÑĀYA; III.1 TÂM SỞ BI – KARUNĀ: kar + una; tứ ý nghĩa"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 85,
+              "note": "Bi phối hợp với Thọ; kẻ thù trực tiếp – gián tiếp của Bi"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 86,
+              "note": "III.2 Tâm sở Tùy hỷ – MUDITĀ: căn mud; kẻ thù trực tiếp là ganh tỵ"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 87,
+              "note": "Phần kết Vô lượng phần: Bi – Tùy hỷ là 2 trong Tứ Vô lượng tâm; Từ = Vô sân, Xả = Hành xả"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 88,
+              "note": "IV/ TÂM SỞ TUỆ QUYỀN – PAÑÑINDRIYA: pa + ña; indriya; đặc tính trí tuệ; ngũ quyền"
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 89,
+              "note": "Phân loại trí; Tam tuệ: Văn – Tư – Tu (suttamayā, cintāmayā, bhāvanāmayā)"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M3_R01",
+          "front": "Sobhanaとは？",
+          "back": "光り輝き清らかで善いこと。浄は清浄、善は善良・巧み・正しいことです。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R02",
+          "front": "浄善心所は何種？",
+          "back": "25種、四群です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R03",
+          "front": "浄善遍一切心心所は何種？",
+          "back": "19種です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R04",
+          "front": "初めの四つは？",
+          "back": "信（Saddhā）、念（Sati）、慚（Hiri）、愧（Ottappa）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R05",
+          "front": "第5・6・7は？",
+          "back": "無貪（Alobha）、無瞋（Adosa）、中捨性（Tatramajjhattatā）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R06",
+          "front": "六対は？",
+          "back": "軽安・軽快・柔軟・適業・熟練・正直の身・心各一対。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R07",
+          "front": "慚と愧は何と対立する？",
+          "back": "慚は無慚、愧は無愧と対立します。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M3_R08",
+          "front": "離心所は？",
+          "back": "正語・正業・正命の3種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R09",
+          "front": "KāyapassaddhiとCittapassaddhiは？",
+          "back": "身軽安と心軽安。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R10",
+          "front": "最後の二つは？",
+          "back": "身正直性と心正直性。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R11",
+          "front": "四群は？",
+          "back": "遍一切19 + 離3 + 無量2 + 慧根1。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_R12",
+          "front": "無量心所は？",
+          "back": "悲（Karunā）と随喜（Muditā）。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_R13",
+          "front": "正語が離れる言葉は？",
+          "back": "妄語・離間語・粗悪語・無益な雑談。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "M3_R14",
+          "front": "正業が断つ身悪は？",
+          "back": "殺生・偸盗・欲邪行。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_R15",
+          "front": "正命とは？",
+          "back": "身悪・口悪によらず正しく生活すること。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_R16",
+          "front": "悲とは？",
+          "back": "衆生の苦に心を動かし離苦を願うこと。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_R17",
+          "front": "随喜とは？",
+          "back": "他者の幸福・成功を嫉妬せず喜ぶこと。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_R18",
+          "front": "慧根の特徴は？",
+          "back": "諸法の実性を洞察し無明を消すこと。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 88
+            }
+          ]
+        },
+        {
+          "id": "M3_R19",
+          "front": "身と心は何を指す？",
+          "back": "Kāyaは受・想・行蘊の心所群、Cittaは識蘊の心王。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 72
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 78
+            }
+          ]
+        },
+        {
+          "id": "M3_R20",
+          "front": "三善根は？",
+          "back": "無貪・無瞋・無痴。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 67
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 69
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M3_Q01",
+          "type": "mcq",
+          "question": "浄善遍一切心心所は何種？",
+          "correctAnswer": "19",
+          "distractors": [
+            "25",
+            "14",
+            "7"
+          ],
+          "explanation": "遍一切は19種、全体は25種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q02",
+          "type": "mcq",
+          "question": "全体は何種？",
+          "correctAnswer": "25種、四群",
+          "distractors": [
+            "19種、二群",
+            "14種、三群",
+            "52種、四群"
+          ],
+          "explanation": "25種、四群です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q03",
+          "type": "mcq",
+          "question": "Sobhanaの意味は？",
+          "correctAnswer": "光り輝き清らかで善い",
+          "distractors": [
+            "迷い暗い",
+            "他と共通",
+            "固く執着"
+          ],
+          "explanation": "光明・清浄・善を意味します。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q04",
+          "type": "mcq",
+          "question": "最初の心所は？",
+          "correctAnswer": "信（Saddhā）",
+          "distractors": [
+            "念（Sati）",
+            "慚（Hiri）",
+            "無貪（Alobha）"
+          ],
+          "explanation": "信、念、慚、愧の順です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q05",
+          "type": "mcq",
+          "question": "Tatramajjhattatāは？",
+          "correctAnswer": "中捨性",
+          "distractors": [
+            "無瞋",
+            "心軽安",
+            "念"
+          ],
+          "explanation": "第七は中捨性です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q06",
+          "type": "mcq",
+          "question": "離心所は何種？",
+          "correctAnswer": "3",
+          "distractors": [
+            "2",
+            "4",
+            "19"
+          ],
+          "explanation": "正語・正業・正命の3種。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q07",
+          "type": "mcq",
+          "question": "離心所でないものは？",
+          "correctAnswer": "正念（Sammāsati）",
+          "distractors": [
+            "正語（Sammāvācā）",
+            "正業（Sammākammanto）",
+            "正命（Sammā-ājīvo）"
+          ],
+          "explanation": "三離は正語・正業・正命。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q08",
+          "type": "mcq",
+          "question": "KāyalahutāとCittalahutāは？",
+          "correctAnswer": "身軽快性と心軽快性",
+          "distractors": [
+            "身軽安と心軽安",
+            "身柔軟性と心柔軟性",
+            "身正直性と心正直性"
+          ],
+          "explanation": "第10・11の軽快性です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q09",
+          "type": "mcq",
+          "question": "身心の対はいくつ？",
+          "correctAnswer": "6対",
+          "distractors": [
+            "3対",
+            "4対",
+            "12対"
+          ],
+          "explanation": "軽安・軽快・柔軟・適業・熟練・正直。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q10",
+          "type": "mcq",
+          "question": "慚は何と対立？",
+          "correctAnswer": "無慚（Ahirika）",
+          "distractors": [
+            "無愧（Anottappa）",
+            "掉挙（Uddhacca）",
+            "痴（Moha）"
+          ],
+          "explanation": "HiriとAhirikaが対立します。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 34
+            }
+          ]
+        },
+        {
+          "id": "M3_Q11",
+          "type": "mcq",
+          "question": "無量心所は何種？",
+          "correctAnswer": "2種、悲と随喜",
+          "distractors": [
+            "4種、慈悲喜捨",
+            "3種、悲・随喜・中捨性",
+            "1種、悲のみ"
+          ],
+          "explanation": "KarunāとMuditāです。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q12",
+          "type": "mcq",
+          "question": "慧根は何心所？",
+          "correctAnswer": "1",
+          "distractors": [
+            "2",
+            "3",
+            "19"
+          ],
+          "explanation": "慧根は一心所。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "M3_Q13",
+          "type": "mcq",
+          "question": "正語はどの群？",
+          "correctAnswer": "離心所（Viratiyo）",
+          "distractors": [
+            "無量（Appamaññā）",
+            "遍一切（Sobhanasādhāraṇā）",
+            "慧根（Paññindriya）"
+          ],
+          "explanation": "離心所です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 55
+            },
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "M3_Q14",
+          "type": "mcq",
+          "question": "正語が離れる四語は？",
+          "correctAnswer": "妄語・離間語・粗悪語・無益な雑談",
+          "distractors": [
+            "妄語・離間語・粗悪語・称賛",
+            "虚言・空約束・罵倒・嘆き",
+            "妄語・法話・粗悪語・沈黙"
+          ],
+          "explanation": "四つの語悪です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "M3_Q15",
+          "type": "mcq",
+          "question": "正業が離れる三身悪は？",
+          "correctAnswer": "殺生・偸盗・欲邪行",
+          "distractors": [
+            "殺生・偸盗・飲酒",
+            "妄語・偸盗・殺生",
+            "殺生・邪見・偸盗"
+          ],
+          "explanation": "三身悪を断ちます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_Q16",
+          "type": "mcq",
+          "question": "Sammā-ājīvoは？",
+          "correctAnswer": "正命",
+          "distractors": [
+            "正業",
+            "正語",
+            "正精進"
+          ],
+          "explanation": "正しい生計です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 82
+            }
+          ]
+        },
+        {
+          "id": "M3_Q17",
+          "type": "mcq",
+          "question": "随喜と悲の違いは？",
+          "correctAnswer": "悲は苦へ、随喜は他者の幸福へ向かう",
+          "distractors": [
+            "悲は幸福へ、随喜は苦へ向かう",
+            "両方とも苦へ向かう",
+            "両方とも幸福を喜ぶ"
+          ],
+          "explanation": "悲は離苦を願い、随喜は幸福を喜びます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 84
+            }
+          ]
+        },
+        {
+          "id": "M3_Q18",
+          "type": "mcq",
+          "question": "慧根の特徴は？",
+          "correctAnswer": "洞察し無明を除く",
+          "distractors": [
+            "善対象を記憶",
+            "倶生法を均衡",
+            "罪を恐れる"
+          ],
+          "explanation": "智慧が至ると無明が消えます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 88
+            }
+          ]
+        },
+        {
+          "id": "M3_Q19",
+          "type": "mcq",
+          "question": "軽快性は何と反対？",
+          "correctAnswer": "昏沈と睡眠",
+          "distractors": [
+            "掉挙と疑",
+            "貪と瞋",
+            "邪見と慢"
+          ],
+          "explanation": "昏沈・睡眠は重くし、軽快性は軽くします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 74
+            }
+          ]
+        },
+        {
+          "id": "M3_Q20",
+          "type": "mcq",
+          "question": "三慧は？",
+          "correctAnswer": "聞所成慧・思所成慧・修所成慧",
+          "distractors": [
+            "聞慧・定慧・観慧",
+            "学慧・行慧・証慧",
+            "初慧・中慧・上慧"
+          ],
+          "explanation": "聞法・思考・修習から生じます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-TamSo.pdf",
+              "page": 89
+            }
+          ]
+        }
+      ]
     },
     "M5_SOBHANA": {
       "title": "欲界浄心（Sobhaṇa Kāmāvacara）",
@@ -5459,14 +7479,1908 @@
       ]
     },
     "M6_NGHIEP": {
-      "title": "業の分別",
-      "description": "思心所と16種の業の分類と果報の法則。",
-      "translationStatus": "reviewed"
+      "title": "業 — Kamma",
+      "description": "業の定義、四つの分類群（十六種）、および業と心との関係を学ぶ。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M6_S01",
+          "title": "業とは何か",
+          "summary": "業とは意志を伴う行為であり、その勝義法は思心所（Cetanā）である。",
+          "body": [
+            "Kamma（業）とは行為、すなわち意志的な造作を意味します。業の勝義法は思心所（Cetanā）、つまり意図して造作する働きです。",
+            "仏陀は「Cetanāhaṃ, bhikkhave, kammaṃ vadāmi」——「比丘たちよ、私は思を業であると説く」と教えられました。",
+            "業は身・口・意の三門を通して生じます。そのうち意業が最も重要です。身と口は、いずれも心によって動かされるからです。",
+            "業を生起させる六因は、貪・瞋・痴の三不善因と、無貪・無瞋・無痴の三善因です。資料には「Lobho nidānaṃ kammānaṃ samudayāya」——貪は諸業を生じさせる原因である、とあります。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMMA",
+              "term": "業",
+              "pali": "Kamma",
+              "meaning": "意志を伴う行為、意志的な造作"
+            },
+            {
+              "id": "TERM_CETANA",
+              "term": "思",
+              "pali": "Cetanā",
+              "meaning": "意志を働かせる心所——業の勝義法"
+            },
+            {
+              "id": "TERM_KAYAKAMMA",
+              "term": "身業",
+              "pali": "Kāyakamma",
+              "meaning": "身門を通して造られる業"
+            },
+            {
+              "id": "TERM_VACIKAMMA",
+              "term": "口業",
+              "pali": "Vacīkamma",
+              "meaning": "口門を通して造られる業"
+            },
+            {
+              "id": "TERM_MANOKAMMA",
+              "term": "意業",
+              "pali": "Manokamma",
+              "meaning": "意門を通して造られる業——最も重要"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "KAMMA – NGHIỆP: định nghĩa, Cetanā, 6 nhân, Ý nghiệp tối trọng"
+            }
+          ]
+        },
+        {
+          "id": "M6_S02",
+          "title": "業の四分類——Kammacatukka",
+          "summary": "十六種の業を、作用・成熟の優先順位・成熟時期・成熟する領域の四群に分ける。",
+          "body": [
+            "Kammacatukkaは業を四群に分け、各群に四種、合計十六種とします。",
+            "第一群——作用による分類（kiccavasena）：生産業、支助業、障害業、毀壊業。",
+            "第二群——力または成熟の優先順位による分類（pākadānapariyāyena）：重業、臨死業、習熟業、既作業。",
+            "第三群——成熟時期による分類（pākakālavasena）：順現法受業、順次生受業、順後受業、既有業（無効業）。",
+            "第四群——成熟する場所・領域による分類（pākaṭṭhānavasena）：不善業、欲界善業、色界善業、無色界善業。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMMACATUKKA",
+              "term": "四種業",
+              "pali": "Kammacatukka",
+              "meaning": "十六種の業を四つの群に分類したもの"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1,
+              "note": "SƠ ĐỒ NGHIỆP: 16 loại phân thành 4 nhóm"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2,
+              "note": "Kammacatuka — bốn cách phân loại kèm Pāli"
+            }
+          ]
+        },
+        {
+          "id": "M6_S03",
+          "title": "第一群——業の作用",
+          "summary": "生産・支助・障害・毀壊という、生命に対する業の四作用。",
+          "body": [
+            "生産業（Janakakamma）：結生時に名蘊と色蘊を生じさせ、異熟心、すなわち結生識（Paṭisandhi viññāṇa）を生起させる業です。",
+            "支助業（Upatthambhakakamma）：生産業を助け、養い、支えて諸蘊を相続させる業です。生産業と同じ善または不善の性質を持ち、死心が生じるまで存続します。",
+            "障害業（Upapīḷakakamma）：生産業を妨げてその力を弱め、成熟を遅らせる業です。障害業の性質は常に生産業と反対です。資料には、色界と無色界には障害業がないと明記されています。",
+            "毀壊業（Upaghātakakamma）：他の業、または他の業の果を断ち切る業です。毀壊業は障害業より強く、障害業が妨げるだけなのに対し、生産業そのものを滅ぼします。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JANAKA",
+              "term": "生産業",
+              "pali": "Janakakamma",
+              "meaning": "結生の果を生じさせる業"
+            },
+            {
+              "id": "TERM_UPATTHAMBHAKA",
+              "term": "支助業",
+              "pali": "Upatthambhakakamma",
+              "meaning": "他の業を助け、養う業"
+            },
+            {
+              "id": "TERM_UPAPILAKA",
+              "term": "障害業",
+              "pali": "Upapīḷakakamma",
+              "meaning": "他の業を妨げ、弱める業"
+            },
+            {
+              "id": "TERM_UPAGHATAKA",
+              "term": "毀壊業",
+              "pali": "Upaghātakakamma",
+              "meaning": "他の業を断ち切り、滅ぼす業"
+            },
+            {
+              "id": "TERM_PATISANDHI",
+              "term": "結生識",
+              "pali": "Paṭisandhi viññāṇa",
+              "meaning": "新しい生を結びつける心識"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "Sanh nghiệp — Janakakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 4,
+              "note": "Trì nghiệp — Upatthambhakakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5,
+              "note": "Chướng nghiệp và Đoạn nghiệp"
+            }
+          ]
+        },
+        {
+          "id": "M6_S04",
+          "title": "第二群——力と成熟の優先順位",
+          "summary": "重業が最初に成熟し、次いで臨死業、習熟業、最後に既作業が成熟する。",
+          "body": [
+            "重業（Garukakamma）：極めて重く、必ず果をもたらし、他の業によって妨げられない業です。不善では五逆罪（母殺し、父殺し、阿羅漢殺し、破和合僧、出仏身血）と決定邪見、善では色界禅と無色界禅に属する九つの大善心です。",
+            "資料によれば、不善の重業は、決定邪見が最も強く、次いで破和合僧、出仏身血、そして父母の戒徳に応じて父殺しまたは母殺しの順です。",
+            "臨死業（Āsannakamma）：死の直前に生じる善業または不善業で、一生の最後に働く心路となり、次の生の条件となります。日頃善を行う人が臨終に悪を思い出して悪趣に生まれたり、その逆が起きたりすることもありますが、過去に造った業が失われるわけではありません。",
+            "習熟業（Āciṇṇakamma）：善または不善の行為を繰り返して習慣となり、その人の生き方の傾向を形づくる業です。重業がなく、臨終時に日頃の行為を思い出すと、この業が臨死業となります。",
+            "既作業（Kaṭattākamma）：以上の三種以外の軽い行為を蓄積した業で、通常は果をもたらしません。重業や習熟業が成熟しない場合にのみ果をもたらします。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_GARUKA",
+              "term": "重業",
+              "pali": "Garukakamma",
+              "meaning": "重く、必ず果をもたらす業"
+            },
+            {
+              "id": "TERM_ANANTARIYA",
+              "term": "無間業 (五逆罪)",
+              "pali": "Ānantariyakamma",
+              "meaning": "五つの逆重罪"
+            },
+            {
+              "id": "TERM_ASANNA",
+              "term": "臨死業",
+              "pali": "Āsannakamma",
+              "meaning": "臨終時に生じる業"
+            },
+            {
+              "id": "TERM_ACINNA",
+              "term": "習熟業",
+              "pali": "Āciṇṇakamma",
+              "meaning": "習慣的・反復的な行為による業"
+            },
+            {
+              "id": "TERM_KATATTA",
+              "term": "既作業",
+              "pali": "Kaṭattākamma",
+              "meaning": "軽微な行為が蓄積した業"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6,
+              "note": "Trọng nghiệp — Garukakamma, Ngũ nghịch đại tội"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7,
+              "note": "Tà kiến nhất định, Trọng nghiệp thiện"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 8,
+              "note": "Cận tử nghiệp và Thường nghiệp"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 9,
+              "note": "Khinh thiểu nghiệp — Kaṭattākamma"
+            }
+          ]
+        },
+        {
+          "id": "M6_S05",
+          "title": "第三群——成熟時期による業",
+          "summary": "七つの速行刹那を基準として、成熟時期により業を四種に分ける。",
+          "body": [
+            "異熟時業（Pākakālakamma）は、心路における七つの速行（Javana）刹那を基準に定められます。",
+            "第一速行刹那は最も弱く（最初に生じ、同種の刹那の支えがないため）、現世でのみ果をもたらす順現法受業（Diṭṭhadhammavedanīyakamma）となります。現世で成熟しなければ既有業（無効業）になります。",
+            "第七速行刹那は二番目に弱く（滅に近いため）、次の生で果をもたらす順次生受業（Upapajjavedanīyakamma）となります。第二生の終わりまでに果をもたらさなければ既有業になります。",
+            "第二から第六までの五刹那は、第三生以後、涅槃に至るまで時期を定めずに果をもたらす順後受業（Aparāpariyavedanīyakamma）となります。特に第四刹那は最盛期にあるため最も強力です。",
+            "既有業（無効業、Ahosikamma）とは、すでに造られながら果をもたらさない業です。資料は、順後受業はまだ果を与えていなければ通常は消滅しないと強調します——「Aparāparavedanīyaṃ pana vipākaṃ adatvā na nassati」。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JAVANA",
+              "term": "速行",
+              "pali": "Javana",
+              "meaning": "所縁を処理する七刹那であり、業の種子が蓄えられる場"
+            },
+            {
+              "id": "TERM_DITTHADHAMMA",
+              "term": "順現法受業",
+              "pali": "Diṭṭhadhammavedanīyakamma",
+              "meaning": "現世で直ちに果をもたらす業"
+            },
+            {
+              "id": "TERM_UPAPAJJA",
+              "term": "順次生受業",
+              "pali": "Upapajjavedanīyakamma",
+              "meaning": "次の生で果をもたらす業"
+            },
+            {
+              "id": "TERM_APARAPARIYA",
+              "term": "順後受業",
+              "pali": "Aparāpariyavedanīyakamma",
+              "meaning": "第三生以後に果をもたらす業"
+            },
+            {
+              "id": "TERM_AHOSI",
+              "term": "既有業 (無効業)",
+              "pali": "Ahosikamma",
+              "meaning": "果をもたらす機会を失った業"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10,
+              "note": "Nghiệp thời — Pākakālakamma, 7 sát na Javana, Hiện báo nghiệp"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 11,
+              "note": "Sanh báo nghiệp — Upapajjavedanīyakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 12,
+              "note": "Hậu báo nghiệp — Aparāpariyavedanīyakamma"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 13,
+              "note": "Vô hiệu nghiệp — Ahosikamma"
+            }
+          ]
+        },
+        {
+          "id": "M6_S06",
+          "title": "第四群——成熟する領域",
+          "summary": "不善業、欲界善業、色界善業、無色界善業。",
+          "body": [
+            "不善業は欲界に属し、十二不善心に相応する思心所をその法とします。掉挙相応心を除き、不善業は悪趣への結生をもたらしますが、一生の間には十二不善心すべてが果を生じさせます。",
+            "欲界善業は、八つの欲界大善心に相応する思心所をその法とし、欲界善趣への結生をもたらします。",
+            "色界善業は純粋な意業であり、禅修行によって生じ、禅支に従って五段階に分かれます。",
+            "無色界善業も禅修行による意業であり、禅の所縁に従って四段階に分かれます。",
+            "資料は欲界の十福業事も挙げます。布施、持戒、修習、尊者への礼敬、奉仕、功徳の回向、功徳への随喜、聞法、説法、そして見解を正すことです。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KAMAVACARA_K",
+              "term": "欲界善業",
+              "pali": "Kāmāvacarakusala",
+              "meaning": "八大善心と思心所"
+            },
+            {
+              "id": "TERM_RUPAVACARA_K",
+              "term": "色界善業",
+              "pali": "Rūpāvacarakusala",
+              "meaning": "色界禅による意業、五段階"
+            },
+            {
+              "id": "TERM_ARUPAVACARA_K",
+              "term": "無色界善業",
+              "pali": "Arūpāvacarakusala",
+              "meaning": "無色界禅による意業、四段階"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3,
+              "note": "Nghiệp Thiện Dục giới: ba môn; Bố thí, Trì giới, Hành thiền"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 4,
+              "note": "Nghiệp Thiện Sắc giới/Vô sắc giới; 10 việc thiện"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14,
+              "note": "Lãnh vực nghiệp — Nghiệp Bất thiện thuộc Dục giới"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 15,
+              "note": "Nghiệp Thiện thuộc Dục giới"
+            }
+          ]
+        },
+        {
+          "id": "M6_S07",
+          "title": "門による分類：身・口・意",
+          "summary": "十不善業と十善業を身・口・意の三門に分ける。",
+          "body": [
+            "身門の不善業は三つです。殺生（Pāṇātipāta）、不与取（Adinnādāna）、欲邪行（Kāmesumicchācāra）です。",
+            "口門の不善業は四つです。妄語（Musāvāda）、両舌（Pisuṇavācā）、悪口（Pharusavācā）、綺語・無益語（Samphappalāpa）です。",
+            "意門の不善業は三つです。貪欲（Abhijjhā）、瞋恚（Byāpāda）、邪見（Micchādiṭṭhi）です。これらは身や口を必要とせず、心そのものを通して行われる精神的行為です。",
+            "根によれば、殺生・悪口・瞋恚は瞋根から生じ、欲邪行・貪欲・邪見は貪根から生じます。残る四業はいずれの根からも生じ得ます。",
+            "善業では、善身業は上記の三身悪業を離れること（正業・正命の心所による）、善語業は四悪語を離れること（正語・正命による）です。善意業には不貪欲（Anabhijjhā）、不瞋恚（Abyāpāda）、正見（Sammādiṭṭhi）があります。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PANATIPATA",
+              "term": "殺生",
+              "pali": "Pāṇātipāta",
+              "meaning": "第一の身門不善業"
+            },
+            {
+              "id": "TERM_MUSAVADA",
+              "term": "妄語",
+              "pali": "Musāvāda",
+              "meaning": "第一の口門不善業"
+            },
+            {
+              "id": "TERM_ABHIJJHA",
+              "term": "貪欲",
+              "pali": "Abhijjhā",
+              "meaning": "意門の不善業"
+            },
+            {
+              "id": "TERM_SAMMADITTHI",
+              "term": "正見",
+              "pali": "Sammādiṭṭhi",
+              "meaning": "善意業——正しい見解"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2,
+              "note": "Thân nghiệp — kāyakamma"
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3,
+              "note": "Khẩu nghiệp, Ý nghiệp và các căn"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14,
+              "note": "Bất thiện nghiệp theo Môn"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 15,
+              "note": "Thiện nghiệp theo Môn"
+            }
+          ]
+        },
+        {
+          "id": "M6_S08",
+          "title": "業と心の関係",
+          "summary": "どの心がどの業を造り、どの結生異熟心を生じさせるかを示す。",
+          "body": [
+            "生産業を造る因となる心は二十八です。十一不善心（十二不善心から、結生果を生じない捨倶掉挙相応痴根心を除く）、八欲界大善心、五色界善心、四無色界善心です。",
+            "結生の働きをする異熟心は十九です。二つの捨倶無因推度心（善異熟と不善異熟）、八欲界大異熟心、五色界異熟心、四無色界異熟心です。",
+            "十一不善心にある思心所は、捨倶不善異熟無因推度心を生じさせ、悪趣の無因者（畜生・餓鬼・阿修羅・地獄の衆生）として結生させます。",
+            "智不相応の四欲界善心は、思が不十分なら捨倶善異熟無因推度心を生じさせ、善趣の無因者として結生させます。思が十分なら二因者となります。智相応の四欲界善心で思が十分なら、三因者として結生します。",
+            "業は色法も生じさせます。業生色は十八あり、八不離色、五浄色、一空界、一命根色、一心所依処色、二性根色から成ります。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_TIHETUKA",
+              "term": "三因者",
+              "pali": "Tihetuka",
+              "meaning": "無貪・無瞋・無痴の三因で結生する者"
+            },
+            {
+              "id": "TERM_DVIHETUKA",
+              "term": "二因者",
+              "pali": "Dvihetuka",
+              "meaning": "無痴を欠く二因で結生する者"
+            },
+            {
+              "id": "TERM_KAMMAJA_RUPA",
+              "term": "業生色",
+              "pali": "Kammaja-rūpa",
+              "meaning": "業によって生じる十八の色法"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2,
+              "note": "Chi pháp nhân Sanh nghiệp: 28 tâm; tâm quả tục sinh 19"
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 3,
+              "note": "Tư tâm sở dẫn tái sanh; Nghiệp làm cho Sắc sanh khởi — 18 sắc"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M6_R01",
+          "front": "業の勝義法は何ですか？",
+          "back": "思心所（Cetanā）、すなわち意志的な造作です。「Cetanāhaṃ, bhikkhave, kammaṃ vadāmi」。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R02",
+          "front": "業はいくつの門を通して生じ、どの門が最も重要ですか？",
+          "back": "身・口・意の三門です。意業が最も重要です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R03",
+          "front": "Kammacatukkaは何種の業をいくつの群に分けますか？",
+          "back": "十六種を、作用・成熟の優先順位・成熟時期・成熟領域の四群に分けます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "id": "M6_R04",
+          "front": "作用による四種の業は何ですか？",
+          "back": "生産業（Janaka）、支助業（Upatthambhaka）、障害業（Upapīḷaka）、毀壊業（Upaghātaka）です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R05",
+          "front": "生産業はどのような働きをしますか？",
+          "back": "結生時に名蘊と色蘊を生じさせ、結生識（Paṭisandhi viññāṇa）を生起させます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R06",
+          "front": "障害業と毀壊業はどう違いますか？",
+          "back": "障害業は生産業を妨げ、弱め、成熟を遅らせます。より強い毀壊業は生産業を断ち切って滅ぼします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_R07",
+          "front": "どの界には障害業がありませんか？",
+          "back": "色界と無色界にはありません。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_R08",
+          "front": "成熟の優先順位（力）による四種の業は何ですか？",
+          "back": "重業（Garuka）、臨死業（Āsanna）、習熟業（Āciṇṇa）、既作業（Kaṭattā）です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R09",
+          "front": "五無間業（Ānantariyakamma）とは何ですか？",
+          "back": "母殺し、父殺し、阿羅漢殺し、破和合僧、出仏身血です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_R10",
+          "front": "最も強い不善の重業は何ですか？",
+          "back": "決定邪見業（Niyatamicchādiṭṭhikamma）で、次が破和合僧です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_R11",
+          "front": "善の重業に含まれる法は何ですか？",
+          "back": "九つの大善心（五色界善心と四無色界善心）です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "M6_R12",
+          "front": "成熟時期による業は何を基準に定められますか？",
+          "back": "心路における七つの速行（Javana）刹那を基準にします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_R13",
+          "front": "第一速行刹那はどの業を生じさせますか？",
+          "back": "順現法受業（Diṭṭhadhammavedanīyakamma）で、現世に果をもたらします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_R14",
+          "front": "第七速行刹那はどの業を生じさせますか？",
+          "back": "順次生受業（Upapajjavedanīyakamma）で、次の生に果をもたらします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "M6_R15",
+          "front": "第二から第六の速行刹那はどの業を生じさせますか？",
+          "back": "順後受業（Aparāpariyavedanīyakamma）で、第三生から涅槃までに果をもたらします。第四刹那が最も強力です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M6_R16",
+          "front": "既有業（無効業、Ahosikamma）とは何ですか？",
+          "back": "造られたものの、果をもたらす機会を失った業です。ただし順後受業は、まだ果を与えていなければ消滅しません。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M6_R17",
+          "front": "業が成熟する四つの領域は何ですか？",
+          "back": "不善業、欲界善業、色界善業、無色界善業です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R18",
+          "front": "十不善業は門によってどう分けられますか？",
+          "back": "身三（殺生・不与取・欲邪行）、口四（妄語・両舌・悪口・綺語）、意三（貪欲・瞋恚・邪見）です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14
+            },
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R19",
+          "front": "生産業を造る因となる心はいくつですか？",
+          "back": "二十八心、すなわち十一不善心、八欲界大善心、五色界善心、四無色界善心です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_R20",
+          "front": "なぜ捨倶掉挙相応痴根心は生産業を造らないのですか？",
+          "back": "この心は結生果を生じさせず、結生識を与えることができないからです。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M6_Q01",
+          "type": "mcq",
+          "question": "業（Kamma）の勝義法はどの心所ですか？",
+          "correctAnswer": "思心所（Cetanā）",
+          "distractors": [
+            "触心所（Phassa）",
+            "受心所（Vedanā）",
+            "想心所（Saññā）"
+          ],
+          "explanation": "仏陀は「Cetanāhaṃ, bhikkhave, kammaṃ vadāmi」——思が業である、と説かれました。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q02",
+          "type": "mcq",
+          "question": "業を造る三門のうち、最も重要なのはどれですか？",
+          "correctAnswer": "意門",
+          "distractors": [
+            "身門",
+            "口門",
+            "三門は同等"
+          ],
+          "explanation": "資料は、意業が最も重要であると明記しています。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q03",
+          "type": "mcq",
+          "question": "Kammacatukkaは業を何種に分けますか？",
+          "correctAnswer": "十六種を四群に分類",
+          "distractors": [
+            "十二種を三群に分類",
+            "二十種を五群に分類",
+            "八種を二群に分類"
+          ],
+          "explanation": "業の分類図では、各群四種、四群で合計十六種です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 1
+            }
+          ]
+        },
+        {
+          "id": "M6_Q04",
+          "type": "mcq",
+          "question": "結生時に名蘊と色蘊を生じさせる業はどれですか？",
+          "correctAnswer": "生産業（Janakakamma）",
+          "distractors": [
+            "支助業（Upatthambhakakamma）",
+            "障害業（Upapīḷakakamma）",
+            "毀壊業（Upaghātakakamma）"
+          ],
+          "explanation": "生産業は結生時に異熟心、すなわち結生識を生起させます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q05",
+          "type": "mcq",
+          "question": "より強力で、生産業と支助業を断ち切る業はどれですか？",
+          "correctAnswer": "毀壊業（Upaghātakakamma）",
+          "distractors": [
+            "障害業（Upapīḷakakamma）",
+            "支助業（Upatthambhakakamma）",
+            "既作業（Kaṭattākamma）"
+          ],
+          "explanation": "毀壊業は障害業より強く、障害業が妨げるだけなのに対して生産業を滅ぼします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_Q06",
+          "type": "mcq",
+          "question": "障害業が存在しないのはどの界ですか？",
+          "correctAnswer": "色界と無色界",
+          "distractors": [
+            "欲界",
+            "四悪趣",
+            "人界"
+          ],
+          "explanation": "資料には、色界および無色界には障害業がないとあります。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M6_Q07",
+          "type": "mcq",
+          "question": "五逆罪はどの種類の業ですか？",
+          "correctAnswer": "重業（Garukakamma）",
+          "distractors": [
+            "臨死業（Āsannakamma）",
+            "習熟業（Āciṇṇakamma）",
+            "既作業（Kaṭattākamma）"
+          ],
+          "explanation": "五逆罪は無間業（Ānantariyakamma）であり、不善の重業に属します。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_Q08",
+          "type": "mcq",
+          "question": "資料によれば、最も強い不善の重業はどれですか？",
+          "correctAnswer": "決定邪見業（Niyatamicchādiṭṭhikamma）",
+          "distractors": [
+            "母殺し",
+            "父殺し",
+            "出仏身血"
+          ],
+          "explanation": "力の順序は、決定邪見が最も強く、次に破和合僧、第三に出仏身血です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "id": "M6_Q09",
+          "type": "mcq",
+          "question": "善の重業に含まれる法は何ですか？",
+          "correctAnswer": "九つの大善心",
+          "distractors": [
+            "八欲界大善心",
+            "十二不善心",
+            "八出世間心"
+          ],
+          "explanation": "善の重業は五色界善心と四無色界善心からなる九つの大善心です。出世間心は高尚ですが、有業を断つため含まれません。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "M6_Q10",
+          "type": "mcq",
+          "question": "異熟時業（Pākakālakamma）は何を基準に定められますか？",
+          "correctAnswer": "心路における七つの速行（Javana）刹那",
+          "distractors": [
+            "三つの有分刹那",
+            "二つの彼所縁刹那",
+            "結生心"
+          ],
+          "explanation": "業が果をもたらす時期は、心路における七つの速行刹那に基づきます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q11",
+          "type": "mcq",
+          "question": "第一速行刹那はどの業を生じさせますか？",
+          "correctAnswer": "順現法受業——現世に果をもたらす",
+          "distractors": [
+            "順次生受業——次の生に果をもたらす",
+            "順後受業——第三生以後に果をもたらす",
+            "既有業（無効業）"
+          ],
+          "explanation": "第一刹那は最初に生じ、同種の刹那の支えがないため最も弱く、現世でのみ果をもたらします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q12",
+          "type": "mcq",
+          "question": "第七速行刹那はどの業を生じさせますか？",
+          "correctAnswer": "順次生受業（Upapajjavedanīyakamma）",
+          "distractors": [
+            "順現法受業",
+            "順後受業",
+            "既有業（無効業）"
+          ],
+          "explanation": "第七刹那は滅に近いため二番目に弱く、直後の次生でのみ果をもたらします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q13",
+          "type": "mcq",
+          "question": "七つの速行刹那のうち、最も強いのはどれですか？",
+          "correctAnswer": "第四刹那",
+          "distractors": [
+            "第一刹那",
+            "第七刹那",
+            "第二刹那"
+          ],
+          "explanation": "第四刹那は最盛期にあり、主導的な刹那でもあるため最も強力です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 10
+            }
+          ]
+        },
+        {
+          "id": "M6_Q14",
+          "type": "mcq",
+          "question": "生産業を造る因となる心はいくつですか？",
+          "correctAnswer": "二十八心",
+          "distractors": [
+            "十九心",
+            "十二心",
+            "八心"
+          ],
+          "explanation": "二十八心＝十一不善心＋八欲界大善心＋五色界善心＋四無色界善心です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q15",
+          "type": "mcq",
+          "question": "生産業の因となる不善心が十二ではなく十一なのはなぜですか？",
+          "correctAnswer": "捨倶掉挙相応痴根心は結生果を生じさせないから",
+          "distractors": [
+            "瞋根心は果を生じさせないから",
+            "邪見不相応貪根心は果を生じさせないから",
+            "疑相応痴根心は果を生じさせないから"
+          ],
+          "explanation": "捨倶掉挙相応痴根心は結生果を生じさせず、結生識を与えられないため除外されます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q16",
+          "type": "mcq",
+          "question": "結生の働きをする異熟心はいくつですか？",
+          "correctAnswer": "十九心",
+          "distractors": [
+            "二十八心",
+            "十二心",
+            "十一心"
+          ],
+          "explanation": "十九心＝二つの捨倶無因推度心＋八欲界大異熟心＋五色界異熟心＋四無色界異熟心です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 2
+            }
+          ]
+        },
+        {
+          "id": "M6_Q17",
+          "type": "mcq",
+          "question": "業は何種の色法を生起させますか？",
+          "correctAnswer": "十八色",
+          "distractors": [
+            "十五色",
+            "十三色",
+            "十二色"
+          ],
+          "explanation": "十八業生色＝八不離色＋五浄色＋一空界＋一命根色＋一心所依処色＋二性根色です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M6_Q18",
+          "type": "mcq",
+          "question": "口門の不善業はいくつですか？",
+          "correctAnswer": "四つ",
+          "distractors": [
+            "三つ",
+            "五つ",
+            "七つ"
+          ],
+          "explanation": "妄語、両舌、悪口、綺語・無益語の四つです。",
+          "sourceRefs": [
+            {
+              "file": "VDP-Nghiep.pdf",
+              "page": 3
+            },
+            {
+              "file": "VDP-SoDoNghiep.pdf",
+              "page": 14
+            }
+          ]
+        }
+      ]
     },
     "M16_NGUOI_VA_COI": {
-      "title": "有情と生存界",
-      "description": "十二種の人と三十一界の生存の領域。",
-      "translationStatus": "reviewed"
+      "title": "人と界地（Puggala – Bhūmi）",
+      "description": "十二種の人と三十一の生存界。四つの界地、すなわち四悪趣、欲界七善趣、色界十六処、無色界四処を学びます。",
+      "translationStatus": "draft",
+      "lessonSections": [
+        {
+          "id": "M16_S01",
+          "title": "十二種の人——Puggala",
+          "summary": "四種の凡夫と八種の聖者——人とは、業力に規定され、名色（または名のみ・色のみ）を有する衆生です。",
+          "body": [
+            "Puggalaは「Pun + gala」に由来し、「人」を意味します。人とは、業力に規定されて成立し、名と色、または名のみ・色のみを有する衆生です。",
+            "十二種の人は二群に分かれます。A群——凡夫：1. 苦趣無因者（Ahetuka puggala）、2. 善趣無因者（Sugati ahetuka puggala）、3. 二因者（Dvihetuka puggala）、4. 三因者（Tihetuka puggala）です。",
+            "B群——聖者：四聖位それぞれの道者と果者、すなわち預流（Sotāpatti）、一来（Sakadāgāmi）、不来（Anāgāmi）、阿羅漢果（Arahatta）です。四道と四果を合わせて八種となります。",
+            "世俗諦では、人間・天神・梵天などが語られます。勝義諦では名と色だけがあり、恒常不変の「人」は存在しません。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_PUGGALA_M16",
+              "term": "人 (補特伽羅)",
+              "pali": "Puggala",
+              "meaning": "業力に規定されて成立し、名色を有する衆生"
+            },
+            {
+              "id": "TERM_PHAM_THANH_M16",
+              "term": "補特伽羅の分別",
+              "pali": "Puggala-bheda",
+              "meaning": "四種の凡夫と八種の聖者、合わせて十二種"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3,
+              "note": "CÁC LOẠI NGƯỜI – PUGGALA-BHEDA: 12 loại chia 2 nhóm A phàm nhân / B thánh nhân"
+            }
+          ]
+        },
+        {
+          "id": "M16_S02",
+          "title": "苦趣無因者と善趣無因者",
+          "summary": "苦趣無因者は捨倶不善異熟推度心で、善趣無因者は捨倶善異熟推度心で結生し、善趣無因者には十一種あります。",
+          "body": [
+            "苦趣無因者（Ahetuka puggala）の日常生活には四種あります。苦が多く楽が少ない衆生、全面的に苦を受ける衆生、身体の苦と飢渇に悩む衆生、そして苦労が絶えず常に恐れる衆生で、善心が生じにくい者たちです。",
+            "苦趣無因者の結生心は捨倶不善異熟無因推度心です。これは十一不善心、すなわち八貪根心・二瞋根心・一疑相応痴根心の果報です。掉挙相応痴根心は動揺して弱いため結生果を生じさせず、日常生活でのみ果報を生じさせます。",
+            "苦趣無因者の日常生活では三十七心が生じ得ます。十二不善心、十七無因心（十八無因心から阿羅漢笑心を除く）、八欲界美善心（四智相応・四智不相応）であり、心所は五十二です。",
+            "善趣無因者（Sugati ahetuka puggala）は苦趣の者より楽が多く、同じような苦痛を受けません。結生心は捨倶善異熟無因推度心で、結生・有分・死の作用を果たします。住処は人間界と四大王天の下層です。",
+            "善趣無因者の出生には三種あります。胎生（人間界）、化生（四大王天。胎を経ず即座に化現する）、色化生（無想天。再結生時には命根色・業生色・性根色という色法だけがある）です。",
+            "善趣無因者には十一種あり、先天性盲（Jaccandha——出生時に眼浄色の神経系がなく、妊娠初期三か月に眼浄色が生じなかった者）、先天性聾、先天的に嗅覚神経がない者、先天的知的障害、先天性唖、先天性精神障害、無性者（Paṇḍaka——男女いずれの生殖器もない者）、両性者（Ubhatobyañjana）などです。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_KHO_VO_NHAN_M16",
+              "term": "無因者",
+              "pali": "Ahetuka puggala",
+              "meaning": "捨倶不善異熟無因推度心によって結生する者"
+            },
+            {
+              "id": "TERM_LAC_VO_NHAN_M16",
+              "term": "善趣無因者",
+              "pali": "Sugati ahetuka puggala",
+              "meaning": "十一種の先天的欠損者。捨倶善異熟推度心によって結生する"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4,
+              "note": "4 loại người khổ trong đời sống bình nhật; 37 tâm; tâm tục sinh là Quan sát thọ xả quả bất thiện"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5,
+              "note": "NGƯỜI LẠC VÔ NHÂN – SUGATI AHETUKA PUGGALA: tâm tục sinh Quan sát thọ xả quả thiện; 3 loại sanh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 6,
+              "note": "11 loại người lạc vô nhân: mù, điếc, câm, đần độn, điên bẩm sinh, vô tính, lưỡng tính…"
+            }
+          ]
+        },
+        {
+          "id": "M16_S03",
+          "title": "八種の聖者——預流から阿羅漢まで",
+          "summary": "預流道は三結、二心所、五心を断ち、阿羅漢道は再生をもたらすすべての種子を完全に断ちます。",
+          "body": [
+            "預流道者——初道（Sotāpattimagga puggala）は、身見・疑・戒禁取という三つの煩悩の結をまさに断ちつつある人です。初めて涅槃を悟り、生・住・滅の三小刹那をもつ道心が生じているその瞬間から預流道者と数えられます。",
+            "初道では二心所、すなわち邪見と疑が断たれます。また五心、すなわち四つの邪見相応貪根心（二喜倶・二捨倶）と一つの疑相応痴根心が断たれます。",
+            "預流果者——初果（Sotāpattiphala puggala）は、預流道をすでに証得した人です。初果・預流果・須陀洹果ともいい、初果心が最初に生じてから、第二道を得る心路における更浄心の滅する刹那までを指します。",
+            "続いて、一来道者——第二道（Sakadāgāmimagga）と一来果者——第二果が第二の聖位であり、不来道者——第三道（Anāgāmimagga）と不来果者が続きます。",
+            "阿羅漢道者——第四道（Arahattamagga puggala）は、再生をもたらすすべての種子をまさに完全に断ち、無生に至る人です。最後に阿羅漢果者となり、第四の聖位を完成します。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SO_DAO_M16",
+              "term": "預流道",
+              "pali": "Sotāpattimagga",
+              "meaning": "身見・疑・戒禁取を断ち、二心所と五心を滅する"
+            },
+            {
+              "id": "TERM_TU_DAO_M16",
+              "term": "阿羅漢道",
+              "pali": "Arahattamagga",
+              "meaning": "再生をもたらすすべての種子を完全に断ち、無生に至る"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9,
+              "note": "5. NGƯỜI ĐẠO NHẬP LƯU – SƠ ĐẠO: sát trừ 3 kiết sử; diệt 2 tâm sở, 5 tâm; 6. QUẢ NHẬP LƯU"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 10,
+              "note": "7. NGƯỜI ĐẠO NHẤT LAI / QUẢ NHẤT LAI — bậc Thánh thứ 2"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 11,
+              "note": "11. NGƯỜI ĐẠO VÔ SANH – TỨ ĐẠO: đang tuyệt trừ tất cả chủng từ tái tục"
+            }
+          ]
+        },
+        {
+          "id": "M16_S04",
+          "title": "四つの生存界——三十一界",
+          "summary": "四悪趣、欲界七善趣、色界十六処、無色界四処。聖者は悪趣にも無想天にも生まれません。",
+          "body": [
+            "四つの生存界（Bhūmi）は、1. 悪趣地（Apāyabhūmi）、2. 欲界善趣地（Kāmasugatibhūmi）、3. 色界地（Rūpāvacarabhūmi）、4. 無色界地（Arūpāvacarabhūmi）です。",
+            "悪趣地には、地獄・畜生・餓鬼・阿修羅の四処があります。",
+            "欲界善趣地には、人間界・四大王天・三十三天・夜摩天・兜率天・化楽天・他化自在天の七処があります。",
+            "色界には十六処があり、禅那の段階によって四群に分かれます。初禅は三処（梵衆天・梵輔天・大梵天）、第二禅は三処、第三禅は三処、第四禅は七処です。",
+            "無色界には、空無辺処・識無辺処・無所有処・非想非非想処の四処があります。",
+            "覚えておくべきこととして、一来者・預流者・凡夫は浄居天（Suddhāvāsā、五浄居天）に再生しません。また聖者は無想天にも諸悪趣にも生まれません。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_BHUMI_M16",
+              "term": "界地",
+              "pali": "Bhūmi",
+              "meaning": "悪趣地・欲界善趣地・色界地・無色界地の四つ"
+            },
+            {
+              "id": "TERM_NGU_TINH_CU_M16",
+              "term": "五浄居天",
+              "pali": "Suddhāvāsā",
+              "meaning": "五つの清浄な住処。不来者と阿羅漢のみが生まれる"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12,
+              "note": "Bốn cảnh giới sinh tồn; cảnh bất hạnh 4; dục giới hữu phước 7 (Pāli gatha)"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13,
+              "note": "Cảnh vô sắc 4; phàm nhân, dự lưu, nhất lai không sanh Ngũ Tịnh Cư; Thánh không sanh vô tưởng và ác cảnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 14,
+              "note": "Sơ đồ 31 cõi: ác cảnh 4, cõi người 4 châu, 6 cõi trời dục giới, sơ thiền 3 cõi"
+            }
+          ]
+        },
+        {
+          "id": "M16_S05",
+          "title": "四悪趣——地獄・畜生・餓鬼・阿修羅",
+          "summary": "八大地獄は互いに千五百由旬離れ、各大地獄には四門と十六小地獄があります。天阿修羅は心によって結生します。",
+          "body": [
+            "地獄界には八大地獄があります。1. Sañjīva（等活）、2. Kālasutta（黒縄）、3. Saṅghāta（衆合）、4. Roriva、5. Mahāroriva、6. Tāpana、7. Mahātāpana、8. Avīci（無間）です。",
+            "その位置は大地の奥深くです。各大地獄は千五百由旬（一由旬は二十キロメートル）離れ、順に積み重なっています。",
+            "各大地獄には四門（8 × 4 = 32門）があり、各門には四つの地獄坑（32 × 4 = 128坑）と、それを治める一人の閻魔王（計32人）がいます。また各大地獄にはUssada（増盛地獄）と呼ばれる十六小地獄があります。",
+            "畜生界と餓鬼界は各所に広がり、生命には苦楽の二面があります。たとえば四大王天にも、天界の楽を享受する面と、地獄のような苦境を受ける面があります。",
+            "阿修羅（Asura）のうち、天阿修羅（Deva Asura）は心によって結生します。天神の下層に属する眷属で、光を好みません。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_DAI_DIA_NGUC_M16",
+              "term": "八大地獄",
+              "pali": "Aṭṭha mahāniraya",
+              "meaning": "SañjīvaからAvīciまで。互いに千五百由旬離れている"
+            },
+            {
+              "id": "TERM_ATULA_M16",
+              "term": "阿修羅",
+              "pali": "Asura",
+              "meaning": "第四の悪趣。そのうち天阿修羅は心によって結生する"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16,
+              "note": "8 ĐẠI ĐỊA NGỤC: Sañjīva…Avīci; vị trí, khoảng cách 1500 do tuần; 4 cửa, 128 hầm, 32 Diêm Vương, 16 tiểu địa ngục"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 17,
+              "note": "2 mặt đời sống: vui hưởng cảnh Trời, khổ cảnh Địa ngục"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 20,
+              "note": "Loại 1 – DEVA ASURA: ATULA CHƯ THIÊN — tục sinh bằng tâm"
+            }
+          ]
+        },
+        {
+          "id": "M16_S06",
+          "title": "人間界——四大洲",
+          "summary": "Manussāとは心が明るく勇敢な衆生です。閻浮提は苦が多い一方、修行しやすく、諸仏が出現します。",
+          "body": [
+            "KāmasugatiはSUとGATIから成り、善趣、すなわち良い再生の住処を意味します。欲愛——色愛・声愛・香愛・味愛・触愛・法愛——と相応し倶生する楽趣を、欲界の楽と呼びます。",
+            "人間界（Manussabhūmi）：Manussannaṃ etesanti = Manussā、すなわち心が明るく勇敢であるため「人」と呼ばれる衆生です。住む四洲によって四種に分かれます。",
+            "1. 閻浮提（南贍部洲、Jambūdīpa）：私たちのような人間が住む洲です。Jambūは古代インドに多かった樹木を指します。この洲の人の心は他の三洲と異なり、善において勇敢で明るく、悪においても激しいものです。",
+            "この洲は住民の労苦と苦しみが他の三洲より多いため、それらに劣るとされます。しかし修行しやすく、諸仏が出現します。善の面では、正等覚者・独覚・上首声聞・大声聞・通常の声聞・転輪王となり、禅那と勝智・神通を得ることができます。悪の面では、父殺し・母殺し・阿羅漢殺し・仏身出血・破和合僧を犯し得ます。",
+            "2. 北倶盧洲（Uttarakurudīpa）、3. 東勝身洲（Pubbavidehadīpa。土地も円いため顔が丸い）、4. 西牛貨洲（Aparagoyānadīpa）です。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_JAMBU_M16",
+              "term": "閻浮提",
+              "pali": "Jambūdīpa",
+              "meaning": "私たちの住む人洲。苦は多いが修行しやすく、諸仏が出現する"
+            },
+            {
+              "id": "TERM_MANUSSA_M16",
+              "term": "人間界",
+              "pali": "Manussā",
+              "meaning": "心が明るく勇敢な衆生の界"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 21,
+              "note": "II/ CÕI VUI DỤC GIỚI – KĀMASUGATI: căn SU + GATI; 7 cõi; cõi người 4 châu"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22,
+              "note": "1/ NGƯỜI NAM THIỆN BỘ CHÂU – JAMBŪDĪPA: tâm dũng cảm sáng chói; kém hơn 3 châu nhưng dễ tu, có Chư Phật ra đời"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 23,
+              "note": "3/ NGƯỜI ĐÔNG THẮNG THẦN CHÂU – PUBBAVIDEHA: mặt tròn vì địa hình tròn"
+            }
+          ]
+        },
+        {
+          "id": "M16_S07",
+          "title": "欲界六天",
+          "summary": "寿命は四大王天の五百天年から他化自在天の一万六千天年まで各層で倍増し、魔王は最高天に住みます。",
+          "body": [
+            "欲界六天の天神はUppattideva、すなわち自ら造った業の果を享受するため天界に生まれた天神です。禅定に入る梵天とは異なります。",
+            "1. 四大王天（Cātummahārājika）：天衆を治める四天王にちなんで名づけられました。Sineru（須弥山）の中腹にあり、人間界から四万二千由旬離れています。寿命は五百天年で、天の一日は人間の五十年、合計九百十二万五千人間年です。ここには地居天、乾闥婆（Gandhabba——香る樹木に依って住む者）、羅刹類の鳩槃荼（Kumbhaṇḍa）など多くの天神群がいます。",
+            "2. 三十三天（Tāvatiṃsa、忉利天）：須弥山頂にあります。円い山頂の中央には七宝でできた善見城（Sudassana）があり、その中に天帝釈の最勝殿（Vejayanta）があります。寿命は千天年で、一昼夜は人間の百年です。天男は二十歳の青年、天女は十六歳の少女のような容姿をもち、老化も病気もなく、食物は清浄です。",
+            "3. 夜摩天（Yāma）：この天の主はSuyāmaといい、空中にあります。寿命は二千天年で、一日は人間の二百年、合計一億四千六百万人間年です。",
+            "4. 兜率天（Tusita）：清涼な心で善行に生きる者の住処で、上首声聞となる菩薩もここに住みます。寿命は四千天年で、一日は人間の四百年です。",
+            "5. 化楽天（Nimmānarati）：寿命は八千天年で、一日は人間の八百年です。6. 他化自在天（Paranimmitavasavattī）：寿命は一万六千天年で、一日は人間の千六百年です。この天は魔王Māraの住処でもあります。",
+            "化楽天と他化自在天には、下の四天のような固定した伴侶はいません（四大王天・三十三天・夜摩天・兜率天の天神には伴侶がいます）。この二天の天男・天女は欲楽を望むとき、伴侶を化現します。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_UPPATTIDEVA_M16",
+              "term": "生天神",
+              "pali": "Uppattideva",
+              "meaning": "自ら造った業の果を享受するため天界に生まれる天神"
+            },
+            {
+              "id": "TERM_TUOI_THO_TROI_M16",
+              "term": "欲界六天の寿命",
+              "pali": "—",
+              "meaning": "500 → 1,000 → 2,000 → 4,000 → 8,000 → 16,000天年（一日は人間の50〜1,600年）"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24,
+              "note": "6 cõi trời dục giới; Tứ thiên vương: 500 năm, 1 ngày = 50 năm; cách 42.000 do tuần"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 26,
+              "note": "Nhóm 2 GANDHABBO; nhóm 3 KUMBHAṆḌA – RAKKHASA"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 28,
+              "note": "Tam thập tam: núi Tudi, Sudassana, Vejayanta"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 29,
+              "note": "Thiên nam 20 tuổi, thiên nữ 16; không lão hóa, không bệnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 30,
+              "note": "Tam thập tam: 1000 năm, 1 ngày = 100 năm; cách cõi người 84.000 do tuần"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 31,
+              "note": "Dạ ma: Suyāma, 2000 năm; Đấu suất: 4000 năm, Bồ tát Thượng thủ thinh văn ở cõi này"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32,
+              "note": "Hóa lạc 8000 năm; Tha hóa 16.000 năm, trú xứ Ma vương Māra; 4 cõi dưới có tình nhân"
+            }
+          ]
+        },
+        {
+          "id": "M16_S08",
+          "title": "色界十六処と無色界四処",
+          "summary": "色界は禅那により四群に分かれ、五浄居天は不来者と阿羅漢だけの住処です。無色界には四名蘊だけがあります。",
+          "body": [
+            "色界地（Rūpāvacarabhūmi）には十六処があり、禅那の段階によって四群に分かれます。空中の三つの独立した領域にあり、七宝ででき、常に光明を放っています。",
+            "第一群——初禅三天：梵衆天（Brahmapārisajjā——大梵天の会衆・随従）、梵輔天（Brahmapurohitā——助言者を務める梵天）、大梵天（Mahābrahmā——最も優れ、宇宙形成時に最初に現れる梵天）です。",
+            "第二群——第二禅三天：少光天・無量光天・光音天（Ābhassarā——身体から光明を放つ者。《起世因本経》によれば人類の祖先は光音天の梵天）です。第三群——第三禅三天：少浄天・無量浄天・遍浄天です。",
+            "第四群——第四禅七天：広果天（Vehapphala）、無想天（Asaññasatta——色法のみ）、および五浄居天（Suddhāvāsā）、すなわち無煩天（Avihā）・無熱天（Atappā）・善見天（Sudassā）・善現天（Sudassī）・色究竟天（Akaṇiṭṭhā）です。",
+            "浄居天は不来者と阿羅漢の清浄な住処です。ここに生まれる梵天は色界第五禅を得るだけでなく、少なくとも第三果の聖者でなければなりません。五天は低いものから高いものへ重なり、色究竟天は色界で最も高い戒・定・慧の功徳を備えます。",
+            "九禅天の結生心は次のとおりです。初禅三天には初禅善心の力で生まれ、第二禅三天と第三禅三天にはそれぞれ対応する段階の禅那の力で生まれます。",
+            "無色界（Arūpabhūmi）には空無辺処・識無辺処・無所有処・非想非非想処の四処があります。受・想・行・識という四名蘊だけがあり、色蘊はありません。名蘊は結生心から無間縁によって相続して生滅します。無色梵天は離貪禅修、すなわち色法への貪りを離れ、色法を厭離する修習の力で生まれます。",
+            "梵天の生活では男女の相は現れませんが、色身は男性のような姿をしています。天宮や庭園を喜びますが、人間であった時に離欲の法を修めたため欲貪蓋はありません。聖者である梵天は果定に入ります。"
+          ],
+          "keyTerms": [
+            {
+              "id": "TERM_SAC_GIOI_16_M16",
+              "term": "色界十六処",
+              "pali": "Rūpāvacarabhūmi",
+              "meaning": "初禅3 + 第二禅3 + 第三禅3 + 第四禅7（広果・無想・五浄居）"
+            },
+            {
+              "id": "TERM_VO_SAC_4_M16",
+              "term": "四無色界処",
+              "pali": "Arūpabhūmi",
+              "meaning": "四名蘊だけで色蘊はなく、色法を厭離する禅修の力で生まれる"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 33,
+              "note": "LUẬN VỀ CÕI SẮC GIỚI: 16 cõi chia 4 nhóm; Sơ thiền 3 cõi: Phạm Chúng, Phạm Phụ, Đại Phạm"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 35,
+              "note": "3/ CÕI QUANG ÂM THIÊN – ĀBHASSARĀ: thủy tổ loài người theo kinh Khởi Thế Nhân Bản"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 36,
+              "note": "NHÓM 3: CÕI TAM THIỀN: Thiểu Tịnh, Vô Lượng Tịnh, Biến Tịnh"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 37,
+              "note": "NHÓM 4: CÕI TỨ THIỀN 7 cõi; tâm tục sinh 9 cõi thiền"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38,
+              "note": "5 cõi Tịnh Cư Thiên – SUDDHĀVĀSĀ: trú xứ A na hàm, A la hán"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 39,
+              "note": "4/ CÕI THIỆN HIỆN THIÊN – SUDASSĪ"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 40,
+              "note": "5/ CÕI SẮC CỨU CÁNH THIÊN – AKANIṬṬHĀ"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 42,
+              "note": "Đời sống vị Phạm thiên; THIÊN SẢN các cõi"
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43,
+              "note": "IV/ CÕI VÔ SẮC: chỉ Tứ danh uẩn; sanh do thiền ly tham Sắc"
+            }
+          ]
+        }
+      ],
+      "reviewCards": [
+        {
+          "id": "M16_R01",
+          "front": "Puggalaとは何ですか。人は何種類ですか。",
+          "back": "業力に規定され、名色（または名のみ・色のみ）を有する衆生で、四種の凡夫と八種の聖者、合わせて十二種です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_R02",
+          "front": "四種の凡夫とは何ですか。",
+          "back": "苦趣無因者・善趣無因者・二因者・三因者です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_R03",
+          "front": "苦趣無因者の結生心は何ですか。",
+          "back": "捨倶不善異熟無因推度心です。十一不善心（八貪・二瞋・一疑相応痴）の果報です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_R04",
+          "front": "掉挙相応痴根心が結生果を生じさせないのはなぜですか。",
+          "back": "動揺して弱く、日常生活でのみ果報を生じさせるからです。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_R05",
+          "front": "善趣無因者の結生心は何ですか。",
+          "back": "捨倶善異熟無因推度心で、結生・有分・死の作用を果たします。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "id": "M16_R06",
+          "front": "初道はどの心所と心を滅しますか。",
+          "back": "二心所は邪見と疑、五心は四つの邪見相応貪根心と一つの疑相応痴根心です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M16_R07",
+          "front": "四つの生存界とは何ですか。",
+          "back": "1. 悪趣地、2. 欲界善趣地、3. 色界地、4. 無色界地です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_R08",
+          "front": "四悪趣とは何ですか。",
+          "back": "地獄・畜生・餓鬼・阿修羅です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_R09",
+          "front": "八大地獄の名は何ですか。",
+          "back": "1 Sañjīva、2 Kālasutta、3 Saṅghāta、4 Roriva、5 Mahāroriva、6 Tāpana、7 Mahātāpana、8 Avīciです。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M16_R10",
+          "front": "なぜ閻浮提は修行しやすいとされますか。",
+          "back": "善において心が勇敢で明るく、正等覚者・独覚・声聞・転輪王などになれ、諸仏も出現するからです。他の三洲より苦は多くあります。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M16_R11",
+          "front": "人間界の四大洲とは何ですか。",
+          "back": "閻浮提（Jambūdīpa）、北倶盧洲（Uttarakuru）、東勝身洲（Pubbavideha）、西牛貨洲（Aparagoyāna）です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": "M16_R12",
+          "front": "欲界六天の寿命はそれぞれ何天年ですか。",
+          "back": "四大王天500、三十三天1,000、夜摩天2,000、兜率天4,000、化楽天8,000、他化自在天16,000です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 30
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 31
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_R13",
+          "front": "魔王Māraはどの界に住みますか。",
+          "back": "欲界最高天の他化自在天（Paranimmitavasavattī）です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_R14",
+          "front": "五浄居天とは何で、誰が生まれますか。",
+          "back": "無煩天・無熱天・善見天・善現天・色究竟天で、不来者と阿羅漢の住処です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_R15",
+          "front": "無色界に色蘊はありますか。",
+          "back": "ありません。受・想・行・識の四名蘊だけがあり、色法を厭離する禅修の力で生まれます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "M16_R16",
+          "front": "梵天に欲貪はありますか。",
+          "back": "欲貪蓋はありません。人間であった時に離欲の法を修めていますが、天宮や庭園は喜びます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 42
+            }
+          ]
+        }
+      ],
+      "quizSeeds": [
+        {
+          "id": "M16_Q01",
+          "type": "mcq",
+          "question": "人（Puggala）は何種類ですか。",
+          "correctAnswer": "12——4種の凡夫と8種の聖者",
+          "distractors": [
+            "8——8種の聖者のみ",
+            "4——4種の凡夫のみ",
+            "31——界の数による"
+          ],
+          "explanation": "凡夫は苦趣無因者・善趣無因者・二因者・三因者、聖者は四道と四果です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 3
+            }
+          ]
+        },
+        {
+          "id": "M16_Q02",
+          "type": "mcq",
+          "question": "苦趣無因者の結生心はどれですか。",
+          "correctAnswer": "捨倶不善異熟無因推度心",
+          "distractors": [
+            "捨倶善異熟無因推度心",
+            "領受心",
+            "五門転向心"
+          ],
+          "explanation": "十一不善心の果報です。掉挙相応痴根心は動揺して弱いため結生果を生じさせません。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "M16_Q03",
+          "type": "mcq",
+          "question": "初道が断つ三結はどれですか。",
+          "correctAnswer": "身見・疑・戒禁取",
+          "distractors": [
+            "貪・瞋・痴",
+            "身見・慢・嫉",
+            "疑・掉挙・惛沈"
+          ],
+          "explanation": "同時に邪見と疑の二心所、四邪見相応貪根心と一疑相応痴根心の五心を滅します。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "M16_Q04",
+          "type": "mcq",
+          "question": "悪趣地（Apāya）を構成する界はどれですか。",
+          "correctAnswer": "地獄・畜生・餓鬼・阿修羅",
+          "distractors": [
+            "地獄・餓鬼・畜生・人間界",
+            "地獄・阿修羅・夜摩天・兜率天",
+            "餓鬼・畜生・無想天・無色界"
+          ],
+          "explanation": "四つの生存界のうちの四悪趣です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_Q05",
+          "type": "mcq",
+          "question": "欲界善趣地にはいくつの界がありますか。",
+          "correctAnswer": "7",
+          "distractors": [
+            "4",
+            "6",
+            "11"
+          ],
+          "explanation": "人間界一つと欲界六天を合わせて七界です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "M16_Q06",
+          "type": "mcq",
+          "question": "八大地獄は互いに何由旬離れていますか。",
+          "correctAnswer": "1,500由旬",
+          "distractors": [
+            "42,000由旬",
+            "1,000由旬",
+            "84,000由旬"
+          ],
+          "explanation": "大地の奥深くで順に積み重なっています。一由旬は二十キロメートルです。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 16
+            }
+          ]
+        },
+        {
+          "id": "M16_Q07",
+          "type": "mcq",
+          "question": "修行しやすく、諸仏が出現する洲はどれですか。",
+          "correctAnswer": "閻浮提（Jambūdīpa）",
+          "distractors": [
+            "北倶盧洲",
+            "東勝身洲",
+            "西牛貨洲"
+          ],
+          "explanation": "他の三洲より苦は多いものの心が勇敢で明るく、正等覚者や独覚などになれます。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": "M16_Q08",
+          "type": "mcq",
+          "question": "四大王天の一日は人間の何年に相当しますか。",
+          "correctAnswer": "50年",
+          "distractors": [
+            "100年",
+            "200年",
+            "400年"
+          ],
+          "explanation": "五百天年 × 18,250人間年 = 9,125,000人間年です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 24
+            }
+          ]
+        },
+        {
+          "id": "M16_Q09",
+          "type": "mcq",
+          "question": "天帝釈はどの界に住みますか。",
+          "correctAnswer": "三十三天（忉利天）",
+          "distractors": [
+            "四大王天",
+            "夜摩天",
+            "化楽天"
+          ],
+          "explanation": "須弥山頂の三十三天には善見城と最勝殿があります。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 28
+            }
+          ]
+        },
+        {
+          "id": "M16_Q10",
+          "type": "mcq",
+          "question": "魔王Māraの住処はどの界ですか。",
+          "correctAnswer": "他化自在天",
+          "distractors": [
+            "化楽天",
+            "兜率天",
+            "光音天"
+          ],
+          "explanation": "欲界最高天で、寿命は一万六千天年です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": "M16_Q11",
+          "type": "mcq",
+          "question": "色界にはいくつの処があり、何群に分かれますか。",
+          "correctAnswer": "16処、禅那の段階による4群",
+          "distractors": [
+            "15処、3群",
+            "12処、4群",
+            "16処、2群"
+          ],
+          "explanation": "初禅三処、第二禅三処、第三禅三処、第四禅七処です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 33
+            }
+          ]
+        },
+        {
+          "id": "M16_Q12",
+          "type": "mcq",
+          "question": "五浄居天に再生できるのは誰ですか。",
+          "correctAnswer": "不来者（阿那含）と阿羅漢",
+          "distractors": [
+            "すべての聖者",
+            "第五禅を修めた凡夫",
+            "初果者のみ"
+          ],
+          "explanation": "Suddhāvāsāは清浄な住処であり、凡夫・預流者・一来者はここに生まれません。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 38
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_Q13",
+          "type": "mcq",
+          "question": "無想天（Asaññasatta）の特徴は何ですか。",
+          "correctAnswer": "色法だけがあり、名法がない",
+          "distractors": [
+            "名法だけがあり、色法がない",
+            "名色の両方がある",
+            "名色のいずれもない"
+          ],
+          "explanation": "結生時には命根色・業生色・性根色だけがあり、聖者はこの界に生まれません。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 5
+            },
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "M16_Q14",
+          "type": "mcq",
+          "question": "《起世因本経》による人類の祖先は誰ですか。",
+          "correctAnswer": "光音天の梵天",
+          "distractors": [
+            "マヌ王",
+            "大梵天",
+            "四大王天の天神"
+          ],
+          "explanation": "世界の壊滅後、光音天の梵天が地上へ降り、地味を食べて生活しました。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": "M16_Q15",
+          "type": "mcq",
+          "question": "無色梵天は何の力によって生まれますか。",
+          "correctAnswer": "離貪禅修——色法への厭離",
+          "distractors": [
+            "慈心禅",
+            "布施の業",
+            "初禅の定心"
+          ],
+          "explanation": "Virāgabhāvanāとは色法への貪りを離れる修習であり、そのため色法を喜びません。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "M16_Q16",
+          "type": "mcq",
+          "question": "色究竟天（Akaṇiṭṭhā）の特徴は何ですか。",
+          "correctAnswer": "色界で最も高い戒・定・慧の功徳",
+          "distractors": [
+            "第四禅諸天のうち最下層",
+            "魔王の住処",
+            "光明のない天界"
+          ],
+          "explanation": "低いものから高いものへ重なる五浄居天のうち、最も高い天です。",
+          "sourceRefs": [
+            {
+              "file": "VDP-NguoiVaCoi.pdf",
+              "page": 40
+            }
+          ]
+        }
+      ]
     },
     "M8_NHAN_DUYEN": {
       "title": "十二縁起（Paṭiccasamuppāda）",
