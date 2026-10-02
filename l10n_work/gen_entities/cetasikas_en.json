@@ -1,0 +1,314 @@
+{
+ "CS_PHASSA": {
+  "characteristic": "Contacting the object — the mode of touching between consciousness, the sense-base and the object.",
+  "function": "Gathering the other associated mental factors so they cling together with consciousness to touch the sense-base and the object.",
+  "manifestation": "The coinciding of consciousness, mental factors, sense-base and object.",
+  "proximateCause": "The presence of an object offered through the appropriate channel (sense-base + object + consciousness)."
+ },
+ "CS_VEDANA": {
+  "characteristic": "Feeling, experiencing the object — the manner of receiving and sensing the object.",
+  "function": "Enjoying the desirable object, or producing languor/growth in the associated states.",
+  "manifestation": "Mental ease (pleasant/joyful feeling); mental distress (painful feeling); bodily pleasure or pain; or quiescence (neutral feeling).",
+  "proximateCause": "Bodily calm and mental ease (for pleasant/joyful feeling); the presence of the heart-base (for painful feeling); the absence of exhilaration (for neutral feeling)."
+ },
+ "CS_SANNA": {
+  "characteristic": "Recollecting — the way of remembering; noting and marking the distinguishing features of the object.",
+  "function": "Recalling a past event by means of the sign that was noted.",
+  "manifestation": "Recollecting something previously known, rightly or wrongly.",
+  "proximateCause": "The reappearance of an object as it was previously apprehended — an object that evokes memory (e.g. recognizing an acquaintance by recalling where one met them)."
+ },
+ "CS_CETANA": {
+  "characteristic": "Urging, directing and coordinating the associated states that arise together with it.",
+  "function": "Assembling the co-arising states so they are directed together towards the object, seizing hold of the object.",
+  "manifestation": "Organizing, directing and arranging the associated states.",
+  "proximateCause": "The presence of the other three mental aggregates — feeling, perception and consciousness (since volition itself belongs to the aggregate of formations and so requires the other three)."
+ },
+ "CS_EKAGGATA": {
+  "characteristic": "Non-distraction, non-wavering in the face of the object — one-pointed, focused attention.",
+  "function": "Gathering the co-arising mental states so they converge on a single object.",
+  "manifestation": "Appears as peace and firm steadiness in the object.",
+  "proximateCause": "The presence of pleasure/happiness, and the absence of the restlessness and doubt aspects of delusion (happiness is needed for concentration to be achieved)."
+ },
+ "CS_JIVITINDRIYA": {
+  "characteristic": "Maintaining, preserving and nurturing the co-arising states.",
+  "function": "Keeping the co-arising states alive for their three sub-moments before they cease.",
+  "manifestation": "The co-arising states persist in being until the moment of their dissolution.",
+  "proximateCause": "The presence of the aggregates of feeling, perception and consciousness."
+ },
+ "CS_MANASIKARA": {
+  "characteristic": "The manner of guiding the associated states to fully apprehend the object.",
+  "function": "Making consciousness and its mental factors converge and take hold of the object together.",
+  "manifestation": "Turning the mind towards the object (as a helmsman steers a boat towards its destination).",
+  "proximateCause": "The presence of an object — past, present or future."
+ },
+ "CS_VITAKKA": {
+  "characteristic": "Carrying the co-arising states onto the object — directing/lifting the mind onto the object.",
+  "function": "Bringing consciousness and its mental factors into contact with the object.",
+  "manifestation": "Consciousness and its co-arising mental factors reach the object.",
+  "proximateCause": "The presence of an object together with the other three aggregates (feeling, perception, consciousness), since applied thought belongs to the aggregate of formations."
+ },
+ "CS_VICARA": {
+  "characteristic": "The manner of attending to the object — examining and observing it closely and continuously.",
+  "function": "Keeping consciousness and its co-arising mental factors closely engaged with the object without interruption.",
+  "manifestation": "Having engaged the object, it binds the associated states to it so they keep apprehending that same object without straying from it.",
+  "proximateCause": "The presence of an object together with the other three aggregates, since sustained thought likewise belongs to the aggregate of formations."
+ },
+ "CS_ADHIMOKKHA": {
+  "characteristic": "The manner of deciding, breaking through the state of indecision — releasing consciousness from doubt so it can move towards the object.",
+  "function": "Making consciousness resolve firmly on the object, without wavering.",
+  "manifestation": "Having made a firm decision about the object — carrying out that decision.",
+  "proximateCause": "The presence of an object to be judged, determined or decided upon."
+ },
+ "CS_VIRIYA": {
+  "characteristic": "The manner of exertion and endurance — energetic effort that does not retreat.",
+  "function": "Supporting the co-arising states so they do not regress.",
+  "manifestation": "Not retreating (from the task at hand).",
+  "proximateCause": "A sense of urgency, or some matter that stirs the mind, such as old age, sickness, death or suffering."
+ },
+ "CS_PITI": {
+  "characteristic": "Delight and exhilaration, being gladdened by the object (distinct from feeling, which experiences the object, whereas rapture creates interest and relish in it).",
+  "function": "Refreshing the body and gladdening the mind.",
+  "manifestation": "Mental elation, a sense of being uplifted and suffused (distinct from feeling, which is mental ease).",
+  "proximateCause": "The aggregates of feeling, perception and consciousness (since rapture belongs to the aggregate of formations — unlike the proximate cause of joyful feeling, which is bodily calm and mental ease)."
+ },
+ "CS_CHANDA": {
+  "characteristic": "Having the hope and wish to obtain the object.",
+  "function": "Making consciousness seek out and reach for the object.",
+  "manifestation": "Obtaining the desired object.",
+  "proximateCause": "The presence of an object that is desirable, worth wishing for."
+ },
+ "CS_MOHA": {
+  "characteristic": "Mental blindness, not knowing what should be known — the opposite of wisdom.",
+  "function": "Obscuring clarity, preventing the true nature of phenomena from being seen.",
+  "manifestation": "Darkness and obscuration.",
+  "proximateCause": "Unwise attention — careless, improper attention."
+ },
+ "CS_AHIRIKA": {
+  "characteristic": "Absence of shame towards wrongdoing, evil and faults.",
+  "function": "Carrying out evil, faulty and wrongful deeds.",
+  "manifestation": "Not shrinking back from unwholesome deeds.",
+  "proximateCause": "Lack of self-respect."
+ },
+ "CS_ANOTTAPPA": {
+  "characteristic": "Absence of dread towards unwholesome states.",
+  "function": "Committing wrongdoing and misconduct.",
+  "manifestation": "Not flinching or fearing when doing evil.",
+  "proximateCause": "Lack of regard for others."
+ },
+ "CS_UDDHACCA": {
+  "characteristic": "Unrest — a mind that is agitated and scattered.",
+  "function": "Preventing the mind from settling firmly and lastingly on its object.",
+  "manifestation": "A mind that is unsettled and disturbed.",
+  "proximateCause": "Unwise attention — careless, improper handling of the mind."
+ },
+ "CS_LOBHA": {
+  "characteristic": "Clinging to the object — causing the co-arising mental factors to cling to it.",
+  "function": "Making consciousness stick to the object.",
+  "manifestation": "Not letting go of the object.",
+  "proximateCause": "Delighting in, being drawn to, binding phenomena — relishing what is beautiful, enticing and pleasant."
+ },
+ "CS_DITTHI": {
+  "characteristic": "Adhering obstinately to what is contrary to truth.",
+  "function": "Interpreting matters wrongly, contrary to the facts.",
+  "manifestation": "Rigidly holding to a mistaken view.",
+  "proximateCause": "Not meeting noble and wise persons."
+ },
+ "CS_MANA": {
+  "characteristic": "Haughtiness, arrogance, self-conceit — comparing oneself with others as superior, equal or inferior.",
+  "function": "Driving the associated states towards self-exaltation.",
+  "manifestation": "Vanity and self-aggrandizement.",
+  "proximateCause": "The presence of an object for comparison."
+ },
+ "CS_DOSA": {
+  "characteristic": "Ferocity and harshness of body and mind — a state of opposition and burning hostility.",
+  "function": "Making the mind burn, scorching and seeking to destroy the object.",
+  "manifestation": "Committing evil deeds, destructive and harmful to oneself, to others, or to both.",
+  "proximateCause": "The presence of an undesirable object — a lack of understanding or reasoned reflection."
+ },
+ "CS_ISSA": {
+  "characteristic": "Envy and jealousy towards the success or superiority of others.",
+  "function": "Being displeased at another's gain or excellence.",
+  "manifestation": "Turning away from, averting one's face from another's superiority.",
+  "proximateCause": "The fame, wealth, happiness or success of others, which exceeds one's own."
+ },
+ "CS_MACCHARIYA": {
+  "characteristic": "Concealing one's own possessions or achievements.",
+  "function": "Being unwilling to share or let others partake of one's possessions.",
+  "manifestation": "Not sharing one's wealth, being stingy, unwilling to give.",
+  "proximateCause": "One's own possessions or achievements."
+ },
+ "CS_KUKKUCCA": {
+  "characteristic": "The manner of regretting, repenting, being troubled about what has been done or left undone.",
+  "function": "Making the mind restless and distressed about the past.",
+  "manifestation": "A sense of remorse and regret in the mind.",
+  "proximateCause": "An evil deed done, or a good and meritorious deed left undone."
+ },
+ "CS_THINA": {
+  "characteristic": "Sluggishness that halts diligence.",
+  "function": "Abandoning energetic effort, so that active diligence ceases, leading the mind externally to sink back into the life-continuum.",
+  "manifestation": "A mind that withdraws and shrinks back.",
+  "proximateCause": "Unwise attention — careless, improper handling of the mind."
+ },
+ "CS_MIDDHA": {
+  "characteristic": "Unfitness for work — a state of torpor, lethargy, drowsiness.",
+  "function": "Enveloping and covering consciousness.",
+  "manifestation": "Drowsiness, dullness, sleepiness.",
+  "proximateCause": "The absence of proper, wise attention."
+ },
+ "CS_VICIKICCHA": {
+  "characteristic": "The manner of doubting — wavering and hesitating about the Triple Gem and the Teaching.",
+  "function": "Causing wavering, agitation, hesitation and indecision.",
+  "manifestation": "Inability to decide, lack of resolve.",
+  "proximateCause": "Unwise attention."
+ },
+ "CS_SADDHA": {
+  "characteristic": "Trusting confidence in the Triple Gem and in the law of kamma and its results — a state of mental purity.",
+  "function": "Purifying the mind, making it place its trust in what is genuinely worthy.",
+  "manifestation": "Freedom from the defilement of superstition.",
+  "proximateCause": "The presence of things worthy of confidence (the Triple Gem, the law of kamma and its fruit)."
+ },
+ "CS_SATI": {
+  "characteristic": "The manner of being alert, not careless, not drifting — keeping the object in mind.",
+  "function": "Remembering, preventing forgetfulness.",
+  "manifestation": "Cultivating a mind that stays closely attached to its object — guarding and protecting the six sense doors.",
+  "proximateCause": "Firm perception/recognition."
+ },
+ "CS_HIRI": {
+  "characteristic": "Abhorrence of wrongdoing, disinclination towards fault.",
+  "function": "Refraining from committing wrongful deeds.",
+  "manifestation": "Shrinking back from evil and fault, avoiding wrongdoing.",
+  "proximateCause": "Self-respect."
+ },
+ "CS_OTTAPPA": {
+  "characteristic": "Dread of wrongdoing, abhorrence of the danger of fault.",
+  "function": "Refraining from wrongdoing, not creating harm.",
+  "manifestation": "Shrinking back from and avoiding wrongdoing.",
+  "proximateCause": "Regard for others, fear of their censure."
+ },
+ "CS_ALOBHA": {
+  "characteristic": "A mind undefiled by its object — free from clinging, free from attachment.",
+  "function": "Not grasping, not clinging, not attaching; transcending bondage.",
+  "manifestation": "Not holding on to what is present, not becoming infatuated with a pleasing object; at its culmination, not clinging even to a new existence.",
+  "proximateCause": "Wise attention."
+ },
+ "CS_ADOSA": {
+  "characteristic": "Freedom from cruelty, malice and opposition — a state of coolness and gentleness.",
+  "function": "Dispelling cruelty, avoiding harm, dispelling heated anger.",
+  "manifestation": "A manifestation of gentleness and coolness.",
+  "proximateCause": "Wise attention."
+ },
+ "CS_TATRAMAJJHATTATA": {
+  "characteristic": "Keeping consciousness and its mental factors level with one another — a state of balance and even-handedness.",
+  "function": "Preventing deficiency or excess, keeping the associated states from losing their balance.",
+  "manifestation": "The production of balance and equilibrium.",
+  "proximateCause": "The presence of harmoniously co-operating states."
+ },
+ "CS_KAYAPASSADDHI": {
+  "characteristic": "Calm, free from the agitation of the mental-factor group (the aggregates of feeling, perception and formations).",
+  "function": "Quelling the agitation of the mental factors, so they no longer waver.",
+  "manifestation": "The mental factors become calm, tranquil and cool.",
+  "proximateCause": "The presence of the mental factors (the aggregates of feeling, perception and formations)."
+ },
+ "CS_CITTAPASSADDHI": {
+  "characteristic": "Calm, free from the agitation of consciousness (the aggregate of consciousness).",
+  "function": "Quelling the agitation of consciousness, so it no longer wavers.",
+  "manifestation": "Consciousness becomes calm, tranquil and cool.",
+  "proximateCause": "The presence of consciousness (the aggregate of consciousness)."
+ },
+ "CS_KAYALAHUTA": {
+  "characteristic": "Lightness, freedom from the heaviness of the mental-factor group (feeling, perception, formations).",
+  "function": "Preventing heaviness from weighing down the mental factors, making them light.",
+  "manifestation": "The mental factors are no longer sluggish and become light.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors (feeling, perception, formations)."
+ },
+ "CS_CITTALAHUTA": {
+  "characteristic": "Lightness, freedom from the heaviness of consciousness.",
+  "function": "Preventing heaviness from weighing down consciousness, making it light.",
+  "manifestation": "Consciousness is no longer sluggish and becomes light.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_KAYAMUDUTA": {
+  "characteristic": "Softness and pliancy of the mental-factor group (feeling, perception, formations).",
+  "function": "Dissolving the rigidity of the mental factors, limiting stiffness and coarseness.",
+  "manifestation": "Pliancy, ease in apprehending the object, freedom from stiffness.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_CITTAMUDUTA": {
+  "characteristic": "Softness and pliancy of consciousness.",
+  "function": "Dissolving the rigidity of consciousness, limiting its stiffness and coarseness.",
+  "manifestation": "Consciousness becomes pliant, apprehending the object with ease, free from stiffness.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_KAYAKAMMANNATA": {
+  "characteristic": "Freeing the mental-factor group from unworkability, from unfitness.",
+  "function": "Dissolving and removing the unfitness of the mental factors.",
+  "manifestation": "The mental factors become adaptable and fit to engage with the object.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_CITTAKAMMANNATA": {
+  "characteristic": "Freeing consciousness from unworkability, from unfitness.",
+  "function": "Dissolving and removing the unfitness of consciousness.",
+  "manifestation": "Consciousness becomes adaptable and fit to engage with the object.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_KAYAPAGUNNATA": {
+  "characteristic": "Absence of stagnation in the mental-factor group — the refined proficiency of the mental factors.",
+  "function": "Breaking up and dissolving the stagnation of the mental factors.",
+  "manifestation": "Keeping clear of and unattached to wrongdoing and fault.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_CITTAPAGUNNATA": {
+  "characteristic": "Absence of stagnation in consciousness — the refined proficiency of consciousness.",
+  "function": "Breaking up and dissolving the stagnation of consciousness.",
+  "manifestation": "Keeping clear of and unattached to wrongdoing and fault.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_KAYUJUKATA": {
+  "characteristic": "Uprightness and straightness of the mental-factor group.",
+  "function": "Counteracting crookedness and the lack of rectitude in the mental factors.",
+  "manifestation": "The mental factors become upright, without crookedness or deviation.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_CITTUJUKATA": {
+  "characteristic": "Uprightness and straightness of consciousness.",
+  "function": "Counteracting crookedness and the lack of rectitude in consciousness.",
+  "manifestation": "Consciousness becomes upright, without crookedness or deviation.",
+  "proximateCause": "The presence of consciousness and its accompanying mental factors."
+ },
+ "CS_SAMMAVACA": {
+  "characteristic": "Upholding right speech — abstaining from and restraining verbal misconduct.",
+  "function": "Keeping away from falsity and deception (wrong speech: lying, slander, harsh speech, idle chatter).",
+  "manifestation": "The eradication of wrong speech.",
+  "proximateCause": "The presence of faith, mindfulness, moral shame, moral dread and modest desire."
+ },
+ "CS_SAMMAKAMMANTA": {
+  "characteristic": "Acting rightly, supporting wholesome states while eliminating one's own defilements.",
+  "function": "Keeping away from unwholesome bodily action (killing, stealing, sexual misconduct).",
+  "manifestation": "The eradication of wrong action.",
+  "proximateCause": "The presence of faith, mindfulness, moral shame, moral dread and modest desire."
+ },
+ "CS_SAMMAAJIVA": {
+  "characteristic": "Purity, renunciation of and abstention from misconduct of both body and speech.",
+  "function": "Sustaining a righteous livelihood, preventing misconduct.",
+  "manifestation": "The eradication of wrong livelihood, refraining from unwholesome conduct.",
+  "proximateCause": "The presence of faith, mindfulness, moral shame, moral dread and modest desire."
+ },
+ "CS_KARUNA": {
+  "characteristic": "The wish that beings be free from suffering — the way of wishing to remove the suffering of beings.",
+  "function": "Being unable to bear the sight of beings' suffering — unable to remain indifferent before the suffering of other beings.",
+  "manifestation": "Kindliness, or the absence of oppressing other beings.",
+  "proximateCause": "Encountering beings who are suffering — perceiving the pressing need of beings overwhelmed by suffering."
+ },
+ "CS_MUDITA": {
+  "characteristic": "Rejoicing in the good fortune of beings — a state of gladness at the happiness of others.",
+  "function": "Being free from envy towards other beings.",
+  "manifestation": "Satisfaction at the progress and happiness of other beings — the destruction of aversion.",
+  "proximateCause": "Seeing beings create and enjoy happiness — recognizing that beings have attained success."
+ },
+ "CS_PANNA": {
+  "characteristic": "Knowing clearly, penetrating to the true nature of phenomena — wisdom that sees the Three Characteristics (impermanence, suffering, non-self).",
+  "function": "Dispelling and eliminating the darkness of ignorance.",
+  "manifestation": "Freedom from confusion, freedom from defiling attachment.",
+  "proximateCause": "Wise attention; calm (a tranquil mind); and a rebirth-linking consciousness rooted in the three wholesome roots (non-greed, non-hatred, non-delusion)."
+ }
+}
