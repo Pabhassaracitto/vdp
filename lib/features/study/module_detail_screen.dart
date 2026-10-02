@@ -1963,7 +1963,13 @@ class _NotePreview extends ConsumerWidget {
                 style: TextStyle(
                   fontSize: 12,
                   height: 1.4,
-                  color: Theme.of(context).colorScheme.onSurface,
+                  // This card's background is a fixed pale amber regardless
+                  // of theme brightness (see decoration above). Using
+                  // colorScheme.onSurface here turns near-white in dark
+                  // mode, which is unreadable on the light background — use
+                  // a fixed dark amber instead, same fix as the Conflict
+                  // Guard card in cetasika_detail_sheet.dart.
+                  color: Colors.amber.shade900,
                 ),
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,

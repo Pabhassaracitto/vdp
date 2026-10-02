@@ -195,6 +195,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
     final q = _questions[_currentIndex];
     final progress = (_currentIndex + 1) / _questions.length;
+    final isHC = context.isHighContrast;
 
     return Column(
       children: [
@@ -259,9 +260,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   Container(
                     padding: const EdgeInsets.all(14),
                     decoration: BoxDecoration(
-                      color: Colors.blue.shade50,
+                      color: isHC ? HCColors.surfaceVariant : Colors.blue.shade50,
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.blue.shade200),
+                      border: Border.all(
+                        color: isHC ? HCColors.info : Colors.blue.shade200,
+                      ),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -270,7 +273,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                           children: [
                             Icon(
                               Icons.info_outline_rounded,
-                              color: Colors.blue.shade700,
+                              color: isHC ? HCColors.info : Colors.blue.shade700,
                               size: 16,
                             ),
                             const SizedBox(width: 6),
@@ -278,7 +281,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                               context.l10n.explanation,
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.blue.shade700,
+                                color: isHC ? HCColors.info : Colors.blue.shade700,
                                 fontSize: 13,
                               ),
                             ),
@@ -287,9 +290,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                         const SizedBox(height: 6),
                         Text(
                           q.explanation,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 13,
                             height: 1.6,
+                            color: isHC ? HCColors.textPrimary : null,
                           ),
                         ),
                       ],
@@ -606,33 +610,38 @@ class _OptionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isHC = context.isHighContrast;
     final Color bgColor;
     final Color borderColor;
     final Widget? trailingIcon;
 
     if (!answered) {
-      bgColor = selected ? Colors.blue.shade50 : Theme.of(context).cardColor;
-      borderColor = selected ? Colors.blue : Colors.grey.shade300;
+      bgColor = selected
+          ? (isHC ? HCColors.surfaceVariant : Colors.blue.shade50)
+          : Theme.of(context).cardColor;
+      borderColor = selected
+          ? (isHC ? HCColors.info : Colors.blue)
+          : (isHC ? HCColors.border : Colors.grey.shade300);
       trailingIcon = null;
     } else if (isCorrect) {
-      bgColor = Colors.green.shade50;
-      borderColor = Colors.green;
-      trailingIcon = const Icon(
+      bgColor = isHC ? HCColors.surfaceVariant : Colors.green.shade50;
+      borderColor = isHC ? HCColors.success : Colors.green;
+      trailingIcon = Icon(
         Icons.check_circle_rounded,
-        color: Colors.green,
+        color: isHC ? HCColors.success : Colors.green,
         size: 20,
       );
     } else if (selected) {
-      bgColor = Colors.red.shade50;
-      borderColor = Colors.red;
-      trailingIcon = const Icon(
+      bgColor = isHC ? HCColors.surfaceVariant : Colors.red.shade50;
+      borderColor = isHC ? HCColors.error : Colors.red;
+      trailingIcon = Icon(
         Icons.cancel_rounded,
-        color: Colors.red,
+        color: isHC ? HCColors.error : Colors.red,
         size: 20,
       );
     } else {
       bgColor = Theme.of(context).cardColor;
-      borderColor = Colors.grey.shade200;
+      borderColor = isHC ? HCColors.border : Colors.grey.shade200;
       trailingIcon = null;
     }
 

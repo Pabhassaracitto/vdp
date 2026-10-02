@@ -1,0 +1,198 @@
+{
+ "RP_001": {
+  "characteristic": "Hardness or softness — the quality of solidity or pliancy in matter.",
+  "function": "Acting as the supporting foundation for the other material phenomena in the same group (kalāpa).",
+  "manifestation": "Receiving — perceptible through bodily contact as hardness or softness.",
+  "proximateCause": "The co-arising of the other three great elements (water, fire, air).",
+  "doctrinalNote": "The four great elements always arise together, inseparably. There is no materiality in the immaterial realm."
+ },
+ "RP_002": {
+  "characteristic": "Flowing or cohesion — the binding quality of matter.",
+  "function": "Binding together the material phenomena within the same kalāpa.",
+  "manifestation": "Matter is held together, not falling apart.",
+  "proximateCause": "The co-arising of the other three great elements (earth, fire, air).",
+  "doctrinalNote": "The water element is the only great element that cannot be directly sensed through bodily contact."
+ },
+ "RP_003": {
+  "characteristic": "Heat or cold — the temperature quality of matter.",
+  "function": "Ripening and sustaining the material phenomena of the same group.",
+  "manifestation": "Matter is brought to maturity and ripeness.",
+  "proximateCause": "The co-arising of the other three great elements (earth, water, air).",
+  "doctrinalNote": "When occurring independently as external heat (utu), the fire element gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
+ },
+ "RP_004": {
+  "characteristic": "Distension or motion — the quality of movement in matter.",
+  "function": "Supporting and setting matter into motion.",
+  "manifestation": "Matter is supported and made to move.",
+  "proximateCause": "The co-arising of the other three great elements (earth, water, fire).",
+  "doctrinalNote": "In the practice of ānāpānasati, the breath (air element) is the principal meditation object."
+ },
+ "RP_005": {
+  "characteristic": "Subtlety and clarity, capable of taking up visible form as its object.",
+  "function": "Serving as the physical basis for eye-consciousness to arise.",
+  "manifestation": "Eye-consciousness arises and sees the visible object.",
+  "proximateCause": "Past kamma; the presence of a visible object impinging on it.",
+  "doctrinalNote": "Produced only by kamma. Not present in the immaterial realm."
+ },
+ "RP_006": {
+  "characteristic": "Subtlety, capable of taking up sound as its object.",
+  "function": "Serving as the physical basis for ear-consciousness to arise.",
+  "manifestation": "Ear-consciousness arises and hears the sound object.",
+  "proximateCause": "Past kamma; the presence of a sound object impinging on it.",
+  "doctrinalNote": "Brahmās of the fine-material realm possess the ear faculty because they communicate through sound."
+ },
+ "RP_007": {
+  "characteristic": "Subtlety, capable of taking up odour as its object.",
+  "function": "Serving as the physical basis for nose-consciousness to arise.",
+  "manifestation": "Nose-consciousness arises and smells the odour object.",
+  "proximateCause": "Past kamma; the presence of an odour object impinging on it.",
+  "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm lack the nose faculty."
+ },
+ "RP_008": {
+  "characteristic": "Subtlety, capable of taking up taste as its object.",
+  "function": "Serving as the physical basis for tongue-consciousness to arise.",
+  "manifestation": "Tongue-consciousness arises and tastes the flavour object.",
+  "proximateCause": "Past kamma; the presence of a taste object impinging on it.",
+  "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās do not eat, so they lack the tongue faculty."
+ },
+ "RP_009": {
+  "characteristic": "Subtlety that pervades the body, taking up tangible objects (earth, fire, air) as its object.",
+  "function": "Serving as the physical basis for body-consciousness to arise.",
+  "manifestation": "Body-consciousness arises and senses the tangible object.",
+  "proximateCause": "Past kamma; the presence of a tangible object impinging on it.",
+  "doctrinalNote": "Brahmās of the fine-material realm possess the body faculty. It is absent in the non-percipient realm."
+ },
+ "RP_010": {
+  "characteristic": "Appearance and manifestation — the object that is seen by the eye faculty.",
+  "function": "Serving as the object cognized by eye-consciousness.",
+  "manifestation": "Eye-consciousness arises and apprehends it.",
+  "proximateCause": "The presence of light together with contact with the eye faculty.",
+  "doctrinalNote": "Visible form (colour) is distinct from materiality (matter) in general."
+ },
+ "RP_011": {
+  "characteristic": "Resounding — the object that is heard by the ear faculty.",
+  "function": "Serving as the object cognized by ear-consciousness.",
+  "manifestation": "Ear-consciousness arises and apprehends it.",
+  "proximateCause": "The arising of sound together with contact with the ear faculty.",
+  "doctrinalNote": null
+ },
+ "RP_012": {
+  "characteristic": "Wafting forth — the object that is smelled by the nose faculty.",
+  "function": "Serving as the object cognized by nose-consciousness.",
+  "manifestation": "Nose-consciousness arises and apprehends it.",
+  "proximateCause": "The arising of odour together with contact with the nose faculty.",
+  "doctrinalNote": null
+ },
+ "RP_013": {
+  "characteristic": "Appearance — the object that is tasted by the tongue faculty.",
+  "function": "Serving as the object cognized by tongue-consciousness.",
+  "manifestation": "Tongue-consciousness arises and apprehends it.",
+  "proximateCause": "Contact of a flavour taken up by the tongue faculty.",
+  "doctrinalNote": null
+ },
+ "RP_014": {
+  "characteristic": "The expression of femininity — influencing the entire material body.",
+  "function": "Determining the signs and behaviour characteristic of the female sex.",
+  "manifestation": "The expression of female sex-characteristics in the material body.",
+  "proximateCause": "Kamma that produces the female sex from the moment of rebirth-linking.",
+  "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm have no sex faculty."
+ },
+ "RP_015": {
+  "characteristic": "The expression of masculinity — influencing the entire material body.",
+  "function": "Determining the signs and behaviour characteristic of the male sex.",
+  "manifestation": "The expression of male sex-characteristics in the material body.",
+  "proximateCause": "Kamma that produces the male sex from the moment of rebirth-linking.",
+  "doctrinalNote": "Occurs only in the sense-sphere realm."
+ },
+ "RP_016": {
+  "characteristic": "Being the seat — the physical basis on which mind-door consciousness depends.",
+  "function": "Serving as the physical basis for all consciousness that arises through the mind-door (excluding the sense-door pairs).",
+  "manifestation": "Mind-door consciousness is able to arise.",
+  "proximateCause": "Produced by past kamma; sustained by the blood of the heart.",
+  "doctrinalNote": "Absent in the immaterial realm. This is the most important material basis in the Abhidhamma system of cognition."
+ },
+ "RP_017": {
+  "characteristic": "Sustaining life — preserving the material phenomena produced by kamma.",
+  "function": "Keeping kamma-produced materiality in existence for the duration of one material life-span.",
+  "manifestation": "Kamma-produced materiality is kept alive and persisting.",
+  "proximateCause": "Only kamma can produce material life faculty.",
+  "doctrinalNote": "The lifespan of materiality equals seventeen mind-moments. When material life faculty ceases, the kamma-produced materiality ceases with it."
+ },
+ "RP_018": {
+  "characteristic": "Nourishment — the nutritive essence present in every material group.",
+  "function": "Nourishing the material phenomena of the same group and generating new materiality from nutriment.",
+  "manifestation": "Materiality is nourished, sustained and multiplied.",
+  "proximateCause": "The presence of nutriment (food) that is digested.",
+  "doctrinalNote": "Nutritive essence in physical food (kabaḷīkāra-āhāra) is one of the four kinds of nutriment in the Abhidhamma."
+ },
+ "RP_019": {
+  "characteristic": "Delimiting — creating the boundary between groups of materiality.",
+  "function": "Demarcating the boundary between kalāpas.",
+  "manifestation": "The groups of materiality are distinguished and do not merge.",
+  "proximateCause": "The presence of material groups (kalāpas) existing alongside one another.",
+  "doctrinalNote": "The space element as a material phenomenon is not the same as absolute space in philosophy."
+ },
+ "RP_020": {
+  "characteristic": "Movement — bodily expression used to convey an intention.",
+  "function": "Communicating an intention through bodily gesture.",
+  "manifestation": "Others understand one's intention through bodily gesture.",
+  "proximateCause": "A consciousness arising with the intention to express something.",
+  "doctrinalNote": "Produced only by mind. It is the basis of bodily action (kāya-kamma)."
+ },
+ "RP_021": {
+  "characteristic": "Vocal expression — speech used to convey an intention.",
+  "function": "Communicating an intention through speech.",
+  "manifestation": "Others understand one's intention through the sound of speech.",
+  "proximateCause": "A consciousness arising with the intention to speak.",
+  "doctrinalNote": "Produced only by mind. It is the basis of verbal action (vacī-kamma)."
+ },
+ "RP_022": {
+  "characteristic": "Lightness — the buoyant, agile quality of materiality.",
+  "function": "Preventing materiality from being heavy and rigid.",
+  "manifestation": "The body is light and moves with ease.",
+  "proximateCause": "Favourable mind, temperature and nutriment; freedom from illness.",
+  "doctrinalNote": "Not produced by kamma. Depends on present health and conditions."
+ },
+ "RP_023": {
+  "characteristic": "Softness — the pliant, malleable quality of materiality.",
+  "function": "Preventing materiality from being stiff and rigid.",
+  "manifestation": "The body is soft and supple.",
+  "proximateCause": "Harmonious mind, temperature and nutriment; freedom from illness.",
+  "doctrinalNote": null
+ },
+ "RP_024": {
+  "characteristic": "Adaptability — the workable, fit quality of materiality.",
+  "function": "Making materiality easy to use and free of fatigue.",
+  "manifestation": "The body is fit for any task.",
+  "proximateCause": "Harmonious mind, temperature and nutriment.",
+  "doctrinalNote": null
+ },
+ "RP_025": {
+  "characteristic": "Genesis — the initial arising phase of a material group.",
+  "function": "Marking the beginning of existence of a material group.",
+  "manifestation": "Materiality comes into being in the world.",
+  "proximateCause": "The four originators of materiality (kamma, mind, temperature, nutriment).",
+  "doctrinalNote": "The four characteristics of materiality are phases of all material phenomena, not independent material instances."
+ },
+ "RP_026": {
+  "characteristic": "Continuity — the phase of persistence and duration of the stream of materiality.",
+  "function": "Keeping the stream of materiality continuing without interruption.",
+  "manifestation": "Materiality appears stable and continuous.",
+  "proximateCause": "The four originators of materiality acting continuously.",
+  "doctrinalNote": "Continuity explains why things seem stable to us — they are in fact an unbroken stream of arising and passing away."
+ },
+ "RP_027": {
+  "characteristic": "Decay — the ageing, declining phase of materiality.",
+  "function": "Marking the change and decline of materiality.",
+  "manifestation": "Materiality grows old, wears down, and changes.",
+  "proximateCause": "The passage of time; materiality having already existed.",
+  "doctrinalNote": "Decay is the clearest visible sign of impermanence (anicca) in materiality."
+ },
+ "RP_028": {
+  "characteristic": "Dissolution — the complete cessation of materiality.",
+  "function": "Marking the end of the existence of materiality.",
+  "manifestation": "Materiality no longer exists — it has completely ceased.",
+  "proximateCause": "Materiality having already passed through the three preceding phases of arising, persisting and changing.",
+  "doctrinalNote": "Clearly seeing the phase of dissolution is the starting point of insight meditation (vipassanā)."
+ }
+}

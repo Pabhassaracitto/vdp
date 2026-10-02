@@ -315,12 +315,22 @@ class _ConflictRuleCard extends StatelessWidget {
             context.showsVietnameseSourceText
                 ? rule.explanation
                 : (rule.explanationPali ?? context.l10n.doctrinalConflicts),
-            style: const TextStyle(fontSize: 13),
+            // This card's background is a fixed pale orange regardless of
+            // theme brightness (see decoration above), so the text color
+            // must also be fixed rather than inherited from the default
+            // TextStyle. In dark mode the inherited color is near-white,
+            // which is unreadable on this light background.
+            style: TextStyle(fontSize: 13, color: Colors.orange.shade900),
           ),
           if (rule.explanationPali != null)
-            Text(rule.explanationPali!,
-                style:
-                    const TextStyle(fontSize: 11, fontStyle: FontStyle.italic)),
+            Text(
+              rule.explanationPali!,
+              style: TextStyle(
+                fontSize: 11,
+                fontStyle: FontStyle.italic,
+                color: Colors.orange.shade800,
+              ),
+            ),
         ],
       ),
     );
