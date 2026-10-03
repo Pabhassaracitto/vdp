@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / भाषा",
+  "languagePickerTitle": "भाषा",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -209,7 +209,7 @@
   "@highContrastMode": {
     "description": "highContrastMode"
   },
-  "highContrastSubtitle": "Increase color contrast for people with low vision",
+  "highContrastSubtitle": "कम दृष्टि वाले लोगों के लिए रंग-विरोध बढ़ाएँ",
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
@@ -217,7 +217,7 @@
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
-  "screenReaderHintsSubtitle": "Provide more detail for TalkBack and VoiceOver",
+  "screenReaderHintsSubtitle": "TalkBack और VoiceOver के लिए अधिक विवरण दें",
   "@screenReaderHintsSubtitle": {
     "description": "screenReaderHintsSubtitle"
   },
@@ -237,7 +237,7 @@
   "@unlockAllLessons": {
     "description": "unlockAllLessons"
   },
-  "unlockAllLessonsSubtitle": "The guided path builds a strong foundation. Experienced learners can unlock every lesson.",
+  "unlockAllLessonsSubtitle": "निर्देशित मार्ग मजबूत आधार बनाता है। अनुभवी विद्यार्थी हर पाठ खोल सकते हैं।",
   "@unlockAllLessonsSubtitle": {
     "description": "unlockAllLessonsSubtitle"
   },
@@ -245,19 +245,19 @@
   "@resetProgress": {
     "description": "resetProgress"
   },
-  "resetProgressSubtitle": "Delete all study data",
+  "resetProgressSubtitle": "सभी अध्ययन डेटा हटाएँ",
   "@resetProgressSubtitle": {
     "description": "resetProgressSubtitle"
   },
-  "showDataWarningAgain": "Show data warning again",
+  "showDataWarningAgain": "डेटा चेतावनी फिर दिखाएँ",
   "@showDataWarningAgain": {
     "description": "showDataWarningAgain"
   },
-  "showDataWarningAgainSubtitle": "Restore the Matrix warning banner",
+  "showDataWarningAgainSubtitle": "मैट्रिक्स चेतावनी पट्टी पुनः दिखाएँ",
   "@showDataWarningAgainSubtitle": {
     "description": "showDataWarningAgainSubtitle"
   },
-  "dataWarningEnabled": "Data warning enabled",
+  "dataWarningEnabled": "डेटा चेतावनी चालू है",
   "@dataWarningEnabled": {
     "description": "dataWarningEnabled"
   },
@@ -273,43 +273,43 @@
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
-  "sourceMaterialValue": "King Milanda A curriculum — Abhidhamma",
+  "sourceMaterialValue": "राजा मिलिंद A पाठ्यक्रम — अभिधम्म",
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "संपादकीय सिद्धांत",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
-  "resetProgressQuestion": "Reset progress?",
+  "resetProgressQuestion": "प्रगति रीसेट करें?",
   "@resetProgressQuestion": {
     "description": "resetProgressQuestion"
   },
-  "resetProgressWarning": "All study progress and quiz scores will be deleted. This action cannot be undone.",
+  "resetProgressWarning": "सभी अध्ययन प्रगति और क्विज़ अंक हट जाएंगे। यह क्रिया वापस नहीं की जा सकती।",
   "@resetProgressWarning": {
     "description": "resetProgressWarning"
   },
-  "progressResetSuccess": "Study progress reset",
+  "progressResetSuccess": "अध्ययन प्रगति रीसेट हो गई",
   "@progressResetSuccess": {
     "description": "progressResetSuccess"
   },
-  "unlockLessonsQuestion": "Unlock all lessons?",
+  "unlockLessonsQuestion": "सभी पाठ खोलें?",
   "@unlockLessonsQuestion": {
     "description": "unlockLessonsQuestion"
   },
-  "unlockLessonsWarning": "The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.",
+  "unlockLessonsWarning": "निर्देशित मार्ग ठोस अभिधम्म आधार बनाने का सर्वोत्तम तरीका है। यह विकल्प अनुभवी विद्यार्थियों के लिए है।",
   "@unlockLessonsWarning": {
     "description": "unlockLessonsWarning"
   },
-  "keepGuidedPath": "Keep guided path",
+  "keepGuidedPath": "निर्देशित मार्ग रखें",
   "@keepGuidedPath": {
     "description": "keepGuidedPath"
   },
-  "unlock": "Unlock",
+  "unlock": "खोलें",
   "@unlock": {
     "description": "unlock"
   },
-  "modulesCompleted": "{completed} / {total} modules completed",
+  "modulesCompleted": "{completed} / {total} मॉड्यूल पूर्ण",
   "@modulesCompleted": {
     "description": "modulesCompleted",
     "placeholders": {
@@ -317,29 +317,29 @@
       "total": {}
     }
   },
-  "mostRecentModule": "Most recent module: {module}",
+  "mostRecentModule": "सबसे हाल का मॉड्यूल: {module}",
   "@mostRecentModule": {
     "description": "mostRecentModule",
     "placeholders": {
       "module": {}
     }
   },
-  "lastStudied": "Last studied: {date}",
+  "lastStudied": "अंतिम अध्ययन: {date}",
   "@lastStudied": {
     "description": "lastStudied",
     "placeholders": {
       "date": {}
     }
   },
-  "today": "Today",
+  "today": "आज",
   "@today": {
     "description": "today"
   },
-  "yesterday": "Yesterday",
+  "yesterday": "कल",
   "@yesterday": {
     "description": "yesterday"
   },
-  "daysAgo": "{count} days ago",
+  "daysAgo": "{count} दिन पहले",
   "@daysAgo": {
     "description": "daysAgo",
     "placeholders": {
@@ -401,7 +401,7 @@
   "@rotateScreen": {
     "description": "rotateScreen"
   },
-  "rotationHint": "If the screen does not rotate, enable Auto-rotate in device settings.",
+  "rotationHint": "यदि स्क्रीन नहीं घूमती है, तो डिवाइस सेटिंग्स में ऑटो-रोटेट चालू करें।",
   "@rotationHint": {
     "description": "rotationHint"
   },
@@ -429,43 +429,43 @@
   "@cetasika": {
     "description": "cetasika"
   },
-  "unwholesome": "Unwholesome",
+  "unwholesome": "अकुशल",
   "@unwholesome": {
     "description": "unwholesome"
   },
-  "rootless": "Rootless",
+  "rootless": "अहेतुक",
   "@rootless": {
     "description": "rootless"
   },
-  "senseSphereBeautiful": "Sense-sphere beautiful",
+  "senseSphereBeautiful": "कामावचर शोभन",
   "@senseSphereBeautiful": {
     "description": "senseSphereBeautiful"
   },
-  "formSphere": "Form sphere",
+  "formSphere": "रूपावचर",
   "@formSphere": {
     "description": "formSphere"
   },
-  "formlessSphere": "Formless sphere",
+  "formlessSphere": "अरूपावचर",
   "@formlessSphere": {
     "description": "formlessSphere"
   },
-  "supramundane": "Supramundane",
+  "supramundane": "लोकुत्तर",
   "@supramundane": {
     "description": "supramundane"
   },
-  "legend": "Legend:",
+  "legend": "संकेत:",
   "@legend": {
     "description": "legend"
   },
-  "associationAlways": "Invariable",
+  "associationAlways": "नियत",
   "@associationAlways": {
     "description": "associationAlways"
   },
-  "associationSometimes": "Variable",
+  "associationSometimes": "अनियत",
   "@associationSometimes": {
     "description": "associationSometimes"
   },
-  "associationNever": "Absent",
+  "associationNever": "अनुपस्थित",
   "@associationNever": {
     "description": "associationNever"
   },
@@ -476,35 +476,35 @@
       "count": {}
     }
   },
-  "matrixHelpTitle": "Matrix guide",
+  "matrixHelpTitle": "मैट्रिक्स मार्गदर्शिका",
   "@matrixHelpTitle": {
     "description": "matrixHelpTitle"
   },
-  "howToRead": "How to read:",
+  "howToRead": "कैसे पढ़ें:",
   "@howToRead": {
     "description": "howToRead"
   },
-  "matrixHelpRead": "• Rows: Citta\n• Columns: Cetasika\n• Intersections: association",
+  "matrixHelpRead": "• पंक्तियाँ: चित्त\n• स्तंभ: चेतसिक\n• प्रतिच्छेद: संबंध",
   "@matrixHelpRead": {
     "description": "matrixHelpRead"
   },
-  "symbols": "Symbols:",
+  "symbols": "चिह्न:",
   "@symbols": {
     "description": "symbols"
   },
-  "matrixHelpSymbols": "✦ = Invariable\n◎ = Variable\n✕ = Absent",
+  "matrixHelpSymbols": "✦ = नियत\n◎ = अनियत\n✕ = अनुपस्थित",
   "@matrixHelpSymbols": {
     "description": "matrixHelpSymbols"
   },
-  "tips": "Tips:",
+  "tips": "सुझाव:",
   "@tips": {
     "description": "tips"
   },
-  "matrixHelpTips": "• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space",
+  "matrixHelpTips": "• विवरण के लिए चित्त पर टैप करें\n• संघर्ष देखने के लिए चेतसिक पर टैप करें\n• दृश्य सीमित करने के लिए फ़िल्टर प्रयोग करें\n• अधिक स्थान के लिए घुमाएँ",
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
-  "understood": "Got it",
+  "understood": "समझ गया",
   "@understood": {
     "description": "understood"
   },
@@ -512,7 +512,7 @@
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
-  "allFilters": "All",
+  "allFilters": "सभी",
   "@allFilters": {
     "description": "allFilters"
   },
@@ -532,68 +532,68 @@
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
-  "conditionDetails": "Dependent-origination details:",
+  "conditionDetails": "प्रतित्यसमुत्पाद विवरण:",
   "@conditionDetails": {
     "description": "conditionDetails"
   },
-  "lastConditionDescription": "This is the final resultant link in this life-cycle and starts no new condition.",
+  "lastConditionDescription": "यह इस जीवन-चक्र की अंतिम विपाक कड़ी है और नई शर्त आरंभ नहीं करती।",
   "@lastConditionDescription": {
     "description": "lastConditionDescription"
   },
-  "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionLinkDescription": "• शर्त: {effect}\n  व्याख्या: {explanation}",
+  "conditionsTabLinks": "१२ कड़ियाँ",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "२४ पच्चय",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
-  "paccayaTitle": "The 24 Conditional Relations (Patthana)",
+  "paccayaTitle": "२४ पच्चय संबंध (पट्ठान)",
   "@paccayaTitle": {
     "description": "paccayaTitle"
   },
-  "paccayaIntro": "Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.",
+  "paccayaIntro": "पच्चय-संगह-विभाग का भाग B: धम्म परस्पर कैसे शर्त बनते हैं। भाग A प्रतित्यसमुत्पाद की १२ कड़ियाँ है।",
   "@paccayaIntro": {
     "description": "paccayaIntro"
   },
-  "paccayaDefinition": "Definition",
+  "paccayaDefinition": "परिभाषा",
   "@paccayaDefinition": {
     "description": "paccayaDefinition"
   },
-  "paccayaConditioningStates": "Conditioning states (paccaya-dhamma)",
+  "paccayaConditioningStates": "शर्त देने वाले धर्म (paccaya-dhamma)",
   "@paccayaConditioningStates": {
     "description": "paccayaConditioningStates"
   },
-  "paccayaConditionedStates": "Conditioned states (paccayuppanna)",
+  "paccayaConditionedStates": "शर्तित धर्म (paccayuppanna)",
   "@paccayaConditionedStates": {
     "description": "paccayaConditionedStates"
   },
-  "paccayaSubdivisions": "Subdivisions",
+  "paccayaSubdivisions": "उपविभाग",
   "@paccayaSubdivisions": {
     "description": "paccayaSubdivisions"
   },
-  "paccayaInPaticca": "Operates in these links",
+  "paccayaInPaticca": "इन कड़ियों में कार्य करता है",
   "@paccayaInPaticca": {
     "description": "paccayaInPaticca"
   },
-  "paccayaEmpty": "No condition matches this filter.",
+  "paccayaEmpty": "इस फ़िल्टर से कोई पच्चय नहीं मिला।",
   "@paccayaEmpty": {
     "description": "paccayaEmpty"
   },
-  "paccayaSearchHint": "Search a condition…",
+  "paccayaSearchHint": "पच्चय खोजें…",
   "@paccayaSearchHint": {
     "description": "paccayaSearchHint"
   },
-  "paccayaSourceNotice": "Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.",
+  "paccayaSourceNotice": "स्रोत: Paṭṭhāna (Abhidhamma Piṭaka VII) और Visuddhimagga अध्याय XVII। Pa-Auk ग्रंथों में २४ पच्चय की स्वतंत्र सूची नहीं मिली; शब्दावली वरिष्ठ समीक्षा में है।",
   "@paccayaSourceNotice": {
     "description": "paccayaSourceNotice"
   },
-  "paccayaSources": "Sources",
+  "paccayaSources": "स्रोत",
   "@paccayaSources": {
     "description": "paccayaSources"
   },
-  "paccayaCount": "{count} conditions",
+  "paccayaCount": "{count} पच्चय",
   "@paccayaCount": {
     "description": "paccayaCount",
     "placeholders": {
@@ -604,39 +604,39 @@
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
-  "paccayaGroupRootObject": "Root & object",
+  "paccayaGroupRootObject": "मूल और आलंबन",
   "@paccayaGroupRootObject": {
     "description": "paccayaGroupRootObject"
   },
-  "paccayaGroupContinuity": "Continuity",
+  "paccayaGroupContinuity": "निरंतरता",
   "@paccayaGroupContinuity": {
     "description": "paccayaGroupContinuity"
   },
-  "paccayaGroupConascence": "Conascence & support",
+  "paccayaGroupConascence": "सहजात और सहारा",
   "@paccayaGroupConascence": {
     "description": "paccayaGroupConascence"
   },
-  "paccayaGroupTimeRelation": "Arising order",
+  "paccayaGroupTimeRelation": "उदय क्रम",
   "@paccayaGroupTimeRelation": {
     "description": "paccayaGroupTimeRelation"
   },
-  "paccayaGroupKammaVipaka": "Kamma & result",
+  "paccayaGroupKammaVipaka": "कम्म और विपाक",
   "@paccayaGroupKammaVipaka": {
     "description": "paccayaGroupKammaVipaka"
   },
-  "paccayaGroupGeneral": "General",
+  "paccayaGroupGeneral": "सामान्य",
   "@paccayaGroupGeneral": {
     "description": "paccayaGroupGeneral"
   },
-  "kiepPast": "Past life",
+  "kiepPast": "पूर्व जीवन",
   "@kiepPast": {
     "description": "kiepPast"
   },
-  "kiepPresent": "This life",
+  "kiepPresent": "यह जीवन",
   "@kiepPresent": {
     "description": "kiepPresent"
   },
-  "kiepFuture": "Future life",
+  "kiepFuture": "भावी जीवन",
   "@kiepFuture": {
     "description": "kiepFuture"
   },
@@ -813,11 +813,11 @@
       "state": {}
     }
   },
-  "selected": "Selected",
+  "selected": "चयनित",
   "@selected": {
     "description": "selected"
   },
-  "dimmedByConflict": "Dimmed because of a conflict",
+  "dimmedByConflict": "संघर्ष के कारण धुंधला",
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
@@ -834,7 +834,7 @@
       "cetasikaId": {}
     }
   },
-  "tapForDetails": "Tap for details",
+  "tapForDetails": "विवरण के लिए टैप करें",
   "@tapForDetails": {
     "description": "tapForDetails"
   },

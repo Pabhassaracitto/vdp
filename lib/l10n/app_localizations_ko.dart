@@ -124,7 +124,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get systemDefaultSubtitle => '이 기기에서 선택한 언어 사용';
 
   @override
-  String get languagePickerTitle => 'Language / 언어';
+  String get languagePickerTitle => '언어';
 
   @override
   String get languagePickerSearchHint => '언어 이름 또는 코드로 검색';
@@ -219,13 +219,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get version => '버전';
 
   @override
-  String get sourceMaterial => '출처';
+  String get sourceMaterial => '원전 자료';
 
   @override
   String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => '편집 원칙';
 
   @override
   String get resetProgressQuestion => 'Reset progress?';
@@ -434,10 +434,10 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '12연기지';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '24조건';
 
   @override
   String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
@@ -1083,13 +1083,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get resumeListening => '이어서 듣기';
 
   @override
-  String get continueListening => '계속 듣기';
+  String get continueListening => 'Continue listening';
 
   @override
-  String get sleepTimer => '취침 타이머';
+  String get sleepTimer => 'Sleep timer';
 
   @override
-  String get sleepTimerOff => '끔';
+  String get sleepTimerOff => 'Off';
 
   @override
   String get minutesShort => '분';

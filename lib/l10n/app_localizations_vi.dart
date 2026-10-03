@@ -125,7 +125,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get systemDefaultSubtitle => 'Dùng ngôn ngữ được chọn trên thiết bị';
 
   @override
-  String get languagePickerTitle => 'Language / Ngôn ngữ';
+  String get languagePickerTitle => 'Ngôn ngữ';
 
   @override
   String get languagePickerSearchHint => 'Tìm theo tên hoặc mã ngôn ngữ';

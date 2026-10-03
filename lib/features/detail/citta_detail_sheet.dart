@@ -112,7 +112,7 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                 Row(
                   children: [
                     Semantics(
-                      label: 'Bhumi Group ${citta.bhumiGroup.name}',
+                      label: citta.bhumiGroup.localizedName(context.l10n),
                       child: Container(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8, vertical: 4),
