@@ -125,7 +125,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get systemDefaultSubtitle => 'इस डिवाइस पर चुनी भाषा का उपयोग करें';
 
   @override
-  String get languagePickerTitle => 'Language / भाषा';
+  String get languagePickerTitle => 'भाषा';
 
   @override
   String get languagePickerSearchHint => 'भाषा के नाम या कोड से खोजें';
@@ -172,14 +172,14 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get highContrastSubtitle =>
-      'Increase color contrast for people with low vision';
+      'कम दृष्टि वाले लोगों के लिए रंग-विरोध बढ़ाएँ';
 
   @override
   String get screenReaderHints => 'स्क्रीन रीडर संकेत';
 
   @override
   String get screenReaderHintsSubtitle =>
-      'Provide more detail for TalkBack and VoiceOver';
+      'TalkBack और VoiceOver के लिए अधिक विवरण दें';
 
   @override
   String get textSize => 'अक्षर आकार';
@@ -195,23 +195,23 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get unlockAllLessonsSubtitle =>
-      'The guided path builds a strong foundation. Experienced learners can unlock every lesson.';
+      'निर्देशित मार्ग मजबूत आधार बनाता है। अनुभवी विद्यार्थी हर पाठ खोल सकते हैं।';
 
   @override
   String get resetProgress => 'प्रगति रीसेट करें';
 
   @override
-  String get resetProgressSubtitle => 'Delete all study data';
+  String get resetProgressSubtitle => 'सभी अध्ययन डेटा हटाएँ';
 
   @override
-  String get showDataWarningAgain => 'Show data warning again';
+  String get showDataWarningAgain => 'डेटा चेतावनी फिर दिखाएँ';
 
   @override
   String get showDataWarningAgainSubtitle =>
-      'Restore the Matrix warning banner';
+      'मैट्रिक्स चेतावनी पट्टी पुनः दिखाएँ';
 
   @override
-  String get dataWarningEnabled => 'Data warning enabled';
+  String get dataWarningEnabled => 'डेटा चेतावनी चालू है';
 
   @override
   String get aboutApp => 'परिचय';
@@ -223,58 +223,58 @@ class AppLocalizationsHi extends AppLocalizations {
   String get sourceMaterial => 'स्रोत सामग्री';
 
   @override
-  String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
+  String get sourceMaterialValue => 'राजा मिलिंद A पाठ्यक्रम — अभिधम्म';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'संपादकीय सिद्धांत';
 
   @override
-  String get resetProgressQuestion => 'Reset progress?';
+  String get resetProgressQuestion => 'प्रगति रीसेट करें?';
 
   @override
   String get resetProgressWarning =>
-      'All study progress and quiz scores will be deleted. This action cannot be undone.';
+      'सभी अध्ययन प्रगति और क्विज़ अंक हट जाएंगे। यह क्रिया वापस नहीं की जा सकती।';
 
   @override
-  String get progressResetSuccess => 'Study progress reset';
+  String get progressResetSuccess => 'अध्ययन प्रगति रीसेट हो गई';
 
   @override
-  String get unlockLessonsQuestion => 'Unlock all lessons?';
+  String get unlockLessonsQuestion => 'सभी पाठ खोलें?';
 
   @override
   String get unlockLessonsWarning =>
-      'The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.';
+      'निर्देशित मार्ग ठोस अभिधम्म आधार बनाने का सर्वोत्तम तरीका है। यह विकल्प अनुभवी विद्यार्थियों के लिए है।';
 
   @override
-  String get keepGuidedPath => 'Keep guided path';
+  String get keepGuidedPath => 'निर्देशित मार्ग रखें';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'खोलें';
 
   @override
   String modulesCompleted(Object completed, Object total) {
-    return '$completed / $total modules completed';
+    return '$completed / $total मॉड्यूल पूर्ण';
   }
 
   @override
   String mostRecentModule(Object module) {
-    return 'Most recent module: $module';
+    return 'सबसे हाल का मॉड्यूल: $module';
   }
 
   @override
   String lastStudied(Object date) {
-    return 'Last studied: $date';
+    return 'अंतिम अध्ययन: $date';
   }
 
   @override
-  String get today => 'Today';
+  String get today => 'आज';
 
   @override
-  String get yesterday => 'Yesterday';
+  String get yesterday => 'कल';
 
   @override
   String daysAgo(Object count) {
-    return '$count days ago';
+    return '$count दिन पहले';
   }
 
   @override
@@ -323,7 +323,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get rotationHint =>
-      'If the screen does not rotate, enable Auto-rotate in device settings.';
+      'यदि स्क्रीन नहीं घूमती है, तो डिवाइस सेटिंग्स में ऑटो-रोटेट चालू करें।';
 
   @override
   String get highContrast => 'उच्च कंट्रास्ट';
@@ -344,34 +344,34 @@ class AppLocalizationsHi extends AppLocalizations {
   String get cetasika => 'चेतसिक';
 
   @override
-  String get unwholesome => 'Unwholesome';
+  String get unwholesome => 'अकुशल';
 
   @override
-  String get rootless => 'Rootless';
+  String get rootless => 'अहेतुक';
 
   @override
-  String get senseSphereBeautiful => 'Sense-sphere beautiful';
+  String get senseSphereBeautiful => 'कामावचर शोभन';
 
   @override
-  String get formSphere => 'Form sphere';
+  String get formSphere => 'रूपावचर';
 
   @override
-  String get formlessSphere => 'Formless sphere';
+  String get formlessSphere => 'अरूपावचर';
 
   @override
-  String get supramundane => 'Supramundane';
+  String get supramundane => 'लोकुत्तर';
 
   @override
-  String get legend => 'Legend:';
+  String get legend => 'संकेत:';
 
   @override
-  String get associationAlways => 'Invariable';
+  String get associationAlways => 'नियत';
 
   @override
-  String get associationSometimes => 'Variable';
+  String get associationSometimes => 'अनियत';
 
   @override
-  String get associationNever => 'Absent';
+  String get associationNever => 'अनुपस्थित';
 
   @override
   String dataWarningsCount(Object count) {
@@ -379,36 +379,36 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get matrixHelpTitle => 'Matrix guide';
+  String get matrixHelpTitle => 'मैट्रिक्स मार्गदर्शिका';
 
   @override
-  String get howToRead => 'How to read:';
+  String get howToRead => 'कैसे पढ़ें:';
 
   @override
   String get matrixHelpRead =>
-      '• Rows: Citta\n• Columns: Cetasika\n• Intersections: association';
+      '• पंक्तियाँ: चित्त\n• स्तंभ: चेतसिक\n• प्रतिच्छेद: संबंध';
 
   @override
-  String get symbols => 'Symbols:';
+  String get symbols => 'चिह्न:';
 
   @override
-  String get matrixHelpSymbols => '✦ = Invariable\n◎ = Variable\n✕ = Absent';
+  String get matrixHelpSymbols => '✦ = नियत\n◎ = अनियत\n✕ = अनुपस्थित';
 
   @override
-  String get tips => 'Tips:';
+  String get tips => 'सुझाव:';
 
   @override
   String get matrixHelpTips =>
-      '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
+      '• विवरण के लिए चित्त पर टैप करें\n• संघर्ष देखने के लिए चेतसिक पर टैप करें\n• दृश्य सीमित करने के लिए फ़िल्टर प्रयोग करें\n• अधिक स्थान के लिए घुमाएँ';
 
   @override
-  String get understood => 'Got it';
+  String get understood => 'समझ गया';
 
   @override
   String get dataWarningTitle => 'Data warning';
 
   @override
-  String get allFilters => 'All';
+  String get allFilters => 'सभी';
 
   @override
   String get defilements => 'Defilements';
@@ -423,93 +423,93 @@ class AppLocalizationsHi extends AppLocalizations {
   String get conditionsTitle => 'प्रतीत्यसमुत्पाद';
 
   @override
-  String get conditionDetails => 'Dependent-origination details:';
+  String get conditionDetails => 'प्रतित्यसमुत्पाद विवरण:';
 
   @override
   String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
+      'यह इस जीवन-चक्र की अंतिम विपाक कड़ी है और नई शर्त आरंभ नहीं करती।';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
+    return '• शर्त: $effect\n  व्याख्या: $explanation';
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '१२ कड़ियाँ';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '२४ पच्चय';
 
   @override
-  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+  String get paccayaTitle => '२४ पच्चय संबंध (पट्ठान)';
 
   @override
   String get paccayaIntro =>
-      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+      'पच्चय-संगह-विभाग का भाग B: धम्म परस्पर कैसे शर्त बनते हैं। भाग A प्रतित्यसमुत्पाद की १२ कड़ियाँ है।';
 
   @override
-  String get paccayaDefinition => 'Definition';
+  String get paccayaDefinition => 'परिभाषा';
 
   @override
   String get paccayaConditioningStates =>
-      'Conditioning states (paccaya-dhamma)';
+      'शर्त देने वाले धर्म (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+  String get paccayaConditionedStates => 'शर्तित धर्म (paccayuppanna)';
 
   @override
-  String get paccayaSubdivisions => 'Subdivisions';
+  String get paccayaSubdivisions => 'उपविभाग';
 
   @override
-  String get paccayaInPaticca => 'Operates in these links';
+  String get paccayaInPaticca => 'इन कड़ियों में कार्य करता है';
 
   @override
-  String get paccayaEmpty => 'No condition matches this filter.';
+  String get paccayaEmpty => 'इस फ़िल्टर से कोई पच्चय नहीं मिला।';
 
   @override
-  String get paccayaSearchHint => 'Search a condition…';
+  String get paccayaSearchHint => 'पच्चय खोजें…';
 
   @override
   String get paccayaSourceNotice =>
-      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+      'स्रोत: Paṭṭhāna (Abhidhamma Piṭaka VII) और Visuddhimagga अध्याय XVII। Pa-Auk ग्रंथों में २४ पच्चय की स्वतंत्र सूची नहीं मिली; शब्दावली वरिष्ठ समीक्षा में है।';
 
   @override
-  String get paccayaSources => 'Sources';
+  String get paccayaSources => 'स्रोत';
 
   @override
   String paccayaCount(Object count) {
-    return '$count conditions';
+    return '$count पच्चय';
   }
 
   @override
   String get relatedDhammas => 'Related dhammas';
 
   @override
-  String get paccayaGroupRootObject => 'Root & object';
+  String get paccayaGroupRootObject => 'मूल और आलंबन';
 
   @override
-  String get paccayaGroupContinuity => 'Continuity';
+  String get paccayaGroupContinuity => 'निरंतरता';
 
   @override
-  String get paccayaGroupConascence => 'Conascence & support';
+  String get paccayaGroupConascence => 'सहजात और सहारा';
 
   @override
-  String get paccayaGroupTimeRelation => 'Arising order';
+  String get paccayaGroupTimeRelation => 'उदय क्रम';
 
   @override
-  String get paccayaGroupKammaVipaka => 'Kamma & result';
+  String get paccayaGroupKammaVipaka => 'कम्म और विपाक';
 
   @override
-  String get paccayaGroupGeneral => 'General';
+  String get paccayaGroupGeneral => 'सामान्य';
 
   @override
-  String get kiepPast => 'Past life';
+  String get kiepPast => 'पूर्व जीवन';
 
   @override
-  String get kiepPresent => 'This life';
+  String get kiepPresent => 'यह जीवन';
 
   @override
-  String get kiepFuture => 'Future life';
+  String get kiepFuture => 'भावी जीवन';
 
   @override
   String get kammaTitle => 'Kamma';
@@ -632,10 +632,10 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get selected => 'Selected';
+  String get selected => 'चयनित';
 
   @override
-  String get dimmedByConflict => 'Dimmed because of a conflict';
+  String get dimmedByConflict => 'संघर्ष के कारण धुंधला';
 
   @override
   String get matrixCornerSemantics =>
@@ -648,7 +648,7 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get tapForDetails => 'Tap for details';
+  String get tapForDetails => 'विवरण के लिए टैप करें';
 
   @override
   String get studyPath => 'अध्ययन पथ';
@@ -1083,7 +1083,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get resumeListening => 'सुनना जारी रखें';
 
   @override
-  String get continueListening => 'सुनना जारी रखें';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => 'बंद करने का टाइमर';

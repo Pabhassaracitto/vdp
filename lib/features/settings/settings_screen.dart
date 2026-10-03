@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/localization/language_settings.dart';
+import '../../core/localization/ui_locale_text.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../data/models/study_module.dart';
 import '../../l10n/l10n.dart';
@@ -192,9 +193,7 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.gavel),
             title: Text(context.l10n.editorialPrinciples),
-            subtitle: const Text(
-              'Offline-First · Accuracy-First · Accessibility-First',
-            ),
+            subtitle: Text(_SettingsUiText.editorialPrinciplesSummary(context)),
           ),
           const SizedBox(height: 40),
         ],
@@ -305,6 +304,42 @@ class SettingsScreen extends ConsumerWidget {
       ),
     );
   }
+}
+
+class _SettingsUiText {
+  const _SettingsUiText._();
+
+  static String editorialPrinciplesSummary(BuildContext context) => localizedUiText(
+        context,
+        const {
+          'en': 'Offline-first · Accuracy-first · Accessibility-first',
+          'vi': 'Ưu tiên ngoại tuyến · Ưu tiên chính xác · Ưu tiên tiếp cận',
+          'zh': '离线优先 · 准确优先 · 无障碍优先',
+          'zh_TW': '離線優先 · 準確優先 · 無障礙優先',
+          'hi': 'ऑफ़लाइन-प्रथम · शुद्धता-प्रथम · सुलभता-प्रथम',
+          'my': 'အော့ဖ်လိုင်းဦးစားပေး · တိကျမှုဦးစားပေး · အသုံးပြုလွယ်ကူမှုဦးစားပေး',
+          'si': 'නොබැඳි ප්‍රමුඛ · නිරවද්‍යතා ප්‍රමුඛ · ප්‍රවේශගම්‍යතා ප්‍රමුඛ',
+          'ar': 'الأولوية للعمل دون اتصال · الأولوية للدقة · الأولوية لإتاحة الوصول',
+          'bn': 'অফলাইন-প্রথম · নির্ভুলতা-প্রথম · অ্যাক্সেসিবিলিটি-প্রথম',
+          'bo': 'དྲ་མེད་སྔོན་ལ། · ཡང་དག་པ་སྔོན་ལ། · སྤྱོད་ཐུབ་པ་སྔོན་ལ།',
+          'de': 'Offline zuerst · Genauigkeit zuerst · Barrierefreiheit zuerst',
+          'es': 'Primero sin conexión · Primero la precisión · Primero la accesibilidad',
+          'fr': 'Hors ligne d’abord · Exactitude d’abord · Accessibilité d’abord',
+          'id': 'Offline terlebih dahulu · Akurasi terlebih dahulu · Aksesibilitas terlebih dahulu',
+          'it': 'Prima offline · Prima accuratezza · Prima accessibilità',
+          'ja': 'オフライン優先 · 正確性優先 · アクセシビリティ優先',
+          'km': 'អាទិភាពអอฟឡាញ · អាទិភាពភាពត្រឹមត្រូវ · អាទិភាពភាពងាយចូលប្រើ',
+          'ko': '오프라인 우선 · 정확성 우선 · 접근성 우선',
+          'lo': 'ໃຊ້ອອບລາຍກ່ອນ · ຄວາມຖືກຕ້ອງກ່ອນ · ການເຂົ້າເຖິງກ່ອນ',
+          'mn': 'Офлайн нэн тэргүүнд · Нарийвчлал нэн тэргүүнд · Хүртээмж нэн тэргүүнд',
+          'mr': 'ऑफलाइन-प्रथम · अचूकता-प्रथम · सुलभता-प्रथम',
+          'pt': 'Offline primeiro · Precisão primeiro · Acessibilidade primeiro',
+          'ru': 'Сначала офлайн · Сначала точность · Сначала доступность',
+          'ta': 'ஆஃப்லைன் முதலில் · துல்லியம் முதலில் · அணுகல்தன்மை முதலில்',
+          'te': 'ఆఫ్‌లైన్ మొదట · ఖచ్చితత్వం మొదట · అందుబాటు మొదట',
+          'th': 'ออฟไลน์ก่อน · ความถูกต้องก่อน · การเข้าถึงก่อน',
+        },
+      );
 }
 
 class _SectionDivider extends StatelessWidget {

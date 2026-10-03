@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / భాష",
+  "languagePickerTitle": "భాష",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -269,7 +269,7 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "Source material",
+  "sourceMaterial": "మూల పదార్థం",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "సంపాదకీయ సూత్రాలు",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -528,7 +528,7 @@
   "@result": {
     "description": "result"
   },
-  "conditionsTitle": "Dependent Origination",
+  "conditionsTitle": "పటిక్చసముప్పాదం",
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "12 కడియాలు",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "24 పచ్చయాలు",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
@@ -651,7 +651,7 @@
   "@kammaTitle": {
     "description": "kammaTitle"
   },
-  "mindProcessTitle": "Mind Process",
+  "mindProcessTitle": "చిత్త ప్రక్రియ",
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },

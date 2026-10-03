@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / ভাষা",
+  "languagePickerTitle": "ভাষা",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -269,7 +269,7 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "Source material",
+  "sourceMaterial": "উৎস উপাদান",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "সম্পাদনার নীতি",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -528,7 +528,7 @@
   "@result": {
     "description": "result"
   },
-  "conditionsTitle": "Dependent Origination",
+  "conditionsTitle": "প্রতীত্যসমুত্পাদ",
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "১২টি নিদান",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "২৪টি পচ্চয়",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
@@ -651,7 +651,7 @@
   "@kammaTitle": {
     "description": "kammaTitle"
   },
-  "mindProcessTitle": "Mind Process",
+  "mindProcessTitle": "চিত্ত-প্রক্রিয়া",
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },

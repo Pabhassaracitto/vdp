@@ -2,6 +2,8 @@
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../../../core/localization/content_catalog.dart';
+import '../../../../core/localization/locale_controller.dart';
 import '../../../../data/models/paccaya_model.dart';
 import '../../../../data/models/paticca_model.dart';
 import '../../data/paticca_repository_impl.dart';
@@ -109,7 +111,7 @@ final paccayaListProvider = FutureProvider<List<PaccayaModel>>((ref) async {
 /// state đó là freezed-class đã sinh mã sẵn.
 final paccayaGroupFilterProvider = StateProvider<PaccayaGroup?>((ref) => null);
 
-/// Từ khoá tìm kiếm nhanh theo tên Pāḷi / Việt.
+/// Từ khoá tìm kiếm nhanh theo tên Pāḷi và tên đã bản địa hoá.
 final paccayaSearchProvider = StateProvider<String>((ref) => '');
 
 /// 24 duyên hệ sau khi áp bộ lọc nhóm + từ khoá.
@@ -118,15 +120,44 @@ final paccayaFilteredListProvider =
   final listAsync = ref.watch(paccayaListProvider);
   final groupFilter = ref.watch(paccayaGroupFilterProvider);
   final query = ref.watch(paccayaSearchProvider).trim().toLowerCase();
+  final contentLocale = ref.watch(localeSettingsProvider).contentLocale;
+  final catalog = ref.watch(contentCatalogProvider(contentLocale)).maybeWhen(
+        data: (value) => value,
+        orElse: () => ContentCatalog.vietnamese,
+      );
 
   return listAsync.whenData((list) {
     return list.where((p) {
       final groupOk = groupFilter == null || p.group == groupFilter;
       if (!groupOk) return false;
       if (query.isEmpty) return true;
-      final haystack =
-          '${p.namePali} ${p.nameVietnamese} ${p.nameShort} ${p.nameEnglish}'
-              .toLowerCase();
+      final localizedName = catalog.text(
+        'paccayas',
+        p.id,
+        'name',
+        p.nameVietnamese,
+      );
+      final localizedShortName = catalog.text(
+        'paccayas',
+        p.id,
+        'shortName',
+        p.nameShort,
+      );
+      final localizedDefinition = catalog.text(
+        'paccayas',
+        p.id,
+        'definition',
+        p.definitionVi,
+      );
+      final haystack = [
+        p.namePali,
+        p.nameEnglish,
+        p.nameVietnamese,
+        p.nameShort,
+        localizedName,
+        localizedShortName,
+        localizedDefinition,
+      ].join(' ').toLowerCase();
       return haystack.contains(query);
     }).toList();
   });

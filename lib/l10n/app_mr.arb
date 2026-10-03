@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / भाषा",
+  "languagePickerTitle": "भाषा",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -269,7 +269,7 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "Source material",
+  "sourceMaterial": "स्रोत साहित्य",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "संपादकीय तत्त्वे",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -528,7 +528,7 @@
   "@result": {
     "description": "result"
   },
-  "conditionsTitle": "Dependent Origination",
+  "conditionsTitle": "प्रतित्यसमुत्पाद",
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "१२ दुवे",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "२४ पच्चय",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
@@ -651,7 +651,7 @@
   "@kammaTitle": {
     "description": "kammaTitle"
   },
-  "mindProcessTitle": "Mind Process",
+  "mindProcessTitle": "चित्त-प्रक्रिया",
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },

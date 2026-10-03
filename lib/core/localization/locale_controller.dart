@@ -120,9 +120,11 @@ class AppLanguage {
   });
 
   String get tag => localeTag(locale);
-  String get safeDisplayName => nativeName == englishName
-      ? '$nativeName (${tag.toUpperCase()})'
-      : '$nativeName · $englishName (${tag.toUpperCase()})';
+
+  /// Display only the endonym plus locale tag so the Settings screen does not
+  /// leak English labels after a learner has chosen another interface language.
+  /// English names remain searchable through [matches] for recovery.
+  String get safeDisplayName => '$nativeName (${tag.toUpperCase()})';
 
   bool matches(String rawQuery) {
     final query = rawQuery.trim().toLowerCase();
@@ -148,8 +150,9 @@ class AppLanguage {
   }
 }
 
-/// Stable, non-localized names make it possible to recover after accidentally
-/// choosing a language the user cannot read.
+/// Stable endonyms plus searchable English aliases make it possible to recover
+/// after accidentally choosing a language the user cannot read, without showing
+/// English labels in the selected non-English interface.
 const supportedAppLanguages = <AppLanguage>[
   AppLanguage(
     locale: Locale('vi'),

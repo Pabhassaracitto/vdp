@@ -127,7 +127,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Use the language selected on this device';
 
   @override
-  String get languagePickerTitle => 'Language / Ngôn ngữ';
+  String get languagePickerTitle => 'Language';
 
   @override
   String get languagePickerSearchHint => 'Search by language name or code';

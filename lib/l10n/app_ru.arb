@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / Язык",
+  "languagePickerTitle": "Язык",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -269,7 +269,7 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "Источники",
+  "sourceMaterial": "Исходный материал",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "Редакционные принципы",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "12 звеньев",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "24 условия",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },

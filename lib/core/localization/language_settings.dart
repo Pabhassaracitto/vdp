@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../l10n/l10n.dart';
 import 'content_languages.dart';
 import 'locale_controller.dart';
+import 'ui_locale_text.dart';
 
 class LanguageSettingsSection extends ConsumerWidget {
   const LanguageSettingsSection({super.key});
@@ -51,9 +52,9 @@ class LanguageSettingsSection extends ConsumerWidget {
                     child: Directionality(
                       textDirection: TextDirection.ltr,
                       child: Text(
-                        language.statusBadge == null
-                            ? language.nativeName
-                            : '${language.nativeName} · ${language.statusBadge}',
+                        language.needsReviewWarning
+                            ? '${language.nativeName} · ${_LanguageUiText.draftBadge(context)}'
+                            : language.nativeName,
                       ),
                     ),
                   ),
@@ -133,13 +134,6 @@ Future<void> showSafeLanguagePicker(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Fixed English recovery text remains readable even if the
-              // currently selected locale was accidental.
-              const Text(
-                'Change interface language?',
-                style: TextStyle(fontWeight: FontWeight.w600),
-              ),
-              const SizedBox(height: 8),
               Text(context.l10n.languageChangePreviewBody(displayName)),
               const SizedBox(height: 12),
               Directionality(
@@ -155,12 +149,12 @@ Future<void> showSafeLanguagePicker(
             TextButton.icon(
               onPressed: () => Navigator.pop(dialogContext, false),
               icon: const Icon(Icons.arrow_back),
-              label: Text('${context.l10n.cancel} / Cancel'),
+              label: Text(context.l10n.cancel),
             ),
             FilledButton.icon(
               onPressed: () => Navigator.pop(dialogContext, true),
               icon: const Icon(Icons.check),
-              label: Text('${context.l10n.apply} / Apply'),
+              label: Text(context.l10n.apply),
             ),
           ],
         ),
@@ -178,7 +172,7 @@ Future<void> showSafeLanguagePicker(
     SnackBar(
       content: Text('✓ ${context.l10n.languageChangedTo(displayName)}'),
       action: SnackBarAction(
-        label: '↶ ${context.l10n.undo} / Undo',
+        label: '↶ ${context.l10n.undo}',
         onPressed: () => ref
             .read(localeSettingsProvider.notifier)
             .setUiLocale(previous),
@@ -186,6 +180,42 @@ Future<void> showSafeLanguagePicker(
       duration: const Duration(seconds: 8),
     ),
   );
+}
+
+class _LanguageUiText {
+  const _LanguageUiText._();
+
+  static String draftBadge(BuildContext context) => localizedUiText(
+        context,
+        const {
+          'en': 'Draft',
+          'vi': 'Bản nháp',
+          'zh': '草稿',
+          'zh_TW': '草稿',
+          'hi': 'मसौदा',
+          'my': 'မူကြမ်း',
+          'si': 'කෙටුම්පත',
+          'ar': 'مسودة',
+          'bn': 'খসড়া',
+          'bo': 'འཆར་ཟིན།',
+          'de': 'Entwurf',
+          'es': 'Borrador',
+          'fr': 'Brouillon',
+          'id': 'Draf',
+          'it': 'Bozza',
+          'ja': '下書き',
+          'km': 'ព្រាង',
+          'ko': '초안',
+          'lo': 'ຮ່າງ',
+          'mn': 'Ноорог',
+          'mr': 'मसुदा',
+          'pt': 'Rascunho',
+          'ru': 'Черновик',
+          'ta': 'வரைவு',
+          'te': 'ముసాయిదా',
+          'th': 'ฉบับร่าง',
+        },
+      );
 }
 
 class _LanguagePickerSheet extends StatefulWidget {
@@ -243,7 +273,7 @@ class _LanguagePickerSheetState extends State<_LanguagePickerSheet> {
           ),
           ListTile(
             leading: const Icon(Icons.settings_suggest_rounded),
-            title: Text('${context.l10n.systemDefault} / System default'),
+            title: Text(context.l10n.systemDefault),
             subtitle: Text(context.l10n.systemDefaultSubtitle),
             onTap: () => Navigator.pop(
               context,

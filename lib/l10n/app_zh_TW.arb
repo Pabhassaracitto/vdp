@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / 語言",
+  "languagePickerTitle": "語言",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -209,7 +209,7 @@
   "@highContrastMode": {
     "description": "highContrastMode"
   },
-  "highContrastSubtitle": "Increase color contrast for people with low vision",
+  "highContrastSubtitle": "提高色彩對比度，方便低視力使用者",
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
@@ -217,7 +217,7 @@
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
-  "screenReaderHintsSubtitle": "Provide more detail for TalkBack and VoiceOver",
+  "screenReaderHintsSubtitle": "為 TalkBack 和 VoiceOver 提供更多細節",
   "@screenReaderHintsSubtitle": {
     "description": "screenReaderHintsSubtitle"
   },
@@ -237,7 +237,7 @@
   "@unlockAllLessons": {
     "description": "unlockAllLessons"
   },
-  "unlockAllLessonsSubtitle": "The guided path builds a strong foundation. Experienced learners can unlock every lesson.",
+  "unlockAllLessonsSubtitle": "引導路徑能建立堅實基礎。有經驗的學習者可以解鎖所有課程。",
   "@unlockAllLessonsSubtitle": {
     "description": "unlockAllLessonsSubtitle"
   },
@@ -245,19 +245,19 @@
   "@resetProgress": {
     "description": "resetProgress"
   },
-  "resetProgressSubtitle": "Delete all study data",
+  "resetProgressSubtitle": "刪除所有學習資料",
   "@resetProgressSubtitle": {
     "description": "resetProgressSubtitle"
   },
-  "showDataWarningAgain": "Show data warning again",
+  "showDataWarningAgain": "再次顯示資料警告",
   "@showDataWarningAgain": {
     "description": "showDataWarningAgain"
   },
-  "showDataWarningAgainSubtitle": "Restore the Matrix warning banner",
+  "showDataWarningAgainSubtitle": "恢復矩陣警告橫幅",
   "@showDataWarningAgainSubtitle": {
     "description": "showDataWarningAgainSubtitle"
   },
-  "dataWarningEnabled": "Data warning enabled",
+  "dataWarningEnabled": "資料警告已啟用",
   "@dataWarningEnabled": {
     "description": "dataWarningEnabled"
   },
@@ -269,47 +269,47 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "資料來源",
+  "sourceMaterial": "來源資料",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
-  "sourceMaterialValue": "King Milanda A curriculum — Abhidhamma",
+  "sourceMaterialValue": "Milanda 國王 A 課程 — 阿毘達摩",
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "編審原則",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
-  "resetProgressQuestion": "Reset progress?",
+  "resetProgressQuestion": "重置進度？",
   "@resetProgressQuestion": {
     "description": "resetProgressQuestion"
   },
-  "resetProgressWarning": "All study progress and quiz scores will be deleted. This action cannot be undone.",
+  "resetProgressWarning": "所有學習進度和測驗分數都會被刪除。此操作無法復原。",
   "@resetProgressWarning": {
     "description": "resetProgressWarning"
   },
-  "progressResetSuccess": "Study progress reset",
+  "progressResetSuccess": "學習進度已重置",
   "@progressResetSuccess": {
     "description": "progressResetSuccess"
   },
-  "unlockLessonsQuestion": "Unlock all lessons?",
+  "unlockLessonsQuestion": "解鎖所有課程？",
   "@unlockLessonsQuestion": {
     "description": "unlockLessonsQuestion"
   },
-  "unlockLessonsWarning": "The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.",
+  "unlockLessonsWarning": "引導路徑是建立扎實阿毘達摩基礎的最佳方式。此選項適合有經驗的學習者。",
   "@unlockLessonsWarning": {
     "description": "unlockLessonsWarning"
   },
-  "keepGuidedPath": "Keep guided path",
+  "keepGuidedPath": "保留引導路徑",
   "@keepGuidedPath": {
     "description": "keepGuidedPath"
   },
-  "unlock": "Unlock",
+  "unlock": "解鎖",
   "@unlock": {
     "description": "unlock"
   },
-  "modulesCompleted": "{completed} / {total} modules completed",
+  "modulesCompleted": "已完成 {completed} / {total} 個模組",
   "@modulesCompleted": {
     "description": "modulesCompleted",
     "placeholders": {
@@ -317,29 +317,29 @@
       "total": {}
     }
   },
-  "mostRecentModule": "Most recent module: {module}",
+  "mostRecentModule": "最近模組：{module}",
   "@mostRecentModule": {
     "description": "mostRecentModule",
     "placeholders": {
       "module": {}
     }
   },
-  "lastStudied": "Last studied: {date}",
+  "lastStudied": "上次學習：{date}",
   "@lastStudied": {
     "description": "lastStudied",
     "placeholders": {
       "date": {}
     }
   },
-  "today": "Today",
+  "today": "今天",
   "@today": {
     "description": "today"
   },
-  "yesterday": "Yesterday",
+  "yesterday": "昨天",
   "@yesterday": {
     "description": "yesterday"
   },
-  "daysAgo": "{count} days ago",
+  "daysAgo": "{count} 天前",
   "@daysAgo": {
     "description": "daysAgo",
     "placeholders": {
@@ -401,7 +401,7 @@
   "@rotateScreen": {
     "description": "rotateScreen"
   },
-  "rotationHint": "If the screen does not rotate, enable Auto-rotate in device settings.",
+  "rotationHint": "如果螢幕沒有旋轉，請在裝置設定中啟用自動旋轉。",
   "@rotationHint": {
     "description": "rotationHint"
   },
@@ -429,43 +429,43 @@
   "@cetasika": {
     "description": "cetasika"
   },
-  "unwholesome": "Unwholesome",
+  "unwholesome": "不善",
   "@unwholesome": {
     "description": "unwholesome"
   },
-  "rootless": "Rootless",
+  "rootless": "無因",
   "@rootless": {
     "description": "rootless"
   },
-  "senseSphereBeautiful": "Sense-sphere beautiful",
+  "senseSphereBeautiful": "欲界美心",
   "@senseSphereBeautiful": {
     "description": "senseSphereBeautiful"
   },
-  "formSphere": "Form sphere",
+  "formSphere": "色界",
   "@formSphere": {
     "description": "formSphere"
   },
-  "formlessSphere": "Formless sphere",
+  "formlessSphere": "無色界",
   "@formlessSphere": {
     "description": "formlessSphere"
   },
-  "supramundane": "Supramundane",
+  "supramundane": "出世間",
   "@supramundane": {
     "description": "supramundane"
   },
-  "legend": "Legend:",
+  "legend": "圖例：",
   "@legend": {
     "description": "legend"
   },
-  "associationAlways": "Invariable",
+  "associationAlways": "恆常",
   "@associationAlways": {
     "description": "associationAlways"
   },
-  "associationSometimes": "Variable",
+  "associationSometimes": "不定",
   "@associationSometimes": {
     "description": "associationSometimes"
   },
-  "associationNever": "Absent",
+  "associationNever": "無",
   "@associationNever": {
     "description": "associationNever"
   },
@@ -476,35 +476,35 @@
       "count": {}
     }
   },
-  "matrixHelpTitle": "Matrix guide",
+  "matrixHelpTitle": "矩陣指南",
   "@matrixHelpTitle": {
     "description": "matrixHelpTitle"
   },
-  "howToRead": "How to read:",
+  "howToRead": "閱讀方式：",
   "@howToRead": {
     "description": "howToRead"
   },
-  "matrixHelpRead": "• Rows: Citta\n• Columns: Cetasika\n• Intersections: association",
+  "matrixHelpRead": "• 行：心\n• 列：心所\n• 交叉處：相應關係",
   "@matrixHelpRead": {
     "description": "matrixHelpRead"
   },
-  "symbols": "Symbols:",
+  "symbols": "符號：",
   "@symbols": {
     "description": "symbols"
   },
-  "matrixHelpSymbols": "✦ = Invariable\n◎ = Variable\n✕ = Absent",
+  "matrixHelpSymbols": "✦ = 恆常相應\n◎ = 不定相應\n✕ = 不相應",
   "@matrixHelpSymbols": {
     "description": "matrixHelpSymbols"
   },
-  "tips": "Tips:",
+  "tips": "提示：",
   "@tips": {
     "description": "tips"
   },
-  "matrixHelpTips": "• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space",
+  "matrixHelpTips": "• 點按一個心查看詳情\n• 點按一個心所查看衝突\n• 使用篩選縮小範圍\n• 旋轉螢幕獲得更多空間",
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
-  "understood": "Got it",
+  "understood": "明白了",
   "@understood": {
     "description": "understood"
   },
@@ -512,7 +512,7 @@
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
-  "allFilters": "All",
+  "allFilters": "全部",
   "@allFilters": {
     "description": "allFilters"
   },
@@ -532,68 +532,68 @@
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
-  "conditionDetails": "Dependent-origination details:",
+  "conditionDetails": "緣起詳情：",
   "@conditionDetails": {
     "description": "conditionDetails"
   },
-  "lastConditionDescription": "This is the final resultant link in this life-cycle and starts no new condition.",
+  "lastConditionDescription": "這是此生命循環中的最後果報支，不再開啟新的條件。",
   "@lastConditionDescription": {
     "description": "lastConditionDescription"
   },
-  "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionLinkDescription": "• 條件：{effect}\n  說明：{explanation}",
+  "conditionsTabLinks": "十二支",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "二十四緣",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
-  "paccayaTitle": "The 24 Conditional Relations (Patthana)",
+  "paccayaTitle": "二十四緣（發趣論）",
   "@paccayaTitle": {
     "description": "paccayaTitle"
   },
-  "paccayaIntro": "Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.",
+  "paccayaIntro": "《緣攝分別》的 B 部分：諸法如何互為條件。A 部分是緣起十二支。",
   "@paccayaIntro": {
     "description": "paccayaIntro"
   },
-  "paccayaDefinition": "Definition",
+  "paccayaDefinition": "定義",
   "@paccayaDefinition": {
     "description": "paccayaDefinition"
   },
-  "paccayaConditioningStates": "Conditioning states (paccaya-dhamma)",
+  "paccayaConditioningStates": "能緣法 (paccaya-dhamma)",
   "@paccayaConditioningStates": {
     "description": "paccayaConditioningStates"
   },
-  "paccayaConditionedStates": "Conditioned states (paccayuppanna)",
+  "paccayaConditionedStates": "所緣起法 (paccayuppanna)",
   "@paccayaConditionedStates": {
     "description": "paccayaConditionedStates"
   },
-  "paccayaSubdivisions": "Subdivisions",
+  "paccayaSubdivisions": "細分",
   "@paccayaSubdivisions": {
     "description": "paccayaSubdivisions"
   },
-  "paccayaInPaticca": "Operates in these links",
+  "paccayaInPaticca": "作用於這些支",
   "@paccayaInPaticca": {
     "description": "paccayaInPaticca"
   },
-  "paccayaEmpty": "No condition matches this filter.",
+  "paccayaEmpty": "沒有符合此篩選的緣。",
   "@paccayaEmpty": {
     "description": "paccayaEmpty"
   },
-  "paccayaSearchHint": "Search a condition…",
+  "paccayaSearchHint": "搜尋一個緣…",
   "@paccayaSearchHint": {
     "description": "paccayaSearchHint"
   },
-  "paccayaSourceNotice": "Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.",
+  "paccayaSourceNotice": "來源：《發趣論》（阿毘達摩藏第七）與《清淨道論》第 XVII 章。未見 Pa-Auk 文獻逐項列出二十四緣；術語仍待資深審校。",
   "@paccayaSourceNotice": {
     "description": "paccayaSourceNotice"
   },
-  "paccayaSources": "Sources",
+  "paccayaSources": "來源",
   "@paccayaSources": {
     "description": "paccayaSources"
   },
-  "paccayaCount": "{count} conditions",
+  "paccayaCount": "{count} 個緣",
   "@paccayaCount": {
     "description": "paccayaCount",
     "placeholders": {
@@ -604,39 +604,39 @@
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
-  "paccayaGroupRootObject": "Root & object",
+  "paccayaGroupRootObject": "根與所緣",
   "@paccayaGroupRootObject": {
     "description": "paccayaGroupRootObject"
   },
-  "paccayaGroupContinuity": "Continuity",
+  "paccayaGroupContinuity": "相續",
   "@paccayaGroupContinuity": {
     "description": "paccayaGroupContinuity"
   },
-  "paccayaGroupConascence": "Conascence & support",
+  "paccayaGroupConascence": "俱生與依止",
   "@paccayaGroupConascence": {
     "description": "paccayaGroupConascence"
   },
-  "paccayaGroupTimeRelation": "Arising order",
+  "paccayaGroupTimeRelation": "生起次第",
   "@paccayaGroupTimeRelation": {
     "description": "paccayaGroupTimeRelation"
   },
-  "paccayaGroupKammaVipaka": "Kamma & result",
+  "paccayaGroupKammaVipaka": "業與果",
   "@paccayaGroupKammaVipaka": {
     "description": "paccayaGroupKammaVipaka"
   },
-  "paccayaGroupGeneral": "General",
+  "paccayaGroupGeneral": "通用",
   "@paccayaGroupGeneral": {
     "description": "paccayaGroupGeneral"
   },
-  "kiepPast": "Past life",
+  "kiepPast": "過去生",
   "@kiepPast": {
     "description": "kiepPast"
   },
-  "kiepPresent": "This life",
+  "kiepPresent": "今生",
   "@kiepPresent": {
     "description": "kiepPresent"
   },
-  "kiepFuture": "Future life",
+  "kiepFuture": "未來生",
   "@kiepFuture": {
     "description": "kiepFuture"
   },
@@ -813,11 +813,11 @@
       "state": {}
     }
   },
-  "selected": "Selected",
+  "selected": "已選擇",
   "@selected": {
     "description": "selected"
   },
-  "dimmedByConflict": "Dimmed because of a conflict",
+  "dimmedByConflict": "因衝突而淡化",
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
@@ -834,7 +834,7 @@
       "cetasikaId": {}
     }
   },
-  "tapForDetails": "Tap for details",
+  "tapForDetails": "點按查看詳情",
   "@tapForDetails": {
     "description": "tapForDetails"
   },

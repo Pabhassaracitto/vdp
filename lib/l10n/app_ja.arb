@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / 言語",
+  "languagePickerTitle": "言語",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -209,7 +209,7 @@
   "@highContrastMode": {
     "description": "highContrastMode"
   },
-  "highContrastSubtitle": "Increase color contrast for people with low vision",
+  "highContrastSubtitle": "弱視の方のために色のコントラストを高めます",
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
@@ -217,7 +217,7 @@
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
-  "screenReaderHintsSubtitle": "Provide more detail for TalkBack and VoiceOver",
+  "screenReaderHintsSubtitle": "TalkBack と VoiceOver により詳しい説明を提供します",
   "@screenReaderHintsSubtitle": {
     "description": "screenReaderHintsSubtitle"
   },
@@ -237,7 +237,7 @@
   "@unlockAllLessons": {
     "description": "unlockAllLessons"
   },
-  "unlockAllLessonsSubtitle": "The guided path builds a strong foundation. Experienced learners can unlock every lesson.",
+  "unlockAllLessonsSubtitle": "ガイド付きの道筋は確かな基礎を築きます。経験のある学習者はすべての課程を解放できます。",
   "@unlockAllLessonsSubtitle": {
     "description": "unlockAllLessonsSubtitle"
   },
@@ -245,19 +245,19 @@
   "@resetProgress": {
     "description": "resetProgress"
   },
-  "resetProgressSubtitle": "Delete all study data",
+  "resetProgressSubtitle": "すべての学習データを削除",
   "@resetProgressSubtitle": {
     "description": "resetProgressSubtitle"
   },
-  "showDataWarningAgain": "Show data warning again",
+  "showDataWarningAgain": "データ警告を再表示",
   "@showDataWarningAgain": {
     "description": "showDataWarningAgain"
   },
-  "showDataWarningAgainSubtitle": "Restore the Matrix warning banner",
+  "showDataWarningAgainSubtitle": "マトリックスの警告バナーを復元",
   "@showDataWarningAgainSubtitle": {
     "description": "showDataWarningAgainSubtitle"
   },
-  "dataWarningEnabled": "Data warning enabled",
+  "dataWarningEnabled": "データ警告が有効になりました",
   "@dataWarningEnabled": {
     "description": "dataWarningEnabled"
   },
@@ -269,47 +269,47 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "資料",
+  "sourceMaterial": "典拠資料",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
-  "sourceMaterialValue": "King Milanda A curriculum — Abhidhamma",
+  "sourceMaterialValue": "ミリンダ王 A カリキュラム — アビダンマ",
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "編集方針",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
-  "resetProgressQuestion": "Reset progress?",
+  "resetProgressQuestion": "進捗をリセットしますか？",
   "@resetProgressQuestion": {
     "description": "resetProgressQuestion"
   },
-  "resetProgressWarning": "All study progress and quiz scores will be deleted. This action cannot be undone.",
+  "resetProgressWarning": "学習進捗とクイズ得点がすべて削除されます。この操作は元に戻せません。",
   "@resetProgressWarning": {
     "description": "resetProgressWarning"
   },
-  "progressResetSuccess": "Study progress reset",
+  "progressResetSuccess": "学習進捗をリセットしました",
   "@progressResetSuccess": {
     "description": "progressResetSuccess"
   },
-  "unlockLessonsQuestion": "Unlock all lessons?",
+  "unlockLessonsQuestion": "すべての課程を解放しますか？",
   "@unlockLessonsQuestion": {
     "description": "unlockLessonsQuestion"
   },
-  "unlockLessonsWarning": "The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.",
+  "unlockLessonsWarning": "ガイド付きの道筋は、堅固なアビダンマの基礎を築く最も効果的な方法です。この選択肢は経験のある学習者向けです。",
   "@unlockLessonsWarning": {
     "description": "unlockLessonsWarning"
   },
-  "keepGuidedPath": "Keep guided path",
+  "keepGuidedPath": "ガイド付きの道筋を維持",
   "@keepGuidedPath": {
     "description": "keepGuidedPath"
   },
-  "unlock": "Unlock",
+  "unlock": "解放",
   "@unlock": {
     "description": "unlock"
   },
-  "modulesCompleted": "{completed} / {total} modules completed",
+  "modulesCompleted": "{completed} / {total} モジュール完了",
   "@modulesCompleted": {
     "description": "modulesCompleted",
     "placeholders": {
@@ -317,29 +317,29 @@
       "total": {}
     }
   },
-  "mostRecentModule": "Most recent module: {module}",
+  "mostRecentModule": "最近のモジュール：{module}",
   "@mostRecentModule": {
     "description": "mostRecentModule",
     "placeholders": {
       "module": {}
     }
   },
-  "lastStudied": "Last studied: {date}",
+  "lastStudied": "最終学習：{date}",
   "@lastStudied": {
     "description": "lastStudied",
     "placeholders": {
       "date": {}
     }
   },
-  "today": "Today",
+  "today": "今日",
   "@today": {
     "description": "today"
   },
-  "yesterday": "Yesterday",
+  "yesterday": "昨日",
   "@yesterday": {
     "description": "yesterday"
   },
-  "daysAgo": "{count} days ago",
+  "daysAgo": "{count} 日前",
   "@daysAgo": {
     "description": "daysAgo",
     "placeholders": {
@@ -401,7 +401,7 @@
   "@rotateScreen": {
     "description": "rotateScreen"
   },
-  "rotationHint": "If the screen does not rotate, enable Auto-rotate in device settings.",
+  "rotationHint": "画面が回転しない場合は、端末設定で自動回転を有効にしてください。",
   "@rotationHint": {
     "description": "rotationHint"
   },
@@ -429,43 +429,43 @@
   "@cetasika": {
     "description": "cetasika"
   },
-  "unwholesome": "Unwholesome",
+  "unwholesome": "不善",
   "@unwholesome": {
     "description": "unwholesome"
   },
-  "rootless": "Rootless",
+  "rootless": "無因",
   "@rootless": {
     "description": "rootless"
   },
-  "senseSphereBeautiful": "Sense-sphere beautiful",
+  "senseSphereBeautiful": "欲界美心",
   "@senseSphereBeautiful": {
     "description": "senseSphereBeautiful"
   },
-  "formSphere": "Form sphere",
+  "formSphere": "色界",
   "@formSphere": {
     "description": "formSphere"
   },
-  "formlessSphere": "Formless sphere",
+  "formlessSphere": "無色界",
   "@formlessSphere": {
     "description": "formlessSphere"
   },
-  "supramundane": "Supramundane",
+  "supramundane": "出世間",
   "@supramundane": {
     "description": "supramundane"
   },
-  "legend": "Legend:",
+  "legend": "凡例：",
   "@legend": {
     "description": "legend"
   },
-  "associationAlways": "Invariable",
+  "associationAlways": "必ず相応",
   "@associationAlways": {
     "description": "associationAlways"
   },
-  "associationSometimes": "Variable",
+  "associationSometimes": "場合により相応",
   "@associationSometimes": {
     "description": "associationSometimes"
   },
-  "associationNever": "Absent",
+  "associationNever": "不相応",
   "@associationNever": {
     "description": "associationNever"
   },
@@ -476,35 +476,35 @@
       "count": {}
     }
   },
-  "matrixHelpTitle": "Matrix guide",
+  "matrixHelpTitle": "マトリックス案内",
   "@matrixHelpTitle": {
     "description": "matrixHelpTitle"
   },
-  "howToRead": "How to read:",
+  "howToRead": "読み方：",
   "@howToRead": {
     "description": "howToRead"
   },
-  "matrixHelpRead": "• Rows: Citta\n• Columns: Cetasika\n• Intersections: association",
+  "matrixHelpRead": "• 行：心\n• 列：心所\n• 交点：相応関係",
   "@matrixHelpRead": {
     "description": "matrixHelpRead"
   },
-  "symbols": "Symbols:",
+  "symbols": "記号：",
   "@symbols": {
     "description": "symbols"
   },
-  "matrixHelpSymbols": "✦ = Invariable\n◎ = Variable\n✕ = Absent",
+  "matrixHelpSymbols": "✦ = 必ず相応\n◎ = 場合により相応\n✕ = 不相応",
   "@matrixHelpSymbols": {
     "description": "matrixHelpSymbols"
   },
-  "tips": "Tips:",
+  "tips": "ヒント：",
   "@tips": {
     "description": "tips"
   },
-  "matrixHelpTips": "• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space",
+  "matrixHelpTips": "• 心をタップして詳細を表示\n• 心所をタップして衝突を表示\n• フィルターで表示を絞り込み\n• 画面を回転して広く表示",
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
-  "understood": "Got it",
+  "understood": "了解",
   "@understood": {
     "description": "understood"
   },
@@ -512,7 +512,7 @@
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
-  "allFilters": "All",
+  "allFilters": "すべて",
   "@allFilters": {
     "description": "allFilters"
   },
@@ -532,68 +532,68 @@
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
-  "conditionDetails": "Dependent-origination details:",
+  "conditionDetails": "縁起の詳細：",
   "@conditionDetails": {
     "description": "conditionDetails"
   },
-  "lastConditionDescription": "This is the final resultant link in this life-cycle and starts no new condition.",
+  "lastConditionDescription": "これはこの生命循環における最後の果報支で、新たな条件を開始しません。",
   "@lastConditionDescription": {
     "description": "lastConditionDescription"
   },
-  "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionLinkDescription": "• 条件：{effect}\n  説明：{explanation}",
+  "conditionsTabLinks": "十二支",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "二十四縁",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
-  "paccayaTitle": "The 24 Conditional Relations (Patthana)",
+  "paccayaTitle": "二十四縁（発趣論）",
   "@paccayaTitle": {
     "description": "paccayaTitle"
   },
-  "paccayaIntro": "Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.",
+  "paccayaIntro": "Paccaya-saṅgaha-vibhāga の B 部：諸法が互いにどのように条件となるか。A 部は縁起十二支です。",
   "@paccayaIntro": {
     "description": "paccayaIntro"
   },
-  "paccayaDefinition": "Definition",
+  "paccayaDefinition": "定義",
   "@paccayaDefinition": {
     "description": "paccayaDefinition"
   },
-  "paccayaConditioningStates": "Conditioning states (paccaya-dhamma)",
+  "paccayaConditioningStates": "能縁法 (paccaya-dhamma)",
   "@paccayaConditioningStates": {
     "description": "paccayaConditioningStates"
   },
-  "paccayaConditionedStates": "Conditioned states (paccayuppanna)",
+  "paccayaConditionedStates": "所縁起法 (paccayuppanna)",
   "@paccayaConditionedStates": {
     "description": "paccayaConditionedStates"
   },
-  "paccayaSubdivisions": "Subdivisions",
+  "paccayaSubdivisions": "下位区分",
   "@paccayaSubdivisions": {
     "description": "paccayaSubdivisions"
   },
-  "paccayaInPaticca": "Operates in these links",
+  "paccayaInPaticca": "これらの支で働く",
   "@paccayaInPaticca": {
     "description": "paccayaInPaticca"
   },
-  "paccayaEmpty": "No condition matches this filter.",
+  "paccayaEmpty": "このフィルターに一致する縁はありません。",
   "@paccayaEmpty": {
     "description": "paccayaEmpty"
   },
-  "paccayaSearchHint": "Search a condition…",
+  "paccayaSearchHint": "縁を検索…",
   "@paccayaSearchHint": {
     "description": "paccayaSearchHint"
   },
-  "paccayaSourceNotice": "Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.",
+  "paccayaSourceNotice": "典拠：Paṭṭhāna（阿毘達磨蔵 VII）および Visuddhimagga 第 XVII 章。Pa-Auk 文献には二十四縁の列挙が見当たらないため、訳語は上級確認待ちです。",
   "@paccayaSourceNotice": {
     "description": "paccayaSourceNotice"
   },
-  "paccayaSources": "Sources",
+  "paccayaSources": "典拠",
   "@paccayaSources": {
     "description": "paccayaSources"
   },
-  "paccayaCount": "{count} conditions",
+  "paccayaCount": "{count} 縁",
   "@paccayaCount": {
     "description": "paccayaCount",
     "placeholders": {
@@ -604,39 +604,39 @@
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
-  "paccayaGroupRootObject": "Root & object",
+  "paccayaGroupRootObject": "根と所縁",
   "@paccayaGroupRootObject": {
     "description": "paccayaGroupRootObject"
   },
-  "paccayaGroupContinuity": "Continuity",
+  "paccayaGroupContinuity": "相続",
   "@paccayaGroupContinuity": {
     "description": "paccayaGroupContinuity"
   },
-  "paccayaGroupConascence": "Conascence & support",
+  "paccayaGroupConascence": "俱生と依止",
   "@paccayaGroupConascence": {
     "description": "paccayaGroupConascence"
   },
-  "paccayaGroupTimeRelation": "Arising order",
+  "paccayaGroupTimeRelation": "生起順序",
   "@paccayaGroupTimeRelation": {
     "description": "paccayaGroupTimeRelation"
   },
-  "paccayaGroupKammaVipaka": "Kamma & result",
+  "paccayaGroupKammaVipaka": "業と果",
   "@paccayaGroupKammaVipaka": {
     "description": "paccayaGroupKammaVipaka"
   },
-  "paccayaGroupGeneral": "General",
+  "paccayaGroupGeneral": "一般",
   "@paccayaGroupGeneral": {
     "description": "paccayaGroupGeneral"
   },
-  "kiepPast": "Past life",
+  "kiepPast": "過去生",
   "@kiepPast": {
     "description": "kiepPast"
   },
-  "kiepPresent": "This life",
+  "kiepPresent": "今生",
   "@kiepPresent": {
     "description": "kiepPresent"
   },
-  "kiepFuture": "Future life",
+  "kiepFuture": "未来生",
   "@kiepFuture": {
     "description": "kiepFuture"
   },
@@ -813,11 +813,11 @@
       "state": {}
     }
   },
-  "selected": "Selected",
+  "selected": "選択中",
   "@selected": {
     "description": "selected"
   },
-  "dimmedByConflict": "Dimmed because of a conflict",
+  "dimmedByConflict": "衝突のため淡色表示",
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
@@ -834,7 +834,7 @@
       "cetasikaId": {}
     }
   },
-  "tapForDetails": "Tap for details",
+  "tapForDetails": "タップして詳細",
   "@tapForDetails": {
     "description": "tapForDetails"
   },

@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / Sprache",
+  "languagePickerTitle": "Sprache",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "Redaktionsgrundsätze",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "12 Glieder",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "24 Bedingungen",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },

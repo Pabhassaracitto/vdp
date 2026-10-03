@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / 언어",
+  "languagePickerTitle": "언어",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -269,7 +269,7 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "출처",
+  "sourceMaterial": "원전 자료",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "편집 원칙",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "12연기지",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "24조건",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
