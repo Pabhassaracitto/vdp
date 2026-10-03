@@ -1102,4 +1102,37 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get previousTrack => 'القسم السابق';
+
+  @override
+  String get karaokeSettingsTitle => 'Listening & karaoke';
+
+  @override
+  String get karaokeModeTitle => 'Karaoke mode';
+
+  @override
+  String get karaokeModeSubtitle => 'Highlight the text being read while listening';
+
+  @override
+  String get karaokeLineHighlightTitle => 'Highlight current line';
+
+  @override
+  String get karaokeLineHighlightSubtitle => 'Shade the paragraph being read';
+
+  @override
+  String get karaokeWordHighlightTitle => 'Highlight current word';
+
+  @override
+  String get karaokeWordHighlightSubtitle => 'Shade each word as it is spoken (estimated timing)';
+
+  @override
+  String get audioFloatingGoTo => 'Go to what\'s playing';
+
+  @override
+  String get audioFloatingHide => 'Hide player';
+
+  @override
+  String get audioFloatingRestore => 'Show player';
+
+  @override
+  String get audioFloatingClose => 'Close player';
 }

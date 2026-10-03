@@ -2032,6 +2032,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Previous section'**
   String get previousTrack;
+
+  /// karaokeSettingsTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Listening & karaoke'**
+  String get karaokeSettingsTitle;
+
+  /// karaokeModeTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Karaoke mode'**
+  String get karaokeModeTitle;
+
+  /// karaokeModeSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Highlight the text being read while listening'**
+  String get karaokeModeSubtitle;
+
+  /// karaokeLineHighlightTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Highlight current line'**
+  String get karaokeLineHighlightTitle;
+
+  /// karaokeLineHighlightSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Shade the paragraph being read'**
+  String get karaokeLineHighlightSubtitle;
+
+  /// karaokeWordHighlightTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Highlight current word'**
+  String get karaokeWordHighlightTitle;
+
+  /// karaokeWordHighlightSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Shade each word as it is spoken (estimated timing)'**
+  String get karaokeWordHighlightSubtitle;
+
+  /// audioFloatingGoTo
+  ///
+  /// In en, this message translates to:
+  /// **'Go to what\'s playing'**
+  String get audioFloatingGoTo;
+
+  /// audioFloatingHide
+  ///
+  /// In en, this message translates to:
+  /// **'Hide player'**
+  String get audioFloatingHide;
+
+  /// audioFloatingRestore
+  ///
+  /// In en, this message translates to:
+  /// **'Show player'**
+  String get audioFloatingRestore;
+
+  /// audioFloatingClose
+  ///
+  /// In en, this message translates to:
+  /// **'Close player'**
+  String get audioFloatingClose;
 }
 
 class _AppLocalizationsDelegate
