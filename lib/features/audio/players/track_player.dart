@@ -12,6 +12,12 @@ enum TrackPlayerEventType {
   /// Bắt đầu một cue — UI dùng để highlight paragraph tương ứng.
   cueStarted,
 
+  /// Karaoke tô chữ (V1.9.2) — chỉ phát cho cue có đúng 1 span (đoạn body),
+  /// `wordIndex` là vị trí từ (0-based) trong toàn bộ `cue.plainText`.
+  /// Nguồn phụ thuộc thiết bị (flutter_tts `setProgressHandler`) — không phải
+  /// mọi nền tảng bắn sự kiện này, UI phải coi đây là tăng cường tùy chọn.
+  wordProgress,
+
   /// Phát hết track một cách tự nhiên (không tính pause/stop).
   completed,
 
@@ -26,7 +32,10 @@ class TrackPlayerEvent {
   final TrackPlayerEventType type;
   final int cueIndex;
 
-  const TrackPlayerEvent(this.type, {this.cueIndex = -1});
+  /// Chỉ có ý nghĩa với [TrackPlayerEventType.wordProgress].
+  final int wordIndex;
+
+  const TrackPlayerEvent(this.type, {this.cueIndex = -1, this.wordIndex = -1});
 }
 
 abstract class VolumeControllable {

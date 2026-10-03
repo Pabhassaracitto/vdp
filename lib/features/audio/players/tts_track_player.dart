@@ -10,13 +10,18 @@
 // * Một phiên chỉ một engine nói: trước khi phát, dừng PaliTtsHelper (và ngược
 //   lại PaliTtsHelper gọi AudioPlayerNotifier.pause qua hook — xem §11).
 // * Lỗi engine không bao giờ crash app: nuốt lỗi, tự chữa bằng timeout.
+//
+// BUG FIX (V1.9.2 — "đọc đoạn đầu rồi im lặng"): dùng `SharedTtsEngine` thay vì
+// tự tạo `FlutterTts()` riêng (xem `core/utils/shared_tts_engine.dart`). Giọng
+// và tốc độ được áp lại trước MỖI câu (không chỉ một lần lúc khởi tạo) vì engine
+// dùng chung có thể bị `PaliTtsHelper` đổi tạm trong lúc phiên nghe đang pause.
 
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 
 import '../../../core/utils/pali_tts_helper.dart';
+import '../../../core/utils/shared_tts_engine.dart';
 import '../models/audio_track.dart';
 import '../data/tts_voice_chain.dart';
 import 'text_chunking.dart';
@@ -33,9 +38,10 @@ class _Cursor {
 }
 
 class TtsTrackPlayer implements TrackPlayer {
-  TtsTrackPlayer({FlutterTts? engine}) : _engine = engine ?? FlutterTts();
+  TtsTrackPlayer({SharedTtsEngine? engine})
+      : _engine = engine ?? SharedTtsEngine.instance;
 
-  final FlutterTts _engine;
+  final SharedTtsEngine _engine;
   final StreamController<TrackPlayerEvent> _events =
       StreamController<TrackPlayerEvent>.broadcast();
 
@@ -90,6 +96,11 @@ class TtsTrackPlayer implements TrackPlayer {
   Future<void> pause() async {
     _running = false;
     _runToken++;
+    _engine.onProgress = null;
+    // `SharedTtsEngine.stop()` giải phóng ngay bất kỳ `speakAndWait` nào đang
+    // treo — đây là phần cốt lõi của bug fix V1.9.2: trước đây gọi thẳng
+    // engine gốc có thể để lại một lời gọi `speak()` "ma" không bao giờ báo
+    // xong, khiến vòng đọc tiếp theo không khởi động lại được.
     try {
       await _engine.stop();
     } catch (_) {}
@@ -105,7 +116,7 @@ class TtsTrackPlayer implements TrackPlayer {
   Future<void> setSpeed(double speed) async {
     _speed = speed;
     try {
-      await _engine.setSpeechRate(
+      await _engine.raw.setSpeechRate(
         engineSpeechRate(speed, isIOS: defaultTargetPlatform == TargetPlatform.iOS),
       );
     } catch (_) {}
@@ -139,15 +150,27 @@ class TtsTrackPlayer implements TrackPlayer {
           cueIndex: cueIndex,
         ));
       }
+      // Karaoke tô chữ (V1.9.2): chỉ cho cue 1-span (đoạn body) — xem
+      // playlist_builder.dart, các cue khác (tóm tắt/từ khóa) hiển thị dạng
+      // ghép nhiều mảnh nên chỉ tô sáng cả dòng.
+      final canTrackWords = cue.spans.length == 1;
 
       for (var s = _cursor.span; s < cue.spans.length; s++) {
         final span = cue.spans[s];
         final sentences = splitSentences(span.text);
         final start = s == _cursor.span ? _cursor.sentence : 0;
+        final wordBaseForSpan = _wordCountBeforeSpan(cue, s);
         for (var j = start; j < sentences.length; j++) {
           if (!_running || token != _runToken) return; // pause: giữ cursor tại câu dở
           _cursor = _Cursor(cueIndex, s, j);
-          await _speak(sentences[j], isPali: span.isPali);
+          final wordBase =
+              wordBaseForSpan + _wordCountBeforeSentence(sentences, j);
+          await _speak(
+            sentences[j],
+            isPali: span.isPali,
+            cueIndex: cueIndex,
+            wordBase: canTrackWords && !span.isPali ? wordBase : null,
+          );
           if (!_running || token != _runToken) return;
         }
       }
@@ -170,29 +193,81 @@ class TtsTrackPlayer implements TrackPlayer {
     }
   }
 
-  Future<void> _speak(String text, {required bool isPali}) async {
+  /// Tổng số từ của các span ĐỨNG TRƯỚC [spanIndex] trong [cue] — dùng làm mốc
+  /// để quy đổi offset-ký-tự của flutter_tts (trong phạm vi 1 câu) thành chỉ
+  /// số từ tuyệt đối trong `cue.plainText` (karaoke tô chữ).
+  int _wordCountBeforeSpan(AudioCue cue, int spanIndex) {
+    var count = 0;
+    for (var i = 0; i < spanIndex; i++) {
+      count += cue.spans[i].wordCount;
+    }
+    return count;
+  }
+
+  int _wordCountBeforeSentence(List<String> sentences, int sentenceIndex) {
+    var count = 0;
+    for (var i = 0; i < sentenceIndex; i++) {
+      final trimmed = sentences[i].trim();
+      if (trimmed.isEmpty) continue;
+      count += trimmed.split(RegExp(r'\s+')).length;
+    }
+    return count;
+  }
+
+  Future<void> _speak(
+    String text, {
+    required bool isPali,
+    required int cueIndex,
+    int? wordBase,
+  }) async {
     final trimmed = text.trim();
     if (trimmed.isEmpty) return;
     try {
+      // Engine dùng CHUNG toàn app (SharedTtsEngine) — áp lại giọng/tốc độ
+      // TRƯỚC MỖI câu thay vì chỉ một lần lúc khởi tạo, để không đọc nhầm
+      // giọng/tốc độ nếu một thao tác TTS khác (phát âm Pāli) đã chỉnh engine
+      // trong lúc phiên này đang pause (chính là bug "đọc rồi im lặng").
       if (isPali && _paliVoice != null) {
-        await _engine.setLanguage(_paliVoice!);
+        await _engine.raw.setLanguage(_paliVoice!);
+        _engine.onProgress = null;
+      } else {
+        if (_mainVoice != null) await _engine.raw.setLanguage(_mainVoice!);
+        await _engine.raw.setSpeechRate(
+          engineSpeechRate(_speed, isIOS: defaultTargetPlatform == TargetPlatform.iOS),
+        );
+        if (wordBase != null) {
+          _engine.onProgress = (spokenText, start, end, word) {
+            final wordIndexInSentence =
+                _wordIndexAtOffset(trimmed, start);
+            _events.add(TrackPlayerEvent(
+              TrackPlayerEventType.wordProgress,
+              cueIndex: cueIndex,
+              wordIndex: wordBase + wordIndexInSentence,
+            ));
+          };
+        } else {
+          _engine.onProgress = null;
+        }
       }
-      try {
-        await _engine
-            .speak(trimmed)
-            .timeout(speakTimeoutFor(trimmed, _speed));
-      } on TimeoutException {
-        // Engine treo — tự chữa để phiên nghe không đứng hình (plan §11).
-      }
+      await _engine.speakAndWait(trimmed, timeout: speakTimeoutFor(trimmed, _speed));
     } catch (_) {
       // Lỗi engine từng câu: bỏ qua câu hỏng, không crash app.
     } finally {
+      _engine.onProgress = null;
       if (isPali && _paliVoice != null && _mainVoice != null) {
         try {
-          await _engine.setLanguage(_mainVoice!);
+          await _engine.raw.setLanguage(_mainVoice!);
         } catch (_) {}
       }
     }
+  }
+
+  /// Đếm số từ đứng trước ký tự ở vị trí [charOffset] trong [sentence].
+  int _wordIndexAtOffset(String sentence, int charOffset) {
+    final bounded = charOffset.clamp(0, sentence.length).toInt();
+    final before = sentence.substring(0, bounded).trim();
+    if (before.isEmpty) return 0;
+    return before.split(RegExp(r'\s+')).length;
   }
 
   // ─── Khởi tạo engine ──────────────────────────────────────────────────────
@@ -211,20 +286,18 @@ class TtsTrackPlayer implements TrackPlayer {
       );
       return;
     }
-    await _engine.setLanguage(_mainVoice!);
+    await _engine.raw.setLanguage(_mainVoice!);
   }
 
   Future<void> _ensureInitialized() async {
     if (_initialized) return;
     try {
-      // speak() chỉ resolve khi đọc xong — cần cho vòng phát theo câu.
-      await _engine.awaitSpeakCompletion(true);
-      await _engine.setVolume(1.0);
-      await _engine.setPitch(1.0);
+      await _engine.raw.setVolume(1.0);
+      await _engine.raw.setPitch(1.0);
       await setSpeed(_speed);
 
       _supportedLanguages =
-          parseTtsLanguageList(await _engine.getLanguages);
+          parseTtsLanguageList(await _engine.raw.getLanguages);
       // Giọng Pāli: cùng chuỗi với PaliTtsHelper.
       _paliVoice = pickTtsLanguage(
         preferred: kPaliVoiceChain,

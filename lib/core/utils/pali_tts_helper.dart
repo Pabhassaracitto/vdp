@@ -2,9 +2,14 @@
 // Helper class phát âm Pali qua TTS.
 // Ưu tiên: hi-IN → en-US → ngôn ngữ mặc định của thiết bị.
 // Toàn bộ lỗi được bọc try-catch — không bao giờ crash app.
+//
+// V1.9.2: dùng chung `SharedTtsEngine` với `TtsTrackPlayer` (đọc bài học) thay
+// vì tự tạo `FlutterTts()` riêng — hai instance từng giẫm lên callback hoàn
+// tất/lỗi của nhau (plugin chỉ có một method channel cho cả app), khiến phiên
+// nghe bài học bị treo im lặng giữa chừng sau khi người dùng phát âm Pāli ở
+// đây. Xem `shared_tts_engine.dart` để biết chi tiết.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter_tts/flutter_tts.dart';
+import 'shared_tts_engine.dart';
 
 /// Trạng thái khởi tạo của TTS engine
 enum _TtsInitState { uninitialized, initializing, ready, unavailable }
@@ -16,8 +21,9 @@ class PaliTtsHelper {
   factory PaliTtsHelper() => instance;
 
   // ─── Private fields ──────────────────────────────────────────────────────
-  final FlutterTts _tts = FlutterTts();
+  final SharedTtsEngine _engine = SharedTtsEngine.instance;
   _TtsInitState _initState = _TtsInitState.uninitialized;
+  String? _selectedLanguage;
 
   /// Ngôn ngữ ưu tiên để phát âm Pali (thứ tự giảm dần)
   static const List<String> _preferredLanguages = ['hi-IN', 'en-US', 'en-GB'];
@@ -40,7 +46,7 @@ class PaliTtsHelper {
     if (text.trim().isEmpty) return false;
 
     try {
-      // Khởi tạo nếu chưa sẵn sàng
+      // Khởi tạo nếu chưa sẵn sàng (chỉ dò giọng hỗ trợ — xem _initialize).
       if (_initState == _TtsInitState.uninitialized) {
         await _initialize();
       }
@@ -51,13 +57,26 @@ class PaliTtsHelper {
       // Nhường focus âm thanh: dừng phiên nghe bài học trước khi đọc Pāli.
       onBeforeSpeak?.call();
 
-      // Dừng bất kỳ phát âm nào đang chạy
-      await _tts.stop();
+      // Engine dùng CHUNG với TtsTrackPlayer — áp lại giọng/tốc độ Pāli mỗi
+      // lần nói (không chỉ lúc khởi tạo), vì phiên nghe bài học có thể đã đổi
+      // giọng/tốc độ trên cùng engine trong lúc đang pause chờ ở đây.
+      final previousProgressHook = _engine.onProgress;
+      _engine.onProgress = null; // tránh karaoke của bài học nhận nhầm sự kiện
+      try {
+        if (_selectedLanguage != null) {
+          await _engine.raw.setLanguage(_selectedLanguage!);
+        }
+        await _engine.raw.setSpeechRate(_speechRate);
+        await _engine.raw.setPitch(_pitch);
+        await _engine.raw.setVolume(_volume);
 
-      // Phát âm
-      final result = await _tts.speak(text);
-      return result == 1; // flutter_tts trả về 1 khi thành công
-    } catch (e, stack) {
+        // Dừng bất kỳ phát âm nào đang chạy rồi nói.
+        await _engine.stop();
+        return await _engine.speakAndWait(text);
+      } finally {
+        _engine.onProgress = previousProgressHook;
+      }
+    } catch (e) {
       return false;
     }
   }
@@ -65,7 +84,7 @@ class PaliTtsHelper {
   /// Dừng phát âm đang chạy (nếu có).
   Future<void> stop() async {
     try {
-      await _tts.stop();
+      await _engine.stop();
     } catch (e) {}
   }
 
@@ -77,14 +96,15 @@ class PaliTtsHelper {
   /// Giải phóng tài nguyên TTS — gọi khi app tắt hẳn.
   Future<void> dispose() async {
     try {
-      await _tts.stop();
+      await _engine.stop();
       _initState = _TtsInitState.uninitialized;
     } catch (e) {}
   }
 
   // ─── Private helpers ─────────────────────────────────────────────────────
 
-  /// Khởi tạo FlutterTts và chọn ngôn ngữ phù hợp nhất.
+  /// Khởi tạo: chỉ dò NGÔN NGỮ hỗ trợ một lần (cache). Giọng/tốc độ/âm lượng
+  /// được áp lại mỗi lần `speak()` — xem ghi chú ở trên.
   Future<void> _initialize() async {
     // Guard: tránh khởi tạo song song
     if (_initState == _TtsInitState.initializing) return;
@@ -92,7 +112,7 @@ class PaliTtsHelper {
 
     try {
       // Lấy danh sách ngôn ngữ mà thiết bị hỗ trợ
-      final dynamic rawLanguages = await _tts.getLanguages;
+      final dynamic rawLanguages = await _engine.raw.getLanguages;
       final supportedLanguages = _parseLanguages(rawLanguages);
 
       // Tìm ngôn ngữ ưu tiên đầu tiên mà thiết bị hỗ trợ
@@ -103,23 +123,13 @@ class PaliTtsHelper {
           break;
         }
       }
+      _selectedLanguage = selectedLanguage;
 
-      // Áp dụng cấu hình
-      if (selectedLanguage != null) {
-        await _tts.setLanguage(selectedLanguage);
-      } else {
-        // Fallback: dùng ngôn ngữ mặc định của engine
-      }
-
-      await _tts.setSpeechRate(_speechRate);
-      await _tts.setPitch(_pitch);
-      await _tts.setVolume(_volume);
-
-      // Xử lý sự kiện lỗi từ engine (không crash app)
-      _tts.setErrorHandler((message) {});
+      // Xử lý sự kiện lỗi từ engine (không crash app) — đã gắn ở cấp
+      // SharedTtsEngine, không cần gắn lại riêng ở đây.
 
       _initState = _TtsInitState.ready;
-    } catch (e, stack) {
+    } catch (e) {
       _initState = _TtsInitState.unavailable;
     }
   }
