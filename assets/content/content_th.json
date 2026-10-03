@@ -2,56 +2,96 @@
   "locale": "th",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
   "cittas": {
     "CI_001": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตสัมปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "CI_002": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตสัมปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "CI_003": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตวิปปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 3)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "CI_004": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตวิปปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 4)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "CI_005": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตสัมปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 5)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "CI_006": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตสัมปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 6)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "CI_007": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตวิปปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 7)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "CI_008": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตวิปปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 8)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "CI_009": {
       "name": "โทมนัสสสหคตัง ปฏิฆสัมปยุตตัง อสังขาริกัง (โทสมูลจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "CI_010": {
       "name": "โทมนัสสสหคตัง ปฏิฆสัมปยุตตัง สสังขาริกัง (โทสมูลจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "CI_011": {
       "name": "อุเบกขาสหคตัง วิจิกิจฉาสัมปยุตตัง (โมหมูลจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "CI_012": {
       "name": "อุเบกขาสหคตัง อุทธัจจสัมปยุตตัง (โมหมูลจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ."
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "CI_013": {
       "name": "อุเบกขาสหคตัง จักขุวิญญาณัง (อกุศลวิบาก)",
@@ -494,404 +534,747 @@
     "CS_PHASSA": {
       "name": "ผัสสะ",
       "shortName": "ผัสสะ",
-      "description": "การกระทบกันระหว่างจิตกับอารมณ์."
+      "description": "การกระทบกันระหว่างจิตกับอารมณ์.",
+      "characteristic": "Contacting สิ่งนี้ อารมณ์ — สิ่งนี้ mode ของ touching between วิญญาณ, สิ่งนี้ sense-base และ สิ่งนี้ อารมณ์.",
+      "function": "Gathering สิ่งนี้ other associated จิต factors so they cling together ด้วย วิญญาณ to touch สิ่งนี้ sense-base และ สิ่งนี้ อารมณ์.",
+      "manifestation": "สิ่งนี้ coinciding ของ วิญญาณ, จิต factors, sense-base และ อารมณ์.",
+      "proximateCause": "สิ่งนี้ presence ของ an อารมณ์ offered through สิ่งนี้ appropriate channel (sense-base + อารมณ์ + วิญญาณ)."
     },
     "CS_VEDANA": {
       "name": "เวทนา",
       "shortName": "เวทนา",
-      "description": "การเสวยอารมณ์ สุข ทุกข์ หรืออุเบกขา."
+      "description": "การเสวยอารมณ์ สุข ทุกข์ หรืออุเบกขา.",
+      "characteristic": "เวทนา, experiencing สิ่งนี้ อารมณ์ — สิ่งนี้ manner ของ receiving และ sensing สิ่งนี้ อารมณ์.",
+      "function": "Enjoying สิ่งนี้ desirable อารมณ์, or producing languor/growth ใน สิ่งนี้ associated states.",
+      "manifestation": "จิต ease (pleasant/joyful เวทนา); จิต distress (painful เวทนา); bodily pleasure or pain; or quiescence (neutral เวทนา).",
+      "proximateCause": "Bodily calm และ จิต ease (for pleasant/joyful เวทนา); สิ่งนี้ presence ของ สิ่งนี้ หทยวัตถุ (for painful เวทนา); สิ่งนี้ absence ของ exhilaration (for neutral เวทนา)."
     },
     "CS_SANNA": {
       "name": "สัญญา",
       "shortName": "สัญญา",
-      "description": "การจำหมายอารมณ์ กำหนดหมายลักษณะ."
+      "description": "การจำหมายอารมณ์ กำหนดหมายลักษณะ.",
+      "characteristic": "Recollecting — สิ่งนี้ way ของ remembering; noting และ marking สิ่งนี้ distinguishing features ของ สิ่งนี้ อารมณ์.",
+      "function": "Recalling a past event by means ของ สิ่งนี้ sign ซึ่ง was noted.",
+      "manifestation": "Recollecting something previously known, rightly or wrongly.",
+      "proximateCause": "สิ่งนี้ reappearance ของ an อารมณ์ เป็น it was previously apprehended — an อารมณ์ ซึ่ง evokes memory (e.g. recognizing an acquaintance by recalling where one met them)."
     },
     "CS_CETANA": {
       "name": "เจตนา",
       "shortName": "เจตนา",
-      "description": "การจัดแจง ปรุงแต่ง และชักนำสัมปยุตตธรรมในการสร้างกรรม."
+      "description": "การจัดแจง ปรุงแต่ง และชักนำสัมปยุตตธรรมในการสร้างกรรม.",
+      "characteristic": "Urging, directing และ coordinating สิ่งนี้ associated states ซึ่ง arise together ด้วย it.",
+      "function": "Assembling สิ่งนี้ co-arising states so they are directed together towards สิ่งนี้ อารมณ์, seizing hold ของ สิ่งนี้ อารมณ์.",
+      "manifestation": "Organizing, directing และ arranging สิ่งนี้ associated states.",
+      "proximateCause": "สิ่งนี้ presence ของ สิ่งนี้ other three จิต aggregates — เวทนา, สัญญา และ วิญญาณ (since เจตนา itself belongs to สิ่งนี้ aggregate ของ formations และ so requires สิ่งนี้ other three)."
     },
     "CS_EKAGGATA": {
       "name": "เอกัคคตา",
       "shortName": "เอกัคคตา",
-      "description": "ความมีอารมณ์เป็นอันเดียว ความตั้งมั่นแห่งจิต."
+      "description": "ความมีอารมณ์เป็นอันเดียว ความตั้งมั่นแห่งจิต.",
+      "characteristic": "Non-distraction, non-wavering ใน สิ่งนี้ face ของ สิ่งนี้ อารมณ์ — one-pointed, focused มนสิการ.",
+      "function": "Gathering สิ่งนี้ co-arising จิต states so they converge on a single อารมณ์.",
+      "manifestation": "Appears เป็น peace และ firm steadiness ใน สิ่งนี้ อารมณ์.",
+      "proximateCause": "สิ่งนี้ presence ของ pleasure/happiness, และ สิ่งนี้ absence ของ สิ่งนี้ อุทธัจจะ และ วิจิกิจฉา aspects ของ โมหะ (happiness คือ needed for concentration to be achieved)."
     },
     "CS_JIVITINDRIYA": {
       "name": "ชีวิตินทรีย์",
       "shortName": "ชีวิตินทรีย์",
-      "description": "การรักษาสัมปยุตตธรรมให้ดำรงชีวิตอยู่ได้."
+      "description": "การรักษาสัมปยุตตธรรมให้ดำรงชีวิตอยู่ได้.",
+      "characteristic": "Maintaining, preserving และ nurturing สิ่งนี้ co-arising states.",
+      "function": "Keeping สิ่งนี้ co-arising states alive for their three sub-moments before they cease.",
+      "manifestation": "สิ่งนี้ co-arising states persist ใน being until สิ่งนี้ moment ของ their dissolution.",
+      "proximateCause": "สิ่งนี้ presence ของ สิ่งนี้ aggregates ของ เวทนา, สัญญา และ วิญญาณ."
     },
     "CS_MANASIKARA": {
       "name": "มนสิการ",
       "shortName": "มนสิการ",
-      "description": "การทำในใจ การนำจิตมุ่งตรงสู่อารมณ์."
+      "description": "การทำในใจ การนำจิตมุ่งตรงสู่อารมณ์.",
+      "characteristic": "สิ่งนี้ manner ของ guiding สิ่งนี้ associated states to fully apprehend สิ่งนี้ อารมณ์.",
+      "function": "Making วิญญาณ และ its จิต factors converge และ take hold ของ สิ่งนี้ อารมณ์ together.",
+      "manifestation": "Turning สิ่งนี้ mind towards สิ่งนี้ อารมณ์ (เป็น a helmsman steers a boat towards its destination).",
+      "proximateCause": "สิ่งนี้ presence ของ an อารมณ์ — past, present or future."
     },
     "CS_VITAKKA": {
       "name": "วิตก",
       "shortName": "วิตก",
-      "description": "การยกจิตขึ้นสู่อารมณ์."
+      "description": "การยกจิตขึ้นสู่อารมณ์.",
+      "characteristic": "Carrying สิ่งนี้ co-arising states onto สิ่งนี้ อารมณ์ — directing/lifting สิ่งนี้ mind onto สิ่งนี้ อารมณ์.",
+      "function": "Bringing วิญญาณ และ its จิต factors into ผัสสะ ด้วย สิ่งนี้ อารมณ์.",
+      "manifestation": "วิญญาณ และ its co-arising จิต factors reach สิ่งนี้ อารมณ์.",
+      "proximateCause": "สิ่งนี้ presence ของ an อารมณ์ together ด้วย สิ่งนี้ other three aggregates (เวทนา, สัญญา, วิญญาณ), since applied thought belongs to สิ่งนี้ aggregate ของ formations."
     },
     "CS_VICARA": {
       "name": "วิจาร",
       "shortName": "วิจาร",
-      "description": "การเคล้าคลึง ประคองจิตไว้ในอารมณ์."
+      "description": "การเคล้าคลึง ประคองจิตไว้ในอารมณ์.",
+      "characteristic": "สิ่งนี้ manner ของ attending to สิ่งนี้ อารมณ์ — examining และ observing it closely และ continuously.",
+      "function": "Keeping วิญญาณ และ its co-arising จิต factors closely engaged ด้วย สิ่งนี้ อารมณ์ without interruption.",
+      "manifestation": "Having engaged สิ่งนี้ อารมณ์, it binds สิ่งนี้ associated states to it so they keep apprehending ซึ่ง same อารมณ์ without straying from it.",
+      "proximateCause": "สิ่งนี้ presence ของ an อารมณ์ together ด้วย สิ่งนี้ other three aggregates, since sustained thought likewise belongs to สิ่งนี้ aggregate ของ formations."
     },
     "CS_ADHIMOKKHA": {
       "name": "อธิโมกข์",
       "shortName": "อธิโมกข์",
-      "description": "การตัดสินอารมณ์ ปักใจลงในอารมณ์."
+      "description": "การตัดสินอารมณ์ ปักใจลงในอารมณ์.",
+      "characteristic": "สิ่งนี้ manner ของ deciding, breaking through สิ่งนี้ state ของ indecision — releasing วิญญาณ from วิจิกิจฉา so it can move towards สิ่งนี้ อารมณ์.",
+      "function": "Making วิญญาณ resolve firmly on สิ่งนี้ อารมณ์, without wavering.",
+      "manifestation": "Having made a firm อธิโมกข์ about สิ่งนี้ อารมณ์ — carrying out ซึ่ง อธิโมกข์.",
+      "proximateCause": "สิ่งนี้ presence ของ an อารมณ์ to be judged, determined or decided upon."
     },
     "CS_VIRIYA": {
       "name": "วิริยะ",
       "shortName": "วิริยะ",
-      "description": "ความเพียร ความแกล้วกล้าในการประกอบกิจ."
+      "description": "ความเพียร ความแกล้วกล้าในการประกอบกิจ.",
+      "characteristic": "สิ่งนี้ manner ของ exertion และ endurance — energetic effort ซึ่ง does not retreat.",
+      "function": "Supporting สิ่งนี้ co-arising states so they do not regress.",
+      "manifestation": "Not retreating (from สิ่งนี้ task at hand).",
+      "proximateCause": "A sense ของ urgency, or some รูป ซึ่ง stirs สิ่งนี้ mind, such เป็น old age, sickness, death or suffering."
     },
     "CS_PITI": {
       "name": "ปีติ",
       "shortName": "ปีติ",
-      "description": "ความอิ่มใจ ความปลาบปลื้มยินดีในอารมณ์."
+      "description": "ความอิ่มใจ ความปลาบปลื้มยินดีในอารมณ์.",
+      "characteristic": "Delight และ exhilaration, being gladdened by สิ่งนี้ อารมณ์ (distinct from เวทนา, which experiences สิ่งนี้ อารมณ์, whereas ปีติ creates interest และ relish ใน it).",
+      "function": "Refreshing สิ่งนี้ body และ gladdening สิ่งนี้ mind.",
+      "manifestation": "จิต elation, a sense ของ being uplifted และ suffused (distinct from เวทนา, which คือ จิต ease).",
+      "proximateCause": "สิ่งนี้ aggregates ของ เวทนา, สัญญา และ วิญญาณ (since ปีติ belongs to สิ่งนี้ aggregate ของ formations — unlike สิ่งนี้ proximate cause ของ joyful เวทนา, which คือ bodily calm และ จิต ease)."
     },
     "CS_CHANDA": {
       "name": "ฉันทะ",
       "shortName": "ฉันทะ",
-      "description": "ความพอใจใคร่จะทำ ความต้องการกระทำ."
+      "description": "ความพอใจใคร่จะทำ ความต้องการกระทำ.",
+      "characteristic": "Having สิ่งนี้ hope และ wish to obtain สิ่งนี้ อารมณ์.",
+      "function": "Making วิญญาณ seek out และ reach for สิ่งนี้ อารมณ์.",
+      "manifestation": "Obtaining สิ่งนี้ desired อารมณ์.",
+      "proximateCause": "สิ่งนี้ presence ของ an อารมณ์ ซึ่ง คือ desirable, worth wishing for."
     },
     "CS_MOHA": {
       "name": "โมหะ",
       "shortName": "โมหะ",
-      "description": "ความหลง ความไม่รู้ตามความเป็นจริง."
+      "description": "ความหลง ความไม่รู้ตามความเป็นจริง.",
+      "characteristic": "จิต blindness, not knowing what should be known — สิ่งนี้ opposite ของ wisdom.",
+      "function": "Obscuring clarity, preventing สิ่งนี้ true nature ของ phenomena from being seen.",
+      "manifestation": "Darkness และ obscuration.",
+      "proximateCause": "Unwise มนสิการ — careless, improper มนสิการ."
     },
     "CS_AHIRIKA": {
       "name": "อหิริกะ",
       "shortName": "อหิริกะ",
-      "description": "ความไม่ละอายต่อบาปทุจริต."
+      "description": "ความไม่ละอายต่อบาปทุจริต.",
+      "characteristic": "Absence ของ shame towards wrongdoing, evil และ faults.",
+      "function": "Carrying out evil, faulty และ wrongful deeds.",
+      "manifestation": "Not shrinking back from unwholesome deeds.",
+      "proximateCause": "Lack ของ self-respect."
     },
     "CS_ANOTTAPPA": {
       "name": "อโนตตัปปะ",
       "shortName": "อโนตตัปปะ",
-      "description": "ความไม่สะดุ้งกลัวต่อบาปทุจริต."
+      "description": "ความไม่สะดุ้งกลัวต่อบาปทุจริต.",
+      "characteristic": "Absence ของ dread towards unwholesome states.",
+      "function": "Committing wrongdoing และ misconduct.",
+      "manifestation": "Not flinching or fearing when doing evil.",
+      "proximateCause": "Lack ของ regard for others."
     },
     "CS_UDDHACCA": {
       "name": "อุทธัจจะ",
       "shortName": "อุทธัจจะ",
-      "description": "ความฟุ้งซ่าน ไม่สงบแห่งจิต."
+      "description": "ความฟุ้งซ่าน ไม่สงบแห่งจิต.",
+      "characteristic": "Unrest — a mind ซึ่ง คือ agitated และ scattered.",
+      "function": "Preventing สิ่งนี้ mind from settling firmly และ lastingly on its อารมณ์.",
+      "manifestation": "A mind ซึ่ง คือ unsettled และ disturbed.",
+      "proximateCause": "Unwise มนสิการ — careless, improper handling ของ สิ่งนี้ mind."
     },
     "CS_LOBHA": {
       "name": "โลภะ",
       "shortName": "โลภะ",
-      "description": "ความโลภ ความกำหนัดยินดีในอารมณ์."
+      "description": "ความโลภ ความกำหนัดยินดีในอารมณ์.",
+      "characteristic": "อุปาทาน to สิ่งนี้ อารมณ์ — causing สิ่งนี้ co-arising จิต factors to cling to it.",
+      "function": "Making วิญญาณ stick to สิ่งนี้ อารมณ์.",
+      "manifestation": "Not letting go ของ สิ่งนี้ อารมณ์.",
+      "proximateCause": "Delighting ใน, being drawn to, binding phenomena — relishing what คือ beautiful, enticing และ pleasant."
     },
     "CS_DITTHI": {
       "name": "ทิฏฐิ",
       "shortName": "ทิฏฐิ",
-      "description": "ความเห็นผิด การยึดถือผิดไปจากความจริง."
+      "description": "ความเห็นผิด การยึดถือผิดไปจากความจริง.",
+      "characteristic": "Adhering obstinately to what คือ contrary to truth.",
+      "function": "Interpreting matters wrongly, contrary to สิ่งนี้ facts.",
+      "manifestation": "Rigidly holding to a mistaken view.",
+      "proximateCause": "Not meeting noble และ wise persons."
     },
     "CS_MANA": {
       "name": "มานะ",
       "shortName": "มานะ",
-      "description": "ความถือตัว ความเย่อหยิ่งจองหอง."
+      "description": "ความถือตัว ความเย่อหยิ่งจองหอง.",
+      "characteristic": "Haughtiness, arrogance, self-มานะ — comparing oneself ด้วย others เป็น superior, equal or inferior.",
+      "function": "Driving สิ่งนี้ associated states towards self-exaltation.",
+      "manifestation": "Vanity และ self-aggrandizement.",
+      "proximateCause": "สิ่งนี้ presence ของ an อารมณ์ for comparison."
     },
     "CS_DOSA": {
       "name": "โทสะ",
       "shortName": "โทสะ",
-      "description": "ความโกรธ ความคิดประทุษร้าย."
+      "description": "ความโกรธ ความคิดประทุษร้าย.",
+      "characteristic": "Ferocity และ harshness ของ body และ mind — a state ของ opposition และ burning hostility.",
+      "function": "Making สิ่งนี้ mind burn, scorching และ seeking to destroy สิ่งนี้ อารมณ์.",
+      "manifestation": "Committing evil deeds, destructive และ harmful to oneself, to others, or to both.",
+      "proximateCause": "สิ่งนี้ presence ของ an undesirable อารมณ์ — a lack ของ understanding or reasoned reflection."
     },
     "CS_ISSA": {
       "name": "อิสสา",
       "shortName": "อิสสา",
-      "description": "ความริษยา ไม่อดทนต่อสมบัติของผู้อื่น."
+      "description": "ความริษยา ไม่อดทนต่อสมบัติของผู้อื่น.",
+      "characteristic": "อิสสา และ jealousy towards สิ่งนี้ success or superiority ของ others.",
+      "function": "Being displeased at another's gain or excellence.",
+      "manifestation": "Turning away from, averting one's face from another's superiority.",
+      "proximateCause": "สิ่งนี้ fame, wealth, happiness or success ของ others, which exceeds one's own."
     },
     "CS_MACCHARIYA": {
       "name": "มัจฉริยะ",
       "shortName": "มัจฉริยะ",
-      "description": "ความตระหนี่ ความหวงแหนในสมบัติของตน."
+      "description": "ความตระหนี่ ความหวงแหนในสมบัติของตน.",
+      "characteristic": "Concealing one's own possessions or achievements.",
+      "function": "Being unwilling to share or let others partake ของ one's possessions.",
+      "manifestation": "Not sharing one's wealth, being stingy, unwilling to give.",
+      "proximateCause": "One's own possessions or achievements."
     },
     "CS_KUKKUCCA": {
       "name": "กุกกุจจะ",
       "shortName": "กุกกุจจะ",
-      "description": "ความรำคาญใจ ความเดือดร้อนใจในบาปที่ทำแล้ว."
+      "description": "ความรำคาญใจ ความเดือดร้อนใจในบาปที่ทำแล้ว.",
+      "characteristic": "สิ่งนี้ manner ของ regretting, repenting, being troubled about what has been done or left undone.",
+      "function": "Making สิ่งนี้ mind restless และ distressed about สิ่งนี้ past.",
+      "manifestation": "A sense ของ remorse และ regret ใน สิ่งนี้ mind.",
+      "proximateCause": "An evil deed done, or a good และ meritorious deed left undone."
     },
     "CS_THINA": {
       "name": "ถีนเจตสิก",
       "shortName": "ถีนะ",
-      "description": "ความหดหู่ ความท้อถอยแห่งจิต."
+      "description": "ความหดหู่ ความท้อถอยแห่งจิต.",
+      "characteristic": "Sluggishness ซึ่ง halts diligence.",
+      "function": "Abandoning energetic effort, so ซึ่ง active diligence ceases, leading สิ่งนี้ mind externally to sink back into สิ่งนี้ life-continuum.",
+      "manifestation": "A mind ซึ่ง withdraws และ shrinks back.",
+      "proximateCause": "Unwise มนสิการ — careless, improper handling ของ สิ่งนี้ mind."
     },
     "CS_MIDDHA": {
       "name": "มิทธเจตสิก",
       "shortName": "มิทธะ",
-      "description": "ความเซื่องซึม ความง่วงเหงาหาวนอนของเจตสิก."
+      "description": "ความเซื่องซึม ความง่วงเหงาหาวนอนของเจตสิก.",
+      "characteristic": "Unfitness for work — a state ของ มิทธเจตสิก, lethargy, drowsiness.",
+      "function": "Enveloping และ covering วิญญาณ.",
+      "manifestation": "Drowsiness, dullness, sleepiness.",
+      "proximateCause": "สิ่งนี้ absence ของ proper, wise มนสิการ."
     },
     "CS_VICIKICCHA": {
       "name": "วิจิกิจฉา",
       "shortName": "วิจิกิจฉา",
-      "description": "ความลังเลสงสัยในพระรัตนตรัยและธรรม."
+      "description": "ความลังเลสงสัยในพระรัตนตรัยและธรรม.",
+      "characteristic": "สิ่งนี้ manner ของ doubting — wavering และ hesitating about สิ่งนี้ Triple Gem และ สิ่งนี้ Teaching.",
+      "function": "Causing wavering, agitation, hesitation และ indecision.",
+      "manifestation": "Inability to decide, lack ของ resolve.",
+      "proximateCause": "Unwise มนสิการ."
     },
     "CS_SADDHA": {
       "name": "ศรัทธา",
       "shortName": "ศรัทธา",
-      "description": "ความเชื่อ ความเลื่อมใสในสิ่งที่ควรเชื่อ."
+      "description": "ความเชื่อ ความเลื่อมใสในสิ่งที่ควรเชื่อ.",
+      "characteristic": "Trusting confidence ใน สิ่งนี้ Triple Gem และ ใน สิ่งนี้ law ของ kamma และ its results — a state ของ จิต purity.",
+      "function": "Purifying สิ่งนี้ mind, making it place its trust ใน what คือ genuinely worthy.",
+      "manifestation": "Freedom from สิ่งนี้ defilement ของ superstition.",
+      "proximateCause": "สิ่งนี้ presence ของ things worthy ของ confidence (สิ่งนี้ Triple Gem, สิ่งนี้ law ของ kamma และ its fruit)."
     },
     "CS_SATI": {
       "name": "สติ",
       "shortName": "สติ",
-      "description": "ความระลึกได้ ความไม่ประมาทในกุศลธรรม."
+      "description": "ความระลึกได้ ความไม่ประมาทในกุศลธรรม.",
+      "characteristic": "สิ่งนี้ manner ของ being alert, not careless, not drifting — keeping สิ่งนี้ อารมณ์ ใน mind.",
+      "function": "Remembering, preventing forgetfulness.",
+      "manifestation": "Cultivating a mind ซึ่ง stays closely attached to its อารมณ์ — guarding และ protecting สิ่งนี้ six sense doors.",
+      "proximateCause": "Firm สัญญา/recognition."
     },
     "CS_HIRI": {
       "name": "หิริ",
       "shortName": "หิริ",
-      "description": "ความละอายแก่ใจในการกระทำบาป."
+      "description": "ความละอายแก่ใจในการกระทำบาป.",
+      "characteristic": "Abhorrence ของ wrongdoing, disinclination towards fault.",
+      "function": "Refraining from committing wrongful deeds.",
+      "manifestation": "Shrinking back from evil และ fault, avoiding wrongdoing.",
+      "proximateCause": "Self-respect."
     },
     "CS_OTTAPPA": {
       "name": "โอตตัปปะ",
       "shortName": "โอตตัปปะ",
-      "description": "ความเกรงกลัวต่อผลของบาปทุจริต."
+      "description": "ความเกรงกลัวต่อผลของบาปทุจริต.",
+      "characteristic": "Dread ของ wrongdoing, abhorrence ของ สิ่งนี้ danger ของ fault.",
+      "function": "Refraining from wrongdoing, not creating harm.",
+      "manifestation": "Shrinking back from และ avoiding wrongdoing.",
+      "proximateCause": "Regard for others, fear ของ their censure."
     },
     "CS_ALOBHA": {
       "name": "อโลภะ",
       "shortName": "อโลภะ",
-      "description": "ความไม่โลภ ความไม่ติดข้องยินดีในกาม."
+      "description": "ความไม่โลภ ความไม่ติดข้องยินดีในกาม.",
+      "characteristic": "A mind undefiled by its อารมณ์ — free from อุปาทาน, free from attachment.",
+      "function": "Not grasping, not อุปาทาน, not attaching; transcending bondage.",
+      "manifestation": "Not holding on to what คือ present, not ภพ infatuated ด้วย a pleasing อารมณ์; at its culmination, not อุปาทาน even to a new existence.",
+      "proximateCause": "Wise มนสิการ."
     },
     "CS_ADOSA": {
       "name": "อโทสะ",
       "shortName": "อโทสะ",
-      "description": "ความไม่โกรธ ความมีเมตตาจิตต่อสัตว์ทั้งหลาย."
+      "description": "ความไม่โกรธ ความมีเมตตาจิตต่อสัตว์ทั้งหลาย.",
+      "characteristic": "Freedom from cruelty, malice และ opposition — a state ของ coolness และ gentleness.",
+      "function": "Dispelling cruelty, avoiding harm, dispelling heated anger.",
+      "manifestation": "A manifestation ของ gentleness และ coolness.",
+      "proximateCause": "Wise มนสิการ."
     },
     "CS_TATRAMAJJHATTATA": {
       "name": "ตัตรมัชฌัตตตา",
       "shortName": "ตัตรมัชฌัตตตา",
-      "description": "ความเป็นกลางในอารมณ์นั้นๆ ความเที่ยงธรรม."
+      "description": "ความเป็นกลางในอารมณ์นั้นๆ ความเที่ยงธรรม.",
+      "characteristic": "Keeping วิญญาณ และ its จิต factors level ด้วย one another — a state ของ balance และ even-handedness.",
+      "function": "Preventing deficiency or excess, keeping สิ่งนี้ associated states from losing their balance.",
+      "manifestation": "สิ่งนี้ production ของ balance และ equilibrium.",
+      "proximateCause": "สิ่งนี้ presence ของ harmoniously co-operating states."
     },
     "CS_KAYAPASSADDHI": {
       "name": "กายปัสสัทธิ",
       "shortName": "กายปัสสัทธิ",
-      "description": "ความสงบระงับแห่งเจตสิกขันธ์."
+      "description": "ความสงบระงับแห่งเจตสิกขันธ์.",
+      "characteristic": "Calm, free from สิ่งนี้ agitation ของ สิ่งนี้ จิต-factor group (สิ่งนี้ aggregates ของ เวทนา, สัญญา และ formations).",
+      "function": "Quelling สิ่งนี้ agitation ของ สิ่งนี้ จิต factors, so they no longer waver.",
+      "manifestation": "สิ่งนี้ จิต factors become calm, tranquil และ cool.",
+      "proximateCause": "สิ่งนี้ presence ของ สิ่งนี้ จิต factors (สิ่งนี้ aggregates ของ เวทนา, สัญญา และ formations)."
     },
     "CS_CITTAPASSADDHI": {
       "name": "จิตตปัสสัทธิ",
       "shortName": "จิตตปัสสัทธิ",
-      "description": "ความสงบระงับแห่งจิต."
+      "description": "ความสงบระงับแห่งจิต.",
+      "characteristic": "Calm, free from สิ่งนี้ agitation ของ วิญญาณ (สิ่งนี้ aggregate ของ วิญญาณ).",
+      "function": "Quelling สิ่งนี้ agitation ของ วิญญาณ, so it no longer wavers.",
+      "manifestation": "วิญญาณ becomes calm, tranquil และ cool.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ (สิ่งนี้ aggregate ของ วิญญาณ)."
     },
     "CS_KAYALAHUTA": {
       "name": "กายลหุตา",
       "shortName": "กายลหุตา",
-      "description": "ความเบาแห่งเจตสิกขันธ์."
+      "description": "ความเบาแห่งเจตสิกขันธ์.",
+      "characteristic": "Lightness, freedom from สิ่งนี้ heaviness ของ สิ่งนี้ จิต-factor group (เวทนา, สัญญา, formations).",
+      "function": "Preventing heaviness from weighing down สิ่งนี้ จิต factors, making them light.",
+      "manifestation": "สิ่งนี้ จิต factors are no longer sluggish และ become light.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors (เวทนา, สัญญา, formations)."
     },
     "CS_CITTALAHUTA": {
       "name": "จิตตลหุตา",
       "shortName": "จิตตลหุตา",
-      "description": "ความเบาแห่งจิต."
+      "description": "ความเบาแห่งจิต.",
+      "characteristic": "Lightness, freedom from สิ่งนี้ heaviness ของ วิญญาณ.",
+      "function": "Preventing heaviness from weighing down วิญญาณ, making it light.",
+      "manifestation": "วิญญาณ คือ no longer sluggish และ becomes light.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_KAYAMUDUTA": {
       "name": "กายมุทุตา",
       "shortName": "กายมุทุตา",
-      "description": "ความอ่อนโยน ความนุ่มนวลแห่งเจตสิกขันธ์."
+      "description": "ความอ่อนโยน ความนุ่มนวลแห่งเจตสิกขันธ์.",
+      "characteristic": "Softness และ pliancy ของ สิ่งนี้ จิต-factor group (เวทนา, สัญญา, formations).",
+      "function": "Dissolving สิ่งนี้ rigidity ของ สิ่งนี้ จิต factors, limiting stiffness และ coarseness.",
+      "manifestation": "Pliancy, ease ใน apprehending สิ่งนี้ อารมณ์, freedom from stiffness.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_CITTAMUDUTA": {
       "name": "จิตตมุทุตา",
       "shortName": "จิตตมุทุตา",
-      "description": "ความอ่อนโยนแห่งจิต."
+      "description": "ความอ่อนโยนแห่งจิต.",
+      "characteristic": "Softness และ pliancy ของ วิญญาณ.",
+      "function": "Dissolving สิ่งนี้ rigidity ของ วิญญาณ, limiting its stiffness และ coarseness.",
+      "manifestation": "วิญญาณ becomes pliant, apprehending สิ่งนี้ อารมณ์ ด้วย ease, free from stiffness.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_KAYAKAMMANNATA": {
       "name": "กายกัมมัญญตา",
       "shortName": "กายกัมมัญญตา",
-      "description": "ความควรแก่การงานแห่งเจตสิกขันธ์."
+      "description": "ความควรแก่การงานแห่งเจตสิกขันธ์.",
+      "characteristic": "Freeing สิ่งนี้ จิต-factor group from unworkability, from unfitness.",
+      "function": "Dissolving และ removing สิ่งนี้ unfitness ของ สิ่งนี้ จิต factors.",
+      "manifestation": "สิ่งนี้ จิต factors become adaptable และ fit to engage ด้วย สิ่งนี้ อารมณ์.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_CITTAKAMMANNATA": {
       "name": "จิตตกัมมัญญตา",
       "shortName": "จิตตกัมมัญญตา",
-      "description": "ความควรแก่การงานแห่งจิต."
+      "description": "ความควรแก่การงานแห่งจิต.",
+      "characteristic": "Freeing วิญญาณ from unworkability, from unfitness.",
+      "function": "Dissolving และ removing สิ่งนี้ unfitness ของ วิญญาณ.",
+      "manifestation": "วิญญาณ becomes adaptable และ fit to engage ด้วย สิ่งนี้ อารมณ์.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_KAYAPAGUNNATA": {
       "name": "กายปาคุญญตา",
       "shortName": "กายปาคุญญตา",
-      "description": "ความคล่องแคล่วแห่งเจตสิกขันธ์."
+      "description": "ความคล่องแคล่วแห่งเจตสิกขันธ์.",
+      "characteristic": "Absence ของ stagnation ใน สิ่งนี้ จิต-factor group — สิ่งนี้ refined proficiency ของ สิ่งนี้ จิต factors.",
+      "function": "Breaking up และ dissolving สิ่งนี้ stagnation ของ สิ่งนี้ จิต factors.",
+      "manifestation": "Keeping clear ของ และ unattached to wrongdoing และ fault.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_CITTAPAGUNNATA": {
       "name": "จิตตปาคุญญตา",
       "shortName": "จิตตปาคุญญตา",
-      "description": "ความคล่องแคล่วแห่งจิต."
+      "description": "ความคล่องแคล่วแห่งจิต.",
+      "characteristic": "Absence ของ stagnation ใน วิญญาณ — สิ่งนี้ refined จิตตปาคุญญตา.",
+      "function": "Breaking up และ dissolving สิ่งนี้ stagnation ของ วิญญาณ.",
+      "manifestation": "Keeping clear ของ และ unattached to wrongdoing และ fault.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_KAYUJUKATA": {
       "name": "กายุชุกตา",
       "shortName": "กายุชุกตา",
-      "description": "ความซื่อตรงแห่งเจตสิกขันธ์."
+      "description": "ความซื่อตรงแห่งเจตสิกขันธ์.",
+      "characteristic": "Uprightness และ straightness ของ สิ่งนี้ จิต-factor group.",
+      "function": "Counteracting crookedness และ สิ่งนี้ lack ของ rectitude ใน สิ่งนี้ จิต factors.",
+      "manifestation": "สิ่งนี้ จิต factors become upright, without crookedness or deviation.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_CITTUJUKATA": {
       "name": "จิตตุชุกตา",
       "shortName": "จิตตุชุกตา",
-      "description": "ความซื่อตรงแห่งจิต."
+      "description": "ความซื่อตรงแห่งจิต.",
+      "characteristic": "Uprightness และ straightness ของ วิญญาณ.",
+      "function": "Counteracting crookedness และ สิ่งนี้ lack ของ rectitude ใน วิญญาณ.",
+      "manifestation": "วิญญาณ becomes upright, without crookedness or deviation.",
+      "proximateCause": "สิ่งนี้ presence ของ วิญญาณ และ its accompanying จิต factors."
     },
     "CS_SAMMAVACA": {
       "name": "สัมมาวาจา",
       "shortName": "สัมมาวาจา",
-      "description": "การเว้นจากวจีทุจริต 4 ประการ เจรจาชอบ."
+      "description": "การเว้นจากวจีทุจริต 4 ประการ เจรจาชอบ.",
+      "characteristic": "Upholding สัมมาวาจา — abstaining from และ restraining verbal misconduct.",
+      "function": "Keeping away from falsity และ deception (wrong speech: lying, slander, harsh speech, idle chatter).",
+      "manifestation": "สิ่งนี้ eradication ของ wrong speech.",
+      "proximateCause": "สิ่งนี้ presence ของ ศรัทธา, สติ, หิริ, โอตตัปปะ และ modest desire."
     },
     "CS_SAMMAKAMMANTA": {
       "name": "สัมมากัมมันตะ",
       "shortName": "สัมมากัมมันตะ",
-      "description": "การเว้นจากกายทุจริต 3 ประการ การงานชอบ."
+      "description": "การเว้นจากกายทุจริต 3 ประการ การงานชอบ.",
+      "characteristic": "Acting rightly, supporting wholesome states while eliminating one's own defilements.",
+      "function": "Keeping away from unwholesome bodily action (killing, stealing, sexual misconduct).",
+      "manifestation": "สิ่งนี้ eradication ของ wrong action.",
+      "proximateCause": "สิ่งนี้ presence ของ ศรัทธา, สติ, หิริ, โอตตัปปะ และ modest desire."
     },
     "CS_SAMMAAJIVA": {
       "name": "สัมมาอาชีวะ",
       "shortName": "สัมมาอาชีวะ",
-      "description": "การเว้นจากมิจฉาอาชีวะ การเลี้ยงชีพชอบ."
+      "description": "การเว้นจากมิจฉาอาชีวะ การเลี้ยงชีพชอบ.",
+      "characteristic": "Purity, renunciation ของ และ abstention from misconduct ของ both body และ speech.",
+      "function": "Sustaining a righteous livelihood, preventing misconduct.",
+      "manifestation": "สิ่งนี้ eradication ของ wrong livelihood, refraining from unwholesome conduct.",
+      "proximateCause": "สิ่งนี้ presence ของ ศรัทธา, สติ, หิริ, โอตตัปปะ และ modest desire."
     },
     "CS_KARUNA": {
       "name": "กรุณา",
       "shortName": "กรุณา",
-      "description": "ความสงสาร คิดจะช่วยให้ผู้อื่นพ้นทุกข์."
+      "description": "ความสงสาร คิดจะช่วยให้ผู้อื่นพ้นทุกข์.",
+      "characteristic": "สิ่งนี้ wish ซึ่ง beings be free from suffering — สิ่งนี้ way ของ wishing to remove สิ่งนี้ suffering ของ beings.",
+      "function": "Being unable to bear สิ่งนี้ sight ของ beings' suffering — unable to remain indifferent before สิ่งนี้ suffering ของ other beings.",
+      "manifestation": "Kindliness, or สิ่งนี้ absence ของ oppressing other beings.",
+      "proximateCause": "Encountering beings who are suffering — perceiving สิ่งนี้ pressing need ของ beings overwhelmed by suffering."
     },
     "CS_MUDITA": {
       "name": "มุทิตา",
       "shortName": "มุทิตา",
-      "description": "ความพลอยยินดีเมื่อผู้อื่นได้ดี มีความสุข."
+      "description": "ความพลอยยินดีเมื่อผู้อื่นได้ดี มีความสุข.",
+      "characteristic": "Rejoicing ใน สิ่งนี้ good fortune ของ beings — a state ของ gladness at สิ่งนี้ happiness ของ others.",
+      "function": "Being free from อิสสา towards other beings.",
+      "manifestation": "Satisfaction at สิ่งนี้ progress และ happiness ของ other beings — สิ่งนี้ destruction ของ aversion.",
+      "proximateCause": "Seeing beings create และ enjoy happiness — recognizing ซึ่ง beings have attained success."
     },
     "CS_PANNA": {
       "name": "ปัญญินทรีย์",
       "shortName": "ปัญญินทรีย์",
-      "description": "ปัญญาที่เป็นใหญ่ในการรู้แจ้งเห็นจริงตามสภาวธรรม."
+      "description": "ปัญญาที่เป็นใหญ่ในการรู้แจ้งเห็นจริงตามสภาวธรรม.",
+      "characteristic": "Knowing clearly, penetrating to สิ่งนี้ true nature ของ phenomena — wisdom ซึ่ง sees สิ่งนี้ Three Characteristics (impermanence, suffering, non-self).",
+      "function": "Dispelling และ eliminating สิ่งนี้ darkness ของ อวิชชา.",
+      "manifestation": "Freedom from confusion, freedom from defiling attachment.",
+      "proximateCause": "Wise มนสิการ; calm (a tranquil mind); และ a rebirth-linking วิญญาณ rooted ใน สิ่งนี้ three wholesome roots (อโลภะ, อโทสะ, non-โมหะ)."
     }
   },
   "rupas": {
     "RP_001": {
       "name": "ปฐวีธาตุ",
       "shortName": "ปฐวี",
-      "description": "ธาตุดิน มีลักษณะแข้นแข็งหรืออ่อนนุ่ม เป็นที่ตั้งอาศัยของรูปอื่น."
+      "description": "ธาตุดิน มีลักษณะแข้นแข็งหรืออ่อนนุ่ม เป็นที่ตั้งอาศัยของรูปอื่น.",
+      "characteristic": "Hardness or softness — สิ่งนี้ quality ของ solidity or pliancy ใน รูป.",
+      "function": "Acting เป็น สิ่งนี้ supporting foundation for สิ่งนี้ other material phenomena ใน สิ่งนี้ same group (kalāpa).",
+      "manifestation": "Receiving — perceptible through bodily ผัสสะ เป็น hardness or softness.",
+      "proximateCause": "สิ่งนี้ co-arising ของ สิ่งนี้ other three great elements (water, fire, air).",
+      "doctrinalNote": "สิ่งนี้ four great elements always arise together, inseparably. There คือ no materiality ใน สิ่งนี้ immaterial realm."
     },
     "RP_002": {
       "name": "อาโปธาตุ",
       "shortName": "อาโป",
-      "description": "ธาตุน้ำ มีลักษณะไหลหรือเกาะกุมรูปธรรมทั้งหลายไว้ด้วยกัน."
+      "description": "ธาตุน้ำ มีลักษณะไหลหรือเกาะกุมรูปธรรมทั้งหลายไว้ด้วยกัน.",
+      "characteristic": "Flowing or cohesion — สิ่งนี้ binding quality ของ รูป.",
+      "function": "Binding together สิ่งนี้ material phenomena within สิ่งนี้ same kalāpa.",
+      "manifestation": "รูป คือ held together, not falling apart.",
+      "proximateCause": "สิ่งนี้ co-arising ของ สิ่งนี้ other three great elements (earth, fire, air).",
+      "doctrinalNote": "สิ่งนี้ อาโปธาตุ คือ สิ่งนี้ only great element ซึ่ง cannot be directly sensed through bodily ผัสสะ."
     },
     "RP_003": {
       "name": "เตโชธาตุ",
       "shortName": "เตโช",
-      "description": "ธาตุไฟ มีลักษณะร้อนหรือเย็น ทำหน้าที่ทำให้รูปอื่นอบอุ่นหรือสุกงอม."
+      "description": "ธาตุไฟ มีลักษณะร้อนหรือเย็น ทำหน้าที่ทำให้รูปอื่นอบอุ่นหรือสุกงอม.",
+      "characteristic": "Heat or cold — สิ่งนี้ temperature quality ของ รูป.",
+      "function": "Ripening และ sustaining สิ่งนี้ material phenomena ของ สิ่งนี้ same group.",
+      "manifestation": "รูป คือ brought to maturity และ ripeness.",
+      "proximateCause": "สิ่งนี้ co-arising ของ สิ่งนี้ other three great elements (earth, water, air).",
+      "doctrinalNote": "When occurring independently เป็น external heat (utu), สิ่งนี้ เตโชธาตุ gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
     },
     "RP_004": {
       "name": "วาโยธาตุ",
       "shortName": "วาโย",
-      "description": "ธาตุลม มีลักษณะเคร่งตึงหรือไหวตัว ทำหน้าที่ค้ำจุนและเคลื่อนไหว."
+      "description": "ธาตุลม มีลักษณะเคร่งตึงหรือไหวตัว ทำหน้าที่ค้ำจุนและเคลื่อนไหว.",
+      "characteristic": "Distension or motion — สิ่งนี้ quality ของ movement ใน รูป.",
+      "function": "Supporting และ setting รูป into motion.",
+      "manifestation": "รูป คือ supported และ made to move.",
+      "proximateCause": "สิ่งนี้ co-arising ของ สิ่งนี้ other three great elements (earth, water, fire).",
+      "doctrinalNote": "ใน สิ่งนี้ practice ของ ānāpānasati, สิ่งนี้ breath (วาโยธาตุ) คือ สิ่งนี้ principal meditation อารมณ์."
     },
     "RP_005": {
       "name": "จักขุปสาท",
       "shortName": "จักขุปสาท",
-      "description": "รูปที่รับกระทบรูปารมณ์ (ความใสของตา)."
+      "description": "รูปที่รับกระทบรูปารมณ์ (ความใสของตา).",
+      "characteristic": "Subtlety และ clarity, capable ของ taking up รูปารมณ์ เป็น its อารมณ์.",
+      "function": "Serving เป็น สิ่งนี้ physical basis for eye-วิญญาณ to arise.",
+      "manifestation": "Eye-วิญญาณ arises และ sees สิ่งนี้ visible อารมณ์.",
+      "proximateCause": "Past kamma; สิ่งนี้ presence ของ a visible อารมณ์ impinging on it.",
+      "doctrinalNote": "Produced only by kamma. Not present ใน สิ่งนี้ immaterial realm."
     },
     "RP_006": {
       "name": "โสตปสาท",
       "shortName": "โสตปสาท",
-      "description": "รูปที่รับกระทบสัททารมณ์ (ความใสของหู)."
+      "description": "รูปที่รับกระทบสัททารมณ์ (ความใสของหู).",
+      "characteristic": "Subtlety, capable ของ taking up สัททารมณ์ เป็น its อารมณ์.",
+      "function": "Serving เป็น สิ่งนี้ physical basis for ear-วิญญาณ to arise.",
+      "manifestation": "Ear-วิญญาณ arises และ hears สิ่งนี้ สัททารมณ์ อารมณ์.",
+      "proximateCause": "Past kamma; สิ่งนี้ presence ของ a สัททารมณ์ อารมณ์ impinging on it.",
+      "doctrinalNote": "Brahmās ของ สิ่งนี้ fine-material realm possess สิ่งนี้ ear faculty because they communicate through สัททารมณ์."
     },
     "RP_007": {
       "name": "ฆานปสาท",
       "shortName": "ฆานปสาท",
-      "description": "รูปที่รับกระทบคันธารมณ์ (ความใสของจมูก)."
+      "description": "รูปที่รับกระทบคันธารมณ์ (ความใสของจมูก).",
+      "characteristic": "Subtlety, capable ของ taking up คันธารมณ์ เป็น its อารมณ์.",
+      "function": "Serving เป็น สิ่งนี้ physical basis for nose-วิญญาณ to arise.",
+      "manifestation": "Nose-วิญญาณ arises และ smells สิ่งนี้ คันธารมณ์ อารมณ์.",
+      "proximateCause": "Past kamma; สิ่งนี้ presence ของ an คันธารมณ์ อารมณ์ impinging on it.",
+      "doctrinalNote": "Occurs only ใน สิ่งนี้ sense-sphere realm. Brahmās ของ สิ่งนี้ fine-material realm lack สิ่งนี้ nose faculty."
     },
     "RP_008": {
       "name": "ชิวหาปสาท",
       "shortName": "ชิวหาปสาท",
-      "description": "รูปที่รับกระทบรสารมณ์ (ความใสของลิ้น)."
+      "description": "รูปที่รับกระทบรสารมณ์ (ความใสของลิ้น).",
+      "characteristic": "Subtlety, capable ของ taking up รสารมณ์ เป็น its อารมณ์.",
+      "function": "Serving เป็น สิ่งนี้ physical basis for tongue-วิญญาณ to arise.",
+      "manifestation": "Tongue-วิญญาณ arises และ tastes สิ่งนี้ flavour อารมณ์.",
+      "proximateCause": "Past kamma; สิ่งนี้ presence ของ a รสารมณ์ อารมณ์ impinging on it.",
+      "doctrinalNote": "Occurs only ใน สิ่งนี้ sense-sphere realm. Brahmās do not eat, so they lack สิ่งนี้ tongue faculty."
     },
     "RP_009": {
       "name": "กายปสาท",
       "shortName": "กายปสาท",
-      "description": "รูปที่รับกระทบโผฏฐัพพารมณ์ (ความใสของกาย)."
+      "description": "รูปที่รับกระทบโผฏฐัพพารมณ์ (ความใสของกาย).",
+      "characteristic": "Subtlety ซึ่ง pervades สิ่งนี้ body, taking up tangible objects (earth, fire, air) เป็น its อารมณ์.",
+      "function": "Serving เป็น สิ่งนี้ physical basis for body-วิญญาณ to arise.",
+      "manifestation": "Body-วิญญาณ arises และ senses สิ่งนี้ tangible อารมณ์.",
+      "proximateCause": "Past kamma; สิ่งนี้ presence ของ a tangible อารมณ์ impinging on it.",
+      "doctrinalNote": "Brahmās ของ สิ่งนี้ fine-material realm possess สิ่งนี้ body faculty. It คือ absent ใน สิ่งนี้ non-percipient realm."
     },
     "RP_010": {
       "name": "รูปารมณ์",
       "shortName": "รูปารมณ์",
-      "description": "รูป สี หรือแสงสว่างที่ปรากฏทางตา."
+      "description": "รูป สี หรือแสงสว่างที่ปรากฏทางตา.",
+      "characteristic": "Appearance และ manifestation — สิ่งนี้ อารมณ์ ซึ่ง คือ seen by สิ่งนี้ eye faculty.",
+      "function": "Serving เป็น สิ่งนี้ อารมณ์ cognized by eye-วิญญาณ.",
+      "manifestation": "Eye-วิญญาณ arises และ apprehends it.",
+      "proximateCause": "สิ่งนี้ presence ของ light together ด้วย ผัสสะ ด้วย สิ่งนี้ eye faculty.",
+      "doctrinalNote": "รูปารมณ์ (colour) คือ distinct from materiality (รูป) ใน general."
     },
     "RP_011": {
       "name": "สัททารมณ์",
       "shortName": "สัททารมณ์",
-      "description": "เสียงต่างๆ ที่ปรากฏทางหู."
+      "description": "เสียงต่างๆ ที่ปรากฏทางหู.",
+      "characteristic": "Resounding — สิ่งนี้ อารมณ์ ซึ่ง คือ heard by สิ่งนี้ ear faculty.",
+      "function": "Serving เป็น สิ่งนี้ อารมณ์ cognized by ear-วิญญาณ.",
+      "manifestation": "Ear-วิญญาณ arises และ apprehends it.",
+      "proximateCause": "สิ่งนี้ arising ของ สัททารมณ์ together ด้วย ผัสสะ ด้วย สิ่งนี้ ear faculty."
     },
     "RP_012": {
       "name": "คันธารมณ์",
       "shortName": "คันธารมณ์",
-      "description": "กลิ่นหอม กลิ่นเหม็น ที่ปรากฏทางจมูก."
+      "description": "กลิ่นหอม กลิ่นเหม็น ที่ปรากฏทางจมูก.",
+      "characteristic": "Wafting forth — สิ่งนี้ อารมณ์ ซึ่ง คือ smelled by สิ่งนี้ nose faculty.",
+      "function": "Serving เป็น สิ่งนี้ อารมณ์ cognized by nose-วิญญาณ.",
+      "manifestation": "Nose-วิญญาณ arises และ apprehends it.",
+      "proximateCause": "สิ่งนี้ arising ของ คันธารมณ์ together ด้วย ผัสสะ ด้วย สิ่งนี้ nose faculty."
     },
     "RP_013": {
       "name": "รสารมณ์",
       "shortName": "รสารมณ์",
-      "description": "รสหวาน เปรี้ยว เค็ม เผ็ด ขม ที่ปรากฏทางลิ้น."
+      "description": "รสหวาน เปรี้ยว เค็ม เผ็ด ขม ที่ปรากฏทางลิ้น.",
+      "characteristic": "Appearance — สิ่งนี้ อารมณ์ ซึ่ง คือ tasted by สิ่งนี้ tongue faculty.",
+      "function": "Serving เป็น สิ่งนี้ อารมณ์ cognized by tongue-วิญญาณ.",
+      "manifestation": "Tongue-วิญญาณ arises และ apprehends it.",
+      "proximateCause": "ผัสสะ ของ a flavour taken up by สิ่งนี้ tongue faculty."
     },
     "RP_014": {
       "name": "อิตถินทรีย์",
       "shortName": "อิตถินทรีย์",
-      "description": "ภาวรูปที่กำหนดความเป็นหญิง สัณฐาน เสียง กิริยา."
+      "description": "ภาวรูปที่กำหนดความเป็นหญิง สัณฐาน เสียง กิริยา.",
+      "characteristic": "สิ่งนี้ expression ของ femininity — influencing สิ่งนี้ entire material body.",
+      "function": "Determining สิ่งนี้ signs และ behaviour characteristic ของ สิ่งนี้ female sex.",
+      "manifestation": "สิ่งนี้ expression ของ female sex-characteristics ใน สิ่งนี้ material body.",
+      "proximateCause": "Kamma ซึ่ง produces สิ่งนี้ female sex from สิ่งนี้ moment ของ rebirth-linking.",
+      "doctrinalNote": "Occurs only ใน สิ่งนี้ sense-sphere realm. Brahmās ของ สิ่งนี้ fine-material realm have no sex faculty."
     },
     "RP_015": {
       "name": "ปุริสินทรีย์",
       "shortName": "ปุริสินทรีย์",
-      "description": "ภาวรูปที่กำหนดความเป็นชาย สัณฐาน เสียง กิริยา."
+      "description": "ภาวรูปที่กำหนดความเป็นชาย สัณฐาน เสียง กิริยา.",
+      "characteristic": "สิ่งนี้ expression ของ masculinity — influencing สิ่งนี้ entire material body.",
+      "function": "Determining สิ่งนี้ signs และ behaviour characteristic ของ สิ่งนี้ male sex.",
+      "manifestation": "สิ่งนี้ expression ของ male sex-characteristics ใน สิ่งนี้ material body.",
+      "proximateCause": "Kamma ซึ่ง produces สิ่งนี้ male sex from สิ่งนี้ moment ของ rebirth-linking.",
+      "doctrinalNote": "Occurs only ใน สิ่งนี้ sense-sphere realm."
     },
     "RP_016": {
       "name": "หทยวัตถุ",
       "shortName": "หทยวัตถุ",
-      "description": "รูปอันเป็นที่อาศัยเกิดของมโนธาตุและมโนวิญญาณธาตุ."
+      "description": "รูปอันเป็นที่อาศัยเกิดของมโนธาตุและมโนวิญญาณธาตุ.",
+      "characteristic": "Being สิ่งนี้ seat — สิ่งนี้ physical basis on which mind-door วิญญาณ depends.",
+      "function": "Serving เป็น สิ่งนี้ physical basis for all วิญญาณ ซึ่ง arises through สิ่งนี้ mind-door (excluding สิ่งนี้ sense-door pairs).",
+      "manifestation": "Mind-door วิญญาณ คือ able to arise.",
+      "proximateCause": "Produced by past kamma; sustained by สิ่งนี้ blood ของ สิ่งนี้ heart.",
+      "doctrinalNote": "Absent ใน สิ่งนี้ immaterial realm. This คือ สิ่งนี้ most important material basis ใน สิ่งนี้ Abhidhamma system ของ cognition."
     },
     "RP_017": {
       "name": "รูปชีวิตินทรีย์",
       "shortName": "ชีวิตรูป",
-      "description": "รูปที่ทำหน้าที่รักษากัมมชรูปทั้งหลายให้ดำรงอยู่."
+      "description": "รูปที่ทำหน้าที่รักษากัมมชรูปทั้งหลายให้ดำรงอยู่.",
+      "characteristic": "Sustaining life — preserving สิ่งนี้ material phenomena produced by kamma.",
+      "function": "Keeping kamma-produced materiality ใน existence for สิ่งนี้ duration ของ one material life-span.",
+      "manifestation": "Kamma-produced materiality คือ kept alive และ persisting.",
+      "proximateCause": "Only kamma can produce รูปชีวิตินทรีย์.",
+      "doctrinalNote": "สิ่งนี้ lifespan ของ materiality equals seventeen mind-moments. When รูปชีวิตินทรีย์ ceases, สิ่งนี้ kamma-produced materiality ceases ด้วย it."
     },
     "RP_018": {
       "name": "กวฬีการาหาร",
       "shortName": "อาหารรูป",
-      "description": "รูปคืออาหารที่เป็นคำๆ โอชารูปที่หล่อเลี้ยงร่างกาย."
+      "description": "รูปคืออาหารที่เป็นคำๆ โอชารูปที่หล่อเลี้ยงร่างกาย.",
+      "characteristic": "Nourishment — สิ่งนี้ กวฬีการาหาร present ใน every material group.",
+      "function": "Nourishing สิ่งนี้ material phenomena ของ สิ่งนี้ same group และ generating new materiality from nutriment.",
+      "manifestation": "Materiality คือ nourished, sustained และ multiplied.",
+      "proximateCause": "สิ่งนี้ presence ของ nutriment (food) ซึ่ง คือ digested.",
+      "doctrinalNote": "กวฬีการาหาร ใน physical food (kabaḷīkāra-āhāra) คือ one ของ สิ่งนี้ four kinds ของ nutriment ใน สิ่งนี้ Abhidhamma."
     },
     "RP_019": {
       "name": "อากาสธาตุ",
       "shortName": "อากาสธาตุ",
-      "description": "ช่องว่างที่คั่นระหว่างรูปกลาป เป็นขอบเขตของรูป."
+      "description": "ช่องว่างที่คั่นระหว่างรูปกลาป เป็นขอบเขตของรูป.",
+      "characteristic": "Delimiting — creating สิ่งนี้ boundary between groups ของ materiality.",
+      "function": "Demarcating สิ่งนี้ boundary between kalāpas.",
+      "manifestation": "สิ่งนี้ groups ของ materiality are distinguished และ do not merge.",
+      "proximateCause": "สิ่งนี้ presence ของ material groups (kalāpas) existing alongside one another.",
+      "doctrinalNote": "สิ่งนี้ อากาสธาตุ เป็น a material phenomenon คือ not สิ่งนี้ same เป็น absolute space ใน philosophy."
     },
     "RP_020": {
       "name": "กายวิญญัตติ",
       "shortName": "กายวิญญัตติ",
-      "description": "การเคลื่อนไหวทางกายที่แสดงความหมายให้ผู้อื่นรู้ได้."
+      "description": "การเคลื่อนไหวทางกายที่แสดงความหมายให้ผู้อื่นรู้ได้.",
+      "characteristic": "Movement — bodily expression used to convey an intention.",
+      "function": "Communicating an intention through bodily gesture.",
+      "manifestation": "Others understand one's intention through bodily gesture.",
+      "proximateCause": "A วิญญาณ arising ด้วย สิ่งนี้ intention to express something.",
+      "doctrinalNote": "Produced only by mind. It คือ สิ่งนี้ basis ของ bodily action (kāya-kamma)."
     },
     "RP_021": {
       "name": "วจีวิญญัตติ",
       "shortName": "วจีวิญญัตติ",
-      "description": "การเปล่งเสียงพูดที่แสดงความหมายให้ผู้อื่นรู้ได้."
+      "description": "การเปล่งเสียงพูดที่แสดงความหมายให้ผู้อื่นรู้ได้.",
+      "characteristic": "Vocal expression — speech used to convey an intention.",
+      "function": "Communicating an intention through speech.",
+      "manifestation": "Others understand one's intention through สิ่งนี้ สัททารมณ์ ของ speech.",
+      "proximateCause": "A วิญญาณ arising ด้วย สิ่งนี้ intention to speak.",
+      "doctrinalNote": "Produced only by mind. It คือ สิ่งนี้ basis ของ verbal action (vacī-kamma)."
     },
     "RP_022": {
       "name": "รูปลหุตา",
       "shortName": "รูปลหุตา",
-      "description": "ความเบา ความไม่เชื่องช้าของรูปธรรม."
+      "description": "ความเบา ความไม่เชื่องช้าของรูปธรรม.",
+      "characteristic": "Lightness — สิ่งนี้ buoyant, agile quality ของ materiality.",
+      "function": "Preventing materiality from being heavy และ rigid.",
+      "manifestation": "สิ่งนี้ body คือ light และ moves ด้วย ease.",
+      "proximateCause": "Favourable mind, temperature และ nutriment; freedom from illness.",
+      "doctrinalNote": "Not produced by kamma. Depends on present health และ conditions."
     },
     "RP_023": {
       "name": "รูปมุทุตา",
       "shortName": "รูปมุทุตา",
-      "description": "ความอ่อนโยน ความสลวยไม่กระด้างของรูปธรรม."
+      "description": "ความอ่อนโยน ความสลวยไม่กระด้างของรูปธรรม.",
+      "characteristic": "Softness — สิ่งนี้ pliant, malleable quality ของ materiality.",
+      "function": "Preventing materiality from being stiff และ rigid.",
+      "manifestation": "สิ่งนี้ body คือ soft และ supple.",
+      "proximateCause": "Harmonious mind, temperature และ nutriment; freedom from illness."
     },
     "RP_024": {
       "name": "รูปกัมมัญญตา",
       "shortName": "รูปกัมมัญญตา",
-      "description": "ความควรแก่การงาน ความคล่องตัวในการเคลื่อนไหวของรูป."
+      "description": "ความควรแก่การงาน ความคล่องตัวในการเคลื่อนไหวของรูป.",
+      "characteristic": "Adaptability — สิ่งนี้ workable, fit quality ของ materiality.",
+      "function": "Making materiality easy to use และ free ของ fatigue.",
+      "manifestation": "สิ่งนี้ body คือ fit for any task.",
+      "proximateCause": "Harmonious mind, temperature และ nutriment."
     },
     "RP_025": {
       "name": "รูปุปจยะ",
       "shortName": "รูปุปจยะ",
-      "description": "ความก่อตัว ความเจริญขึ้นของรูปในระยะแรกเริ่ม."
+      "description": "ความก่อตัว ความเจริญขึ้นของรูปในระยะแรกเริ่ม.",
+      "characteristic": "Genesis — สิ่งนี้ initial arising phase ของ a material group.",
+      "function": "Marking สิ่งนี้ beginning ของ existence ของ a material group.",
+      "manifestation": "Materiality comes into being ใน สิ่งนี้ world.",
+      "proximateCause": "สิ่งนี้ four originators ของ materiality (kamma, mind, temperature, nutriment).",
+      "doctrinalNote": "สิ่งนี้ four characteristics ของ materiality are phases ของ all material phenomena, not independent material instances."
     },
     "RP_026": {
       "name": "รูปสันตติ",
       "shortName": "รูปสันตติ",
-      "description": "ความสืบต่อ ความเป็นไปต่อเนื่องแห่งรูปธรรม."
+      "description": "ความสืบต่อ ความเป็นไปต่อเนื่องแห่งรูปธรรม.",
+      "characteristic": "Continuity — สิ่งนี้ phase ของ persistence และ duration ของ สิ่งนี้ stream ของ materiality.",
+      "function": "Keeping สิ่งนี้ stream ของ materiality continuing without interruption.",
+      "manifestation": "Materiality appears stable และ continuous.",
+      "proximateCause": "สิ่งนี้ four originators ของ materiality acting continuously.",
+      "doctrinalNote": "Continuity explains why things seem stable to us — they are ใน fact an unbroken stream ของ arising และ passing away."
     },
     "RP_027": {
       "name": "รูปชรตา",
       "shortName": "รูปชรตา",
-      "description": "ความแก่ ความทรุดโทรมเสื่อมถอยแห่งรูปธรรม."
+      "description": "ความแก่ ความทรุดโทรมเสื่อมถอยแห่งรูปธรรม.",
+      "characteristic": "Decay — สิ่งนี้ ageing, declining phase ของ materiality.",
+      "function": "Marking สิ่งนี้ change และ decline ของ materiality.",
+      "manifestation": "Materiality grows old, wears down, และ changes.",
+      "proximateCause": "สิ่งนี้ passage ของ time; materiality having already existed.",
+      "doctrinalNote": "Decay คือ สิ่งนี้ clearest visible sign ของ impermanence (anicca) ใน materiality."
     },
     "RP_028": {
       "name": "รูปอนิจจตา",
       "shortName": "รูปอนิจจตา",
-      "description": "ความแตกดับ ความดับสูญไปสิ้นเชิงแห่งรูปธรรม."
+      "description": "ความแตกดับ ความดับสูญไปสิ้นเชิงแห่งรูปธรรม.",
+      "characteristic": "Dissolution — สิ่งนี้ complete cessation ของ materiality.",
+      "function": "Marking สิ่งนี้ end ของ สิ่งนี้ existence ของ materiality.",
+      "manifestation": "Materiality no longer exists — it has completely ceased.",
+      "proximateCause": "Materiality having already passed through สิ่งนี้ three preceding phases ของ arising, persisting และ changing.",
+      "doctrinalNote": "Clearly seeing สิ่งนี้ phase ของ dissolution คือ สิ่งนี้ starting point ของ insight meditation (vipassanā)."
     }
   },
   "paccayas": {
@@ -1020,166 +1403,458 @@
     "PD_01": {
       "name": "อวิชชา",
       "shortName": "อวิชชา",
-      "description": "ความไม่รู้จริง คือไม่รู้ในอริยสัจ 4 ในปฏิจจสมุปบาท."
+      "description": "ความไม่รู้จริง คือไม่รู้ในอริยสัจ 4 ในปฏิจจสมุปบาท.",
+      "characteristic": "Not understanding — blindness to สิ่งนี้ true nature ของ things (สิ่งนี้ Four Truths, สิ่งนี้ three characteristics).",
+      "function": "To obscure clear seeing, และ to serve เป็น condition for สิ่งนี้ arising ของ formations.",
+      "manifestation": "เป็น bewilderment และ darkness — it keeps generating kamma (formations) without one realising it.",
+      "proximateCause": "Unwise มนสิการ (ayoniso-manasikāra); not meeting สิ่งนี้ wise และ not hearing สิ่งนี้ True Dhamma.",
+      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). สิ่งนี้ ending ของ อวิชชา คือ สิ่งนี้ attainment ของ สิ่งนี้ four path consciousnesses.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_02": {
       "name": "สังขาร",
       "shortName": "สังขาร",
-      "description": "การปรุงแต่งแห่งกรรมทางกาย วาจา ใจ (ปุญญาภิสังขาร อปุญญาภิสังขาร อาเนญชาภิสังขาร)."
+      "description": "การปรุงแต่งแห่งกรรมทางกาย วาจา ใจ (ปุญญาภิสังขาร อปุญญาภิสังขาร อาเนญชาภิสังขาร).",
+      "characteristic": "Acting และ arranging — deliberate formation through body, speech, และ mind.",
+      "function": "To generate kamma — accumulating kammic force ซึ่ง will yield rebirth ใน a future life.",
+      "manifestation": "เป็น accumulated kamma ซึ่ง will draw วิญญาณ into rebirth.",
+      "proximateCause": "อวิชชา เป็น condition (without อวิชชา, formations become supramundane และ create no new kamma).",
+      "doctrinalNote": "Saṅkhārā ใน dependent origination means สิ่งนี้ เจตนา (cetanā) จิต factor ซึ่ง forms kamma.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "PD_03": {
       "name": "วิญญาณ",
       "shortName": "วิญญาณ",
-      "description": "ปฏิสนธิวิญญาณที่เป็นไปในภพใหม่ตามอำนาจของกรรม."
+      "description": "ปฏิสนธิวิญญาณที่เป็นไปในภพใหม่ตามอำนาจของกรรม.",
+      "characteristic": "Knowing an อารมณ์ — สิ่งนี้ rebirth วิญญาณ resting on สิ่งนี้ new mind-และ-รูป.",
+      "function": "To rebirth — to open a new life.",
+      "manifestation": "A new existence takes shape — mind-และ-รูป appear.",
+      "proximateCause": "Kamma (formations) เป็น condition; mind-และ-รูป must be there to rest on.",
+      "doctrinalNote": "วิญญาณ และ mind-และ-รูป lean on each other — like two sheaves ของ reeds propping one another up.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_04": {
       "name": "นามรูป",
       "shortName": "นามรูป",
-      "description": "จิตและเจตสิก (นาม) กับมหาภูตรูปและอุปาทายรูป (รูป)."
+      "description": "จิตและเจตสิก (นาม) กับมหาภูตรูปและอุปาทายรูป (รูป).",
+      "characteristic": "Existing — mind และ body present และ developing.",
+      "function": "To serve เป็น สิ่งนี้ ground on which วิญญาณ operates, และ สิ่งนี้ condition for สิ่งนี้ สฬายตนะ to develop.",
+      "manifestation": "สิ่งนี้ สฬายตนะ become fully formed.",
+      "proximateCause": "วิญญาณ เป็น condition; สิ่งนี้ four sources producing materiality.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_05": {
       "name": "สฬายตนะ",
       "shortName": "สฬายตนะ",
-      "description": "อายตนะภายใน 6 คือ ตา หู จมูก ลิ้น กาย ใจ."
+      "description": "อายตนะภายใน 6 คือ ตา หู จมูก ลิ้น กาย ใจ.",
+      "characteristic": "Readiness to receive — six doors through which objects enter.",
+      "function": "To serve เป็น doors (dvāra) through which สิ่งนี้ mind meets outer objects.",
+      "manifestation": "ผัสสะ (phassa) คือ established — สิ่งนี้ mind can touch its อารมณ์.",
+      "proximateCause": "Fully developed mind-และ-รูป เป็น condition.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_06": {
       "name": "ผัสสะ",
       "shortName": "ผัสสะ",
-      "description": "การกระทบกันของอายตนะภายใน อายตนะภายนอก และวิญญาณ."
+      "description": "การกระทบกันของอายตนะภายใน อายตนะภายนอก และวิญญาณ.",
+      "characteristic": "Touching — สิ่งนี้ encounter ของ base, อารมณ์, และ วิญญาณ.",
+      "function": "To gather base, อารมณ์, และ วิญญาณ together — conditioning สิ่งนี้ arising ของ เวทนา.",
+      "manifestation": "Mind, จิต factors, base, และ อารมณ์ come together.",
+      "proximateCause": "All three must be present: base + อารมณ์ + วิญญาณ.",
+      "doctrinalNote": "Phassa ใน dependent origination คือ สิ่งนี้ ผัสสะ จิต factor (CS_PHASSA).",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_07": {
       "name": "เวทนา",
       "shortName": "เวทนา",
-      "description": "การเสวยอารมณ์อันเนื่องมาจากผัสสะ สุข ทุกข์ หรือไม่สุขไม่ทุกข์."
+      "description": "การเสวยอารมณ์อันเนื่องมาจากผัสสะ สุข ทุกข์ หรือไม่สุขไม่ทุกข์.",
+      "characteristic": "Experiencing — tasting สิ่งนี้ อารมณ์ เป็น pleasant, painful, or neutral after ผัสสะ.",
+      "function": "To enjoy สิ่งนี้ อารมณ์ — conditioning ตัณหา to arise when unwise มนสิการ prevails.",
+      "manifestation": "เป็น pleasant, painful, or neutral experience forming ใน สิ่งนี้ mind.",
+      "proximateCause": "ผัสสะ เป็น condition.",
+      "doctrinalNote": "This คือ สิ่งนี้ crux ของ สิ่งนี้ four foundations ของ สติ: halt at เวทนา, และ do not let it ripen into ตัณหา.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_08": {
       "name": "ตัณหา",
       "shortName": "ตัณหา",
-      "description": "ความทะยานอยาก ความกำหนัดยินดีในกาม ในภพ."
+      "description": "ความทะยานอยาก ความกำหนัดยินดีในกาม ในภพ.",
+      "characteristic": "Thirsting — สิ่งนี้ อุปาทาน wanting produced by เวทนา.",
+      "function": "To grasp at its อารมณ์ — conditioning สิ่งนี้ arising ของ อุปาทาน.",
+      "manifestation": "เป็น อุปาทาน taking hold; สิ่งนี้ round ของ rebirth continues.",
+      "proximateCause": "เวทนา (especially glad และ pleasant เวทนา) เป็น condition.",
+      "doctrinalNote": "ตัณหา คือ สิ่งนี้ Origin ของ suffering among สิ่งนี้ Four Noble Truths. สิ่งนี้ ending ของ ตัณหา คือ สิ่งนี้ ending ของ suffering — Nibbāna.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "PD_09": {
       "name": "อุปาทาน",
       "shortName": "อุปาทาน",
-      "description": "ความยึดมั่นถือมั่นอย่างเหนียวแน่นในกาม ทิฏฐิ ศีลพรต และอัตตา."
+      "description": "ความยึดมั่นถือมั่นอย่างเหนียวแน่นในกาม ทิฏฐิ ศีลพรต และอัตตา.",
+      "characteristic": "Holding tight — a grip ซึ่ง does not let go.",
+      "function": "To grasp สิ่งนี้ อารมณ์ firmly — conditioning สิ่งนี้ arising ของ ภพ.",
+      "manifestation": "เป็น ภพ taking shape — rebirth-producing kamma accumulates.",
+      "proximateCause": "ตัณหา เป็น condition — อุปาทาน คือ ตัณหา intensified และ consolidated.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_10": {
       "name": "ภพ",
       "shortName": "ภพ",
-      "description": "ภาวะแห่งชีวิต ประกอบด้วยกรรมภพ (กรรมที่นำไปเกิด) และอุปปัตติภพ (ที่เกิด)."
+      "description": "ภาวะแห่งชีวิต ประกอบด้วยกรรมภพ (กรรมที่นำไปเกิด) และอุปปัตติภพ (ที่เกิด).",
+      "characteristic": "Existing — accumulated kammic force ready to produce rebirth.",
+      "function": "To condition ชาติ taking place ใน a future life.",
+      "manifestation": "เป็น rebirth occurring ใน a plane ซึ่ง matches สิ่งนี้ kamma.",
+      "proximateCause": "อุปาทาน เป็น condition — อุปาทาน คือ สิ่งนี้ fuel for ภพ.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_11": {
       "name": "ชาติ",
       "shortName": "ความเกิด",
-      "description": "การปรากฏขึ้นแห่งขันธ์ทั้งหลายในภพใหม่ การถือกำเนิด."
+      "description": "การปรากฏขึ้นแห่งขันธ์ทั้งหลายในภพใหม่ การถือกำเนิด.",
+      "characteristic": "Rebirth-linking — วิญญาณ reborn into a new plane.",
+      "function": "To open a new life — dragging สิ่งนี้ whole mass ของ suffering along.",
+      "manifestation": "เป็น suffering (ageing-และ-death) appearing.",
+      "proximateCause": "ภพ (kammic force) เป็น condition.",
+      "doctrinalNote": "สิ่งนี้ three-life circle joins here: ชาติ (PD_11) corresponds to วิญญาณ (PD_03) on สิ่งนี้ result side ของ สิ่งนี้ future life.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "PD_12": {
       "name": "ชรามรณะ",
       "shortName": "ชรามรณะ",
-      "description": "ความแก่ทรุดโทรมและความแตกดับสิ้นไปแห่งขันธ์ทั้งหลาย."
+      "description": "ความแก่ทรุดโทรมและความแตกดับสิ้นไปแห่งขันธ์ทั้งหลาย.",
+      "characteristic": "Ageing และ dying — สิ่งนี้ inevitable decay และ perishing ของ all conditioned mind และ body.",
+      "function": "To end a life — และ to continue a new round ของ ภพ if liberation has not been won.",
+      "manifestation": "A life closed; without liberation สิ่งนี้ round continues.",
+      "proximateCause": "ชาติ เป็น condition — where there คือ ชาติ, ageing-และ-death necessarily follow.",
+      "doctrinalNote": "Liberation means ending อวิชชา (PD_01) และ ตัณหา (PD_08) — สิ่งนี้ realisation ของ Nibbāna.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "ทิฏฐธรรมเวทนียกรรม",
       "shortName": "ทิฏฐธรรมเวทนียกรรม",
-      "description": "กรรมที่ให้ผลในปัจจุบันชาตินี้ (เกิดจากชวนจิตดวงที่ 1)."
+      "description": "กรรมที่ให้ผลในปัจจุบันชาตินี้ (เกิดจากชวนจิตดวงที่ 1).",
+      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within สิ่งนี้ very same life. If it fails to ripen ใน ซึ่ง life, it becomes defunct (ahosi-kamma).",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "KM_T_02": {
       "name": "อุปปัชชเวทนียกรรม",
       "shortName": "อุปปัชชเวทนียกรรม",
-      "description": "กรรมที่ให้ผลในภพถัดไป คือชาติหน้า (เกิดจากชวนจิตดวงที่ 7)."
+      "description": "กรรมที่ให้ผลในภพถัดไป คือชาติหน้า (เกิดจากชวนจิตดวงที่ 7).",
+      "doctrinalNote": "It has only a single opportunity to ripen, ใน สิ่งนี้ immediately following life. If it fails to ripen ใน ซึ่ง life, it becomes defunct.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "KM_T_03": {
       "name": "อปราปรเวทนียกรรม",
       "shortName": "อปราปรเวทนียกรรม",
-      "description": "กรรมที่ให้ผลตั้งแต่ชาติต่อๆ ไปจนกว่าจะถึงพระนิพพาน (เกิดจากชวนจิตดวงที่ 2-6)."
+      "description": "กรรมที่ให้ผลตั้งแต่ชาติต่อๆ ไปจนกว่าจะถึงพระนิพพาน (เกิดจากชวนจิตดวงที่ 2-6).",
+      "doctrinalNote": "It never becomes defunct through lapse ของ time — one reason สิ่งนี้ stream ของ kamma และ its results คือ so intricate. It คือ สิ่งนี้ most common ของ สิ่งนี้ three time-based kinds ของ kamma.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "KM_T_04": {
       "name": "อโหสิกรรม",
       "shortName": "อโหสิกรรม",
-      "description": "กรรมที่เลิกให้ผล ไม่มีผลอีกต่อไป."
-    },
-    "KM_U_01": {
-      "name": "ชนกกรรม",
-      "shortName": "ชนกกรรม",
-      "description": "กรรมที่ทำหน้าที่นำไปเกิด นำปฏิสนธิและรูปขันธ์ในภพใหม่."
-    },
-    "KM_U_02": {
-      "name": "อุปัตถัมภกกรรม",
-      "shortName": "อุปัตถัมภกกรรม",
-      "description": "กรรมที่ช่วยอุดหนุนสนับสนุนชนกกรรมให้มีกำลังและยั่งยืน."
-    },
-    "KM_U_03": {
-      "name": "อุปปีฬกกรรม",
-      "shortName": "อุปปีฬกกรรม",
-      "description": "กรรมที่เข้าไปบีบคั้นขัดขวางชนกกรรม ทำให้ผลที่ควรได้ลดน้อยลง."
-    },
-    "KM_U_04": {
-      "name": "อุปฆาตกรรม",
-      "shortName": "อุปฆาตกรรม",
-      "description": "กรรมที่เข้าไปตัดรอนผลของชนกกรรมอย่างเด็ดขาด."
+      "description": "กรรมที่เลิกให้ผล ไม่มีผลอีกต่อไป.",
+      "doctrinalNote": "'Ahosi' means 'it has already been' — สิ่งนี้ kamma คือ not destroyed, it has simply lost its opportunity to ripen.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "KM_P_01": {
       "name": "ครุกรรม",
       "shortName": "ครุกรรม",
-      "description": "กรรมหนักที่สุดที่ต้องให้ผลก่อนกรรมอื่น (อนันตริยกรรม 5 หรือฌานสมาบัติ)."
+      "description": "กรรมหนักที่สุดที่ต้องให้ผลก่อนกรรมอื่น (อนันตริยกรรม 5 หรือฌานสมาบัติ).",
+      "doctrinalNote": "Generative kamma determines สิ่งนี้ entire foundation ของ a life.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "KM_P_02": {
       "name": "อาสันนกรรม",
       "shortName": "อาสันนกรรม",
-      "description": "กรรมที่กระทำหรือระลึกถึงได้ในเวลาใกล้จะตาย."
+      "description": "กรรมที่กระทำหรือระลึกถึงได้ในเวลาใกล้จะตาย.",
+      "doctrinalNote": "It คือ not สิ่งนี้ one who sows สิ่งนี้ seed but สิ่งนี้ one who waters it — it strengthens และ extends a result ซึ่ง คือ already ripening rather than producing a new one ของ its own.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "KM_P_03": {
       "name": "อาจิณณกรรม",
       "shortName": "อาจิณณกรรม",
-      "description": "กรรมที่กระทำสั่งสมอยู่เป็นประจำจนเคยชิน ติดเป็นนิสัย."
+      "description": "กรรมที่กระทำสั่งสมอยู่เป็นประจำจนเคยชิน ติดเป็นนิสัย.",
+      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "KM_P_04": {
       "name": "กตัตตากรรม",
       "shortName": "กตัตตากรรม",
-      "description": "กรรมที่ทำด้วยเจตนาอันเบาบาง กรรมที่ไม่เข้าพวกข้างต้น."
+      "description": "กรรมที่ทำด้วยเจตนาอันเบาบาง กรรมที่ไม่เข้าพวกข้างต้น.",
+      "doctrinalNote": "This คือ สิ่งนี้ most powerful kind ของ kamma classified by function; it explains สิ่งนี้ sudden reversals ซึ่ง occur ใน a life.",
+      "examples": [
+        "สิ่งนี้"
+      ]
+    },
+    "KM_U_01": {
+      "name": "ชนกกรรม",
+      "shortName": "ชนกกรรม",
+      "description": "กรรมที่ทำหน้าที่นำไปเกิด นำปฏิสนธิและรูปขันธ์ในภพใหม่.",
+      "doctrinalNote": "ชนกกรรม always determines rebirth — it never becomes defunct.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
+    },
+    "KM_U_02": {
+      "name": "อุปัตถัมภกกรรม",
+      "shortName": "อุปัตถัมภกกรรม",
+      "description": "กรรมที่ช่วยอุดหนุนสนับสนุนชนกกรรมให้มีกำลังและยั่งยืน.",
+      "doctrinalNote": "This explains สิ่งนี้ importance ของ preparing one's mind at สิ่งนี้ time ของ death.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
+    },
+    "KM_U_03": {
+      "name": "อุปปีฬกกรรม",
+      "shortName": "อุปปีฬกกรรม",
+      "description": "กรรมที่เข้าไปบีบคั้นขัดขวางชนกกรรม ทำให้ผลที่ควรได้ลดน้อยลง.",
+      "doctrinalNote": "This คือ why สิ่งนี้ Buddha taught ซึ่ง one should constantly practise wholesome deeds.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
+    },
+    "KM_U_04": {
+      "name": "อุปฆาตกรรม",
+      "shortName": "อุปฆาตกรรม",
+      "description": "กรรมที่เข้าไปตัดรอนผลของชนกกรรมอย่างเด็ดขาด.",
+      "doctrinalNote": "It คือ สิ่งนี้ weakest kind ของ kamma by priority ของ ripening, yet it makes up สิ่งนี้ greater part ของ สิ่งนี้ total kamma we have accumulated.",
+      "examples": [
+        "สิ่งนี้"
+      ]
     },
     "KM_R_01": {
       "name": "กามาวจรอกุศลกรรม",
       "shortName": "อกุศลกรรม",
-      "description": "อกุศลกรรมบถ 10 ที่นำไปสู่อบายภูมิ 4."
+      "description": "อกุศลกรรมบถ 10 ที่นำไปสู่อบายภูมิ 4.",
+      "doctrinalNote": "กามาวจรอกุศลกรรม คือ สิ่งนี้ cause ของ สิ่งนี้ truth ของ suffering; it belongs to สิ่งนี้ sense sphere และ ripens within สิ่งนี้ woeful planes ของ สิ่งนี้ sense sphere.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "KM_R_02": {
       "name": "กามาวจรกุศลกรรม",
       "shortName": "กุศลกรรม",
-      "description": "กุศลกรรมบถ 10 ที่นำไปเกิดในมนุษยภูมิและสวรรค์ 6 ชั้น."
+      "description": "กุศลกรรมบถ 10 ที่นำไปเกิดในมนุษยภูมิและสวรรค์ 6 ชั้น.",
+      "doctrinalNote": "กามาวจรกุศลกรรม ซึ่ง ripens เป็น happiness ใน สิ่งนี้ sense sphere — สิ่งนี้ foundation for all merit.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "KM_R_03": {
       "name": "รูปาวจรกุศลกรรม",
       "shortName": "รูปกุศล",
-      "description": "รูปฌานกุศล 5 ที่นำไปเกิดในรูปพรหมภูมิ 16."
+      "description": "รูปฌานกุศล 5 ที่นำไปเกิดในรูปพรหมภูมิ 16.",
+      "doctrinalNote": "Fine-material-sphere kamma belongs to สิ่งนี้ exalted (mahaggata) category, transcending สิ่งนี้ sense sphere; it ripens according to สิ่งนี้ jhāna attained.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     },
     "KM_R_04": {
       "name": "อรูปาวจรกุศลกรรม",
       "shortName": "อรูปกุศล",
-      "description": "อรูปฌานกุศล 4 ที่นำไปเกิดในอรูปพรหมภูมิ 4."
+      "description": "อรูปฌานกุศล 4 ที่นำไปเกิดในอรูปพรหมภูมิ 4.",
+      "doctrinalNote": "Supramundane kamma does not produce rebirth within สิ่งนี้ three realms; it produces Nibbāna เป็น its result — สิ่งนี้ ultimate aim ของ สิ่งนี้ Abhidhamma.",
+      "examples": [
+        "สิ่งนี้",
+        "สิ่งนี้"
+      ]
     }
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {
       "name": "อติมหันตารมณ์ปัญจทวารวิถี",
       "shortName": "ปัญจทวารวิถี",
-      "description": "วิถีจิตทางปัญจทวารที่มีอารมณ์ชัดเจนมาก ครบ 17 ขณะจิต มีตทาลัมพนะ."
+      "description": "วิถีจิตทางปัญจทวารที่มีอารมณ์ชัดเจนมาก ครบ 17 ขณะจิต มีตทาลัมพนะ.",
+      "steps": {
+        "1": {
+          "name": "Past bhavaṅga",
+          "description": "สิ่งนี้ life-continuum flowing along normally before สิ่งนี้ อารมณ์ strikes."
+        },
+        "2": {
+          "name": "Vibrating bhavaṅga",
+          "description": "สิ่งนี้ อารมณ์ strikes สิ่งนี้ sense base และ สิ่งนี้ life-continuum vibrates for สิ่งนี้ first time."
+        },
+        "3": {
+          "name": "Arrest bhavaṅga",
+          "description": "สิ่งนี้ bhavaṅga stream คือ fully cut off — สิ่งนี้ cognitive process begins."
+        },
+        "4": {
+          "name": "Five-door adverting",
+          "description": "Opens สิ่งนี้ five-sense door และ turns toward สิ่งนี้ อารมณ์, determining which door สิ่งนี้ อารมณ์ has struck."
+        },
+        "5": {
+          "name": "Five-fold sense วิญญาณ",
+          "description": "Knows สิ่งนี้ อารมณ์ through สิ่งนี้ corresponding sense door. Only สิ่งนี้ seven universal จิต factors accompany it."
+        },
+        "6": {
+          "name": "Receiving",
+          "description": "Receives สิ่งนี้ อารมณ์ from สิ่งนี้ sense วิญญาณ และ passes it into สิ่งนี้ inner stream ของ วิญญาณ."
+        },
+        "7": {
+          "name": "Investigating",
+          "description": "Examines สิ่งนี้ อารมณ์ — determining whether it คือ good or bad, pleasing or not."
+        },
+        "8": {
+          "name": "Determining",
+          "description": "Makes สิ่งนี้ final determination ของ สิ่งนี้ อารมณ์ เป็น good or bad — opening สิ่งนี้ way for สิ่งนี้ 7 impulsions."
+        },
+        "9": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven consecutive impulsion moments — creating wholesome or กามาวจรอกุศลกรรม. Moment 1 bears fruit ใน this very life; moment 7 ใน สิ่งนี้ next life; moments 2–6 ใน later lives."
+        },
+        "10": {
+          "name": "Registration (Tadārammaṇa)",
+          "description": "Two registration moments enjoying สิ่งนี้ residual อารมณ์ after สิ่งนี้ impulsions. They occur only ใน a very-great-อารมณ์ process และ create no new kamma."
+        },
+        "11": {
+          "name": "Post-process bhavaṅga",
+          "description": "After สิ่งนี้ process ends, สิ่งนี้ life-continuum resumes its normal flow."
+        }
+      }
     },
     "VT_NGU_MON_LON": {
       "name": "มหันตารมณ์ปัญจทวารวิถี",
       "shortName": "ปัญจทวารมหันตารมณ์",
-      "description": "วิถีจิตทางปัญจทวารที่มีชวนะ 7 ขณะแต่ไม่มีตทาลัมพนะ."
+      "description": "วิถีจิตทางปัญจทวารที่มีชวนะ 7 ขณะแต่ไม่มีตทาลัมพนะ.",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "สิ่งนี้ life-continuum vibrates เป็น สิ่งนี้ อารมณ์ strikes สิ่งนี้ sense base."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "สิ่งนี้ bhavaṅga stream คือ cut off — สิ่งนี้ process begins."
+        },
+        "3": {
+          "name": "Five-door adverting",
+          "description": "Turns สิ่งนี้ mind toward สิ่งนี้ อารมณ์ through สิ่งนี้ five-sense door."
+        },
+        "4": {
+          "name": "Five-fold sense วิญญาณ",
+          "description": "Knows สิ่งนี้ อารมณ์ through สิ่งนี้ corresponding sense."
+        },
+        "5": {
+          "name": "Receiving",
+          "description": "Receives สิ่งนี้ อารมณ์."
+        },
+        "6": {
+          "name": "Investigating",
+          "description": "Examines สิ่งนี้ อารมณ์."
+        },
+        "7": {
+          "name": "Determining",
+          "description": "Determines สิ่งนี้ อารมณ์, opening สิ่งนี้ way for สิ่งนี้ impulsions."
+        },
+        "8": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments create kamma. Afterwards there คือ NO registration."
+        },
+        "9": {
+          "name": "Post-process bhavaṅga",
+          "description": "สิ่งนี้ life-continuum resumes after สิ่งนี้ process."
+        }
+      }
     },
     "VT_Y_MON": {
       "name": "มโนทวารวิถี",
       "shortName": "มโนทวารวิถี",
-      "description": "วิถีจิตที่เกิดขึ้นเมื่อจิตรับอารมณ์ทางมโนทวาร."
+      "description": "วิถีจิตที่เกิดขึ้นเมื่อจิตรับอารมณ์ทางมโนทวาร.",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "สิ่งนี้ life-continuum vibrates เป็น สิ่งนี้ mind อารมณ์ strikes."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "สิ่งนี้ life-continuum คือ arrested — สิ่งนี้ mind-door process begins."
+        },
+        "3": {
+          "name": "Mind-door adverting",
+          "description": "Opens สิ่งนี้ mind door และ directs สิ่งนี้ mind to สิ่งนี้ mind อารมณ์, at สิ่งนี้ same time determining it (serving เป็น determining within this process)."
+        },
+        "4": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, และ action arise here."
+        },
+        "5": {
+          "name": "Registration (optional)",
+          "description": "Registration ใน สิ่งนี้ mind-door process — depending on สิ่งนี้ strength ของ สิ่งนี้ mind อารมณ์."
+        },
+        "6": {
+          "name": "Post-process bhavaṅga",
+          "description": "สิ่งนี้ life-continuum resumes."
+        }
+      }
     },
     "VT_VITHIMUTTA": {
       "name": "วิถีมุตตจิต",
       "shortName": "วิถีมุตตจิต",
-      "description": "จิตที่พ้นจากวิถีจิต ไม่ต้องอาศัยทวาร 6 ทำหน้าที่ปฏิสนธิ ภวังค์ และจุติ."
+      "description": "จิตที่พ้นจากวิถีจิต ไม่ต้องอาศัยทวาร 6 ทำหน้าที่ปฏิสนธิ ภวังค์ และจุติ.",
+      "steps": {
+        "1": {
+          "name": "Rebirth-linking วิญญาณ",
+          "description": "สิ่งนี้ first วิญญาณ ของ สิ่งนี้ new life — continuing directly from สิ่งนี้ previous life's dying วิญญาณ, carrying kamma's seed."
+        },
+        "2": {
+          "name": "Life-continuum วิญญาณ",
+          "description": "สิ่งนี้ stream ของ วิญญาณ ซึ่ง sustains สิ่งนี้ life between processes. It arises และ passes innumerable times, และ คือ สิ่งนี้ foundation ของ all จิต activity."
+        },
+        "3": {
+          "name": "Death วิญญาณ",
+          "description": "สิ่งนี้ final mind-moment — สิ่งนี้ รูปชีวิตินทรีย์ perishes, สิ่งนี้ death วิญญาณ falls, และ สิ่งนี้ life ends. Immediately afterwards สิ่งนี้ next life's rebirth-linking วิญญาณ arises."
+        }
+      }
     }
   },
   "studyModules": {
@@ -12458,5 +13133,6 @@
         }
       ]
     }
-  }
+  },
+  "translationStatus": "draft"
 }

@@ -2,56 +2,96 @@
   "locale": "si",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
   "cittas": {
     "CI_001": {
       "name": "සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "CI_002": {
       "name": "සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "CI_003": {
       "name": "සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්ත අසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "CI_004": {
       "name": "සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්ත සසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "CI_005": {
       "name": "උපෙක්ඛා සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "CI_006": {
       "name": "උපෙක්ඛා සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "CI_007": {
       "name": "උපෙක්ඛා සහගත දිට්ඨිගත විප්පයුත්ත අසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "CI_008": {
       "name": "උපෙක්ඛා සහගත දිට්ඨිගත විප්පයුත්ත සසංඛාරික ලෝභමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "CI_009": {
       "name": "දෝමනස්ස සහගත පටිඝ සම්පයුත්ත අසංඛාරික දෝසමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "CI_010": {
       "name": "දෝමනස්ස සහගත පටිඝ සම්පයුත්ත සසංඛාරික දෝසමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "CI_011": {
       "name": "උපෙක්ඛා සහගත විචිකිච්ඡා සම්පයුත්ත මෝහමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "CI_012": {
       "name": "උපෙක්ඛා සහගත උද්ධච්ච සම්පයුත්ත මෝහමූල සිත",
-      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ."
+      "doctrinalNote": "අභිධර්මයේ සිත පිළිබඳ විග්‍රහය: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "CI_013": {
       "name": "උපෙක්ඛා සහගත චක්ඛුවිඤ්ඤාණය (අකුසල් විපාක)",
@@ -494,404 +534,747 @@
     "CS_PHASSA": {
       "name": "ඵස්ස",
       "shortName": "ඵස්ස",
-      "description": "සිත සහ අරමුණ අතර ස්පර්ශය."
+      "description": "සිත සහ අරමුණ අතර ස්පර්ශය.",
+      "characteristic": "Contacting මෙය ආරම්මණ — මෙය mode ගේ touching between විඥාන, මෙය sense-base සහ මෙය ආරම්මණ.",
+      "function": "Gathering මෙය other associated මානසික factors so they cling together සමඟ විඥාන to touch මෙය sense-base සහ මෙය ආරම්මණ.",
+      "manifestation": "මෙය coinciding ගේ විඥාන, මානසික factors, sense-base සහ ආරම්මණ.",
+      "proximateCause": "මෙය presence ගේ an ආරම්මණ offered through මෙය appropriate channel (sense-base + ආරම්මණ + විඥාන)."
     },
     "CS_VEDANA": {
       "name": "වේදනා",
       "shortName": "වේදනා",
-      "description": "අරමුණේ රසය විඳීම."
+      "description": "අරමුණේ රසය විඳීම.",
+      "characteristic": "වේදනා, experiencing මෙය ආරම්මණ — මෙය manner ගේ receiving සහ sensing මෙය ආරම්මණ.",
+      "function": "Enjoying මෙය desirable ආරම්මණ, or producing languor/growth තුළ මෙය associated states.",
+      "manifestation": "මානසික ease (pleasant/joyful වේදනා); මානසික distress (painful වේදනා); bodily pleasure or pain; or quiescence (neutral වේදනා).",
+      "proximateCause": "Bodily calm සහ මානසික ease (for pleasant/joyful වේදනා); මෙය presence ගේ මෙය හදයවත්ථු (for painful වේදනා); මෙය absence ගේ exhilaration (for neutral වේදනා)."
     },
     "CS_SANNA": {
       "name": "සඤ්ඤා",
       "shortName": "සඤ්ඤා",
-      "description": "අරමුණ හඳුනාගැනීම සහ සටහන් කරගැනීම."
+      "description": "අරමුණ හඳුනාගැනීම සහ සටහන් කරගැනීම.",
+      "characteristic": "Recollecting — මෙය way ගේ remembering; noting සහ marking මෙය distinguishing features ගේ මෙය ආරම්මණ.",
+      "function": "Recalling a past event by means ගේ මෙය sign යම් was noted.",
+      "manifestation": "Recollecting something previously known, rightly or wrongly.",
+      "proximateCause": "මෙය reappearance ගේ an ආරම්මණ ලෙස it was previously apprehended — an ආරම්මණ යම් evokes memory (e.g. recognizing an acquaintance by recalling where one met them)."
     },
     "CS_CETANA": {
       "name": "චේතනා",
       "shortName": "චේතනා",
-      "description": "සම්ප්‍රයුක්ත ධර්මයන් මෙහෙයවීම සහ කර්ම සකස් කිරීම."
+      "description": "සම්ප්‍රයුක්ත ධර්මයන් මෙහෙයවීම සහ කර්ම සකස් කිරීම.",
+      "characteristic": "Urging, directing සහ coordinating මෙය associated states යම් arise together සමඟ it.",
+      "function": "Assembling මෙය co-arising states so they are directed together towards මෙය ආරම්මණ, seizing hold ගේ මෙය ආරම්මණ.",
+      "manifestation": "Organizing, directing සහ arranging මෙය associated states.",
+      "proximateCause": "මෙය presence ගේ මෙය other three මානසික aggregates — වේදනා, සඤ්ඤා සහ විඥාන (since චේතනා itself belongs to මෙය aggregate ගේ formations සහ so requires මෙය other three)."
     },
     "CS_EKAGGATA": {
       "name": "ඒකග්ගතා",
       "shortName": "ඒකග්ගතා",
-      "description": "සිත එක් අරමුණක තැන්පත් කිරීම."
+      "description": "සිත එක් අරමුණක තැන්පත් කිරීම.",
+      "characteristic": "Non-distraction, non-wavering තුළ මෙය face ගේ මෙය ආරම්මණ — one-pointed, focused මනසිකාර.",
+      "function": "Gathering මෙය co-arising මානසික states so they converge on a single ආරම්මණ.",
+      "manifestation": "Appears ලෙස peace සහ firm steadiness තුළ මෙය ආරම්මණ.",
+      "proximateCause": "මෙය presence ගේ pleasure/happiness, සහ මෙය absence ගේ මෙය උද්ධච්ච සහ විචිකිච්ඡා aspects ගේ මෝහ (happiness වේ needed for concentration to be achieved)."
     },
     "CS_JIVITINDRIYA": {
       "name": "ජීවිතින්ද්‍රිය",
       "shortName": "ජීවිතින්ද්‍රිය",
-      "description": "නාම ධර්මයන්ගේ පැවැත්ම පවත්වා ගැනීම."
+      "description": "නාම ධර්මයන්ගේ පැවැත්ම පවත්වා ගැනීම.",
+      "characteristic": "Maintaining, preserving සහ nurturing මෙය co-arising states.",
+      "function": "Keeping මෙය co-arising states alive for their three sub-moments before they cease.",
+      "manifestation": "මෙය co-arising states persist තුළ being until මෙය moment ගේ their dissolution.",
+      "proximateCause": "මෙය presence ගේ මෙය aggregates ගේ වේදනා, සඤ්ඤා සහ විඥාන."
     },
     "CS_MANASIKARA": {
       "name": "මනසිකාර",
       "shortName": "මනසිකාර",
-      "description": "සිත අරමුණ වෙත යොමු කිරීම."
+      "description": "සිත අරමුණ වෙත යොමු කිරීම.",
+      "characteristic": "මෙය manner ගේ guiding මෙය associated states to fully apprehend මෙය ආරම්මණ.",
+      "function": "Making විඥාන සහ its මානසික factors converge සහ take hold ගේ මෙය ආරම්මණ together.",
+      "manifestation": "Turning මෙය mind towards මෙය ආරම්මණ (ලෙස a helmsman steers a boat towards its destination).",
+      "proximateCause": "මෙය presence ගේ an ආරම්මණ — past, present or future."
     },
     "CS_VITAKKA": {
       "name": "විතක්ක",
       "shortName": "විතක්ක",
-      "description": "සිත අරමුණ වෙත එසවීම."
+      "description": "සිත අරමුණ වෙත එසවීම.",
+      "characteristic": "Carrying මෙය co-arising states onto මෙය ආරම්මණ — directing/lifting මෙය mind onto මෙය ආරම්මණ.",
+      "function": "Bringing විඥාන සහ its මානසික factors into ඵස්ස සමඟ මෙය ආරම්මණ.",
+      "manifestation": "විඥාන සහ its co-arising මානසික factors reach මෙය ආරම්මණ.",
+      "proximateCause": "මෙය presence ගේ an ආරම්මණ together සමඟ මෙය other three aggregates (වේදනා, සඤ්ඤා, විඥාන), since applied thought belongs to මෙය aggregate ගේ formations."
     },
     "CS_VICARA": {
       "name": "විචාර",
       "shortName": "විචාර",
-      "description": "අරමුණෙහි සිත යෙදවීම, පිරිමැදීම."
+      "description": "අරමුණෙහි සිත යෙදවීම, පිරිමැදීම.",
+      "characteristic": "මෙය manner ගේ attending to මෙය ආරම්මණ — examining සහ observing it closely සහ continuously.",
+      "function": "Keeping විඥාන සහ its co-arising මානසික factors closely engaged සමඟ මෙය ආරම්මණ without interruption.",
+      "manifestation": "Having engaged මෙය ආරම්මණ, it binds මෙය associated states to it so they keep apprehending යම් same ආරම්මණ without straying from it.",
+      "proximateCause": "මෙය presence ගේ an ආරම්මණ together සමඟ මෙය other three aggregates, since sustained thought likewise belongs to මෙය aggregate ගේ formations."
     },
     "CS_ADHIMOKKHA": {
       "name": "අධිමොක්ඛ",
       "shortName": "අධිමොක්ඛ",
-      "description": "අරමුණ පිළිබඳ නිශ්චය කිරීම."
+      "description": "අරමුණ පිළිබඳ නිශ්චය කිරීම.",
+      "characteristic": "මෙය manner ගේ deciding, breaking through මෙය state ගේ indecision — releasing විඥාන from විචිකිච්ඡා so it can move towards මෙය ආරම්මණ.",
+      "function": "Making විඥාන resolve firmly on මෙය ආරම්මණ, without wavering.",
+      "manifestation": "Having made a firm අධිමොක්ඛ about මෙය ආරම්මණ — carrying out යම් අධිමොක්ඛ.",
+      "proximateCause": "මෙය presence ගේ an ආරම්මණ to be judged, determined or decided upon."
     },
     "CS_VIRIYA": {
       "name": "වීරිය",
       "shortName": "වීරිය",
-      "description": "අලස නොවී වීර්යය වැඩීම."
+      "description": "අලස නොවී වීර්යය වැඩීම.",
+      "characteristic": "මෙය manner ගේ exertion සහ endurance — energetic effort යම් does not retreat.",
+      "function": "Supporting මෙය co-arising states so they do not regress.",
+      "manifestation": "Not retreating (from මෙය task at hand).",
+      "proximateCause": "A sense ගේ urgency, or some රූප යම් stirs මෙය mind, such ලෙස old age, sickness, death or suffering."
     },
     "CS_PITI": {
       "name": "පීති",
       "shortName": "පීති",
-      "description": "අරමුණ කෙරෙහි ප්‍රීතිවීම."
+      "description": "අරමුණ කෙරෙහි ප්‍රීතිවීම.",
+      "characteristic": "Delight සහ exhilaration, being gladdened by මෙය ආරම්මණ (distinct from වේදනා, which experiences මෙය ආරම්මණ, whereas පීති creates interest සහ relish තුළ it).",
+      "function": "Refreshing මෙය body සහ gladdening මෙය mind.",
+      "manifestation": "මානසික elation, a sense ගේ being uplifted සහ suffused (distinct from වේදනා, which වේ මානසික ease).",
+      "proximateCause": "මෙය aggregates ගේ වේදනා, සඤ්ඤා සහ විඥාන (since පීති belongs to මෙය aggregate ගේ formations — unlike මෙය proximate cause ගේ joyful වේදනා, which වේ bodily calm සහ මානසික ease)."
     },
     "CS_CHANDA": {
       "name": "ඡන්ද",
       "shortName": "ඡන්ද",
-      "description": "ක්‍රියා කිරීමේ කැමැත්ත."
+      "description": "ක්‍රියා කිරීමේ කැමැත්ත.",
+      "characteristic": "Having මෙය hope සහ wish to obtain මෙය ආරම්මණ.",
+      "function": "Making විඥාන seek out සහ reach for මෙය ආරම්මණ.",
+      "manifestation": "Obtaining මෙය desired ආරම්මණ.",
+      "proximateCause": "මෙය presence ගේ an ආරම්මණ යම් වේ desirable, worth wishing for."
     },
     "CS_MOHA": {
       "name": "මෝහ",
       "shortName": "මෝහ",
-      "description": "යථාර්ථය නොදන්නා මුළාව."
+      "description": "යථාර්ථය නොදන්නා මුළාව.",
+      "characteristic": "මානසික blindness, not knowing what should be known — මෙය opposite ගේ wisdom.",
+      "function": "Obscuring clarity, preventing මෙය true nature ගේ phenomena from being seen.",
+      "manifestation": "Darkness සහ obscuration.",
+      "proximateCause": "Unwise මනසිකාර — careless, improper මනසිකාර."
     },
     "CS_AHIRIKA": {
       "name": "අහිරික",
       "shortName": "අහිරික",
-      "description": "පවට ලැජ්ජා නොවීම."
+      "description": "පවට ලැජ්ජා නොවීම.",
+      "characteristic": "Absence ගේ shame towards wrongdoing, evil සහ faults.",
+      "function": "Carrying out evil, faulty සහ wrongful deeds.",
+      "manifestation": "Not shrinking back from unwholesome deeds.",
+      "proximateCause": "Lack ගේ self-respect."
     },
     "CS_ANOTTAPPA": {
       "name": "අනොත්තප්ප",
       "shortName": "අනොත්තප්ප",
-      "description": "පවට බිය නොවීම."
+      "description": "පවට බිය නොවීම.",
+      "characteristic": "Absence ගේ dread towards unwholesome states.",
+      "function": "Committing wrongdoing සහ misconduct.",
+      "manifestation": "Not flinching or fearing when doing evil.",
+      "proximateCause": "Lack ගේ regard for others."
     },
     "CS_UDDHACCA": {
       "name": "උද්ධච්ච",
       "shortName": "උද්ධච්ච",
-      "description": "සිතේ නොසන්සුන්කම, විසිරීම."
+      "description": "සිතේ නොසන්සුන්කම, විසිරීම.",
+      "characteristic": "Unrest — a mind යම් වේ agitated සහ scattered.",
+      "function": "Preventing මෙය mind from settling firmly සහ lastingly on its ආරම්මණ.",
+      "manifestation": "A mind යම් වේ unsettled සහ disturbed.",
+      "proximateCause": "Unwise මනසිකාර — careless, improper handling ගේ මෙය mind."
     },
     "CS_LOBHA": {
       "name": "ලෝභ",
       "shortName": "ලෝභ",
-      "description": "අරමුණෙහි ඇලීම, ආශාව."
+      "description": "අරමුණෙහි ඇලීම, ආශාව.",
+      "characteristic": "උපාදාන to මෙය ආරම්මණ — causing මෙය co-arising මානසික factors to cling to it.",
+      "function": "Making විඥාන stick to මෙය ආරම්මණ.",
+      "manifestation": "Not letting go ගේ මෙය ආරම්මණ.",
+      "proximateCause": "Delighting තුළ, being drawn to, binding phenomena — relishing what වේ beautiful, enticing සහ pleasant."
     },
     "CS_DITTHI": {
       "name": "දිට්ඨි",
       "shortName": "දිට්ඨි",
-      "description": "වැරදි දැක්ම, මිච්ඡා දිට්ඨිය."
+      "description": "වැරදි දැක්ම, මිච්ඡා දිට්ඨිය.",
+      "characteristic": "Adhering obstinately to what වේ contrary to truth.",
+      "function": "Interpreting matters wrongly, contrary to මෙය facts.",
+      "manifestation": "Rigidly holding to a mistaken view.",
+      "proximateCause": "Not meeting noble සහ wise persons."
     },
     "CS_MANA": {
       "name": "මාන",
       "shortName": "මාන",
-      "description": "අහංකාරය, මානය."
+      "description": "අහංකාරය, මානය.",
+      "characteristic": "Haughtiness, arrogance, self-මාන — comparing oneself සමඟ others ලෙස superior, equal or inferior.",
+      "function": "Driving මෙය associated states towards self-exaltation.",
+      "manifestation": "Vanity සහ self-aggrandizement.",
+      "proximateCause": "මෙය presence ගේ an ආරම්මණ for comparison."
     },
     "CS_DOSA": {
       "name": "දෝස",
       "shortName": "දෝස",
-      "description": "තරහව, ද්වේෂය, ක්‍රෝධය."
+      "description": "තරහව, ද්වේෂය, ක්‍රෝධය.",
+      "characteristic": "Ferocity සහ harshness ගේ body සහ mind — a state ගේ opposition සහ burning hostility.",
+      "function": "Making මෙය mind burn, scorching සහ seeking to destroy මෙය ආරම්මණ.",
+      "manifestation": "Committing evil deeds, destructive සහ harmful to oneself, to others, or to both.",
+      "proximateCause": "මෙය presence ගේ an undesirable ආරම්මණ — a lack ගේ understanding or reasoned reflection."
     },
     "CS_ISSA": {
       "name": "ඉස්සා",
       "shortName": "ඉස්සා",
-      "description": "අන් අයගේ දියුණුවට ඊර්ෂ්‍යා කිරීම."
+      "description": "අන් අයගේ දියුණුවට ඊර්ෂ්‍යා කිරීම.",
+      "characteristic": "ඉස්සා සහ jealousy towards මෙය success or superiority ගේ others.",
+      "function": "Being displeased at another's gain or excellence.",
+      "manifestation": "Turning away from, averting one's face from another's superiority.",
+      "proximateCause": "මෙය fame, wealth, happiness or success ගේ others, which exceeds one's own."
     },
     "CS_MACCHARIYA": {
       "name": "මච්ඡරිය",
       "shortName": "මච්ඡරිය",
-      "description": "තමන්ගේ සම්පත් අනුන්ට දීමට මසුරුකම."
+      "description": "තමන්ගේ සම්පත් අනුන්ට දීමට මසුරුකම.",
+      "characteristic": "Concealing one's own possessions or achievements.",
+      "function": "Being unwilling to share or let others partake ගේ one's possessions.",
+      "manifestation": "Not sharing one's wealth, being stingy, unwilling to give.",
+      "proximateCause": "One's own possessions or achievements."
     },
     "CS_KUKKUCCA": {
       "name": "කුක්කුච්ච",
       "shortName": "කුක්කුච්ච",
-      "description": "කළ නපුර හෝ නොකළ යහපත ගැන පසුතැවීම."
+      "description": "කළ නපුර හෝ නොකළ යහපත ගැන පසුතැවීම.",
+      "characteristic": "මෙය manner ගේ regretting, repenting, being troubled about what has been done or left undone.",
+      "function": "Making මෙය mind restless සහ distressed about මෙය past.",
+      "manifestation": "A sense ගේ remorse සහ regret තුළ මෙය mind.",
+      "proximateCause": "An evil deed done, or a good සහ meritorious deed left undone."
     },
     "CS_THINA": {
       "name": "ථීන",
       "shortName": "ථීන",
-      "description": "සිතේ හැකිලීම, අලසබව."
+      "description": "සිතේ හැකිලීම, අලසබව.",
+      "characteristic": "Sluggishness යම් halts diligence.",
+      "function": "Abandoning energetic effort, so යම් active diligence ceases, leading මෙය mind externally to sink back into මෙය life-continuum.",
+      "manifestation": "A mind යම් withdraws සහ shrinks back.",
+      "proximateCause": "Unwise මනසිකාර — careless, improper handling ගේ මෙය mind."
     },
     "CS_MIDDHA": {
       "name": "මිද්ධ",
       "shortName": "මිද්ධ",
-      "description": "චෛතසිකයන්ගේ නිදිමතබව සහ බරබව."
+      "description": "චෛතසිකයන්ගේ නිදිමතබව සහ බරබව.",
+      "characteristic": "Unfitness for work — a state ගේ මිද්ධ, lethargy, drowsiness.",
+      "function": "Enveloping සහ covering විඥාන.",
+      "manifestation": "Drowsiness, dullness, sleepiness.",
+      "proximateCause": "මෙය absence ගේ proper, wise මනසිකාර."
     },
     "CS_VICIKICCHA": {
       "name": "විචිකිච්ඡා",
       "shortName": "විචිකිච්ඡා",
-      "description": "ධර්මය පිළිබඳ සැකය, අවිශ්වාසය."
+      "description": "ධර්මය පිළිබඳ සැකය, අවිශ්වාසය.",
+      "characteristic": "මෙය manner ගේ doubting — wavering සහ hesitating about මෙය Triple Gem සහ මෙය Teaching.",
+      "function": "Causing wavering, agitation, hesitation සහ indecision.",
+      "manifestation": "Inability to decide, lack ගේ resolve.",
+      "proximateCause": "Unwise මනසිකාර."
     },
     "CS_SADDHA": {
       "name": "සද්ධා",
       "shortName": "සද්ධා",
-      "description": "ත්‍රිවිධ රත්නය කෙරෙහි ශ්‍රද්ධාව."
+      "description": "ත්‍රිවිධ රත්නය කෙරෙහි ශ්‍රද්ධාව.",
+      "characteristic": "Trusting confidence තුළ මෙය Triple Gem සහ තුළ මෙය law ගේ kamma සහ its results — a state ගේ මානසික purity.",
+      "function": "Purifying මෙය mind, making it place its trust තුළ what වේ genuinely worthy.",
+      "manifestation": "Freedom from මෙය defilement ගේ superstition.",
+      "proximateCause": "මෙය presence ගේ things worthy ගේ confidence (මෙය Triple Gem, මෙය law ගේ kamma සහ its fruit)."
     },
     "CS_SATI": {
       "name": "සති",
       "shortName": "සති",
-      "description": "කුසල් ධර්මයන්හි සිහිය පිහිටුවීම."
+      "description": "කුසල් ධර්මයන්හි සිහිය පිහිටුවීම.",
+      "characteristic": "මෙය manner ගේ being alert, not careless, not drifting — keeping මෙය ආරම්මණ තුළ mind.",
+      "function": "Remembering, preventing forgetfulness.",
+      "manifestation": "Cultivating a mind යම් stays closely attached to its ආරම්මණ — guarding සහ protecting මෙය six sense doors.",
+      "proximateCause": "Firm සඤ්ඤා/recognition."
     },
     "CS_HIRI": {
       "name": "හිරි",
       "shortName": "හිරි",
-      "description": "පවට ලැජ්ජාවීම."
+      "description": "පවට ලැජ්ජාවීම.",
+      "characteristic": "Abhorrence ගේ wrongdoing, disinclination towards fault.",
+      "function": "Refraining from committing wrongful deeds.",
+      "manifestation": "Shrinking back from evil සහ fault, avoiding wrongdoing.",
+      "proximateCause": "Self-respect."
     },
     "CS_OTTAPPA": {
       "name": "ඔත්තප්ප",
       "shortName": "ඔත්තප්ප",
-      "description": "පවට බියවීම."
+      "description": "පවට බියවීම.",
+      "characteristic": "Dread ගේ wrongdoing, abhorrence ගේ මෙය danger ගේ fault.",
+      "function": "Refraining from wrongdoing, not creating harm.",
+      "manifestation": "Shrinking back from සහ avoiding wrongdoing.",
+      "proximateCause": "Regard for others, fear ගේ their censure."
     },
     "CS_ALOBHA": {
       "name": "අලෝභ",
       "shortName": "අලෝභ",
-      "description": "අරමුණෙහි නොඇලීම, ත්‍යාගශීලීබව."
+      "description": "අරමුණෙහි නොඇලීම, ත්‍යාගශීලීබව.",
+      "characteristic": "A mind undefiled by its ආරම්මණ — free from උපාදාන, free from attachment.",
+      "function": "Not grasping, not උපාදාන, not attaching; transcending bondage.",
+      "manifestation": "Not holding on to what වේ present, not භව infatuated සමඟ a pleasing ආරම්මණ; at its culmination, not උපාදාන even to a new existence.",
+      "proximateCause": "Wise මනසිකාර."
     },
     "CS_ADOSA": {
       "name": "අදෝස",
       "shortName": "අදෝස",
-      "description": "ද්වේෂය නැතිකම, මෛත්‍රිය."
+      "description": "ද්වේෂය නැතිකම, මෛත්‍රිය.",
+      "characteristic": "Freedom from cruelty, malice සහ opposition — a state ගේ coolness සහ gentleness.",
+      "function": "Dispelling cruelty, avoiding harm, dispelling heated anger.",
+      "manifestation": "A manifestation ගේ gentleness සහ coolness.",
+      "proximateCause": "Wise මනසිකාර."
     },
     "CS_TATRAMAJJHATTATA": {
       "name": "තත්‍රමජ්ඣත්තතා",
       "shortName": "තත්‍රමජ්ඣත්තතා",
-      "description": "සිතෙහි මැදහත් බව, උපේක්ෂාව."
+      "description": "සිතෙහි මැදහත් බව, උපේක්ෂාව.",
+      "characteristic": "Keeping විඥාන සහ its මානසික factors level සමඟ one another — a state ගේ balance සහ even-handedness.",
+      "function": "Preventing deficiency or excess, keeping මෙය associated states from losing their balance.",
+      "manifestation": "මෙය production ගේ balance සහ equilibrium.",
+      "proximateCause": "මෙය presence ගේ harmoniously co-operating states."
     },
     "CS_KAYAPASSADDHI": {
       "name": "කායපස්සද්ධි",
       "shortName": "කායපස්සද්ධි",
-      "description": "චෛතසිකයන්ගේ සංසිඳීම."
+      "description": "චෛතසිකයන්ගේ සංසිඳීම.",
+      "characteristic": "Calm, free from මෙය agitation ගේ මෙය මානසික-factor group (මෙය aggregates ගේ වේදනා, සඤ්ඤා සහ formations).",
+      "function": "Quelling මෙය agitation ගේ මෙය මානසික factors, so they no longer waver.",
+      "manifestation": "මෙය මානසික factors become calm, tranquil සහ cool.",
+      "proximateCause": "මෙය presence ගේ මෙය මානසික factors (මෙය aggregates ගේ වේදනා, සඤ්ඤා සහ formations)."
     },
     "CS_CITTAPASSADDHI": {
       "name": "චිත්තපස්සද්ධි",
       "shortName": "චිත්තපස්සද්ධි",
-      "description": "සිතේ සංසිඳීම."
+      "description": "සිතේ සංසිඳීම.",
+      "characteristic": "Calm, free from මෙය agitation ගේ විඥාන (මෙය aggregate ගේ විඥාන).",
+      "function": "Quelling මෙය agitation ගේ විඥාන, so it no longer wavers.",
+      "manifestation": "විඥාන becomes calm, tranquil සහ cool.",
+      "proximateCause": "මෙය presence ගේ විඥාන (මෙය aggregate ගේ විඥාන)."
     },
     "CS_KAYALAHUTA": {
       "name": "කායලහුතා",
       "shortName": "කායලහුතා",
-      "description": "චෛතසිකයන්ගේ සැහැල්ලු බව."
+      "description": "චෛතසිකයන්ගේ සැහැල්ලු බව.",
+      "characteristic": "Lightness, freedom from මෙය heaviness ගේ මෙය මානසික-factor group (වේදනා, සඤ්ඤා, formations).",
+      "function": "Preventing heaviness from weighing down මෙය මානසික factors, making them light.",
+      "manifestation": "මෙය මානසික factors are no longer sluggish සහ become light.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors (වේදනා, සඤ්ඤා, formations)."
     },
     "CS_CITTALAHUTA": {
       "name": "චිත්තලහුතා",
       "shortName": "චිත්තලහුතා",
-      "description": "සිතේ සැහැල්ලු බව."
+      "description": "සිතේ සැහැල්ලු බව.",
+      "characteristic": "Lightness, freedom from මෙය heaviness ගේ විඥාන.",
+      "function": "Preventing heaviness from weighing down විඥාන, making it light.",
+      "manifestation": "විඥාන වේ no longer sluggish සහ becomes light.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_KAYAMUDUTA": {
       "name": "කායමුදුතා",
       "shortName": "කායමුදුතා",
-      "description": "චෛතසිකයන්ගේ මෘදුබව."
+      "description": "චෛතසිකයන්ගේ මෘදුබව.",
+      "characteristic": "Softness සහ pliancy ගේ මෙය මානසික-factor group (වේදනා, සඤ්ඤා, formations).",
+      "function": "Dissolving මෙය rigidity ගේ මෙය මානසික factors, limiting stiffness සහ coarseness.",
+      "manifestation": "Pliancy, ease තුළ apprehending මෙය ආරම්මණ, freedom from stiffness.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_CITTAMUDUTA": {
       "name": "චිත්තමුදුතා",
       "shortName": "චිත්තමුදුතා",
-      "description": "සිතේ මෘදුබව."
+      "description": "සිතේ මෘදුබව.",
+      "characteristic": "Softness සහ pliancy ගේ විඥාන.",
+      "function": "Dissolving මෙය rigidity ගේ විඥාන, limiting its stiffness සහ coarseness.",
+      "manifestation": "විඥාන becomes pliant, apprehending මෙය ආරම්මණ සමඟ ease, free from stiffness.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_KAYAKAMMANNATA": {
       "name": "කායකම්මඤ්ඤතා",
       "shortName": "කායකම්මඤ්ඤතා",
-      "description": "චෛතසිකයන්ගේ ක්‍රියාශීලී බව."
+      "description": "චෛතසිකයන්ගේ ක්‍රියාශීලී බව.",
+      "characteristic": "Freeing මෙය මානසික-factor group from unworkability, from unfitness.",
+      "function": "Dissolving සහ removing මෙය unfitness ගේ මෙය මානසික factors.",
+      "manifestation": "මෙය මානසික factors become adaptable සහ fit to engage සමඟ මෙය ආරම්මණ.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_CITTAKAMMANNATA": {
       "name": "චිත්තකම්මඤ්ඤතා",
       "shortName": "චිත්තකම්මඤ්ඤතා",
-      "description": "සිතේ සුදුසු බව."
+      "description": "සිතේ සුදුසු බව.",
+      "characteristic": "Freeing විඥාන from unworkability, from unfitness.",
+      "function": "Dissolving සහ removing මෙය unfitness ගේ විඥාන.",
+      "manifestation": "විඥාන becomes adaptable සහ fit to engage සමඟ මෙය ආරම්මණ.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_KAYAPAGUNNATA": {
       "name": "කායපාගුඤ්ඤතා",
       "shortName": "කායපාගුඤ්ඤතා",
-      "description": "චෛතසිකයන්ගේ ප්‍රවීණබව."
+      "description": "චෛතසිකයන්ගේ ප්‍රවීණබව.",
+      "characteristic": "Absence ගේ stagnation තුළ මෙය මානසික-factor group — මෙය refined proficiency ගේ මෙය මානසික factors.",
+      "function": "Breaking up සහ dissolving මෙය stagnation ගේ මෙය මානසික factors.",
+      "manifestation": "Keeping clear ගේ සහ unattached to wrongdoing සහ fault.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_CITTAPAGUNNATA": {
       "name": "චිත්තපාගුඤ්ඤතා",
       "shortName": "චිත්තපාගුඤ්ඤතා",
-      "description": "සිතේ ප්‍රවීණබව."
+      "description": "සිතේ ප්‍රවීණබව.",
+      "characteristic": "Absence ගේ stagnation තුළ විඥාන — මෙය refined චිත්තපාගුඤ්ඤතා.",
+      "function": "Breaking up සහ dissolving මෙය stagnation ගේ විඥාන.",
+      "manifestation": "Keeping clear ගේ සහ unattached to wrongdoing සහ fault.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_KAYUJUKATA": {
       "name": "කායඋජ්ජුකතා",
       "shortName": "කායඋජ්ජුකතා",
-      "description": "චෛතසිකයන්ගේ අවංකබව."
+      "description": "චෛතසිකයන්ගේ අවංකබව.",
+      "characteristic": "Uprightness සහ straightness ගේ මෙය මානසික-factor group.",
+      "function": "Counteracting crookedness සහ මෙය lack ගේ rectitude තුළ මෙය මානසික factors.",
+      "manifestation": "මෙය මානසික factors become upright, without crookedness or deviation.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_CITTUJUKATA": {
       "name": "චිත්තඋජ්ජුකතා",
       "shortName": "චිත්තඋජ්ජුකතා",
-      "description": "සිතේ අවංකබව."
+      "description": "සිතේ අවංකබව.",
+      "characteristic": "Uprightness සහ straightness ගේ විඥාන.",
+      "function": "Counteracting crookedness සහ මෙය lack ගේ rectitude තුළ විඥාන.",
+      "manifestation": "විඥාන becomes upright, without crookedness or deviation.",
+      "proximateCause": "මෙය presence ගේ විඥාන සහ its accompanying මානසික factors."
     },
     "CS_SAMMAVACA": {
       "name": "සම්මාවාචා",
       "shortName": "සම්මාවාචා",
-      "description": "සතර වාග් දුශ්චරිතයෙන් වැළකීම."
+      "description": "සතර වාග් දුශ්චරිතයෙන් වැළකීම.",
+      "characteristic": "Upholding සම්මාවාචා — abstaining from සහ restraining verbal misconduct.",
+      "function": "Keeping away from falsity සහ deception (wrong speech: lying, slander, harsh speech, idle chatter).",
+      "manifestation": "මෙය eradication ගේ wrong speech.",
+      "proximateCause": "මෙය presence ගේ සද්ධා, සති, හිරි, ඔත්තප්ප සහ modest desire."
     },
     "CS_SAMMAKAMMANTA": {
       "name": "සම්මාකම්මන්ත",
       "shortName": "සම්මාකම්මන්ත",
-      "description": "තුන් කාය දුශ්චරිතයෙන් වැළකීම."
+      "description": "තුන් කාය දුශ්චරිතයෙන් වැළකීම.",
+      "characteristic": "Acting rightly, supporting wholesome states while eliminating one's own defilements.",
+      "function": "Keeping away from unwholesome bodily action (killing, stealing, sexual misconduct).",
+      "manifestation": "මෙය eradication ගේ wrong action.",
+      "proximateCause": "මෙය presence ගේ සද්ධා, සති, හිරි, ඔත්තප්ප සහ modest desire."
     },
     "CS_SAMMAAJIVA": {
       "name": "සම්මාආජීව",
       "shortName": "සම්මාආජීව",
-      "description": "වැරදි දිවි පැවැත්මෙන් වැළකීම."
+      "description": "වැරදි දිවි පැවැත්මෙන් වැළකීම.",
+      "characteristic": "Purity, renunciation ගේ සහ abstention from misconduct ගේ both body සහ speech.",
+      "function": "Sustaining a righteous livelihood, preventing misconduct.",
+      "manifestation": "මෙය eradication ගේ wrong livelihood, refraining from unwholesome conduct.",
+      "proximateCause": "මෙය presence ගේ සද්ධා, සති, හිරි, ඔත්තප්ප සහ modest desire."
     },
     "CS_KARUNA": {
       "name": "කරුණා",
       "shortName": "කරුණා",
-      "description": "දුක්ඛිත සත්වයන්ගේ දුක නිවීමේ කැමැත්ත."
+      "description": "දුක්ඛිත සත්වයන්ගේ දුක නිවීමේ කැමැත්ත.",
+      "characteristic": "මෙය wish යම් beings be free from suffering — මෙය way ගේ wishing to remove මෙය suffering ගේ beings.",
+      "function": "Being unable to bear මෙය sight ගේ beings' suffering — unable to remain indifferent before මෙය suffering ගේ other beings.",
+      "manifestation": "Kindliness, or මෙය absence ගේ oppressing other beings.",
+      "proximateCause": "Encountering beings who are suffering — perceiving මෙය pressing need ගේ beings overwhelmed by suffering."
     },
     "CS_MUDITA": {
       "name": "මුදිතා",
       "shortName": "මුදිතා",
-      "description": "අන් අයගේ සතුට දැක සතුටුවීම."
+      "description": "අන් අයගේ සතුට දැක සතුටුවීම.",
+      "characteristic": "Rejoicing තුළ මෙය good fortune ගේ beings — a state ගේ gladness at මෙය happiness ගේ others.",
+      "function": "Being free from ඉස්සා towards other beings.",
+      "manifestation": "Satisfaction at මෙය progress සහ happiness ගේ other beings — මෙය destruction ගේ aversion.",
+      "proximateCause": "Seeing beings create සහ enjoy happiness — recognizing යම් beings have attained success."
     },
     "CS_PANNA": {
       "name": "පඤ්ඤින්ද්‍රිය",
       "shortName": "පඤ්ඤින්ද්‍රිය",
-      "description": "යථාර්ථය අවබෝධ කරවන ප්‍රඥාව."
+      "description": "යථාර්ථය අවබෝධ කරවන ප්‍රඥාව.",
+      "characteristic": "Knowing clearly, penetrating to මෙය true nature ගේ phenomena — wisdom යම් sees මෙය Three Characteristics (impermanence, suffering, non-self).",
+      "function": "Dispelling සහ eliminating මෙය darkness ගේ අවිද්‍යා.",
+      "manifestation": "Freedom from confusion, freedom from defiling attachment.",
+      "proximateCause": "Wise මනසිකාර; calm (a tranquil mind); සහ a rebirth-linking විඥාන rooted තුළ මෙය three wholesome roots (අලෝභ, අදෝස, non-මෝහ)."
     }
   },
   "rupas": {
     "RP_001": {
       "name": "පඨවී ධාතුව",
       "shortName": "පඨවී",
-      "description": "තද බව හෝ මෘදු බව ලක්ෂණය කොට ඇති ආධාරක ධාතුව."
+      "description": "තද බව හෝ මෘදු බව ලක්ෂණය කොට ඇති ආධාරක ධාතුව.",
+      "characteristic": "Hardness or softness — මෙය quality ගේ solidity or pliancy තුළ රූප.",
+      "function": "Acting ලෙස මෙය supporting foundation for මෙය other material phenomena තුළ මෙය same group (kalāpa).",
+      "manifestation": "Receiving — perceptible through bodily ඵස්ස ලෙස hardness or softness.",
+      "proximateCause": "මෙය co-arising ගේ මෙය other three great elements (water, fire, air).",
+      "doctrinalNote": "මෙය four great elements always arise together, inseparably. There වේ no materiality තුළ මෙය immaterial realm."
     },
     "RP_002": {
       "name": "ආපෝ ධාතුව",
       "shortName": "ආපෝ",
-      "description": "වැගිරෙන හෝ එක්තැන් කරන ස්වභාවය."
+      "description": "වැගිරෙන හෝ එක්තැන් කරන ස්වභාවය.",
+      "characteristic": "Flowing or cohesion — මෙය binding quality ගේ රූප.",
+      "function": "Binding together මෙය material phenomena within මෙය same kalāpa.",
+      "manifestation": "රූප වේ held together, not falling apart.",
+      "proximateCause": "මෙය co-arising ගේ මෙය other three great elements (earth, fire, air).",
+      "doctrinalNote": "මෙය ආපෝ ධාතුව වේ මෙය only great element යම් cannot be directly sensed through bodily ඵස්ස."
     },
     "RP_003": {
       "name": "තේජෝ ධාතුව",
       "shortName": "තේජෝ",
-      "description": "උණුසුම් බව හෝ සිසිල් බව ලක්ෂණය කොට ඇත්තා වූ ධාතුව."
+      "description": "උණුසුම් බව හෝ සිසිල් බව ලක්ෂණය කොට ඇත්තා වූ ධාතුව.",
+      "characteristic": "Heat or cold — මෙය temperature quality ගේ රූප.",
+      "function": "Ripening සහ sustaining මෙය material phenomena ගේ මෙය same group.",
+      "manifestation": "රූප වේ brought to maturity සහ ripeness.",
+      "proximateCause": "මෙය co-arising ගේ මෙය other three great elements (earth, water, air).",
+      "doctrinalNote": "When occurring independently ලෙස external heat (utu), මෙය තේජෝ ධාතුව gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
     },
     "RP_004": {
       "name": "වායෝ ධාතුව",
       "shortName": "වායෝ",
-      "description": "චලනය සහ පිම්බීම ලක්ෂණය කොට ඇත්තා වූ ධාතුව."
+      "description": "චලනය සහ පිම්බීම ලක්ෂණය කොට ඇත්තා වූ ධාතුව.",
+      "characteristic": "Distension or motion — මෙය quality ගේ movement තුළ රූප.",
+      "function": "Supporting සහ setting රූප into motion.",
+      "manifestation": "රූප වේ supported සහ made to move.",
+      "proximateCause": "මෙය co-arising ගේ මෙය other three great elements (earth, water, fire).",
+      "doctrinalNote": "තුළ මෙය practice ගේ ānāpānasati, මෙය breath (වායෝ ධාතුව) වේ මෙය principal meditation ආරම්මණ."
     },
     "RP_005": {
       "name": "චක්ඛුප්‍රසාද",
       "shortName": "ඇස",
-      "description": "රූපාරම්මණ ග්‍රහණය කරගන්නා ඇසේ පිරිසිදු ප්‍රසාද රූපය."
+      "description": "රූපාරම්මණ ග්‍රහණය කරගන්නා ඇසේ පිරිසිදු ප්‍රසාද රූපය.",
+      "characteristic": "Subtlety සහ clarity, capable ගේ taking up රූපාරම්මණ ලෙස its ආරම්මණ.",
+      "function": "Serving ලෙස මෙය physical basis for eye-විඥාන to arise.",
+      "manifestation": "Eye-විඥාන arises සහ sees මෙය visible ආරම්මණ.",
+      "proximateCause": "Past kamma; මෙය presence ගේ a visible ආරම්මණ impinging on it.",
+      "doctrinalNote": "Produced only by kamma. Not present තුළ මෙය immaterial realm."
     },
     "RP_006": {
       "name": "සෝතප්‍රසාද",
       "shortName": "කන",
-      "description": "ශබ්දය ග්‍රහණය කරගන්නා කනේ පිරිසිදු ප්‍රසාද රූපය."
+      "description": "ශබ්දය ග්‍රහණය කරගන්නා කනේ පිරිසිදු ප්‍රසාද රූපය.",
+      "characteristic": "Subtlety, capable ගේ taking up සද්දාරම්මණ ලෙස its ආරම්මණ.",
+      "function": "Serving ලෙස මෙය physical basis for ear-විඥාන to arise.",
+      "manifestation": "Ear-විඥාන arises සහ hears මෙය සද්දාරම්මණ ආරම්මණ.",
+      "proximateCause": "Past kamma; මෙය presence ගේ a සද්දාරම්මණ ආරම්මණ impinging on it.",
+      "doctrinalNote": "Brahmās ගේ මෙය fine-material realm possess මෙය ear faculty because they communicate through සද්දාරම්මණ."
     },
     "RP_007": {
       "name": "ඝානප්‍රසාද",
       "shortName": "නාසය",
-      "description": "ගඳ සුවඳ ග්‍රහණය කරගන්නා නාසයේ ප්‍රසාද රූපය."
+      "description": "ගඳ සුවඳ ග්‍රහණය කරගන්නා නාසයේ ප්‍රසාද රූපය.",
+      "characteristic": "Subtlety, capable ගේ taking up ගන්ධාරම්මණ ලෙස its ආරම්මණ.",
+      "function": "Serving ලෙස මෙය physical basis for nose-විඥාන to arise.",
+      "manifestation": "Nose-විඥාන arises සහ smells මෙය ගන්ධාරම්මණ ආරම්මණ.",
+      "proximateCause": "Past kamma; මෙය presence ගේ an ගන්ධාරම්මණ ආරම්මණ impinging on it.",
+      "doctrinalNote": "Occurs only තුළ මෙය sense-sphere realm. Brahmās ගේ මෙය fine-material realm lack මෙය nose faculty."
     },
     "RP_008": {
       "name": "ජිව්හාප්‍රසාද",
       "shortName": "දිව",
-      "description": "රසය ග්‍රහණය කරගන්නා දිවේ ප්‍රසාද රූපය."
+      "description": "රසය ග්‍රහණය කරගන්නා දිවේ ප්‍රසාද රූපය.",
+      "characteristic": "Subtlety, capable ගේ taking up රසාරම්මණ ලෙස its ආරම්මණ.",
+      "function": "Serving ලෙස මෙය physical basis for tongue-විඥාන to arise.",
+      "manifestation": "Tongue-විඥාන arises සහ tastes මෙය flavour ආරම්මණ.",
+      "proximateCause": "Past kamma; මෙය presence ගේ a රසාරම්මණ ආරම්මණ impinging on it.",
+      "doctrinalNote": "Occurs only තුළ මෙය sense-sphere realm. Brahmās do not eat, so they lack මෙය tongue faculty."
     },
     "RP_009": {
       "name": "කායප්‍රසාද",
       "shortName": "කය",
-      "description": "ස්පර්ශය ග්‍රහණය කරගන්නා මුළු සිරුරෙහි පැතිරි ප්‍රසාද රූපය."
+      "description": "ස්පර්ශය ග්‍රහණය කරගන්නා මුළු සිරුරෙහි පැතිරි ප්‍රසාද රූපය.",
+      "characteristic": "Subtlety යම් pervades මෙය body, taking up tangible objects (earth, fire, air) ලෙස its ආරම්මණ.",
+      "function": "Serving ලෙස මෙය physical basis for body-විඥාන to arise.",
+      "manifestation": "Body-විඥාන arises සහ senses මෙය tangible ආරම්මණ.",
+      "proximateCause": "Past kamma; මෙය presence ගේ a tangible ආරම්මණ impinging on it.",
+      "doctrinalNote": "Brahmās ගේ මෙය fine-material realm possess මෙය body faculty. It වේ absent තුළ මෙය non-percipient realm."
     },
     "RP_010": {
       "name": "රූපාරම්මණ",
       "shortName": "රූපය",
-      "description": "ඇසට පෙනෙන වර්ණ සහ ආලෝකය."
+      "description": "ඇසට පෙනෙන වර්ණ සහ ආලෝකය.",
+      "characteristic": "Appearance සහ manifestation — මෙය ආරම්මණ යම් වේ seen by මෙය eye faculty.",
+      "function": "Serving ලෙස මෙය ආරම්මණ cognized by eye-විඥාන.",
+      "manifestation": "Eye-විඥාන arises සහ apprehends it.",
+      "proximateCause": "මෙය presence ගේ light together සමඟ ඵස්ස සමඟ මෙය eye faculty.",
+      "doctrinalNote": "රූපාරම්මණ (colour) වේ distinct from materiality (රූප) තුළ general."
     },
     "RP_011": {
       "name": "සද්දාරම්මණ",
       "shortName": "ශබ්දය",
-      "description": "කනට ඇසෙන සියලු ශබ්ද."
+      "description": "කනට ඇසෙන සියලු ශබ්ද.",
+      "characteristic": "Resounding — මෙය ආරම්මණ යම් වේ heard by මෙය ear faculty.",
+      "function": "Serving ලෙස මෙය ආරම්මණ cognized by ear-විඥාන.",
+      "manifestation": "Ear-විඥාන arises සහ apprehends it.",
+      "proximateCause": "මෙය arising ගේ සද්දාරම්මණ together සමඟ ඵස්ස සමඟ මෙය ear faculty."
     },
     "RP_012": {
       "name": "ගන්ධාරම්මණ",
       "shortName": "ගඳසුවඳ",
-      "description": "නාසයට දැනෙන සියලු ගන්ධයන්."
+      "description": "නාසයට දැනෙන සියලු ගන්ධයන්.",
+      "characteristic": "Wafting forth — මෙය ආරම්මණ යම් වේ smelled by මෙය nose faculty.",
+      "function": "Serving ලෙස මෙය ආරම්මණ cognized by nose-විඥාන.",
+      "manifestation": "Nose-විඥාන arises සහ apprehends it.",
+      "proximateCause": "මෙය arising ගේ ගන්ධාරම්මණ together සමඟ ඵස්ස සමඟ මෙය nose faculty."
     },
     "RP_013": {
       "name": "රසාරම්මණ",
       "shortName": "රසය",
-      "description": "දිවට දැනෙන සියලු රසයන්."
+      "description": "දිවට දැනෙන සියලු රසයන්.",
+      "characteristic": "Appearance — මෙය ආරම්මණ යම් වේ tasted by මෙය tongue faculty.",
+      "function": "Serving ලෙස මෙය ආරම්මණ cognized by tongue-විඥාන.",
+      "manifestation": "Tongue-විඥාන arises සහ apprehends it.",
+      "proximateCause": "ඵස්ස ගේ a flavour taken up by මෙය tongue faculty."
     },
     "RP_014": {
       "name": "ඉත්ථින්ද්‍රිය",
       "shortName": "ස්ත්‍රීභාවය",
-      "description": "ස්ත්‍රී ලක්ෂණ ඇති කරවන රූපය."
+      "description": "ස්ත්‍රී ලක්ෂණ ඇති කරවන රූපය.",
+      "characteristic": "මෙය expression ගේ femininity — influencing මෙය entire material body.",
+      "function": "Determining මෙය signs සහ behaviour characteristic ගේ මෙය female sex.",
+      "manifestation": "මෙය expression ගේ female sex-characteristics තුළ මෙය material body.",
+      "proximateCause": "Kamma යම් produces මෙය female sex from මෙය moment ගේ rebirth-linking.",
+      "doctrinalNote": "Occurs only තුළ මෙය sense-sphere realm. Brahmās ගේ මෙය fine-material realm have no sex faculty."
     },
     "RP_015": {
       "name": "පුරිසින්ද්‍රිය",
       "shortName": "පුරුෂභාවය",
-      "description": "පුරුෂ ලක්ෂණ ඇති කරවන රූපය."
+      "description": "පුරුෂ ලක්ෂණ ඇති කරවන රූපය.",
+      "characteristic": "මෙය expression ගේ masculinity — influencing මෙය entire material body.",
+      "function": "Determining මෙය signs සහ behaviour characteristic ගේ මෙය male sex.",
+      "manifestation": "මෙය expression ගේ male sex-characteristics තුළ මෙය material body.",
+      "proximateCause": "Kamma යම් produces මෙය male sex from මෙය moment ගේ rebirth-linking.",
+      "doctrinalNote": "Occurs only තුළ මෙය sense-sphere realm."
     },
     "RP_016": {
       "name": "හදයවත්ථු",
       "shortName": "හදයවත්ථුව",
-      "description": "සිතට ආධාරක වන රූපය."
+      "description": "සිතට ආධාරක වන රූපය.",
+      "characteristic": "Being මෙය seat — මෙය physical basis on which mind-door විඥාන depends.",
+      "function": "Serving ලෙස මෙය physical basis for all විඥාන යම් arises through මෙය mind-door (excluding මෙය sense-door pairs).",
+      "manifestation": "Mind-door විඥාන වේ able to arise.",
+      "proximateCause": "Produced by past kamma; sustained by මෙය blood ගේ මෙය heart.",
+      "doctrinalNote": "Absent තුළ මෙය immaterial realm. This වේ මෙය most important material basis තුළ මෙය Abhidhamma system ගේ cognition."
     },
     "RP_017": {
       "name": "ජීවිතින්ද්‍රිය රූප",
       "shortName": "ජීවිතින්ද්‍රිය",
-      "description": "කර්මජ රූපයන්ගේ ආයුෂ පවත්වා ගන්නා රූපය."
+      "description": "කර්මජ රූපයන්ගේ ආයුෂ පවත්වා ගන්නා රූපය.",
+      "characteristic": "Sustaining life — preserving මෙය material phenomena produced by kamma.",
+      "function": "Keeping kamma-produced materiality තුළ existence for මෙය duration ගේ one material life-span.",
+      "manifestation": "Kamma-produced materiality වේ kept alive සහ persisting.",
+      "proximateCause": "Only kamma can produce ජීවිතින්ද්‍රිය රූප.",
+      "doctrinalNote": "මෙය lifespan ගේ materiality equals seventeen mind-moments. When ජීවිතින්ද්‍රිය රූප ceases, මෙය kamma-produced materiality ceases සමඟ it."
     },
     "RP_018": {
       "name": "කබලිංකාරාහාර",
       "shortName": "ආහාර",
-      "description": "ශරීරය පෝෂණය කරන ඕජස් රූපය."
+      "description": "ශරීරය පෝෂණය කරන ඕජස් රූපය.",
+      "characteristic": "Nourishment — මෙය කබලිංකාරාහාර present තුළ every material group.",
+      "function": "Nourishing මෙය material phenomena ගේ මෙය same group සහ generating new materiality from nutriment.",
+      "manifestation": "Materiality වේ nourished, sustained සහ multiplied.",
+      "proximateCause": "මෙය presence ගේ nutriment (food) යම් වේ digested.",
+      "doctrinalNote": "කබලිංකාරාහාර තුළ physical food (kabaḷīkāra-āhāra) වේ one ගේ මෙය four kinds ගේ nutriment තුළ මෙය Abhidhamma."
     },
     "RP_019": {
       "name": "ආකාශ ධාතුව",
       "shortName": "අවකාශය",
-      "description": "රූප කලාපයන් වෙන් කර දක්වන හිස් අවකාශය."
+      "description": "රූප කලාපයන් වෙන් කර දක්වන හිස් අවකාශය.",
+      "characteristic": "Delimiting — creating මෙය boundary between groups ගේ materiality.",
+      "function": "Demarcating මෙය boundary between kalāpas.",
+      "manifestation": "මෙය groups ගේ materiality are distinguished සහ do not merge.",
+      "proximateCause": "මෙය presence ගේ material groups (kalāpas) existing alongside one another.",
+      "doctrinalNote": "මෙය ආකාශ ධාතුව ලෙස a material phenomenon වේ not මෙය same ලෙස absolute space තුළ philosophy."
     },
     "RP_020": {
       "name": "කායවිඤ්ඤත්ති",
       "shortName": "කායවිඥප්තිය",
-      "description": "කයින් අදහස් ප්‍රකාශ කරන රූපය."
+      "description": "කයින් අදහස් ප්‍රකාශ කරන රූපය.",
+      "characteristic": "Movement — bodily expression used to convey an intention.",
+      "function": "Communicating an intention through bodily gesture.",
+      "manifestation": "Others understand one's intention through bodily gesture.",
+      "proximateCause": "A විඥාන arising සමඟ මෙය intention to express something.",
+      "doctrinalNote": "Produced only by mind. It වේ මෙය basis ගේ bodily action (kāya-kamma)."
     },
     "RP_021": {
       "name": "වචීවිඤ්ඤත්ති",
       "shortName": "වාග්විඥප්තිය",
-      "description": "වචනයෙන් අදහස් ප්‍රකාශ කරන රූපය."
+      "description": "වචනයෙන් අදහස් ප්‍රකාශ කරන රූපය.",
+      "characteristic": "Vocal expression — speech used to convey an intention.",
+      "function": "Communicating an intention through speech.",
+      "manifestation": "Others understand one's intention through මෙය සද්දාරම්මණ ගේ speech.",
+      "proximateCause": "A විඥාන arising සමඟ මෙය intention to speak.",
+      "doctrinalNote": "Produced only by mind. It වේ මෙය basis ගේ verbal action (vacī-kamma)."
     },
     "RP_022": {
       "name": "රූපලහුතා",
       "shortName": "රූපයේ සැහැල්ලුබව",
-      "description": "රූපයේ බර නැති සැහැල්ලු ස්වභාවය."
+      "description": "රූපයේ බර නැති සැහැල්ලු ස්වභාවය.",
+      "characteristic": "Lightness — මෙය buoyant, agile quality ගේ materiality.",
+      "function": "Preventing materiality from being heavy සහ rigid.",
+      "manifestation": "මෙය body වේ light සහ moves සමඟ ease.",
+      "proximateCause": "Favourable mind, temperature සහ nutriment; freedom from illness.",
+      "doctrinalNote": "Not produced by kamma. Depends on present health සහ conditions."
     },
     "RP_023": {
       "name": "රූපමුදුතා",
       "shortName": "රූපයේ මෘදුබව",
-      "description": "රූපයේ රළු නොවන මෘදු ස්වභාවය."
+      "description": "රූපයේ රළු නොවන මෘදු ස්වභාවය.",
+      "characteristic": "Softness — මෙය pliant, malleable quality ගේ materiality.",
+      "function": "Preventing materiality from being stiff සහ rigid.",
+      "manifestation": "මෙය body වේ soft සහ supple.",
+      "proximateCause": "Harmonious mind, temperature සහ nutriment; freedom from illness."
     },
     "RP_024": {
       "name": "රූපකම්මඤ්ඤතා",
       "shortName": "රූපයේ කර්මණ්‍යතාව",
-      "description": "ක්‍රියාවට සුදුසු වූ රූපයේ ස්වභාවය."
+      "description": "ක්‍රියාවට සුදුසු වූ රූපයේ ස්වභාවය.",
+      "characteristic": "Adaptability — මෙය workable, fit quality ගේ materiality.",
+      "function": "Making materiality easy to use සහ free ගේ fatigue.",
+      "manifestation": "මෙය body වේ fit for any task.",
+      "proximateCause": "Harmonious mind, temperature සහ nutriment."
     },
     "RP_025": {
       "name": "රූපෝපචය",
       "shortName": "රූප උපචය",
-      "description": "රූපයන්ගේ මුල් උපත සහ වර්ධනය."
+      "description": "රූපයන්ගේ මුල් උපත සහ වර්ධනය.",
+      "characteristic": "Genesis — මෙය initial arising phase ගේ a material group.",
+      "function": "Marking මෙය beginning ගේ existence ගේ a material group.",
+      "manifestation": "Materiality comes into being තුළ මෙය world.",
+      "proximateCause": "මෙය four originators ගේ materiality (kamma, mind, temperature, nutriment).",
+      "doctrinalNote": "මෙය four characteristics ගේ materiality are phases ගේ all material phenomena, not independent material instances."
     },
     "RP_026": {
       "name": "රූපසන්තති",
       "shortName": "රූප පරම්පරාව",
-      "description": "රූපයන්ගේ නොකැඩී පැවැත්ම."
+      "description": "රූපයන්ගේ නොකැඩී පැවැත්ම.",
+      "characteristic": "Continuity — මෙය phase ගේ persistence සහ duration ගේ මෙය stream ගේ materiality.",
+      "function": "Keeping මෙය stream ගේ materiality continuing without interruption.",
+      "manifestation": "Materiality appears stable සහ continuous.",
+      "proximateCause": "මෙය four originators ගේ materiality acting continuously.",
+      "doctrinalNote": "Continuity explains why things seem stable to us — they are තුළ fact an unbroken stream ගේ arising සහ passing away."
     },
     "RP_027": {
       "name": "රූපජරතා",
       "shortName": "රූපයේ දිරාපත්වීම",
-      "description": "රූපයන්ගේ මුකුලිතවීම සහ වයස්ගතවීම."
+      "description": "රූපයන්ගේ මුකුලිතවීම සහ වයස්ගතවීම.",
+      "characteristic": "Decay — මෙය ageing, declining phase ගේ materiality.",
+      "function": "Marking මෙය change සහ decline ගේ materiality.",
+      "manifestation": "Materiality grows old, wears down, සහ changes.",
+      "proximateCause": "මෙය passage ගේ time; materiality having already existed.",
+      "doctrinalNote": "Decay වේ මෙය clearest visible sign ගේ impermanence (anicca) තුළ materiality."
     },
     "RP_028": {
       "name": "රූපානිච්චතා",
       "shortName": "රූපයේ බිඳීයාම",
-      "description": "රූපයන්ගේ සහමුලින්ම විනාශවීම."
+      "description": "රූපයන්ගේ සහමුලින්ම විනාශවීම.",
+      "characteristic": "Dissolution — මෙය complete cessation ගේ materiality.",
+      "function": "Marking මෙය end ගේ මෙය existence ගේ materiality.",
+      "manifestation": "Materiality no longer exists — it has completely ceased.",
+      "proximateCause": "Materiality having already passed through මෙය three preceding phases ගේ arising, persisting සහ changing.",
+      "doctrinalNote": "Clearly seeing මෙය phase ගේ dissolution වේ මෙය starting point ගේ insight meditation (vipassanā)."
     }
   },
   "paccayas": {
@@ -1020,166 +1403,458 @@
     "PD_01": {
       "name": "අවිද්‍යා",
       "shortName": "අවිද්‍යාව",
-      "description": "චතුරාර්ය සත්‍යය නොදන්නා මුළාව."
+      "description": "චතුරාර්ය සත්‍යය නොදන්නා මුළාව.",
+      "characteristic": "Not understanding — blindness to මෙය true nature ගේ things (මෙය Four Truths, මෙය three characteristics).",
+      "function": "To obscure clear seeing, සහ to serve ලෙස condition for මෙය arising ගේ formations.",
+      "manifestation": "ලෙස bewilderment සහ darkness — it keeps generating kamma (formations) without one realising it.",
+      "proximateCause": "Unwise මනසිකාර (ayoniso-manasikāra); not meeting මෙය wise සහ not hearing මෙය True Dhamma.",
+      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). මෙය ending ගේ අවිද්‍යා වේ මෙය attainment ගේ මෙය four path consciousnesses.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_02": {
       "name": "සංස්කාර",
       "shortName": "සංස්කාර",
-      "description": "කුසලාකුසල චේතනාවන් මගින් කර්ම රැස් කිරීම."
+      "description": "කුසලාකුසල චේතනාවන් මගින් කර්ම රැස් කිරීම.",
+      "characteristic": "Acting සහ arranging — deliberate formation through body, speech, සහ mind.",
+      "function": "To generate kamma — accumulating kammic force යම් will yield rebirth තුළ a future life.",
+      "manifestation": "ලෙස accumulated kamma යම් will draw විඥාන into rebirth.",
+      "proximateCause": "අවිද්‍යා ලෙස condition (without අවිද්‍යා, formations become supramundane සහ create no new kamma).",
+      "doctrinalNote": "Saṅkhārā තුළ dependent origination means මෙය චේතනා (cetanā) මානසික factor යම් forms kamma.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "PD_03": {
       "name": "විඥාන",
       "shortName": "විඤ්ඤාණය",
-      "description": "නව භවයක පිළිසිඳ ගන්නා ප්‍රතිසන්ධි විඤ්ඤාණය ඇතුළු සිත්."
+      "description": "නව භවයක පිළිසිඳ ගන්නා ප්‍රතිසන්ධි විඤ්ඤාණය ඇතුළු සිත්.",
+      "characteristic": "Knowing an ආරම්මණ — මෙය rebirth විඥාන resting on මෙය new mind-සහ-රූප.",
+      "function": "To rebirth — to open a new life.",
+      "manifestation": "A new existence takes shape — mind-සහ-රූප appear.",
+      "proximateCause": "Kamma (formations) ලෙස condition; mind-සහ-රූප must be there to rest on.",
+      "doctrinalNote": "විඥාන සහ mind-සහ-රූප lean on each other — like two sheaves ගේ reeds propping one another up.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_04": {
       "name": "නාම-රූප",
       "shortName": "නාමරූප",
-      "description": "සිත, චෛතසික (නාම) සහ භෞතික ශරීරය (රූප)."
+      "description": "සිත, චෛතසික (නාම) සහ භෞතික ශරීරය (රූප).",
+      "characteristic": "Existing — mind සහ body present සහ developing.",
+      "function": "To serve ලෙස මෙය ground on which විඥාන operates, සහ මෙය condition for මෙය සළායතන to develop.",
+      "manifestation": "මෙය සළායතන become fully formed.",
+      "proximateCause": "විඥාන ලෙස condition; මෙය four sources producing materiality.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_05": {
       "name": "සළායතන",
       "shortName": "සළායතන",
-      "description": "ඇස, කන, නාසය, දිව, කය, මන යන ආයතන හය."
+      "description": "ඇස, කන, නාසය, දිව, කය, මන යන ආයතන හය.",
+      "characteristic": "Readiness to receive — six doors through which objects enter.",
+      "function": "To serve ලෙස doors (dvāra) through which මෙය mind meets outer objects.",
+      "manifestation": "ඵස්ස (phassa) වේ established — මෙය mind can touch its ආරම්මණ.",
+      "proximateCause": "Fully developed mind-සහ-රූප ලෙස condition.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_06": {
       "name": "ඵස්ස",
       "shortName": "ස්පර්ශය",
-      "description": "ද්වාරය, අරමුණ සහ විඤ්ඤාණය එක්වීම."
+      "description": "ද්වාරය, අරමුණ සහ විඤ්ඤාණය එක්වීම.",
+      "characteristic": "Touching — මෙය encounter ගේ base, ආරම්මණ, සහ විඥාන.",
+      "function": "To gather base, ආරම්මණ, සහ විඥාන together — conditioning මෙය arising ගේ වේදනා.",
+      "manifestation": "Mind, මානසික factors, base, සහ ආරම්මණ come together.",
+      "proximateCause": "All three must be present: base + ආරම්මණ + විඥාන.",
+      "doctrinalNote": "Phassa තුළ dependent origination වේ මෙය ඵස්ස මානසික factor (CS_PHASSA).",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_07": {
       "name": "වේදනා",
       "shortName": "වේදනාව",
-      "description": "ස්පර්ශයෙන් උපදින සැප, දුක් හෝ මැදහත් විඳීම."
+      "description": "ස්පර්ශයෙන් උපදින සැප, දුක් හෝ මැදහත් විඳීම.",
+      "characteristic": "Experiencing — tasting මෙය ආරම්මණ ලෙස pleasant, painful, or neutral after ඵස්ස.",
+      "function": "To enjoy මෙය ආරම්මණ — conditioning තණ්හා to arise when unwise මනසිකාර prevails.",
+      "manifestation": "ලෙස pleasant, painful, or neutral experience forming තුළ මෙය mind.",
+      "proximateCause": "ඵස්ස ලෙස condition.",
+      "doctrinalNote": "This වේ මෙය crux ගේ මෙය four foundations ගේ සති: halt at වේදනා, සහ do not let it ripen into තණ්හා.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_08": {
       "name": "තණ්හා",
       "shortName": "තෘෂ්ණාව",
-      "description": "අරමුණුවලට ඇති ඇල්ම සහ දැඩි ආශාව."
+      "description": "අරමුණුවලට ඇති ඇල්ම සහ දැඩි ආශාව.",
+      "characteristic": "Thirsting — මෙය උපාදාන wanting produced by වේදනා.",
+      "function": "To grasp at its ආරම්මණ — conditioning මෙය arising ගේ උපාදාන.",
+      "manifestation": "ලෙස උපාදාන taking hold; මෙය round ගේ rebirth continues.",
+      "proximateCause": "වේදනා (especially glad සහ pleasant වේදනා) ලෙස condition.",
+      "doctrinalNote": "තණ්හා වේ මෙය Origin ගේ suffering among මෙය Four Noble Truths. මෙය ending ගේ තණ්හා වේ මෙය ending ගේ suffering — Nibbāna.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "PD_09": {
       "name": "උපාදාන",
       "shortName": "උපාදානය",
-      "description": "තෘෂ්ණාව දැඩිවීමෙන් ඇතිවන දැඩි අල්ලාගැනීම."
+      "description": "තෘෂ්ණාව දැඩිවීමෙන් ඇතිවන දැඩි අල්ලාගැනීම.",
+      "characteristic": "Holding tight — a grip යම් does not let go.",
+      "function": "To grasp මෙය ආරම්මණ firmly — conditioning මෙය arising ගේ භව.",
+      "manifestation": "ලෙස භව taking shape — rebirth-producing kamma accumulates.",
+      "proximateCause": "තණ්හා ලෙස condition — උපාදාන වේ තණ්හා intensified සහ consolidated.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_10": {
       "name": "භව",
       "shortName": "භවය",
-      "description": "නැවත ඉපදීමට මුල්වන කර්මභවය සහ උප්පත්තිභවය."
+      "description": "නැවත ඉපදීමට මුල්වන කර්මභවය සහ උප්පත්තිභවය.",
+      "characteristic": "Existing — accumulated kammic force ready to produce rebirth.",
+      "function": "To condition ජාති taking place තුළ a future life.",
+      "manifestation": "ලෙස rebirth occurring තුළ a plane යම් matches මෙය kamma.",
+      "proximateCause": "උපාදාන ලෙස condition — උපාදාන වේ මෙය fuel for භව.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_11": {
       "name": "ජාති",
       "shortName": "ඉපදීම",
-      "description": "නව භවයක ස්කන්ධයන්ගේ පහළවීම හෙවත් ජාතිය."
+      "description": "නව භවයක ස්කන්ධයන්ගේ පහළවීම හෙවත් ජාතිය.",
+      "characteristic": "Rebirth-linking — විඥාන reborn into a new plane.",
+      "function": "To open a new life — dragging මෙය whole mass ගේ suffering along.",
+      "manifestation": "ලෙස suffering (ageing-සහ-death) appearing.",
+      "proximateCause": "භව (kammic force) ලෙස condition.",
+      "doctrinalNote": "මෙය three-life circle joins here: ජාති (PD_11) corresponds to විඥාන (PD_03) on මෙය result side ගේ මෙය future life.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "PD_12": {
       "name": "ජරා-මරණ",
       "shortName": "ජරා මරණ",
-      "description": "ස්කන්ධයන්ගේ දිරාපත්වීම (ජරා) සහ බිඳීයාම (මරණ)."
+      "description": "ස්කන්ධයන්ගේ දිරාපත්වීම (ජරා) සහ බිඳීයාම (මරණ).",
+      "characteristic": "Ageing සහ dying — මෙය inevitable decay සහ perishing ගේ all conditioned mind සහ body.",
+      "function": "To end a life — සහ to continue a new round ගේ භව if liberation has not been won.",
+      "manifestation": "A life closed; without liberation මෙය round continues.",
+      "proximateCause": "ජාති ලෙස condition — where there වේ ජාති, ageing-සහ-death necessarily follow.",
+      "doctrinalNote": "Liberation means ending අවිද්‍යා (PD_01) සහ තණ්හා (PD_08) — මෙය realisation ගේ Nibbāna.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "දිට්ඨධම්මවේදනීය කර්ම",
       "shortName": "දිට්ඨධම්මවේදනීය",
-      "description": "මෙම ආත්මයේදීම විපාක දෙන කර්මය."
+      "description": "මෙම ආත්මයේදීම විපාක දෙන කර්මය.",
+      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within මෙය very same life. If it fails to ripen තුළ යම් life, it becomes defunct (ahosi-kamma).",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "KM_T_02": {
       "name": "උපපජ්ජවේදනීය කර්ම",
       "shortName": "උපපජ්ජවේදනීය",
-      "description": "ඊළඟ ආත්මයේදී විපාක දෙන කර්මය."
+      "description": "ඊළඟ ආත්මයේදී විපාක දෙන කර්මය.",
+      "doctrinalNote": "It has only a single opportunity to ripen, තුළ මෙය immediately following life. If it fails to ripen තුළ යම් life, it becomes defunct.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "KM_T_03": {
       "name": "අපරාපරියවේදනීය කර්ම",
       "shortName": "අපරාපරියවේදනීය",
-      "description": "තුන්වන ආත්මයේ සිට නිවන් දකින තුරු විපාක දෙන කර්මය."
+      "description": "තුන්වන ආත්මයේ සිට නිවන් දකින තුරු විපාක දෙන කර්මය.",
+      "doctrinalNote": "It never becomes defunct through lapse ගේ time — one reason මෙය stream ගේ kamma සහ its results වේ so intricate. It වේ මෙය most common ගේ මෙය three time-based kinds ගේ kamma.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "KM_T_04": {
       "name": "අහෝසි කර්ම",
       "shortName": "අහෝසි",
-      "description": "විපාක දීමට අවස්ථාවක් නොලැබී අහෝසි වී ගිය කර්මය."
-    },
-    "KM_U_01": {
-      "name": "ජනක කර්ම",
-      "shortName": "ජනක",
-      "description": "නව භවයක උත්පත්තිය (ප්‍රතිසන්ධිය) ලබා දෙන කර්මය."
-    },
-    "KM_U_02": {
-      "name": "උපත්ථම්භක කර්ම",
-      "shortName": "උපත්ථම්භක",
-      "description": "ජනක කර්මයට සහාය දී විපාකය වැඩි දියුණු කරන කර්මය."
-    },
-    "KM_U_03": {
-      "name": "උපපීළක කර්ම",
-      "shortName": "උපපීළක",
-      "description": "ජනක කර්මයේ විපාකයට බාධා පමුණුවන කර්මය."
-    },
-    "KM_U_04": {
-      "name": "උපඝාතක කර්ම",
-      "shortName": "උපඝාතක",
-      "description": "මුල් කර්මයේ විපාකය සම්පූර්ණයෙන්ම කපා දමන කර්මය."
+      "description": "විපාක දීමට අවස්ථාවක් නොලැබී අහෝසි වී ගිය කර්මය.",
+      "doctrinalNote": "'Ahosi' means 'it has already been' — මෙය kamma වේ not destroyed, it has simply lost its opportunity to ripen.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "KM_P_01": {
       "name": "ගරුක කර්ම",
       "shortName": "ගරුක",
-      "description": "පළමුවෙන්ම විපාක දෙන ඉතා බරපතල කර්ම (පංචානන්තර්ය හෝ ධ්‍යාන)."
+      "description": "පළමුවෙන්ම විපාක දෙන ඉතා බරපතල කර්ම (පංචානන්තර්ය හෝ ධ්‍යාන).",
+      "doctrinalNote": "Generative kamma determines මෙය entire foundation ගේ a life.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "KM_P_02": {
       "name": "ආසන්න කර්ම",
       "shortName": "ආසන්න",
-      "description": "මරණාසන්න මොහොතේදී සිහිවන හෝ කරන කර්මය."
+      "description": "මරණාසන්න මොහොතේදී සිහිවන හෝ කරන කර්මය.",
+      "doctrinalNote": "It වේ not මෙය one who sows මෙය seed but මෙය one who waters it — it strengthens සහ extends a result යම් වේ already ripening rather than producing a new one ගේ its own.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "KM_P_03": {
       "name": "ආචිණ්ණ කර්ම",
       "shortName": "ආචිණ්ණ",
-      "description": "නිතර නිතර පුරුදු පුහුණු කළ කර්මය."
+      "description": "නිතර නිතර පුරුදු පුහුණු කළ කර්මය.",
+      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "KM_P_04": {
       "name": "කටත්තා කර්ම",
       "shortName": "කටත්තා",
-      "description": "ඉහත කර්ම තුන නොමැති විට විපාක දෙන සුළු කර්ම."
+      "description": "ඉහත කර්ම තුන නොමැති විට විපාක දෙන සුළු කර්ම.",
+      "doctrinalNote": "This වේ මෙය most powerful kind ගේ kamma classified by function; it explains මෙය sudden reversals යම් occur තුළ a life.",
+      "examples": [
+        "මෙය"
+      ]
+    },
+    "KM_U_01": {
+      "name": "ජනක කර්ම",
+      "shortName": "ජනක",
+      "description": "නව භවයක උත්පත්තිය (ප්‍රතිසන්ධිය) ලබා දෙන කර්මය.",
+      "doctrinalNote": "ජනක කර්ම always determines rebirth — it never becomes defunct.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
+    },
+    "KM_U_02": {
+      "name": "උපත්ථම්භක කර්ම",
+      "shortName": "උපත්ථම්භක",
+      "description": "ජනක කර්මයට සහාය දී විපාකය වැඩි දියුණු කරන කර්මය.",
+      "doctrinalNote": "This explains මෙය importance ගේ preparing one's mind at මෙය time ගේ death.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
+    },
+    "KM_U_03": {
+      "name": "උපපීළක කර්ම",
+      "shortName": "උපපීළක",
+      "description": "ජනක කර්මයේ විපාකයට බාධා පමුණුවන කර්මය.",
+      "doctrinalNote": "This වේ why මෙය Buddha taught යම් one should constantly practise wholesome deeds.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
+    },
+    "KM_U_04": {
+      "name": "උපඝාතක කර්ම",
+      "shortName": "උපඝාතක",
+      "description": "මුල් කර්මයේ විපාකය සම්පූර්ණයෙන්ම කපා දමන කර්මය.",
+      "doctrinalNote": "It වේ මෙය weakest kind ගේ kamma by priority ගේ ripening, yet it makes up මෙය greater part ගේ මෙය total kamma we have accumulated.",
+      "examples": [
+        "මෙය"
+      ]
     },
     "KM_R_01": {
       "name": "කාමාවචර අකුසල් කර්ම",
       "shortName": "කාම අකුසල්",
-      "description": "සතර අපායෙහි උපත ලබා දෙන දස අකුසල් කර්ම."
+      "description": "සතර අපායෙහි උපත ලබා දෙන දස අකුසල් කර්ම.",
+      "doctrinalNote": "කාමාවචර අකුසල් කර්ම වේ මෙය cause ගේ මෙය truth ගේ suffering; it belongs to මෙය sense sphere සහ ripens within මෙය woeful planes ගේ මෙය sense sphere.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "KM_R_02": {
       "name": "කාමාවචර කුසල් කර්ම",
       "shortName": "කාම කුසල්",
-      "description": "මනුෂ්‍ය සහ දිව්‍ය ලෝකවල උත්පත්තිය දෙන දස පුණ්‍ය ක්‍රියා."
+      "description": "මනුෂ්‍ය සහ දිව්‍ය ලෝකවල උත්පත්තිය දෙන දස පුණ්‍ය ක්‍රියා.",
+      "doctrinalNote": "කාමාවචර කුසල් කර්ම යම් ripens ලෙස happiness තුළ මෙය sense sphere — මෙය foundation for all merit.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "KM_R_03": {
       "name": "රූපාවචර කුසල් කර්ම",
       "shortName": "රූප කුසල්",
-      "description": "රූප බඹලොව උත්පත්තිය දෙන රූප ධ්‍යාන කුසල්."
+      "description": "රූප බඹලොව උත්පත්තිය දෙන රූප ධ්‍යාන කුසල්.",
+      "doctrinalNote": "Fine-material-sphere kamma belongs to මෙය exalted (mahaggata) category, transcending මෙය sense sphere; it ripens according to මෙය jhāna attained.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     },
     "KM_R_04": {
       "name": "අරූපාවචර කුසල් කර්ම",
       "shortName": "අරූප කුසල්",
-      "description": "අරූප බඹලොව උත්පත්තිය දෙන අරූප ධ්‍යාන කුසල්."
+      "description": "අරූප බඹලොව උත්පත්තිය දෙන අරූප ධ්‍යාන කුසල්.",
+      "doctrinalNote": "Supramundane kamma does not produce rebirth within මෙය three realms; it produces Nibbāna ලෙස its result — මෙය ultimate aim ගේ මෙය Abhidhamma.",
+      "examples": [
+        "මෙය",
+        "මෙය"
+      ]
     }
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {
       "name": "අතිමහන්තාරම්මණ පංචද්වාර වීථි",
       "shortName": "අතිමහන්ත පංචද්වාර",
-      "description": "චිත්තක්ෂණ 17ක් සම්පූර්ණ වන තදාරම්මණ සහිත පංචද්වාර වීථිය."
+      "description": "චිත්තක්ෂණ 17ක් සම්පූර්ණ වන තදාරම්මණ සහිත පංචද්වාර වීථිය.",
+      "steps": {
+        "1": {
+          "name": "Past bhavaṅga",
+          "description": "මෙය life-continuum flowing along normally before මෙය ආරම්මණ strikes."
+        },
+        "2": {
+          "name": "Vibrating bhavaṅga",
+          "description": "මෙය ආරම්මණ strikes මෙය sense base සහ මෙය life-continuum vibrates for මෙය first time."
+        },
+        "3": {
+          "name": "Arrest bhavaṅga",
+          "description": "මෙය bhavaṅga stream වේ fully cut off — මෙය cognitive process begins."
+        },
+        "4": {
+          "name": "Five-door adverting",
+          "description": "Opens මෙය five-sense door සහ turns toward මෙය ආරම්මණ, determining which door මෙය ආරම්මණ has struck."
+        },
+        "5": {
+          "name": "Five-fold sense විඥාන",
+          "description": "Knows මෙය ආරම්මණ through මෙය corresponding sense door. Only මෙය seven universal මානසික factors accompany it."
+        },
+        "6": {
+          "name": "Receiving",
+          "description": "Receives මෙය ආරම්මණ from මෙය sense විඥාන සහ passes it into මෙය inner stream ගේ විඥාන."
+        },
+        "7": {
+          "name": "Investigating",
+          "description": "Examines මෙය ආරම්මණ — determining whether it වේ good or bad, pleasing or not."
+        },
+        "8": {
+          "name": "Determining",
+          "description": "Makes මෙය final determination ගේ මෙය ආරම්මණ ලෙස good or bad — opening මෙය way for මෙය 7 impulsions."
+        },
+        "9": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven consecutive impulsion moments — creating wholesome or කාමාවචර අකුසල් කර්ම. Moment 1 bears fruit තුළ this very life; moment 7 තුළ මෙය next life; moments 2–6 තුළ later lives."
+        },
+        "10": {
+          "name": "Registration (Tadārammaṇa)",
+          "description": "Two registration moments enjoying මෙය residual ආරම්මණ after මෙය impulsions. They occur only තුළ a very-great-ආරම්මණ process සහ create no new kamma."
+        },
+        "11": {
+          "name": "Post-process bhavaṅga",
+          "description": "After මෙය process ends, මෙය life-continuum resumes its normal flow."
+        }
+      }
     },
     "VT_NGU_MON_LON": {
       "name": "මහන්තාරම්මණ පංචද්වාර වීථි",
       "shortName": "පංචද්වාර මහන්ත",
-      "description": "ජවන සතක් පමණක් පහළ වන, තදාරම්මණ රහිත පංචද්වාරික වීථිය."
+      "description": "ජවන සතක් පමණක් පහළ වන, තදාරම්මණ රහිත පංචද්වාරික වීථිය.",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "මෙය life-continuum vibrates ලෙස මෙය ආරම්මණ strikes මෙය sense base."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "මෙය bhavaṅga stream වේ cut off — මෙය process begins."
+        },
+        "3": {
+          "name": "Five-door adverting",
+          "description": "Turns මෙය mind toward මෙය ආරම්මණ through මෙය five-sense door."
+        },
+        "4": {
+          "name": "Five-fold sense විඥාන",
+          "description": "Knows මෙය ආරම්මණ through මෙය corresponding sense."
+        },
+        "5": {
+          "name": "Receiving",
+          "description": "Receives මෙය ආරම්මණ."
+        },
+        "6": {
+          "name": "Investigating",
+          "description": "Examines මෙය ආරම්මණ."
+        },
+        "7": {
+          "name": "Determining",
+          "description": "Determines මෙය ආරම්මණ, opening මෙය way for මෙය impulsions."
+        },
+        "8": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments create kamma. Afterwards there වේ NO registration."
+        },
+        "9": {
+          "name": "Post-process bhavaṅga",
+          "description": "මෙය life-continuum resumes after මෙය process."
+        }
+      }
     },
     "VT_Y_MON": {
       "name": "මනෝද්වාර වීථි",
       "shortName": "මනෝද්වාර වීථිය",
-      "description": "මනෝද්වාරය හරහා ධර්මාරම්මණ ග්‍රහණය කරමින් පහළ වන සිතුවිලි මාලාව."
+      "description": "මනෝද්වාරය හරහා ධර්මාරම්මණ ග්‍රහණය කරමින් පහළ වන සිතුවිලි මාලාව.",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "මෙය life-continuum vibrates ලෙස මෙය mind ආරම්මණ strikes."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "මෙය life-continuum වේ arrested — මෙය mind-door process begins."
+        },
+        "3": {
+          "name": "Mind-door adverting",
+          "description": "Opens මෙය mind door සහ directs මෙය mind to මෙය mind ආරම්මණ, at මෙය same time determining it (serving ලෙස determining within this process)."
+        },
+        "4": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, සහ action arise here."
+        },
+        "5": {
+          "name": "Registration (optional)",
+          "description": "Registration තුළ මෙය mind-door process — depending on මෙය strength ගේ මෙය mind ආරම්මණ."
+        },
+        "6": {
+          "name": "Post-process bhavaṅga",
+          "description": "මෙය life-continuum resumes."
+        }
+      }
     },
     "VT_VITHIMUTTA": {
       "name": "වීථිමුක්ත සිත්",
       "shortName": "වීථිමුක්ත",
-      "description": "ද්වාර විමුක්තව පවතින ප්‍රතිසන්ධි, භවාංග සහ චුති සිත්."
+      "description": "ද්වාර විමුක්තව පවතින ප්‍රතිසන්ධි, භවාංග සහ චුති සිත්.",
+      "steps": {
+        "1": {
+          "name": "Rebirth-linking විඥාන",
+          "description": "මෙය first විඥාන ගේ මෙය new life — continuing directly from මෙය previous life's dying විඥාන, carrying kamma's seed."
+        },
+        "2": {
+          "name": "Life-continuum විඥාන",
+          "description": "මෙය stream ගේ විඥාන යම් sustains මෙය life between processes. It arises සහ passes innumerable times, සහ වේ මෙය foundation ගේ all මානසික activity."
+        },
+        "3": {
+          "name": "Death විඥාන",
+          "description": "මෙය final mind-moment — මෙය ජීවිතින්ද්‍රිය රූප perishes, මෙය death විඥාන falls, සහ මෙය life ends. Immediately afterwards මෙය next life's rebirth-linking විඥාන arises."
+        }
+      }
     }
   },
   "studyModules": {
@@ -12458,5 +13133,6 @@
         }
       ]
     }
-  }
+  },
+  "translationStatus": "draft"
 }
