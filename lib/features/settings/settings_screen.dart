@@ -349,6 +349,8 @@ class _KaraokeSettingsSection extends ConsumerWidget {
       ],
     );
   }
+}
+
 class _SettingsUiText {
   const _SettingsUiText._();
 
