@@ -126,7 +126,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get systemDefaultSubtitle => 'ဤစက်တွင် ရွေးထားသောဘာသာစကားကို သုံးပါ';
 
   @override
-  String get languagePickerTitle => 'Language / ဘာသာစကား';
+  String get languagePickerTitle => 'ဘာသာစကား';
 
   @override
   String get languagePickerSearchHint =>
@@ -174,14 +174,14 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get highContrastSubtitle =>
-      'Increase color contrast for people with low vision';
+      'အမြင်အားနည်းသူများအတွက် အရောင်ကွာခြားမှုကို မြှင့်တင်ပါ';
 
   @override
   String get screenReaderHints => 'မျက်နှာပြင်ဖတ်စက် အကူအညီ';
 
   @override
   String get screenReaderHintsSubtitle =>
-      'Provide more detail for TalkBack and VoiceOver';
+      'TalkBack နှင့် VoiceOver အတွက် အသေးစိတ်ပိုမိုပေးပါ';
 
   @override
   String get textSize => 'စာလုံးအရွယ်';
@@ -197,23 +197,23 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get unlockAllLessonsSubtitle =>
-      'The guided path builds a strong foundation. Experienced learners can unlock every lesson.';
+      'လမ်းညွှန်လေ့လာမှုသည် ခိုင်မာသောအခြေခံကို တည်ဆောက်ပေးသည်။ အတွေ့အကြုံရှိသူများသည် သင်ခန်းစာအားလုံးကို ဖွင့်နိုင်သည်။';
 
   @override
   String get resetProgress => 'တိုးတက်မှုကို ပြန်စရန်';
 
   @override
-  String get resetProgressSubtitle => 'Delete all study data';
+  String get resetProgressSubtitle => 'လေ့လာမှုဒေတာအားလုံးကို ဖျက်ပါ';
 
   @override
-  String get showDataWarningAgain => 'Show data warning again';
+  String get showDataWarningAgain => 'ဒေတာသတိပေးချက်ကို ပြန်ပြပါ';
 
   @override
   String get showDataWarningAgainSubtitle =>
-      'Restore the Matrix warning banner';
+      'မက်ထရစ်သတိပေးဘားကို ပြန်ဖွင့်ပါ';
 
   @override
-  String get dataWarningEnabled => 'Data warning enabled';
+  String get dataWarningEnabled => 'ဒေတာသတိပေးချက် ဖွင့်ထားသည်';
 
   @override
   String get aboutApp => 'အက်ပ်အကြောင်း';
@@ -222,61 +222,61 @@ class AppLocalizationsMy extends AppLocalizations {
   String get version => 'ဗားရှင်း';
 
   @override
-  String get sourceMaterial => 'ရင်းမြစ်';
+  String get sourceMaterial => 'ရင်းမြစ်အကြောင်းအရာ';
 
   @override
-  String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
+  String get sourceMaterialValue => 'မင်းမိလိန္ဒ A သင်ရိုး — အဘိဓမ္မာ';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'တည်းဖြတ်မူအခြေခံများ';
 
   @override
-  String get resetProgressQuestion => 'Reset progress?';
+  String get resetProgressQuestion => 'တိုးတက်မှုကို ပြန်စမလား?';
 
   @override
   String get resetProgressWarning =>
-      'All study progress and quiz scores will be deleted. This action cannot be undone.';
+      'လေ့လာမှုတိုးတက်မှုနှင့် မေးခွန်းရမှတ်အားလုံး ဖျက်သွားမည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်မပြင်နိုင်ပါ။';
 
   @override
-  String get progressResetSuccess => 'Study progress reset';
+  String get progressResetSuccess => 'လေ့လာမှုတိုးတက်မှုကို ပြန်စပြီးပြီ';
 
   @override
-  String get unlockLessonsQuestion => 'Unlock all lessons?';
+  String get unlockLessonsQuestion => 'သင်ခန်းစာအားလုံးကို ဖွင့်မလား?';
 
   @override
   String get unlockLessonsWarning =>
-      'The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.';
+      'လမ်းညွှန်လေ့လာမှုသည် ခိုင်မာသောအဘိဓမ္မာအခြေခံတည်ဆောက်ရန် အကောင်းဆုံးနည်းလမ်းဖြစ်သည်။ ဤရွေးချယ်မှုသည် အတွေ့အကြုံရှိသူများအတွက် ဖြစ်သည်။';
 
   @override
-  String get keepGuidedPath => 'Keep guided path';
+  String get keepGuidedPath => 'လမ်းညွှန်လမ်းကြောင်းကို ထားပါ';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'ဖွင့်ပါ';
 
   @override
   String modulesCompleted(Object completed, Object total) {
-    return '$completed / $total modules completed';
+    return 'မော်ဂျူး $completed / $total ပြီးစီး';
   }
 
   @override
   String mostRecentModule(Object module) {
-    return 'Most recent module: $module';
+    return 'နောက်ဆုံးမော်ဂျူး: $module';
   }
 
   @override
   String lastStudied(Object date) {
-    return 'Last studied: $date';
+    return 'နောက်ဆုံးလေ့လာချိန်: $date';
   }
 
   @override
-  String get today => 'Today';
+  String get today => 'ယနေ့';
 
   @override
-  String get yesterday => 'Yesterday';
+  String get yesterday => 'မနေ့က';
 
   @override
   String daysAgo(Object count) {
-    return '$count days ago';
+    return 'လွန်ခဲ့သော $count ရက်';
   }
 
   @override
@@ -325,7 +325,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get rotationHint =>
-      'If the screen does not rotate, enable Auto-rotate in device settings.';
+      'မျက်နှာပြင်မလှည့်ပါက စက်ဆက်တင်တွင် Auto-rotate ကို ဖွင့်ပါ။';
 
   @override
   String get highContrast => 'အရောင်ကွာခြားမှုမြင့်';
@@ -346,34 +346,34 @@ class AppLocalizationsMy extends AppLocalizations {
   String get cetasika => 'စေတသိက်';
 
   @override
-  String get unwholesome => 'Unwholesome';
+  String get unwholesome => 'အကုသိုလ်';
 
   @override
-  String get rootless => 'Rootless';
+  String get rootless => 'အဟိတ်';
 
   @override
-  String get senseSphereBeautiful => 'Sense-sphere beautiful';
+  String get senseSphereBeautiful => 'ကာမသောဘန';
 
   @override
-  String get formSphere => 'Form sphere';
+  String get formSphere => 'ရူပဘုံ';
 
   @override
-  String get formlessSphere => 'Formless sphere';
+  String get formlessSphere => 'အရူပဘုံ';
 
   @override
-  String get supramundane => 'Supramundane';
+  String get supramundane => 'လောကုတ္တရာ';
 
   @override
-  String get legend => 'Legend:';
+  String get legend => 'ရှင်းလင်းချက်:';
 
   @override
-  String get associationAlways => 'Invariable';
+  String get associationAlways => 'အမြဲ';
 
   @override
-  String get associationSometimes => 'Variable';
+  String get associationSometimes => 'တစ်ခါတစ်ရံ';
 
   @override
-  String get associationNever => 'Absent';
+  String get associationNever => 'မရှိ';
 
   @override
   String dataWarningsCount(Object count) {
@@ -381,36 +381,36 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get matrixHelpTitle => 'Matrix guide';
+  String get matrixHelpTitle => 'ဇယားလမ်းညွှန်';
 
   @override
-  String get howToRead => 'How to read:';
+  String get howToRead => 'ဖတ်နည်း:';
 
   @override
   String get matrixHelpRead =>
-      '• Rows: Citta\n• Columns: Cetasika\n• Intersections: association';
+      '• အတန်းများ: စိတ်\n• ကော်လံများ: စေတသိက်\n• ဆုံမှတ်များ: ဆက်နွယ်မှု';
 
   @override
-  String get symbols => 'Symbols:';
+  String get symbols => 'သင်္ကေတများ:';
 
   @override
-  String get matrixHelpSymbols => '✦ = Invariable\n◎ = Variable\n✕ = Absent';
+  String get matrixHelpSymbols => '✦ = အမြဲပါဝင်\n◎ = တစ်ခါတစ်ရံပါဝင်\n✕ = မပါဝင်';
 
   @override
-  String get tips => 'Tips:';
+  String get tips => 'အကြံပြုချက်များ:';
 
   @override
   String get matrixHelpTips =>
-      '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
+      '• အသေးစိတ်အတွက် စိတ်ကို နှိပ်ပါ\n• ပဋိပက္ခအတွက် စေတသိက်ကို နှိပ်ပါ\n• မြင်ကွင်းကျဉ်းရန် စစ်ထုတ်ကိရိယာများ သုံးပါ\n• နေရာပိုရရန် မျက်နှာပြင်လှည့်ပါ';
 
   @override
-  String get understood => 'Got it';
+  String get understood => 'နားလည်ပါပြီ';
 
   @override
   String get dataWarningTitle => 'Data warning';
 
   @override
-  String get allFilters => 'All';
+  String get allFilters => 'အားလုံး';
 
   @override
   String get defilements => 'Defilements';
@@ -425,93 +425,93 @@ class AppLocalizationsMy extends AppLocalizations {
   String get conditionsTitle => 'ပဋိစ္စသမုပ္ပါဒ်';
 
   @override
-  String get conditionDetails => 'Dependent-origination details:';
+  String get conditionDetails => 'ပဋိစ္စသမုပ္ပါဒ် အသေးစိတ်:';
 
   @override
   String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
+      'ဤသည်မှာ ဤဘဝစက်ဝန်း၏ နောက်ဆုံးဝိပါက်အကြောင်းဆက်ဖြစ်ပြီး အကြောင်းအသစ် မစတင်ပါ။';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
+    return '• အကြောင်း: $effect\n  ရှင်းလင်းချက်: $explanation';
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => 'အကြောင်းဆက် ၁၂ ပါး';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => 'ပဋ္ဌာန်းပစ္စည်း ၂၄ ပါး';
 
   @override
-  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+  String get paccayaTitle => 'ပဋ္ဌာန်းပစ္စည်း ၂၄ ပါး';
 
   @override
   String get paccayaIntro =>
-      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+      'Paccaya-saṅgaha-vibhāga ၏ အပိုင်း B — ဓမ္မများသည် တစ်ခုနှင့်တစ်ခု ဘယ်လိုအကြောင်းဖြစ်သည်ကို ဖော်ပြသည်။ အပိုင်း A သည် ပဋိစ္စသမုပ္ပါဒ် အကြောင်းဆက် ၁၂ ပါး ဖြစ်သည်။';
 
   @override
-  String get paccayaDefinition => 'Definition';
+  String get paccayaDefinition => 'အဓိပ္ပါယ်';
 
   @override
   String get paccayaConditioningStates =>
-      'Conditioning states (paccaya-dhamma)';
+      'အကြောင်းဖြစ်သော ဓမ္မများ (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+  String get paccayaConditionedStates => 'အကြောင်းခံ ဓမ္မများ (paccayuppanna)';
 
   @override
-  String get paccayaSubdivisions => 'Subdivisions';
+  String get paccayaSubdivisions => 'ခွဲခြားချက်များ';
 
   @override
-  String get paccayaInPaticca => 'Operates in these links';
+  String get paccayaInPaticca => 'ဤအကြောင်းဆက်များတွင် အလုပ်လုပ်သည်';
 
   @override
-  String get paccayaEmpty => 'No condition matches this filter.';
+  String get paccayaEmpty => 'ဤစစ်ထုတ်မှုနှင့် ကိုက်ညီသော ပစ္စည်းမရှိပါ။';
 
   @override
-  String get paccayaSearchHint => 'Search a condition…';
+  String get paccayaSearchHint => 'ပစ္စည်း ရှာရန်…';
 
   @override
   String get paccayaSourceNotice =>
-      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+      'ရင်းမြစ်: Paṭṭhāna (Abhidhamma Piṭaka VII) နှင့် Visuddhimagga အခန်း XVII။ Pa-Auk စာတမ်းများတွင် ပစ္စည်း ၂၄ ပါးကို သီးခြားစာရင်းပြုထားခြင်း မတွေ့ရသေးပါ။ ဝေါဟာရများကို အကြီးတန်းသုံးသပ်ရန် လိုအပ်သည်။';
 
   @override
-  String get paccayaSources => 'Sources';
+  String get paccayaSources => 'ရင်းမြစ်များ';
 
   @override
   String paccayaCount(Object count) {
-    return '$count conditions';
+    return 'ပစ္စည်း $count ပါး';
   }
 
   @override
   String get relatedDhammas => 'Related dhammas';
 
   @override
-  String get paccayaGroupRootObject => 'Root & object';
+  String get paccayaGroupRootObject => 'ဟိတ်နှင့် အာရုံ';
 
   @override
-  String get paccayaGroupContinuity => 'Continuity';
+  String get paccayaGroupContinuity => 'ဆက်လက်မှု';
 
   @override
-  String get paccayaGroupConascence => 'Conascence & support';
+  String get paccayaGroupConascence => 'အတူဖြစ်မှုနှင့် အထောက်အပံ့';
 
   @override
-  String get paccayaGroupTimeRelation => 'Arising order';
+  String get paccayaGroupTimeRelation => 'ဖြစ်ပေါ်စဉ်';
 
   @override
-  String get paccayaGroupKammaVipaka => 'Kamma & result';
+  String get paccayaGroupKammaVipaka => 'ကမ္မနှင့် ဝိပါက်';
 
   @override
-  String get paccayaGroupGeneral => 'General';
+  String get paccayaGroupGeneral => 'အထွေထွေ';
 
   @override
-  String get kiepPast => 'Past life';
+  String get kiepPast => 'အတိတ်ဘဝ';
 
   @override
-  String get kiepPresent => 'This life';
+  String get kiepPresent => 'ယခုဘဝ';
 
   @override
-  String get kiepFuture => 'Future life';
+  String get kiepFuture => 'အနာဂတ်ဘဝ';
 
   @override
   String get kammaTitle => 'Kamma';
@@ -634,10 +634,10 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get selected => 'Selected';
+  String get selected => 'ရွေးထားသည်';
 
   @override
-  String get dimmedByConflict => 'Dimmed because of a conflict';
+  String get dimmedByConflict => 'ပဋိပက္ခကြောင့် မှိန်ထားသည်';
 
   @override
   String get matrixCornerSemantics =>
@@ -650,7 +650,7 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get tapForDetails => 'Tap for details';
+  String get tapForDetails => 'အသေးစိတ်အတွက် နှိပ်ပါ';
 
   @override
   String get studyPath => 'လေ့လာရေးလမ်းကြောင်း';
@@ -1085,7 +1085,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get resumeListening => 'နားထောင်မှု ဆက်ရန်';
 
   @override
-  String get continueListening => 'ဆက်လက်နားထောင်ရန်';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => 'အလိုအလျောက်ပိတ်ချိန်';

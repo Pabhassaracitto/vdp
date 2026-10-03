@@ -370,7 +370,7 @@ abstract class AppLocalizations {
   /// languagePickerTitle
   ///
   /// In en, this message translates to:
-  /// **'Language / Ngôn ngữ'**
+  /// **'Language'**
   String get languagePickerTitle;
 
   /// languagePickerSearchHint

@@ -127,7 +127,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Usar el idioma elegido en este dispositivo';
 
   @override
-  String get languagePickerTitle => 'Language / Idioma';
+  String get languagePickerTitle => 'Idioma';
 
   @override
   String get languagePickerSearchHint => 'Buscar por idioma o código';
@@ -222,13 +222,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get version => 'Versión';
 
   @override
-  String get sourceMaterial => 'Material de origen';
+  String get sourceMaterial => 'Material fuente';
 
   @override
   String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'Principios editoriales';
 
   @override
   String get resetProgressQuestion => 'Reset progress?';
@@ -437,10 +437,10 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '12 eslabones';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '24 condiciones';
 
   @override
   String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
@@ -1086,13 +1086,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get resumeListening => 'Continuar escuchando';
 
   @override
-  String get continueListening => 'Continuar escuchando';
+  String get continueListening => 'Continue listening';
 
   @override
-  String get sleepTimer => 'Temporizador';
+  String get sleepTimer => 'Sleep timer';
 
   @override
-  String get sleepTimerOff => 'Apagado';
+  String get sleepTimerOff => 'Off';
 
   @override
   String get minutesShort => 'min';

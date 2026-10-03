@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / ภาษา",
+  "languagePickerTitle": "ภาษา",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -209,7 +209,7 @@
   "@highContrastMode": {
     "description": "highContrastMode"
   },
-  "highContrastSubtitle": "Increase color contrast for people with low vision",
+  "highContrastSubtitle": "เพิ่มความต่างสีสำหรับผู้มีสายตาเลือนราง",
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
@@ -217,7 +217,7 @@
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
-  "screenReaderHintsSubtitle": "Provide more detail for TalkBack and VoiceOver",
+  "screenReaderHintsSubtitle": "ให้รายละเอียดเพิ่มเติมสำหรับ TalkBack และ VoiceOver",
   "@screenReaderHintsSubtitle": {
     "description": "screenReaderHintsSubtitle"
   },
@@ -237,7 +237,7 @@
   "@unlockAllLessons": {
     "description": "unlockAllLessons"
   },
-  "unlockAllLessonsSubtitle": "The guided path builds a strong foundation. Experienced learners can unlock every lesson.",
+  "unlockAllLessonsSubtitle": "เส้นทางแนะนำช่วยสร้างพื้นฐานที่มั่นคง ผู้เรียนที่มีประสบการณ์สามารถปลดล็อกทุกบทเรียนได้",
   "@unlockAllLessonsSubtitle": {
     "description": "unlockAllLessonsSubtitle"
   },
@@ -245,19 +245,19 @@
   "@resetProgress": {
     "description": "resetProgress"
   },
-  "resetProgressSubtitle": "Delete all study data",
+  "resetProgressSubtitle": "ลบข้อมูลการเรียนทั้งหมด",
   "@resetProgressSubtitle": {
     "description": "resetProgressSubtitle"
   },
-  "showDataWarningAgain": "Show data warning again",
+  "showDataWarningAgain": "แสดงคำเตือนข้อมูลอีกครั้ง",
   "@showDataWarningAgain": {
     "description": "showDataWarningAgain"
   },
-  "showDataWarningAgainSubtitle": "Restore the Matrix warning banner",
+  "showDataWarningAgainSubtitle": "คืนค่าแถบคำเตือนของตาราง",
   "@showDataWarningAgainSubtitle": {
     "description": "showDataWarningAgainSubtitle"
   },
-  "dataWarningEnabled": "Data warning enabled",
+  "dataWarningEnabled": "เปิดใช้คำเตือนข้อมูลแล้ว",
   "@dataWarningEnabled": {
     "description": "dataWarningEnabled"
   },
@@ -269,47 +269,47 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "Source material",
+  "sourceMaterial": "แหล่งข้อมูล",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
-  "sourceMaterialValue": "King Milanda A curriculum — Abhidhamma",
+  "sourceMaterialValue": "หลักสูตรพระเจ้ามิลินท์ A — อภิธรรม",
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "หลักการบรรณาธิการ",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
-  "resetProgressQuestion": "Reset progress?",
+  "resetProgressQuestion": "รีเซ็ตความคืบหน้าหรือไม่?",
   "@resetProgressQuestion": {
     "description": "resetProgressQuestion"
   },
-  "resetProgressWarning": "All study progress and quiz scores will be deleted. This action cannot be undone.",
+  "resetProgressWarning": "ความคืบหน้าและคะแนนแบบทดสอบทั้งหมดจะถูกลบ การกระทำนี้ไม่สามารถย้อนกลับได้",
   "@resetProgressWarning": {
     "description": "resetProgressWarning"
   },
-  "progressResetSuccess": "Study progress reset",
+  "progressResetSuccess": "รีเซ็ตความคืบหน้าการเรียนแล้ว",
   "@progressResetSuccess": {
     "description": "progressResetSuccess"
   },
-  "unlockLessonsQuestion": "Unlock all lessons?",
+  "unlockLessonsQuestion": "ปลดล็อกทุกบทเรียนหรือไม่?",
   "@unlockLessonsQuestion": {
     "description": "unlockLessonsQuestion"
   },
-  "unlockLessonsWarning": "The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.",
+  "unlockLessonsWarning": "เส้นทางแนะนำเป็นวิธีที่ดีที่สุดในการสร้างพื้นฐานอภิธรรมที่มั่นคง ตัวเลือกนี้เหมาะสำหรับผู้เรียนที่มีประสบการณ์",
   "@unlockLessonsWarning": {
     "description": "unlockLessonsWarning"
   },
-  "keepGuidedPath": "Keep guided path",
+  "keepGuidedPath": "คงเส้นทางแนะนำไว้",
   "@keepGuidedPath": {
     "description": "keepGuidedPath"
   },
-  "unlock": "Unlock",
+  "unlock": "ปลดล็อก",
   "@unlock": {
     "description": "unlock"
   },
-  "modulesCompleted": "{completed} / {total} modules completed",
+  "modulesCompleted": "เสร็จแล้ว {completed} / {total} โมดูล",
   "@modulesCompleted": {
     "description": "modulesCompleted",
     "placeholders": {
@@ -317,29 +317,29 @@
       "total": {}
     }
   },
-  "mostRecentModule": "Most recent module: {module}",
+  "mostRecentModule": "โมดูลล่าสุด: {module}",
   "@mostRecentModule": {
     "description": "mostRecentModule",
     "placeholders": {
       "module": {}
     }
   },
-  "lastStudied": "Last studied: {date}",
+  "lastStudied": "เรียนล่าสุด: {date}",
   "@lastStudied": {
     "description": "lastStudied",
     "placeholders": {
       "date": {}
     }
   },
-  "today": "Today",
+  "today": "วันนี้",
   "@today": {
     "description": "today"
   },
-  "yesterday": "Yesterday",
+  "yesterday": "เมื่อวาน",
   "@yesterday": {
     "description": "yesterday"
   },
-  "daysAgo": "{count} days ago",
+  "daysAgo": "{count} วันที่แล้ว",
   "@daysAgo": {
     "description": "daysAgo",
     "placeholders": {
@@ -401,7 +401,7 @@
   "@rotateScreen": {
     "description": "rotateScreen"
   },
-  "rotationHint": "If the screen does not rotate, enable Auto-rotate in device settings.",
+  "rotationHint": "หากหน้าจอไม่หมุน ให้เปิดหมุนอัตโนมัติในการตั้งค่าอุปกรณ์",
   "@rotationHint": {
     "description": "rotationHint"
   },
@@ -429,43 +429,43 @@
   "@cetasika": {
     "description": "cetasika"
   },
-  "unwholesome": "Unwholesome",
+  "unwholesome": "อกุศล",
   "@unwholesome": {
     "description": "unwholesome"
   },
-  "rootless": "Rootless",
+  "rootless": "อเหตุกะ",
   "@rootless": {
     "description": "rootless"
   },
-  "senseSphereBeautiful": "Sense-sphere beautiful",
+  "senseSphereBeautiful": "กามาวจรโสภณ",
   "@senseSphereBeautiful": {
     "description": "senseSphereBeautiful"
   },
-  "formSphere": "Form sphere",
+  "formSphere": "รูปาวจร",
   "@formSphere": {
     "description": "formSphere"
   },
-  "formlessSphere": "Formless sphere",
+  "formlessSphere": "อรูปาวจร",
   "@formlessSphere": {
     "description": "formlessSphere"
   },
-  "supramundane": "Supramundane",
+  "supramundane": "โลกุตตระ",
   "@supramundane": {
     "description": "supramundane"
   },
-  "legend": "Legend:",
+  "legend": "คำอธิบาย:",
   "@legend": {
     "description": "legend"
   },
-  "associationAlways": "Invariable",
+  "associationAlways": "เสมอ",
   "@associationAlways": {
     "description": "associationAlways"
   },
-  "associationSometimes": "Variable",
+  "associationSometimes": "บางครั้ง",
   "@associationSometimes": {
     "description": "associationSometimes"
   },
-  "associationNever": "Absent",
+  "associationNever": "ไม่มี",
   "@associationNever": {
     "description": "associationNever"
   },
@@ -476,35 +476,35 @@
       "count": {}
     }
   },
-  "matrixHelpTitle": "Matrix guide",
+  "matrixHelpTitle": "คู่มือตาราง",
   "@matrixHelpTitle": {
     "description": "matrixHelpTitle"
   },
-  "howToRead": "How to read:",
+  "howToRead": "วิธีอ่าน:",
   "@howToRead": {
     "description": "howToRead"
   },
-  "matrixHelpRead": "• Rows: Citta\n• Columns: Cetasika\n• Intersections: association",
+  "matrixHelpRead": "• แถว: จิต\n• คอลัมน์: เจตสิก\n• จุดตัด: ความสัมพันธ์",
   "@matrixHelpRead": {
     "description": "matrixHelpRead"
   },
-  "symbols": "Symbols:",
+  "symbols": "สัญลักษณ์:",
   "@symbols": {
     "description": "symbols"
   },
-  "matrixHelpSymbols": "✦ = Invariable\n◎ = Variable\n✕ = Absent",
+  "matrixHelpSymbols": "✦ = ประกอบเสมอ\n◎ = ประกอบเป็นบางครั้ง\n✕ = ไม่ประกอบ",
   "@matrixHelpSymbols": {
     "description": "matrixHelpSymbols"
   },
-  "tips": "Tips:",
+  "tips": "เคล็ดลับ:",
   "@tips": {
     "description": "tips"
   },
-  "matrixHelpTips": "• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space",
+  "matrixHelpTips": "• แตะจิตเพื่อดูรายละเอียด\n• แตะเจตสิกเพื่อดูข้อขัดกัน\n• ใช้ตัวกรองเพื่อจำกัดมุมมอง\n• หมุนหน้าจอเพื่อเพิ่มพื้นที่",
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
-  "understood": "Got it",
+  "understood": "เข้าใจแล้ว",
   "@understood": {
     "description": "understood"
   },
@@ -512,7 +512,7 @@
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
-  "allFilters": "All",
+  "allFilters": "ทั้งหมด",
   "@allFilters": {
     "description": "allFilters"
   },
@@ -532,68 +532,68 @@
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
-  "conditionDetails": "Dependent-origination details:",
+  "conditionDetails": "รายละเอียดปฏิจจสมุปบาท:",
   "@conditionDetails": {
     "description": "conditionDetails"
   },
-  "lastConditionDescription": "This is the final resultant link in this life-cycle and starts no new condition.",
+  "lastConditionDescription": "นี่คือองค์วิบากสุดท้ายในวงจรชีวิตนี้ และไม่เริ่มปัจจัยใหม่",
   "@lastConditionDescription": {
     "description": "lastConditionDescription"
   },
-  "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionLinkDescription": "• ปัจจัย: {effect}\n  คำอธิบาย: {explanation}",
+  "conditionsTabLinks": "องค์ 12",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "ปัจจัย 24",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
-  "paccayaTitle": "The 24 Conditional Relations (Patthana)",
+  "paccayaTitle": "ปัจจัย 24 (ปัฏฐาน)",
   "@paccayaTitle": {
     "description": "paccayaTitle"
   },
-  "paccayaIntro": "Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.",
+  "paccayaIntro": "ส่วน B ของ Paccaya-saṅgaha-vibhāga: ธรรมทั้งหลายเป็นปัจจัยแก่กันอย่างไร ส่วน A คือองค์ 12 แห่งปฏิจจสมุปบาท",
   "@paccayaIntro": {
     "description": "paccayaIntro"
   },
-  "paccayaDefinition": "Definition",
+  "paccayaDefinition": "คำนิยาม",
   "@paccayaDefinition": {
     "description": "paccayaDefinition"
   },
-  "paccayaConditioningStates": "Conditioning states (paccaya-dhamma)",
+  "paccayaConditioningStates": "ธรรมที่เป็นปัจจัย (paccaya-dhamma)",
   "@paccayaConditioningStates": {
     "description": "paccayaConditioningStates"
   },
-  "paccayaConditionedStates": "Conditioned states (paccayuppanna)",
+  "paccayaConditionedStates": "ธรรมที่ถูกปัจจัยปรุงแต่ง (paccayuppanna)",
   "@paccayaConditionedStates": {
     "description": "paccayaConditionedStates"
   },
-  "paccayaSubdivisions": "Subdivisions",
+  "paccayaSubdivisions": "หมวดย่อย",
   "@paccayaSubdivisions": {
     "description": "paccayaSubdivisions"
   },
-  "paccayaInPaticca": "Operates in these links",
+  "paccayaInPaticca": "ทำงานในองค์เหล่านี้",
   "@paccayaInPaticca": {
     "description": "paccayaInPaticca"
   },
-  "paccayaEmpty": "No condition matches this filter.",
+  "paccayaEmpty": "ไม่มีปัจจัยที่ตรงกับตัวกรองนี้",
   "@paccayaEmpty": {
     "description": "paccayaEmpty"
   },
-  "paccayaSearchHint": "Search a condition…",
+  "paccayaSearchHint": "ค้นหาปัจจัย…",
   "@paccayaSearchHint": {
     "description": "paccayaSearchHint"
   },
-  "paccayaSourceNotice": "Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.",
+  "paccayaSourceNotice": "แหล่งอ้างอิง: Paṭṭhāna (Abhidhamma Piṭaka VII) และ Visuddhimagga บทที่ XVII ยังไม่พบคัมภีร์ Pa-Auk ที่แจกแจงปัจจัย 24 รายการ คำศัพท์ยังรอการทบทวนจากผู้เชี่ยวชาญ",
   "@paccayaSourceNotice": {
     "description": "paccayaSourceNotice"
   },
-  "paccayaSources": "Sources",
+  "paccayaSources": "แหล่งอ้างอิง",
   "@paccayaSources": {
     "description": "paccayaSources"
   },
-  "paccayaCount": "{count} conditions",
+  "paccayaCount": "{count} ปัจจัย",
   "@paccayaCount": {
     "description": "paccayaCount",
     "placeholders": {
@@ -604,39 +604,39 @@
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
-  "paccayaGroupRootObject": "Root & object",
+  "paccayaGroupRootObject": "เหตุและอารมณ์",
   "@paccayaGroupRootObject": {
     "description": "paccayaGroupRootObject"
   },
-  "paccayaGroupContinuity": "Continuity",
+  "paccayaGroupContinuity": "ความต่อเนื่อง",
   "@paccayaGroupContinuity": {
     "description": "paccayaGroupContinuity"
   },
-  "paccayaGroupConascence": "Conascence & support",
+  "paccayaGroupConascence": "สหชาตและอุปถัมภ์",
   "@paccayaGroupConascence": {
     "description": "paccayaGroupConascence"
   },
-  "paccayaGroupTimeRelation": "Arising order",
+  "paccayaGroupTimeRelation": "ลำดับการเกิด",
   "@paccayaGroupTimeRelation": {
     "description": "paccayaGroupTimeRelation"
   },
-  "paccayaGroupKammaVipaka": "Kamma & result",
+  "paccayaGroupKammaVipaka": "กรรมและวิบาก",
   "@paccayaGroupKammaVipaka": {
     "description": "paccayaGroupKammaVipaka"
   },
-  "paccayaGroupGeneral": "General",
+  "paccayaGroupGeneral": "ทั่วไป",
   "@paccayaGroupGeneral": {
     "description": "paccayaGroupGeneral"
   },
-  "kiepPast": "Past life",
+  "kiepPast": "อดีตชาติ",
   "@kiepPast": {
     "description": "kiepPast"
   },
-  "kiepPresent": "This life",
+  "kiepPresent": "ชาตินี้",
   "@kiepPresent": {
     "description": "kiepPresent"
   },
-  "kiepFuture": "Future life",
+  "kiepFuture": "อนาคตชาติ",
   "@kiepFuture": {
     "description": "kiepFuture"
   },
@@ -813,11 +813,11 @@
       "state": {}
     }
   },
-  "selected": "Selected",
+  "selected": "เลือกแล้ว",
   "@selected": {
     "description": "selected"
   },
-  "dimmedByConflict": "Dimmed because of a conflict",
+  "dimmedByConflict": "จางลงเพราะมีข้อขัดกัน",
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
@@ -834,7 +834,7 @@
       "cetasikaId": {}
     }
   },
-  "tapForDetails": "Tap for details",
+  "tapForDetails": "แตะเพื่อดูรายละเอียด",
   "@tapForDetails": {
     "description": "tapForDetails"
   },

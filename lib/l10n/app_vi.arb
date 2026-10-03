@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / Ngôn ngữ",
+  "languagePickerTitle": "Ngôn ngữ",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },

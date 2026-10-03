@@ -124,7 +124,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get systemDefaultSubtitle => 'ใช้ภาษาที่เลือกไว้ในอุปกรณ์';
 
   @override
-  String get languagePickerTitle => 'Language / ภาษา';
+  String get languagePickerTitle => 'ภาษา';
 
   @override
   String get languagePickerSearchHint => 'ค้นหาชื่อหรือรหัสภาษา';
@@ -171,14 +171,14 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get highContrastSubtitle =>
-      'Increase color contrast for people with low vision';
+      'เพิ่มความต่างสีสำหรับผู้มีสายตาเลือนราง';
 
   @override
   String get screenReaderHints => 'Screen reader hints';
 
   @override
   String get screenReaderHintsSubtitle =>
-      'Provide more detail for TalkBack and VoiceOver';
+      'ให้รายละเอียดเพิ่มเติมสำหรับ TalkBack และ VoiceOver';
 
   @override
   String get textSize => 'ขนาดตัวอักษร';
@@ -194,23 +194,23 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get unlockAllLessonsSubtitle =>
-      'The guided path builds a strong foundation. Experienced learners can unlock every lesson.';
+      'เส้นทางแนะนำช่วยสร้างพื้นฐานที่มั่นคง ผู้เรียนที่มีประสบการณ์สามารถปลดล็อกทุกบทเรียนได้';
 
   @override
   String get resetProgress => 'รีเซ็ตความก้าวหน้า';
 
   @override
-  String get resetProgressSubtitle => 'Delete all study data';
+  String get resetProgressSubtitle => 'ลบข้อมูลการเรียนทั้งหมด';
 
   @override
-  String get showDataWarningAgain => 'Show data warning again';
+  String get showDataWarningAgain => 'แสดงคำเตือนข้อมูลอีกครั้ง';
 
   @override
   String get showDataWarningAgainSubtitle =>
-      'Restore the Matrix warning banner';
+      'คืนค่าแถบคำเตือนของตาราง';
 
   @override
-  String get dataWarningEnabled => 'Data warning enabled';
+  String get dataWarningEnabled => 'เปิดใช้คำเตือนข้อมูลแล้ว';
 
   @override
   String get aboutApp => 'เกี่ยวกับแอป';
@@ -219,61 +219,61 @@ class AppLocalizationsTh extends AppLocalizations {
   String get version => 'เวอร์ชัน';
 
   @override
-  String get sourceMaterial => 'Source material';
+  String get sourceMaterial => 'แหล่งข้อมูล';
 
   @override
-  String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
+  String get sourceMaterialValue => 'หลักสูตรพระเจ้ามิลินท์ A — อภิธรรม';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'หลักการบรรณาธิการ';
 
   @override
-  String get resetProgressQuestion => 'Reset progress?';
+  String get resetProgressQuestion => 'รีเซ็ตความคืบหน้าหรือไม่?';
 
   @override
   String get resetProgressWarning =>
-      'All study progress and quiz scores will be deleted. This action cannot be undone.';
+      'ความคืบหน้าและคะแนนแบบทดสอบทั้งหมดจะถูกลบ การกระทำนี้ไม่สามารถย้อนกลับได้';
 
   @override
-  String get progressResetSuccess => 'Study progress reset';
+  String get progressResetSuccess => 'รีเซ็ตความคืบหน้าการเรียนแล้ว';
 
   @override
-  String get unlockLessonsQuestion => 'Unlock all lessons?';
+  String get unlockLessonsQuestion => 'ปลดล็อกทุกบทเรียนหรือไม่?';
 
   @override
   String get unlockLessonsWarning =>
-      'The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.';
+      'เส้นทางแนะนำเป็นวิธีที่ดีที่สุดในการสร้างพื้นฐานอภิธรรมที่มั่นคง ตัวเลือกนี้เหมาะสำหรับผู้เรียนที่มีประสบการณ์';
 
   @override
-  String get keepGuidedPath => 'Keep guided path';
+  String get keepGuidedPath => 'คงเส้นทางแนะนำไว้';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'ปลดล็อก';
 
   @override
   String modulesCompleted(Object completed, Object total) {
-    return '$completed / $total modules completed';
+    return 'เสร็จแล้ว $completed / $total โมดูล';
   }
 
   @override
   String mostRecentModule(Object module) {
-    return 'Most recent module: $module';
+    return 'โมดูลล่าสุด: $module';
   }
 
   @override
   String lastStudied(Object date) {
-    return 'Last studied: $date';
+    return 'เรียนล่าสุด: $date';
   }
 
   @override
-  String get today => 'Today';
+  String get today => 'วันนี้';
 
   @override
-  String get yesterday => 'Yesterday';
+  String get yesterday => 'เมื่อวาน';
 
   @override
   String daysAgo(Object count) {
-    return '$count days ago';
+    return '$count วันที่แล้ว';
   }
 
   @override
@@ -322,7 +322,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get rotationHint =>
-      'If the screen does not rotate, enable Auto-rotate in device settings.';
+      'หากหน้าจอไม่หมุน ให้เปิดหมุนอัตโนมัติในการตั้งค่าอุปกรณ์';
 
   @override
   String get highContrast => 'ความต่างสีสูง';
@@ -343,34 +343,34 @@ class AppLocalizationsTh extends AppLocalizations {
   String get cetasika => 'เจตสิก';
 
   @override
-  String get unwholesome => 'Unwholesome';
+  String get unwholesome => 'อกุศล';
 
   @override
-  String get rootless => 'Rootless';
+  String get rootless => 'อเหตุกะ';
 
   @override
-  String get senseSphereBeautiful => 'Sense-sphere beautiful';
+  String get senseSphereBeautiful => 'กามาวจรโสภณ';
 
   @override
-  String get formSphere => 'Form sphere';
+  String get formSphere => 'รูปาวจร';
 
   @override
-  String get formlessSphere => 'Formless sphere';
+  String get formlessSphere => 'อรูปาวจร';
 
   @override
-  String get supramundane => 'Supramundane';
+  String get supramundane => 'โลกุตตระ';
 
   @override
-  String get legend => 'Legend:';
+  String get legend => 'คำอธิบาย:';
 
   @override
-  String get associationAlways => 'Invariable';
+  String get associationAlways => 'เสมอ';
 
   @override
-  String get associationSometimes => 'Variable';
+  String get associationSometimes => 'บางครั้ง';
 
   @override
-  String get associationNever => 'Absent';
+  String get associationNever => 'ไม่มี';
 
   @override
   String dataWarningsCount(Object count) {
@@ -378,36 +378,36 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get matrixHelpTitle => 'Matrix guide';
+  String get matrixHelpTitle => 'คู่มือตาราง';
 
   @override
-  String get howToRead => 'How to read:';
+  String get howToRead => 'วิธีอ่าน:';
 
   @override
   String get matrixHelpRead =>
-      '• Rows: Citta\n• Columns: Cetasika\n• Intersections: association';
+      '• แถว: จิต\n• คอลัมน์: เจตสิก\n• จุดตัด: ความสัมพันธ์';
 
   @override
-  String get symbols => 'Symbols:';
+  String get symbols => 'สัญลักษณ์:';
 
   @override
-  String get matrixHelpSymbols => '✦ = Invariable\n◎ = Variable\n✕ = Absent';
+  String get matrixHelpSymbols => '✦ = ประกอบเสมอ\n◎ = ประกอบเป็นบางครั้ง\n✕ = ไม่ประกอบ';
 
   @override
-  String get tips => 'Tips:';
+  String get tips => 'เคล็ดลับ:';
 
   @override
   String get matrixHelpTips =>
-      '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
+      '• แตะจิตเพื่อดูรายละเอียด\n• แตะเจตสิกเพื่อดูข้อขัดกัน\n• ใช้ตัวกรองเพื่อจำกัดมุมมอง\n• หมุนหน้าจอเพื่อเพิ่มพื้นที่';
 
   @override
-  String get understood => 'Got it';
+  String get understood => 'เข้าใจแล้ว';
 
   @override
   String get dataWarningTitle => 'Data warning';
 
   @override
-  String get allFilters => 'All';
+  String get allFilters => 'ทั้งหมด';
 
   @override
   String get defilements => 'Defilements';
@@ -422,93 +422,93 @@ class AppLocalizationsTh extends AppLocalizations {
   String get conditionsTitle => 'ปฏิจจสมุปบาท';
 
   @override
-  String get conditionDetails => 'Dependent-origination details:';
+  String get conditionDetails => 'รายละเอียดปฏิจจสมุปบาท:';
 
   @override
   String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
+      'นี่คือองค์วิบากสุดท้ายในวงจรชีวิตนี้ และไม่เริ่มปัจจัยใหม่';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
+    return '• ปัจจัย: $effect\n  คำอธิบาย: $explanation';
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => 'องค์ 12';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => 'ปัจจัย 24';
 
   @override
-  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+  String get paccayaTitle => 'ปัจจัย 24 (ปัฏฐาน)';
 
   @override
   String get paccayaIntro =>
-      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+      'ส่วน B ของ Paccaya-saṅgaha-vibhāga: ธรรมทั้งหลายเป็นปัจจัยแก่กันอย่างไร ส่วน A คือองค์ 12 แห่งปฏิจจสมุปบาท';
 
   @override
-  String get paccayaDefinition => 'Definition';
+  String get paccayaDefinition => 'คำนิยาม';
 
   @override
   String get paccayaConditioningStates =>
-      'Conditioning states (paccaya-dhamma)';
+      'ธรรมที่เป็นปัจจัย (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+  String get paccayaConditionedStates => 'ธรรมที่ถูกปัจจัยปรุงแต่ง (paccayuppanna)';
 
   @override
-  String get paccayaSubdivisions => 'Subdivisions';
+  String get paccayaSubdivisions => 'หมวดย่อย';
 
   @override
-  String get paccayaInPaticca => 'Operates in these links';
+  String get paccayaInPaticca => 'ทำงานในองค์เหล่านี้';
 
   @override
-  String get paccayaEmpty => 'No condition matches this filter.';
+  String get paccayaEmpty => 'ไม่มีปัจจัยที่ตรงกับตัวกรองนี้';
 
   @override
-  String get paccayaSearchHint => 'Search a condition…';
+  String get paccayaSearchHint => 'ค้นหาปัจจัย…';
 
   @override
   String get paccayaSourceNotice =>
-      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+      'แหล่งอ้างอิง: Paṭṭhāna (Abhidhamma Piṭaka VII) และ Visuddhimagga บทที่ XVII ยังไม่พบคัมภีร์ Pa-Auk ที่แจกแจงปัจจัย 24 รายการ คำศัพท์ยังรอการทบทวนจากผู้เชี่ยวชาญ';
 
   @override
-  String get paccayaSources => 'Sources';
+  String get paccayaSources => 'แหล่งอ้างอิง';
 
   @override
   String paccayaCount(Object count) {
-    return '$count conditions';
+    return '$count ปัจจัย';
   }
 
   @override
   String get relatedDhammas => 'Related dhammas';
 
   @override
-  String get paccayaGroupRootObject => 'Root & object';
+  String get paccayaGroupRootObject => 'เหตุและอารมณ์';
 
   @override
-  String get paccayaGroupContinuity => 'Continuity';
+  String get paccayaGroupContinuity => 'ความต่อเนื่อง';
 
   @override
-  String get paccayaGroupConascence => 'Conascence & support';
+  String get paccayaGroupConascence => 'สหชาตและอุปถัมภ์';
 
   @override
-  String get paccayaGroupTimeRelation => 'Arising order';
+  String get paccayaGroupTimeRelation => 'ลำดับการเกิด';
 
   @override
-  String get paccayaGroupKammaVipaka => 'Kamma & result';
+  String get paccayaGroupKammaVipaka => 'กรรมและวิบาก';
 
   @override
-  String get paccayaGroupGeneral => 'General';
+  String get paccayaGroupGeneral => 'ทั่วไป';
 
   @override
-  String get kiepPast => 'Past life';
+  String get kiepPast => 'อดีตชาติ';
 
   @override
-  String get kiepPresent => 'This life';
+  String get kiepPresent => 'ชาตินี้';
 
   @override
-  String get kiepFuture => 'Future life';
+  String get kiepFuture => 'อนาคตชาติ';
 
   @override
   String get kammaTitle => 'Kamma';
@@ -631,10 +631,10 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get selected => 'Selected';
+  String get selected => 'เลือกแล้ว';
 
   @override
-  String get dimmedByConflict => 'Dimmed because of a conflict';
+  String get dimmedByConflict => 'จางลงเพราะมีข้อขัดกัน';
 
   @override
   String get matrixCornerSemantics =>
@@ -647,7 +647,7 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get tapForDetails => 'Tap for details';
+  String get tapForDetails => 'แตะเพื่อดูรายละเอียด';
 
   @override
   String get studyPath => 'เส้นทางการเรียน';
@@ -1082,7 +1082,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get resumeListening => 'ฟังต่อ';
 
   @override
-  String get continueListening => 'ฟังต่อ';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => 'ตั้งเวลาปิด';

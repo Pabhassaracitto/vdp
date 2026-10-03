@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / ភាសា",
+  "languagePickerTitle": "ភាសា",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -269,7 +269,7 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "Source material",
+  "sourceMaterial": "ឯកសារប្រភព",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "គោលការណ៍កែសម្រួល",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -528,7 +528,7 @@
   "@result": {
     "description": "result"
   },
-  "conditionsTitle": "Dependent Origination",
+  "conditionsTitle": "បដិច្ចសមុប្បាទ",
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "១២ ខ្សែតំណ",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "២៤ បច្ច័យ",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
@@ -651,7 +651,7 @@
   "@kammaTitle": {
     "description": "kammaTitle"
   },
-  "mindProcessTitle": "Mind Process",
+  "mindProcessTitle": "ដំណើរចិត្ត",
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },

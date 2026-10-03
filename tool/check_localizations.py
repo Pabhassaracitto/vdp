@@ -36,6 +36,27 @@ def main() -> int:
 
     template = json.loads((L10N / "app_en.arb").read_text(encoding="utf-8"))
     template_messages = messages(template)
+    issue_keys_all_locales = {
+        "languagePickerTitle",
+        "conditionsTabLinks",
+        "conditionsTabPaccaya",
+        "editorialPrinciples",
+        "sourceMaterial",
+    }
+    priority_issue_locales = {"hi", "zh", "zh_TW", "si", "my", "ja", "th"}
+    priority_issue_keys = issue_keys_all_locales | {
+        "matrixHelpTitle",
+        "matrixHelpRead",
+        "matrixHelpSymbols",
+        "matrixHelpTips",
+        "paccayaTitle",
+        "paccayaIntro",
+        "paccayaSourceNotice",
+        "highContrastSubtitle",
+        "screenReaderHintsSubtitle",
+        "unlockAllLessonsSubtitle",
+        "resetProgressWarning",
+    }
     for path in files:
         data = json.loads(path.read_text(encoding="utf-8"))
         locale = data.get("@@locale", path.stem)
@@ -48,6 +69,10 @@ def main() -> int:
                 errors.append(f"{locale}.{key}: placeholder mismatch")
             if not target.strip():
                 errors.append(f"{locale}.{key}: empty translation")
+            if locale != "en" and key in issue_keys_all_locales and target == source:
+                errors.append(f"{locale}.{key}: V1.9.2 language issue key still falls back to English")
+            if locale in priority_issue_locales and key in priority_issue_keys and target == source:
+                errors.append(f"{locale}.{key}: priority language issue key still falls back to English")
 
     content = json.loads(
         (ROOT / "assets" / "content" / "content_en.json").read_text(encoding="utf-8")

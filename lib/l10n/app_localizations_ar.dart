@@ -124,7 +124,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get systemDefaultSubtitle => 'استخدام اللغة المحددة على هذا الجهاز';
 
   @override
-  String get languagePickerTitle => 'Language / اللغة';
+  String get languagePickerTitle => 'اللغة';
 
   @override
   String get languagePickerSearchHint => 'ابحث باسم اللغة أو رمزها';
@@ -225,7 +225,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'مبادئ التحرير';
 
   @override
   String get resetProgressQuestion => 'Reset progress?';
@@ -419,7 +419,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get result => 'النتيجة';
 
   @override
-  String get conditionsTitle => 'النشوء الاعتمادي';
+  String get conditionsTitle => 'النشوء المعتمد';
 
   @override
   String get conditionDetails => 'Dependent-origination details:';
@@ -434,10 +434,10 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '١٢ حلقة';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '٢٤ شرطًا';
 
   @override
   String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
@@ -514,7 +514,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get kammaTitle => 'Kamma';
 
   @override
-  String get mindProcessTitle => 'مسار الذهن';
+  String get mindProcessTitle => 'عملية الذهن';
 
   @override
   String get paliLabel => 'Pāḷi:';
@@ -1083,13 +1083,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get resumeListening => 'متابعة الاستماع';
 
   @override
-  String get continueListening => 'متابعة الاستماع';
+  String get continueListening => 'Continue listening';
 
   @override
-  String get sleepTimer => 'مؤقت النوم';
+  String get sleepTimer => 'Sleep timer';
 
   @override
-  String get sleepTimerOff => 'إيقاف';
+  String get sleepTimerOff => 'Off';
 
   @override
   String get minutesShort => 'دقيقة';

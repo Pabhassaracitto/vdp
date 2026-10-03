@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / སྐད་ཡིག",
+  "languagePickerTitle": "སྐད་ཡིག",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -269,7 +269,7 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "Source material",
+  "sourceMaterial": "ཁུངས་ཀྱི་རྒྱུ་ཆ།",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
@@ -277,7 +277,7 @@
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "རྩོམ་སྒྲིག་གི་རྩ་འཛིན།",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
@@ -528,7 +528,7 @@
   "@result": {
     "description": "result"
   },
-  "conditionsTitle": "Dependent Origination",
+  "conditionsTitle": "རྟེན་འབྲེལ།",
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
@@ -541,11 +541,11 @@
     "description": "lastConditionDescription"
   },
   "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionsTabLinks": "ཡན་ལག་༡༢",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "རྐྱེན་༢༤",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
@@ -651,7 +651,7 @@
   "@kammaTitle": {
     "description": "kammaTitle"
   },
-  "mindProcessTitle": "Mind Process",
+  "mindProcessTitle": "སེམས་ཀྱི་རྒྱུན་རིམ།",
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },

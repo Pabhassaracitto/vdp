@@ -124,7 +124,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get systemDefaultSubtitle => '使用此设备选择的语言';
 
   @override
-  String get languagePickerTitle => 'Language / 语言';
+  String get languagePickerTitle => '语言';
 
   @override
   String get languagePickerSearchHint => '按语言名称或代码搜索';
@@ -169,14 +169,14 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get highContrastSubtitle =>
-      'Increase color contrast for people with low vision';
+      '提高色彩对比度，方便低视力用户';
 
   @override
   String get screenReaderHints => '屏幕阅读器提示';
 
   @override
   String get screenReaderHintsSubtitle =>
-      'Provide more detail for TalkBack and VoiceOver';
+      '为 TalkBack 和 VoiceOver 提供更多细节';
 
   @override
   String get textSize => '字体大小';
@@ -192,23 +192,23 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get unlockAllLessonsSubtitle =>
-      'The guided path builds a strong foundation. Experienced learners can unlock every lesson.';
+      '引导路径能建立坚实基础。有经验的学习者可以解锁所有课程。';
 
   @override
   String get resetProgress => '重置进度';
 
   @override
-  String get resetProgressSubtitle => 'Delete all study data';
+  String get resetProgressSubtitle => '删除所有学习数据';
 
   @override
-  String get showDataWarningAgain => 'Show data warning again';
+  String get showDataWarningAgain => '再次显示数据警告';
 
   @override
   String get showDataWarningAgainSubtitle =>
-      'Restore the Matrix warning banner';
+      '恢复矩阵警告横幅';
 
   @override
-  String get dataWarningEnabled => 'Data warning enabled';
+  String get dataWarningEnabled => '数据警告已启用';
 
   @override
   String get aboutApp => '关于';
@@ -217,61 +217,61 @@ class AppLocalizationsZh extends AppLocalizations {
   String get version => '版本';
 
   @override
-  String get sourceMaterial => '资料来源';
+  String get sourceMaterial => '来源资料';
 
   @override
-  String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
+  String get sourceMaterialValue => 'Milanda 国王 A 课程 — 阿毗达摩';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => '编审原则';
 
   @override
-  String get resetProgressQuestion => 'Reset progress?';
+  String get resetProgressQuestion => '重置进度？';
 
   @override
   String get resetProgressWarning =>
-      'All study progress and quiz scores will be deleted. This action cannot be undone.';
+      '所有学习进度和测验分数都会被删除。此操作无法撤销。';
 
   @override
-  String get progressResetSuccess => 'Study progress reset';
+  String get progressResetSuccess => '学习进度已重置';
 
   @override
-  String get unlockLessonsQuestion => 'Unlock all lessons?';
+  String get unlockLessonsQuestion => '解锁所有课程？';
 
   @override
   String get unlockLessonsWarning =>
-      'The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.';
+      '引导路径是建立扎实阿毗达摩基础的最佳方式。此选项适合有经验的学习者。';
 
   @override
-  String get keepGuidedPath => 'Keep guided path';
+  String get keepGuidedPath => '保留引导路径';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => '解锁';
 
   @override
   String modulesCompleted(Object completed, Object total) {
-    return '$completed / $total modules completed';
+    return '已完成 $completed / $total 个模块';
   }
 
   @override
   String mostRecentModule(Object module) {
-    return 'Most recent module: $module';
+    return '最近模块：$module';
   }
 
   @override
   String lastStudied(Object date) {
-    return 'Last studied: $date';
+    return '上次学习：$date';
   }
 
   @override
-  String get today => 'Today';
+  String get today => '今天';
 
   @override
-  String get yesterday => 'Yesterday';
+  String get yesterday => '昨天';
 
   @override
   String daysAgo(Object count) {
-    return '$count days ago';
+    return '$count 天前';
   }
 
   @override
@@ -320,7 +320,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get rotationHint =>
-      'If the screen does not rotate, enable Auto-rotate in device settings.';
+      '如果屏幕没有旋转，请在设备设置中启用自动旋转。';
 
   @override
   String get highContrast => '高对比度';
@@ -341,34 +341,34 @@ class AppLocalizationsZh extends AppLocalizations {
   String get cetasika => '心所';
 
   @override
-  String get unwholesome => 'Unwholesome';
+  String get unwholesome => '不善';
 
   @override
-  String get rootless => 'Rootless';
+  String get rootless => '无因';
 
   @override
-  String get senseSphereBeautiful => 'Sense-sphere beautiful';
+  String get senseSphereBeautiful => '欲界美心';
 
   @override
-  String get formSphere => 'Form sphere';
+  String get formSphere => '色界';
 
   @override
-  String get formlessSphere => 'Formless sphere';
+  String get formlessSphere => '无色界';
 
   @override
-  String get supramundane => 'Supramundane';
+  String get supramundane => '出世间';
 
   @override
-  String get legend => 'Legend:';
+  String get legend => '图例：';
 
   @override
-  String get associationAlways => 'Invariable';
+  String get associationAlways => '恒常';
 
   @override
-  String get associationSometimes => 'Variable';
+  String get associationSometimes => '不定';
 
   @override
-  String get associationNever => 'Absent';
+  String get associationNever => '无';
 
   @override
   String dataWarningsCount(Object count) {
@@ -376,36 +376,36 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get matrixHelpTitle => 'Matrix guide';
+  String get matrixHelpTitle => '矩阵指南';
 
   @override
-  String get howToRead => 'How to read:';
+  String get howToRead => '阅读方式：';
 
   @override
   String get matrixHelpRead =>
-      '• Rows: Citta\n• Columns: Cetasika\n• Intersections: association';
+      '• 行：心\n• 列：心所\n• 交叉处：相应关系';
 
   @override
-  String get symbols => 'Symbols:';
+  String get symbols => '符号：';
 
   @override
-  String get matrixHelpSymbols => '✦ = Invariable\n◎ = Variable\n✕ = Absent';
+  String get matrixHelpSymbols => '✦ = 恒常相应\n◎ = 不定相应\n✕ = 不相应';
 
   @override
-  String get tips => 'Tips:';
+  String get tips => '提示：';
 
   @override
   String get matrixHelpTips =>
-      '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
+      '• 点按一个心查看详情\n• 点按一个心所查看冲突\n• 使用筛选缩小范围\n• 旋转屏幕获得更多空间';
 
   @override
-  String get understood => 'Got it';
+  String get understood => '明白了';
 
   @override
   String get dataWarningTitle => 'Data warning';
 
   @override
-  String get allFilters => 'All';
+  String get allFilters => '全部';
 
   @override
   String get defilements => 'Defilements';
@@ -420,93 +420,93 @@ class AppLocalizationsZh extends AppLocalizations {
   String get conditionsTitle => '缘起';
 
   @override
-  String get conditionDetails => 'Dependent-origination details:';
+  String get conditionDetails => '缘起详情：';
 
   @override
   String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
+      '这是此生命循环中的最后果报支，不再开启新的条件。';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
+    return '• 条件：$effect\n  说明：$explanation';
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '十二支';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '二十四缘';
 
   @override
-  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+  String get paccayaTitle => '二十四缘（发趣论）';
 
   @override
   String get paccayaIntro =>
-      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+      '《缘摄分别》的 B 部分：诸法如何互为条件。A 部分是缘起十二支。';
 
   @override
-  String get paccayaDefinition => 'Definition';
+  String get paccayaDefinition => '定义';
 
   @override
   String get paccayaConditioningStates =>
-      'Conditioning states (paccaya-dhamma)';
+      '能缘法 (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+  String get paccayaConditionedStates => '所缘起法 (paccayuppanna)';
 
   @override
-  String get paccayaSubdivisions => 'Subdivisions';
+  String get paccayaSubdivisions => '细分';
 
   @override
-  String get paccayaInPaticca => 'Operates in these links';
+  String get paccayaInPaticca => '作用于这些支';
 
   @override
-  String get paccayaEmpty => 'No condition matches this filter.';
+  String get paccayaEmpty => '没有符合此筛选的缘。';
 
   @override
-  String get paccayaSearchHint => 'Search a condition…';
+  String get paccayaSearchHint => '搜索一个缘…';
 
   @override
   String get paccayaSourceNotice =>
-      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+      '来源：《发趣论》（阿毗达摩藏第七）与《清净道论》第 XVII 章。未见 Pa-Auk 文献逐项列出二十四缘；术语仍待资深审校。';
 
   @override
-  String get paccayaSources => 'Sources';
+  String get paccayaSources => '来源';
 
   @override
   String paccayaCount(Object count) {
-    return '$count conditions';
+    return '$count 个缘';
   }
 
   @override
   String get relatedDhammas => 'Related dhammas';
 
   @override
-  String get paccayaGroupRootObject => 'Root & object';
+  String get paccayaGroupRootObject => '根与所缘';
 
   @override
-  String get paccayaGroupContinuity => 'Continuity';
+  String get paccayaGroupContinuity => '相续';
 
   @override
-  String get paccayaGroupConascence => 'Conascence & support';
+  String get paccayaGroupConascence => '俱生与依止';
 
   @override
-  String get paccayaGroupTimeRelation => 'Arising order';
+  String get paccayaGroupTimeRelation => '生起次第';
 
   @override
-  String get paccayaGroupKammaVipaka => 'Kamma & result';
+  String get paccayaGroupKammaVipaka => '业与果';
 
   @override
-  String get paccayaGroupGeneral => 'General';
+  String get paccayaGroupGeneral => '通用';
 
   @override
-  String get kiepPast => 'Past life';
+  String get kiepPast => '过去生';
 
   @override
-  String get kiepPresent => 'This life';
+  String get kiepPresent => '今生';
 
   @override
-  String get kiepFuture => 'Future life';
+  String get kiepFuture => '未来生';
 
   @override
   String get kammaTitle => 'Kamma';
@@ -629,10 +629,10 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get selected => 'Selected';
+  String get selected => '已选择';
 
   @override
-  String get dimmedByConflict => 'Dimmed because of a conflict';
+  String get dimmedByConflict => '因冲突而淡化';
 
   @override
   String get matrixCornerSemantics =>
@@ -645,7 +645,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get tapForDetails => 'Tap for details';
+  String get tapForDetails => '点按查看详情';
 
   @override
   String get studyPath => '学习路径';
@@ -1080,7 +1080,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get resumeListening => '继续收听';
 
   @override
-  String get continueListening => '继续收听';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => '睡眠定时器';
@@ -1253,7 +1253,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get systemDefaultSubtitle => '使用此裝置選擇的語言';
 
   @override
-  String get languagePickerTitle => 'Language / 語言';
+  String get languagePickerTitle => '語言';
 
   @override
   String get languagePickerSearchHint => '依語言名稱或代碼搜尋';
@@ -1298,14 +1298,14 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get highContrastSubtitle =>
-      'Increase color contrast for people with low vision';
+      '提高色彩對比度，方便低視力使用者';
 
   @override
   String get screenReaderHints => '螢幕閱讀器提示';
 
   @override
   String get screenReaderHintsSubtitle =>
-      'Provide more detail for TalkBack and VoiceOver';
+      '為 TalkBack 和 VoiceOver 提供更多細節';
 
   @override
   String get textSize => '字體大小';
@@ -1321,23 +1321,23 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get unlockAllLessonsSubtitle =>
-      'The guided path builds a strong foundation. Experienced learners can unlock every lesson.';
+      '引導路徑能建立堅實基礎。有經驗的學習者可以解鎖所有課程。';
 
   @override
   String get resetProgress => '重設進度';
 
   @override
-  String get resetProgressSubtitle => 'Delete all study data';
+  String get resetProgressSubtitle => '刪除所有學習資料';
 
   @override
-  String get showDataWarningAgain => 'Show data warning again';
+  String get showDataWarningAgain => '再次顯示資料警告';
 
   @override
   String get showDataWarningAgainSubtitle =>
-      'Restore the Matrix warning banner';
+      '恢復矩陣警告橫幅';
 
   @override
-  String get dataWarningEnabled => 'Data warning enabled';
+  String get dataWarningEnabled => '資料警告已啟用';
 
   @override
   String get aboutApp => '關於';
@@ -1346,61 +1346,61 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get version => '版本';
 
   @override
-  String get sourceMaterial => '資料來源';
+  String get sourceMaterial => '來源資料';
 
   @override
-  String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
+  String get sourceMaterialValue => 'Milanda 國王 A 課程 — 阿毘達摩';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => '編審原則';
 
   @override
-  String get resetProgressQuestion => 'Reset progress?';
+  String get resetProgressQuestion => '重置進度？';
 
   @override
   String get resetProgressWarning =>
-      'All study progress and quiz scores will be deleted. This action cannot be undone.';
+      '所有學習進度和測驗分數都會被刪除。此操作無法復原。';
 
   @override
-  String get progressResetSuccess => 'Study progress reset';
+  String get progressResetSuccess => '學習進度已重置';
 
   @override
-  String get unlockLessonsQuestion => 'Unlock all lessons?';
+  String get unlockLessonsQuestion => '解鎖所有課程？';
 
   @override
   String get unlockLessonsWarning =>
-      'The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.';
+      '引導路徑是建立扎實阿毘達摩基礎的最佳方式。此選項適合有經驗的學習者。';
 
   @override
-  String get keepGuidedPath => 'Keep guided path';
+  String get keepGuidedPath => '保留引導路徑';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => '解鎖';
 
   @override
   String modulesCompleted(Object completed, Object total) {
-    return '$completed / $total modules completed';
+    return '已完成 $completed / $total 個模組';
   }
 
   @override
   String mostRecentModule(Object module) {
-    return 'Most recent module: $module';
+    return '最近模組：$module';
   }
 
   @override
   String lastStudied(Object date) {
-    return 'Last studied: $date';
+    return '上次學習：$date';
   }
 
   @override
-  String get today => 'Today';
+  String get today => '今天';
 
   @override
-  String get yesterday => 'Yesterday';
+  String get yesterday => '昨天';
 
   @override
   String daysAgo(Object count) {
-    return '$count days ago';
+    return '$count 天前';
   }
 
   @override
@@ -1449,7 +1449,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get rotationHint =>
-      'If the screen does not rotate, enable Auto-rotate in device settings.';
+      '如果螢幕沒有旋轉，請在裝置設定中啟用自動旋轉。';
 
   @override
   String get highContrast => '高對比';
@@ -1470,34 +1470,34 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get cetasika => '心所';
 
   @override
-  String get unwholesome => 'Unwholesome';
+  String get unwholesome => '不善';
 
   @override
-  String get rootless => 'Rootless';
+  String get rootless => '無因';
 
   @override
-  String get senseSphereBeautiful => 'Sense-sphere beautiful';
+  String get senseSphereBeautiful => '欲界美心';
 
   @override
-  String get formSphere => 'Form sphere';
+  String get formSphere => '色界';
 
   @override
-  String get formlessSphere => 'Formless sphere';
+  String get formlessSphere => '無色界';
 
   @override
-  String get supramundane => 'Supramundane';
+  String get supramundane => '出世間';
 
   @override
-  String get legend => 'Legend:';
+  String get legend => '圖例：';
 
   @override
-  String get associationAlways => 'Invariable';
+  String get associationAlways => '恆常';
 
   @override
-  String get associationSometimes => 'Variable';
+  String get associationSometimes => '不定';
 
   @override
-  String get associationNever => 'Absent';
+  String get associationNever => '無';
 
   @override
   String dataWarningsCount(Object count) {
@@ -1505,36 +1505,36 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get matrixHelpTitle => 'Matrix guide';
+  String get matrixHelpTitle => '矩陣指南';
 
   @override
-  String get howToRead => 'How to read:';
+  String get howToRead => '閱讀方式：';
 
   @override
   String get matrixHelpRead =>
-      '• Rows: Citta\n• Columns: Cetasika\n• Intersections: association';
+      '• 行：心\n• 列：心所\n• 交叉處：相應關係';
 
   @override
-  String get symbols => 'Symbols:';
+  String get symbols => '符號：';
 
   @override
-  String get matrixHelpSymbols => '✦ = Invariable\n◎ = Variable\n✕ = Absent';
+  String get matrixHelpSymbols => '✦ = 恆常相應\n◎ = 不定相應\n✕ = 不相應';
 
   @override
-  String get tips => 'Tips:';
+  String get tips => '提示：';
 
   @override
   String get matrixHelpTips =>
-      '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
+      '• 點按一個心查看詳情\n• 點按一個心所查看衝突\n• 使用篩選縮小範圍\n• 旋轉螢幕獲得更多空間';
 
   @override
-  String get understood => 'Got it';
+  String get understood => '明白了';
 
   @override
   String get dataWarningTitle => 'Data warning';
 
   @override
-  String get allFilters => 'All';
+  String get allFilters => '全部';
 
   @override
   String get defilements => 'Defilements';
@@ -1549,93 +1549,93 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get conditionsTitle => '緣起';
 
   @override
-  String get conditionDetails => 'Dependent-origination details:';
+  String get conditionDetails => '緣起詳情：';
 
   @override
   String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
+      '這是此生命循環中的最後果報支，不再開啟新的條件。';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
+    return '• 條件：$effect\n  說明：$explanation';
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '十二支';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '二十四緣';
 
   @override
-  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+  String get paccayaTitle => '二十四緣（發趣論）';
 
   @override
   String get paccayaIntro =>
-      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+      '《緣攝分別》的 B 部分：諸法如何互為條件。A 部分是緣起十二支。';
 
   @override
-  String get paccayaDefinition => 'Definition';
+  String get paccayaDefinition => '定義';
 
   @override
   String get paccayaConditioningStates =>
-      'Conditioning states (paccaya-dhamma)';
+      '能緣法 (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+  String get paccayaConditionedStates => '所緣起法 (paccayuppanna)';
 
   @override
-  String get paccayaSubdivisions => 'Subdivisions';
+  String get paccayaSubdivisions => '細分';
 
   @override
-  String get paccayaInPaticca => 'Operates in these links';
+  String get paccayaInPaticca => '作用於這些支';
 
   @override
-  String get paccayaEmpty => 'No condition matches this filter.';
+  String get paccayaEmpty => '沒有符合此篩選的緣。';
 
   @override
-  String get paccayaSearchHint => 'Search a condition…';
+  String get paccayaSearchHint => '搜尋一個緣…';
 
   @override
   String get paccayaSourceNotice =>
-      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+      '來源：《發趣論》（阿毘達摩藏第七）與《清淨道論》第 XVII 章。未見 Pa-Auk 文獻逐項列出二十四緣；術語仍待資深審校。';
 
   @override
-  String get paccayaSources => 'Sources';
+  String get paccayaSources => '來源';
 
   @override
   String paccayaCount(Object count) {
-    return '$count conditions';
+    return '$count 個緣';
   }
 
   @override
   String get relatedDhammas => 'Related dhammas';
 
   @override
-  String get paccayaGroupRootObject => 'Root & object';
+  String get paccayaGroupRootObject => '根與所緣';
 
   @override
-  String get paccayaGroupContinuity => 'Continuity';
+  String get paccayaGroupContinuity => '相續';
 
   @override
-  String get paccayaGroupConascence => 'Conascence & support';
+  String get paccayaGroupConascence => '俱生與依止';
 
   @override
-  String get paccayaGroupTimeRelation => 'Arising order';
+  String get paccayaGroupTimeRelation => '生起次第';
 
   @override
-  String get paccayaGroupKammaVipaka => 'Kamma & result';
+  String get paccayaGroupKammaVipaka => '業與果';
 
   @override
-  String get paccayaGroupGeneral => 'General';
+  String get paccayaGroupGeneral => '通用';
 
   @override
-  String get kiepPast => 'Past life';
+  String get kiepPast => '過去生';
 
   @override
-  String get kiepPresent => 'This life';
+  String get kiepPresent => '今生';
 
   @override
-  String get kiepFuture => 'Future life';
+  String get kiepFuture => '未來生';
 
   @override
   String get kammaTitle => 'Kamma';
@@ -1758,10 +1758,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get selected => 'Selected';
+  String get selected => '已選擇';
 
   @override
-  String get dimmedByConflict => 'Dimmed because of a conflict';
+  String get dimmedByConflict => '因衝突而淡化';
 
   @override
   String get matrixCornerSemantics =>
@@ -1774,7 +1774,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get tapForDetails => 'Tap for details';
+  String get tapForDetails => '點按查看詳情';
 
   @override
   String get studyPath => '學習路徑';

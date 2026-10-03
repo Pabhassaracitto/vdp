@@ -78,9 +78,11 @@ class ContentLanguage {
   /// Whether the learner should be warned that the text is provisional.
   bool get needsReviewWarning => status == ContentTranslationStatus.draft;
 
-  /// Short, deliberately untranslated badge shown next to provisional
-  /// languages. Kept as an ASCII token so it needs no ARB key in 26 locales
-  /// and renders in every bundled font subset.
+  /// Machine-stable status badge for tests, logs and non-UI code.
+  ///
+  /// UI surfaces localize the visible draft badge at the call site because this
+  /// model has no BuildContext and must not leak an English token into
+  /// non-English settings screens.
   String? get statusBadge => switch (status) {
         ContentTranslationStatus.draft => 'DRAFT',
         ContentTranslationStatus.source ||
@@ -89,11 +91,9 @@ class ContentLanguage {
           null,
       };
 
-  /// Recovery-safe label: endonym plus a Latin-script name and the tag, so it
-  /// is identifiable even when the surrounding UI is in an unreadable script.
-  String get safeDisplayName => nativeName == englishName
-      ? '$nativeName (${tag.toUpperCase()})'
-      : '$nativeName · $englishName (${tag.toUpperCase()})';
+  /// Recovery-safe label: endonym plus locale tag. English names remain
+  /// searchable through [matches], but are not rendered into a non-English UI.
+  String get safeDisplayName => '$nativeName (${tag.toUpperCase()})';
 
   bool matches(String rawQuery) {
     final query = rawQuery.trim().toLowerCase();

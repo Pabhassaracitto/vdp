@@ -151,7 +151,7 @@
   "@systemDefaultSubtitle": {
     "description": "systemDefaultSubtitle"
   },
-  "languagePickerTitle": "Language / භාෂාව",
+  "languagePickerTitle": "භාෂාව",
   "@languagePickerTitle": {
     "description": "languagePickerTitle"
   },
@@ -209,7 +209,7 @@
   "@highContrastMode": {
     "description": "highContrastMode"
   },
-  "highContrastSubtitle": "Increase color contrast for people with low vision",
+  "highContrastSubtitle": "අඩු දැක්මක් ඇති පුද්ගලයන් සඳහා වර්ණ ප්‍රතිවිරෝධතාව වැඩි කරන්න",
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
@@ -217,7 +217,7 @@
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
-  "screenReaderHintsSubtitle": "Provide more detail for TalkBack and VoiceOver",
+  "screenReaderHintsSubtitle": "TalkBack සහ VoiceOver සඳහා වැඩි විස්තර ලබා දෙන්න",
   "@screenReaderHintsSubtitle": {
     "description": "screenReaderHintsSubtitle"
   },
@@ -237,7 +237,7 @@
   "@unlockAllLessons": {
     "description": "unlockAllLessons"
   },
-  "unlockAllLessonsSubtitle": "The guided path builds a strong foundation. Experienced learners can unlock every lesson.",
+  "unlockAllLessonsSubtitle": "මාර්ගෝපදේශිත මාර්ගය ශක්තිමත් පදනමක් ගොඩනගයි. පළපුරුදු ඉගෙනුම්කරුවන්ට සියලු පාඩම් විවෘත කළ හැක.",
   "@unlockAllLessonsSubtitle": {
     "description": "unlockAllLessonsSubtitle"
   },
@@ -245,19 +245,19 @@
   "@resetProgress": {
     "description": "resetProgress"
   },
-  "resetProgressSubtitle": "Delete all study data",
+  "resetProgressSubtitle": "සියලු අධ්‍යයන දත්ත මකන්න",
   "@resetProgressSubtitle": {
     "description": "resetProgressSubtitle"
   },
-  "showDataWarningAgain": "Show data warning again",
+  "showDataWarningAgain": "දත්ත අනතුරු ඇඟවීම නැවත පෙන්වන්න",
   "@showDataWarningAgain": {
     "description": "showDataWarningAgain"
   },
-  "showDataWarningAgainSubtitle": "Restore the Matrix warning banner",
+  "showDataWarningAgainSubtitle": "න්‍යාස අනතුරු ඇඟවීම් පටිය නැවත පෙන්වන්න",
   "@showDataWarningAgainSubtitle": {
     "description": "showDataWarningAgainSubtitle"
   },
-  "dataWarningEnabled": "Data warning enabled",
+  "dataWarningEnabled": "දත්ත අනතුරු ඇඟවීම සක්‍රීයයි",
   "@dataWarningEnabled": {
     "description": "dataWarningEnabled"
   },
@@ -269,47 +269,47 @@
   "@version": {
     "description": "version"
   },
-  "sourceMaterial": "මූලාශ්‍රය",
+  "sourceMaterial": "මූලාශ්‍ර ද්‍රව්‍ය",
   "@sourceMaterial": {
     "description": "sourceMaterial"
   },
-  "sourceMaterialValue": "King Milanda A curriculum — Abhidhamma",
+  "sourceMaterialValue": "මිලින්ද රජු A පාඨමාලාව — අභිධම්ම",
   "@sourceMaterialValue": {
     "description": "sourceMaterialValue"
   },
-  "editorialPrinciples": "Editorial principles",
+  "editorialPrinciples": "සංස්කරණ මූලධර්ම",
   "@editorialPrinciples": {
     "description": "editorialPrinciples"
   },
-  "resetProgressQuestion": "Reset progress?",
+  "resetProgressQuestion": "ප්‍රගතිය නැවත සකසන්නද?",
   "@resetProgressQuestion": {
     "description": "resetProgressQuestion"
   },
-  "resetProgressWarning": "All study progress and quiz scores will be deleted. This action cannot be undone.",
+  "resetProgressWarning": "සියලු අධ්‍යයන ප්‍රගතිය සහ ප්‍රශ්න ලකුණු මකනු ලැබේ. මෙය ආපසු හැරවිය නොහැක.",
   "@resetProgressWarning": {
     "description": "resetProgressWarning"
   },
-  "progressResetSuccess": "Study progress reset",
+  "progressResetSuccess": "අධ්‍යයන ප්‍රගතිය නැවත සකසා ඇත",
   "@progressResetSuccess": {
     "description": "progressResetSuccess"
   },
-  "unlockLessonsQuestion": "Unlock all lessons?",
+  "unlockLessonsQuestion": "සියලු පාඩම් විවෘත කරන්නද?",
   "@unlockLessonsQuestion": {
     "description": "unlockLessonsQuestion"
   },
-  "unlockLessonsWarning": "The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.",
+  "unlockLessonsWarning": "මාර්ගෝපදේශිත මාර්ගය ශක්තිමත් අභිධම්ම පදනමක් ගොඩනැගීමට හොඳම ක්‍රමයයි. මෙම විකල්පය පළපුරුදු ඉගෙනුම්කරුවන් සඳහාය.",
   "@unlockLessonsWarning": {
     "description": "unlockLessonsWarning"
   },
-  "keepGuidedPath": "Keep guided path",
+  "keepGuidedPath": "මාර්ගෝපදේශිත මාර්ගය තබාගන්න",
   "@keepGuidedPath": {
     "description": "keepGuidedPath"
   },
-  "unlock": "Unlock",
+  "unlock": "විවෘත කරන්න",
   "@unlock": {
     "description": "unlock"
   },
-  "modulesCompleted": "{completed} / {total} modules completed",
+  "modulesCompleted": "මොඩියුල {completed} / {total} සම්පූර්ණයි",
   "@modulesCompleted": {
     "description": "modulesCompleted",
     "placeholders": {
@@ -317,29 +317,29 @@
       "total": {}
     }
   },
-  "mostRecentModule": "Most recent module: {module}",
+  "mostRecentModule": "මෑතම මොඩියුලය: {module}",
   "@mostRecentModule": {
     "description": "mostRecentModule",
     "placeholders": {
       "module": {}
     }
   },
-  "lastStudied": "Last studied: {date}",
+  "lastStudied": "අවසන් වරට අධ්‍යයනය කළේ: {date}",
   "@lastStudied": {
     "description": "lastStudied",
     "placeholders": {
       "date": {}
     }
   },
-  "today": "Today",
+  "today": "අද",
   "@today": {
     "description": "today"
   },
-  "yesterday": "Yesterday",
+  "yesterday": "ඊයේ",
   "@yesterday": {
     "description": "yesterday"
   },
-  "daysAgo": "{count} days ago",
+  "daysAgo": "දින {count}කට පෙර",
   "@daysAgo": {
     "description": "daysAgo",
     "placeholders": {
@@ -401,7 +401,7 @@
   "@rotateScreen": {
     "description": "rotateScreen"
   },
-  "rotationHint": "If the screen does not rotate, enable Auto-rotate in device settings.",
+  "rotationHint": "තිරය නොහැරේ නම්, උපාංග සැකසුම්වල Auto-rotate සක්‍රීය කරන්න.",
   "@rotationHint": {
     "description": "rotationHint"
   },
@@ -429,43 +429,43 @@
   "@cetasika": {
     "description": "cetasika"
   },
-  "unwholesome": "Unwholesome",
+  "unwholesome": "අකුසල",
   "@unwholesome": {
     "description": "unwholesome"
   },
-  "rootless": "Rootless",
+  "rootless": "අහේතුක",
   "@rootless": {
     "description": "rootless"
   },
-  "senseSphereBeautiful": "Sense-sphere beautiful",
+  "senseSphereBeautiful": "කාමාවචර සෝභන",
   "@senseSphereBeautiful": {
     "description": "senseSphereBeautiful"
   },
-  "formSphere": "Form sphere",
+  "formSphere": "රූපාවචර",
   "@formSphere": {
     "description": "formSphere"
   },
-  "formlessSphere": "Formless sphere",
+  "formlessSphere": "අරූපාවචර",
   "@formlessSphere": {
     "description": "formlessSphere"
   },
-  "supramundane": "Supramundane",
+  "supramundane": "ලෝකෝත්තර",
   "@supramundane": {
     "description": "supramundane"
   },
-  "legend": "Legend:",
+  "legend": "පැහැදිලි කිරීම:",
   "@legend": {
     "description": "legend"
   },
-  "associationAlways": "Invariable",
+  "associationAlways": "නියත",
   "@associationAlways": {
     "description": "associationAlways"
   },
-  "associationSometimes": "Variable",
+  "associationSometimes": "අනියත",
   "@associationSometimes": {
     "description": "associationSometimes"
   },
-  "associationNever": "Absent",
+  "associationNever": "නොමැත",
   "@associationNever": {
     "description": "associationNever"
   },
@@ -476,35 +476,35 @@
       "count": {}
     }
   },
-  "matrixHelpTitle": "Matrix guide",
+  "matrixHelpTitle": "න්‍යාස මාර්ගෝපදේශය",
   "@matrixHelpTitle": {
     "description": "matrixHelpTitle"
   },
-  "howToRead": "How to read:",
+  "howToRead": "කියවන්නේ මෙසේය:",
   "@howToRead": {
     "description": "howToRead"
   },
-  "matrixHelpRead": "• Rows: Citta\n• Columns: Cetasika\n• Intersections: association",
+  "matrixHelpRead": "• පේළි: චිත්ත\n• තීරු: චෛතසික\n• හමුවීම්: සම්බන්ධය",
   "@matrixHelpRead": {
     "description": "matrixHelpRead"
   },
-  "symbols": "Symbols:",
+  "symbols": "සංකේත:",
   "@symbols": {
     "description": "symbols"
   },
-  "matrixHelpSymbols": "✦ = Invariable\n◎ = Variable\n✕ = Absent",
+  "matrixHelpSymbols": "✦ = නියත\n◎ = අනියත\n✕ = නොමැත",
   "@matrixHelpSymbols": {
     "description": "matrixHelpSymbols"
   },
-  "tips": "Tips:",
+  "tips": "උපදෙස්:",
   "@tips": {
     "description": "tips"
   },
-  "matrixHelpTips": "• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space",
+  "matrixHelpTips": "• විස්තර සඳහා චිත්තයක් තට්ටු කරන්න\n• ගැටුම් සඳහා චෛතසිකයක් තට්ටු කරන්න\n• දසුන සීමා කිරීමට පෙරහන් භාවිත කරන්න\n• වැඩි ඉඩ සඳහා හැරවන්න",
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
-  "understood": "Got it",
+  "understood": "තේරුණා",
   "@understood": {
     "description": "understood"
   },
@@ -512,7 +512,7 @@
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
-  "allFilters": "All",
+  "allFilters": "සියල්ල",
   "@allFilters": {
     "description": "allFilters"
   },
@@ -532,68 +532,68 @@
   "@conditionsTitle": {
     "description": "conditionsTitle"
   },
-  "conditionDetails": "Dependent-origination details:",
+  "conditionDetails": "පටිච්චසමුප්පාද විස්තර:",
   "@conditionDetails": {
     "description": "conditionDetails"
   },
-  "lastConditionDescription": "This is the final resultant link in this life-cycle and starts no new condition.",
+  "lastConditionDescription": "මෙය මෙම ජීවන චක්‍රයේ අවසාන විපාක අංගය වන අතර නව පච්චයක් ආරම්භ නොකරයි.",
   "@lastConditionDescription": {
     "description": "lastConditionDescription"
   },
-  "conditionLinkDescription": "• Conditions: {effect}\n  Explanation: {explanation}",
-  "conditionsTabLinks": "12 Links",
+  "conditionLinkDescription": "• පච්චය: {effect}\n  විස්තරය: {explanation}",
+  "conditionsTabLinks": "පටිච්චසමුප්පාද අංග 12",
   "@conditionsTabLinks": {
     "description": "conditionsTabLinks"
   },
-  "conditionsTabPaccaya": "24 Conditions",
+  "conditionsTabPaccaya": "පච්චය 24",
   "@conditionsTabPaccaya": {
     "description": "conditionsTabPaccaya"
   },
-  "paccayaTitle": "The 24 Conditional Relations (Patthana)",
+  "paccayaTitle": "පච්චය 24 (පට්ඨාන)",
   "@paccayaTitle": {
     "description": "paccayaTitle"
   },
-  "paccayaIntro": "Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.",
+  "paccayaIntro": "Paccaya-saṅgaha-vibhāga හි B කොටස: ධර්ම එකිනෙක කෙසේ පච්චය වේද. A කොටස පටිච්චසමුප්පාද අංග 12 යි.",
   "@paccayaIntro": {
     "description": "paccayaIntro"
   },
-  "paccayaDefinition": "Definition",
+  "paccayaDefinition": "අර්ථ දැක්වීම",
   "@paccayaDefinition": {
     "description": "paccayaDefinition"
   },
-  "paccayaConditioningStates": "Conditioning states (paccaya-dhamma)",
+  "paccayaConditioningStates": "පච්චය වන ධර්ම (paccaya-dhamma)",
   "@paccayaConditioningStates": {
     "description": "paccayaConditioningStates"
   },
-  "paccayaConditionedStates": "Conditioned states (paccayuppanna)",
+  "paccayaConditionedStates": "පච්චයුප්පන්න ධර්ම (paccayuppanna)",
   "@paccayaConditionedStates": {
     "description": "paccayaConditionedStates"
   },
-  "paccayaSubdivisions": "Subdivisions",
+  "paccayaSubdivisions": "උප කොටස්",
   "@paccayaSubdivisions": {
     "description": "paccayaSubdivisions"
   },
-  "paccayaInPaticca": "Operates in these links",
+  "paccayaInPaticca": "මෙම අංගවල ක්‍රියා කරයි",
   "@paccayaInPaticca": {
     "description": "paccayaInPaticca"
   },
-  "paccayaEmpty": "No condition matches this filter.",
+  "paccayaEmpty": "මෙම පෙරහනට ගැලපෙන පච්චයක් නොමැත.",
   "@paccayaEmpty": {
     "description": "paccayaEmpty"
   },
-  "paccayaSearchHint": "Search a condition…",
+  "paccayaSearchHint": "පච්චයක් සොයන්න…",
   "@paccayaSearchHint": {
     "description": "paccayaSearchHint"
   },
-  "paccayaSourceNotice": "Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.",
+  "paccayaSourceNotice": "මූලාශ්‍ර: Paṭṭhāna (Abhidhamma Piṭaka VII) සහ Visuddhimagga XVII පරිච්ඡේදය. Pa-Auk ලේඛනවල පච්චය 24 වෙනම ලැයිස්තුවක් හමු නොවීය; පද තවම ජ්‍යෙෂ්ඨ සමාලෝචනයට යටත්ය.",
   "@paccayaSourceNotice": {
     "description": "paccayaSourceNotice"
   },
-  "paccayaSources": "Sources",
+  "paccayaSources": "මූලාශ්‍ර",
   "@paccayaSources": {
     "description": "paccayaSources"
   },
-  "paccayaCount": "{count} conditions",
+  "paccayaCount": "පච්චය {count}",
   "@paccayaCount": {
     "description": "paccayaCount",
     "placeholders": {
@@ -604,39 +604,39 @@
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
-  "paccayaGroupRootObject": "Root & object",
+  "paccayaGroupRootObject": "මූලය හා ආරම්මණය",
   "@paccayaGroupRootObject": {
     "description": "paccayaGroupRootObject"
   },
-  "paccayaGroupContinuity": "Continuity",
+  "paccayaGroupContinuity": "අඛණ්ඩතාව",
   "@paccayaGroupContinuity": {
     "description": "paccayaGroupContinuity"
   },
-  "paccayaGroupConascence": "Conascence & support",
+  "paccayaGroupConascence": "සහජාත හා උපකාර",
   "@paccayaGroupConascence": {
     "description": "paccayaGroupConascence"
   },
-  "paccayaGroupTimeRelation": "Arising order",
+  "paccayaGroupTimeRelation": "උදාවන අනුපිළිවෙල",
   "@paccayaGroupTimeRelation": {
     "description": "paccayaGroupTimeRelation"
   },
-  "paccayaGroupKammaVipaka": "Kamma & result",
+  "paccayaGroupKammaVipaka": "කම්ම හා විපාක",
   "@paccayaGroupKammaVipaka": {
     "description": "paccayaGroupKammaVipaka"
   },
-  "paccayaGroupGeneral": "General",
+  "paccayaGroupGeneral": "සාමාන්‍ය",
   "@paccayaGroupGeneral": {
     "description": "paccayaGroupGeneral"
   },
-  "kiepPast": "Past life",
+  "kiepPast": "අතීත භවය",
   "@kiepPast": {
     "description": "kiepPast"
   },
-  "kiepPresent": "This life",
+  "kiepPresent": "මෙම භවය",
   "@kiepPresent": {
     "description": "kiepPresent"
   },
-  "kiepFuture": "Future life",
+  "kiepFuture": "අනාගත භවය",
   "@kiepFuture": {
     "description": "kiepFuture"
   },
@@ -813,11 +813,11 @@
       "state": {}
     }
   },
-  "selected": "Selected",
+  "selected": "තෝරා ඇත",
   "@selected": {
     "description": "selected"
   },
-  "dimmedByConflict": "Dimmed because of a conflict",
+  "dimmedByConflict": "ගැටුමක් නිසා මැකී පෙනේ",
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
@@ -834,7 +834,7 @@
       "cetasikaId": {}
     }
   },
-  "tapForDetails": "Tap for details",
+  "tapForDetails": "විස්තර සඳහා තට්ටු කරන්න",
   "@tapForDetails": {
     "description": "tapForDetails"
   },

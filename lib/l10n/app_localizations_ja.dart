@@ -124,7 +124,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get systemDefaultSubtitle => 'この端末で選択した言語を使用';
 
   @override
-  String get languagePickerTitle => 'Language / 言語';
+  String get languagePickerTitle => '言語';
 
   @override
   String get languagePickerSearchHint => '言語名またはコードで検索';
@@ -170,14 +170,14 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get highContrastSubtitle =>
-      'Increase color contrast for people with low vision';
+      '弱視の方のために色のコントラストを高めます';
 
   @override
   String get screenReaderHints => 'スクリーンリーダーのヒント';
 
   @override
   String get screenReaderHintsSubtitle =>
-      'Provide more detail for TalkBack and VoiceOver';
+      'TalkBack と VoiceOver により詳しい説明を提供します';
 
   @override
   String get textSize => '文字サイズ';
@@ -193,23 +193,23 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get unlockAllLessonsSubtitle =>
-      'The guided path builds a strong foundation. Experienced learners can unlock every lesson.';
+      'ガイド付きの道筋は確かな基礎を築きます。経験のある学習者はすべての課程を解放できます。';
 
   @override
   String get resetProgress => '進捗をリセット';
 
   @override
-  String get resetProgressSubtitle => 'Delete all study data';
+  String get resetProgressSubtitle => 'すべての学習データを削除';
 
   @override
-  String get showDataWarningAgain => 'Show data warning again';
+  String get showDataWarningAgain => 'データ警告を再表示';
 
   @override
   String get showDataWarningAgainSubtitle =>
-      'Restore the Matrix warning banner';
+      'マトリックスの警告バナーを復元';
 
   @override
-  String get dataWarningEnabled => 'Data warning enabled';
+  String get dataWarningEnabled => 'データ警告が有効になりました';
 
   @override
   String get aboutApp => 'アプリについて';
@@ -218,61 +218,61 @@ class AppLocalizationsJa extends AppLocalizations {
   String get version => 'バージョン';
 
   @override
-  String get sourceMaterial => '資料';
+  String get sourceMaterial => '典拠資料';
 
   @override
-  String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
+  String get sourceMaterialValue => 'ミリンダ王 A カリキュラム — アビダンマ';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => '編集方針';
 
   @override
-  String get resetProgressQuestion => 'Reset progress?';
+  String get resetProgressQuestion => '進捗をリセットしますか？';
 
   @override
   String get resetProgressWarning =>
-      'All study progress and quiz scores will be deleted. This action cannot be undone.';
+      '学習進捗とクイズ得点がすべて削除されます。この操作は元に戻せません。';
 
   @override
-  String get progressResetSuccess => 'Study progress reset';
+  String get progressResetSuccess => '学習進捗をリセットしました';
 
   @override
-  String get unlockLessonsQuestion => 'Unlock all lessons?';
+  String get unlockLessonsQuestion => 'すべての課程を解放しますか？';
 
   @override
   String get unlockLessonsWarning =>
-      'The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.';
+      'ガイド付きの道筋は、堅固なアビダンマの基礎を築く最も効果的な方法です。この選択肢は経験のある学習者向けです。';
 
   @override
-  String get keepGuidedPath => 'Keep guided path';
+  String get keepGuidedPath => 'ガイド付きの道筋を維持';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => '解放';
 
   @override
   String modulesCompleted(Object completed, Object total) {
-    return '$completed / $total modules completed';
+    return '$completed / $total モジュール完了';
   }
 
   @override
   String mostRecentModule(Object module) {
-    return 'Most recent module: $module';
+    return '最近のモジュール：$module';
   }
 
   @override
   String lastStudied(Object date) {
-    return 'Last studied: $date';
+    return '最終学習：$date';
   }
 
   @override
-  String get today => 'Today';
+  String get today => '今日';
 
   @override
-  String get yesterday => 'Yesterday';
+  String get yesterday => '昨日';
 
   @override
   String daysAgo(Object count) {
-    return '$count days ago';
+    return '$count 日前';
   }
 
   @override
@@ -321,7 +321,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get rotationHint =>
-      'If the screen does not rotate, enable Auto-rotate in device settings.';
+      '画面が回転しない場合は、端末設定で自動回転を有効にしてください。';
 
   @override
   String get highContrast => '高コントラスト';
@@ -342,34 +342,34 @@ class AppLocalizationsJa extends AppLocalizations {
   String get cetasika => 'チェータシカ';
 
   @override
-  String get unwholesome => 'Unwholesome';
+  String get unwholesome => '不善';
 
   @override
-  String get rootless => 'Rootless';
+  String get rootless => '無因';
 
   @override
-  String get senseSphereBeautiful => 'Sense-sphere beautiful';
+  String get senseSphereBeautiful => '欲界美心';
 
   @override
-  String get formSphere => 'Form sphere';
+  String get formSphere => '色界';
 
   @override
-  String get formlessSphere => 'Formless sphere';
+  String get formlessSphere => '無色界';
 
   @override
-  String get supramundane => 'Supramundane';
+  String get supramundane => '出世間';
 
   @override
-  String get legend => 'Legend:';
+  String get legend => '凡例：';
 
   @override
-  String get associationAlways => 'Invariable';
+  String get associationAlways => '必ず相応';
 
   @override
-  String get associationSometimes => 'Variable';
+  String get associationSometimes => '場合により相応';
 
   @override
-  String get associationNever => 'Absent';
+  String get associationNever => '不相応';
 
   @override
   String dataWarningsCount(Object count) {
@@ -377,36 +377,36 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get matrixHelpTitle => 'Matrix guide';
+  String get matrixHelpTitle => 'マトリックス案内';
 
   @override
-  String get howToRead => 'How to read:';
+  String get howToRead => '読み方：';
 
   @override
   String get matrixHelpRead =>
-      '• Rows: Citta\n• Columns: Cetasika\n• Intersections: association';
+      '• 行：心\n• 列：心所\n• 交点：相応関係';
 
   @override
-  String get symbols => 'Symbols:';
+  String get symbols => '記号：';
 
   @override
-  String get matrixHelpSymbols => '✦ = Invariable\n◎ = Variable\n✕ = Absent';
+  String get matrixHelpSymbols => '✦ = 必ず相応\n◎ = 場合により相応\n✕ = 不相応';
 
   @override
-  String get tips => 'Tips:';
+  String get tips => 'ヒント：';
 
   @override
   String get matrixHelpTips =>
-      '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
+      '• 心をタップして詳細を表示\n• 心所をタップして衝突を表示\n• フィルターで表示を絞り込み\n• 画面を回転して広く表示';
 
   @override
-  String get understood => 'Got it';
+  String get understood => '了解';
 
   @override
   String get dataWarningTitle => 'Data warning';
 
   @override
-  String get allFilters => 'All';
+  String get allFilters => 'すべて';
 
   @override
   String get defilements => 'Defilements';
@@ -421,93 +421,93 @@ class AppLocalizationsJa extends AppLocalizations {
   String get conditionsTitle => '縁起';
 
   @override
-  String get conditionDetails => 'Dependent-origination details:';
+  String get conditionDetails => '縁起の詳細：';
 
   @override
   String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
+      'これはこの生命循環における最後の果報支で、新たな条件を開始しません。';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
+    return '• 条件：$effect\n  説明：$explanation';
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '十二支';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '二十四縁';
 
   @override
-  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+  String get paccayaTitle => '二十四縁（発趣論）';
 
   @override
   String get paccayaIntro =>
-      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+      'Paccaya-saṅgaha-vibhāga の B 部：諸法が互いにどのように条件となるか。A 部は縁起十二支です。';
 
   @override
-  String get paccayaDefinition => 'Definition';
+  String get paccayaDefinition => '定義';
 
   @override
   String get paccayaConditioningStates =>
-      'Conditioning states (paccaya-dhamma)';
+      '能縁法 (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+  String get paccayaConditionedStates => '所縁起法 (paccayuppanna)';
 
   @override
-  String get paccayaSubdivisions => 'Subdivisions';
+  String get paccayaSubdivisions => '下位区分';
 
   @override
-  String get paccayaInPaticca => 'Operates in these links';
+  String get paccayaInPaticca => 'これらの支で働く';
 
   @override
-  String get paccayaEmpty => 'No condition matches this filter.';
+  String get paccayaEmpty => 'このフィルターに一致する縁はありません。';
 
   @override
-  String get paccayaSearchHint => 'Search a condition…';
+  String get paccayaSearchHint => '縁を検索…';
 
   @override
   String get paccayaSourceNotice =>
-      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+      '典拠：Paṭṭhāna（阿毘達磨蔵 VII）および Visuddhimagga 第 XVII 章。Pa-Auk 文献には二十四縁の列挙が見当たらないため、訳語は上級確認待ちです。';
 
   @override
-  String get paccayaSources => 'Sources';
+  String get paccayaSources => '典拠';
 
   @override
   String paccayaCount(Object count) {
-    return '$count conditions';
+    return '$count 縁';
   }
 
   @override
   String get relatedDhammas => 'Related dhammas';
 
   @override
-  String get paccayaGroupRootObject => 'Root & object';
+  String get paccayaGroupRootObject => '根と所縁';
 
   @override
-  String get paccayaGroupContinuity => 'Continuity';
+  String get paccayaGroupContinuity => '相続';
 
   @override
-  String get paccayaGroupConascence => 'Conascence & support';
+  String get paccayaGroupConascence => '俱生と依止';
 
   @override
-  String get paccayaGroupTimeRelation => 'Arising order';
+  String get paccayaGroupTimeRelation => '生起順序';
 
   @override
-  String get paccayaGroupKammaVipaka => 'Kamma & result';
+  String get paccayaGroupKammaVipaka => '業と果';
 
   @override
-  String get paccayaGroupGeneral => 'General';
+  String get paccayaGroupGeneral => '一般';
 
   @override
-  String get kiepPast => 'Past life';
+  String get kiepPast => '過去生';
 
   @override
-  String get kiepPresent => 'This life';
+  String get kiepPresent => '今生';
 
   @override
-  String get kiepFuture => 'Future life';
+  String get kiepFuture => '未来生';
 
   @override
   String get kammaTitle => 'Kamma';
@@ -630,10 +630,10 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get selected => 'Selected';
+  String get selected => '選択中';
 
   @override
-  String get dimmedByConflict => 'Dimmed because of a conflict';
+  String get dimmedByConflict => '衝突のため淡色表示';
 
   @override
   String get matrixCornerSemantics =>
@@ -646,7 +646,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get tapForDetails => 'Tap for details';
+  String get tapForDetails => 'タップして詳細';
 
   @override
   String get studyPath => '学習コース';
@@ -1081,7 +1081,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get resumeListening => '続きから再生';
 
   @override
-  String get continueListening => '聴き続ける';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => 'スリープタイマー';

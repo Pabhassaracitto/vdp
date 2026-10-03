@@ -124,7 +124,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get systemDefaultSubtitle => 'මෙම උපාංගයේ තෝරා ඇති භාෂාව භාවිත කරන්න';
 
   @override
-  String get languagePickerTitle => 'Language / භාෂාව';
+  String get languagePickerTitle => 'භාෂාව';
 
   @override
   String get languagePickerSearchHint => 'භාෂාවේ නම හෝ කේතය සොයන්න';
@@ -171,14 +171,14 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get highContrastSubtitle =>
-      'Increase color contrast for people with low vision';
+      'අඩු දැක්මක් ඇති පුද්ගලයන් සඳහා වර්ණ ප්‍රතිවිරෝධතාව වැඩි කරන්න';
 
   @override
   String get screenReaderHints => 'තිර කියවීම් ඉඟි';
 
   @override
   String get screenReaderHintsSubtitle =>
-      'Provide more detail for TalkBack and VoiceOver';
+      'TalkBack සහ VoiceOver සඳහා වැඩි විස්තර ලබා දෙන්න';
 
   @override
   String get textSize => 'අකුරු ප්‍රමාණය';
@@ -194,23 +194,23 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get unlockAllLessonsSubtitle =>
-      'The guided path builds a strong foundation. Experienced learners can unlock every lesson.';
+      'මාර්ගෝපදේශිත මාර්ගය ශක්තිමත් පදනමක් ගොඩනගයි. පළපුරුදු ඉගෙනුම්කරුවන්ට සියලු පාඩම් විවෘත කළ හැක.';
 
   @override
   String get resetProgress => 'ප්‍රගතිය යළි සකසන්න';
 
   @override
-  String get resetProgressSubtitle => 'Delete all study data';
+  String get resetProgressSubtitle => 'සියලු අධ්‍යයන දත්ත මකන්න';
 
   @override
-  String get showDataWarningAgain => 'Show data warning again';
+  String get showDataWarningAgain => 'දත්ත අනතුරු ඇඟවීම නැවත පෙන්වන්න';
 
   @override
   String get showDataWarningAgainSubtitle =>
-      'Restore the Matrix warning banner';
+      'න්‍යාස අනතුරු ඇඟවීම් පටිය නැවත පෙන්වන්න';
 
   @override
-  String get dataWarningEnabled => 'Data warning enabled';
+  String get dataWarningEnabled => 'දත්ත අනතුරු ඇඟවීම සක්‍රීයයි';
 
   @override
   String get aboutApp => 'යෙදුම ගැන';
@@ -219,61 +219,61 @@ class AppLocalizationsSi extends AppLocalizations {
   String get version => 'අනුවාදය';
 
   @override
-  String get sourceMaterial => 'මූලාශ්‍රය';
+  String get sourceMaterial => 'මූලාශ්‍ර ද්‍රව්‍ය';
 
   @override
-  String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
+  String get sourceMaterialValue => 'මිලින්ද රජු A පාඨමාලාව — අභිධම්ම';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'සංස්කරණ මූලධර්ම';
 
   @override
-  String get resetProgressQuestion => 'Reset progress?';
+  String get resetProgressQuestion => 'ප්‍රගතිය නැවත සකසන්නද?';
 
   @override
   String get resetProgressWarning =>
-      'All study progress and quiz scores will be deleted. This action cannot be undone.';
+      'සියලු අධ්‍යයන ප්‍රගතිය සහ ප්‍රශ්න ලකුණු මකනු ලැබේ. මෙය ආපසු හැරවිය නොහැක.';
 
   @override
-  String get progressResetSuccess => 'Study progress reset';
+  String get progressResetSuccess => 'අධ්‍යයන ප්‍රගතිය නැවත සකසා ඇත';
 
   @override
-  String get unlockLessonsQuestion => 'Unlock all lessons?';
+  String get unlockLessonsQuestion => 'සියලු පාඩම් විවෘත කරන්නද?';
 
   @override
   String get unlockLessonsWarning =>
-      'The guided path is the most effective way to build a sound Abhidhamma foundation. This option is intended for experienced learners.';
+      'මාර්ගෝපදේශිත මාර්ගය ශක්තිමත් අභිධම්ම පදනමක් ගොඩනැගීමට හොඳම ක්‍රමයයි. මෙම විකල්පය පළපුරුදු ඉගෙනුම්කරුවන් සඳහාය.';
 
   @override
-  String get keepGuidedPath => 'Keep guided path';
+  String get keepGuidedPath => 'මාර්ගෝපදේශිත මාර්ගය තබාගන්න';
 
   @override
-  String get unlock => 'Unlock';
+  String get unlock => 'විවෘත කරන්න';
 
   @override
   String modulesCompleted(Object completed, Object total) {
-    return '$completed / $total modules completed';
+    return 'මොඩියුල $completed / $total සම්පූර්ණයි';
   }
 
   @override
   String mostRecentModule(Object module) {
-    return 'Most recent module: $module';
+    return 'මෑතම මොඩියුලය: $module';
   }
 
   @override
   String lastStudied(Object date) {
-    return 'Last studied: $date';
+    return 'අවසන් වරට අධ්‍යයනය කළේ: $date';
   }
 
   @override
-  String get today => 'Today';
+  String get today => 'අද';
 
   @override
-  String get yesterday => 'Yesterday';
+  String get yesterday => 'ඊයේ';
 
   @override
   String daysAgo(Object count) {
-    return '$count days ago';
+    return 'දින $countකට පෙර';
   }
 
   @override
@@ -322,7 +322,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get rotationHint =>
-      'If the screen does not rotate, enable Auto-rotate in device settings.';
+      'තිරය නොහැරේ නම්, උපාංග සැකසුම්වල Auto-rotate සක්‍රීය කරන්න.';
 
   @override
   String get highContrast => 'ඉහළ ප්‍රතිවිරුද්ධතාව';
@@ -343,34 +343,34 @@ class AppLocalizationsSi extends AppLocalizations {
   String get cetasika => 'චෛතසික';
 
   @override
-  String get unwholesome => 'Unwholesome';
+  String get unwholesome => 'අකුසල';
 
   @override
-  String get rootless => 'Rootless';
+  String get rootless => 'අහේතුක';
 
   @override
-  String get senseSphereBeautiful => 'Sense-sphere beautiful';
+  String get senseSphereBeautiful => 'කාමාවචර සෝභන';
 
   @override
-  String get formSphere => 'Form sphere';
+  String get formSphere => 'රූපාවචර';
 
   @override
-  String get formlessSphere => 'Formless sphere';
+  String get formlessSphere => 'අරූපාවචර';
 
   @override
-  String get supramundane => 'Supramundane';
+  String get supramundane => 'ලෝකෝත්තර';
 
   @override
-  String get legend => 'Legend:';
+  String get legend => 'පැහැදිලි කිරීම:';
 
   @override
-  String get associationAlways => 'Invariable';
+  String get associationAlways => 'නියත';
 
   @override
-  String get associationSometimes => 'Variable';
+  String get associationSometimes => 'අනියත';
 
   @override
-  String get associationNever => 'Absent';
+  String get associationNever => 'නොමැත';
 
   @override
   String dataWarningsCount(Object count) {
@@ -378,36 +378,36 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get matrixHelpTitle => 'Matrix guide';
+  String get matrixHelpTitle => 'න්‍යාස මාර්ගෝපදේශය';
 
   @override
-  String get howToRead => 'How to read:';
+  String get howToRead => 'කියවන්නේ මෙසේය:';
 
   @override
   String get matrixHelpRead =>
-      '• Rows: Citta\n• Columns: Cetasika\n• Intersections: association';
+      '• පේළි: චිත්ත\n• තීරු: චෛතසික\n• හමුවීම්: සම්බන්ධය';
 
   @override
-  String get symbols => 'Symbols:';
+  String get symbols => 'සංකේත:';
 
   @override
-  String get matrixHelpSymbols => '✦ = Invariable\n◎ = Variable\n✕ = Absent';
+  String get matrixHelpSymbols => '✦ = නියත\n◎ = අනියත\n✕ = නොමැත';
 
   @override
-  String get tips => 'Tips:';
+  String get tips => 'උපදෙස්:';
 
   @override
   String get matrixHelpTips =>
-      '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
+      '• විස්තර සඳහා චිත්තයක් තට්ටු කරන්න\n• ගැටුම් සඳහා චෛතසිකයක් තට්ටු කරන්න\n• දසුන සීමා කිරීමට පෙරහන් භාවිත කරන්න\n• වැඩි ඉඩ සඳහා හැරවන්න';
 
   @override
-  String get understood => 'Got it';
+  String get understood => 'තේරුණා';
 
   @override
   String get dataWarningTitle => 'Data warning';
 
   @override
-  String get allFilters => 'All';
+  String get allFilters => 'සියල්ල';
 
   @override
   String get defilements => 'Defilements';
@@ -422,93 +422,93 @@ class AppLocalizationsSi extends AppLocalizations {
   String get conditionsTitle => 'පටිච්චසමුප්පාදය';
 
   @override
-  String get conditionDetails => 'Dependent-origination details:';
+  String get conditionDetails => 'පටිච්චසමුප්පාද විස්තර:';
 
   @override
   String get lastConditionDescription =>
-      'This is the final resultant link in this life-cycle and starts no new condition.';
+      'මෙය මෙම ජීවන චක්‍රයේ අවසාන විපාක අංගය වන අතර නව පච්චයක් ආරම්භ නොකරයි.';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
-    return '• Conditions: $effect\n  Explanation: $explanation';
+    return '• පච්චය: $effect\n  විස්තරය: $explanation';
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => 'පටිච්චසමුප්පාද අංග 12';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => 'පච්චය 24';
 
   @override
-  String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
+  String get paccayaTitle => 'පච්චය 24 (පට්ඨාන)';
 
   @override
   String get paccayaIntro =>
-      'Part B of the Paccaya-sangaha-vibhaga: how phenomena condition one another. Part A is the 12 links of Dependent Origination.';
+      'Paccaya-saṅgaha-vibhāga හි B කොටස: ධර්ම එකිනෙක කෙසේ පච්චය වේද. A කොටස පටිච්චසමුප්පාද අංග 12 යි.';
 
   @override
-  String get paccayaDefinition => 'Definition';
+  String get paccayaDefinition => 'අර්ථ දැක්වීම';
 
   @override
   String get paccayaConditioningStates =>
-      'Conditioning states (paccaya-dhamma)';
+      'පච්චය වන ධර්ම (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'Conditioned states (paccayuppanna)';
+  String get paccayaConditionedStates => 'පච්චයුප්පන්න ධර්ම (paccayuppanna)';
 
   @override
-  String get paccayaSubdivisions => 'Subdivisions';
+  String get paccayaSubdivisions => 'උප කොටස්';
 
   @override
-  String get paccayaInPaticca => 'Operates in these links';
+  String get paccayaInPaticca => 'මෙම අංගවල ක්‍රියා කරයි';
 
   @override
-  String get paccayaEmpty => 'No condition matches this filter.';
+  String get paccayaEmpty => 'මෙම පෙරහනට ගැලපෙන පච්චයක් නොමැත.';
 
   @override
-  String get paccayaSearchHint => 'Search a condition…';
+  String get paccayaSearchHint => 'පච්චයක් සොයන්න…';
 
   @override
   String get paccayaSourceNotice =>
-      'Source: Paṭṭhāna (Abhidhamma Piṭaka VII) and Visuddhimagga ch. XVII. No Pa-Auk text enumerates the 24 conditions; Vietnamese terms await senior review.';
+      'මූලාශ්‍ර: Paṭṭhāna (Abhidhamma Piṭaka VII) සහ Visuddhimagga XVII පරිච්ඡේදය. Pa-Auk ලේඛනවල පච්චය 24 වෙනම ලැයිස්තුවක් හමු නොවීය; පද තවම ජ්‍යෙෂ්ඨ සමාලෝචනයට යටත්ය.';
 
   @override
-  String get paccayaSources => 'Sources';
+  String get paccayaSources => 'මූලාශ්‍ර';
 
   @override
   String paccayaCount(Object count) {
-    return '$count conditions';
+    return 'පච්චය $count';
   }
 
   @override
   String get relatedDhammas => 'Related dhammas';
 
   @override
-  String get paccayaGroupRootObject => 'Root & object';
+  String get paccayaGroupRootObject => 'මූලය හා ආරම්මණය';
 
   @override
-  String get paccayaGroupContinuity => 'Continuity';
+  String get paccayaGroupContinuity => 'අඛණ්ඩතාව';
 
   @override
-  String get paccayaGroupConascence => 'Conascence & support';
+  String get paccayaGroupConascence => 'සහජාත හා උපකාර';
 
   @override
-  String get paccayaGroupTimeRelation => 'Arising order';
+  String get paccayaGroupTimeRelation => 'උදාවන අනුපිළිවෙල';
 
   @override
-  String get paccayaGroupKammaVipaka => 'Kamma & result';
+  String get paccayaGroupKammaVipaka => 'කම්ම හා විපාක';
 
   @override
-  String get paccayaGroupGeneral => 'General';
+  String get paccayaGroupGeneral => 'සාමාන්‍ය';
 
   @override
-  String get kiepPast => 'Past life';
+  String get kiepPast => 'අතීත භවය';
 
   @override
-  String get kiepPresent => 'This life';
+  String get kiepPresent => 'මෙම භවය';
 
   @override
-  String get kiepFuture => 'Future life';
+  String get kiepFuture => 'අනාගත භවය';
 
   @override
   String get kammaTitle => 'Kamma';
@@ -631,10 +631,10 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get selected => 'Selected';
+  String get selected => 'තෝරා ඇත';
 
   @override
-  String get dimmedByConflict => 'Dimmed because of a conflict';
+  String get dimmedByConflict => 'ගැටුමක් නිසා මැකී පෙනේ';
 
   @override
   String get matrixCornerSemantics =>
@@ -647,7 +647,7 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get tapForDetails => 'Tap for details';
+  String get tapForDetails => 'විස්තර සඳහා තට්ටු කරන්න';
 
   @override
   String get studyPath => 'අධ්‍යයන මාර්ගය';
@@ -1082,7 +1082,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get resumeListening => 'ඇසීම දිගටම';
 
   @override
-  String get continueListening => 'දිගටම සවන් දෙන්න';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => 'නින්දේ කාලමානය';

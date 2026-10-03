@@ -126,7 +126,7 @@ class AppLocalizationsId extends AppLocalizations {
       'Gunakan bahasa yang dipilih di perangkat ini';
 
   @override
-  String get languagePickerTitle => 'Language / Bahasa';
+  String get languagePickerTitle => 'Bahasa';
 
   @override
   String get languagePickerSearchHint => 'Cari nama atau kode bahasa';
@@ -221,13 +221,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get version => 'Versi';
 
   @override
-  String get sourceMaterial => 'Sumber materi';
+  String get sourceMaterial => 'Bahan sumber';
 
   @override
   String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'Prinsip editorial';
 
   @override
   String get resetProgressQuestion => 'Reset progress?';
@@ -436,10 +436,10 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '12 mata rantai';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '24 kondisi';
 
   @override
   String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
@@ -1085,7 +1085,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get resumeListening => 'Lanjutkan mendengarkan';
 
   @override
-  String get continueListening => 'Lanjutkan mendengarkan';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => 'Sleep timer';

@@ -126,7 +126,7 @@ class AppLocalizationsBn extends AppLocalizations {
       'Use the language selected on this device';
 
   @override
-  String get languagePickerTitle => 'Language / ভাষা';
+  String get languagePickerTitle => 'ভাষা';
 
   @override
   String get languagePickerSearchHint => 'ভাষার নাম বা কোড দিয়ে খুঁজুন';
@@ -221,13 +221,13 @@ class AppLocalizationsBn extends AppLocalizations {
   String get version => 'সংস্করণ';
 
   @override
-  String get sourceMaterial => 'Source material';
+  String get sourceMaterial => 'উৎস উপাদান';
 
   @override
   String get sourceMaterialValue => 'King Milanda A curriculum — Abhidhamma';
 
   @override
-  String get editorialPrinciples => 'Editorial principles';
+  String get editorialPrinciples => 'সম্পাদনার নীতি';
 
   @override
   String get resetProgressQuestion => 'Reset progress?';
@@ -421,7 +421,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get result => 'ফল';
 
   @override
-  String get conditionsTitle => 'Dependent Origination';
+  String get conditionsTitle => 'প্রতীত্যসমুত্পাদ';
 
   @override
   String get conditionDetails => 'Dependent-origination details:';
@@ -436,10 +436,10 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get conditionsTabLinks => '12 Links';
+  String get conditionsTabLinks => '১২টি নিদান';
 
   @override
-  String get conditionsTabPaccaya => '24 Conditions';
+  String get conditionsTabPaccaya => '২৪টি পচ্চয়';
 
   @override
   String get paccayaTitle => 'The 24 Conditional Relations (Patthana)';
@@ -516,7 +516,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get kammaTitle => 'Kamma';
 
   @override
-  String get mindProcessTitle => 'Mind Process';
+  String get mindProcessTitle => 'চিত্ত-প্রক্রিয়া';
 
   @override
   String get paliLabel => 'Pāḷi:';
@@ -1085,7 +1085,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get resumeListening => 'শোনা চালিয়ে যান';
 
   @override
-  String get continueListening => 'শোনা চালিয়ে যান';
+  String get continueListening => 'Continue listening';
 
   @override
   String get sleepTimer => 'Sleep timer';
