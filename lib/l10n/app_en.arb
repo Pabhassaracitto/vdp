@@ -1521,7 +1521,7 @@
   "@karaokeWordHighlightSubtitle": {
     "description": "karaokeWordHighlightSubtitle"
   },
-  "audioFloatingGoTo": "Go to what's playing",
+  "audioFloatingGoTo": "Go to what''s playing",
   "@audioFloatingGoTo": {
     "description": "audioFloatingGoTo"
   },
