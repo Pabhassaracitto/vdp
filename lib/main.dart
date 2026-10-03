@@ -6,9 +6,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/localization/content_catalog.dart';
 import 'core/localization/locale_controller.dart';
+import 'core/navigation/app_navigator.dart';
 import 'core/theme/vdp_theme.dart';
 import 'data/repositories/vdp_repository.dart';
 import 'l10n/l10n.dart';
+import 'features/audio/widgets/global_audio_bubble.dart';
 import 'features/home/home_screen.dart';
 import 'features/onboarding/onboarding_screen.dart';
 import 'features/settings/settings_screen.dart';
@@ -54,6 +56,9 @@ class VdpApp extends ConsumerWidget {
         : VdpTheme.lightTheme;
 
     return MaterialApp(
+      // V1.9.2 §1: thanh nghe nổi toàn app điều hướng qua khoá này (nó sống
+      // ngoài Navigator thật — xem ghi chú trong GlobalAudioBubble).
+      navigatorKey: rootNavigatorKey,
       onGenerateTitle: (context) => context.l10n.appName,
       debugShowCheckedModeBanner: false,
       locale: localeSettings.uiLocale,
@@ -73,7 +78,20 @@ class VdpApp extends ConsumerWidget {
             data: MediaQuery.of(context).copyWith(
               textScaler: TextScaler.linear(settings.textScaleFactor),
             ),
-            child: child!,
+            // V1.9.2 §1: vẽ thanh nghe nổi TRÊN toàn bộ nội dung app, 1 lần
+            // duy nhất ở gốc — không phải bên trong từng màn hình — để nó
+            // sống sót qua mọi điều hướng (push/pop/đổi tab).
+            child: Stack(
+              children: [
+                child!,
+                const Positioned.fill(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: GlobalAudioBubble(),
+                  ),
+                ),
+              ],
+            ),
           ),
         );
       },
