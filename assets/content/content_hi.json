@@ -2,56 +2,96 @@
   "locale": "hi",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
   "cittas": {
     "CI_001": {
       "name": "सौमनस्य-सहगत दृष्टिसम्प्रयुक्त असंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ।",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "CI_002": {
       "name": "सौमनस्य-सहगत दृष्टिसम्प्रयुक्त ससंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ।",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "CI_003": {
       "name": "सौमनस्य-सहगत दृष्टिविप्रयुक्त असंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ।",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "CI_004": {
       "name": "सौमनस्य-सहगत दृष्टिविप्रयुक्त ससंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ।",
+      "examples": [
+        "यह"
+      ]
     },
     "CI_005": {
       "name": "उपेक्षा-सहगत दृष्टिसम्प्रयुक्त असंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ।",
+      "examples": [
+        "यह"
+      ]
     },
     "CI_006": {
       "name": "उपेक्षा-सहगत दृष्टिसम्प्रयुक्त ससंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ।",
+      "examples": [
+        "यह"
+      ]
     },
     "CI_007": {
       "name": "उपेक्षा-सहगत दृष्टिविप्रयुक्त असंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ।",
+      "examples": [
+        "यह"
+      ]
     },
     "CI_008": {
       "name": "उपेक्षा-सहगत दृष्टिविप्रयुक्त ससंखारिक लोभमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ।",
+      "examples": [
+        "यह"
+      ]
     },
     "CI_009": {
       "name": "दौर्मनस्य-सहगत प्रतिघसम्प्रयुक्त असंखारिक द्वेषमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ।",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "CI_010": {
       "name": "दौर्मनस्य-सहगत प्रतिघसम्प्रयुक्त ससंखारिक द्वेषमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ।",
+      "examples": [
+        "यह"
+      ]
     },
     "CI_011": {
       "name": "उपेक्षा-सहगत विचिकित्सासम्प्रयुक्त मोहमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ।",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "CI_012": {
       "name": "उपेक्षा-सहगत औद्धत्यसम्प्रयुक्त मोहमूल चित्त",
-      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ।"
+      "doctrinalNote": "अभिधम्म में चित्त का वर्गीकरण: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ।",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "CI_013": {
       "name": "उपेक्षा-सहगत चक्षुर्विज्ञान (अकुशल विपाक)",
@@ -494,404 +534,747 @@
     "CS_PHASSA": {
       "name": "स्पर्श",
       "shortName": "स्पर्श",
-      "description": "चित्त और आलम्बन का परस्पर सम्पर्क।"
+      "description": "चित्त और आलम्बन का परस्पर सम्पर्क।",
+      "characteristic": "Contacting यह आलम्बन — यह mode का touching between विज्ञान, यह sense-base और यह आलम्बन.",
+      "function": "Gathering यह other associated मानसिक factors so they cling together के साथ विज्ञान to touch यह sense-base और यह आलम्बन.",
+      "manifestation": "यह coinciding का विज्ञान, मानसिक factors, sense-base और आलम्बन.",
+      "proximateCause": "यह presence का an आलम्बन offered through यह appropriate channel (sense-base + आलम्बन + विज्ञान)."
     },
     "CS_VEDANA": {
       "name": "वेदना",
       "shortName": "वेदना",
-      "description": "आलम्बन का अनुभव या भोग करना।"
+      "description": "आलम्बन का अनुभव या भोग करना।",
+      "characteristic": "वेदना, experiencing यह आलम्बन — यह manner का receiving और sensing यह आलम्बन.",
+      "function": "Enjoying यह desirable आलम्बन, or producing languor/growth में यह associated states.",
+      "manifestation": "मानसिक ease (pleasant/joyful वेदना); मानसिक distress (painful वेदना); bodily pleasure or pain; or quiescence (neutral वेदना).",
+      "proximateCause": "Bodily calm और मानसिक ease (for pleasant/joyful वेदना); यह presence का यह हृदयवस्तु (for painful वेदना); यह absence का exhilaration (for neutral वेदना)."
     },
     "CS_SANNA": {
       "name": "संज्ञा",
       "shortName": "संज्ञा",
-      "description": "आलम्बन के लक्षणों को पहचानना और स्मरण रखना।"
+      "description": "आलम्बन के लक्षणों को पहचानना और स्मरण रखना।",
+      "characteristic": "Recollecting — यह way का remembering; noting और marking यह distinguishing features का यह आलम्बन.",
+      "function": "Recalling a past event by means का यह sign जो was noted.",
+      "manifestation": "Recollecting something previously known, rightly or wrongly.",
+      "proximateCause": "यह reappearance का an आलम्बन के रूप में it was previously apprehended — an आलम्बन जो evokes memory (e.g. recognizing an acquaintance by recalling where one met them)."
     },
     "CS_CETANA": {
       "name": "चेतना",
       "shortName": "चेतना",
-      "description": "सहजात धर्मों को प्रेरित करना और कर्म का निर्माण।"
+      "description": "सहजात धर्मों को प्रेरित करना और कर्म का निर्माण।",
+      "characteristic": "Urging, directing और coordinating यह associated states जो arise together के साथ it.",
+      "function": "Assembling यह co-arising states so they are directed together towards यह आलम्बन, seizing hold का यह आलम्बन.",
+      "manifestation": "Organizing, directing और arranging यह associated states.",
+      "proximateCause": "यह presence का यह other three मानसिक aggregates — वेदना, संज्ञा और विज्ञान (since चेतना itself belongs to यह aggregate का formations और so requires यह other three)."
     },
     "CS_EKAGGATA": {
       "name": "एकाग्रता",
       "shortName": "एकाग्रता",
-      "description": "चित्त का एक ही आलम्बन पर स्थिर रहना (समाधि)।"
+      "description": "चित्त का एक ही आलम्बन पर स्थिर रहना (समाधि)।",
+      "characteristic": "Non-distraction, non-wavering में यह face का यह आलम्बन — one-pointed, focused मनसिकार.",
+      "function": "Gathering यह co-arising मानसिक states so they converge on a single आलम्बन.",
+      "manifestation": "Appears के रूप में peace और firm steadiness में यह आलम्बन.",
+      "proximateCause": "यह presence का pleasure/happiness, और यह absence का यह औद्धत्य और विचिकित्सा aspects का मोह (happiness है needed for concentration to be achieved)."
     },
     "CS_JIVITINDRIYA": {
       "name": "जीवितिन्द्रिय",
       "shortName": "जीवितिन्द्रिय",
-      "description": "सहजात नाम धर्मों के जीवन और सातत्य की रक्षा करना।"
+      "description": "सहजात नाम धर्मों के जीवन और सातत्य की रक्षा करना।",
+      "characteristic": "Maintaining, preserving और nurturing यह co-arising states.",
+      "function": "Keeping यह co-arising states alive for their three sub-moments before they cease.",
+      "manifestation": "यह co-arising states persist में being until यह moment का their dissolution.",
+      "proximateCause": "यह presence का यह aggregates का वेदना, संज्ञा और विज्ञान."
     },
     "CS_MANASIKARA": {
       "name": "मनसिकार",
       "shortName": "मनसिकार",
-      "description": "चित्त और सहजात धर्मों को आलम्बन की ओर प्रेरित करना।"
+      "description": "चित्त और सहजात धर्मों को आलम्बन की ओर प्रेरित करना।",
+      "characteristic": "यह manner का guiding यह associated states to fully apprehend यह आलम्बन.",
+      "function": "Making विज्ञान और its मानसिक factors converge और take hold का यह आलम्बन together.",
+      "manifestation": "Turning यह mind towards यह आलम्बन (के रूप में a helmsman steers a boat towards its destination).",
+      "proximateCause": "यह presence का an आलम्बन — past, present or future."
     },
     "CS_VITAKKA": {
       "name": "वितर्क",
       "shortName": "वितर्क",
-      "description": "चित्त को आलम्बन पर आरोपित करना।"
+      "description": "चित्त को आलम्बन पर आरोपित करना।",
+      "characteristic": "Carrying यह co-arising states onto यह आलम्बन — directing/lifting यह mind onto यह आलम्बन.",
+      "function": "Bringing विज्ञान और its मानसिक factors into स्पर्श के साथ यह आलम्बन.",
+      "manifestation": "विज्ञान और its co-arising मानसिक factors reach यह आलम्बन.",
+      "proximateCause": "यह presence का an आलम्बन together के साथ यह other three aggregates (वेदना, संज्ञा, विज्ञान), since applied thought belongs to यह aggregate का formations."
     },
     "CS_VICARA": {
       "name": "विचार",
       "shortName": "विचार",
-      "description": "चित्त को आलम्बन पर निरंतर घुमाना या संचरण कराना।"
+      "description": "चित्त को आलम्बन पर निरंतर घुमाना या संचरण कराना।",
+      "characteristic": "यह manner का attending to यह आलम्बन — examining और observing it closely और continuously.",
+      "function": "Keeping विज्ञान और its co-arising मानसिक factors closely engaged के साथ यह आलम्बन without interruption.",
+      "manifestation": "Having engaged यह आलम्बन, it binds यह associated states to it so they keep apprehending जो same आलम्बन without straying from it.",
+      "proximateCause": "यह presence का an आलम्बन together के साथ यह other three aggregates, since sustained thought likewise belongs to यह aggregate का formations."
     },
     "CS_ADHIMOKKHA": {
       "name": "अधिमोक्ष",
       "shortName": "अधिमोक्ष",
-      "description": "आलम्बन के प्रति निश्चित निर्णय या अधिमुक्ति।"
+      "description": "आलम्बन के प्रति निश्चित निर्णय या अधिमुक्ति।",
+      "characteristic": "यह manner का deciding, breaking through यह state का indecision — releasing विज्ञान from विचिकित्सा so it can move towards यह आलम्बन.",
+      "function": "Making विज्ञान resolve firmly on यह आलम्बन, without wavering.",
+      "manifestation": "Having made a firm अधिमोक्ष about यह आलम्बन — carrying out जो अधिमोक्ष.",
+      "proximateCause": "यह presence का an आलम्बन to be judged, determined or decided upon."
     },
     "CS_VIRIYA": {
       "name": "वीर्य",
       "shortName": "वीर्य",
-      "description": "साहस और उत्साह के साथ उद्योग करना।"
+      "description": "साहस और उत्साह के साथ उद्योग करना।",
+      "characteristic": "यह manner का exertion और endurance — energetic effort जो does not retreat.",
+      "function": "Supporting यह co-arising states so they do not regress.",
+      "manifestation": "Not retreating (from यह task at hand).",
+      "proximateCause": "A sense का urgency, or some रूप जो stirs यह mind, such के रूप में old age, sickness, death or suffering."
     },
     "CS_PITI": {
       "name": "प्रीति",
       "shortName": "प्रीति",
-      "description": "आलम्बन के प्रति उल्लास और प्रसन्नता।"
+      "description": "आलम्बन के प्रति उल्लास और प्रसन्नता।",
+      "characteristic": "Delight और exhilaration, being gladdened by यह आलम्बन (distinct from वेदना, which experiences यह आलम्बन, whereas प्रीति creates interest और relish में it).",
+      "function": "Refreshing यह body और gladdening यह mind.",
+      "manifestation": "मानसिक elation, a sense का being uplifted और suffused (distinct from वेदना, which है मानसिक ease).",
+      "proximateCause": "यह aggregates का वेदना, संज्ञा और विज्ञान (since प्रीति belongs to यह aggregate का formations — unlike यह proximate cause का joyful वेदना, which है bodily calm और मानसिक ease)."
     },
     "CS_CHANDA": {
       "name": "छन्द",
       "shortName": "छन्द",
-      "description": "कार्य करने की इच्छा या अभिलाषा।"
+      "description": "कार्य करने की इच्छा या अभिलाषा।",
+      "characteristic": "Having यह hope और wish to obtain यह आलम्बन.",
+      "function": "Making विज्ञान seek out और reach for यह आलम्बन.",
+      "manifestation": "Obtaining यह desired आलम्बन.",
+      "proximateCause": "यह presence का an आलम्बन जो है desirable, worth wishing for."
     },
     "CS_MOHA": {
       "name": "मोह",
       "shortName": "मोह",
-      "description": "सत्य को न जानना, अविद्या का अन्धकार।"
+      "description": "सत्य को न जानना, अविद्या का अन्धकार।",
+      "characteristic": "मानसिक blindness, not knowing what should be known — यह opposite का wisdom.",
+      "function": "Obscuring clarity, preventing यह true nature का phenomena from being seen.",
+      "manifestation": "Darkness और obscuration.",
+      "proximateCause": "Unwise मनसिकार — careless, improper मनसिकार."
     },
     "CS_AHIRIKA": {
       "name": "अहीरीक",
       "shortName": "अहीरीक",
-      "description": "पाप कर्म करने में लज्जा का अभाव।"
+      "description": "पाप कर्म करने में लज्जा का अभाव।",
+      "characteristic": "Absence का shame towards wrongdoing, evil और faults.",
+      "function": "Carrying out evil, faulty और wrongful deeds.",
+      "manifestation": "Not shrinking back from unwholesome deeds.",
+      "proximateCause": "Lack का self-respect."
     },
     "CS_ANOTTAPPA": {
       "name": "अनोत्तप्प",
       "shortName": "अनोत्तप्प",
-      "description": "पाप के परिणामों से भय का अभाव।"
+      "description": "पाप के परिणामों से भय का अभाव।",
+      "characteristic": "Absence का dread towards unwholesome states.",
+      "function": "Committing wrongdoing और misconduct.",
+      "manifestation": "Not flinching or fearing when doing evil.",
+      "proximateCause": "Lack का regard for others."
     },
     "CS_UDDHACCA": {
       "name": "औद्धत्य",
       "shortName": "औद्धत्य",
-      "description": "चित्त का चंचल और अशांत होना।"
+      "description": "चित्त का चंचल और अशांत होना।",
+      "characteristic": "Unrest — a mind जो है agitated और scattered.",
+      "function": "Preventing यह mind from settling firmly और lastingly on its आलम्बन.",
+      "manifestation": "A mind जो है unsettled और disturbed.",
+      "proximateCause": "Unwise मनसिकार — careless, improper handling का यह mind."
     },
     "CS_LOBHA": {
       "name": "लोभ",
       "shortName": "लोभ",
-      "description": "आलम्बन में आसक्ति, तृष्णा और लिप्तता।"
+      "description": "आलम्बन में आसक्ति, तृष्णा और लिप्तता।",
+      "characteristic": "उपादान to यह आलम्बन — causing यह co-arising मानसिक factors to cling to it.",
+      "function": "Making विज्ञान stick to यह आलम्बन.",
+      "manifestation": "Not letting go का यह आलम्बन.",
+      "proximateCause": "Delighting में, being drawn to, binding phenomena — relishing what है beautiful, enticing और pleasant."
     },
     "CS_DITTHI": {
       "name": "दृष्टि",
       "shortName": "दृष्टि",
-      "description": "मिथ्या दृष्टि, सत्य के विपरीत धारणा।"
+      "description": "मिथ्या दृष्टि, सत्य के विपरीत धारणा।",
+      "characteristic": "Adhering obstinately to what है contrary to truth.",
+      "function": "Interpreting matters wrongly, contrary to यह facts.",
+      "manifestation": "Rigidly holding to a mistaken view.",
+      "proximateCause": "Not meeting noble और wise persons."
     },
     "CS_MANA": {
       "name": "मान",
       "shortName": "मान",
-      "description": "अभिमान, अहंकार और तुलनात्मक घमंड।"
+      "description": "अभिमान, अहंकार और तुलनात्मक घमंड।",
+      "characteristic": "Haughtiness, arrogance, self-मान — comparing oneself के साथ others के रूप में superior, equal or inferior.",
+      "function": "Driving यह associated states towards self-exaltation.",
+      "manifestation": "Vanity और self-aggrandizement.",
+      "proximateCause": "यह presence का an आलम्बन for comparison."
     },
     "CS_DOSA": {
       "name": "द्वेष",
       "shortName": "द्वेष",
-      "description": "क्रोध, घृणा और आलम्बन के प्रति विरोध।"
+      "description": "क्रोध, घृणा और आलम्बन के प्रति विरोध।",
+      "characteristic": "Ferocity और harshness का body और mind — a state का opposition और burning hostility.",
+      "function": "Making यह mind burn, scorching और seeking to destroy यह आलम्बन.",
+      "manifestation": "Committing evil deeds, destructive और harmful to oneself, to others, or to both.",
+      "proximateCause": "यह presence का an undesirable आलम्बन — a lack का understanding or reasoned reflection."
     },
     "CS_ISSA": {
       "name": "ईर्ष्या",
       "shortName": "ईर्ष्या",
-      "description": "दूसरों की समृद्धि और सफलता से डाह करना।"
+      "description": "दूसरों की समृद्धि और सफलता से डाह करना।",
+      "characteristic": "ईर्ष्या और jealousy towards यह success or superiority का others.",
+      "function": "Being displeased at another's gain or excellence.",
+      "manifestation": "Turning away from, averting one's face from another's superiority.",
+      "proximateCause": "यह fame, wealth, happiness or success का others, which exceeds one's own."
     },
     "CS_MACCHARIYA": {
       "name": "मात्सर्य",
       "shortName": "मात्सर्य",
-      "description": "कंजूसी, अपने पास की वस्तु दूसरों को न देना।"
+      "description": "कंजूसी, अपने पास की वस्तु दूसरों को न देना।",
+      "characteristic": "Concealing one's own possessions or achievements.",
+      "function": "Being unwilling to share or let others partake का one's possessions.",
+      "manifestation": "Not sharing one's wealth, being stingy, unwilling to give.",
+      "proximateCause": "One's own possessions or achievements."
     },
     "CS_KUKKUCCA": {
       "name": "कौकृत्य",
       "shortName": "कौकृत्य",
-      "description": "किए हुए पाप या छूटे हुए पुण्य का पश्चाताप।"
+      "description": "किए हुए पाप या छूटे हुए पुण्य का पश्चाताप।",
+      "characteristic": "यह manner का regretting, repenting, being troubled about what has been done or left undone.",
+      "function": "Making यह mind restless और distressed about यह past.",
+      "manifestation": "A sense का remorse और regret में यह mind.",
+      "proximateCause": "An evil deed done, or a good और meritorious deed left undone."
     },
     "CS_THINA": {
       "name": "स्त्यान",
       "shortName": "स्त्यान",
-      "description": "चित्त की अकर्मण्यता और शिथिलता।"
+      "description": "चित्त की अकर्मण्यता और शिथिलता।",
+      "characteristic": "Sluggishness जो halts diligence.",
+      "function": "Abandoning energetic effort, so जो active diligence ceases, leading यह mind externally to sink back into यह life-continuum.",
+      "manifestation": "A mind जो withdraws और shrinks back.",
+      "proximateCause": "Unwise मनसिकार — careless, improper handling का यह mind."
     },
     "CS_MIDDHA": {
       "name": "मिद्ध",
       "shortName": "मिद्ध",
-      "description": "चेतसिकों का भारीपन और तन्द्रा।"
+      "description": "चेतसिकों का भारीपन और तन्द्रा।",
+      "characteristic": "Unfitness for work — a state का मिद्ध, lethargy, drowsiness.",
+      "function": "Enveloping और covering विज्ञान.",
+      "manifestation": "Drowsiness, dullness, sleepiness.",
+      "proximateCause": "यह absence का proper, wise मनसिकार."
     },
     "CS_VICIKICCHA": {
       "name": "विचिकित्सा",
       "shortName": "विचिकित्सा",
-      "description": "सत्य, बुद्ध, धर्म और संघ पर संशय।"
+      "description": "सत्य, बुद्ध, धर्म और संघ पर संशय।",
+      "characteristic": "यह manner का doubting — wavering और hesitating about यह Triple Gem और यह Teaching.",
+      "function": "Causing wavering, agitation, hesitation और indecision.",
+      "manifestation": "Inability to decide, lack का resolve.",
+      "proximateCause": "Unwise मनसिकार."
     },
     "CS_SADDHA": {
       "name": "श्रद्धा",
       "shortName": "श्रद्धा",
-      "description": "सद्धर्म और त्रिरत्न में निर्मल विश्वास।"
+      "description": "सद्धर्म और त्रिरत्न में निर्मल विश्वास।",
+      "characteristic": "Trusting confidence में यह Triple Gem और में यह law का kamma और its results — a state का मानसिक purity.",
+      "function": "Purifying यह mind, making it place its trust में what है genuinely worthy.",
+      "manifestation": "Freedom from यह defilement का superstition.",
+      "proximateCause": "यह presence का things worthy का confidence (यह Triple Gem, यह law का kamma और its fruit)."
     },
     "CS_SATI": {
       "name": "स्मृति",
       "shortName": "स्मृति",
-      "description": "सदाचार और कुशल धर्मों का स्मरण रखना।"
+      "description": "सदाचार और कुशल धर्मों का स्मरण रखना।",
+      "characteristic": "यह manner का being alert, not careless, not drifting — keeping यह आलम्बन में mind.",
+      "function": "Remembering, preventing forgetfulness.",
+      "manifestation": "Cultivating a mind जो stays closely attached to its आलम्बन — guarding और protecting यह six sense doors.",
+      "proximateCause": "Firm संज्ञा/recognition."
     },
     "CS_HIRI": {
       "name": "ह्री",
       "shortName": "ह्री",
-      "description": "स्वयं के गौरव से पाप से लज्जित होना।"
+      "description": "स्वयं के गौरव से पाप से लज्जित होना।",
+      "characteristic": "Abhorrence का wrongdoing, disinclination towards fault.",
+      "function": "Refraining from committing wrongful deeds.",
+      "manifestation": "Shrinking back from evil और fault, avoiding wrongdoing.",
+      "proximateCause": "Self-respect."
     },
     "CS_OTTAPPA": {
       "name": "अपत्रपा",
       "shortName": "अपत्रपा",
-      "description": "पाप के कटु परिणामों से भयभीत होना।"
+      "description": "पाप के कटु परिणामों से भयभीत होना।",
+      "characteristic": "Dread का wrongdoing, abhorrence का यह danger का fault.",
+      "function": "Refraining from wrongdoing, not creating harm.",
+      "manifestation": "Shrinking back from और avoiding wrongdoing.",
+      "proximateCause": "Regard for others, fear का their censure."
     },
     "CS_ALOBHA": {
       "name": "अलोभ",
       "shortName": "अलोभ",
-      "description": "आसक्ति से मुक्ति और त्याग की भावना।"
+      "description": "आसक्ति से मुक्ति और त्याग की भावना।",
+      "characteristic": "A mind undefiled by its आलम्बन — free from उपादान, free from attachment.",
+      "function": "Not grasping, not उपादान, not attaching; transcending bondage.",
+      "manifestation": "Not holding on to what है present, not भव infatuated के साथ a pleasing आलम्बन; at its culmination, not उपादान even to a new existence.",
+      "proximateCause": "Wise मनसिकार."
     },
     "CS_ADOSA": {
       "name": "अद्वेष",
       "shortName": "अद्वेष",
-      "description": "क्रोध का अभाव, मैत्री और सहृदयता।"
+      "description": "क्रोध का अभाव, मैत्री और सहृदयता।",
+      "characteristic": "Freedom from cruelty, malice और opposition — a state का coolness और gentleness.",
+      "function": "Dispelling cruelty, avoiding harm, dispelling heated anger.",
+      "manifestation": "A manifestation का gentleness और coolness.",
+      "proximateCause": "Wise मनसिकार."
     },
     "CS_TATRAMAJJHATTATA": {
       "name": "तत्रमज्झत्तता",
       "shortName": "तत्रमज्झत्तता",
-      "description": "चित्त और चेतसिकों में समता और सन्तुलन।"
+      "description": "चित्त और चेतसिकों में समता और सन्तुलन।",
+      "characteristic": "Keeping विज्ञान और its मानसिक factors level के साथ one another — a state का balance और even-handedness.",
+      "function": "Preventing deficiency or excess, keeping यह associated states from losing their balance.",
+      "manifestation": "यह production का balance और equilibrium.",
+      "proximateCause": "यह presence का harmoniously co-operating states."
     },
     "CS_KAYAPASSADDHI": {
       "name": "कायप्रस्रब्धि",
       "shortName": "कायप्रस्रब्धि",
-      "description": "चेतसिकों की शान्ति और विश्राम।"
+      "description": "चेतसिकों की शान्ति और विश्राम।",
+      "characteristic": "Calm, free from यह agitation का यह मानसिक-factor group (यह aggregates का वेदना, संज्ञा और formations).",
+      "function": "Quelling यह agitation का यह मानसिक factors, so they no longer waver.",
+      "manifestation": "यह मानसिक factors become calm, tranquil और cool.",
+      "proximateCause": "यह presence का यह मानसिक factors (यह aggregates का वेदना, संज्ञा और formations)."
     },
     "CS_CITTAPASSADDHI": {
       "name": "चित्तप्रस्रब्धि",
       "shortName": "चित्तप्रस्रब्धि",
-      "description": "चित्त की शान्ति और प्रशान्ति।"
+      "description": "चित्त की शान्ति और प्रशान्ति।",
+      "characteristic": "Calm, free from यह agitation का विज्ञान (यह aggregate का विज्ञान).",
+      "function": "Quelling यह agitation का विज्ञान, so it no longer wavers.",
+      "manifestation": "विज्ञान becomes calm, tranquil और cool.",
+      "proximateCause": "यह presence का विज्ञान (यह aggregate का विज्ञान)."
     },
     "CS_KAYALAHUTA": {
       "name": "कायलघुता",
       "shortName": "कायलघुता",
-      "description": "चेतसिकों का हल्कापन।"
+      "description": "चेतसिकों का हल्कापन।",
+      "characteristic": "Lightness, freedom from यह heaviness का यह मानसिक-factor group (वेदना, संज्ञा, formations).",
+      "function": "Preventing heaviness from weighing down यह मानसिक factors, making them light.",
+      "manifestation": "यह मानसिक factors are no longer sluggish और become light.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors (वेदना, संज्ञा, formations)."
     },
     "CS_CITTALAHUTA": {
       "name": "चित्तलघुता",
       "shortName": "चित्तलघुता",
-      "description": "चित्त का हल्कापन और स्फूर्ति।"
+      "description": "चित्त का हल्कापन और स्फूर्ति।",
+      "characteristic": "Lightness, freedom from यह heaviness का विज्ञान.",
+      "function": "Preventing heaviness from weighing down विज्ञान, making it light.",
+      "manifestation": "विज्ञान है no longer sluggish और becomes light.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_KAYAMUDUTA": {
       "name": "कायमुदुता",
       "shortName": "कायमुदुता",
-      "description": "चेतसिकों की कोमलता और नमनीयता।"
+      "description": "चेतसिकों की कोमलता और नमनीयता।",
+      "characteristic": "Softness और pliancy का यह मानसिक-factor group (वेदना, संज्ञा, formations).",
+      "function": "Dissolving यह rigidity का यह मानसिक factors, limiting stiffness और coarseness.",
+      "manifestation": "Pliancy, ease में apprehending यह आलम्बन, freedom from stiffness.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_CITTAMUDUTA": {
       "name": "चित्तमुदुता",
       "shortName": "चित्तमुदुता",
-      "description": "चित्त की कोमलता।"
+      "description": "चित्त की कोमलता।",
+      "characteristic": "Softness और pliancy का विज्ञान.",
+      "function": "Dissolving यह rigidity का विज्ञान, limiting its stiffness और coarseness.",
+      "manifestation": "विज्ञान becomes pliant, apprehending यह आलम्बन के साथ ease, free from stiffness.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_KAYAKAMMANNATA": {
       "name": "कायकर्मण्यता",
       "shortName": "कायकर्मण्यता",
-      "description": "चेतसिकों की कार्यकुशलता।"
+      "description": "चेतसिकों की कार्यकुशलता।",
+      "characteristic": "Freeing यह मानसिक-factor group from unworkability, from unfitness.",
+      "function": "Dissolving और removing यह unfitness का यह मानसिक factors.",
+      "manifestation": "यह मानसिक factors become adaptable और fit to engage के साथ यह आलम्बन.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_CITTAKAMMANNATA": {
       "name": "चित्तकर्मण्यता",
       "shortName": "चित्तकर्मण्यता",
-      "description": "चित्त की कार्य-उपयुक्तता।"
+      "description": "चित्त की कार्य-उपयुक्तता।",
+      "characteristic": "Freeing विज्ञान from unworkability, from unfitness.",
+      "function": "Dissolving और removing यह unfitness का विज्ञान.",
+      "manifestation": "विज्ञान becomes adaptable और fit to engage के साथ यह आलम्बन.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_KAYAPAGUNNATA": {
       "name": "कायप्रागुण्य",
       "shortName": "कायप्रागुण्य",
-      "description": "चेतसिकों की प्रवीणता।"
+      "description": "चेतसिकों की प्रवीणता।",
+      "characteristic": "Absence का stagnation में यह मानसिक-factor group — यह refined proficiency का यह मानसिक factors.",
+      "function": "Breaking up और dissolving यह stagnation का यह मानसिक factors.",
+      "manifestation": "Keeping clear का और unattached to wrongdoing और fault.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_CITTAPAGUNNATA": {
       "name": "चित्तप्रागुण्य",
       "shortName": "चित्तप्रागुण्य",
-      "description": "चित्त की प्रवीणता।"
+      "description": "चित्त की प्रवीणता।",
+      "characteristic": "Absence का stagnation में विज्ञान — यह refined चित्तप्रागुण्य.",
+      "function": "Breaking up और dissolving यह stagnation का विज्ञान.",
+      "manifestation": "Keeping clear का और unattached to wrongdoing और fault.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_KAYUJUKATA": {
       "name": "कायऋजुता",
       "shortName": "कायऋजुता",
-      "description": "चेतसिकों की सरलता और निष्कपटता।"
+      "description": "चेतसिकों की सरलता और निष्कपटता।",
+      "characteristic": "Uprightness और straightness का यह मानसिक-factor group.",
+      "function": "Counteracting crookedness और यह lack का rectitude में यह मानसिक factors.",
+      "manifestation": "यह मानसिक factors become upright, without crookedness or deviation.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_CITTUJUKATA": {
       "name": "चित्तऋजुता",
       "shortName": "चित्तऋजुता",
-      "description": "चित्त की सरलता।"
+      "description": "चित्त की सरलता।",
+      "characteristic": "Uprightness और straightness का विज्ञान.",
+      "function": "Counteracting crookedness और यह lack का rectitude में विज्ञान.",
+      "manifestation": "विज्ञान becomes upright, without crookedness or deviation.",
+      "proximateCause": "यह presence का विज्ञान और its accompanying मानसिक factors."
     },
     "CS_SAMMAVACA": {
       "name": "सम्यग्वाक्",
       "shortName": "सम्यग्वाक्",
-      "description": "चार प्रकार के वाक्-दुश्चरितों से विरति।"
+      "description": "चार प्रकार के वाक्-दुश्चरितों से विरति।",
+      "characteristic": "Upholding सम्यग्वाक् — abstaining from और restraining verbal misconduct.",
+      "function": "Keeping away from falsity और deception (wrong speech: lying, slander, harsh speech, idle chatter).",
+      "manifestation": "यह eradication का wrong speech.",
+      "proximateCause": "यह presence का श्रद्धा, स्मृति, ह्री, अपत्रपा और modest desire."
     },
     "CS_SAMMAKAMMANTA": {
       "name": "सम्यक्-कर्मान्त",
       "shortName": "सम्यक्-कर्मान्त",
-      "description": "तीन प्रकार के काय-दुश्चरितों से विरति।"
+      "description": "तीन प्रकार के काय-दुश्चरितों से विरति।",
+      "characteristic": "Acting rightly, supporting wholesome states while eliminating one's own defilements.",
+      "function": "Keeping away from unwholesome bodily action (killing, stealing, sexual misconduct).",
+      "manifestation": "यह eradication का wrong action.",
+      "proximateCause": "यह presence का श्रद्धा, स्मृति, ह्री, अपत्रपा और modest desire."
     },
     "CS_SAMMAAJIVA": {
       "name": "सम्यगाजीव",
       "shortName": "सम्यगाजीव",
-      "description": "अधर्म और पाप से आजीविका कमाने से विरति।"
+      "description": "अधर्म और पाप से आजीविका कमाने से विरति।",
+      "characteristic": "Purity, renunciation का और abstention from misconduct का both body और speech.",
+      "function": "Sustaining a righteous livelihood, preventing misconduct.",
+      "manifestation": "यह eradication का wrong livelihood, refraining from unwholesome conduct.",
+      "proximateCause": "यह presence का श्रद्धा, स्मृति, ह्री, अपत्रपा और modest desire."
     },
     "CS_KARUNA": {
       "name": "करुणा",
       "shortName": "करुणा",
-      "description": "दुःखियों के दुःख को दूर करने की इच्छा।"
+      "description": "दुःखियों के दुःख को दूर करने की इच्छा।",
+      "characteristic": "यह wish जो beings be free from suffering — यह way का wishing to remove यह suffering का beings.",
+      "function": "Being unable to bear यह sight का beings' suffering — unable to remain indifferent before यह suffering का other beings.",
+      "manifestation": "Kindliness, or यह absence का oppressing other beings.",
+      "proximateCause": "Encountering beings who are suffering — perceiving यह pressing need का beings overwhelmed by suffering."
     },
     "CS_MUDITA": {
       "name": "मुदिता",
       "shortName": "मुदिता",
-      "description": "दूसरों के सुख और सफलता में प्रसन्न होना।"
+      "description": "दूसरों के सुख और सफलता में प्रसन्न होना।",
+      "characteristic": "Rejoicing में यह good fortune का beings — a state का gladness at यह happiness का others.",
+      "function": "Being free from ईर्ष्या towards other beings.",
+      "manifestation": "Satisfaction at यह progress और happiness का other beings — यह destruction का aversion.",
+      "proximateCause": "Seeing beings create और enjoy happiness — recognizing जो beings have attained success."
     },
     "CS_PANNA": {
       "name": "प्रज्ञेन्द्रिय",
       "shortName": "प्रज्ञेन्द्रिय",
-      "description": "यथार्थ ज्ञान और तत्त्व-बोध कराने वाली प्रज्ञा।"
+      "description": "यथार्थ ज्ञान और तत्त्व-बोध कराने वाली प्रज्ञा।",
+      "characteristic": "Knowing clearly, penetrating to यह true nature का phenomena — wisdom जो sees यह Three Characteristics (impermanence, suffering, non-self).",
+      "function": "Dispelling और eliminating यह darkness का अविद्या.",
+      "manifestation": "Freedom from confusion, freedom from defiling attachment.",
+      "proximateCause": "Wise मनसिकार; calm (a tranquil mind); और a rebirth-linking विज्ञान rooted में यह three wholesome roots (अलोभ, अद्वेष, non-मोह)."
     }
   },
   "rupas": {
     "RP_001": {
       "name": "पृथ्वी धातु",
       "shortName": "पृथ्वी",
-      "description": "कठिनता या कोमलता का लक्षण, जो अन्य रूपों का आधार है।"
+      "description": "कठिनता या कोमलता का लक्षण, जो अन्य रूपों का आधार है।",
+      "characteristic": "Hardness or softness — यह quality का solidity or pliancy में रूप.",
+      "function": "Acting के रूप में यह supporting foundation for यह other material phenomena में यह same group (kalāpa).",
+      "manifestation": "Receiving — perceptible through bodily स्पर्श के रूप में hardness or softness.",
+      "proximateCause": "यह co-arising का यह other three great elements (water, fire, air).",
+      "doctrinalNote": "यह four great elements always arise together, inseparably. There है no materiality में यह immaterial realm."
     },
     "RP_002": {
       "name": "आपो धातु",
       "shortName": "आपो",
-      "description": "द्रवता या संसंजन (चिपकाने) का लक्षण।"
+      "description": "द्रवता या संसंजन (चिपकाने) का लक्षण।",
+      "characteristic": "Flowing or cohesion — यह binding quality का रूप.",
+      "function": "Binding together यह material phenomena within यह same kalāpa.",
+      "manifestation": "रूप है held together, not falling apart.",
+      "proximateCause": "यह co-arising का यह other three great elements (earth, fire, air).",
+      "doctrinalNote": "यह आपो धातु है यह only great element जो cannot be directly sensed through bodily स्पर्श."
     },
     "RP_003": {
       "name": "तेजो धातु",
       "shortName": "तेजो",
-      "description": "उष्णता या शीतलता का लक्षण, जो परिपक्व करता है।"
+      "description": "उष्णता या शीतलता का लक्षण, जो परिपक्व करता है।",
+      "characteristic": "Heat or cold — यह temperature quality का रूप.",
+      "function": "Ripening और sustaining यह material phenomena का यह same group.",
+      "manifestation": "रूप है brought to maturity और ripeness.",
+      "proximateCause": "यह co-arising का यह other three great elements (earth, water, air).",
+      "doctrinalNote": "When occurring independently के रूप में external heat (utu), यह तेजो धातु gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
     },
     "RP_004": {
       "name": "वायोधातु",
       "shortName": "वायु",
-      "description": "प्रसारण और गतिशीलता का लक्षण।"
+      "description": "प्रसारण और गतिशीलता का लक्षण।",
+      "characteristic": "Distension or motion — यह quality का movement में रूप.",
+      "function": "Supporting और setting रूप into motion.",
+      "manifestation": "रूप है supported और made to move.",
+      "proximateCause": "यह co-arising का यह other three great elements (earth, water, fire).",
+      "doctrinalNote": "में यह practice का ānāpānasati, यह breath (वायोधातु) है यह principal meditation आलम्बन."
     },
     "RP_005": {
       "name": "चक्षुप्रसाद",
       "shortName": "चक्षुप्रसाद",
-      "description": "रूप (दृश्य) को ग्रहण करने वाला पारदर्शी इन्द्रिय रूप।"
+      "description": "रूप (दृश्य) को ग्रहण करने वाला पारदर्शी इन्द्रिय रूप।",
+      "characteristic": "Subtlety और clarity, capable का taking up रूपाळम्बन के रूप में its आलम्बन.",
+      "function": "Serving के रूप में यह physical basis for eye-विज्ञान to arise.",
+      "manifestation": "Eye-विज्ञान उत्पन्न होता है और sees यह visible आलम्बन.",
+      "proximateCause": "Past kamma; यह presence का a visible आलम्बन impinging on it.",
+      "doctrinalNote": "Produced only by kamma. Not present में यह immaterial realm."
     },
     "RP_006": {
       "name": "श्रोत्रप्रसाद",
       "shortName": "श्रोत्रप्रसाद",
-      "description": "ध्वनि को ग्रहण करने वाला पारदर्शी इन्द्रिय रूप।"
+      "description": "ध्वनि को ग्रहण करने वाला पारदर्शी इन्द्रिय रूप।",
+      "characteristic": "Subtlety, capable का taking up शब्दालम्बन के रूप में its आलम्बन.",
+      "function": "Serving के रूप में यह physical basis for ear-विज्ञान to arise.",
+      "manifestation": "Ear-विज्ञान उत्पन्न होता है और hears यह शब्दालम्बन आलम्बन.",
+      "proximateCause": "Past kamma; यह presence का a शब्दालम्बन आलम्बन impinging on it.",
+      "doctrinalNote": "Brahmās का यह fine-material realm possess यह ear faculty because they communicate through शब्दालम्बन."
     },
     "RP_007": {
       "name": "घ्राणप्रसाद",
       "shortName": "घ्राणप्रसाद",
-      "description": "गन्ध को ग्रहण करने वाला इन्द्रिय रूप।"
+      "description": "गन्ध को ग्रहण करने वाला इन्द्रिय रूप।",
+      "characteristic": "Subtlety, capable का taking up गन्धालम्बन के रूप में its आलम्बन.",
+      "function": "Serving के रूप में यह physical basis for nose-विज्ञान to arise.",
+      "manifestation": "Nose-विज्ञान उत्पन्न होता है और smells यह गन्धालम्बन आलम्बन.",
+      "proximateCause": "Past kamma; यह presence का an गन्धालम्बन आलम्बन impinging on it.",
+      "doctrinalNote": "Occurs only में यह sense-sphere realm. Brahmās का यह fine-material realm lack यह nose faculty."
     },
     "RP_008": {
       "name": "जिह्वाप्रसाद",
       "shortName": "जिह्वाप्रसाद",
-      "description": "रस को ग्रहण करने वाला इन्द्रिय रूप।"
+      "description": "रस को ग्रहण करने वाला इन्द्रिय रूप।",
+      "characteristic": "Subtlety, capable का taking up रसालम्बन के रूप में its आलम्बन.",
+      "function": "Serving के रूप में यह physical basis for tongue-विज्ञान to arise.",
+      "manifestation": "Tongue-विज्ञान उत्पन्न होता है और tastes यह flavour आलम्बन.",
+      "proximateCause": "Past kamma; यह presence का a रसालम्बन आलम्बन impinging on it.",
+      "doctrinalNote": "Occurs only में यह sense-sphere realm. Brahmās do not eat, so they lack यह tongue faculty."
     },
     "RP_009": {
       "name": "कायप्रसाद",
       "shortName": "कायप्रसाद",
-      "description": "स्पर्श को ग्रहण करने वाला सर्वशरीरव्यापी इन्द्रिय रूप।"
+      "description": "स्पर्श को ग्रहण करने वाला सर्वशरीरव्यापी इन्द्रिय रूप।",
+      "characteristic": "Subtlety जो pervades यह body, taking up tangible objects (earth, fire, air) के रूप में its आलम्बन.",
+      "function": "Serving के रूप में यह physical basis for body-विज्ञान to arise.",
+      "manifestation": "Body-विज्ञान उत्पन्न होता है और senses यह tangible आलम्बन.",
+      "proximateCause": "Past kamma; यह presence का a tangible आलम्बन impinging on it.",
+      "doctrinalNote": "Brahmās का यह fine-material realm possess यह body faculty. It है absent में यह non-percipient realm."
     },
     "RP_010": {
       "name": "रूपाळम्बन",
       "shortName": "रूप",
-      "description": "चक्षु द्वारा देखा जाने वाला वर्ण और प्रकाश।"
+      "description": "चक्षु द्वारा देखा जाने वाला वर्ण और प्रकाश।",
+      "characteristic": "Appearance और manifestation — यह आलम्बन जो है seen by यह eye faculty.",
+      "function": "Serving के रूप में यह आलम्बन cognized by eye-विज्ञान.",
+      "manifestation": "Eye-विज्ञान उत्पन्न होता है और apprehends it.",
+      "proximateCause": "यह presence का light together के साथ स्पर्श के साथ यह eye faculty.",
+      "doctrinalNote": "रूपाळम्बन (colour) है distinct from materiality (रूप) में general."
     },
     "RP_011": {
       "name": "शब्दालम्बन",
       "shortName": "शब्द",
-      "description": "कर्ण द्वारा सुनी जाने वाली ध्वनि।"
+      "description": "कर्ण द्वारा सुनी जाने वाली ध्वनि।",
+      "characteristic": "Resounding — यह आलम्बन जो है heard by यह ear faculty.",
+      "function": "Serving के रूप में यह आलम्बन cognized by ear-विज्ञान.",
+      "manifestation": "Ear-विज्ञान उत्पन्न होता है और apprehends it.",
+      "proximateCause": "यह arising का शब्दालम्बन together के साथ स्पर्श के साथ यह ear faculty."
     },
     "RP_012": {
       "name": "गन्धालम्बन",
       "shortName": "गन्ध",
-      "description": "नासिका द्वारा सूंघी जाने वाली गन्ध।"
+      "description": "नासिका द्वारा सूंघी जाने वाली गन्ध।",
+      "characteristic": "Wafting forth — यह आलम्बन जो है smelled by यह nose faculty.",
+      "function": "Serving के रूप में यह आलम्बन cognized by nose-विज्ञान.",
+      "manifestation": "Nose-विज्ञान उत्पन्न होता है और apprehends it.",
+      "proximateCause": "यह arising का गन्धालम्बन together के साथ स्पर्श के साथ यह nose faculty."
     },
     "RP_013": {
       "name": "रसालम्बन",
       "shortName": "रस",
-      "description": "रसना द्वारा आस्वादित स्वाद।"
+      "description": "रसना द्वारा आस्वादित स्वाद।",
+      "characteristic": "Appearance — यह आलम्बन जो है tasted by यह tongue faculty.",
+      "function": "Serving के रूप में यह आलम्बन cognized by tongue-विज्ञान.",
+      "manifestation": "Tongue-विज्ञान उत्पन्न होता है और apprehends it.",
+      "proximateCause": "स्पर्श का a flavour taken up by यह tongue faculty."
     },
     "RP_014": {
       "name": "स्त्रीन्द्रिय",
       "shortName": "स्त्रीन्द्रिय",
-      "description": "स्त्री के शारीरिक और स्वभावगत लक्षणों को निर्धारित करने वाला रूप।"
+      "description": "स्त्री के शारीरिक और स्वभावगत लक्षणों को निर्धारित करने वाला रूप।",
+      "characteristic": "यह expression का femininity — influencing यह entire material body.",
+      "function": "Determining यह signs और behaviour characteristic का यह female sex.",
+      "manifestation": "यह expression का female sex-characteristics में यह material body.",
+      "proximateCause": "Kamma जो produces यह female sex from यह moment का rebirth-linking.",
+      "doctrinalNote": "Occurs only में यह sense-sphere realm. Brahmās का यह fine-material realm have no sex faculty."
     },
     "RP_015": {
       "name": "पुरुषेन्द्रिय",
       "shortName": "पुरुषेन्द्रिय",
-      "description": "पुरुष के शारीरिक और स्वभावगत लक्षणों को निर्धारित करने वाला रूप।"
+      "description": "पुरुष के शारीरिक और स्वभावगत लक्षणों को निर्धारित करने वाला रूप।",
+      "characteristic": "यह expression का masculinity — influencing यह entire material body.",
+      "function": "Determining यह signs और behaviour characteristic का यह male sex.",
+      "manifestation": "यह expression का male sex-characteristics में यह material body.",
+      "proximateCause": "Kamma जो produces यह male sex from यह moment का rebirth-linking.",
+      "doctrinalNote": "Occurs only में यह sense-sphere realm."
     },
     "RP_016": {
       "name": "हृदयवस्तु",
       "shortName": "हृदयवस्तु",
-      "description": "मनोधातु और मनोविज्ञानधातु का भौतिक आश्रय।"
+      "description": "मनोधातु और मनोविज्ञानधातु का भौतिक आश्रय।",
+      "characteristic": "Being यह seat — यह physical basis on which mind-door विज्ञान depends.",
+      "function": "Serving के रूप में यह physical basis for all विज्ञान जो उत्पन्न होता है through यह mind-door (excluding यह sense-door pairs).",
+      "manifestation": "Mind-door विज्ञान है able to arise.",
+      "proximateCause": "Produced by past kamma; sustained by यह blood का यह heart.",
+      "doctrinalNote": "Absent में यह immaterial realm. This है यह most important material basis में यह Abhidhamma system का cognition."
     },
     "RP_017": {
       "name": "रूपजीवितिन्द्रिय",
       "shortName": "रूपजीवित",
-      "description": "कर्मज रूपों की जीवन-शक्ति और स्थिति को बनाए रखने वाला रूप।"
+      "description": "कर्मज रूपों की जीवन-शक्ति और स्थिति को बनाए रखने वाला रूप।",
+      "characteristic": "Sustaining life — preserving यह material phenomena produced by kamma.",
+      "function": "Keeping kamma-produced materiality में existence for यह duration का one material life-span.",
+      "manifestation": "Kamma-produced materiality है kept alive और persisting.",
+      "proximateCause": "Only kamma can produce रूपजीवितिन्द्रिय.",
+      "doctrinalNote": "यह lifespan का materiality equals seventeen mind-moments. When रूपजीवितिन्द्रिय ceases, यह kamma-produced materiality ceases के साथ it."
     },
     "RP_018": {
       "name": "कवलीकाराहार",
       "shortName": "आहार",
-      "description": "भोजन में उपस्थित पोषक तत्व (ओज) जो शरीर का पोषण करता है।"
+      "description": "भोजन में उपस्थित पोषक तत्व (ओज) जो शरीर का पोषण करता है।",
+      "characteristic": "Nourishment — यह कवलीकाराहार present में every material group.",
+      "function": "Nourishing यह material phenomena का यह same group और generating new materiality from nutriment.",
+      "manifestation": "Materiality है nourished, sustained और multiplied.",
+      "proximateCause": "यह presence का nutriment (food) जो है digested.",
+      "doctrinalNote": "कवलीकाराहार में physical food (kabaḷīkāra-āhāra) है one का यह four kinds का nutriment में यह Abhidhamma."
     },
     "RP_019": {
       "name": "आकाशधातु",
       "shortName": "आकाश",
-      "description": "रूप-कलापों के बीच का सीमा-निर्धारक स्थान।"
+      "description": "रूप-कलापों के बीच का सीमा-निर्धारक स्थान।",
+      "characteristic": "Delimiting — creating यह boundary between groups का materiality.",
+      "function": "Demarcating यह boundary between kalāpas.",
+      "manifestation": "यह groups का materiality are distinguished और do not merge.",
+      "proximateCause": "यह presence का material groups (kalāpas) existing alongside one another.",
+      "doctrinalNote": "यह आकाशधातु के रूप में a material phenomenon है not यह same के रूप में absolute space में philosophy."
     },
     "RP_020": {
       "name": "कायविज्ञप्ति",
       "shortName": "कायविज्ञप्ति",
-      "description": "शरीर की चेष्टा द्वारा मन के भाव प्रकट करने वाला रूप।"
+      "description": "शरीर की चेष्टा द्वारा मन के भाव प्रकट करने वाला रूप।",
+      "characteristic": "Movement — bodily expression used to convey an intention.",
+      "function": "Communicating an intention through bodily gesture.",
+      "manifestation": "Others understand one's intention through bodily gesture.",
+      "proximateCause": "A विज्ञान arising के साथ यह intention to express something.",
+      "doctrinalNote": "Produced only by mind. It है यह basis का bodily action (kāya-kamma)."
     },
     "RP_021": {
       "name": "वाग्विज्ञप्ति",
       "shortName": "वाग्विज्ञप्ति",
-      "description": "वाणी द्वारा मन के विचार प्रकट करने वाला रूप।"
+      "description": "वाणी द्वारा मन के विचार प्रकट करने वाला रूप।",
+      "characteristic": "Vocal expression — speech used to convey an intention.",
+      "function": "Communicating an intention through speech.",
+      "manifestation": "Others understand one's intention through यह शब्दालम्बन का speech.",
+      "proximateCause": "A विज्ञान arising के साथ यह intention to speak.",
+      "doctrinalNote": "Produced only by mind. It है यह basis का verbal action (vacī-kamma)."
     },
     "RP_022": {
       "name": "रूपलघुता",
       "shortName": "रूपलघुता",
-      "description": "शरीर के रूपों का हल्कापन और फुर्तीलापन।"
+      "description": "शरीर के रूपों का हल्कापन और फुर्तीलापन।",
+      "characteristic": "Lightness — यह buoyant, agile quality का materiality.",
+      "function": "Preventing materiality from being heavy और rigid.",
+      "manifestation": "यह body है light और moves के साथ ease.",
+      "proximateCause": "Favourable mind, temperature और nutriment; freedom from illness.",
+      "doctrinalNote": "Not produced by kamma. Depends on present health और conditions."
     },
     "RP_023": {
       "name": "रूपमुदुता",
       "shortName": "रूपमुदुता",
-      "description": "शरीर के रूपों की कोमलता और लचीलापन।"
+      "description": "शरीर के रूपों की कोमलता और लचीलापन।",
+      "characteristic": "Softness — यह pliant, malleable quality का materiality.",
+      "function": "Preventing materiality from being stiff और rigid.",
+      "manifestation": "यह body है soft और supple.",
+      "proximateCause": "Harmonious mind, temperature और nutriment; freedom from illness."
     },
     "RP_024": {
       "name": "रूपकर्मण्यता",
       "shortName": "रूपकर्मण्यता",
-      "description": "शरीर के रूपों की कार्यक्षमता और सुगमता।"
+      "description": "शरीर के रूपों की कार्यक्षमता और सुगमता।",
+      "characteristic": "Adaptability — यह workable, fit quality का materiality.",
+      "function": "Making materiality easy to use और free का fatigue.",
+      "manifestation": "यह body है fit for any task.",
+      "proximateCause": "Harmonious mind, temperature और nutriment."
     },
     "RP_025": {
       "name": "रूपोपचय",
       "shortName": "रूपोपचय",
-      "description": "रूपों का प्रारम्भिक उत्पादन और वृद्धि।"
+      "description": "रूपों का प्रारम्भिक उत्पादन और वृद्धि।",
+      "characteristic": "Genesis — यह initial arising phase का a material group.",
+      "function": "Marking यह beginning का existence का a material group.",
+      "manifestation": "Materiality comes into being में यह world.",
+      "proximateCause": "यह four originators का materiality (kamma, mind, temperature, nutriment).",
+      "doctrinalNote": "यह four characteristics का materiality are phases का all material phenomena, not independent material instances."
     },
     "RP_026": {
       "name": "रूपसन्तति",
       "shortName": "रूपसन्तति",
-      "description": "रूपों का निरन्तर प्रवाह और सातत्य।"
+      "description": "रूपों का निरन्तर प्रवाह और सातत्य।",
+      "characteristic": "Continuity — यह phase का persistence और duration का यह stream का materiality.",
+      "function": "Keeping यह stream का materiality continuing without interruption.",
+      "manifestation": "Materiality appears stable और continuous.",
+      "proximateCause": "यह four originators का materiality acting continuously.",
+      "doctrinalNote": "Continuity explains why things seem stable to us — they are में fact an unbroken stream का arising और passing away."
     },
     "RP_027": {
       "name": "रूपजरता",
       "shortName": "रूपजरता",
-      "description": "रूपों की क्षीणता, जीर्णता और क्षय।"
+      "description": "रूपों की क्षीणता, जीर्णता और क्षय।",
+      "characteristic": "Decay — यह ageing, declining phase का materiality.",
+      "function": "Marking यह change और decline का materiality.",
+      "manifestation": "Materiality grows old, wears down, और changes.",
+      "proximateCause": "यह passage का time; materiality having already existed.",
+      "doctrinalNote": "Decay है यह clearest visible sign का impermanence (anicca) में materiality."
     },
     "RP_028": {
       "name": "रूपानित्यता",
       "shortName": "रूपानित्यता",
-      "description": "रूपों का सर्वथा विनाश और अनित्यता।"
+      "description": "रूपों का सर्वथा विनाश और अनित्यता।",
+      "characteristic": "Dissolution — यह complete cessation का materiality.",
+      "function": "Marking यह end का यह existence का materiality.",
+      "manifestation": "Materiality no longer exists — it has completely ceased.",
+      "proximateCause": "Materiality having already passed through यह three preceding phases का arising, persisting और changing.",
+      "doctrinalNote": "Clearly seeing यह phase का dissolution है यह starting point का insight meditation (vipassanā)."
     }
   },
   "paccayas": {
@@ -1020,166 +1403,458 @@
     "PD_01": {
       "name": "अविद्या",
       "shortName": "अविद्या",
-      "description": "चार आर्य सत्यों और प्रतीत्यसमुत्पाद का अज्ञान।"
+      "description": "चार आर्य सत्यों और प्रतीत्यसमुत्पाद का अज्ञान।",
+      "characteristic": "Not understanding — blindness to यह true nature का things (यह Four Truths, यह three characteristics).",
+      "function": "To obscure clear seeing, और to serve के रूप में प्रत्यय for यह arising का formations.",
+      "manifestation": "के रूप में bewilderment और darkness — it keeps generating kamma (formations) without one realising it.",
+      "proximateCause": "Unwise मनसिकार (ayoniso-manasikāra); not meeting यह wise और not hearing यह True Dhamma.",
+      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). यह ending का अविद्या है यह attainment का यह four path consciousnesses.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_02": {
       "name": "संस्कार",
       "shortName": "संस्कार",
-      "description": "अविद्या के कारण किए जाने वाले कर्म (पुण्य, अपุण्य, आनेञ्ज)।"
+      "description": "अविद्या के कारण किए जाने वाले कर्म (पुण्य, अपุण्य, आनेञ्ज)।",
+      "characteristic": "Acting और arranging — deliberate formation through body, speech, और mind.",
+      "function": "To generate kamma — accumulating kammic force जो will yield rebirth में a future life.",
+      "manifestation": "के रूप में accumulated kamma जो will draw विज्ञान into rebirth.",
+      "proximateCause": "अविद्या के रूप में प्रत्यय (without अविद्या, formations become supramundane और create no new kamma).",
+      "doctrinalNote": "Saṅkhārā में dependent origination means यह चेतना (cetanā) मानसिक factor जो forms kamma.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "PD_03": {
       "name": "विज्ञान",
       "shortName": "विज्ञान",
-      "description": "पुनर्जन्म को जोड़ने वाला प्रतिसन्धि विज्ञान।"
+      "description": "पुनर्जन्म को जोड़ने वाला प्रतिसन्धि विज्ञान।",
+      "characteristic": "Knowing an आलम्बन — यह rebirth विज्ञान resting on यह new mind-और-रूप.",
+      "function": "To rebirth — to open a new life.",
+      "manifestation": "A new existence takes shape — mind-और-रूप appear.",
+      "proximateCause": "Kamma (formations) के रूप में प्रत्यय; mind-और-रूप must be there to rest on.",
+      "doctrinalNote": "विज्ञान और mind-और-रूप lean on each other — like two sheaves का reeds propping one another up.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_04": {
       "name": "नाम-रूप",
       "shortName": "नामरूप",
-      "description": "मन (वेदनादि) और शरीर (भौतिक रूप) का संयोजन।"
+      "description": "मन (वेदनादि) और शरीर (भौतिक रूप) का संयोजन।",
+      "characteristic": "Existing — mind और body present और developing.",
+      "function": "To serve के रूप में यह ground on which विज्ञान operates, और यह प्रत्यय for यह षडायतन to develop.",
+      "manifestation": "यह षडायतन become fully formed.",
+      "proximateCause": "विज्ञान के रूप में प्रत्यय; यह four sources producing materiality.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_05": {
       "name": "षडायतन",
       "shortName": "षडायतन",
-      "description": "छह आन्तरिक इन्द्रिय द्वार (चक्षु आदि)।"
+      "description": "छह आन्तरिक इन्द्रिय द्वार (चक्षु आदि)।",
+      "characteristic": "Readiness to receive — six doors through which objects enter.",
+      "function": "To serve के रूप में doors (dvāra) through which यह mind meets outer objects.",
+      "manifestation": "स्पर्श (phassa) है established — यह mind can touch its आलम्बन.",
+      "proximateCause": "Fully developed mind-और-रूप के रूप में प्रत्यय.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_06": {
       "name": "स्पर्श",
       "shortName": "स्पर्श",
-      "description": "इन्द्रिय, विषय और विज्ञान का संगम।"
+      "description": "इन्द्रिय, विषय और विज्ञान का संगम।",
+      "characteristic": "Touching — यह encounter का base, आलम्बन, और विज्ञान.",
+      "function": "To gather base, आलम्बन, और विज्ञान together — conditioning यह arising का वेदना.",
+      "manifestation": "Mind, मानसिक factors, base, और आलम्बन come together.",
+      "proximateCause": "All three must be present: base + आलम्बन + विज्ञान.",
+      "doctrinalNote": "Phassa में dependent origination है यह स्पर्श मानसिक factor (CS_PHASSA).",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_07": {
       "name": "वेदना",
       "shortName": "वेदना",
-      "description": "सुख, दुःख और उपेक्षा का संवेदन।"
+      "description": "सुख, दुःख और उपेक्षा का संवेदन।",
+      "characteristic": "Experiencing — tasting यह आलम्बन के रूप में pleasant, painful, or neutral after स्पर्श.",
+      "function": "To enjoy यह आलम्बन — conditioning तृष्णा to arise when unwise मनसिकार prevails.",
+      "manifestation": "के रूप में pleasant, painful, or neutral experience forming में यह mind.",
+      "proximateCause": "स्पर्श के रूप में प्रत्यय.",
+      "doctrinalNote": "This है यह crux का यह four foundations का स्मृति: halt at वेदना, और do not let it ripen into तृष्णा.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_08": {
       "name": "तृष्णा",
       "shortName": "तृष्णा",
-      "description": "विषयों के उपभोग की उत्कट प्यास।"
+      "description": "विषयों के उपभोग की उत्कट प्यास।",
+      "characteristic": "Thirsting — यह उपादान wanting produced by वेदना.",
+      "function": "To grasp at its आलम्बन — conditioning यह arising का उपादान.",
+      "manifestation": "के रूप में उपादान taking hold; यह round का rebirth continues.",
+      "proximateCause": "वेदना (especially glad और pleasant वेदना) के रूप में प्रत्यय.",
+      "doctrinalNote": "तृष्णा है यह Origin का suffering among यह Four Noble Truths. यह ending का तृष्णा है यह ending का suffering — Nibbāna.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "PD_09": {
       "name": "उपादान",
       "shortName": "उपादान",
-      "description": "भोगों, दृष्टियों और आत्मभाव में प्रगाढ़ आसक्ति।"
+      "description": "भोगों, दृष्टियों और आत्मभाव में प्रगाढ़ आसक्ति।",
+      "characteristic": "Holding tight — a grip जो does not let go.",
+      "function": "To grasp यह आलम्बन firmly — conditioning यह arising का भव.",
+      "manifestation": "के रूप में भव taking shape — rebirth-producing kamma accumulates.",
+      "proximateCause": "तृष्णा के रूप में प्रत्यय — उपादान है तृष्णा intensified और consolidated.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_10": {
       "name": "भव",
       "shortName": "भव",
-      "description": "पुनर्जन्म का कारणभूत कर्म (कर्मभव) और उत्पत्ति (उत्पत्तिभव)।"
+      "description": "पुनर्जन्म का कारणभूत कर्म (कर्मभव) और उत्पत्ति (उत्पत्तिभव)।",
+      "characteristic": "Existing — accumulated kammic force ready to produce rebirth.",
+      "function": "To प्रत्यय जाति taking place में a future life.",
+      "manifestation": "के रूप में rebirth occurring में a plane जो matches यह kamma.",
+      "proximateCause": "उपादान के रूप में प्रत्यय — उपादान है यह fuel for भव.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_11": {
       "name": "जाति",
       "shortName": "जन्म",
-      "description": "नये भव में स्कन्धों का प्रादुर्भाव।"
+      "description": "नये भव में स्कन्धों का प्रादुर्भाव।",
+      "characteristic": "Rebirth-linking — विज्ञान reborn into a new plane.",
+      "function": "To open a new life — dragging यह whole mass का suffering along.",
+      "manifestation": "के रूप में suffering (ageing-और-death) appearing.",
+      "proximateCause": "भव (kammic force) के रूप में प्रत्यय.",
+      "doctrinalNote": "यह three-life circle joins here: जाति (PD_11) corresponds to विज्ञान (PD_03) on यह result side का यह future life.",
+      "examples": [
+        "यह"
+      ]
     },
     "PD_12": {
       "name": "जरा-मरण",
       "shortName": "जरा-मरण",
-      "description": "स्कन्धों का जीर्ण होना (जरा) और विनाश (मृत्यु)।"
+      "description": "स्कन्धों का जीर्ण होना (जरा) और विनाश (मृत्यु)।",
+      "characteristic": "Ageing और dying — यह inevitable decay और perishing का all conditioned mind और body.",
+      "function": "To end a life — और to continue a new round का भव if liberation has not been won.",
+      "manifestation": "A life closed; without liberation यह round continues.",
+      "proximateCause": "जाति के रूप में प्रत्यय — where there है जाति, ageing-और-death necessarily follow.",
+      "doctrinalNote": "Liberation means ending अविद्या (PD_01) और तृष्णा (PD_08) — यह realisation का Nibbāna.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "दृष्टधर्मवेदनीय कर्म",
       "shortName": "दृष्टधर्मवेदनीय",
-      "description": "वर्तमान जीवन में ही फल देने वाला कर्म।"
+      "description": "वर्तमान जीवन में ही फल देने वाला कर्म।",
+      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within यह very same life. If it fails to ripen में जो life, it becomes defunct (ahosi-kamma).",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "KM_T_02": {
       "name": "उपपद्यवेदनीय कर्म",
       "shortName": "उपपद्यवेदनीय",
-      "description": "अगले ही जन्म में फल देने वाला कर्म।"
+      "description": "अगले ही जन्म में फल देने वाला कर्म।",
+      "doctrinalNote": "It has only a single opportunity to ripen, में यह immediately following life. If it fails to ripen में जो life, it becomes defunct.",
+      "examples": [
+        "यह"
+      ]
     },
     "KM_T_03": {
       "name": "अपरापर्यरवेदनीय कर्म",
       "shortName": "अपरापर्यरवेदनीय",
-      "description": "तीसरे जन्म से निर्वाण पर्यन्त कभी भी फल देने वाला कर्म।"
+      "description": "तीसरे जन्म से निर्वाण पर्यन्त कभी भी फल देने वाला कर्म।",
+      "doctrinalNote": "It never becomes defunct through lapse का time — one reason यह stream का kamma और its results है so intricate. It है यह most common का यह three time-based kinds का kamma.",
+      "examples": [
+        "यह"
+      ]
     },
     "KM_T_04": {
       "name": "अहोसि कर्म",
       "shortName": "अहोसि कर्म",
-      "description": "जो कर्म फल देने का अवसर खो चुका हो, निष्फल कर्म।"
-    },
-    "KM_U_01": {
-      "name": "जनक कर्म",
-      "shortName": "जनक",
-      "description": "जन्म के समय प्रतिसन्धि और रूपों को उत्पन्न करने वाला कर्म।"
-    },
-    "KM_U_02": {
-      "name": "उपस्तम्भक कर्म",
-      "shortName": "उपस्तम्भक",
-      "description": "जनक कर्म के फल को सहारा और वृद्धि देने वाला कर्म।"
-    },
-    "KM_U_03": {
-      "name": "उपपीड़क कर्म",
-      "shortName": "उपपीड़क",
-      "description": "जनक कर्म के फल को बाधित या दुर्बल करने वाला कर्म।"
-    },
-    "KM_U_04": {
-      "name": "उपघातक कर्म",
-      "shortName": "उपघातक",
-      "description": "पूर्व कर्म के प्रभाव को सर्वथा नष्ट कर अपना नया फल देने वाला कर्म।"
+      "description": "जो कर्म फल देने का अवसर खो चुका हो, निष्फल कर्म।",
+      "doctrinalNote": "'Ahosi' means 'it has already been' — यह kamma है not destroyed, it has simply lost its opportunity to ripen.",
+      "examples": [
+        "यह"
+      ]
     },
     "KM_P_01": {
       "name": "गुरुक कर्म",
       "shortName": "गुरुक",
-      "description": "अत्यन्त भारी कर्म (आनन्तर्य पाप या ध्यान) जो सर्वप्रथम फल देता है।"
+      "description": "अत्यन्त भारी कर्म (आनन्तर्य पाप या ध्यान) जो सर्वप्रथम फल देता है।",
+      "doctrinalNote": "Generative kamma determines यह entire foundation का a life.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "KM_P_02": {
       "name": "आसन्न कर्म",
       "shortName": "आसन्न",
-      "description": "मृत्युकाल के समीप किया गया या स्मरण किया गया कर्म।"
+      "description": "मृत्युकाल के समीप किया गया या स्मरण किया गया कर्म।",
+      "doctrinalNote": "It है not यह one who sows यह seed but यह one who waters it — it strengthens और extends a result जो है already ripening rather than producing a new one का its own.",
+      "examples": [
+        "यह"
+      ]
     },
     "KM_P_03": {
       "name": "आचीर्ण कर्म",
       "shortName": "आचीर्ण",
-      "description": "निरन्तर अभ्यास द्वारा स्वभाव बना हुआ कर्म।"
+      "description": "निरन्तर अभ्यास द्वारा स्वभाव बना हुआ कर्म।",
+      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
+      "examples": [
+        "यह"
+      ]
     },
     "KM_P_04": {
       "name": "कटत्ता कर्म",
       "shortName": "कटत्ता",
-      "description": "पूर्व तीन के अभाव में फल देने वाला सामान्य कर्म।"
+      "description": "पूर्व तीन के अभाव में फल देने वाला सामान्य कर्म।",
+      "doctrinalNote": "This है यह most powerful kind का kamma classified by function; it explains यह sudden reversals जो occur में a life.",
+      "examples": [
+        "यह"
+      ]
+    },
+    "KM_U_01": {
+      "name": "जनक कर्म",
+      "shortName": "जनक",
+      "description": "जन्म के समय प्रतिसन्धि और रूपों को उत्पन्न करने वाला कर्म।",
+      "doctrinalNote": "जनक कर्म always determines rebirth — it never becomes defunct.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
+    },
+    "KM_U_02": {
+      "name": "उपस्तम्भक कर्म",
+      "shortName": "उपस्तम्भक",
+      "description": "जनक कर्म के फल को सहारा और वृद्धि देने वाला कर्म।",
+      "doctrinalNote": "This explains यह importance का preparing one's mind at यह time का death.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
+    },
+    "KM_U_03": {
+      "name": "उपपीड़क कर्म",
+      "shortName": "उपपीड़क",
+      "description": "जनक कर्म के फल को बाधित या दुर्बल करने वाला कर्म।",
+      "doctrinalNote": "This है why यह Buddha taught जो one should constantly practise wholesome deeds.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
+    },
+    "KM_U_04": {
+      "name": "उपघातक कर्म",
+      "shortName": "उपघातक",
+      "description": "पूर्व कर्म के प्रभाव को सर्वथा नष्ट कर अपना नया फल देने वाला कर्म।",
+      "doctrinalNote": "It है यह weakest kind का kamma by priority का ripening, yet it makes up यह greater part का यह total kamma we have accumulated.",
+      "examples": [
+        "यह"
+      ]
     },
     "KM_R_01": {
       "name": "कामावचर अकुशल कर्म",
       "shortName": "कामावचर अकुशल",
-      "description": "10 अकुशल कर्मपथ जो दुर्गति में जन्म देते हैं।"
+      "description": "10 अकुशल कर्मपथ जो दुर्गति में जन्म देते हैं।",
+      "doctrinalNote": "कामावचर अकुशल कर्म है यह cause का यह truth का suffering; it belongs to यह sense sphere और ripens within यह woeful planes का यह sense sphere.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "KM_R_02": {
       "name": "कामावचर कुशल कर्म",
       "shortName": "कामावचर कुशल",
-      "description": "10 कुशल कर्मपथ जो मनुष्य और देवलोक में सुख देते हैं।"
+      "description": "10 कुशल कर्मपथ जो मनुष्य और देवलोक में सुख देते हैं।",
+      "doctrinalNote": "कामावचर कुशल कर्म जो ripens के रूप में happiness में यह sense sphere — यह foundation for all merit.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "KM_R_03": {
       "name": "रूपावचर कुशल कर्म",
       "shortName": "रूपावचर कुशल",
-      "description": "रूप ध्यान जो 16 ब्रह्मलोकों में जन्म देते हैं।"
+      "description": "रूप ध्यान जो 16 ब्रह्मलोकों में जन्म देते हैं।",
+      "doctrinalNote": "Fine-material-sphere kamma belongs to यह exalted (mahaggata) category, transcending यह sense sphere; it ripens according to यह jhāna attained.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     },
     "KM_R_04": {
       "name": "अरूपावचर कुशल कर्म",
       "shortName": "अरूपावचर कुशल",
-      "description": "चार अरूप ध्यान जो 4 अरूप लोकों में जन्म देते हैं।"
+      "description": "चार अरूप ध्यान जो 4 अरूप लोकों में जन्म देते हैं।",
+      "doctrinalNote": "Supramundane kamma does not produce rebirth within यह three realms; it produces Nibbāna के रूप में its result — यह ultimate aim का यह Abhidhamma.",
+      "examples": [
+        "यह",
+        "यह"
+      ]
     }
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {
       "name": "अतिमहन्तालम्बन पञ्चद्वार-वीथि",
       "shortName": "पञ्चद्वार अतिमहन्त",
-      "description": "17 चित्त-क्षणों वाली पूर्ण पञ्चद्वार वीथि।"
+      "description": "17 चित्त-क्षणों वाली पूर्ण पञ्चद्वार वीथि।",
+      "steps": {
+        "1": {
+          "name": "Past bhavaṅga",
+          "description": "यह life-continuum flowing along normally before यह आलम्बन strikes."
+        },
+        "2": {
+          "name": "Vibrating bhavaṅga",
+          "description": "यह आलम्बन strikes यह sense base और यह life-continuum vibrates for यह first time."
+        },
+        "3": {
+          "name": "Arrest bhavaṅga",
+          "description": "यह bhavaṅga stream है fully cut off — यह cognitive process begins."
+        },
+        "4": {
+          "name": "Five-door adverting",
+          "description": "Opens यह five-sense door और turns toward यह आलम्बन, determining which door यह आलम्बन has struck."
+        },
+        "5": {
+          "name": "Five-fold sense विज्ञान",
+          "description": "Knows यह आलम्बन through यह corresponding sense door. Only यह seven universal मानसिक factors accompany it."
+        },
+        "6": {
+          "name": "Receiving",
+          "description": "Receives यह आलम्बन from यह sense विज्ञान और passes it into यह inner stream का विज्ञान."
+        },
+        "7": {
+          "name": "Investigating",
+          "description": "Examines यह आलम्बन — determining whether it है good or bad, pleasing or not."
+        },
+        "8": {
+          "name": "Determining",
+          "description": "Makes यह final determination का यह आलम्बन के रूप में good or bad — opening यह way for यह 7 impulsions."
+        },
+        "9": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven consecutive impulsion moments — creating wholesome or कामावचर अकुशल कर्म. Moment 1 bears fruit में this very life; moment 7 में यह next life; moments 2–6 में later lives."
+        },
+        "10": {
+          "name": "Registration (Tadārammaṇa)",
+          "description": "Two registration moments enjoying यह residual आलम्बन after यह impulsions. They occur only में a very-great-आलम्बन process और create no new kamma."
+        },
+        "11": {
+          "name": "Post-process bhavaṅga",
+          "description": "After यह process ends, यह life-continuum resumes its normal flow."
+        }
+      }
     },
     "VT_NGU_MON_LON": {
       "name": "महंत-आलम्बन पञ्चद्वार-वीथि",
       "shortName": "पञ्चद्वार महंत",
-      "description": "पाँच इन्द्रियों के द्वार में सात जवन सहित परन्तु तदालम्बन रहित वीथि।"
+      "description": "पाँच इन्द्रियों के द्वार में सात जवन सहित परन्तु तदालम्बन रहित वीथि।",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "यह life-continuum vibrates के रूप में यह आलम्बन strikes यह sense base."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "यह bhavaṅga stream है cut off — यह process begins."
+        },
+        "3": {
+          "name": "Five-door adverting",
+          "description": "Turns यह mind toward यह आलम्बन through यह five-sense door."
+        },
+        "4": {
+          "name": "Five-fold sense विज्ञान",
+          "description": "Knows यह आलम्बन through यह corresponding sense."
+        },
+        "5": {
+          "name": "Receiving",
+          "description": "Receives यह आलम्बन."
+        },
+        "6": {
+          "name": "Investigating",
+          "description": "Examines यह आलम्बन."
+        },
+        "7": {
+          "name": "Determining",
+          "description": "Determines यह आलम्बन, opening यह way for यह impulsions."
+        },
+        "8": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments create kamma. Afterwards there है NO registration."
+        },
+        "9": {
+          "name": "Post-process bhavaṅga",
+          "description": "यह life-continuum resumes after यह process."
+        }
+      }
     },
     "VT_Y_MON": {
       "name": "मनोद्वार-वीथि",
       "shortName": "मनोद्वार वीथि",
-      "description": "मन के द्वार से धर्म-आलम्बन को ग्रहण करने वाली वीथि प्रक्रिया।"
+      "description": "मन के द्वार से धर्म-आलम्बन को ग्रहण करने वाली वीथि प्रक्रिया।",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "यह life-continuum vibrates के रूप में यह mind आलम्बन strikes."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "यह life-continuum है arrested — यह mind-door process begins."
+        },
+        "3": {
+          "name": "Mind-door adverting",
+          "description": "Opens यह mind door और directs यह mind to यह mind आलम्बन, at यह same time determining it (serving के रूप में determining within this process)."
+        },
+        "4": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, और action arise here."
+        },
+        "5": {
+          "name": "Registration (optional)",
+          "description": "Registration में यह mind-door process — depending on यह strength का यह mind आलम्बन."
+        },
+        "6": {
+          "name": "Post-process bhavaṅga",
+          "description": "यह life-continuum resumes."
+        }
+      }
     },
     "VT_VITHIMUTTA": {
       "name": "वीथिमुक्त चित्त",
       "shortName": "वीथिमुक्त",
-      "description": "इन्द्रिय-द्वारों से रहित होकर कार्य करने वाले प्रतिसन्धि, भवङ्ग और च्युति चित्त।"
+      "description": "इन्द्रिय-द्वारों से रहित होकर कार्य करने वाले प्रतिसन्धि, भवङ्ग और च्युति चित्त।",
+      "steps": {
+        "1": {
+          "name": "Rebirth-linking विज्ञान",
+          "description": "यह first विज्ञान का यह new life — continuing directly from यह previous life's dying विज्ञान, carrying kamma's seed."
+        },
+        "2": {
+          "name": "Life-continuum विज्ञान",
+          "description": "यह stream का विज्ञान जो sustains यह life between processes. It उत्पन्न होता है और passes innumerable times, और है यह foundation का all मानसिक activity."
+        },
+        "3": {
+          "name": "Death विज्ञान",
+          "description": "यह final mind-moment — यह रूपजीवितिन्द्रिय perishes, यह death विज्ञान falls, और यह life ends. Immediately afterwards यह next life's rebirth-linking विज्ञान उत्पन्न होता है."
+        }
+      }
     }
   },
   "studyModules": {
@@ -12458,5 +13133,6 @@
         }
       ]
     }
-  }
+  },
+  "translationStatus": "draft"
 }

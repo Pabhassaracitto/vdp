@@ -2,56 +2,96 @@
   "locale": "zh",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
   "cittas": {
     "CI_001": {
       "name": "悦俱邪见相应无行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "CI_002": {
       "name": "悦俱邪见相应有行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "CI_003": {
       "name": "悦俱邪见不相应无行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "CI_004": {
       "name": "悦俱邪见不相应有行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "此"
+      ]
     },
     "CI_005": {
       "name": "舍俱邪见相应无行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "此"
+      ]
     },
     "CI_006": {
       "name": "舍俱邪见相应有行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "此"
+      ]
     },
     "CI_007": {
       "name": "舍俱邪见不相应无行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "此"
+      ]
     },
     "CI_008": {
       "name": "舍俱邪见不相应有行贪根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "此"
+      ]
     },
     "CI_009": {
       "name": "忧俱瞋恚相应无行瞋根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "CI_010": {
       "name": "忧俱瞋恚相应有行瞋根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "此"
+      ]
     },
     "CI_011": {
       "name": "舍俱疑相应痴根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "CI_012": {
       "name": "舍俱掉举相应痴根心",
-      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。"
+      "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "CI_013": {
       "name": "舍俱眼识（不善异熟）",
@@ -494,404 +534,747 @@
     "CS_PHASSA": {
       "name": "触",
       "shortName": "触",
-      "description": "心与所缘相接触。"
+      "description": "心与所缘相接触。",
+      "characteristic": "Contacting 此 所缘 — 此 mode 的 touching between 识, 此 sense-base 与 此 所缘.",
+      "function": "Gathering 此 other associated 心所 factors so they cling together 与 识 to touch 此 sense-base 与 此 所缘.",
+      "manifestation": "此 coinciding 的 识, 心所 factors, sense-base 与 所缘.",
+      "proximateCause": "此 presence 的 an 所缘 offered through 此 appropriate channel (sense-base + 所缘 + 识)."
     },
     "CS_VEDANA": {
       "name": "受",
       "shortName": "受",
-      "description": "领纳与感受所缘之味。"
+      "description": "领纳与感受所缘之味。",
+      "characteristic": "受, experiencing 此 所缘 — 此 manner 的 receiving 与 sensing 此 所缘.",
+      "function": "Enjoying 此 desirable 所缘, or producing languor/growth 于 此 associated states.",
+      "manifestation": "心所 ease (pleasant/joyful 受); 心所 distress (painful 受); bodily pleasure or pain; or quiescence (neutral 受).",
+      "proximateCause": "Bodily calm 与 心所 ease (for pleasant/joyful 受); 此 presence 的 此 心所依处 (for painful 受); 此 absence 的 exhilaration (for neutral 受)."
     },
     "CS_SANNA": {
       "name": "想",
       "shortName": "想",
-      "description": "标记者、记取所缘相状。"
+      "description": "标记者、记取所缘相状。",
+      "characteristic": "Recollecting — 此 way 的 remembering; noting 与 marking 此 distinguishing features 的 此 所缘.",
+      "function": "Recalling a past event by means 的 此 sign 即 was noted.",
+      "manifestation": "Recollecting something previously known, rightly or wrongly.",
+      "proximateCause": "此 reappearance 的 an 所缘 作为 it was previously apprehended — an 所缘 即 evokes memory (e.g. recognizing an acquaintance by recalling where one met them)."
     },
     "CS_CETANA": {
       "name": "思",
       "shortName": "思",
-      "description": "策励心与相应法造作业。"
+      "description": "策励心与相应法造作业。",
+      "characteristic": "Urging, directing 与 coordinating 此 associated states 即 arise together 与 it.",
+      "function": "Assembling 此 co-arising states so they are directed together towards 此 所缘, seizing hold 的 此 所缘.",
+      "manifestation": "Organizing, directing 与 arranging 此 associated states.",
+      "proximateCause": "此 presence 的 此 other three 心所 aggregates — 受, 想 与 识 (since 思 itself belongs to 此 aggregate 的 formations 与 so requires 此 other three)."
     },
     "CS_EKAGGATA": {
       "name": "一境性",
       "shortName": "一境性",
-      "description": "心专注于单一所缘，不分散乱。"
+      "description": "心专注于单一所缘，不分散乱。",
+      "characteristic": "Non-distraction, non-wavering 于 此 face 的 此 所缘 — one-pointed, focused 作意.",
+      "function": "Gathering 此 co-arising 心所 states so they converge on a single 所缘.",
+      "manifestation": "Appears 作为 peace 与 firm steadiness 于 此 所缘.",
+      "proximateCause": "此 presence 的 pleasure/happiness, 与 此 absence 的 此 掉举 与 疑 aspects 的 痴 (happiness 是 needed for concentration to be achieved)."
     },
     "CS_JIVITINDRIYA": {
       "name": "命根",
       "shortName": "命根",
-      "description": "维持俱生名法的寿命与存续。"
+      "description": "维持俱生名法的寿命与存续。",
+      "characteristic": "Maintaining, preserving 与 nurturing 此 co-arising states.",
+      "function": "Keeping 此 co-arising states alive for their three sub-moments before they cease.",
+      "manifestation": "此 co-arising states persist 于 being until 此 moment 的 their dissolution.",
+      "proximateCause": "此 presence 的 此 aggregates 的 受, 想 与 识."
     },
     "CS_MANASIKARA": {
       "name": "作意",
       "shortName": "作意",
-      "description": "指引心朝向所缘，如舵手行船。"
+      "description": "指引心朝向所缘，如舵手行船。",
+      "characteristic": "此 manner 的 guiding 此 associated states to fully apprehend 此 所缘.",
+      "function": "Making 识 与 its 心所 factors converge 与 take hold 的 此 所缘 together.",
+      "manifestation": "Turning 此 mind towards 此 所缘 (作为 a helmsman steers a boat towards its destination).",
+      "proximateCause": "此 presence 的 an 所缘 — past, present or future."
     },
     "CS_VITAKKA": {
       "name": "寻",
       "shortName": "寻",
-      "description": "将心投向所缘，初步思维。"
+      "description": "将心投向所缘，初步思维。",
+      "characteristic": "Carrying 此 co-arising states onto 此 所缘 — directing/lifting 此 mind onto 此 所缘.",
+      "function": "Bringing 识 与 its 心所 factors into 触 与 此 所缘.",
+      "manifestation": "识 与 its co-arising 心所 factors reach 此 所缘.",
+      "proximateCause": "此 presence 的 an 所缘 together 与 此 other three aggregates (受, 想, 识), since applied thought belongs to 此 aggregate 的 formations."
     },
     "CS_VICARA": {
       "name": "伺",
       "shortName": "伺",
-      "description": "在所缘上持续审察巡回。"
+      "description": "在所缘上持续审察巡回。",
+      "characteristic": "此 manner 的 attending to 此 所缘 — examining 与 observing it closely 与 continuously.",
+      "function": "Keeping 识 与 its co-arising 心所 factors closely engaged 与 此 所缘 without interruption.",
+      "manifestation": "Having engaged 此 所缘, it binds 此 associated states to it so they keep apprehending 即 same 所缘 without straying from it.",
+      "proximateCause": "此 presence 的 an 所缘 together 与 此 other three aggregates, since sustained thought likewise belongs to 此 aggregate 的 formations."
     },
     "CS_ADHIMOKKHA": {
       "name": "胜解",
       "shortName": "胜解",
-      "description": "对所缘作出确定义决，无犹豫。"
+      "description": "对所缘作出确定义决，无犹豫。",
+      "characteristic": "此 manner 的 deciding, breaking through 此 state 的 indecision — releasing 识 from 疑 so it can move towards 此 所缘.",
+      "function": "Making 识 resolve firmly on 此 所缘, without wavering.",
+      "manifestation": "Having made a firm 胜解 about 此 所缘 — carrying out 即 胜解.",
+      "proximateCause": "此 presence 的 an 所缘 to be judged, determined or decided upon."
     },
     "CS_VIRIYA": {
       "name": "精进",
       "shortName": "精进",
-      "description": "勇猛精进，支持相应法不退堕。"
+      "description": "勇猛精进，支持相应法不退堕。",
+      "characteristic": "此 manner 的 exertion 与 endurance — energetic effort 即 does not retreat.",
+      "function": "Supporting 此 co-arising states so they do not regress.",
+      "manifestation": "Not retreating (from 此 task at hand).",
+      "proximateCause": "A sense 的 urgency, or some 色法 即 stirs 此 mind, such 作为 old age, sickness, death or suffering."
     },
     "CS_PITI": {
       "name": "喜",
       "shortName": "喜",
-      "description": "对所缘感到欢喜与喜悦。"
+      "description": "对所缘感到欢喜与喜悦。",
+      "characteristic": "Delight 与 exhilaration, being gladdened by 此 所缘 (distinct from 受, which experiences 此 所缘, whereas 喜 creates interest 与 relish 于 it).",
+      "function": "Refreshing 此 body 与 gladdening 此 mind.",
+      "manifestation": "心所 elation, a sense 的 being uplifted 与 suffused (distinct from 受, which 是 心所 ease).",
+      "proximateCause": "此 aggregates 的 受, 想 与 识 (since 喜 belongs to 此 aggregate 的 formations — unlike 此 proximate cause 的 joyful 受, which 是 bodily calm 与 心所 ease)."
     },
     "CS_CHANDA": {
       "name": "一欲",
       "shortName": "一欲",
-      "description": "欲作意愿，愿去行动或作为。"
+      "description": "欲作意愿，愿去行动或作为。",
+      "characteristic": "Having 此 hope 与 wish to obtain 此 所缘.",
+      "function": "Making 识 seek out 与 reach for 此 所缘.",
+      "manifestation": "Obtaining 此 desired 所缘.",
+      "proximateCause": "此 presence 的 an 所缘 即 是 desirable, worth wishing for."
     },
     "CS_MOHA": {
       "name": "痴",
       "shortName": "痴",
-      "description": "无明蒙昧，不能了知真实法。"
+      "description": "无明蒙昧，不能了知真实法。",
+      "characteristic": "心所 blindness, not knowing what should be known — 此 opposite 的 wisdom.",
+      "function": "Obscuring clarity, preventing 此 true nature 的 phenomena from being seen.",
+      "manifestation": "Darkness 与 obscuration.",
+      "proximateCause": "Unwise 作意 — careless, improper 作意."
     },
     "CS_AHIRIKA": {
       "name": "无惭",
       "shortName": "无惭",
-      "description": "造作恶业而不自感羞耻。"
+      "description": "造作恶业而不自感羞耻。",
+      "characteristic": "Absence 的 shame towards wrongdoing, evil 与 faults.",
+      "function": "Carrying out evil, faulty 与 wrongful deeds.",
+      "manifestation": "Not shrinking back from unwholesome deeds.",
+      "proximateCause": "Lack 的 self-respect."
     },
     "CS_ANOTTAPPA": {
       "name": "无愧",
       "shortName": "无愧",
-      "description": "对恶行及其果报无所畏惧。"
+      "description": "对恶行及其果报无所畏惧。",
+      "characteristic": "Absence 的 dread towards unwholesome states.",
+      "function": "Committing wrongdoing 与 misconduct.",
+      "manifestation": "Not flinching or fearing when doing evil.",
+      "proximateCause": "Lack 的 regard for others."
     },
     "CS_UDDHACCA": {
       "name": "掉举",
       "shortName": "掉举",
-      "description": "心神散乱动荡，不能静止。"
+      "description": "心神散乱动荡，不能静止。",
+      "characteristic": "Unrest — a mind 即 是 agitated 与 scattered.",
+      "function": "Preventing 此 mind from settling firmly 与 lastingly on its 所缘.",
+      "manifestation": "A mind 即 是 unsettled 与 disturbed.",
+      "proximateCause": "Unwise 作意 — careless, improper handling 的 此 mind."
     },
     "CS_LOBHA": {
       "name": "贪",
       "shortName": "贪",
-      "description": "对所缘执著渴求，贪恋执取。"
+      "description": "对所缘执著渴求，贪恋执取。",
+      "characteristic": "取 to 此 所缘 — causing 此 co-arising 心所 factors to cling to it.",
+      "function": "Making 识 stick to 此 所缘.",
+      "manifestation": "Not letting go 的 此 所缘.",
+      "proximateCause": "Delighting 于, being drawn to, binding phenomena — relishing what 是 beautiful, enticing 与 pleasant."
     },
     "CS_DITTHI": {
       "name": "邪见",
       "shortName": "邪见",
-      "description": "颠倒见解，执常断或我见。"
+      "description": "颠倒见解，执常断或我见。",
+      "characteristic": "Adhering obstinately to what 是 contrary to truth.",
+      "function": "Interpreting matters wrongly, contrary to 此 facts.",
+      "manifestation": "Rigidly holding to a mistaken view.",
+      "proximateCause": "Not meeting noble 与 wise persons."
     },
     "CS_MANA": {
       "name": "慢",
       "shortName": "慢",
-      "description": "骄傲自大，与他人作高下比较。"
+      "description": "骄傲自大，与他人作高下比较。",
+      "characteristic": "Haughtiness, arrogance, self-慢 — comparing oneself 与 others 作为 superior, equal or inferior.",
+      "function": "Driving 此 associated states towards self-exaltation.",
+      "manifestation": "Vanity 与 self-aggrandizement.",
+      "proximateCause": "此 presence 的 an 所缘 for comparison."
     },
     "CS_DOSA": {
       "name": "瞋",
       "shortName": "瞋",
-      "description": "愤怒排斥，对所缘残暴不悦。"
+      "description": "愤怒排斥，对所缘残暴不悦。",
+      "characteristic": "Ferocity 与 harshness 的 body 与 mind — a state 的 opposition 与 burning hostility.",
+      "function": "Making 此 mind burn, scorching 与 seeking to destroy 此 所缘.",
+      "manifestation": "Committing evil deeds, destructive 与 harmful to oneself, to others, or to both.",
+      "proximateCause": "此 presence 的 an undesirable 所缘 — a lack 的 understanding or reasoned reflection."
     },
     "CS_ISSA": {
       "name": "嫉",
       "shortName": "嫉",
-      "description": "见他人繁荣成就而生妒忌。"
+      "description": "见他人繁荣成就而生妒忌。",
+      "characteristic": "嫉 与 jealousy towards 此 success or superiority 的 others.",
+      "function": "Being displeased at another's gain or excellence.",
+      "manifestation": "Turning away from, averting one's face from another's superiority.",
+      "proximateCause": "此 fame, wealth, happiness or success 的 others, which exceeds one's own."
     },
     "CS_MACCHARIYA": {
       "name": "悭",
       "shortName": "悭",
-      "description": "自私吝啬，不愿与他人分享。"
+      "description": "自私吝啬，不愿与他人分享。",
+      "characteristic": "Concealing one's own possessions or achievements.",
+      "function": "Being unwilling to share or let others partake 的 one's possessions.",
+      "manifestation": "Not sharing one's wealth, being stingy, unwilling to give.",
+      "proximateCause": "One's own possessions or achievements."
     },
     "CS_KUKKUCCA": {
       "name": "恶作",
       "shortName": "恶作",
-      "description": "追悔已作恶或未作善。"
+      "description": "追悔已作恶或未作善。",
+      "characteristic": "此 manner 的 regretting, repenting, being troubled about what has been done or left undone.",
+      "function": "Making 此 mind restless 与 distressed about 此 past.",
+      "manifestation": "A sense 的 remorse 与 regret 于 此 mind.",
+      "proximateCause": "An evil deed done, or a good 与 meritorious deed left undone."
     },
     "CS_THINA": {
       "name": "昏沉",
       "shortName": "昏沉",
-      "description": "心识萎靡不振，缺乏精进。"
+      "description": "心识萎靡不振，缺乏精进。",
+      "characteristic": "Sluggishness 即 halts diligence.",
+      "function": "Abandoning energetic effort, so 即 active diligence ceases, leading 此 mind externally to sink back into 此 life-continuum.",
+      "manifestation": "A mind 即 withdraws 与 shrinks back.",
+      "proximateCause": "Unwise 作意 — careless, improper handling 的 此 mind."
     },
     "CS_MIDDHA": {
       "name": "睡眠",
       "shortName": "睡眠",
-      "description": "心所沉重困顿，昏昏欲睡。"
+      "description": "心所沉重困顿，昏昏欲睡。",
+      "characteristic": "Unfitness for work — a state 的 睡眠, lethargy, drowsiness.",
+      "function": "Enveloping 与 covering 识.",
+      "manifestation": "Drowsiness, dullness, sleepiness.",
+      "proximateCause": "此 absence 的 proper, wise 作意."
     },
     "CS_VICIKICCHA": {
       "name": "疑",
       "shortName": "疑",
-      "description": "犹豫动摇，疑佛法僧等真理。"
+      "description": "犹豫动摇，疑佛法僧等真理。",
+      "characteristic": "此 manner 的 doubting — wavering 与 hesitating about 此 Triple Gem 与 此 Teaching.",
+      "function": "Causing wavering, agitation, hesitation 与 indecision.",
+      "manifestation": "Inability to decide, lack 的 resolve.",
+      "proximateCause": "Unwise 作意."
     },
     "CS_SADDHA": {
       "name": "信",
       "shortName": "信",
-      "description": "清净信心，信受佛法僧及业果。"
+      "description": "清净信心，信受佛法僧及业果。",
+      "characteristic": "Trusting confidence 于 此 Triple Gem 与 于 此 law 的 kamma 与 its results — a state 的 心所 purity.",
+      "function": "Purifying 此 mind, making it place its trust 于 what 是 genuinely worthy.",
+      "manifestation": "Freedom from 此 defilement 的 superstition.",
+      "proximateCause": "此 presence 的 things worthy 的 confidence (此 Triple Gem, 此 law 的 kamma 与 its fruit)."
     },
     "CS_SATI": {
       "name": "念",
       "shortName": "念",
-      "description": "对善法明记不忘，专注不失。"
+      "description": "对善法明记不忘，专注不失。",
+      "characteristic": "此 manner 的 being alert, not careless, not drifting — keeping 此 所缘 于 mind.",
+      "function": "Remembering, preventing forgetfulness.",
+      "manifestation": "Cultivating a mind 即 stays closely attached to its 所缘 — guarding 与 protecting 此 six sense doors.",
+      "proximateCause": "Firm 想/recognition."
     },
     "CS_HIRI": {
       "name": "惭",
       "shortName": "惭",
-      "description": "以内在自尊羞耻于恶行。"
+      "description": "以内在自尊羞耻于恶行。",
+      "characteristic": "Abhorrence 的 wrongdoing, disinclination towards fault.",
+      "function": "Refraining from committing wrongful deeds.",
+      "manifestation": "Shrinking back from evil 与 fault, avoiding wrongdoing.",
+      "proximateCause": "Self-respect."
     },
     "CS_OTTAPPA": {
       "name": "愧",
       "shortName": "愧",
-      "description": "见恶报及他人呵责而畏惧造恶。"
+      "description": "见恶报及他人呵责而畏惧造恶。",
+      "characteristic": "Dread 的 wrongdoing, abhorrence 的 此 danger 的 fault.",
+      "function": "Refraining from wrongdoing, not creating harm.",
+      "manifestation": "Shrinking back from 与 avoiding wrongdoing.",
+      "proximateCause": "Regard for others, fear 的 their censure."
     },
     "CS_ALOBHA": {
       "name": "无贪",
       "shortName": "无贪",
-      "description": "不执著所缘，乐善好施。"
+      "description": "不执著所缘，乐善好施。",
+      "characteristic": "A mind undefiled by its 所缘 — free from 取, free from attachment.",
+      "function": "Not grasping, not 取, not attaching; transcending bondage.",
+      "manifestation": "Not holding on to what 是 present, not 有 infatuated 与 a pleasing 所缘; at its culmination, not 取 even to a new existence.",
+      "proximateCause": "Wise 作意."
     },
     "CS_ADOSA": {
       "name": "无瞋",
       "shortName": "无瞋",
-      "description": "无有怨恨，具慈爱善意。"
+      "description": "无有怨恨，具慈爱善意。",
+      "characteristic": "Freedom from cruelty, malice 与 opposition — a state 的 coolness 与 gentleness.",
+      "function": "Dispelling cruelty, avoiding harm, dispelling heated anger.",
+      "manifestation": "A manifestation 的 gentleness 与 coolness.",
+      "proximateCause": "Wise 作意."
     },
     "CS_TATRAMAJJHATTATA": {
       "name": "中舍性",
       "shortName": "中舍性",
-      "description": "平等中正，平衡心与诸心所。"
+      "description": "平等中正，平衡心与诸心所。",
+      "characteristic": "Keeping 识 与 its 心所 factors level 与 one another — a state 的 balance 与 even-handedness.",
+      "function": "Preventing deficiency or excess, keeping 此 associated states from losing their balance.",
+      "manifestation": "此 production 的 balance 与 equilibrium.",
+      "proximateCause": "此 presence 的 harmoniously co-operating states."
     },
     "CS_KAYAPASSADDHI": {
       "name": "身轻安",
       "shortName": "身轻安",
-      "description": "心所安详宁静，无热恼。"
+      "description": "心所安详宁静，无热恼。",
+      "characteristic": "Calm, free from 此 agitation 的 此 心所-factor group (此 aggregates 的 受, 想 与 formations).",
+      "function": "Quelling 此 agitation 的 此 心所 factors, so they no longer waver.",
+      "manifestation": "此 心所 factors become calm, tranquil 与 cool.",
+      "proximateCause": "此 presence 的 此 心所 factors (此 aggregates 的 受, 想 与 formations)."
     },
     "CS_CITTAPASSADDHI": {
       "name": "心轻安",
       "shortName": "心轻安",
-      "description": "心识安详宁静，寂然止息。"
+      "description": "心识安详宁静，寂然止息。",
+      "characteristic": "Calm, free from 此 agitation 的 识 (此 aggregate 的 识).",
+      "function": "Quelling 此 agitation 的 识, so it no longer wavers.",
+      "manifestation": "识 becomes calm, tranquil 与 cool.",
+      "proximateCause": "此 presence 的 识 (此 aggregate 的 识)."
     },
     "CS_KAYALAHUTA": {
       "name": "身轻快性",
       "shortName": "身轻快性",
-      "description": "心所轻快不滞，除重怠。"
+      "description": "心所轻快不滞，除重怠。",
+      "characteristic": "Lightness, freedom from 此 heaviness 的 此 心所-factor group (受, 想, formations).",
+      "function": "Preventing heaviness from weighing down 此 心所 factors, making them light.",
+      "manifestation": "此 心所 factors are no longer sluggish 与 become light.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors (受, 想, formations)."
     },
     "CS_CITTALAHUTA": {
       "name": "心轻快性",
       "shortName": "心轻快性",
-      "description": "心识轻敏灵巧，离怠惰。"
+      "description": "心识轻敏灵巧，离怠惰。",
+      "characteristic": "Lightness, freedom from 此 heaviness 的 识.",
+      "function": "Preventing heaviness from weighing down 识, making it light.",
+      "manifestation": "识 是 no longer sluggish 与 becomes light.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_KAYAMUDUTA": {
       "name": "身柔软性",
       "shortName": "身柔软性",
-      "description": "心所调顺柔软，除刚强。"
+      "description": "心所调顺柔软，除刚强。",
+      "characteristic": "Softness 与 pliancy 的 此 心所-factor group (受, 想, formations).",
+      "function": "Dissolving 此 rigidity 的 此 心所 factors, limiting stiffness 与 coarseness.",
+      "manifestation": "Pliancy, ease 于 apprehending 此 所缘, freedom from stiffness.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_CITTAMUDUTA": {
       "name": "心柔软性",
       "shortName": "心柔软性",
-      "description": "心识柔顺不执，离顽劣。"
+      "description": "心识柔顺不执，离顽劣。",
+      "characteristic": "Softness 与 pliancy 的 识.",
+      "function": "Dissolving 此 rigidity 的 识, limiting its stiffness 与 coarseness.",
+      "manifestation": "识 becomes pliant, apprehending 此 所缘 与 ease, free from stiffness.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_KAYAKAMMANNATA": {
       "name": "身适业性",
       "shortName": "身适业性",
-      "description": "心所堪能行善，胜任自如。"
+      "description": "心所堪能行善，胜任自如。",
+      "characteristic": "Freeing 此 心所-factor group from unworkability, from unfitness.",
+      "function": "Dissolving 与 removing 此 unfitness 的 此 心所 factors.",
+      "manifestation": "此 心所 factors become adaptable 与 fit to engage 与 此 所缘.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_CITTAKAMMANNATA": {
       "name": "心适业性",
       "shortName": "心适业性",
-      "description": "心识堪能胜任，堪作善业。"
+      "description": "心识堪能胜任，堪作善业。",
+      "characteristic": "Freeing 识 from unworkability, from unfitness.",
+      "function": "Dissolving 与 removing 此 unfitness 的 识.",
+      "manifestation": "识 becomes adaptable 与 fit to engage 与 此 所缘.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_KAYAPAGUNNATA": {
       "name": "身练达性",
       "shortName": "身练达性",
-      "description": "心所熟练纯善，离诸过失。"
+      "description": "心所熟练纯善，离诸过失。",
+      "characteristic": "Absence 的 stagnation 于 此 心所-factor group — 此 refined proficiency 的 此 心所 factors.",
+      "function": "Breaking up 与 dissolving 此 stagnation 的 此 心所 factors.",
+      "manifestation": "Keeping clear 的 与 unattached to wrongdoing 与 fault.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_CITTAPAGUNNATA": {
       "name": "心练达性",
       "shortName": "心练达性",
-      "description": "心识纯熟练达，无病健全。"
+      "description": "心识纯熟练达，无病健全。",
+      "characteristic": "Absence 的 stagnation 于 识 — 此 refined 心练达性.",
+      "function": "Breaking up 与 dissolving 此 stagnation 的 识.",
+      "manifestation": "Keeping clear 的 与 unattached to wrongdoing 与 fault.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_KAYUJUKATA": {
       "name": "身正直性",
       "shortName": "身正直性",
-      "description": "心所直率无欺，离谄曲诈。"
+      "description": "心所直率无欺，离谄曲诈。",
+      "characteristic": "Uprightness 与 straightness 的 此 心所-factor group.",
+      "function": "Counteracting crookedness 与 此 lack 的 rectitude 于 此 心所 factors.",
+      "manifestation": "此 心所 factors become upright, without crookedness or deviation.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_CITTUJUKATA": {
       "name": "心正直性",
       "shortName": "心正直性",
-      "description": "心识坦诚中正，无邪谄妄。"
+      "description": "心识坦诚中正，无邪谄妄。",
+      "characteristic": "Uprightness 与 straightness 的 识.",
+      "function": "Counteracting crookedness 与 此 lack 的 rectitude 于 识.",
+      "manifestation": "识 becomes upright, without crookedness or deviation.",
+      "proximateCause": "此 presence 的 识 与 its accompanying 心所 factors."
     },
     "CS_SAMMAVACA": {
       "name": "正语",
       "shortName": "正语",
-      "description": "离妄语、两舌、恶口、绮语四语恶。"
+      "description": "离妄语、两舌、恶口、绮语四语恶。",
+      "characteristic": "Upholding 正语 — abstaining from 与 restraining verbal misconduct.",
+      "function": "Keeping away from falsity 与 deception (wrong speech: lying, slander, harsh speech, idle chatter).",
+      "manifestation": "此 eradication 的 wrong speech.",
+      "proximateCause": "此 presence 的 信, 念, 惭, 愧 与 modest desire."
     },
     "CS_SAMMAKAMMANTA": {
       "name": "正业",
       "shortName": "正业",
-      "description": "离杀生、偷盗、邪淫三身恶行。"
+      "description": "离杀生、偷盗、邪淫三身恶行。",
+      "characteristic": "Acting rightly, supporting wholesome states while eliminating one's own defilements.",
+      "function": "Keeping away from unwholesome bodily action (killing, stealing, sexual misconduct).",
+      "manifestation": "此 eradication 的 wrong action.",
+      "proximateCause": "此 presence 的 信, 念, 惭, 愧 与 modest desire."
     },
     "CS_SAMMAAJIVA": {
       "name": "正命",
       "shortName": "正命",
-      "description": "离邪命营生，正当合法谋生。"
+      "description": "离邪命营生，正当合法谋生。",
+      "characteristic": "Purity, renunciation 的 与 abstention from misconduct 的 both body 与 speech.",
+      "function": "Sustaining a righteous livelihood, preventing misconduct.",
+      "manifestation": "此 eradication 的 wrong livelihood, refraining from unwholesome conduct.",
+      "proximateCause": "此 presence 的 信, 念, 惭, 愧 与 modest desire."
     },
     "CS_KARUNA": {
       "name": "悲",
       "shortName": "悲",
-      "description": "愿拔除一切受苦众生之苦。"
+      "description": "愿拔除一切受苦众生之苦。",
+      "characteristic": "此 wish 即 beings be free from suffering — 此 way 的 wishing to remove 此 suffering 的 beings.",
+      "function": "Being unable to bear 此 sight 的 beings' suffering — unable to remain indifferent before 此 suffering 的 other beings.",
+      "manifestation": "Kindliness, or 此 absence 的 oppressing other beings.",
+      "proximateCause": "Encountering beings who are suffering — perceiving 此 pressing need 的 beings overwhelmed by suffering."
     },
     "CS_MUDITA": {
       "name": "随喜",
       "shortName": "随喜",
-      "description": "欣慰随喜他人的繁荣成就与安乐。"
+      "description": "欣慰随喜他人的繁荣成就与安乐。",
+      "characteristic": "Rejoicing 于 此 good fortune 的 beings — a state 的 gladness at 此 happiness 的 others.",
+      "function": "Being free from 嫉 towards other beings.",
+      "manifestation": "Satisfaction at 此 progress 与 happiness 的 other beings — 此 destruction 的 aversion.",
+      "proximateCause": "Seeing beings create 与 enjoy happiness — recognizing 即 beings have attained success."
     },
     "CS_PANNA": {
       "name": "慧根",
       "shortName": "慧根",
-      "description": "如实通达无常、苦、无我之无漏智慧。"
+      "description": "如实通达无常、苦、无我之无漏智慧。",
+      "characteristic": "Knowing clearly, penetrating to 此 true nature 的 phenomena — wisdom 即 sees 此 Three Characteristics (impermanence, suffering, non-self).",
+      "function": "Dispelling 与 eliminating 此 darkness 的 无明.",
+      "manifestation": "Freedom from confusion, freedom from defiling attachment.",
+      "proximateCause": "Wise 作意; calm (a tranquil mind); 与 a rebirth-linking 识 rooted 于 此 three wholesome roots (无贪, 无瞋, non-痴)."
     }
   },
   "rupas": {
     "RP_001": {
       "name": "地界",
       "shortName": "地界",
-      "description": "硬或软的特性，作为其他俱生色的立足与支持基础。"
+      "description": "硬或软的特性，作为其他俱生色的立足与支持基础。",
+      "characteristic": "Hardness or softness — 此 quality 的 solidity or pliancy 于 色法.",
+      "function": "Acting 作为 此 supporting foundation for 此 other material phenomena 于 此 same group (kalāpa).",
+      "manifestation": "Receiving — perceptible through bodily 触 作为 hardness or softness.",
+      "proximateCause": "此 co-arising 的 此 other three great elements (water, fire, air).",
+      "doctrinalNote": "此 four great elements always arise together, inseparably. There 是 no materiality 于 此 immaterial realm."
     },
     "RP_002": {
       "name": "水界",
       "shortName": "水界",
-      "description": "流动或凝聚的特性，使伴随色聚聚合而不分散。"
+      "description": "流动或凝聚的特性，使伴随色聚聚合而不分散。",
+      "characteristic": "Flowing or cohesion — 此 binding quality 的 色法.",
+      "function": "Binding together 此 material phenomena within 此 same kalāpa.",
+      "manifestation": "色法 是 held together, not falling apart.",
+      "proximateCause": "此 co-arising 的 此 other three great elements (earth, fire, air).",
+      "doctrinalNote": "此 水界 是 此 only great element 即 cannot be directly sensed through bodily 触."
     },
     "RP_003": {
       "name": "火界",
       "shortName": "火界",
-      "description": "冷或热的特性，主成熟与温养一切物质。"
+      "description": "冷或热的特性，主成熟与温养一切物质。",
+      "characteristic": "Heat or cold — 此 temperature quality 的 色法.",
+      "function": "Ripening 与 sustaining 此 material phenomena 的 此 same group.",
+      "manifestation": "色法 是 brought to maturity 与 ripeness.",
+      "proximateCause": "此 co-arising 的 此 other three great elements (earth, water, air).",
+      "doctrinalNote": "When occurring independently 作为 external heat (utu), 此 火界 gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
     },
     "RP_004": {
       "name": "风界",
       "shortName": "风界",
-      "description": "支持与波动的特性，主物质的张力与运动。"
+      "description": "支持与波动的特性，主物质的张力与运动。",
+      "characteristic": "Distension or motion — 此 quality 的 movement 于 色法.",
+      "function": "Supporting 与 setting 色法 into motion.",
+      "manifestation": "色法 是 supported 与 made to move.",
+      "proximateCause": "此 co-arising 的 此 other three great elements (earth, water, fire).",
+      "doctrinalNote": "于 此 practice 的 ānāpānasati, 此 breath (风界) 是 此 principal meditation 所缘."
     },
     "RP_005": {
       "name": "眼净色",
       "shortName": "眼净色",
-      "description": "对光色所缘敏感的眼根清净透明色法。"
+      "description": "对光色所缘敏感的眼根清净透明色法。",
+      "characteristic": "Subtlety 与 clarity, capable 的 taking up 色所缘 作为 its 所缘.",
+      "function": "Serving 作为 此 physical basis for eye-识 to arise.",
+      "manifestation": "Eye-识 arises 与 sees 此 visible 所缘.",
+      "proximateCause": "Past kamma; 此 presence 的 a visible 所缘 impinging on it.",
+      "doctrinalNote": "Produced only by kamma. Not present 于 此 immaterial realm."
     },
     "RP_006": {
       "name": "耳净色",
       "shortName": "耳净色",
-      "description": "对声音所缘敏感的耳根清净透明色法。"
+      "description": "对声音所缘敏感的耳根清净透明色法。",
+      "characteristic": "Subtlety, capable 的 taking up 声所缘 作为 its 所缘.",
+      "function": "Serving 作为 此 physical basis for ear-识 to arise.",
+      "manifestation": "Ear-识 arises 与 hears 此 声所缘 所缘.",
+      "proximateCause": "Past kamma; 此 presence 的 a 声所缘 所缘 impinging on it.",
+      "doctrinalNote": "Brahmās 的 此 fine-material realm possess 此 ear faculty because they communicate through 声所缘."
     },
     "RP_007": {
       "name": "鼻净色",
       "shortName": "鼻净色",
-      "description": "对香气所缘敏感的鼻根清净透明色法。"
+      "description": "对香气所缘敏感的鼻根清净透明色法。",
+      "characteristic": "Subtlety, capable 的 taking up 香所缘 作为 its 所缘.",
+      "function": "Serving 作为 此 physical basis for nose-识 to arise.",
+      "manifestation": "Nose-识 arises 与 smells 此 香所缘 所缘.",
+      "proximateCause": "Past kamma; 此 presence 的 an 香所缘 所缘 impinging on it.",
+      "doctrinalNote": "Occurs only 于 此 sense-sphere realm. Brahmās 的 此 fine-material realm lack 此 nose faculty."
     },
     "RP_008": {
       "name": "舌净色",
       "shortName": "舌净色",
-      "description": "对味道所缘敏感的舌根清净透明色法。"
+      "description": "对味道所缘敏感的舌根清净透明色法。",
+      "characteristic": "Subtlety, capable 的 taking up 味所缘 作为 its 所缘.",
+      "function": "Serving 作为 此 physical basis for tongue-识 to arise.",
+      "manifestation": "Tongue-识 arises 与 tastes 此 flavour 所缘.",
+      "proximateCause": "Past kamma; 此 presence 的 a 味所缘 所缘 impinging on it.",
+      "doctrinalNote": "Occurs only 于 此 sense-sphere realm. Brahmās do not eat, so they lack 此 tongue faculty."
     },
     "RP_009": {
       "name": "身净色",
       "shortName": "身净色",
-      "description": "遍布全身对触觉敏感的清净透明色法。"
+      "description": "遍布全身对触觉敏感的清净透明色法。",
+      "characteristic": "Subtlety 即 pervades 此 body, taking up tangible objects (earth, fire, air) 作为 its 所缘.",
+      "function": "Serving 作为 此 physical basis for body-识 to arise.",
+      "manifestation": "Body-识 arises 与 senses 此 tangible 所缘.",
+      "proximateCause": "Past kamma; 此 presence 的 a tangible 所缘 impinging on it.",
+      "doctrinalNote": "Brahmās 的 此 fine-material realm possess 此 body faculty. It 是 absent 于 此 non-percipient realm."
     },
     "RP_010": {
       "name": "色所缘",
       "shortName": "色所缘",
-      "description": "眼根所见之颜色与光明。"
+      "description": "眼根所见之颜色与光明。",
+      "characteristic": "Appearance 与 manifestation — 此 所缘 即 是 seen by 此 eye faculty.",
+      "function": "Serving 作为 此 所缘 cognized by eye-识.",
+      "manifestation": "Eye-识 arises 与 apprehends it.",
+      "proximateCause": "此 presence 的 light together 与 触 与 此 eye faculty.",
+      "doctrinalNote": "色所缘 (colour) 是 distinct from materiality (色法) 于 general."
     },
     "RP_011": {
       "name": "声所缘",
       "shortName": "声所缘",
-      "description": "耳根所闻之声音。"
+      "description": "耳根所闻之声音。",
+      "characteristic": "Resounding — 此 所缘 即 是 heard by 此 ear faculty.",
+      "function": "Serving 作为 此 所缘 cognized by ear-识.",
+      "manifestation": "Ear-识 arises 与 apprehends it.",
+      "proximateCause": "此 arising 的 声所缘 together 与 触 与 此 ear faculty."
     },
     "RP_012": {
       "name": "香所缘",
       "shortName": "香所缘",
-      "description": "鼻根所嗅之气味。"
+      "description": "鼻根所嗅之气味。",
+      "characteristic": "Wafting forth — 此 所缘 即 是 smelled by 此 nose faculty.",
+      "function": "Serving 作为 此 所缘 cognized by nose-识.",
+      "manifestation": "Nose-识 arises 与 apprehends it.",
+      "proximateCause": "此 arising 的 香所缘 together 与 触 与 此 nose faculty."
     },
     "RP_013": {
       "name": "味所缘",
       "shortName": "味所缘",
-      "description": "舌根所尝之酸甜苦辣等味。"
+      "description": "舌根所尝之酸甜苦辣等味。",
+      "characteristic": "Appearance — 此 所缘 即 是 tasted by 此 tongue faculty.",
+      "function": "Serving 作为 此 所缘 cognized by tongue-识.",
+      "manifestation": "Tongue-识 arises 与 apprehends it.",
+      "proximateCause": "触 的 a flavour taken up by 此 tongue faculty."
     },
     "RP_014": {
       "name": "女根色",
       "shortName": "女根色",
-      "description": "决定女性身体形态、音声、行为等女性特征之色法。"
+      "description": "决定女性身体形态、音声、行为等女性特征之色法。",
+      "characteristic": "此 expression 的 femininity — influencing 此 entire material body.",
+      "function": "Determining 此 signs 与 behaviour characteristic 的 此 female sex.",
+      "manifestation": "此 expression 的 female sex-characteristics 于 此 material body.",
+      "proximateCause": "Kamma 即 produces 此 female sex from 此 moment 的 rebirth-linking.",
+      "doctrinalNote": "Occurs only 于 此 sense-sphere realm. Brahmās 的 此 fine-material realm have no sex faculty."
     },
     "RP_015": {
       "name": "男根色",
       "shortName": "男根色",
-      "description": "决定男性身体形态、音声、行为等男性特征之色法。"
+      "description": "决定男性身体形态、音声、行为等男性特征之色法。",
+      "characteristic": "此 expression 的 masculinity — influencing 此 entire material body.",
+      "function": "Determining 此 signs 与 behaviour characteristic 的 此 male sex.",
+      "manifestation": "此 expression 的 male sex-characteristics 于 此 material body.",
+      "proximateCause": "Kamma 即 produces 此 male sex from 此 moment 的 rebirth-linking.",
+      "doctrinalNote": "Occurs only 于 此 sense-sphere realm."
     },
     "RP_016": {
       "name": "心所依处",
       "shortName": "心基",
-      "description": "意界与意识界（心识）生起的物质依托处。"
+      "description": "意界与意识界（心识）生起的物质依托处。",
+      "characteristic": "Being 此 seat — 此 physical basis on which mind-door 识 depends.",
+      "function": "Serving 作为 此 physical basis for all 识 即 arises through 此 mind-door (excluding 此 sense-door pairs).",
+      "manifestation": "Mind-door 识 是 able to arise.",
+      "proximateCause": "Produced by past kamma; sustained by 此 blood 的 此 heart.",
+      "doctrinalNote": "Absent 于 此 immaterial realm. This 是 此 most important material basis 于 此 Abhidhamma system 的 cognition."
     },
     "RP_017": {
       "name": "命根色",
       "shortName": "命根色",
-      "description": "维持业生色法寿命与存续的色法机能。"
+      "description": "维持业生色法寿命与存续的色法机能。",
+      "characteristic": "Sustaining life — preserving 此 material phenomena produced by kamma.",
+      "function": "Keeping kamma-produced materiality 于 existence for 此 duration 的 one material life-span.",
+      "manifestation": "Kamma-produced materiality 是 kept alive 与 persisting.",
+      "proximateCause": "Only kamma can produce 命根色.",
+      "doctrinalNote": "此 lifespan 的 materiality equals seventeen mind-moments. When 命根色 ceases, 此 kamma-produced materiality ceases 与 it."
     },
     "RP_018": {
       "name": "段食",
       "shortName": "段食",
-      "description": "食物中的食素（营养），维持身体滋长。"
+      "description": "食物中的食素（营养），维持身体滋长。",
+      "characteristic": "Nourishment — 此 段食 present 于 every material group.",
+      "function": "Nourishing 此 material phenomena 的 此 same group 与 generating new materiality from nutriment.",
+      "manifestation": "Materiality 是 nourished, sustained 与 multiplied.",
+      "proximateCause": "此 presence 的 nutriment (food) 即 是 digested.",
+      "doctrinalNote": "段食 于 physical food (kabaḷīkāra-āhāra) 是 one 的 此 four kinds 的 nutriment 于 此 Abhidhamma."
     },
     "RP_019": {
       "name": "空界",
       "shortName": "空界",
-      "description": "界限与分划色聚之间的虚空空间。"
+      "description": "界限与分划色聚之间的虚空空间。",
+      "characteristic": "Delimiting — creating 此 boundary between groups 的 materiality.",
+      "function": "Demarcating 此 boundary between kalāpas.",
+      "manifestation": "此 groups 的 materiality are distinguished 与 do not merge.",
+      "proximateCause": "此 presence 的 material groups (kalāpas) existing alongside one another.",
+      "doctrinalNote": "此 空界 作为 a material phenomenon 是 not 此 same 作为 absolute space 于 philosophy."
     },
     "RP_020": {
       "name": "身表",
       "shortName": "身表",
-      "description": "因心意而通过身体动作表达意图之色法。"
+      "description": "因心意而通过身体动作表达意图之色法。",
+      "characteristic": "Movement — bodily expression used to convey an intention.",
+      "function": "Communicating an intention through bodily gesture.",
+      "manifestation": "Others understand one's intention through bodily gesture.",
+      "proximateCause": "A 识 arising 与 此 intention to express something.",
+      "doctrinalNote": "Produced only by mind. It 是 此 basis 的 bodily action (kāya-kamma)."
     },
     "RP_021": {
       "name": "语表",
       "shortName": "语表",
-      "description": "因心意而通过言语声音表达意图之色法。"
+      "description": "因心意而通过言语声音表达意图之色法。",
+      "characteristic": "Vocal expression — speech used to convey an intention.",
+      "function": "Communicating an intention through speech.",
+      "manifestation": "Others understand one's intention through 此 声所缘 的 speech.",
+      "proximateCause": "A 识 arising 与 此 intention to speak.",
+      "doctrinalNote": "Produced only by mind. It 是 此 basis 的 verbal action (vacī-kamma)."
     },
     "RP_022": {
       "name": "色轻快性",
       "shortName": "色轻快性",
-      "description": "色身无重滞、敏捷灵活的变异状态。"
+      "description": "色身无重滞、敏捷灵活的变异状态。",
+      "characteristic": "Lightness — 此 buoyant, agile quality 的 materiality.",
+      "function": "Preventing materiality from being heavy 与 rigid.",
+      "manifestation": "此 body 是 light 与 moves 与 ease.",
+      "proximateCause": "Favourable mind, temperature 与 nutriment; freedom from illness.",
+      "doctrinalNote": "Not produced by kamma. Depends on present health 与 conditions."
     },
     "RP_023": {
       "name": "色柔软性",
       "shortName": "色柔软性",
-      "description": "色身柔软顺从、无僵硬的变异状态。"
+      "description": "色身柔软顺从、无僵硬的变异状态。",
+      "characteristic": "Softness — 此 pliant, malleable quality 的 materiality.",
+      "function": "Preventing materiality from being stiff 与 rigid.",
+      "manifestation": "此 body 是 soft 与 supple.",
+      "proximateCause": "Harmonious mind, temperature 与 nutriment; freedom from illness."
     },
     "RP_024": {
       "name": "色适业性",
       "shortName": "色适业性",
-      "description": "色身适于动作与作业、胜任活动的变异状态。"
+      "description": "色身适于动作与作业、胜任活动的变异状态。",
+      "characteristic": "Adaptability — 此 workable, fit quality 的 materiality.",
+      "function": "Making materiality easy to use 与 free 的 fatigue.",
+      "manifestation": "此 body 是 fit for any task.",
+      "proximateCause": "Harmonious mind, temperature 与 nutriment."
     },
     "RP_025": {
       "name": "色积聚",
       "shortName": "色积聚",
-      "description": "生命初期诸根初生与生长之色法生相。"
+      "description": "生命初期诸根初生与生长之色法生相。",
+      "characteristic": "Genesis — 此 initial arising phase 的 a material group.",
+      "function": "Marking 此 beginning 的 existence 的 a material group.",
+      "manifestation": "Materiality comes into being 于 此 world.",
+      "proximateCause": "此 four originators 的 materiality (kamma, mind, temperature, nutriment).",
+      "doctrinalNote": "此 four characteristics 的 materiality are phases 的 all material phenomena, not independent material instances."
     },
     "RP_026": {
       "name": "色相续",
       "shortName": "色相续",
-      "description": "根色完全后物质不断继续产生之相。"
+      "description": "根色完全后物质不断继续产生之相。",
+      "characteristic": "Continuity — 此 phase 的 persistence 与 duration 的 此 stream 的 materiality.",
+      "function": "Keeping 此 stream 的 materiality continuing without interruption.",
+      "manifestation": "Materiality appears stable 与 continuous.",
+      "proximateCause": "此 four originators 的 materiality acting continuously.",
+      "doctrinalNote": "Continuity explains why things seem stable to us — they are 于 fact an unbroken stream 的 arising 与 passing away."
     },
     "RP_027": {
       "name": "色老性",
       "shortName": "色老性",
-      "description": "物质成熟趋向老化变质之衰老相。"
+      "description": "物质成熟趋向老化变质之衰老相。",
+      "characteristic": "Decay — 此 ageing, declining phase 的 materiality.",
+      "function": "Marking 此 change 与 decline 的 materiality.",
+      "manifestation": "Materiality grows old, wears down, 与 changes.",
+      "proximateCause": "此 passage 的 time; materiality having already existed.",
+      "doctrinalNote": "Decay 是 此 clearest visible sign 的 impermanence (anicca) 于 materiality."
     },
     "RP_028": {
       "name": "色无常性",
       "shortName": "色无常性",
-      "description": "物质完全碎裂瓦解与灭尽之坏灭相。"
+      "description": "物质完全碎裂瓦解与灭尽之坏灭相。",
+      "characteristic": "Dissolution — 此 complete cessation 的 materiality.",
+      "function": "Marking 此 end 的 此 existence 的 materiality.",
+      "manifestation": "Materiality no longer exists — it has completely ceased.",
+      "proximateCause": "Materiality having already passed through 此 three preceding phases 的 arising, persisting 与 changing.",
+      "doctrinalNote": "Clearly seeing 此 phase 的 dissolution 是 此 starting point 的 insight meditation (vipassanā)."
     }
   },
   "paccayas": {
@@ -1020,166 +1403,458 @@
     "PD_01": {
       "name": "无明",
       "shortName": "无明",
-      "description": "不了知四圣谛、三世因果与十二缘起之愚痴蒙昧。"
+      "description": "不了知四圣谛、三世因果与十二缘起之愚痴蒙昧。",
+      "characteristic": "Not understanding — blindness to 此 true nature 的 things (此 Four Truths, 此 three characteristics).",
+      "function": "To obscure clear seeing, 与 to serve 作为 condition for 此 arising 的 formations.",
+      "manifestation": "作为 bewilderment 与 darkness — it keeps generating kamma (formations) without one realising it.",
+      "proximateCause": "Unwise 作意 (ayoniso-manasikāra); not meeting 此 wise 与 not hearing 此 True Dhamma.",
+      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). 此 ending 的 无明 是 此 attainment 的 此 four path consciousnesses.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_02": {
       "name": "行",
       "shortName": "行",
-      "description": "以无明为缘而造作身、口、意善恶诸业。"
+      "description": "以无明为缘而造作身、口、意善恶诸业。",
+      "characteristic": "Acting 与 arranging — deliberate formation through body, speech, 与 mind.",
+      "function": "To generate kamma — accumulating kammic force 即 will yield rebirth 于 a future life.",
+      "manifestation": "作为 accumulated kamma 即 will draw 识 into rebirth.",
+      "proximateCause": "无明 作为 condition (without 无明, formations become supramundane 与 create no new kamma).",
+      "doctrinalNote": "Saṅkhārā 于 dependent origination means 此 思 (cetanā) 心所 factor 即 forms kamma.",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "PD_03": {
       "name": "识",
       "shortName": "识",
-      "description": "由业力牵引于母胎初起之结生识及六识身。"
+      "description": "由业力牵引于母胎初起之结生识及六识身。",
+      "characteristic": "Knowing an 所缘 — 此 rebirth 识 resting on 此 new mind-与-色法.",
+      "function": "To rebirth — to open a new life.",
+      "manifestation": "A new existence takes shape — mind-与-色法 appear.",
+      "proximateCause": "Kamma (formations) 作为 condition; mind-与-色法 must be there to rest on.",
+      "doctrinalNote": "识 与 mind-与-色法 lean on each other — like two sheaves 的 reeds propping one another up.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_04": {
       "name": "名色",
       "shortName": "名色",
-      "description": "精神诸蕴（受想行）与物质诸蕴于结生时俱起生展。"
+      "description": "精神诸蕴（受想行）与物质诸蕴于结生时俱起生展。",
+      "characteristic": "Existing — mind 与 body present 与 developing.",
+      "function": "To serve 作为 此 ground on which 识 operates, 与 此 condition for 此 六处 to develop.",
+      "manifestation": "此 六处 become fully formed.",
+      "proximateCause": "识 作为 condition; 此 four sources producing materiality.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_05": {
       "name": "六处",
       "shortName": "六处",
-      "description": "眼耳鼻舌身意六入处，领受境界之门户。"
+      "description": "眼耳鼻舌身意六入处，领受境界之门户。",
+      "characteristic": "Readiness to receive — six doors through which objects enter.",
+      "function": "To serve 作为 doors (dvāra) through which 此 mind meets outer objects.",
+      "manifestation": "触 (phassa) 是 established — 此 mind can touch its 所缘.",
+      "proximateCause": "Fully developed mind-与-色法 作为 condition.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_06": {
       "name": "触",
       "shortName": "触",
-      "description": "根、境、识三者和合碰触，引发受领。"
+      "description": "根、境、识三者和合碰触，引发受领。",
+      "characteristic": "Touching — 此 encounter 的 base, 所缘, 与 识.",
+      "function": "To gather base, 所缘, 与 识 together — conditioning 此 arising 的 受.",
+      "manifestation": "Mind, 心所 factors, base, 与 所缘 come together.",
+      "proximateCause": "All three must be present: base + 所缘 + 识.",
+      "doctrinalNote": "Phassa 于 dependent origination 是 此 触 心所 factor (CS_PHASSA).",
+      "examples": [
+        "此"
+      ]
     },
     "PD_07": {
       "name": "受",
       "shortName": "受",
-      "description": "触所缘后所感受之苦、乐、舍之味。"
+      "description": "触所缘后所感受之苦、乐、舍之味。",
+      "characteristic": "Experiencing — tasting 此 所缘 作为 pleasant, painful, or neutral after 触.",
+      "function": "To enjoy 此 所缘 — conditioning 爱 to arise when unwise 作意 prevails.",
+      "manifestation": "作为 pleasant, painful, or neutral experience forming 于 此 mind.",
+      "proximateCause": "触 作为 condition.",
+      "doctrinalNote": "This 是 此 crux 的 此 four foundations 的 念: halt at 受, 与 do not let it ripen into 爱.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_08": {
       "name": "爱",
       "shortName": "爱",
-      "description": "对可爱境界之贪爱渴求与执念。"
+      "description": "对可爱境界之贪爱渴求与执念。",
+      "characteristic": "Thirsting — 此 取 wanting produced by 受.",
+      "function": "To grasp at its 所缘 — conditioning 此 arising 的 取.",
+      "manifestation": "作为 取 taking hold; 此 round 的 rebirth continues.",
+      "proximateCause": "受 (especially glad 与 pleasant 受) 作为 condition.",
+      "doctrinalNote": "爱 是 此 Origin 的 suffering among 此 Four Noble Truths. 此 ending 的 爱 是 此 ending 的 suffering — Nibbāna.",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "PD_09": {
       "name": "取",
       "shortName": "取",
-      "description": "执著所爱不舍，顽强固执如火捉薪。"
+      "description": "执著所爱不舍，顽强固执如火捉薪。",
+      "characteristic": "Holding tight — a grip 即 does not let go.",
+      "function": "To grasp 此 所缘 firmly — conditioning 此 arising 的 有.",
+      "manifestation": "作为 有 taking shape — rebirth-producing kamma accumulates.",
+      "proximateCause": "爱 作为 condition — 取 是 爱 intensified 与 consolidated.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_10": {
       "name": "有",
       "shortName": "有",
-      "description": "引发后世生存之业有与受生所依之生有。"
+      "description": "引发后世生存之业有与受生所依之生有。",
+      "characteristic": "Existing — accumulated kammic force ready to produce rebirth.",
+      "function": "To condition 生 taking place 于 a future life.",
+      "manifestation": "作为 rebirth occurring 于 a plane 即 matches 此 kamma.",
+      "proximateCause": "取 作为 condition — 取 是 此 fuel for 有.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_11": {
       "name": "生",
       "shortName": "生",
-      "description": "诸蕴于各生存界之最初显现受生。"
+      "description": "诸蕴于各生存界之最初显现受生。",
+      "characteristic": "Rebirth-linking — 识 reborn into a new plane.",
+      "function": "To open a new life — dragging 此 whole mass 的 suffering along.",
+      "manifestation": "作为 suffering (ageing-与-death) appearing.",
+      "proximateCause": "有 (kammic force) 作为 condition.",
+      "doctrinalNote": "此 three-life circle joins here: 生 (PD_11) corresponds to 识 (PD_03) on 此 result side 的 此 future life.",
+      "examples": [
+        "此"
+      ]
     },
     "PD_12": {
       "name": "老死",
       "shortName": "老死",
-      "description": "诸蕴衰迈成熟而衰老，命根断绝破损而命终。"
+      "description": "诸蕴衰迈成熟而衰老，命根断绝破损而命终。",
+      "characteristic": "Ageing 与 dying — 此 inevitable decay 与 perishing 的 all conditioned mind 与 body.",
+      "function": "To end a life — 与 to continue a new round 的 有 if liberation has not been won.",
+      "manifestation": "A life closed; without liberation 此 round continues.",
+      "proximateCause": "生 作为 condition — where there 是 生, ageing-与-death necessarily follow.",
+      "doctrinalNote": "Liberation means ending 无明 (PD_01) 与 爱 (PD_08) — 此 realisation 的 Nibbāna.",
+      "examples": [
+        "此",
+        "此"
+      ]
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "现法受业",
       "shortName": "现法受业",
-      "description": "第一速行所造，于现生结成果报之业。"
+      "description": "第一速行所造，于现生结成果报之业。",
+      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within 此 very same life. If it fails to ripen 于 即 life, it becomes defunct (ahosi-kamma).",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "KM_T_02": {
       "name": "次生受业",
       "shortName": "次生受业",
-      "description": "第七速行所造，于紧随之来世结成果报之业。"
+      "description": "第七速行所造，于紧随之来世结成果报之业。",
+      "doctrinalNote": "It has only a single opportunity to ripen, 于 此 immediately following life. If it fails to ripen 于 即 life, it becomes defunct.",
+      "examples": [
+        "此"
+      ]
     },
     "KM_T_03": {
       "name": "后后便受业",
       "shortName": "后后便受业",
-      "description": "中五速行所造，从第三生起至证涅槃前皆可感果之业。"
+      "description": "中五速行所造，从第三生起至证涅槃前皆可感果之业。",
+      "doctrinalNote": "It never becomes defunct through lapse 的 time — one reason 此 stream 的 kamma 与 its results 是 so intricate. It 是 此 most common 的 此 three time-based kinds 的 kamma.",
+      "examples": [
+        "此"
+      ]
     },
     "KM_T_04": {
       "name": "既有业",
       "shortName": "废业",
-      "description": "已造作但失去感果机缘或已被对治而不再受报之业。"
-    },
-    "KM_U_01": {
-      "name": "生产业",
-      "shortName": "生产业",
-      "description": "引生结生识及名色之业，产生一期生命的果报。"
-    },
-    "KM_U_02": {
-      "name": "支持业",
-      "shortName": "支持业",
-      "description": "辅助支持生产业所感果报，使乐受或苦受增盛延续。"
-    },
-    "KM_U_03": {
-      "name": "阻碍业",
-      "shortName": "阻碍业",
-      "description": "压迫阻碍生产业，缩短其福寿或消减其恶报。"
-    },
-    "KM_U_04": {
-      "name": "毁坏业",
-      "shortName": "毁坏业",
-      "description": "以更强业力彻底切断摧毁原有生产业之相续果报。"
+      "description": "已造作但失去感果机缘或已被对治而不再受报之业。",
+      "doctrinalNote": "'Ahosi' means 'it has already been' — 此 kamma 是 not destroyed, it has simply lost its opportunity to ripen.",
+      "examples": [
+        "此"
+      ]
     },
     "KM_P_01": {
       "name": "重业",
       "shortName": "重业",
-      "description": "力量至重之业（如五逆罪或深妙禅定），必优先先受报。"
+      "description": "力量至重之业（如五逆罪或深妙禅定），必优先先受报。",
+      "doctrinalNote": "Generative kamma determines 此 entire foundation 的 a life.",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "KM_P_02": {
       "name": "临死业",
       "shortName": "临死业",
-      "description": "临命终时忆起或造作之业，引向次生结生。"
+      "description": "临命终时忆起或造作之业，引向次生结生。",
+      "doctrinalNote": "It 是 not 此 one who sows 此 seed but 此 one who waters it — it strengthens 与 extends a result 即 是 already ripening rather than producing a new one 的 its own.",
+      "examples": [
+        "此"
+      ]
     },
     "KM_P_03": {
       "name": "惯行业",
       "shortName": "惯行业",
-      "description": "生前经常重复熏习、积习成性之坚强业习。"
+      "description": "生前经常重复熏习、积习成性之坚强业习。",
+      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
+      "examples": [
+        "此"
+      ]
     },
     "KM_P_04": {
       "name": "已作业",
       "shortName": "已作业",
-      "description": "除上述三者之外，偶尔所作而未加深习之零散旧业。"
+      "description": "除上述三者之外，偶尔所作而未加深习之零散旧业。",
+      "doctrinalNote": "This 是 此 most powerful kind 的 kamma classified by function; it explains 此 sudden reversals 即 occur 于 a life.",
+      "examples": [
+        "此"
+      ]
+    },
+    "KM_U_01": {
+      "name": "生产业",
+      "shortName": "生产业",
+      "description": "引生结生识及名色之业，产生一期生命的果报。",
+      "doctrinalNote": "生产业 always determines rebirth — it never becomes defunct.",
+      "examples": [
+        "此",
+        "此"
+      ]
+    },
+    "KM_U_02": {
+      "name": "支持业",
+      "shortName": "支持业",
+      "description": "辅助支持生产业所感果报，使乐受或苦受增盛延续。",
+      "doctrinalNote": "This explains 此 importance 的 preparing one's mind at 此 time 的 death.",
+      "examples": [
+        "此",
+        "此"
+      ]
+    },
+    "KM_U_03": {
+      "name": "阻碍业",
+      "shortName": "阻碍业",
+      "description": "压迫阻碍生产业，缩短其福寿或消减其恶报。",
+      "doctrinalNote": "This 是 why 此 Buddha taught 即 one should constantly practise wholesome deeds.",
+      "examples": [
+        "此",
+        "此"
+      ]
+    },
+    "KM_U_04": {
+      "name": "毁坏业",
+      "shortName": "毁坏业",
+      "description": "以更强业力彻底切断摧毁原有生产业之相续果报。",
+      "doctrinalNote": "It 是 此 weakest kind 的 kamma by priority 的 ripening, yet it makes up 此 greater part 的 此 total kamma we have accumulated.",
+      "examples": [
+        "此"
+      ]
     },
     "KM_R_01": {
       "name": "欲界不善业",
       "shortName": "欲界不善",
-      "description": "十恶业道，能感四恶趣苦果。"
+      "description": "十恶业道，能感四恶趣苦果。",
+      "doctrinalNote": "欲界不善业 是 此 cause 的 此 truth 的 suffering; it belongs to 此 sense sphere 与 ripens within 此 woeful planes 的 此 sense sphere.",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "KM_R_02": {
       "name": "欲界善业",
       "shortName": "欲界善",
-      "description": "十善业道，感人界与六欲天善趣乐果。"
+      "description": "十善业道，感人界与六欲天善趣乐果。",
+      "doctrinalNote": "欲界善业 即 ripens 作为 happiness 于 此 sense sphere — 此 foundation for all merit.",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "KM_R_03": {
       "name": "色界善业",
       "shortName": "色界善",
-      "description": "五禅色界善心，感得色界十六梵天果报。"
+      "description": "五禅色界善心，感得色界十六梵天果报。",
+      "doctrinalNote": "Fine-material-sphere kamma belongs to 此 exalted (mahaggata) category, transcending 此 sense sphere; it ripens according to 此 jhāna attained.",
+      "examples": [
+        "此",
+        "此"
+      ]
     },
     "KM_R_04": {
       "name": "无色界善业",
       "shortName": "无色界善",
-      "description": "四无色定善心，感得无色界四天果报。"
+      "description": "四无色定善心，感得无色界四天果报。",
+      "doctrinalNote": "Supramundane kamma does not produce rebirth within 此 three realms; it produces Nibbāna 作为 its result — 此 ultimate aim 的 此 Abhidhamma.",
+      "examples": [
+        "此",
+        "此"
+      ]
     }
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {
       "name": "极极大所缘五门心路",
       "shortName": "五门极极大所缘",
-      "description": "十七心刹那具足之完整五门心路，至彼所缘而灭。"
+      "description": "十七心刹那具足之完整五门心路，至彼所缘而灭。",
+      "steps": {
+        "1": {
+          "name": "Past bhavaṅga",
+          "description": "此 life-continuum flowing along normally before 此 所缘 strikes."
+        },
+        "2": {
+          "name": "Vibrating bhavaṅga",
+          "description": "此 所缘 strikes 此 sense base 与 此 life-continuum vibrates for 此 first time."
+        },
+        "3": {
+          "name": "Arrest bhavaṅga",
+          "description": "此 bhavaṅga stream 是 fully cut off — 此 cognitive process begins."
+        },
+        "4": {
+          "name": "Five-door adverting",
+          "description": "Opens 此 five-sense door 与 turns toward 此 所缘, determining which door 此 所缘 has struck."
+        },
+        "5": {
+          "name": "Five-fold sense 识",
+          "description": "Knows 此 所缘 through 此 corresponding sense door. Only 此 seven universal 心所 factors accompany it."
+        },
+        "6": {
+          "name": "Receiving",
+          "description": "Receives 此 所缘 from 此 sense 识 与 passes it into 此 inner stream 的 识."
+        },
+        "7": {
+          "name": "Investigating",
+          "description": "Examines 此 所缘 — determining whether it 是 good or bad, pleasing or not."
+        },
+        "8": {
+          "name": "Determining",
+          "description": "Makes 此 final determination 的 此 所缘 作为 good or bad — opening 此 way for 此 7 impulsions."
+        },
+        "9": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven consecutive impulsion moments — creating wholesome or 欲界不善业. Moment 1 bears fruit 于 this very life; moment 7 于 此 next life; moments 2–6 于 later lives."
+        },
+        "10": {
+          "name": "Registration (Tadārammaṇa)",
+          "description": "Two registration moments enjoying 此 residual 所缘 after 此 impulsions. They occur only 于 a very-great-所缘 process 与 create no new kamma."
+        },
+        "11": {
+          "name": "Post-process bhavaṅga",
+          "description": "After 此 process ends, 此 life-continuum resumes its normal flow."
+        }
+      }
     },
     "VT_NGU_MON_LON": {
       "name": "极大所缘五门心路",
       "shortName": "五门极大所缘",
-      "description": "五门极大所缘心路，具足七速行但无彼所缘。"
+      "description": "五门极大所缘心路，具足七速行但无彼所缘。",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "此 life-continuum vibrates 作为 此 所缘 strikes 此 sense base."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "此 bhavaṅga stream 是 cut off — 此 process begins."
+        },
+        "3": {
+          "name": "Five-door adverting",
+          "description": "Turns 此 mind toward 此 所缘 through 此 five-sense door."
+        },
+        "4": {
+          "name": "Five-fold sense 识",
+          "description": "Knows 此 所缘 through 此 corresponding sense."
+        },
+        "5": {
+          "name": "Receiving",
+          "description": "Receives 此 所缘."
+        },
+        "6": {
+          "name": "Investigating",
+          "description": "Examines 此 所缘."
+        },
+        "7": {
+          "name": "Determining",
+          "description": "Determines 此 所缘, opening 此 way for 此 impulsions."
+        },
+        "8": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments create kamma. Afterwards there 是 NO registration."
+        },
+        "9": {
+          "name": "Post-process bhavaṅga",
+          "description": "此 life-continuum resumes after 此 process."
+        }
+      }
     },
     "VT_Y_MON": {
       "name": "意门心路",
       "shortName": "意门心路",
-      "description": "心识通过意门接触法所缘所生起之心路过程。"
+      "description": "心识通过意门接触法所缘所生起之心路过程。",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "此 life-continuum vibrates 作为 此 mind 所缘 strikes."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "此 life-continuum 是 arrested — 此 mind-door process begins."
+        },
+        "3": {
+          "name": "Mind-door adverting",
+          "description": "Opens 此 mind door 与 directs 此 mind to 此 mind 所缘, at 此 same time determining it (serving 作为 determining within this process)."
+        },
+        "4": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, 与 action arise here."
+        },
+        "5": {
+          "name": "Registration (optional)",
+          "description": "Registration 于 此 mind-door process — depending on 此 strength 的 此 mind 所缘."
+        },
+        "6": {
+          "name": "Post-process bhavaṅga",
+          "description": "此 life-continuum resumes."
+        }
+      }
     },
     "VT_VITHIMUTTA": {
       "name": "离路心",
       "shortName": "离路心",
-      "description": "不由任何根门、运作于认知过程之外的结生、有分、死心。"
+      "description": "不由任何根门、运作于认知过程之外的结生、有分、死心。",
+      "steps": {
+        "1": {
+          "name": "Rebirth-linking 识",
+          "description": "此 first 识 的 此 new life — continuing directly from 此 previous life's dying 识, carrying kamma's seed."
+        },
+        "2": {
+          "name": "Life-continuum 识",
+          "description": "此 stream 的 识 即 sustains 此 life between processes. It arises 与 passes innumerable times, 与 是 此 foundation 的 all 心所 activity."
+        },
+        "3": {
+          "name": "Death 识",
+          "description": "此 final mind-moment — 此 命根色 perishes, 此 death 识 falls, 与 此 life ends. Immediately afterwards 此 next life's rebirth-linking 识 arises."
+        }
+      }
     }
   },
   "studyModules": {
@@ -12458,5 +13133,6 @@
         }
       ]
     }
-  }
+  },
+  "translationStatus": "draft"
 }

@@ -2,56 +2,96 @@
   "locale": "my",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
   "cittas": {
     "CI_001": {
       "name": "သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "CI_002": {
       "name": "သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "CI_003": {
       "name": "သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "CI_004": {
       "name": "သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "CI_005": {
       "name": "ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "CI_006": {
       "name": "ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "CI_007": {
       "name": "ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "CI_008": {
       "name": "ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "CI_009": {
       "name": "ဒေါမနဿသဟဂုတ် ပဋိဃသမ္ပယုတ် အသင်္ခါရိက ဒေါသမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "CI_010": {
       "name": "ဒေါမနဿသဟဂုတ် ပဋိဃသမ္ပယုတ် သသင်္ခါရိက ဒေါသမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ။",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "CI_011": {
       "name": "ဥပေက္ခာသဟဂုတ် ဝိစိကိစ္ဆာသမ္ပယုတ် မောဟမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ။",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "CI_012": {
       "name": "ဥပေက္ခာသဟဂုတ် ဥဒ္ဓစ္စသမ္ပယုတ် မောဟမူစိတ်",
-      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ။"
+      "doctrinalNote": "အဘိဓမ္မာ စိတ်ပိုင်းဆိုင်ရာ ခွဲခြမ်းစိတ်ဖြာချက်: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ။",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "CI_013": {
       "name": "ဥပေက္ခာသဟဂုတ် စက္ခုဝိညာဏ် (အကုသလဝိပါက်)",
@@ -494,404 +534,747 @@
     "CS_PHASSA": {
       "name": "ဖဿ",
       "shortName": "ဖဿ",
-      "description": "စိတ်နှင့် အာရုံ တွေ့ထိခြင်း။"
+      "description": "စိတ်နှင့် အာရုံ တွေ့ထိခြင်း။",
+      "characteristic": "Contacting ဤသည် အာရုံ — ဤသည် mode ၏ touching between ဝိညာဏ်, ဤသည် sense-base နှင့် ဤသည် အာရုံ.",
+      "function": "Gathering ဤသည် other associated စိတ် factors so they cling together နှင့် ဝိညာဏ် to touch ဤသည် sense-base နှင့် ဤသည် အာရုံ.",
+      "manifestation": "ဤသည် coinciding ၏ ဝိညာဏ်, စိတ် factors, sense-base နှင့် အာရုံ.",
+      "proximateCause": "ဤသည် presence ၏ an အာရုံ offered through ဤသည် appropriate channel (sense-base + အာရုံ + ဝိညာဏ်)."
     },
     "CS_VEDANA": {
       "name": "ဝေဒနာ",
       "shortName": "ဝေဒနာ",
-      "description": "အာရုံ၏ အရသာကို ခံစားခြင်း။"
+      "description": "အာရုံ၏ အရသာကို ခံစားခြင်း။",
+      "characteristic": "ဝေဒနာ, experiencing ဤသည် အာရုံ — ဤသည် manner ၏ receiving နှင့် sensing ဤသည် အာရုံ.",
+      "function": "Enjoying ဤသည် desirable အာရုံ, or producing languor/growth တွင် ဤသည် associated states.",
+      "manifestation": "စိတ် ease (pleasant/joyful ဝေဒနာ); စိတ် distress (painful ဝေဒနာ); bodily pleasure or pain; or quiescence (neutral ဝေဒနာ).",
+      "proximateCause": "Bodily calm နှင့် စိတ် ease (for pleasant/joyful ဝေဒနာ); ဤသည် presence ၏ ဤသည် ဟဒယဝတ္ထု (for painful ဝေဒနာ); ဤသည် absence ၏ exhilaration (for neutral ဝေဒနာ)."
     },
     "CS_SANNA": {
       "name": "သညာ",
       "shortName": "သညာ",
-      "description": "အာရုံ၏ အမှတ်အသားကို မှတ်သားခြင်း။"
+      "description": "အာရုံ၏ အမှတ်အသားကို မှတ်သားခြင်း။",
+      "characteristic": "Recollecting — ဤသည် way ၏ remembering; noting နှင့် marking ဤသည် distinguishing features ၏ ဤသည် အာရုံ.",
+      "function": "Recalling a past event by means ၏ ဤသည် sign သော was noted.",
+      "manifestation": "Recollecting something previously known, rightly or wrongly.",
+      "proximateCause": "ဤသည် reappearance ၏ an အာရုံ အဖြစ် it was previously apprehended — an အာရုံ သော evokes memory (e.g. recognizing an acquaintance by recalling where one met them)."
     },
     "CS_CETANA": {
       "name": "စေတနာ",
       "shortName": "စေတနာ",
-      "description": "ယှဉ်ဖက်တရားတို့ကို စေ့ဆော်တိုက်တွန်းခြင်း၊ ကံပြုခြင်း။"
+      "description": "ယှဉ်ဖက်တရားတို့ကို စေ့ဆော်တိုက်တွန်းခြင်း၊ ကံပြုခြင်း။",
+      "characteristic": "Urging, directing နှင့် coordinating ဤသည် associated states သော arise together နှင့် it.",
+      "function": "Assembling ဤသည် co-arising states so they are directed together towards ဤသည် အာရုံ, seizing hold ၏ ဤသည် အာရုံ.",
+      "manifestation": "Organizing, directing နှင့် arranging ဤသည် associated states.",
+      "proximateCause": "ဤသည် presence ၏ ဤသည် other three စိတ် aggregates — ဝေဒနာ, သညာ နှင့် ဝိညာဏ် (since စေတနာ itself belongs to ဤသည် aggregate ၏ formations နှင့် so requires ဤသည် other three)."
     },
     "CS_EKAGGATA": {
       "name": "ဧကဂ္ဂတာ",
       "shortName": "ဧကဂ္ဂတာ",
-      "description": "အာရုံတစ်ခုတည်း၌ စိတ်တည်ကြည်ငြိမ်သက်ခြင်း။"
+      "description": "အာရုံတစ်ခုတည်း၌ စိတ်တည်ကြည်ငြိမ်သက်ခြင်း။",
+      "characteristic": "Non-distraction, non-wavering တွင် ဤသည် face ၏ ဤသည် အာရုံ — one-pointed, focused မနသိကာရ.",
+      "function": "Gathering ဤသည် co-arising စိတ် states so they converge on a single အာရုံ.",
+      "manifestation": "Appears အဖြစ် peace နှင့် firm steadiness တွင် ဤသည် အာရုံ.",
+      "proximateCause": "ဤသည် presence ၏ pleasure/happiness, နှင့် ဤသည် absence ၏ ဤသည် ဥဒ္ဓစ္စ နှင့် ဝိစိကိစ္ဆာ aspects ၏ မောဟ (happiness ဖြစ်သည် needed for concentration to be achieved)."
     },
     "CS_JIVITINDRIYA": {
       "name": "ဇီဝိတိန္ဒြေ",
       "shortName": "ဇီဝိတိန္ဒြေ",
-      "description": "ယှဉ်ဖက် နာမ်တရားတို့၏ အသက်ကို စောင့်ရှောက်ခြင်း။"
+      "description": "ယှဉ်ဖက် နာမ်တရားတို့၏ အသက်ကို စောင့်ရှောက်ခြင်း။",
+      "characteristic": "Maintaining, preserving နှင့် nurturing ဤသည် co-arising states.",
+      "function": "Keeping ဤသည် co-arising states alive for their three sub-moments before they cease.",
+      "manifestation": "ဤသည် co-arising states persist တွင် being until ဤသည် moment ၏ their dissolution.",
+      "proximateCause": "ဤသည် presence ၏ ဤသည် aggregates ၏ ဝေဒနာ, သညာ နှင့် ဝိညာဏ်."
     },
     "CS_MANASIKARA": {
       "name": "မနသိကာရ",
       "shortName": "မနသိကာရ",
-      "description": "စိတ်ကို အာရုံသို့ ရှေးရှုစေခြင်း။"
+      "description": "စိတ်ကို အာရုံသို့ ရှေးရှုစေခြင်း။",
+      "characteristic": "ဤသည် manner ၏ guiding ဤသည် associated states to fully apprehend ဤသည် အာရုံ.",
+      "function": "Making ဝိညာဏ် နှင့် its စိတ် factors converge နှင့် take hold ၏ ဤသည် အာရုံ together.",
+      "manifestation": "Turning ဤသည် mind towards ဤသည် အာရုံ (အဖြစ် a helmsman steers a boat towards its destination).",
+      "proximateCause": "ဤသည် presence ၏ an အာရုံ — past, present or future."
     },
     "CS_VITAKKA": {
       "name": "ဝိတက်",
       "shortName": "ဝိတက်",
-      "description": "စိတ်ကို အာရုံပေါ်သို့ တင်ပေးခြင်း။"
+      "description": "စိတ်ကို အာရုံပေါ်သို့ တင်ပေးခြင်း။",
+      "characteristic": "Carrying ဤသည် co-arising states onto ဤသည် အာရုံ — directing/lifting ဤသည် mind onto ဤသည် အာရုံ.",
+      "function": "Bringing ဝိညာဏ် နှင့် its စိတ် factors into ဖဿ နှင့် ဤသည် အာရုံ.",
+      "manifestation": "ဝိညာဏ် နှင့် its co-arising စိတ် factors reach ဤသည် အာရုံ.",
+      "proximateCause": "ဤသည် presence ၏ an အာရုံ together နှင့် ဤသည် other three aggregates (ဝေဒနာ, သညာ, ဝိညာဏ်), since applied thought belongs to ဤသည် aggregate ၏ formations."
     },
     "CS_VICARA": {
       "name": "ဝိစာရ",
       "shortName": "ဝိစာရ",
-      "description": "အာရုံကို သုံးသပ်ဆင်ခြင်ခြင်း။"
+      "description": "အာရုံကို သုံးသပ်ဆင်ခြင်ခြင်း။",
+      "characteristic": "ဤသည် manner ၏ attending to ဤသည် အာရုံ — examining နှင့် observing it closely နှင့် continuously.",
+      "function": "Keeping ဝိညာဏ် နှင့် its co-arising စိတ် factors closely engaged နှင့် ဤသည် အာရုံ without interruption.",
+      "manifestation": "Having engaged ဤသည် အာရုံ, it binds ဤသည် associated states to it so they keep apprehending သော same အာရုံ without straying from it.",
+      "proximateCause": "ဤသည် presence ၏ an အာရုံ together နှင့် ဤသည် other three aggregates, since sustained thought likewise belongs to ဤသည် aggregate ၏ formations."
     },
     "CS_ADHIMOKKHA": {
       "name": "အဓိမောက္ခ",
       "shortName": "အဓိမောက္ခ",
-      "description": "အာရုံ၌ ဆုံးဖြတ်ခြင်း။"
+      "description": "အာရုံ၌ ဆုံးဖြတ်ခြင်း။",
+      "characteristic": "ဤသည် manner ၏ deciding, breaking through ဤသည် state ၏ indecision — releasing ဝိညာဏ် from ဝိစိကိစ္ဆာ so it can move towards ဤသည် အာရုံ.",
+      "function": "Making ဝိညာဏ် resolve firmly on ဤသည် အာရုံ, without wavering.",
+      "manifestation": "Having made a firm အဓိမောက္ခ about ဤသည် အာရုံ — carrying out သော အဓိမောက္ခ.",
+      "proximateCause": "ဤသည် presence ၏ an အာရုံ to be judged, determined or decided upon."
     },
     "CS_VIRIYA": {
       "name": "ဝီရိယ",
       "shortName": "ဝီရိယ",
-      "description": "မဆုတ်မနစ် ကြိုးစားအားထုတ်ခြင်း။"
+      "description": "မဆုတ်မနစ် ကြိုးစားအားထုတ်ခြင်း။",
+      "characteristic": "ဤသည် manner ၏ exertion နှင့် endurance — energetic effort သော does not retreat.",
+      "function": "Supporting ဤသည် co-arising states so they do not regress.",
+      "manifestation": "Not retreating (from ဤသည် task at hand).",
+      "proximateCause": "A sense ၏ urgency, or some ရုပ် သော stirs ဤသည် mind, such အဖြစ် old age, sickness, death or suffering."
     },
     "CS_PITI": {
       "name": "ပီတိ",
       "shortName": "ပီတိ",
-      "description": "အာရုံ၌ နှစ်သက်ရွှင်လန်းခြင်း။"
+      "description": "အာရုံ၌ နှစ်သက်ရွှင်လန်းခြင်း။",
+      "characteristic": "Delight နှင့် exhilaration, being gladdened by ဤသည် အာရုံ (distinct from ဝေဒနာ, which experiences ဤသည် အာရုံ, whereas ပီတိ creates interest နှင့် relish တွင် it).",
+      "function": "Refreshing ဤသည် body နှင့် gladdening ဤသည် mind.",
+      "manifestation": "စိတ် elation, a sense ၏ being uplifted နှင့် suffused (distinct from ဝေဒနာ, which ဖြစ်သည် စိတ် ease).",
+      "proximateCause": "ဤသည် aggregates ၏ ဝေဒနာ, သညာ နှင့် ဝိညာဏ် (since ပီတိ belongs to ဤသည် aggregate ၏ formations — unlike ဤသည် proximate cause ၏ joyful ဝေဒနာ, which ဖြစ်သည် bodily calm နှင့် စိတ် ease)."
     },
     "CS_CHANDA": {
       "name": "ဆန္ဒ",
       "shortName": "ဆန္ဒ",
-      "description": "ပြုလုပ်လိုသော အလိုဆန္ဒ။"
+      "description": "ပြုလုပ်လိုသော အလိုဆန္ဒ။",
+      "characteristic": "Having ဤသည် hope နှင့် wish to obtain ဤသည် အာရုံ.",
+      "function": "Making ဝိညာဏ် seek out နှင့် reach for ဤသည် အာရုံ.",
+      "manifestation": "Obtaining ဤသည် desired အာရုံ.",
+      "proximateCause": "ဤသည် presence ၏ an အာရုံ သော ဖြစ်သည် desirable, worth wishing for."
     },
     "CS_MOHA": {
       "name": "မောဟ",
       "shortName": "မောဟ",
-      "description": "အမှန်တရားကို မသိဘဲ တွေဝေခြင်း။"
+      "description": "အမှန်တရားကို မသိဘဲ တွေဝေခြင်း။",
+      "characteristic": "စိတ် blindness, not knowing what should be known — ဤသည် opposite ၏ wisdom.",
+      "function": "Obscuring clarity, preventing ဤသည် true nature ၏ phenomena from being seen.",
+      "manifestation": "Darkness နှင့် obscuration.",
+      "proximateCause": "Unwise မနသိကာရ — careless, improper မနသိကာရ."
     },
     "CS_AHIRIKA": {
       "name": "အဟိရိက",
       "shortName": "အဟိရိက",
-      "description": "ဒုစရိုက်၌ မရှက်ခြင်း။"
+      "description": "ဒုစရိုက်၌ မရှက်ခြင်း။",
+      "characteristic": "Absence ၏ shame towards wrongdoing, evil နှင့် faults.",
+      "function": "Carrying out evil, faulty နှင့် wrongful deeds.",
+      "manifestation": "Not shrinking back from unwholesome deeds.",
+      "proximateCause": "Lack ၏ self-respect."
     },
     "CS_ANOTTAPPA": {
       "name": "အနောတ္တပ္ပ",
       "shortName": "အနောတ္တပ္ပ",
-      "description": "ဒုစရိုက်၌ မကြောက်ခြင်း။"
+      "description": "ဒုစရိုက်၌ မကြောက်ခြင်း။",
+      "characteristic": "Absence ၏ dread towards unwholesome states.",
+      "function": "Committing wrongdoing နှင့် misconduct.",
+      "manifestation": "Not flinching or fearing when doing evil.",
+      "proximateCause": "Lack ၏ regard for others."
     },
     "CS_UDDHACCA": {
       "name": "ဥဒ္ဓစ္စ",
       "shortName": "ဥဒ္ဓစ္စ",
-      "description": "စိတ်၏ ပျံ့လွင့်ခြင်း။"
+      "description": "စိတ်၏ ပျံ့လွင့်ခြင်း။",
+      "characteristic": "Unrest — a mind သော ဖြစ်သည် agitated နှင့် scattered.",
+      "function": "Preventing ဤသည် mind from settling firmly နှင့် lastingly on its အာရုံ.",
+      "manifestation": "A mind သော ဖြစ်သည် unsettled နှင့် disturbed.",
+      "proximateCause": "Unwise မနသိကာရ — careless, improper handling ၏ ဤသည် mind."
     },
     "CS_LOBHA": {
       "name": "လောဘ",
       "shortName": "လောဘ",
-      "description": "အာရုံ၌ တပ်မက်ကပ်ငြိခြင်း။"
+      "description": "အာရုံ၌ တပ်မက်ကပ်ငြိခြင်း။",
+      "characteristic": "ဥပါဒါန် to ဤသည် အာရုံ — causing ဤသည် co-arising စိတ် factors to cling to it.",
+      "function": "Making ဝိညာဏ် stick to ဤသည် အာရုံ.",
+      "manifestation": "Not letting go ၏ ဤသည် အာရုံ.",
+      "proximateCause": "Delighting တွင်, being drawn to, binding phenomena — relishing what ဖြစ်သည် beautiful, enticing နှင့် pleasant."
     },
     "CS_DITTHI": {
       "name": "ဒိဋ္ဌိ",
       "shortName": "ဒိဋ္ဌိ",
-      "description": "မှားယွင်းစွာ ယူဆခြင်း။"
+      "description": "မှားယွင်းစွာ ယူဆခြင်း။",
+      "characteristic": "Adhering obstinately to what ဖြစ်သည် contrary to truth.",
+      "function": "Interpreting matters wrongly, contrary to ဤသည် facts.",
+      "manifestation": "Rigidly holding to a mistaken view.",
+      "proximateCause": "Not meeting noble နှင့် wise persons."
     },
     "CS_MANA": {
       "name": "မာန",
       "shortName": "မာန",
-      "description": "ထောင်လွှားဝါကြွားခြင်း။"
+      "description": "ထောင်လွှားဝါကြွားခြင်း။",
+      "characteristic": "Haughtiness, arrogance, self-မာန — comparing oneself နှင့် others အဖြစ် superior, equal or inferior.",
+      "function": "Driving ဤသည် associated states towards self-exaltation.",
+      "manifestation": "Vanity နှင့် self-aggrandizement.",
+      "proximateCause": "ဤသည် presence ၏ an အာရုံ for comparison."
     },
     "CS_DOSA": {
       "name": "ဒေါသ",
       "shortName": "ဒေါသ",
-      "description": "ပြทူ့စော် ဖျက်ဆီးလိုခြင်း၊ စိတ်ဆိုးခြင်း။"
+      "description": "ပြทူ့စော် ဖျက်ဆီးလိုခြင်း၊ စိတ်ဆိုးခြင်း။",
+      "characteristic": "Ferocity နှင့် harshness ၏ body နှင့် mind — a state ၏ opposition နှင့် burning hostility.",
+      "function": "Making ဤသည် mind burn, scorching နှင့် seeking to destroy ဤသည် အာရုံ.",
+      "manifestation": "Committing evil deeds, destructive နှင့် harmful to oneself, to others, or to both.",
+      "proximateCause": "ဤသည် presence ၏ an undesirable အာရုံ — a lack ၏ understanding or reasoned reflection."
     },
     "CS_ISSA": {
       "name": "ဣဿာ",
       "shortName": "ဣဿာ",
-      "description": "သူတစ်ပါး၏ စည်းစိမ်ချမ်းသာကို မနာလိုငြူစူခြင်း။"
+      "description": "သူတစ်ပါး၏ စည်းစိမ်ချမ်းသာကို မနာလိုငြူစူခြင်း။",
+      "characteristic": "ဣဿာ နှင့် jealousy towards ဤသည် success or superiority ၏ others.",
+      "function": "Being displeased at another's gain or excellence.",
+      "manifestation": "Turning away from, averting one's face from another's superiority.",
+      "proximateCause": "ဤသည် fame, wealth, happiness or success ၏ others, which exceeds one's own."
     },
     "CS_MACCHARIYA": {
       "name": "မစ္ဆရိယ",
       "shortName": "မစ္ဆရိယ",
-      "description": "မိမိ၏ စည်းစိမ်ကို ဝှက်ထားခြင်း၊ နှမြောခြင်း။"
+      "description": "မိမိ၏ စည်းစိမ်ကို ဝှက်ထားခြင်း၊ နှမြောခြင်း။",
+      "characteristic": "Concealing one's own possessions or achievements.",
+      "function": "Being unwilling to share or let others partake ၏ one's possessions.",
+      "manifestation": "Not sharing one's wealth, being stingy, unwilling to give.",
+      "proximateCause": "One's own possessions or achievements."
     },
     "CS_KUKKUCCA": {
       "name": "ကုက္ကုစ္စ",
       "shortName": "ကုက္ကုစ္စ",
-      "description": "ပြုခဲ့သော မကောင်းမှုနှင့် မပြုခဲ့သော ကောင်းမှု၌ နောင်တရခြင်း။"
+      "description": "ပြုခဲ့သော မကောင်းမှုနှင့် မပြုခဲ့သော ကောင်းမှု၌ နောင်တရခြင်း။",
+      "characteristic": "ဤသည် manner ၏ regretting, repenting, being troubled about what has been done or left undone.",
+      "function": "Making ဤသည် mind restless နှင့် distressed about ဤသည် past.",
+      "manifestation": "A sense ၏ remorse နှင့် regret တွင် ဤသည် mind.",
+      "proximateCause": "An evil deed done, or a good နှင့် meritorious deed left undone."
     },
     "CS_THINA": {
       "name": "ထိန",
       "shortName": "ထိန",
-      "description": "စိတ်၏ ထိုင်းမှိုင်း တွန့်တိုခြင်း။"
+      "description": "စိတ်၏ ထိုင်းမှိုင်း တွန့်တိုခြင်း။",
+      "characteristic": "Sluggishness သော halts diligence.",
+      "function": "Abandoning energetic effort, so သော active diligence ceases, leading ဤသည် mind externally to sink back into ဤသည် life-continuum.",
+      "manifestation": "A mind သော withdraws နှင့် shrinks back.",
+      "proximateCause": "Unwise မနသိကာရ — careless, improper handling ၏ ဤသည် mind."
     },
     "CS_MIDDHA": {
       "name": "မိဒ္ဓ",
       "shortName": "မိဒ္ဓ",
-      "description": "စေတသိက်တို့၏ ငိုက်မျဉ်းလေးလံခြင်း။"
+      "description": "စေတသိက်တို့၏ ငိုက်မျဉ်းလေးလံခြင်း။",
+      "characteristic": "Unfitness for work — a state ၏ မိဒ္ဓ, lethargy, drowsiness.",
+      "function": "Enveloping နှင့် covering ဝိညာဏ်.",
+      "manifestation": "Drowsiness, dullness, sleepiness.",
+      "proximateCause": "ဤသည် absence ၏ proper, wise မနသိကာရ."
     },
     "CS_VICIKICCHA": {
       "name": "ဝိစိကိစ္ဆာ",
       "shortName": "ဝိစိကိစ္ဆာ",
-      "description": "ရတနာသုံးပါး၌ သံသယဖြစ်ခြင်း။"
+      "description": "ရတနာသုံးပါး၌ သံသယဖြစ်ခြင်း။",
+      "characteristic": "ဤသည် manner ၏ doubting — wavering နှင့် hesitating about ဤသည် Triple Gem နှင့် ဤသည် Teaching.",
+      "function": "Causing wavering, agitation, hesitation နှင့် indecision.",
+      "manifestation": "Inability to decide, lack ၏ resolve.",
+      "proximateCause": "Unwise မနသိကာရ."
     },
     "CS_SADDHA": {
       "name": "သဒ္ဓါ",
       "shortName": "သဒ္ဓါ",
-      "description": "ရတနာသုံးပါးနှင့် ကံ၊ ကံ၏အကျိုး၌ ကြည်ညိုယုံကြည်ခြင်း။"
+      "description": "ရတနာသုံးပါးနှင့် ကံ၊ ကံ၏အကျိုး၌ ကြည်ညိုယုံကြည်ခြင်း။",
+      "characteristic": "Trusting confidence တွင် ဤသည် Triple Gem နှင့် တွင် ဤသည် law ၏ kamma နှင့် its results — a state ၏ စိတ် purity.",
+      "function": "Purifying ဤသည် mind, making it place its trust တွင် what ဖြစ်သည် genuinely worthy.",
+      "manifestation": "Freedom from ဤသည် defilement ၏ superstition.",
+      "proximateCause": "ဤသည် presence ၏ things worthy ၏ confidence (ဤသည် Triple Gem, ဤသည် law ၏ kamma နှင့် its fruit)."
     },
     "CS_SATI": {
       "name": "သတိ",
       "shortName": "သတိ",
-      "description": "ကုသိုလ်တရား၌ အောက်မေ့သတိရခြင်း။"
+      "description": "ကုသိုလ်တရား၌ အောက်မေ့သတိရခြင်း။",
+      "characteristic": "ဤသည် manner ၏ being alert, not careless, not drifting — keeping ဤသည် အာရုံ တွင် mind.",
+      "function": "Remembering, preventing forgetfulness.",
+      "manifestation": "Cultivating a mind သော stays closely attached to its အာရုံ — guarding နှင့် protecting ဤသည် six sense doors.",
+      "proximateCause": "Firm သညာ/recognition."
     },
     "CS_HIRI": {
       "name": "ဟိရိ",
       "shortName": "ဟိရိ",
-      "description": "မကောင်းမှုမှ ရှက်ခြင်း။"
+      "description": "မကောင်းမှုမှ ရှက်ခြင်း။",
+      "characteristic": "Abhorrence ၏ wrongdoing, disinclination towards fault.",
+      "function": "Refraining from committing wrongful deeds.",
+      "manifestation": "Shrinking back from evil နှင့် fault, avoiding wrongdoing.",
+      "proximateCause": "Self-respect."
     },
     "CS_OTTAPPA": {
       "name": "ဩတ္တပ္ပ",
       "shortName": "ဩတ္တပ္ပ",
-      "description": "မကောင်းမှုမှ ကြောက်လန့်ခြင်း။"
+      "description": "မကောင်းမှုမှ ကြောက်လန့်ခြင်း။",
+      "characteristic": "Dread ၏ wrongdoing, abhorrence ၏ ဤသည် danger ၏ fault.",
+      "function": "Refraining from wrongdoing, not creating harm.",
+      "manifestation": "Shrinking back from နှင့် avoiding wrongdoing.",
+      "proximateCause": "Regard for others, fear ၏ their censure."
     },
     "CS_ALOBHA": {
       "name": "အလောဘ",
       "shortName": "အလောဘ",
-      "description": "အာရုံ၌ မတပ်မက်ခြင်း၊ စွန့်ကြဲခြင်း။"
+      "description": "အာရုံ၌ မတပ်မက်ခြင်း၊ စွန့်ကြဲခြင်း။",
+      "characteristic": "A mind undefiled by its အာရုံ — free from ဥပါဒါန်, free from attachment.",
+      "function": "Not grasping, not ဥပါဒါန်, not attaching; transcending bondage.",
+      "manifestation": "Not holding on to what ဖြစ်သည် present, not ဘဝ infatuated နှင့် a pleasing အာရုံ; at its culmination, not ဥပါဒါန် even to a new existence.",
+      "proximateCause": "Wise မနသိကာရ."
     },
     "CS_ADOSA": {
       "name": "အဒေါသ",
       "shortName": "အဒေါသ",
-      "description": "မပြทူ့စော်ခြင်း၊ မေတ္တာထားခြင်း။"
+      "description": "မပြทူ့စော်ခြင်း၊ မေတ္တာထားခြင်း။",
+      "characteristic": "Freedom from cruelty, malice နှင့် opposition — a state ၏ coolness နှင့် gentleness.",
+      "function": "Dispelling cruelty, avoiding harm, dispelling heated anger.",
+      "manifestation": "A manifestation ၏ gentleness နှင့် coolness.",
+      "proximateCause": "Wise မနသိကာရ."
     },
     "CS_TATRAMAJJHATTATA": {
       "name": "တတြမဇ္ဈတ္တတာ",
       "shortName": "တတြမဇ္ဈတ္တတာ",
-      "description": "တရားတို့၌ အညီအမျှထားခြင်း၊ ဥပေက္ခာ။"
+      "description": "တရားတို့၌ အညီအမျှထားခြင်း၊ ဥပေက္ခာ။",
+      "characteristic": "Keeping ဝိညာဏ် နှင့် its စိတ် factors level နှင့် one another — a state ၏ balance နှင့် even-handedness.",
+      "function": "Preventing deficiency or excess, keeping ဤသည် associated states from losing their balance.",
+      "manifestation": "ဤသည် production ၏ balance နှင့် equilibrium.",
+      "proximateCause": "ဤသည် presence ၏ harmoniously co-operating states."
     },
     "CS_KAYAPASSADDHI": {
       "name": "ကာယပဿဒ္ဓိ",
       "shortName": "ကာယပဿဒ္ဓိ",
-      "description": "စေတသိက်တို့၏ ငြိမ်းအေးခြင်း။"
+      "description": "စေတသိက်တို့၏ ငြိမ်းအေးခြင်း။",
+      "characteristic": "Calm, free from ဤသည် agitation ၏ ဤသည် စိတ်-factor group (ဤသည် aggregates ၏ ဝေဒနာ, သညာ နှင့် formations).",
+      "function": "Quelling ဤသည် agitation ၏ ဤသည် စိတ် factors, so they no longer waver.",
+      "manifestation": "ဤသည် စိတ် factors become calm, tranquil နှင့် cool.",
+      "proximateCause": "ဤသည် presence ၏ ဤသည် စိတ် factors (ဤသည် aggregates ၏ ဝေဒနာ, သညာ နှင့် formations)."
     },
     "CS_CITTAPASSADDHI": {
       "name": "စိတ္တပဿဒ္ဓိ",
       "shortName": "စိတ္တပဿဒ္ဓိ",
-      "description": "စိတ်၏ ငြိမ်းအေးခြင်း။"
+      "description": "စိတ်၏ ငြိမ်းအေးခြင်း။",
+      "characteristic": "Calm, free from ဤသည် agitation ၏ ဝိညာဏ် (ဤသည် aggregate ၏ ဝိညာဏ်).",
+      "function": "Quelling ဤသည် agitation ၏ ဝိညာဏ်, so it no longer wavers.",
+      "manifestation": "ဝိညာဏ် becomes calm, tranquil နှင့် cool.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် (ဤသည် aggregate ၏ ဝိညာဏ်)."
     },
     "CS_KAYALAHUTA": {
       "name": "ကာယလဟုတာ",
       "shortName": "ကာယလဟုတာ",
-      "description": "စေတသိက်တို့၏ ပေါ့ပါးခြင်း။"
+      "description": "စေတသိက်တို့၏ ပေါ့ပါးခြင်း။",
+      "characteristic": "Lightness, freedom from ဤသည် heaviness ၏ ဤသည် စိတ်-factor group (ဝေဒနာ, သညာ, formations).",
+      "function": "Preventing heaviness from weighing down ဤသည် စိတ် factors, making them light.",
+      "manifestation": "ဤသည် စိတ် factors are no longer sluggish နှင့် become light.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors (ဝေဒနာ, သညာ, formations)."
     },
     "CS_CITTALAHUTA": {
       "name": "စိတ္တလဟုတာ",
       "shortName": "စိတ္တလဟုတာ",
-      "description": "စိတ်၏ ပေါ့ပါးခြင်း။"
+      "description": "စိတ်၏ ပေါ့ပါးခြင်း။",
+      "characteristic": "Lightness, freedom from ဤသည် heaviness ၏ ဝိညာဏ်.",
+      "function": "Preventing heaviness from weighing down ဝိညာဏ်, making it light.",
+      "manifestation": "ဝိညာဏ် ဖြစ်သည် no longer sluggish နှင့် becomes light.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_KAYAMUDUTA": {
       "name": "ကာယမုဒုတာ",
       "shortName": "ကာယမုဒုတာ",
-      "description": "စေတသိက်တို့၏ နူးညံ့ခြင်း။"
+      "description": "စေတသိက်တို့၏ နူးညံ့ခြင်း။",
+      "characteristic": "Softness နှင့် pliancy ၏ ဤသည် စိတ်-factor group (ဝေဒနာ, သညာ, formations).",
+      "function": "Dissolving ဤသည် rigidity ၏ ဤသည် စိတ် factors, limiting stiffness နှင့် coarseness.",
+      "manifestation": "Pliancy, ease တွင် apprehending ဤသည် အာရုံ, freedom from stiffness.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_CITTAMUDUTA": {
       "name": "စိတ္တမုဒုတာ",
       "shortName": "စိတ္တမုဒုတာ",
-      "description": "စိတ်၏ နူးညံ့ခြင်း။"
+      "description": "စိတ်၏ နူးညံ့ခြင်း။",
+      "characteristic": "Softness နှင့် pliancy ၏ ဝိညာဏ်.",
+      "function": "Dissolving ဤသည် rigidity ၏ ဝိညာဏ်, limiting its stiffness နှင့် coarseness.",
+      "manifestation": "ဝိညာဏ် becomes pliant, apprehending ဤသည် အာရုံ နှင့် ease, free from stiffness.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_KAYAKAMMANNATA": {
       "name": "ကာယကမ္မညတာ",
       "shortName": "ကာယကမ္မညတာ",
-      "description": "စေတသိက်တို့၏ အလုပ်၌ သင့်လျော်ခြင်း။"
+      "description": "စေတသိက်တို့၏ အလုပ်၌ သင့်လျော်ခြင်း။",
+      "characteristic": "Freeing ဤသည် စိတ်-factor group from unworkability, from unfitness.",
+      "function": "Dissolving နှင့် removing ဤသည် unfitness ၏ ဤသည် စိတ် factors.",
+      "manifestation": "ဤသည် စိတ် factors become adaptable နှင့် fit to engage နှင့် ဤသည် အာရုံ.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_CITTAKAMMANNATA": {
       "name": "စိတ္တကမ္မညတာ",
       "shortName": "စိတ္တကမ္မညတာ",
-      "description": "စိတ်၏ အလုပ်၌ သင့်လျော်ခြင်း။"
+      "description": "စိတ်၏ အလုပ်၌ သင့်လျော်ခြင်း။",
+      "characteristic": "Freeing ဝိညာဏ် from unworkability, from unfitness.",
+      "function": "Dissolving နှင့် removing ဤသည် unfitness ၏ ဝိညာဏ်.",
+      "manifestation": "ဝိညာဏ် becomes adaptable နှင့် fit to engage နှင့် ဤသည် အာရုံ.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_KAYAPAGUNNATA": {
       "name": "ကာယပါဂုညတာ",
       "shortName": "ကာယပါဂုညတာ",
-      "description": "စေတသိက်တို့၏ လေ့လာကျွမ်းကျင်ခြင်း။"
+      "description": "စေတသိက်တို့၏ လေ့လာကျွမ်းကျင်ခြင်း။",
+      "characteristic": "Absence ၏ stagnation တွင် ဤသည် စိတ်-factor group — ဤသည် refined proficiency ၏ ဤသည် စိတ် factors.",
+      "function": "Breaking up နှင့် dissolving ဤသည် stagnation ၏ ဤသည် စိတ် factors.",
+      "manifestation": "Keeping clear ၏ နှင့် unattached to wrongdoing နှင့် fault.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_CITTAPAGUNNATA": {
       "name": "စိတ္တပါဂုညတာ",
       "shortName": "စိတ္တပါဂုညတာ",
-      "description": "စိတ်၏ လေ့လာကျွမ်းကျင်ခြင်း။"
+      "description": "စိတ်၏ လေ့လာကျွမ်းကျင်ခြင်း။",
+      "characteristic": "Absence ၏ stagnation တွင် ဝိညာဏ် — ဤသည် refined စိတ္တပါဂုညတာ.",
+      "function": "Breaking up နှင့် dissolving ဤသည် stagnation ၏ ဝိညာဏ်.",
+      "manifestation": "Keeping clear ၏ နှင့် unattached to wrongdoing နှင့် fault.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_KAYUJUKATA": {
       "name": "ကာယုဇ္ဇုကတာ",
       "shortName": "ကာယုဇ္ဇုကတာ",
-      "description": "စေတသိက်တို့၏ ဖြောင့်မတ်ခြင်း။"
+      "description": "စေတသိက်တို့၏ ဖြောင့်မတ်ခြင်း။",
+      "characteristic": "Uprightness နှင့် straightness ၏ ဤသည် စိတ်-factor group.",
+      "function": "Counteracting crookedness နှင့် ဤသည် lack ၏ rectitude တွင် ဤသည် စိတ် factors.",
+      "manifestation": "ဤသည် စိတ် factors become upright, without crookedness or deviation.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_CITTUJUKATA": {
       "name": "စိတ္တုဇ္ဇုကတာ",
       "shortName": "စိတ္တုဇ္ဇုကတာ",
-      "description": "စိတ်၏ ဖြောင့်မတ်ခြင်း။"
+      "description": "စိတ်၏ ဖြောင့်မတ်ခြင်း။",
+      "characteristic": "Uprightness နှင့် straightness ၏ ဝိညာဏ်.",
+      "function": "Counteracting crookedness နှင့် ဤသည် lack ၏ rectitude တွင် ဝိညာဏ်.",
+      "manifestation": "ဝိညာဏ် becomes upright, without crookedness or deviation.",
+      "proximateCause": "ဤသည် presence ၏ ဝိညာဏ် နှင့် its accompanying စိတ် factors."
     },
     "CS_SAMMAVACA": {
       "name": "သမ္မာဝါစာ",
       "shortName": "သမ္မာဝါစာ",
-      "description": "ဝစီဒုစရိုက် ၄ ပါးမှ ရှောင်ကြဉ်ခြင်း။"
+      "description": "ဝစီဒုစရိုက် ၄ ပါးမှ ရှောင်ကြဉ်ခြင်း။",
+      "characteristic": "Upholding သမ္မာဝါစာ — abstaining from နှင့် restraining verbal misconduct.",
+      "function": "Keeping away from falsity နှင့် deception (wrong speech: lying, slander, harsh speech, idle chatter).",
+      "manifestation": "ဤသည် eradication ၏ wrong speech.",
+      "proximateCause": "ဤသည် presence ၏ သဒ္ဓါ, သတိ, ဟိရိ, ဩတ္တပ္ပ နှင့် modest desire."
     },
     "CS_SAMMAKAMMANTA": {
       "name": "သမ္မာကမ္မန္တ",
       "shortName": "သမ္မာကမ္မန္တ",
-      "description": "ကာယဒုစရိုက် ၃ ပါးမှ ရှောင်ကြဉ်ခြင်း။"
+      "description": "ကာယဒုစရိုက် ၃ ပါးမှ ရှောင်ကြဉ်ခြင်း။",
+      "characteristic": "Acting rightly, supporting wholesome states while eliminating one's own defilements.",
+      "function": "Keeping away from unwholesome bodily action (killing, stealing, sexual misconduct).",
+      "manifestation": "ဤသည် eradication ၏ wrong action.",
+      "proximateCause": "ဤသည် presence ၏ သဒ္ဓါ, သတိ, ဟိရိ, ဩတ္တပ္ပ နှင့် modest desire."
     },
     "CS_SAMMAAJIVA": {
       "name": "သမ္မာအာဇီဝ",
       "shortName": "သမ္မာအာဇီဝ",
-      "description": "မတရားသော အသက်မွေးမှုမှ ရှောင်ကြဉ်ခြင်း။"
+      "description": "မတရားသော အသက်မွေးမှုမှ ရှောင်ကြဉ်ခြင်း။",
+      "characteristic": "Purity, renunciation ၏ နှင့် abstention from misconduct ၏ both body နှင့် speech.",
+      "function": "Sustaining a righteous livelihood, preventing misconduct.",
+      "manifestation": "ဤသည် eradication ၏ wrong livelihood, refraining from unwholesome conduct.",
+      "proximateCause": "ဤသည် presence ၏ သဒ္ဓါ, သတိ, ဟိရိ, ဩတ္တပ္ပ နှင့် modest desire."
     },
     "CS_KARUNA": {
       "name": "ကရုဏာ",
       "shortName": "ကရုဏာ",
-      "description": "ဆင်းရဲဒုက္ခရောက်သော သတ္တဝါတို့အား သနားကြင်နာခြင်း။"
+      "description": "ဆင်းရဲဒုက္ခရောက်သော သတ္တဝါတို့အား သနားကြင်နာခြင်း။",
+      "characteristic": "ဤသည် wish သော beings be free from suffering — ဤသည် way ၏ wishing to remove ဤသည် suffering ၏ beings.",
+      "function": "Being unable to bear ဤသည် sight ၏ beings' suffering — unable to remain indifferent before ဤသည် suffering ၏ other beings.",
+      "manifestation": "Kindliness, or ဤသည် absence ၏ oppressing other beings.",
+      "proximateCause": "Encountering beings who are suffering — perceiving ဤသည် pressing need ၏ beings overwhelmed by suffering."
     },
     "CS_MUDITA": {
       "name": "မုဒိတာ",
       "shortName": "မုဒိတာ",
-      "description": "သူတစ်ပါး၏ ကောင်းစားချမ်းသာမှု၌ ဝမ်းမြောက်ခြင်း။"
+      "description": "သူတစ်ပါး၏ ကောင်းစားချမ်းသာမှု၌ ဝမ်းမြောက်ခြင်း။",
+      "characteristic": "Rejoicing တွင် ဤသည် good fortune ၏ beings — a state ၏ gladness at ဤသည် happiness ၏ others.",
+      "function": "Being free from ဣဿာ towards other beings.",
+      "manifestation": "Satisfaction at ဤသည် progress နှင့် happiness ၏ other beings — ဤသည် destruction ၏ aversion.",
+      "proximateCause": "Seeing beings create နှင့် enjoy happiness — recognizing သော beings have attained success."
     },
     "CS_PANNA": {
       "name": "ပညိန္ဒြေ",
       "shortName": "ပညိန္ဒြေ",
-      "description": "အမှန်အတိုင်း ထိုးထွင်းသိမြင်သော ပညာ။"
+      "description": "အမှန်အတိုင်း ထိုးထွင်းသိမြင်သော ပညာ။",
+      "characteristic": "Knowing clearly, penetrating to ဤသည် true nature ၏ phenomena — wisdom သော sees ဤသည် Three Characteristics (impermanence, suffering, non-self).",
+      "function": "Dispelling နှင့် eliminating ဤသည် darkness ၏ အဝိဇ္ဇာ.",
+      "manifestation": "Freedom from confusion, freedom from defiling attachment.",
+      "proximateCause": "Wise မနသိကာရ; calm (a tranquil mind); နှင့် a rebirth-linking ဝိညာဏ် rooted တွင် ဤသည် three wholesome roots (အလောဘ, အဒေါသ, non-မောဟ)."
     }
   },
   "rupas": {
     "RP_001": {
       "name": "ပထဝီဓာတ်",
       "shortName": "ပထဝီ",
-      "description": "မာခြင်း သို့မဟုတ် ပျော့ခြင်း သဘောရှိသော မြေဓာတ်။"
+      "description": "မာခြင်း သို့မဟုတ် ပျော့ခြင်း သဘောရှိသော မြေဓာတ်။",
+      "characteristic": "Hardness or softness — ဤသည် quality ၏ solidity or pliancy တွင် ရုပ်.",
+      "function": "Acting အဖြစ် ဤသည် supporting foundation for ဤသည် other material phenomena တွင် ဤသည် same group (kalāpa).",
+      "manifestation": "Receiving — perceptible through bodily ဖဿ အဖြစ် hardness or softness.",
+      "proximateCause": "ဤသည် co-arising ၏ ဤသည် other three great elements (water, fire, air).",
+      "doctrinalNote": "ဤသည် four great elements always arise together, inseparably. There ဖြစ်သည် no materiality တွင် ဤသည် immaterial realm."
     },
     "RP_002": {
       "name": "အာပေါဓာတ်",
       "shortName": "အာပေါ",
-      "description": "ယိုစီးခြင်း သို့မဟုတ် ဖွဲ့စည်းခြင်း သဘောရှိသော ရေဓာတ်။"
+      "description": "ယိုစီးခြင်း သို့မဟုတ် ဖွဲ့စည်းခြင်း သဘောရှိသော ရေဓာတ်။",
+      "characteristic": "Flowing or cohesion — ဤသည် binding quality ၏ ရုပ်.",
+      "function": "Binding together ဤသည် material phenomena within ဤသည် same kalāpa.",
+      "manifestation": "ရုပ် ဖြစ်သည် held together, not falling apart.",
+      "proximateCause": "ဤသည် co-arising ၏ ဤသည် other three great elements (earth, fire, air).",
+      "doctrinalNote": "ဤသည် အာပေါဓာတ် ဖြစ်သည် ဤသည် only great element သော cannot be directly sensed through bodily ဖဿ."
     },
     "RP_003": {
       "name": "တေဇောဓာတ်",
       "shortName": "တေဇော",
-      "description": "ပူခြင်း သို့မဟုတ် အေးခြင်း သဘောရှိသော မီးဓာတ်။"
+      "description": "ပူခြင်း သို့မဟုတ် အေးခြင်း သဘောရှိသော မီးဓာတ်။",
+      "characteristic": "Heat or cold — ဤသည် temperature quality ၏ ရုပ်.",
+      "function": "Ripening နှင့် sustaining ဤသည် material phenomena ၏ ဤသည် same group.",
+      "manifestation": "ရုပ် ဖြစ်သည် brought to maturity နှင့် ripeness.",
+      "proximateCause": "ဤသည် co-arising ၏ ဤသည် other three great elements (earth, water, air).",
+      "doctrinalNote": "When occurring independently အဖြစ် external heat (utu), ဤသည် တေဇောဓာတ် gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
     },
     "RP_004": {
       "name": "ဝါယောဓာတ်",
       "shortName": "ဝါယော",
-      "description": "ထောက်ပံ့ခြင်း သို့မဟုတ် လှုပ်ရှားခြင်း သဘောရှိသော လေဓာတ်။"
+      "description": "ထောက်ပံ့ခြင်း သို့မဟုတ် လှုပ်ရှားခြင်း သဘောရှိသော လေဓာတ်။",
+      "characteristic": "Distension or motion — ဤသည် quality ၏ movement တွင် ရုပ်.",
+      "function": "Supporting နှင့် setting ရုပ် into motion.",
+      "manifestation": "ရုပ် ဖြစ်သည် supported နှင့် made to move.",
+      "proximateCause": "ဤသည် co-arising ၏ ဤသည် other three great elements (earth, water, fire).",
+      "doctrinalNote": "တွင် ဤသည် practice ၏ ānāpānasati, ဤသည် breath (ဝါယောဓာတ်) ဖြစ်သည် ဤသည် principal meditation အာရုံ."
     },
     "RP_005": {
       "name": "စက္ခုပသာဒ",
       "shortName": "မျက်စိ",
-      "description": "အဆင်းအာရုံကို လက်ခံနိုင်သော မျက်စိအကြည်ဓာတ်။"
+      "description": "အဆင်းအာရုံကို လက်ခံနိုင်သော မျက်စိအကြည်ဓာတ်။",
+      "characteristic": "Subtlety နှင့် clarity, capable ၏ taking up ရူပါရုံ အဖြစ် its အာရုံ.",
+      "function": "Serving အဖြစ် ဤသည် physical basis for eye-ဝိညာဏ် to arise.",
+      "manifestation": "Eye-ဝိညာဏ် arises နှင့် sees ဤသည် visible အာရုံ.",
+      "proximateCause": "Past kamma; ဤသည် presence ၏ a visible အာရုံ impinging on it.",
+      "doctrinalNote": "Produced only by kamma. Not present တွင် ဤသည် immaterial realm."
     },
     "RP_006": {
       "name": "သောတပသာဒ",
       "shortName": "နား",
-      "description": "အသံအာရုံကို လက်ခံနိုင်သော နားအကြည်ဓာတ်။"
+      "description": "အသံအာရုံကို လက်ခံနိုင်သော နားအကြည်ဓာတ်။",
+      "characteristic": "Subtlety, capable ၏ taking up သဒ္ဒါရုံ အဖြစ် its အာရုံ.",
+      "function": "Serving အဖြစ် ဤသည် physical basis for ear-ဝိညာဏ် to arise.",
+      "manifestation": "Ear-ဝိညာဏ် arises နှင့် hears ဤသည် သဒ္ဒါရုံ အာရုံ.",
+      "proximateCause": "Past kamma; ဤသည် presence ၏ a သဒ္ဒါရုံ အာရုံ impinging on it.",
+      "doctrinalNote": "Brahmās ၏ ဤသည် fine-material realm possess ဤသည် ear faculty because they communicate through သဒ္ဒါရုံ."
     },
     "RP_007": {
       "name": "ဃာနပသာဒ",
       "shortName": "နှာခေါင်း",
-      "description": "အနံ့အာရုံကို လက်ခံနိုင်သော နှာခေါင်းအကြည်ဓာတ်။"
+      "description": "အနံ့အာရုံကို လက်ခံနိုင်သော နှာခေါင်းအကြည်ဓာတ်။",
+      "characteristic": "Subtlety, capable ၏ taking up ဂန္ဓာရုံ အဖြစ် its အာရုံ.",
+      "function": "Serving အဖြစ် ဤသည် physical basis for nose-ဝိညာဏ် to arise.",
+      "manifestation": "Nose-ဝိညာဏ် arises နှင့် smells ဤသည် ဂန္ဓာရုံ အာရုံ.",
+      "proximateCause": "Past kamma; ဤသည် presence ၏ an ဂန္ဓာရုံ အာရုံ impinging on it.",
+      "doctrinalNote": "Occurs only တွင် ဤသည် sense-sphere realm. Brahmās ၏ ဤသည် fine-material realm lack ဤသည် nose faculty."
     },
     "RP_008": {
       "name": "ဇိဝှါပသာဒ",
       "shortName": "လျှာ",
-      "description": "အရသာအာရုံကို လက်ခံနိုင်သော လျှာအကြည်ဓာတ်။"
+      "description": "အရသာအာရုံကို လက်ခံနိုင်သော လျှာအကြည်ဓာတ်။",
+      "characteristic": "Subtlety, capable ၏ taking up ရသာရုံ အဖြစ် its အာရုံ.",
+      "function": "Serving အဖြစ် ဤသည် physical basis for tongue-ဝိညာဏ် to arise.",
+      "manifestation": "Tongue-ဝိညာဏ် arises နှင့် tastes ဤသည် flavour အာရုံ.",
+      "proximateCause": "Past kamma; ဤသည် presence ၏ a ရသာရုံ အာရုံ impinging on it.",
+      "doctrinalNote": "Occurs only တွင် ဤသည် sense-sphere realm. Brahmās do not eat, so they lack ဤသည် tongue faculty."
     },
     "RP_009": {
       "name": "ကာယပသာဒ",
       "shortName": "ကိုယ်",
-      "description": "အတွေ့အထိအာရုံကို လက်ခံနိုင်သော တစ်ကိုယ်လုံးရှိ အကြည်ဓာတ်။"
+      "description": "အတွေ့အထိအာရုံကို လက်ခံနိုင်သော တစ်ကိုယ်လုံးရှိ အကြည်ဓာတ်။",
+      "characteristic": "Subtlety သော pervades ဤသည် body, taking up tangible objects (earth, fire, air) အဖြစ် its အာရုံ.",
+      "function": "Serving အဖြစ် ဤသည် physical basis for body-ဝိညာဏ် to arise.",
+      "manifestation": "Body-ဝိညာဏ် arises နှင့် senses ဤသည် tangible အာရုံ.",
+      "proximateCause": "Past kamma; ဤသည် presence ၏ a tangible အာရုံ impinging on it.",
+      "doctrinalNote": "Brahmās ၏ ဤသည် fine-material realm possess ဤသည် body faculty. It ဖြစ်သည် absent တွင် ဤသည် non-percipient realm."
     },
     "RP_010": {
       "name": "ရူပါရုံ",
       "shortName": "အဆင်း",
-      "description": "မျက်စိဖြင့် မြင်အပ်သော အဆင်းအရောင်။"
+      "description": "မျက်စိဖြင့် မြင်အပ်သော အဆင်းအရောင်။",
+      "characteristic": "Appearance နှင့် manifestation — ဤသည် အာရုံ သော ဖြစ်သည် seen by ဤသည် eye faculty.",
+      "function": "Serving အဖြစ် ဤသည် အာရုံ cognized by eye-ဝိညာဏ်.",
+      "manifestation": "Eye-ဝိညာဏ် arises နှင့် apprehends it.",
+      "proximateCause": "ဤသည် presence ၏ light together နှင့် ဖဿ နှင့် ဤသည် eye faculty.",
+      "doctrinalNote": "ရူပါရုံ (colour) ဖြစ်သည် distinct from materiality (ရုပ်) တွင် general."
     },
     "RP_011": {
       "name": "သဒ္ဒါရုံ",
       "shortName": "အသံ",
-      "description": "နားဖြင့် ကြားအပ်သော အသံ။"
+      "description": "နားဖြင့် ကြားအပ်သော အသံ။",
+      "characteristic": "Resounding — ဤသည် အာရုံ သော ဖြစ်သည် heard by ဤသည် ear faculty.",
+      "function": "Serving အဖြစ် ဤသည် အာရုံ cognized by ear-ဝိညာဏ်.",
+      "manifestation": "Ear-ဝိညာဏ် arises နှင့် apprehends it.",
+      "proximateCause": "ဤသည် arising ၏ သဒ္ဒါရုံ together နှင့် ဖဿ နှင့် ဤသည် ear faculty."
     },
     "RP_012": {
       "name": "ဂန္ဓာရုံ",
       "shortName": "အနံ့",
-      "description": "နှာခေါင်းဖြင့် နမ်းအပ်သော အနံ့။"
+      "description": "နှာခေါင်းဖြင့် နမ်းအပ်သော အနံ့။",
+      "characteristic": "Wafting forth — ဤသည် အာရုံ သော ဖြစ်သည် smelled by ဤသည် nose faculty.",
+      "function": "Serving အဖြစ် ဤသည် အာရုံ cognized by nose-ဝိညာဏ်.",
+      "manifestation": "Nose-ဝိညာဏ် arises နှင့် apprehends it.",
+      "proximateCause": "ဤသည် arising ၏ ဂန္ဓာရုံ together နှင့် ဖဿ နှင့် ဤသည် nose faculty."
     },
     "RP_013": {
       "name": "ရသာရုံ",
       "shortName": "အရသာ",
-      "description": "လျှာဖြင့် လျက်အပ်သော အရသာ။"
+      "description": "လျှာဖြင့် လျက်အပ်သော အရသာ။",
+      "characteristic": "Appearance — ဤသည် အာရုံ သော ဖြစ်သည် tasted by ဤသည် tongue faculty.",
+      "function": "Serving အဖြစ် ဤသည် အာရုံ cognized by tongue-ဝိညာဏ်.",
+      "manifestation": "Tongue-ဝိညာဏ် arises နှင့် apprehends it.",
+      "proximateCause": "ဖဿ ၏ a flavour taken up by ဤသည် tongue faculty."
     },
     "RP_014": {
       "name": "ဣတ္ထိန္ဒြေ",
       "shortName": "မိန်းမသဘာဝ",
-      "description": "မိန်းမ၏ ကိုယ်ခန္ဓာ အသွင်အပြင်ကို ဖြစ်စေသော ရုပ်။"
+      "description": "မိန်းမ၏ ကိုယ်ခန္ဓာ အသွင်အပြင်ကို ဖြစ်စေသော ရုပ်။",
+      "characteristic": "ဤသည် expression ၏ femininity — influencing ဤသည် entire material body.",
+      "function": "Determining ဤသည် signs နှင့် behaviour characteristic ၏ ဤသည် female sex.",
+      "manifestation": "ဤသည် expression ၏ female sex-characteristics တွင် ဤသည် material body.",
+      "proximateCause": "Kamma သော produces ဤသည် female sex from ဤသည် moment ၏ rebirth-linking.",
+      "doctrinalNote": "Occurs only တွင် ဤသည် sense-sphere realm. Brahmās ၏ ဤသည် fine-material realm have no sex faculty."
     },
     "RP_015": {
       "name": "ပုရိသိန္ဒြေ",
       "shortName": "ယောက်ျားသဘာဝ",
-      "description": "ယောက်ျား၏ ကိုယ်ခန္ဓာ အသွင်အပြင်ကို ဖြစ်စေသော ရုပ်။"
+      "description": "ယောက်ျား၏ ကိုယ်ခန္ဓာ အသွင်အပြင်ကို ဖြစ်စေသော ရုပ်။",
+      "characteristic": "ဤသည် expression ၏ masculinity — influencing ဤသည် entire material body.",
+      "function": "Determining ဤသည် signs နှင့် behaviour characteristic ၏ ဤသည် male sex.",
+      "manifestation": "ဤသည် expression ၏ male sex-characteristics တွင် ဤသည် material body.",
+      "proximateCause": "Kamma သော produces ဤသည် male sex from ဤသည် moment ၏ rebirth-linking.",
+      "doctrinalNote": "Occurs only တွင် ဤသည် sense-sphere realm."
     },
     "RP_016": {
       "name": "ဟဒယဝတ္ထု",
       "shortName": "နှလုံးအိမ်",
-      "description": "စိတ်ဖြစ်ပေါ်ရာ အမှီပြုသော ရုပ်တရား။"
+      "description": "စိတ်ဖြစ်ပေါ်ရာ အမှီပြုသော ရုပ်တရား။",
+      "characteristic": "Being ဤသည် seat — ဤသည် physical basis on which mind-door ဝိညာဏ် depends.",
+      "function": "Serving အဖြစ် ဤသည် physical basis for all ဝိညာဏ် သော arises through ဤသည် mind-door (excluding ဤသည် sense-door pairs).",
+      "manifestation": "Mind-door ဝိညာဏ် ဖြစ်သည် able to arise.",
+      "proximateCause": "Produced by past kamma; sustained by ဤသည် blood ၏ ဤသည် heart.",
+      "doctrinalNote": "Absent တွင် ဤသည် immaterial realm. This ဖြစ်သည် ဤသည် most important material basis တွင် ဤသည် Abhidhamma system ၏ cognition."
     },
     "RP_017": {
       "name": "ရူပဇီဝိတိန္ဒြေ",
       "shortName": "ရုပ်ဇီဝိတ",
-      "description": "ကမ္မဇရုပ်တရားတို့၏ အသက်ကို စောင့်ရှောက်သော ရုပ်။"
+      "description": "ကမ္မဇရုပ်တရားတို့၏ အသက်ကို စောင့်ရှောက်သော ရုပ်။",
+      "characteristic": "Sustaining life — preserving ဤသည် material phenomena produced by kamma.",
+      "function": "Keeping kamma-produced materiality တွင် existence for ဤသည် duration ၏ one material life-span.",
+      "manifestation": "Kamma-produced materiality ဖြစ်သည် kept alive နှင့် persisting.",
+      "proximateCause": "Only kamma can produce ရူပဇီဝိတိန္ဒြေ.",
+      "doctrinalNote": "ဤသည် lifespan ၏ materiality equals seventeen mind-moments. When ရူပဇီဝိတိန္ဒြေ ceases, ဤသည် kamma-produced materiality ceases နှင့် it."
     },
     "RP_018": {
       "name": "ကဗဠီကာရာဟာရ",
       "shortName": "ဩဇာ",
-      "description": "ခန္ဓာကိုယ်ကို ထောက်ပံ့ကျွေးမွေးသော အာဟာရရုပ် (ဩဇာ)။"
+      "description": "ခန္ဓာကိုယ်ကို ထောက်ပံ့ကျွေးမွေးသော အာဟာရရုပ် (ဩဇာ)။",
+      "characteristic": "Nourishment — ဤသည် ကဗဠီကာရာဟာရ present တွင် every material group.",
+      "function": "Nourishing ဤသည် material phenomena ၏ ဤသည် same group နှင့် generating new materiality from nutriment.",
+      "manifestation": "Materiality ဖြစ်သည် nourished, sustained နှင့် multiplied.",
+      "proximateCause": "ဤသည် presence ၏ nutriment (food) သော ဖြစ်သည် digested.",
+      "doctrinalNote": "ကဗဠီကာရာဟာရ တွင် physical food (kabaḷīkāra-āhāra) ဖြစ်သည် one ၏ ဤသည် four kinds ၏ nutriment တွင် ဤသည် Abhidhamma."
     },
     "RP_019": {
       "name": "အာကာသဓာတ်",
       "shortName": "အာကာသ",
-      "description": "ရုပ်ကလာပ်တို့ကို ပိုင်းခြားထားသော လဟာပြင်။"
+      "description": "ရုပ်ကလာပ်တို့ကို ပိုင်းခြားထားသော လဟာပြင်။",
+      "characteristic": "Delimiting — creating ဤသည် boundary between groups ၏ materiality.",
+      "function": "Demarcating ဤသည် boundary between kalāpas.",
+      "manifestation": "ဤသည် groups ၏ materiality are distinguished နှင့် do not merge.",
+      "proximateCause": "ဤသည် presence ၏ material groups (kalāpas) existing alongside one another.",
+      "doctrinalNote": "ဤသည် အာကာသဓာတ် အဖြစ် a material phenomenon ဖြစ်သည် not ဤသည် same အဖြစ် absolute space တွင် philosophy."
     },
     "RP_020": {
       "name": "ကာယဝိညတ်",
       "shortName": "ကိုယ်အမူအရာ",
-      "description": "စိတ်၏ အလိုဆန္ဒကို ကိုယ်ဖြင့် ဖော်ပြသော ရုပ်။"
+      "description": "စိတ်၏ အလိုဆန္ဒကို ကိုယ်ဖြင့် ဖော်ပြသော ရုပ်။",
+      "characteristic": "Movement — bodily expression used to convey an intention.",
+      "function": "Communicating an intention through bodily gesture.",
+      "manifestation": "Others understand one's intention through bodily gesture.",
+      "proximateCause": "A ဝိညာဏ် arising နှင့် ဤသည် intention to express something.",
+      "doctrinalNote": "Produced only by mind. It ဖြစ်သည် ဤသည် basis ၏ bodily action (kāya-kamma)."
     },
     "RP_021": {
       "name": "ဝစီဝိညတ်",
       "shortName": "နှုတ်အမူအရာ",
-      "description": "စိတ်၏ အလိုဆန္ဒကို နှုတ်ဖြင့် ဖော်ပြသော ရုပ်။"
+      "description": "စိတ်၏ အလိုဆန္ဒကို နှုတ်ဖြင့် ဖော်ပြသော ရုပ်။",
+      "characteristic": "Vocal expression — speech used to convey an intention.",
+      "function": "Communicating an intention through speech.",
+      "manifestation": "Others understand one's intention through ဤသည် သဒ္ဒါရုံ ၏ speech.",
+      "proximateCause": "A ဝိညာဏ် arising နှင့် ဤသည် intention to speak.",
+      "doctrinalNote": "Produced only by mind. It ဖြစ်သည် ဤသည် basis ၏ verbal action (vacī-kamma)."
     },
     "RP_022": {
       "name": "ရူပလဟုတာ",
       "shortName": "ရုပ်ပေါ့ပါးခြင်း",
-      "description": "ရုပ်တရားတို့၏ လေးလံမှုကင်း၍ ပေါ့ပါးခြင်း။"
+      "description": "ရုပ်တရားတို့၏ လေးလံမှုကင်း၍ ပေါ့ပါးခြင်း။",
+      "characteristic": "Lightness — ဤသည် buoyant, agile quality ၏ materiality.",
+      "function": "Preventing materiality from being heavy နှင့် rigid.",
+      "manifestation": "ဤသည် body ဖြစ်သည် light နှင့် moves နှင့် ease.",
+      "proximateCause": "Favourable mind, temperature နှင့် nutriment; freedom from illness.",
+      "doctrinalNote": "Not produced by kamma. Depends on present health နှင့် conditions."
     },
     "RP_023": {
       "name": "ရူပမုဒုတာ",
       "shortName": "ရုပ်နူးညံ့ခြင်း",
-      "description": "ရုပ်တရားတို့၏ တောင့်တင်းမှုကင်း၍ နူးညံ့ခြင်း။"
+      "description": "ရုပ်တရားတို့၏ တောင့်တင်းမှုကင်း၍ နူးညံ့ခြင်း။",
+      "characteristic": "Softness — ဤသည် pliant, malleable quality ၏ materiality.",
+      "function": "Preventing materiality from being stiff နှင့် rigid.",
+      "manifestation": "ဤသည် body ဖြစ်သည် soft နှင့် supple.",
+      "proximateCause": "Harmonious mind, temperature နှင့် nutriment; freedom from illness."
     },
     "RP_024": {
       "name": "ရူပကမ္မညတာ",
       "shortName": "ရုပ်အလုပ်၌သင့်လျော်ခြင်း",
-      "description": "ရုပ်တရားတို့၏ လုပ်ငန်း၌ အသုံးဝင် သင့်လျော်ခြင်း။"
+      "description": "ရုပ်တရားတို့၏ လုပ်ငန်း၌ အသုံးဝင် သင့်လျော်ခြင်း။",
+      "characteristic": "Adaptability — ဤသည် workable, fit quality ၏ materiality.",
+      "function": "Making materiality easy to use နှင့် free ၏ fatigue.",
+      "manifestation": "ဤသည် body ဖြစ်သည် fit for any task.",
+      "proximateCause": "Harmonious mind, temperature နှင့် nutriment."
     },
     "RP_025": {
       "name": "ရူပုပစယ",
       "shortName": "ရုပ်စုဆောင်းခြင်း",
-      "description": "ရုပ်တရားတို့၏ အစဦး ဖြစ်ပွား စည်ပင်ခြင်း။"
+      "description": "ရုပ်တရားတို့၏ အစဦး ဖြစ်ပွား စည်ပင်ခြင်း။",
+      "characteristic": "Genesis — ဤသည် initial arising phase ၏ a material group.",
+      "function": "Marking ဤသည် beginning ၏ existence ၏ a material group.",
+      "manifestation": "Materiality comes into being တွင် ဤသည် world.",
+      "proximateCause": "ဤသည် four originators ၏ materiality (kamma, mind, temperature, nutriment).",
+      "doctrinalNote": "ဤသည် four characteristics ၏ materiality are phases ၏ all material phenomena, not independent material instances."
     },
     "RP_026": {
       "name": "ရူပသန္တတိ",
       "shortName": "ရုပ်အစဉ်ဆက်ခြင်း",
-      "description": "ရုပ်တရားတို့၏ အစဉ်မပြတ် ဖြစ်ပွားခြင်း။"
+      "description": "ရုပ်တရားတို့၏ အစဉ်မပြတ် ဖြစ်ပွားခြင်း။",
+      "characteristic": "Continuity — ဤသည် phase ၏ persistence နှင့် duration ၏ ဤသည် stream ၏ materiality.",
+      "function": "Keeping ဤသည် stream ၏ materiality continuing without interruption.",
+      "manifestation": "Materiality appears stable နှင့် continuous.",
+      "proximateCause": "ဤသည် four originators ၏ materiality acting continuously.",
+      "doctrinalNote": "Continuity explains why things seem stable to us — they are တွင် fact an unbroken stream ၏ arising နှင့် passing away."
     },
     "RP_027": {
       "name": "ရူပဇရတာ",
       "shortName": "ရုပ်ရင့်ရော်ခြင်း",
-      "description": "ရုပ်တရားတို့၏ အိုမင်း ရင့်ရော် ဆွေးမြည့်ခြင်း။"
+      "description": "ရုပ်တရားတို့၏ အိုမင်း ရင့်ရော် ဆွေးမြည့်ခြင်း။",
+      "characteristic": "Decay — ဤသည် ageing, declining phase ၏ materiality.",
+      "function": "Marking ဤသည် change နှင့် decline ၏ materiality.",
+      "manifestation": "Materiality grows old, wears down, နှင့် changes.",
+      "proximateCause": "ဤသည် passage ၏ time; materiality having already existed.",
+      "doctrinalNote": "Decay ဖြစ်သည် ဤသည် clearest visible sign ၏ impermanence (anicca) တွင် materiality."
     },
     "RP_028": {
       "name": "ရူပအနိစ္စတာ",
       "shortName": "ရုပ်ပျက်စီးခြင်း",
-      "description": "ရုပ်တရားတို့၏ လုံးဝ ချုပ်ပျက် ကွယ်လွန်ခြင်း။"
+      "description": "ရုပ်တရားတို့၏ လုံးဝ ချုပ်ပျက် ကွယ်လွန်ခြင်း။",
+      "characteristic": "Dissolution — ဤသည် complete cessation ၏ materiality.",
+      "function": "Marking ဤသည် end ၏ ဤသည် existence ၏ materiality.",
+      "manifestation": "Materiality no longer exists — it has completely ceased.",
+      "proximateCause": "Materiality having already passed through ဤသည် three preceding phases ၏ arising, persisting နှင့် changing.",
+      "doctrinalNote": "Clearly seeing ဤသည် phase ၏ dissolution ဖြစ်သည် ဤသည် starting point ၏ insight meditation (vipassanā)."
     }
   },
   "paccayas": {
@@ -1020,166 +1403,458 @@
     "PD_01": {
       "name": "အဝိဇ္ဇာ",
       "shortName": "မသိမှု",
-      "description": "သစ္စာလေးပါး အမှန်တရားကို မသိသော မောဟ။"
+      "description": "သစ္စာလေးပါး အမှန်တရားကို မသိသော မောဟ။",
+      "characteristic": "Not understanding — blindness to ဤသည် true nature ၏ things (ဤသည် Four Truths, ဤသည် three characteristics).",
+      "function": "To obscure clear seeing, နှင့် to serve အဖြစ် condition for ဤသည် arising ၏ formations.",
+      "manifestation": "အဖြစ် bewilderment နှင့် darkness — it keeps generating kamma (formations) without one realising it.",
+      "proximateCause": "Unwise မနသိကာရ (ayoniso-manasikāra); not meeting ဤသည် wise နှင့် not hearing ဤသည် True Dhamma.",
+      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). ဤသည် ending ၏ အဝိဇ္ဇာ ဖြစ်သည် ဤသည် attainment ၏ ဤသည် four path consciousnesses.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_02": {
       "name": "သင်္ခါရ",
       "shortName": "ပြုပြင်မှု",
-      "description": "ဘဝသစ်ကို ဖြစ်စေတတ်သော ကုသိုလ် အကုသိုလ် ကံတရားများ။"
+      "description": "ဘဝသစ်ကို ဖြစ်စေတတ်သော ကုသိုလ် အကုသိုလ် ကံတရားများ။",
+      "characteristic": "Acting နှင့် arranging — deliberate formation through body, speech, နှင့် mind.",
+      "function": "To generate kamma — accumulating kammic force သော will yield rebirth တွင် a future life.",
+      "manifestation": "အဖြစ် accumulated kamma သော will draw ဝိညာဏ် into rebirth.",
+      "proximateCause": "အဝိဇ္ဇာ အဖြစ် condition (without အဝိဇ္ဇာ, formations become supramundane နှင့် create no new kamma).",
+      "doctrinalNote": "Saṅkhārā တွင် dependent origination means ဤသည် စေတနာ (cetanā) စိတ် factor သော forms kamma.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "PD_03": {
       "name": "ဝိညာဏ်",
       "shortName": "သိမှု",
-      "description": "ဘဝသစ်၌ ပဋိသန္ဓေတည်သော ပဋိသန္ဓေစိတ် ဝိညာဏ်။"
+      "description": "ဘဝသစ်၌ ပဋိသန္ဓေတည်သော ပဋိသန္ဓေစိတ် ဝိညာဏ်။",
+      "characteristic": "Knowing an အာရုံ — ဤသည် rebirth ဝိညာဏ် resting on ဤသည် new mind-နှင့်-ရုပ်.",
+      "function": "To rebirth — to open a new life.",
+      "manifestation": "A new existence takes shape — mind-နှင့်-ရုပ် appear.",
+      "proximateCause": "Kamma (formations) အဖြစ် condition; mind-နှင့်-ရုပ် must be there to rest on.",
+      "doctrinalNote": "ဝိညာဏ် နှင့် mind-နှင့်-ရုပ် lean on each other — like two sheaves ၏ reeds propping one another up.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_04": {
       "name": "နာမ်ရုပ်",
       "shortName": "နာမ်နှင့်ရုပ်",
-      "description": "စိတ်၊ စေတသိက်ဟူသော နာမ်နှင့် ခန္ဓာကိုယ် ရုပ်တရား။"
+      "description": "စိတ်၊ စေတသိက်ဟူသော နာမ်နှင့် ခန္ဓာကိုယ် ရုပ်တရား။",
+      "characteristic": "Existing — mind နှင့် body present နှင့် developing.",
+      "function": "To serve အဖြစ် ဤသည် ground on which ဝိညာဏ် operates, နှင့် ဤသည် condition for ဤသည် သဠာယတန to develop.",
+      "manifestation": "ဤသည် သဠာယတန become fully formed.",
+      "proximateCause": "ဝိညာဏ် အဖြစ် condition; ဤသည် four sources producing materiality.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_05": {
       "name": "သဠာယတန",
       "shortName": "အာယတန ၆ ပါး",
-      "description": "မျက်စိ၊ နား၊ နှာ၊ လျှာ၊ ကိုယ်၊ စိတ် အာයတන ၆ ပါး။"
+      "description": "မျက်စိ၊ နား၊ နှာ၊ လျှာ၊ ကိုယ်၊ စိတ် အာයတන ၆ ပါး။",
+      "characteristic": "Readiness to receive — six doors through which objects enter.",
+      "function": "To serve အဖြစ် doors (dvāra) through which ဤသည် mind meets outer objects.",
+      "manifestation": "ဖဿ (phassa) ဖြစ်သည် established — ဤသည် mind can touch its အာရုံ.",
+      "proximateCause": "Fully developed mind-နှင့်-ရုပ် အဖြစ် condition.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_06": {
       "name": "ဖဿ",
       "shortName": "တွေ့ထိမှု",
-      "description": "ဒွါရ၊ အာရုံ၊ ဝိညာဏ် ၃ ပါး ပေါင်းဆုံ တွေ့ထိခြင်း။"
+      "description": "ဒွါရ၊ အာရုံ၊ ဝိညာဏ် ၃ ပါး ပေါင်းဆုံ တွေ့ထိခြင်း။",
+      "characteristic": "Touching — ဤသည် encounter ၏ base, အာရုံ, နှင့် ဝိညာဏ်.",
+      "function": "To gather base, အာရုံ, နှင့် ဝိညာဏ် together — conditioning ဤသည် arising ၏ ဝေဒနာ.",
+      "manifestation": "Mind, စိတ် factors, base, နှင့် အာရုံ come together.",
+      "proximateCause": "All three must be present: base + အာရုံ + ဝိညာဏ်.",
+      "doctrinalNote": "Phassa တွင် dependent origination ဖြစ်သည် ဤသည် ဖဿ စိတ် factor (CS_PHASSA).",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_07": {
       "name": "ဝေဒနာ",
       "shortName": "ခံစားမှု",
-      "description": "ဖဿကြောင့် ဖြစ်ပေါ်သော သုခ၊ ဒုက္ခ၊ ဥပေက္ခာ ခံစားမှု။"
+      "description": "ဖဿကြောင့် ဖြစ်ပေါ်သော သုခ၊ ဒုက္ခ၊ ဥပေက္ခာ ခံစားမှု။",
+      "characteristic": "Experiencing — tasting ဤသည် အာရုံ အဖြစ် pleasant, painful, or neutral after ဖဿ.",
+      "function": "To enjoy ဤသည် အာရုံ — conditioning တဏှာ to arise when unwise မနသိကာရ prevails.",
+      "manifestation": "အဖြစ် pleasant, painful, or neutral experience forming တွင် ဤသည် mind.",
+      "proximateCause": "ဖဿ အဖြစ် condition.",
+      "doctrinalNote": "This ဖြစ်သည် ဤသည် crux ၏ ဤသည် four foundations ၏ သတိ: halt at ဝေဒနာ, နှင့် do not let it ripen into တဏှာ.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_08": {
       "name": "တဏှာ",
       "shortName": "တပ်မက်မှု",
-      "description": "အာရုံတို့ကို လိုချင် တပ်မက် သာယာခြင်း။"
+      "description": "အာရုံတို့ကို လိုချင် တပ်မက် သာယာခြင်း။",
+      "characteristic": "Thirsting — ဤသည် ဥပါဒါန် wanting produced by ဝေဒနာ.",
+      "function": "To grasp at its အာရုံ — conditioning ဤသည် arising ၏ ဥပါဒါန်.",
+      "manifestation": "အဖြစ် ဥပါဒါန် taking hold; ဤသည် round ၏ rebirth continues.",
+      "proximateCause": "ဝေဒနာ (especially glad နှင့် pleasant ဝေဒနာ) အဖြစ် condition.",
+      "doctrinalNote": "တဏှာ ဖြစ်သည် ဤသည် Origin ၏ suffering among ဤသည် Four Noble Truths. ဤသည် ending ၏ တဏှာ ဖြစ်သည် ဤသည် ending ၏ suffering — Nibbāna.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "PD_09": {
       "name": "ဥပါဒါန်",
       "shortName": "စွဲလမ်းမှု",
-      "description": "တဏှာ အားကြီး၍ အစွဲအလမ်းကြီးစွာ ဖက်တွယ်ခြင်း။"
+      "description": "တဏှာ အားကြီး၍ အစွဲအလမ်းကြီးစွာ ဖက်တွယ်ခြင်း။",
+      "characteristic": "Holding tight — a grip သော does not let go.",
+      "function": "To grasp ဤသည် အာရုံ firmly — conditioning ဤသည် arising ၏ ဘဝ.",
+      "manifestation": "အဖြစ် ဘဝ taking shape — rebirth-producing kamma accumulates.",
+      "proximateCause": "တဏှာ အဖြစ် condition — ဥပါဒါန် ဖြစ်သည် တဏှာ intensified နှင့် consolidated.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_10": {
       "name": "ဘဝ",
       "shortName": "ဘဝဖြစ်တည်မှု",
-      "description": "ဘဝသစ်ကို ဖြစ်စေသော ကံ (ကမ္မဘဝ) နှင့် ဖြစ်ရာဘဝ (ဥပပတ္တိဘဝ)။"
+      "description": "ဘဝသစ်ကို ဖြစ်စေသော ကံ (ကမ္မဘဝ) နှင့် ဖြစ်ရာဘဝ (ဥပပတ္တိဘဝ)။",
+      "characteristic": "Existing — accumulated kammic force ready to produce rebirth.",
+      "function": "To condition ဇာတိ taking place တွင် a future life.",
+      "manifestation": "အဖြစ် rebirth occurring တွင် a plane သော matches ဤသည် kamma.",
+      "proximateCause": "ဥပါဒါန် အဖြစ် condition — ဥပါဒါန် ဖြစ်သည် ဤသည် fuel for ဘဝ.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_11": {
       "name": "ဇာတိ",
       "shortName": "ပဋိသန္ဓေနေခြင်း",
-      "description": "ဘဝသစ်၌ ခန္ဓာတို့၏ ရှေးဦးစွာ ဖြစ်ပေါ်လာခြင်း။"
+      "description": "ဘဝသစ်၌ ခန္ဓာတို့၏ ရှေးဦးစွာ ဖြစ်ပေါ်လာခြင်း။",
+      "characteristic": "Rebirth-linking — ဝိညာဏ် reborn into a new plane.",
+      "function": "To open a new life — dragging ဤသည် whole mass ၏ suffering along.",
+      "manifestation": "အဖြစ် suffering (ageing-နှင့်-death) appearing.",
+      "proximateCause": "ဘဝ (kammic force) အဖြစ် condition.",
+      "doctrinalNote": "ဤသည် three-life circle joins here: ဇာတိ (PD_11) corresponds to ဝိညာဏ် (PD_03) on ဤသည် result side ၏ ဤသည် future life.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "PD_12": {
       "name": "ဇရာ-မရဏ",
       "shortName": "အိုခြင်းနှင့်သေခြင်း",
-      "description": "ခန္ဓာတို့၏ ရင့်ရော်အိုမင်းခြင်းနှင့် ပျက်စီးသေဆုံးခြင်း။"
+      "description": "ခန္ဓာတို့၏ ရင့်ရော်အိုမင်းခြင်းနှင့် ပျက်စီးသေဆုံးခြင်း။",
+      "characteristic": "Ageing နှင့် dying — ဤသည် inevitable decay နှင့် perishing ၏ all conditioned mind နှင့် body.",
+      "function": "To end a life — နှင့် to continue a new round ၏ ဘဝ if liberation has not been won.",
+      "manifestation": "A life closed; without liberation ဤသည် round continues.",
+      "proximateCause": "ဇာတိ အဖြစ် condition — where there ဖြစ်သည် ဇာတိ, ageing-နှင့်-death necessarily follow.",
+      "doctrinalNote": "Liberation means ending အဝိဇ္ဇာ (PD_01) နှင့် တဏှာ (PD_08) — ဤသည် realisation ၏ Nibbāna.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "ဒိဋ္ဌဓမ္မဝေဒနီယကံ",
       "shortName": "မျက်မှောက်ဘဝခံစား",
-      "description": "ပထမဇောဖြင့် ပြု၍ ဤမျက်မှောက်ဘဝ၌ပင် အကျိုးပေးသောကံ။"
+      "description": "ပထမဇောဖြင့် ပြု၍ ဤမျက်မှောက်ဘဝ၌ပင် အကျိုးပေးသောကံ။",
+      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within ဤသည် very same life. If it fails to ripen တွင် သော life, it becomes defunct (ahosi-kamma).",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "KM_T_02": {
       "name": "ဥပပဇ္ဇဝေဒနီယကံ",
       "shortName": "ဒုတိယဘဝခံစား",
-      "description": "သတ္တမဇောဖြင့် ပြု၍ ဒုတိယဘဝ၌ အကျိုးပေးသောကံ။"
+      "description": "သတ္တမဇောဖြင့် ပြု၍ ဒုတိယဘဝ၌ အကျိုးပေးသောကံ။",
+      "doctrinalNote": "It has only a single opportunity to ripen, တွင် ဤသည် immediately following life. If it fails to ripen တွင် သော life, it becomes defunct.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "KM_T_03": {
       "name": "အပရာပရိယဝေဒနီယကံ",
       "shortName": "တတိယဘဝမှစ၍ခံစား",
-      "description": "အလယ်ဇော ၅ ချက်ဖြင့် ပြု၍ တတိယဘဝမှစ၍ နိဗ္ဗာန်ရောက်သည့်တိုင် အကျိုးပေးသောကံ။"
+      "description": "အလယ်ဇော ၅ ချက်ဖြင့် ပြု၍ တတိယဘဝမှစ၍ နိဗ္ဗာန်ရောက်သည့်တိုင် အကျိုးပေးသောကံ။",
+      "doctrinalNote": "It never becomes defunct through lapse ၏ time — one reason ဤသည် stream ၏ kamma နှင့် its results ဖြစ်သည် so intricate. It ဖြစ်သည် ဤသည် most common ၏ ဤသည် three time-based kinds ၏ kamma.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "KM_T_04": {
       "name": "အဟောသိကံ",
       "shortName": "အကျိုးမပေးတော့သောကံ",
-      "description": "အကျိုးပေးခွင့် မရတော့သဖြင့် ပျက်ပြယ်သွားသောကံ။"
-    },
-    "KM_U_01": {
-      "name": "ဇနကကံ",
-      "shortName": "အကျိုးဖြစ်စေကံ",
-      "description": "ပဋိသန္ဓေနှင့် ပဝတ္တိအကျိုးကို ဖြစ်စေသောကံ။"
-    },
-    "KM_U_02": {
-      "name": "ဥပတ္ထမ္ဘကကံ",
-      "shortName": "ထောက်ပံ့ကံ",
-      "description": "ဇနကကံ၏ အကျိုးကို ပိုမိုခိုင်မြဲ ကြီးထွားစေသောကံ။"
-    },
-    "KM_U_03": {
-      "name": "ဥပပီဠကကံ",
-      "shortName": "နှိပ်စက်ကံ",
-      "description": "ဇနကကံ၏ အကျိုးပေးမှုကို ညှဉ်းဆဲ နှောင့်ယှက်တတ်သောကံ။"
-    },
-    "KM_U_04": {
-      "name": "ဥပဃာတကကံ",
-      "shortName": "ဖြတ်တောက်ကံ",
-      "description": "ဇနကကံ၏ အကျိုးကို အပြီးသတ် ဖျက်ဆီးပစ်တတ်သောကံ။"
+      "description": "အကျိုးပေးခွင့် မရတော့သဖြင့် ပျက်ပြယ်သွားသောကံ။",
+      "doctrinalNote": "'Ahosi' means 'it has already been' — ဤသည် kamma ဖြစ်သည် not destroyed, it has simply lost its opportunity to ripen.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "KM_P_01": {
       "name": "ဂရုကကံ",
       "shortName": "အလေးဂရုကံ",
-      "description": "အခြားကံများထက် အရင်ဆုံး အကျိုးပေးသော အလွန်လေးလံသည့်ကံ (အာနန္တရိယကံ သို့မဟုတ် ဈာန်)။"
+      "description": "အခြားကံများထက် အရင်ဆုံး အကျိုးပေးသော အလွန်လေးလံသည့်ကံ (အာနန္တရိယကံ သို့မဟုတ် ဈာန်)။",
+      "doctrinalNote": "Generative kamma determines ဤသည် entire foundation ၏ a life.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "KM_P_02": {
       "name": "အာသန္နကံ",
       "shortName": "သေခါနီးကံ",
-      "description": "သေခါနီးကာလ၌ ပြုအပ်သော သို့မဟုတ် သတိရသောကံ။"
+      "description": "သေခါနီးကာလ၌ ပြုအပ်သော သို့မဟုတ် သတိရသောကံ။",
+      "doctrinalNote": "It ဖြစ်သည် not ဤသည် one who sows ဤသည် seed but ဤသည် one who waters it — it strengthens နှင့် extends a result သော ဖြစ်သည် already ripening rather than producing a new one ၏ its own.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "KM_P_03": {
       "name": "အာစိဏ္ဏကံ",
       "shortName": "အလေ့အထကံ",
-      "description": "အမြဲမပြတ် အလေ့အကျင့်ပြုခဲ့သောကံ။"
+      "description": "အမြဲမပြတ် အလေ့အကျင့်ပြုခဲ့သောကံ။",
+      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "KM_P_04": {
       "name": "ကဋတ္တာကံ",
       "shortName": "ပြုကာမတ္တကံ",
-      "description": "အထက်ပါ သုံးပါးမှ ကြွင်းသော ပြုရုံမျှ ပြုထားသည့်ကံ။"
+      "description": "အထက်ပါ သုံးပါးမှ ကြွင်းသော ပြုရုံမျှ ပြုထားသည့်ကံ။",
+      "doctrinalNote": "This ဖြစ်သည် ဤသည် most powerful kind ၏ kamma classified by function; it explains ဤသည် sudden reversals သော occur တွင် a life.",
+      "examples": [
+        "ဤသည်"
+      ]
+    },
+    "KM_U_01": {
+      "name": "ဇနကကံ",
+      "shortName": "အကျိုးဖြစ်စေကံ",
+      "description": "ပဋိသန္ဓေနှင့် ပဝတ္တိအကျိုးကို ဖြစ်စေသောကံ။",
+      "doctrinalNote": "ဇနကကံ always determines rebirth — it never becomes defunct.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
+    },
+    "KM_U_02": {
+      "name": "ဥပတ္ထမ္ဘကကံ",
+      "shortName": "ထောက်ပံ့ကံ",
+      "description": "ဇနကကံ၏ အကျိုးကို ပိုမိုခိုင်မြဲ ကြီးထွားစေသောကံ။",
+      "doctrinalNote": "This explains ဤသည် importance ၏ preparing one's mind at ဤသည် time ၏ death.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
+    },
+    "KM_U_03": {
+      "name": "ဥပပီဠကကံ",
+      "shortName": "နှိပ်စက်ကံ",
+      "description": "ဇနကကံ၏ အကျိုးပေးမှုကို ညှဉ်းဆဲ နှောင့်ယှက်တတ်သောကံ။",
+      "doctrinalNote": "This ဖြစ်သည် why ဤသည် Buddha taught သော one should constantly practise wholesome deeds.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
+    },
+    "KM_U_04": {
+      "name": "ဥပဃာတကကံ",
+      "shortName": "ဖြတ်တောက်ကံ",
+      "description": "ဇနကကံ၏ အကျိုးကို အပြီးသတ် ဖျက်ဆီးပစ်တတ်သောကံ။",
+      "doctrinalNote": "It ဖြစ်သည် ဤသည် weakest kind ၏ kamma by priority ၏ ripening, yet it makes up ဤသည် greater part ၏ ဤသည် total kamma we have accumulated.",
+      "examples": [
+        "ဤသည်"
+      ]
     },
     "KM_R_01": {
       "name": "ကာမာဝစရ အကုသိုလ်ကံ",
       "shortName": "ကာမအကုသိုလ်",
-      "description": "အပါယ် ၄ ဘုံသို့ ကျရောက်စေတတ်သော ဒုစရိုက် ၁၀ ပါး။"
+      "description": "အပါယ် ၄ ဘုံသို့ ကျရောက်စေတတ်သော ဒုစရိုက် ၁၀ ပါး။",
+      "doctrinalNote": "ကာမာဝစရ အကုသိုလ်ကံ ဖြစ်သည် ဤသည် cause ၏ ဤသည် truth ၏ suffering; it belongs to ဤသည် sense sphere နှင့် ripens within ဤသည် woeful planes ၏ ဤသည် sense sphere.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "KM_R_02": {
       "name": "ကာမာဝစရ ကုသိုလ်ကံ",
       "shortName": "ကာမကုသိုလ်",
-      "description": "လူ့ဘုံနှင့် နတ်ပြည် ၆ ထပ်သို့ ရောက်စေတတ်သော ကုသိုလ်ကံ။"
+      "description": "လူ့ဘုံနှင့် နတ်ပြည် ၆ ထပ်သို့ ရောက်စေတတ်သော ကုသိုလ်ကံ။",
+      "doctrinalNote": "ကာမာဝစရ ကုသိုလ်ကံ သော ripens အဖြစ် happiness တွင် ဤသည် sense sphere — ဤသည် foundation for all merit.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "KM_R_03": {
       "name": "ရူပါဝစရ ကုသိုလ်ကံ",
       "shortName": "ရူပကုသိုလ်",
-      "description": "ရူပ ၁၆ ဘုံသို့ ရောက်စေတတ်သော ရူပဈာန် ကုသိုလ်ကံ။"
+      "description": "ရူပ ၁၆ ဘုံသို့ ရောက်စေတတ်သော ရူပဈာန် ကုသိုလ်ကံ။",
+      "doctrinalNote": "Fine-material-sphere kamma belongs to ဤသည် exalted (mahaggata) category, transcending ဤသည် sense sphere; it ripens according to ဤသည် jhāna attained.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     },
     "KM_R_04": {
       "name": "အရူပါဝစရ ကုသိုလ်ကံ",
       "shortName": "အရူပကုသိုလ်",
-      "description": "အရူပ ၄ ဘုံသို့ ရောက်စေတတ်သော အရူပဈာန် ကုသိုလ်ကံ။"
+      "description": "အရူပ ၄ ဘုံသို့ ရောက်စေတတ်သော အရူပဈာန် ကုသိုလ်ကံ။",
+      "doctrinalNote": "Supramundane kamma does not produce rebirth within ဤသည် three realms; it produces Nibbāna အဖြစ် its result — ဤသည် ultimate aim ၏ ဤသည် Abhidhamma.",
+      "examples": [
+        "ဤသည်",
+        "ဤသည်"
+      ]
     }
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {
       "name": "အတိမဟန္တာရုံ ပဉ္စဒွါရဝီထိ",
       "shortName": "အတိမဟန္တာရုံဝီထိ",
-      "description": "၁၇ စိတ်က္ခဏ အပြည့်ဖြစ်သော တဒါရုံကျ ပဉ္စဒွါရဝီထိ။"
+      "description": "၁၇ စိတ်က္ခဏ အပြည့်ဖြစ်သော တဒါရုံကျ ပဉ္စဒွါရဝီထိ။",
+      "steps": {
+        "1": {
+          "name": "Past bhavaṅga",
+          "description": "ဤသည် life-continuum flowing along normally before ဤသည် အာရုံ strikes."
+        },
+        "2": {
+          "name": "Vibrating bhavaṅga",
+          "description": "ဤသည် အာရုံ strikes ဤသည် sense base နှင့် ဤသည် life-continuum vibrates for ဤသည် first time."
+        },
+        "3": {
+          "name": "Arrest bhavaṅga",
+          "description": "ဤသည် bhavaṅga stream ဖြစ်သည် fully cut off — ဤသည် cognitive process begins."
+        },
+        "4": {
+          "name": "Five-door adverting",
+          "description": "Opens ဤသည် five-sense door နှင့် turns toward ဤသည် အာရုံ, determining which door ဤသည် အာရုံ has struck."
+        },
+        "5": {
+          "name": "Five-fold sense ဝိညာဏ်",
+          "description": "Knows ဤသည် အာရုံ through ဤသည် corresponding sense door. Only ဤသည် seven universal စိတ် factors accompany it."
+        },
+        "6": {
+          "name": "Receiving",
+          "description": "Receives ဤသည် အာရုံ from ဤသည် sense ဝိညာဏ် နှင့် passes it into ဤသည် inner stream ၏ ဝိညာဏ်."
+        },
+        "7": {
+          "name": "Investigating",
+          "description": "Examines ဤသည် အာရုံ — determining whether it ဖြစ်သည် good or bad, pleasing or not."
+        },
+        "8": {
+          "name": "Determining",
+          "description": "Makes ဤသည် final determination ၏ ဤသည် အာရုံ အဖြစ် good or bad — opening ဤသည် way for ဤသည် 7 impulsions."
+        },
+        "9": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven consecutive impulsion moments — creating wholesome or ကာမာဝစရ အကုသိုလ်ကံ. Moment 1 bears fruit တွင် this very life; moment 7 တွင် ဤသည် next life; moments 2–6 တွင် later lives."
+        },
+        "10": {
+          "name": "Registration (Tadārammaṇa)",
+          "description": "Two registration moments enjoying ဤသည် residual အာရုံ after ဤသည် impulsions. They occur only တွင် a very-great-အာရုံ process နှင့် create no new kamma."
+        },
+        "11": {
+          "name": "Post-process bhavaṅga",
+          "description": "After ဤသည် process ends, ဤသည် life-continuum resumes its normal flow."
+        }
+      }
     },
     "VT_NGU_MON_LON": {
       "name": "မဟန္တာရမ္မဏ ပဉ္စဒွါရဝီထိ",
       "shortName": "မဟန္တာရုံဝီထိ",
-      "description": "ဇော ၇ ကြိမ်ကျပြီး တဒါရုံမကျသော ပဉ္စဒွါရဝီထိ။"
+      "description": "ဇော ၇ ကြိမ်ကျပြီး တဒါရုံမကျသော ပဉ္စဒွါရဝီထိ။",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "ဤသည် life-continuum vibrates အဖြစ် ဤသည် အာရုံ strikes ဤသည် sense base."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "ဤသည် bhavaṅga stream ဖြစ်သည် cut off — ဤသည် process begins."
+        },
+        "3": {
+          "name": "Five-door adverting",
+          "description": "Turns ဤသည် mind toward ဤသည် အာရုံ through ဤသည် five-sense door."
+        },
+        "4": {
+          "name": "Five-fold sense ဝိညာဏ်",
+          "description": "Knows ဤသည် အာရုံ through ဤသည် corresponding sense."
+        },
+        "5": {
+          "name": "Receiving",
+          "description": "Receives ဤသည် အာရုံ."
+        },
+        "6": {
+          "name": "Investigating",
+          "description": "Examines ဤသည် အာရုံ."
+        },
+        "7": {
+          "name": "Determining",
+          "description": "Determines ဤသည် အာရုံ, opening ဤသည် way for ဤသည် impulsions."
+        },
+        "8": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments create kamma. Afterwards there ဖြစ်သည် NO registration."
+        },
+        "9": {
+          "name": "Post-process bhavaṅga",
+          "description": "ဤသည် life-continuum resumes after ဤသည် process."
+        }
+      }
     },
     "VT_Y_MON": {
       "name": "မနောဒွါရဝီထိ",
       "shortName": "မနောဒွါရဝီထိ",
-      "description": "မနောဒွါရ၌ ဓမ္မာရုံကို အာရုံပြု၍ ဖြစ်သော စိတ်စဉ်။"
+      "description": "မနောဒွါရ၌ ဓမ္မာရုံကို အာရုံပြု၍ ဖြစ်သော စိတ်စဉ်။",
+      "steps": {
+        "1": {
+          "name": "Vibrating bhavaṅga",
+          "description": "ဤသည် life-continuum vibrates အဖြစ် ဤသည် mind အာရုံ strikes."
+        },
+        "2": {
+          "name": "Arrest bhavaṅga",
+          "description": "ဤသည် life-continuum ဖြစ်သည် arrested — ဤသည် mind-door process begins."
+        },
+        "3": {
+          "name": "Mind-door adverting",
+          "description": "Opens ဤသည် mind door နှင့် directs ဤသည် mind to ဤသည် mind အာရုံ, at ဤသည် same time determining it (serving အဖြစ် determining within this process)."
+        },
+        "4": {
+          "name": "Impulsion (Javana)",
+          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, နှင့် action arise here."
+        },
+        "5": {
+          "name": "Registration (optional)",
+          "description": "Registration တွင် ဤသည် mind-door process — depending on ဤသည် strength ၏ ဤသည် mind အာရုံ."
+        },
+        "6": {
+          "name": "Post-process bhavaṅga",
+          "description": "ဤသည် life-continuum resumes."
+        }
+      }
     },
     "VT_VITHIMUTTA": {
       "name": "ဝီထိမုတ်စိတ်",
       "shortName": "ဝီထိမုတ်စိတ်",
-      "description": "ဒွါရ ၆ ပါးမှ လွတ်၍ ဖြစ်သော ပဋိသန္ဓေ၊ ဘဝင်၊ စုတိ စိတ်များ။"
+      "description": "ဒွါရ ၆ ပါးမှ လွတ်၍ ဖြစ်သော ပဋိသန္ဓေ၊ ဘဝင်၊ စုတိ စိတ်များ။",
+      "steps": {
+        "1": {
+          "name": "Rebirth-linking ဝိညာဏ်",
+          "description": "ဤသည် first ဝိညာဏ် ၏ ဤသည် new life — continuing directly from ဤသည် previous life's dying ဝိညာဏ်, carrying kamma's seed."
+        },
+        "2": {
+          "name": "Life-continuum ဝိညာဏ်",
+          "description": "ဤသည် stream ၏ ဝိညာဏ် သော sustains ဤသည် life between processes. It arises နှင့် passes innumerable times, နှင့် ဖြစ်သည် ဤသည် foundation ၏ all စိတ် activity."
+        },
+        "3": {
+          "name": "Death ဝိညာဏ်",
+          "description": "ဤသည် final mind-moment — ဤသည် ရူပဇီဝိတိန္ဒြေ perishes, ဤသည် death ဝိညာဏ် falls, နှင့် ဤသည် life ends. Immediately afterwards ဤသည် next life's rebirth-linking ဝိညာဏ် arises."
+        }
+      }
     }
   },
   "studyModules": {
@@ -12458,5 +13133,6 @@
         }
       ]
     }
-  }
+  },
+  "translationStatus": "draft"
 }
