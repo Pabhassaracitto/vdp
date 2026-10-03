@@ -7,6 +7,7 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vdp_app/data/models/lesson_content.dart';
+import 'package:vdp_app/features/audio/data/playlist_builder.dart';
 import 'package:vdp_app/features/audio/models/audio_track.dart';
 import 'package:vdp_app/features/audio/players/track_player.dart';
 import 'package:vdp_app/features/audio/providers/audio_player_provider.dart';
@@ -78,6 +79,14 @@ class FakeTrackPlayer implements TrackPlayer {
   void emitVoiceUnavailable() => _controller.add(
         const TrackPlayerEvent(TrackPlayerEventType.voiceUnavailable),
       );
+
+  void emitWordProgress(int cueIndex, int wordIndex) => _controller.add(
+        TrackPlayerEvent(
+          TrackPlayerEventType.wordProgress,
+          cueIndex: cueIndex,
+          wordIndex: wordIndex,
+        ),
+      );
 }
 
 class InMemoryStore implements ListeningPositionStore {
@@ -120,6 +129,11 @@ LessonSection _section(String id) => LessonSection(
 List<LessonSection> _sections(int count) =>
     List.generate(count, (i) => _section('M1_S0${i + 1}'));
 
+/// V1.9.2: `prepareModule` nhận thẳng `List<AudioTrack>` — test build track
+/// qua `PlaylistBuilder` giống hệt call site thật (module_detail_screen.dart).
+List<AudioTrack> _tracks(int count, {String moduleId = 'M1_BASICS'}) =>
+    PlaylistBuilder.build(moduleId: moduleId, sections: _sections(count));
+
 /// Cho các microtask/event kịp chạy (notifier xử lý event bất đồng bộ).
 Future<void> _flush() async {
   for (var i = 0; i < 8; i++) {
@@ -147,7 +161,7 @@ void main() {
       moduleId: 'M1_BASICS',
       moduleTitle: 'Biến hành',
       contentLocaleTag: 'vi',
-      sections: _sections(sections),
+      tracks: _tracks(sections),
     );
   }
 
@@ -177,7 +191,7 @@ void main() {
         moduleId: 'M1_BASICS',
         moduleTitle: 'Basics',
         contentLocaleTag: 'si',
-        sections: _sections(2),
+        tracks: _tracks(2),
       );
       expect(player.log, contains('stop'));
 
@@ -394,6 +408,114 @@ void main() {
 
       expect(notifier.state.error, AudioErrorKind.voiceUnavailable);
       expect(notifier.state.status, PlayerStatus.idle);
+    });
+  });
+
+  group('karaoke (V1.9.2 §2)', () {
+    test('wordProgress của đúng cue hiện tại cập nhật currentWordIndex', () async {
+      await prepare();
+      await notifier.playFrom('M1_S01');
+
+      player.emitWordProgress(0, 3);
+      await _flush();
+      expect(notifier.state.currentWordIndex, 3);
+
+      // Sự kiện trễ của cue cũ (đã chuyển cue) không được ghi đè.
+      player.emitCue(1);
+      await _flush();
+      expect(notifier.state.currentWordIndex, isNull); // cueStarted reset
+
+      player.emitWordProgress(0, 9); // cue cũ, trễ
+      await _flush();
+      expect(notifier.state.currentWordIndex, isNull);
+    });
+
+    test('pause xoá currentWordIndex (không đứng khựng ở từ cũ)', () async {
+      await prepare();
+      await notifier.playFrom('M1_S01');
+      player.emitWordProgress(0, 2);
+      await _flush();
+      expect(notifier.state.currentWordIndex, 2);
+
+      await notifier.pause();
+      expect(notifier.state.currentWordIndex, isNull);
+    });
+  });
+
+  group('watchdog tự chữa (V1.9.2 — bug "đọc đoạn đầu rồi im lặng")', () {
+    // Dùng player/store riêng (không phải player/notifier của setUp) để
+    // tránh hai notifier cùng lắng nghe một FakeTrackPlayer.
+    test('không có sự kiện tiến độ quá ngưỡng → tự stop/reload/play lại', () async {
+      final fakePlayer = FakeTrackPlayer();
+      final watchdogNotifier = AudioPlayerNotifier(
+        player: fakePlayer,
+        store: InMemoryStore(),
+        watchdogInterval: const Duration(milliseconds: 5),
+        stallThreshold: const Duration(milliseconds: 20),
+      );
+      addTearDown(watchdogNotifier.dispose);
+
+      await watchdogNotifier.prepareModule(
+        moduleId: 'M1_BASICS',
+        moduleTitle: 'Biến hành',
+        contentLocaleTag: 'vi',
+        tracks: _tracks(3),
+      );
+      await watchdogNotifier.playAll(resume: false);
+      final loadsBefore = fakePlayer.loadCount;
+
+      // Engine "im lặng" — không emit thêm sự kiện nào. Đợi watchdog chạy.
+      await Future<void>.delayed(const Duration(milliseconds: 120));
+      await _flush();
+
+      expect(fakePlayer.log, contains('stop'));
+      expect(fakePlayer.loadCount, greaterThan(loadsBefore));
+      expect(watchdogNotifier.state.isPlaying, isTrue);
+    });
+
+    test('đang pause thì watchdog không can thiệp', () async {
+      final fakePlayer = FakeTrackPlayer();
+      final watchdogNotifier = AudioPlayerNotifier(
+        player: fakePlayer,
+        store: InMemoryStore(),
+        watchdogInterval: const Duration(milliseconds: 5),
+        stallThreshold: const Duration(milliseconds: 20),
+      );
+      addTearDown(watchdogNotifier.dispose);
+
+      await watchdogNotifier.prepareModule(
+        moduleId: 'M1_BASICS',
+        moduleTitle: 'Biến hành',
+        contentLocaleTag: 'vi',
+        tracks: _tracks(3),
+      );
+      await watchdogNotifier.playAll(resume: false);
+      await watchdogNotifier.pause();
+      final loadsBefore = fakePlayer.loadCount;
+
+      await Future<void>.delayed(const Duration(milliseconds: 120));
+      await _flush();
+
+      expect(fakePlayer.loadCount, loadsBefore); // không reload khi đã pause
+    });
+  });
+
+  group('nguồn phiên & đóng thanh nghe (V1.9.2 §1)', () {
+    test('sourceKind mặc định study, giữ nguyên khi prepare lại cùng module', () async {
+      await prepare();
+      expect(notifier.state.sourceKind, AudioSourceKind.study);
+    });
+
+    test('closeSession dừng hẳn + xoá phiên (khác pause)', () async {
+      await prepare();
+      await notifier.playFrom('M1_S01');
+      expect(notifier.state.isPlaying, isTrue);
+
+      await notifier.closeSession();
+
+      expect(notifier.state.hasSession, isFalse);
+      expect(notifier.state.moduleId, isNull);
+      expect(player.log, contains('stop'));
     });
   });
 }

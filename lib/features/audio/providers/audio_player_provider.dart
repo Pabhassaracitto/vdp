@@ -1,10 +1,17 @@
 // lib/features/audio/providers/audio_player_provider.dart
 //
-// State machine của phiên nghe bài học (plan §5–§6): playlist, vị trí hiện tại,
-// tốc độ, lặp, "nghe lại ×N", lưu/resttore thói quen.
+// State machine của phiên nghe (plan §5–§6 + V1.9.2): playlist, vị trí hiện
+// tại, tốc độ, lặp, "nghe lại ×N", lưu/restore thói quen, karaoke tô chữ, và
+// nguồn phiên (để thanh nghe nổi toàn app biết "đi tới đâu" — V1.9.2 §1).
 //
 // Thuần logic — test được với FakeTrackPlayer + InMemoryStore
 // (test/audio_player_test.dart). UI không bao giờ chạm thẳng vào engine.
+//
+// V1.9.2: `prepareModule` giờ nhận thẳng `List<AudioTrack>` thay vì
+// `List<LessonSection>` — để tab Học có thể ghép thêm các mục Tâm/Tâm Sở/
+// Nghiệp/Nhân duyên/Sắc pháp/Lộ trình tâm vào CÙNG một playlist (yêu cầu
+// "phần đọc ở tab Học chưa đầy đủ"), và để tab Nhân Duyên (Paticca) dùng
+// chung engine/provider này cho danh sách 12 chi & 24 duyên hệ của nó.
 
 import 'dart:async';
 
@@ -15,8 +22,6 @@ import 'package:audio_service/audio_service.dart';
 import '../services/audio_handler.dart';
 
 import '../../../core/utils/pali_tts_helper.dart';
-import '../../../data/models/lesson_content.dart';
-import '../data/playlist_builder.dart';
 import '../models/audio_track.dart';
 import '../players/track_player.dart';
 import '../players/sherpa_tts_track_player.dart';
@@ -29,6 +34,19 @@ enum RepeatMode { off, one, all }
 enum PlayerStatus { idle, playing, paused }
 
 enum AudioErrorKind { none, engineUnavailable, voiceUnavailable }
+
+/// Phiên nghe đến từ đâu — dùng để thanh nghe nổi toàn app (V1.9.2 §1) biết
+/// phải điều hướng người dùng về đúng màn hình khi bấm "đến nơi đang phát".
+enum AudioSourceKind {
+  /// Tab Học — `moduleId` = `StudyModule.id`.
+  study,
+
+  /// Tab Nhân Duyên — phần "Liên kết" (12 chi Paṭiccasamuppāda).
+  paticcaList,
+
+  /// Tab Nhân Duyên — phần "Duyên hệ" (24 Paccaya).
+  paticcaPaccaya,
+}
 
 AudioHandler? _audioHandler;
 
@@ -44,6 +62,7 @@ class AudioPlayerState {
   final PlayerStatus status;
   final double speed;
   final RepeatMode repeatMode;
+  final AudioSourceKind sourceKind;
 
   /// Số lần nghe lại còn lại của "Nghe lại ×N" (null = đang dùng repeatMode).
   final int? repeatTimesLeft;
@@ -57,6 +76,16 @@ class AudioPlayerState {
   final AudioErrorKind error;
   final DateTime? sleepTimerEndsAt;
 
+  /// Karaoke tô chữ (V1.9.2 §2) — chỉ số từ (0-based) trong
+  /// `currentTrack.cues[currentCueIndex].plainText`. null = không có dữ liệu
+  /// (cue nhiều span, hoặc thiết bị không hỗ trợ sự kiện tiến độ của TTS).
+  final int? currentWordIndex;
+
+  /// Thanh nghe nổi toàn app (V1.9.2 §1) đang bị người dùng ẩn tạm thời —
+  /// khác với đóng hẳn phiên ([closeSession]): phiên vẫn chạy, chỉ là không
+  /// hiển thị UI. Tự hiện lại khi người dùng chủ động bấm phát một mục khác.
+  final bool bubbleHidden;
+
   const AudioPlayerState({
     this.moduleId,
     this.moduleTitle = '',
@@ -67,11 +96,14 @@ class AudioPlayerState {
     this.status = PlayerStatus.idle,
     this.speed = 1.0,
     this.repeatMode = RepeatMode.off,
+    this.sourceKind = AudioSourceKind.study,
     this.repeatTimesLeft,
     this.finishedTrackIds = const {},
     this.savedPosition,
     this.error = AudioErrorKind.none,
     this.sleepTimerEndsAt,
+    this.currentWordIndex,
+    this.bubbleHidden = false,
   });
 
   bool get hasSession => moduleId != null && playlist.isNotEmpty;
@@ -124,11 +156,14 @@ class AudioPlayerState {
     PlayerStatus? status,
     double? speed,
     RepeatMode? repeatMode,
+    AudioSourceKind? sourceKind,
     Object? repeatTimesLeft = _unset,
     Set<String>? finishedTrackIds,
     ListeningPosition? savedPosition,
     AudioErrorKind? error,
     Object? sleepTimerEndsAt = _unset,
+    Object? currentWordIndex = _unset,
+    bool? bubbleHidden,
   }) {
     return AudioPlayerState(
       moduleId: moduleId ?? this.moduleId,
@@ -140,6 +175,7 @@ class AudioPlayerState {
       status: status ?? this.status,
       speed: speed ?? this.speed,
       repeatMode: repeatMode ?? this.repeatMode,
+      sourceKind: sourceKind ?? this.sourceKind,
       repeatTimesLeft: identical(repeatTimesLeft, _unset)
           ? this.repeatTimesLeft
           : repeatTimesLeft as int?,
@@ -149,6 +185,10 @@ class AudioPlayerState {
       sleepTimerEndsAt: identical(sleepTimerEndsAt, _unset)
           ? this.sleepTimerEndsAt
           : sleepTimerEndsAt as DateTime?,
+      currentWordIndex: identical(currentWordIndex, _unset)
+          ? this.currentWordIndex
+          : currentWordIndex as int?,
+      bubbleHidden: bubbleHidden ?? this.bubbleHidden,
     );
   }
 }
@@ -157,8 +197,12 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   AudioPlayerNotifier({
     TrackPlayer? player,
     ListeningPositionStore? store,
+    Duration watchdogInterval = const Duration(seconds: 5),
+    Duration stallThreshold = const Duration(seconds: 18),
   })  : _player = player ?? SherpaTtsTrackPlayer(),
         _store = store ?? const SharedPrefsListeningPositionStore(),
+        _watchdogInterval = watchdogInterval,
+        _stallThreshold = stallThreshold,
         super(const AudioPlayerState()) {
     _eventSub = _player.events.listen(_onPlayerEvent);
     _sleepTimer = SleepTimer(
@@ -182,6 +226,49 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   final ListeningPositionStore _store;
   StreamSubscription<TrackPlayerEvent>? _eventSub;
   late final SleepTimer _sleepTimer;
+
+  // ─── Watchdog tự chữa (V1.9.2 §2) ───────────────────────────────────────
+  //
+  // "đọc đoạn đầu rồi im lặng luôn" từng có thể xảy ra nếu một sự kiện hoàn
+  // tất bị lạc (race hiếm giữa pause/seek và engine thật). Lớp bảo vệ cuối
+  // cùng này không thay thế việc đã sửa gốc (SharedTtsEngine +
+  // SherpaTtsTrackPlayer nối sự kiện) — nó chỉ đảm bảo một phiên "playing"
+  // không bao giờ treo im lặng quá [_stallThreshold] mà không tự phục hồi.
+  final Duration _watchdogInterval;
+  final Duration _stallThreshold;
+  Timer? _watchdog;
+  DateTime _lastProgressAt = DateTime.now();
+  bool _healing = false;
+
+  void _markProgress() {
+    _lastProgressAt = DateTime.now();
+  }
+
+  void _startWatchdog() {
+    _watchdog ??= Timer.periodic(_watchdogInterval, (_) => _checkStall());
+  }
+
+  void _stopWatchdog() {
+    _watchdog?.cancel();
+    _watchdog = null;
+  }
+
+  Future<void> _checkStall() async {
+    if (_healing || !mounted) return;
+    if (!state.isPlaying) return;
+    if (DateTime.now().difference(_lastProgressAt) < _stallThreshold) return;
+    _healing = true;
+    try {
+      final index = state.currentIndex;
+      final cue = state.currentCueIndex;
+      if (index < 0) return;
+      _markProgress();
+      await _player.stop();
+      await _playAt(index, cueIndex: cue);
+    } finally {
+      _healing = false;
+    }
+  }
 
   SleepTimer get sleepTimer => _sleepTimer;
 
@@ -224,7 +311,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   }
 
   // Tham số prepare để các lệnh play tự đảm bảo playlist đã sẵn sàng.
-  List<LessonSection>? _sections;
+  List<String> _lastTrackIds = const [];
   Future<void>? _prepareOp;
 
   void _pauseForFocus() {
@@ -233,26 +320,32 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     }
   }
 
-  // ─── Chuẩn bị (gọi 1 lần khi mở tab Học) ──────────────────────────────────
+  // ─── Chuẩn bị (gọi 1 lần khi mở tab Học / tab Nhân Duyên) ────────────────
 
   /// Nạp playlist + thói quen đã lưu. Idempotent — rebuild UI gọi lại vô hại.
+  ///
+  /// [tracks] đã được build sẵn ở nơi gọi (vd. `PlaylistBuilder` cho tab Học,
+  /// `EntityPlaylistBuilder` cho tab Nhân Duyên) — provider không còn biết gì
+  /// về `LessonSection` (V1.9.2), để có thể ghép nhiều nguồn vào 1 playlist.
   Future<void> prepareModule({
     required String moduleId,
     required String moduleTitle,
     required String contentLocaleTag,
-    required List<LessonSection> sections,
+    required List<AudioTrack> tracks,
+    AudioSourceKind sourceKind = AudioSourceKind.study,
   }) {
+    final newIds = tracks.map((t) => t.id).toList();
     final sameModule = state.moduleId == moduleId &&
         state.contentLocaleTag == contentLocaleTag &&
-        listEquals(_sections?.map((s) => s.id).toList(),
-            sections.map((s) => s.id).toList());
+        listEquals(_lastTrackIds, newIds);
     if (sameModule && _prepareOp != null) return _prepareOp!;
 
     _prepareOp = _doPrepare(
       moduleId: moduleId,
       moduleTitle: moduleTitle,
       contentLocaleTag: contentLocaleTag,
-      sections: sections,
+      tracks: tracks,
+      sourceKind: sourceKind,
     );
     return _prepareOp!;
   }
@@ -261,7 +354,8 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     required String moduleId,
     required String moduleTitle,
     required String contentLocaleTag,
-    required List<LessonSection> sections,
+    required List<AudioTrack> tracks,
+    required AudioSourceKind sourceKind,
   }) async {
     // Đổi module giữa chừng → đóng phiên cũ (không "player ma").
     if (state.hasSession &&
@@ -269,8 +363,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
             state.contentLocaleTag != contentLocaleTag)) {
       await _player.stop();
     }
-    _sections = sections;
-    final tracks = PlaylistBuilder.build(moduleId: moduleId, sections: sections);
+    _lastTrackIds = tracks.map((t) => t.id).toList();
 
     final speed = await _store.loadSpeed() ?? 1.0;
     final repeatName = await _store.loadRepeatMode();
@@ -289,6 +382,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       status: PlayerStatus.idle,
       speed: speed,
       repeatMode: repeatMode,
+      sourceKind: sourceKind,
       savedPosition: saved,
     );
     await _player.setSpeed(speed);
@@ -334,18 +428,47 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       await pause();
     } else if (state.currentIndex >= 0) {
       await _sleepTimer.restoreVolume();
+      _markProgress();
+      _startWatchdog();
       await _player.play();
-      state = state.copyWith(status: PlayerStatus.playing, error: AudioErrorKind.none);
+      state = state.copyWith(
+        status: PlayerStatus.playing,
+        error: AudioErrorKind.none,
+        bubbleHidden: false,
+      );
     } else {
       await playAll();
     }
   }
 
+  /// Ẩn thanh nghe nổi (V1.9.2 §1) — phiên vẫn chạy bình thường.
+  void hideBubble() {
+    if (!state.bubbleHidden) state = state.copyWith(bubbleHidden: true);
+  }
+
+  /// Hiện lại thanh nghe nổi đã ẩn.
+  void showBubble() {
+    if (state.bubbleHidden) state = state.copyWith(bubbleHidden: false);
+  }
+
   Future<void> pause() async {
     if (!state.isPlaying) return;
+    _stopWatchdog();
     await _player.pause();
-    state = state.copyWith(status: PlayerStatus.paused);
+    state = state.copyWith(status: PlayerStatus.paused, currentWordIndex: null);
     await _savePosition();
+  }
+
+  /// Dừng hẳn phiên nghe hiện tại (dùng bởi nút "Đóng" trên thanh nghe nổi —
+  /// V1.9.2 §1). Khác [pause]: xoá luôn playlist/track hiện hành, thanh nghe
+  /// biến mất hoàn toàn thay vì chỉ tạm ngưng.
+  Future<void> closeSession() async {
+    _stopWatchdog();
+    await _savePosition();
+    await _player.stop();
+    state = const AudioPlayerState();
+    _lastTrackIds = const [];
+    _prepareOp = null;
   }
 
   /// Mục trước — hoặc tua lại đầu mục nếu đang ở giữa mục (quy ước media).
@@ -428,6 +551,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     if (PaliTtsHelper.onBeforeSpeak == _pauseForFocus) {
       PaliTtsHelper.onBeforeSpeak = null;
     }
+    _stopWatchdog();
     _eventSub?.cancel();
     _sleepTimer.dispose();
     unawaited(VdpAudioSession.instance.dispose());
@@ -454,6 +578,8 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       currentCueIndex: startCue,
       status: PlayerStatus.playing,
       error: AudioErrorKind.none,
+      currentWordIndex: null,
+      bubbleHidden: false,
     );
     await _player.load(
       cues: track.cues,
@@ -462,6 +588,8 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     await _player.setSpeed(state.speed);
     await _sleepTimer.restoreVolume();
     if (startCue > 0) await _player.seekCue(startCue);
+    _markProgress();
+    _startWatchdog();
     await _player.play();
   }
 
@@ -476,6 +604,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       return;
     }
     // Hết danh sách, không lặp → dừng ở cuối (giữ vị trí để nghe lại sau).
+    _stopWatchdog();
     state = state.copyWith(status: PlayerStatus.paused);
     await _savePosition();
   }
@@ -484,18 +613,30 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     if (!mounted) return;
     switch (event.type) {
       case TrackPlayerEventType.cueStarted:
+        _markProgress();
         if (event.cueIndex >= 0) {
-          state = state.copyWith(currentCueIndex: event.cueIndex);
+          state = state.copyWith(
+            currentCueIndex: event.cueIndex,
+            currentWordIndex: null,
+          );
           unawaited(_savePosition());
         }
+      case TrackPlayerEventType.wordProgress:
+        _markProgress();
+        if (event.cueIndex == state.currentCueIndex) {
+          state = state.copyWith(currentWordIndex: event.wordIndex);
+        }
       case TrackPlayerEventType.completed:
+        _markProgress();
         _onTrackCompleted();
       case TrackPlayerEventType.engineUnavailable:
+        _stopWatchdog();
         state = state.copyWith(
           status: PlayerStatus.idle,
           error: AudioErrorKind.engineUnavailable,
         );
       case TrackPlayerEventType.voiceUnavailable:
+        _stopWatchdog();
         state = state.copyWith(
           status: PlayerStatus.idle,
           error: AudioErrorKind.voiceUnavailable,
@@ -527,6 +668,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       case RepeatMode.off:
         final isLast = state.currentIndex >= state.playlist.length - 1;
         if (isLast) {
+          _stopWatchdog();
           state = state.copyWith(status: PlayerStatus.paused);
           unawaited(_savePosition());
         } else {
