@@ -78,12 +78,18 @@ class ContentLanguage {
   /// Whether the learner should be warned that the text is provisional.
   bool get needsReviewWarning => status == ContentTranslationStatus.draft;
 
-  /// Legacy non-contextual badge hook.
+  /// Machine-stable status badge for tests, logs and non-UI code.
   ///
-  /// UI surfaces localize draft badges at the call site because this model has
-  /// no BuildContext and must not leak an English token into non-English
-  /// settings screens.
-  String? get statusBadge => null;
+  /// UI surfaces localize the visible draft badge at the call site because this
+  /// model has no BuildContext and must not leak an English token into
+  /// non-English settings screens.
+  String? get statusBadge => switch (status) {
+        ContentTranslationStatus.draft => 'DRAFT',
+        ContentTranslationStatus.source ||
+        ContentTranslationStatus.reviewed ||
+        ContentTranslationStatus.planned =>
+          null,
+      };
 
   /// Recovery-safe label: endonym plus locale tag. English names remain
   /// searchable through [matches], but are not rendered into a non-English UI.
