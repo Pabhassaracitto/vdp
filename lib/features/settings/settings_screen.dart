@@ -7,6 +7,7 @@ import '../../core/theme/vdp_theme.dart';
 import '../../data/models/study_module.dart';
 import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
+import '../audio/providers/karaoke_settings_provider.dart';
 
 class AppSettings {
   final bool highContrastMode;
@@ -76,6 +77,8 @@ class SettingsScreen extends ConsumerWidget {
             },
             secondary: const Icon(Icons.record_voice_over),
           ),
+          _SectionDivider('🎧 ${context.l10n.karaokeSettingsTitle}'),
+          const _KaraokeSettingsSection(),
           _SectionDivider('🔤 ${context.l10n.textSize}'),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
@@ -302,6 +305,48 @@ class SettingsScreen extends ConsumerWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// VDP | Audio V1.9.2 §2 — bật/tắt karaoke tô sáng + 2 lớp con, theo đúng yêu
+/// cầu: "cho phép cấu hình trong Cài đặt: bật/tắt karaoke, bật/tắt tô dòng,
+/// bật/tắt tô từng chữ". Màu tô thật sự áp dụng ở nơi hiển thị (lesson body/
+/// Paticca list item) tự theo theme sáng/tối — ở đây chỉ là công tắc.
+class _KaraokeSettingsSection extends ConsumerWidget {
+  const _KaraokeSettingsSection();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final karaoke = ref.watch(karaokeSettingsProvider);
+    final notifier = ref.read(karaokeSettingsProvider.notifier);
+
+    return Column(
+      children: [
+        SwitchListTile(
+          title: Text(context.l10n.karaokeModeTitle),
+          subtitle: Text(context.l10n.karaokeModeSubtitle),
+          value: karaoke.karaokeEnabled,
+          onChanged: notifier.setKaraokeEnabled,
+          secondary: const Icon(Icons.lyrics_outlined),
+        ),
+        SwitchListTile(
+          title: Text(context.l10n.karaokeLineHighlightTitle),
+          subtitle: Text(context.l10n.karaokeLineHighlightSubtitle),
+          value: karaoke.lineHighlightEnabled,
+          // Chỉ có ý nghĩa khi bật karaoke tổng — vẫn cho đổi giá trị lưu sẵn
+          // (không ép về false) để khi bật lại karaoke, thói quen cũ còn đó.
+          onChanged: karaoke.karaokeEnabled ? notifier.setLineHighlightEnabled : null,
+          secondary: const Icon(Icons.horizontal_rule_rounded),
+        ),
+        SwitchListTile(
+          title: Text(context.l10n.karaokeWordHighlightTitle),
+          subtitle: Text(context.l10n.karaokeWordHighlightSubtitle),
+          value: karaoke.wordHighlightEnabled,
+          onChanged: karaoke.karaokeEnabled ? notifier.setWordHighlightEnabled : null,
+          secondary: const Icon(Icons.text_fields_rounded),
+        ),
+      ],
     );
   }
 }

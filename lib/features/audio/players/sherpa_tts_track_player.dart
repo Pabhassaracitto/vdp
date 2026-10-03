@@ -38,13 +38,37 @@ class UnavailableSherpaBackend implements SherpaTtsBackend {
 class SherpaTtsTrackPlayer implements TrackPlayer, VolumeControllable {
   SherpaTtsTrackPlayer({SherpaTtsBackend? backend, TrackPlayer? fallback})
       : _backend = backend ?? const UnavailableSherpaBackend(),
-        _fallback = fallback;
+        _fallback = fallback {
+    // BUG FIX (V1.9.2 — "đọc đoạn đầu rồi im lặng, không lặp/chuyển mục"):
+    // khi có fallback được TIÊM SẴN (constructor, dùng trong test), sự kiện
+    // của nó cũng phải được nối vào `_events` ngay — nếu không,
+    // AudioPlayerNotifier (lắng nghe `events` của CHÍNH SherpaTtsTrackPlayer)
+    // không bao giờ nhận được `cueStarted`/`completed` từ engine thật bên
+    // dưới, nên không thể tự chuyển mục/lặp dù audio vẫn đang đọc.
+    if (_fallback != null) _listenToFallback(_fallback!);
+  }
 
   final SherpaTtsBackend _backend;
   TrackPlayer? _fallback;
   AudioPlayer? _audio;
+  StreamSubscription<TrackPlayerEvent>? _fallbackEventSub;
 
-  TrackPlayer get _fallbackPlayer => _fallback ??= TtsTrackPlayer();
+  TrackPlayer get _fallbackPlayer {
+    final existing = _fallback;
+    if (existing != null) return existing;
+    final created = TtsTrackPlayer();
+    _fallback = created;
+    _listenToFallback(created);
+    return created;
+  }
+
+  /// Nối thẳng sự kiện của engine thật (TtsTrackPlayer) vào `_events` — đây
+  /// là cầu nối đã BỊ THIẾU trước V1.9.2 (xem ghi chú ở constructor).
+  void _listenToFallback(TrackPlayer fallback) {
+    unawaited(_fallbackEventSub?.cancel());
+    _fallbackEventSub = fallback.events.listen(_events.add);
+  }
+
   AudioPlayer get _audioPlayer => _audio ??= AudioPlayer();
   final _events = StreamController<TrackPlayerEvent>.broadcast();
   List<AudioCue> _cues = const [];
@@ -123,7 +147,14 @@ class SherpaTtsTrackPlayer implements TrackPlayer, VolumeControllable {
     _cue = cueIndex.clamp(0, _cues.length - 1).toInt();
     if (_useFallback) await _fallbackPlayer.seekCue(_cue);
   }
-  @override Future<void> dispose() async { if (_audio != null) await _audioPlayer.dispose(); await _backend.dispose(); if (_fallback != null) await _fallbackPlayer.dispose(); await _events.close(); }
+  @override
+  Future<void> dispose() async {
+    await _fallbackEventSub?.cancel();
+    if (_audio != null) await _audioPlayer.dispose();
+    await _backend.dispose();
+    if (_fallback != null) await _fallbackPlayer.dispose();
+    await _events.close();
+  }
 
   Future<File> _wavFor(AudioCue cue, double speed) async {
     final text = cue.plainText;

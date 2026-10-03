@@ -27,8 +27,21 @@ jobs:
       - name: Ensure asset dirs
         run: mkdir -p assets/animations assets/audio assets/data
 
+      # Never let `flutter pub get` hard-fail the job: its own exit code can be
+      # non-zero for reasons that do not actually block `flutter analyze`/
+      # `flutter test` below (e.g. the bundled `flutter gen-l10n` hook exiting
+      # non-zero after dependencies were already resolved). Capture its output
+      # instead so a real failure is still visible in the PR comment/summary,
+      # and let Analyze/Test run and report their own, more specific errors.
       - name: Install dependencies
-        run: flutter pub get
+        id: pub_get
+        run: |
+          set +e
+          flutter pub get > pub_get.txt 2>&1
+          code=$?
+          cat pub_get.txt
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Verify analyzer report parser
         run: python3 -m unittest tool.test_report_flutter_analyze
@@ -46,7 +59,16 @@ jobs:
       - name: Report analyze findings
         if: always()
         run: |
-          python3 tool/report_flutter_analyze.py report analyze.txt > analyze_report.txt
+          {
+            echo "## flutter pub get (exit ${{ steps.pub_get.outputs.code }})"
+            if [ "${{ steps.pub_get.outputs.code }}" != "0" ]; then
+              echo '```text'
+              tail -n 60 pub_get.txt
+              echo '```'
+            fi
+            echo
+          } > analyze_report.txt
+          python3 tool/report_flutter_analyze.py report analyze.txt >> analyze_report.txt
           cat analyze_report.txt >> "$GITHUB_STEP_SUMMARY"
 
       - name: Emit analyzer annotations

@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Nghe nền phụ thuộc vào engine giọng đã cài",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "Nghe & Karaoke",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "karaokeModeTitle": "Chế độ Karaoke",
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "karaokeModeSubtitle": "Tô sáng chữ đang đọc khi nghe bài",
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "karaokeLineHighlightTitle": "Sáng dòng đang đọc",
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "karaokeLineHighlightSubtitle": "Tô nền đoạn văn đang được đọc",
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "karaokeWordHighlightTitle": "Sáng từng chữ đang đọc",
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "karaokeWordHighlightSubtitle": "Tô từng chữ theo nhịp đọc (ước tính)",
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "audioFloatingGoTo": "Đến nơi đang phát",
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "audioFloatingHide": "Ẩn thanh nghe",
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "audioFloatingRestore": "Hiện thanh nghe",
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "audioFloatingClose": "Đóng phiên nghe",
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

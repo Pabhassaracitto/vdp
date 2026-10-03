@@ -20,9 +20,13 @@ import '../../data/models/vithi_model.dart';
 import '../../data/repositories/vdp_repository.dart';
 import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
+import '../audio/data/entity_playlist_builder.dart';
+import '../audio/data/playlist_builder.dart';
+import '../audio/models/audio_track.dart';
 import '../audio/providers/audio_player_provider.dart';
+import '../audio/providers/karaoke_settings_provider.dart';
 import '../audio/widgets/audio_controls_common.dart';
-import '../audio/widgets/mini_player_bar.dart';
+import '../audio/widgets/karaoke_text.dart';
 import '../audio/widgets/playlist_sheet.dart';
 import '../quiz/quiz_screen.dart';
 
@@ -138,15 +142,16 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
           ],
         ),
       ),
+      // V1.9.2 §1: điều khiển nghe giờ sống ở thanh nổi toàn app
+      // (GlobalAudioBubble, vẽ 1 lần ở main.dart) thay vì MiniPlayerBar nhúng
+      // riêng trong màn hình này — tránh 2 thanh điều khiển trùng nhau, và
+      // vẫn điều khiển được khi người dùng rời khỏi màn hình này.
       body: dataState.status == DataLoadStatus.loading ||
               dataState.status == DataLoadStatus.initial
           ? const Center(child: CircularProgressIndicator())
-          : Column(
+          : TabBarView(
+              controller: _tabController,
               children: [
-                Expanded(
-                  child: TabBarView(
-                    controller: _tabController,
-                    children: [
                 // Tab 1: Học tập — hiển thị đầy đủ thông tin Tâm/Tâm Sở
                 _StudyTab(
                   module: widget.moduleData,
@@ -178,14 +183,6 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
                   module: widget.moduleData,
                   totalItems: totalModuleItems,
                   seedCount: lesson.quizSeeds.length,
-                ),
-                    ],
-                  ),
-                ),
-                // Thanh nghe bám đáy — hiện ở cả 3 tab (plan §5.1).
-                MiniPlayerBar(
-                  moduleId: widget.moduleData.id,
-                  color: color,
                 ),
               ],
             ),
@@ -263,6 +260,72 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
   }
 }
 
+/// Ghép playlist đầy đủ cho tab Học (V1.9.2 §3 — 1c): trước đây chỉ có
+/// LessonSection (bài giảng viết tay), nay nối thêm MỖI thẻ dữ liệu
+/// (Tâm/Tâm Sở/Nghiệp/Nhân duyên/Sắc pháp/Lộ trình tâm) đang hiển thị trong
+/// cùng tab, để "nghe toàn bộ" thật sự đọc toàn bộ nội dung của module.
+List<AudioTrack> _buildStudyTracks(
+  BuildContext context, {
+  required String moduleId,
+  required List<LessonSection> sections,
+  required List<CittaModel> cittas,
+  required List<CetasikaModel> cetasikas,
+  required List<KammaModel> kammas,
+  required List<PaticcaModel> paticcas,
+  required List<RupaModel> rupas,
+  required List<VithiModel> vithis,
+}) {
+  final tracks = <AudioTrack>[...PlaylistBuilder.build(moduleId: moduleId, sections: sections)];
+  final entityItems = <EntityAudioItem>[
+    for (final c in cittas)
+      EntityAudioItem(
+        id: 'citta:${c.id}',
+        title: c.localizedName(context),
+        pali: c.namePali,
+        // CittaModel không có `localizedDescription` — dùng ghi chú giáo lý
+        // (có thể null), rỗng vẫn đọc được tên + Pāli.
+        description: c.localizedDoctrine(context) ?? '',
+      ),
+    for (final cs in cetasikas)
+      EntityAudioItem(
+        id: 'cetasika:${cs.id}',
+        title: cs.localizedName(context),
+        pali: cs.namePali,
+        description: cs.localizedDescription(context),
+      ),
+    for (final k in kammas)
+      EntityAudioItem(
+        id: 'kamma:${k.id}',
+        title: k.localizedName(context),
+        pali: k.namePali,
+        description: k.localizedDescription(context),
+      ),
+    for (final p in paticcas)
+      EntityAudioItem(
+        id: 'paticca:${p.id}',
+        title: p.localizedName(context),
+        pali: p.namePali,
+        description: p.localizedDescription(context),
+      ),
+    for (final r in rupas)
+      EntityAudioItem(
+        id: 'rupa:${r.id}',
+        title: r.localizedName(context),
+        pali: r.namePali,
+        description: r.localizedDescription(context),
+      ),
+    for (final v in vithis)
+      EntityAudioItem(
+        id: 'vithi:${v.id}',
+        title: v.localizedName(context),
+        pali: v.namePali,
+        description: v.localizedDescription(context),
+      ),
+  ];
+  tracks.addAll(EntityPlaylistBuilder.build(moduleId: moduleId, items: entityItems));
+  return List.unmodifiable(tracks);
+}
+
 // ─── Tab 1: Study ────────────────────────────────────────────────────────────
 
 class _StudyTab extends ConsumerStatefulWidget {
@@ -319,9 +382,18 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
     final totalModuleItems = widget.totalModuleItems;
     final color = Color(module.colorCode);
     final sections = lesson.sections;
+    // FIX (V1.9.2 §3 — 1c): Module is empty only when there is neither
+    // authored lesson text (sections / reviewCards / quizSeeds) nor any
+    // dataset entity. Trước đây chỉ check sections, nên nếu tài liệu chỉ có
+    // quizSeeds/reviewCards mà không có sections thì vẫn bị coi là rỗng ->
+    // báo "chưa đủ dữ liệu".
+    final hasContent = totalModuleItems > 0 || lesson.isNotEmpty;
 
     // Chuẩn bị playlist 1 lần cho tab Học (idempotent — rebuild vô hại).
-    if (!_prepared && sections.isNotEmpty) {
+    // V1.9.2: playlist giờ gồm CẢ bài giảng (sections) LẪN mọi thẻ dữ liệu
+    // (Tâm/Tâm Sở/Nghiệp/Nhân duyên/Sắc pháp/Lộ trình tâm) — trước đây
+    // chỉ có sections nên "Nghe toàn bộ" bỏ sót phần lớn nội dung tab Học.
+    if (!_prepared && hasContent) {
       _prepared = true;
       Future<void>.microtask(() {
         if (!mounted) return;
@@ -329,7 +401,17 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
               moduleId: module.id,
               moduleTitle: module.localizedTitle(context),
               contentLocaleTag: context.contentCatalog.locale,
-              sections: sections,
+              tracks: _buildStudyTracks(
+                context,
+                moduleId: module.id,
+                sections: sections,
+                cittas: cittas,
+                cetasikas: cetasikas,
+                kammas: kammas,
+                paticcas: paticcas,
+                rupas: rupas,
+                vithis: vithis,
+              ),
             );
       });
     }
@@ -354,12 +436,6 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
         ..hideCurrentSnackBar()
         ..showSnackBar(SnackBar(content: Text(text)));
     });
-    // FIX: Module is empty only when there is neither authored lesson text
-    // (sections / reviewCards / quizSeeds) nor any dataset entity.
-    // Trước đây chỉ check sections, nên nếu tài liệu chỉ có quizSeeds/reviewCards
-    // mà không có sections thì vẫn bị coi là rỗng -> báo "chưa đủ dữ liệu".
-    final hasContent = totalModuleItems > 0 || lesson.isNotEmpty;
-
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
@@ -372,10 +448,18 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
         const SizedBox(height: 20),
 
         // ── Nghe bài học: danh sách + nút nghe (doc/audio_plan.md §5.1) ──
-        if (sections.isNotEmpty) ...[
+        // V1.9.2: hiện cả khi module không có `sections` nhưng có dữ liệu
+        // Tâm/Tâm Sở/... — những mục đó giờ cũng nghe được (1c).
+        if (hasContent) ...[
           _ListenActionsRow(
             module: module,
             sections: sections,
+            cittas: cittas,
+            cetasikas: cetasikas,
+            kammas: kammas,
+            paticcas: paticcas,
+            rupas: rupas,
+            vithis: vithis,
             color: color,
           ),
           const SizedBox(height: 16),
@@ -540,11 +624,23 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
 class _ListenActionsRow extends ConsumerWidget {
   final StudyModule module;
   final List<LessonSection> sections;
+  final List<CittaModel> cittas;
+  final List<CetasikaModel> cetasikas;
+  final List<KammaModel> kammas;
+  final List<PaticcaModel> paticcas;
+  final List<RupaModel> rupas;
+  final List<VithiModel> vithis;
   final Color color;
 
   const _ListenActionsRow({
     required this.module,
     required this.sections,
+    required this.cittas,
+    required this.cetasikas,
+    required this.kammas,
+    required this.paticcas,
+    required this.rupas,
+    required this.vithis,
     required this.color,
   });
 
@@ -554,7 +650,17 @@ class _ListenActionsRow extends ConsumerWidget {
           moduleId: module.id,
           moduleTitle: module.localizedTitle(context),
           contentLocaleTag: context.contentCatalog.locale,
-          sections: sections,
+          tracks: _buildStudyTracks(
+            context,
+            moduleId: module.id,
+            sections: sections,
+            cittas: cittas,
+            cetasikas: cetasikas,
+            kammas: kammas,
+            paticcas: paticcas,
+            rupas: rupas,
+            vithis: vithis,
+          ),
         );
   }
 
@@ -562,7 +668,14 @@ class _ListenActionsRow extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(audioPlayerProvider);
     final isThisModule = state.moduleId == module.id && state.hasSession;
-    final queueCount = isThisModule ? state.playlist.length : sections.length;
+    final estimatedCount = sections.length +
+        cittas.length +
+        cetasikas.length +
+        kammas.length +
+        paticcas.length +
+        rupas.length +
+        vithis.length;
+    final queueCount = isThisModule ? state.playlist.length : estimatedCount;
     final canResume = isThisModule && state.canResume;
 
     return Row(
@@ -1295,9 +1408,15 @@ class _LessonSectionCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final audio = ref.watch(audioPlayerProvider);
+    final karaoke = ref.watch(karaokeSettingsProvider);
     final activeRef = audio.currentSectionId == section.id
         ? audio.currentCue?.highlightRef
         : null;
+    // V1.9.2 §2: màu tô phải "hợp lý ở cả 2 theme" — ở Tương phản cao (nền
+    // đen), dùng vàng HCColors.primary thay vì màu module (có thể quá tối,
+    // chìm vào nền đen); ở theme sáng vẫn dùng màu module như trước.
+    final highlightColor =
+        theme.brightness == Brightness.dark ? HCColors.primary : color;
 
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
@@ -1342,39 +1461,38 @@ class _LessonSectionCard extends ConsumerWidget {
               : Padding(
                   key: keyFor('summary'),
                   padding: const EdgeInsets.only(top: 4),
-                  child: Text(
-                    section.summary,
+                  child: KaraokeText(
+                    text: section.summary,
+                    isActive: activeRef == 'summary',
+                    highlightColor: highlightColor,
+                    lineHighlightEnabled: karaoke.showLineHighlight,
                     style: TextStyle(
                       fontSize: 12.5,
                       height: 1.45,
                       color: theme.textTheme.bodySmall?.color,
-                      backgroundColor: activeRef == 'summary'
-                          ? color.withOpacity(0.15)
-                          : null,
-                      fontWeight: activeRef == 'summary'
-                          ? FontWeight.w700
-                          : FontWeight.w400,
                     ),
                   ),
                 ),
           children: [
             // ── Body paragraphs ──────────────────────────────────────────
+            // Mỗi đoạn = 1 cue 1-span trong playlist → có dữ liệu karaoke
+            // theo TỪ (wordProgress), nên dùng KaraokeText thay vì Text.
             for (var i = 0; i < section.body.length; i++)
               Padding(
                 key: keyFor('body:$i'),
                 padding: const EdgeInsets.only(bottom: 10),
-                child: Text(
-                  section.body[i],
+                child: KaraokeText(
+                  text: section.body[i],
+                  isActive: activeRef == 'body:$i',
+                  highlightColor: highlightColor,
+                  lineHighlightEnabled: karaoke.showLineHighlight,
+                  wordHighlightEnabled: karaoke.showWordHighlight,
+                  activeWordIndex:
+                      activeRef == 'body:$i' ? audio.currentWordIndex : null,
                   style: TextStyle(
                     fontSize: 13.5,
                     height: 1.6,
                     color: theme.textTheme.bodyLarge?.color,
-                    backgroundColor: activeRef == 'body:$i'
-                        ? color.withOpacity(0.15)
-                        : null,
-                    fontWeight: activeRef == 'body:$i'
-                        ? FontWeight.w700
-                        : FontWeight.w400,
                   ),
                 ),
               ),
@@ -1386,7 +1504,9 @@ class _LessonSectionCard extends ConsumerWidget {
                 key: keyFor('terms'),
                 padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                 decoration: BoxDecoration(
-                  color: activeRef == 'terms' ? color.withOpacity(0.12) : null,
+                  color: activeRef == 'terms' && karaoke.showLineHighlight
+                      ? highlightColor.withOpacity(0.12)
+                      : null,
                   borderRadius: BorderRadius.circular(6),
                 ),
                 child: Column(

@@ -1100,4 +1100,37 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get previousTrack => 'Mục trước';
+
+  @override
+  String get karaokeSettingsTitle => 'Nghe & Karaoke';
+
+  @override
+  String get karaokeModeTitle => 'Chế độ Karaoke';
+
+  @override
+  String get karaokeModeSubtitle => 'Tô sáng chữ đang đọc khi nghe bài';
+
+  @override
+  String get karaokeLineHighlightTitle => 'Sáng dòng đang đọc';
+
+  @override
+  String get karaokeLineHighlightSubtitle => 'Tô nền đoạn văn đang được đọc';
+
+  @override
+  String get karaokeWordHighlightTitle => 'Sáng từng chữ đang đọc';
+
+  @override
+  String get karaokeWordHighlightSubtitle => 'Tô từng chữ theo nhịp đọc (ước tính)';
+
+  @override
+  String get audioFloatingGoTo => 'Đến nơi đang phát';
+
+  @override
+  String get audioFloatingHide => 'Ẩn thanh nghe';
+
+  @override
+  String get audioFloatingRestore => 'Hiện thanh nghe';
+
+  @override
+  String get audioFloatingClose => 'Đóng phiên nghe';
 }

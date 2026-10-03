@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "Listening & karaoke",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "karaokeModeTitle": "Karaoke mode",
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "karaokeModeSubtitle": "Highlight the text being read while listening",
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "karaokeLineHighlightTitle": "Highlight current line",
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "karaokeLineHighlightSubtitle": "Shade the paragraph being read",
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "karaokeWordHighlightTitle": "Highlight current word",
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "karaokeWordHighlightSubtitle": "Shade each word as it is spoken (estimated timing)",
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "audioFloatingGoTo": "Go to what''s playing",
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "audioFloatingHide": "Hide player",
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "audioFloatingRestore": "Show player",
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "audioFloatingClose": "Close player",
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }
