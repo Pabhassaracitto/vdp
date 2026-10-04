@@ -9,33 +9,33 @@ class AppLocalizationsSi extends AppLocalizations {
   AppLocalizationsSi([String locale = 'si']) : super(locale);
 
   @override
-  String get appName => 'AbhiDhamma';
+  String get appName => 'අභිධර්මය';
 
   @override
-  String get appTagline => 'Abhidhamma Piṭaka';
+  String get appTagline => 'අභිධර්ම පිටකය';
 
   @override
-  String get initializing => 'ආරම්භ කරමින්…';
+  String get initializing => 'ආරම්භ වෙමින් පවතී…';
 
   @override
-  String get loadingDoctrineData => 'ධම්ම දත්ත පූරණය හා පරීක්ෂා කරමින්…';
+  String get loadingDoctrineData => 'ධර්ම දත්ත පූරණය වෙමින් පවතී…';
 
   @override
   String get loadingTakingLonger =>
-      'Startup is taking longer than expected. Dhamma data may be being optimized for your device.';
+      'ආරම්භය අපේක්ෂිත කාලයට වඩා වැඩි කාලයක් ගනී...';
 
   @override
-  String get unknownError => 'Unknown error';
+  String get unknownError => 'නොදන්නා දෝෂයක්';
 
   @override
-  String get dataError => 'Data error';
+  String get dataError => 'දත්ත දෝෂයකි';
 
   @override
-  String get invalidData => 'Invalid data';
+  String get invalidData => 'වලංගු නොවන දත්ත';
 
   @override
   String get invalidDataDescription =>
-      'The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.';
+      'ධර්ම වලංගුකරණ නීති කඩවීමක් පද්ධතිය විසින් හඳුනාගෙන ඇත.';
 
   @override
   String get navMatrix => 'න්‍යාසය';
@@ -99,7 +99,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String errorWithMessage(Object message) {
-    return 'Error: $message';
+    return 'දෝෂය: $message';
   }
 
   @override
@@ -144,10 +144,10 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get holdGlobeToReset =>
-      'Press and hold the globe for 3 seconds to restore the system language';
+      'පද්ධති භාෂාව නැවත පිහිටුවීමට ලෝක ගෝලය තත්පර 3ක් ඔබාගෙන සිටින්න';
 
   @override
-  String get restoredSystemLanguage => 'පද්ධති භාෂාව ප්‍රතිස්ථාපනය විය';
+  String get restoredSystemLanguage => 'පද්ධති භාෂාව නැවත පිහිටුවන ලදී';
 
   @override
   String get contentVietnamese => 'වියට්නාම්';
@@ -174,7 +174,7 @@ class AppLocalizationsSi extends AppLocalizations {
       'අඩු දැක්මක් ඇති පුද්ගලයන් සඳහා වර්ණ ප්‍රතිවිරෝධතාව වැඩි කරන්න';
 
   @override
-  String get screenReaderHints => 'තිර කියවීම් ඉඟි';
+  String get screenReaderHints => 'තිර කියවනය සඳහා ඉඟි';
 
   @override
   String get screenReaderHintsSubtitle =>
@@ -184,7 +184,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get textSize => 'අකුරු ප්‍රමාණය';
 
   @override
-  String get textScale => 'අකුරු පරිමාණය';
+  String get textScale => 'පෙළ පරිමාණය';
 
   @override
   String get studyProgress => 'අධ්‍යයන ප්‍රගතිය';
@@ -277,44 +277,44 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get onboardingVisualTitle => 'See Clearly';
+  String get onboardingVisualTitle => 'පැහැදිලිව දකින්න';
 
   @override
-  String get onboardingVisualSubtitle => 'Citta × Cetasika Matrix';
+  String get onboardingVisualSubtitle => 'සිත් × චෛතසික න්‍යාසය';
 
   @override
   String get onboardingVisualBody =>
-      'Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.';
+      'සිත් 121ක් සහ චෛතසික 52ක් අන්තර්ක්‍රියාකාරී න්‍යාසයකින් අධ්‍යයනය කරන්න.';
 
   @override
-  String get onboardingCausalityTitle => 'Understand Deeply';
+  String get onboardingCausalityTitle => 'ගැඹුරින් තේරුම් ගන්න';
 
   @override
-  String get onboardingCausalitySubtitle => 'Dependent Origination';
+  String get onboardingCausalitySubtitle => 'පටිච්චසමුප්පාදය';
 
   @override
   String get onboardingCausalityBody =>
-      'Explore the twelve links of dependent origination and classifications of kamma through connected learning views.';
+      'පටිච්චසමුප්පාද අංග 12 සහ කර්ම වර්ගීකරණයන් විමසා බලන්න.';
 
   @override
-  String get onboardingExploreTitle => 'Discover for Yourself';
+  String get onboardingExploreTitle => 'ස්වයං අධ්‍යයනය';
 
   @override
-  String get onboardingExploreSubtitle => 'A Non-linear Study Path';
+  String get onboardingExploreSubtitle => 'අනුක්‍රමික නොවන අධ්‍යයන මාර්ගය';
 
   @override
   String get onboardingExploreBody =>
-      'Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.';
+      'පාඩම් මාලා 10ක් ඔස්සේ ඔබේ දැනුම වර්ධනය කරගන්න.';
 
   @override
-  String get beginExploring => 'Begin exploring';
+  String get beginExploring => 'ගවේෂණය අරඹන්න';
 
   @override
   String get matrixTitle => 'අභිධම්ම න්‍යාසය';
 
   @override
   String matrixSemantics(Object count) {
-    return 'Abhidhamma Matrix showing $count cittas';
+    return '$countක් වූ සිත් පෙන්වන අභිධර්ම න්‍යාසය';
   }
 
   @override
@@ -334,7 +334,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get searchCittaCetasika => 'චිත්ත හෝ චෛතසික සොයන්න…';
 
   @override
-  String get clearSearch => 'Clear search';
+  String get clearSearch => 'සෙවීම හිස් කරන්න';
 
   @override
   String get citta => 'චිත්ත';
@@ -374,7 +374,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String dataWarningsCount(Object count) {
-    return '$count data warnings';
+    return 'දත්ත අනතුරු ඇඟවීම් $count';
   }
 
   @override
@@ -401,16 +401,30 @@ class AppLocalizationsSi extends AppLocalizations {
       '• විස්තර සඳහා චිත්තයක් තට්ටු කරන්න\n• ගැටුම් සඳහා චෛතසිකයක් තට්ටු කරන්න\n• දසුන සීමා කිරීමට පෙරහන් භාවිත කරන්න\n• වැඩි ඉඩ සඳහා හැරවන්න';
 
   @override
+  String get matrixListenCittas => 'සියලු චිත්ත අසන්න';
+
+  @override
+  String get matrixListenCetasikas => 'සියලු චෛතසික අසන්න';
+
+  @override
+  String get matrixListenFromHint =>
+      'මෙම අයිතමයෙන් ඇසීමට දිගුවට ඔබාගෙන සිටින්න';
+
+  @override
+  String get matrixListenHelpBody =>
+      'චිත්ත පේළියක් හෝ චෛතසික තීරුවක් දිගුවට ඔබාගෙන සිටිමින් එම අයිතමයෙන් අසන්න. මුළු ලැයිස්තුවම ඇසීමට වගුවේ කොනේ හෙඩ්ෆෝන් නිරූපකය තට්ටු කරන්න.';
+
+  @override
   String get understood => 'තේරුණා';
 
   @override
-  String get dataWarningTitle => 'Data warning';
+  String get dataWarningTitle => 'දත්ත අනතුරු ඇඟවීම';
 
   @override
   String get allFilters => 'සියල්ල';
 
   @override
-  String get defilements => 'Defilements';
+  String get defilements => 'කෙලෙස් (Kilesa)';
 
   @override
   String get kamma => 'කම්ම';
@@ -450,8 +464,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get paccayaDefinition => 'අර්ථ දැක්වීම';
 
   @override
-  String get paccayaConditioningStates =>
-      'පච්චය වන ධර්ම (paccaya-dhamma)';
+  String get paccayaConditioningStates => 'පච්චය වන ධර්ම (paccaya-dhamma)';
 
   @override
   String get paccayaConditionedStates => 'පච්චයුප්පන්න ධර්ම (paccayuppanna)';
@@ -481,7 +494,7 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get relatedDhammas => 'Related dhammas';
+  String get relatedDhammas => 'සම්බන්ධ ධර්ම';
 
   @override
   String get paccayaGroupRootObject => 'මූලය හා ආරම්මණය';
@@ -511,123 +524,123 @@ class AppLocalizationsSi extends AppLocalizations {
   String get kiepFuture => 'අනාගත භවය';
 
   @override
-  String get kammaTitle => 'Kamma';
+  String get kammaTitle => 'කර්මය (Kamma)';
 
   @override
   String get mindProcessTitle => 'චිත්ත වීථිය';
 
   @override
-  String get paliLabel => 'Pāḷi:';
+  String get paliLabel => 'පාලි:';
 
   @override
-  String get stopPronunciation => 'Stop pronunciation';
+  String get stopPronunciation => 'උච්චාරණය නවත්වන්න';
 
   @override
-  String get listenPaliPronunciation => 'Listen to Pāḷi pronunciation';
+  String get listenPaliPronunciation => 'පාලි උච්චාරණයට සවන් දෙන්න';
 
   @override
-  String get ttsUnavailable =>
-      'Speech synthesis is not supported on this device.';
+  String get ttsUnavailable => 'මෙම උපාංගයේ කථන සංස්ලේෂණය සඳහා සහය නොදක්වයි.';
 
   @override
-  String get dragHandleSemantics => 'Drag to resize';
+  String get dragHandleSemantics => 'ප්‍රමාණය වෙනස් කිරීමට අදින්න';
 
   @override
   String cittaNumber(Object number) {
-    return 'Citta $number';
+    return 'සිත $number';
   }
 
   @override
-  String get doctrine => 'Dhamma explanation';
+  String get doctrine => 'ධර්ම විග්‍රහය';
 
   @override
-  String get examples => 'Examples';
+  String get examples => 'උදාහරණ';
 
   @override
   String fixedCetasikasCount(Object count) {
-    return 'Invariable cetasikas ($count)';
+    return 'නියත චෛතසික ($count)';
   }
 
   @override
   String variableCetasikasCount(Object count) {
-    return 'Variable cetasikas ($count)';
+    return 'අනියත චෛතසික ($count)';
   }
 
   @override
-  String get personalNote => 'Personal note';
+  String get personalNote => 'පෞද්ගලික සටහන';
 
   @override
-  String get personalNoteHint => 'Enter your note…';
+  String get personalNoteHint => 'ඔබේ සටහන ඇතුළත් කරන්න…';
 
   @override
-  String get wholesome => 'Wholesome';
+  String get wholesome => 'කුසල්';
 
   @override
-  String get functional => 'Functional';
+  String get functional => 'ක්‍රියා';
 
   @override
-  String get pleasantFeeling => 'Pleasant bodily feeling';
+  String get pleasantFeeling => 'කායික සුඛ වේදනාව';
 
   @override
-  String get unpleasantFeeling => 'Painful bodily feeling';
+  String get unpleasantFeeling => 'කායික දුක්ඛ වේදනාව';
 
   @override
-  String get neutralFeeling => 'Equanimous feeling';
+  String get neutralFeeling => 'උපේක්ෂා වේදනාව';
 
   @override
-  String get joyfulFeeling => 'Joyful feeling';
+  String get joyfulFeeling => 'සෝමනස්ස වේදනාව';
 
   @override
-  String get alwaysAssociated => 'Always associated';
+  String get alwaysAssociated => 'සැමවිටම යෙදෙන';
 
   @override
-  String get mayBeAssociated => 'May be associated';
+  String get mayBeAssociated => 'සමහරවිට යෙදෙන';
 
   @override
-  String get fourfoldDefinition => 'Fourfold definition';
+  String get fourfoldDefinition =>
+      'චතුර්විධ ලක්ෂණ (ලක්ෂණ/රස/පච්චුපට්ඨාන/පදට්ඨාන)';
 
   @override
-  String get characteristic => 'Characteristic';
+  String get characteristic => 'ලක්ෂණය (Lakkhaṇa)';
 
   @override
-  String get functionLabel => 'Function';
+  String get functionLabel => 'කෘත්‍යය / රසය (Rasa)';
 
   @override
-  String get manifestation => 'Manifestation';
+  String get manifestation => 'වැටහෙන ආකාරය (Paccupaṭṭhāna)';
 
   @override
-  String get proximateCause => 'Proximate cause';
+  String get proximateCause => 'ආසන්න හේතුව (Padaṭṭhāna)';
 
   @override
-  String get doctrinalConflicts => 'Doctrinal conflicts';
+  String get doctrinalConflicts => 'ධර්ම විරෝධතා';
 
   @override
   String rulesCount(Object count) {
-    return '$count rules';
+    return 'නීති $count';
   }
 
   @override
-  String get universalCetasikas => '7 universals';
+  String get universalCetasikas => 'සබ්බචිත්තසාධාරණ 7';
 
   @override
-  String get occasionalCetasikas => '6 occasionals';
+  String get occasionalCetasikas => 'පකිණ්ණක 6';
 
   @override
-  String get unwholesomeCetasikas => '14 unwholesome';
+  String get unwholesomeCetasikas => 'අකුසල් චෛතසික 14';
 
   @override
-  String get beautifulCetasikas => '25 beautiful';
+  String get beautifulCetasikas => 'ශෝභන චෛතසික 25';
 
   @override
   String rowCittaSemantics(Object displayIndex, Object name, Object order,
       Object group, Object feeling, Object action) {
-    return 'Citta row $displayIndex: $name; canonical number $order; group $group; feeling $feeling. $action';
+    return 'සිත් පේළිය $displayIndex: $name; අංකය $order; කාණ්ඩය $group; වේදනාව $feeling. $action';
   }
 
   @override
   String cetasikaSemantics(
       Object name, Object pali, Object group, Object state) {
-    return 'Cetasika $name ($pali), group $group. $state Tap for details.';
+    return 'චෛතසිකය $name ($pali), කාණ්ඩය $group. $state විස්තර සඳහා තට්ටු කරන්න.';
   }
 
   @override
@@ -638,12 +651,12 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get matrixCornerSemantics =>
-      'Matrix corner: rows are cittas and columns are cetasikas';
+      'න්‍යාස කොන: පේළි සිත් වන අතර තීරු චෛතසික වේ';
 
   @override
   String associationSemantics(
       Object association, Object cittaId, Object cetasikaId) {
-    return '$association: citta $cittaId with cetasika $cetasikaId';
+    return '$association: සිත $cittaId චෛතසිකය $cetasikaId සමඟ';
   }
 
   @override
@@ -660,106 +673,105 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String savedItemsCount(Object count) {
-    return '$count saved items';
+    return 'සුරැකි අයිතම $count';
   }
 
   @override
-  String get cittaTab => 'Cittas';
+  String get cittaTab => 'සිත්';
 
   @override
-  String get cetasikaTab => 'Cetasikas';
+  String get cetasikaTab => 'චෛතසික';
 
   @override
-  String get notesTab => 'Notes';
+  String get notesTab => 'සටහන්';
 
   @override
-  String get noBookmarkedCittas => 'No bookmarked cittas';
+  String get noBookmarkedCittas => 'සුරැකි සිත් නැත';
 
   @override
   String get bookmarkCittaHint =>
-      'Open a lesson and tap the bookmark icon to save one';
+      'පාඩමක් විවෘත කර සුරැකීමට බුක්මාක් අයිකනය තට්ටු කරන්න';
 
   @override
-  String get loadingCittas => 'Loading cittas…';
+  String get loadingCittas => 'සිත් පූරණය වෙමින් පවතී…';
 
   @override
-  String get noBookmarkedCetasikas => 'No bookmarked cetasikas';
+  String get noBookmarkedCetasikas => 'සුරැකි චෛතසික නැත';
 
   @override
-  String get loadingCetasikas => 'Loading cetasikas…';
+  String get loadingCetasikas => 'චෛතසික පූරණය වෙමින් පවතී…';
 
   @override
-  String get noNotes => 'No notes yet';
+  String get noNotes => 'තවම සටහන් නැත';
 
   @override
   String get addNoteHint =>
-      'Tap the edit icon in a lesson to add a personal note';
+      'පෞද්ගලික සටහනක් එක් කිරීමට සංස්කරණ අයිකනය තට්ටු කරන්න';
 
   @override
-  String get deleteNoteQuestion => 'Delete note?';
+  String get deleteNoteQuestion => 'සටහන මකන්නද?';
 
   @override
   String get deleteNoteWarning =>
-      'This note will be permanently deleted. Are you sure?';
+      'මෙම සටහන ස්ථිරවම මකා දැමෙනු ඇත. ඔබට විශ්වාසද?';
 
   @override
-  String get addNote => 'Add note';
+  String get addNote => 'සටහනක් එක් කරන්න';
 
   @override
-  String get removeBookmark => 'Remove bookmark';
+  String get removeBookmark => 'බුක්මාක් ඉවත් කරන්න';
 
   @override
-  String get editNote => 'Edit note';
+  String get editNote => 'සටහන සංස්කරණය';
 
   @override
-  String get deleteNote => 'Delete note';
+  String get deleteNote => 'සටහන මකන්න';
 
   @override
-  String get noteUpdated => 'Note updated';
+  String get noteUpdated => 'සටහන යාවත්කාලීන කරන ලදී';
 
   @override
-  String get noteSaved => 'Note saved';
+  String get noteSaved => 'සටහන සුරකින ලදී';
 
   @override
-  String get editNoteTitle => 'Edit note';
+  String get editNoteTitle => 'සටහන සංස්කරණය';
 
   @override
-  String get addNoteTitle => 'Add note';
+  String get addNoteTitle => 'සටහනක් එක් කරන්න';
 
   @override
-  String get studyNoteHint =>
-      'Write your note about this item…\n\nExample: this citta appears during meditation when…';
+  String get studyNoteHint => 'මෙම අයිතමය ගැන ඔබේ සටහන ලියන්න…';
 
   @override
   String charactersCount(Object current, Object maximum) {
-    return '$current / $maximum characters';
+    return 'අක්ෂර $current / $maximum';
   }
 
   @override
-  String get update => 'Update';
+  String get update => 'යාවත්කාලීන කරන්න';
 
   @override
-  String get saveNote => 'Save note';
+  String get saveNote => 'සටහන සුරකින්න';
 
   @override
   String studyProgressPercent(Object percent) {
-    return 'Study progress: $percent%';
+    return 'අධ්‍යයන ප්‍රගතිය: $percent%';
   }
 
   @override
-  String get modulesCompletedShort => 'Modules\ncompleted';
+  String get modulesCompletedShort => 'සම්පූර්ණ කළ\nපාඩම්';
 
   @override
-  String get recommendedNext => 'Recommended next';
+  String get recommendedNext => 'ඊළඟ නිර්දේශය';
 
   @override
-  String get progressOverview => 'Progress overview';
+  String get progressOverview => 'ප්‍රගති සමාලෝචනය';
 
   @override
-  String get totalModules => 'Total modules';
+  String get totalModules => 'මුළු පාඩම්';
 
   @override
-  String get dueForReview => 'Due for review';
+  String get dueForReview => 'නැවත බැලීමට';
 
   @override
   String get learnTab => 'ඉගෙනීම';
@@ -771,17 +783,16 @@ class AppLocalizationsSi extends AppLocalizations {
   String get testTab => 'පරීක්ෂණය';
 
   @override
-  String get moduleHasNoData =>
-      'This module has no citta/cetasika data. Please check the JSON data.';
+  String get moduleHasNoData => 'මෙම පාඩමේ දත්ත නැත.';
 
   @override
   String cittasInModule(Object count) {
-    return 'Cittas in this module — $count';
+    return 'මෙම පාඩමේ ඇති සිත් — $count';
   }
 
   @override
   String cetasikasInModule(Object count) {
-    return 'Cetasikas in this module — $count';
+    return 'මෙම පාඩමේ ඇති චෛතසික — $count';
   }
 
   @override
@@ -806,7 +817,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String reviewCetasikaQuestion(Object name, Object pali) {
-    return 'What does cetasika “$name” ($pali) mean?';
+    return '“$name” ($pali) චෛතසිකයේ තේරුම කුමක්ද?';
   }
 
   @override
@@ -831,73 +842,72 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String groupAnswer(Object group) {
-    return 'Group: $group';
+    return 'කාණ්ඩය: $group';
   }
 
   @override
   String reviewCittaQuestion(Object name) {
-    return 'Which group and feeling does citta “$name” have?';
+    return '“$name” සිත අයත් වන්නේ කුමන භූමියට සහ වේදනාවටද?';
   }
 
   @override
   String cittaReviewAnswer(Object sphere, Object feeling, Object pali) {
-    return 'Sphere: $sphere\nFeeling: $feeling\nPāḷi: $pali';
+    return 'භූමිය: $sphere\nවේදනාව: $feeling\nපාලි: $pali';
   }
 
   @override
-  String get noReviewContent =>
-      'This module has no review content yet. Please come back later.';
+  String get noReviewContent => 'මෙම පාඩමේ තවම පුනරීක්ෂණ අන්තර්ගතයක් නොමැත.';
 
   @override
   String reviewedCount(Object revealed, Object total) {
-    return '$revealed / $total reviewed';
+    return '$revealed / $total සමාලෝචනය කර ඇත';
   }
 
   @override
   String get reviewComplete =>
-      'You reviewed all the content. Take the quiz to check your understanding.';
+      'ඔබ සියලු අන්තර්ගත සමාලෝචනය කර ඇත. ප්‍රශ්නාවලියට මුහුණ දෙන්න.';
 
   @override
-  String get tapToReveal => 'Tap to reveal the answer';
+  String get tapToReveal => 'පිළිතුර බැලීමට තට්ටු කරන්න';
 
   @override
   String answerLabel(Object answer) {
-    return 'Answer: $answer';
+    return 'පිළිතුර: $answer';
   }
 
   @override
-  String get revealAnswer => 'Reveal answer';
+  String get revealAnswer => 'පිළිතුර පෙන්වන්න';
 
   @override
   String moduleQuizTitle(Object module) {
-    return 'Quiz\n$module';
+    return 'ප්‍රශ්නාවලිය\n$module';
   }
 
   @override
   String moduleContentCount(Object count) {
-    return '$count items in this module';
+    return 'මෙම පාඩමේ අයිතම $countක් ඇත';
   }
 
   @override
   String get quizMaximumDescription =>
-      'Up to 10 multiple-choice questions covering this module';
+      'මෙම පාඩම ආවරණය වන පරිදි බහුවරණ ප්‍රශ්න 10ක් දක්වා';
 
   @override
-  String get startQuiz => 'Start quiz';
+  String get startQuiz => 'ප්‍රශ්නාවලිය අරඹන්න';
 
   @override
   String cittasCount(Object count) {
-    return '$count cittas';
+    return 'සිත් $count';
   }
 
   @override
   String cetasikasCount(Object count) {
-    return '$count cetasikas';
+    return 'චෛතසික $count';
   }
 
   @override
   String noteForItem(Object name) {
-    return 'Note: $name';
+    return 'සටහන: $name';
   }
 
   @override
@@ -905,12 +915,11 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String quizLevelDescription(Object count) {
-    return 'Each level generates up to $count questions from this module';
+    return 'සෑම මට්ටමක්ම ප්‍රශ්න $countක් ජනනය කරයි';
   }
 
   @override
-  String get insufficientQuizData =>
-      'This module does not have enough data to create questions.';
+  String get insufficientQuizData => 'ප්‍රශ්න සෑදීමට ප්‍රමාණවත් දත්ත නොමැත.';
 
   @override
   String get explanation => 'විස්තරය';
@@ -923,133 +932,134 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String correctAnswers(Object score, Object total) {
-    return '$score / $total correct';
+    return 'නිවැරදි $score / $total';
   }
 
   @override
-  String get quizExcellent => 'Excellent! You have mastered this module.';
+  String get quizExcellent => 'විශිෂ්ටයි! ඔබ මෙම පාඩම ප්‍රගුණ කර ඇත.';
 
   @override
-  String get quizTryAgain => 'Review the material and try again.';
+  String get quizTryAgain => 'කරුණාකර නැවත උත්සාහ කරන්න.';
 
   @override
   String get tryAgain => 'නැවත උත්සාහ කරන්න';
 
   @override
   String quizInsufficientDataMessage(Object module) {
-    return 'Module “$module” does not have enough data to create questions.';
+    return '“$module” පාඩම සඳහා දත්ත ප්‍රමාණවත් නොවේ.';
   }
 
   @override
-  String get quizTypeCetasikaGroup => 'Cetasika classification';
+  String get quizTypeCetasikaGroup => 'චෛතසික වර්ගීකරණය';
 
   @override
-  String get quizTypeFeeling => 'Feeling recognition';
+  String get quizTypeFeeling => 'වේදනා හඳුනාගැනීම';
 
   @override
-  String get quizTypeConflict => 'Doctrinal conflict';
+  String get quizTypeConflict => 'ධර්ම විරෝධතා';
 
   @override
-  String get quizTypeSphere => 'Sphere';
+  String get quizTypeSphere => 'භූමිය';
 
   @override
   String get beginner => 'ආරම්භක';
 
   @override
-  String get beginnerDescription => 'Basic cetasika groups and feelings';
+  String get beginnerDescription => 'මූලික චෛතසික කාණ්ඩ සහ වේදනා';
 
   @override
   String get intermediate => 'මධ්‍යම';
 
   @override
-  String get intermediateDescription => 'Includes cetasika conflicts';
+  String get intermediateDescription => 'චෛතසික විරෝධතා ඇතුළත් වේ';
 
   @override
   String get advanced => 'උසස්';
 
   @override
-  String get advancedDescription => 'Includes spheres and all question types';
+  String get advancedDescription => 'සියලුම ප්‍රශ්න වර්ග ඇතුළත් වේ';
 
   @override
-  String get trueLabel => 'True';
+  String get trueLabel => 'සත්‍ය';
 
   @override
-  String get falseLabel => 'False';
+  String get falseLabel => 'අසත්‍ය';
 
   @override
-  String get trueOrFalse => 'True or false?';
+  String get trueOrFalse => 'සත්‍යද අසත්‍යද?';
 
   @override
   String quizCetasikaGroupQuestion(Object name, Object pali) {
-    return 'Which group contains “$name” ($pali)?';
+    return '“$name” ($pali) අයත් වන්නේ කුමන කාණ්ඩයටද?';
   }
 
   @override
   String quizCetasikaGroupExplanation(
       Object name, Object group, Object description) {
-    return '“$name” belongs to $group.\n$description';
+    return '“$name” $groupට අයත් වේ.\n$description';
   }
 
   @override
   String quizCetasikaClaim(Object name, Object pali, Object group) {
-    return '“$name” ($pali) belongs to $group. True or false?';
+    return '“$name” ($pali) $groupට අයත් වේ. සත්‍යද අසත්‍යද?';
   }
 
   @override
   String quizCittaFeelingQuestion(Object name) {
-    return 'What feeling accompanies citta “$name”?';
+    return '“$name” සිත සමඟ යෙදෙන වේදනාව කුමක්ද?';
   }
 
   @override
   String quizCittaFeelingExplanation(Object name, Object feeling) {
-    return '“$name” has $feeling.';
+    return '“$name” සිතෙහි $feeling පවතී.';
   }
 
   @override
   String quizCittaFeelingClaim(Object name, Object feeling) {
-    return 'Citta “$name” has $feeling. True or false?';
+    return '“$name” සිතෙහි $feeling පවතී. සත්‍යද අසත්‍යද?';
   }
 
   @override
-  String get conflictNo => 'No — they conflict';
+  String get conflictNo => 'නැත — ඒවා එකිනෙකට විරුද්ධයි';
 
   @override
-  String get conflictAlwaysYes => 'Yes — they always arise together';
+  String get conflictAlwaysYes => 'ඔව් — ඒවා සැමවිටම එකට යෙදේ';
 
   @override
-  String get conflictSometimesYes => 'Yes — they sometimes arise together';
+  String get conflictSometimesYes => 'ඔව් — ඒවා සමහරවිට එකට යෙදේ';
 
   @override
   String quizConflictQuestion(Object first, Object second) {
-    return 'Can “$first” and “$second” arise together in one citta?';
+    return '“$first” සහ “$second” එකම සිතක එකට යෙදිය හැකිද?';
   }
 
   @override
   String quizSphereQuestion(Object name) {
-    return 'To which sphere does citta “$name” belong?';
+    return '“$name” සිත අයත් වන්නේ කුමන භූමියටද?';
   }
 
   @override
   String quizSphereExplanation(Object name, Object sphere) {
-    return '“$name” belongs to $sphere.';
+    return '“$name” $sphereට අයත් වේ.';
   }
 
   @override
   String quizSphereClaim(Object name, Object sphere) {
-    return 'Citta “$name” belongs to $sphere. True or false?';
+    return '“$name” සිත $sphereට අයත් වේ. සත්‍යද අසත්‍යද?';
   }
 
   @override
-  String get phaseFoundation => 'Phase 1 — Foundation';
+  String get phaseFoundation => 'අදියර 1 — පදනම';
 
   @override
-  String get phaseCausality => 'Phase 2 — Causality';
+  String get phaseCausality => 'අදියර 2 — හේතුඵල';
 
   @override
-  String get phaseMastery => 'Phase 3 — Mastery';
+  String get phaseMastery => 'අදියර 3 — ප්‍රවීණත්වය';
 
   @override
-  String get contentFallbackNotice => 'මෙම අයිතමය තවම පරිවර්තනය කර නැත; ඉංග්‍රීසි අධ්‍යයන පෙළ පෙන්වයි.';
+  String get contentFallbackNotice =>
+      'මෙම අයිතමය තවම පරිවර්තනය කර නැත; ඉංග්‍රීසි අධ්‍යයන පෙළ පෙන්වයි.';
 
   @override
   String get listenAll => 'සියල්ල අසන්න';
@@ -1082,15 +1092,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get resumeListening => 'ඇසීම දිගටම';
 
   @override
-  String get continueListening => 'Continue listening';
-
-  @override
-  String get sleepTimer => 'නින්දේ කාලමානය';
-
-  @override
-  String get sleepTimerOff => 'අක්‍රියයි';
-
-  @override
   String get minutesShort => 'මිනිත්තු';
 
   @override
@@ -1103,35 +1104,72 @@ class AppLocalizationsSi extends AppLocalizations {
   String get previousTrack => 'කලින් කොටස';
 
   @override
-  String get karaokeSettingsTitle => 'Listening & karaoke';
+  String get sleepTimer => 'නින්දේ කාලමානය';
 
   @override
-  String get karaokeModeTitle => 'Karaoke mode';
+  String get sleepTimerOff => 'අක්‍රියයි';
 
   @override
-  String get karaokeModeSubtitle => 'Highlight the text being read while listening';
+  String get sleepTimer15 => 'මිනිත්තු 15';
 
   @override
-  String get karaokeLineHighlightTitle => 'Highlight current line';
+  String get sleepTimer30 => 'මිනිත්තු 30';
 
   @override
-  String get karaokeLineHighlightSubtitle => 'Shade the paragraph being read';
+  String get sleepTimer60 => 'මිනිත්තු 60';
 
   @override
-  String get karaokeWordHighlightTitle => 'Highlight current word';
+  String sleepTimerRemaining(Object minutes) {
+    return 'නින්දේ කාලමානය: තව මිනිත්තු $minutesයි';
+  }
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Shade each word as it is spoken (estimated timing)';
+  String get audioModelUnavailable => 'ස්නායුක හඬ නොමැත; උපාංග හඬ භාවිත කරයි';
 
   @override
-  String get audioFloatingGoTo => 'Go to what\'s playing';
+  String get realDuration => 'කාලය';
 
   @override
-  String get audioFloatingHide => 'Hide player';
+  String get estimatedDuration => 'ඇස්තමේන්තුගත කාලය';
 
   @override
-  String get audioFloatingRestore => 'Show player';
+  String get continueListening => 'දිගටම සවන් දෙන්න';
 
   @override
-  String get audioFloatingClose => 'Close player';
+  String get audioBackgroundLimit =>
+      'පසුබිම් ශ්‍රව්‍ය ධාවනය ස්ථාපිත හඬ එන්ජිම මත රඳා පවතී';
+
+  @override
+  String get karaokeSettingsTitle => 'ශ්‍රවණය සහ උද්දීපනය';
+
+  @override
+  String get karaokeModeTitle => 'කැරෝකේ මාදිලිය';
+
+  @override
+  String get karaokeModeSubtitle => 'සවන් දෙන විට කියවන පෙළ උද්දීපනය කරන්න';
+
+  @override
+  String get karaokeLineHighlightTitle => 'වත්මන් පේළිය උද්දීපනය කරන්න';
+
+  @override
+  String get karaokeLineHighlightSubtitle => 'කියවන ඡේදය වර්ණවත් කරන්න';
+
+  @override
+  String get karaokeWordHighlightTitle => 'වචනයෙන් වචනය උද්දීපනය කරන්න';
+
+  @override
+  String get karaokeWordHighlightSubtitle =>
+      'කියවන විට එක් එක් වචනය උද්දීපනය කරන්න';
+
+  @override
+  String get audioFloatingGoTo => 'දැනට වාදනය වන ස්ථානයට යන්න';
+
+  @override
+  String get audioFloatingHide => 'ප්ලේයරය සඟවන්න';
+
+  @override
+  String get audioFloatingRestore => 'ප්ලේයරය පෙන්වන්න';
+
+  @override
+  String get audioFloatingClose => 'ප්ලේයරය වසන්න';
 }

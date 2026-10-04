@@ -403,6 +403,20 @@ class AppLocalizationsPt extends AppLocalizations {
       '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
 
   @override
+  String get matrixListenCittas => 'Ouvir todos os citta';
+
+  @override
+  String get matrixListenCetasikas => 'Ouvir todos os cetasika';
+
+  @override
+  String get matrixListenFromHint =>
+      'Toque sem soltar para ouvir a partir deste item';
+
+  @override
+  String get matrixListenHelpBody =>
+      'Toque sem soltar numa linha de citta ou coluna de cetasika para ouvir a partir desse item. Toque no ícone de fones no canto da tabela para ouvir toda a lista.';
+
+  @override
   String get understood => 'Got it';
 
   @override
@@ -1085,15 +1099,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get resumeListening => 'Continuar ouvindo';
 
   @override
-  String get continueListening => 'Continue listening';
-
-  @override
-  String get sleepTimer => 'Sleep timer';
-
-  @override
-  String get sleepTimerOff => 'Off';
-
-  @override
   String get minutesShort => 'min';
 
   @override
@@ -1106,35 +1111,75 @@ class AppLocalizationsPt extends AppLocalizations {
   String get previousTrack => 'Seção anterior';
 
   @override
-  String get karaokeSettingsTitle => 'Listening & karaoke';
+  String get sleepTimer => 'Sleep timer';
 
   @override
-  String get karaokeModeTitle => 'Karaoke mode';
+  String get sleepTimerOff => 'Off';
 
   @override
-  String get karaokeModeSubtitle => 'Highlight the text being read while listening';
+  String get sleepTimer15 => '15 minutes';
 
   @override
-  String get karaokeLineHighlightTitle => 'Highlight current line';
+  String get sleepTimer30 => '30 minutes';
 
   @override
-  String get karaokeLineHighlightSubtitle => 'Shade the paragraph being read';
+  String get sleepTimer60 => '60 minutes';
 
   @override
-  String get karaokeWordHighlightTitle => 'Highlight current word';
+  String sleepTimerRemaining(Object minutes) {
+    return 'Sleep timer: $minutes min';
+  }
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Shade each word as it is spoken (estimated timing)';
+  String get audioModelUnavailable =>
+      'Neural voice unavailable; using device voice';
 
   @override
-  String get audioFloatingGoTo => 'Go to what\'s playing';
+  String get realDuration => 'Duration';
 
   @override
-  String get audioFloatingHide => 'Hide player';
+  String get estimatedDuration => 'Estimated duration';
 
   @override
-  String get audioFloatingRestore => 'Show player';
+  String get continueListening => 'Continue listening';
 
   @override
-  String get audioFloatingClose => 'Close player';
+  String get audioBackgroundLimit =>
+      'Background audio depends on the installed voice engine';
+
+  @override
+  String get karaokeSettingsTitle => 'Reprodução e destaque';
+
+  @override
+  String get karaokeModeTitle => 'Modo karaokê';
+
+  @override
+  String get karaokeModeSubtitle =>
+      'Destacar o texto lido durante a reprodução';
+
+  @override
+  String get karaokeLineHighlightTitle => 'Destacar linha atual';
+
+  @override
+  String get karaokeLineHighlightSubtitle =>
+      'Sombrear o parágrafo que está sendo lido';
+
+  @override
+  String get karaokeWordHighlightTitle => 'Destacar palavra por palavra';
+
+  @override
+  String get karaokeWordHighlightSubtitle =>
+      'Destacar cada palavra conforme for falada';
+
+  @override
+  String get audioFloatingGoTo => 'Ir para o áudio em reprodução';
+
+  @override
+  String get audioFloatingHide => 'Ocultar reprodutor';
+
+  @override
+  String get audioFloatingRestore => 'Mostrar reprodutor';
+
+  @override
+  String get audioFloatingClose => 'Fechar reprodutor';
 }

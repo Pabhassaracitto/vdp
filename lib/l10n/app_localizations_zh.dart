@@ -9,33 +9,31 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get appName => 'AbhiDhamma';
+  String get appName => '阿毗达摩';
 
   @override
-  String get appTagline => 'Abhidhamma Piṭaka';
+  String get appTagline => '阿毗达摩藏';
 
   @override
   String get initializing => '正在初始化…';
 
   @override
-  String get loadingDoctrineData => '正在加载并验证佛法数据…';
+  String get loadingDoctrineData => '正在加载并校验法数数据…';
 
   @override
-  String get loadingTakingLonger =>
-      'Startup is taking longer than expected. Dhamma data may be being optimized for your device.';
+  String get loadingTakingLonger => '启动时间长于预期。可能正在为您的设备优化数据。';
 
   @override
-  String get unknownError => 'Unknown error';
+  String get unknownError => '未知错误';
 
   @override
-  String get dataError => 'Data error';
+  String get dataError => '数据错误';
 
   @override
-  String get invalidData => 'Invalid data';
+  String get invalidData => '数据无效';
 
   @override
-  String get invalidDataDescription =>
-      'The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.';
+  String get invalidDataDescription => '系统检测到法数校验规则冲突。请联系编辑团队审查数据。';
 
   @override
   String get navMatrix => '矩阵';
@@ -99,7 +97,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String errorWithMessage(Object message) {
-    return 'Error: $message';
+    return '错误: $message';
   }
 
   @override
@@ -143,8 +141,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get holdGlobeToReset =>
-      'Press and hold the globe for 3 seconds to restore the system language';
+  String get holdGlobeToReset => '长按地球图标3秒可恢复系统语言';
 
   @override
   String get restoredSystemLanguage => '已恢复系统语言';
@@ -168,15 +165,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get highContrastMode => '高对比度模式';
 
   @override
-  String get highContrastSubtitle =>
-      '提高色彩对比度，方便低视力用户';
+  String get highContrastSubtitle => '提高色彩对比度，方便低视力用户';
 
   @override
   String get screenReaderHints => '屏幕阅读器提示';
 
   @override
-  String get screenReaderHintsSubtitle =>
-      '为 TalkBack 和 VoiceOver 提供更多细节';
+  String get screenReaderHintsSubtitle => '为 TalkBack 和 VoiceOver 提供更多细节';
 
   @override
   String get textSize => '字体大小';
@@ -191,8 +186,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get unlockAllLessons => '解锁所有课程';
 
   @override
-  String get unlockAllLessonsSubtitle =>
-      '引导路径能建立坚实基础。有经验的学习者可以解锁所有课程。';
+  String get unlockAllLessonsSubtitle => '引导路径能建立坚实基础。有经验的学习者可以解锁所有课程。';
 
   @override
   String get resetProgress => '重置进度';
@@ -204,8 +198,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get showDataWarningAgain => '再次显示数据警告';
 
   @override
-  String get showDataWarningAgainSubtitle =>
-      '恢复矩阵警告横幅';
+  String get showDataWarningAgainSubtitle => '恢复矩阵警告横幅';
 
   @override
   String get dataWarningEnabled => '数据警告已启用';
@@ -229,8 +222,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get resetProgressQuestion => '重置进度？';
 
   @override
-  String get resetProgressWarning =>
-      '所有学习进度和测验分数都会被删除。此操作无法撤销。';
+  String get resetProgressWarning => '所有学习进度和测验分数都会被删除。此操作无法撤销。';
 
   @override
   String get progressResetSuccess => '学习进度已重置';
@@ -239,8 +231,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get unlockLessonsQuestion => '解锁所有课程？';
 
   @override
-  String get unlockLessonsWarning =>
-      '引导路径是建立扎实阿毗达摩基础的最佳方式。此选项适合有经验的学习者。';
+  String get unlockLessonsWarning => '引导路径是建立扎实阿毗达摩基础的最佳方式。此选项适合有经验的学习者。';
 
   @override
   String get keepGuidedPath => '保留引导路径';
@@ -275,52 +266,48 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get onboardingVisualTitle => 'See Clearly';
+  String get onboardingVisualTitle => '清晰洞见';
 
   @override
-  String get onboardingVisualSubtitle => 'Citta × Cetasika Matrix';
+  String get onboardingVisualSubtitle => '心与心所矩阵';
 
   @override
-  String get onboardingVisualBody =>
-      'Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.';
+  String get onboardingVisualBody => '在交互式矩阵中探索121种心和52种心所。色彩、形状与文字清晰标示每种相应关系。';
 
   @override
-  String get onboardingCausalityTitle => 'Understand Deeply';
+  String get onboardingCausalityTitle => '深刻理解';
 
   @override
-  String get onboardingCausalitySubtitle => 'Dependent Origination';
+  String get onboardingCausalitySubtitle => '十二缘起';
 
   @override
-  String get onboardingCausalityBody =>
-      'Explore the twelve links of dependent origination and classifications of kamma through connected learning views.';
+  String get onboardingCausalityBody => '通过互联的学习视角探索十二缘起支与业的分类法。';
 
   @override
-  String get onboardingExploreTitle => 'Discover for Yourself';
+  String get onboardingExploreTitle => '自主探索';
 
   @override
-  String get onboardingExploreSubtitle => 'A Non-linear Study Path';
+  String get onboardingExploreSubtitle => '非线性学习路径';
 
   @override
-  String get onboardingExploreBody =>
-      'Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.';
+  String get onboardingExploreBody => '自由选择十个相互关联的修学单元。主动回忆、测验与复习助您稳固法义。';
 
   @override
-  String get beginExploring => 'Begin exploring';
+  String get beginExploring => '开始探索';
 
   @override
   String get matrixTitle => '阿毗达摩矩阵';
 
   @override
   String matrixSemantics(Object count) {
-    return 'Abhidhamma Matrix showing $count cittas';
+    return '阿毗达摩矩阵，显示 $count 种心';
   }
 
   @override
   String get rotateScreen => '旋转屏幕';
 
   @override
-  String get rotationHint =>
-      '如果屏幕没有旋转，请在设备设置中启用自动旋转。';
+  String get rotationHint => '如果屏幕没有旋转，请在设备设置中启用自动旋转。';
 
   @override
   String get highContrast => '高对比度';
@@ -332,7 +319,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get searchCittaCetasika => '搜索心或心所…';
 
   @override
-  String get clearSearch => 'Clear search';
+  String get clearSearch => '清除搜索';
 
   @override
   String get citta => '心';
@@ -372,7 +359,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String dataWarningsCount(Object count) {
-    return '$count data warnings';
+    return '$count 个数据警告';
   }
 
   @override
@@ -382,8 +369,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get howToRead => '阅读方式：';
 
   @override
-  String get matrixHelpRead =>
-      '• 行：心\n• 列：心所\n• 交叉处：相应关系';
+  String get matrixHelpRead => '• 行：心\n• 列：心所\n• 交叉处：相应关系';
 
   @override
   String get symbols => '符号：';
@@ -399,16 +385,28 @@ class AppLocalizationsZh extends AppLocalizations {
       '• 点按一个心查看详情\n• 点按一个心所查看冲突\n• 使用筛选缩小范围\n• 旋转屏幕获得更多空间';
 
   @override
+  String get matrixListenCittas => '收听全部心';
+
+  @override
+  String get matrixListenCetasikas => '收听全部心所';
+
+  @override
+  String get matrixListenFromHint => '长按可从此项开始收听';
+
+  @override
+  String get matrixListenHelpBody => '长按某一行心或某一列心所可从该项开始收听。点击表格角落的耳机图标可收听整个列表。';
+
+  @override
   String get understood => '明白了';
 
   @override
-  String get dataWarningTitle => 'Data warning';
+  String get dataWarningTitle => '数据警告';
 
   @override
   String get allFilters => '全部';
 
   @override
-  String get defilements => 'Defilements';
+  String get defilements => '烦恼';
 
   @override
   String get kamma => '业';
@@ -423,8 +421,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get conditionDetails => '缘起详情：';
 
   @override
-  String get lastConditionDescription =>
-      '这是此生命循环中的最后果报支，不再开启新的条件。';
+  String get lastConditionDescription => '这是此生命循环中的最后果报支，不再开启新的条件。';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
@@ -441,15 +438,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get paccayaTitle => '二十四缘（发趣论）';
 
   @override
-  String get paccayaIntro =>
-      '《缘摄分别》的 B 部分：诸法如何互为条件。A 部分是缘起十二支。';
+  String get paccayaIntro => '《缘摄分别》的 B 部分：诸法如何互为条件。A 部分是缘起十二支。';
 
   @override
   String get paccayaDefinition => '定义';
 
   @override
-  String get paccayaConditioningStates =>
-      '能缘法 (paccaya-dhamma)';
+  String get paccayaConditioningStates => '能缘法 (paccaya-dhamma)';
 
   @override
   String get paccayaConditionedStates => '所缘起法 (paccayuppanna)';
@@ -479,7 +474,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get relatedDhammas => 'Related dhammas';
+  String get relatedDhammas => '相关法';
 
   @override
   String get paccayaGroupRootObject => '根与所缘';
@@ -509,123 +504,122 @@ class AppLocalizationsZh extends AppLocalizations {
   String get kiepFuture => '未来生';
 
   @override
-  String get kammaTitle => 'Kamma';
+  String get kammaTitle => '业 (Kamma)';
 
   @override
   String get mindProcessTitle => '心路过程';
 
   @override
-  String get paliLabel => 'Pāḷi:';
+  String get paliLabel => '巴利语:';
 
   @override
-  String get stopPronunciation => 'Stop pronunciation';
+  String get stopPronunciation => '停止发音';
 
   @override
-  String get listenPaliPronunciation => 'Listen to Pāḷi pronunciation';
+  String get listenPaliPronunciation => '聆听巴利语发音';
 
   @override
-  String get ttsUnavailable =>
-      'Speech synthesis is not supported on this device.';
+  String get ttsUnavailable => '此设备不支持语音合成。';
 
   @override
-  String get dragHandleSemantics => 'Drag to resize';
+  String get dragHandleSemantics => '拖动以调整大小';
 
   @override
   String cittaNumber(Object number) {
-    return 'Citta $number';
+    return '第 $number 心';
   }
 
   @override
-  String get doctrine => 'Dhamma explanation';
+  String get doctrine => '教理说明';
 
   @override
-  String get examples => 'Examples';
+  String get examples => '例子';
 
   @override
   String fixedCetasikasCount(Object count) {
-    return 'Invariable cetasikas ($count)';
+    return '固定心所 ($count)';
   }
 
   @override
   String variableCetasikasCount(Object count) {
-    return 'Variable cetasikas ($count)';
+    return '不固定心所 ($count)';
   }
 
   @override
-  String get personalNote => 'Personal note';
+  String get personalNote => '个人笔记';
 
   @override
-  String get personalNoteHint => 'Enter your note…';
+  String get personalNoteHint => '输入您的笔记…';
 
   @override
-  String get wholesome => 'Wholesome';
+  String get wholesome => '善';
 
   @override
-  String get functional => 'Functional';
+  String get functional => '唯作';
 
   @override
-  String get pleasantFeeling => 'Pleasant bodily feeling';
+  String get pleasantFeeling => '乐受';
 
   @override
-  String get unpleasantFeeling => 'Painful bodily feeling';
+  String get unpleasantFeeling => '苦受';
 
   @override
-  String get neutralFeeling => 'Equanimous feeling';
+  String get neutralFeeling => '舍受';
 
   @override
-  String get joyfulFeeling => 'Joyful feeling';
+  String get joyfulFeeling => '喜受';
 
   @override
-  String get alwaysAssociated => 'Always associated';
+  String get alwaysAssociated => '必定相应';
 
   @override
-  String get mayBeAssociated => 'May be associated';
+  String get mayBeAssociated => '可能相应';
 
   @override
-  String get fourfoldDefinition => 'Fourfold definition';
+  String get fourfoldDefinition => '四种特相 (特相/作用/现起/近因)';
 
   @override
-  String get characteristic => 'Characteristic';
+  String get characteristic => '特相 (Lakkhaṇa)';
 
   @override
-  String get functionLabel => 'Function';
+  String get functionLabel => '作用 (Rasa)';
 
   @override
-  String get manifestation => 'Manifestation';
+  String get manifestation => '现起 (Paccupaṭṭhāna)';
 
   @override
-  String get proximateCause => 'Proximate cause';
+  String get proximateCause => '近因 (Padaṭṭhāna)';
 
   @override
-  String get doctrinalConflicts => 'Doctrinal conflicts';
+  String get doctrinalConflicts => '教理相违心所';
 
   @override
   String rulesCount(Object count) {
-    return '$count rules';
+    return '$count 条规则';
   }
 
   @override
-  String get universalCetasikas => '7 universals';
+  String get universalCetasikas => '7 通一切心心所';
 
   @override
-  String get occasionalCetasikas => '6 occasionals';
+  String get occasionalCetasikas => '6 杂心所';
 
   @override
-  String get unwholesomeCetasikas => '14 unwholesome';
+  String get unwholesomeCetasikas => '14 不善心所';
 
   @override
-  String get beautifulCetasikas => '25 beautiful';
+  String get beautifulCetasikas => '25 美心所';
 
   @override
   String rowCittaSemantics(Object displayIndex, Object name, Object order,
       Object group, Object feeling, Object action) {
-    return 'Citta row $displayIndex: $name; canonical number $order; group $group; feeling $feeling. $action';
+    return '第 $displayIndex 行心: $name; 典籍编号 $order; 分组 $group; 感受 $feeling。$action';
   }
 
   @override
   String cetasikaSemantics(
       Object name, Object pali, Object group, Object state) {
-    return 'Cetasika $name ($pali), group $group. $state Tap for details.';
+    return '心所 $name ($pali)，分组 $group。$state 点击查看详情。';
   }
 
   @override
@@ -635,13 +629,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get dimmedByConflict => '因冲突而淡化';
 
   @override
-  String get matrixCornerSemantics =>
-      'Matrix corner: rows are cittas and columns are cetasikas';
+  String get matrixCornerSemantics => '矩阵角: 行代表心，列代表心所';
 
   @override
   String associationSemantics(
       Object association, Object cittaId, Object cetasikaId) {
-    return '$association: citta $cittaId with cetasika $cetasikaId';
+    return '$association: 心 $cittaId 与 心所 $cetasikaId';
   }
 
   @override
@@ -658,106 +651,102 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String savedItemsCount(Object count) {
-    return '$count saved items';
+    return '$count 个已保存项目';
   }
 
   @override
-  String get cittaTab => 'Cittas';
+  String get cittaTab => '心';
 
   @override
-  String get cetasikaTab => 'Cetasikas';
+  String get cetasikaTab => '心所';
 
   @override
-  String get notesTab => 'Notes';
+  String get notesTab => '笔记';
 
   @override
-  String get noBookmarkedCittas => 'No bookmarked cittas';
+  String get noBookmarkedCittas => '暂无收藏的心';
 
   @override
-  String get bookmarkCittaHint =>
-      'Open a lesson and tap the bookmark icon to save one';
+  String get bookmarkCittaHint => '打开修学课程并点击书签图标以保存';
 
   @override
-  String get loadingCittas => 'Loading cittas…';
+  String get loadingCittas => '正在加载心的数据…';
 
   @override
-  String get noBookmarkedCetasikas => 'No bookmarked cetasikas';
+  String get noBookmarkedCetasikas => '暂无收藏的心所';
 
   @override
-  String get loadingCetasikas => 'Loading cetasikas…';
+  String get loadingCetasikas => '正在加载心所数据…';
 
   @override
-  String get noNotes => 'No notes yet';
+  String get noNotes => '暂无笔记';
 
   @override
-  String get addNoteHint =>
-      'Tap the edit icon in a lesson to add a personal note';
+  String get addNoteHint => '在修学中点击编辑图标添加个人笔记';
 
   @override
-  String get deleteNoteQuestion => 'Delete note?';
+  String get deleteNoteQuestion => '删除笔记？';
 
   @override
-  String get deleteNoteWarning =>
-      'This note will be permanently deleted. Are you sure?';
+  String get deleteNoteWarning => '此笔记将被永久删除。您确定吗？';
 
   @override
-  String get addNote => 'Add note';
+  String get addNote => '添加笔记';
 
   @override
-  String get removeBookmark => 'Remove bookmark';
+  String get removeBookmark => '移除书签';
 
   @override
-  String get editNote => 'Edit note';
+  String get editNote => '编辑笔记';
 
   @override
-  String get deleteNote => 'Delete note';
+  String get deleteNote => '删除笔记';
 
   @override
-  String get noteUpdated => 'Note updated';
+  String get noteUpdated => '笔记已更新';
 
   @override
-  String get noteSaved => 'Note saved';
+  String get noteSaved => '笔记已保存';
 
   @override
-  String get editNoteTitle => 'Edit note';
+  String get editNoteTitle => '编辑笔记';
 
   @override
-  String get addNoteTitle => 'Add note';
+  String get addNoteTitle => '添加笔记';
 
   @override
-  String get studyNoteHint =>
-      'Write your note about this item…\n\nExample: this citta appears during meditation when…';
+  String get studyNoteHint => '写下您关于此项的修学体会…\n\n例如：此心在禅修中生起于…';
 
   @override
   String charactersCount(Object current, Object maximum) {
-    return '$current / $maximum characters';
+    return '$current / $maximum 字符';
   }
 
   @override
-  String get update => 'Update';
+  String get update => '更新';
 
   @override
-  String get saveNote => 'Save note';
+  String get saveNote => '保存笔记';
 
   @override
   String studyProgressPercent(Object percent) {
-    return 'Study progress: $percent%';
+    return '修学进度: $percent%';
   }
 
   @override
-  String get modulesCompletedShort => 'Modules\ncompleted';
+  String get modulesCompletedShort => '已完成\n单元';
 
   @override
-  String get recommendedNext => 'Recommended next';
+  String get recommendedNext => '推荐下一单元';
 
   @override
-  String get progressOverview => 'Progress overview';
+  String get progressOverview => '修学进度概览';
 
   @override
-  String get totalModules => 'Total modules';
+  String get totalModules => '单元总数';
 
   @override
-  String get dueForReview => 'Due for review';
+  String get dueForReview => '待复习';
 
   @override
   String get learnTab => '学习';
@@ -769,17 +758,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get testTab => '测试';
 
   @override
-  String get moduleHasNoData =>
-      'This module has no citta/cetasika data. Please check the JSON data.';
+  String get moduleHasNoData => '此单元暂无心/心所数据。请检查JSON数据。';
 
   @override
   String cittasInModule(Object count) {
-    return 'Cittas in this module — $count';
+    return '本单元包含的心 — $count';
   }
 
   @override
   String cetasikasInModule(Object count) {
-    return 'Cetasikas in this module — $count';
+    return '本单元包含的心所 — $count';
   }
 
   @override
@@ -804,7 +792,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String reviewCetasikaQuestion(Object name, Object pali) {
-    return 'What does cetasika “$name” ($pali) mean?';
+    return '心所 “$name” ($pali) 的含义是什么？';
   }
 
   @override
@@ -829,73 +817,70 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String groupAnswer(Object group) {
-    return 'Group: $group';
+    return '分组: $group';
   }
 
   @override
   String reviewCittaQuestion(Object name) {
-    return 'Which group and feeling does citta “$name” have?';
+    return '心 “$name” 属于哪个界，伴随何种感受？';
   }
 
   @override
   String cittaReviewAnswer(Object sphere, Object feeling, Object pali) {
-    return 'Sphere: $sphere\nFeeling: $feeling\nPāḷi: $pali';
+    return '界: $sphere\n感受: $feeling\n巴利语: $pali';
   }
 
   @override
-  String get noReviewContent =>
-      'This module has no review content yet. Please come back later.';
+  String get noReviewContent => '此单元暂无复习内容。请稍后查看。';
 
   @override
   String reviewedCount(Object revealed, Object total) {
-    return '$revealed / $total reviewed';
+    return '$revealed / $total 已复习';
   }
 
   @override
-  String get reviewComplete =>
-      'You reviewed all the content. Take the quiz to check your understanding.';
+  String get reviewComplete => '您已复习全部内容。快来通过测验检验理解吧。';
 
   @override
-  String get tapToReveal => 'Tap to reveal the answer';
+  String get tapToReveal => '点击显示答案';
 
   @override
   String answerLabel(Object answer) {
-    return 'Answer: $answer';
+    return '答案: $answer';
   }
 
   @override
-  String get revealAnswer => 'Reveal answer';
+  String get revealAnswer => '显示答案';
 
   @override
   String moduleQuizTitle(Object module) {
-    return 'Quiz\n$module';
+    return '测验\n$module';
   }
 
   @override
   String moduleContentCount(Object count) {
-    return '$count items in this module';
+    return '本单元共 $count 个知识点';
   }
 
   @override
-  String get quizMaximumDescription =>
-      'Up to 10 multiple-choice questions covering this module';
+  String get quizMaximumDescription => '涵盖本单元的最多10道单项选择题';
 
   @override
-  String get startQuiz => 'Start quiz';
+  String get startQuiz => '开始测验';
 
   @override
   String cittasCount(Object count) {
-    return '$count cittas';
+    return '$count 种心';
   }
 
   @override
   String cetasikasCount(Object count) {
-    return '$count cetasikas';
+    return '$count 种心所';
   }
 
   @override
   String noteForItem(Object name) {
-    return 'Note: $name';
+    return '笔记: $name';
   }
 
   @override
@@ -903,12 +888,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String quizLevelDescription(Object count) {
-    return 'Each level generates up to $count questions from this module';
+    return '每个级别从本单元生成最多 $count 道题目';
   }
 
   @override
-  String get insufficientQuizData =>
-      'This module does not have enough data to create questions.';
+  String get insufficientQuizData => '本单元数据不足以生成题目。';
 
   @override
   String get explanation => '解释';
@@ -921,130 +905,130 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String correctAnswers(Object score, Object total) {
-    return '$score / $total correct';
+    return '$score / $total 正确';
   }
 
   @override
-  String get quizExcellent => 'Excellent! You have mastered this module.';
+  String get quizExcellent => '太棒了！您已掌握本单元内容。';
 
   @override
-  String get quizTryAgain => 'Review the material and try again.';
+  String get quizTryAgain => '请温习课程内容后重试。';
 
   @override
   String get tryAgain => '重试';
 
   @override
   String quizInsufficientDataMessage(Object module) {
-    return 'Module “$module” does not have enough data to create questions.';
+    return '单元 “$module” 数据不足以生成题目。';
   }
 
   @override
-  String get quizTypeCetasikaGroup => 'Cetasika classification';
+  String get quizTypeCetasikaGroup => '心所分类';
 
   @override
-  String get quizTypeFeeling => 'Feeling recognition';
+  String get quizTypeFeeling => '感受辨识';
 
   @override
-  String get quizTypeConflict => 'Doctrinal conflict';
+  String get quizTypeConflict => '教理相违';
 
   @override
-  String get quizTypeSphere => 'Sphere';
+  String get quizTypeSphere => '界 (Sphere)';
 
   @override
   String get beginner => '初级';
 
   @override
-  String get beginnerDescription => 'Basic cetasika groups and feelings';
+  String get beginnerDescription => '基础心所分组与感受';
 
   @override
   String get intermediate => '中级';
 
   @override
-  String get intermediateDescription => 'Includes cetasika conflicts';
+  String get intermediateDescription => '包含心所相违规则';
 
   @override
   String get advanced => '高级';
 
   @override
-  String get advancedDescription => 'Includes spheres and all question types';
+  String get advancedDescription => '包含界分类及所有题型';
 
   @override
-  String get trueLabel => 'True';
+  String get trueLabel => '正确';
 
   @override
-  String get falseLabel => 'False';
+  String get falseLabel => '错误';
 
   @override
-  String get trueOrFalse => 'True or false?';
+  String get trueOrFalse => '对还是错？';
 
   @override
   String quizCetasikaGroupQuestion(Object name, Object pali) {
-    return 'Which group contains “$name” ($pali)?';
+    return '“$name” ($pali) 属于哪个心所分组？';
   }
 
   @override
   String quizCetasikaGroupExplanation(
       Object name, Object group, Object description) {
-    return '“$name” belongs to $group.\n$description';
+    return '“$name” 属于 $group。\n$description';
   }
 
   @override
   String quizCetasikaClaim(Object name, Object pali, Object group) {
-    return '“$name” ($pali) belongs to $group. True or false?';
+    return '“$name” ($pali) 属于 $group。对还是错？';
   }
 
   @override
   String quizCittaFeelingQuestion(Object name) {
-    return 'What feeling accompanies citta “$name”?';
+    return '心 “$name” 伴随何种感受？';
   }
 
   @override
   String quizCittaFeelingExplanation(Object name, Object feeling) {
-    return '“$name” has $feeling.';
+    return '“$name” 伴随 $feeling。';
   }
 
   @override
   String quizCittaFeelingClaim(Object name, Object feeling) {
-    return 'Citta “$name” has $feeling. True or false?';
+    return '心 “$name” 伴随 $feeling。对还是错？';
   }
 
   @override
-  String get conflictNo => 'No — they conflict';
+  String get conflictNo => '否 — 彼此相违';
 
   @override
-  String get conflictAlwaysYes => 'Yes — they always arise together';
+  String get conflictAlwaysYes => '是 — 恒常俱起';
 
   @override
-  String get conflictSometimesYes => 'Yes — they sometimes arise together';
+  String get conflictSometimesYes => '是 — 有时俱起';
 
   @override
   String quizConflictQuestion(Object first, Object second) {
-    return 'Can “$first” and “$second” arise together in one citta?';
+    return '“$first” 和 “$second” 能否在同一个心中同起？';
   }
 
   @override
   String quizSphereQuestion(Object name) {
-    return 'To which sphere does citta “$name” belong?';
+    return '心 “$name” 属于哪个界？';
   }
 
   @override
   String quizSphereExplanation(Object name, Object sphere) {
-    return '“$name” belongs to $sphere.';
+    return '“$name” 属于 $sphere。';
   }
 
   @override
   String quizSphereClaim(Object name, Object sphere) {
-    return 'Citta “$name” belongs to $sphere. True or false?';
+    return '心 “$name” 属于 $sphere。对还是错？';
   }
 
   @override
-  String get phaseFoundation => 'Phase 1 — Foundation';
+  String get phaseFoundation => '第一阶段 — 基础';
 
   @override
-  String get phaseCausality => 'Phase 2 — Causality';
+  String get phaseCausality => '第二阶段 — 因果';
 
   @override
-  String get phaseMastery => 'Phase 3 — Mastery';
+  String get phaseMastery => '第三阶段 — 通达';
 
   @override
   String get contentFallbackNotice => '此项目尚未翻译，当前显示英文学习内容。';
@@ -1080,15 +1064,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get resumeListening => '继续收听';
 
   @override
-  String get continueListening => 'Continue listening';
-
-  @override
-  String get sleepTimer => '睡眠定时器';
-
-  @override
-  String get sleepTimerOff => '关闭';
-
-  @override
   String get minutesShort => '分钟';
 
   @override
@@ -1101,70 +1076,104 @@ class AppLocalizationsZh extends AppLocalizations {
   String get previousTrack => '上一节';
 
   @override
-  String get karaokeSettingsTitle => 'Listening & karaoke';
+  String get sleepTimer => '睡眠定时器';
 
   @override
-  String get karaokeModeTitle => 'Karaoke mode';
+  String get sleepTimerOff => '关闭';
 
   @override
-  String get karaokeModeSubtitle => 'Highlight the text being read while listening';
+  String get sleepTimer15 => '15 分钟';
 
   @override
-  String get karaokeLineHighlightTitle => 'Highlight current line';
+  String get sleepTimer30 => '30 分钟';
 
   @override
-  String get karaokeLineHighlightSubtitle => 'Shade the paragraph being read';
+  String get sleepTimer60 => '60 分钟';
 
   @override
-  String get karaokeWordHighlightTitle => 'Highlight current word';
+  String sleepTimerRemaining(Object minutes) {
+    return '睡眠定时器：剩余 $minutes 分钟';
+  }
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Shade each word as it is spoken (estimated timing)';
+  String get audioModelUnavailable => '神经语音不可用，正在使用设备语音';
 
   @override
-  String get audioFloatingGoTo => 'Go to what\'s playing';
+  String get realDuration => '时长';
 
   @override
-  String get audioFloatingHide => 'Hide player';
+  String get estimatedDuration => '预计时长';
 
   @override
-  String get audioFloatingRestore => 'Show player';
+  String get continueListening => '继续聆听';
 
   @override
-  String get audioFloatingClose => 'Close player';
+  String get audioBackgroundLimit => '后台音频播放取决于系统已安装的语音引擎';
+
+  @override
+  String get karaokeSettingsTitle => '聆听与卡拉OK高亮';
+
+  @override
+  String get karaokeModeTitle => '高亮跟读模式';
+
+  @override
+  String get karaokeModeSubtitle => '聆听时高亮显示正在朗读的文本';
+
+  @override
+  String get karaokeLineHighlightTitle => '高亮当前行';
+
+  @override
+  String get karaokeLineHighlightSubtitle => '对正在朗读的段落进行背景高亮';
+
+  @override
+  String get karaokeWordHighlightTitle => '逐字高亮';
+
+  @override
+  String get karaokeWordHighlightSubtitle => '根据朗读节奏逐字高亮（估算时间）';
+
+  @override
+  String get audioFloatingGoTo => '转到正在播放的内容';
+
+  @override
+  String get audioFloatingHide => '隐藏播放栏';
+
+  @override
+  String get audioFloatingRestore => '显示播放栏';
+
+  @override
+  String get audioFloatingClose => '关闭播放器';
 }
 
+/// The translations for Chinese, as used in Taiwan (`zh_TW`).
 class AppLocalizationsZhTw extends AppLocalizationsZh {
   AppLocalizationsZhTw() : super('zh_TW');
 
   @override
-  String get appName => 'AbhiDhamma';
+  String get appName => '阿毗達摩';
 
   @override
-  String get appTagline => 'Abhidhamma Piṭaka';
+  String get appTagline => '阿毗達摩藏';
 
   @override
   String get initializing => '正在初始化…';
 
   @override
-  String get loadingDoctrineData => '正在載入並驗證佛法資料…';
+  String get loadingDoctrineData => '正在加載並校驗法數數據…';
 
   @override
-  String get loadingTakingLonger =>
-      'Startup is taking longer than expected. Dhamma data may be being optimized for your device.';
+  String get loadingTakingLonger => '啟動時間長於預期。可能正在為您的設備優化數據。';
 
   @override
-  String get unknownError => 'Unknown error';
+  String get unknownError => '未知錯誤';
 
   @override
-  String get dataError => 'Data error';
+  String get dataError => '數據錯誤';
 
   @override
-  String get invalidData => 'Invalid data';
+  String get invalidData => '數據無效';
 
   @override
-  String get invalidDataDescription =>
-      'The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.';
+  String get invalidDataDescription => '系統檢測到法數校驗規則衝突。請聯繫編輯團隊審查數據。';
 
   @override
   String get navMatrix => '矩陣';
@@ -1228,7 +1237,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String errorWithMessage(Object message) {
-    return 'Error: $message';
+    return '錯誤: $message';
   }
 
   @override
@@ -1272,8 +1281,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get holdGlobeToReset =>
-      'Press and hold the globe for 3 seconds to restore the system language';
+  String get holdGlobeToReset => '長按地球圖標3秒可恢復系統語言';
 
   @override
   String get restoredSystemLanguage => '已恢復系統語言';
@@ -1297,15 +1305,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get highContrastMode => '高對比模式';
 
   @override
-  String get highContrastSubtitle =>
-      '提高色彩對比度，方便低視力使用者';
+  String get highContrastSubtitle => '提高色彩對比度，方便低視力使用者';
 
   @override
   String get screenReaderHints => '螢幕閱讀器提示';
 
   @override
-  String get screenReaderHintsSubtitle =>
-      '為 TalkBack 和 VoiceOver 提供更多細節';
+  String get screenReaderHintsSubtitle => '為 TalkBack 和 VoiceOver 提供更多細節';
 
   @override
   String get textSize => '字體大小';
@@ -1320,8 +1326,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get unlockAllLessons => '解鎖所有課程';
 
   @override
-  String get unlockAllLessonsSubtitle =>
-      '引導路徑能建立堅實基礎。有經驗的學習者可以解鎖所有課程。';
+  String get unlockAllLessonsSubtitle => '引導路徑能建立堅實基礎。有經驗的學習者可以解鎖所有課程。';
 
   @override
   String get resetProgress => '重設進度';
@@ -1333,8 +1338,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get showDataWarningAgain => '再次顯示資料警告';
 
   @override
-  String get showDataWarningAgainSubtitle =>
-      '恢復矩陣警告橫幅';
+  String get showDataWarningAgainSubtitle => '恢復矩陣警告橫幅';
 
   @override
   String get dataWarningEnabled => '資料警告已啟用';
@@ -1358,8 +1362,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get resetProgressQuestion => '重置進度？';
 
   @override
-  String get resetProgressWarning =>
-      '所有學習進度和測驗分數都會被刪除。此操作無法復原。';
+  String get resetProgressWarning => '所有學習進度和測驗分數都會被刪除。此操作無法復原。';
 
   @override
   String get progressResetSuccess => '學習進度已重置';
@@ -1368,8 +1371,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get unlockLessonsQuestion => '解鎖所有課程？';
 
   @override
-  String get unlockLessonsWarning =>
-      '引導路徑是建立扎實阿毘達摩基礎的最佳方式。此選項適合有經驗的學習者。';
+  String get unlockLessonsWarning => '引導路徑是建立扎實阿毘達摩基礎的最佳方式。此選項適合有經驗的學習者。';
 
   @override
   String get keepGuidedPath => '保留引導路徑';
@@ -1404,52 +1406,48 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get onboardingVisualTitle => 'See Clearly';
+  String get onboardingVisualTitle => '清晰洞見';
 
   @override
-  String get onboardingVisualSubtitle => 'Citta × Cetasika Matrix';
+  String get onboardingVisualSubtitle => '心與心所矩陣';
 
   @override
-  String get onboardingVisualBody =>
-      'Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.';
+  String get onboardingVisualBody => '在互動式矩陣中探索121種心和52種心所。色彩、形狀與文字清晰標示每種相應關係。';
 
   @override
-  String get onboardingCausalityTitle => 'Understand Deeply';
+  String get onboardingCausalityTitle => '深刻理解';
 
   @override
-  String get onboardingCausalitySubtitle => 'Dependent Origination';
+  String get onboardingCausalitySubtitle => '十二緣起';
 
   @override
-  String get onboardingCausalityBody =>
-      'Explore the twelve links of dependent origination and classifications of kamma through connected learning views.';
+  String get onboardingCausalityBody => '透過互聯的學習視角探索十二緣起支與業的分類法。';
 
   @override
-  String get onboardingExploreTitle => 'Discover for Yourself';
+  String get onboardingExploreTitle => '自主探索';
 
   @override
-  String get onboardingExploreSubtitle => 'A Non-linear Study Path';
+  String get onboardingExploreSubtitle => '非線性學習路徑';
 
   @override
-  String get onboardingExploreBody =>
-      'Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.';
+  String get onboardingExploreBody => '自由選擇十個相互關聯的修學單元。主動回憶、測驗與複習助您穩固法義。';
 
   @override
-  String get beginExploring => 'Begin exploring';
+  String get beginExploring => '開始探索';
 
   @override
   String get matrixTitle => '阿毘達摩矩陣';
 
   @override
   String matrixSemantics(Object count) {
-    return 'Abhidhamma Matrix showing $count cittas';
+    return '阿毗達摩矩陣，顯示 $count 種心';
   }
 
   @override
   String get rotateScreen => '旋轉螢幕';
 
   @override
-  String get rotationHint =>
-      '如果螢幕沒有旋轉，請在裝置設定中啟用自動旋轉。';
+  String get rotationHint => '如果螢幕沒有旋轉，請在裝置設定中啟用自動旋轉。';
 
   @override
   String get highContrast => '高對比';
@@ -1461,7 +1459,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get searchCittaCetasika => '搜尋心或心所…';
 
   @override
-  String get clearSearch => 'Clear search';
+  String get clearSearch => '清除搜尋';
 
   @override
   String get citta => '心';
@@ -1501,7 +1499,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String dataWarningsCount(Object count) {
-    return '$count data warnings';
+    return '$count 個數據警告';
   }
 
   @override
@@ -1511,8 +1509,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get howToRead => '閱讀方式：';
 
   @override
-  String get matrixHelpRead =>
-      '• 行：心\n• 列：心所\n• 交叉處：相應關係';
+  String get matrixHelpRead => '• 行：心\n• 列：心所\n• 交叉處：相應關係';
 
   @override
   String get symbols => '符號：';
@@ -1528,16 +1525,28 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       '• 點按一個心查看詳情\n• 點按一個心所查看衝突\n• 使用篩選縮小範圍\n• 旋轉螢幕獲得更多空間';
 
   @override
+  String get matrixListenCittas => '收聽全部心';
+
+  @override
+  String get matrixListenCetasikas => '收聽全部心所';
+
+  @override
+  String get matrixListenFromHint => '長按可從此項開始收聽';
+
+  @override
+  String get matrixListenHelpBody => '長按某一行心或某一列心所可從該項開始收聽。點擊表格角落的耳機圖標可收聽整個列表。';
+
+  @override
   String get understood => '明白了';
 
   @override
-  String get dataWarningTitle => 'Data warning';
+  String get dataWarningTitle => '數據警告';
 
   @override
   String get allFilters => '全部';
 
   @override
-  String get defilements => 'Defilements';
+  String get defilements => '煩惱';
 
   @override
   String get kamma => '業';
@@ -1552,8 +1561,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get conditionDetails => '緣起詳情：';
 
   @override
-  String get lastConditionDescription =>
-      '這是此生命循環中的最後果報支，不再開啟新的條件。';
+  String get lastConditionDescription => '這是此生命循環中的最後果報支，不再開啟新的條件。';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
@@ -1570,15 +1578,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get paccayaTitle => '二十四緣（發趣論）';
 
   @override
-  String get paccayaIntro =>
-      '《緣攝分別》的 B 部分：諸法如何互為條件。A 部分是緣起十二支。';
+  String get paccayaIntro => '《緣攝分別》的 B 部分：諸法如何互為條件。A 部分是緣起十二支。';
 
   @override
   String get paccayaDefinition => '定義';
 
   @override
-  String get paccayaConditioningStates =>
-      '能緣法 (paccaya-dhamma)';
+  String get paccayaConditioningStates => '能緣法 (paccaya-dhamma)';
 
   @override
   String get paccayaConditionedStates => '所緣起法 (paccayuppanna)';
@@ -1608,7 +1614,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get relatedDhammas => 'Related dhammas';
+  String get relatedDhammas => '相關法';
 
   @override
   String get paccayaGroupRootObject => '根與所緣';
@@ -1638,123 +1644,122 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get kiepFuture => '未來生';
 
   @override
-  String get kammaTitle => 'Kamma';
+  String get kammaTitle => '業 (Kamma)';
 
   @override
   String get mindProcessTitle => '心路過程';
 
   @override
-  String get paliLabel => 'Pāḷi:';
+  String get paliLabel => '巴利語:';
 
   @override
-  String get stopPronunciation => 'Stop pronunciation';
+  String get stopPronunciation => '停止發音';
 
   @override
-  String get listenPaliPronunciation => 'Listen to Pāḷi pronunciation';
+  String get listenPaliPronunciation => '聆聽巴利語發音';
 
   @override
-  String get ttsUnavailable =>
-      'Speech synthesis is not supported on this device.';
+  String get ttsUnavailable => '此設備不支援語音合成。';
 
   @override
-  String get dragHandleSemantics => 'Drag to resize';
+  String get dragHandleSemantics => '拖動以調整大小';
 
   @override
   String cittaNumber(Object number) {
-    return 'Citta $number';
+    return '第 $number 心';
   }
 
   @override
-  String get doctrine => 'Dhamma explanation';
+  String get doctrine => '教理說明';
 
   @override
-  String get examples => 'Examples';
+  String get examples => '例子';
 
   @override
   String fixedCetasikasCount(Object count) {
-    return 'Invariable cetasikas ($count)';
+    return '固定心所 ($count)';
   }
 
   @override
   String variableCetasikasCount(Object count) {
-    return 'Variable cetasikas ($count)';
+    return '不固定心所 ($count)';
   }
 
   @override
-  String get personalNote => 'Personal note';
+  String get personalNote => '個人筆記';
 
   @override
-  String get personalNoteHint => 'Enter your note…';
+  String get personalNoteHint => '輸入您的筆記…';
 
   @override
-  String get wholesome => 'Wholesome';
+  String get wholesome => '善';
 
   @override
-  String get functional => 'Functional';
+  String get functional => '唯作';
 
   @override
-  String get pleasantFeeling => 'Pleasant bodily feeling';
+  String get pleasantFeeling => '樂受';
 
   @override
-  String get unpleasantFeeling => 'Painful bodily feeling';
+  String get unpleasantFeeling => '苦受';
 
   @override
-  String get neutralFeeling => 'Equanimous feeling';
+  String get neutralFeeling => '捨受';
 
   @override
-  String get joyfulFeeling => 'Joyful feeling';
+  String get joyfulFeeling => '喜受';
 
   @override
-  String get alwaysAssociated => 'Always associated';
+  String get alwaysAssociated => '必定相應';
 
   @override
-  String get mayBeAssociated => 'May be associated';
+  String get mayBeAssociated => '可能相應';
 
   @override
-  String get fourfoldDefinition => 'Fourfold definition';
+  String get fourfoldDefinition => '四種特相 (特相/作用/現起/近因)';
 
   @override
-  String get characteristic => 'Characteristic';
+  String get characteristic => '特相 (Lakkhaṇa)';
 
   @override
-  String get functionLabel => 'Function';
+  String get functionLabel => '作用 (Rasa)';
 
   @override
-  String get manifestation => 'Manifestation';
+  String get manifestation => '現起 (Paccupaṭṭhāna)';
 
   @override
-  String get proximateCause => 'Proximate cause';
+  String get proximateCause => '近因 (Padaṭṭhāna)';
 
   @override
-  String get doctrinalConflicts => 'Doctrinal conflicts';
+  String get doctrinalConflicts => '教理相違心所';
 
   @override
   String rulesCount(Object count) {
-    return '$count rules';
+    return '$count 條規則';
   }
 
   @override
-  String get universalCetasikas => '7 universals';
+  String get universalCetasikas => '7 通一切心心所';
 
   @override
-  String get occasionalCetasikas => '6 occasionals';
+  String get occasionalCetasikas => '6 雜心所';
 
   @override
-  String get unwholesomeCetasikas => '14 unwholesome';
+  String get unwholesomeCetasikas => '14 不善心所';
 
   @override
-  String get beautifulCetasikas => '25 beautiful';
+  String get beautifulCetasikas => '25 美心所';
 
   @override
   String rowCittaSemantics(Object displayIndex, Object name, Object order,
       Object group, Object feeling, Object action) {
-    return 'Citta row $displayIndex: $name; canonical number $order; group $group; feeling $feeling. $action';
+    return '第 $displayIndex 行心: $name; 典籍編號 $order; 分組 $group; 感受 $feeling。$action';
   }
 
   @override
   String cetasikaSemantics(
       Object name, Object pali, Object group, Object state) {
-    return 'Cetasika $name ($pali), group $group. $state Tap for details.';
+    return '心所 $name ($pali)，分組 $group。$state 點擊查看詳情。';
   }
 
   @override
@@ -1764,13 +1769,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get dimmedByConflict => '因衝突而淡化';
 
   @override
-  String get matrixCornerSemantics =>
-      'Matrix corner: rows are cittas and columns are cetasikas';
+  String get matrixCornerSemantics => '矩陣角: 行代表心，列代表心所';
 
   @override
   String associationSemantics(
       Object association, Object cittaId, Object cetasikaId) {
-    return '$association: citta $cittaId with cetasika $cetasikaId';
+    return '$association: 心 $cittaId 與 心所 $cetasikaId';
   }
 
   @override
@@ -1787,106 +1791,102 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String savedItemsCount(Object count) {
-    return '$count saved items';
+    return '$count 個已保存項目';
   }
 
   @override
-  String get cittaTab => 'Cittas';
+  String get cittaTab => '心';
 
   @override
-  String get cetasikaTab => 'Cetasikas';
+  String get cetasikaTab => '心所';
 
   @override
-  String get notesTab => 'Notes';
+  String get notesTab => '筆記';
 
   @override
-  String get noBookmarkedCittas => 'No bookmarked cittas';
+  String get noBookmarkedCittas => '暫無收藏的心';
 
   @override
-  String get bookmarkCittaHint =>
-      'Open a lesson and tap the bookmark icon to save one';
+  String get bookmarkCittaHint => '打開修學課程並點擊書籤圖標以保存';
 
   @override
-  String get loadingCittas => 'Loading cittas…';
+  String get loadingCittas => '正在加載心的數據…';
 
   @override
-  String get noBookmarkedCetasikas => 'No bookmarked cetasikas';
+  String get noBookmarkedCetasikas => '暫無收藏的心所';
 
   @override
-  String get loadingCetasikas => 'Loading cetasikas…';
+  String get loadingCetasikas => '正在加載心所數據…';
 
   @override
-  String get noNotes => 'No notes yet';
+  String get noNotes => '暫無筆記';
 
   @override
-  String get addNoteHint =>
-      'Tap the edit icon in a lesson to add a personal note';
+  String get addNoteHint => '在修學中點擊編輯圖標添加個人筆記';
 
   @override
-  String get deleteNoteQuestion => 'Delete note?';
+  String get deleteNoteQuestion => '刪除筆記？';
 
   @override
-  String get deleteNoteWarning =>
-      'This note will be permanently deleted. Are you sure?';
+  String get deleteNoteWarning => '此筆記將被永久刪除。您確定嗎？';
 
   @override
-  String get addNote => 'Add note';
+  String get addNote => '添加筆記';
 
   @override
-  String get removeBookmark => 'Remove bookmark';
+  String get removeBookmark => '移除書籤';
 
   @override
-  String get editNote => 'Edit note';
+  String get editNote => '編輯筆記';
 
   @override
-  String get deleteNote => 'Delete note';
+  String get deleteNote => '刪除筆記';
 
   @override
-  String get noteUpdated => 'Note updated';
+  String get noteUpdated => '筆記已更新';
 
   @override
-  String get noteSaved => 'Note saved';
+  String get noteSaved => '筆記已保存';
 
   @override
-  String get editNoteTitle => 'Edit note';
+  String get editNoteTitle => '編輯筆記';
 
   @override
-  String get addNoteTitle => 'Add note';
+  String get addNoteTitle => '添加筆記';
 
   @override
-  String get studyNoteHint =>
-      'Write your note about this item…\n\nExample: this citta appears during meditation when…';
+  String get studyNoteHint => '寫下您關於此項的修學體會…\n\n例如：此心在禪修中生起於…';
 
   @override
   String charactersCount(Object current, Object maximum) {
-    return '$current / $maximum characters';
+    return '$current / $maximum 字符';
   }
 
   @override
-  String get update => 'Update';
+  String get update => '更新';
 
   @override
-  String get saveNote => 'Save note';
+  String get saveNote => '保存筆記';
 
   @override
   String studyProgressPercent(Object percent) {
-    return 'Study progress: $percent%';
+    return '修學進度: $percent%';
   }
 
   @override
-  String get modulesCompletedShort => 'Modules\ncompleted';
+  String get modulesCompletedShort => '已完成\n單元';
 
   @override
-  String get recommendedNext => 'Recommended next';
+  String get recommendedNext => '推薦下一單元';
 
   @override
-  String get progressOverview => 'Progress overview';
+  String get progressOverview => '修學進度概覽';
 
   @override
-  String get totalModules => 'Total modules';
+  String get totalModules => '單元總數';
 
   @override
-  String get dueForReview => 'Due for review';
+  String get dueForReview => '待複習';
 
   @override
   String get learnTab => '學習';
@@ -1898,17 +1898,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get testTab => '測驗';
 
   @override
-  String get moduleHasNoData =>
-      'This module has no citta/cetasika data. Please check the JSON data.';
+  String get moduleHasNoData => '此單元暫無心/心所數據。請檢查JSON數據。';
 
   @override
   String cittasInModule(Object count) {
-    return 'Cittas in this module — $count';
+    return '本單元包含的心 — $count';
   }
 
   @override
   String cetasikasInModule(Object count) {
-    return 'Cetasikas in this module — $count';
+    return '本單元包含的心所 — $count';
   }
 
   @override
@@ -1933,7 +1932,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String reviewCetasikaQuestion(Object name, Object pali) {
-    return 'What does cetasika “$name” ($pali) mean?';
+    return '心所 “$name” ($pali) 的含義是什麼？';
   }
 
   @override
@@ -1958,73 +1957,70 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String groupAnswer(Object group) {
-    return 'Group: $group';
+    return '分組: $group';
   }
 
   @override
   String reviewCittaQuestion(Object name) {
-    return 'Which group and feeling does citta “$name” have?';
+    return '心 “$name” 屬於哪個界，伴隨何種感受？';
   }
 
   @override
   String cittaReviewAnswer(Object sphere, Object feeling, Object pali) {
-    return 'Sphere: $sphere\nFeeling: $feeling\nPāḷi: $pali';
+    return '界: $sphere\n感受: $feeling\n巴利語: $pali';
   }
 
   @override
-  String get noReviewContent =>
-      'This module has no review content yet. Please come back later.';
+  String get noReviewContent => '此單元暫無複習內容。請稍後查看。';
 
   @override
   String reviewedCount(Object revealed, Object total) {
-    return '$revealed / $total reviewed';
+    return '$revealed / $total 已複習';
   }
 
   @override
-  String get reviewComplete =>
-      'You reviewed all the content. Take the quiz to check your understanding.';
+  String get reviewComplete => '您已複習全部內容。快來透過測驗檢驗理解吧。';
 
   @override
-  String get tapToReveal => 'Tap to reveal the answer';
+  String get tapToReveal => '點擊顯示答案';
 
   @override
   String answerLabel(Object answer) {
-    return 'Answer: $answer';
+    return '答案: $answer';
   }
 
   @override
-  String get revealAnswer => 'Reveal answer';
+  String get revealAnswer => '顯示答案';
 
   @override
   String moduleQuizTitle(Object module) {
-    return 'Quiz\n$module';
+    return '測驗\n$module';
   }
 
   @override
   String moduleContentCount(Object count) {
-    return '$count items in this module';
+    return '本單元共 $count 個知識點';
   }
 
   @override
-  String get quizMaximumDescription =>
-      'Up to 10 multiple-choice questions covering this module';
+  String get quizMaximumDescription => '涵蓋本單元的最多10道單項選擇題';
 
   @override
-  String get startQuiz => 'Start quiz';
+  String get startQuiz => '開始測驗';
 
   @override
   String cittasCount(Object count) {
-    return '$count cittas';
+    return '$count 種心';
   }
 
   @override
   String cetasikasCount(Object count) {
-    return '$count cetasikas';
+    return '$count 種心所';
   }
 
   @override
   String noteForItem(Object name) {
-    return 'Note: $name';
+    return '筆記: $name';
   }
 
   @override
@@ -2032,12 +2028,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String quizLevelDescription(Object count) {
-    return 'Each level generates up to $count questions from this module';
+    return '每個級別從本單元生成最多 $count 道題目';
   }
 
   @override
-  String get insufficientQuizData =>
-      'This module does not have enough data to create questions.';
+  String get insufficientQuizData => '本單元數據不足以生成題目。';
 
   @override
   String get explanation => '解釋';
@@ -2050,130 +2045,130 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String correctAnswers(Object score, Object total) {
-    return '$score / $total correct';
+    return '$score / $total 正確';
   }
 
   @override
-  String get quizExcellent => 'Excellent! You have mastered this module.';
+  String get quizExcellent => '太棒了！您已掌握本單元內容。';
 
   @override
-  String get quizTryAgain => 'Review the material and try again.';
+  String get quizTryAgain => '請溫習課程內容後重試。';
 
   @override
   String get tryAgain => '再試一次';
 
   @override
   String quizInsufficientDataMessage(Object module) {
-    return 'Module “$module” does not have enough data to create questions.';
+    return '單元 “$module” 數據不足以生成題目。';
   }
 
   @override
-  String get quizTypeCetasikaGroup => 'Cetasika classification';
+  String get quizTypeCetasikaGroup => '心所分類';
 
   @override
-  String get quizTypeFeeling => 'Feeling recognition';
+  String get quizTypeFeeling => '感受辨識';
 
   @override
-  String get quizTypeConflict => 'Doctrinal conflict';
+  String get quizTypeConflict => '教理相違';
 
   @override
-  String get quizTypeSphere => 'Sphere';
+  String get quizTypeSphere => '界 (Sphere)';
 
   @override
   String get beginner => '初級';
 
   @override
-  String get beginnerDescription => 'Basic cetasika groups and feelings';
+  String get beginnerDescription => '基礎心所分組與感受';
 
   @override
   String get intermediate => '中級';
 
   @override
-  String get intermediateDescription => 'Includes cetasika conflicts';
+  String get intermediateDescription => '包含心所相違規則';
 
   @override
   String get advanced => '高級';
 
   @override
-  String get advancedDescription => 'Includes spheres and all question types';
+  String get advancedDescription => '包含界分類及所有題型';
 
   @override
-  String get trueLabel => 'True';
+  String get trueLabel => '正確';
 
   @override
-  String get falseLabel => 'False';
+  String get falseLabel => '錯誤';
 
   @override
-  String get trueOrFalse => 'True or false?';
+  String get trueOrFalse => '對還是錯？';
 
   @override
   String quizCetasikaGroupQuestion(Object name, Object pali) {
-    return 'Which group contains “$name” ($pali)?';
+    return '“$name” ($pali) 屬於哪個心所分組？';
   }
 
   @override
   String quizCetasikaGroupExplanation(
       Object name, Object group, Object description) {
-    return '“$name” belongs to $group.\n$description';
+    return '“$name” 屬於 $group。\n$description';
   }
 
   @override
   String quizCetasikaClaim(Object name, Object pali, Object group) {
-    return '“$name” ($pali) belongs to $group. True or false?';
+    return '“$name” ($pali) 屬於 $group。對還是錯？';
   }
 
   @override
   String quizCittaFeelingQuestion(Object name) {
-    return 'What feeling accompanies citta “$name”?';
+    return '心 “$name” 伴隨何種感受？';
   }
 
   @override
   String quizCittaFeelingExplanation(Object name, Object feeling) {
-    return '“$name” has $feeling.';
+    return '“$name” 伴隨 $feeling。';
   }
 
   @override
   String quizCittaFeelingClaim(Object name, Object feeling) {
-    return 'Citta “$name” has $feeling. True or false?';
+    return '心 “$name” 伴随 $feeling。對還是錯？';
   }
 
   @override
-  String get conflictNo => 'No — they conflict';
+  String get conflictNo => '否 — 彼此相違';
 
   @override
-  String get conflictAlwaysYes => 'Yes — they always arise together';
+  String get conflictAlwaysYes => '是 — 恆常俱起';
 
   @override
-  String get conflictSometimesYes => 'Yes — they sometimes arise together';
+  String get conflictSometimesYes => '是 — 有時俱起';
 
   @override
   String quizConflictQuestion(Object first, Object second) {
-    return 'Can “$first” and “$second” arise together in one citta?';
+    return '“$first” 和 “$second” 能否在同一個心中同起？';
   }
 
   @override
   String quizSphereQuestion(Object name) {
-    return 'To which sphere does citta “$name” belong?';
+    return '心 “$name” 屬於哪個界？';
   }
 
   @override
   String quizSphereExplanation(Object name, Object sphere) {
-    return '“$name” belongs to $sphere.';
+    return '“$name” 屬於 $sphere。';
   }
 
   @override
   String quizSphereClaim(Object name, Object sphere) {
-    return 'Citta “$name” belongs to $sphere. True or false?';
+    return '心 “$name” 屬於 $sphere。對還是錯？';
   }
 
   @override
-  String get phaseFoundation => 'Phase 1 — Foundation';
+  String get phaseFoundation => '第一階段 — 基礎';
 
   @override
-  String get phaseCausality => 'Phase 2 — Causality';
+  String get phaseCausality => '第二階段 — 因果';
 
   @override
-  String get phaseMastery => 'Phase 3 — Mastery';
+  String get phaseMastery => '第三階段 — 通達';
 
   @override
   String get contentFallbackNotice => '此項目尚未翻譯，目前顯示英文學習內容。';
@@ -2209,12 +2204,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get resumeListening => '繼續收聽';
 
   @override
-  String get sleepTimer => '睡眠計時器';
-
-  @override
-  String get sleepTimerOff => '關閉';
-
-  @override
   String get minutesShort => '分鐘';
 
   @override
@@ -2225,4 +2214,72 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get previousTrack => '上一節';
+
+  @override
+  String get sleepTimer => '睡眠計時器';
+
+  @override
+  String get sleepTimerOff => '關閉';
+
+  @override
+  String get sleepTimer15 => '15 分鐘';
+
+  @override
+  String get sleepTimer30 => '30 分鐘';
+
+  @override
+  String get sleepTimer60 => '60 分鐘';
+
+  @override
+  String sleepTimerRemaining(Object minutes) {
+    return '睡眠計時器：剩餘 $minutes 分鐘';
+  }
+
+  @override
+  String get audioModelUnavailable => '神經語音無法使用，正在使用裝置語音';
+
+  @override
+  String get realDuration => '時長';
+
+  @override
+  String get estimatedDuration => '預估時長';
+
+  @override
+  String get continueListening => '繼續聆聽';
+
+  @override
+  String get audioBackgroundLimit => '後台音頻播放取決於系統已安裝的語音引擎';
+
+  @override
+  String get karaokeSettingsTitle => '聆聽與卡拉OK高亮';
+
+  @override
+  String get karaokeModeTitle => '高亮跟讀模式';
+
+  @override
+  String get karaokeModeSubtitle => '聆聽時高亮顯示正在朗讀的文本';
+
+  @override
+  String get karaokeLineHighlightTitle => '高亮當前行';
+
+  @override
+  String get karaokeLineHighlightSubtitle => '對正在朗讀的段落進行背景高亮';
+
+  @override
+  String get karaokeWordHighlightTitle => '逐字高亮';
+
+  @override
+  String get karaokeWordHighlightSubtitle => '根據朗讀節奏逐字高亮（估算時間）';
+
+  @override
+  String get audioFloatingGoTo => '轉到正在播放的內容';
+
+  @override
+  String get audioFloatingHide => '隱藏播放欄';
+
+  @override
+  String get audioFloatingRestore => '顯示播放欄';
+
+  @override
+  String get audioFloatingClose => '關閉播放器';
 }

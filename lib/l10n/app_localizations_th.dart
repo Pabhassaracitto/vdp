@@ -9,33 +9,33 @@ class AppLocalizationsTh extends AppLocalizations {
   AppLocalizationsTh([String locale = 'th']) : super(locale);
 
   @override
-  String get appName => 'AbhiDhamma';
+  String get appName => 'พระอภิธรรม';
 
   @override
-  String get appTagline => 'Abhidhamma Piṭaka';
+  String get appTagline => 'พระอภิธรรมปิฎก';
 
   @override
-  String get initializing => 'Initializing…';
+  String get initializing => 'กำลังเริ่มต้น…';
 
   @override
-  String get loadingDoctrineData => 'Loading and validating Dhamma data…';
+  String get loadingDoctrineData => 'กำลังโหลดและตรวจสอบข้อมูลพระธรรม…';
 
   @override
   String get loadingTakingLonger =>
-      'Startup is taking longer than expected. Dhamma data may be being optimized for your device.';
+      'การเริ่มต้นใช้เวลานานกว่าปกติ อาจกำลังปรับข้อมูลให้เหมาะสมกับอุปกรณ์';
 
   @override
-  String get unknownError => 'Unknown error';
+  String get unknownError => 'ข้อผิดพลาดที่ไม่รู้จัก';
 
   @override
-  String get dataError => 'Data error';
+  String get dataError => 'ข้อผิดพลาดของข้อมูล';
 
   @override
-  String get invalidData => 'Invalid data';
+  String get invalidData => 'ข้อมูลไม่ถูกต้อง';
 
   @override
   String get invalidDataDescription =>
-      'The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.';
+      'ระบบตรวจพบความขัดแย้งของกฎการตรวจสอบธรรมะ โปรดติดต่อทีมงานเพื่อตรวจสอบ';
 
   @override
   String get navMatrix => 'ตาราง';
@@ -89,7 +89,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get all => 'ทั้งหมด';
 
   @override
-  String get hide => 'Hide';
+  String get hide => 'ซ่อน';
 
   @override
   String get learn => 'เรียน';
@@ -99,7 +99,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String errorWithMessage(Object message) {
-    return 'Error: $message';
+    return 'ข้อผิดพลาด: $message';
   }
 
   @override
@@ -134,20 +134,20 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String languageChangePreviewBody(Object language) {
-    return 'The interface will change to $language. Learning content remains unchanged.';
+    return 'อินเทอร์เฟซจะเปลี่ยนเป็น $language';
   }
 
   @override
   String languageChangedTo(Object language) {
-    return 'Language changed to $language';
+    return 'เปลี่ยนภาษาเป็น $language แล้ว';
   }
 
   @override
   String get holdGlobeToReset =>
-      'Press and hold the globe for 3 seconds to restore the system language';
+      'กดลูกโลกค้างไว้ 3 วินาทีเพื่อคืนค่าภาษาของระบบ';
 
   @override
-  String get restoredSystemLanguage => 'Restored the system language';
+  String get restoredSystemLanguage => 'คืนค่าภาษาของระบบแล้ว';
 
   @override
   String get contentVietnamese => 'ภาษาเวียดนาม';
@@ -170,11 +170,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get highContrastMode => 'โหมดความต่างสีสูง';
 
   @override
-  String get highContrastSubtitle =>
-      'เพิ่มความต่างสีสำหรับผู้มีสายตาเลือนราง';
+  String get highContrastSubtitle => 'เพิ่มความต่างสีสำหรับผู้มีสายตาเลือนราง';
 
   @override
-  String get screenReaderHints => 'Screen reader hints';
+  String get screenReaderHints => 'คำแนะนำโปรแกรมอ่านหน้าจอ';
 
   @override
   String get screenReaderHintsSubtitle =>
@@ -184,7 +183,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get textSize => 'ขนาดตัวอักษร';
 
   @override
-  String get textScale => 'Text scale';
+  String get textScale => 'ขนาดตัวอักษร';
 
   @override
   String get studyProgress => 'ความก้าวหน้า';
@@ -206,8 +205,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get showDataWarningAgain => 'แสดงคำเตือนข้อมูลอีกครั้ง';
 
   @override
-  String get showDataWarningAgainSubtitle =>
-      'คืนค่าแถบคำเตือนของตาราง';
+  String get showDataWarningAgainSubtitle => 'คืนค่าแถบคำเตือนของตาราง';
 
   @override
   String get dataWarningEnabled => 'เปิดใช้คำเตือนข้อมูลแล้ว';
@@ -277,44 +275,44 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get onboardingVisualTitle => 'See Clearly';
+  String get onboardingVisualTitle => 'เห็นอย่างแจ่มแจ้ง';
 
   @override
-  String get onboardingVisualSubtitle => 'Citta × Cetasika Matrix';
+  String get onboardingVisualSubtitle => 'ตารางจิต × เจตสิก';
 
   @override
   String get onboardingVisualBody =>
-      'Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.';
+      'สำรวจจิต 121 ดวงและเจตสิก 52 ดวงในตารางปฏิสัมพันธ์ สี รูปร่าง และข้อความระบุความสัมพันธ์อย่างชัดเจน';
 
   @override
-  String get onboardingCausalityTitle => 'Understand Deeply';
+  String get onboardingCausalityTitle => 'เข้าใจอย่างลึกซึ้ง';
 
   @override
-  String get onboardingCausalitySubtitle => 'Dependent Origination';
+  String get onboardingCausalitySubtitle => 'ปฏิจจสมุปบาท';
 
   @override
   String get onboardingCausalityBody =>
-      'Explore the twelve links of dependent origination and classifications of kamma through connected learning views.';
+      'สำรวจองค์ประกอบ 12 ของปฏิจจสมุปบาทและการจำแนกกรรมผ่านมุมมองการเรียนรู้ที่เชื่อมโยงกัน';
 
   @override
-  String get onboardingExploreTitle => 'Discover for Yourself';
+  String get onboardingExploreTitle => 'ค้นพบด้วยตนเอง';
 
   @override
-  String get onboardingExploreSubtitle => 'A Non-linear Study Path';
+  String get onboardingExploreSubtitle => 'เส้นทางการศึกษาแบบไม่เป็นเส้นตรง';
 
   @override
   String get onboardingExploreBody =>
-      'Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.';
+      'เลือกเส้นทางของคุณผ่าน 10 บทเรียนที่เชื่อมโยงกัน การทบทวนและแบบทดสอบช่วยให้ความรู้คงทน';
 
   @override
-  String get beginExploring => 'Begin exploring';
+  String get beginExploring => 'เริ่มการสำรวจ';
 
   @override
   String get matrixTitle => 'ตารางอภิธรรม';
 
   @override
   String matrixSemantics(Object count) {
-    return 'Abhidhamma Matrix showing $count cittas';
+    return 'ตารางพระอภิธรรมแสดงจิต $count ดวง';
   }
 
   @override
@@ -334,7 +332,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get searchCittaCetasika => 'ค้นหาจิตหรือเจตสิก…';
 
   @override
-  String get clearSearch => 'Clear search';
+  String get clearSearch => 'ล้างการค้นหา';
 
   @override
   String get citta => 'จิต';
@@ -374,7 +372,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String dataWarningsCount(Object count) {
-    return '$count data warnings';
+    return 'คำเตือนข้อมูล $count รายการ';
   }
 
   @override
@@ -391,7 +389,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get symbols => 'สัญลักษณ์:';
 
   @override
-  String get matrixHelpSymbols => '✦ = ประกอบเสมอ\n◎ = ประกอบเป็นบางครั้ง\n✕ = ไม่ประกอบ';
+  String get matrixHelpSymbols =>
+      '✦ = ประกอบเสมอ\n◎ = ประกอบเป็นบางครั้ง\n✕ = ไม่ประกอบ';
 
   @override
   String get tips => 'เคล็ดลับ:';
@@ -401,16 +400,29 @@ class AppLocalizationsTh extends AppLocalizations {
       '• แตะจิตเพื่อดูรายละเอียด\n• แตะเจตสิกเพื่อดูข้อขัดกัน\n• ใช้ตัวกรองเพื่อจำกัดมุมมอง\n• หมุนหน้าจอเพื่อเพิ่มพื้นที่';
 
   @override
+  String get matrixListenCittas => 'ฟังจิตทั้งหมด';
+
+  @override
+  String get matrixListenCetasikas => 'ฟังเจตสิกทั้งหมด';
+
+  @override
+  String get matrixListenFromHint => 'กดค้างเพื่อฟังจากรายการนี้';
+
+  @override
+  String get matrixListenHelpBody =>
+      'กดค้างที่แถวจิตหรือคอลัมน์เจตสิกเพื่อฟังจากรายการนั้น แตะไอคอนหูฟังที่มุมตารางเพื่อฟังรายการทั้งหมด';
+
+  @override
   String get understood => 'เข้าใจแล้ว';
 
   @override
-  String get dataWarningTitle => 'Data warning';
+  String get dataWarningTitle => 'คำเตือนข้อมูล';
 
   @override
   String get allFilters => 'ทั้งหมด';
 
   @override
-  String get defilements => 'Defilements';
+  String get defilements => 'กิเลส';
 
   @override
   String get kamma => 'กรรม';
@@ -450,11 +462,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get paccayaDefinition => 'คำนิยาม';
 
   @override
-  String get paccayaConditioningStates =>
-      'ธรรมที่เป็นปัจจัย (paccaya-dhamma)';
+  String get paccayaConditioningStates => 'ธรรมที่เป็นปัจจัย (paccaya-dhamma)';
 
   @override
-  String get paccayaConditionedStates => 'ธรรมที่ถูกปัจจัยปรุงแต่ง (paccayuppanna)';
+  String get paccayaConditionedStates =>
+      'ธรรมที่ถูกปัจจัยปรุงแต่ง (paccayuppanna)';
 
   @override
   String get paccayaSubdivisions => 'หมวดย่อย';
@@ -481,7 +493,7 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get relatedDhammas => 'Related dhammas';
+  String get relatedDhammas => 'ธรรมที่เกี่ยวข้อง';
 
   @override
   String get paccayaGroupRootObject => 'เหตุและอารมณ์';
@@ -511,123 +523,122 @@ class AppLocalizationsTh extends AppLocalizations {
   String get kiepFuture => 'อนาคตชาติ';
 
   @override
-  String get kammaTitle => 'Kamma';
+  String get kammaTitle => 'กรรม (Kamma)';
 
   @override
   String get mindProcessTitle => 'วิถีจิต';
 
   @override
-  String get paliLabel => 'Pāḷi:';
+  String get paliLabel => 'บาลี:';
 
   @override
-  String get stopPronunciation => 'Stop pronunciation';
+  String get stopPronunciation => 'หยุดการออกเสียง';
 
   @override
-  String get listenPaliPronunciation => 'Listen to Pāḷi pronunciation';
+  String get listenPaliPronunciation => 'ฟังการออกเสียงภาษาบาลี';
 
   @override
-  String get ttsUnavailable =>
-      'Speech synthesis is not supported on this device.';
+  String get ttsUnavailable => 'อุปกรณ์นี้ไม่รองรับการสังเคราะห์เสียงพูด';
 
   @override
-  String get dragHandleSemantics => 'Drag to resize';
+  String get dragHandleSemantics => 'ลากเพื่อปรับขนาด';
 
   @override
   String cittaNumber(Object number) {
-    return 'Citta $number';
+    return 'จิตที่ $number';
   }
 
   @override
-  String get doctrine => 'Dhamma explanation';
+  String get doctrine => 'คำอธิบายธรรม';
 
   @override
-  String get examples => 'Examples';
+  String get examples => 'ตัวอย่าง';
 
   @override
   String fixedCetasikasCount(Object count) {
-    return 'Invariable cetasikas ($count)';
+    return 'เจตสิกที่แน่นอน ($count)';
   }
 
   @override
   String variableCetasikasCount(Object count) {
-    return 'Variable cetasikas ($count)';
+    return 'เจตสิกที่ไม่แน่นอน ($count)';
   }
 
   @override
-  String get personalNote => 'Personal note';
+  String get personalNote => 'บันทึกส่วนตัว';
 
   @override
-  String get personalNoteHint => 'Enter your note…';
+  String get personalNoteHint => 'พิมพ์บันทึกของคุณ…';
 
   @override
-  String get wholesome => 'Wholesome';
+  String get wholesome => 'กุศล';
 
   @override
-  String get functional => 'Functional';
+  String get functional => 'กิริยา';
 
   @override
-  String get pleasantFeeling => 'Pleasant bodily feeling';
+  String get pleasantFeeling => 'สุขเวทนา (ทางกาย)';
 
   @override
-  String get unpleasantFeeling => 'Painful bodily feeling';
+  String get unpleasantFeeling => 'ทุกขเวทนา (ทางกาย)';
 
   @override
-  String get neutralFeeling => 'Equanimous feeling';
+  String get neutralFeeling => 'อุเบกขาเวทนา';
 
   @override
-  String get joyfulFeeling => 'Joyful feeling';
+  String get joyfulFeeling => 'โสมนัสสเวทนา (ทางใจ)';
 
   @override
-  String get alwaysAssociated => 'Always associated';
+  String get alwaysAssociated => 'ประกอบแน่นอน';
 
   @override
-  String get mayBeAssociated => 'May be associated';
+  String get mayBeAssociated => 'อาจประกอบร่วม';
 
   @override
-  String get fourfoldDefinition => 'Fourfold definition';
+  String get fourfoldDefinition => 'ลักขณาทิจตุกะ (ลักษณะ 4 ประการ)';
 
   @override
-  String get characteristic => 'Characteristic';
+  String get characteristic => 'ลักษณะ (Lakkhaṇa)';
 
   @override
-  String get functionLabel => 'Function';
+  String get functionLabel => 'กิจ (Rasa)';
 
   @override
-  String get manifestation => 'Manifestation';
+  String get manifestation => 'อาการปรากฏ (Paccupaṭṭhāna)';
 
   @override
-  String get proximateCause => 'Proximate cause';
+  String get proximateCause => 'เหตุใกล้ (Padaṭṭhāna)';
 
   @override
-  String get doctrinalConflicts => 'Doctrinal conflicts';
+  String get doctrinalConflicts => 'เจตสิกที่เป็นปฏิปักษ์กัน';
 
   @override
   String rulesCount(Object count) {
-    return '$count rules';
+    return '$count กฎ';
   }
 
   @override
-  String get universalCetasikas => '7 universals';
+  String get universalCetasikas => 'สัพพจิตตสาธารณเจตสิก 7';
 
   @override
-  String get occasionalCetasikas => '6 occasionals';
+  String get occasionalCetasikas => 'ปกิณณกเจตสิก 6';
 
   @override
-  String get unwholesomeCetasikas => '14 unwholesome';
+  String get unwholesomeCetasikas => 'อกุศลเจตสิก 14';
 
   @override
-  String get beautifulCetasikas => '25 beautiful';
+  String get beautifulCetasikas => 'โสภณเจตสิก 25';
 
   @override
   String rowCittaSemantics(Object displayIndex, Object name, Object order,
       Object group, Object feeling, Object action) {
-    return 'Citta row $displayIndex: $name; canonical number $order; group $group; feeling $feeling. $action';
+    return 'แถวจิตที่ $displayIndex: $name; ลำดับ $order; กลุ่ม $group; เวทนา $feeling. $action';
   }
 
   @override
   String cetasikaSemantics(
       Object name, Object pali, Object group, Object state) {
-    return 'Cetasika $name ($pali), group $group. $state Tap for details.';
+    return 'เจตสิก $name ($pali), กลุ่ม $group. $state แตะเพื่อดูรายละเอียด';
   }
 
   @override
@@ -637,13 +648,12 @@ class AppLocalizationsTh extends AppLocalizations {
   String get dimmedByConflict => 'จางลงเพราะมีข้อขัดกัน';
 
   @override
-  String get matrixCornerSemantics =>
-      'Matrix corner: rows are cittas and columns are cetasikas';
+  String get matrixCornerSemantics => 'มุมตาราง: แถวคือจิตและคอลัมน์คือเจตสิก';
 
   @override
   String associationSemantics(
       Object association, Object cittaId, Object cetasikaId) {
-    return '$association: citta $cittaId with cetasika $cetasikaId';
+    return '$association: จิต $cittaId กับ เจตสิก $cetasikaId';
   }
 
   @override
@@ -660,106 +670,103 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String savedItemsCount(Object count) {
-    return '$count saved items';
+    return 'รายการที่บันทึกไว้ $count รายการ';
   }
 
   @override
-  String get cittaTab => 'Cittas';
+  String get cittaTab => 'จิต';
 
   @override
-  String get cetasikaTab => 'Cetasikas';
+  String get cetasikaTab => 'เจตสิก';
 
   @override
-  String get notesTab => 'Notes';
+  String get notesTab => 'บันทึก';
 
   @override
-  String get noBookmarkedCittas => 'No bookmarked cittas';
+  String get noBookmarkedCittas => 'ยังไม่มีจิตที่คั่นไว้';
 
   @override
-  String get bookmarkCittaHint =>
-      'Open a lesson and tap the bookmark icon to save one';
+  String get bookmarkCittaHint => 'เปิดบทเรียนและแตะไอคอนคั่นหน้าเพื่อบันทึก';
 
   @override
-  String get loadingCittas => 'Loading cittas…';
+  String get loadingCittas => 'กำลังโหลดข้อมูลจิต…';
 
   @override
-  String get noBookmarkedCetasikas => 'No bookmarked cetasikas';
+  String get noBookmarkedCetasikas => 'ยังไม่มีเจตสิกที่คั่นไว้';
 
   @override
-  String get loadingCetasikas => 'Loading cetasikas…';
+  String get loadingCetasikas => 'กำลังโหลดข้อมูลเจตสิก…';
 
   @override
-  String get noNotes => 'No notes yet';
+  String get noNotes => 'ยังไม่มีบันทึก';
 
   @override
-  String get addNoteHint =>
-      'Tap the edit icon in a lesson to add a personal note';
+  String get addNoteHint => 'แตะไอคอนแก้ไขในบทเรียนเพื่อเพิ่มบันทึกส่วนตัว';
 
   @override
-  String get deleteNoteQuestion => 'Delete note?';
+  String get deleteNoteQuestion => 'ลบบันทึกหรือไม่?';
 
   @override
-  String get deleteNoteWarning =>
-      'This note will be permanently deleted. Are you sure?';
+  String get deleteNoteWarning => 'บันทึกนี้จะถูกลบอย่างถาวร คุณแน่ใจหรือไม่?';
 
   @override
-  String get addNote => 'Add note';
+  String get addNote => 'เพิ่มบันทึก';
 
   @override
-  String get removeBookmark => 'Remove bookmark';
+  String get removeBookmark => 'ลบบุ๊กมาร์ก';
 
   @override
-  String get editNote => 'Edit note';
+  String get editNote => 'แก้ไขบันทึก';
 
   @override
-  String get deleteNote => 'Delete note';
+  String get deleteNote => 'ลบบันทึก';
 
   @override
-  String get noteUpdated => 'Note updated';
+  String get noteUpdated => 'อัปเดตบันทึกแล้ว';
 
   @override
-  String get noteSaved => 'Note saved';
+  String get noteSaved => 'บันทึกข้อมูลแล้ว';
 
   @override
-  String get editNoteTitle => 'Edit note';
+  String get editNoteTitle => 'แก้ไขบันทึก';
 
   @override
-  String get addNoteTitle => 'Add note';
+  String get addNoteTitle => 'เพิ่มบันทึก';
 
   @override
   String get studyNoteHint =>
-      'Write your note about this item…\n\nExample: this citta appears during meditation when…';
+      'เขียนบันทึกของคุณเกี่ยวกับหัวข้อนี้…\n\nตัวอย่าง: จิตนี้เกิดขึ้นระหว่างการปฏิบัติธรรมเมื่อ…';
 
   @override
   String charactersCount(Object current, Object maximum) {
-    return '$current / $maximum characters';
+    return '$current / $maximum ตัวอักษร';
   }
 
   @override
-  String get update => 'Update';
+  String get update => 'อัปเดต';
 
   @override
-  String get saveNote => 'Save note';
+  String get saveNote => 'บันทึก';
 
   @override
   String studyProgressPercent(Object percent) {
-    return 'Study progress: $percent%';
+    return 'ความคืบหน้าการศึกษา: $percent%';
   }
 
   @override
-  String get modulesCompletedShort => 'Modules\ncompleted';
+  String get modulesCompletedShort => 'บทเรียน\nที่สำเร็จ';
 
   @override
-  String get recommendedNext => 'Recommended next';
+  String get recommendedNext => 'แนะนำบทเรียนถัดไป';
 
   @override
-  String get progressOverview => 'Progress overview';
+  String get progressOverview => 'ภาพรวมความคืบหน้า';
 
   @override
-  String get totalModules => 'Total modules';
+  String get totalModules => 'บทเรียนทั้งหมด';
 
   @override
-  String get dueForReview => 'Due for review';
+  String get dueForReview => 'ถึงกำหนดทบทวน';
 
   @override
   String get learnTab => 'เรียน';
@@ -772,16 +779,16 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get moduleHasNoData =>
-      'This module has no citta/cetasika data. Please check the JSON data.';
+      'บทเรียนนี้ไม่มีข้อมูลจิต/เจตสิก โปรดตรวจสอบข้อมูล JSON';
 
   @override
   String cittasInModule(Object count) {
-    return 'Cittas in this module — $count';
+    return 'จิตในบทเรียนนี้ — $count';
   }
 
   @override
   String cetasikasInModule(Object count) {
-    return 'Cetasikas in this module — $count';
+    return 'เจตสิกในบทเรียนนี้ — $count';
   }
 
   @override
@@ -806,7 +813,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String reviewCetasikaQuestion(Object name, Object pali) {
-    return 'What does cetasika “$name” ($pali) mean?';
+    return 'เจตสิก “$name” ($pali) มีความหมายอย่างไร?';
   }
 
   @override
@@ -831,73 +838,73 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String groupAnswer(Object group) {
-    return 'Group: $group';
+    return 'กลุ่ม: $group';
   }
 
   @override
   String reviewCittaQuestion(Object name) {
-    return 'Which group and feeling does citta “$name” have?';
+    return 'จิต “$name” อยู่ในภูมิใดและมีเวทนาอะไร?';
   }
 
   @override
   String cittaReviewAnswer(Object sphere, Object feeling, Object pali) {
-    return 'Sphere: $sphere\nFeeling: $feeling\nPāḷi: $pali';
+    return 'ภูมิ: $sphere\nเวทนา: $feeling\nบาลี: $pali';
   }
 
   @override
   String get noReviewContent =>
-      'This module has no review content yet. Please come back later.';
+      'บทเรียนนี้ยังไม่มีเนื้อหาทบทวน โปรดกลับมาใหม่ภายหลัง';
 
   @override
   String reviewedCount(Object revealed, Object total) {
-    return '$revealed / $total reviewed';
+    return 'ทบทวนแล้ว $revealed / $total';
   }
 
   @override
   String get reviewComplete =>
-      'You reviewed all the content. Take the quiz to check your understanding.';
+      'คุณทบทวนเนื้อหาครบแล้ว ทำแบบทดสอบเพื่อตรวจความเข้าใจ';
 
   @override
-  String get tapToReveal => 'Tap to reveal the answer';
+  String get tapToReveal => 'แตะเพื่อดูคำตอบ';
 
   @override
   String answerLabel(Object answer) {
-    return 'Answer: $answer';
+    return 'คำตอบ: $answer';
   }
 
   @override
-  String get revealAnswer => 'Reveal answer';
+  String get revealAnswer => 'แสดงคำตอบ';
 
   @override
   String moduleQuizTitle(Object module) {
-    return 'Quiz\n$module';
+    return 'แบบทดสอบ\n$module';
   }
 
   @override
   String moduleContentCount(Object count) {
-    return '$count items in this module';
+    return '$count หัวข้อในบทเรียนนี้';
   }
 
   @override
   String get quizMaximumDescription =>
-      'Up to 10 multiple-choice questions covering this module';
+      'คำถามปรนัยสูงสุด 10 ข้อครอบคลุมบทเรียนนี้';
 
   @override
-  String get startQuiz => 'Start quiz';
+  String get startQuiz => 'เริ่มแบบทดสอบ';
 
   @override
   String cittasCount(Object count) {
-    return '$count cittas';
+    return 'จิต $count ดวง';
   }
 
   @override
   String cetasikasCount(Object count) {
-    return '$count cetasikas';
+    return 'เจตสิก $count ดวง';
   }
 
   @override
   String noteForItem(Object name) {
-    return 'Note: $name';
+    return 'บันทึก: $name';
   }
 
   @override
@@ -905,12 +912,12 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String quizLevelDescription(Object count) {
-    return 'Each level generates up to $count questions from this module';
+    return 'แต่ละระดับจะสร้างคำถามสูงสุด $count ข้อจากบทเรียนนี้';
   }
 
   @override
   String get insufficientQuizData =>
-      'This module does not have enough data to create questions.';
+      'บทเรียนนี้มีข้อมูลไม่เพียงพอในการสร้างคำถาม';
 
   @override
   String get explanation => 'คำอธิบาย';
@@ -923,133 +930,135 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String correctAnswers(Object score, Object total) {
-    return '$score / $total correct';
+    return 'ถูกต้อง $score / $total ข้อ';
   }
 
   @override
-  String get quizExcellent => 'Excellent! You have mastered this module.';
+  String get quizExcellent =>
+      'ยอดเยี่ยม! คุณเข้าใจบทเรียนนี้อย่างเชี่ยวชาญแล้ว';
 
   @override
-  String get quizTryAgain => 'Review the material and try again.';
+  String get quizTryAgain => 'ทบทวนเนื้อหาและลองใหม่อีกครั้ง';
 
   @override
   String get tryAgain => 'ลองอีกครั้ง';
 
   @override
   String quizInsufficientDataMessage(Object module) {
-    return 'Module “$module” does not have enough data to create questions.';
+    return 'บทเรียน “$module” มีข้อมูลไม่เพียงพอในการสร้างคำถาม';
   }
 
   @override
-  String get quizTypeCetasikaGroup => 'Cetasika classification';
+  String get quizTypeCetasikaGroup => 'การจำแนกเจตสิก';
 
   @override
-  String get quizTypeFeeling => 'Feeling recognition';
+  String get quizTypeFeeling => 'การระบุเวทนา';
 
   @override
-  String get quizTypeConflict => 'Doctrinal conflict';
+  String get quizTypeConflict => 'ความขัดแย้งทางธรรม';
 
   @override
-  String get quizTypeSphere => 'Sphere';
+  String get quizTypeSphere => 'ภูมิ (Sphere)';
 
   @override
   String get beginner => 'เริ่มต้น';
 
   @override
-  String get beginnerDescription => 'Basic cetasika groups and feelings';
+  String get beginnerDescription => 'กลุ่มเจตสิกพื้นฐานและเวทนา';
 
   @override
   String get intermediate => 'ปานกลาง';
 
   @override
-  String get intermediateDescription => 'Includes cetasika conflicts';
+  String get intermediateDescription => 'รวมถึงกฎความขัดแย้งของเจตสิก';
 
   @override
   String get advanced => 'ขั้นสูง';
 
   @override
-  String get advancedDescription => 'Includes spheres and all question types';
+  String get advancedDescription => 'รวมถึงภูมิและคำถามทุกประเภท';
 
   @override
-  String get trueLabel => 'True';
+  String get trueLabel => 'จริง';
 
   @override
-  String get falseLabel => 'False';
+  String get falseLabel => 'เท็จ';
 
   @override
-  String get trueOrFalse => 'True or false?';
+  String get trueOrFalse => 'จริงหรือเท็จ?';
 
   @override
   String quizCetasikaGroupQuestion(Object name, Object pali) {
-    return 'Which group contains “$name” ($pali)?';
+    return '“$name” ($pali) อยู่ในกลุ่มใด?';
   }
 
   @override
   String quizCetasikaGroupExplanation(
       Object name, Object group, Object description) {
-    return '“$name” belongs to $group.\n$description';
+    return '“$name” อยู่ในกลุ่ม $group\n$description';
   }
 
   @override
   String quizCetasikaClaim(Object name, Object pali, Object group) {
-    return '“$name” ($pali) belongs to $group. True or false?';
+    return '“$name” ($pali) อยู่ในกลุ่ม $group จริงหรือเท็จ?';
   }
 
   @override
   String quizCittaFeelingQuestion(Object name) {
-    return 'What feeling accompanies citta “$name”?';
+    return 'จิต “$name” มีเวทนาอะไรประกอบร่วม?';
   }
 
   @override
   String quizCittaFeelingExplanation(Object name, Object feeling) {
-    return '“$name” has $feeling.';
+    return '“$name” มี $feeling';
   }
 
   @override
   String quizCittaFeelingClaim(Object name, Object feeling) {
-    return 'Citta “$name” has $feeling. True or false?';
+    return 'จิต “$name” มี $feeling จริงหรือเท็จ?';
   }
 
   @override
-  String get conflictNo => 'No — they conflict';
+  String get conflictNo => 'ไม่ — เป็นปฏิปักษ์กัน';
 
   @override
-  String get conflictAlwaysYes => 'Yes — they always arise together';
+  String get conflictAlwaysYes => 'ใช่ — เกิดร่วมกันเสมอ';
 
   @override
-  String get conflictSometimesYes => 'Yes — they sometimes arise together';
+  String get conflictSometimesYes => 'ใช่ — เกิดร่วมกันในบางครั้ง';
 
   @override
   String quizConflictQuestion(Object first, Object second) {
-    return 'Can “$first” and “$second” arise together in one citta?';
+    return '“$first” และ “$second” สามารถเกิดร่วมกันในจิตดวงเดียวกันได้หรือไม่?';
   }
 
   @override
   String quizSphereQuestion(Object name) {
-    return 'To which sphere does citta “$name” belong?';
+    return 'จิต “$name” จัดอยู่ในภูมิใด?';
   }
 
   @override
   String quizSphereExplanation(Object name, Object sphere) {
-    return '“$name” belongs to $sphere.';
+    return '“$name” อยู่ใน $sphere';
   }
 
   @override
   String quizSphereClaim(Object name, Object sphere) {
-    return 'Citta “$name” belongs to $sphere. True or false?';
+    return 'จิต “$name” จัดอยู่ใน $sphere จริงหรือเท็จ?';
   }
 
   @override
-  String get phaseFoundation => 'Phase 1 — Foundation';
+  String get phaseFoundation => 'ระยะที่ 1 — รากฐาน';
 
   @override
-  String get phaseCausality => 'Phase 2 — Causality';
+  String get phaseCausality => 'ระยะที่ 2 — เหตุปัจจัย';
 
   @override
-  String get phaseMastery => 'Phase 3 — Mastery';
+  String get phaseMastery => 'ระยะที่ 3 — ความเชี่ยวชาญ';
 
   @override
-  String get contentFallbackNotice => 'รายการนี้ยังไม่ได้แปล จึงแสดงเนื้อหาการเรียนภาษาอังกฤษ';
+  String get contentFallbackNotice =>
+      'รายการนี้ยังไม่ได้แปล จึงแสดงเนื้อหาการเรียนภาษาอังกฤษ';
 
   @override
   String get listenAll => 'ฟังทั้งหมด';
@@ -1082,15 +1091,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get resumeListening => 'ฟังต่อ';
 
   @override
-  String get continueListening => 'Continue listening';
-
-  @override
-  String get sleepTimer => 'ตั้งเวลาปิด';
-
-  @override
-  String get sleepTimerOff => 'ปิด';
-
-  @override
   String get minutesShort => 'นาที';
 
   @override
@@ -1103,35 +1103,73 @@ class AppLocalizationsTh extends AppLocalizations {
   String get previousTrack => 'ส่วนก่อนหน้า';
 
   @override
-  String get karaokeSettingsTitle => 'Listening & karaoke';
+  String get sleepTimer => 'ตั้งเวลาปิด';
 
   @override
-  String get karaokeModeTitle => 'Karaoke mode';
+  String get sleepTimerOff => 'ปิด';
 
   @override
-  String get karaokeModeSubtitle => 'Highlight the text being read while listening';
+  String get sleepTimer15 => '15 นาที';
 
   @override
-  String get karaokeLineHighlightTitle => 'Highlight current line';
+  String get sleepTimer30 => '30 นาที';
 
   @override
-  String get karaokeLineHighlightSubtitle => 'Shade the paragraph being read';
+  String get sleepTimer60 => '60 นาที';
 
   @override
-  String get karaokeWordHighlightTitle => 'Highlight current word';
+  String sleepTimerRemaining(Object minutes) {
+    return 'ตั้งเวลาปิด: เหลือ $minutes นาที';
+  }
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Shade each word as it is spoken (estimated timing)';
+  String get audioModelUnavailable =>
+      'ไม่มีเสียงประสาทเทียม กำลังใช้เสียงของอุปกรณ์';
 
   @override
-  String get audioFloatingGoTo => 'Go to what\'s playing';
+  String get realDuration => 'ระยะเวลา';
 
   @override
-  String get audioFloatingHide => 'Hide player';
+  String get estimatedDuration => 'ระยะเวลาโดยประมาณ';
 
   @override
-  String get audioFloatingRestore => 'Show player';
+  String get continueListening => 'ฟังต่อ';
 
   @override
-  String get audioFloatingClose => 'Close player';
+  String get audioBackgroundLimit =>
+      'การเล่นเสียงพื้นหลังขึ้นอยู่กับเครื่องมือแปลงข้อความเป็นเสียงที่ติดตั้งไว้';
+
+  @override
+  String get karaokeSettingsTitle => 'การฟังและการไฮไลต์';
+
+  @override
+  String get karaokeModeTitle => 'โหมดคาราโอเกะ';
+
+  @override
+  String get karaokeModeSubtitle => 'ไฮไลต์ข้อความที่กำลังอ่านขณะฟัง';
+
+  @override
+  String get karaokeLineHighlightTitle => 'ไฮไลต์บรรทัดปัจจุบัน';
+
+  @override
+  String get karaokeLineHighlightSubtitle => 'เน้นข้อความย่อหน้าที่กำลังอ่าน';
+
+  @override
+  String get karaokeWordHighlightTitle => 'ไฮไลต์ทีละคำ';
+
+  @override
+  String get karaokeWordHighlightSubtitle =>
+      'เน้นทีละคำตามจังหวะการอ่าน (ประมาณการ)';
+
+  @override
+  String get audioFloatingGoTo => 'ไปยังเนื้อหาที่กำลังเล่น';
+
+  @override
+  String get audioFloatingHide => 'ซ่อนแถบควบคุมเสียง';
+
+  @override
+  String get audioFloatingRestore => 'แสดงแถบควบคุมเสียง';
+
+  @override
+  String get audioFloatingClose => 'ปิดเครื่องเล่นเสียง';
 }
