@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "सर्व चित्त ऐका",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "सर्व चेतसिक ऐका",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "या घटकापासून ऐकण्यासाठी जास्त वेळ दाबून धरा",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "त्या घटकापासून ऐकण्यासाठी चित्त पंक्ती किंवा चेतसिक स्तंभ जास्त वेळ दाबून धरा. संपूर्ण यादी ऐकण्यासाठी तक्त्याच्या कोपऱ्यातील हेडफोन चिन्हावर टॅप करा.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Got it",
   "@understood": {
     "description": "understood"

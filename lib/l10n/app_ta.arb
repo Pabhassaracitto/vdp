@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "அனைத்து சித்தங்களையும் கேளுங்கள்",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "அனைத்து சைதசிகங்களையும் கேளுங்கள்",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "இந்த உருப்படியிலிருந்து கேட்க நீண்ட நேரம் அழுத்திப் பிடிக்கவும்",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "அந்த உருப்படியிலிருந்து கேட்க ஒரு சித்த வரிசை அல்லது சைதசிக நெடுவரிசையை நீண்ட நேரம் அழுத்திப் பிடிக்கவும். முழு பட்டியலையும் கேட்க அட்டவணையின் மூலையில் உள்ள ஹெட்ஃபோன் படத்தைத் தட்டவும்.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Got it",
   "@understood": {
     "description": "understood"

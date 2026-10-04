@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "စိတ်အားလုံး နားထောင်ရန်",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "စေတသိက်အားလုံး နားထောင်ရန်",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "ဤအရာမှ နားထောင်ရန် နှိပ်ဖိထားပါ",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "စိတ် တစ်ကြောင်း သို့မဟုတ် စေတသိက် တစ်ခုကို နှိပ်ဖိထားခြင်းဖြင့် ထိုအရာမှ နားထောင်ပါ။ စာရင်းအားလုံး နားထောင်ရန် စားပွဲကွက် ထောင့်ရှိ နားကြပ်သင်္ကေတကို နှိပ်ပါ။",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "နားလည်ပါပြီ",
   "@understood": {
     "description": "understood"

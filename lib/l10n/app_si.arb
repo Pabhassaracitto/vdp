@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "සියලු චිත්ත අසන්න",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "සියලු චෛතසික අසන්න",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "මෙම අයිතමයෙන් ඇසීමට දිගුවට ඔබාගෙන සිටින්න",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "චිත්ත පේළියක් හෝ චෛතසික තීරුවක් දිගුවට ඔබාගෙන සිටිමින් එම අයිතමයෙන් අසන්න. මුළු ලැයිස්තුවම ඇසීමට වගුවේ කොනේ හෙඩ්ෆෝන් නිරූපකය තට්ටු කරන්න.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "තේරුණා",
   "@understood": {
     "description": "understood"

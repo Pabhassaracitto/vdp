@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "ฟังจิตทั้งหมด",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "ฟังเจตสิกทั้งหมด",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "กดค้างเพื่อฟังจากรายการนี้",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "กดค้างที่แถวจิตหรือคอลัมน์เจตสิกเพื่อฟังจากรายการนั้น แตะไอคอนหูฟังที่มุมตารางเพื่อฟังรายการทั้งหมด",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "เข้าใจแล้ว",
   "@understood": {
     "description": "understood"

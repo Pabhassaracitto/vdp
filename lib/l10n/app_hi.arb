@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "सभी चित्त सुनें",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "सभी चेतसिक सुनें",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "इस मद से सुनने के लिए देर तक दबाए रखें",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "किसी चित्त पंक्ति या चेतसिक कॉलम को देर तक दबाकर उस मद से सुनें। पूरी सूची सुनने के लिए तालिका के कोने में हेडफ़ोन आइकन पर टैप करें।",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "समझ गया",
   "@understood": {
     "description": "understood"

@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "Écouter tous les citta",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "Écouter tous les cetasika",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "Appuyez longuement pour écouter à partir de cet élément",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "Maintenez appuyée une ligne de citta ou une colonne de cetasika pour écouter à partir de cet élément. Touchez l’icône casque dans le coin du tableau pour écouter toute la liste.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Got it",
   "@understood": {
     "description": "understood"
@@ -1495,7 +1511,7 @@
   },
   "karaokeSettingsTitle": "Écoute et surlignage",
   "karaokeModeTitle": "Mode karaoké",
-  "karaokeModeSubtitle": "Surligner le texte lu pendant l'écoute",
+  "karaokeModeSubtitle": "Surligner le texte lu pendant l’écoute",
   "karaokeLineHighlightTitle": "Surligner la ligne actuelle",
   "karaokeLineHighlightSubtitle": "Ombrer le paragraphe en cours de lecture",
   "karaokeWordHighlightTitle": "Surligner mot à mot",

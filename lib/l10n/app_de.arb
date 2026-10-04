@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "Alle Cittas anhören",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "Alle Cetasikas anhören",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "Zum Anhören ab diesem Element lange drücken",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "Halten Sie eine Citta-Zeile oder eine Cetasika-Spalte lange gedrückt, um ab diesem Element zu hören. Tippen Sie auf das Kopfhörersymbol in der Tabellenecke, um die ganze Liste zu hören.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Got it",
   "@understood": {
     "description": "understood"

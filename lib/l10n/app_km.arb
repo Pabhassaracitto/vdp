@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "ស្ដាប់ចិត្តទាំងអស់",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "ស្ដាប់ចេតសិកទាំងអស់",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "ចុចឱ្យជាប់ដើម្បីស្ដាប់ពីធាតុនេះ",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "ចុចឱ្យជាប់លើជួរចិត្ត ឬជួរឈរចេតសិក ដើម្បីស្ដាប់ពីធាតុនោះ។ ប៉ះរូបតំណាងក្បាលត្រាក់នៅជ្រុងតារាង ដើម្បីស្ដាប់បញ្ជីទាំងមូល។",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Got it",
   "@understood": {
     "description": "understood"

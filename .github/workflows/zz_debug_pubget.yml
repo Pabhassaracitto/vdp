@@ -1,64 +1,58 @@
 name: ZZ Debug pub get (temporary)
 
-# TEMPORARY diagnostic workflow — emits `flutter pub get` output as check-run
-# annotations so it can be read back through the REST API. Delete before
-# merging to main.
+# TEMPORARY diagnostic + regeneration workflow:
+# 1. Proves `flutter pub get` is green again after the ICU quote fix.
+# 2. Regenerates lib/l10n/app_localizations*.dart from the ARBs with the real
+#    `flutter gen-l10n` (the checked-in files had drifted badly), then commits
+#    and pushes the result back to this branch.
+# Delete before merging to main.
 
 on:
   push:
     branches:
       - 'arena/**'
 
+permissions:
+  contents: write
+
 jobs:
   debug:
-    name: flutter pub get diagnostics
+    name: pub get + gen-l10n regen
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
       - run: mkdir -p assets/animations assets/audio assets/data
-      - name: Flutter version
-        run: flutter --version
-      - name: pub get (capture)
+      - name: pub get (must be green)
         id: pubget
         run: |
           set +e
           flutter pub get > pub_get.txt 2>&1
           code=$?
           echo "code=$code" >> "$GITHUB_OUTPUT"
-          # Print to log for the web UI.
           cat pub_get.txt
-          # Also surface as annotations so the result is readable via the API.
           if [ "$code" != "0" ]; then
             tail -n 8 pub_get.txt | while IFS= read -r line; do
               printf '::error::%s\n' "${line:0:250}"
             done
           fi
-          exit 0
-      - name: gen-l10n direct run
-        id: genl10n
+          exit $code
+      - name: Regenerate localizations from ARBs
+        run: flutter gen-l10n
+      - name: Report regenerated diff size
         run: |
-          set +e
-          flutter gen-l10n > gen_l10n.txt 2>&1
-          code=$?
-          echo "code=$code" >> "$GITHUB_OUTPUT"
-          cat gen_l10n.txt
-          if [ "$code" != "0" ]; then
-            tail -n 8 gen_l10n.txt | while IFS= read -r line; do
-              printf '::error::gen-l10n: %s\n' "${line:0:250}"
-            done
-          fi
-          exit 0
-      - name: Verdict
+          git add -A lib/l10n untranslated_messages.json || true
+          git diff --cached --stat | tail -5
+      - name: Commit regenerated localizations
         run: |
-          echo "pub_get exit=${{ steps.pubget.outputs.code }} gen-l10n exit=${{ steps.genl10n.outputs.code }}"
-          printf '::error::VERDICT pub_get=%s gen_l10n=%s\n' \
-            "${{ steps.pubget.outputs.code }}" "${{ steps.genl10n.outputs.code }}"
-      - name: git diff after gen
-        run: |
-          git diff --stat | head -40 || true
-          if ! git diff --quiet; then
-            printf '::error::gen-l10n MODIFIED tracked files (checked-in generated output is out of sync with ARBs)\n'
-          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --cached --quiet && echo "nothing to commit" && exit 0
+          git commit -m "chore(l10n): regenerate app_localizations from ARBs (flutter gen-l10n)" || true
+          git push
+      - name: Verify analyzer is green after regen
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
