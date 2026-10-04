@@ -56,18 +56,27 @@ jobs:
           git push
       - name: Verify analyzer is green after regen
         run: flutter analyze --no-fatal-infos --no-fatal-warnings
-      - name: Run tests (failures surfaced as annotations)
+      - name: Run tests (failures committed for inspection)
+        id: tests
         run: |
           set +e
           flutter test > test_output.txt 2>&1
           code=$?
-          tail -n 40 test_output.txt
-          grep '\[E\]' test_output.txt | sort -u | head -10 > failed_tests.txt || true
-          while IFS= read -r line; do
-            printf '::error::%s\n' "${line:0:280}"
-          done < failed_tests.txt
-          grep -B2 -A18 '\[E\]' test_output.txt | head -80 > failure_details.txt || true
-          while IFS= read -r line; do
-            [ -n "$line" ] && printf '::error::DETAIL %s\n' "${line:0:250}"
-          done < failure_details.txt
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          tail -n 30 test_output.txt
+          if [ "$code" != "0" ]; then
+            mkdir -p .ci-debug
+            cp test_output.txt .ci-debug/last_test_run.txt
+          fi
+          exit 0
+      - name: Commit failing test output (if any)
+        if: steps.tests.outputs.code != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .ci-debug || true
+          git diff --cached --quiet && exit 0
+          git commit -m "debug: capture failing flutter test output" || true
+          git push
+      - name: Final verdict
+        run: exit ${{ steps.tests.outputs.code }}
