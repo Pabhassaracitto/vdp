@@ -60,12 +60,13 @@ void main() {
         doctrineOf: (c) => c.doctrinalNote ?? '',
       );
       final orders = [
-        for (final id in items)
+        for (final item in items)
           cittas
-              .firstWhere((c) => MatrixAudioSession.trackId(
-                    MatrixAudioAxis.citta,
-                    c.id,
-                  ) == id)
+              .firstWhere(
+                (c) =>
+                    MatrixAudioSession.trackId(MatrixAudioAxis.citta, c.id) ==
+                    item.id,
+              )
               .orderIndex
       ];
       expect(orders, orderedEquals([...orders]..sort()));
