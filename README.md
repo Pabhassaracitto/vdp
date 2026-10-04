@@ -75,8 +75,9 @@ vdp_app/
 │           └── progress_provider.dart # SharedPreferences persistence
 └── assets/
     └── data/
-        ├── cittas_sample.json        # Dữ liệu Tâm (mẫu 5/121)
-        └── cetasikas.json            # Dữ liệu 28/52 Tâm Sở
+        ├── cittas.json               # Dữ liệu đầy đủ 121 Tâm
+        ├── cetasikas.json            # Dữ liệu đầy đủ 52 Tâm Sở
+        └── (kammas, paticca, paccayas, rupas, vithis)
 ```
 
 ---
@@ -171,7 +172,7 @@ flutter run
 
 ### 🔜 Pha 3 — Mastery
 - [x] Lộ trình 17 sát-na (Vīthicitta) — trình diễn tương tác, chọn loại lộ và tự động phát
-- [ ] Pali Pronunciation (IPA + Audio)
+- [x] Nghe bài học bằng TTS (playlist, lặp, tốc độ, karaoke tô chữ, thanh nghe nổi toàn app) — áp dụng cho tab Học, Nhân Duyên và Bảng Tương Ứng (121 Tâm & 52 Tâm Sở, v0.10.2)
 - [ ] Smart Hints (Dwell > 3s hoặc error > 2 lần)
 - [ ] Virtual Teacher (Optional, có thể tắt)
 
@@ -185,16 +186,20 @@ flutter run
 
 ---
 
-## 📊 Dữ Liệu Hiện Có (Mẫu)
+## 📊 Dữ Liệu Hiện Có
 
 | Loại | Số lượng hiện có | Mục tiêu |
 |------|-----------------|---------|
-| Tâm (Citta) | 5 | 121 |
-| Tâm Sở (Cetasika) | 28 | 52 |
-| Conflict Rules | 8 | Đầy đủ |
-| Study Modules | 10 (định nghĩa) | 10 |
+| Tâm (Citta) | 121 | 121 ✅ |
+| Tâm Sở (Cetasika) | 52 | 52 ✅ |
+| Duyên Hệ (Paccaya) | 24 | 24 ✅ |
+| Lộ Trình Tâm (Vithi) | đầy đủ | đầy đủ ✅ |
+| Conflict Rules | theo dataset | Đầy đủ |
+| Study Modules | 17 (có nội dung bài học) | 17 |
 
-> ⚠️ Dữ liệu hiện tại là mẫu để demo. Cần bổ sung đầy đủ 121 Tâm và 52 Tâm Sở theo quy trình Editorial Workflow.
+> Dữ liệu 121 Tâm & 52 Tâm Sở đã hoàn thiện, được kiểm thử tự động
+> (`test/study_module_coverage_test.dart`, `test/matrix_audio_session_test.dart`)
+> và kiểm tra tính toàn vẹn 2 lớp trước khi load (xem Content Governance).
 
 ---
 
