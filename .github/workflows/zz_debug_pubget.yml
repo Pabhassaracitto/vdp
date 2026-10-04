@@ -56,3 +56,18 @@ jobs:
           git push
       - name: Verify analyzer is green after regen
         run: flutter analyze --no-fatal-infos --no-fatal-warnings
+      - name: Run tests (failures surfaced as annotations)
+        run: |
+          set +e
+          flutter test > test_output.txt 2>&1
+          code=$?
+          tail -n 40 test_output.txt
+          grep '\[E\]' test_output.txt | sort -u | head -10 > failed_tests.txt || true
+          while IFS= read -r line; do
+            printf '::error::%s\n' "${line:0:280}"
+          done < failed_tests.txt
+          grep -B2 -A18 '\[E\]' test_output.txt | head -80 > failure_details.txt || true
+          while IFS= read -r line; do
+            [ -n "$line" ] && printf '::error::DETAIL %s\n' "${line:0:250}"
+          done < failure_details.txt
+          exit $code

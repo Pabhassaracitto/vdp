@@ -184,8 +184,11 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.info_outline),
             title: Text(context.l10n.version),
+            // VDP 0.10.2: đọc từ app_version.dart — một nguồn sự thật duy
+            // nhất thay vì hardcode lệch phiên bản (trước đây hiển thị
+            // '0.2.0' trong khi release đã tới v0.10.x).
             trailing: const Text(
-              '0.2.0',
+              appVersionName,
               style: TextStyle(color: Colors.grey),
             ),
           ),
