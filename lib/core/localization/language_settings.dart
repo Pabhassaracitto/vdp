@@ -28,7 +28,15 @@ class LanguageSettingsSection extends ConsumerWidget {
         ListTile(
           leading: GestureDetector(
             onLongPress: () => _restoreSystemLanguage(context, ref),
-            child: const Icon(Icons.language_rounded),
+            child: Text(
+              AppLanguage.fromTag(
+                    AppLanguage.localeTag(
+                      settings.uiLocale ?? Localizations.localeOf(context),
+                    ),
+                  )?.flagEmoji ??
+                  '🌐',
+              style: const TextStyle(fontSize: 24),
+            ),
           ),
           title: Text(context.l10n.interfaceLanguage),
           subtitle: Text(currentLanguage),
@@ -287,11 +295,14 @@ class _LanguagePickerSheetState extends State<_LanguagePickerSheet> {
               itemBuilder: (context, index) {
                 final language = languages[index];
                 return ListTile(
-                  leading: CircleAvatar(
-                    child: Text(
-                      language.locale.languageCode.toUpperCase(),
-                      textDirection: TextDirection.ltr,
-                      style: const TextStyle(fontSize: 11),
+                  leading: SizedBox(
+                    width: 40,
+                    child: Center(
+                      child: Text(
+                        language.flagEmoji,
+                        textDirection: TextDirection.ltr,
+                        style: const TextStyle(fontSize: 25),
+                      ),
                     ),
                   ),
                   title: Directionality(

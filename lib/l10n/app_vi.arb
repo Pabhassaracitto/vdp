@@ -500,7 +500,7 @@
   "@tips": {
     "description": "tips"
   },
-  "matrixHelpTips": "• Nhấn Tâm để xem chi tiết\n• Nhấn Tâm Sở để xem xung đột\n• Dùng bộ lọc để thu hẹp\n• Xoay ngang để xem rộng hơn",
+  "matrixHelpTips": "• Nhấn Tâm để xem chi tiết\n• Nhấn Tâm Sở để xem điểm xung khắc\n• Dùng bộ lọc để thu hẹp\n• Xoay ngang để xem rộng hơn",
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
@@ -764,7 +764,7 @@
   "@proximateCause": {
     "description": "proximateCause"
   },
-  "doctrinalConflicts": "Xung đột giáo lý",
+  "doctrinalConflicts": "Tâm Sở xung khắc",
   "@doctrinalConflicts": {
     "description": "doctrinalConflicts"
   },
@@ -817,7 +817,7 @@
   "@selected": {
     "description": "selected"
   },
-  "dimmedByConflict": "Bị mờ do xung đột",
+  "dimmedByConflict": "Bị mờ do không tương ưng",
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
@@ -1241,7 +1241,7 @@
   "@quizTypeFeeling": {
     "description": "quizTypeFeeling"
   },
-  "quizTypeConflict": "Xung đột giáo lý",
+  "quizTypeConflict": "Tâm Sở xung khắc",
   "@quizTypeConflict": {
     "description": "quizTypeConflict"
   },
@@ -1261,7 +1261,7 @@
   "@intermediate": {
     "description": "intermediate"
   },
-  "intermediateDescription": "Bao gồm xung đột Tâm Sở",
+  "intermediateDescription": "Bao gồm các trường hợp Tâm Sở xung khắc",
   "@intermediateDescription": {
     "description": "intermediateDescription"
   },
@@ -1334,7 +1334,7 @@
       "feeling": {}
     }
   },
-  "conflictNo": "Không — chúng xung đột nhau",
+  "conflictNo": "Không — chúng không tương ưng",
   "@conflictNo": {
     "description": "conflictNo"
   },
@@ -1493,19 +1493,19 @@
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
   },
-  "karaokeSettingsTitle": "Nghe & Karaoke",
+  "karaokeSettingsTitle": "Nghe & Tô sáng",
   "@karaokeSettingsTitle": {
     "description": "karaokeSettingsTitle"
   },
-  "karaokeModeTitle": "Chế độ Karaoke",
+  "karaokeModeTitle": "Chế độ tô sáng khi nghe",
   "@karaokeModeTitle": {
     "description": "karaokeModeTitle"
   },
-  "karaokeModeSubtitle": "Tô sáng chữ đang đọc khi nghe bài",
+  "karaokeModeSubtitle": "Tô sáng văn bản đang được đọc khi nghe bài",
   "@karaokeModeSubtitle": {
     "description": "karaokeModeSubtitle"
   },
-  "karaokeLineHighlightTitle": "Sáng dòng đang đọc",
+  "karaokeLineHighlightTitle": "Tô sáng dòng đang đọc",
   "@karaokeLineHighlightTitle": {
     "description": "karaokeLineHighlightTitle"
   },
@@ -1513,11 +1513,11 @@
   "@karaokeLineHighlightSubtitle": {
     "description": "karaokeLineHighlightSubtitle"
   },
-  "karaokeWordHighlightTitle": "Sáng từng chữ đang đọc",
+  "karaokeWordHighlightTitle": "Tô sáng từng từ đang đọc",
   "@karaokeWordHighlightTitle": {
     "description": "karaokeWordHighlightTitle"
   },
-  "karaokeWordHighlightSubtitle": "Tô từng chữ theo nhịp đọc (ước tính)",
+  "karaokeWordHighlightSubtitle": "Tô sáng từng từ theo nhịp đọc (ước tính)",
   "@karaokeWordHighlightSubtitle": {
     "description": "karaokeWordHighlightSubtitle"
   },

@@ -399,7 +399,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get matrixHelpTips =>
-      '• Nhấn Tâm để xem chi tiết\n• Nhấn Tâm Sở để xem xung đột\n• Dùng bộ lọc để thu hẹp\n• Xoay ngang để xem rộng hơn';
+      '• Nhấn Tâm để xem chi tiết\n• Nhấn Tâm Sở để xem điểm xung khắc\n• Dùng bộ lọc để thu hẹp\n• Xoay ngang để xem rộng hơn';
 
   @override
   String get understood => 'Đã hiểu';
@@ -598,7 +598,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get proximateCause => 'Nhân gần';
 
   @override
-  String get doctrinalConflicts => 'Xung đột giáo lý';
+  String get doctrinalConflicts => 'Tâm Sở xung khắc';
 
   @override
   String rulesCount(Object count) {
@@ -633,7 +633,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get selected => 'Đang được chọn';
 
   @override
-  String get dimmedByConflict => 'Bị mờ do xung đột';
+  String get dimmedByConflict => 'Bị mờ do không tương ưng';
 
   @override
   String get matrixCornerSemantics => 'Góc bảng: hàng là Tâm và cột là Tâm Sở';
@@ -945,7 +945,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get quizTypeFeeling => 'Nhận diện Thọ';
 
   @override
-  String get quizTypeConflict => 'Xung đột giáo lý';
+  String get quizTypeConflict => 'Tâm Sở xung khắc';
 
   @override
   String get quizTypeSphere => 'Cõi giới';
@@ -960,7 +960,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get intermediate => 'Trung cấp';
 
   @override
-  String get intermediateDescription => 'Bao gồm xung đột Tâm Sở';
+  String get intermediateDescription => 'Bao gồm các trường hợp Tâm Sở xung khắc';
 
   @override
   String get advanced => 'Nâng cao';
@@ -1009,7 +1009,7 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get conflictNo => 'Không — chúng xung đột nhau';
+  String get conflictNo => 'Không — chúng không tương ưng';
 
   @override
   String get conflictAlwaysYes => 'Có — luôn xuất hiện cùng nhau';
@@ -1102,25 +1102,25 @@ class AppLocalizationsVi extends AppLocalizations {
   String get previousTrack => 'Mục trước';
 
   @override
-  String get karaokeSettingsTitle => 'Nghe & Karaoke';
+  String get karaokeSettingsTitle => 'Nghe & Tô sáng';
 
   @override
-  String get karaokeModeTitle => 'Chế độ Karaoke';
+  String get karaokeModeTitle => 'Chế độ tô sáng khi nghe';
 
   @override
-  String get karaokeModeSubtitle => 'Tô sáng chữ đang đọc khi nghe bài';
+  String get karaokeModeSubtitle => 'Tô sáng văn bản đang được đọc khi nghe bài';
 
   @override
-  String get karaokeLineHighlightTitle => 'Sáng dòng đang đọc';
+  String get karaokeLineHighlightTitle => 'Tô sáng dòng đang đọc';
 
   @override
   String get karaokeLineHighlightSubtitle => 'Tô nền đoạn văn đang được đọc';
 
   @override
-  String get karaokeWordHighlightTitle => 'Sáng từng chữ đang đọc';
+  String get karaokeWordHighlightTitle => 'Tô sáng từng từ đang đọc';
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Tô từng chữ theo nhịp đọc (ước tính)';
+  String get karaokeWordHighlightSubtitle => 'Tô sáng từng từ theo nhịp đọc (ước tính)';
 
   @override
   String get audioFloatingGoTo => 'Đến nơi đang phát';

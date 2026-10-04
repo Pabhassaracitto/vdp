@@ -121,6 +121,39 @@ class AppLanguage {
 
   String get tag => localeTag(locale);
 
+  /// A compact, recognisable flag for the language picker. Country flags are
+  /// used where the locale distinguishes a regional variant (for example,
+  /// Simplified and Traditional Chinese).
+  String get flagEmoji => switch (locale.languageCode) {
+        'ar' => '🇸🇦',
+        'bn' => '🇧🇩',
+        'bo' => '🇹🇭',
+        'de' => '🇩🇪',
+        'en' => '🇬🇧',
+        'es' => '🇪🇸',
+        'fr' => '🇫🇷',
+        'hi' => '🇮🇳',
+        'id' => '🇮🇩',
+        'it' => '🇮🇹',
+        'ja' => '🇯🇵',
+        'km' => '🇰🇭',
+        'ko' => '🇰🇷',
+        'lo' => '🇱🇦',
+        'mn' => '🇲🇳',
+        'mr' => '🇮🇳',
+        'my' => '🇲🇲',
+        'pt' => '🇵🇹',
+        'ru' => '🇷🇺',
+        'si' => '🇱🇰',
+        'ta' => '🇮🇳',
+        'te' => '🇮🇳',
+        'th' => '🇹🇭',
+        'vi' => '🇻🇳',
+        'zh' when locale.countryCode == 'TW' => '🇹🇼',
+        'zh' => '🇨🇳',
+        _ => '🌐',
+      };
+
   /// Display only the endonym plus locale tag so the Settings screen does not
   /// leak English labels after a learner has chosen another interface language.
   /// English names remain searchable through [matches] for recovery.
