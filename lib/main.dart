@@ -127,7 +127,7 @@ class _AppRootState extends ConsumerState<_AppRoot> {
           // Timeout nhưng vẫn tiếp tục (data rỗng, hiện HomeScreen)
         },
       );
-    } catch (e, st) {
+    } catch (e) {
       // Bắt MỌI lỗi — không để _showOnboarding = null mãi mãi
       // Vẫn tiếp tục flow bình thường dù lỗi
     }

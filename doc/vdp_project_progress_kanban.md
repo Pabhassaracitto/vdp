@@ -67,6 +67,14 @@ Chỉ kéo tối đa 1-2 task từ mục To Do xuống đây để tập trung g
 [x] M1-T4: Xóa debug log tạm thời
 
 ✅ Done (Đã hoàn thành)
+
+Sprint: [Release 0.10.2] — QA toàn app + Bảng Tương Ứng: tìm kiếm AppBar & nghe 121 Tâm/52 Tâm Sở (2026-10-04)
+✅ QA: sửa P0 `flutter pub get` hỏng do 2 chuỗi ARB it/fr vi phạm cú pháp ICU (commit 575311b) — chi tiết doc/qa_report_0.10.2.md
+✅ QA: regenerate app_localizations 26 locale bằng flutter gen-l10n trong CI — hóa giải lệch tới 295 key giữa dart ↔ arb ("residual English" chưa từng tới người dùng)
+✅ QA: nguồn phiên bản duy nhất app_version.dart + pubspec 0.10.2+7 (Cài đặt trước hiển thị 0.2.0 hardcode)
+✅ QA: dọn 5 warning tồn đọng của analyzer (mục tiêu "0 lỗi" của Phase 3) + README cập nhật dataset 121/52
+✅ M9-T1: Tìm kiếm Bảng Tương Ứng dời vào AppBar — thu hồi nguyên một hàng (~56px) cho ma trận, có chấm báo hiệu bộ lọc đang hoạt động
+✅ M9-T2: Nghe 121 Tâm & 52 Tâm Sở trong Bảng Tương Ứng — tái dùng engine audioPlayerProvider (nhấn giữ hàng/cột, nút tai nghe góc bảng, tô sáng hàng đang đọc, +8 test)
 Lưu trữ lịch sử theo từng Sprint. Định dạng ghi rõ: Tên Sprint — Tính năng chính (Ngày hoàn thành) để sau này dễ làm báo cáo Release Notes.
 Sprint: [Phase 2] — Tối ưu hóa giao diện Bảng Tương Ưng landscape (2026-06-30)
 ✅ Tối ưu giao diện landscape: điều chỉnh headerWidth, cellSize, cetasikaHeaderHeight.

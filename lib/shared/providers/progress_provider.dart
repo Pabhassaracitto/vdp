@@ -135,7 +135,7 @@ class ProgressNotifier extends StateNotifier<UserProgress> {
         bookmarkedCetasikaIds: bookmarkedCetasikaIds,
         personalNotes: personalNotes,
       );
-    } catch (e, st) {
+    } catch (e) {
       assert(() {
         return true;
       }());

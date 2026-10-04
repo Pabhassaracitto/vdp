@@ -2,7 +2,6 @@
 
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -179,7 +178,7 @@ class VdpRepository extends StateNotifier<VdpDataState> {
             ? 'Chưa có dữ liệu — kiểm tra assets/data/'
             : null,
       );
-    } catch (e, st) {
+    } catch (e) {
       state = state.copyWith(
         status: DataLoadStatus.error,
         errorMessage: 'Lỗi khởi tạo: $e',
@@ -309,7 +308,6 @@ class VdpRepository extends StateNotifier<VdpDataState> {
         case KammaGroup.byResult:
           return k.byResult != null;
       }
-      return false;
     }).toList();
   }
 
