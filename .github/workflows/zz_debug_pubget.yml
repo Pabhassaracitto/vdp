@@ -1,0 +1,64 @@
+name: ZZ Debug pub get (temporary)
+
+# TEMPORARY diagnostic workflow — emits `flutter pub get` output as check-run
+# annotations so it can be read back through the REST API. Delete before
+# merging to main.
+
+on:
+  push:
+    branches:
+      - 'arena/**'
+
+jobs:
+  debug:
+    name: flutter pub get diagnostics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - run: mkdir -p assets/animations assets/audio assets/data
+      - name: Flutter version
+        run: flutter --version
+      - name: pub get (capture)
+        id: pubget
+        run: |
+          set +e
+          flutter pub get > pub_get.txt 2>&1
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          # Print to log for the web UI.
+          cat pub_get.txt
+          # Also surface as annotations so the result is readable via the API.
+          if [ "$code" != "0" ]; then
+            tail -n 8 pub_get.txt | while IFS= read -r line; do
+              printf '::error::%s\n' "${line:0:250}"
+            done
+          fi
+          exit 0
+      - name: gen-l10n direct run
+        id: genl10n
+        run: |
+          set +e
+          flutter gen-l10n > gen_l10n.txt 2>&1
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          cat gen_l10n.txt
+          if [ "$code" != "0" ]; then
+            tail -n 8 gen_l10n.txt | while IFS= read -r line; do
+              printf '::error::gen-l10n: %s\n' "${line:0:250}"
+            done
+          fi
+          exit 0
+      - name: Verdict
+        run: |
+          echo "pub_get exit=${{ steps.pubget.outputs.code }} gen-l10n exit=${{ steps.genl10n.outputs.code }}"
+          printf '::error::VERDICT pub_get=%s gen_l10n=%s\n' \
+            "${{ steps.pubget.outputs.code }}" "${{ steps.genl10n.outputs.code }}"
+      - name: git diff after gen
+        run: |
+          git diff --stat | head -40 || true
+          if ! git diff --quiet; then
+            printf '::error::gen-l10n MODIFIED tracked files (checked-in generated output is out of sync with ARBs)\n'
+          fi
