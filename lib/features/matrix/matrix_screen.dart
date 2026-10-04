@@ -18,9 +18,12 @@ import '../../shared/widgets/association_cell.dart';
 import '../../shared/widgets/cetasika_header.dart';
 import '../../shared/widgets/citta_row_header.dart';
 import '../../shared/widgets/matrix_corner_header.dart';
+import '../audio/providers/audio_player_provider.dart';
+import '../audio/widgets/playlist_sheet.dart';
 import '../detail/cetasika_detail_sheet.dart';
 import '../detail/citta_detail_sheet.dart';
 import '../settings/settings_screen.dart';
+import 'matrix_audio_session.dart';
 
 final selectedCittaProvider = StateProvider<String?>((ref) => null);
 final selectedCetasikaProvider = StateProvider<String?>((ref) => null);
@@ -116,6 +119,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   bool _showScrollToTop = false;
   bool _searchExpanded = false;
   final TextEditingController _searchController = TextEditingController();
+  final FocusNode _searchFocusNode = FocusNode();
 
   @override
   void initState() {
@@ -193,7 +197,76 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     _verticalController2.dispose();
     _searchDebounceTimer?.cancel();
     _searchController.dispose();
+    _searchFocusNode.dispose();
     super.dispose();
+  }
+
+  // ════════════════════════════════════════════════════════════
+  //  LISTENING (VDP 0.10.2) — 121 Tâm & 52 Tâm Sở
+  //  Dùng lại engine nghe chung của app (audioPlayerProvider): nhấn giữ
+  //  hàng/cột để nghe từ mục đó, nút tai nghe ở góc bảng để nghe cả danh
+  //  sách. Thanh nghe nổi toàn app điều khiển phiên như mọi tab khác.
+  // ════════════════════════════════════════════════════════════
+
+  /// Phát từ một Tâm cụ thể (nhấn giữ hàng Tâm).
+  Future<void> _listenFromCitta(CittaModel citta) async {
+    await MatrixAudioSession.prepare(context, ref,
+        axis: MatrixAudioAxis.citta);
+    if (!mounted) return;
+    await ref
+        .read(audioPlayerProvider.notifier)
+        .playFrom(MatrixAudioSession.trackId(MatrixAudioAxis.citta, citta.id));
+  }
+
+  /// Phát từ một Tâm Sở cụ thể (nhấn giữ cột Tâm Sở).
+  Future<void> _listenFromCetasika(CetasikaModel cetasika) async {
+    await MatrixAudioSession.prepare(context, ref,
+        axis: MatrixAudioAxis.cetasika);
+    if (!mounted) return;
+    await ref.read(audioPlayerProvider.notifier).playFrom(
+        MatrixAudioSession.trackId(MatrixAudioAxis.cetasika, cetasika.id));
+  }
+
+  /// Nút tai nghe ở góc bảng: nghe cả danh sách của một trục; nếu phiên đó
+  /// đang phát thì mở sheet danh sách phát để xem/tua.
+  Future<void> _toggleAxisListening(MatrixAudioAxis axis) async {
+    final audio = ref.read(audioPlayerProvider);
+    final sid = MatrixAudioSession.sessionId(axis);
+    final isThisSession = audio.moduleId == sid && audio.hasSession;
+    if (isThisSession && audio.isPlaying) {
+      await PlaylistSheet.show(
+        context,
+        color: Theme.of(context).colorScheme.primary,
+        moduleId: sid,
+      );
+      return;
+    }
+    await MatrixAudioSession.prepare(context, ref, axis: axis);
+    if (!mounted) return;
+    final canResume =
+        ref.read(audioPlayerProvider).moduleId == sid &&
+        ref.read(audioPlayerProvider).canResume;
+    await ref
+        .read(audioPlayerProvider.notifier)
+        .playAll(resume: canResume);
+  }
+
+  void _closeSearch() {
+    _searchFocusNode.unfocus();
+    _searchController.clear();
+    ref.read(matrixSearchQueryProvider.notifier).state = '';
+    setState(() => _searchExpanded = false);
+  }
+
+  Widget _searchIconButton() {
+    return IconButton(
+      icon: const Icon(Icons.search),
+      onPressed: () {
+        setState(() => _searchExpanded = true);
+        _searchFocusNode.requestFocus();
+      },
+      tooltip: context.l10n.searchCittaCetasika,
+    );
   }
 
   // ════════════════════════════════════════════════════════════
@@ -219,62 +292,145 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     final cetasikas = List<CetasikaModel>.from(dataState.cetasikas)
       ..sort((a, b) => a.traditionalOrder.compareTo(b.traditionalOrder));
 
+    // VDP 0.10.2: thanh tìm kiếm sống trong AppBar (thay vì một hàng riêng
+    // chiếm ~56px diện tích bảng) — tab này cần mọi pixel có được.
+    final query = ref.watch(matrixSearchQueryProvider);
+    final searchType = ref.watch(matrixSearchTypeProvider);
+    final audio = ref.watch(audioPlayerProvider);
+    final playingCittaTrack = audio.sourceKind == AudioSourceKind.matrixCitta
+        ? audio.currentSectionId
+        : null;
+    final playingCetasikaTrack =
+        audio.sourceKind == AudioSourceKind.matrixCetasika
+            ? audio.currentSectionId
+            : null;
+
     return Scaffold(
       appBar: AppBar(
-        title: Semantics(
-          label: context.l10n.matrixSemantics(cittas.length),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                context.l10n.matrixTitle,
-                style: const TextStyle(fontSize: 18),
+        title: _searchExpanded
+            ? _buildAppBarSearchField()
+            : Semantics(
+                label: context.l10n.matrixSemantics(cittas.length),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      context.l10n.matrixTitle,
+                      style: const TextStyle(fontSize: 18),
+                    ),
+                    // Khi còn bộ lọc tìm kiếm hoạt động, dòng phụ hiển thị
+                    // truy vấn thay vì tagline — báo hiệu rõ bảng đang được
+                    // lọc mà không tốn thêm không gian dọc.
+                    Text(
+                      query.isNotEmpty ? '"$query"' : context.l10n.appTagline,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: query.isNotEmpty
+                            ? Theme.of(context).colorScheme.onPrimary
+                            : Colors.white70,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
               ),
-              Text(
-                context.l10n.appTagline,
-                style: const TextStyle(fontSize: 12, color: Colors.white70),
-              ),
-            ],
-          ),
-        ),
         actions: [
-          IconButton(
-            icon: Icon(
-              _forceLandscape
-                  ? Icons.stay_current_portrait
-                  : Icons.stay_current_landscape,
+          if (_searchExpanded) ...[
+            // Thu gọn mọi nút khác khi đang gõ — nhường chỗ cho ô tìm kiếm.
+            Padding(
+              padding: const EdgeInsetsDirectional.only(end: 8),
+              child: SegmentedButton<SearchType>(
+                showSelectedIcon: false,
+                style: SegmentedButton.styleFrom(
+                  visualDensity: VisualDensity.compact,
+                  backgroundColor: Colors.white.withValues(alpha: 0.15),
+                ),
+                segments: [
+                  ButtonSegment(
+                    value: SearchType.citta,
+                    label: Text(
+                      context.l10n.citta,
+                      style: const TextStyle(fontSize: 12),
+                    ),
+                  ),
+                  ButtonSegment(
+                    value: SearchType.cetasika,
+                    label: Text(
+                      context.l10n.cetasika,
+                      style: const TextStyle(fontSize: 12),
+                    ),
+                  ),
+                ],
+                selected: {searchType},
+                onSelectionChanged: (selection) => ref
+                    .read(matrixSearchTypeProvider.notifier)
+                    .state = selection.first,
+              ),
             ),
-            onPressed: _toggleOrientation,
-            tooltip: context.l10n.rotateScreen,
-          ),
-          IconButton(
-            icon: Icon(
-              _isHC ? Icons.contrast : Icons.contrast_outlined,
+            IconButton(
+              icon: const Icon(Icons.close),
+              onPressed: _closeSearch,
+              tooltip: context.l10n.close,
             ),
-            onPressed: () {
-              final settings = ref.read(settingsProvider);
-              ref.read(settingsProvider.notifier).state = settings.copyWith(
-                highContrastMode: !settings.highContrastMode,
-              );
-            },
-            tooltip: context.l10n.highContrast,
-          ),
-          IconButton(
-            icon: const Icon(Icons.info_outline),
-            onPressed: () => _showHelp(context),
-            tooltip: context.l10n.help,
-          ),
+          ] else ...[
+            // Chấm nhỏ báo hiệu bộ lọc tìm kiếm vẫn đang hoạt động.
+            if (query.isNotEmpty)
+              Badge(
+                smallSize: 9,
+                offset: const Offset(-3, 5),
+                child: _searchIconButton(),
+              )
+            else
+              _searchIconButton(),
+            IconButton(
+              icon: Icon(
+                _forceLandscape
+                    ? Icons.stay_current_portrait
+                    : Icons.stay_current_landscape,
+              ),
+              onPressed: _toggleOrientation,
+              tooltip: context.l10n.rotateScreen,
+            ),
+            IconButton(
+              icon: Icon(
+                _isHC ? Icons.contrast : Icons.contrast_outlined,
+              ),
+              onPressed: () {
+                final settings = ref.read(settingsProvider);
+                ref.read(settingsProvider.notifier).state = settings.copyWith(
+                  highContrastMode: !settings.highContrastMode,
+                );
+              },
+              tooltip: context.l10n.highContrast,
+            ),
+            IconButton(
+              icon: const Icon(Icons.info_outline),
+              onPressed: () => _showHelp(context),
+              tooltip: context.l10n.help,
+            ),
+          ],
         ],
       ),
       body: Column(
         children: [
           _buildBhumiFilter(),
-          _buildSearchBar(isLandscape),
           if (dataState.hasValidationWarnings &&
               !ref.read(progressProvider.notifier).warningDismissed)
             _buildWarningBanner(dataState),
           if (!isLandscape) _buildLegend(),
-          Expanded(child: _buildMatrix(context, cittas, cetasikas)),
+          Expanded(
+            child: _buildMatrix(
+              context,
+              cittas,
+              cetasikas,
+              playingCittaTrack: playingCittaTrack,
+              playingCetasikaTrack: playingCetasikaTrack,
+              axisIsPlaying: audio.isPlaying &&
+                  (audio.sourceKind == AudioSourceKind.matrixCitta ||
+                      audio.sourceKind == AudioSourceKind.matrixCetasika),
+            ),
+          ),
         ],
       ),
       floatingActionButton: AnimatedOpacity(
@@ -300,136 +456,67 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   // ════════════════════════════════════════════════════════════
-  //  SEARCH BAR
+  //  SEARCH (trong AppBar — VDP 0.10.2)
+  //  Trước đây thanh tìm kiếm chiếm nguyên một hàng của body (~56px ở
+  //  portrait). Giờ nó nằm ngay trong tiêu đề AppBar: đóng gọn thành một
+  //  icon kính lúp, mở ra thành ô nhập liệu thay thế tiêu đề — bảng
+  //  Tương Ứng nhận lại toàn bộ không gian dọc đã mất.
   // ════════════════════════════════════════════════════════════
 
-  Widget _buildSearchBar(bool isLandscape) {
+  Widget _buildAppBarSearchField() {
     final query = ref.watch(matrixSearchQueryProvider);
-    final searchType = ref.watch(matrixSearchTypeProvider);
-
-    // Collapsed state: just a magnifying glass icon
-    if (!_searchExpanded) {
-      return Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: isLandscape ? 2 : 4,
+    return TextField(
+      controller: _searchController,
+      focusNode: _searchFocusNode,
+      autofocus: true,
+      textInputAction: TextInputAction.search,
+      onSubmitted: (_) => _searchFocusNode.unfocus(),
+      decoration: InputDecoration(
+        hintText: context.l10n.searchCittaCetasika,
+        hintStyle: const TextStyle(fontSize: 14),
+        isDense: true,
+        prefixIcon: const Icon(Icons.search, size: 20),
+        prefixIconConstraints: const BoxConstraints(
+          minWidth: 36,
+          minHeight: 36,
         ),
-        child: Row(
-          children: [
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {
-                setState(() => _searchExpanded = true);
-              },
-              tooltip: context.l10n.searchCittaCetasika,
-            ),
-            if (query.isNotEmpty)
-              Text(
-                '"$query"',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: VdpColors.primary,
-                  fontWeight: FontWeight.w500,
-                ),
-                overflow: TextOverflow.ellipsis,
-              ),
-          ],
+        suffixIcon: query.isNotEmpty
+            ? IconButton(
+                icon: const Icon(Icons.clear, size: 20),
+                onPressed: () {
+                  _searchController.clear();
+                  ref.read(matrixSearchQueryProvider.notifier).state = '';
+                },
+                tooltip: context.l10n.clearSearch,
+              )
+            : null,
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 12,
+          vertical: 10,
         ),
-      );
-    }
-
-    // Expanded state: full search bar with citta/cetasika toggle
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: 16,
-        vertical: isLandscape ? 4 : 8,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(24),
+          borderSide: BorderSide.none,
+        ),
+        filled: true,
+        fillColor: Colors.white.withValues(alpha: 0.18),
       ),
-      child: Row(
-        children: [
-          Expanded(
-            child: TextField(
-              controller: _searchController,
-              autofocus: true,
-              decoration: InputDecoration(
-                hintText: context.l10n.searchCittaCetasika,
-                hintStyle: TextStyle(fontSize: isLandscape ? 13 : 14),
-                prefixIcon: const Icon(Icons.search),
-                suffixIcon: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (query.isNotEmpty)
-                      IconButton(
-                        icon: const Icon(Icons.clear),
-                        onPressed: () {
-                          _searchController.clear();
-                          ref
-                              .read(matrixSearchQueryProvider.notifier)
-                              .state = '';
-                        },
-                        tooltip: context.l10n.clearSearch,
-                      ),
-                    IconButton(
-                      icon: const Icon(Icons.close),
-                      onPressed: () {
-                        _searchController.clear();
-                        ref
-                            .read(matrixSearchQueryProvider.notifier)
-                            .state = '';
-                        setState(() => _searchExpanded = false);
-                      },
-                      tooltip: context.l10n.close,
-                    ),
-                  ],
-                ),
-                contentPadding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: isLandscape ? 8 : 12,
-                ),
-                border: const OutlineInputBorder(),
-              ),
-              onChanged: (val) {
-                _searchDebounceTimer?.cancel();
-                _searchDebounceTimer =
-                    Timer(const Duration(milliseconds: 300), () {
-                  ref.read(matrixSearchQueryProvider.notifier).state = val;
-                  final matchedCittas =
-                      ref.read(searchMatchedCittaIndicesProvider);
-                  final matchedCetasikas =
-                      ref.read(searchMatchedCetasikaIndicesProvider);
-                  if (searchType == SearchType.citta) {
-                    _scrollToFirstMatch(
-                        matchedCittas, _verticalController1, 44.0);
-                  } else {
-                    _scrollToFirstMatch(
-                        matchedCetasikas, _horizontalController, 44.0);
-                  }
-                });
-              },
-            ),
-          ),
-          const SizedBox(width: 8),
-          ToggleButtons(
-            isSelected: [
-              searchType == SearchType.citta,
-              searchType == SearchType.cetasika,
-            ],
-            onPressed: (idx) {
-              ref.read(matrixSearchTypeProvider.notifier).state =
-                  idx == 0 ? SearchType.citta : SearchType.cetasika;
-            },
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Text(context.l10n.citta),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: Text(context.l10n.cetasika),
-              ),
-            ],
-          ),
-        ],
-      ),
+      style: const TextStyle(fontSize: 14),
+      onChanged: (val) {
+        _searchDebounceTimer?.cancel();
+        _searchDebounceTimer = Timer(const Duration(milliseconds: 300), () {
+          ref.read(matrixSearchQueryProvider.notifier).state = val;
+          final searchType = ref.read(matrixSearchTypeProvider);
+          final matchedCittas = ref.read(searchMatchedCittaIndicesProvider);
+          final matchedCetasikas =
+              ref.read(searchMatchedCetasikaIndicesProvider);
+          if (searchType == SearchType.citta) {
+            _scrollToFirstMatch(matchedCittas, _verticalController1, 44.0);
+          } else {
+            _scrollToFirstMatch(matchedCetasikas, _horizontalController, 44.0);
+          }
+        });
+      },
     );
   }
 
@@ -637,8 +724,11 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   Widget _buildMatrix(
   BuildContext context,
   List<CittaModel> cittas,
-  List<CetasikaModel> cetasikas,
-) {
+  List<CetasikaModel> cetasikas, {
+  String? playingCittaTrack,
+  String? playingCetasikaTrack,
+  bool axisIsPlaying = false,
+}) {
   final isLandscape =
       MediaQuery.of(context).orientation == Orientation.landscape;
   final double cellSize = isLandscape ? 30.0 : 44.0;
@@ -664,6 +754,15 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
               width: headerWidth,
               height: cetasikaHeaderHeight,
               isHighContrast: _isHC,
+              // VDP 0.10.2: tai nghe ở góc bảng — nghe cả danh sách
+              // Tâm (góc dưới, trục dọc) / Tâm Sở (góc trên, trục ngang).
+              onListenCetasikas: () =>
+                  _toggleAxisListening(MatrixAudioAxis.cetasika),
+              onListenCittas: () =>
+                  _toggleAxisListening(MatrixAudioAxis.citta),
+              isCetasikaAxisPlaying: axisIsPlaying &&
+                  playingCetasikaTrack != null,
+              isCittaAxisPlaying: axisIsPlaying && playingCittaTrack != null,
             ),
 
             // ── Danh sách Tâm (cuộn dọc) ──
@@ -679,6 +778,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                   final isDimmed = searchType == SearchType.citta &&
                       matchedCittas.isNotEmpty &&
                       !isMatch;
+                  final isListening = playingCittaTrack ==
+                      MatrixAudioSession.trackId(
+                          MatrixAudioAxis.citta, citta.id);
 
                   Widget child = GestureDetector(
                     onTap: () {
@@ -686,6 +788,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                           isSel ? null : citta.id;
                       if (!isSel) _showCittaDetail(context, citta);
                     },
+                    // Nhấn giữ hàng Tâm → nghe từ Tâm này (VDP 0.10.2).
+                    onLongPress: () => _listenFromCitta(citta),
                     child: CittaRowHeader(
                       citta: citta,
                       isSelected: isSel,
@@ -693,6 +797,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                       height: cellSize,
                       displayIndex: i + 1,
                       useHighContrast: _isHC,
+                      isListening: isListening,
                     ),
                   );
 
@@ -740,6 +845,9 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                       final isSearchDim = searchType == SearchType.cetasika &&
                           matchedCetasikas.isNotEmpty &&
                           !isMatch;
+                      final isListening = playingCetasikaTrack ==
+                          MatrixAudioSession.trackId(
+                              MatrixAudioAxis.cetasika, cs.id);
 
                       Widget child = GestureDetector(
                         onTap: () {
@@ -747,6 +855,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                               isSel ? null : cs.id;
                           if (!isSel) _showCetasikaDetail(context, cs);
                         },
+                        // Nhấn giữ cột Tâm Sở → nghe từ Tâm Sở này.
+                        onLongPress: () => _listenFromCetasika(cs),
                         child: CetasikaHeader(
                           cetasika: cs,
                           isSelected: isSel,
@@ -755,6 +865,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                           height: cetasikaHeaderHeight,
                           displayIndex: colIdx + 1,
                           useHighContrast: _isHC,
+                          isListening: isListening,
                         ),
                       );
 
@@ -883,6 +994,13 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
               ),
               const SizedBox(height: 8),
               Text(ctx.l10n.matrixHelpTips),
+              const SizedBox(height: 12),
+              Text(
+                '🔊 ${ctx.l10n.listenAll}',
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 8),
+              Text(ctx.l10n.matrixListenHelpBody),
             ],
           ),
         ),

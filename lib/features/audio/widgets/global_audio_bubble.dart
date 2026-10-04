@@ -22,6 +22,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/navigation/app_navigator.dart';
 import '../../../data/models/study_module.dart';
 import '../../../l10n/l10n.dart';
+import '../../home/home_tab_index.dart';
 import '../../paticca/presentation/providers/paticca_providers.dart';
 import '../../paticca/presentation/screens/paticca_screen.dart';
 import '../../study/module_detail_screen.dart';
@@ -61,6 +62,12 @@ class GlobalAudioBubble extends ConsumerWidget {
                   : PaticcaViewTab.list,
             );
         navigator.push(MaterialPageRoute(builder: (_) => const PaticcaScreen()));
+      case AudioSourceKind.matrixCitta:
+      case AudioSourceKind.matrixCetasika:
+        // VDP 0.10.2: phiên nghe Bảng Tương Ưng — về tab đầu (Matrix) của
+        // HomeScreen, pop mọi màn hình đang chồng lên về tận gốc.
+        ref.read(homeTabIndexProvider.notifier).state = kHomeTabMatrix;
+        navigator.popUntil((route) => route.isFirst);
     }
   }
 

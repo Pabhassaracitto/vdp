@@ -1,6 +1,6 @@
 name: vdp_app
 description: AbhiDhamma - an interactive Abhidhamma study app based on the King Milanda A curriculum
-version: 0.3.0+6
+version: 0.10.2+7
 publish_to: 'none'
 
 environment:

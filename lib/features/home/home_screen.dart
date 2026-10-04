@@ -14,8 +14,7 @@ import '../paticca/presentation/screens/paticca_screen.dart';
 import '../settings/settings_screen.dart';
 import '../study/study_screen.dart';
 import '../vithi/vithi_screen.dart';
-
-final _currentTabProvider = StateProvider<int>((ref) => 0);
+import 'home_tab_index.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -97,7 +96,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       bottomNavigationBar: NavigationBar(
         selectedIndex: tab,
         onDestinationSelected: (i) =>
-            ref.read(_currentTabProvider.notifier).state = i,
+            ref.read(homeTabIndexProvider.notifier).state = i,
         // M1-T4: HC fix — nền tối trong HC mode, tránh hòa lẫn với nền trắng
         backgroundColor: isHC ? HCColors.surface : VdpColors.surface,
         indicatorColor: VdpColors.primary.withOpacity(0.12),
