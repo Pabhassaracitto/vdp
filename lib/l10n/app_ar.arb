@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "الاستماع والتمييز الصوتي",
+  "karaokeModeTitle": "وضع القراءة المضاءة",
+  "karaokeModeSubtitle": "تمييز النص أثناء الاستماع",
+  "karaokeLineHighlightTitle": "تمييز السطر الحالي",
+  "karaokeLineHighlightSubtitle": "تظليل الفقرة الجاري قراءتها",
+  "karaokeWordHighlightTitle": "تمييز كلمة بكلمة",
+  "karaokeWordHighlightSubtitle": "تظليل كل كلمة عند نطقها",
+  "audioFloatingGoTo": "الانتقال إلى قيد التشغيل",
+  "audioFloatingHide": "إخفاء المشغل",
+  "audioFloatingRestore": "إظهار المشغل",
+  "audioFloatingClose": "إغلاق المشغل",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

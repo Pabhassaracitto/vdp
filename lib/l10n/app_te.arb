@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "వినడం మరియు హైలైట్ చేయడం",
+  "karaokeModeTitle": "కరోకే మోడ్",
+  "karaokeModeSubtitle": "వింటున్నప్పుడు చదువుతున్న వచనాన్ని హైలైట్ చేయండి",
+  "karaokeLineHighlightTitle": "ప్రస్తుత పంక్తిని హైలైట్ చేయండి",
+  "karaokeLineHighlightSubtitle": "చదువుతున్న పేరాను నీడలా చూపించండి",
+  "karaokeWordHighlightTitle": "పదం వారీగా హైలైట్ చేయండి",
+  "karaokeWordHighlightSubtitle": "చదివేటప్పుడు ప్రతి పదాన్ని హైలైట్ చేయండి",
+  "audioFloatingGoTo": "ప్రస్తుతం ప్లే అవుతున్న చోటికి వెళ్లండి",
+  "audioFloatingHide": "ప్లేయర్‌ని దాచండి",
+  "audioFloatingRestore": "ప్లేయర్‌ని చూపించండి",
+  "audioFloatingClose": "ప్లేయర్‌ని మూసివేయండి",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

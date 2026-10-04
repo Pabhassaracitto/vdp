@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "Сонсох ба тодруулах тохиргоо",
+  "karaokeModeTitle": "Караоке горим",
+  "karaokeModeSubtitle": "Сонсож байх үед уншигдаж буй текстийг тодруулна",
+  "karaokeLineHighlightTitle": "Одоогийн мөрийг тодруулах",
+  "karaokeLineHighlightSubtitle": "Уншигдаж буй догол мөрийг сүүдэрлэх",
+  "karaokeWordHighlightTitle": "Үг бүрийг тодруулах",
+  "karaokeWordHighlightSubtitle": "Уншигдах явцад үг бүрийг тодруулах",
+  "audioFloatingGoTo": "Тоглуулж буй руу очих",
+  "audioFloatingHide": "Тоглуулагчийг нуух",
+  "audioFloatingRestore": "Тоглуулагчийг харуулах",
+  "audioFloatingClose": "Тоглуулагчийг хаах",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

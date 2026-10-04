@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "Воспроизведение и подсветка",
+  "karaokeModeTitle": "Режим караоке",
+  "karaokeModeSubtitle": "Подсвечивать читаемый текст при прослушивании",
+  "karaokeLineHighlightTitle": "Подсвечивать текущую строку",
+  "karaokeLineHighlightSubtitle": "Затенять читаемый абзац",
+  "karaokeWordHighlightTitle": "Подсвечивать каждое слово",
+  "karaokeWordHighlightSubtitle": "Подсвечивать слова по мере их чтения",
+  "audioFloatingGoTo": "Перейти к текущей записи",
+  "audioFloatingHide": "Скрыть плеер",
+  "audioFloatingRestore": "Показать плеер",
+  "audioFloatingClose": "Закрыть плеер",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

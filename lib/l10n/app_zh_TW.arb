@@ -1,10 +1,10 @@
 {
   "@@locale": "zh_TW",
-  "appName": "AbhiDhamma",
+  "appName": "阿毗達摩",
   "@appName": {
     "description": "appName"
   },
-  "appTagline": "Abhidhamma Piṭaka",
+  "appTagline": "阿毗達摩藏",
   "@appTagline": {
     "description": "appTagline"
   },
@@ -12,27 +12,27 @@
   "@initializing": {
     "description": "initializing"
   },
-  "loadingDoctrineData": "正在載入並驗證佛法資料…",
+  "loadingDoctrineData": "正在加載並校驗法數數據…",
   "@loadingDoctrineData": {
     "description": "loadingDoctrineData"
   },
-  "loadingTakingLonger": "Startup is taking longer than expected. Dhamma data may be being optimized for your device.",
+  "loadingTakingLonger": "啟動時間長於預期。可能正在為您的設備優化數據。",
   "@loadingTakingLonger": {
     "description": "loadingTakingLonger"
   },
-  "unknownError": "Unknown error",
+  "unknownError": "未知錯誤",
   "@unknownError": {
     "description": "unknownError"
   },
-  "dataError": "Data error",
+  "dataError": "數據錯誤",
   "@dataError": {
     "description": "dataError"
   },
-  "invalidData": "Invalid data",
+  "invalidData": "數據無效",
   "@invalidData": {
     "description": "invalidData"
   },
-  "invalidDataDescription": "The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.",
+  "invalidDataDescription": "系統檢測到法數校驗規則衝突。請聯繫編輯團隊審查數據。",
   "@invalidDataDescription": {
     "description": "invalidDataDescription"
   },
@@ -116,7 +116,7 @@
   "@notes": {
     "description": "notes"
   },
-  "errorWithMessage": "Error: {message}",
+  "errorWithMessage": "錯誤: {message}",
   "@errorWithMessage": {
     "description": "errorWithMessage",
     "placeholders": {
@@ -177,7 +177,7 @@
       "language": {}
     }
   },
-  "holdGlobeToReset": "Press and hold the globe for 3 seconds to restore the system language",
+  "holdGlobeToReset": "長按地球圖標3秒可恢復系統語言",
   "@holdGlobeToReset": {
     "description": "holdGlobeToReset"
   },
@@ -346,43 +346,43 @@
       "count": {}
     }
   },
-  "onboardingVisualTitle": "See Clearly",
+  "onboardingVisualTitle": "清晰洞見",
   "@onboardingVisualTitle": {
     "description": "onboardingVisualTitle"
   },
-  "onboardingVisualSubtitle": "Citta × Cetasika Matrix",
+  "onboardingVisualSubtitle": "心與心所矩陣",
   "@onboardingVisualSubtitle": {
     "description": "onboardingVisualSubtitle"
   },
-  "onboardingVisualBody": "Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.",
+  "onboardingVisualBody": "在互動式矩陣中探索121種心和52種心所。色彩、形狀與文字清晰標示每種相應關係。",
   "@onboardingVisualBody": {
     "description": "onboardingVisualBody"
   },
-  "onboardingCausalityTitle": "Understand Deeply",
+  "onboardingCausalityTitle": "深刻理解",
   "@onboardingCausalityTitle": {
     "description": "onboardingCausalityTitle"
   },
-  "onboardingCausalitySubtitle": "Dependent Origination",
+  "onboardingCausalitySubtitle": "十二緣起",
   "@onboardingCausalitySubtitle": {
     "description": "onboardingCausalitySubtitle"
   },
-  "onboardingCausalityBody": "Explore the twelve links of dependent origination and classifications of kamma through connected learning views.",
+  "onboardingCausalityBody": "透過互聯的學習視角探索十二緣起支與業的分類法。",
   "@onboardingCausalityBody": {
     "description": "onboardingCausalityBody"
   },
-  "onboardingExploreTitle": "Discover for Yourself",
+  "onboardingExploreTitle": "自主探索",
   "@onboardingExploreTitle": {
     "description": "onboardingExploreTitle"
   },
-  "onboardingExploreSubtitle": "A Non-linear Study Path",
+  "onboardingExploreSubtitle": "非線性學習路徑",
   "@onboardingExploreSubtitle": {
     "description": "onboardingExploreSubtitle"
   },
-  "onboardingExploreBody": "Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.",
+  "onboardingExploreBody": "自由選擇十個相互關聯的修學單元。主動回憶、測驗與複習助您穩固法義。",
   "@onboardingExploreBody": {
     "description": "onboardingExploreBody"
   },
-  "beginExploring": "Begin exploring",
+  "beginExploring": "開始探索",
   "@beginExploring": {
     "description": "beginExploring"
   },
@@ -390,7 +390,7 @@
   "@matrixTitle": {
     "description": "matrixTitle"
   },
-  "matrixSemantics": "Abhidhamma Matrix showing {count} cittas",
+  "matrixSemantics": "阿毗達摩矩陣，顯示 {count} 種心",
   "@matrixSemantics": {
     "description": "matrixSemantics",
     "placeholders": {
@@ -417,7 +417,7 @@
   "@searchCittaCetasika": {
     "description": "searchCittaCetasika"
   },
-  "clearSearch": "Clear search",
+  "clearSearch": "清除搜尋",
   "@clearSearch": {
     "description": "clearSearch"
   },
@@ -469,7 +469,7 @@
   "@associationNever": {
     "description": "associationNever"
   },
-  "dataWarningsCount": "{count} data warnings",
+  "dataWarningsCount": "{count} 個數據警告",
   "@dataWarningsCount": {
     "description": "dataWarningsCount",
     "placeholders": {
@@ -508,7 +508,7 @@
   "@understood": {
     "description": "understood"
   },
-  "dataWarningTitle": "Data warning",
+  "dataWarningTitle": "數據警告",
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
@@ -516,7 +516,7 @@
   "@allFilters": {
     "description": "allFilters"
   },
-  "defilements": "Defilements",
+  "defilements": "煩惱",
   "@defilements": {
     "description": "defilements"
   },
@@ -600,7 +600,7 @@
       "count": {}
     }
   },
-  "relatedDhammas": "Related dhammas",
+  "relatedDhammas": "相關法",
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
@@ -647,7 +647,7 @@
       "explanation": {}
     }
   },
-  "kammaTitle": "Kamma",
+  "kammaTitle": "業 (Kamma)",
   "@kammaTitle": {
     "description": "kammaTitle"
   },
@@ -655,143 +655,143 @@
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },
-  "paliLabel": "Pāḷi:",
+  "paliLabel": "巴利語:",
   "@paliLabel": {
     "description": "paliLabel"
   },
-  "stopPronunciation": "Stop pronunciation",
+  "stopPronunciation": "停止發音",
   "@stopPronunciation": {
     "description": "stopPronunciation"
   },
-  "listenPaliPronunciation": "Listen to Pāḷi pronunciation",
+  "listenPaliPronunciation": "聆聽巴利語發音",
   "@listenPaliPronunciation": {
     "description": "listenPaliPronunciation"
   },
-  "ttsUnavailable": "Speech synthesis is not supported on this device.",
+  "ttsUnavailable": "此設備不支援語音合成。",
   "@ttsUnavailable": {
     "description": "ttsUnavailable"
   },
-  "dragHandleSemantics": "Drag to resize",
+  "dragHandleSemantics": "拖動以調整大小",
   "@dragHandleSemantics": {
     "description": "dragHandleSemantics"
   },
-  "cittaNumber": "Citta {number}",
+  "cittaNumber": "第 {number} 心",
   "@cittaNumber": {
     "description": "cittaNumber",
     "placeholders": {
       "number": {}
     }
   },
-  "doctrine": "Dhamma explanation",
+  "doctrine": "教理說明",
   "@doctrine": {
     "description": "doctrine"
   },
-  "examples": "Examples",
+  "examples": "例子",
   "@examples": {
     "description": "examples"
   },
-  "fixedCetasikasCount": "Invariable cetasikas ({count})",
+  "fixedCetasikasCount": "固定心所 ({count})",
   "@fixedCetasikasCount": {
     "description": "fixedCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "variableCetasikasCount": "Variable cetasikas ({count})",
+  "variableCetasikasCount": "不固定心所 ({count})",
   "@variableCetasikasCount": {
     "description": "variableCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "personalNote": "Personal note",
+  "personalNote": "個人筆記",
   "@personalNote": {
     "description": "personalNote"
   },
-  "personalNoteHint": "Enter your note…",
+  "personalNoteHint": "輸入您的筆記…",
   "@personalNoteHint": {
     "description": "personalNoteHint"
   },
-  "wholesome": "Wholesome",
+  "wholesome": "善",
   "@wholesome": {
     "description": "wholesome"
   },
-  "functional": "Functional",
+  "functional": "唯作",
   "@functional": {
     "description": "functional"
   },
-  "pleasantFeeling": "Pleasant bodily feeling",
+  "pleasantFeeling": "樂受",
   "@pleasantFeeling": {
     "description": "pleasantFeeling"
   },
-  "unpleasantFeeling": "Painful bodily feeling",
+  "unpleasantFeeling": "苦受",
   "@unpleasantFeeling": {
     "description": "unpleasantFeeling"
   },
-  "neutralFeeling": "Equanimous feeling",
+  "neutralFeeling": "捨受",
   "@neutralFeeling": {
     "description": "neutralFeeling"
   },
-  "joyfulFeeling": "Joyful feeling",
+  "joyfulFeeling": "喜受",
   "@joyfulFeeling": {
     "description": "joyfulFeeling"
   },
-  "alwaysAssociated": "Always associated",
+  "alwaysAssociated": "必定相應",
   "@alwaysAssociated": {
     "description": "alwaysAssociated"
   },
-  "mayBeAssociated": "May be associated",
+  "mayBeAssociated": "可能相應",
   "@mayBeAssociated": {
     "description": "mayBeAssociated"
   },
-  "fourfoldDefinition": "Fourfold definition",
+  "fourfoldDefinition": "四種特相 (特相/作用/現起/近因)",
   "@fourfoldDefinition": {
     "description": "fourfoldDefinition"
   },
-  "characteristic": "Characteristic",
+  "characteristic": "特相 (Lakkhaṇa)",
   "@characteristic": {
     "description": "characteristic"
   },
-  "functionLabel": "Function",
+  "functionLabel": "作用 (Rasa)",
   "@functionLabel": {
     "description": "functionLabel"
   },
-  "manifestation": "Manifestation",
+  "manifestation": "現起 (Paccupaṭṭhāna)",
   "@manifestation": {
     "description": "manifestation"
   },
-  "proximateCause": "Proximate cause",
+  "proximateCause": "近因 (Padaṭṭhāna)",
   "@proximateCause": {
     "description": "proximateCause"
   },
-  "doctrinalConflicts": "Doctrinal conflicts",
+  "doctrinalConflicts": "教理相違心所",
   "@doctrinalConflicts": {
     "description": "doctrinalConflicts"
   },
-  "rulesCount": "{count} rules",
+  "rulesCount": "{count} 條規則",
   "@rulesCount": {
     "description": "rulesCount",
     "placeholders": {
       "count": {}
     }
   },
-  "universalCetasikas": "7 universals",
+  "universalCetasikas": "7 通一切心心所",
   "@universalCetasikas": {
     "description": "universalCetasikas"
   },
-  "occasionalCetasikas": "6 occasionals",
+  "occasionalCetasikas": "6 雜心所",
   "@occasionalCetasikas": {
     "description": "occasionalCetasikas"
   },
-  "unwholesomeCetasikas": "14 unwholesome",
+  "unwholesomeCetasikas": "14 不善心所",
   "@unwholesomeCetasikas": {
     "description": "unwholesomeCetasikas"
   },
-  "beautifulCetasikas": "25 beautiful",
+  "beautifulCetasikas": "25 美心所",
   "@beautifulCetasikas": {
     "description": "beautifulCetasikas"
   },
-  "rowCittaSemantics": "Citta row {displayIndex}: {name}; canonical number {order}; group {group}; feeling {feeling}. {action}",
+  "rowCittaSemantics": "第 {displayIndex} 行心: {name}; 典籍編號 {order}; 分組 {group}; 感受 {feeling}。{action}",
   "@rowCittaSemantics": {
     "description": "rowCittaSemantics",
     "placeholders": {
@@ -803,7 +803,7 @@
       "action": {}
     }
   },
-  "cetasikaSemantics": "Cetasika {name} ({pali}), group {group}. {state} Tap for details.",
+  "cetasikaSemantics": "心所 {name} ({pali})，分組 {group}。{state} 點擊查看詳情。",
   "@cetasikaSemantics": {
     "description": "cetasikaSemantics",
     "placeholders": {
@@ -821,11 +821,11 @@
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
-  "matrixCornerSemantics": "Matrix corner: rows are cittas and columns are cetasikas",
+  "matrixCornerSemantics": "矩陣角: 行代表心，列代表心所",
   "@matrixCornerSemantics": {
     "description": "matrixCornerSemantics"
   },
-  "associationSemantics": "{association}: citta {cittaId} with cetasika {cetasikaId}",
+  "associationSemantics": "{association}: 心 {cittaId} 與 心所 {cetasikaId}",
   "@associationSemantics": {
     "description": "associationSemantics",
     "placeholders": {
@@ -850,98 +850,98 @@
   "@overallProgress": {
     "description": "overallProgress"
   },
-  "savedItemsCount": "{count} saved items",
+  "savedItemsCount": "{count} 個已保存項目",
   "@savedItemsCount": {
     "description": "savedItemsCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cittaTab": "Cittas",
+  "cittaTab": "心",
   "@cittaTab": {
     "description": "cittaTab"
   },
-  "cetasikaTab": "Cetasikas",
+  "cetasikaTab": "心所",
   "@cetasikaTab": {
     "description": "cetasikaTab"
   },
-  "notesTab": "Notes",
+  "notesTab": "筆記",
   "@notesTab": {
     "description": "notesTab"
   },
-  "noBookmarkedCittas": "No bookmarked cittas",
+  "noBookmarkedCittas": "暫無收藏的心",
   "@noBookmarkedCittas": {
     "description": "noBookmarkedCittas"
   },
-  "bookmarkCittaHint": "Open a lesson and tap the bookmark icon to save one",
+  "bookmarkCittaHint": "打開修學課程並點擊書籤圖標以保存",
   "@bookmarkCittaHint": {
     "description": "bookmarkCittaHint"
   },
-  "loadingCittas": "Loading cittas…",
+  "loadingCittas": "正在加載心的數據…",
   "@loadingCittas": {
     "description": "loadingCittas"
   },
-  "noBookmarkedCetasikas": "No bookmarked cetasikas",
+  "noBookmarkedCetasikas": "暫無收藏的心所",
   "@noBookmarkedCetasikas": {
     "description": "noBookmarkedCetasikas"
   },
-  "loadingCetasikas": "Loading cetasikas…",
+  "loadingCetasikas": "正在加載心所數據…",
   "@loadingCetasikas": {
     "description": "loadingCetasikas"
   },
-  "noNotes": "No notes yet",
+  "noNotes": "暫無筆記",
   "@noNotes": {
     "description": "noNotes"
   },
-  "addNoteHint": "Tap the edit icon in a lesson to add a personal note",
+  "addNoteHint": "在修學中點擊編輯圖標添加個人筆記",
   "@addNoteHint": {
     "description": "addNoteHint"
   },
-  "deleteNoteQuestion": "Delete note?",
+  "deleteNoteQuestion": "刪除筆記？",
   "@deleteNoteQuestion": {
     "description": "deleteNoteQuestion"
   },
-  "deleteNoteWarning": "This note will be permanently deleted. Are you sure?",
+  "deleteNoteWarning": "此筆記將被永久刪除。您確定嗎？",
   "@deleteNoteWarning": {
     "description": "deleteNoteWarning"
   },
-  "addNote": "Add note",
+  "addNote": "添加筆記",
   "@addNote": {
     "description": "addNote"
   },
-  "removeBookmark": "Remove bookmark",
+  "removeBookmark": "移除書籤",
   "@removeBookmark": {
     "description": "removeBookmark"
   },
-  "editNote": "Edit note",
+  "editNote": "編輯筆記",
   "@editNote": {
     "description": "editNote"
   },
-  "deleteNote": "Delete note",
+  "deleteNote": "刪除筆記",
   "@deleteNote": {
     "description": "deleteNote"
   },
-  "noteUpdated": "Note updated",
+  "noteUpdated": "筆記已更新",
   "@noteUpdated": {
     "description": "noteUpdated"
   },
-  "noteSaved": "Note saved",
+  "noteSaved": "筆記已保存",
   "@noteSaved": {
     "description": "noteSaved"
   },
-  "editNoteTitle": "Edit note",
+  "editNoteTitle": "編輯筆記",
   "@editNoteTitle": {
     "description": "editNoteTitle"
   },
-  "addNoteTitle": "Add note",
+  "addNoteTitle": "添加筆記",
   "@addNoteTitle": {
     "description": "addNoteTitle"
   },
-  "studyNoteHint": "Write your note about this item…\n\nExample: this citta appears during meditation when…",
+  "studyNoteHint": "寫下您關於此項的修學體會…\n\n例如：此心在禪修中生起於…",
   "@studyNoteHint": {
     "description": "studyNoteHint"
   },
-  "charactersCount": "{current} / {maximum} characters",
+  "charactersCount": "{current} / {maximum} 字符",
   "@charactersCount": {
     "description": "charactersCount",
     "placeholders": {
@@ -949,38 +949,38 @@
       "maximum": {}
     }
   },
-  "update": "Update",
+  "update": "更新",
   "@update": {
     "description": "update"
   },
-  "saveNote": "Save note",
+  "saveNote": "保存筆記",
   "@saveNote": {
     "description": "saveNote"
   },
-  "studyProgressPercent": "Study progress: {percent}%",
+  "studyProgressPercent": "修學進度: {percent}%",
   "@studyProgressPercent": {
     "description": "studyProgressPercent",
     "placeholders": {
       "percent": {}
     }
   },
-  "modulesCompletedShort": "Modules\ncompleted",
+  "modulesCompletedShort": "已完成\n單元",
   "@modulesCompletedShort": {
     "description": "modulesCompletedShort"
   },
-  "recommendedNext": "Recommended next",
+  "recommendedNext": "推薦下一單元",
   "@recommendedNext": {
     "description": "recommendedNext"
   },
-  "progressOverview": "Progress overview",
+  "progressOverview": "修學進度概覽",
   "@progressOverview": {
     "description": "progressOverview"
   },
-  "totalModules": "Total modules",
+  "totalModules": "單元總數",
   "@totalModules": {
     "description": "totalModules"
   },
-  "dueForReview": "Due for review",
+  "dueForReview": "待複習",
   "@dueForReview": {
     "description": "dueForReview"
   },
@@ -996,18 +996,18 @@
   "@testTab": {
     "description": "testTab"
   },
-  "moduleHasNoData": "This module has no citta/cetasika data. Please check the JSON data.",
+  "moduleHasNoData": "此單元暫無心/心所數據。請檢查JSON數據。",
   "@moduleHasNoData": {
     "description": "moduleHasNoData"
   },
-  "cittasInModule": "Cittas in this module — {count}",
+  "cittasInModule": "本單元包含的心 — {count}",
   "@cittasInModule": {
     "description": "cittasInModule",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasInModule": "Cetasikas in this module — {count}",
+  "cetasikasInModule": "本單元包含的心所 — {count}",
   "@cetasikasInModule": {
     "description": "cetasikasInModule",
     "placeholders": {
@@ -1042,7 +1042,7 @@
       "count": {}
     }
   },
-  "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
+  "reviewCetasikaQuestion": "心所 “{name}” ({pali}) 的含義是什麼？",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
     "placeholders": {
@@ -1082,21 +1082,21 @@
       "pali": {}
     }
   },
-  "groupAnswer": "Group: {group}",
+  "groupAnswer": "分組: {group}",
   "@groupAnswer": {
     "description": "groupAnswer",
     "placeholders": {
       "group": {}
     }
   },
-  "reviewCittaQuestion": "Which group and feeling does citta “{name}” have?",
+  "reviewCittaQuestion": "心 “{name}” 屬於哪個界，伴隨何種感受？",
   "@reviewCittaQuestion": {
     "description": "reviewCittaQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "cittaReviewAnswer": "Sphere: {sphere}\nFeeling: {feeling}\nPāḷi: {pali}",
+  "cittaReviewAnswer": "界: {sphere}\n感受: {feeling}\n巴利語: {pali}",
   "@cittaReviewAnswer": {
     "description": "cittaReviewAnswer",
     "placeholders": {
@@ -1105,11 +1105,11 @@
       "pali": {}
     }
   },
-  "noReviewContent": "This module has no review content yet. Please come back later.",
+  "noReviewContent": "此單元暫無複習內容。請稍後查看。",
   "@noReviewContent": {
     "description": "noReviewContent"
   },
-  "reviewedCount": "{revealed} / {total} reviewed",
+  "reviewedCount": "{revealed} / {total} 已複習",
   "@reviewedCount": {
     "description": "reviewedCount",
     "placeholders": {
@@ -1117,62 +1117,62 @@
       "total": {}
     }
   },
-  "reviewComplete": "You reviewed all the content. Take the quiz to check your understanding.",
+  "reviewComplete": "您已複習全部內容。快來透過測驗檢驗理解吧。",
   "@reviewComplete": {
     "description": "reviewComplete"
   },
-  "tapToReveal": "Tap to reveal the answer",
+  "tapToReveal": "點擊顯示答案",
   "@tapToReveal": {
     "description": "tapToReveal"
   },
-  "answerLabel": "Answer: {answer}",
+  "answerLabel": "答案: {answer}",
   "@answerLabel": {
     "description": "answerLabel",
     "placeholders": {
       "answer": {}
     }
   },
-  "revealAnswer": "Reveal answer",
+  "revealAnswer": "顯示答案",
   "@revealAnswer": {
     "description": "revealAnswer"
   },
-  "moduleQuizTitle": "Quiz\n{module}",
+  "moduleQuizTitle": "測驗\n{module}",
   "@moduleQuizTitle": {
     "description": "moduleQuizTitle",
     "placeholders": {
       "module": {}
     }
   },
-  "moduleContentCount": "{count} items in this module",
+  "moduleContentCount": "本單元共 {count} 個知識點",
   "@moduleContentCount": {
     "description": "moduleContentCount",
     "placeholders": {
       "count": {}
     }
   },
-  "quizMaximumDescription": "Up to 10 multiple-choice questions covering this module",
+  "quizMaximumDescription": "涵蓋本單元的最多10道單項選擇題",
   "@quizMaximumDescription": {
     "description": "quizMaximumDescription"
   },
-  "startQuiz": "Start quiz",
+  "startQuiz": "開始測驗",
   "@startQuiz": {
     "description": "startQuiz"
   },
-  "cittasCount": "{count} cittas",
+  "cittasCount": "{count} 種心",
   "@cittasCount": {
     "description": "cittasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasCount": "{count} cetasikas",
+  "cetasikasCount": "{count} 種心所",
   "@cetasikasCount": {
     "description": "cetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "noteForItem": "Note: {name}",
+  "noteForItem": "筆記: {name}",
   "@noteForItem": {
     "description": "noteForItem",
     "placeholders": {
@@ -1183,14 +1183,14 @@
   "@chooseLevel": {
     "description": "chooseLevel"
   },
-  "quizLevelDescription": "Each level generates up to {count} questions from this module",
+  "quizLevelDescription": "每個級別從本單元生成最多 {count} 道題目",
   "@quizLevelDescription": {
     "description": "quizLevelDescription",
     "placeholders": {
       "count": {}
     }
   },
-  "insufficientQuizData": "This module does not have enough data to create questions.",
+  "insufficientQuizData": "本單元數據不足以生成題目。",
   "@insufficientQuizData": {
     "description": "insufficientQuizData"
   },
@@ -1206,7 +1206,7 @@
   "@viewResults": {
     "description": "viewResults"
   },
-  "correctAnswers": "{score} / {total} correct",
+  "correctAnswers": "{score} / {total} 正確",
   "@correctAnswers": {
     "description": "correctAnswers",
     "placeholders": {
@@ -1214,11 +1214,11 @@
       "total": {}
     }
   },
-  "quizExcellent": "Excellent! You have mastered this module.",
+  "quizExcellent": "太棒了！您已掌握本單元內容。",
   "@quizExcellent": {
     "description": "quizExcellent"
   },
-  "quizTryAgain": "Review the material and try again.",
+  "quizTryAgain": "請溫習課程內容後重試。",
   "@quizTryAgain": {
     "description": "quizTryAgain"
   },
@@ -1226,26 +1226,26 @@
   "@tryAgain": {
     "description": "tryAgain"
   },
-  "quizInsufficientDataMessage": "Module “{module}” does not have enough data to create questions.",
+  "quizInsufficientDataMessage": "單元 “{module}” 數據不足以生成題目。",
   "@quizInsufficientDataMessage": {
     "description": "quizInsufficientDataMessage",
     "placeholders": {
       "module": {}
     }
   },
-  "quizTypeCetasikaGroup": "Cetasika classification",
+  "quizTypeCetasikaGroup": "心所分類",
   "@quizTypeCetasikaGroup": {
     "description": "quizTypeCetasikaGroup"
   },
-  "quizTypeFeeling": "Feeling recognition",
+  "quizTypeFeeling": "感受辨識",
   "@quizTypeFeeling": {
     "description": "quizTypeFeeling"
   },
-  "quizTypeConflict": "Doctrinal conflict",
+  "quizTypeConflict": "教理相違",
   "@quizTypeConflict": {
     "description": "quizTypeConflict"
   },
-  "quizTypeSphere": "Sphere",
+  "quizTypeSphere": "界 (Sphere)",
   "@quizTypeSphere": {
     "description": "quizTypeSphere"
   },
@@ -1253,7 +1253,7 @@
   "@beginner": {
     "description": "beginner"
   },
-  "beginnerDescription": "Basic cetasika groups and feelings",
+  "beginnerDescription": "基礎心所分組與感受",
   "@beginnerDescription": {
     "description": "beginnerDescription"
   },
@@ -1261,7 +1261,7 @@
   "@intermediate": {
     "description": "intermediate"
   },
-  "intermediateDescription": "Includes cetasika conflicts",
+  "intermediateDescription": "包含心所相違規則",
   "@intermediateDescription": {
     "description": "intermediateDescription"
   },
@@ -1269,23 +1269,23 @@
   "@advanced": {
     "description": "advanced"
   },
-  "advancedDescription": "Includes spheres and all question types",
+  "advancedDescription": "包含界分類及所有題型",
   "@advancedDescription": {
     "description": "advancedDescription"
   },
-  "trueLabel": "True",
+  "trueLabel": "正確",
   "@trueLabel": {
     "description": "trueLabel"
   },
-  "falseLabel": "False",
+  "falseLabel": "錯誤",
   "@falseLabel": {
     "description": "falseLabel"
   },
-  "trueOrFalse": "True or false?",
+  "trueOrFalse": "對還是錯？",
   "@trueOrFalse": {
     "description": "trueOrFalse"
   },
-  "quizCetasikaGroupQuestion": "Which group contains “{name}” ({pali})?",
+  "quizCetasikaGroupQuestion": "“{name}” ({pali}) 屬於哪個心所分組？",
   "@quizCetasikaGroupQuestion": {
     "description": "quizCetasikaGroupQuestion",
     "placeholders": {
@@ -1293,7 +1293,7 @@
       "pali": {}
     }
   },
-  "quizCetasikaGroupExplanation": "“{name}” belongs to {group}.\n{description}",
+  "quizCetasikaGroupExplanation": "“{name}” 屬於 {group}。\n{description}",
   "@quizCetasikaGroupExplanation": {
     "description": "quizCetasikaGroupExplanation",
     "placeholders": {
@@ -1302,7 +1302,7 @@
       "description": {}
     }
   },
-  "quizCetasikaClaim": "“{name}” ({pali}) belongs to {group}. True or false?",
+  "quizCetasikaClaim": "“{name}” ({pali}) 屬於 {group}。對還是錯？",
   "@quizCetasikaClaim": {
     "description": "quizCetasikaClaim",
     "placeholders": {
@@ -1311,14 +1311,14 @@
       "group": {}
     }
   },
-  "quizCittaFeelingQuestion": "What feeling accompanies citta “{name}”?",
+  "quizCittaFeelingQuestion": "心 “{name}” 伴隨何種感受？",
   "@quizCittaFeelingQuestion": {
     "description": "quizCittaFeelingQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizCittaFeelingExplanation": "“{name}” has {feeling}.",
+  "quizCittaFeelingExplanation": "“{name}” 伴隨 {feeling}。",
   "@quizCittaFeelingExplanation": {
     "description": "quizCittaFeelingExplanation",
     "placeholders": {
@@ -1326,7 +1326,7 @@
       "feeling": {}
     }
   },
-  "quizCittaFeelingClaim": "Citta “{name}” has {feeling}. True or false?",
+  "quizCittaFeelingClaim": "心 “{name}” 伴随 {feeling}。對還是錯？",
   "@quizCittaFeelingClaim": {
     "description": "quizCittaFeelingClaim",
     "placeholders": {
@@ -1334,19 +1334,19 @@
       "feeling": {}
     }
   },
-  "conflictNo": "No — they conflict",
+  "conflictNo": "否 — 彼此相違",
   "@conflictNo": {
     "description": "conflictNo"
   },
-  "conflictAlwaysYes": "Yes — they always arise together",
+  "conflictAlwaysYes": "是 — 恆常俱起",
   "@conflictAlwaysYes": {
     "description": "conflictAlwaysYes"
   },
-  "conflictSometimesYes": "Yes — they sometimes arise together",
+  "conflictSometimesYes": "是 — 有時俱起",
   "@conflictSometimesYes": {
     "description": "conflictSometimesYes"
   },
-  "quizConflictQuestion": "Can “{first}” and “{second}” arise together in one citta?",
+  "quizConflictQuestion": "“{first}” 和 “{second}” 能否在同一個心中同起？",
   "@quizConflictQuestion": {
     "description": "quizConflictQuestion",
     "placeholders": {
@@ -1354,14 +1354,14 @@
       "second": {}
     }
   },
-  "quizSphereQuestion": "To which sphere does citta “{name}” belong?",
+  "quizSphereQuestion": "心 “{name}” 屬於哪個界？",
   "@quizSphereQuestion": {
     "description": "quizSphereQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizSphereExplanation": "“{name}” belongs to {sphere}.",
+  "quizSphereExplanation": "“{name}” 屬於 {sphere}。",
   "@quizSphereExplanation": {
     "description": "quizSphereExplanation",
     "placeholders": {
@@ -1369,7 +1369,7 @@
       "sphere": {}
     }
   },
-  "quizSphereClaim": "Citta “{name}” belongs to {sphere}. True or false?",
+  "quizSphereClaim": "心 “{name}” 屬於 {sphere}。對還是錯？",
   "@quizSphereClaim": {
     "description": "quizSphereClaim",
     "placeholders": {
@@ -1377,15 +1377,15 @@
       "sphere": {}
     }
   },
-  "phaseFoundation": "Phase 1 — Foundation",
+  "phaseFoundation": "第一階段 — 基礎",
   "@phaseFoundation": {
     "description": "phaseFoundation"
   },
-  "phaseCausality": "Phase 2 — Causality",
+  "phaseCausality": "第二階段 — 因果",
   "@phaseCausality": {
     "description": "phaseCausality"
   },
-  "phaseMastery": "Phase 3 — Mastery",
+  "phaseMastery": "第三階段 — 通達",
   "@phaseMastery": {
     "description": "phaseMastery"
   },
@@ -1485,12 +1485,56 @@
   "@estimatedDuration": {
     "description": "estimatedDuration"
   },
-  "continueListening": "Continue listening",
+  "continueListening": "繼續聆聽",
   "@continueListening": {
     "description": "continueListening"
   },
-  "audioBackgroundLimit": "Background audio depends on the installed voice engine",
+  "audioBackgroundLimit": "後台音頻播放取決於系統已安裝的語音引擎",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "聆聽與卡拉OK高亮",
+  "karaokeModeTitle": "高亮跟讀模式",
+  "karaokeModeSubtitle": "聆聽時高亮顯示正在朗讀的文本",
+  "karaokeLineHighlightTitle": "高亮當前行",
+  "karaokeLineHighlightSubtitle": "對正在朗讀的段落進行背景高亮",
+  "karaokeWordHighlightTitle": "逐字高亮",
+  "karaokeWordHighlightSubtitle": "根據朗讀節奏逐字高亮（估算時間）",
+  "audioFloatingGoTo": "轉到正在播放的內容",
+  "audioFloatingHide": "隱藏播放欄",
+  "audioFloatingRestore": "顯示播放欄",
+  "audioFloatingClose": "關閉播放器",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

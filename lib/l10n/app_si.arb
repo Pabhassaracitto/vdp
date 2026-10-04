@@ -1,38 +1,38 @@
 {
   "@@locale": "si",
-  "appName": "AbhiDhamma",
+  "appName": "අභිධර්මය",
   "@appName": {
     "description": "appName"
   },
-  "appTagline": "Abhidhamma Piṭaka",
+  "appTagline": "අභිධර්ම පිටකය",
   "@appTagline": {
     "description": "appTagline"
   },
-  "initializing": "ආරම්භ කරමින්…",
+  "initializing": "ආරම්භ වෙමින් පවතී…",
   "@initializing": {
     "description": "initializing"
   },
-  "loadingDoctrineData": "ධම්ම දත්ත පූරණය හා පරීක්ෂා කරමින්…",
+  "loadingDoctrineData": "ධර්ම දත්ත පූරණය වෙමින් පවතී…",
   "@loadingDoctrineData": {
     "description": "loadingDoctrineData"
   },
-  "loadingTakingLonger": "Startup is taking longer than expected. Dhamma data may be being optimized for your device.",
+  "loadingTakingLonger": "ආරම්භය අපේක්ෂිත කාලයට වඩා වැඩි කාලයක් ගනී...",
   "@loadingTakingLonger": {
     "description": "loadingTakingLonger"
   },
-  "unknownError": "Unknown error",
+  "unknownError": "නොදන්නා දෝෂයක්",
   "@unknownError": {
     "description": "unknownError"
   },
-  "dataError": "Data error",
+  "dataError": "දත්ත දෝෂයකි",
   "@dataError": {
     "description": "dataError"
   },
-  "invalidData": "Invalid data",
+  "invalidData": "වලංගු නොවන දත්ත",
   "@invalidData": {
     "description": "invalidData"
   },
-  "invalidDataDescription": "The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.",
+  "invalidDataDescription": "ධර්ම වලංගුකරණ නීති කඩවීමක් පද්ධතිය විසින් හඳුනාගෙන ඇත.",
   "@invalidDataDescription": {
     "description": "invalidDataDescription"
   },
@@ -116,7 +116,7 @@
   "@notes": {
     "description": "notes"
   },
-  "errorWithMessage": "Error: {message}",
+  "errorWithMessage": "දෝෂය: {message}",
   "@errorWithMessage": {
     "description": "errorWithMessage",
     "placeholders": {
@@ -177,11 +177,11 @@
       "language": {}
     }
   },
-  "holdGlobeToReset": "Press and hold the globe for 3 seconds to restore the system language",
+  "holdGlobeToReset": "පද්ධති භාෂාව නැවත පිහිටුවීමට ලෝක ගෝලය තත්පර 3ක් ඔබාගෙන සිටින්න",
   "@holdGlobeToReset": {
     "description": "holdGlobeToReset"
   },
-  "restoredSystemLanguage": "පද්ධති භාෂාව ප්‍රතිස්ථාපනය විය",
+  "restoredSystemLanguage": "පද්ධති භාෂාව නැවත පිහිටුවන ලදී",
   "@restoredSystemLanguage": {
     "description": "restoredSystemLanguage"
   },
@@ -213,7 +213,7 @@
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
-  "screenReaderHints": "තිර කියවීම් ඉඟි",
+  "screenReaderHints": "තිර කියවනය සඳහා ඉඟි",
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
@@ -225,7 +225,7 @@
   "@textSize": {
     "description": "textSize"
   },
-  "textScale": "අකුරු පරිමාණය",
+  "textScale": "පෙළ පරිමාණය",
   "@textScale": {
     "description": "textScale"
   },
@@ -346,43 +346,43 @@
       "count": {}
     }
   },
-  "onboardingVisualTitle": "See Clearly",
+  "onboardingVisualTitle": "පැහැදිලිව දකින්න",
   "@onboardingVisualTitle": {
     "description": "onboardingVisualTitle"
   },
-  "onboardingVisualSubtitle": "Citta × Cetasika Matrix",
+  "onboardingVisualSubtitle": "සිත් × චෛතසික න්‍යාසය",
   "@onboardingVisualSubtitle": {
     "description": "onboardingVisualSubtitle"
   },
-  "onboardingVisualBody": "Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.",
+  "onboardingVisualBody": "සිත් 121ක් සහ චෛතසික 52ක් අන්තර්ක්‍රියාකාරී න්‍යාසයකින් අධ්‍යයනය කරන්න.",
   "@onboardingVisualBody": {
     "description": "onboardingVisualBody"
   },
-  "onboardingCausalityTitle": "Understand Deeply",
+  "onboardingCausalityTitle": "ගැඹුරින් තේරුම් ගන්න",
   "@onboardingCausalityTitle": {
     "description": "onboardingCausalityTitle"
   },
-  "onboardingCausalitySubtitle": "Dependent Origination",
+  "onboardingCausalitySubtitle": "පටිච්චසමුප්පාදය",
   "@onboardingCausalitySubtitle": {
     "description": "onboardingCausalitySubtitle"
   },
-  "onboardingCausalityBody": "Explore the twelve links of dependent origination and classifications of kamma through connected learning views.",
+  "onboardingCausalityBody": "පටිච්චසමුප්පාද අංග 12 සහ කර්ම වර්ගීකරණයන් විමසා බලන්න.",
   "@onboardingCausalityBody": {
     "description": "onboardingCausalityBody"
   },
-  "onboardingExploreTitle": "Discover for Yourself",
+  "onboardingExploreTitle": "ස්වයං අධ්‍යයනය",
   "@onboardingExploreTitle": {
     "description": "onboardingExploreTitle"
   },
-  "onboardingExploreSubtitle": "A Non-linear Study Path",
+  "onboardingExploreSubtitle": "අනුක්‍රමික නොවන අධ්‍යයන මාර්ගය",
   "@onboardingExploreSubtitle": {
     "description": "onboardingExploreSubtitle"
   },
-  "onboardingExploreBody": "Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.",
+  "onboardingExploreBody": "පාඩම් මාලා 10ක් ඔස්සේ ඔබේ දැනුම වර්ධනය කරගන්න.",
   "@onboardingExploreBody": {
     "description": "onboardingExploreBody"
   },
-  "beginExploring": "Begin exploring",
+  "beginExploring": "ගවේෂණය අරඹන්න",
   "@beginExploring": {
     "description": "beginExploring"
   },
@@ -390,7 +390,7 @@
   "@matrixTitle": {
     "description": "matrixTitle"
   },
-  "matrixSemantics": "Abhidhamma Matrix showing {count} cittas",
+  "matrixSemantics": "{count}ක් වූ සිත් පෙන්වන අභිධර්ම න්‍යාසය",
   "@matrixSemantics": {
     "description": "matrixSemantics",
     "placeholders": {
@@ -417,7 +417,7 @@
   "@searchCittaCetasika": {
     "description": "searchCittaCetasika"
   },
-  "clearSearch": "Clear search",
+  "clearSearch": "සෙවීම හිස් කරන්න",
   "@clearSearch": {
     "description": "clearSearch"
   },
@@ -469,7 +469,7 @@
   "@associationNever": {
     "description": "associationNever"
   },
-  "dataWarningsCount": "{count} data warnings",
+  "dataWarningsCount": "දත්ත අනතුරු ඇඟවීම් {count}",
   "@dataWarningsCount": {
     "description": "dataWarningsCount",
     "placeholders": {
@@ -508,7 +508,7 @@
   "@understood": {
     "description": "understood"
   },
-  "dataWarningTitle": "Data warning",
+  "dataWarningTitle": "දත්ත අනතුරු ඇඟවීම",
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
@@ -516,7 +516,7 @@
   "@allFilters": {
     "description": "allFilters"
   },
-  "defilements": "Defilements",
+  "defilements": "කෙලෙස් (Kilesa)",
   "@defilements": {
     "description": "defilements"
   },
@@ -600,7 +600,7 @@
       "count": {}
     }
   },
-  "relatedDhammas": "Related dhammas",
+  "relatedDhammas": "සම්බන්ධ ධර්ම",
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
@@ -647,7 +647,7 @@
       "explanation": {}
     }
   },
-  "kammaTitle": "Kamma",
+  "kammaTitle": "කර්මය (Kamma)",
   "@kammaTitle": {
     "description": "kammaTitle"
   },
@@ -655,143 +655,143 @@
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },
-  "paliLabel": "Pāḷi:",
+  "paliLabel": "පාලි:",
   "@paliLabel": {
     "description": "paliLabel"
   },
-  "stopPronunciation": "Stop pronunciation",
+  "stopPronunciation": "උච්චාරණය නවත්වන්න",
   "@stopPronunciation": {
     "description": "stopPronunciation"
   },
-  "listenPaliPronunciation": "Listen to Pāḷi pronunciation",
+  "listenPaliPronunciation": "පාලි උච්චාරණයට සවන් දෙන්න",
   "@listenPaliPronunciation": {
     "description": "listenPaliPronunciation"
   },
-  "ttsUnavailable": "Speech synthesis is not supported on this device.",
+  "ttsUnavailable": "මෙම උපාංගයේ කථන සංස්ලේෂණය සඳහා සහය නොදක්වයි.",
   "@ttsUnavailable": {
     "description": "ttsUnavailable"
   },
-  "dragHandleSemantics": "Drag to resize",
+  "dragHandleSemantics": "ප්‍රමාණය වෙනස් කිරීමට අදින්න",
   "@dragHandleSemantics": {
     "description": "dragHandleSemantics"
   },
-  "cittaNumber": "Citta {number}",
+  "cittaNumber": "සිත {number}",
   "@cittaNumber": {
     "description": "cittaNumber",
     "placeholders": {
       "number": {}
     }
   },
-  "doctrine": "Dhamma explanation",
+  "doctrine": "ධර්ම විග්‍රහය",
   "@doctrine": {
     "description": "doctrine"
   },
-  "examples": "Examples",
+  "examples": "උදාහරණ",
   "@examples": {
     "description": "examples"
   },
-  "fixedCetasikasCount": "Invariable cetasikas ({count})",
+  "fixedCetasikasCount": "නියත චෛතසික ({count})",
   "@fixedCetasikasCount": {
     "description": "fixedCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "variableCetasikasCount": "Variable cetasikas ({count})",
+  "variableCetasikasCount": "අනියත චෛතසික ({count})",
   "@variableCetasikasCount": {
     "description": "variableCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "personalNote": "Personal note",
+  "personalNote": "පෞද්ගලික සටහන",
   "@personalNote": {
     "description": "personalNote"
   },
-  "personalNoteHint": "Enter your note…",
+  "personalNoteHint": "ඔබේ සටහන ඇතුළත් කරන්න…",
   "@personalNoteHint": {
     "description": "personalNoteHint"
   },
-  "wholesome": "Wholesome",
+  "wholesome": "කුසල්",
   "@wholesome": {
     "description": "wholesome"
   },
-  "functional": "Functional",
+  "functional": "ක්‍රියා",
   "@functional": {
     "description": "functional"
   },
-  "pleasantFeeling": "Pleasant bodily feeling",
+  "pleasantFeeling": "කායික සුඛ වේදනාව",
   "@pleasantFeeling": {
     "description": "pleasantFeeling"
   },
-  "unpleasantFeeling": "Painful bodily feeling",
+  "unpleasantFeeling": "කායික දුක්ඛ වේදනාව",
   "@unpleasantFeeling": {
     "description": "unpleasantFeeling"
   },
-  "neutralFeeling": "Equanimous feeling",
+  "neutralFeeling": "උපේක්ෂා වේදනාව",
   "@neutralFeeling": {
     "description": "neutralFeeling"
   },
-  "joyfulFeeling": "Joyful feeling",
+  "joyfulFeeling": "සෝමනස්ස වේදනාව",
   "@joyfulFeeling": {
     "description": "joyfulFeeling"
   },
-  "alwaysAssociated": "Always associated",
+  "alwaysAssociated": "සැමවිටම යෙදෙන",
   "@alwaysAssociated": {
     "description": "alwaysAssociated"
   },
-  "mayBeAssociated": "May be associated",
+  "mayBeAssociated": "සමහරවිට යෙදෙන",
   "@mayBeAssociated": {
     "description": "mayBeAssociated"
   },
-  "fourfoldDefinition": "Fourfold definition",
+  "fourfoldDefinition": "චතුර්විධ ලක්ෂණ (ලක්ෂණ/රස/පච්චුපට්ඨාන/පදට්ඨාන)",
   "@fourfoldDefinition": {
     "description": "fourfoldDefinition"
   },
-  "characteristic": "Characteristic",
+  "characteristic": "ලක්ෂණය (Lakkhaṇa)",
   "@characteristic": {
     "description": "characteristic"
   },
-  "functionLabel": "Function",
+  "functionLabel": "කෘත්‍යය / රසය (Rasa)",
   "@functionLabel": {
     "description": "functionLabel"
   },
-  "manifestation": "Manifestation",
+  "manifestation": "වැටහෙන ආකාරය (Paccupaṭṭhāna)",
   "@manifestation": {
     "description": "manifestation"
   },
-  "proximateCause": "Proximate cause",
+  "proximateCause": "ආසන්න හේතුව (Padaṭṭhāna)",
   "@proximateCause": {
     "description": "proximateCause"
   },
-  "doctrinalConflicts": "Doctrinal conflicts",
+  "doctrinalConflicts": "ධර්ම විරෝධතා",
   "@doctrinalConflicts": {
     "description": "doctrinalConflicts"
   },
-  "rulesCount": "{count} rules",
+  "rulesCount": "නීති {count}",
   "@rulesCount": {
     "description": "rulesCount",
     "placeholders": {
       "count": {}
     }
   },
-  "universalCetasikas": "7 universals",
+  "universalCetasikas": "සබ්බචිත්තසාධාරණ 7",
   "@universalCetasikas": {
     "description": "universalCetasikas"
   },
-  "occasionalCetasikas": "6 occasionals",
+  "occasionalCetasikas": "පකිණ්ණක 6",
   "@occasionalCetasikas": {
     "description": "occasionalCetasikas"
   },
-  "unwholesomeCetasikas": "14 unwholesome",
+  "unwholesomeCetasikas": "අකුසල් චෛතසික 14",
   "@unwholesomeCetasikas": {
     "description": "unwholesomeCetasikas"
   },
-  "beautifulCetasikas": "25 beautiful",
+  "beautifulCetasikas": "ශෝභන චෛතසික 25",
   "@beautifulCetasikas": {
     "description": "beautifulCetasikas"
   },
-  "rowCittaSemantics": "Citta row {displayIndex}: {name}; canonical number {order}; group {group}; feeling {feeling}. {action}",
+  "rowCittaSemantics": "සිත් පේළිය {displayIndex}: {name}; අංකය {order}; කාණ්ඩය {group}; වේදනාව {feeling}. {action}",
   "@rowCittaSemantics": {
     "description": "rowCittaSemantics",
     "placeholders": {
@@ -803,7 +803,7 @@
       "action": {}
     }
   },
-  "cetasikaSemantics": "Cetasika {name} ({pali}), group {group}. {state} Tap for details.",
+  "cetasikaSemantics": "චෛතසිකය {name} ({pali}), කාණ්ඩය {group}. {state} විස්තර සඳහා තට්ටු කරන්න.",
   "@cetasikaSemantics": {
     "description": "cetasikaSemantics",
     "placeholders": {
@@ -821,11 +821,11 @@
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
-  "matrixCornerSemantics": "Matrix corner: rows are cittas and columns are cetasikas",
+  "matrixCornerSemantics": "න්‍යාස කොන: පේළි සිත් වන අතර තීරු චෛතසික වේ",
   "@matrixCornerSemantics": {
     "description": "matrixCornerSemantics"
   },
-  "associationSemantics": "{association}: citta {cittaId} with cetasika {cetasikaId}",
+  "associationSemantics": "{association}: සිත {cittaId} චෛතසිකය {cetasikaId} සමඟ",
   "@associationSemantics": {
     "description": "associationSemantics",
     "placeholders": {
@@ -850,98 +850,98 @@
   "@overallProgress": {
     "description": "overallProgress"
   },
-  "savedItemsCount": "{count} saved items",
+  "savedItemsCount": "සුරැකි අයිතම {count}",
   "@savedItemsCount": {
     "description": "savedItemsCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cittaTab": "Cittas",
+  "cittaTab": "සිත්",
   "@cittaTab": {
     "description": "cittaTab"
   },
-  "cetasikaTab": "Cetasikas",
+  "cetasikaTab": "චෛතසික",
   "@cetasikaTab": {
     "description": "cetasikaTab"
   },
-  "notesTab": "Notes",
+  "notesTab": "සටහන්",
   "@notesTab": {
     "description": "notesTab"
   },
-  "noBookmarkedCittas": "No bookmarked cittas",
+  "noBookmarkedCittas": "සුරැකි සිත් නැත",
   "@noBookmarkedCittas": {
     "description": "noBookmarkedCittas"
   },
-  "bookmarkCittaHint": "Open a lesson and tap the bookmark icon to save one",
+  "bookmarkCittaHint": "පාඩමක් විවෘත කර සුරැකීමට බුක්මාක් අයිකනය තට්ටු කරන්න",
   "@bookmarkCittaHint": {
     "description": "bookmarkCittaHint"
   },
-  "loadingCittas": "Loading cittas…",
+  "loadingCittas": "සිත් පූරණය වෙමින් පවතී…",
   "@loadingCittas": {
     "description": "loadingCittas"
   },
-  "noBookmarkedCetasikas": "No bookmarked cetasikas",
+  "noBookmarkedCetasikas": "සුරැකි චෛතසික නැත",
   "@noBookmarkedCetasikas": {
     "description": "noBookmarkedCetasikas"
   },
-  "loadingCetasikas": "Loading cetasikas…",
+  "loadingCetasikas": "චෛතසික පූරණය වෙමින් පවතී…",
   "@loadingCetasikas": {
     "description": "loadingCetasikas"
   },
-  "noNotes": "No notes yet",
+  "noNotes": "තවම සටහන් නැත",
   "@noNotes": {
     "description": "noNotes"
   },
-  "addNoteHint": "Tap the edit icon in a lesson to add a personal note",
+  "addNoteHint": "පෞද්ගලික සටහනක් එක් කිරීමට සංස්කරණ අයිකනය තට්ටු කරන්න",
   "@addNoteHint": {
     "description": "addNoteHint"
   },
-  "deleteNoteQuestion": "Delete note?",
+  "deleteNoteQuestion": "සටහන මකන්නද?",
   "@deleteNoteQuestion": {
     "description": "deleteNoteQuestion"
   },
-  "deleteNoteWarning": "This note will be permanently deleted. Are you sure?",
+  "deleteNoteWarning": "මෙම සටහන ස්ථිරවම මකා දැමෙනු ඇත. ඔබට විශ්වාසද?",
   "@deleteNoteWarning": {
     "description": "deleteNoteWarning"
   },
-  "addNote": "Add note",
+  "addNote": "සටහනක් එක් කරන්න",
   "@addNote": {
     "description": "addNote"
   },
-  "removeBookmark": "Remove bookmark",
+  "removeBookmark": "බුක්මාක් ඉවත් කරන්න",
   "@removeBookmark": {
     "description": "removeBookmark"
   },
-  "editNote": "Edit note",
+  "editNote": "සටහන සංස්කරණය",
   "@editNote": {
     "description": "editNote"
   },
-  "deleteNote": "Delete note",
+  "deleteNote": "සටහන මකන්න",
   "@deleteNote": {
     "description": "deleteNote"
   },
-  "noteUpdated": "Note updated",
+  "noteUpdated": "සටහන යාවත්කාලීන කරන ලදී",
   "@noteUpdated": {
     "description": "noteUpdated"
   },
-  "noteSaved": "Note saved",
+  "noteSaved": "සටහන සුරකින ලදී",
   "@noteSaved": {
     "description": "noteSaved"
   },
-  "editNoteTitle": "Edit note",
+  "editNoteTitle": "සටහන සංස්කරණය",
   "@editNoteTitle": {
     "description": "editNoteTitle"
   },
-  "addNoteTitle": "Add note",
+  "addNoteTitle": "සටහනක් එක් කරන්න",
   "@addNoteTitle": {
     "description": "addNoteTitle"
   },
-  "studyNoteHint": "Write your note about this item…\n\nExample: this citta appears during meditation when…",
+  "studyNoteHint": "මෙම අයිතමය ගැන ඔබේ සටහන ලියන්න…",
   "@studyNoteHint": {
     "description": "studyNoteHint"
   },
-  "charactersCount": "{current} / {maximum} characters",
+  "charactersCount": "අක්ෂර {current} / {maximum}",
   "@charactersCount": {
     "description": "charactersCount",
     "placeholders": {
@@ -949,38 +949,38 @@
       "maximum": {}
     }
   },
-  "update": "Update",
+  "update": "යාවත්කාලීන කරන්න",
   "@update": {
     "description": "update"
   },
-  "saveNote": "Save note",
+  "saveNote": "සටහන සුරකින්න",
   "@saveNote": {
     "description": "saveNote"
   },
-  "studyProgressPercent": "Study progress: {percent}%",
+  "studyProgressPercent": "අධ්‍යයන ප්‍රගතිය: {percent}%",
   "@studyProgressPercent": {
     "description": "studyProgressPercent",
     "placeholders": {
       "percent": {}
     }
   },
-  "modulesCompletedShort": "Modules\ncompleted",
+  "modulesCompletedShort": "සම්පූර්ණ කළ\nපාඩම්",
   "@modulesCompletedShort": {
     "description": "modulesCompletedShort"
   },
-  "recommendedNext": "Recommended next",
+  "recommendedNext": "ඊළඟ නිර්දේශය",
   "@recommendedNext": {
     "description": "recommendedNext"
   },
-  "progressOverview": "Progress overview",
+  "progressOverview": "ප්‍රගති සමාලෝචනය",
   "@progressOverview": {
     "description": "progressOverview"
   },
-  "totalModules": "Total modules",
+  "totalModules": "මුළු පාඩම්",
   "@totalModules": {
     "description": "totalModules"
   },
-  "dueForReview": "Due for review",
+  "dueForReview": "නැවත බැලීමට",
   "@dueForReview": {
     "description": "dueForReview"
   },
@@ -996,18 +996,18 @@
   "@testTab": {
     "description": "testTab"
   },
-  "moduleHasNoData": "This module has no citta/cetasika data. Please check the JSON data.",
+  "moduleHasNoData": "මෙම පාඩමේ දත්ත නැත.",
   "@moduleHasNoData": {
     "description": "moduleHasNoData"
   },
-  "cittasInModule": "Cittas in this module — {count}",
+  "cittasInModule": "මෙම පාඩමේ ඇති සිත් — {count}",
   "@cittasInModule": {
     "description": "cittasInModule",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasInModule": "Cetasikas in this module — {count}",
+  "cetasikasInModule": "මෙම පාඩමේ ඇති චෛතසික — {count}",
   "@cetasikasInModule": {
     "description": "cetasikasInModule",
     "placeholders": {
@@ -1042,7 +1042,7 @@
       "count": {}
     }
   },
-  "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
+  "reviewCetasikaQuestion": "“{name}” ({pali}) චෛතසිකයේ තේරුම කුමක්ද?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
     "placeholders": {
@@ -1082,21 +1082,21 @@
       "pali": {}
     }
   },
-  "groupAnswer": "Group: {group}",
+  "groupAnswer": "කාණ්ඩය: {group}",
   "@groupAnswer": {
     "description": "groupAnswer",
     "placeholders": {
       "group": {}
     }
   },
-  "reviewCittaQuestion": "Which group and feeling does citta “{name}” have?",
+  "reviewCittaQuestion": "“{name}” සිත අයත් වන්නේ කුමන භූමියට සහ වේදනාවටද?",
   "@reviewCittaQuestion": {
     "description": "reviewCittaQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "cittaReviewAnswer": "Sphere: {sphere}\nFeeling: {feeling}\nPāḷi: {pali}",
+  "cittaReviewAnswer": "භූමිය: {sphere}\nවේදනාව: {feeling}\nපාලි: {pali}",
   "@cittaReviewAnswer": {
     "description": "cittaReviewAnswer",
     "placeholders": {
@@ -1105,11 +1105,11 @@
       "pali": {}
     }
   },
-  "noReviewContent": "This module has no review content yet. Please come back later.",
+  "noReviewContent": "මෙම පාඩමේ තවම පුනරීක්ෂණ අන්තර්ගතයක් නොමැත.",
   "@noReviewContent": {
     "description": "noReviewContent"
   },
-  "reviewedCount": "{revealed} / {total} reviewed",
+  "reviewedCount": "{revealed} / {total} සමාලෝචනය කර ඇත",
   "@reviewedCount": {
     "description": "reviewedCount",
     "placeholders": {
@@ -1117,62 +1117,62 @@
       "total": {}
     }
   },
-  "reviewComplete": "You reviewed all the content. Take the quiz to check your understanding.",
+  "reviewComplete": "ඔබ සියලු අන්තර්ගත සමාලෝචනය කර ඇත. ප්‍රශ්නාවලියට මුහුණ දෙන්න.",
   "@reviewComplete": {
     "description": "reviewComplete"
   },
-  "tapToReveal": "Tap to reveal the answer",
+  "tapToReveal": "පිළිතුර බැලීමට තට්ටු කරන්න",
   "@tapToReveal": {
     "description": "tapToReveal"
   },
-  "answerLabel": "Answer: {answer}",
+  "answerLabel": "පිළිතුර: {answer}",
   "@answerLabel": {
     "description": "answerLabel",
     "placeholders": {
       "answer": {}
     }
   },
-  "revealAnswer": "Reveal answer",
+  "revealAnswer": "පිළිතුර පෙන්වන්න",
   "@revealAnswer": {
     "description": "revealAnswer"
   },
-  "moduleQuizTitle": "Quiz\n{module}",
+  "moduleQuizTitle": "ප්‍රශ්නාවලිය\n{module}",
   "@moduleQuizTitle": {
     "description": "moduleQuizTitle",
     "placeholders": {
       "module": {}
     }
   },
-  "moduleContentCount": "{count} items in this module",
+  "moduleContentCount": "මෙම පාඩමේ අයිතම {count}ක් ඇත",
   "@moduleContentCount": {
     "description": "moduleContentCount",
     "placeholders": {
       "count": {}
     }
   },
-  "quizMaximumDescription": "Up to 10 multiple-choice questions covering this module",
+  "quizMaximumDescription": "මෙම පාඩම ආවරණය වන පරිදි බහුවරණ ප්‍රශ්න 10ක් දක්වා",
   "@quizMaximumDescription": {
     "description": "quizMaximumDescription"
   },
-  "startQuiz": "Start quiz",
+  "startQuiz": "ප්‍රශ්නාවලිය අරඹන්න",
   "@startQuiz": {
     "description": "startQuiz"
   },
-  "cittasCount": "{count} cittas",
+  "cittasCount": "සිත් {count}",
   "@cittasCount": {
     "description": "cittasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasCount": "{count} cetasikas",
+  "cetasikasCount": "චෛතසික {count}",
   "@cetasikasCount": {
     "description": "cetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "noteForItem": "Note: {name}",
+  "noteForItem": "සටහන: {name}",
   "@noteForItem": {
     "description": "noteForItem",
     "placeholders": {
@@ -1183,14 +1183,14 @@
   "@chooseLevel": {
     "description": "chooseLevel"
   },
-  "quizLevelDescription": "Each level generates up to {count} questions from this module",
+  "quizLevelDescription": "සෑම මට්ටමක්ම ප්‍රශ්න {count}ක් ජනනය කරයි",
   "@quizLevelDescription": {
     "description": "quizLevelDescription",
     "placeholders": {
       "count": {}
     }
   },
-  "insufficientQuizData": "This module does not have enough data to create questions.",
+  "insufficientQuizData": "ප්‍රශ්න සෑදීමට ප්‍රමාණවත් දත්ත නොමැත.",
   "@insufficientQuizData": {
     "description": "insufficientQuizData"
   },
@@ -1206,7 +1206,7 @@
   "@viewResults": {
     "description": "viewResults"
   },
-  "correctAnswers": "{score} / {total} correct",
+  "correctAnswers": "නිවැරදි {score} / {total}",
   "@correctAnswers": {
     "description": "correctAnswers",
     "placeholders": {
@@ -1214,11 +1214,11 @@
       "total": {}
     }
   },
-  "quizExcellent": "Excellent! You have mastered this module.",
+  "quizExcellent": "විශිෂ්ටයි! ඔබ මෙම පාඩම ප්‍රගුණ කර ඇත.",
   "@quizExcellent": {
     "description": "quizExcellent"
   },
-  "quizTryAgain": "Review the material and try again.",
+  "quizTryAgain": "කරුණාකර නැවත උත්සාහ කරන්න.",
   "@quizTryAgain": {
     "description": "quizTryAgain"
   },
@@ -1226,26 +1226,26 @@
   "@tryAgain": {
     "description": "tryAgain"
   },
-  "quizInsufficientDataMessage": "Module “{module}” does not have enough data to create questions.",
+  "quizInsufficientDataMessage": "“{module}” පාඩම සඳහා දත්ත ප්‍රමාණවත් නොවේ.",
   "@quizInsufficientDataMessage": {
     "description": "quizInsufficientDataMessage",
     "placeholders": {
       "module": {}
     }
   },
-  "quizTypeCetasikaGroup": "Cetasika classification",
+  "quizTypeCetasikaGroup": "චෛතසික වර්ගීකරණය",
   "@quizTypeCetasikaGroup": {
     "description": "quizTypeCetasikaGroup"
   },
-  "quizTypeFeeling": "Feeling recognition",
+  "quizTypeFeeling": "වේදනා හඳුනාගැනීම",
   "@quizTypeFeeling": {
     "description": "quizTypeFeeling"
   },
-  "quizTypeConflict": "Doctrinal conflict",
+  "quizTypeConflict": "ධර්ම විරෝධතා",
   "@quizTypeConflict": {
     "description": "quizTypeConflict"
   },
-  "quizTypeSphere": "Sphere",
+  "quizTypeSphere": "භූමිය",
   "@quizTypeSphere": {
     "description": "quizTypeSphere"
   },
@@ -1253,7 +1253,7 @@
   "@beginner": {
     "description": "beginner"
   },
-  "beginnerDescription": "Basic cetasika groups and feelings",
+  "beginnerDescription": "මූලික චෛතසික කාණ්ඩ සහ වේදනා",
   "@beginnerDescription": {
     "description": "beginnerDescription"
   },
@@ -1261,7 +1261,7 @@
   "@intermediate": {
     "description": "intermediate"
   },
-  "intermediateDescription": "Includes cetasika conflicts",
+  "intermediateDescription": "චෛතසික විරෝධතා ඇතුළත් වේ",
   "@intermediateDescription": {
     "description": "intermediateDescription"
   },
@@ -1269,23 +1269,23 @@
   "@advanced": {
     "description": "advanced"
   },
-  "advancedDescription": "Includes spheres and all question types",
+  "advancedDescription": "සියලුම ප්‍රශ්න වර්ග ඇතුළත් වේ",
   "@advancedDescription": {
     "description": "advancedDescription"
   },
-  "trueLabel": "True",
+  "trueLabel": "සත්‍ය",
   "@trueLabel": {
     "description": "trueLabel"
   },
-  "falseLabel": "False",
+  "falseLabel": "අසත්‍ය",
   "@falseLabel": {
     "description": "falseLabel"
   },
-  "trueOrFalse": "True or false?",
+  "trueOrFalse": "සත්‍යද අසත්‍යද?",
   "@trueOrFalse": {
     "description": "trueOrFalse"
   },
-  "quizCetasikaGroupQuestion": "Which group contains “{name}” ({pali})?",
+  "quizCetasikaGroupQuestion": "“{name}” ({pali}) අයත් වන්නේ කුමන කාණ්ඩයටද?",
   "@quizCetasikaGroupQuestion": {
     "description": "quizCetasikaGroupQuestion",
     "placeholders": {
@@ -1293,7 +1293,7 @@
       "pali": {}
     }
   },
-  "quizCetasikaGroupExplanation": "“{name}” belongs to {group}.\n{description}",
+  "quizCetasikaGroupExplanation": "“{name}” {group}ට අයත් වේ.\n{description}",
   "@quizCetasikaGroupExplanation": {
     "description": "quizCetasikaGroupExplanation",
     "placeholders": {
@@ -1302,7 +1302,7 @@
       "description": {}
     }
   },
-  "quizCetasikaClaim": "“{name}” ({pali}) belongs to {group}. True or false?",
+  "quizCetasikaClaim": "“{name}” ({pali}) {group}ට අයත් වේ. සත්‍යද අසත්‍යද?",
   "@quizCetasikaClaim": {
     "description": "quizCetasikaClaim",
     "placeholders": {
@@ -1311,14 +1311,14 @@
       "group": {}
     }
   },
-  "quizCittaFeelingQuestion": "What feeling accompanies citta “{name}”?",
+  "quizCittaFeelingQuestion": "“{name}” සිත සමඟ යෙදෙන වේදනාව කුමක්ද?",
   "@quizCittaFeelingQuestion": {
     "description": "quizCittaFeelingQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizCittaFeelingExplanation": "“{name}” has {feeling}.",
+  "quizCittaFeelingExplanation": "“{name}” සිතෙහි {feeling} පවතී.",
   "@quizCittaFeelingExplanation": {
     "description": "quizCittaFeelingExplanation",
     "placeholders": {
@@ -1326,7 +1326,7 @@
       "feeling": {}
     }
   },
-  "quizCittaFeelingClaim": "Citta “{name}” has {feeling}. True or false?",
+  "quizCittaFeelingClaim": "“{name}” සිතෙහි {feeling} පවතී. සත්‍යද අසත්‍යද?",
   "@quizCittaFeelingClaim": {
     "description": "quizCittaFeelingClaim",
     "placeholders": {
@@ -1334,19 +1334,19 @@
       "feeling": {}
     }
   },
-  "conflictNo": "No — they conflict",
+  "conflictNo": "නැත — ඒවා එකිනෙකට විරුද්ධයි",
   "@conflictNo": {
     "description": "conflictNo"
   },
-  "conflictAlwaysYes": "Yes — they always arise together",
+  "conflictAlwaysYes": "ඔව් — ඒවා සැමවිටම එකට යෙදේ",
   "@conflictAlwaysYes": {
     "description": "conflictAlwaysYes"
   },
-  "conflictSometimesYes": "Yes — they sometimes arise together",
+  "conflictSometimesYes": "ඔව් — ඒවා සමහරවිට එකට යෙදේ",
   "@conflictSometimesYes": {
     "description": "conflictSometimesYes"
   },
-  "quizConflictQuestion": "Can “{first}” and “{second}” arise together in one citta?",
+  "quizConflictQuestion": "“{first}” සහ “{second}” එකම සිතක එකට යෙදිය හැකිද?",
   "@quizConflictQuestion": {
     "description": "quizConflictQuestion",
     "placeholders": {
@@ -1354,14 +1354,14 @@
       "second": {}
     }
   },
-  "quizSphereQuestion": "To which sphere does citta “{name}” belong?",
+  "quizSphereQuestion": "“{name}” සිත අයත් වන්නේ කුමන භූමියටද?",
   "@quizSphereQuestion": {
     "description": "quizSphereQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizSphereExplanation": "“{name}” belongs to {sphere}.",
+  "quizSphereExplanation": "“{name}” {sphere}ට අයත් වේ.",
   "@quizSphereExplanation": {
     "description": "quizSphereExplanation",
     "placeholders": {
@@ -1369,7 +1369,7 @@
       "sphere": {}
     }
   },
-  "quizSphereClaim": "Citta “{name}” belongs to {sphere}. True or false?",
+  "quizSphereClaim": "“{name}” සිත {sphere}ට අයත් වේ. සත්‍යද අසත්‍යද?",
   "@quizSphereClaim": {
     "description": "quizSphereClaim",
     "placeholders": {
@@ -1377,15 +1377,15 @@
       "sphere": {}
     }
   },
-  "phaseFoundation": "Phase 1 — Foundation",
+  "phaseFoundation": "අදියර 1 — පදනම",
   "@phaseFoundation": {
     "description": "phaseFoundation"
   },
-  "phaseCausality": "Phase 2 — Causality",
+  "phaseCausality": "අදියර 2 — හේතුඵල",
   "@phaseCausality": {
     "description": "phaseCausality"
   },
-  "phaseMastery": "Phase 3 — Mastery",
+  "phaseMastery": "අදියර 3 — ප්‍රවීණත්වය",
   "@phaseMastery": {
     "description": "phaseMastery"
   },
@@ -1485,12 +1485,56 @@
   "@estimatedDuration": {
     "description": "estimatedDuration"
   },
-  "continueListening": "Continue listening",
+  "continueListening": "දිගටම සවන් දෙන්න",
   "@continueListening": {
     "description": "continueListening"
   },
-  "audioBackgroundLimit": "Background audio depends on the installed voice engine",
+  "audioBackgroundLimit": "පසුබිම් ශ්‍රව්‍ය ධාවනය ස්ථාපිත හඬ එන්ජිම මත රඳා පවතී",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "ශ්‍රවණය සහ උද්දීපනය",
+  "karaokeModeTitle": "කැරෝකේ මාදිලිය",
+  "karaokeModeSubtitle": "සවන් දෙන විට කියවන පෙළ උද්දීපනය කරන්න",
+  "karaokeLineHighlightTitle": "වත්මන් පේළිය උද්දීපනය කරන්න",
+  "karaokeLineHighlightSubtitle": "කියවන ඡේදය වර්ණවත් කරන්න",
+  "karaokeWordHighlightTitle": "වචනයෙන් වචනය උද්දීපනය කරන්න",
+  "karaokeWordHighlightSubtitle": "කියවන විට එක් එක් වචනය උද්දීපනය කරන්න",
+  "audioFloatingGoTo": "දැනට වාදනය වන ස්ථානයට යන්න",
+  "audioFloatingHide": "ප්ලේයරය සඟවන්න",
+  "audioFloatingRestore": "ප්ලේයරය පෙන්වන්න",
+  "audioFloatingClose": "ප්ලේයරය වසන්න",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

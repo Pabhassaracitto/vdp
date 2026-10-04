@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "கேட்டல் மற்றும் சிறப்பம்சங்கள்",
+  "karaokeModeTitle": "கரோக்கி முறை",
+  "karaokeModeSubtitle": "கேட்கும் போது வாசிக்கப்படும் உரையை முன்னிலைப்படுத்தவும்",
+  "karaokeLineHighlightTitle": "தற்போதைய வரியை முன்னிலைப்படுத்தவும்",
+  "karaokeLineHighlightSubtitle": "வாசிக்கப்படும் பத்தியை நிழலிடவும்",
+  "karaokeWordHighlightTitle": "வார்த்தை வாரியாக முன்னிலைப்படுத்தவும்",
+  "karaokeWordHighlightSubtitle": "ஒவ்வொரு வார்த்தையையும் வாசிக்கும் போது சிறப்பிக்கவும்",
+  "audioFloatingGoTo": "இயங்கும் பகுதிக்குச் செல்லவும்",
+  "audioFloatingHide": "பிளேயரை மறைக்கவும்",
+  "audioFloatingRestore": "பிளேயரைக் காட்டவும்",
+  "audioFloatingClose": "பிளேயரை மூடவும்",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }
