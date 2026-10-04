@@ -402,6 +402,19 @@ class AppLocalizationsVi extends AppLocalizations {
       '• Nhấn Tâm để xem chi tiết\n• Nhấn Tâm Sở để xem điểm xung khắc\n• Dùng bộ lọc để thu hẹp\n• Xoay ngang để xem rộng hơn';
 
   @override
+  String get matrixListenCittas => 'Nghe toàn bộ Tâm';
+
+  @override
+  String get matrixListenCetasikas => 'Nghe toàn bộ Tâm Sở';
+
+  @override
+  String get matrixListenFromHint => 'Nhấn giữ để nghe từ mục này';
+
+  @override
+  String get matrixListenHelpBody =>
+      'Nhấn giữ một hàng Tâm hoặc cột Tâm Sở để nghe từ mục đó. Nhấn biểu tượng tai nghe ở góc bảng để nghe cả danh sách.';
+
+  @override
   String get understood => 'Đã hiểu';
 
   @override
@@ -960,7 +973,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get intermediate => 'Trung cấp';
 
   @override
-  String get intermediateDescription => 'Bao gồm các trường hợp Tâm Sở xung khắc';
+  String get intermediateDescription =>
+      'Bao gồm các trường hợp Tâm Sở xung khắc';
 
   @override
   String get advanced => 'Nâng cao';
@@ -1081,15 +1095,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get resumeListening => 'Tiếp tục nghe';
 
   @override
-  String get continueListening => 'Tiếp tục nghe';
-
-  @override
-  String get sleepTimer => 'Hẹn giờ tắt';
-
-  @override
-  String get sleepTimerOff => 'Tắt';
-
-  @override
   String get minutesShort => 'phút';
 
   @override
@@ -1102,13 +1107,51 @@ class AppLocalizationsVi extends AppLocalizations {
   String get previousTrack => 'Mục trước';
 
   @override
+  String get sleepTimer => 'Hẹn giờ tắt';
+
+  @override
+  String get sleepTimerOff => 'Tắt';
+
+  @override
+  String get sleepTimer15 => '15 phút';
+
+  @override
+  String get sleepTimer30 => '30 phút';
+
+  @override
+  String get sleepTimer60 => '60 phút';
+
+  @override
+  String sleepTimerRemaining(Object minutes) {
+    return 'Hẹn giờ tắt: còn $minutes phút';
+  }
+
+  @override
+  String get audioModelUnavailable =>
+      'Chưa có giọng neural; đang dùng giọng thiết bị';
+
+  @override
+  String get realDuration => 'Thời lượng';
+
+  @override
+  String get estimatedDuration => 'Thời lượng ước tính';
+
+  @override
+  String get continueListening => 'Tiếp tục nghe';
+
+  @override
+  String get audioBackgroundLimit =>
+      'Nghe nền phụ thuộc vào engine giọng đã cài';
+
+  @override
   String get karaokeSettingsTitle => 'Nghe & Tô sáng';
 
   @override
   String get karaokeModeTitle => 'Chế độ tô sáng khi nghe';
 
   @override
-  String get karaokeModeSubtitle => 'Tô sáng văn bản đang được đọc khi nghe bài';
+  String get karaokeModeSubtitle =>
+      'Tô sáng văn bản đang được đọc khi nghe bài';
 
   @override
   String get karaokeLineHighlightTitle => 'Tô sáng dòng đang đọc';
@@ -1120,7 +1163,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get karaokeWordHighlightTitle => 'Tô sáng từng từ đang đọc';
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Tô sáng từng từ theo nhịp đọc (ước tính)';
+  String get karaokeWordHighlightSubtitle =>
+      'Tô sáng từng từ theo nhịp đọc (ước tính)';
 
   @override
   String get audioFloatingGoTo => 'Đến nơi đang phát';

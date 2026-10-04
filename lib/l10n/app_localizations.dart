@@ -859,6 +859,30 @@ abstract class AppLocalizations {
   /// **'• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space'**
   String get matrixHelpTips;
 
+  /// matrixListenCittas
+  ///
+  /// In en, this message translates to:
+  /// **'Listen to all cittas'**
+  String get matrixListenCittas;
+
+  /// matrixListenCetasikas
+  ///
+  /// In en, this message translates to:
+  /// **'Listen to all cetasikas'**
+  String get matrixListenCetasikas;
+
+  /// matrixListenFromHint
+  ///
+  /// In en, this message translates to:
+  /// **'Long-press to listen from this item'**
+  String get matrixListenFromHint;
+
+  /// matrixListenHelpBody
+  ///
+  /// In en, this message translates to:
+  /// **'Long-press a citta row or a cetasika column to listen from that item. Tap the headphones icon in the table corner to listen to the whole list.'**
+  String get matrixListenHelpBody;
+
   /// understood
   ///
   /// In en, this message translates to:
@@ -2003,12 +2027,6 @@ abstract class AppLocalizations {
   /// **'Resume listening'**
   String get resumeListening;
 
-  /// continueListening
-  String get continueListening;
-
-  String get sleepTimer;
-  String get sleepTimerOff;
-
   /// minutesShort
   ///
   /// In en, this message translates to:
@@ -2032,6 +2050,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Previous section'**
   String get previousTrack;
+
+  /// sleepTimer
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep timer'**
+  String get sleepTimer;
+
+  /// sleepTimerOff
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get sleepTimerOff;
+
+  /// sleepTimer15
+  ///
+  /// In en, this message translates to:
+  /// **'15 minutes'**
+  String get sleepTimer15;
+
+  /// sleepTimer30
+  ///
+  /// In en, this message translates to:
+  /// **'30 minutes'**
+  String get sleepTimer30;
+
+  /// sleepTimer60
+  ///
+  /// In en, this message translates to:
+  /// **'60 minutes'**
+  String get sleepTimer60;
+
+  /// sleepTimerRemaining
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep timer: {minutes} min'**
+  String sleepTimerRemaining(Object minutes);
+
+  /// audioModelUnavailable
+  ///
+  /// In en, this message translates to:
+  /// **'Neural voice unavailable; using device voice'**
+  String get audioModelUnavailable;
+
+  /// realDuration
+  ///
+  /// In en, this message translates to:
+  /// **'Duration'**
+  String get realDuration;
+
+  /// estimatedDuration
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated duration'**
+  String get estimatedDuration;
+
+  /// continueListening
+  ///
+  /// In en, this message translates to:
+  /// **'Continue listening'**
+  String get continueListening;
+
+  /// audioBackgroundLimit
+  ///
+  /// In en, this message translates to:
+  /// **'Background audio depends on the installed voice engine'**
+  String get audioBackgroundLimit;
 
   /// karaokeSettingsTitle
   ///
@@ -2078,7 +2162,7 @@ abstract class AppLocalizations {
   /// audioFloatingGoTo
   ///
   /// In en, this message translates to:
-  /// **'Go to what\'s playing'**
+  /// **'Go to what\'\'s playing'**
   String get audioFloatingGoTo;
 
   /// audioFloatingHide

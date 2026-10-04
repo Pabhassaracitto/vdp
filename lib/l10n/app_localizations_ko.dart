@@ -401,6 +401,19 @@ class AppLocalizationsKo extends AppLocalizations {
       '• Tap a citta for details\n• Tap a cetasika for conflicts\n• Use filters to narrow the view\n• Rotate for more space';
 
   @override
+  String get matrixListenCittas => '모든 찌따 듣기';
+
+  @override
+  String get matrixListenCetasikas => '모든 쩨따시까 듣기';
+
+  @override
+  String get matrixListenFromHint => '길게 눌러 이 항목부터 듣기';
+
+  @override
+  String get matrixListenHelpBody =>
+      '찌따 행이나 쩨따시까 열을 길게 누르면 그 항목부터 들을 수 있습니다. 표 모서리의 헤드폰 아이콘을 탭하면 전체 목록을 들을 수 있습니다.';
+
+  @override
   String get understood => 'Got it';
 
   @override
@@ -1083,15 +1096,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get resumeListening => '이어서 듣기';
 
   @override
-  String get continueListening => 'Continue listening';
-
-  @override
-  String get sleepTimer => 'Sleep timer';
-
-  @override
-  String get sleepTimerOff => 'Off';
-
-  @override
   String get minutesShort => '분';
 
   @override
@@ -1104,35 +1108,72 @@ class AppLocalizationsKo extends AppLocalizations {
   String get previousTrack => '이전 단락';
 
   @override
-  String get karaokeSettingsTitle => 'Listening & karaoke';
+  String get sleepTimer => 'Sleep timer';
 
   @override
-  String get karaokeModeTitle => 'Karaoke mode';
+  String get sleepTimerOff => 'Off';
 
   @override
-  String get karaokeModeSubtitle => 'Highlight the text being read while listening';
+  String get sleepTimer15 => '15 minutes';
 
   @override
-  String get karaokeLineHighlightTitle => 'Highlight current line';
+  String get sleepTimer30 => '30 minutes';
 
   @override
-  String get karaokeLineHighlightSubtitle => 'Shade the paragraph being read';
+  String get sleepTimer60 => '60 minutes';
 
   @override
-  String get karaokeWordHighlightTitle => 'Highlight current word';
+  String sleepTimerRemaining(Object minutes) {
+    return 'Sleep timer: $minutes min';
+  }
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Shade each word as it is spoken (estimated timing)';
+  String get audioModelUnavailable =>
+      'Neural voice unavailable; using device voice';
 
   @override
-  String get audioFloatingGoTo => 'Go to what\'s playing';
+  String get realDuration => 'Duration';
 
   @override
-  String get audioFloatingHide => 'Hide player';
+  String get estimatedDuration => 'Estimated duration';
 
   @override
-  String get audioFloatingRestore => 'Show player';
+  String get continueListening => 'Continue listening';
 
   @override
-  String get audioFloatingClose => 'Close player';
+  String get audioBackgroundLimit =>
+      'Background audio depends on the installed voice engine';
+
+  @override
+  String get karaokeSettingsTitle => '듣기 및 노래방식 하이라이트';
+
+  @override
+  String get karaokeModeTitle => '노래방 모드';
+
+  @override
+  String get karaokeModeSubtitle => '듣는 동안 읽히는 텍스트를 강조 표시합니다';
+
+  @override
+  String get karaokeLineHighlightTitle => '현재 줄 강조 표시';
+
+  @override
+  String get karaokeLineHighlightSubtitle => '읽히고 있는 단락을 음영 처리합니다';
+
+  @override
+  String get karaokeWordHighlightTitle => '단어별 강조 표시';
+
+  @override
+  String get karaokeWordHighlightSubtitle => '발음되는 각 단어를 강조 표시합니다';
+
+  @override
+  String get audioFloatingGoTo => '현재 재생 중인 곳으로 이동';
+
+  @override
+  String get audioFloatingHide => '플레이어 숨기기';
+
+  @override
+  String get audioFloatingRestore => '플레이어 표시';
+
+  @override
+  String get audioFloatingClose => '플레이어 닫기';
 }

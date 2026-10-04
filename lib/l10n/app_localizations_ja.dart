@@ -169,15 +169,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get highContrastMode => '高コントラストモード';
 
   @override
-  String get highContrastSubtitle =>
-      '弱視の方のために色のコントラストを高めます';
+  String get highContrastSubtitle => '弱視の方のために色のコントラストを高めます';
 
   @override
   String get screenReaderHints => 'スクリーンリーダーのヒント';
 
   @override
-  String get screenReaderHintsSubtitle =>
-      'TalkBack と VoiceOver により詳しい説明を提供します';
+  String get screenReaderHintsSubtitle => 'TalkBack と VoiceOver により詳しい説明を提供します';
 
   @override
   String get textSize => '文字サイズ';
@@ -205,8 +203,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get showDataWarningAgain => 'データ警告を再表示';
 
   @override
-  String get showDataWarningAgainSubtitle =>
-      'マトリックスの警告バナーを復元';
+  String get showDataWarningAgainSubtitle => 'マトリックスの警告バナーを復元';
 
   @override
   String get dataWarningEnabled => 'データ警告が有効になりました';
@@ -230,8 +227,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get resetProgressQuestion => '進捗をリセットしますか？';
 
   @override
-  String get resetProgressWarning =>
-      '学習進捗とクイズ得点がすべて削除されます。この操作は元に戻せません。';
+  String get resetProgressWarning => '学習進捗とクイズ得点がすべて削除されます。この操作は元に戻せません。';
 
   @override
   String get progressResetSuccess => '学習進捗をリセットしました';
@@ -320,8 +316,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get rotateScreen => '画面を回転';
 
   @override
-  String get rotationHint =>
-      '画面が回転しない場合は、端末設定で自動回転を有効にしてください。';
+  String get rotationHint => '画面が回転しない場合は、端末設定で自動回転を有効にしてください。';
 
   @override
   String get highContrast => '高コントラスト';
@@ -383,8 +378,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get howToRead => '読み方：';
 
   @override
-  String get matrixHelpRead =>
-      '• 行：心\n• 列：心所\n• 交点：相応関係';
+  String get matrixHelpRead => '• 行：心\n• 列：心所\n• 交点：相応関係';
 
   @override
   String get symbols => '記号：';
@@ -398,6 +392,19 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get matrixHelpTips =>
       '• 心をタップして詳細を表示\n• 心所をタップして衝突を表示\n• フィルターで表示を絞り込み\n• 画面を回転して広く表示';
+
+  @override
+  String get matrixListenCittas => 'すべてのチッタを再生';
+
+  @override
+  String get matrixListenCetasikas => 'すべてのチェータシカを再生';
+
+  @override
+  String get matrixListenFromHint => '長押しでこの項目から再生';
+
+  @override
+  String get matrixListenHelpBody =>
+      '心の行または心所の列を長押しすると、その項目から再生できます。表の隅のヘッドホンアイコンをタップすると、リスト全体を再生できます。';
 
   @override
   String get understood => '了解';
@@ -424,8 +431,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get conditionDetails => '縁起の詳細：';
 
   @override
-  String get lastConditionDescription =>
-      'これはこの生命循環における最後の果報支で、新たな条件を開始しません。';
+  String get lastConditionDescription => 'これはこの生命循環における最後の果報支で、新たな条件を開始しません。';
 
   @override
   String conditionLinkDescription(Object effect, Object explanation) {
@@ -449,8 +455,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get paccayaDefinition => '定義';
 
   @override
-  String get paccayaConditioningStates =>
-      '能縁法 (paccaya-dhamma)';
+  String get paccayaConditioningStates => '能縁法 (paccaya-dhamma)';
 
   @override
   String get paccayaConditionedStates => '所縁起法 (paccayuppanna)';
@@ -1081,15 +1086,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get resumeListening => '続きから再生';
 
   @override
-  String get continueListening => 'Continue listening';
-
-  @override
-  String get sleepTimer => 'スリープタイマー';
-
-  @override
-  String get sleepTimerOff => 'オフ';
-
-  @override
   String get minutesShort => '分';
 
   @override
@@ -1102,35 +1098,71 @@ class AppLocalizationsJa extends AppLocalizations {
   String get previousTrack => '前のセクション';
 
   @override
-  String get karaokeSettingsTitle => 'Listening & karaoke';
+  String get sleepTimer => 'スリープタイマー';
 
   @override
-  String get karaokeModeTitle => 'Karaoke mode';
+  String get sleepTimerOff => 'オフ';
 
   @override
-  String get karaokeModeSubtitle => 'Highlight the text being read while listening';
+  String get sleepTimer15 => '15分';
 
   @override
-  String get karaokeLineHighlightTitle => 'Highlight current line';
+  String get sleepTimer30 => '30分';
 
   @override
-  String get karaokeLineHighlightSubtitle => 'Shade the paragraph being read';
+  String get sleepTimer60 => '60分';
 
   @override
-  String get karaokeWordHighlightTitle => 'Highlight current word';
+  String sleepTimerRemaining(Object minutes) {
+    return 'スリープタイマー：残り$minutes分';
+  }
 
   @override
-  String get karaokeWordHighlightSubtitle => 'Shade each word as it is spoken (estimated timing)';
+  String get audioModelUnavailable => 'ニューラル音声を利用できないため、端末の音声を使用します';
 
   @override
-  String get audioFloatingGoTo => 'Go to what\'s playing';
+  String get realDuration => '再生時間';
 
   @override
-  String get audioFloatingHide => 'Hide player';
+  String get estimatedDuration => '推定時間';
 
   @override
-  String get audioFloatingRestore => 'Show player';
+  String get continueListening => 'Continue listening';
 
   @override
-  String get audioFloatingClose => 'Close player';
+  String get audioBackgroundLimit =>
+      'Background audio depends on the installed voice engine';
+
+  @override
+  String get karaokeSettingsTitle => '音声再生とハイライト';
+
+  @override
+  String get karaokeModeTitle => 'カラオケモード';
+
+  @override
+  String get karaokeModeSubtitle => '再生中に読み上げているテキストをハイライト表示';
+
+  @override
+  String get karaokeLineHighlightTitle => '現在の行をハイライト';
+
+  @override
+  String get karaokeLineHighlightSubtitle => '読み上げ中の段落を強調表示';
+
+  @override
+  String get karaokeWordHighlightTitle => '単語ごとのハイライト';
+
+  @override
+  String get karaokeWordHighlightSubtitle => '読み上げに合わせて単語ごとにハイライト（推定時間）';
+
+  @override
+  String get audioFloatingGoTo => '再生中の場所に移動';
+
+  @override
+  String get audioFloatingHide => 'プレイヤーを非表示';
+
+  @override
+  String get audioFloatingRestore => 'プレイヤーを表示';
+
+  @override
+  String get audioFloatingClose => 'プレイヤーを閉じる';
 }
