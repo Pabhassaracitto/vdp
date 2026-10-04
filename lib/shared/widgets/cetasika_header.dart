@@ -15,6 +15,10 @@ class CetasikaHeader extends StatelessWidget {
   final int displayIndex;
   final bool useHighContrast;
 
+  /// VDP 0.10.2 — cột này đang được đọc trong phiên nghe Bảng Tương Ứng
+  /// (52 Tâm Sở).
+  final bool isListening;
+
   const CetasikaHeader({
     super.key,
     required this.cetasika,
@@ -24,6 +28,7 @@ class CetasikaHeader extends StatelessWidget {
     required this.height,
     required this.displayIndex,
     this.useHighContrast = false,
+    this.isListening = false,
   });
 
   @override
@@ -49,8 +54,10 @@ class CetasikaHeader extends StatelessWidget {
         cetasika.namePali,
         cetasika.group.localizedName(context.l10n, includeCount: true),
         [
+          if (isListening) context.l10n.nowPlaying,
           if (isSelected) context.l10n.selected,
           if (isDimmed) context.l10n.dimmedByConflict,
+          context.l10n.matrixListenFromHint,
         ].join('. '),
       ),
       button: true,
@@ -63,14 +70,16 @@ class CetasikaHeader extends StatelessWidget {
           height: height,
           child: DecoratedBox(
             decoration: BoxDecoration(
-              color: isSelected
-                  ? groupColor.withValues(alpha: 0.25)
-                  : (useHighContrast
-                      ? HCColors.surface
-                      : groupColor.withValues(alpha: 0.08)),
+              color: isListening
+                  ? _listenColor(context).withValues(alpha: 0.16)
+                  : isSelected
+                      ? groupColor.withValues(alpha: 0.25)
+                      : (useHighContrast
+                          ? HCColors.surface
+                          : groupColor.withValues(alpha: 0.08)),
               border: BorderDirectional(
                 top: BorderSide(
-                  color: groupColor,
+                  color: isListening ? _listenColor(context) : groupColor,
                   width: isLandscape ? 2 : 3,
                 ),
                 end: BorderSide(
@@ -79,8 +88,13 @@ class CetasikaHeader extends StatelessWidget {
                       : Colors.grey.shade200,
                   width: 0.5,
                 ),
-                bottom: isSelected
-                    ? BorderSide(color: groupColor, width: 2)
+                bottom: isSelected || isListening
+                    ? BorderSide(
+                        color: isListening
+                            ? _listenColor(context)
+                            : groupColor,
+                        width: 2,
+                      )
                     : BorderSide.none,
               ),
             ),
@@ -91,17 +105,25 @@ class CetasikaHeader extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  // Symbol nhóm
-                  Text(
-                    groupSymbol,
-                    style: TextStyle(
-                      fontSize: symbolFontSize,
-                      color: useHighContrast
-                          ? _hcGroupColor(groupColor)
-                          : groupColor,
+                  // Symbol nhóm — nhường chỗ cho icon sóng âm khi cột này
+                  // đang được đọc (VDP 0.10.2).
+                  if (isListening)
+                    Icon(
+                      Icons.graphic_eq_rounded,
+                      size: symbolFontSize + 2,
+                      color: _listenColor(context),
+                    )
+                  else
+                    Text(
+                      groupSymbol,
+                      style: TextStyle(
+                        fontSize: symbolFontSize,
+                        color: useHighContrast
+                            ? _hcGroupColor(groupColor)
+                            : groupColor,
+                      ),
+                      textScaler: TextScaler.noScaling,
                     ),
-                    textScaler: TextScaler.noScaling,
-                  ),
                   SizedBox(height: isLandscape ? 1 : 4),
 
                   // Tên xoay dọc
@@ -191,6 +213,10 @@ class CetasikaHeader extends StatelessWidget {
         return VdpColors.cetasikaSobhana;
     }
   }
+
+  /// Màu trạng thái nghe — theo theme hiện hành (sáng/tối).
+  Color _listenColor(BuildContext context) =>
+      Theme.of(context).colorScheme.secondary;
 
   Color _hcGroupColor(Color groupColor) {
     if (groupColor == VdpColors.sabbacittasadharana) {

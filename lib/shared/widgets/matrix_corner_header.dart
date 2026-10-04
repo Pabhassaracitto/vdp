@@ -4,6 +4,10 @@
 // Thiết kế: đường gạch chéo chia ô thành 2 vùng:
 //   • Góc TRÊN-PHẢI : "Tâm Sở →"
 //   • Góc DƯỚI-TRÁI : "Tâm ↓"
+//
+// VDP 0.10.2: mỗi góc mang thêm một nút tai nghe nhỏ — nghe toàn bộ
+// danh sách của trục tương ứng (121 Tâm / 52 Tâm Sở) bằng engine nghe
+// dùng chung của app, không chiếm thêm hàng nào của bảng.
 
 import 'package:flutter/material.dart';
 
@@ -15,11 +19,27 @@ class MatrixCornerHeader extends StatelessWidget {
   final double height;
   final bool isHighContrast;
 
+  /// Nhấn tai nghe góc TRÊN (trục Tâm Sở) → nghe cả 52 Tâm Sở.
+  final VoidCallback? onListenCetasikas;
+
+  /// Nhấn tai nghe góc DƯỚI (trục Tâm) → nghe cả 121 Tâm.
+  final VoidCallback? onListenCittas;
+
+  /// Trục Tâm Sở đang được đọc.
+  final bool isCetasikaAxisPlaying;
+
+  /// Trục Tâm đang được đọc.
+  final bool isCittaAxisPlaying;
+
   const MatrixCornerHeader({
     super.key,
     required this.width,
     required this.height,
     required this.isHighContrast,
+    this.onListenCetasikas,
+    this.onListenCittas,
+    this.isCetasikaAxisPlaying = false,
+    this.isCittaAxisPlaying = false,
   });
 
   @override
@@ -64,38 +84,112 @@ class MatrixCornerHeader extends StatelessWidget {
             foregroundPainter: _DiagonalLinePainter(color: lineColor),
             child: Stack(
               children: [
-                // ── Góc TRÊN-PHẢI: "Tâm Sở →" ──
+                // ── Góc TRÊN-PHẢI: 🔊 "Tâm Sở →" ──
                 Positioned(
-                  top: 8,
+                  top: 2,
                   right: 6,
                   left: 0,
                   child: Align(
                     alignment: Alignment.topRight,
-                    child: _CornerLabel(
-                      text: context.l10n.cetasika,
-                      icon: '→',
-                      color: textColor,
-                      baseFontSize: 10,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _CornerListenButton(
+                          tooltip: context.l10n.matrixListenCetasikas,
+                          isPlaying: isCetasikaAxisPlaying,
+                          color: textColor,
+                          onPressed: onListenCetasikas,
+                        ),
+                        const SizedBox(width: 2),
+                        _CornerLabel(
+                          text: context.l10n.cetasika,
+                          icon: '→',
+                          color: textColor,
+                          baseFontSize: 10,
+                        ),
+                      ],
                     ),
                   ),
                 ),
 
-                // ── Góc DƯỚI-TRÁI: "Tâm ↓" ──
+                // ── Góc DƯỚI-TRÁI: "Tâm ↓" 🔊 ──
                 Positioned(
-                  bottom: 8,
+                  bottom: 2,
                   left: 6,
                   right: 0,
                   child: Align(
                     alignment: Alignment.bottomLeft,
-                    child: _CornerLabel(
-                      text: context.l10n.citta,
-                      icon: '↓',
-                      color: textColor,
-                      baseFontSize: 10,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _CornerLabel(
+                          text: context.l10n.citta,
+                          icon: '↓',
+                          color: textColor,
+                          baseFontSize: 10,
+                        ),
+                        const SizedBox(width: 2),
+                        _CornerListenButton(
+                          tooltip: context.l10n.matrixListenCittas,
+                          isPlaying: isCittaAxisPlaying,
+                          color: textColor,
+                          onPressed: onListenCittas,
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Nút tai nghe siêu nhỏ cho ô góc — đủ lớn để chạm (≥ 32px theo hit area
+/// ẩn), không đẩy label ra khỏi ô.
+class _CornerListenButton extends StatelessWidget {
+  final String tooltip;
+  final bool isPlaying;
+  final Color color;
+  final VoidCallback? onPressed;
+
+  const _CornerListenButton({
+    required this.tooltip,
+    required this.isPlaying,
+    required this.color,
+    this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: tooltip,
+      waitDuration: const Duration(milliseconds: 500),
+      child: Semantics(
+        button: true,
+        label: tooltip,
+        child: InkWell(
+          onTap: onPressed,
+          borderRadius: BorderRadius.circular(14),
+          child: Padding(
+            padding: const EdgeInsets.all(4),
+            child: SizedBox(
+              width: 16,
+              height: 16,
+              child: isPlaying
+                  ? Icon(
+                      Icons.graphic_eq_rounded,
+                      size: 15,
+                      color: color,
+                    )
+                  : Icon(
+                      Icons.headphones_rounded,
+                      size: 14,
+                      color: color.withValues(alpha: 0.9),
+                    ),
             ),
           ),
         ),

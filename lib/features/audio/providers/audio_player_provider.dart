@@ -46,6 +46,12 @@ enum AudioSourceKind {
 
   /// Tab Nhân Duyên — phần "Duyên hệ" (24 Paccaya).
   paticcaPaccaya,
+
+  /// Tab Bảng Tương Ưng — playlist 121 Tâm (VDP 0.10.2).
+  matrixCitta,
+
+  /// Tab Bảng Tương Ưng — playlist 52 Tâm Sở (VDP 0.10.2).
+  matrixCetasika,
 }
 
 AudioHandler? _audioHandler;

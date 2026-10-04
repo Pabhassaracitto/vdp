@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../core/constants/app_version.dart';
 import '../../core/localization/language_settings.dart';
 import '../../core/localization/ui_locale_text.dart';
 import '../../core/theme/vdp_theme.dart';
