@@ -325,8 +325,12 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                       query.isNotEmpty ? '"$query"' : context.l10n.appTagline,
                       style: TextStyle(
                         fontSize: 12,
+                        // AppBar luôn nền tối ở cả 2 theme (nâu đậm / HC đen)
+                        // — lấy màu chữ chuẩn của AppBar thay vì onPrimary
+                        // (HC theme đặt onPrimary = đen, sẽ tàng hình).
                         color: query.isNotEmpty
-                            ? Theme.of(context).colorScheme.onPrimary
+                            ? (AppBarTheme.of(context).foregroundColor ??
+                                Colors.white)
                             : Colors.white70,
                       ),
                       maxLines: 1,
@@ -344,7 +348,12 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
                 showSelectedIcon: false,
                 style: SegmentedButton.styleFrom(
                   visualDensity: VisualDensity.compact,
+                  // AppBar nền tối ở cả 2 theme — chốt màu chữ trắng thay vì
+                  // để M3 tự chọn theo colorScheme (HC sẽ ra chữ đen).
                   backgroundColor: Colors.white.withValues(alpha: 0.15),
+                  foregroundColor: Colors.white70,
+                  selectedForegroundColor: Colors.white,
+                  selectedBackgroundColor: Colors.white.withValues(alpha: 0.28),
                 ),
                 segments: [
                   ButtonSegment(
@@ -465,6 +474,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
 
   Widget _buildAppBarSearchField() {
     final query = ref.watch(matrixSearchQueryProvider);
+    // Chữ trắng cố định: trường nằm trên AppBar nền tối ở cả light lẫn HC.
+    const fieldColor = Colors.white;
     return TextField(
       controller: _searchController,
       focusNode: _searchFocusNode,
@@ -473,7 +484,10 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
       onSubmitted: (_) => _searchFocusNode.unfocus(),
       decoration: InputDecoration(
         hintText: context.l10n.searchCittaCetasika,
-        hintStyle: const TextStyle(fontSize: 14),
+        hintStyle: const TextStyle(
+          fontSize: 14,
+          color: Colors.white70,
+        ),
         isDense: true,
         prefixIcon: const Icon(Icons.search, size: 20),
         prefixIconConstraints: const BoxConstraints(
@@ -501,7 +515,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
         filled: true,
         fillColor: Colors.white.withValues(alpha: 0.18),
       ),
-      style: const TextStyle(fontSize: 14),
+      style: const TextStyle(fontSize: 14, color: fieldColor),
       onChanged: (val) {
         _searchDebounceTimer?.cancel();
         _searchDebounceTimer = Timer(const Duration(milliseconds: 300), () {
