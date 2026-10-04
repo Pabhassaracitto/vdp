@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "استمع إلى جميع التشيتا",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "استمع إلى جميع التشيتاسيكا",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "اضغط مطولًا للاستماع بدءًا من هذا العنصر",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "اضغط مطولًا على صف تشيتا أو عمود تشيتاسيكا للاستماع بدءًا من هذا العنصر. انقر على أيقونة سماعات الرأس في زاوية الجدول للاستماع إلى القائمة كاملة.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Got it",
   "@understood": {
     "description": "understood"

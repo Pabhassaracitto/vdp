@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "Бүх Читта сонсох",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "Бүх Четасика сонсох",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "Энэ зүйлээс сонсохын тулд удаан дарна уу",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "Тухайн зүйлээс сонсохын тулд Читта мөр эсвэл Четасика баганыг удаан дарна уу. Бүх жагсаалтыг сонсохын тулд хүснэгтний буланд байгаа чихэвч дүрс дээр дарна уу.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Got it",
   "@understood": {
     "description": "understood"

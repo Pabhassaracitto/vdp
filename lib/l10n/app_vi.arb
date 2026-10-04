@@ -504,6 +504,22 @@
   "@matrixHelpTips": {
     "description": "matrixHelpTips"
   },
+  "matrixListenCittas": "Nghe toàn bộ Tâm",
+  "@matrixListenCittas": {
+    "description": "matrixListenCittas"
+  },
+  "matrixListenCetasikas": "Nghe toàn bộ Tâm Sở",
+  "@matrixListenCetasikas": {
+    "description": "matrixListenCetasikas"
+  },
+  "matrixListenFromHint": "Nhấn giữ để nghe từ mục này",
+  "@matrixListenFromHint": {
+    "description": "matrixListenFromHint"
+  },
+  "matrixListenHelpBody": "Nhấn giữ một hàng Tâm hoặc cột Tâm Sở để nghe từ mục đó. Nhấn biểu tượng tai nghe ở góc bảng để nghe cả danh sách.",
+  "@matrixListenHelpBody": {
+    "description": "matrixListenHelpBody"
+  },
   "understood": "Đã hiểu",
   "@understood": {
     "description": "understood"
