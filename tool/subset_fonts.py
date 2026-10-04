@@ -160,7 +160,7 @@ _DECORATIVE = set("↶⟳")
 
 
 def is_colour_emoji(ch: str) -> bool:
-    return ch in _COLOUR_EMOJI or ch in _DECORATIVE or ord(ch) >= 0x1F300
+    return ch in _COLOUR_EMOJI or ch in _DECORATIVE or ord(ch) >= 0x1F1E0
 
 
 def missing_glyphs(destination: Path, text: str) -> set[str]:

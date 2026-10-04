@@ -1,10 +1,10 @@
 {
   "@@locale": "my",
-  "appName": "AbhiDhamma",
+  "appName": "အဘိဓမ္မာ",
   "@appName": {
     "description": "appName"
   },
-  "appTagline": "Abhidhamma Piṭaka",
+  "appTagline": "အဘိဓမ္မာပိဋကတ်",
   "@appTagline": {
     "description": "appTagline"
   },
@@ -12,27 +12,27 @@
   "@initializing": {
     "description": "initializing"
   },
-  "loadingDoctrineData": "ဓမ္မဒေတာကို ဖွင့်ပြီး စစ်ဆေးနေသည်…",
+  "loadingDoctrineData": "တရားတော်အချက်အလက်များ တင်နေသည်…",
   "@loadingDoctrineData": {
     "description": "loadingDoctrineData"
   },
-  "loadingTakingLonger": "Startup is taking longer than expected. Dhamma data may be being optimized for your device.",
+  "loadingTakingLonger": "စတင်ခြင်းသည် မျှော်လင့်ထားသည်ထက် ပိုကြာနေပါသည်...",
   "@loadingTakingLonger": {
     "description": "loadingTakingLonger"
   },
-  "unknownError": "Unknown error",
+  "unknownError": "အမည်မသိ အမှား",
   "@unknownError": {
     "description": "unknownError"
   },
-  "dataError": "Data error",
+  "dataError": "ဒေတာ အမှား",
   "@dataError": {
     "description": "dataError"
   },
-  "invalidData": "Invalid data",
+  "invalidData": "မမှန်ကန်သော ဒေတာ",
   "@invalidData": {
     "description": "invalidData"
   },
-  "invalidDataDescription": "The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.",
+  "invalidDataDescription": "ဓမ္မ စစ်ဆေးမှု စည်းမျဉ်းများ ချိုးဖောက်မှုကို စနစ်က တွေ့ရှိထားသည်။",
   "@invalidDataDescription": {
     "description": "invalidDataDescription"
   },
@@ -116,7 +116,7 @@
   "@notes": {
     "description": "notes"
   },
-  "errorWithMessage": "Error: {message}",
+  "errorWithMessage": "အမှား: {message}",
   "@errorWithMessage": {
     "description": "errorWithMessage",
     "placeholders": {
@@ -177,11 +177,11 @@
       "language": {}
     }
   },
-  "holdGlobeToReset": "Press and hold the globe for 3 seconds to restore the system language",
+  "holdGlobeToReset": "စနစ်သုံးဘာသာစကားသို့ ပြန်ထားရန် ကမ္ဘာလုံးပုံကို ၃ စက္ကန့် ဖိထားပါ",
   "@holdGlobeToReset": {
     "description": "holdGlobeToReset"
   },
-  "restoredSystemLanguage": "စနစ်ဘာသာစကား ပြန်ထားပြီး",
+  "restoredSystemLanguage": "စနစ်သုံးဘာသာစကားသို့ ပြန်ထားပြီးပါပြီ",
   "@restoredSystemLanguage": {
     "description": "restoredSystemLanguage"
   },
@@ -213,7 +213,7 @@
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
-  "screenReaderHints": "မျက်နှာပြင်ဖတ်စက် အကူအညီ",
+  "screenReaderHints": "စခရင်ဖတ်စနစ် အထောက်အကူများ",
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
@@ -225,7 +225,7 @@
   "@textSize": {
     "description": "textSize"
   },
-  "textScale": "စာလုံးအချိုး",
+  "textScale": "စာလုံးအရွယ်အစား",
   "@textScale": {
     "description": "textScale"
   },
@@ -346,43 +346,43 @@
       "count": {}
     }
   },
-  "onboardingVisualTitle": "See Clearly",
+  "onboardingVisualTitle": "ရှင်းလင်းစွာ မြင်ပါ",
   "@onboardingVisualTitle": {
     "description": "onboardingVisualTitle"
   },
-  "onboardingVisualSubtitle": "Citta × Cetasika Matrix",
+  "onboardingVisualSubtitle": "စိတ် × စေတသိက် ဇယား",
   "@onboardingVisualSubtitle": {
     "description": "onboardingVisualSubtitle"
   },
-  "onboardingVisualBody": "Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.",
+  "onboardingVisualBody": "စိတ် ၁၂၁ ပါးနှင့် စေတသိက် ၅၂ ပါးတို့၏ ယှဉ်တွဲပုံကို အပြန်အလှန်လေ့လာပါ။",
   "@onboardingVisualBody": {
     "description": "onboardingVisualBody"
   },
-  "onboardingCausalityTitle": "Understand Deeply",
+  "onboardingCausalityTitle": "နက်နဲစွာ နားလည်ပါ",
   "@onboardingCausalityTitle": {
     "description": "onboardingCausalityTitle"
   },
-  "onboardingCausalitySubtitle": "Dependent Origination",
+  "onboardingCausalitySubtitle": "ပဋိစ္စသမုပ္ပါဒ်",
   "@onboardingCausalitySubtitle": {
     "description": "onboardingCausalitySubtitle"
   },
-  "onboardingCausalityBody": "Explore the twelve links of dependent origination and classifications of kamma through connected learning views.",
+  "onboardingCausalityBody": "ပဋိစ္စသမုပ္ပါဒ် အင်္ဂါ ၁၂ ပါးနှင့် ကံအမျိုးအစားများကို လေ့လာပါ။",
   "@onboardingCausalityBody": {
     "description": "onboardingCausalityBody"
   },
-  "onboardingExploreTitle": "Discover for Yourself",
+  "onboardingExploreTitle": "မိမိဘာသာ ရှာဖွေလေ့လာပါ",
   "@onboardingExploreTitle": {
     "description": "onboardingExploreTitle"
   },
-  "onboardingExploreSubtitle": "A Non-linear Study Path",
+  "onboardingExploreSubtitle": "လွတ်လပ်သော သင်ယူမှုလမ်းကြောင်း",
   "@onboardingExploreSubtitle": {
     "description": "onboardingExploreSubtitle"
   },
-  "onboardingExploreBody": "Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.",
+  "onboardingExploreBody": "သင်ခန်းစာ ၁၀ ခုမှတစ်ဆင့် မိမိစိတ်ကြိုက် လေ့လာသင်ယူနိုင်ပါသည်။",
   "@onboardingExploreBody": {
     "description": "onboardingExploreBody"
   },
-  "beginExploring": "Begin exploring",
+  "beginExploring": "စတင်လေ့လာပါ",
   "@beginExploring": {
     "description": "beginExploring"
   },
@@ -390,7 +390,7 @@
   "@matrixTitle": {
     "description": "matrixTitle"
   },
-  "matrixSemantics": "Abhidhamma Matrix showing {count} cittas",
+  "matrixSemantics": "စိတ် {count} ပါး ပြသထားသော အဘိဓမ္မာ ဇယား",
   "@matrixSemantics": {
     "description": "matrixSemantics",
     "placeholders": {
@@ -417,7 +417,7 @@
   "@searchCittaCetasika": {
     "description": "searchCittaCetasika"
   },
-  "clearSearch": "Clear search",
+  "clearSearch": "ရှာဖွေမှု ရှင်းပါ",
   "@clearSearch": {
     "description": "clearSearch"
   },
@@ -469,7 +469,7 @@
   "@associationNever": {
     "description": "associationNever"
   },
-  "dataWarningsCount": "{count} data warnings",
+  "dataWarningsCount": "ဒေတာသတိပေးချက် {count} ခု",
   "@dataWarningsCount": {
     "description": "dataWarningsCount",
     "placeholders": {
@@ -508,7 +508,7 @@
   "@understood": {
     "description": "understood"
   },
-  "dataWarningTitle": "Data warning",
+  "dataWarningTitle": "ဒေတာ သတိပေးချက်",
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
@@ -516,7 +516,7 @@
   "@allFilters": {
     "description": "allFilters"
   },
-  "defilements": "Defilements",
+  "defilements": "ကိလေသာ (Kilesa)",
   "@defilements": {
     "description": "defilements"
   },
@@ -600,7 +600,7 @@
       "count": {}
     }
   },
-  "relatedDhammas": "Related dhammas",
+  "relatedDhammas": "ဆက်စပ်တရားများ",
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
@@ -647,7 +647,7 @@
       "explanation": {}
     }
   },
-  "kammaTitle": "Kamma",
+  "kammaTitle": "ကံ (Kamma)",
   "@kammaTitle": {
     "description": "kammaTitle"
   },
@@ -655,143 +655,143 @@
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },
-  "paliLabel": "Pāḷi:",
+  "paliLabel": "ပါဠိ:",
   "@paliLabel": {
     "description": "paliLabel"
   },
-  "stopPronunciation": "Stop pronunciation",
+  "stopPronunciation": "အသံထွက် ရပ်ပါ",
   "@stopPronunciation": {
     "description": "stopPronunciation"
   },
-  "listenPaliPronunciation": "Listen to Pāḷi pronunciation",
+  "listenPaliPronunciation": "ပါဠိ အသံထွက် နားထောင်ပါ",
   "@listenPaliPronunciation": {
     "description": "listenPaliPronunciation"
   },
-  "ttsUnavailable": "Speech synthesis is not supported on this device.",
+  "ttsUnavailable": "ဤစက်ပစ္စည်းတွင် အသံထွက်စနစ် မရနိုင်ပါ။",
   "@ttsUnavailable": {
     "description": "ttsUnavailable"
   },
-  "dragHandleSemantics": "Drag to resize",
+  "dragHandleSemantics": "အရွယ်အစားညှိရန် ဆွဲပါ",
   "@dragHandleSemantics": {
     "description": "dragHandleSemantics"
   },
-  "cittaNumber": "Citta {number}",
+  "cittaNumber": "စိတ် {number}",
   "@cittaNumber": {
     "description": "cittaNumber",
     "placeholders": {
       "number": {}
     }
   },
-  "doctrine": "Dhamma explanation",
+  "doctrine": "ဓမ္မ ရှင်းလင်းချက်",
   "@doctrine": {
     "description": "doctrine"
   },
-  "examples": "Examples",
+  "examples": "ဥပမာများ",
   "@examples": {
     "description": "examples"
   },
-  "fixedCetasikasCount": "Invariable cetasikas ({count})",
+  "fixedCetasikasCount": "နိယတစေတသိက် ({count})",
   "@fixedCetasikasCount": {
     "description": "fixedCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "variableCetasikasCount": "Variable cetasikas ({count})",
+  "variableCetasikasCount": "အနိယတစေတသိက် ({count})",
   "@variableCetasikasCount": {
     "description": "variableCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "personalNote": "Personal note",
+  "personalNote": "ကိုယ်ပိုင်မှတ်စု",
   "@personalNote": {
     "description": "personalNote"
   },
-  "personalNoteHint": "Enter your note…",
+  "personalNoteHint": "မှတ်စုရေးပါ…",
   "@personalNoteHint": {
     "description": "personalNoteHint"
   },
-  "wholesome": "Wholesome",
+  "wholesome": "ကုသိုလ်",
   "@wholesome": {
     "description": "wholesome"
   },
-  "functional": "Functional",
+  "functional": "ကြိယာ",
   "@functional": {
     "description": "functional"
   },
-  "pleasantFeeling": "Pleasant bodily feeling",
+  "pleasantFeeling": "ကာယိက သုခဝေဒနာ",
   "@pleasantFeeling": {
     "description": "pleasantFeeling"
   },
-  "unpleasantFeeling": "Painful bodily feeling",
+  "unpleasantFeeling": "ကာယိက ဒုက္ခဝေဒနာ",
   "@unpleasantFeeling": {
     "description": "unpleasantFeeling"
   },
-  "neutralFeeling": "Equanimous feeling",
+  "neutralFeeling": "ဥပေက္ခာဝေဒနာ",
   "@neutralFeeling": {
     "description": "neutralFeeling"
   },
-  "joyfulFeeling": "Joyful feeling",
+  "joyfulFeeling": "သောမနဿဝေဒနာ",
   "@joyfulFeeling": {
     "description": "joyfulFeeling"
   },
-  "alwaysAssociated": "Always associated",
+  "alwaysAssociated": "အမြဲယှဉ်တွဲသော",
   "@alwaysAssociated": {
     "description": "alwaysAssociated"
   },
-  "mayBeAssociated": "May be associated",
+  "mayBeAssociated": "တစ်ခါတစ်ရံယှဉ်တွဲသော",
   "@mayBeAssociated": {
     "description": "mayBeAssociated"
   },
-  "fourfoldDefinition": "Fourfold definition",
+  "fourfoldDefinition": "လက္ခဏာဒိစတုက္က (လက္ခဏာ/ရသ/ပစ္စုပဋ္ဌာန်/ပဒဋ္ဌာန်)",
   "@fourfoldDefinition": {
     "description": "fourfoldDefinition"
   },
-  "characteristic": "Characteristic",
+  "characteristic": "လက္ခဏာ (Lakkhaṇa)",
   "@characteristic": {
     "description": "characteristic"
   },
-  "functionLabel": "Function",
+  "functionLabel": "ကိစ္စ / ရသ (Rasa)",
   "@functionLabel": {
     "description": "functionLabel"
   },
-  "manifestation": "Manifestation",
+  "manifestation": "ပစ္စုပဋ္ဌာန် (Paccupaṭṭhāna)",
   "@manifestation": {
     "description": "manifestation"
   },
-  "proximateCause": "Proximate cause",
+  "proximateCause": "ပဒဋ္ဌာန် (Padaṭṭhāna)",
   "@proximateCause": {
     "description": "proximateCause"
   },
-  "doctrinalConflicts": "Doctrinal conflicts",
+  "doctrinalConflicts": "ဓမ္မဆန့်ကျင်မှု စည်းမျဉ်းများ",
   "@doctrinalConflicts": {
     "description": "doctrinalConflicts"
   },
-  "rulesCount": "{count} rules",
+  "rulesCount": "စည်းမျဉ်း {count} ခု",
   "@rulesCount": {
     "description": "rulesCount",
     "placeholders": {
       "count": {}
     }
   },
-  "universalCetasikas": "7 universals",
+  "universalCetasikas": "သဗ္ဗစိတ္တသာဓာရဏ ၇",
   "@universalCetasikas": {
     "description": "universalCetasikas"
   },
-  "occasionalCetasikas": "6 occasionals",
+  "occasionalCetasikas": "ပကိဏ်း ၆",
   "@occasionalCetasikas": {
     "description": "occasionalCetasikas"
   },
-  "unwholesomeCetasikas": "14 unwholesome",
+  "unwholesomeCetasikas": "အကုသိုလ်စေတသိက် ၁၄",
   "@unwholesomeCetasikas": {
     "description": "unwholesomeCetasikas"
   },
-  "beautifulCetasikas": "25 beautiful",
+  "beautifulCetasikas": "သောဘဏစေတသိက် ၂၅",
   "@beautifulCetasikas": {
     "description": "beautifulCetasikas"
   },
-  "rowCittaSemantics": "Citta row {displayIndex}: {name}; canonical number {order}; group {group}; feeling {feeling}. {action}",
+  "rowCittaSemantics": "စိတ်အစဉ် {displayIndex}: {name}; မူရင်းအမှတ် {order}; အုပ်စု {group}; ဝေဒနာ {feeling}. {action}",
   "@rowCittaSemantics": {
     "description": "rowCittaSemantics",
     "placeholders": {
@@ -803,7 +803,7 @@
       "action": {}
     }
   },
-  "cetasikaSemantics": "Cetasika {name} ({pali}), group {group}. {state} Tap for details.",
+  "cetasikaSemantics": "စေတသိက် {name} ({pali}), အုပ်စု {group}. {state} အသေးစိတ်ကြည့်ရန် နှိပ်ပါ။",
   "@cetasikaSemantics": {
     "description": "cetasikaSemantics",
     "placeholders": {
@@ -821,11 +821,11 @@
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
-  "matrixCornerSemantics": "Matrix corner: rows are cittas and columns are cetasikas",
+  "matrixCornerSemantics": "ဇယားထောင့်: အလျားလိုက်သည် စိတ်ဖြစ်ပြီး ဒေါင်လိုက်သည် စေတသိက်ဖြစ်သည်",
   "@matrixCornerSemantics": {
     "description": "matrixCornerSemantics"
   },
-  "associationSemantics": "{association}: citta {cittaId} with cetasika {cetasikaId}",
+  "associationSemantics": "{association}: စိတ် {cittaId} နှင့် စေတသိက် {cetasikaId}",
   "@associationSemantics": {
     "description": "associationSemantics",
     "placeholders": {
@@ -850,98 +850,98 @@
   "@overallProgress": {
     "description": "overallProgress"
   },
-  "savedItemsCount": "{count} saved items",
+  "savedItemsCount": "သိမ်းဆည်းထားသော အရာ {count} ခု",
   "@savedItemsCount": {
     "description": "savedItemsCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cittaTab": "Cittas",
+  "cittaTab": "စိတ်",
   "@cittaTab": {
     "description": "cittaTab"
   },
-  "cetasikaTab": "Cetasikas",
+  "cetasikaTab": "စေတသိက်",
   "@cetasikaTab": {
     "description": "cetasikaTab"
   },
-  "notesTab": "Notes",
+  "notesTab": "မှတ်စုများ",
   "@notesTab": {
     "description": "notesTab"
   },
-  "noBookmarkedCittas": "No bookmarked cittas",
+  "noBookmarkedCittas": "မှတ်သားထားသော စိတ်မရှိပါ",
   "@noBookmarkedCittas": {
     "description": "noBookmarkedCittas"
   },
-  "bookmarkCittaHint": "Open a lesson and tap the bookmark icon to save one",
+  "bookmarkCittaHint": "သိမ်းဆည်းရန် သင်ခန်းစာကိုဖွင့်ပြီး အမှတ်အသား အိုင်ကွန်ကို နှိပ်ပါ",
   "@bookmarkCittaHint": {
     "description": "bookmarkCittaHint"
   },
-  "loadingCittas": "Loading cittas…",
+  "loadingCittas": "စိတ်အချက်အလက်များ တင်နေသည်…",
   "@loadingCittas": {
     "description": "loadingCittas"
   },
-  "noBookmarkedCetasikas": "No bookmarked cetasikas",
+  "noBookmarkedCetasikas": "မှတ်သားထားသော စေတသိက်မရှိပါ",
   "@noBookmarkedCetasikas": {
     "description": "noBookmarkedCetasikas"
   },
-  "loadingCetasikas": "Loading cetasikas…",
+  "loadingCetasikas": "စေတသိက်အချက်အလက်များ တင်နေသည်…",
   "@loadingCetasikas": {
     "description": "loadingCetasikas"
   },
-  "noNotes": "No notes yet",
+  "noNotes": "မှတ်စု မရှိသေးပါ",
   "@noNotes": {
     "description": "noNotes"
   },
-  "addNoteHint": "Tap the edit icon in a lesson to add a personal note",
+  "addNoteHint": "ကိုယ်ပိုင်မှတ်စု ရေးရန် ပြင်ဆင်ရန် အိုင်ကွန်ကို နှိပ်ပါ",
   "@addNoteHint": {
     "description": "addNoteHint"
   },
-  "deleteNoteQuestion": "Delete note?",
+  "deleteNoteQuestion": "မှတ်စုကို ဖျက်မလား?",
   "@deleteNoteQuestion": {
     "description": "deleteNoteQuestion"
   },
-  "deleteNoteWarning": "This note will be permanently deleted. Are you sure?",
+  "deleteNoteWarning": "ဤမှတ်စုကို အပြီးအပိုင် ဖျက်ပါမည်။ သေချာပါသလား?",
   "@deleteNoteWarning": {
     "description": "deleteNoteWarning"
   },
-  "addNote": "Add note",
+  "addNote": "မှတ်စု ထည့်ပါ",
   "@addNote": {
     "description": "addNote"
   },
-  "removeBookmark": "Remove bookmark",
+  "removeBookmark": "အမှတ်အသား ဖယ်ရှားပါ",
   "@removeBookmark": {
     "description": "removeBookmark"
   },
-  "editNote": "Edit note",
+  "editNote": "မှတ်စု ပြင်ပါ",
   "@editNote": {
     "description": "editNote"
   },
-  "deleteNote": "Delete note",
+  "deleteNote": "မှတ်စု ဖျက်ပါ",
   "@deleteNote": {
     "description": "deleteNote"
   },
-  "noteUpdated": "Note updated",
+  "noteUpdated": "မှတ်စု အသစ်ပြင်ပြီးပါပြီ",
   "@noteUpdated": {
     "description": "noteUpdated"
   },
-  "noteSaved": "Note saved",
+  "noteSaved": "မှတ်စု သိမ်းဆည်းပြီးပါပြီ",
   "@noteSaved": {
     "description": "noteSaved"
   },
-  "editNoteTitle": "Edit note",
+  "editNoteTitle": "မှတ်စု ပြင်ဆင်ရန်",
   "@editNoteTitle": {
     "description": "editNoteTitle"
   },
-  "addNoteTitle": "Add note",
+  "addNoteTitle": "မှတ်စု အသစ်ထည့်ရန်",
   "@addNoteTitle": {
     "description": "addNoteTitle"
   },
-  "studyNoteHint": "Write your note about this item…\n\nExample: this citta appears during meditation when…",
+  "studyNoteHint": "ဤအကြောင်းအရာနှင့် ပတ်သက်၍ ကိုယ်ပိုင်မှတ်စု ရေးပါ…",
   "@studyNoteHint": {
     "description": "studyNoteHint"
   },
-  "charactersCount": "{current} / {maximum} characters",
+  "charactersCount": "စာလုံးရေ {current} / {maximum}",
   "@charactersCount": {
     "description": "charactersCount",
     "placeholders": {
@@ -949,38 +949,38 @@
       "maximum": {}
     }
   },
-  "update": "Update",
+  "update": "ပြင်ဆင်ပါ",
   "@update": {
     "description": "update"
   },
-  "saveNote": "Save note",
+  "saveNote": "မှတ်စု သိမ်းပါ",
   "@saveNote": {
     "description": "saveNote"
   },
-  "studyProgressPercent": "Study progress: {percent}%",
+  "studyProgressPercent": "သင်ယူမှု တိုးတက်မှု: {percent}%",
   "@studyProgressPercent": {
     "description": "studyProgressPercent",
     "placeholders": {
       "percent": {}
     }
   },
-  "modulesCompletedShort": "Modules\ncompleted",
+  "modulesCompletedShort": "ပြီးစီးသော\nသင်ခန်းစာများ",
   "@modulesCompletedShort": {
     "description": "modulesCompletedShort"
   },
-  "recommendedNext": "Recommended next",
+  "recommendedNext": "ဆက်လက်လေ့လာရန်",
   "@recommendedNext": {
     "description": "recommendedNext"
   },
-  "progressOverview": "Progress overview",
+  "progressOverview": "တိုးတက်မှု ခြုံငုံသုံးသပ်ချက်",
   "@progressOverview": {
     "description": "progressOverview"
   },
-  "totalModules": "Total modules",
+  "totalModules": "စုစုပေါင်း သင်ခန်းစာများ",
   "@totalModules": {
     "description": "totalModules"
   },
-  "dueForReview": "Due for review",
+  "dueForReview": "ပြန်လည်လေ့ကျက်ရန်",
   "@dueForReview": {
     "description": "dueForReview"
   },
@@ -996,18 +996,18 @@
   "@testTab": {
     "description": "testTab"
   },
-  "moduleHasNoData": "This module has no citta/cetasika data. Please check the JSON data.",
+  "moduleHasNoData": "ဤသင်ခန်းစာတွင် အချက်အလက် မရှိသေးပါ။",
   "@moduleHasNoData": {
     "description": "moduleHasNoData"
   },
-  "cittasInModule": "Cittas in this module — {count}",
+  "cittasInModule": "ဤသင်ခန်းစာပါ စိတ်များ — {count}",
   "@cittasInModule": {
     "description": "cittasInModule",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasInModule": "Cetasikas in this module — {count}",
+  "cetasikasInModule": "ဤသင်ခန်းစာပါ စေတသိက်များ — {count}",
   "@cetasikasInModule": {
     "description": "cetasikasInModule",
     "placeholders": {
@@ -1042,7 +1042,7 @@
       "count": {}
     }
   },
-  "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
+  "reviewCetasikaQuestion": "စေတသိက် “{name}” ({pali}) ၏ အဓိပ္ပာယ်မှာ အဘယ်နည်း?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
     "placeholders": {
@@ -1082,21 +1082,21 @@
       "pali": {}
     }
   },
-  "groupAnswer": "Group: {group}",
+  "groupAnswer": "အုပ်စု: {group}",
   "@groupAnswer": {
     "description": "groupAnswer",
     "placeholders": {
       "group": {}
     }
   },
-  "reviewCittaQuestion": "Which group and feeling does citta “{name}” have?",
+  "reviewCittaQuestion": "စိတ် “{name}” သည် မည်သည့်ဘုံနှင့် မည်သည့်ဝေဒနာ ရှိသနည်း?",
   "@reviewCittaQuestion": {
     "description": "reviewCittaQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "cittaReviewAnswer": "Sphere: {sphere}\nFeeling: {feeling}\nPāḷi: {pali}",
+  "cittaReviewAnswer": "ဘုံ: {sphere}\nဝေဒနာ: {feeling}\nပါဠိ: {pali}",
   "@cittaReviewAnswer": {
     "description": "cittaReviewAnswer",
     "placeholders": {
@@ -1105,11 +1105,11 @@
       "pali": {}
     }
   },
-  "noReviewContent": "This module has no review content yet. Please come back later.",
+  "noReviewContent": "ဤသင်ခန်းစာတွင် ပြန်လည်လေ့ကျက်ရန် အကြောင်းအရာ မရှိသေးပါ။",
   "@noReviewContent": {
     "description": "noReviewContent"
   },
-  "reviewedCount": "{revealed} / {total} reviewed",
+  "reviewedCount": "လေ့ကျက်ပြီး {revealed} / {total}",
   "@reviewedCount": {
     "description": "reviewedCount",
     "placeholders": {
@@ -1117,62 +1117,62 @@
       "total": {}
     }
   },
-  "reviewComplete": "You reviewed all the content. Take the quiz to check your understanding.",
+  "reviewComplete": "သင်ခန်းစာအားလုံး လေ့ကျက်ပြီးပါပြီ။ စမ်းသပ်စစ်ဆေးမှု ဖြေဆိုပါ။",
   "@reviewComplete": {
     "description": "reviewComplete"
   },
-  "tapToReveal": "Tap to reveal the answer",
+  "tapToReveal": "အဖြေကြည့်ရန် နှိပ်ပါ",
   "@tapToReveal": {
     "description": "tapToReveal"
   },
-  "answerLabel": "Answer: {answer}",
+  "answerLabel": "အဖြေ: {answer}",
   "@answerLabel": {
     "description": "answerLabel",
     "placeholders": {
       "answer": {}
     }
   },
-  "revealAnswer": "Reveal answer",
+  "revealAnswer": "အဖြေ ပြပါ",
   "@revealAnswer": {
     "description": "revealAnswer"
   },
-  "moduleQuizTitle": "Quiz\n{module}",
+  "moduleQuizTitle": "မေးခွန်းများ\n{module}",
   "@moduleQuizTitle": {
     "description": "moduleQuizTitle",
     "placeholders": {
       "module": {}
     }
   },
-  "moduleContentCount": "{count} items in this module",
+  "moduleContentCount": "ဤသင်ခန်းစာတွင် အကြောင်းအရာ {count} ခု ပါဝင်ပါသည်",
   "@moduleContentCount": {
     "description": "moduleContentCount",
     "placeholders": {
       "count": {}
     }
   },
-  "quizMaximumDescription": "Up to 10 multiple-choice questions covering this module",
+  "quizMaximumDescription": "ဤသင်ခန်းစာကို လွှမ်းခြုံသော ရွေးချယ်စရာ မေးခွန်း ၁၀ ခုအထိ",
   "@quizMaximumDescription": {
     "description": "quizMaximumDescription"
   },
-  "startQuiz": "Start quiz",
+  "startQuiz": "စစ်ဆေးမှု စတင်ပါ",
   "@startQuiz": {
     "description": "startQuiz"
   },
-  "cittasCount": "{count} cittas",
+  "cittasCount": "စိတ် {count} ပါး",
   "@cittasCount": {
     "description": "cittasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasCount": "{count} cetasikas",
+  "cetasikasCount": "စေတသိက် {count} ပါး",
   "@cetasikasCount": {
     "description": "cetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "noteForItem": "Note: {name}",
+  "noteForItem": "မှတ်စု: {name}",
   "@noteForItem": {
     "description": "noteForItem",
     "placeholders": {
@@ -1183,14 +1183,14 @@
   "@chooseLevel": {
     "description": "chooseLevel"
   },
-  "quizLevelDescription": "Each level generates up to {count} questions from this module",
+  "quizLevelDescription": "အဆင့်တစ်ခုစီသည် မေးခွန်း {count} ခု ထုတ်ပေးပါသည်",
   "@quizLevelDescription": {
     "description": "quizLevelDescription",
     "placeholders": {
       "count": {}
     }
   },
-  "insufficientQuizData": "This module does not have enough data to create questions.",
+  "insufficientQuizData": "မေးခွန်းထုတ်ရန် ဒေတာ မလုံလောက်ပါ။",
   "@insufficientQuizData": {
     "description": "insufficientQuizData"
   },
@@ -1206,7 +1206,7 @@
   "@viewResults": {
     "description": "viewResults"
   },
-  "correctAnswers": "{score} / {total} correct",
+  "correctAnswers": "မှန်ကန်မှု {score} / {total}",
   "@correctAnswers": {
     "description": "correctAnswers",
     "placeholders": {
@@ -1214,11 +1214,11 @@
       "total": {}
     }
   },
-  "quizExcellent": "Excellent! You have mastered this module.",
+  "quizExcellent": "ထူးချွန်ပါသည်! သင် ဤသင်ခန်းစာကို ကျွမ်းကျင်စွာ တတ်မြောက်သွားပါပြီ။",
   "@quizExcellent": {
     "description": "quizExcellent"
   },
-  "quizTryAgain": "Review the material and try again.",
+  "quizTryAgain": "ပြန်လည်လေ့လာပြီး ထပ်မံကြိုးစားပါ။",
   "@quizTryAgain": {
     "description": "quizTryAgain"
   },
@@ -1226,26 +1226,26 @@
   "@tryAgain": {
     "description": "tryAgain"
   },
-  "quizInsufficientDataMessage": "Module “{module}” does not have enough data to create questions.",
+  "quizInsufficientDataMessage": "“{module}” အတွက် မေးခွန်းထုတ်ရန် ဒေတာ မလုံလောက်ပါ။",
   "@quizInsufficientDataMessage": {
     "description": "quizInsufficientDataMessage",
     "placeholders": {
       "module": {}
     }
   },
-  "quizTypeCetasikaGroup": "Cetasika classification",
+  "quizTypeCetasikaGroup": "စေတသိက် ခွဲခြားခြင်း",
   "@quizTypeCetasikaGroup": {
     "description": "quizTypeCetasikaGroup"
   },
-  "quizTypeFeeling": "Feeling recognition",
+  "quizTypeFeeling": "ဝေဒနာ ခွဲခြားခြင်း",
   "@quizTypeFeeling": {
     "description": "quizTypeFeeling"
   },
-  "quizTypeConflict": "Doctrinal conflict",
+  "quizTypeConflict": "ဓမ္မ ဆန့်ကျင်မှုများ",
   "@quizTypeConflict": {
     "description": "quizTypeConflict"
   },
-  "quizTypeSphere": "Sphere",
+  "quizTypeSphere": "ဘုံ အဆင့်အတန်း",
   "@quizTypeSphere": {
     "description": "quizTypeSphere"
   },
@@ -1253,7 +1253,7 @@
   "@beginner": {
     "description": "beginner"
   },
-  "beginnerDescription": "Basic cetasika groups and feelings",
+  "beginnerDescription": "အခြေခံ စေတသိက် အုပ်စုများနှင့် ဝေဒနာများ",
   "@beginnerDescription": {
     "description": "beginnerDescription"
   },
@@ -1261,7 +1261,7 @@
   "@intermediate": {
     "description": "intermediate"
   },
-  "intermediateDescription": "Includes cetasika conflicts",
+  "intermediateDescription": "စေတသိက် ဆန့်ကျင်မှု စည်းမျဉ်းများ ပါဝင်သည်",
   "@intermediateDescription": {
     "description": "intermediateDescription"
   },
@@ -1269,23 +1269,23 @@
   "@advanced": {
     "description": "advanced"
   },
-  "advancedDescription": "Includes spheres and all question types",
+  "advancedDescription": "ဘုံများနှင့် မေးခွန်းပုံစံ အားလုံး ပါဝင်သည်",
   "@advancedDescription": {
     "description": "advancedDescription"
   },
-  "trueLabel": "True",
+  "trueLabel": "မှန်",
   "@trueLabel": {
     "description": "trueLabel"
   },
-  "falseLabel": "False",
+  "falseLabel": "မှား",
   "@falseLabel": {
     "description": "falseLabel"
   },
-  "trueOrFalse": "True or false?",
+  "trueOrFalse": "မှန် သို့မဟုတ် မှား?",
   "@trueOrFalse": {
     "description": "trueOrFalse"
   },
-  "quizCetasikaGroupQuestion": "Which group contains “{name}” ({pali})?",
+  "quizCetasikaGroupQuestion": "“{name}” ({pali}) သည် မည်သည့်အုပ်စုတွင် ပါဝင်သနည်း?",
   "@quizCetasikaGroupQuestion": {
     "description": "quizCetasikaGroupQuestion",
     "placeholders": {
@@ -1293,7 +1293,7 @@
       "pali": {}
     }
   },
-  "quizCetasikaGroupExplanation": "“{name}” belongs to {group}.\n{description}",
+  "quizCetasikaGroupExplanation": "“{name}” သည် {group} တွင် ပါဝင်သည်။\n{description}",
   "@quizCetasikaGroupExplanation": {
     "description": "quizCetasikaGroupExplanation",
     "placeholders": {
@@ -1302,7 +1302,7 @@
       "description": {}
     }
   },
-  "quizCetasikaClaim": "“{name}” ({pali}) belongs to {group}. True or false?",
+  "quizCetasikaClaim": "“{name}” ({pali}) သည် {group} တွင် ပါဝင်သည်။ မှန် သို့မဟုတ် မှား?",
   "@quizCetasikaClaim": {
     "description": "quizCetasikaClaim",
     "placeholders": {
@@ -1311,14 +1311,14 @@
       "group": {}
     }
   },
-  "quizCittaFeelingQuestion": "What feeling accompanies citta “{name}”?",
+  "quizCittaFeelingQuestion": "စိတ် “{name}” တွင် မည်သည့်ဝေဒနာ ယှဉ်သနည်း?",
   "@quizCittaFeelingQuestion": {
     "description": "quizCittaFeelingQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizCittaFeelingExplanation": "“{name}” has {feeling}.",
+  "quizCittaFeelingExplanation": "“{name}” တွင် {feeling} ယှဉ်သည်။",
   "@quizCittaFeelingExplanation": {
     "description": "quizCittaFeelingExplanation",
     "placeholders": {
@@ -1326,7 +1326,7 @@
       "feeling": {}
     }
   },
-  "quizCittaFeelingClaim": "Citta “{name}” has {feeling}. True or false?",
+  "quizCittaFeelingClaim": "စိတ် “{name}” တွင် {feeling} ယှဉ်သည်။ မှန် သို့မဟုတ် မှား?",
   "@quizCittaFeelingClaim": {
     "description": "quizCittaFeelingClaim",
     "placeholders": {
@@ -1334,19 +1334,19 @@
       "feeling": {}
     }
   },
-  "conflictNo": "No — they conflict",
+  "conflictNo": "မဟုတ် — ဆန့်ကျင်ဘက်ဖြစ်သည်",
   "@conflictNo": {
     "description": "conflictNo"
   },
-  "conflictAlwaysYes": "Yes — they always arise together",
+  "conflictAlwaysYes": "ဟုတ် — အမြဲ အတူယှဉ်တွဲဖြစ်သည်",
   "@conflictAlwaysYes": {
     "description": "conflictAlwaysYes"
   },
-  "conflictSometimesYes": "Yes — they sometimes arise together",
+  "conflictSometimesYes": "ဟုတ် — တစ်ခါတစ်ရံ အတူယှဉ်တွဲဖြစ်သည်",
   "@conflictSometimesYes": {
     "description": "conflictSometimesYes"
   },
-  "quizConflictQuestion": "Can “{first}” and “{second}” arise together in one citta?",
+  "quizConflictQuestion": "“{first}” နှင့် “{second}” တို့ စိတ်တစ်ခုတည်းတွင် အတူတကွ ဖြစ်နိုင်သလား?",
   "@quizConflictQuestion": {
     "description": "quizConflictQuestion",
     "placeholders": {
@@ -1354,14 +1354,14 @@
       "second": {}
     }
   },
-  "quizSphereQuestion": "To which sphere does citta “{name}” belong?",
+  "quizSphereQuestion": "စိတ် “{name}” သည် မည်သည့်ဘုံသို့ သက်ရောက်သနည်း?",
   "@quizSphereQuestion": {
     "description": "quizSphereQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizSphereExplanation": "“{name}” belongs to {sphere}.",
+  "quizSphereExplanation": "“{name}” သည် {sphere} ဘုံသို့ သက်ရောက်သည်။",
   "@quizSphereExplanation": {
     "description": "quizSphereExplanation",
     "placeholders": {
@@ -1369,7 +1369,7 @@
       "sphere": {}
     }
   },
-  "quizSphereClaim": "Citta “{name}” belongs to {sphere}. True or false?",
+  "quizSphereClaim": "စိတ် “{name}” သည် {sphere} ဘုံသို့ သက်ရောက်သည်။ မှန် သို့မဟုတ် မှား?",
   "@quizSphereClaim": {
     "description": "quizSphereClaim",
     "placeholders": {
@@ -1377,15 +1377,15 @@
       "sphere": {}
     }
   },
-  "phaseFoundation": "Phase 1 — Foundation",
+  "phaseFoundation": "အဆင့် ၁ — အခြေခံ",
   "@phaseFoundation": {
     "description": "phaseFoundation"
   },
-  "phaseCausality": "Phase 2 — Causality",
+  "phaseCausality": "အဆင့် ၂ — အကြောင်းအကျိုး",
   "@phaseCausality": {
     "description": "phaseCausality"
   },
-  "phaseMastery": "Phase 3 — Mastery",
+  "phaseMastery": "အဆင့် ၃ — ကျွမ်းကျင်မှု",
   "@phaseMastery": {
     "description": "phaseMastery"
   },
@@ -1485,12 +1485,56 @@
   "@estimatedDuration": {
     "description": "estimatedDuration"
   },
-  "continueListening": "Continue listening",
+  "continueListening": "ဆက်လက် နားထောင်ပါ",
   "@continueListening": {
     "description": "continueListening"
   },
-  "audioBackgroundLimit": "Background audio depends on the installed voice engine",
+  "audioBackgroundLimit": "နောက်ခံအသံဖွင့်ခြင်းသည် ထည့်သွင်းထားသော အသံအင်ဂျင်ပေါ်တွင် မူတည်ပါသည်",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "နားထောင်ခြင်းနှင့် စာသားအရောင်တင်ခြင်း",
+  "karaokeModeTitle": "ကာရာအိုကေ မုဒ်",
+  "karaokeModeSubtitle": "နားထောင်နေစဉ် ဖတ်နေသော စာသားကို အရောင်တင်ပါ",
+  "karaokeLineHighlightTitle": "လက်ရှိစာကြောင်းကို အရောင်တင်ပါ",
+  "karaokeLineHighlightSubtitle": "ဖတ်နေသော စာပိုဒ်ကို အရောင်ခြယ်ပါ",
+  "karaokeWordHighlightTitle": "တစ်လုံးချင်း အရောင်တင်ပါ",
+  "karaokeWordHighlightSubtitle": "ဖတ်ရွတ်သည့်အတိုင်း စကားလုံးတစ်လုံးချင်း အရောင်တင်ပါ",
+  "audioFloatingGoTo": "ဖွင့်နေသောနေရာသို့ သွားပါ",
+  "audioFloatingHide": "ဖွင့်စက်ကို ဝှက်ပါ",
+  "audioFloatingRestore": "ဖွင့်စက်ကို ပြန်ပြပါ",
+  "audioFloatingClose": "ဖွင့်စက်ကို ပိတ်ပါ",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

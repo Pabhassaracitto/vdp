@@ -73,9 +73,27 @@ class LocaleSettingsController extends StateNotifier<LocaleSettings> {
   }
 
   Future<void> setUiLocale(Locale? locale) async {
+    final candidateContentLocale = locale == null
+        ? _deviceContentLocale()
+        : defaultContentLocaleFor(
+            languageCode: locale.languageCode,
+            countryCode: locale.countryCode,
+            scriptCode: locale.scriptCode,
+          );
+    final candidate = contentLanguageFor(candidateContentLocale);
+    final shouldSyncContent = candidate != null && candidate.isSelectable;
+
     state = locale == null
-        ? state.copyWith(clearUiLocale: true)
-        : state.copyWith(uiLocale: locale);
+        ? state.copyWith(
+            clearUiLocale: true,
+            contentLocale:
+                shouldSyncContent ? candidate.tag : state.contentLocale,
+          )
+        : state.copyWith(
+            uiLocale: locale,
+            contentLocale:
+                shouldSyncContent ? candidate.tag : state.contentLocale,
+          );
 
     final prefs = await SharedPreferences.getInstance();
     if (locale == null) {
@@ -85,6 +103,9 @@ class LocaleSettingsController extends StateNotifier<LocaleSettings> {
         _uiLocalePreferenceKey,
         AppLanguage.localeTag(locale),
       );
+    }
+    if (shouldSyncContent) {
+      await prefs.setString(_contentLocalePreferenceKey, candidate.tag);
     }
   }
 

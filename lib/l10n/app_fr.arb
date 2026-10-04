@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "Écoute et surlignage",
+  "karaokeModeTitle": "Mode karaoké",
+  "karaokeModeSubtitle": "Surligner le texte lu pendant l'écoute",
+  "karaokeLineHighlightTitle": "Surligner la ligne actuelle",
+  "karaokeLineHighlightSubtitle": "Ombrer le paragraphe en cours de lecture",
+  "karaokeWordHighlightTitle": "Surligner mot à mot",
+  "karaokeWordHighlightSubtitle": "Surligner chaque mot au fur et à mesure de la lecture",
+  "audioFloatingGoTo": "Aller à la lecture en cours",
+  "audioFloatingHide": "Masquer le lecteur",
+  "audioFloatingRestore": "Afficher le lecteur",
+  "audioFloatingClose": "Fermer le lecteur",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

@@ -32,7 +32,7 @@ class VithiStepNode extends StatelessWidget {
     final theme = Theme.of(context);
     final roleColor = VithiColorMapper.colorForRole(moment.step.role);
     final selectionColor = context.isHighContrast ? HCColors.primary : VdpColors.primary;
-    final label = _displayLabel();
+    final label = _displayLabel(context);
     final semanticLabel = VithiUiText.momentSemantics(
       context,
       position: moment.position,
@@ -132,8 +132,8 @@ class VithiStepNode extends StatelessWidget {
     );
   }
 
-  String _displayLabel() {
-    final base = VithiLabelMapper.shortNameForRole(moment.step.role)
+  String _displayLabel(BuildContext context) {
+    final base = VithiLabelMapper.localizedShortName(context, moment.step.role)
         .replaceAll('\n', ' ');
     if (moment.isRepeated) return '$base ${moment.occurrence}/${moment.occurrenceTotal}';
     return base;

@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "ការស្តាប់ និងការបន្លិច",
+  "karaokeModeTitle": "របៀបខារ៉ាអូខេ",
+  "karaokeModeSubtitle": "បន្លិចអត្ថបទដែលកំពុងអានពេលស្តាប់",
+  "karaokeLineHighlightTitle": "បន្លិចបន្ទាត់បច្ចុប្បន្ន",
+  "karaokeLineHighlightSubtitle": "ដាក់ស្រមោលកថាខណ្ឌដែលកំពុងអាន",
+  "karaokeWordHighlightTitle": "បន្លិចពាក្យម្តងមួយៗ",
+  "karaokeWordHighlightSubtitle": "បន្លិចពាក្យនីមួយៗតាមចង្វាក់អាន",
+  "audioFloatingGoTo": "ទៅកាន់អ្វីដែលកំពុងចាក់",
+  "audioFloatingHide": "លាក់ឧបករណ៍ចាក់",
+  "audioFloatingRestore": "បង្ហាញឧបករណ៍ចាក់",
+  "audioFloatingClose": "បិទឧបករណ៍ចាក់",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

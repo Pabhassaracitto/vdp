@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "Pemutaran & Sorotan Karaoke",
+  "karaokeModeTitle": "Mode Karaoke",
+  "karaokeModeSubtitle": "Sorot teks yang sedang dibaca saat mendengarkan",
+  "karaokeLineHighlightTitle": "Sorot baris saat ini",
+  "karaokeLineHighlightSubtitle": "Beri bayangan pada paragraf yang sedang dibaca",
+  "karaokeWordHighlightTitle": "Sorot kata per kata",
+  "karaokeWordHighlightSubtitle": "Sorot setiap kata saat diucapkan",
+  "audioFloatingGoTo": "Buka yang sedang diputar",
+  "audioFloatingHide": "Sembunyikan pemutar",
+  "audioFloatingRestore": "Tampilkan pemutar",
+  "audioFloatingClose": "Tutup pemutar",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

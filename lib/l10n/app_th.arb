@@ -1,38 +1,38 @@
 {
   "@@locale": "th",
-  "appName": "AbhiDhamma",
+  "appName": "พระอภิธรรม",
   "@appName": {
     "description": "appName"
   },
-  "appTagline": "Abhidhamma Piṭaka",
+  "appTagline": "พระอภิธรรมปิฎก",
   "@appTagline": {
     "description": "appTagline"
   },
-  "initializing": "Initializing…",
+  "initializing": "กำลังเริ่มต้น…",
   "@initializing": {
     "description": "initializing"
   },
-  "loadingDoctrineData": "Loading and validating Dhamma data…",
+  "loadingDoctrineData": "กำลังโหลดและตรวจสอบข้อมูลพระธรรม…",
   "@loadingDoctrineData": {
     "description": "loadingDoctrineData"
   },
-  "loadingTakingLonger": "Startup is taking longer than expected. Dhamma data may be being optimized for your device.",
+  "loadingTakingLonger": "การเริ่มต้นใช้เวลานานกว่าปกติ อาจกำลังปรับข้อมูลให้เหมาะสมกับอุปกรณ์",
   "@loadingTakingLonger": {
     "description": "loadingTakingLonger"
   },
-  "unknownError": "Unknown error",
+  "unknownError": "ข้อผิดพลาดที่ไม่รู้จัก",
   "@unknownError": {
     "description": "unknownError"
   },
-  "dataError": "Data error",
+  "dataError": "ข้อผิดพลาดของข้อมูล",
   "@dataError": {
     "description": "dataError"
   },
-  "invalidData": "Invalid data",
+  "invalidData": "ข้อมูลไม่ถูกต้อง",
   "@invalidData": {
     "description": "invalidData"
   },
-  "invalidDataDescription": "The system detected a violation of the Dhamma validation rules. Please contact the editorial team to review the data.",
+  "invalidDataDescription": "ระบบตรวจพบความขัดแย้งของกฎการตรวจสอบธรรมะ โปรดติดต่อทีมงานเพื่อตรวจสอบ",
   "@invalidDataDescription": {
     "description": "invalidDataDescription"
   },
@@ -104,7 +104,7 @@
   "@all": {
     "description": "all"
   },
-  "hide": "Hide",
+  "hide": "ซ่อน",
   "@hide": {
     "description": "hide"
   },
@@ -116,7 +116,7 @@
   "@notes": {
     "description": "notes"
   },
-  "errorWithMessage": "Error: {message}",
+  "errorWithMessage": "ข้อผิดพลาด: {message}",
   "@errorWithMessage": {
     "description": "errorWithMessage",
     "placeholders": {
@@ -163,25 +163,25 @@
   "@languageChangePreviewTitle": {
     "description": "languageChangePreviewTitle"
   },
-  "languageChangePreviewBody": "The interface will change to {language}. Learning content remains unchanged.",
+  "languageChangePreviewBody": "อินเทอร์เฟซจะเปลี่ยนเป็น {language}",
   "@languageChangePreviewBody": {
     "description": "languageChangePreviewBody",
     "placeholders": {
       "language": {}
     }
   },
-  "languageChangedTo": "Language changed to {language}",
+  "languageChangedTo": "เปลี่ยนภาษาเป็น {language} แล้ว",
   "@languageChangedTo": {
     "description": "languageChangedTo",
     "placeholders": {
       "language": {}
     }
   },
-  "holdGlobeToReset": "Press and hold the globe for 3 seconds to restore the system language",
+  "holdGlobeToReset": "กดลูกโลกค้างไว้ 3 วินาทีเพื่อคืนค่าภาษาของระบบ",
   "@holdGlobeToReset": {
     "description": "holdGlobeToReset"
   },
-  "restoredSystemLanguage": "Restored the system language",
+  "restoredSystemLanguage": "คืนค่าภาษาของระบบแล้ว",
   "@restoredSystemLanguage": {
     "description": "restoredSystemLanguage"
   },
@@ -213,7 +213,7 @@
   "@highContrastSubtitle": {
     "description": "highContrastSubtitle"
   },
-  "screenReaderHints": "Screen reader hints",
+  "screenReaderHints": "คำแนะนำโปรแกรมอ่านหน้าจอ",
   "@screenReaderHints": {
     "description": "screenReaderHints"
   },
@@ -225,7 +225,7 @@
   "@textSize": {
     "description": "textSize"
   },
-  "textScale": "Text scale",
+  "textScale": "ขนาดตัวอักษร",
   "@textScale": {
     "description": "textScale"
   },
@@ -346,43 +346,43 @@
       "count": {}
     }
   },
-  "onboardingVisualTitle": "See Clearly",
+  "onboardingVisualTitle": "เห็นอย่างแจ่มแจ้ง",
   "@onboardingVisualTitle": {
     "description": "onboardingVisualTitle"
   },
-  "onboardingVisualSubtitle": "Citta × Cetasika Matrix",
+  "onboardingVisualSubtitle": "ตารางจิต × เจตสิก",
   "@onboardingVisualSubtitle": {
     "description": "onboardingVisualSubtitle"
   },
-  "onboardingVisualBody": "Explore 121 cittas and 52 cetasikas in an interactive matrix. Color, shape, and text encode every association accessibly.",
+  "onboardingVisualBody": "สำรวจจิต 121 ดวงและเจตสิก 52 ดวงในตารางปฏิสัมพันธ์ สี รูปร่าง และข้อความระบุความสัมพันธ์อย่างชัดเจน",
   "@onboardingVisualBody": {
     "description": "onboardingVisualBody"
   },
-  "onboardingCausalityTitle": "Understand Deeply",
+  "onboardingCausalityTitle": "เข้าใจอย่างลึกซึ้ง",
   "@onboardingCausalityTitle": {
     "description": "onboardingCausalityTitle"
   },
-  "onboardingCausalitySubtitle": "Dependent Origination",
+  "onboardingCausalitySubtitle": "ปฏิจจสมุปบาท",
   "@onboardingCausalitySubtitle": {
     "description": "onboardingCausalitySubtitle"
   },
-  "onboardingCausalityBody": "Explore the twelve links of dependent origination and classifications of kamma through connected learning views.",
+  "onboardingCausalityBody": "สำรวจองค์ประกอบ 12 ของปฏิจจสมุปบาทและการจำแนกกรรมผ่านมุมมองการเรียนรู้ที่เชื่อมโยงกัน",
   "@onboardingCausalityBody": {
     "description": "onboardingCausalityBody"
   },
-  "onboardingExploreTitle": "Discover for Yourself",
+  "onboardingExploreTitle": "ค้นพบด้วยตนเอง",
   "@onboardingExploreTitle": {
     "description": "onboardingExploreTitle"
   },
-  "onboardingExploreSubtitle": "A Non-linear Study Path",
+  "onboardingExploreSubtitle": "เส้นทางการศึกษาแบบไม่เป็นเส้นตรง",
   "@onboardingExploreSubtitle": {
     "description": "onboardingExploreSubtitle"
   },
-  "onboardingExploreBody": "Choose your path through ten connected modules. Active recall, quizzes, and review help knowledge endure.",
+  "onboardingExploreBody": "เลือกเส้นทางของคุณผ่าน 10 บทเรียนที่เชื่อมโยงกัน การทบทวนและแบบทดสอบช่วยให้ความรู้คงทน",
   "@onboardingExploreBody": {
     "description": "onboardingExploreBody"
   },
-  "beginExploring": "Begin exploring",
+  "beginExploring": "เริ่มการสำรวจ",
   "@beginExploring": {
     "description": "beginExploring"
   },
@@ -390,7 +390,7 @@
   "@matrixTitle": {
     "description": "matrixTitle"
   },
-  "matrixSemantics": "Abhidhamma Matrix showing {count} cittas",
+  "matrixSemantics": "ตารางพระอภิธรรมแสดงจิต {count} ดวง",
   "@matrixSemantics": {
     "description": "matrixSemantics",
     "placeholders": {
@@ -417,7 +417,7 @@
   "@searchCittaCetasika": {
     "description": "searchCittaCetasika"
   },
-  "clearSearch": "Clear search",
+  "clearSearch": "ล้างการค้นหา",
   "@clearSearch": {
     "description": "clearSearch"
   },
@@ -469,7 +469,7 @@
   "@associationNever": {
     "description": "associationNever"
   },
-  "dataWarningsCount": "{count} data warnings",
+  "dataWarningsCount": "คำเตือนข้อมูล {count} รายการ",
   "@dataWarningsCount": {
     "description": "dataWarningsCount",
     "placeholders": {
@@ -508,7 +508,7 @@
   "@understood": {
     "description": "understood"
   },
-  "dataWarningTitle": "Data warning",
+  "dataWarningTitle": "คำเตือนข้อมูล",
   "@dataWarningTitle": {
     "description": "dataWarningTitle"
   },
@@ -516,7 +516,7 @@
   "@allFilters": {
     "description": "allFilters"
   },
-  "defilements": "Defilements",
+  "defilements": "กิเลส",
   "@defilements": {
     "description": "defilements"
   },
@@ -600,7 +600,7 @@
       "count": {}
     }
   },
-  "relatedDhammas": "Related dhammas",
+  "relatedDhammas": "ธรรมที่เกี่ยวข้อง",
   "@relatedDhammas": {
     "description": "relatedDhammas"
   },
@@ -647,7 +647,7 @@
       "explanation": {}
     }
   },
-  "kammaTitle": "Kamma",
+  "kammaTitle": "กรรม (Kamma)",
   "@kammaTitle": {
     "description": "kammaTitle"
   },
@@ -655,143 +655,143 @@
   "@mindProcessTitle": {
     "description": "mindProcessTitle"
   },
-  "paliLabel": "Pāḷi:",
+  "paliLabel": "บาลี:",
   "@paliLabel": {
     "description": "paliLabel"
   },
-  "stopPronunciation": "Stop pronunciation",
+  "stopPronunciation": "หยุดการออกเสียง",
   "@stopPronunciation": {
     "description": "stopPronunciation"
   },
-  "listenPaliPronunciation": "Listen to Pāḷi pronunciation",
+  "listenPaliPronunciation": "ฟังการออกเสียงภาษาบาลี",
   "@listenPaliPronunciation": {
     "description": "listenPaliPronunciation"
   },
-  "ttsUnavailable": "Speech synthesis is not supported on this device.",
+  "ttsUnavailable": "อุปกรณ์นี้ไม่รองรับการสังเคราะห์เสียงพูด",
   "@ttsUnavailable": {
     "description": "ttsUnavailable"
   },
-  "dragHandleSemantics": "Drag to resize",
+  "dragHandleSemantics": "ลากเพื่อปรับขนาด",
   "@dragHandleSemantics": {
     "description": "dragHandleSemantics"
   },
-  "cittaNumber": "Citta {number}",
+  "cittaNumber": "จิตที่ {number}",
   "@cittaNumber": {
     "description": "cittaNumber",
     "placeholders": {
       "number": {}
     }
   },
-  "doctrine": "Dhamma explanation",
+  "doctrine": "คำอธิบายธรรม",
   "@doctrine": {
     "description": "doctrine"
   },
-  "examples": "Examples",
+  "examples": "ตัวอย่าง",
   "@examples": {
     "description": "examples"
   },
-  "fixedCetasikasCount": "Invariable cetasikas ({count})",
+  "fixedCetasikasCount": "เจตสิกที่แน่นอน ({count})",
   "@fixedCetasikasCount": {
     "description": "fixedCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "variableCetasikasCount": "Variable cetasikas ({count})",
+  "variableCetasikasCount": "เจตสิกที่ไม่แน่นอน ({count})",
   "@variableCetasikasCount": {
     "description": "variableCetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "personalNote": "Personal note",
+  "personalNote": "บันทึกส่วนตัว",
   "@personalNote": {
     "description": "personalNote"
   },
-  "personalNoteHint": "Enter your note…",
+  "personalNoteHint": "พิมพ์บันทึกของคุณ…",
   "@personalNoteHint": {
     "description": "personalNoteHint"
   },
-  "wholesome": "Wholesome",
+  "wholesome": "กุศล",
   "@wholesome": {
     "description": "wholesome"
   },
-  "functional": "Functional",
+  "functional": "กิริยา",
   "@functional": {
     "description": "functional"
   },
-  "pleasantFeeling": "Pleasant bodily feeling",
+  "pleasantFeeling": "สุขเวทนา (ทางกาย)",
   "@pleasantFeeling": {
     "description": "pleasantFeeling"
   },
-  "unpleasantFeeling": "Painful bodily feeling",
+  "unpleasantFeeling": "ทุกขเวทนา (ทางกาย)",
   "@unpleasantFeeling": {
     "description": "unpleasantFeeling"
   },
-  "neutralFeeling": "Equanimous feeling",
+  "neutralFeeling": "อุเบกขาเวทนา",
   "@neutralFeeling": {
     "description": "neutralFeeling"
   },
-  "joyfulFeeling": "Joyful feeling",
+  "joyfulFeeling": "โสมนัสสเวทนา (ทางใจ)",
   "@joyfulFeeling": {
     "description": "joyfulFeeling"
   },
-  "alwaysAssociated": "Always associated",
+  "alwaysAssociated": "ประกอบแน่นอน",
   "@alwaysAssociated": {
     "description": "alwaysAssociated"
   },
-  "mayBeAssociated": "May be associated",
+  "mayBeAssociated": "อาจประกอบร่วม",
   "@mayBeAssociated": {
     "description": "mayBeAssociated"
   },
-  "fourfoldDefinition": "Fourfold definition",
+  "fourfoldDefinition": "ลักขณาทิจตุกะ (ลักษณะ 4 ประการ)",
   "@fourfoldDefinition": {
     "description": "fourfoldDefinition"
   },
-  "characteristic": "Characteristic",
+  "characteristic": "ลักษณะ (Lakkhaṇa)",
   "@characteristic": {
     "description": "characteristic"
   },
-  "functionLabel": "Function",
+  "functionLabel": "กิจ (Rasa)",
   "@functionLabel": {
     "description": "functionLabel"
   },
-  "manifestation": "Manifestation",
+  "manifestation": "อาการปรากฏ (Paccupaṭṭhāna)",
   "@manifestation": {
     "description": "manifestation"
   },
-  "proximateCause": "Proximate cause",
+  "proximateCause": "เหตุใกล้ (Padaṭṭhāna)",
   "@proximateCause": {
     "description": "proximateCause"
   },
-  "doctrinalConflicts": "Doctrinal conflicts",
+  "doctrinalConflicts": "เจตสิกที่เป็นปฏิปักษ์กัน",
   "@doctrinalConflicts": {
     "description": "doctrinalConflicts"
   },
-  "rulesCount": "{count} rules",
+  "rulesCount": "{count} กฎ",
   "@rulesCount": {
     "description": "rulesCount",
     "placeholders": {
       "count": {}
     }
   },
-  "universalCetasikas": "7 universals",
+  "universalCetasikas": "สัพพจิตตสาธารณเจตสิก 7",
   "@universalCetasikas": {
     "description": "universalCetasikas"
   },
-  "occasionalCetasikas": "6 occasionals",
+  "occasionalCetasikas": "ปกิณณกเจตสิก 6",
   "@occasionalCetasikas": {
     "description": "occasionalCetasikas"
   },
-  "unwholesomeCetasikas": "14 unwholesome",
+  "unwholesomeCetasikas": "อกุศลเจตสิก 14",
   "@unwholesomeCetasikas": {
     "description": "unwholesomeCetasikas"
   },
-  "beautifulCetasikas": "25 beautiful",
+  "beautifulCetasikas": "โสภณเจตสิก 25",
   "@beautifulCetasikas": {
     "description": "beautifulCetasikas"
   },
-  "rowCittaSemantics": "Citta row {displayIndex}: {name}; canonical number {order}; group {group}; feeling {feeling}. {action}",
+  "rowCittaSemantics": "แถวจิตที่ {displayIndex}: {name}; ลำดับ {order}; กลุ่ม {group}; เวทนา {feeling}. {action}",
   "@rowCittaSemantics": {
     "description": "rowCittaSemantics",
     "placeholders": {
@@ -803,7 +803,7 @@
       "action": {}
     }
   },
-  "cetasikaSemantics": "Cetasika {name} ({pali}), group {group}. {state} Tap for details.",
+  "cetasikaSemantics": "เจตสิก {name} ({pali}), กลุ่ม {group}. {state} แตะเพื่อดูรายละเอียด",
   "@cetasikaSemantics": {
     "description": "cetasikaSemantics",
     "placeholders": {
@@ -821,11 +821,11 @@
   "@dimmedByConflict": {
     "description": "dimmedByConflict"
   },
-  "matrixCornerSemantics": "Matrix corner: rows are cittas and columns are cetasikas",
+  "matrixCornerSemantics": "มุมตาราง: แถวคือจิตและคอลัมน์คือเจตสิก",
   "@matrixCornerSemantics": {
     "description": "matrixCornerSemantics"
   },
-  "associationSemantics": "{association}: citta {cittaId} with cetasika {cetasikaId}",
+  "associationSemantics": "{association}: จิต {cittaId} กับ เจตสิก {cetasikaId}",
   "@associationSemantics": {
     "description": "associationSemantics",
     "placeholders": {
@@ -850,98 +850,98 @@
   "@overallProgress": {
     "description": "overallProgress"
   },
-  "savedItemsCount": "{count} saved items",
+  "savedItemsCount": "รายการที่บันทึกไว้ {count} รายการ",
   "@savedItemsCount": {
     "description": "savedItemsCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cittaTab": "Cittas",
+  "cittaTab": "จิต",
   "@cittaTab": {
     "description": "cittaTab"
   },
-  "cetasikaTab": "Cetasikas",
+  "cetasikaTab": "เจตสิก",
   "@cetasikaTab": {
     "description": "cetasikaTab"
   },
-  "notesTab": "Notes",
+  "notesTab": "บันทึก",
   "@notesTab": {
     "description": "notesTab"
   },
-  "noBookmarkedCittas": "No bookmarked cittas",
+  "noBookmarkedCittas": "ยังไม่มีจิตที่คั่นไว้",
   "@noBookmarkedCittas": {
     "description": "noBookmarkedCittas"
   },
-  "bookmarkCittaHint": "Open a lesson and tap the bookmark icon to save one",
+  "bookmarkCittaHint": "เปิดบทเรียนและแตะไอคอนคั่นหน้าเพื่อบันทึก",
   "@bookmarkCittaHint": {
     "description": "bookmarkCittaHint"
   },
-  "loadingCittas": "Loading cittas…",
+  "loadingCittas": "กำลังโหลดข้อมูลจิต…",
   "@loadingCittas": {
     "description": "loadingCittas"
   },
-  "noBookmarkedCetasikas": "No bookmarked cetasikas",
+  "noBookmarkedCetasikas": "ยังไม่มีเจตสิกที่คั่นไว้",
   "@noBookmarkedCetasikas": {
     "description": "noBookmarkedCetasikas"
   },
-  "loadingCetasikas": "Loading cetasikas…",
+  "loadingCetasikas": "กำลังโหลดข้อมูลเจตสิก…",
   "@loadingCetasikas": {
     "description": "loadingCetasikas"
   },
-  "noNotes": "No notes yet",
+  "noNotes": "ยังไม่มีบันทึก",
   "@noNotes": {
     "description": "noNotes"
   },
-  "addNoteHint": "Tap the edit icon in a lesson to add a personal note",
+  "addNoteHint": "แตะไอคอนแก้ไขในบทเรียนเพื่อเพิ่มบันทึกส่วนตัว",
   "@addNoteHint": {
     "description": "addNoteHint"
   },
-  "deleteNoteQuestion": "Delete note?",
+  "deleteNoteQuestion": "ลบบันทึกหรือไม่?",
   "@deleteNoteQuestion": {
     "description": "deleteNoteQuestion"
   },
-  "deleteNoteWarning": "This note will be permanently deleted. Are you sure?",
+  "deleteNoteWarning": "บันทึกนี้จะถูกลบอย่างถาวร คุณแน่ใจหรือไม่?",
   "@deleteNoteWarning": {
     "description": "deleteNoteWarning"
   },
-  "addNote": "Add note",
+  "addNote": "เพิ่มบันทึก",
   "@addNote": {
     "description": "addNote"
   },
-  "removeBookmark": "Remove bookmark",
+  "removeBookmark": "ลบบุ๊กมาร์ก",
   "@removeBookmark": {
     "description": "removeBookmark"
   },
-  "editNote": "Edit note",
+  "editNote": "แก้ไขบันทึก",
   "@editNote": {
     "description": "editNote"
   },
-  "deleteNote": "Delete note",
+  "deleteNote": "ลบบันทึก",
   "@deleteNote": {
     "description": "deleteNote"
   },
-  "noteUpdated": "Note updated",
+  "noteUpdated": "อัปเดตบันทึกแล้ว",
   "@noteUpdated": {
     "description": "noteUpdated"
   },
-  "noteSaved": "Note saved",
+  "noteSaved": "บันทึกข้อมูลแล้ว",
   "@noteSaved": {
     "description": "noteSaved"
   },
-  "editNoteTitle": "Edit note",
+  "editNoteTitle": "แก้ไขบันทึก",
   "@editNoteTitle": {
     "description": "editNoteTitle"
   },
-  "addNoteTitle": "Add note",
+  "addNoteTitle": "เพิ่มบันทึก",
   "@addNoteTitle": {
     "description": "addNoteTitle"
   },
-  "studyNoteHint": "Write your note about this item…\n\nExample: this citta appears during meditation when…",
+  "studyNoteHint": "เขียนบันทึกของคุณเกี่ยวกับหัวข้อนี้…\n\nตัวอย่าง: จิตนี้เกิดขึ้นระหว่างการปฏิบัติธรรมเมื่อ…",
   "@studyNoteHint": {
     "description": "studyNoteHint"
   },
-  "charactersCount": "{current} / {maximum} characters",
+  "charactersCount": "{current} / {maximum} ตัวอักษร",
   "@charactersCount": {
     "description": "charactersCount",
     "placeholders": {
@@ -949,38 +949,38 @@
       "maximum": {}
     }
   },
-  "update": "Update",
+  "update": "อัปเดต",
   "@update": {
     "description": "update"
   },
-  "saveNote": "Save note",
+  "saveNote": "บันทึก",
   "@saveNote": {
     "description": "saveNote"
   },
-  "studyProgressPercent": "Study progress: {percent}%",
+  "studyProgressPercent": "ความคืบหน้าการศึกษา: {percent}%",
   "@studyProgressPercent": {
     "description": "studyProgressPercent",
     "placeholders": {
       "percent": {}
     }
   },
-  "modulesCompletedShort": "Modules\ncompleted",
+  "modulesCompletedShort": "บทเรียน\nที่สำเร็จ",
   "@modulesCompletedShort": {
     "description": "modulesCompletedShort"
   },
-  "recommendedNext": "Recommended next",
+  "recommendedNext": "แนะนำบทเรียนถัดไป",
   "@recommendedNext": {
     "description": "recommendedNext"
   },
-  "progressOverview": "Progress overview",
+  "progressOverview": "ภาพรวมความคืบหน้า",
   "@progressOverview": {
     "description": "progressOverview"
   },
-  "totalModules": "Total modules",
+  "totalModules": "บทเรียนทั้งหมด",
   "@totalModules": {
     "description": "totalModules"
   },
-  "dueForReview": "Due for review",
+  "dueForReview": "ถึงกำหนดทบทวน",
   "@dueForReview": {
     "description": "dueForReview"
   },
@@ -996,18 +996,18 @@
   "@testTab": {
     "description": "testTab"
   },
-  "moduleHasNoData": "This module has no citta/cetasika data. Please check the JSON data.",
+  "moduleHasNoData": "บทเรียนนี้ไม่มีข้อมูลจิต/เจตสิก โปรดตรวจสอบข้อมูล JSON",
   "@moduleHasNoData": {
     "description": "moduleHasNoData"
   },
-  "cittasInModule": "Cittas in this module — {count}",
+  "cittasInModule": "จิตในบทเรียนนี้ — {count}",
   "@cittasInModule": {
     "description": "cittasInModule",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasInModule": "Cetasikas in this module — {count}",
+  "cetasikasInModule": "เจตสิกในบทเรียนนี้ — {count}",
   "@cetasikasInModule": {
     "description": "cetasikasInModule",
     "placeholders": {
@@ -1042,7 +1042,7 @@
       "count": {}
     }
   },
-  "reviewCetasikaQuestion": "What does cetasika “{name}” ({pali}) mean?",
+  "reviewCetasikaQuestion": "เจตสิก “{name}” ({pali}) มีความหมายอย่างไร?",
   "@reviewCetasikaQuestion": {
     "description": "reviewCetasikaQuestion",
     "placeholders": {
@@ -1082,21 +1082,21 @@
       "pali": {}
     }
   },
-  "groupAnswer": "Group: {group}",
+  "groupAnswer": "กลุ่ม: {group}",
   "@groupAnswer": {
     "description": "groupAnswer",
     "placeholders": {
       "group": {}
     }
   },
-  "reviewCittaQuestion": "Which group and feeling does citta “{name}” have?",
+  "reviewCittaQuestion": "จิต “{name}” อยู่ในภูมิใดและมีเวทนาอะไร?",
   "@reviewCittaQuestion": {
     "description": "reviewCittaQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "cittaReviewAnswer": "Sphere: {sphere}\nFeeling: {feeling}\nPāḷi: {pali}",
+  "cittaReviewAnswer": "ภูมิ: {sphere}\nเวทนา: {feeling}\nบาลี: {pali}",
   "@cittaReviewAnswer": {
     "description": "cittaReviewAnswer",
     "placeholders": {
@@ -1105,11 +1105,11 @@
       "pali": {}
     }
   },
-  "noReviewContent": "This module has no review content yet. Please come back later.",
+  "noReviewContent": "บทเรียนนี้ยังไม่มีเนื้อหาทบทวน โปรดกลับมาใหม่ภายหลัง",
   "@noReviewContent": {
     "description": "noReviewContent"
   },
-  "reviewedCount": "{revealed} / {total} reviewed",
+  "reviewedCount": "ทบทวนแล้ว {revealed} / {total}",
   "@reviewedCount": {
     "description": "reviewedCount",
     "placeholders": {
@@ -1117,62 +1117,62 @@
       "total": {}
     }
   },
-  "reviewComplete": "You reviewed all the content. Take the quiz to check your understanding.",
+  "reviewComplete": "คุณทบทวนเนื้อหาครบแล้ว ทำแบบทดสอบเพื่อตรวจความเข้าใจ",
   "@reviewComplete": {
     "description": "reviewComplete"
   },
-  "tapToReveal": "Tap to reveal the answer",
+  "tapToReveal": "แตะเพื่อดูคำตอบ",
   "@tapToReveal": {
     "description": "tapToReveal"
   },
-  "answerLabel": "Answer: {answer}",
+  "answerLabel": "คำตอบ: {answer}",
   "@answerLabel": {
     "description": "answerLabel",
     "placeholders": {
       "answer": {}
     }
   },
-  "revealAnswer": "Reveal answer",
+  "revealAnswer": "แสดงคำตอบ",
   "@revealAnswer": {
     "description": "revealAnswer"
   },
-  "moduleQuizTitle": "Quiz\n{module}",
+  "moduleQuizTitle": "แบบทดสอบ\n{module}",
   "@moduleQuizTitle": {
     "description": "moduleQuizTitle",
     "placeholders": {
       "module": {}
     }
   },
-  "moduleContentCount": "{count} items in this module",
+  "moduleContentCount": "{count} หัวข้อในบทเรียนนี้",
   "@moduleContentCount": {
     "description": "moduleContentCount",
     "placeholders": {
       "count": {}
     }
   },
-  "quizMaximumDescription": "Up to 10 multiple-choice questions covering this module",
+  "quizMaximumDescription": "คำถามปรนัยสูงสุด 10 ข้อครอบคลุมบทเรียนนี้",
   "@quizMaximumDescription": {
     "description": "quizMaximumDescription"
   },
-  "startQuiz": "Start quiz",
+  "startQuiz": "เริ่มแบบทดสอบ",
   "@startQuiz": {
     "description": "startQuiz"
   },
-  "cittasCount": "{count} cittas",
+  "cittasCount": "จิต {count} ดวง",
   "@cittasCount": {
     "description": "cittasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "cetasikasCount": "{count} cetasikas",
+  "cetasikasCount": "เจตสิก {count} ดวง",
   "@cetasikasCount": {
     "description": "cetasikasCount",
     "placeholders": {
       "count": {}
     }
   },
-  "noteForItem": "Note: {name}",
+  "noteForItem": "บันทึก: {name}",
   "@noteForItem": {
     "description": "noteForItem",
     "placeholders": {
@@ -1183,14 +1183,14 @@
   "@chooseLevel": {
     "description": "chooseLevel"
   },
-  "quizLevelDescription": "Each level generates up to {count} questions from this module",
+  "quizLevelDescription": "แต่ละระดับจะสร้างคำถามสูงสุด {count} ข้อจากบทเรียนนี้",
   "@quizLevelDescription": {
     "description": "quizLevelDescription",
     "placeholders": {
       "count": {}
     }
   },
-  "insufficientQuizData": "This module does not have enough data to create questions.",
+  "insufficientQuizData": "บทเรียนนี้มีข้อมูลไม่เพียงพอในการสร้างคำถาม",
   "@insufficientQuizData": {
     "description": "insufficientQuizData"
   },
@@ -1206,7 +1206,7 @@
   "@viewResults": {
     "description": "viewResults"
   },
-  "correctAnswers": "{score} / {total} correct",
+  "correctAnswers": "ถูกต้อง {score} / {total} ข้อ",
   "@correctAnswers": {
     "description": "correctAnswers",
     "placeholders": {
@@ -1214,11 +1214,11 @@
       "total": {}
     }
   },
-  "quizExcellent": "Excellent! You have mastered this module.",
+  "quizExcellent": "ยอดเยี่ยม! คุณเข้าใจบทเรียนนี้อย่างเชี่ยวชาญแล้ว",
   "@quizExcellent": {
     "description": "quizExcellent"
   },
-  "quizTryAgain": "Review the material and try again.",
+  "quizTryAgain": "ทบทวนเนื้อหาและลองใหม่อีกครั้ง",
   "@quizTryAgain": {
     "description": "quizTryAgain"
   },
@@ -1226,26 +1226,26 @@
   "@tryAgain": {
     "description": "tryAgain"
   },
-  "quizInsufficientDataMessage": "Module “{module}” does not have enough data to create questions.",
+  "quizInsufficientDataMessage": "บทเรียน “{module}” มีข้อมูลไม่เพียงพอในการสร้างคำถาม",
   "@quizInsufficientDataMessage": {
     "description": "quizInsufficientDataMessage",
     "placeholders": {
       "module": {}
     }
   },
-  "quizTypeCetasikaGroup": "Cetasika classification",
+  "quizTypeCetasikaGroup": "การจำแนกเจตสิก",
   "@quizTypeCetasikaGroup": {
     "description": "quizTypeCetasikaGroup"
   },
-  "quizTypeFeeling": "Feeling recognition",
+  "quizTypeFeeling": "การระบุเวทนา",
   "@quizTypeFeeling": {
     "description": "quizTypeFeeling"
   },
-  "quizTypeConflict": "Doctrinal conflict",
+  "quizTypeConflict": "ความขัดแย้งทางธรรม",
   "@quizTypeConflict": {
     "description": "quizTypeConflict"
   },
-  "quizTypeSphere": "Sphere",
+  "quizTypeSphere": "ภูมิ (Sphere)",
   "@quizTypeSphere": {
     "description": "quizTypeSphere"
   },
@@ -1253,7 +1253,7 @@
   "@beginner": {
     "description": "beginner"
   },
-  "beginnerDescription": "Basic cetasika groups and feelings",
+  "beginnerDescription": "กลุ่มเจตสิกพื้นฐานและเวทนา",
   "@beginnerDescription": {
     "description": "beginnerDescription"
   },
@@ -1261,7 +1261,7 @@
   "@intermediate": {
     "description": "intermediate"
   },
-  "intermediateDescription": "Includes cetasika conflicts",
+  "intermediateDescription": "รวมถึงกฎความขัดแย้งของเจตสิก",
   "@intermediateDescription": {
     "description": "intermediateDescription"
   },
@@ -1269,23 +1269,23 @@
   "@advanced": {
     "description": "advanced"
   },
-  "advancedDescription": "Includes spheres and all question types",
+  "advancedDescription": "รวมถึงภูมิและคำถามทุกประเภท",
   "@advancedDescription": {
     "description": "advancedDescription"
   },
-  "trueLabel": "True",
+  "trueLabel": "จริง",
   "@trueLabel": {
     "description": "trueLabel"
   },
-  "falseLabel": "False",
+  "falseLabel": "เท็จ",
   "@falseLabel": {
     "description": "falseLabel"
   },
-  "trueOrFalse": "True or false?",
+  "trueOrFalse": "จริงหรือเท็จ?",
   "@trueOrFalse": {
     "description": "trueOrFalse"
   },
-  "quizCetasikaGroupQuestion": "Which group contains “{name}” ({pali})?",
+  "quizCetasikaGroupQuestion": "“{name}” ({pali}) อยู่ในกลุ่มใด?",
   "@quizCetasikaGroupQuestion": {
     "description": "quizCetasikaGroupQuestion",
     "placeholders": {
@@ -1293,7 +1293,7 @@
       "pali": {}
     }
   },
-  "quizCetasikaGroupExplanation": "“{name}” belongs to {group}.\n{description}",
+  "quizCetasikaGroupExplanation": "“{name}” อยู่ในกลุ่ม {group}\n{description}",
   "@quizCetasikaGroupExplanation": {
     "description": "quizCetasikaGroupExplanation",
     "placeholders": {
@@ -1302,7 +1302,7 @@
       "description": {}
     }
   },
-  "quizCetasikaClaim": "“{name}” ({pali}) belongs to {group}. True or false?",
+  "quizCetasikaClaim": "“{name}” ({pali}) อยู่ในกลุ่ม {group} จริงหรือเท็จ?",
   "@quizCetasikaClaim": {
     "description": "quizCetasikaClaim",
     "placeholders": {
@@ -1311,14 +1311,14 @@
       "group": {}
     }
   },
-  "quizCittaFeelingQuestion": "What feeling accompanies citta “{name}”?",
+  "quizCittaFeelingQuestion": "จิต “{name}” มีเวทนาอะไรประกอบร่วม?",
   "@quizCittaFeelingQuestion": {
     "description": "quizCittaFeelingQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizCittaFeelingExplanation": "“{name}” has {feeling}.",
+  "quizCittaFeelingExplanation": "“{name}” มี {feeling}",
   "@quizCittaFeelingExplanation": {
     "description": "quizCittaFeelingExplanation",
     "placeholders": {
@@ -1326,7 +1326,7 @@
       "feeling": {}
     }
   },
-  "quizCittaFeelingClaim": "Citta “{name}” has {feeling}. True or false?",
+  "quizCittaFeelingClaim": "จิต “{name}” มี {feeling} จริงหรือเท็จ?",
   "@quizCittaFeelingClaim": {
     "description": "quizCittaFeelingClaim",
     "placeholders": {
@@ -1334,19 +1334,19 @@
       "feeling": {}
     }
   },
-  "conflictNo": "No — they conflict",
+  "conflictNo": "ไม่ — เป็นปฏิปักษ์กัน",
   "@conflictNo": {
     "description": "conflictNo"
   },
-  "conflictAlwaysYes": "Yes — they always arise together",
+  "conflictAlwaysYes": "ใช่ — เกิดร่วมกันเสมอ",
   "@conflictAlwaysYes": {
     "description": "conflictAlwaysYes"
   },
-  "conflictSometimesYes": "Yes — they sometimes arise together",
+  "conflictSometimesYes": "ใช่ — เกิดร่วมกันในบางครั้ง",
   "@conflictSometimesYes": {
     "description": "conflictSometimesYes"
   },
-  "quizConflictQuestion": "Can “{first}” and “{second}” arise together in one citta?",
+  "quizConflictQuestion": "“{first}” และ “{second}” สามารถเกิดร่วมกันในจิตดวงเดียวกันได้หรือไม่?",
   "@quizConflictQuestion": {
     "description": "quizConflictQuestion",
     "placeholders": {
@@ -1354,14 +1354,14 @@
       "second": {}
     }
   },
-  "quizSphereQuestion": "To which sphere does citta “{name}” belong?",
+  "quizSphereQuestion": "จิต “{name}” จัดอยู่ในภูมิใด?",
   "@quizSphereQuestion": {
     "description": "quizSphereQuestion",
     "placeholders": {
       "name": {}
     }
   },
-  "quizSphereExplanation": "“{name}” belongs to {sphere}.",
+  "quizSphereExplanation": "“{name}” อยู่ใน {sphere}",
   "@quizSphereExplanation": {
     "description": "quizSphereExplanation",
     "placeholders": {
@@ -1369,7 +1369,7 @@
       "sphere": {}
     }
   },
-  "quizSphereClaim": "Citta “{name}” belongs to {sphere}. True or false?",
+  "quizSphereClaim": "จิต “{name}” จัดอยู่ใน {sphere} จริงหรือเท็จ?",
   "@quizSphereClaim": {
     "description": "quizSphereClaim",
     "placeholders": {
@@ -1377,15 +1377,15 @@
       "sphere": {}
     }
   },
-  "phaseFoundation": "Phase 1 — Foundation",
+  "phaseFoundation": "ระยะที่ 1 — รากฐาน",
   "@phaseFoundation": {
     "description": "phaseFoundation"
   },
-  "phaseCausality": "Phase 2 — Causality",
+  "phaseCausality": "ระยะที่ 2 — เหตุปัจจัย",
   "@phaseCausality": {
     "description": "phaseCausality"
   },
-  "phaseMastery": "Phase 3 — Mastery",
+  "phaseMastery": "ระยะที่ 3 — ความเชี่ยวชาญ",
   "@phaseMastery": {
     "description": "phaseMastery"
   },
@@ -1485,12 +1485,56 @@
   "@estimatedDuration": {
     "description": "estimatedDuration"
   },
-  "continueListening": "Continue listening",
+  "continueListening": "ฟังต่อ",
   "@continueListening": {
     "description": "continueListening"
   },
-  "audioBackgroundLimit": "Background audio depends on the installed voice engine",
+  "audioBackgroundLimit": "การเล่นเสียงพื้นหลังขึ้นอยู่กับเครื่องมือแปลงข้อความเป็นเสียงที่ติดตั้งไว้",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "การฟังและการไฮไลต์",
+  "karaokeModeTitle": "โหมดคาราโอเกะ",
+  "karaokeModeSubtitle": "ไฮไลต์ข้อความที่กำลังอ่านขณะฟัง",
+  "karaokeLineHighlightTitle": "ไฮไลต์บรรทัดปัจจุบัน",
+  "karaokeLineHighlightSubtitle": "เน้นข้อความย่อหน้าที่กำลังอ่าน",
+  "karaokeWordHighlightTitle": "ไฮไลต์ทีละคำ",
+  "karaokeWordHighlightSubtitle": "เน้นทีละคำตามจังหวะการอ่าน (ประมาณการ)",
+  "audioFloatingGoTo": "ไปยังเนื้อหาที่กำลังเล่น",
+  "audioFloatingHide": "ซ่อนแถบควบคุมเสียง",
+  "audioFloatingRestore": "แสดงแถบควบคุมเสียง",
+  "audioFloatingClose": "ปิดเครื่องเล่นเสียง",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

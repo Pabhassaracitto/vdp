@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "音声再生とハイライト",
+  "karaokeModeTitle": "カラオケモード",
+  "karaokeModeSubtitle": "再生中に読み上げているテキストをハイライト表示",
+  "karaokeLineHighlightTitle": "現在の行をハイライト",
+  "karaokeLineHighlightSubtitle": "読み上げ中の段落を強調表示",
+  "karaokeWordHighlightTitle": "単語ごとのハイライト",
+  "karaokeWordHighlightSubtitle": "読み上げに合わせて単語ごとにハイライト（推定時間）",
+  "audioFloatingGoTo": "再生中の場所に移動",
+  "audioFloatingHide": "プレイヤーを非表示",
+  "audioFloatingRestore": "プレイヤーを表示",
+  "audioFloatingClose": "プレイヤーを閉じる",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

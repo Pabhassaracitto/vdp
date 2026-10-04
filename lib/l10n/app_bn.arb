@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "শ্রবণ ও কারাওকে হাইলাইট",
+  "karaokeModeTitle": "কারাওকে মোড",
+  "karaokeModeSubtitle": "শোনার সময় পঠিত পাঠ্য হাইলাইট করুন",
+  "karaokeLineHighlightTitle": "বর্তমান লাইন হাইলাইট করুন",
+  "karaokeLineHighlightSubtitle": "পঠিত অনুচ্ছেদ শেড করুন",
+  "karaokeWordHighlightTitle": "শব্দ ধরে ধরে হাইলাইট",
+  "karaokeWordHighlightSubtitle": "পড়ার সাথে সাথে প্রতিটি শব্দ হাইলাইট করুন",
+  "audioFloatingGoTo": "চলমান পাঠ্যে যান",
+  "audioFloatingHide": "প্লেয়ার লুকান",
+  "audioFloatingRestore": "প্লেয়ার দেখান",
+  "audioFloatingClose": "প্লেয়ার বন্ধ করুন",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

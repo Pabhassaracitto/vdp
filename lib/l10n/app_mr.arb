@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "श्रवण व हायलाइटिंग",
+  "karaokeModeTitle": "कराओके मोड",
+  "karaokeModeSubtitle": "ऐकताना वाचला जाणारा मजकूर हायलाइट करा",
+  "karaokeLineHighlightTitle": "वर्तमान ओळ हायलाइट करा",
+  "karaokeLineHighlightSubtitle": "वाचला जाणारा परिच्छेद शेड करा",
+  "karaokeWordHighlightTitle": "शब्दानुसार हायलाइट करा",
+  "karaokeWordHighlightSubtitle": "वाचताना प्रत्येक शब्द हायलाइट करा",
+  "audioFloatingGoTo": "सध्या सुरू असलेल्या भागावर जा",
+  "audioFloatingHide": "प्लेअर लपवा",
+  "audioFloatingRestore": "प्लेअर दाखवा",
+  "audioFloatingClose": "प्लेअर बंद करा",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

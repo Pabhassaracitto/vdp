@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "듣기 및 노래방식 하이라이트",
+  "karaokeModeTitle": "노래방 모드",
+  "karaokeModeSubtitle": "듣는 동안 읽히는 텍스트를 강조 표시합니다",
+  "karaokeLineHighlightTitle": "현재 줄 강조 표시",
+  "karaokeLineHighlightSubtitle": "읽히고 있는 단락을 음영 처리합니다",
+  "karaokeWordHighlightTitle": "단어별 강조 표시",
+  "karaokeWordHighlightSubtitle": "발음되는 각 단어를 강조 표시합니다",
+  "audioFloatingGoTo": "현재 재생 중인 곳으로 이동",
+  "audioFloatingHide": "플레이어 숨기기",
+  "audioFloatingRestore": "플레이어 표시",
+  "audioFloatingClose": "플레이어 닫기",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }

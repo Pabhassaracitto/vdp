@@ -205,7 +205,7 @@ class _PostVithiContinuation extends StatelessWidget {
             ),
             const Spacer(),
             Text(
-              VithiLabelMapper.shortNameForRole(step.role).replaceAll('\n', ' '),
+              VithiLabelMapper.localizedShortName(context, step.role).replaceAll('\n', ' '),
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: theme.textTheme.labelLarge?.copyWith(

@@ -1492,5 +1492,49 @@
   "audioBackgroundLimit": "Background audio depends on the installed voice engine",
   "@audioBackgroundLimit": {
     "description": "audioBackgroundLimit"
+  },
+  "karaokeSettingsTitle": "Wiedergabe & Hervorhebung",
+  "karaokeModeTitle": "Karaoke-Modus",
+  "karaokeModeSubtitle": "Den gelesenen Text während des Hörens hervorheben",
+  "karaokeLineHighlightTitle": "Aktuelle Zeile hervorheben",
+  "karaokeLineHighlightSubtitle": "Den aktuell gelesenen Absatz schattieren",
+  "karaokeWordHighlightTitle": "Wortweise Hervorhebung",
+  "karaokeWordHighlightSubtitle": "Jedes Wort beim Vorlesen hervorheben (geschätztes Timing)",
+  "audioFloatingGoTo": "Zur aktuellen Wiedergabe",
+  "audioFloatingHide": "Player ausblenden",
+  "audioFloatingRestore": "Player anzeigen",
+  "audioFloatingClose": "Player schließen",
+  "@karaokeSettingsTitle": {
+    "description": "karaokeSettingsTitle"
+  },
+  "@karaokeModeTitle": {
+    "description": "karaokeModeTitle"
+  },
+  "@karaokeModeSubtitle": {
+    "description": "karaokeModeSubtitle"
+  },
+  "@karaokeLineHighlightTitle": {
+    "description": "karaokeLineHighlightTitle"
+  },
+  "@karaokeLineHighlightSubtitle": {
+    "description": "karaokeLineHighlightSubtitle"
+  },
+  "@karaokeWordHighlightTitle": {
+    "description": "karaokeWordHighlightTitle"
+  },
+  "@karaokeWordHighlightSubtitle": {
+    "description": "karaokeWordHighlightSubtitle"
+  },
+  "@audioFloatingGoTo": {
+    "description": "audioFloatingGoTo"
+  },
+  "@audioFloatingHide": {
+    "description": "audioFloatingHide"
+  },
+  "@audioFloatingRestore": {
+    "description": "audioFloatingRestore"
+  },
+  "@audioFloatingClose": {
+    "description": "audioFloatingClose"
   }
 }
