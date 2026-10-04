@@ -70,7 +70,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         widget: const SettingsScreen(),
       ),
     ];
-    final tab = ref.watch(_currentTabProvider);
+    final tab = ref.watch(homeTabIndexProvider);
     final dataState = ref.watch(vdpRepositoryProvider);
     // M1-T4: Detect HC mode from theme brightness
     final isHC = Theme.of(context).brightness == Brightness.dark;
