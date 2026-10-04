@@ -1,0 +1,122 @@
+
+::group::✅ Passing tests
+✅ /home/runner/work/vdp/vdp/test/vithi_moment_test.dart: expands seven Javana occurrences and omits terminal Bhavanga flow
+✅ /home/runner/work/vdp/vdp/test/vithi_moment_test.dart: bundled very-great five-door process has a 17-moment learning sequence
+✅ /home/runner/work/vdp/vdp/test/vithi_moment_test.dart: keeps a continuing stream that belongs inside Vithimutta
+✅ /home/runner/work/vdp/vdp/test/localized_content_test.dart: English content overlay covers canonical doctrine collections
+✅ /home/runner/work/vdp/vdp/test/localized_content_test.dart: content selection changes text without changing canonical IDs
+✅ /home/runner/work/vdp/vdp/test/localized_content_test.dart: English paticcas carry the full Tứ Nghĩa + prose fields
+✅ /home/runner/work/vdp/vdp/test/localized_content_test.dart: English paccayas carry definitions for all 24 conditions
+✅ /home/runner/work/vdp/vdp/test/localized_content_test.dart: English vithis carry process context and every step in English
+✅ /home/runner/work/vdp/vdp/test/app_version_test.dart: appVersionName khớp version name trong pubspec.yaml
+✅ /home/runner/work/vdp/vdp/test/app_version_test.dart: build number là số nguyên dương tăng dần
+✅ /home/runner/work/vdp/vdp/test/matrix_audio_session_test.dart: dữ liệu gốc: 121 Tâm, 52 Tâm Sở
+✅ /home/runner/work/vdp/vdp/test/matrix_audio_session_test.dart: MatrixAudioSession.buildCittaItems 121 item, id duy nhất, đúng format tiền tố
+::endgroup::
+::group::❌ /home/runner/work/vdp/vdp/test/matrix_audio_session_test.dart: MatrixAudioSession.buildCittaItems thứ tự track khớp thứ tự orderIndex như cột trái của bảng (failed)
+Bad state: No element
+dart:collection                            ListBase.firstWhere
+test/matrix_audio_session_test.dart 65:16  main.<fn>.<fn>
+::endgroup::
+::group::✅ Passing tests
+✅ /home/runner/work/vdp/vdp/test/matrix_audio_session_test.dart: MatrixAudioSession.buildCetasikaItems 52 item, id duy nhất, đúng format tiền tố
+✅ /home/runner/work/vdp/vdp/test/matrix_audio_session_test.dart: trackId khớp id item — currentSectionId nhận diện đúng hàng/cột
+✅ /home/runner/work/vdp/vdp/test/matrix_audio_session_test.dart: EntityPlaylistBuilder sinh đủ track có cue đọc được
+✅ /home/runner/work/vdp/vdp/test/widget_test.dart: all 26 approved UI locales are generated
+✅ /home/runner/work/vdp/vdp/test/widget_test.dart: Traditional Chinese device variants resolve to zh_TW
+✅ /home/runner/work/vdp/vdp/test/widget_test.dart: unsupported device locale falls back to English
+✅ /home/runner/work/vdp/vdp/test/widget_test.dart: language aliases provide a safe recovery path
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: engineSpeechRate Android: 1.0× = 0.5, không chạy ở tốc độ tối đa
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: engineSpeechRate iOS: 1.0× = 0.5 (AVSpeechUtteranceDefaultSpeechRate)
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: engineSpeechRate kẹp ngoài khoảng preset (0.5–2.0)
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: splitSentences tách theo . ! ? … kèm ký tự đóng ngoặc
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: splitSentences không tách ở số thập phân; phần còn lại sau dấu ghép vào câu
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: splitSentences văn bản không dấu kết câu → 1 câu; rỗng → không có gì
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: speakTimeoutFor câu dài / tốc độ chậm → timeout dài hơn
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: ttsVoiceChain tiếng Việt: giữ vi đầu tiên, fallback en cuối
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: ttsVoiceChain ngôn ngữ khác: loại vi khỏi chuỗi giọng (khớp chuỗi văn bản)
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: pickTtsLanguage chọn preferred đầu tiên được hỗ trợ, khớp cả prefix
+✅ /home/runner/work/vdp/vdp/test/audio_tts_rate_test.dart: pickTtsLanguage parseTtsLanguageList nhận List/String/mixed
+✅ /home/runner/work/vdp/vdp/test/widget_test.dart: Arabic locale enables RTL and renders native settings label
+✅ /home/runner/work/vdp/vdp/test/widget_test.dart: Vietnamese and English resources can be switched
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: dataset ships exactly 121 unique cittas and 52 unique cetasikas
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: every cetasika belongs to at least one study module
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: every citta belongs to at least one study module
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: module id lists only reference entities that exist (no typos)
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: every cetasika group is fully covered by modules
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: every citta bhumi group is fully covered by modules
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: module prerequisites reference known modules
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: cittas.json moduleId agrees with the module that lists the citta
+✅ /home/runner/work/vdp/vdp/test/study_module_coverage_test.dart: recommendedOrder is unique so the study graph order stays stable
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: module id list matches the shipped study module definitions
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: locale chain strips subtags then appends the global fallbacks
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: shipped content locales all have an asset bundled
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "vi"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "en"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "hi"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "zh"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "zh_TW"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "si"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "my"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "ja"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: every module has lesson content in "th"
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: lesson content is auditable and internally consistent
+✅ /home/runner/work/vdp/vdp/test/lesson_content_test.dart: an unknown module falls back to empty instead of throwing
+✅ /home/runner/work/vdp/vdp/test/audio_p2_test.dart: old listening position JSON migrates without metadata
+✅ /home/runner/work/vdp/vdp/test/audio_p2_test.dart: missing Sherpa backend reports safe fallback
+✅ /home/runner/work/vdp/vdp/test/audio_p2_test.dart: forwards fallback TrackPlayer events through its own stream
+✅ /home/runner/work/vdp/vdp/test/audio_p2_test.dart: sleep timer cancels and does not pause
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry every priority language is registered
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry tags are unique and asset-name safe
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry lookup tolerates dashes and casing
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry vi is the source and en is reviewed
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry only shipped languages are selectable
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry draft languages warn the learner, reviewed ones do not
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry display names stay identifiable in an unreadable script
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: content language registry search matches endonym, English name, tag and aliases
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: defaultContentLocaleFor falls back to English for an unshipped language
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: defaultContentLocaleFor a Vietnamese device gets Vietnamese content
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: defaultContentLocaleFor Chinese script/region resolution never throws
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: defaultContentLocaleFor never returns a tag that is not selectable
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: fallback chain for the priority languages each priority tag degrades to en then vi
+✅ /home/runner/work/vdp/vdp/test/content_languages_test.dart: fallback chain for the priority languages an unauthored locale still serves reviewed content
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: prepareModule build playlist từ sections + khôi phục thói quen đã lưu
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: prepareModule đổi ngôn ngữ dừng giọng cũ và load locale mới
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: prepareModule idempotent — gọi lại không reset phiên đang nghe
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: phát / resume playAll bắt đầu từ đầu khi không có vị trí lưu
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: phát / resume playAll resume → đúng track + cue đã lưu (H4)
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: phát / resume tự chuyển mục khi phát hết — không lặp (repeat off)
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: phát / resume playFrom cùng mục đang phát → toggle pause
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: hẹn giờ tắt lưu hạn giờ trong state và cho phép hủy
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: lặp (bắt buộc) RepeatMode.one → phát lại đúng mục vô hạn
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: lặp (bắt buộc) RepeatMode.all → hết danh sách quay về mục 1
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: lặp (bắt buộc) cycleRepeatMode xoay Tắt → Mục này → Cả danh sách → Tắt
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: Nghe lại ×N (học thuộc — plan §6.3) ×2: phát lại đúng 1 lần nữa rồi đi tiếp
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: Nghe lại ×N (học thuộc — plan §6.3) xoay vòng ×2 → ×3 → ×5 → tắt
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: tốc độ (bắt buộc) setSpeed áp dụng tức thì + ghi nhớ (H3)
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: điều hướng & vòng đời previous: giữa mục → về đầu mục; đầu mục → mục trước
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: điều hướng & vòng đời onModuleClosed: pause + lưu vị trí (H4)
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: điều hướng & vòng đời lỗi giọng đọc → state.error để UI báo, không crash (plan §11)
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: karaoke (V1.9.2 §2) wordProgress của đúng cue hiện tại cập nhật currentWordIndex
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: karaoke (V1.9.2 §2) pause xoá currentWordIndex (không đứng khựng ở từ cũ)
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: watchdog tự chữa (V1.9.2 — bug "đọc đoạn đầu rồi im lặng") không có sự kiện tiến độ quá ngưỡng → tự stop/reload/play lại
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: watchdog tự chữa (V1.9.2 — bug "đọc đoạn đầu rồi im lặng") đang pause thì watchdog không can thiệp
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: nguồn phiên & đóng thanh nghe (V1.9.2 §1) sourceKind mặc định study, giữ nguyên khi prepare lại cùng module
+✅ /home/runner/work/vdp/vdp/test/audio_player_test.dart: nguồn phiên & đóng thanh nghe (V1.9.2 §1) closeSession dừng hẳn + xoá phiên (khác pause)
+✅ /home/runner/work/vdp/vdp/test/paccaya_data_test.dart: dataset ships exactly the 24 conditions in canonical order
+✅ /home/runner/work/vdp/vdp/test/paccaya_data_test.dart: every condition has a Vietnamese name, definition and both dhamma sides
+✅ /home/runner/work/vdp/vdp/test/paccaya_data_test.dart: every condition cites at least one canonical source
+✅ /home/runner/work/vdp/vdp/test/paccaya_data_test.dart: cross references resolve against the shipped datasets
+✅ /home/runner/work/vdp/vdp/test/paccaya_data_test.dart: source policy is explicit about the missing Pa-Auk document
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: PlaylistBuilder.build 1 track mỗi section, cue map đúng khối UI của tab Học
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: PlaylistBuilder.build cue từ khóa phát Pāli bằng span riêng (giọng Pāli)
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: PlaylistBuilder.build section không có nội dung bị bỏ qua (không track câm)
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: PlaylistBuilder.build ước tính thời lượng tỉ lệ nghịch với tốc độ (≈ hiển thị)
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: PlaylistBuilder.build audioRef → durationHint thật (hiển thị chính xác thay vì ≈)
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: LessonSection.tryParse với audioRef (schema để ngỏ) audioRef hợp lệ được parse
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: LessonSection.tryParse với audioRef (schema để ngỏ) không có audioRef (dữ liệu cũ) → null, không crash
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: LessonSection.tryParse với audioRef (schema để ngỏ) audioRef hỏng → bỏ qua field, section vẫn parse
+✅ /home/runner/work/vdp/vdp/test/audio_playlist_builder_test.dart: AudioCue.wordCount đếm từ qua các span
+::endgroup::
+
+::error::110 tests passed, 1 failed.
