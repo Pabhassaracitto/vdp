@@ -59,6 +59,9 @@ class VdpApp extends ConsumerWidget {
       // V1.9.2 §1: thanh nghe nổi toàn app điều hướng qua khoá này (nó sống
       // ngoài Navigator thật — xem ghi chú trong GlobalAudioBubble).
       navigatorKey: rootNavigatorKey,
+      // VDP | Issue Web: HomeScreen đọc observer này để biết khi nào
+      // NavigationBar 5 tab đang thật sự ở trên cùng (bubble nhường chỗ).
+      navigatorObservers: [rootRouteObserver],
       onGenerateTitle: (context) => context.l10n.appName,
       debugShowCheckedModeBanner: false,
       locale: localeSettings.uiLocale,

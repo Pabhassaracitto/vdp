@@ -23,7 +23,8 @@ class HomeScreen extends ConsumerStatefulWidget {
   ConsumerState<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends ConsumerState<HomeScreen> {
+class _HomeScreenState extends ConsumerState<HomeScreen>
+    with RouteAware, HomeTabsVisibilitySync {
   bool _showTimeoutWarning = false;
   Timer? _timeoutTimer;
 
@@ -36,7 +37,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // VDP | Issue Web: báo cho thanh nghe nổi biết NavigationBar 5 tab có đang
+    // thật sự hiển thị (route này ở trên cùng) để nó nhường chỗ.
+    syncHomeTabsVisibility();
+  }
+
+  @override
   void dispose() {
+    unsyncHomeTabsVisibility();
     _timeoutTimer?.cancel();
     super.dispose();
   }
