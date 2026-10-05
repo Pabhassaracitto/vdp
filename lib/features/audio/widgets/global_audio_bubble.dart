@@ -15,6 +15,16 @@
 // Widget này nằm ngoài Navigator thật (bên trong `MaterialApp.builder`) nên
 // điều hướng qua [rootNavigatorKey] thay vì `Navigator.of(context)` — xem ghi
 // chú trong `core/navigation/app_navigator.dart`.
+//
+// VDP | Issue Web (desktop web): vì nằm NGOÀI Navigator, bubble KHÔNG được
+// Scaffold của HomeScreen bảo vệ — đáy của nó trùm lên NavigationBar 5 tab
+// (che vùng bấm), và subtree này không có Overlay ancestor nên bất kỳ
+// Tooltip nào dưới nó cũng hỏng khi hover chuột (treo input đến khi reload
+// trang — xem flutter/flutter#142465, #193566). Vì vậy:
+//   1. Bubble nâng đáy lên `navBarHeight + kAudioBubbleBottomMargin` khi các
+//      tab home đang hiển thị (homeTabsVisibleProvider), neo đáy như cũ trên
+//      các route đẩy lên — xem `features/home/home_tab_index.dart`;
+//   2. KHÔNG dùng Tooltip ở đây — accessibility vẫn đầy đủ qua Semantics.
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -27,6 +37,17 @@ import '../../paticca/presentation/providers/paticca_providers.dart';
 import '../../paticca/presentation/screens/paticca_screen.dart';
 import '../../study/module_detail_screen.dart';
 import '../providers/audio_player_provider.dart';
+
+/// Khoảng hở tối thiểu giữa đáy thanh nghe nổi và đáy màn hình (px) — hành vi
+/// gốc trên mọi màn hình không có thanh tab ("nổi trên inset hệ thống").
+const double kAudioBubbleBottomMargin = 10;
+
+/// Key của dạng thanh đầy đủ — dùng bởi test/global_audio_bubble_web_test.dart
+/// để kiểm tra hình học (đáy bubble không đè NavigationBar).
+const Key kGlobalAudioBubbleBarKey = Key('globalAudioBubbleBar');
+
+/// Key của nút tròn khôi phục (dạng đã Ẩn) — cùng mục đích.
+const Key kGlobalAudioBubbleRestoreKey = Key('globalAudioBubbleRestore');
 
 class GlobalAudioBubble extends ConsumerWidget {
   const GlobalAudioBubble({super.key});
@@ -80,10 +101,22 @@ class GlobalAudioBubble extends ConsumerWidget {
     final theme = Theme.of(context);
     final color = theme.colorScheme.primary;
 
+    // VDP | Issue Web (Cách A): khi route đáy (HomeScreen) đang ở trên cùng,
+    // NavigationBar 5 tab đang nhận chạm — nâng bubble lên TRÊN toàn bộ chiều
+    // cao của nó (+ margin như cũ) để không bao giờ đè vùng bấm của tab. Trên
+    // các route đẩy lên (module detail…) không có thanh tab — neo đáy như cũ,
+    // vẫn "nổi trên inset hệ thống" nhờ SafeArea. 80 là chiều cao mặc định
+    // của NavigationBar (M3) khi theme không ghi đè.
+    final navBarHeight = theme.navigationBarTheme.height ?? 80.0;
+    final tabsVisible = ref.watch(homeTabsVisibleProvider);
+    final bottomGap =
+        kAudioBubbleBottomMargin + (tabsVisible ? navBarHeight : 0.0);
+
     if (state.bubbleHidden) {
       return _RestoreHandle(
         color: color,
         isPlaying: state.isPlaying,
+        bottomGap: bottomGap,
         onTap: notifier.showBubble,
       );
     }
@@ -94,8 +127,9 @@ class GlobalAudioBubble extends ConsumerWidget {
         : '${state.moduleTitle} · ${state.currentTrackNumber}/${state.playlist.length}';
 
     return SafeArea(
+      key: kGlobalAudioBubbleBarKey,
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(12, 0, 12, 10),
+        padding: EdgeInsets.fromLTRB(12, 0, 12, bottomGap),
         child: Material(
           elevation: 10,
           borderRadius: BorderRadius.circular(16),
@@ -117,8 +151,10 @@ class GlobalAudioBubble extends ConsumerWidget {
                   Semantics(
                     button: true,
                     label: state.isPlaying ? context.l10n.pauseAudio : context.l10n.playAudio,
+                    // VDP | Issue Web: KHÔNG thêm lại tham số `tooltip:` —
+                    // bubble nằm ngoài Navigator nên không có Overlay cho nó;
+                    // Semantics phía trên đã đủ cho accessibility.
                     child: IconButton.filled(
-                      tooltip: state.isPlaying ? context.l10n.pauseAudio : context.l10n.playAudio,
                       onPressed: notifier.togglePlayPause,
                       style: IconButton.styleFrom(backgroundColor: color, foregroundColor: Colors.white),
                       icon: Icon(state.isPlaying ? Icons.pause_rounded : Icons.play_arrow_rounded),
@@ -153,26 +189,23 @@ class GlobalAudioBubble extends ConsumerWidget {
                       ],
                     ),
                   ),
-                  Tooltip(
-                    message: context.l10n.audioFloatingHide,
-                    child: Semantics(
-                      button: true,
-                      label: context.l10n.audioFloatingHide,
-                      child: IconButton(
-                        onPressed: notifier.hideBubble,
-                        icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      ),
+                  // VDP | Issue Web: các nút ở 2 đầu thanh KHÔNG bọc Tooltip
+                  // (hover chuột trên web kích tooltip overlay ngoài Navigator
+                  // → treo toàn bộ input app). Semantics giữ nguyên.
+                  Semantics(
+                    button: true,
+                    label: context.l10n.audioFloatingHide,
+                    child: IconButton(
+                      onPressed: notifier.hideBubble,
+                      icon: const Icon(Icons.keyboard_arrow_down_rounded),
                     ),
                   ),
-                  Tooltip(
-                    message: context.l10n.audioFloatingClose,
-                    child: Semantics(
-                      button: true,
-                      label: context.l10n.audioFloatingClose,
-                      child: IconButton(
-                        onPressed: notifier.closeSession,
-                        icon: const Icon(Icons.close_rounded),
-                      ),
+                  Semantics(
+                    button: true,
+                    label: context.l10n.audioFloatingClose,
+                    child: IconButton(
+                      onPressed: notifier.closeSession,
+                      icon: const Icon(Icons.close_rounded),
                     ),
                   ),
                 ],
@@ -189,10 +222,20 @@ class GlobalAudioBubble extends ConsumerWidget {
 /// Dạng thu nhỏ khi người dùng bấm "Ẩn" — một chấm tròn nhỏ ở góc, không che
 /// nội dung, bấm để hiện lại thanh đầy đủ.
 class _RestoreHandle extends StatelessWidget {
-  const _RestoreHandle({required this.color, required this.isPlaying, required this.onTap});
+  const _RestoreHandle({
+    required this.color,
+    required this.isPlaying,
+    required this.bottomGap,
+    required this.onTap,
+  });
 
   final Color color;
   final bool isPlaying;
+
+  /// Khoảng hở dưới — khi các tab home đang hiển thị, giá trị này đã gồm cả
+  /// chiều cao NavigationBar (VDP | Issue Web: handle cũng không được đè vùng
+  /// bấm của các tab).
+  final double bottomGap;
   final VoidCallback onTap;
 
   @override
@@ -201,26 +244,27 @@ class _RestoreHandle extends StatelessWidget {
       alignment: AlignmentDirectional.bottomEnd,
       child: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 0, 14, 14),
+          // +4 so với thanh đầy đủ: giữ đúng nhịp thụt của bản gốc (14 = 10+4).
+          padding: EdgeInsets.fromLTRB(0, 0, 14, bottomGap + 4),
           child: Semantics(
             button: true,
             label: context.l10n.audioFloatingRestore,
-            child: Tooltip(
-              message: context.l10n.audioFloatingRestore,
-              child: Material(
-                color: color,
-                shape: const CircleBorder(),
-                elevation: 8,
-                child: InkWell(
-                  customBorder: const CircleBorder(),
-                  onTap: onTap,
-                  child: Padding(
-                    padding: const EdgeInsets.all(14),
-                    child: Icon(
-                      isPlaying ? Icons.graphic_eq_rounded : Icons.headphones_rounded,
-                      color: Colors.white,
-                      size: 22,
-                    ),
+            // VDP | Issue Web: không Tooltip (cùng một lý do với thanh đầy đủ —
+            // không có Overlay ancestor ngoài Navigator).
+            child: Material(
+              key: kGlobalAudioBubbleRestoreKey,
+              color: color,
+              shape: const CircleBorder(),
+              elevation: 8,
+              child: InkWell(
+                customBorder: const CircleBorder(),
+                onTap: onTap,
+                child: Padding(
+                  padding: const EdgeInsets.all(14),
+                  child: Icon(
+                    isPlaying ? Icons.graphic_eq_rounded : Icons.headphones_rounded,
+                    color: Colors.white,
+                    size: 22,
                   ),
                 ),
               ),

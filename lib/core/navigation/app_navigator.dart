@@ -10,3 +10,13 @@ import 'package:flutter/widgets.dart';
 
 final GlobalKey<NavigatorState> rootNavigatorKey =
     GlobalKey<NavigatorState>(debugLabel: 'vdpRootNavigator');
+
+/// Observer của root Navigator — dùng để HomeScreen (và chỉ HomeScreen) biết
+/// khi nào route của nó thật sự đang ở trên cùng, tức NavigationBar 5 tab
+/// đang hiển thị và nhận chạm. Thanh nghe nổi toàn app (`GlobalAudioBubble`)
+/// đọc trạng thái này (qua `homeTabsVisibleProvider`) để NÂNG MÌNH LÊN khỏi
+/// vùng bấm của các tab — fix bug desktop-web bubble che NavigationBar
+/// (VDP | Issue Web). Đăng ký ở `MaterialApp.navigatorObservers` trong
+/// main.dart.
+final RouteObserver<ModalRoute<void>> rootRouteObserver =
+    RouteObserver<ModalRoute<void>>();
