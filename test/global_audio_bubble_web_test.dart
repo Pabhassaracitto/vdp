@@ -344,7 +344,9 @@ void main() {
       // Route đáy bị che → tab "không hiển thị" → bubble neo đáy 10px như cũ
       // (màn đẩy lên không có NavigationBar, giữ hành vi mobile).
       expect(container.read(homeTabsVisibleProvider), isFalse);
-      final screenHeight = tester.view.physicalSize.height;
+      // Tọa độ của tester.get* là LOGICAL — đổi từ physicalSize qua DPR.
+      final screenHeight =
+          tester.view.physicalSize.height / tester.view.devicePixelRatio;
       expect(
         barBottom(tester).dy,
         closeTo(screenHeight - kAudioBubbleBottomMargin, 0.5),

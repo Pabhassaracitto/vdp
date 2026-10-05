@@ -127,10 +127,13 @@ class GlobalAudioBubble extends ConsumerWidget {
         : '${state.moduleTitle} · ${state.currentTrackNumber}/${state.playlist.length}';
 
     return SafeArea(
-      key: kGlobalAudioBubbleBarKey,
       child: Padding(
         padding: EdgeInsets.fromLTRB(12, 0, 12, bottomGap),
+        // Key nằm trên Material (mép thị giác của thanh) chứ không phải
+        // SafeArea/Padding bọc ngoài — render box của chúng gồm cả dải trống
+        // bottomGap nên không dùng được để kiểm tra hình học trong test.
         child: Material(
+          key: kGlobalAudioBubbleBarKey,
           elevation: 10,
           borderRadius: BorderRadius.circular(16),
           color: theme.colorScheme.surface,
