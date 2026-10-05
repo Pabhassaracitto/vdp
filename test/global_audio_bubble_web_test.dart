@@ -202,7 +202,14 @@ void main() {
 
   setUp(() async {
     player = FakeTrackPlayer();
-    notifier = AudioPlayerNotifier(player: player, store: InMemoryStore());
+    // Tắt dịch vụ nền tảng: AudioService.init → flutter_cache_manager mở
+    // cache bằng future detached — lỗi plugin của nó lọt khỏi try/catch của
+    // notifier và thành lỗi zone không ổn định trong suite widget test.
+    notifier = AudioPlayerNotifier(
+      player: player,
+      store: InMemoryStore(),
+      initializePlatformServices: false,
+    );
     // Phiên nghe giả — nguồn Bảng Tương Ưng (đúng tab bug report đề cập).
     await notifier.prepareModule(
       moduleId: 'M1_BASICS',
