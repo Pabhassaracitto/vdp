@@ -205,6 +205,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     ListeningPositionStore? store,
     Duration watchdogInterval = const Duration(seconds: 5),
     Duration stallThreshold = const Duration(seconds: 18),
+    bool initializePlatformServices = true,
   })  : _player = player ?? SherpaTtsTrackPlayer(),
         _store = store ?? const SharedPrefsListeningPositionStore(),
         _watchdogInterval = watchdogInterval,
@@ -223,7 +224,14 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
         if (mounted) state = state.copyWith(sleepTimerEndsAt: null);
       },
     );
-    unawaited(_initializePlatformServices());
+    // Widget test có thể tắt hẳn khởi tạo dịch vụ nền tảng: bên trong
+    // AudioService.init, flutter_cache_manager mở cache bằng một future
+    // DETACHED (ngoài chuỗi await/try-catch ở đây) — lỗi platform của nó
+    // trở thành lỗi zone không bắt được, làm flutter_test báo "failed after
+    // it had already completed" một cách không ổn định theo thứ tự suite.
+    if (initializePlatformServices) {
+      unawaited(_initializePlatformServices());
+    }
     // Audio Coordinator (plan §11): phát từ Pāli ở detail sheet → pause phiên nghe.
     PaliTtsHelper.onBeforeSpeak = _pauseForFocus;
   }
