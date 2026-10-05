@@ -41,6 +41,11 @@ final homeTabsVisibleProvider = StateProvider<bool>((ref) => false);
 /// ```
 /// rồi gọi [syncHomeTabsVisibility] trong `didChangeDependencies` và
 /// [unsyncHomeTabsVisibility] trong `dispose` (trước `super.dispose()`).
+///
+/// Lưu ý: mọi ghi vào provider đều được TRÌ HOÃN ra microtask sau pha build
+/// (Riverpod cấm sửa provider trong widget life-cycle) — vì vậy trạng thái
+/// trong provider trễ hơn sự kiện route một nhịp frame, điều này vô hại cho
+/// thanh nghe nổi.
 mixin HomeTabsVisibilitySync<T extends ConsumerStatefulWidget>
     on ConsumerState<T>, RouteAware {
   /// Gọi trong `didChangeDependencies`: đăng ký với [rootRouteObserver] và
@@ -71,10 +76,21 @@ mixin HomeTabsVisibilitySync<T extends ConsumerStatefulWidget>
 
   /// Chỉ ghi khi giá trị đổi — tránh vòng rebuild thừa giữa provider và các
   /// widget đang watch nó (GlobalAudioBubble).
+  ///
+  /// Ghi bị TRÌ HOÃN: `didChangeDependencies` (và đôi khi các callback route)
+  /// chạy trong buildScope của Navigator, nơi Riverpod ném "Tried to modify a
+  /// provider while the widget tree was building" nếu sửa provider đồng bộ.
+  /// Microtask sau đó chỉ ghi khi màn hình còn trong cây widget (`mounted`) —
+  /// nếu nó đã rởi cây (ví dụ bị pop/thay route), các tab hiển nhiên không
+  /// hiển thị, và bản ghi mới nhất của chính màn hình đó trước lúc rởi cây
+  /// (didPushNext/dispose → false) đã theo kịp thứ tự microtask.
   void _writeHomeTabsVisibility(bool visible) {
-    final notifier = ref.read(homeTabsVisibleProvider.notifier);
-    if (notifier.state != visible) {
-      notifier.state = visible;
-    }
+    Future<void>.microtask(() {
+      if (!mounted) return;
+      final notifier = ref.read(homeTabsVisibleProvider.notifier);
+      if (notifier.state != visible) {
+        notifier.state = visible;
+      }
+    });
   }
 }
