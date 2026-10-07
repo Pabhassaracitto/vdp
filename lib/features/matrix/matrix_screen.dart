@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/localization/content_catalog.dart';
+import '../../core/localization/localized_content.dart';
 import '../../core/localization/locale_controller.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../l10n/l10n.dart';
