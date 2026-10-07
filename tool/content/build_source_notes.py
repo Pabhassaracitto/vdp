@@ -37,7 +37,7 @@ GAPS_TEMPLATE = """
 | Module | Gap | Handling |
 | --- | --- | --- |
 {kamma_gap}| M10_LO_TRINH | `assets/data/vithis.json` contains `VT_VITHIMUTTA`, but `VDP-LoTrinhTam.pdf` has **no** dedicated Vīthimutta (ngoại lộ) section. A grep for `vīthimutta` / `ngoại lộ` across all 11 extracted PDFs returned no relevant hit. | Section `M10_S09` documents this explicitly as `source_missing` with a TODO. Candidate follow-up source: `VDP-NguoiVaCoi.pdf`. |
-| All modules (English) | Lesson prose is **not translated to English**. | `content_en.json` marks each module `translationStatus: "source_only"`, `needsReview: true`. The runtime `en -> vi` fallback chain serves the Vietnamese source, so no module is ever empty. |
+| All modules (English) | English lessons are authored; `M15_TAM_SO_PHOI_HOP`, `M16_NGUOI_VA_COI`, and `M17_DUYEN_CHI_TIET` remain `draft` pending review. | `content_en.json` preserves the English lessons and per-module review status. Vietnamese is not a runtime fallback for non-Vietnamese content locales. |
 
 ## PDFs not used for lesson content
 

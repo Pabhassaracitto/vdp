@@ -151,33 +151,47 @@ def build_vi() -> dict:
 
 
 def update_en(existing: dict) -> dict:
-    """Keep every reviewed English entity translation, refresh study modules.
+    """Keep authored English content and preserve its honest review status.
 
-    English lesson prose has NOT been translated yet. Rather than shipping
-    machine translation as if it were reviewed, each module is marked
-    `source_only` and the runtime locale chain (en -> vi) serves the
-    Vietnamese lesson content until a human translation lands.
+    This builder refreshes Vietnamese source modules; it must not replace the
+    English lessons with Vietnamese text or downgrade authored English content
+    to ``source_only``. Missing English lesson fields stay absent and are never
+    filled from the Vietnamese source at runtime.
     """
     out = dict(existing)
     out["locale"] = "en"
     out["schemaVersion"] = SCHEMA_VERSION
-    out["fallbackLocale"] = "vi"
-    out["lessonTranslationStatus"] = "source_only"
-    out["lessonTranslationNote"] = (
-        "Study module titles/descriptions are English. lessonSections, "
-        "reviewCards and quizSeeds are not translated yet and resolve to the "
-        "Vietnamese source through the en -> vi content fallback chain."
-    )
+    out["fallbackLocale"] = "en"
 
     modules = dict(out.get("studyModules") or {})
+    pending_review = []
     for module_id, _module in MODULES:
         entry = dict(modules.get(module_id) or {})
         if not entry.get("title"):
             _fail(f"content_en.json is missing a title for {module_id}")
-        entry["translationStatus"] = "source_only"
-        entry["needsReview"] = True
+        status = entry.get("translationStatus")
+        if status not in {"reviewed", "draft"}:
+            status = "draft"
+            entry["translationStatus"] = status
+        if status == "draft":
+            entry["needsReview"] = True
+            pending_review.append(module_id)
+        else:
+            entry.pop("needsReview", None)
         modules[module_id] = entry
+
     out["studyModules"] = modules
+    if pending_review:
+        out["lessonTranslationStatus"] = "partial"
+        out["lessonTranslationNote"] = (
+            "English lesson content is authored. Modules requiring further "
+            "translation/review: " + ", ".join(pending_review) + "."
+        )
+    else:
+        out["lessonTranslationStatus"] = "reviewed"
+        out["lessonTranslationNote"] = (
+            "English lesson content is authored and reviewed for all modules."
+        )
     return out
 
 

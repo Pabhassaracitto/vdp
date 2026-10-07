@@ -110,7 +110,7 @@ cho đối chiếu Anh ngữ. Mỗi mục trong JSON có `sourceRefs` + `confide
 | M8-T7 | "Tầng 4: Duyên xung đột (Vô Minh + Trí Tuệ)" | THẤP | `blueprint.md:77` — cần rule trong validator. |
 | M8-T8 | Đưa 24 duyên vào `VdpDataValidator` | THẤP | Hiện chỉ validate cittas/cetasikas; có thể thêm rule "đủ 24 duyên, thứ tự đúng". |
 | M8-T9 | Quiz / review cards cho 24 duyên | THẤP | Sau M8-T4. |
-| M8-T10 | Dịch nhãn UI + nội dung 24 duyên | THẤP | 24 khoá i18n mới hiện **giữ bản tiếng Anh ở 24 locale** (đúng quy ước repo — `bo` đang có 235/275 khoá giống EN); `vi` đã dịch thật. `tool/check_localizations.py` PASS. `content_en.json` vẫn `source_only` cho toàn bộ module. |
+| M8-T10 | Dịch nhãn UI + nội dung 24 duyên | THẤP | 24 khoá i18n mới hiện **giữ bản tiếng Anh ở 24 locale** (đúng quy ước repo — `bo` đang có 235/275 khoá giống EN); `vi` đã dịch thật. `tool/check_localizations.py` PASS. Nội dung lesson English đã có cho các module; M15–M17 vẫn `draft`, xem `docs/study-content-sources.md`. English không dùng nội dung Việt làm runtime fallback. |
 
 ### Kiểm chứng đã chạy trong môi trường này
 

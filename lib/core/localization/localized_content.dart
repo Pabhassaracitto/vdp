@@ -96,9 +96,8 @@ extension LocalizedKammaContent on KammaModel {
 
 extension LocalizedPaccayaContent on PaccayaModel {
   /// The 24 Duyên Hệ are resolved through the selected content language's safe
-  /// chain. Priority-language catalogs contain only authored translations;
-  /// untranslated prose stays absent instead of borrowing English or the
-  /// Vietnamese source.
+  /// chain. Draft priority catalogs may use English for missing fields, but
+  /// never borrow Vietnamese source prose.
   String localizedName(BuildContext context) => context.contentCatalog.text(
         'paccayas',
         id,
@@ -250,8 +249,8 @@ extension LocalizedVithiContent on VithiModel {
         step.description,
       );
 
-  /// Bối cảnh phát sinh lộ — các ngôn ngữ khác chỉ đọc từ chuỗi locale an toàn;
-  /// trả `null` thay vì lộ văn bản của ngôn ngữ khác.
+  /// Bối cảnh phát sinh lộ — đọc qua chuỗi locale an toàn, gồm English khi
+  /// được phép. Trả `null` nếu không có giá trị; không dùng nguồn Việt.
   String? localizedArisingCondition(BuildContext context) =>
       context.contentCatalog.optionalText(
         'vithis',

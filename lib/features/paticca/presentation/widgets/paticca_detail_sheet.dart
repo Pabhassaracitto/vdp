@@ -22,7 +22,8 @@ class PaticcaDetailSheet extends ConsumerWidget {
     final relatedPaccayas =
         ref.watch(paccayasForPaticcaProvider(item.id)).valueOrNull ?? const [];
     // Văn bản tuỳ chọn đọc qua chuỗi catalog an toàn: tiếng Việt từ dataset;
-    // priority locale chỉ nhận bản dịch đã có và ẩn mục còn thiếu.
+    // priority locale có thể dùng English khi thiếu bản dịch, không dùng nguồn
+    // tiếng Việt.
     final localizedExamples = item.localizedExamples(context) ?? const [];
     final doctrinalNote = item.localizedDoctrinalNote(context);
 
@@ -141,8 +142,8 @@ class PaticcaDetailSheet extends ConsumerWidget {
   /// CetasikaDetailSheet để người học gặp lại một cấu trúc quen thuộc.
   ///
   /// Đọc qua content catalog: với tiếng Việt lấy từ dataset; ngôn ngữ khác lấy
-  /// từ chuỗi locale an toàn (English chỉ khi registry cho phép) và ẩn hàng khi
-  /// chưa có bản dịch.
+  /// từ chuỗi locale an toàn (English nếu được registry cho phép), không dùng
+  /// nguồn tiếng Việt.
   Widget _fourAspects(BuildContext context, AppLocalizations l10n) {
     final rows = <(String, String?)>[
       (l10n.characteristic, item.localizedCharacteristic(context)),

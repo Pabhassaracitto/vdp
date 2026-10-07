@@ -11,9 +11,9 @@ import 'content_languages.dart';
 ///
 /// Content lookup applies the selected language's fallback policy after these
 /// catalogs are loaded: priority languages can inherit a regional variant
-/// (for example `zh_TW -> zh`) but deliberately do not render missing text in
-/// English or Vietnamese. Unregistered locales may still use English as a
-/// recovery fallback. Vietnamese remains the source-backed original.
+/// (for example `zh_TW -> zh`) and may use English for missing fields while
+/// the catalog is in draft. Non-Vietnamese locales never fall back to the
+/// Vietnamese source.
 const List<String> kContentFallbackLocales = ['en', 'vi'];
 
 /// Resolves the chain of content locales to try for [locale].
@@ -49,9 +49,9 @@ class ContentCatalog {
   final Map<String, dynamic> data;
 
   /// Lower-priority catalogs loaded for fallback lookup when [data] is missing
-  /// a value. Rendering filters this list through [_localizedChain], so a
-  /// priority language may decline English/Vietnamese even though those assets
-  /// are available.
+  /// a value. Rendering filters this list through [_localizedChain], so
+  /// English is included only when the selected language permits it, and
+  /// Vietnamese is never used for non-Vietnamese readers.
   final List<ContentCatalog> fallbacks;
 
   const ContentCatalog({
@@ -64,9 +64,9 @@ class ContentCatalog {
 
   // ── Entity text ────────────────────────────────────────────────────────────
   // NOTE: for `vi` the canonical entity strings live in assets/data/*.json and
-  // are passed in as [vietnameseFallback], so the catalog is bypassed. For a
-  // translated locale, lookups only use the safe chain selected below; missing
-  // text is omitted rather than borrowing another language.
+  // are passed in as [vietnameseFallback], so the catalog is bypassed. Other
+  // locales use the safe chain selected below: English may fill draft gaps,
+  // but Vietnamese is never borrowed.
 
   /// Reads `<section>.<id>.<field>` from this catalog only.
   Object? _entityField(String section, String id, String field) {
@@ -90,8 +90,8 @@ class ContentCatalog {
       final value = catalog._entityField(section, id, field);
       if (value is String && value.trim().isNotEmpty) return value;
     }
-    // A missing translation must not silently turn into English or Vietnamese
-    // text for a learner who explicitly selected another content language.
+    // The safe chain already tried English when permitted; never use the
+    // Vietnamese source for a learner who selected another content language.
     return '';
   }
 
@@ -140,8 +140,8 @@ class ContentCatalog {
   /// is returned directly. Other readers only get text from the safe locale
   /// chain (the selected language, a regional variant, and English only when
   /// [ContentLanguage.allowsEnglishFallback] permits it). When nothing is
-  /// authored there this returns `null`; callers hide the block instead of
-  /// leaking prose from another language.
+  /// authored there this returns `null`; callers hide the block rather than
+  /// leaking the Vietnamese source.
   String? optionalText(
     String section,
     String id,
@@ -203,11 +203,9 @@ class ContentCatalog {
 
   /// Catalogs safe to render for the selected content language.
   ///
-  /// The general resource chain still loads English for recovery and for
-  /// unregistered locales. A registered priority language opts out explicitly;
-  /// Traditional Chinese may still inherit Simplified Chinese because it is
-  /// the same language family, but neither may fall through to English or the
-  /// Vietnamese source. This prevents mixed-language Dhamma prose.
+  /// A priority locale first tries its own catalog and regional variants such
+  /// as Simplified Chinese for `zh_TW`. Draft catalogs may use English for
+  /// missing fields. Vietnamese is excluded for every other locale.
   List<ContentCatalog> get _localizedChain {
     if (locale == 'vi') {
       return _chain.where((catalog) => catalog.locale == 'vi').toList();
@@ -246,7 +244,7 @@ class ContentCatalog {
   ///   that are safe for the selected language.
   ///
   /// [chain] is explicit so lessons can use the same language policy as entity
-  /// text while excluding English/Vietnamese for priority translations.
+  /// text while excluding Vietnamese and conditionally including English.
   List<Map<String, Object?>> _mergedItemsWithChain(
     String moduleId,
     String key,
@@ -324,11 +322,9 @@ class ContentCatalog {
   /// Authored lesson content for [moduleId], merged across the safe locale
   /// chain.
   ///
-  /// Lesson sections, review cards and quiz seeds are narrative text, so a
-  /// missing translation is not replaced with a different language. This is
-  /// especially important for selectable priority locales: their authored
-  /// modules remain available, while untranslated modules use the generated
-  /// localized-entity experience rather than English prose.
+  /// Lesson sections, review cards and quiz seeds are narrative text. Draft
+  /// locales may use English for untranslated fields until a reviewed
+  /// translation is available; Vietnamese source text is never substituted.
   ///
   /// Returns [ModuleLessonContent.empty] when nothing is authored in the safe
   /// chain; callers treat that as "fall back to the generated experience", not
@@ -362,9 +358,9 @@ class ContentCatalog {
 
   /// Module title/description, resolved through the safe locale chain.
   ///
-  /// A non-Vietnamese reader never receives a Vietnamese source fallback. An
-  /// untranslated description is omitted; the model's localized-title helper
-  /// may use its Pāḷi title as a language-neutral label.
+  /// A non-Vietnamese reader never receives a Vietnamese source fallback. The
+  /// description is empty only when no safe-chain value exists; the model may
+  /// use its Pāḷi title as a language-neutral label.
   String moduleText(String moduleId, String field, String vietnameseFallback) {
     final effectiveChain = _localizedChain;
     for (final catalog in effectiveChain) {
@@ -424,7 +420,7 @@ final contentCatalogProvider =
       );
     }
     // Still empty: preserve the requested locale so its fallback policy remains
-    // in force (in particular, priority languages must not become English).
+    // in force (in particular, non-Vietnamese locales must not become vi).
     return locale == 'vi'
         ? ContentCatalog.vietnamese
         : ContentCatalog(locale: locale, data: const {});

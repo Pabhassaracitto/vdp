@@ -12,11 +12,10 @@ translator can work straight in the file without cross-referencing two others.
 WHAT THIS DOES *NOT* DO
 -----------------------
 It never invents doctrine. No machine translation happens here: the output is a
-worksheet, not a translation. Untranslated fields are omitted from the shipping
-catalog. Runtime fallback is language-aware: a configured priority locale may
-inherit a regional variant (for example `zh_TW -> zh`) but never displays
-English/Vietnamese prose; an unregistered locale may use reviewed English as a
-recovery fallback.
+worksheet, not a translation. Untranslated fields are omitted from the locale
+file and can use the English runtime fallback while the locale is `draft`. A
+priority locale may first inherit a regional variant (for example
+`zh_TW -> zh`); non-Vietnamese locales never fall back to Vietnamese.
 
 STRUCTURE
 ---------
@@ -349,8 +348,8 @@ def strip_worksheet(node: Any) -> Any:
 
     Removing TODOs rather than shipping them prevents placeholders from
     reaching learners. Runtime then applies the selected locale's fallback
-    policy; priority languages hide missing translations instead of filling
-    them with English/Vietnamese.
+    policy; a draft priority locale may use English for missing fields, never
+    the Vietnamese source.
     """
     if isinstance(node, dict):
         out = {}
@@ -495,8 +494,8 @@ def main() -> int:
                 "Generated from the translation worksheet by "
                 "tool/content/init_locale.py --strip. Untranslated fields are "
                 "omitted on purpose. Runtime applies the configured locale "
-                "policy: priority languages hide missing text; unregistered "
-                "locales may recover through the English catalog."
+                "policy: draft priority languages may use English for missing "
+                "text; non-Vietnamese locales never fall back to Vietnamese."
             )
         # Stripped output is shippable -> assets/content/.
         # Worksheets are not -> l10n_work/.
