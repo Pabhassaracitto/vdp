@@ -94,7 +94,7 @@ class PaccayaDetailSheet extends ConsumerWidget {
               if (item.paliFormula != null && item.paliFormula!.isNotEmpty)
                 _section(
                   context,
-                  'Paccayaniddesa (Pāḷi)',
+                  context.l10n.paliLabel,
                   item.paliFormula!,
                   italic: true,
                 ),
@@ -136,7 +136,7 @@ class PaccayaDetailSheet extends ConsumerWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 4),
                     child: Text(
-                      '• ${source.describe()}  [${source.confidence}]',
+                      '• ${source.describe()}',
                       style: theme.textTheme.bodySmall,
                     ),
                   ),
@@ -152,6 +152,7 @@ class PaccayaDetailSheet extends ConsumerWidget {
   /// nếu có (đọc qua catalog, không lộ tiếng Việt cho ngôn ngữ khác).
   Widget _subdivisionBlock(BuildContext context, PaccayaSubdivision sub) {
     final theme = Theme.of(context);
+    final localizedName = item.localizedSubdivisionName(context, sub);
     final note = item.localizedSubdivisionNote(context, sub);
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
@@ -159,7 +160,9 @@ class PaccayaDetailSheet extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '${item.localizedSubdivisionName(context, sub)} — ${sub.namePali}',
+            localizedName.isEmpty
+                ? sub.namePali
+                : '$localizedName — ${sub.namePali}',
             style: theme.textTheme.bodyMedium?.copyWith(
               fontWeight: FontWeight.w600,
             ),

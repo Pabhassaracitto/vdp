@@ -2,643 +2,492 @@
   "locale": "ja",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+  "lessonTranslationStatus": "partial",
+  "lessonTranslationNote": "Only authored priority-language fields are included. Missing translations are intentionally omitted rather than copied from English or Vietnamese.",
   "cittas": {
     "CI_001": {
       "name": "喜倶邪見相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Taking delight in helping oneself to someone else's belongings, thinking 'it doesn't matter'",
-        "Greed accompanied by the wrong view that possessions are permanent"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_002": {
       "name": "喜倶邪見相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Taking someone else's belongings only after being egged on by another",
-        "Greed that arises after persuasion, having deliberated before deciding"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_003": {
       "name": "喜倶邪見不相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Pride and delight in acquiring something for oneself",
-        "Wanting something out of conceit, comparing oneself favourably with others"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_004": {
       "name": "喜倶邪見不相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Greed mixed with conceit arising only after being incited by someone else"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_005": {
       "name": "捨倶邪見相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Indifferent, offhand greed arising from a wrong view"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_006": {
       "name": "捨倶邪見相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Indifferent sensual desire that arises after incitement and together with wrong view"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_007": {
       "name": "捨倶邪見不相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Smug, indifferent satisfaction at acquiring something"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_008": {
       "name": "捨倶邪見不相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Indifferent greed that arises after prompting, without any wrong view"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_009": {
       "name": "憂倶瞋恚相応無行瞋根心",
-      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Flaring up with anger when insulted",
-        "Spontaneous dislike of another person, arising without anyone's prompting"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_010": {
       "name": "憂倶瞋恚相応有行瞋根心",
-      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Anger that arises after being provoked by someone else, or after recalling an old grudge"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_011": {
       "name": "捨倶疑相応痴根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。",
-      "examples": [
-        "Doubting the Buddha, the Dhamma and the Sangha",
-        "Being unable to decide what is wholesome and what is unwholesome"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。"
     },
     "CI_012": {
       "name": "捨倶掉挙相応痴根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。",
-      "examples": [
-        "A distracted, scattered mind drifting aimlessly",
-        "Rambling, unfocused thinking"
-      ]
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。"
     },
     "CI_013": {
       "name": "捨倶眼識（不善異熟）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ。"
     },
     "CI_014": {
       "name": "捨倶耳識（不善異熟）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ。"
     },
     "CI_015": {
       "name": "捨倶鼻識（不善異熟）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ。"
     },
     "CI_016": {
       "name": "捨倶舌識（不善異熟）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ。"
     },
     "CI_017": {
       "name": "苦倶身識（不善異熟）",
-      "doctrinalNote": "アビダンマの心識分類：Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ。"
     },
     "CI_018": {
       "name": "捨倶受受心（不善異熟）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ。"
     },
     "CI_019": {
       "name": "捨倶推度心（不善異熟）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ。"
     },
     "CI_020": {
       "name": "捨倶眼識（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ。"
     },
     "CI_021": {
       "name": "捨倶耳識（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ。"
     },
     "CI_022": {
       "name": "捨倶鼻識（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ。"
     },
     "CI_023": {
       "name": "捨倶舌識（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ。"
     },
     "CI_024": {
       "name": "楽倶身識（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ。"
     },
     "CI_025": {
       "name": "捨倶受受心（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ。"
     },
     "CI_026": {
       "name": "喜倶推度心（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
     },
     "CI_027": {
       "name": "捨倶推度心（善異熟無因）",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
     },
     "CI_028": {
       "name": "捨倶五門転向心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ。"
     },
     "CI_029": {
       "name": "捨倶意門転向心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ。"
     },
     "CI_030": {
       "name": "喜倶生笑心（阿羅漢笑心）",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ hasituppāda-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ hasituppāda-cittaṃ。"
     },
     "CI_055": {
       "name": "喜倶智相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_056": {
       "name": "喜倶智相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_057": {
       "name": "喜倶智不相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_058": {
       "name": "喜倶智不相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_059": {
       "name": "捨倶智相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_060": {
       "name": "捨倶智相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_061": {
       "name": "捨倶智不相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_062": {
       "name": "捨倶智不相応無行大善心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_063": {
       "name": "喜倶智相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_064": {
       "name": "喜倶智相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_065": {
       "name": "喜倶智不相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_066": {
       "name": "喜倶智不相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_067": {
       "name": "捨倶智相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_068": {
       "name": "捨倶智相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_069": {
       "name": "捨倶智不相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_070": {
       "name": "捨倶智不相応無行大異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_071": {
       "name": "喜倶智相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_072": {
       "name": "喜倶智相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_073": {
       "name": "喜倶智不相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_074": {
       "name": "喜倶智不相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_075": {
       "name": "捨倶智相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_076": {
       "name": "捨倶智相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_077": {
       "name": "捨倶智不相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ。"
     },
     "CI_078": {
       "name": "捨倶智不相応無行大唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ。"
     },
     "CI_079": {
       "name": "色界初禅善心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ。"
     },
     "CI_080": {
       "name": "色界第二禅善心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ。"
     },
     "CI_081": {
       "name": "色界第三禅善心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ。"
     },
     "CI_082": {
       "name": "色界第四禅善心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ。"
     },
     "CI_083": {
       "name": "色界第五禅善心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ。"
     },
     "CI_084": {
       "name": "色界初禅異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ。"
     },
     "CI_085": {
       "name": "色界第二禅異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ。"
     },
     "CI_086": {
       "name": "色界第三禅異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ。"
     },
     "CI_087": {
       "name": "色界第四禅異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ。"
     },
     "CI_088": {
       "name": "色界第五禅異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ。"
     },
     "CI_089": {
       "name": "色界初禅唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ。"
     },
     "CI_090": {
       "name": "色界第二禅唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ。"
     },
     "CI_091": {
       "name": "色界第三禅唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ。"
     },
     "CI_092": {
       "name": "色界第四禅唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ。"
     },
     "CI_093": {
       "name": "色界第五禅唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ。"
     },
     "CI_094": {
       "name": "無色界空無辺処善心",
-      "doctrinalNote": "アビダンマの心識分類：Ākāsānañcāyatana-kusalaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Ākāsānañcāyatana-kusalaa-cittaṃ。"
     },
     "CI_095": {
       "name": "無色界識無辺処善心",
-      "doctrinalNote": "アビダンマの心識分類：Viññāṇañcāyatana-kusalaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Viññāṇañcāyatana-kusalaa-cittaṃ。"
     },
     "CI_096": {
       "name": "無色界無所有処善心",
-      "doctrinalNote": "アビダンマの心識分類：Ākiñcaññāyatana-kusalaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Ākiñcaññāyatana-kusalaa-cittaṃ。"
     },
     "CI_097": {
       "name": "無色界非想非非想処善心",
-      "doctrinalNote": "アビダンマの心識分類：Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ。"
     },
     "CI_098": {
       "name": "無色界空無辺処異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Ākāsānañcāyatana-vipakaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Ākāsānañcāyatana-vipakaa-cittaṃ。"
     },
     "CI_099": {
       "name": "無色界識無辺処異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Viññāṇañcāyatana-vipakaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Viññāṇañcāyatana-vipakaa-cittaṃ。"
     },
     "CI_100": {
       "name": "無色界無所有処異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Ākiñcaññāyatana-vipakaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Ākiñcaññāyatana-vipakaa-cittaṃ。"
     },
     "CI_101": {
       "name": "無色界非想非非想処異熟心",
-      "doctrinalNote": "アビダンマの心識分類：Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ。"
     },
     "CI_102": {
       "name": "無色界空無辺処唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Ākāsānañcāyatana-kiriyaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Ākāsānañcāyatana-kiriyaa-cittaṃ。"
     },
     "CI_103": {
       "name": "無色界識無辺処唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Viññāṇañcāyatana-kiriyaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Viññāṇañcāyatana-kiriyaa-cittaṃ。"
     },
     "CI_104": {
       "name": "無色界無所有処唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Ākiñcaññāyatana-kiriyaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Ākiñcaññāyatana-kiriyaa-cittaṃ。"
     },
     "CI_105": {
       "name": "無色界非想非非想処唯作心",
-      "doctrinalNote": "アビダンマの心識分類：Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ。"
     },
     "CI_106": {
       "name": "初禅預流道心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-paṭhama-jhāna-cittaṃ。"
     },
     "CI_107": {
       "name": "第二禅預流道心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-dutiya-jhāna-cittaṃ。"
     },
     "CI_108": {
       "name": "第三禅預流道心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-tatiya-jhāna-cittaṃ。"
     },
     "CI_109": {
       "name": "第四禅預流道心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-catuttha-jhāna-cittaṃ。"
     },
     "CI_110": {
       "name": "第五禅預流道心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-magga-pañcama-jhāna-cittaṃ。"
     },
     "CI_111": {
       "name": "初禅一来到心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ。"
     },
     "CI_112": {
       "name": "第二禅一来到心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-dutiya-jhāna-cittaṃ。"
     },
     "CI_113": {
       "name": "第三禅一来到心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-tatiya-jhāna-cittaṃ。"
     },
     "CI_114": {
       "name": "第四禅一来到心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-catuttha-jhāna-cittaṃ。"
     },
     "CI_115": {
       "name": "第五禅一来到心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-magga-pañcama-jhāna-cittaṃ。"
     },
     "CI_116": {
       "name": "初禅不来到心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-paṭhama-jhāna-cittaṃ。"
     },
     "CI_117": {
       "name": "第二禅不来到心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-dutiya-jhāna-cittaṃ。"
     },
     "CI_118": {
       "name": "第三禅不来到心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-tatiya-jhāna-cittaṃ。"
     },
     "CI_119": {
       "name": "第四禅不来到心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-catuttha-jhāna-cittaṃ。"
     },
     "CI_120": {
       "name": "第五禅不来到心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-magga-pañcama-jhāna-cittaṃ。"
     },
     "CI_121": {
       "name": "初禅阿羅漢道心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-paṭhama-jhāna-cittaṃ。"
     },
     "CI_122": {
       "name": "第二禅阿羅漢道心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-dutiya-jhāna-cittaṃ。"
     },
     "CI_123": {
       "name": "第三禅阿羅漢道心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-tatiya-jhāna-cittaṃ。"
     },
     "CI_124": {
       "name": "第四禅阿羅漢道心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-catuttha-jhāna-cittaṃ。"
     },
     "CI_125": {
       "name": "第五禅阿羅漢道心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-magga-pañcama-jhāna-cittaṃ。"
     },
     "CI_126": {
       "name": "初禅預流果心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-paṭhama-jhāna-cittaṃ。"
     },
     "CI_127": {
       "name": "第二禅預流果心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-dutiya-jhāna-cittaṃ。"
     },
     "CI_128": {
       "name": "第三禅預流果心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-tatiya-jhāna-cittaṃ。"
     },
     "CI_129": {
       "name": "第四禅預流果心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-catuttha-jhāna-cittaṃ。"
     },
     "CI_130": {
       "name": "第五禅預流果心",
-      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sotāpatti-phala-pañcama-jhāna-cittaṃ。"
     },
     "CI_131": {
       "name": "初禅一来果心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ。"
     },
     "CI_132": {
       "name": "第二禅一来果心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-dutiya-jhāna-cittaṃ。"
     },
     "CI_133": {
       "name": "第三禅一来果心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-tatiya-jhāna-cittaṃ。"
     },
     "CI_134": {
       "name": "第四禅一来果心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-catuttha-jhāna-cittaṃ。"
     },
     "CI_135": {
       "name": "第五禅一来果心",
-      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Sakadāgāmi-phala-pañcama-jhāna-cittaṃ。"
     },
     "CI_136": {
       "name": "初禅不来果心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-paṭhama-jhāna-cittaṃ。"
     },
     "CI_137": {
       "name": "第二禅不来果心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-dutiya-jhāna-cittaṃ。"
     },
     "CI_138": {
       "name": "第三禅不来果心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-tatiya-jhāna-cittaṃ。"
     },
     "CI_139": {
       "name": "第四禅不来果心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-catuttha-jhāna-cittaṃ。"
     },
     "CI_140": {
       "name": "第五禅不来果心",
-      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Anāgāmi-phala-pañcama-jhāna-cittaṃ。"
     },
     "CI_141": {
       "name": "初禅阿羅漢果心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-paṭhama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-paṭhama-jhāna-cittaṃ。"
     },
     "CI_142": {
       "name": "第二禅阿羅漢果心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-dutiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-dutiya-jhāna-cittaṃ。"
     },
     "CI_143": {
       "name": "第三禅阿羅漢果心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-tatiya-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-tatiya-jhāna-cittaṃ。"
     },
     "CI_144": {
       "name": "第四禅阿羅漢果心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-catuttha-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-catuttha-jhāna-cittaṃ。"
     },
     "CI_145": {
       "name": "第五禅阿羅漢果心",
-      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-pañcama-jhāna-cittaṃ。",
-      "examples": []
+      "doctrinalNote": "アビダンマの心識分類：Arahatta-phala-pañcama-jhāna-cittaṃ。"
     }
   },
   "cetasikas": {
@@ -1115,1015 +964,408 @@
     "RP_001": {
       "name": "地界",
       "shortName": "地界",
-      "description": "堅さ・軟らかさを特徴とし、共生色を支える基礎。",
-      "characteristic": "地界 (Pathavī-dhātu)",
-      "function": "Rasa: Pathavī-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Pathavī-dhātu",
-      "proximateCause": "Padaṭṭhāna: Pathavī-dhātu",
-      "doctrinalNote": "The four great elements always arise together, inseparably. There is no materiality in the immaterial realm."
+      "description": "堅さ・軟らかさを特徴とし、共生色を支える基礎。"
     },
     "RP_002": {
       "name": "水界",
       "shortName": "水界",
-      "description": "流動・結合を特徴とし、色聚を結びつける作用。",
-      "characteristic": "水界 (Āpo-dhātu)",
-      "function": "Rasa: Āpo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Āpo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Āpo-dhātu",
-      "doctrinalNote": "The water element is the only great element that cannot be directly sensed through bodily contact."
+      "description": "流動・結合を特徴とし、色聚を結びつける作用。"
     },
     "RP_003": {
       "name": "火界",
       "shortName": "火界",
-      "description": "温熱・冷却を特徴とし、物質を成熟させる作用。",
-      "characteristic": "火界 (Tejo-dhātu)",
-      "function": "Rasa: Tejo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Tejo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Tejo-dhātu",
-      "doctrinalNote": "When occurring independently as external heat (utu), the fire element gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
+      "description": "温熱・冷却を特徴とし、物質を成熟させる作用。"
     },
     "RP_004": {
       "name": "風界",
       "shortName": "風界",
-      "description": "動揺・支持を特徴とし、運動と伸張を生む作用。",
-      "characteristic": "風界 (Vāyo-dhātu)",
-      "function": "Rasa: Vāyo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Vāyo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Vāyo-dhātu",
-      "doctrinalNote": "In the practice of ānāpānasati, the breath (air element) is the principal meditation object."
+      "description": "動揺・支持を特徴とし、運動と伸張を生む作用。"
     },
     "RP_005": {
       "name": "眼浄色",
       "shortName": "眼浄色",
-      "description": "色（光）を感受する眼球内部の透明な感性色。",
-      "characteristic": "眼浄色 (Cakkhu-pasāda)",
-      "function": "Rasa: Cakkhu-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Cakkhu-pasāda",
-      "proximateCause": "Padaṭṭhāna: Cakkhu-pasāda",
-      "doctrinalNote": "Produced only by kamma. Not present in the immaterial realm."
+      "description": "色（光）を感受する眼球内部の透明な感性色。"
     },
     "RP_006": {
       "name": "耳浄色",
       "shortName": "耳浄色",
-      "description": "音を感受する耳の感性色。",
-      "characteristic": "耳浄色 (Sota-pasāda)",
-      "function": "Rasa: Sota-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Sota-pasāda",
-      "proximateCause": "Padaṭṭhāna: Sota-pasāda",
-      "doctrinalNote": "Brahmās of the fine-material realm possess the ear faculty because they communicate through sound."
+      "description": "音を感受する耳の感性色。"
     },
     "RP_007": {
       "name": "鼻浄色",
       "shortName": "鼻浄色",
-      "description": "香りを感受する鼻の感性色。",
-      "characteristic": "鼻浄色 (Ghāna-pasāda)",
-      "function": "Rasa: Ghāna-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Ghāna-pasāda",
-      "proximateCause": "Padaṭṭhāna: Ghāna-pasāda",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm lack the nose faculty."
+      "description": "香りを感受する鼻の感性色。"
     },
     "RP_008": {
       "name": "舌浄色",
       "shortName": "舌浄色",
-      "description": "味を感受する舌の感性色。",
-      "characteristic": "舌浄色 (Jivhā-pasāda)",
-      "function": "Rasa: Jivhā-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Jivhā-pasāda",
-      "proximateCause": "Padaṭṭhāna: Jivhā-pasāda",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās do not eat, so they lack the tongue faculty."
+      "description": "味を感受する舌の感性色。"
     },
     "RP_009": {
       "name": "身浄色",
       "shortName": "身浄色",
-      "description": "全身に広がり触覚を感受する身体の感性色。",
-      "characteristic": "身浄色 (Kāya-pasāda)",
-      "function": "Rasa: Kāya-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Kāya-pasāda",
-      "proximateCause": "Padaṭṭhāna: Kāya-pasāda",
-      "doctrinalNote": "Brahmās of the fine-material realm possess the body faculty. It is absent in the non-percipient realm."
+      "description": "全身に広がり触覚を感受する身体の感性色。"
     },
     "RP_010": {
       "name": "色所縁",
       "shortName": "色所縁",
-      "description": "眼識の対象となる色彩と形態。",
-      "characteristic": "色所縁 (Rūpa (Gocara))",
-      "function": "Rasa: Rūpa (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Rūpa (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Rūpa (Gocara)",
-      "doctrinalNote": "Visible form (colour) is distinct from materiality (matter) in general."
+      "description": "眼識の対象となる色彩と形態。"
     },
     "RP_011": {
       "name": "声所縁",
       "shortName": "声所縁",
-      "description": "耳識の対象となる一切の音響。",
-      "characteristic": "声所縁 (Sadda (Gocara))",
-      "function": "Rasa: Sadda (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Sadda (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Sadda (Gocara)",
-      "doctrinalNote": ""
+      "description": "耳識の対象となる一切の音響。"
     },
     "RP_012": {
       "name": "香所縁",
       "shortName": "香所縁",
-      "description": "鼻識の対象となる芳香や悪臭。",
-      "characteristic": "香所縁 (Gandha (Gocara))",
-      "function": "Rasa: Gandha (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Gandha (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Gandha (Gocara)",
-      "doctrinalNote": ""
+      "description": "鼻識の対象となる芳香や悪臭。"
     },
     "RP_013": {
       "name": "味所縁",
       "shortName": "味所縁",
-      "description": "舌識の対象となる甘味・苦味・塩味など。",
-      "characteristic": "味所縁 (Rasa (Gocara))",
-      "function": "Rasa: Rasa (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Rasa (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Rasa (Gocara)",
-      "doctrinalNote": ""
+      "description": "舌識の対象となる甘味・苦味・塩味など。"
     },
     "RP_014": {
       "name": "女根色",
       "shortName": "女根色",
-      "description": "女性の身体構造や特徴を決定する物質力。",
-      "characteristic": "女根色 (Itthi-bhāva)",
-      "function": "Rasa: Itthi-bhāva",
-      "manifestation": "Paccupaṭṭhāna: Itthi-bhāva",
-      "proximateCause": "Padaṭṭhāna: Itthi-bhāva",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm have no sex faculty."
+      "description": "女性の身体構造や特徴を決定する物質力。"
     },
     "RP_015": {
       "name": "男根色",
       "shortName": "男根色",
-      "description": "男性の身体構造や特徴を決定する物質力。",
-      "characteristic": "男根色 (Purisa-bhāva)",
-      "function": "Rasa: Purisa-bhāva",
-      "manifestation": "Paccupaṭṭhāna: Purisa-bhāva",
-      "proximateCause": "Padaṭṭhāna: Purisa-bhāva",
-      "doctrinalNote": "Occurs only in the sense-sphere realm."
+      "description": "男性の身体構造や特徴を決定する物質力。"
     },
     "RP_016": {
       "name": "心所依処",
       "shortName": "心所依処",
-      "description": "心（意界・意識界）が成立・生起するための物質的基盤。",
-      "characteristic": "心所依処 (Hadaya-vatthu)",
-      "function": "Rasa: Hadaya-vatthu",
-      "manifestation": "Paccupaṭṭhāna: Hadaya-vatthu",
-      "proximateCause": "Padaṭṭhāna: Hadaya-vatthu",
-      "doctrinalNote": "Absent in the immaterial realm. This is the most important material basis in the Abhidhamma system of cognition."
+      "description": "心（意界・意識界）が成立・生起するための物質的基盤。"
     },
     "RP_017": {
       "name": "命根色",
       "shortName": "命根色",
-      "description": "業生色の生命力を保護・持続させる物質的命根。",
-      "characteristic": "命根色 (Jīvitindriya (Rūpa))",
-      "function": "Rasa: Jīvitindriya (Rūpa)",
-      "manifestation": "Paccupaṭṭhāna: Jīvitindriya (Rūpa)",
-      "proximateCause": "Padaṭṭhāna: Jīvitindriya (Rūpa)",
-      "doctrinalNote": "The lifespan of materiality equals seventeen mind-moments. When material life faculty ceases, the kamma-produced materiality ceases with it."
+      "description": "業生色の生命力を保護・持続させる物質的命根。"
     },
     "RP_018": {
       "name": "段食",
       "shortName": "段食",
-      "description": "食物中の栄養素（オージャー）であり身体を滋養する物質。",
-      "characteristic": "段食 (Ojā)",
-      "function": "Rasa: Ojā",
-      "manifestation": "Paccupaṭṭhāna: Ojā",
-      "proximateCause": "Padaṭṭhāna: Ojā",
-      "doctrinalNote": "Nutritive essence in physical food (kabaḷīkāra-āhāra) is one of the four kinds of nutriment in the Abhidhamma."
+      "description": "食物中の栄養素（オージャー）であり身体を滋養する物質。"
     },
     "RP_019": {
       "name": "空界",
       "shortName": "空界",
-      "description": "色聚と色聚の間を区切る境界的空間。",
-      "characteristic": "空界 (Ākāsa-dhātu)",
-      "function": "Rasa: Ākāsa-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Ākāsa-dhātu",
-      "proximateCause": "Padaṭṭhāna: Ākāsa-dhātu",
-      "doctrinalNote": "The space element as a material phenomenon is not the same as absolute space in philosophy."
+      "description": "色聚と色聚の間を区切る境界的空間。"
     },
     "RP_020": {
       "name": "身表",
       "shortName": "身表",
-      "description": "心の意図を身体動作によって外部に表示する物質。",
-      "characteristic": "身表 (Kāya-viññatti)",
-      "function": "Rasa: Kāya-viññatti",
-      "manifestation": "Paccupaṭṭhāna: Kāya-viññatti",
-      "proximateCause": "Padaṭṭhāna: Kāya-viññatti",
-      "doctrinalNote": "Produced only by mind. It is the basis of bodily action (kāya-kamma)."
+      "description": "心の意図を身体動作によって外部に表示する物質。"
     },
     "RP_021": {
       "name": "語表",
       "shortName": "語表",
-      "description": "心の意図を言語音声によって表示する物質。",
-      "characteristic": "語表 (Vacī-viññatti)",
-      "function": "Rasa: Vacī-viññatti",
-      "manifestation": "Paccupaṭṭhāna: Vacī-viññatti",
-      "proximateCause": "Padaṭṭhāna: Vacī-viññatti",
-      "doctrinalNote": "Produced only by mind. It is the basis of verbal action (vacī-kamma)."
+      "description": "心の意図を言語音声によって表示する物質。"
     },
     "RP_022": {
       "name": "色軽快性",
       "shortName": "色軽快性",
-      "description": "物質の重苦しさを除き軽快にする状態。",
-      "characteristic": "色軽快性 (Rūpassa lahutā)",
-      "function": "Rasa: Rūpassa lahutā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa lahutā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa lahutā",
-      "doctrinalNote": "Not produced by kamma. Depends on present health and conditions."
+      "description": "物質の重苦しさを除き軽快にする状態。"
     },
     "RP_023": {
       "name": "色柔軟性",
       "shortName": "色柔軟性",
-      "description": "物質の強ばりを除き柔軟にする状態。",
-      "characteristic": "色柔軟性 (Rūpassa mudutā)",
-      "function": "Rasa: Rūpassa mudutā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa mudutā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa mudutā",
-      "doctrinalNote": ""
+      "description": "物質の強ばりを除き柔軟にする状態。"
     },
     "RP_024": {
       "name": "色適業性",
       "shortName": "色適業性",
-      "description": "身体活動が思い通りスムーズに行える適合性。",
-      "characteristic": "色適業性 (Rūpassa kammaññatā)",
-      "function": "Rasa: Rūpassa kammaññatā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa kammaññatā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa kammaññatā",
-      "doctrinalNote": ""
+      "description": "身体活動が思い通りスムーズに行える適合性。"
     },
     "RP_025": {
       "name": "色積聚",
       "shortName": "色積聚",
-      "description": "物質（諸根）が生起・成長・充足していく相。",
-      "characteristic": "色積聚 (Upacaya)",
-      "function": "Rasa: Upacaya",
-      "manifestation": "Paccupaṭṭhāna: Upacaya",
-      "proximateCause": "Padaṭṭhāna: Upacaya",
-      "doctrinalNote": "The four characteristics of materiality are phases of all material phenomena, not independent material instances."
+      "description": "物質（諸根）が生起・成長・充足していく相。"
     },
     "RP_026": {
       "name": "色相続",
       "shortName": "色相続",
-      "description": "成長した物質が途切れることなく連鎖生成する相。",
-      "characteristic": "色相続 (Santati)",
-      "function": "Rasa: Santati",
-      "manifestation": "Paccupaṭṭhāna: Santati",
-      "proximateCause": "Padaṭṭhāna: Santati",
-      "doctrinalNote": "Continuity explains why things seem stable to us — they are in fact an unbroken stream of arising and passing away."
+      "description": "成長した物質が途切れることなく連鎖生成する相。"
     },
     "RP_027": {
       "name": "色老性",
       "shortName": "色老性",
-      "description": "物質が成熟・変質し衰えゆく相。",
-      "characteristic": "色老性 (Jaratā)",
-      "function": "Rasa: Jaratā",
-      "manifestation": "Paccupaṭṭhāna: Jaratā",
-      "proximateCause": "Padaṭṭhāna: Jaratā",
-      "doctrinalNote": "Decay is the clearest visible sign of impermanence (anicca) in materiality."
+      "description": "物質が成熟・変質し衰えゆく相。"
     },
     "RP_028": {
       "name": "色無常性",
       "shortName": "色無常性",
-      "description": "物質が完全に破壊・消滅する死滅相。",
-      "characteristic": "色無常性 (Aniccatā)",
-      "function": "Rasa: Aniccatā",
-      "manifestation": "Paccupaṭṭhāna: Aniccatā",
-      "proximateCause": "Padaṭṭhāna: Aniccatā",
-      "doctrinalNote": "Clearly seeing the phase of dissolution is the starting point of insight meditation (vipassanā)."
+      "description": "物質が完全に破壊・消滅する死滅相。"
     }
   },
   "paccayas": {
     "PC_01": {
       "name": "因縁",
       "shortName": "因縁",
-      "definition": "六因（貪・瞋・痴・無貪・無瞋・無痴）が樹木の根のように共生法を安定させる縁。",
-      "paccayaDhamma": "The six roots: greed (lobha), hatred (dosa), delusion (moha), non-greed (alobha), non-hatred (adosa), non-delusion (amoha).",
-      "paccayuppanna": "The mind states associated with a root (citta and cetasikas), and the materiality that mind produces — mind-born materiality in the course of existence, kamma-born materiality at rebirth.",
-      "doctrinalNote": "Only the six root cetasikas are roots; however strong the other mental factors may be, they support their states only through other conditions.",
-      "examples": [
-        "A greed-rooted consciousness carries the two roots greed and delusion: together they make the whole mind-moment unwholesome.",
-        "A rootless (ahetuka) consciousness has no root and therefore receives no root condition — for example, the two receiving consciousnesses."
-      ],
-      "subdivisions": {}
+      "definition": "六因（貪・瞋・痴・無貪・無瞋・無痴）が樹木の根のように共生法を安定させる縁。"
     },
     "PC_02": {
       "name": "所縁縁",
       "shortName": "所縁縁",
-      "definition": "六境（色・声・香・味・触・法）が杖のように心・心所を支える縁。",
-      "paccayaDhamma": "The six objects: visible form, sound, odour, taste, tangible data, and mind objects (including Nibbāna and meditative attainments).",
-      "paccayuppanna": "All 89 cittas — every citta that knows an object — together with the 52 mental factors.",
-      "doctrinalNote": "According to Visuddhimagga XVII, ignorance serves as object condition for wholesome formations when a meditator examines ignorance with wisdom.",
-      "examples": [
-        "A visible object (an image) serves as object condition for eye-consciousness and its associated mental factors.",
-        "Nibbāna serves as object condition for supramundane consciousness."
-      ],
-      "subdivisions": {}
+      "definition": "六境（色・声・香・味・触・法）が杖のように心・心所を支える縁。"
     },
     "PC_03": {
       "name": "増上縁",
       "shortName": "増上縁",
-      "definition": "欲・勤・心・観の四増上が転輪聖王のように主導する縁。",
-      "paccayaDhamma": "The four conascent dominants — desire-to-act (chanda), energy (viriya), consciousness (citta), and investigation (vīmaṃsā, wisdom); and the predominant object.",
-      "paccayuppanna": "The mental states that arise together with a dominant; for the predominant object, the 84 cittas (excluding rootless resultant cittas) and their associated mental factors.",
-      "doctrinalNote": "No predominance condition occurs among the 18 rootless cittas, nor in cittas where only one dominant is possible.",
-      "examples": [
-        "When a meditator's effort is at its strongest, energy predominates over the whole jhāna mind-moment.",
-        "A person besotted with a precious thing: that thing is the predominant object for the greedy mind."
-      ],
-      "subdivisions": {
-        "Sahajāt'ādhipati": {
-          "name": "Conascent dominance",
-          "note": "One of the four — desire, energy, consciousness, investigation — that stands out in a single mind-moment."
-        },
-        "Ārammaṇ'ādhipati": {
-          "name": "Object dominance",
-          "note": "An object held predominant, governing the mind that takes it as its object."
-        }
-      }
+      "definition": "欲・勤・心・観の四増上が転輪聖王のように主導する縁。"
     },
     "PC_04": {
       "name": "無間縁",
       "shortName": "無間縁",
-      "definition": "直前に滅した心が間断なく次の心を生起させる縁。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased (except the dying consciousness of an Arahant).",
-      "paccayuppanna": "The mind and mental factors that arise immediately afterwards.",
-      "doctrinalNote": "Proximity condition underlies the continuity of the stream of consciousness — there is no gap between two mind-moments.",
-      "examples": [
-        "Eye-consciousness, on ceasing, is proximity condition for the receiving consciousness in a five-door process.",
-        "The rebirth-linking consciousness, on ceasing, is proximity condition for the first life-continuum moment."
-      ],
-      "subdivisions": {}
+      "definition": "直前に滅した心が間断なく次の心を生起させる縁。"
     },
     "PC_05": {
       "name": "等無間縁",
       "shortName": "等無間縁",
-      "definition": "秩序正しく間断なく次の心・心所を継承させる縁。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors that follow immediately.",
-      "doctrinalNote": "These two conditions are one reality, differing only in presentation — like the two sides of a coin.",
-      "examples": [
-        "The same relation is called proximity when spoken of as 'giving way', and contiguity when spoken of as 'following immediately'."
-      ],
-      "subdivisions": {}
+      "definition": "秩序正しく間断なく次の心・心所を継承させる縁。"
     },
     "PC_06": {
       "name": "倶生縁",
       "shortName": "倶生縁",
-      "definition": "同時に生起する法が、灯火と光のように互いに支え合う縁。",
-      "paccayaDhamma": "The four mental aggregates that arise together; the four great essentials; mind and its factors in the course of existence; and name and materiality at rebirth.",
-      "paccayuppanna": "The mental states conascent with one another, mind-born and kamma-born materiality in the course of existence, and the name–materiality that support one another at rebirth.",
-      "doctrinalNote": "This is the condition most used to explain the simultaneity of name and materiality within a single mind-moment.",
-      "examples": [
-        "In one greedy mind-moment, feeling, perception, formations, and consciousness arise together and support one another.",
-        "At rebirth-linking, the rebirth consciousness and kamma-born materiality support each other through conascence condition."
-      ],
-      "subdivisions": {}
+      "definition": "同時に生起する法が、灯火と光のように互いに支え合う縁。"
     },
     "PC_07": {
       "name": "相互縁",
       "shortName": "相互縁",
-      "definition": "三脚の三本の棒のように、互いに依存し合って立つ縁。",
-      "paccayaDhamma": "The four conascent mental aggregates; the four great essentials; name and materiality at rebirth.",
-      "paccayuppanna": "Those very states — the relation is two-way.",
-      "doctrinalNote": "Mutuality always accompanies conascence, but is narrower: materiality born of mind is not mutual with consciousness.",
-      "examples": [
-        "The four great essentials: the earth element supports the water element and the water element supports the earth — no element stands alone."
-      ],
-      "subdivisions": {}
+      "definition": "三脚の三本の棒のように、互いに依存し合って立つ縁。"
     },
     "PC_08": {
       "name": "依止縁",
       "shortName": "依止縁",
-      "definition": "大地が樹木を支えるように、諸法が成立する依り処となる縁。",
-      "paccayaDhamma": "The four conascent mental aggregates; the four great essentials; and the six bases (eye, ear, nose, tongue, body, and heart-base).",
-      "paccayuppanna": "The conascent mental states; derived materiality; and the seven consciousness-elements together with their mental factors.",
-      "doctrinalNote": "Distinguish from decisive support: dependence is the direct base, decisive support is strong assistance from a distance.",
-      "examples": [
-        "The eye-base is dependence condition for eye-consciousness and its associated mental factors.",
-        "The heart-base (hadaya-vatthu) supports the whole mind-consciousness element throughout the life of the five aggregates."
-      ],
-      "subdivisions": {
-        "Sahajāta-nissaya": {
-          "name": "Conascent dependence",
-          "note": "Mutual reliance within a single mind-moment."
-        },
-        "Purejāta-nissaya (vatthu)": {
-          "name": "Prenascence dependence — bases",
-          "note": "The six bases, arisen beforehand, serve as the support for the seven consciousness-elements."
-        },
-        "Vatthārammaṇa-purejāta-nissaya": {
-          "name": "Base-object prenascence dependence",
-          "note": "The heart-base serves at once as base and as object for mind-element consciousness."
-        }
-      }
+      "definition": "大地が樹木を支えるように、諸法が成立する依り処となる縁。"
     },
     "PC_09": {
       "name": "親依止縁",
       "shortName": "親依止縁",
-      "definition": "強大な原因・対象・習慣が強力に結果を引き起こす縁。",
-      "paccayaDhamma": "An object strongly attended to; consciousness that has just ceased; and natural conditions such as faith, virtue, climate, food, and friends.",
-      "paccayuppanna": "The mind and mental factors that arise afterwards.",
-      "doctrinalNote": "The link Feeling → Craving in dependent origination is explained chiefly through natural decisive support.",
-      "examples": [
-        "Pleasant feeling is natural decisive support for craving — because feeling is agreeable, craving grows strong.",
-        "Faith decisively supports an act of generosity; greed decisively supports an act of stealing."
-      ],
-      "subdivisions": {
-        "Ārammaṇ'ūpanissaya": {
-          "name": "Object decisive support",
-          "note": "A powerful object becomes the decisive spur for the consciousness that follows."
-        },
-        "Anantar'ūpanissaya": {
-          "name": "Contiguous decisive support",
-          "note": "Equivalent to proximity condition considered as a force of support."
-        },
-        "Pakat'ūpanissaya": {
-          "name": "Natural decisive support",
-          "note": "Natural conditions: faith, virtue, climate, friends, former kamma."
-        }
-      }
+      "definition": "強大な原因・対象・習慣が強力に結果を引き起こす縁。"
     },
     "PC_10": {
       "name": "前生縁",
       "shortName": "前生縁",
-      "definition": "先に生じて現在存続している感覚器官や対象が後の心を助ける縁。",
-      "paccayaDhamma": "The six bases (materiality) and the six objects — the concrete material phenomena — that have already arisen.",
-      "paccayuppanna": "The mind and mental factors that arise later.",
-      "doctrinalNote": "Prenascence applies only to materiality; mental states cannot be prenascence conditions.",
-      "examples": [
-        "The eye-base must exist first; only then can eye-consciousness arise.",
-        "A present visible object (17 mind-moments long) serves as prenascence condition for an eye-door process."
-      ],
-      "subdivisions": {
-        "Vatthu-purejāta": {
-          "name": "Base prenascence",
-          "note": "The six bases support the seven consciousness-elements."
-        },
-        "Ārammaṇa-purejāta": {
-          "name": "Object prenascence",
-          "note": "Present concrete objects support the 54 sense-sphere cittas and 50 mental factors."
-        }
-      }
+      "definition": "先に生じて現在存続している感覚器官や対象が後の心を助ける縁。"
     },
     "PC_11": {
       "name": "後生縁",
       "shortName": "後生縁",
-      "definition": "後から生じた心・心所が、先に生じた肉体を維持・支援する縁。",
-      "paccayaDhamma": "The 85 cittas of the sense-sphere, form-sphere, formless-sphere and supramundane planes — that is, all consciousness except the rebirth-linking cittas — together with the 52 mental factors.",
-      "paccayuppanna": "The kamma-born body of materiality that arose earlier (the materiality of the living body).",
-      "doctrinalNote": "Only later-arising mentality supports earlier materiality; never the reverse.",
-      "examples": [
-        "Mind and mental factors during life support the body already born, keeping it from decay.",
-        "Hunger drives one to eat — later-arising mentality nourishes earlier-born materiality."
-      ],
-      "subdivisions": {}
+      "definition": "後から生じた心・心所が、先に生じた肉体を維持・支援する縁。"
     },
     "PC_12": {
       "name": "習行縁",
       "shortName": "習行縁",
-      "definition": "反復・修習によって後の心の勢力を増大・熟練させる縁。",
-      "paccayaDhamma": "The preceding impulsion consciousness and its mental factors (except the final impulsion and the path impulsion).",
-      "paccayuppanna": "The impulsion consciousness and its factors arising immediately after.",
-      "doctrinalNote": "A supramundane path impulsion is not repetition condition, because it arises for a single mind-moment only.",
-      "examples": [
-        "Among the seven impulsions, the first is repetition condition for the second.",
-        "Memorising by repeated recitation makes each later attempt easier — the same principle at work."
-      ],
-      "subdivisions": {}
+      "definition": "反復・修習によって後の心の勢力を増大・熟練させる縁。"
     },
     "PC_13": {
       "name": "業縁",
       "shortName": "業縁",
-      "definition": "善悪の意志（思心所）が機運に応じて異熟果をもたらす縁。",
-      "paccayaDhamma": "Wholesome and unwholesome volition — the cetanā mental factor.",
-      "paccayuppanna": "Conascent kamma: the citta and cetasikas arising with it, and mind-born materiality. Asynchronous kamma: resultant consciousness, its mental factors, and kamma-born materiality at rebirth.",
-      "doctrinalNote": "The links Formations → Consciousness and Becoming → Birth among the twelve links are explained through asynchronous kamma condition.",
-      "examples": [
-        "Volition in an act of generosity supports resultant mind and kamma-born materiality in a future life (asynchronous kamma).",
-        "Volition in a greedy mind-moment makes that whole mind-moment unwholesome (conascent kamma)."
-      ],
-      "subdivisions": {
-        "Sahajāta-kamma": {
-          "name": "Conascent kamma",
-          "note": "Volition supports the states arising with it in the same mind-moment."
-        },
-        "Nānākkhaṇika-kamma": {
-          "name": "Asynchronous kamma",
-          "note": "Volition in one mind-moment supports its result in another — the basis of rebirth."
-        }
-      }
+      "definition": "善悪の意志（思心所）が機運に応じて異熟果をもたらす縁。"
     },
     "PC_14": {
       "name": "異熟縁",
       "shortName": "異熟縁",
-      "definition": "業の果報として生じた異熟心が穏やかに共生法を支える縁。",
-      "paccayaDhamma": "The 36 resultant cittas (rootless, sense-sphere beautiful, and great resultants) together with their 38 associated mental factors.",
-      "paccayuppanna": "The resultant mental states that arise together, and the kamma-born materiality they produce.",
-      "doctrinalNote": "Resultant consciousness creates no new kamma — the key point for understanding that 'a result does not produce a result'.",
-      "examples": [
-        "Rebirth-linking consciousness is a resultant: it supports the kamma-born materiality arising together with it.",
-        "Eye-consciousness is resultant mind — it supports its conascent mental factors by result condition without creating new kamma."
-      ],
-      "subdivisions": {}
+      "definition": "業の果報として生じた異熟心が穏やかに共生法を支える縁。"
     },
     "PC_15": {
       "name": "食縁",
       "shortName": "食縁",
-      "definition": "物質的食物と三種の名食が、肉体と精神を支え養う縁。",
-      "paccayaDhamma": "Edible food (materiality) and the three mental nutriments: contact, volition, and consciousness.",
-      "paccayuppanna": "Food materiality sustains the body; the three mental nutriments sustain mind, mental factors, and mind-born materiality.",
-      "doctrinalNote": "Connect with the Four Nutriments in the Sutta Piṭaka (SN 12.63) — the contemplation of nutriment.",
-      "examples": [
-        "Food sustains the material body — edible food.",
-        "Volition nutriment: intention feeds kamma and prolongs the round of birth and death."
-      ],
-      "subdivisions": {
-        "Rūp'āhāra": {
-          "name": "Edible food",
-          "note": "Physical nutriment sustains the body."
-        },
-        "Nām'āhāra": {
-          "name": "Mental nutriment",
-          "note": "Contact, volition, and consciousness as nutriments."
-        }
-      }
+      "definition": "物質的食物と三種の名食が、肉体と精神を支え養う縁。"
     },
     "PC_16": {
       "name": "根縁",
       "shortName": "根縁",
-      "definition": "諸々の根（二十二根）が各自の領分で支配力を発揮する縁。",
-      "paccayaDhamma": "The 20 faculties: five sensitive material faculties, the material life faculty, and fourteen mental faculties — feeling, faith, energy, mindfulness, concentration, wisdom, the three understanding faculties, and the mind faculty.",
-      "paccayuppanna": "The sensitive faculties support the seven consciousness-elements; the mental faculties support the conascent mind and its factors; the material life faculty sustains kamma-born materiality.",
-      "doctrinalNote": "The five spiritual faculties — faith, energy, mindfulness, concentration, wisdom — must be balanced in meditation.",
-      "examples": [
-        "The eye faculty governs eye-consciousness — without the eye faculty there is no seeing.",
-        "The concentration faculty rules the whole jhāna mind-moment."
-      ],
-      "subdivisions": {
-        "Purejāta-indriya": {
-          "name": "Prenascence faculties",
-          "note": "The five sensitive faculties support the consciousnesses they correspond to."
-        },
-        "Jīvit'indriya": {
-          "name": "Material life faculty",
-          "note": "Sustains the kamma-born materiality of its own group."
-        },
-        "Sahajāta-indriya": {
-          "name": "Conascent faculties",
-          "note": "The fourteen mental faculties support the mind and factors arising with them."
-        }
-      }
+      "definition": "諸々の根（二十二根）が各自の領分で支配力を発揮する縁。"
     },
     "PC_17": {
       "name": "禅那縁",
       "shortName": "禅那縁",
-      "definition": "禅支（尋・伺・喜・楽・一境性など）が心を対象に密着させる縁。",
-      "paccayaDhamma": "The seven jhāna factors: applied thought, sustained thought, rapture, pleasure, displeasure, equanimity, and one-pointedness.",
-      "paccayuppanna": "The associated mind and mental factors (except the two body consciousnesses), and the materiality produced by that mind.",
-      "doctrinalNote": "Not limited to meditative attainment: the seven jhāna factors operate in ordinary consciousness as well.",
-      "examples": [
-        "Applied thought brings the mind to the object — it is jhāna condition for the factors arising with it.",
-        "In the second jhāna applied thought is absent, yet rapture and one-pointedness still function as jhāna condition."
-      ],
-      "subdivisions": {}
+      "definition": "禅支（尋・伺・喜・楽・一境性など）が心を対象に密着させる縁。"
     },
     "PC_18": {
       "name": "道縁",
       "shortName": "道縁",
-      "definition": "八正道などの道支が、解脱や善悪の趣へ導く縁。",
-      "paccayaDhamma": "The twelve path factors: right view, right intention, right speech, right action, right livelihood, right effort, right mindfulness, right concentration — and wrong view, wrong intention, wrong effort, wrong one-pointedness.",
-      "paccayuppanna": "The associated mind and mental factors (except the two body consciousnesses), and the materiality produced by that mind.",
-      "doctrinalNote": "Path condition operates in wholesome and unwholesome states alike — not only in the supramundane Noble Eightfold Path.",
-      "examples": [
-        "Right view in a wholesome mind steers the whole mind-moment toward the wholesome.",
-        "Wrong view in a greedy mind steers it toward the unwholesome — path condition has two faces."
-      ],
-      "subdivisions": {}
+      "definition": "八正道などの道支が、解脱や善悪の趣へ導く縁。"
     },
     "PC_19": {
       "name": "相応縁",
       "shortName": "相応縁",
-      "definition": "水と乳が融け合うように、四事平等で完全に一体となる縁。",
-      "paccayaDhamma": "The four conascent mental aggregates.",
-      "paccayuppanna": "Those very four aggregates — a two-way relation.",
-      "doctrinalNote": "Only mentality can be associated; materiality has no shared object and base, so it cannot be associated.",
-      "examples": [
-        "Feeling and perception in one mind-moment are associated: they know one object through one base."
-      ],
-      "subdivisions": {}
+      "definition": "水と乳が融け合うように、四事平等で完全に一体となる縁。"
     },
     "PC_20": {
       "name": "不相応縁",
       "shortName": "不相応縁",
-      "definition": "水と油のように性質が異なり混ざり合わない名と色が助け合う縁。",
-      "paccayaDhamma": "Mental states (when supporting materiality), or material phenomena (when supporting mentality).",
-      "paccayuppanna": "Material phenomena (conascent or prenascent), or mental states (conascent or postnascent).",
-      "doctrinalNote": "This condition expresses the mind–matter relation, the backbone of the Name-and-Form analysis among the twelve links.",
-      "examples": [
-        "The heart-base (materiality) supports mind-consciousness (mentality) — different kinds, hence dissociation condition.",
-        "At rebirth-linking, the rebirth consciousness and kamma-born materiality arise together yet remain different kinds."
-      ],
-      "subdivisions": {
-        "Sahajāta-vippayutta": {
-          "name": "Conascent dissociation",
-          "note": "Mind and materiality arise together yet support each other as different kinds — at rebirth-linking."
-        },
-        "Purejāta-vippayutta": {
-          "name": "Prenascence dissociation",
-          "note": "The six bases, arisen earlier, support the seven consciousness-elements."
-        },
-        "Pacchājāta-vippayutta": {
-          "name": "Postnascence dissociation",
-          "note": "Later-arising mentality supports the earlier-born body of materiality."
-        }
-      }
+      "definition": "水と油のように性質が異なり混ざり合わない名と色が助け合う縁。"
     },
     "PC_21": {
       "name": "有縁",
       "shortName": "有縁",
-      "definition": "現在現実に存在していること自体によって他法を助ける縁。",
-      "paccayaDhamma": "Comprises the states serving as conascence, prenascence, postnascence, nutriment, and faculty conditions.",
-      "paccayuppanna": "The states supported by those five conditions.",
-      "doctrinalNote": "The widest of the 24 conditions — it subsumes five others.",
-      "examples": [
-        "The eye-base being present, eye-consciousness can arise — presence condition.",
-        "The four great essentials being present support the derived materiality."
-      ],
-      "subdivisions": {
-        "Sahajāta-atthi": {
-          "name": "Conascent presence",
-          "note": "Present within the same mind-moment."
-        },
-        "Purejāta-atthi": {
-          "name": "Prenascence presence",
-          "note": "Earlier-born materiality still existing."
-        },
-        "Pacchājāta-atthi": {
-          "name": "Postnascence presence",
-          "note": "Later-arising mentality being present."
-        },
-        "Āhāra-atthi": {
-          "name": "Nutriment presence",
-          "note": "Edible food being present."
-        },
-        "Indriya-atthi": {
-          "name": "Faculty presence",
-          "note": "The material life faculty being present."
-        }
-      }
+      "definition": "現在現実に存在していること自体によって他法を助ける縁。"
     },
     "PC_22": {
       "name": "無有縁",
       "shortName": "無有縁",
-      "definition": "先行する法が滅して存在しないことによって後続の法の生起を可能にする縁。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors arising immediately after.",
-      "doctrinalNote": "Same scope as proximity condition, but stressing the absence of the preceding consciousness.",
-      "examples": [
-        "Eye-consciousness must cease for the receiving consciousness to arise."
-      ],
-      "subdivisions": {}
+      "definition": "先行する法が滅して存在しないことによって後続の法の生起を可能にする縁。"
     },
     "PC_23": {
       "name": "離去縁",
       "shortName": "離去縁",
-      "definition": "原因となる法が完全に消滅・退去することによって結果を生ぜしめる縁。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors arising immediately after.",
-      "doctrinalNote": "One reality, two sayings: absence stresses 'no longer there'; disappearance stresses 'has gone'.",
-      "examples": [
-        "A life-continuum moment, just ceased (disappeared), supports the next life-continuum moment."
-      ],
-      "subdivisions": {}
+      "definition": "原因となる法が完全に消滅・退去することによって結果を生ぜしめる縁。"
     },
     "PC_24": {
       "name": "不離去縁",
       "shortName": "不離去縁",
-      "definition": "法が未だ去らず、現在存続していることによって他を維持する縁。",
-      "paccayaDhamma": "Comprises the states serving as conascence, prenascence, postnascence, nutriment, and faculty conditions.",
-      "paccayuppanna": "The states supported by those five conditions.",
-      "doctrinalNote": "The pairs 21–24 (presence / absence / disappearance / non-disappearance) close the 24 conditions with two pairs of synonyms.",
-      "examples": [
-        "The heart-base, not yet perished, keeps supporting mind-consciousness."
-      ],
-      "subdivisions": {}
+      "definition": "法が未だ去らず、現在存続していることによって他を維持する縁。"
     }
   },
   "paticcas": {
     "PD_01": {
       "name": "無明",
       "shortName": "無明",
-      "description": "四聖諦や業果の真理を知らない根本的な無知。",
-      "characteristic": "Characteristic of 無明 (Avijjā)",
-      "function": "Function of 無明 (Avijjā)",
-      "manifestation": "Manifestation of 無明 (Avijjā)",
-      "proximateCause": "Proximate cause of 無明 (Avijjā)",
-      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). The ending of ignorance is the attainment of the four path consciousnesses.",
-      "examples": [
-        "Not knowing this body is impermanent, one clings to it as a self and creates kamma to protect that self."
-      ]
+      "description": "四聖諦や業果の真理を知らない根本的な無知。"
     },
     "PD_02": {
       "name": "行",
       "shortName": "行",
-      "description": "無明を条件として形成される身・口・意の善悪の業形成力。",
-      "characteristic": "Characteristic of 行 (Saṅkhārā)",
-      "function": "Function of 行 (Saṅkhārā)",
-      "manifestation": "Manifestation of 行 (Saṅkhārā)",
-      "proximateCause": "Proximate cause of 行 (Saṅkhārā)",
-      "doctrinalNote": "Saṅkhārā in dependent origination means the volition (cetanā) mental factor that forms kamma.",
-      "examples": [
-        "Giving with a wholesome mind is a meritorious formation; its consciousness rebirth-links into a good destination.",
-        "Attaining jhāna is an imperturbable formation; its consciousness rebirth-links as a Brahmā."
-      ]
+      "description": "無明を条件として形成される身・口・意の善悪の業形成力。"
     },
     "PD_03": {
       "name": "識",
       "shortName": "識",
-      "description": "業によって導かれて生起する結生識（再生意識）など。",
-      "characteristic": "Characteristic of 識 (Viññāṇa)",
-      "function": "Function of 識 (Viññāṇa)",
-      "manifestation": "Manifestation of 識 (Viññāṇa)",
-      "proximateCause": "Proximate cause of 識 (Viññāṇa)",
-      "doctrinalNote": "Consciousness and mind-and-matter lean on each other — like two sheaves of reeds propping one another up.",
-      "examples": [
-        "At the moment of conception the rebirth-linking consciousness appears, mind-and-matter develop, and a new life begins."
-      ]
+      "description": "業によって導かれて生起する結生識（再生意識）など。"
     },
     "PD_04": {
       "name": "名色",
       "shortName": "名色",
-      "description": "精神的要素（感受・認識・意志）と身体的要素。",
-      "characteristic": "Characteristic of 名色 (Nāmarūpa)",
-      "function": "Function of 名色 (Nāmarūpa)",
-      "manifestation": "Manifestation of 名色 (Nāmarūpa)",
-      "proximateCause": "Proximate cause of 名色 (Nāmarūpa)",
-      "doctrinalNote": "Doctrinal note on Nāmarūpa",
-      "examples": [
-        "In the womb: rebirth consciousness appears and mind-and-matter gradually develop from embryo to full term."
-      ]
+      "description": "精神的要素（感受・認識・意志）と身体的要素。"
     },
     "PD_05": {
       "name": "六処",
       "shortName": "六処",
-      "description": "感覚器官（眼・耳・鼻・舌・身・意）の六つの領域。",
-      "characteristic": "Characteristic of 六処 (Saḷāyatana)",
-      "function": "Function of 六処 (Saḷāyatana)",
-      "manifestation": "Manifestation of 六処 (Saḷāyatana)",
-      "proximateCause": "Proximate cause of 六処 (Saḷāyatana)",
-      "doctrinalNote": "Doctrinal note on Saḷāyatana",
-      "examples": [
-        "A newborn child: with the six bases complete, contact with the outside world begins."
-      ]
+      "description": "感覚器官（眼・耳・鼻・舌・身・意）の六つの領域。"
     },
     "PD_06": {
       "name": "触",
       "shortName": "触",
-      "description": "器官・対象・意識の三者が合致すること。",
-      "characteristic": "Characteristic of 触 (Phassa)",
-      "function": "Function of 触 (Phassa)",
-      "manifestation": "Manifestation of 触 (Phassa)",
-      "proximateCause": "Proximate cause of 触 (Phassa)",
-      "doctrinalNote": "Phassa in dependent origination is the contact mental factor (CS_PHASSA).",
-      "examples": [
-        "The eye sees a lovely object: eye-base + visible object + eye-consciousness give eye-contact, and glad feeling follows."
-      ]
+      "description": "器官・対象・意識の三者が合致すること。"
     },
     "PD_07": {
       "name": "受",
       "shortName": "受",
-      "description": "接触から生じる苦・楽・不苦不楽の感受。",
-      "characteristic": "Characteristic of 受 (Vedanā)",
-      "function": "Function of 受 (Vedanā)",
-      "manifestation": "Manifestation of 受 (Vedanā)",
-      "proximateCause": "Proximate cause of 受 (Vedanā)",
-      "doctrinalNote": "This is the crux of the four foundations of mindfulness: halt at feeling, and do not let it ripen into craving.",
-      "examples": [
-        "Hearing praise (contact) brings glad feeling; without mindfulness, craving for more follows."
-      ]
+      "description": "接触から生じる苦・楽・不苦不楽の感受。"
     },
     "PD_08": {
       "name": "愛",
       "shortName": "愛",
-      "description": "感受を機縁として生じる欲望・渇愛。",
-      "characteristic": "Characteristic of 愛 (Taṇhā)",
-      "function": "Function of 愛 (Taṇhā)",
-      "manifestation": "Manifestation of 愛 (Taṇhā)",
-      "proximateCause": "Proximate cause of 愛 (Taṇhā)",
-      "doctrinalNote": "Craving is the Origin of suffering among the Four Noble Truths. The ending of craving is the ending of suffering — Nibbāna.",
-      "examples": [
-        "Seeing delicious food, craving arises: wanting to eat more.",
-        "Meeting pain, craving for non-existence arises: wanting not to be."
-      ]
+      "description": "感受を機縁として生じる欲望・渇愛。"
     },
     "PD_09": {
       "name": "取",
       "shortName": "取",
-      "description": "渇愛が激化して対象を強く握りしめる執着。",
-      "characteristic": "Characteristic of 取 (Upādāna)",
-      "function": "Function of 取 (Upādāna)",
-      "manifestation": "Manifestation of 取 (Upādāna)",
-      "proximateCause": "Proximate cause of 取 (Upādāna)",
-      "doctrinalNote": "Doctrinal note on Upādāna",
-      "examples": [
-        "Not only wanting money (craving) but being unable to let money go (clinging)."
-      ]
+      "description": "渇愛が激化して対象を強く握りしめる執着。"
     },
     "PD_10": {
       "name": "有",
       "shortName": "有",
-      "description": "来世の生存を決定づける業有と再生の領域（生有）。",
-      "characteristic": "Characteristic of 有 (Bhava)",
-      "function": "Function of 有 (Bhava)",
-      "manifestation": "Manifestation of 有 (Bhava)",
-      "proximateCause": "Proximate cause of 有 (Bhava)",
-      "doctrinalNote": "Doctrinal note on Bhava",
-      "examples": [
-        "One who gives generously all their life builds wholesome sense-sphere becoming and is reborn wealthy in the next life."
-      ]
+      "description": "来世の生存を決定づける業有と再生の領域（生有）。"
     },
     "PD_11": {
       "name": "生",
       "shortName": "生",
-      "description": "新たな生存において諸々の蘊が誕生・出現すること。",
-      "characteristic": "Characteristic of 生 (Jāti)",
-      "function": "Function of 生 (Jāti)",
-      "manifestation": "Manifestation of 生 (Jāti)",
-      "proximateCause": "Proximate cause of 生 (Jāti)",
-      "doctrinalNote": "The three-life circle joins here: birth (PD_11) corresponds to consciousness (PD_03) on the result side of the future life.",
-      "examples": [
-        "The moment of conception is birth — all suffering follows from it."
-      ]
+      "description": "新たな生存において諸々の蘊が誕生・出現すること。"
     },
     "PD_12": {
       "name": "老死",
       "shortName": "老死",
-      "description": "存在の老衰と諸蘊の崩壊・死滅。",
-      "characteristic": "Characteristic of 老死 (Jarāmaraṇa)",
-      "function": "Function of 老死 (Jarāmaraṇa)",
-      "manifestation": "Manifestation of 老死 (Jarāmaraṇa)",
-      "proximateCause": "Proximate cause of 老死 (Jarāmaraṇa)",
-      "doctrinalNote": "Liberation means ending ignorance (PD_01) and craving (PD_08) — the realisation of Nibbāna.",
-      "examples": [
-        "Every being that has been born must age and die.",
-        "When ignorance and craving are destroyed, ageing-and-death no longer follow."
-      ]
+      "description": "存在の老衰と諸蘊の崩壊・死滅。"
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "順現法受業",
       "shortName": "順現法受業",
-      "description": "現世のうちに果報をもたらす業（第一ジャヴァナ）。",
-      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within the very same life. If it fails to ripen in that life, it becomes defunct (ahosi-kamma).",
-      "examples": [
-        "Giving alms with a pure mind and reaping the benefit within this very life",
-        "The five heinous deeds (matricide, patricide, killing an Arahant, wounding a Buddha, causing a schism in the Sangha) ripen as hell in the very next life"
-      ]
+      "description": "現世のうちに果報をもたらす業（第一ジャヴァナ）。"
     },
     "KM_T_02": {
       "name": "順次生受業",
       "shortName": "順次生受業",
-      "description": "次の生（来世）に果報をもたらす業（第七ジャヴァナ）。",
-      "doctrinalNote": "It has only a single opportunity to ripen, in the immediately following life. If it fails to ripen in that life, it becomes defunct.",
-      "examples": [
-        "One who practises meditation in this life is reborn as a Brahmā in the next life"
-      ]
+      "description": "次の生（来世）に果報をもたらす業（第七ジャヴァナ）。"
     },
     "KM_T_03": {
       "name": "順後後受業",
       "shortName": "順後後受業",
-      "description": "第三生以降、涅槃に至るまでの未来において果報をもたらす業。",
-      "doctrinalNote": "It never becomes defunct through lapse of time — one reason the stream of kamma and its results is so intricate. It is the most common of the three time-based kinds of kamma.",
-      "examples": [
-        "The kamma of building a temple in a past life ripens as wealth many lives later"
-      ]
+      "description": "第三生以降、涅槃に至るまでの未来において果報をもたらす業。"
     },
     "KM_T_04": {
       "name": "既有業",
       "shortName": "既有業",
-      "description": "果報をもたらす機会を失い、効力を失った業（無効業）。",
-      "doctrinalNote": "'Ahosi' means 'it has already been' — the kamma is not destroyed, it has simply lost its opportunity to ripen.",
-      "examples": [
-        "For an Arahant, every kamma not yet ripened becomes defunct after final passing away (parinibbāna)"
-      ]
+      "description": "果報をもたらす機会を失い、効力を失った業（無効業）。"
     },
     "KM_P_01": {
       "name": "重業",
       "shortName": "重業",
-      "description": "五逆罪や禅定の達成など、最優先で来世の結生を決定する業。",
-      "doctrinalNote": "Generative kamma determines the entire foundation of a life.",
-      "examples": [
-        "Sense-sphere wholesome kamma generates rebirth as a human being or a deva",
-        "Kamma that has attained jhāna generates rebirth as a Brahmā"
-      ]
+      "description": "五逆罪や禅定の達成など、最優先で来世の結生を決定する業。"
     },
     "KM_P_02": {
       "name": "近死業",
       "shortName": "近死業",
-      "description": "臨終の際に記憶または実践され、次の生を誘導する業。",
-      "doctrinalNote": "It is not the one who sows the seed but the one who waters it — it strengthens and extends a result that is already ripening rather than producing a new one of its own.",
-      "examples": [
-        "A person who performs wholesome deeds every day — supportive kamma increases their lifespan and health"
-      ]
+      "description": "臨終の際に記憶または実践され、次の生を誘導する業。"
     },
     "KM_P_03": {
       "name": "習行業",
       "shortName": "習行業",
-      "description": "生前に恒常的・習慣的に反復して培われた強い業。",
-      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
-      "examples": [
-        "A wealthy person who is often ill — obstructive kamma diminishes the enjoyment of their fortune"
-      ]
+      "description": "生前に恒常的・習慣的に反復して培われた強い業。"
     },
     "KM_P_04": {
       "name": "軽小業",
       "shortName": "軽小業",
-      "description": "上記三種以外の、意図が弱く習慣化されていない偶発的行為。",
-      "doctrinalNote": "This is the most powerful kind of kamma classified by function; it explains the sudden reversals that occur in a life.",
-      "examples": [
-        "A wealthy person suddenly loses their entire fortune — destructive kamma cuts off the earlier generative kamma"
-      ]
+      "description": "上記三種以外の、意図が弱く習慣化されていない偶発的行為。"
     },
     "KM_U_01": {
       "name": "生産業",
       "shortName": "生産業",
-      "description": "新たな生存の結生識と名色を生起させる根本的な業。",
-      "doctrinalNote": "Weighty kamma always determines rebirth — it never becomes defunct.",
-      "examples": [
-        "Wholesome: attaining the second jhāna generates rebirth in the second-jhāna Brahmā realm",
-        "Unwholesome: committing matricide leads to rebirth in the Avīci hell"
-      ]
+      "description": "新たな生存の結生識と名色を生起させる根本的な業。"
     },
     "KM_U_02": {
       "name": "支持業",
       "shortName": "支持業",
-      "description": "生産業の果報を助長し、幸福や苦痛を持続・強化させる業。",
-      "doctrinalNote": "This explains the importance of preparing one's mind at the time of death.",
-      "examples": [
-        "Recalling a wholesome act of giving while dying leads to a wholesome rebirth",
-        "Seeing a vision of hell while dying leads to a woeful rebirth"
-      ]
+      "description": "生産業の果報を助長し、幸福や苦痛を持続・強化させる業。"
     },
     "KM_U_03": {
       "name": "妨害業",
       "shortName": "妨害業",
-      "description": "生産業の果報を抑圧・妨害し、苦楽の享受を損なう業。",
-      "doctrinalNote": "This is why the Buddha taught that one should constantly practise wholesome deeds.",
-      "examples": [
-        "Someone who has killed for a living their whole life — a strong unwholesome habitual kamma",
-        "Someone who recites scripture and meditates daily — a strong wholesome habitual kamma"
-      ]
+      "description": "生産業の果報を抑圧・妨害し、苦楽の享受を損なう業。"
     },
     "KM_U_04": {
       "name": "破壊業",
       "shortName": "破壊業",
-      "description": "より強力な力で現行の業の報いを断ち切り奪い去る業。",
-      "doctrinalNote": "It is the weakest kind of kamma by priority of ripening, yet it makes up the greater part of the total kamma we have accumulated.",
-      "examples": [
-        "The ordinary, scattered wholesome or unwholesome actions of everyday life"
-      ]
+      "description": "より強力な力で現行の業の報いを断ち切り奪い去る業。"
     },
     "KM_R_01": {
       "name": "欲界不善業",
       "shortName": "欲界不善",
-      "description": "十不善業道であり、四悪趣への転生因となる業。",
-      "doctrinalNote": "Unwholesome kamma is the cause of the truth of suffering; it belongs to the sense sphere and ripens within the woeful planes of the sense sphere.",
-      "examples": [
-        "Killing, stealing, sexual misconduct, lying — these ripen as rebirth in a woeful state",
-        "Greed, hatred and delusion produce unwholesome kamma"
-      ]
+      "description": "十不善業道であり、四悪趣への転生因となる業。"
     },
     "KM_R_02": {
       "name": "欲界善業",
       "shortName": "欲界善",
-      "description": "十善業道であり、人間界や天界への転生をもたらす業。",
-      "doctrinalNote": "Sense-sphere wholesome kamma that ripens as happiness in the sense sphere — the foundation for all merit.",
-      "examples": [
-        "Giving, observing precepts and practising sense-sphere meditation ripen as a human or a sense-sphere deva",
-        "The ten courses of wholesome action: three bodily, four verbal, three mental"
-      ]
+      "description": "十善業道であり、人間界や天界への転生をもたらす業。"
     },
     "KM_R_03": {
       "name": "色界善業",
       "shortName": "色界善",
-      "description": "色界五禅の定善であり、色界梵天への転生因となる業。",
-      "doctrinalNote": "Fine-material-sphere kamma belongs to the exalted (mahaggata) category, transcending the sense sphere; it ripens according to the jhāna attained.",
-      "examples": [
-        "Attaining the first fine-material jhāna generates rebirth in the Brahma-pārisajja realm",
-        "Attaining the fifth jhāna generates rebirth in the Vehapphala realm"
-      ]
+      "description": "色界五禅の定善であり、色界梵天への転生因となる業。"
     },
     "KM_R_04": {
       "name": "無色界善業",
       "shortName": "無色界善",
-      "description": "四無色定の善行であり、無色界天への転生因となる業。",
-      "doctrinalNote": "Supramundane kamma does not produce rebirth within the three realms; it produces Nibbāna as its result — the ultimate aim of the Abhidhamma.",
-      "examples": [
-        "Developing the Noble Eightfold Path to attain the first path cuts off three fetters, ending rebirth in the four woeful states",
-        "The four paths produce the four fruits — the only way leading out of suffering"
-      ]
+      "description": "四無色定の善行であり、無色界天への転生因となる業。"
     }
   },
   "vithis": {
@@ -2133,7 +1375,6 @@
       "description": "17刹那が完備し登録心（タダーラムバナ）に至る完全な五門認識。",
       "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
       "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
-      "doctrinalNote": "Atimahanta = an object great enough to allow Javana × 7 plus Tadārammaṇa × 2.",
       "steps": {
         "1": {
           "name": "過去有分",
@@ -2198,54 +1439,7 @@
       "description": "七速行まで生じ登録心のない五門認識過程。",
       "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
       "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
-      "doctrinalNote": "It differs from the very-great-object process only in lacking the 2 registration moments.",
-      "steps": {
-        "1": {
-          "name": "Vibrating bhavaṅga",
-          "description": "The life-continuum vibrates as the object strikes the sense base.",
-          "doctrinalNote": null
-        },
-        "2": {
-          "name": "Arrest bhavaṅga",
-          "description": "The bhavaṅga stream is cut off — the process begins.",
-          "doctrinalNote": null
-        },
-        "3": {
-          "name": "Five-door adverting",
-          "description": "Turns the mind toward the object through the five-sense door.",
-          "doctrinalNote": null
-        },
-        "4": {
-          "name": "Five-fold sense consciousness",
-          "description": "Knows the object through the corresponding sense.",
-          "doctrinalNote": null
-        },
-        "5": {
-          "name": "Receiving",
-          "description": "Receives the object.",
-          "doctrinalNote": null
-        },
-        "6": {
-          "name": "Investigating",
-          "description": "Examines the object.",
-          "doctrinalNote": null
-        },
-        "7": {
-          "name": "Determining",
-          "description": "Determines the object, opening the way for the impulsions.",
-          "doctrinalNote": null
-        },
-        "8": {
-          "name": "Impulsion (Javana)",
-          "description": "Seven impulsion moments create kamma. Afterwards there is NO registration.",
-          "doctrinalNote": "After the 7 impulsions the mind drops straight back into the life-continuum."
-        },
-        "9": {
-          "name": "Post-process bhavaṅga",
-          "description": "The life-continuum resumes after the process.",
-          "doctrinalNote": null
-        }
-      }
+      "steps": {}
     },
     "VT_Y_MON": {
       "name": "意門心路",
@@ -2253,39 +1447,7 @@
       "description": "意門を通じて法処の対象を認識する心路過程。",
       "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
       "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
-      "doctrinalNote": "The mind-door process begins with the mind-door adverting consciousness (CI_029), without passing through five-door adverting.",
-      "steps": {
-        "1": {
-          "name": "Vibrating bhavaṅga",
-          "description": "The life-continuum vibrates as the mind object strikes.",
-          "doctrinalNote": null
-        },
-        "2": {
-          "name": "Arrest bhavaṅga",
-          "description": "The life-continuum is arrested — the mind-door process begins.",
-          "doctrinalNote": null
-        },
-        "3": {
-          "name": "Mind-door adverting",
-          "description": "Opens the mind door and directs the mind to the mind object, at the same time determining it (serving as determining within this process).",
-          "doctrinalNote": "CI_029 serves both as mind-door adverting and as determining. 11 mental factors."
-        },
-        "4": {
-          "name": "Impulsion (Javana)",
-          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, and action arise here.",
-          "doctrinalNote": "Creates mind-kamma directly. Verbal and bodily kamma also begin at the mind door."
-        },
-        "5": {
-          "name": "Registration (optional)",
-          "description": "Registration in the mind-door process — depending on the strength of the mind object.",
-          "doctrinalNote": null
-        },
-        "6": {
-          "name": "Post-process bhavaṅga",
-          "description": "The life-continuum resumes.",
-          "doctrinalNote": null
-        }
-      }
+      "steps": {}
     },
     "VT_VITHIMUTTA": {
       "name": "離路心",
@@ -2293,24 +1455,7 @@
       "description": "門を通さず認識過程外で働く結生心・有分心・死心。",
       "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
       "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
-      "doctrinalNote": "Process-free consciousness creates no new kamma — it is kammically indeterminate resultant mind.",
-      "steps": {
-        "1": {
-          "name": "Rebirth-linking consciousness",
-          "description": "The first consciousness of the new life — continuing directly from the previous life's dying consciousness, carrying kamma's seed.",
-          "doctrinalNote": "CI_019/CI_026 = a two-rooted person; CI_027 = a specially favoured person; CI_063–CI_070 = a three-rooted person or a deva."
-        },
-        "2": {
-          "name": "Life-continuum consciousness",
-          "description": "The stream of consciousness that sustains the life between processes. It arises and passes innumerable times, and is the foundation of all mental activity.",
-          "doctrinalNote": "Bhavaṅga = the life-maintaining part of the stream. It runs in deep sleep and between processes."
-        },
-        "3": {
-          "name": "Death consciousness",
-          "description": "The final mind-moment — the material life faculty perishes, the death consciousness falls, and the life ends. Immediately afterwards the next life's rebirth-linking consciousness arises.",
-          "doctrinalNote": "Cuti = to move on, to depart. The object of the death consciousness is the death-proximate (āsanna) object."
-        }
-      }
+      "steps": {}
     }
   },
   "studyModules": {

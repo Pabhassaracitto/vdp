@@ -17,8 +17,11 @@
 // 1. Author `assets/content/content_<tag>.json` (see tool/content/README.md).
 // 2. Flip that language's [status] here from [ContentTranslationStatus.planned]
 //    to `.draft`, and later to `.reviewed`.
-// That is the only code change required: the picker, the fallback chain, the
-// coverage report and the persistence layer all read this list.
+// 3. Set [ContentLanguage.allowsEnglishFallback] deliberately. Priority
+//    languages keep only text actually authored in that language (with
+//    zh_TW -> zh as a regional fallback), so missing prose is hidden instead
+//    of silently appearing in English. Unregistered locales can still use the
+//    reviewed English catalog as a recovery fallback.
 
 import 'package:flutter/foundation.dart';
 
@@ -61,6 +64,14 @@ class ContentLanguage {
 
   final ContentTranslationStatus status;
 
+  /// Whether missing fields may be filled from the English catalog.
+  ///
+  /// Keep this disabled for supported priority languages: otherwise a
+  /// partially translated Abhidhamma entry silently becomes a mixture of
+  /// scripts. Missing translated prose is omitted until it is reviewed rather
+  /// than presented as English (or as the Vietnamese source).
+  final bool allowsEnglishFallback;
+
   /// Extra search tokens for the picker (romanisations, alternate names).
   final List<String> aliases;
 
@@ -69,6 +80,7 @@ class ContentLanguage {
     required this.nativeName,
     required this.englishName,
     required this.status,
+    this.allowsEnglishFallback = true,
     this.aliases = const [],
   });
 
@@ -131,6 +143,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'हिन्दी',
     englishName: 'Hindi',
     status: ContentTranslationStatus.draft,
+    allowsEnglishFallback: false,
     aliases: ['hindi'],
   ),
   ContentLanguage(
@@ -138,6 +151,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: '简体中文',
     englishName: 'Simplified Chinese',
     status: ContentTranslationStatus.draft,
+    allowsEnglishFallback: false,
     aliases: ['chinese', '中文', 'zh-cn', 'hans'],
   ),
   ContentLanguage(
@@ -145,6 +159,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: '繁體中文',
     englishName: 'Traditional Chinese',
     status: ContentTranslationStatus.draft,
+    allowsEnglishFallback: false,
     aliases: ['chinese', '中文', 'zh-hant', 'zh-tw', 'hant'],
   ),
   ContentLanguage(
@@ -152,6 +167,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'සිංහල',
     englishName: 'Sinhala',
     status: ContentTranslationStatus.draft,
+    allowsEnglishFallback: false,
     aliases: ['sinhala', 'sinhalese'],
   ),
   ContentLanguage(
@@ -159,6 +175,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'မြန်မာ',
     englishName: 'Myanmar',
     status: ContentTranslationStatus.draft,
+    allowsEnglishFallback: false,
     aliases: ['burmese', 'myanmar'],
   ),
   ContentLanguage(
@@ -166,6 +183,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: '日本語',
     englishName: 'Japanese',
     status: ContentTranslationStatus.draft,
+    allowsEnglishFallback: false,
     aliases: ['japanese', 'nihongo'],
   ),
   ContentLanguage(
@@ -173,6 +191,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'ไทย',
     englishName: 'Thai',
     status: ContentTranslationStatus.draft,
+    allowsEnglishFallback: false,
     aliases: ['thai'],
   ),
 ];

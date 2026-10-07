@@ -2,98 +2,56 @@
   "locale": "zh_TW",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+  "lessonTranslationStatus": "partial",
+  "lessonTranslationNote": "Only authored priority-language fields are included. Missing translations are intentionally omitted rather than copied from English or Vietnamese.",
   "cittas": {
     "CI_001": {
       "name": "悅俱邪見相應無行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Taking delight in helping oneself to someone else's belongings, thinking 'it doesn't matter'",
-        "Greed accompanied by the wrong view that possessions are permanent"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_002": {
       "name": "悅俱邪見相應有行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Taking someone else's belongings only after being egged on by another",
-        "Greed that arises after persuasion, having deliberated before deciding"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_003": {
       "name": "悅俱邪見不相應無行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Pride and delight in acquiring something for oneself",
-        "Wanting something out of conceit, comparing oneself favourably with others"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_004": {
       "name": "悅俱邪見不相應有行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Greed mixed with conceit arising only after being incited by someone else"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_005": {
       "name": "捨俱邪見相應無行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Indifferent, offhand greed arising from a wrong view"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_006": {
       "name": "捨俱邪見相應有行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Indifferent sensual desire that arises after incitement and together with wrong view"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_007": {
       "name": "捨俱邪見不相應無行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Smug, indifferent satisfaction at acquiring something"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_008": {
       "name": "捨俱邪見不相應有行貪根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Indifferent greed that arises after prompting, without any wrong view"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_009": {
       "name": "憂俱瞋恚相應無行瞋根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。",
-      "examples": [
-        "Flaring up with anger when insulted",
-        "Spontaneous dislike of another person, arising without anyone's prompting"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。"
     },
     "CI_010": {
       "name": "憂俱瞋恚相應有行瞋根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。",
-      "examples": [
-        "Anger that arises after being provoked by someone else, or after recalling an old grudge"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。"
     },
     "CI_011": {
       "name": "捨俱疑相應癡根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。",
-      "examples": [
-        "Doubting the Buddha, the Dhamma and the Sangha",
-        "Being unable to decide what is wholesome and what is unwholesome"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。"
     },
     "CI_012": {
       "name": "捨俱掉舉相應癡根心",
-      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。",
-      "examples": [
-        "A distracted, scattered mind drifting aimlessly",
-        "Rambling, unfocused thinking"
-      ]
+      "doctrinalNote": "阿毗達摩法數之心識分類：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。"
     },
     "CI_013": {
       "name": "捨俱眼識（不善異熟）",
@@ -1333,1015 +1291,408 @@
     "RP_001": {
       "name": "地界",
       "shortName": "地界",
-      "description": "硬或軟的特性，作為其他俱生色的立足與支持基礎。",
-      "characteristic": "地界 (Pathavī-dhātu)",
-      "function": "Rasa: Pathavī-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Pathavī-dhātu",
-      "proximateCause": "Padaṭṭhāna: Pathavī-dhātu",
-      "doctrinalNote": "The four great elements always arise together, inseparably. There is no materiality in the immaterial realm."
+      "description": "硬或軟的特性，作為其他俱生色的立足與支持基礎。"
     },
     "RP_002": {
       "name": "水界",
       "shortName": "水界",
-      "description": "流動或凝聚的特性，使伴隨色聚聚合而不分散。",
-      "characteristic": "水界 (Āpo-dhātu)",
-      "function": "Rasa: Āpo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Āpo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Āpo-dhātu",
-      "doctrinalNote": "The water element is the only great element that cannot be directly sensed through bodily contact."
+      "description": "流動或凝聚的特性，使伴隨色聚聚合而不分散。"
     },
     "RP_003": {
       "name": "火界",
       "shortName": "火界",
-      "description": "冷或熱的特性，主成熟與溫養一切物質。",
-      "characteristic": "火界 (Tejo-dhātu)",
-      "function": "Rasa: Tejo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Tejo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Tejo-dhātu",
-      "doctrinalNote": "When occurring independently as external heat (utu), the fire element gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
+      "description": "冷或熱的特性，主成熟與溫養一切物質。"
     },
     "RP_004": {
       "name": "風界",
       "shortName": "風界",
-      "description": "支持與波動的特性，主物質的張力與運動。",
-      "characteristic": "風界 (Vāyo-dhātu)",
-      "function": "Rasa: Vāyo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Vāyo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Vāyo-dhātu",
-      "doctrinalNote": "In the practice of ānāpānasati, the breath (air element) is the principal meditation object."
+      "description": "支持與波動的特性，主物質的張力與運動。"
     },
     "RP_005": {
       "name": "眼淨色",
       "shortName": "眼淨色",
-      "description": "對光色所緣敏感的眼根清淨透明色法。",
-      "characteristic": "眼淨色 (Cakkhu-pasāda)",
-      "function": "Rasa: Cakkhu-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Cakkhu-pasāda",
-      "proximateCause": "Padaṭṭhāna: Cakkhu-pasāda",
-      "doctrinalNote": "Produced only by kamma. Not present in the immaterial realm."
+      "description": "對光色所緣敏感的眼根清淨透明色法。"
     },
     "RP_006": {
       "name": "耳淨色",
       "shortName": "耳淨色",
-      "description": "對聲音所緣敏感的耳根清淨透明色法。",
-      "characteristic": "耳淨色 (Sota-pasāda)",
-      "function": "Rasa: Sota-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Sota-pasāda",
-      "proximateCause": "Padaṭṭhāna: Sota-pasāda",
-      "doctrinalNote": "Brahmās of the fine-material realm possess the ear faculty because they communicate through sound."
+      "description": "對聲音所緣敏感的耳根清淨透明色法。"
     },
     "RP_007": {
       "name": "鼻淨色",
       "shortName": "鼻淨色",
-      "description": "對香氣所緣敏感的鼻根清淨透明色法。",
-      "characteristic": "鼻淨色 (Ghāna-pasāda)",
-      "function": "Rasa: Ghāna-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Ghāna-pasāda",
-      "proximateCause": "Padaṭṭhāna: Ghāna-pasāda",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm lack the nose faculty."
+      "description": "對香氣所緣敏感的鼻根清淨透明色法。"
     },
     "RP_008": {
       "name": "舌淨色",
       "shortName": "舌淨色",
-      "description": "對味道所緣敏感的舌根清淨透明色法。",
-      "characteristic": "舌淨色 (Jivhā-pasāda)",
-      "function": "Rasa: Jivhā-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Jivhā-pasāda",
-      "proximateCause": "Padaṭṭhāna: Jivhā-pasāda",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās do not eat, so they lack the tongue faculty."
+      "description": "對味道所緣敏感的舌根清淨透明色法。"
     },
     "RP_009": {
       "name": "身淨色",
       "shortName": "身淨色",
-      "description": "遍布全身對觸覺敏感的清淨透明色法。",
-      "characteristic": "身淨色 (Kāya-pasāda)",
-      "function": "Rasa: Kāya-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Kāya-pasāda",
-      "proximateCause": "Padaṭṭhāna: Kāya-pasāda",
-      "doctrinalNote": "Brahmās of the fine-material realm possess the body faculty. It is absent in the non-percipient realm."
+      "description": "遍布全身對觸覺敏感的清淨透明色法。"
     },
     "RP_010": {
       "name": "色所緣",
       "shortName": "色所緣",
-      "description": "眼根所見之顏色與光明。",
-      "characteristic": "色所緣 (Rūpa (Gocara))",
-      "function": "Rasa: Rūpa (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Rūpa (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Rūpa (Gocara)",
-      "doctrinalNote": "Visible form (colour) is distinct from materiality (matter) in general."
+      "description": "眼根所見之顏色與光明。"
     },
     "RP_011": {
       "name": "聲所緣",
       "shortName": "聲所緣",
-      "description": "耳根所聞之聲音。",
-      "characteristic": "聲所緣 (Sadda (Gocara))",
-      "function": "Rasa: Sadda (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Sadda (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Sadda (Gocara)",
-      "doctrinalNote": ""
+      "description": "耳根所聞之聲音。"
     },
     "RP_012": {
       "name": "香所緣",
       "shortName": "香所緣",
-      "description": "鼻根所嗅之氣味。",
-      "characteristic": "香所緣 (Gandha (Gocara))",
-      "function": "Rasa: Gandha (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Gandha (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Gandha (Gocara)",
-      "doctrinalNote": ""
+      "description": "鼻根所嗅之氣味。"
     },
     "RP_013": {
       "name": "味所緣",
       "shortName": "味所緣",
-      "description": "舌根所嚐之酸甜苦辣等味。",
-      "characteristic": "味所緣 (Rasa (Gocara))",
-      "function": "Rasa: Rasa (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Rasa (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Rasa (Gocara)",
-      "doctrinalNote": ""
+      "description": "舌根所嚐之酸甜苦辣等味。"
     },
     "RP_014": {
       "name": "女根色",
       "shortName": "女根色",
-      "description": "決定女性身體形態、語音、行為等女性特徵之色法。",
-      "characteristic": "女根色 (Itthi-bhāva)",
-      "function": "Rasa: Itthi-bhāva",
-      "manifestation": "Paccupaṭṭhāna: Itthi-bhāva",
-      "proximateCause": "Padaṭṭhāna: Itthi-bhāva",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm have no sex faculty."
+      "description": "決定女性身體形態、語音、行為等女性特徵之色法。"
     },
     "RP_015": {
       "name": "男根色",
       "shortName": "男根色",
-      "description": "決定男性身體形態、語音、行為等男性特徵之色法。",
-      "characteristic": "男根色 (Purisa-bhāva)",
-      "function": "Rasa: Purisa-bhāva",
-      "manifestation": "Paccupaṭṭhāna: Purisa-bhāva",
-      "proximateCause": "Padaṭṭhāna: Purisa-bhāva",
-      "doctrinalNote": "Occurs only in the sense-sphere realm."
+      "description": "決定男性身體形態、語音、行為等男性特徵之色法。"
     },
     "RP_016": {
       "name": "心所依處",
       "shortName": "心基",
-      "description": "意界與意識界（心識）生起的物質依托處。",
-      "characteristic": "心所依處 (Hadaya-vatthu)",
-      "function": "Rasa: Hadaya-vatthu",
-      "manifestation": "Paccupaṭṭhāna: Hadaya-vatthu",
-      "proximateCause": "Padaṭṭhāna: Hadaya-vatthu",
-      "doctrinalNote": "Absent in the immaterial realm. This is the most important material basis in the Abhidhamma system of cognition."
+      "description": "意界與意識界（心識）生起的物質依托處。"
     },
     "RP_017": {
       "name": "命根色",
       "shortName": "命根色",
-      "description": "維持業生色法壽命與存續的色法機能。",
-      "characteristic": "命根色 (Jīvitindriya (Rūpa))",
-      "function": "Rasa: Jīvitindriya (Rūpa)",
-      "manifestation": "Paccupaṭṭhāna: Jīvitindriya (Rūpa)",
-      "proximateCause": "Padaṭṭhāna: Jīvitindriya (Rūpa)",
-      "doctrinalNote": "The lifespan of materiality equals seventeen mind-moments. When material life faculty ceases, the kamma-produced materiality ceases with it."
+      "description": "維持業生色法壽命與存續的色法機能。"
     },
     "RP_018": {
       "name": "段食",
       "shortName": "段食",
-      "description": "食物中的食素（營養），維持身體滋長。",
-      "characteristic": "段食 (Ojā)",
-      "function": "Rasa: Ojā",
-      "manifestation": "Paccupaṭṭhāna: Ojā",
-      "proximateCause": "Padaṭṭhāna: Ojā",
-      "doctrinalNote": "Nutritive essence in physical food (kabaḷīkāra-āhāra) is one of the four kinds of nutriment in the Abhidhamma."
+      "description": "食物中的食素（營養），維持身體滋長。"
     },
     "RP_019": {
       "name": "空界",
       "shortName": "空界",
-      "description": "界限與分劃色聚之間的虛空空間。",
-      "characteristic": "空界 (Ākāsa-dhātu)",
-      "function": "Rasa: Ākāsa-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Ākāsa-dhātu",
-      "proximateCause": "Padaṭṭhāna: Ākāsa-dhātu",
-      "doctrinalNote": "The space element as a material phenomenon is not the same as absolute space in philosophy."
+      "description": "界限與分劃色聚之間的虛空空間。"
     },
     "RP_020": {
       "name": "身表",
       "shortName": "身表",
-      "description": "因心意而通過身體動作表達意圖之色法。",
-      "characteristic": "身表 (Kāya-viññatti)",
-      "function": "Rasa: Kāya-viññatti",
-      "manifestation": "Paccupaṭṭhāna: Kāya-viññatti",
-      "proximateCause": "Padaṭṭhāna: Kāya-viññatti",
-      "doctrinalNote": "Produced only by mind. It is the basis of bodily action (kāya-kamma)."
+      "description": "因心意而通過身體動作表達意圖之色法。"
     },
     "RP_021": {
       "name": "語表",
       "shortName": "語表",
-      "description": "因心意而通過言語聲音表達意圖之色法。",
-      "characteristic": "語表 (Vacī-viññatti)",
-      "function": "Rasa: Vacī-viññatti",
-      "manifestation": "Paccupaṭṭhāna: Vacī-viññatti",
-      "proximateCause": "Padaṭṭhāna: Vacī-viññatti",
-      "doctrinalNote": "Produced only by mind. It is the basis of verbal action (vacī-kamma)."
+      "description": "因心意而通過言語聲音表達意圖之色法。"
     },
     "RP_022": {
       "name": "色輕快性",
       "shortName": "色輕快性",
-      "description": "色身無重滯、敏捷靈活的變異狀態。",
-      "characteristic": "色輕快性 (Rūpassa lahutā)",
-      "function": "Rasa: Rūpassa lahutā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa lahutā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa lahutā",
-      "doctrinalNote": "Not produced by kamma. Depends on present health and conditions."
+      "description": "色身無重滯、敏捷靈活的變異狀態。"
     },
     "RP_023": {
       "name": "色柔軟性",
       "shortName": "色柔軟性",
-      "description": "色身柔軟順從、無僵硬的變異狀態。",
-      "characteristic": "色柔軟性 (Rūpassa mudutā)",
-      "function": "Rasa: Rūpassa mudutā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa mudutā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa mudutā",
-      "doctrinalNote": ""
+      "description": "色身柔軟順從、無僵硬的變異狀態。"
     },
     "RP_024": {
       "name": "色適業性",
       "shortName": "色適業性",
-      "description": "色身適於動作與作業、勝任活動的變異狀態。",
-      "characteristic": "色適業性 (Rūpassa kammaññatā)",
-      "function": "Rasa: Rūpassa kammaññatā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa kammaññatā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa kammaññatā",
-      "doctrinalNote": ""
+      "description": "色身適於動作與作業、勝任活動的變異狀態。"
     },
     "RP_025": {
       "name": "色積聚",
       "shortName": "色積聚",
-      "description": "生命初期諸根初生與生長之色法生相。",
-      "characteristic": "色積聚 (Upacaya)",
-      "function": "Rasa: Upacaya",
-      "manifestation": "Paccupaṭṭhāna: Upacaya",
-      "proximateCause": "Padaṭṭhāna: Upacaya",
-      "doctrinalNote": "The four characteristics of materiality are phases of all material phenomena, not independent material instances."
+      "description": "生命初期諸根初生與生長之色法生相。"
     },
     "RP_026": {
       "name": "色相續",
       "shortName": "色相續",
-      "description": "根色完全後物質不斷繼續產生之相。",
-      "characteristic": "色相續 (Santati)",
-      "function": "Rasa: Santati",
-      "manifestation": "Paccupaṭṭhāna: Santati",
-      "proximateCause": "Padaṭṭhāna: Santati",
-      "doctrinalNote": "Continuity explains why things seem stable to us — they are in fact an unbroken stream of arising and passing away."
+      "description": "根色完全後物質不斷繼續產生之相。"
     },
     "RP_027": {
       "name": "色老性",
       "shortName": "色老性",
-      "description": "物質成熟趨向老化變質之衰老相。",
-      "characteristic": "色老性 (Jaratā)",
-      "function": "Rasa: Jaratā",
-      "manifestation": "Paccupaṭṭhāna: Jaratā",
-      "proximateCause": "Padaṭṭhāna: Jaratā",
-      "doctrinalNote": "Decay is the clearest visible sign of impermanence (anicca) in materiality."
+      "description": "物質成熟趨向老化變質之衰老相。"
     },
     "RP_028": {
       "name": "色無常性",
       "shortName": "色無常性",
-      "description": "物質完全碎裂瓦解與滅盡之壞滅相。",
-      "characteristic": "色無常性 (Aniccatā)",
-      "function": "Rasa: Aniccatā",
-      "manifestation": "Paccupaṭṭhāna: Aniccatā",
-      "proximateCause": "Padaṭṭhāna: Aniccatā",
-      "doctrinalNote": "Clearly seeing the phase of dissolution is the starting point of insight meditation (vipassanā)."
+      "description": "物質完全碎裂瓦解與滅盡之壞滅相。"
     }
   },
   "paccayas": {
     "PC_01": {
       "name": "因緣",
       "shortName": "因緣",
-      "definition": "貪、瞋、癡、無貪、無瞋、無癡六根如樹根般穩固俱生名色。",
-      "paccayaDhamma": "The six roots: greed (lobha), hatred (dosa), delusion (moha), non-greed (alobha), non-hatred (adosa), non-delusion (amoha).",
-      "paccayuppanna": "The mind states associated with a root (citta and cetasikas), and the materiality that mind produces — mind-born materiality in the course of existence, kamma-born materiality at rebirth.",
-      "doctrinalNote": "Only the six root cetasikas are roots; however strong the other mental factors may be, they support their states only through other conditions.",
-      "examples": [
-        "A greed-rooted consciousness carries the two roots greed and delusion: together they make the whole mind-moment unwholesome.",
-        "A rootless (ahetuka) consciousness has no root and therefore receives no root condition — for example, the two receiving consciousnesses."
-      ],
-      "subdivisions": {}
+      "definition": "貪、瞋、癡、無貪、無瞋、無癡六根如樹根般穩固俱生名色。"
     },
     "PC_02": {
       "name": "所緣緣",
       "shortName": "所緣緣",
-      "definition": "色、聲、香、味、觸、法六所緣如手杖引心心所攀附生起。",
-      "paccayaDhamma": "The six objects: visible form, sound, odour, taste, tangible data, and mind objects (including Nibbāna and meditative attainments).",
-      "paccayuppanna": "All 89 cittas — every citta that knows an object — together with the 52 mental factors.",
-      "doctrinalNote": "According to Visuddhimagga XVII, ignorance serves as object condition for wholesome formations when a meditator examines ignorance with wisdom.",
-      "examples": [
-        "A visible object (an image) serves as object condition for eye-consciousness and its associated mental factors.",
-        "Nibbāna serves as object condition for supramundane consciousness."
-      ],
-      "subdivisions": {}
+      "definition": "色、聲、香、味、觸、法六所緣如手杖引心心所攀附生起。"
     },
     "PC_03": {
       "name": "增上緣",
       "shortName": "增上緣",
-      "definition": "欲、精進、心、審察四增上如輪王統攝一切俱生法。",
-      "paccayaDhamma": "The four conascent dominants — desire-to-act (chanda), energy (viriya), consciousness (citta), and investigation (vīmaṃsā, wisdom); and the predominant object.",
-      "paccayuppanna": "The mental states that arise together with a dominant; for the predominant object, the 84 cittas (excluding rootless resultant cittas) and their associated mental factors.",
-      "doctrinalNote": "No predominance condition occurs among the 18 rootless cittas, nor in cittas where only one dominant is possible.",
-      "examples": [
-        "When a meditator's effort is at its strongest, energy predominates over the whole jhāna mind-moment.",
-        "A person besotted with a precious thing: that thing is the predominant object for the greedy mind."
-      ],
-      "subdivisions": {
-        "Sahajāt'ādhipati": {
-          "name": "Conascent dominance",
-          "note": "One of the four — desire, energy, consciousness, investigation — that stands out in a single mind-moment."
-        },
-        "Ārammaṇ'ādhipati": {
-          "name": "Object dominance",
-          "note": "An object held predominant, governing the mind that takes it as its object."
-        }
-      }
+      "definition": "欲、精進、心、審察四增上如輪王統攝一切俱生法。"
     },
     "PC_04": {
       "name": "無間緣",
       "shortName": "無間緣",
-      "definition": "前滅之心心所毫無間隔地開闢道路引後心生起。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased (except the dying consciousness of an Arahant).",
-      "paccayuppanna": "The mind and mental factors that arise immediately afterwards.",
-      "doctrinalNote": "Proximity condition underlies the continuity of the stream of consciousness — there is no gap between two mind-moments.",
-      "examples": [
-        "Eye-consciousness, on ceasing, is proximity condition for the receiving consciousness in a five-door process.",
-        "The rebirth-linking consciousness, on ceasing, is proximity condition for the first life-continuum moment."
-      ],
-      "subdivisions": {}
+      "definition": "前滅之心心所毫無間隔地開闢道路引後心生起。"
     },
     "PC_05": {
       "name": "等無間緣",
       "shortName": "等無間緣",
-      "definition": "前心以完全等同且井然有序之次第導引後心相續。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors that follow immediately.",
-      "doctrinalNote": "These two conditions are one reality, differing only in presentation — like the two sides of a coin.",
-      "examples": [
-        "The same relation is called proximity when spoken of as 'giving way', and contiguity when spoken of as 'following immediately'."
-      ],
-      "subdivisions": {}
+      "definition": "前心以完全等同且井然有序之次第導引後心相續。"
     },
     "PC_06": {
       "name": "俱生緣",
       "shortName": "俱生緣",
-      "definition": "同生之名色如燈生光、四柱立廈般相互資助支持。",
-      "paccayaDhamma": "The four mental aggregates that arise together; the four great essentials; mind and its factors in the course of existence; and name and materiality at rebirth.",
-      "paccayuppanna": "The mental states conascent with one another, mind-born and kamma-born materiality in the course of existence, and the name–materiality that support one another at rebirth.",
-      "doctrinalNote": "This is the condition most used to explain the simultaneity of name and materiality within a single mind-moment.",
-      "examples": [
-        "In one greedy mind-moment, feeling, perception, formations, and consciousness arise together and support one another.",
-        "At rebirth-linking, the rebirth consciousness and kamma-born materiality support each other through conascence condition."
-      ],
-      "subdivisions": {}
+      "definition": "同生之名色如燈生光、四柱立廈般相互資助支持。"
     },
     "PC_07": {
       "name": "相互緣",
       "shortName": "相互緣",
-      "definition": "俱生名色如三腳架支柱般彼此相互依賴共立。",
-      "paccayaDhamma": "The four conascent mental aggregates; the four great essentials; name and materiality at rebirth.",
-      "paccayuppanna": "Those very states — the relation is two-way.",
-      "doctrinalNote": "Mutuality always accompanies conascence, but is narrower: materiality born of mind is not mutual with consciousness.",
-      "examples": [
-        "The four great essentials: the earth element supports the water element and the water element supports the earth — no element stands alone."
-      ],
-      "subdivisions": {}
+      "definition": "俱生名色如三腳架支柱般彼此相互依賴共立。"
     },
     "PC_08": {
       "name": "依止緣",
       "shortName": "依止緣",
-      "definition": "如大地載植樹木、畫布受敷丹青般作為所依支柱。",
-      "paccayaDhamma": "The four conascent mental aggregates; the four great essentials; and the six bases (eye, ear, nose, tongue, body, and heart-base).",
-      "paccayuppanna": "The conascent mental states; derived materiality; and the seven consciousness-elements together with their mental factors.",
-      "doctrinalNote": "Distinguish from decisive support: dependence is the direct base, decisive support is strong assistance from a distance.",
-      "examples": [
-        "The eye-base is dependence condition for eye-consciousness and its associated mental factors.",
-        "The heart-base (hadaya-vatthu) supports the whole mind-consciousness element throughout the life of the five aggregates."
-      ],
-      "subdivisions": {
-        "Sahajāta-nissaya": {
-          "name": "Conascent dependence",
-          "note": "Mutual reliance within a single mind-moment."
-        },
-        "Purejāta-nissaya (vatthu)": {
-          "name": "Prenascence dependence — bases",
-          "note": "The six bases, arisen beforehand, serve as the support for the seven consciousness-elements."
-        },
-        "Vatthārammaṇa-purejāta-nissaya": {
-          "name": "Base-object prenascence dependence",
-          "note": "The heart-base serves at once as base and as object for mind-element consciousness."
-        }
-      }
+      "definition": "如大地載植樹木、畫布受敷丹青般作為所依支柱。"
     },
     "PC_09": {
       "name": "親依止緣",
       "shortName": "親依止緣",
-      "definition": "強有力的因緣、所緣或積習如暴風沛雨般強力驅遣引生後法。",
-      "paccayaDhamma": "An object strongly attended to; consciousness that has just ceased; and natural conditions such as faith, virtue, climate, food, and friends.",
-      "paccayuppanna": "The mind and mental factors that arise afterwards.",
-      "doctrinalNote": "The link Feeling → Craving in dependent origination is explained chiefly through natural decisive support.",
-      "examples": [
-        "Pleasant feeling is natural decisive support for craving — because feeling is agreeable, craving grows strong.",
-        "Faith decisively supports an act of generosity; greed decisively supports an act of stealing."
-      ],
-      "subdivisions": {
-        "Ārammaṇ'ūpanissaya": {
-          "name": "Object decisive support",
-          "note": "A powerful object becomes the decisive spur for the consciousness that follows."
-        },
-        "Anantar'ūpanissaya": {
-          "name": "Contiguous decisive support",
-          "note": "Equivalent to proximity condition considered as a force of support."
-        },
-        "Pakat'ūpanissaya": {
-          "name": "Natural decisive support",
-          "note": "Natural conditions: faith, virtue, climate, friends, former kamma."
-        }
-      }
+      "definition": "強有力的因緣、所緣或積習如暴風沛雨般強力驅遣引生後法。"
     },
     "PC_10": {
       "name": "前生緣",
       "shortName": "前生緣",
-      "definition": "先已生起且正現住之根身與所緣為後生識作依托。",
-      "paccayaDhamma": "The six bases (materiality) and the six objects — the concrete material phenomena — that have already arisen.",
-      "paccayuppanna": "The mind and mental factors that arise later.",
-      "doctrinalNote": "Prenascence applies only to materiality; mental states cannot be prenascence conditions.",
-      "examples": [
-        "The eye-base must exist first; only then can eye-consciousness arise.",
-        "A present visible object (17 mind-moments long) serves as prenascence condition for an eye-door process."
-      ],
-      "subdivisions": {
-        "Vatthu-purejāta": {
-          "name": "Base prenascence",
-          "note": "The six bases support the seven consciousness-elements."
-        },
-        "Ārammaṇa-purejāta": {
-          "name": "Object prenascence",
-          "note": "Present concrete objects support the 54 sense-sphere cittas and 50 mental factors."
-        }
-      }
+      "definition": "先已生起且正現住之根身與所緣為後生識作依托。"
     },
     "PC_11": {
       "name": "後生緣",
       "shortName": "後生緣",
-      "definition": "後生之心心所如潤澤春雨般輔助滋養先已生之色身。",
-      "paccayaDhamma": "The 85 cittas of the sense-sphere, form-sphere, formless-sphere and supramundane planes — that is, all consciousness except the rebirth-linking cittas — together with the 52 mental factors.",
-      "paccayuppanna": "The kamma-born body of materiality that arose earlier (the materiality of the living body).",
-      "doctrinalNote": "Only later-arising mentality supports earlier materiality; never the reverse.",
-      "examples": [
-        "Mind and mental factors during life support the body already born, keeping it from decay.",
-        "Hunger drives one to eat — later-arising mentality nourishes earlier-born materiality."
-      ],
-      "subdivisions": {}
+      "definition": "後生之心心所如潤澤春雨般輔助滋養先已生之色身。"
     },
     "PC_12": {
       "name": "習行緣",
       "shortName": "習行緣",
-      "definition": "前前同類速行不斷熏習重複使後後速行力量純熟強固。",
-      "paccayaDhamma": "The preceding impulsion consciousness and its mental factors (except the final impulsion and the path impulsion).",
-      "paccayuppanna": "The impulsion consciousness and its factors arising immediately after.",
-      "doctrinalNote": "A supramundane path impulsion is not repetition condition, because it arises for a single mind-moment only.",
-      "examples": [
-        "Among the seven impulsions, the first is repetition condition for the second.",
-        "Memorising by repeated recitation makes each later attempt easier — the same principle at work."
-      ],
-      "subdivisions": {}
+      "definition": "前前同類速行不斷熏習重複使後後速行力量純熟強固。"
     },
     "PC_13": {
       "name": "業緣",
       "shortName": "業緣",
-      "definition": "善與不善之思心所造作成熟，引生後後異熟果報。",
-      "paccayaDhamma": "Wholesome and unwholesome volition — the cetanā mental factor.",
-      "paccayuppanna": "Conascent kamma: the citta and cetasikas arising with it, and mind-born materiality. Asynchronous kamma: resultant consciousness, its mental factors, and kamma-born materiality at rebirth.",
-      "doctrinalNote": "The links Formations → Consciousness and Becoming → Birth among the twelve links are explained through asynchronous kamma condition.",
-      "examples": [
-        "Volition in an act of generosity supports resultant mind and kamma-born materiality in a future life (asynchronous kamma).",
-        "Volition in a greedy mind-moment makes that whole mind-moment unwholesome (conascent kamma)."
-      ],
-      "subdivisions": {
-        "Sahajāta-kamma": {
-          "name": "Conascent kamma",
-          "note": "Volition supports the states arising with it in the same mind-moment."
-        },
-        "Nānākkhaṇika-kamma": {
-          "name": "Asynchronous kamma",
-          "note": "Volition in one mind-moment supports its result in another — the basis of rebirth."
-        }
-      }
+      "definition": "善與不善之思心所造作成熟，引生後後異熟果報。"
     },
     "PC_14": {
       "name": "異熟緣",
       "shortName": "異熟緣",
-      "definition": "業報所感之異熟名法安穩寂靜無為地互為滋養資助。",
-      "paccayaDhamma": "The 36 resultant cittas (rootless, sense-sphere beautiful, and great resultants) together with their 38 associated mental factors.",
-      "paccayuppanna": "The resultant mental states that arise together, and the kamma-born materiality they produce.",
-      "doctrinalNote": "Resultant consciousness creates no new kamma — the key point for understanding that 'a result does not produce a result'.",
-      "examples": [
-        "Rebirth-linking consciousness is a resultant: it supports the kamma-born materiality arising together with it.",
-        "Eye-consciousness is resultant mind — it supports its conascent mental factors by result condition without creating new kamma."
-      ],
-      "subdivisions": {}
+      "definition": "業報所感之異熟名法安穩寂靜無為地互為滋養資助。"
     },
     "PC_15": {
       "name": "食緣",
       "shortName": "食緣",
-      "definition": "段食及三名食（觸、意思、識）支持滋養肉身與精神命脈。",
-      "paccayaDhamma": "Edible food (materiality) and the three mental nutriments: contact, volition, and consciousness.",
-      "paccayuppanna": "Food materiality sustains the body; the three mental nutriments sustain mind, mental factors, and mind-born materiality.",
-      "doctrinalNote": "Connect with the Four Nutriments in the Sutta Piṭaka (SN 12.63) — the contemplation of nutriment.",
-      "examples": [
-        "Food sustains the material body — edible food.",
-        "Volition nutriment: intention feeds kamma and prolongs the round of birth and death."
-      ],
-      "subdivisions": {
-        "Rūp'āhāra": {
-          "name": "Edible food",
-          "note": "Physical nutriment sustains the body."
-        },
-        "Nām'āhāra": {
-          "name": "Mental nutriment",
-          "note": "Contact, volition, and consciousness as nutriments."
-        }
-      }
+      "definition": "段食及三名食（觸、意思、識）支持滋養肉身與精神命脈。"
     },
     "PC_16": {
       "name": "根緣",
       "shortName": "根緣",
-      "definition": "二十二根在各自管轄領域中發揮統治宰制支配作用。",
-      "paccayaDhamma": "The 20 faculties: five sensitive material faculties, the material life faculty, and fourteen mental faculties — feeling, faith, energy, mindfulness, concentration, wisdom, the three understanding faculties, and the mind faculty.",
-      "paccayuppanna": "The sensitive faculties support the seven consciousness-elements; the mental faculties support the conascent mind and its factors; the material life faculty sustains kamma-born materiality.",
-      "doctrinalNote": "The five spiritual faculties — faith, energy, mindfulness, concentration, wisdom — must be balanced in meditation.",
-      "examples": [
-        "The eye faculty governs eye-consciousness — without the eye faculty there is no seeing.",
-        "The concentration faculty rules the whole jhāna mind-moment."
-      ],
-      "subdivisions": {
-        "Purejāta-indriya": {
-          "name": "Prenascence faculties",
-          "note": "The five sensitive faculties support the consciousnesses they correspond to."
-        },
-        "Jīvit'indriya": {
-          "name": "Material life faculty",
-          "note": "Sustains the kamma-born materiality of its own group."
-        },
-        "Sahajāta-indriya": {
-          "name": "Conascent faculties",
-          "note": "The fourteen mental faculties support the mind and factors arising with them."
-        }
-      }
+      "definition": "二十二根在各自管轄領域中發揮統治宰制支配作用。"
     },
     "PC_17": {
       "name": "禪那緣",
       "shortName": "禪那緣",
-      "definition": "尋、伺、喜、樂、一境性等支緊密繫縛心於所緣寂靜內觀。",
-      "paccayaDhamma": "The seven jhāna factors: applied thought, sustained thought, rapture, pleasure, displeasure, equanimity, and one-pointedness.",
-      "paccayuppanna": "The associated mind and mental factors (except the two body consciousnesses), and the materiality produced by that mind.",
-      "doctrinalNote": "Not limited to meditative attainment: the seven jhāna factors operate in ordinary consciousness as well.",
-      "examples": [
-        "Applied thought brings the mind to the object — it is jhāna condition for the factors arising with it.",
-        "In the second jhāna applied thought is absent, yet rapture and one-pointedness still function as jhāna condition."
-      ],
-      "subdivisions": {}
+      "definition": "尋、伺、喜、樂、一境性等支緊密繫縛心於所緣寂靜內觀。"
     },
     "PC_18": {
       "name": "道緣",
       "shortName": "道緣",
-      "definition": "正見等八正道支引領眾生脫離輪迴導向解脫涅槃。",
-      "paccayaDhamma": "The twelve path factors: right view, right intention, right speech, right action, right livelihood, right effort, right mindfulness, right concentration — and wrong view, wrong intention, wrong effort, wrong one-pointedness.",
-      "paccayuppanna": "The associated mind and mental factors (except the two body consciousnesses), and the materiality produced by that mind.",
-      "doctrinalNote": "Path condition operates in wholesome and unwholesome states alike — not only in the supramundane Noble Eightfold Path.",
-      "examples": [
-        "Right view in a wholesome mind steers the whole mind-moment toward the wholesome.",
-        "Wrong view in a greedy mind steers it toward the unwholesome — path condition has two faces."
-      ],
-      "subdivisions": {}
+      "definition": "正見等八正道支引領眾生脫離輪迴導向解脫涅槃。"
     },
     "PC_19": {
       "name": "相應緣",
       "shortName": "相應緣",
-      "definition": "心與心所同生、同滅、同所依、同所緣，如水乳交融般無別。",
-      "paccayaDhamma": "The four conascent mental aggregates.",
-      "paccayuppanna": "Those very four aggregates — a two-way relation.",
-      "doctrinalNote": "Only mentality can be associated; materiality has no shared object and base, so it cannot be associated.",
-      "examples": [
-        "Feeling and perception in one mind-moment are associated: they know one object through one base."
-      ],
-      "subdivisions": {}
+      "definition": "心與心所同生、同滅、同所依、同所緣，如水乳交融般無別。"
     },
     "PC_20": {
       "name": "不相應緣",
       "shortName": "不相應緣",
-      "definition": "名法與色法體性相異（如油與水），卻互相依存扶持。",
-      "paccayaDhamma": "Mental states (when supporting materiality), or material phenomena (when supporting mentality).",
-      "paccayuppanna": "Material phenomena (conascent or prenascent), or mental states (conascent or postnascent).",
-      "doctrinalNote": "This condition expresses the mind–matter relation, the backbone of the Name-and-Form analysis among the twelve links.",
-      "examples": [
-        "The heart-base (materiality) supports mind-consciousness (mentality) — different kinds, hence dissociation condition.",
-        "At rebirth-linking, the rebirth consciousness and kamma-born materiality arise together yet remain different kinds."
-      ],
-      "subdivisions": {
-        "Sahajāta-vippayutta": {
-          "name": "Conascent dissociation",
-          "note": "Mind and materiality arise together yet support each other as different kinds — at rebirth-linking."
-        },
-        "Purejāta-vippayutta": {
-          "name": "Prenascence dissociation",
-          "note": "The six bases, arisen earlier, support the seven consciousness-elements."
-        },
-        "Pacchājāta-vippayutta": {
-          "name": "Postnascence dissociation",
-          "note": "Later-arising mentality supports the earlier-born body of materiality."
-        }
-      }
+      "definition": "名法與色法體性相異（如油與水），卻互相依存扶持。"
     },
     "PC_21": {
       "name": "有緣",
       "shortName": "有緣",
-      "definition": "正現存之法以其現有存在狀態，支持其他同時現存之法。",
-      "paccayaDhamma": "Comprises the states serving as conascence, prenascence, postnascence, nutriment, and faculty conditions.",
-      "paccayuppanna": "The states supported by those five conditions.",
-      "doctrinalNote": "The widest of the 24 conditions — it subsumes five others.",
-      "examples": [
-        "The eye-base being present, eye-consciousness can arise — presence condition.",
-        "The four great essentials being present support the derived materiality."
-      ],
-      "subdivisions": {
-        "Sahajāta-atthi": {
-          "name": "Conascent presence",
-          "note": "Present within the same mind-moment."
-        },
-        "Purejāta-atthi": {
-          "name": "Prenascence presence",
-          "note": "Earlier-born materiality still existing."
-        },
-        "Pacchājāta-atthi": {
-          "name": "Postnascence presence",
-          "note": "Later-arising mentality being present."
-        },
-        "Āhāra-atthi": {
-          "name": "Nutriment presence",
-          "note": "Edible food being present."
-        },
-        "Indriya-atthi": {
-          "name": "Faculty presence",
-          "note": "The material life faculty being present."
-        }
-      }
+      "definition": "正現存之法以其現有存在狀態，支持其他同時現存之法。"
     },
     "PC_22": {
       "name": "無有緣",
       "shortName": "無有緣",
-      "definition": "前心心所滅去不復存在，唯以此“斷滅空位”給後心讓出生起機會。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors arising immediately after.",
-      "doctrinalNote": "Same scope as proximity condition, but stressing the absence of the preceding consciousness.",
-      "examples": [
-        "Eye-consciousness must cease for the receiving consciousness to arise."
-      ],
-      "subdivisions": {}
+      "definition": "前心心所滅去不復存在，唯以此“斷滅空位”給後心讓出生起機會。"
     },
     "PC_23": {
       "name": "離去緣",
       "shortName": "離去緣",
-      "definition": "前法離去、消逝與退讓，促成後法生起無阻。",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors arising immediately after.",
-      "doctrinalNote": "One reality, two sayings: absence stresses 'no longer there'; disappearance stresses 'has gone'.",
-      "examples": [
-        "A life-continuum moment, just ceased (disappeared), supports the next life-continuum moment."
-      ],
-      "subdivisions": {}
+      "definition": "前法離去、消逝與退讓，促成後法生起無阻。"
     },
     "PC_24": {
       "name": "不離去緣",
       "shortName": "不離去緣",
-      "definition": "法未曾離去、正處於當前現住狀態，繼續維持伴隨法。",
-      "paccayaDhamma": "Comprises the states serving as conascence, prenascence, postnascence, nutriment, and faculty conditions.",
-      "paccayuppanna": "The states supported by those five conditions.",
-      "doctrinalNote": "The pairs 21–24 (presence / absence / disappearance / non-disappearance) close the 24 conditions with two pairs of synonyms.",
-      "examples": [
-        "The heart-base, not yet perished, keeps supporting mind-consciousness."
-      ],
-      "subdivisions": {}
+      "definition": "法未曾離去、正處於當前現住狀態，繼續維持伴隨法。"
     }
   },
   "paticcas": {
     "PD_01": {
       "name": "無明",
       "shortName": "無明",
-      "description": "不了知四聖諦、三世因果與十二緣起之愚癡蒙昧。",
-      "characteristic": "Characteristic of 無明 (Avijjā)",
-      "function": "Function of 無明 (Avijjā)",
-      "manifestation": "Manifestation of 無明 (Avijjā)",
-      "proximateCause": "Proximate cause of 無明 (Avijjā)",
-      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). The ending of ignorance is the attainment of the four path consciousnesses.",
-      "examples": [
-        "Not knowing this body is impermanent, one clings to it as a self and creates kamma to protect that self."
-      ]
+      "description": "不了知四聖諦、三世因果與十二緣起之愚癡蒙昧。"
     },
     "PD_02": {
       "name": "行",
       "shortName": "行",
-      "description": "以無明為緣而造作身、口、意善惡諸業。",
-      "characteristic": "Characteristic of 行 (Saṅkhārā)",
-      "function": "Function of 行 (Saṅkhārā)",
-      "manifestation": "Manifestation of 行 (Saṅkhārā)",
-      "proximateCause": "Proximate cause of 行 (Saṅkhārā)",
-      "doctrinalNote": "Saṅkhārā in dependent origination means the volition (cetanā) mental factor that forms kamma.",
-      "examples": [
-        "Giving with a wholesome mind is a meritorious formation; its consciousness rebirth-links into a good destination.",
-        "Attaining jhāna is an imperturbable formation; its consciousness rebirth-links as a Brahmā."
-      ]
+      "description": "以無明為緣而造作身、口、意善惡諸業。"
     },
     "PD_03": {
       "name": "識",
       "shortName": "識",
-      "description": "由業力牽引於母胎初起之結生識及六識身。",
-      "characteristic": "Characteristic of 識 (Viññāṇa)",
-      "function": "Function of 識 (Viññāṇa)",
-      "manifestation": "Manifestation of 識 (Viññāṇa)",
-      "proximateCause": "Proximate cause of 識 (Viññāṇa)",
-      "doctrinalNote": "Consciousness and mind-and-matter lean on each other — like two sheaves of reeds propping one another up.",
-      "examples": [
-        "At the moment of conception the rebirth-linking consciousness appears, mind-and-matter develop, and a new life begins."
-      ]
+      "description": "由業力牽引於母胎初起之結生識及六識身。"
     },
     "PD_04": {
       "name": "名色",
       "shortName": "名色",
-      "description": "精神諸蘊（受想行）與物質諸蘊於結生時俱起生展。",
-      "characteristic": "Characteristic of 名色 (Nāmarūpa)",
-      "function": "Function of 名色 (Nāmarūpa)",
-      "manifestation": "Manifestation of 名色 (Nāmarūpa)",
-      "proximateCause": "Proximate cause of 名色 (Nāmarūpa)",
-      "doctrinalNote": "Doctrinal note on Nāmarūpa",
-      "examples": [
-        "In the womb: rebirth consciousness appears and mind-and-matter gradually develop from embryo to full term."
-      ]
+      "description": "精神諸蘊（受想行）與物質諸蘊於結生時俱起生展。"
     },
     "PD_05": {
       "name": "六處",
       "shortName": "六處",
-      "description": "眼耳鼻舌身意六入處，領受境界之門戶。",
-      "characteristic": "Characteristic of 六處 (Saḷāyatana)",
-      "function": "Function of 六處 (Saḷāyatana)",
-      "manifestation": "Manifestation of 六處 (Saḷāyatana)",
-      "proximateCause": "Proximate cause of 六處 (Saḷāyatana)",
-      "doctrinalNote": "Doctrinal note on Saḷāyatana",
-      "examples": [
-        "A newborn child: with the six bases complete, contact with the outside world begins."
-      ]
+      "description": "眼耳鼻舌身意六入處，領受境界之門戶。"
     },
     "PD_06": {
       "name": "觸",
       "shortName": "觸",
-      "description": "根、境、識三者和合碰觸，引發受領。",
-      "characteristic": "Characteristic of 觸 (Phassa)",
-      "function": "Function of 觸 (Phassa)",
-      "manifestation": "Manifestation of 觸 (Phassa)",
-      "proximateCause": "Proximate cause of 觸 (Phassa)",
-      "doctrinalNote": "Phassa in dependent origination is the contact mental factor (CS_PHASSA).",
-      "examples": [
-        "The eye sees a lovely object: eye-base + visible object + eye-consciousness give eye-contact, and glad feeling follows."
-      ]
+      "description": "根、境、識三者和合碰觸，引發受領。"
     },
     "PD_07": {
       "name": "受",
       "shortName": "受",
-      "description": "觸所緣後所感受之苦、樂、捨之味。",
-      "characteristic": "Characteristic of 受 (Vedanā)",
-      "function": "Function of 受 (Vedanā)",
-      "manifestation": "Manifestation of 受 (Vedanā)",
-      "proximateCause": "Proximate cause of 受 (Vedanā)",
-      "doctrinalNote": "This is the crux of the four foundations of mindfulness: halt at feeling, and do not let it ripen into craving.",
-      "examples": [
-        "Hearing praise (contact) brings glad feeling; without mindfulness, craving for more follows."
-      ]
+      "description": "觸所緣後所感受之苦、樂、捨之味。"
     },
     "PD_08": {
       "name": "愛",
       "shortName": "愛",
-      "description": "對可愛境界之貪愛渴求與執念。",
-      "characteristic": "Characteristic of 愛 (Taṇhā)",
-      "function": "Function of 愛 (Taṇhā)",
-      "manifestation": "Manifestation of 愛 (Taṇhā)",
-      "proximateCause": "Proximate cause of 愛 (Taṇhā)",
-      "doctrinalNote": "Craving is the Origin of suffering among the Four Noble Truths. The ending of craving is the ending of suffering — Nibbāna.",
-      "examples": [
-        "Seeing delicious food, craving arises: wanting to eat more.",
-        "Meeting pain, craving for non-existence arises: wanting not to be."
-      ]
+      "description": "對可愛境界之貪愛渴求與執念。"
     },
     "PD_09": {
       "name": "取",
       "shortName": "取",
-      "description": "執著所愛不捨，頑強固執如火捉薪。",
-      "characteristic": "Characteristic of 取 (Upādāna)",
-      "function": "Function of 取 (Upādāna)",
-      "manifestation": "Manifestation of 取 (Upādāna)",
-      "proximateCause": "Proximate cause of 取 (Upādāna)",
-      "doctrinalNote": "Doctrinal note on Upādāna",
-      "examples": [
-        "Not only wanting money (craving) but being unable to let money go (clinging)."
-      ]
+      "description": "執著所愛不捨，頑強固執如火捉薪。"
     },
     "PD_10": {
       "name": "有",
       "shortName": "有",
-      "description": "引發後世生存之業有與受生所依之生有。",
-      "characteristic": "Characteristic of 有 (Bhava)",
-      "function": "Function of 有 (Bhava)",
-      "manifestation": "Manifestation of 有 (Bhava)",
-      "proximateCause": "Proximate cause of 有 (Bhava)",
-      "doctrinalNote": "Doctrinal note on Bhava",
-      "examples": [
-        "One who gives generously all their life builds wholesome sense-sphere becoming and is reborn wealthy in the next life."
-      ]
+      "description": "引發後世生存之業有與受生所依之生有。"
     },
     "PD_11": {
       "name": "生",
       "shortName": "生",
-      "description": "諸蘊於各生存界之最初顯現受生。",
-      "characteristic": "Characteristic of 生 (Jāti)",
-      "function": "Function of 生 (Jāti)",
-      "manifestation": "Manifestation of 生 (Jāti)",
-      "proximateCause": "Proximate cause of 生 (Jāti)",
-      "doctrinalNote": "The three-life circle joins here: birth (PD_11) corresponds to consciousness (PD_03) on the result side of the future life.",
-      "examples": [
-        "The moment of conception is birth — all suffering follows from it."
-      ]
+      "description": "諸蘊於各生存界之最初顯現受生。"
     },
     "PD_12": {
       "name": "老死",
       "shortName": "老死",
-      "description": "諸蘊衰邁成熟而衰老，命根斷絕破損而命終。",
-      "characteristic": "Characteristic of 老死 (Jarāmaraṇa)",
-      "function": "Function of 老死 (Jarāmaraṇa)",
-      "manifestation": "Manifestation of 老死 (Jarāmaraṇa)",
-      "proximateCause": "Proximate cause of 老死 (Jarāmaraṇa)",
-      "doctrinalNote": "Liberation means ending ignorance (PD_01) and craving (PD_08) — the realisation of Nibbāna.",
-      "examples": [
-        "Every being that has been born must age and die.",
-        "When ignorance and craving are destroyed, ageing-and-death no longer follow."
-      ]
+      "description": "諸蘊衰邁成熟而衰老，命根斷絕破損而命終。"
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "現法受業",
       "shortName": "現法受業",
-      "description": "第一速行所造，於現生結成果報之業。",
-      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within the very same life. If it fails to ripen in that life, it becomes defunct (ahosi-kamma).",
-      "examples": [
-        "Giving alms with a pure mind and reaping the benefit within this very life",
-        "The five heinous deeds (matricide, patricide, killing an Arahant, wounding a Buddha, causing a schism in the Sangha) ripen as hell in the very next life"
-      ]
+      "description": "第一速行所造，於現生結成果報之業。"
     },
     "KM_T_02": {
       "name": "次生受業",
       "shortName": "次生受業",
-      "description": "第七速行所造，於緊隨之來世結成果報之業。",
-      "doctrinalNote": "It has only a single opportunity to ripen, in the immediately following life. If it fails to ripen in that life, it becomes defunct.",
-      "examples": [
-        "One who practises meditation in this life is reborn as a Brahmā in the next life"
-      ]
+      "description": "第七速行所造，於緊隨之來世結成果報之業。"
     },
     "KM_T_03": {
       "name": "後後便受業",
       "shortName": "後後便受業",
-      "description": "中五速行所造，從第三生起至證涅槃前皆可感果之業。",
-      "doctrinalNote": "It never becomes defunct through lapse of time — one reason the stream of kamma and its results is so intricate. It is the most common of the three time-based kinds of kamma.",
-      "examples": [
-        "The kamma of building a temple in a past life ripens as wealth many lives later"
-      ]
+      "description": "中五速行所造，從第三生起至證涅槃前皆可感果之業。"
     },
     "KM_T_04": {
       "name": "既有業",
       "shortName": "廢業",
-      "description": "已造作但失去感果機緣或已被對治而不再受報之業。",
-      "doctrinalNote": "'Ahosi' means 'it has already been' — the kamma is not destroyed, it has simply lost its opportunity to ripen.",
-      "examples": [
-        "For an Arahant, every kamma not yet ripened becomes defunct after final passing away (parinibbāna)"
-      ]
+      "description": "已造作但失去感果機緣或已被對治而不再受報之業。"
     },
     "KM_P_01": {
       "name": "重業",
       "shortName": "重業",
-      "description": "力量至重之業（如五逆罪或深妙禪定），必優先先受報。",
-      "doctrinalNote": "Generative kamma determines the entire foundation of a life.",
-      "examples": [
-        "Sense-sphere wholesome kamma generates rebirth as a human being or a deva",
-        "Kamma that has attained jhāna generates rebirth as a Brahmā"
-      ]
+      "description": "力量至重之業（如五逆罪或深妙禪定），必優先先受報。"
     },
     "KM_P_02": {
       "name": "臨死業",
       "shortName": "臨死業",
-      "description": "臨命終時憶起或造作之業，引向次生結生。",
-      "doctrinalNote": "It is not the one who sows the seed but the one who waters it — it strengthens and extends a result that is already ripening rather than producing a new one of its own.",
-      "examples": [
-        "A person who performs wholesome deeds every day — supportive kamma increases their lifespan and health"
-      ]
+      "description": "臨命終時憶起或造作之業，引向次生結生。"
     },
     "KM_P_03": {
       "name": "慣行業",
       "shortName": "慣行業",
-      "description": "生前經常重複熏習、積習成性之堅強業習。",
-      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
-      "examples": [
-        "A wealthy person who is often ill — obstructive kamma diminishes the enjoyment of their fortune"
-      ]
+      "description": "生前經常重複熏習、積習成性之堅強業習。"
     },
     "KM_P_04": {
       "name": "已作業",
       "shortName": "已作業",
-      "description": "除上述三者之外，偶爾所作而未加深習之零散舊業。",
-      "doctrinalNote": "This is the most powerful kind of kamma classified by function; it explains the sudden reversals that occur in a life.",
-      "examples": [
-        "A wealthy person suddenly loses their entire fortune — destructive kamma cuts off the earlier generative kamma"
-      ]
+      "description": "除上述三者之外，偶爾所作而未加深習之零散舊業。"
     },
     "KM_U_01": {
       "name": "生產業",
       "shortName": "生產業",
-      "description": "引生結生識及名色之業，產生一期生命的果報。",
-      "doctrinalNote": "Weighty kamma always determines rebirth — it never becomes defunct.",
-      "examples": [
-        "Wholesome: attaining the second jhāna generates rebirth in the second-jhāna Brahmā realm",
-        "Unwholesome: committing matricide leads to rebirth in the Avīci hell"
-      ]
+      "description": "引生結生識及名色之業，產生一期生命的果報。"
     },
     "KM_U_02": {
       "name": "支持業",
       "shortName": "支持業",
-      "description": "輔助支持生產業所感果報，使樂受或苦受增盛延續。",
-      "doctrinalNote": "This explains the importance of preparing one's mind at the time of death.",
-      "examples": [
-        "Recalling a wholesome act of giving while dying leads to a wholesome rebirth",
-        "Seeing a vision of hell while dying leads to a woeful rebirth"
-      ]
+      "description": "輔助支持生產業所感果報，使樂受或苦受增盛延續。"
     },
     "KM_U_03": {
       "name": "阻礙業",
       "shortName": "阻礙業",
-      "description": "壓迫阻礙生產業，縮短其福壽或消減其惡報。",
-      "doctrinalNote": "This is why the Buddha taught that one should constantly practise wholesome deeds.",
-      "examples": [
-        "Someone who has killed for a living their whole life — a strong unwholesome habitual kamma",
-        "Someone who recites scripture and meditates daily — a strong wholesome habitual kamma"
-      ]
+      "description": "壓迫阻礙生產業，縮短其福壽或消減其惡報。"
     },
     "KM_U_04": {
       "name": "毀壞業",
       "shortName": "毀壞業",
-      "description": "以更強業力徹底切斷摧毀原有生產業之相續果報。",
-      "doctrinalNote": "It is the weakest kind of kamma by priority of ripening, yet it makes up the greater part of the total kamma we have accumulated.",
-      "examples": [
-        "The ordinary, scattered wholesome or unwholesome actions of everyday life"
-      ]
+      "description": "以更強業力徹底切斷摧毀原有生產業之相續果報。"
     },
     "KM_R_01": {
       "name": "欲界不善業",
       "shortName": "欲界不善",
-      "description": "十惡業道，能感四惡趣苦果。",
-      "doctrinalNote": "Unwholesome kamma is the cause of the truth of suffering; it belongs to the sense sphere and ripens within the woeful planes of the sense sphere.",
-      "examples": [
-        "Killing, stealing, sexual misconduct, lying — these ripen as rebirth in a woeful state",
-        "Greed, hatred and delusion produce unwholesome kamma"
-      ]
+      "description": "十惡業道，能感四惡趣苦果。"
     },
     "KM_R_02": {
       "name": "欲界善業",
       "shortName": "欲界善",
-      "description": "十善業道，感人界與六欲天善趣樂果。",
-      "doctrinalNote": "Sense-sphere wholesome kamma that ripens as happiness in the sense sphere — the foundation for all merit.",
-      "examples": [
-        "Giving, observing precepts and practising sense-sphere meditation ripen as a human or a sense-sphere deva",
-        "The ten courses of wholesome action: three bodily, four verbal, three mental"
-      ]
+      "description": "十善業道，感人界與六欲天善趣樂果。"
     },
     "KM_R_03": {
       "name": "色界善業",
       "shortName": "色界善",
-      "description": "五禪色界善心，感得色界十六梵天果報。",
-      "doctrinalNote": "Fine-material-sphere kamma belongs to the exalted (mahaggata) category, transcending the sense sphere; it ripens according to the jhāna attained.",
-      "examples": [
-        "Attaining the first fine-material jhāna generates rebirth in the Brahma-pārisajja realm",
-        "Attaining the fifth jhāna generates rebirth in the Vehapphala realm"
-      ]
+      "description": "五禪色界善心，感得色界十六梵天果報。"
     },
     "KM_R_04": {
       "name": "無色界善業",
       "shortName": "無色界善",
-      "description": "四無色定善心，感得無色界四天果報。",
-      "doctrinalNote": "Supramundane kamma does not produce rebirth within the three realms; it produces Nibbāna as its result — the ultimate aim of the Abhidhamma.",
-      "examples": [
-        "Developing the Noble Eightfold Path to attain the first path cuts off three fetters, ending rebirth in the four woeful states",
-        "The four paths produce the four fruits — the only way leading out of suffering"
-      ]
+      "description": "四無色定善心，感得無色界四天果報。"
     }
   },
   "vithis": {
@@ -2351,7 +1702,6 @@
       "description": "十七心剎那具足之完整五門心路，至彼所緣而滅。",
       "arisingCondition": "當清晰的五門或意門所緣撞擊相應根門並擾動有分心流時生起。",
       "significance": "展示了心識從潛意識有分流轉向所緣、造作善惡業並回歸有分的完整生命認知過程。",
-      "doctrinalNote": "Atimahanta = an object great enough to allow Javana × 7 plus Tadārammaṇa × 2.",
       "steps": {
         "1": {
           "name": "過去有分",
@@ -2416,54 +1766,7 @@
       "description": "五門極大所緣心路，具足七速行但無彼所緣。",
       "arisingCondition": "當清晰的五門或意門所緣撞擊相應根門並擾動有分心流時生起。",
       "significance": "展示了心識從潛意識有分流轉向所緣、造作善惡業並回歸有分的完整生命認知過程。",
-      "doctrinalNote": "It differs from the very-great-object process only in lacking the 2 registration moments.",
-      "steps": {
-        "1": {
-          "name": "Vibrating bhavaṅga",
-          "description": "The life-continuum vibrates as the object strikes the sense base.",
-          "doctrinalNote": null
-        },
-        "2": {
-          "name": "Arrest bhavaṅga",
-          "description": "The bhavaṅga stream is cut off — the process begins.",
-          "doctrinalNote": null
-        },
-        "3": {
-          "name": "Five-door adverting",
-          "description": "Turns the mind toward the object through the five-sense door.",
-          "doctrinalNote": null
-        },
-        "4": {
-          "name": "Five-fold sense consciousness",
-          "description": "Knows the object through the corresponding sense.",
-          "doctrinalNote": null
-        },
-        "5": {
-          "name": "Receiving",
-          "description": "Receives the object.",
-          "doctrinalNote": null
-        },
-        "6": {
-          "name": "Investigating",
-          "description": "Examines the object.",
-          "doctrinalNote": null
-        },
-        "7": {
-          "name": "Determining",
-          "description": "Determines the object, opening the way for the impulsions.",
-          "doctrinalNote": null
-        },
-        "8": {
-          "name": "Impulsion (Javana)",
-          "description": "Seven impulsion moments create kamma. Afterwards there is NO registration.",
-          "doctrinalNote": "After the 7 impulsions the mind drops straight back into the life-continuum."
-        },
-        "9": {
-          "name": "Post-process bhavaṅga",
-          "description": "The life-continuum resumes after the process.",
-          "doctrinalNote": null
-        }
-      }
+      "steps": {}
     },
     "VT_Y_MON": {
       "name": "意門心路",
@@ -2471,39 +1774,7 @@
       "description": "心識通過意門接觸法所緣所生起之心路過程。",
       "arisingCondition": "當清晰的五門或意門所緣撞擊相應根門並擾動有分心流時生起。",
       "significance": "展示了心識從潛意識有分流轉向所緣、造作善惡業並回歸有分的完整生命認知過程。",
-      "doctrinalNote": "The mind-door process begins with the mind-door adverting consciousness (CI_029), without passing through five-door adverting.",
-      "steps": {
-        "1": {
-          "name": "Vibrating bhavaṅga",
-          "description": "The life-continuum vibrates as the mind object strikes.",
-          "doctrinalNote": null
-        },
-        "2": {
-          "name": "Arrest bhavaṅga",
-          "description": "The life-continuum is arrested — the mind-door process begins.",
-          "doctrinalNote": null
-        },
-        "3": {
-          "name": "Mind-door adverting",
-          "description": "Opens the mind door and directs the mind to the mind object, at the same time determining it (serving as determining within this process).",
-          "doctrinalNote": "CI_029 serves both as mind-door adverting and as determining. 11 mental factors."
-        },
-        "4": {
-          "name": "Impulsion (Javana)",
-          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, and action arise here.",
-          "doctrinalNote": "Creates mind-kamma directly. Verbal and bodily kamma also begin at the mind door."
-        },
-        "5": {
-          "name": "Registration (optional)",
-          "description": "Registration in the mind-door process — depending on the strength of the mind object.",
-          "doctrinalNote": null
-        },
-        "6": {
-          "name": "Post-process bhavaṅga",
-          "description": "The life-continuum resumes.",
-          "doctrinalNote": null
-        }
-      }
+      "steps": {}
     },
     "VT_VITHIMUTTA": {
       "name": "離路心",
@@ -2511,24 +1782,7 @@
       "description": "不由任何根門、運作於認知過程之外的結生、有分、死心。",
       "arisingCondition": "當清晰的五門或意門所緣撞擊相應根門並擾動有分心流時生起。",
       "significance": "展示了心識從潛意識有分流轉向所緣、造作善惡業並回歸有分的完整生命認知過程。",
-      "doctrinalNote": "Process-free consciousness creates no new kamma — it is kammically indeterminate resultant mind.",
-      "steps": {
-        "1": {
-          "name": "Rebirth-linking consciousness",
-          "description": "The first consciousness of the new life — continuing directly from the previous life's dying consciousness, carrying kamma's seed.",
-          "doctrinalNote": "CI_019/CI_026 = a two-rooted person; CI_027 = a specially favoured person; CI_063–CI_070 = a three-rooted person or a deva."
-        },
-        "2": {
-          "name": "Life-continuum consciousness",
-          "description": "The stream of consciousness that sustains the life between processes. It arises and passes innumerable times, and is the foundation of all mental activity.",
-          "doctrinalNote": "Bhavaṅga = the life-maintaining part of the stream. It runs in deep sleep and between processes."
-        },
-        "3": {
-          "name": "Death consciousness",
-          "description": "The final mind-moment — the material life faculty perishes, the death consciousness falls, and the life ends. Immediately afterwards the next life's rebirth-linking consciousness arises.",
-          "doctrinalNote": "Cuti = to move on, to depart. The object of the death consciousness is the death-proximate (āsanna) object."
-        }
-      }
+      "steps": {}
     }
   },
   "studyModules": {

@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
@@ -28,6 +29,50 @@ const _moduleIds = <String>[
   'M9_SAC_PHAP',
   'M10_LO_TRINH',
 ];
+
+Map<String, dynamic> _readContentAsset(String locale) =>
+    Map<String, dynamic>.from(
+      jsonDecode(File('assets/content/content_$locale.json').readAsStringSync())
+          as Map,
+    );
+
+bool _hasLessonItems(Map<String, dynamic> asset, String moduleId) {
+  final modules = asset['studyModules'];
+  if (modules is! Map) return false;
+  final module = modules[moduleId];
+  if (module is! Map) return false;
+  return ['lessonSections', 'reviewCards', 'quizSeeds'].any((key) {
+    final items = module[key];
+    return items is List && items.isNotEmpty;
+  });
+}
+
+String? _firstLessonSectionTitle(
+  Map<String, dynamic> asset,
+  String moduleId,
+) {
+  final modules = asset['studyModules'];
+  if (modules is! Map) return null;
+  final module = modules[moduleId];
+  if (module is! Map) return null;
+  final sections = module['lessonSections'];
+  if (sections is! List || sections.isEmpty) return null;
+  final first = sections.first;
+  return first is Map ? first['title'] as String? : null;
+}
+
+List<String> _safeLessonLocales(String locale) {
+  final chain = resolveContentLocaleChain(locale);
+  if (locale == 'vi') return chain.where((tag) => tag == 'vi').toList();
+
+  final allowsEnglish =
+      contentLanguageFor(locale)?.allowsEnglishFallback ?? true;
+  return chain.where((tag) {
+    if (tag == 'vi') return false;
+    if (!allowsEnglish && tag == 'en') return false;
+    return true;
+  }).toList();
+}
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -63,8 +108,8 @@ void main() {
     }
   });
 
-  for (final locale in shippedLocales) {
-    test('every module has lesson content in "$locale"', () async {
+  test('English and Vietnamese lesson catalogs cover every module', () async {
+    for (final locale in ['en', 'vi']) {
       final container = ProviderContainer();
       addTearDown(container.dispose);
       final catalog =
@@ -72,12 +117,50 @@ void main() {
 
       for (final id in _moduleIds) {
         final lesson = catalog.moduleLesson(id);
-        expect(lesson.isNotEmpty, isTrue, reason: '$id has no lesson content');
-
-        // Targets agreed for this milestone: 3-8 / 8-20 / 8-20.
+        expect(lesson.isNotEmpty, isTrue, reason: '$locale: $id is empty');
         expect(lesson.sections.length, inInclusiveRange(3, 8), reason: id);
         expect(lesson.reviewCards.length, inInclusiveRange(8, 20), reason: id);
         expect(lesson.quizSeeds.length, inInclusiveRange(8, 20), reason: id);
+      }
+    }
+  });
+
+  for (final locale in shippedLocales.where(
+    (tag) => tag != 'en' && tag != 'vi',
+  )) {
+    test('"$locale" lesson lookup never leaks English fallback', () async {
+      final container = ProviderContainer();
+      addTearDown(container.dispose);
+      final catalog =
+          await container.read(contentCatalogProvider(locale).future);
+      final safeLocales = _safeLessonLocales(locale);
+      final authoredAssets = {
+        for (final tag in safeLocales) tag: _readContentAsset(tag),
+      };
+
+      for (final id in _moduleIds) {
+        final expectedSources = safeLocales.where(
+          (tag) => _hasLessonItems(authoredAssets[tag]!, id),
+        );
+        final expected = expectedSources.isNotEmpty;
+        final lesson = catalog.moduleLesson(id);
+        expect(
+          lesson.isNotEmpty,
+          expected,
+          reason: '$locale/$id must reflect authored safe-locale content only',
+        );
+
+        if (expected && lesson.sections.isNotEmpty) {
+          final expectedFirstTitle = safeLocales
+              .map((tag) => _firstLessonSectionTitle(authoredAssets[tag]!, id))
+              .whereType<String>()
+              .first;
+          expect(
+            lesson.sections.first.title,
+            expectedFirstTitle,
+            reason: '$locale/$id must prefer the selected-language lesson',
+          );
+        }
       }
     });
   }

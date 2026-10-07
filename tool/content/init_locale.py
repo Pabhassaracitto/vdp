@@ -12,9 +12,11 @@ translator can work straight in the file without cross-referencing two others.
 WHAT THIS DOES *NOT* DO
 -----------------------
 It never invents doctrine. No machine translation happens here: the output is a
-worksheet, not a translation. Until a human fills it in, the runtime fallback
-chain (`<locale> -> en -> vi`) keeps serving the reviewed English/Vietnamese
-text, so an unfinished locale is always a no-op for learners.
+worksheet, not a translation. Untranslated fields are omitted from the shipping
+catalog. Runtime fallback is language-aware: a configured priority locale may
+inherit a regional variant (for example `zh_TW -> zh`) but never displays
+English/Vietnamese prose; an unregistered locale may use reviewed English as a
+recovery fallback.
 
 STRUCTURE
 ---------
@@ -43,8 +45,8 @@ USAGE
     # create / refresh a worksheet, keeping any translations already done
     python3 tool/content/init_locale.py hi
 
-    # all five priority locales at once
-    python3 tool/content/init_locale.py hi zh zh_TW si my ja
+    # all seven priority content locales at once
+    python3 tool/content/init_locale.py hi zh zh_TW si my ja th
 
     # Tier A only (entity strings; skip the 50/150/135 lesson items)
     python3 tool/content/init_locale.py my --tier a
@@ -345,9 +347,10 @@ def build_key_terms(vi_terms: list, prev_terms: Any, with_src: bool) -> list:
 def strip_worksheet(node: Any) -> Any:
     """Drop `_src*` helpers and untranslated TODO values, recursively.
 
-    Removing TODOs rather than shipping them is what makes an unfinished
-    translation degrade *field by field* onto English/Vietnamese instead of
-    showing the learner the literal word "TODO".
+    Removing TODOs rather than shipping them prevents placeholders from
+    reaching learners. Runtime then applies the selected locale's fallback
+    policy; priority languages hide missing translations instead of filling
+    them with English/Vietnamese.
     """
     if isinstance(node, dict):
         out = {}
@@ -491,8 +494,9 @@ def main() -> int:
             worksheet["note"] = (
                 "Generated from the translation worksheet by "
                 "tool/content/init_locale.py --strip. Untranslated fields are "
-                "omitted on purpose: they resolve through the runtime fallback "
-                "chain to English, then to the Vietnamese source."
+                "omitted on purpose. Runtime applies the configured locale "
+                "policy: priority languages hide missing text; unregistered "
+                "locales may recover through the English catalog."
             )
         # Stripped output is shippable -> assets/content/.
         # Worksheets are not -> l10n_work/.

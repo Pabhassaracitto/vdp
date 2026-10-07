@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vdp_app/core/localization/content_catalog.dart';
+import 'package:vdp_app/core/localization/content_languages.dart';
 
 /// Canonical entity counts, read from the dataset rather than hard-coded.
 ///
@@ -69,12 +70,137 @@ void main() {
     );
   });
 
-  // ── English fallback normalisation (Conditions + Mind Process tabs) ────────
+  test('priority locales hide untranslated English prose, not translated fields',
+      () async {
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
+
+    final hindi = await container.read(contentCatalogProvider('hi').future);
+    expect(
+      hindi.text('paticcas', 'PD_01', 'name', 'Vietnamese fallback'),
+      'अविद्या',
+    );
+    expect(
+      hindi.text('paticcas', 'PD_01', 'description', 'Vietnamese fallback'),
+      contains('चार आर्य सत्यों'),
+    );
+    expect(
+      hindi.text('paticcas', 'PD_01', 'characteristic', 'English fallback'),
+      isEmpty,
+      reason: 'English templates are not translations',
+    );
+    expect(
+      hindi.optionalText(
+        'paticcas',
+        'PD_01',
+        'doctrinalNote',
+        'Vietnamese fallback',
+      ),
+      isNull,
+    );
+    expect(
+      hindi.text('paccayas', 'PC_01', 'paccayaDhamma', 'English fallback'),
+      isEmpty,
+    );
+    expect(
+      hindi.textList('cittas', 'CI_001', 'examples', const ['English']),
+      isEmpty,
+    );
+    expect(
+      hindi.moduleLesson('M1_BASICS').isEmpty,
+      isTrue,
+      reason: 'Hindi has no authored lesson translation and must not inherit en',
+    );
+
+    final traditional =
+        await container.read(contentCatalogProvider('zh_TW').future);
+    expect(traditional.moduleLesson('M1_BASICS').isNotEmpty, isTrue);
+    expect(
+      traditional.moduleLesson('M4_AKUSALA').isEmpty,
+      isTrue,
+      reason: 'zh_TW may inherit zh, but not English prose',
+    );
+  });
+
+  test('extended Chinese tags keep the priority locale safety policy', () async {
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
+    final traditional =
+        await container.read(contentCatalogProvider('zh-Hant-TW').future);
+
+    expect(
+      traditional.text('paticcas', 'PD_01', 'name', 'English fallback'),
+      '无明',
+      reason: 'the zh regional catalog is still a safe language-family fallback',
+    );
+    expect(
+      traditional.textList('cittas', 'CI_013', 'examples', const []),
+      contains(startsWith('生起于相应境遇中')),
+      reason: 'authored Chinese examples should survive catalog generation',
+    );
+    expect(
+      traditional.moduleLesson('M1_BASICS').isNotEmpty,
+      isTrue,
+      reason: 'the chain should find the authored zh lesson',
+    );
+    expect(
+      traditional.moduleLesson('M4_AKUSALA').isEmpty,
+      isTrue,
+      reason: 'an extended Chinese tag must not open the English fallback',
+    );
+  });
+
+  test('every priority locale omits untranslated English-only prose', () async {
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
+
+    for (final language in selectableContentLanguages) {
+      if (language.tag == 'en' || language.tag == 'vi') continue;
+      final catalog =
+          await container.read(contentCatalogProvider(language.tag).future);
+      expect(
+        catalog.text(
+          'paticcas',
+          'PD_01',
+          'characteristic',
+          'English template',
+        ),
+        isEmpty,
+        reason: '${language.tag} must not borrow the English template',
+      );
+      expect(
+        catalog.optionalText(
+          'paticcas',
+          'PD_01',
+          'doctrinalNote',
+          'English template',
+        ),
+        isNull,
+        reason: '${language.tag} must omit missing prose',
+      );
+      expect(
+        catalog.text(
+          'paccayas',
+          'PC_01',
+          'paccayaDhamma',
+          'English template',
+        ),
+        isEmpty,
+        reason: '${language.tag} must not borrow English definitions',
+      );
+      expect(
+        catalog.text('rupas', 'RP_001', 'function', 'English template'),
+        isEmpty,
+        reason: '${language.tag} must not expose untranslated Rupa templates',
+      );
+    }
+  });
+
+  // ── English recovery catalog coverage (Conditions + Mind Process tabs) ────
   //
-  // English is the international fallback locale: after `en` every other
-  // language degrades field-by-field to English before anything else. These
-  // tests pin down that the English overlay is COMPLETE for the two tabs, so
-  // an English learner never sees dataset Vietnamese.
+  // English remains the recovery locale for unregistered languages. These
+  // tests pin down that its overlay is complete, so an English learner never
+  // sees dataset Vietnamese and a recovery lookup does not return a blank.
 
   test('English paticcas carry the full Tứ Nghĩa + prose fields', () async {
     final container = ProviderContainer();
@@ -124,8 +250,8 @@ void main() {
         expect((entry[field] as String?)?.trim().isNotEmpty, isTrue,
             reason: 'paccayas.$id.$field must be authored in English');
       }
-      // Every dataset subdivision must be translatable, otherwise the runtime
-      // nested fallback would show the Vietnamese name.
+      // Every subdivision should have an English label: an absent translation
+      // is hidden rather than filled with the Vietnamese source.
       final subs = (item['subdivisions'] as List<dynamic>? ?? const [])
           .cast<Map<dynamic, dynamic>>();
       final translated = entry['subdivisions'] as Map<String, dynamic>? ?? {};
@@ -165,8 +291,8 @@ void main() {
             reason: 'vithis.$id step $number name must be authored in English');
         expect((stepEntry['description'] as String?)?.trim().isNotEmpty, isTrue,
             reason: 'vithis.$id step $number description must be authored');
-        // Where the dataset has a doctrinal note, English must have one too —
-        // otherwise the detail panel falls back to Vietnamese.
+        // Where the dataset has a doctrinal note, English should have one too;
+        // absent prose is hidden rather than leaked from the Vietnamese source.
         if (((step['doctrinalNote'] as String?) ?? '').isNotEmpty) {
           expect((stepEntry['doctrinalNote'] as String?)?.trim().isNotEmpty,
               isTrue,
