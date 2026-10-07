@@ -1177,4 +1177,37 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'Đóng phiên nghe';
+
+  @override
+  String get playModeTitle => 'Chế độ nghe';
+
+  @override
+  String get playModeOnce => 'Chỉ mục này';
+
+  @override
+  String get playModeSequence => 'Tịnh tiến';
+
+  @override
+  String get playModeOnceHint => 'Đọc xong mục đang chọn thì dừng';
+
+  @override
+  String get playModeRepeatOneHint => 'Đọc lặp lại mục đang chọn';
+
+  @override
+  String get playModeSequenceHint => 'Đọc tiếp các mục sau, hết danh sách thì dừng';
+
+  @override
+  String get playModeRepeatAllHint => 'Đọc tiếp và quay vòng về đầu khi hết danh sách';
+
+  @override
+  String get audioBubbleExpand => 'Mở rộng thanh nghe';
+
+  @override
+  String get audioBubbleCollapse => 'Thu gọn thanh nghe';
+
+  @override
+  String get studyTreeExpandAll => 'Mở rộng toàn bộ';
+
+  @override
+  String get studyTreeCollapseAll => 'Thu gọn toàn bộ';
 }

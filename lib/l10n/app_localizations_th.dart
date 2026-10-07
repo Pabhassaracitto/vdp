@@ -1172,4 +1172,37 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'ปิดเครื่องเล่นเสียง';
+
+  @override
+  String get playModeTitle => 'โหมดการฟัง';
+
+  @override
+  String get playModeOnce => 'เฉพาะรายการนี้';
+
+  @override
+  String get playModeSequence => 'ฟังต่อเนื่อง';
+
+  @override
+  String get playModeOnceHint => 'หยุดเมื่ออ่านรายการปัจจุบันจบ';
+
+  @override
+  String get playModeRepeatOneHint => 'อ่านซ้ำรายการปัจจุบันไปเรื่อย ๆ';
+
+  @override
+  String get playModeSequenceHint => 'อ่านรายการถัดไปต่อเนื่อง หยุดเมื่อจบรายการ';
+
+  @override
+  String get playModeRepeatAllHint => 'อ่านต่อเนื่องและวนกลับไปเริ่มใหม่เมื่อจบรายการ';
+
+  @override
+  String get audioBubbleExpand => 'ขยายแถบเสียง';
+
+  @override
+  String get audioBubbleCollapse => 'ย่อแถบเสียง';
+
+  @override
+  String get studyTreeExpandAll => 'ขยายทั้งหมด';
+
+  @override
+  String get studyTreeCollapseAll => 'ย่อทั้งหมด';
 }

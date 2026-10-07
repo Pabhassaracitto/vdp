@@ -1180,4 +1180,37 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'प्लेअर बंद करा';
+
+  @override
+  String get playModeTitle => 'ऐकण्याचा मोड';
+
+  @override
+  String get playModeOnce => 'फक्त हा घटक';
+
+  @override
+  String get playModeSequence => 'सलग ऐका';
+
+  @override
+  String get playModeOnceHint => 'सध्याचा घटक संपल्यावर थांबेल';
+
+  @override
+  String get playModeRepeatOneHint => 'सध्याचा घटक पुन्हा पुन्हा वाचेल';
+
+  @override
+  String get playModeSequenceHint => 'पुढील घटक सुरू ठेवेल, यादी संपल्यावर थांबेल';
+
+  @override
+  String get playModeRepeatAllHint => 'सुरू ठेवेल आणि यादी संपल्यावर सुरुवातीला परतेल';
+
+  @override
+  String get audioBubbleExpand => 'प्लेअर विस्तृत करा';
+
+  @override
+  String get audioBubbleCollapse => 'प्लेअर आकुंचित करा';
+
+  @override
+  String get studyTreeExpandAll => 'सर्व विस्तृत करा';
+
+  @override
+  String get studyTreeCollapseAll => 'सर्व आकुंचित करा';
 }

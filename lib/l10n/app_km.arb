@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "របៀបស្ដាប់",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "តែធាតុនេះ",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "ស្ដាប់បន្តបន្ទាប់",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "ឈប់នៅពេលធាតុបច្ចុប្បន្នអានចប់",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "អានធាតុបច្ចុប្បន្នឡើងវិញ",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "បន្តទៅធាតុបន្ទាប់ ហើយឈប់នៅចុងបញ្ជី",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "បន្តអាន ហើយត្រឡប់ទៅដើមវិញនៅចុងបញ្ជី",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "ពង្រីកឧបករណ៍ចាក់",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "បង្រួមឧបករណ៍ចាក់",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "ពង្រីកទាំងអស់",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "បង្រួមទាំងអស់",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

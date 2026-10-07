@@ -1183,4 +1183,37 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'பிளேயரை மூடவும்';
+
+  @override
+  String get playModeTitle => 'கேட்கும் பயன்முறை';
+
+  @override
+  String get playModeOnce => 'இந்த உருப்படி மட்டும்';
+
+  @override
+  String get playModeSequence => 'தொடர்ந்து இயக்கு';
+
+  @override
+  String get playModeOnceHint => 'தற்போதைய உருப்படி முடிந்ததும் நிற்கும்';
+
+  @override
+  String get playModeRepeatOneHint => 'தற்போதைய உருப்படியை மீண்டும் மீண்டும் வாசிக்கும்';
+
+  @override
+  String get playModeSequenceHint => 'அடுத்த உருப்படிகளைத் தொடர்ந்து வாசிக்கும், பட்டியல் முடிவில் நிற்கும்';
+
+  @override
+  String get playModeRepeatAllHint => 'தொடர்ந்து வாசித்து, முடிவில் மீண்டும் தொடக்கத்திற்குச் செல்லும்';
+
+  @override
+  String get audioBubbleExpand => 'பிளேயரை விரிவாக்கு';
+
+  @override
+  String get audioBubbleCollapse => 'பிளேயரைச் சுருக்கு';
+
+  @override
+  String get studyTreeExpandAll => 'அனைத்தையும் விரிவாக்கு';
+
+  @override
+  String get studyTreeCollapseAll => 'அனைத்தையும் சுருக்கு';
 }

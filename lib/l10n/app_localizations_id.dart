@@ -1181,4 +1181,37 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'Tutup pemutar';
+
+  @override
+  String get playModeTitle => 'Mode mendengarkan';
+
+  @override
+  String get playModeOnce => 'Hanya item ini';
+
+  @override
+  String get playModeSequence => 'Mendengar berurutan';
+
+  @override
+  String get playModeOnceHint => 'Berhenti setelah item saat ini selesai';
+
+  @override
+  String get playModeRepeatOneHint => 'Mengulang item saat ini';
+
+  @override
+  String get playModeSequenceHint => 'Melanjutkan ke item berikutnya, berhenti di akhir daftar';
+
+  @override
+  String get playModeRepeatAllHint => 'Melanjutkan dan kembali ke awal saat daftar habis';
+
+  @override
+  String get audioBubbleExpand => 'Bentangkan pemutar';
+
+  @override
+  String get audioBubbleCollapse => 'Lipat pemutar';
+
+  @override
+  String get studyTreeExpandAll => 'Bentangkan semua';
+
+  @override
+  String get studyTreeCollapseAll => 'Lipat semua';
 }

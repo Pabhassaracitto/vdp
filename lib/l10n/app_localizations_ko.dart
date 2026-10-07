@@ -1176,4 +1176,37 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get audioFloatingClose => '플레이어 닫기';
+
+  @override
+  String get playModeTitle => '재생 모드';
+
+  @override
+  String get playModeOnce => '이 항목만';
+
+  @override
+  String get playModeSequence => '연속 재생';
+
+  @override
+  String get playModeOnceHint => '현재 항목을 다 읽으면 정지';
+
+  @override
+  String get playModeRepeatOneHint => '현재 항목을 반복해서 읽음';
+
+  @override
+  String get playModeSequenceHint => '다음 항목으로 계속 읽고 목록 끝에서 정지';
+
+  @override
+  String get playModeRepeatAllHint => '계속 읽고 목록 끝에서 처음으로 돌아감';
+
+  @override
+  String get audioBubbleExpand => '플레이어 펼치기';
+
+  @override
+  String get audioBubbleCollapse => '플레이어 접기';
+
+  @override
+  String get studyTreeExpandAll => '모두 펼치기';
+
+  @override
+  String get studyTreeCollapseAll => '모두 접기';
 }

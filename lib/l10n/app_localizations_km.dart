@@ -1178,4 +1178,37 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'បិទឧបករណ៍ចាក់';
+
+  @override
+  String get playModeTitle => 'របៀបស្ដាប់';
+
+  @override
+  String get playModeOnce => 'តែធាតុនេះ';
+
+  @override
+  String get playModeSequence => 'ស្ដាប់បន្តបន្ទាប់';
+
+  @override
+  String get playModeOnceHint => 'ឈប់នៅពេលធាតុបច្ចុប្បន្នអានចប់';
+
+  @override
+  String get playModeRepeatOneHint => 'អានធាតុបច្ចុប្បន្នឡើងវិញ';
+
+  @override
+  String get playModeSequenceHint => 'បន្តទៅធាតុបន្ទាប់ ហើយឈប់នៅចុងបញ្ជី';
+
+  @override
+  String get playModeRepeatAllHint => 'បន្តអាន ហើយត្រឡប់ទៅដើមវិញនៅចុងបញ្ជី';
+
+  @override
+  String get audioBubbleExpand => 'ពង្រីកឧបករណ៍ចាក់';
+
+  @override
+  String get audioBubbleCollapse => 'បង្រួមឧបករណ៍ចាក់';
+
+  @override
+  String get studyTreeExpandAll => 'ពង្រីកទាំងអស់';
+
+  @override
+  String get studyTreeCollapseAll => 'បង្រួមទាំងអស់';
 }

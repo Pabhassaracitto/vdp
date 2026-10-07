@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "Mode d’écoute",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "Seulement cet élément",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "Lecture continue",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "S’arrête à la fin de l’élément en cours",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "Répète l’élément en cours",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "Continue avec les éléments suivants, s’arrête à la fin de la liste",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "Continue puis revient au début à la fin de la liste",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "Développer le lecteur",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "Réduire le lecteur",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "Tout développer",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "Tout réduire",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

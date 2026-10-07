@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
+import '../../data/models/lesson_content.dart';
 import '../../data/models/study_module.dart';
 import '../../data/repositories/vdp_repository.dart';
 import '../../l10n/l10n.dart';
@@ -1314,230 +1315,581 @@ class _SmartRecommendation extends ConsumerWidget {
   }
 }
 
-class _ModuleGraph extends ConsumerWidget {
+/// Cây học tập có hệ thống (VDP 0.10.3 §3 — "phần học tập chưa được hệ thống"):
+/// thay danh sách module phẳng bằng CÂY 3 tầng
+///   Giai đoạn → Module → Mục bài học,
+/// mỗi nhánh mở/đóng được như cây thư mục, kèm nút MỞ RỘNG TẤT CẢ / THU GỌN
+/// TẤT CẢ để thu cả cây về đúng các đầu mục. Mục bài học mở thẳng tới đúng
+/// đoạn trong bài (ModuleDetailScreen.initialSectionId) và nghe riêng được
+/// mục đó — học có hệ thống luôn vững hơn học rời rạc.
+class _ModuleGraph extends ConsumerStatefulWidget {
   final UserProgress progress;
   const _ModuleGraph({required this.progress});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final phase1 =
-        kStudyModules.where((m) => (m['phase'] as int) == 1).toList();
-    final phase2 =
-        kStudyModules.where((m) => (m['phase'] as int) == 2).toList();
-    final phase3 =
-        kStudyModules.where((m) => (m['phase'] as int) == 3).toList();
+  ConsumerState<_ModuleGraph> createState() => _ModuleGraphState();
+}
+
+class _ModuleGraphState extends ConsumerState<_ModuleGraph> {
+  /// Nhánh đang mở, khoá theo tầng: `'phase:1'`, `'module:M1_BASICS'`.
+  /// Mặc định mở Giai đoạn 1 để người mới thấy ngay mình bắt đầu từ đâu.
+  final Set<String> _expanded = {'phase:1'};
+
+  List<StudyModule> get _allModules => kStudyModules
+      .map((m) => StudyModule.fromJson(Map<String, dynamic>.from(m)))
+      .toList();
+
+  void _toggle(String nodeId) {
+    setState(() {
+      if (!_expanded.remove(nodeId)) _expanded.add(nodeId);
+    });
+  }
+
+  void _expandAll() {
+    setState(() {
+      for (final module in _allModules) {
+        _expanded.add('phase:${module.phase}');
+        _expanded.add('module:${module.id}');
+      }
+    });
+  }
+
+  void _collapseAll() {
+    setState(_expanded.clear);
+  }
+
+  List<({int number, String title})> _phases(BuildContext context) => [
+        (number: 1, title: context.l10n.phaseFoundation),
+        (number: 2, title: context.l10n.phaseCausality),
+        (number: 3, title: context.l10n.phaseMastery),
+      ];
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = widget.progress;
+    final allModules = _allModules;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 8),
-        _PhaseSection(
-            title: context.l10n.phaseFoundation,
-            phase: 1,
-            modules: phase1,
-            progress: progress),
-        const SizedBox(height: 8),
-        _PhaseSection(
-            title: context.l10n.phaseCausality,
-            phase: 2,
-            modules: phase2,
-            progress: progress),
-        const SizedBox(height: 8),
-        _PhaseSection(
-            title: context.l10n.phaseMastery,
-            phase: 3,
-            modules: phase3,
-            progress: progress),
+        // ── Thanh điều khiển cây: mở rộng / thu gọn toàn bộ ────────────────
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                context.l10n.studyPath,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w800,
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
+                ),
+              ),
+            ),
+            TextButton.icon(
+              onPressed: _expandAll,
+              icon: const Icon(Icons.unfold_more_rounded, size: 18),
+              label: Text(
+                context.l10n.studyTreeExpandAll,
+                style: const TextStyle(fontSize: 12),
+              ),
+            ),
+            TextButton.icon(
+              onPressed: _collapseAll,
+              icon: const Icon(Icons.unfold_less_rounded, size: 18),
+              label: Text(
+                context.l10n.studyTreeCollapseAll,
+                style: const TextStyle(fontSize: 12),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 4),
+
+        // ── Tầng 1: Giai đoạn ─────────────────────────────────────────────
+        for (final phase in _phases(context))
+          ..._buildPhase(
+            context,
+            number: phase.number,
+            title: phase.title,
+            modules: allModules.where((m) => m.phase == phase.number).toList(),
+            allModules: allModules,
+            progress: progress,
+          ),
       ],
+    );
+  }
+
+  List<Widget> _buildPhase(
+    BuildContext context, {
+    required int number,
+    required String title,
+    required List<StudyModule> modules,
+    required List<StudyModule> allModules,
+    required UserProgress progress,
+  }) {
+    final nodeId = 'phase:$number';
+    final expanded = _expanded.contains(nodeId);
+    var completed = 0;
+    var sumPct = 0.0;
+    for (final module in modules) {
+      final pct = progress.moduleProgress[module.id]?.completionPercentage ?? 0;
+      sumPct += pct;
+      if (pct >= 80) completed++;
+    }
+    final avgPct = modules.isEmpty ? 0 : (sumPct / modules.length).round();
+
+    return [
+      _TreeHeader(
+        key: ValueKey('header:$nodeId'),
+        expanded: expanded,
+        onTap: () => _toggle(nodeId),
+        leading: Container(
+          width: 28,
+          height: 28,
+          decoration: const BoxDecoration(
+            color: VdpColors.primary,
+            shape: BoxShape.circle,
+          ),
+          alignment: Alignment.center,
+          child: Text(
+            '$number',
+            style: TextStyle(
+              color: Theme.of(context).cardColor,
+              fontWeight: FontWeight.bold,
+              fontSize: 13,
+            ),
+          ),
+        ),
+        title: title,
+        subtitle: '${context.l10n.modulesCompleted(completed, modules.length)}'
+            ' · ${context.l10n.studyProgressPercent(avgPct)}',
+        emphasized: true,
+      ),
+      AnimatedSize(
+        duration: const Duration(milliseconds: 180),
+        curve: Curves.easeOut,
+        alignment: Alignment.topCenter,
+        child: expanded
+            ? Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  for (final module in modules)
+                    ..._buildModule(
+                      context,
+                      module: module,
+                      allModules: allModules,
+                      progress: progress,
+                    ),
+                ],
+              )
+            : const SizedBox(width: double.infinity),
+      ),
+      const SizedBox(height: 6),
+    ];
+  }
+
+  List<Widget> _buildModule(
+    BuildContext context, {
+    required StudyModule module,
+    required List<StudyModule> allModules,
+    required UserProgress progress,
+  }) {
+    final nodeId = 'module:${module.id}';
+    final expanded = _expanded.contains(nodeId);
+    final isUnlocked = progress.isModuleUnlocked(module, allModules);
+    final pct = progress.moduleProgress[module.id]?.completionPercentage ?? 0;
+    final color = Color(module.colorCode);
+    final isDueForReview = progress.isModuleDueForReview(module);
+    final sections = module.lessonContent(context).sections;
+
+    return [
+      _ModuleNode(
+        key: ValueKey('moduleHeader:$nodeId'),
+        module: module,
+        color: color,
+        isUnlocked: isUnlocked,
+        allUnlocked: progress.allModulesUnlocked,
+        pct: pct,
+        isDueForReview: isDueForReview,
+        expanded: expanded,
+        sectionCount: sections.length,
+        onToggle: () => _toggle(nodeId),
+        onOpen: isUnlocked
+            ? () => _openModule(context, module)
+            : null,
+      ),
+      AnimatedSize(
+        duration: const Duration(milliseconds: 180),
+        curve: Curves.easeOut,
+        alignment: Alignment.topCenter,
+        child: expanded && isUnlocked
+            ? Padding(
+                padding: const EdgeInsetsDirectional.only(start: 24, end: 0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    for (var i = 0; i < sections.length; i++)
+                      _SectionLeaf(
+                        section: sections[i],
+                        index: i + 1,
+                        color: color,
+                        onOpen: () => _openModule(
+                          context,
+                          module,
+                          sectionId: sections[i].id,
+                        ),
+                        onListen: () => _openModule(
+                          context,
+                          module,
+                          sectionId: sections[i].id,
+                          autoPlay: true,
+                        ),
+                      ),
+                    if (sections.isEmpty)
+                      Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            8, 2, 8, 10),
+                        child: Text(
+                          context.l10n.moduleHasNoData,
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey.shade600,
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+              )
+            : const SizedBox(width: double.infinity),
+      ),
+      const SizedBox(height: 8),
+    ];
+  }
+
+  void _openModule(
+    BuildContext context,
+    StudyModule module, {
+    String? sectionId,
+    bool autoPlay = false,
+  }) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ModuleDetailScreen(
+          moduleData: module,
+          initialSectionId: sectionId,
+          autoPlaySection: autoPlay,
+        ),
+      ),
     );
   }
 }
 
-class _PhaseSection extends StatelessWidget {
-  final String title;
-  final int phase;
-  final List<Map<String, dynamic>> modules;
-  final UserProgress progress;
-
-  const _PhaseSection({
+/// Đầu mục của một nhánh cây (giai đoạn hoặc module) — hàng bấm được, có mũi
+/// tên xoay theo trạng thái mở/đóng.
+class _TreeHeader extends StatelessWidget {
+  const _TreeHeader({
+    super.key,
+    required this.expanded,
+    required this.onTap,
+    required this.leading,
     required this.title,
-    required this.phase,
-    required this.modules,
-    required this.progress,
+    this.subtitle,
+    this.emphasized = false,
   });
+
+  final bool expanded;
+  final VoidCallback onTap;
+  final Widget leading;
+  final String title;
+  final String? subtitle;
+  final bool emphasized;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: EdgeInsets.only(bottom: 10),
+    return Semantics(
+      button: true,
+      expanded: expanded,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(10),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 6),
           child: Row(
             children: [
-              Container(
-                width: 28,
-                height: 28,
-                decoration: const BoxDecoration(
-                  color: VdpColors.primary,
-                  shape: BoxShape.circle,
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  '$phase',
-                  style: TextStyle(
-                    color: Theme.of(context).cardColor,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 13,
-                  ),
+              leading,
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: TextStyle(
+                        fontSize: emphasized ? 15 : 14,
+                        fontWeight:
+                            emphasized ? FontWeight.w700 : FontWeight.w600,
+                        color: Theme.of(context).textTheme.bodyLarge?.color,
+                      ),
+                    ),
+                    if (subtitle != null && subtitle!.isNotEmpty)
+                      Text(
+                        subtitle!,
+                        style: TextStyle(fontSize: 11, color: Colors.grey),
+                      ),
+                  ],
                 ),
               ),
-              SizedBox(width: 10),
-              Text(
-                title,
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                  color: Theme.of(context).textTheme.bodyLarge?.color,
-                ),
+              AnimatedRotation(
+                turns: expanded ? 0.0 : -0.25,
+                duration: const Duration(milliseconds: 180),
+                child: const Icon(Icons.keyboard_arrow_down_rounded,
+                    size: 20, color: Colors.grey),
               ),
             ],
           ),
         ),
-        ...modules.map((m) => _ModuleCard(moduleData: m, progress: progress)),
-      ],
+      ),
     );
   }
 }
 
-class _ModuleCard extends ConsumerWidget {
-  final Map<String, dynamic> moduleData;
-  final UserProgress progress;
+/// Đầu mục một MODULE trong cây — giữ nguyên ngôn ngữ thẻ cũ (icon tròn màu
+/// module, thanh tiến độ, huy hiệu khóa / đến hạn ôn) nhưng thêm mũi tên mở
+/// ra danh sách mục bài học bên dưới.
+class _ModuleNode extends StatelessWidget {
+  const _ModuleNode({
+    super.key,
+    required this.module,
+    required this.color,
+    required this.isUnlocked,
+    required this.allUnlocked,
+    required this.pct,
+    required this.isDueForReview,
+    required this.expanded,
+    required this.sectionCount,
+    required this.onToggle,
+    required this.onOpen,
+  });
 
-  const _ModuleCard({required this.moduleData, required this.progress});
+  final StudyModule module;
+  final Color color;
+  final bool isUnlocked;
+  final bool allUnlocked;
+  final double pct;
+  final bool isDueForReview;
+  final bool expanded;
+  final int sectionCount;
+  final VoidCallback onToggle;
+  final VoidCallback? onOpen;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final allModules = kStudyModules
-        .map((m) => StudyModule(
-              id: m['id'] as String,
-              title: m['title'] as String,
-              titlePali: m['titlePali'] as String,
-              description: m['description'] as String,
-              prerequisiteIds: List<String>.from(m['prerequisiteIds'] ?? []),
-              cittaIds: List<String>.from(m['cittaIds'] ?? []),
-              cetasikaIds: List<String>.from(m['cetasikaIds'] ?? []),
-              recommendedOrder: m['recommendedOrder'] as int,
-              colorCode: m['colorCode'] as int,
-              icon: m['icon'] as String,
-              isRequired: (m['isRequired'] as bool?) ?? false,
-              phase: (m['phase'] as int?) ?? 1,
-            ))
-        .toList();
-
-    final module = allModules.firstWhere((m) => m.id == moduleData['id']);
-    final isUnlocked = progress.isModuleUnlocked(module, allModules);
-    final modProgress = progress.moduleProgress[module.id];
-    final pct = modProgress?.completionPercentage ?? 0;
-    final color = Color(module.colorCode);
-    final isDueForReview = progress.isModuleDueForReview(module);
-
-    return GestureDetector(
-      onTap: isUnlocked
-          ? () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ModuleDetailScreen(moduleData: module),
-                ),
-              )
-          : null,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        margin: EdgeInsets.only(bottom: 12),
-        padding: EdgeInsets.all(14),
-        decoration: BoxDecoration(
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 2, top: 2),
+      decoration: BoxDecoration(
+        color: isUnlocked
+            ? Theme.of(context).cardColor
+            : Theme.of(context).scaffoldBackgroundColor,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
           color: isUnlocked
-              ? Theme.of(context).cardColor
-              : Theme.of(context).scaffoldBackgroundColor,
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(
-            color: isUnlocked
-                ? color.withOpacity(0.4)
-                : Theme.of(context).dividerColor,
-          ),
+              ? color.withOpacity(0.4)
+              : Theme.of(context).dividerColor,
         ),
+      ),
+      child: Column(
+        children: [
+          InkWell(
+            // Bấm vào thân = mở/đóng nhánh (hành vi cây thư mục).
+            onTap: isUnlocked ? onToggle : onOpen,
+            borderRadius: BorderRadius.circular(14),
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Row(
+                children: [
+                  Stack(
+                    clipBehavior: Clip.none,
+                    alignment: Alignment.center,
+                    children: [
+                      Container(
+                        width: 44,
+                        height: 44,
+                        decoration: BoxDecoration(
+                          color: isUnlocked
+                              ? color.withOpacity(0.12)
+                              : Colors.grey.shade200,
+                          shape: BoxShape.circle,
+                        ),
+                        alignment: Alignment.center,
+                        child:
+                            Text(module.icon, style: const TextStyle(fontSize: 20)),
+                      ),
+                      if (isDueForReview)
+                        Positioned(
+                          top: -4,
+                          right: -4,
+                          child: Container(
+                            padding: const EdgeInsets.all(4),
+                            decoration: const BoxDecoration(
+                                color: Colors.orange, shape: BoxShape.circle),
+                            child: const Icon(Icons.refresh,
+                                size: 10, color: Colors.white),
+                          ),
+                        ),
+                      if (!isUnlocked && !allUnlocked)
+                        Container(
+                          width: 44,
+                          height: 44,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.6),
+                            shape: BoxShape.circle,
+                          ),
+                          alignment: Alignment.center,
+                          child: const Icon(Icons.lock,
+                              size: 18, color: Colors.grey),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          module.localizedTitle(context),
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            color: isUnlocked
+                                ? Theme.of(context).textTheme.bodyLarge?.color
+                                : Colors.grey,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                module.titlePali,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontStyle: FontStyle.italic,
+                                  color: Colors.grey.shade600,
+                                ),
+                              ),
+                            ),
+                            if (sectionCount > 0) ...[
+                              Icon(Icons.article_outlined,
+                                  size: 12, color: Colors.grey.shade600),
+                              const SizedBox(width: 3),
+                              Text(
+                                '$sectionCount',
+                                style: TextStyle(
+                                  fontSize: 10.5,
+                                  color: Colors.grey.shade600,
+                                ),
+                              ),
+                            ],
+                          ],
+                        ),
+                        if (isUnlocked && pct > 0) ...[
+                          const SizedBox(height: 6),
+                          LinearProgressIndicator(
+                            value: pct / 100,
+                            backgroundColor: Colors.grey.shade200,
+                            valueColor: AlwaysStoppedAnimation<Color>(color),
+                            minHeight: 4,
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  if (isUnlocked)
+                    IconButton(
+                      onPressed: onOpen,
+                      icon: Icon(Icons.menu_book_rounded, size: 20, color: color),
+                    ),
+                  AnimatedRotation(
+                    turns: expanded ? 0.0 : -0.25,
+                    duration: const Duration(milliseconds: 180),
+                    child: Icon(
+                      Icons.keyboard_arrow_down_rounded,
+                      size: 20,
+                      color: isUnlocked ? color : Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Lá của cây: MỘT mục bài học trong module. Bấm = mở bài đúng đoạn đó;
+/// nút loa = mở bài và nghe riêng mục đó (nối liền học–nghe).
+class _SectionLeaf extends StatelessWidget {
+  const _SectionLeaf({
+    required this.section,
+    required this.index,
+    required this.color,
+    required this.onOpen,
+    required this.onListen,
+  });
+
+  final LessonSection section;
+  final int index;
+  final Color color;
+  final VoidCallback onOpen;
+  final VoidCallback onListen;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onOpen,
+      borderRadius: BorderRadius.circular(8),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
         child: Row(
           children: [
-            Stack(
-              clipBehavior: Clip.none,
+            Container(
+              width: 22,
+              height: 22,
               alignment: Alignment.center,
-              children: [
-                Container(
-                  width: 48,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: isUnlocked
-                        ? color.withOpacity(0.12)
-                        : Colors.grey.shade200,
-                    shape: BoxShape.circle,
-                  ),
-                  alignment: Alignment.center,
-                  child: Text(module.icon, style: TextStyle(fontSize: 22)),
+              decoration: BoxDecoration(
+                color: color.withOpacity(0.12),
+                borderRadius: BorderRadius.circular(6),
+              ),
+              child: Text(
+                '$index',
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                  color: color,
                 ),
-                if (isDueForReview)
-                  Positioned(
-                    top: -4,
-                    right: -4,
-                    child: Container(
-                      padding: EdgeInsets.all(4),
-                      decoration: const BoxDecoration(
-                          color: Colors.orange, shape: BoxShape.circle),
-                      child: const Icon(Icons.refresh,
-                          size: 10, color: Colors.white),
-                    ),
-                  ),
-                if (progress.allModulesUnlocked)
-                  const Positioned(
-                      right: 0,
-                      bottom: 0,
-                      child: Icon(Icons.lock_open,
-                          size: 14, color: VdpColors.secondary)),
-                if (!isUnlocked && !progress.allModulesUnlocked)
-                  Container(
-                    width: 48,
-                    height: 48,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.6),
-                      shape: BoxShape.circle,
-                    ),
-                    alignment: Alignment.center,
-                    child: const Icon(Icons.lock, size: 18, color: Colors.grey),
-                  ),
-              ],
+              ),
             ),
-            const SizedBox(width: 14),
+            const SizedBox(width: 10),
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    module.localizedTitle(context),
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w700,
-                      color: isUnlocked
-                          ? Theme.of(context).textTheme.bodyLarge?.color
-                          : Colors.grey,
-                    ),
-                  ),
-                  if (isUnlocked && pct > 0)
-                    LinearProgressIndicator(
-                      value: pct / 100,
-                      backgroundColor: Colors.grey.shade200,
-                      valueColor: AlwaysStoppedAnimation<Color>(color),
-                      minHeight: 4,
-                    ),
-                ],
+              child: Text(
+                section.title,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 13, height: 1.25),
+              ),
+            ),
+            Tooltip(
+              message: context.l10n.listenFromHere,
+              child: IconButton(
+                onPressed: onListen,
+                visualDensity: VisualDensity.compact,
+                icon: Icon(Icons.headphones_rounded, size: 18, color: color),
               ),
             ),
           ],
@@ -1546,6 +1898,7 @@ class _ModuleCard extends ConsumerWidget {
     );
   }
 }
+
 
 class _OverallProgressSheet extends StatelessWidget {
   final UserProgress progress;

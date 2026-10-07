@@ -1552,5 +1552,49 @@
   "audioFloatingClose": "Đóng phiên nghe",
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "Chế độ nghe",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "Chỉ mục này",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "Tịnh tiến",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "Đọc xong mục đang chọn thì dừng",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "Đọc lặp lại mục đang chọn",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "Đọc tiếp các mục sau, hết danh sách thì dừng",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "Đọc tiếp và quay vòng về đầu khi hết danh sách",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "Mở rộng thanh nghe",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "Thu gọn thanh nghe",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "Mở rộng toàn bộ",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "Thu gọn toàn bộ",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

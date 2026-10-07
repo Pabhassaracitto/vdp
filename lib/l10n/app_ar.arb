@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "وضع الاستماع",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "هذا العنصر فقط",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "تشغيل متتابع",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "يتوقف عند انتهاء العنصر الحالي",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "يكرر العنصر الحالي",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "يتابع العناصر التالية ويتوقف في نهاية القائمة",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "يتابع ثم يعود إلى البداية عند نهاية القائمة",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "توسيع المشغل",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "طي المشغل",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "توسيع الكل",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "طي الكل",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

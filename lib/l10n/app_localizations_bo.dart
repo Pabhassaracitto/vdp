@@ -1181,4 +1181,37 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'སྒྲ་གཏོང་ཆས་རྒྱག';
+
+  @override
+  String get playModeTitle => 'Play mode';
+
+  @override
+  String get playModeOnce => 'This item only';
+
+  @override
+  String get playModeSequence => 'Play through';
+
+  @override
+  String get playModeOnceHint => 'Stops when the current item finishes';
+
+  @override
+  String get playModeRepeatOneHint => 'Keeps repeating the current item';
+
+  @override
+  String get playModeSequenceHint => 'Continues to the next items, stops at the end of the list';
+
+  @override
+  String get playModeRepeatAllHint => 'Continues and loops back to the start at the end';
+
+  @override
+  String get audioBubbleExpand => 'Expand player';
+
+  @override
+  String get audioBubbleCollapse => 'Collapse player';
+
+  @override
+  String get studyTreeExpandAll => 'Expand all';
+
+  @override
+  String get studyTreeCollapseAll => 'Collapse all';
 }

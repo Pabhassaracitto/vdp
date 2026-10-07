@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "Mode mendengarkan",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "Hanya item ini",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "Mendengar berurutan",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "Berhenti setelah item saat ini selesai",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "Mengulang item saat ini",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "Melanjutkan ke item berikutnya, berhenti di akhir daftar",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "Melanjutkan dan kembali ke awal saat daftar habis",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "Bentangkan pemutar",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "Lipat pemutar",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "Bentangkan semua",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "Lipat semua",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

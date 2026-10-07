@@ -1184,4 +1184,37 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'Chiudi lettore';
+
+  @override
+  String get playModeTitle => 'Modalità di ascolto';
+
+  @override
+  String get playModeOnce => 'Solo questo elemento';
+
+  @override
+  String get playModeSequence => 'Ascolto continuo';
+
+  @override
+  String get playModeOnceHint => 'Si ferma al termine dell’elemento corrente';
+
+  @override
+  String get playModeRepeatOneHint => 'Ripete l’elemento corrente';
+
+  @override
+  String get playModeSequenceHint => 'Prosegue con gli elementi successivi e si ferma a fine elenco';
+
+  @override
+  String get playModeRepeatAllHint => 'Prosegue e ricomincia dall’inizio a fine elenco';
+
+  @override
+  String get audioBubbleExpand => 'Espandi il lettore';
+
+  @override
+  String get audioBubbleCollapse => 'Comprimi il lettore';
+
+  @override
+  String get studyTreeExpandAll => 'Espandi tutto';
+
+  @override
+  String get studyTreeCollapseAll => 'Comprimi tutto';
 }

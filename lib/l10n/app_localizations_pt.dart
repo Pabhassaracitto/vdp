@@ -1182,4 +1182,37 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'Fechar reprodutor';
+
+  @override
+  String get playModeTitle => 'Modo de reprodução';
+
+  @override
+  String get playModeOnce => 'Apenas este item';
+
+  @override
+  String get playModeSequence => 'Reprodução contínua';
+
+  @override
+  String get playModeOnceHint => 'Para quando o item atual terminar';
+
+  @override
+  String get playModeRepeatOneHint => 'Repete o item atual';
+
+  @override
+  String get playModeSequenceHint => 'Continua para os próximos itens e para no fim da lista';
+
+  @override
+  String get playModeRepeatAllHint => 'Continua e volta ao início no fim da lista';
+
+  @override
+  String get audioBubbleExpand => 'Expandir reprodutor';
+
+  @override
+  String get audioBubbleCollapse => 'Recolher reprodutor';
+
+  @override
+  String get studyTreeExpandAll => 'Expandir tudo';
+
+  @override
+  String get studyTreeCollapseAll => 'Recolher tudo';
 }

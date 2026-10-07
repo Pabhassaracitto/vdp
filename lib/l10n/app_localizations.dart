@@ -2182,6 +2182,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Close player'**
   String get audioFloatingClose;
+
+  /// playModeTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Play mode'**
+  String get playModeTitle;
+
+  /// playModeOnce
+  ///
+  /// In en, this message translates to:
+  /// **'This item only'**
+  String get playModeOnce;
+
+  /// playModeSequence
+  ///
+  /// In en, this message translates to:
+  /// **'Play through'**
+  String get playModeSequence;
+
+  /// playModeOnceHint
+  ///
+  /// In en, this message translates to:
+  /// **'Stops when the current item finishes'**
+  String get playModeOnceHint;
+
+  /// playModeRepeatOneHint
+  ///
+  /// In en, this message translates to:
+  /// **'Keeps repeating the current item'**
+  String get playModeRepeatOneHint;
+
+  /// playModeSequenceHint
+  ///
+  /// In en, this message translates to:
+  /// **'Continues to the next items, stops at the end of the list'**
+  String get playModeSequenceHint;
+
+  /// playModeRepeatAllHint
+  ///
+  /// In en, this message translates to:
+  /// **'Continues and loops back to the start at the end'**
+  String get playModeRepeatAllHint;
+
+  /// audioBubbleExpand
+  ///
+  /// In en, this message translates to:
+  /// **'Expand player'**
+  String get audioBubbleExpand;
+
+  /// audioBubbleCollapse
+  ///
+  /// In en, this message translates to:
+  /// **'Collapse player'**
+  String get audioBubbleCollapse;
+
+  /// studyTreeExpandAll
+  ///
+  /// In en, this message translates to:
+  /// **'Expand all'**
+  String get studyTreeExpandAll;
+
+  /// studyTreeCollapseAll
+  ///
+  /// In en, this message translates to:
+  /// **'Collapse all'**
+  String get studyTreeCollapseAll;
 }
 
 class _AppLocalizationsDelegate

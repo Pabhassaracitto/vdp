@@ -19,11 +19,13 @@ import '../../shared/widgets/cetasika_header.dart';
 import '../../shared/widgets/citta_row_header.dart';
 import '../../shared/widgets/matrix_corner_header.dart';
 import '../audio/providers/audio_player_provider.dart';
+import '../audio/widgets/audio_controls_common.dart';
 import '../audio/widgets/playlist_sheet.dart';
 import '../detail/cetasika_detail_sheet.dart';
 import '../detail/citta_detail_sheet.dart';
 import '../settings/settings_screen.dart';
 import 'matrix_audio_session.dart';
+import 'matrix_listen_hint.dart';
 
 final selectedCittaProvider = StateProvider<String?>((ref) => null);
 final selectedCetasikaProvider = StateProvider<String?>((ref) => null);
@@ -206,7 +208,108 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   //  Dùng lại engine nghe chung của app (audioPlayerProvider): nhấn giữ
   //  hàng/cột để nghe từ mục đó, nút tai nghe ở góc bảng để nghe cả danh
   //  sách. Thanh nghe nổi toàn app điều khiển phiên như mọi tab khác.
+  //
+  //  VDP 0.10.3 (góp ý §1 + §2): cử chỉ nhấn giữ được GIỚI THIỆU một lần
+  //  bằng tấm hướng dẫn ở đầu bảng; và ngay sau khi phát, một SnackBar cho
+  //  người dùng đổi nhanh giữa "chỉ mục này" ↔ "tịnh tiến" mà không phải đi
+  //  tìm — ngoài ra chip chế độ nghe nằm trong hàng lọc và cấp 2 của thanh
+  //  nghe nổi toàn app.
   // ════════════════════════════════════════════════════════════
+
+  /// Sau khi bắt đầu nghe từ một mục: đánh dấu cử chỉ đã được khám phá và
+  /// mời đổi chế độ nghe ngay tại chỗ (1 mục ↔ tịnh tiến).
+  void _afterListenStarted(String title) {
+    ref.read(matrixListenHintSeenProvider.notifier).markSeen();
+    final mode = ref.read(audioPlayerProvider).playMode;
+    final isSingle = mode == AudioPlayMode.singleOnce ||
+        mode == AudioPlayMode.singleLoop;
+    final quickMode =
+        isSingle ? AudioPlayMode.sequenceOnce : AudioPlayMode.singleOnce;
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text('🎧 $title'),
+          duration: const Duration(seconds: 4),
+          action: SnackBarAction(
+            label: playModeLabel(context, quickMode),
+            onPressed: () async {
+              await ref.read(audioPlayerProvider.notifier).setPlayMode(quickMode);
+              if (!mounted) return;
+              var state = ref.read(audioPlayerProvider);
+              // Đang dừng ở cuối mục (chế độ "chỉ mục này" vừa đọc xong):
+              // đổi sang tịnh tiến là nghe tiếp luôn, không bắt bấm play lần nữa.
+              if (!state.isPlaying && state.currentTrack != null) {
+                await ref
+                    .read(audioPlayerProvider.notifier)
+                    .playFrom(state.currentTrack!.id);
+                if (!mounted) return;
+                state = ref.read(audioPlayerProvider);
+              }
+              if (!mounted) return;
+              ScaffoldMessenger.of(context)
+                ..hideCurrentSnackBar()
+                ..showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      '${context.l10n.playModeTitle}: '
+                      '${playModeLabel(context, state.playMode)}',
+                    ),
+                    duration: const Duration(seconds: 2),
+                  ),
+                );
+            },
+          ),
+        ),
+      );
+  }
+
+  /// Tấm chọn chế độ nghe — mở từ chip "chế độ" trong hàng lọc.
+  Future<void> _showPlayModeSheet() {
+    return showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (sheetCtx) => Container(
+        decoration: BoxDecoration(
+          color: Theme.of(sheetCtx).colorScheme.surface,
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+        ),
+        padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
+        child: SafeArea(
+          top: false,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Container(
+                  width: 36,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: Theme.of(sheetCtx).dividerColor,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 14),
+              Text(
+                sheetCtx.l10n.playModeTitle,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const SizedBox(height: 12),
+              PlayModeSelector(
+                color: Theme.of(sheetCtx).colorScheme.primary,
+              ),
+              const SizedBox(height: 6),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
   /// Phát từ một Tâm cụ thể (nhấn giữ hàng Tâm).
   Future<void> _listenFromCitta(CittaModel citta) async {
@@ -216,6 +319,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     await ref
         .read(audioPlayerProvider.notifier)
         .playFrom(MatrixAudioSession.trackId(MatrixAudioAxis.citta, citta.id));
+    if (!mounted) return;
+    _afterListenStarted(citta.localizedName(context));
   }
 
   /// Phát từ một Tâm Sở cụ thể (nhấn giữ cột Tâm Sở).
@@ -225,6 +330,8 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
     if (!mounted) return;
     await ref.read(audioPlayerProvider.notifier).playFrom(
         MatrixAudioSession.trackId(MatrixAudioAxis.cetasika, cetasika.id));
+    if (!mounted) return;
+    _afterListenStarted(cetasika.localizedName(context));
   }
 
   /// Nút tai nghe ở góc bảng: nghe cả danh sách của một trục; nếu phiên đó
@@ -428,6 +535,17 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
               !ref.read(progressProvider.notifier).warningDismissed)
             _buildWarningBanner(dataState),
           if (!isLandscape) _buildLegend(),
+          // Góp ý 0.10.3 §1: cử chỉ nhấn giữ vô hình với người mới — tấm
+          // hướng dẫn chỉ hiện đúng một lần cho mỗi cài đặt (xem
+          // matrix_listen_hint.dart). Ở landscape thì gọn còn một hàng chữ
+          // để không lấy đất của bảng.
+          if (ref.watch(matrixListenHintSeenProvider) == false)
+            _MatrixListenHintCard(
+              compact: isLandscape,
+              onDismiss: () =>
+                  ref.read(matrixListenHintSeenProvider.notifier).markSeen(),
+              onOpenModes: _showPlayModeSheet,
+            ),
           Expanded(
             child: _buildMatrix(
               context,
@@ -558,11 +676,36 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   // ════════════════════════════════════════════════════════════
 
   Widget _buildBhumiFilter() {
+    final audio = ref.watch(audioPlayerProvider);
+    final isMatrixSession = audio.hasSession &&
+        (audio.sourceKind == AudioSourceKind.matrixCitta ||
+            audio.sourceKind == AudioSourceKind.matrixCetasika);
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: Row(
         children: [
+          // Góp ý 0.10.3 §2: khi đang có phiên nghe Bảng Tương Ưng, hàng lọc
+          // mở đầu bằng chip CHẾ ĐỘ NGHE — bấm là đổi giữa "chỉ 1 mục",
+          // "lặp mục này", "tịnh tiến", "tịnh tiến · lặp". Chọn hàng lọc
+          // (vốn cuộn ngang, không tốn thêm chiều cao) để không lấy đất của
+          // bảng — chip đổi màu + icon theo chế độ hiện tại.
+          if (isMatrixSession)
+            Padding(
+              padding: const EdgeInsetsDirectional.only(end: 8),
+              child: ActionChip(
+                avatar: Icon(
+                  playModeIcon(audio.playMode),
+                  size: 16,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
+                label: Text(
+                  playModeLabel(context, audio.playMode),
+                  style: const TextStyle(fontSize: 12),
+                ),
+                onPressed: _showPlayModeSheet,
+              ),
+            ),
           _filterChip(null, context.l10n.allFilters, '🌐'),
           _filterChip(
             BhumiGroup.akusala,
@@ -1019,6 +1162,14 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
           ),
         ),
         actions: [
+          TextButton.icon(
+            onPressed: () {
+              Navigator.pop(ctx);
+              _showPlayModeSheet();
+            },
+            icon: const Icon(Icons.hearing_rounded, size: 18),
+            label: Text(ctx.l10n.playModeTitle),
+          ),
           TextButton(
             onPressed: () => Navigator.pop(ctx),
             child: Text(ctx.l10n.understood),
@@ -1029,6 +1180,7 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
   }
 
   void _showWarnings(VdpDataState dataState) {
+
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
@@ -1064,6 +1216,120 @@ class _MatrixScreenState extends ConsumerState<MatrixScreen> {
             child: Text(context.l10n.close),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Tấm hướng dẫn "nhấn giữ để nghe" của tab Bảng Tương Ưng (góp ý 0.10.3 §1).
+///
+/// Cử chỉ nhấn giữ không thể tự lộ ra, nên lần đầu mở bảng app nói thẳng:
+/// nhấn giữ hàng Tâm / cột Tâm Sở để nghe từ mục đó, và có thể chọn chế độ
+/// nghe (1 mục / tịnh tiến / lặp) ngay trên thanh nghe nổi. Người dùng bấm
+/// "Đã hiểu" hoặc tự nhấn giữ nghe lần đầu là tấm này biến mất vĩnh viễn.
+class _MatrixListenHintCard extends StatelessWidget {
+  const _MatrixListenHintCard({
+    required this.onDismiss,
+    required this.onOpenModes,
+    this.compact = false,
+  });
+
+  final VoidCallback onDismiss;
+  final VoidCallback onOpenModes;
+
+  /// Landscape: một hàng chữ gọn thay vì thẻ 3 dòng, nhường đất cho bảng.
+  final bool compact;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final color = theme.colorScheme.primary;
+    final body = Text(
+      context.l10n.matrixListenHelpBody,
+      style: TextStyle(
+        fontSize: compact ? 11.5 : 12.5,
+        height: 1.3,
+        color: theme.textTheme.bodyMedium?.color,
+      ),
+    );
+
+    return Semantics(
+      container: true,
+      label: '${context.l10n.matrixListenFromHint}. '
+          '${context.l10n.matrixListenHelpBody}',
+      child: Container(
+        margin: EdgeInsets.fromLTRB(12, compact ? 2 : 4, 12, compact ? 4 : 8),
+        padding: EdgeInsets.fromLTRB(12, compact ? 6 : 10, 6, compact ? 6 : 10),
+        decoration: BoxDecoration(
+          color: color.withOpacity(0.08),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: color.withOpacity(0.35)),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(top: compact ? 0 : 2),
+              child: Icon(
+                Icons.touch_app_rounded,
+                size: compact ? 16 : 20,
+                color: color,
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: compact
+                  ? body
+                  : Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          context.l10n.matrixListenFromHint,
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w800,
+                            color: color,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        body,
+                        const SizedBox(height: 6),
+                        // Mở tấm chọn chế độ nghe ngay từ hướng dẫn — người
+                        // mới biết ngay "à, còn chọn được 1 mục hay tịnh tiến".
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 4,
+                          children: [
+                            ActionChip(
+                              avatar: Icon(
+                                Icons.hearing_rounded,
+                                size: 16,
+                                color: color,
+                              ),
+                              label: Text(
+                                context.l10n.playModeTitle,
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              onPressed: onOpenModes,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+            ),
+            Semantics(
+              button: true,
+              label: context.l10n.understood,
+              child: TextButton(
+                onPressed: onDismiss,
+                child: Text(
+                  context.l10n.understood,
+                  style: const TextStyle(fontSize: 12),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

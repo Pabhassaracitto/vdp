@@ -1142,6 +1142,39 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get audioFloatingClose => '关闭播放器';
+
+  @override
+  String get playModeTitle => '播放模式';
+
+  @override
+  String get playModeOnce => '仅此项';
+
+  @override
+  String get playModeSequence => '连续播放';
+
+  @override
+  String get playModeOnceHint => '当前项读完后停止';
+
+  @override
+  String get playModeRepeatOneHint => '反复朗读当前项';
+
+  @override
+  String get playModeSequenceHint => '继续播放后面的项目，到列表末尾停止';
+
+  @override
+  String get playModeRepeatAllHint => '继续播放，到最后回到开头循环';
+
+  @override
+  String get audioBubbleExpand => '展开播放栏';
+
+  @override
+  String get audioBubbleCollapse => '收起播放栏';
+
+  @override
+  String get studyTreeExpandAll => '全部展开';
+
+  @override
+  String get studyTreeCollapseAll => '全部收起';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -2282,4 +2315,37 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get audioFloatingClose => '關閉播放器';
+
+  @override
+  String get playModeTitle => '播放模式';
+
+  @override
+  String get playModeOnce => '僅此項';
+
+  @override
+  String get playModeSequence => '連續播放';
+
+  @override
+  String get playModeOnceHint => '目前項目讀完後停止';
+
+  @override
+  String get playModeRepeatOneHint => '反覆朗讀目前項目';
+
+  @override
+  String get playModeSequenceHint => '繼續播放後面的項目，到清單末尾停止';
+
+  @override
+  String get playModeRepeatAllHint => '繼續播放，到最後回到開頭循環';
+
+  @override
+  String get audioBubbleExpand => '展開播放欄';
+
+  @override
+  String get audioBubbleCollapse => '收合播放欄';
+
+  @override
+  String get studyTreeExpandAll => '全部展開';
+
+  @override
+  String get studyTreeCollapseAll => '全部收合';
 }

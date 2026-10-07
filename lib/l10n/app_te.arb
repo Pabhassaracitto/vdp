@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "వినే మోడ్",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "ఈ అంశం మాత్రమే",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "వరుసగా వినండి",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "ప్రస్తుత అంశం పూర్తయ్యాక ఆగుతుంది",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "ప్రస్తుత అంశాన్ని పునరావృతం చేస్తుంది",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "తర్వాతి అంశాలను కొనసాగిస్తుంది, జాబితా చివరిలో ఆగుతుంది",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "కొనసాగించి, చివరిలో తిరిగి మొదటికి వెళ్తుంది",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "ప్లేయర్‌ను విస్తరించు",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "ప్లేయర్‌ను కుదించు",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "అన్నీ విస్తరించు",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "అన్నీ కుదించు",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

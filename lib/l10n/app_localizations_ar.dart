@@ -1176,4 +1176,37 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'إغلاق المشغل';
+
+  @override
+  String get playModeTitle => 'وضع الاستماع';
+
+  @override
+  String get playModeOnce => 'هذا العنصر فقط';
+
+  @override
+  String get playModeSequence => 'تشغيل متتابع';
+
+  @override
+  String get playModeOnceHint => 'يتوقف عند انتهاء العنصر الحالي';
+
+  @override
+  String get playModeRepeatOneHint => 'يكرر العنصر الحالي';
+
+  @override
+  String get playModeSequenceHint => 'يتابع العناصر التالية ويتوقف في نهاية القائمة';
+
+  @override
+  String get playModeRepeatAllHint => 'يتابع ثم يعود إلى البداية عند نهاية القائمة';
+
+  @override
+  String get audioBubbleExpand => 'توسيع المشغل';
+
+  @override
+  String get audioBubbleCollapse => 'طي المشغل';
+
+  @override
+  String get studyTreeExpandAll => 'توسيع الكل';
+
+  @override
+  String get studyTreeCollapseAll => 'طي الكل';
 }

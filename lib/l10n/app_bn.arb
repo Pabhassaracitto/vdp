@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "শোনার মোড",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "শুধু এই আইটেম",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "ক্রমাগত শোনা",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "বর্তমান আইটেম শেষ হলে থেমে যাবে",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "বর্তমান আইটেমটি বারবার পড়বে",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "পরের আইটেমগুলো শুনতে থাকবে, তালিকার শেষে থামবে",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "শুনতে থাকবে এবং শেষে আবার শুরু থেকে ঘুরবে",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "প্লেয়ার প্রসারিত করুন",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "প্লেয়ার গুটিয়ে নিন",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "সব প্রসারিত করুন",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "সব গুটিয়ে নিন",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

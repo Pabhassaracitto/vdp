@@ -92,6 +92,7 @@ class FakeTrackPlayer implements TrackPlayer {
 class InMemoryStore implements ListeningPositionStore {
   double? speed;
   String? repeatMode;
+  String? playScope;
   final Map<String, ListeningPosition> positions = {};
 
   @override
@@ -105,6 +106,12 @@ class InMemoryStore implements ListeningPositionStore {
 
   @override
   Future<void> saveRepeatMode(String mode) async => repeatMode = mode;
+
+  @override
+  Future<String?> loadPlayScope() async => playScope;
+
+  @override
+  Future<void> savePlayScope(String scope) async => playScope = scope;
 
   @override
   Future<ListeningPosition?> loadPosition(String moduleId) async =>
@@ -355,6 +362,89 @@ void main() {
       expect(notifier.state.repeatTimesLeft, 4); // ×5
       await notifier.cycleListenAgain();
       expect(notifier.state.repeatTimesLeft, isNull); // tắt
+    });
+  });
+
+  group('chế độ nghe — 1 mục hay tịnh tiến (VDP 0.10.3)', () {
+    test('mặc định: tịnh tiến hết danh sách rồi dừng (sequenceOnce)', () async {
+      await prepare();
+      expect(notifier.state.playScope, PlayScope.onward);
+      expect(notifier.state.playMode, AudioPlayMode.sequenceOnce);
+
+      await notifier.playFrom('M1_S02');
+      player.emitCompleted();
+      await _flush();
+      expect(notifier.state.currentIndex, 2); // đi tiếp mục sau
+    });
+
+    test('singleOnce: đọc xong mục đang chọn thì DỪNG, không nhảy mục', () async {
+      await prepare();
+      await notifier.setPlayMode(AudioPlayMode.singleOnce);
+      expect(notifier.state.playMode, AudioPlayMode.singleOnce);
+      expect(store.repeatMode, 'off');
+      expect(store.playScope, 'single'); // ghi nhớ thói quen
+
+      await notifier.playFrom('M1_S02');
+      expect(notifier.state.currentIndex, 1);
+
+      player.emitCompleted();
+      await _flush();
+      expect(notifier.state.currentIndex, 1); // vẫn ở mục đang chọn
+      expect(notifier.state.status, PlayerStatus.paused);
+      expect(notifier.state.finishedTrackIds, contains('M1_S02'));
+    });
+
+    test('singleLoop: lặp mãi mục đang chọn', () async {
+      await prepare();
+      await notifier.setPlayMode(AudioPlayMode.singleLoop);
+      await notifier.playFrom('M1_S03');
+
+      player.emitCompleted();
+      await _flush();
+      expect(notifier.state.currentIndex, 2);
+      expect(notifier.state.isPlaying, isTrue);
+      expect(store.repeatMode, 'one');
+    });
+
+    test('sequenceLoop: tịnh tiến và quay vòng về đầu khi hết danh sách',
+        () async {
+      await prepare();
+      await notifier.setPlayMode(AudioPlayMode.sequenceLoop);
+      await notifier.playFrom('M1_S03');
+
+      player.emitCompleted();
+      await _flush();
+      expect(notifier.state.currentIndex, 0); // wrap
+      expect(store.repeatMode, 'all');
+    });
+
+    test('"Nghe toàn bộ" luôn đưa phiên về tịnh tiến', () async {
+      await prepare();
+      await notifier.setPlayMode(AudioPlayMode.singleOnce);
+      await notifier.playAll(resume: false);
+
+      expect(notifier.state.playMode, AudioPlayMode.sequenceOnce);
+      expect(store.playScope, 'onward');
+    });
+
+    test('prepareModule khôi phục lại chế độ nghe đã lưu', () async {
+      store.repeatMode = 'off';
+      store.playScope = 'single';
+
+      await prepare();
+
+      expect(notifier.state.playScope, PlayScope.single);
+      expect(notifier.state.playMode, AudioPlayMode.singleOnce);
+    });
+
+    test('setPlayMode xóa "Nghe lại ×N" đang dở (không trộn 2 chế độ)', () async {
+      await prepare();
+      await notifier.playFrom('M1_S01');
+      await notifier.cycleListenAgain();
+      expect(notifier.state.repeatTimesLeft, isNotNull);
+
+      await notifier.setPlayMode(AudioPlayMode.sequenceOnce);
+      expect(notifier.state.repeatTimesLeft, isNull);
     });
   });
 
