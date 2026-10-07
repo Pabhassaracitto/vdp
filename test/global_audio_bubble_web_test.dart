@@ -398,7 +398,11 @@ void main() {
       expect(find.text('Tịnh tiến'), findsNothing);
 
       await tester.tap(find.byIcon(Icons.expand_less_rounded));
-      await tester.pump(const Duration(milliseconds: 250));
+      // AnimatedSize bắt đầu chạy ở frame SAU frame đổi kích thước — phải
+      // pumpAndSettle (không phải một pump có duration) thì panel mới hết bị
+      // clip; nếu không, cú tap "Chỉ mục này" xuyên qua panel cao 0px và rơi
+      // vào thanh cấp 1 (bug đã gặp trên CI).
+      await tester.pumpAndSettle();
 
       // Đủ 4 lựa chọn của góp ý "nghe 1 mục hay tịnh tiến, có lặp hay hết
       // là dừng" (chuỗi lấy từ lib/l10n/app_vi.arb).
@@ -419,7 +423,7 @@ void main() {
 
       // Chọn "Chỉ mục này" → state đổi ngay tại chỗ.
       await tester.tap(find.text('Chỉ mục này'));
-      await tester.pump(const Duration(milliseconds: 200));
+      await tester.pumpAndSettle();
       expect(
         container.read(audioPlayerProvider).playMode,
         AudioPlayMode.singleOnce,
@@ -435,7 +439,7 @@ void main() {
 
       // Thu gọn lại — panel biến mất.
       await tester.tap(find.byIcon(Icons.expand_more_rounded));
-      await tester.pump(const Duration(milliseconds: 250));
+      await tester.pumpAndSettle();
       expect(find.text('Chỉ mục này'), findsNothing);
       expect(barBottom(tester).dy, lessThanOrEqualTo(navBarTop(tester).dy));
       expect(tester.takeException(), isNull);
