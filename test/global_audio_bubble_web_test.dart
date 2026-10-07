@@ -69,6 +69,8 @@ class FakeTrackPlayer implements TrackPlayer {
 }
 
 class InMemoryStore implements ListeningPositionStore {
+  String? playScope;
+
   @override
   Future<double?> loadSpeed() async => null;
 
@@ -80,6 +82,13 @@ class InMemoryStore implements ListeningPositionStore {
 
   @override
   Future<void> saveRepeatMode(String mode) async {}
+
+  // VDP 0.10.3 — chế độ nghe (1 mục / tịnh tiến) cũng được nhớ như repeat.
+  @override
+  Future<String?> loadPlayScope() async => playScope;
+
+  @override
+  Future<void> savePlayScope(String scope) async => playScope = scope;
 
   @override
   Future<ListeningPosition?> loadPosition(String moduleId) async => null;

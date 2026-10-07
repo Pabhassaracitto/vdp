@@ -104,7 +104,7 @@ class _GlobalAudioBubbleState extends ConsumerState<GlobalAudioBubble> {
   }
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     final state = ref.watch(audioPlayerProvider);
     if (!state.hasSession) return const SizedBox.shrink();
 
