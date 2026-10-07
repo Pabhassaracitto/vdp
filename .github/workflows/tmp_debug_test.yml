@@ -27,19 +27,9 @@ jobs:
           flutter test test/global_audio_bubble_web_test.dart --reporter expanded > out.txt 2>&1
           echo "flutter test exit=$?"
           python3 - <<'PY'
-          import re
           lines = open('out.txt', errors='replace').read().splitlines()
-          marks = [
-              i for i, l in enumerate(lines)
-              if re.search(r'\u274c|\[E\]|EXCEPTION|Some tests failed|failed', l)
-          ]
-          seen = set()
-          for i in marks[:8]:
-              for j in range(max(0, i - 4), min(len(lines), i + 28)):
-                  if j in seen:
-                      continue
-                  seen.add(j)
-                  print('::error::' + lines[j][:280].replace('\r', ' '))
-          print('::warning::out.txt has %d lines' % len(lines))
+          body = '\n'.join(l[:400] for l in lines)
+          print('::error::total_lines=%d' % len(lines))
+          print('::error::' + body.replace('%', '%25').replace('\r', '').replace('\n', '%0A'))
           PY
-          tail -50 out.txt
+          tail -20 out.txt
