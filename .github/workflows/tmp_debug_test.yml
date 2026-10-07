@@ -1,0 +1,45 @@
+name: TMP debug failing test (delete before merge)
+
+on:
+  push:
+    branches:
+      - 'arena/ddba1afd-vdp'
+
+permissions:
+  contents: read
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+      - name: Ensure asset dirs
+        run: mkdir -p assets/animations assets/audio assets/data
+      - name: Pub get
+        run: flutter pub get || true
+      - name: Debug failing test
+        run: |
+          set +e
+          flutter test test/global_audio_bubble_web_test.dart --reporter expanded > out.txt 2>&1
+          echo "flutter test exit=$?"
+          python3 - <<'PY'
+          import re
+          lines = open('out.txt', errors='replace').read().splitlines()
+          marks = [
+              i for i, l in enumerate(lines)
+              if re.search(r'\u274c|\[E\]|EXCEPTION|Some tests failed|failed', l)
+          ]
+          seen = set()
+          for i in marks[:8]:
+              for j in range(max(0, i - 4), min(len(lines), i + 28)):
+                  if j in seen:
+                      continue
+                  seen.add(j)
+                  print('::error::' + lines[j][:280].replace('\r', ' '))
+          print('::warning::out.txt has %d lines' % len(lines))
+          PY
+          tail -50 out.txt
