@@ -4,6 +4,10 @@
 // tại, tốc độ, lặp, "nghe lại ×N", lưu/restore thói quen, karaoke tô chữ, và
 // nguồn phiên (để thanh nghe nổi toàn app biết "đi tới đâu" — V1.9.2 §1).
 //
+// VDP 0.10.3: thêm PHẠM VI PHÁT ([PlayScope]) để trả lời góp ý "nghe 1 mục
+// hay tịnh tiến" — bốn lựa chọn người dùng thấy ([AudioPlayMode]) là mặt tiền
+// của (lặp × phạm vi); UI không bao giờ phải ghép hai khái niệm rời.
+//
 // Thuần logic — test được với FakeTrackPlayer + InMemoryStore
 // (test/audio_player_test.dart). UI không bao giờ chạm thẳng vào engine.
 //
@@ -30,6 +34,30 @@ import '../services/listening_position_store.dart';
 import '../services/sleep_timer.dart';
 
 enum RepeatMode { off, one, all }
+
+/// Phạm vi phát của phiên nghe (VDP 0.10.3 — góp ý "nghe 1 mục hay tịnh tiến"):
+///   • [onward] — đọc xong mục hiện tại thì đi tiếp mục kế (tịnh tiến), đúng
+///     hành vi cũ của app.
+///   • [single] — CHỈ đọc mục đang chọn: hết mục là dừng tại chỗ, dù danh sách
+///     còn mục phía sau (thói quen "ôn đúng một Tâm Sở đang cần").
+///
+/// Đây là "nửa còn lại" của chế độ nghe: [RepeatMode] quyết định lặp hay
+/// không, [PlayScope] quyết định có đi tiếp hay không. UI không bắt người học
+/// ghép hai khái niệm rời — nó chỉ hiện 4 lựa chọn qua [AudioPlayMode].
+enum PlayScope { onward, single }
+
+/// Chế độ nghe gộp (phạm vi × lặp) — MẶT TIỀN duy nhất cho UI, đúng 4 lựa
+/// chọn mà người nghe cần:
+///   • [singleOnce]   — "Chỉ mục này": đọc 1 lượt rồi dừng.
+///   • [singleLoop]   — "Lặp mục này": đọc lặp mãi một mục (để thuộc lòng).
+///   • [sequenceOnce] — "Tịnh tiến": đọc tiếp các mục sau, hết danh sách dừng.
+///   • [sequenceLoop] — "Tịnh tiến · lặp": đọc tiếp và quay vòng về đầu.
+enum AudioPlayMode {
+  singleOnce,
+  singleLoop,
+  sequenceOnce,
+  sequenceLoop,
+}
 
 enum PlayerStatus { idle, playing, paused }
 
@@ -68,6 +96,7 @@ class AudioPlayerState {
   final PlayerStatus status;
   final double speed;
   final RepeatMode repeatMode;
+  final PlayScope playScope;
   final AudioSourceKind sourceKind;
 
   /// Số lần nghe lại còn lại của "Nghe lại ×N" (null = đang dùng repeatMode).
@@ -102,6 +131,7 @@ class AudioPlayerState {
     this.status = PlayerStatus.idle,
     this.speed = 1.0,
     this.repeatMode = RepeatMode.off,
+    this.playScope = PlayScope.onward,
     this.sourceKind = AudioSourceKind.study,
     this.repeatTimesLeft,
     this.finishedTrackIds = const {},
@@ -149,6 +179,16 @@ class AudioPlayerState {
   int get currentTrackNumber =>
       currentIndex < 0 ? 0 : currentIndex + 1;
 
+  /// Chế độ nghe suy ra từ (lặp × phạm vi) — nguồn sự thật của mọi UI chọn
+  /// chế độ (thanh nghe nổi, playlist, bảng điều khiển đầy đủ).
+  AudioPlayMode get playMode {
+    if (repeatMode == RepeatMode.one) return AudioPlayMode.singleLoop;
+    if (playScope == PlayScope.single) return AudioPlayMode.singleOnce;
+    return repeatMode == RepeatMode.all
+        ? AudioPlayMode.sequenceLoop
+        : AudioPlayMode.sequenceOnce;
+  }
+
   /// Sentinel để phân biệt "không truyền" với "gán null có chủ đích".
   static const Object _unset = Object();
 
@@ -162,6 +202,7 @@ class AudioPlayerState {
     PlayerStatus? status,
     double? speed,
     RepeatMode? repeatMode,
+    PlayScope? playScope,
     AudioSourceKind? sourceKind,
     Object? repeatTimesLeft = _unset,
     Set<String>? finishedTrackIds,
@@ -181,6 +222,7 @@ class AudioPlayerState {
       status: status ?? this.status,
       speed: speed ?? this.speed,
       repeatMode: repeatMode ?? this.repeatMode,
+      playScope: playScope ?? this.playScope,
       sourceKind: sourceKind ?? this.sourceKind,
       repeatTimesLeft: identical(repeatTimesLeft, _unset)
           ? this.repeatTimesLeft
@@ -386,6 +428,9 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       'all' => RepeatMode.all,
       _ => RepeatMode.off,
     };
+    final scopeName = await _store.loadPlayScope();
+    final playScope =
+        scopeName == PlayScope.single.name ? PlayScope.single : PlayScope.onward;
     final saved = await _store.loadPosition(moduleId);
 
     state = AudioPlayerState(
@@ -396,6 +441,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       status: PlayerStatus.idle,
       speed: speed,
       repeatMode: repeatMode,
+      playScope: playScope,
       sourceKind: sourceKind,
       savedPosition: saved,
     );
@@ -405,9 +451,17 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   // ─── Điều khiển phát ─────────────────────────────────────────────────────
 
   /// Nút "Nghe toàn bộ" / "Tiếp tục nghe".
+  ///
+  /// Ngay cả khi người dùng đang ở phạm vi "chỉ mục này", nút này vẫn là một
+  /// yêu cầu tường minh "đọc cả danh sách" → chuyển phiên sang phạm vi tịnh
+  /// tiến (giữ nguyên chế độ lặp) để nhãn nút và hành vi khớp nhau.
   Future<void> playAll({bool resume = true}) async {
     await _ensurePrepared();
     if (state.playlist.isEmpty) return;
+    if (state.playScope != PlayScope.onward) {
+      state = state.copyWith(playScope: PlayScope.onward);
+      await _store.savePlayScope(PlayScope.onward.name);
+    }
     var trackIndex = 0;
     var cueIndex = 0;
     if (resume && state.savedPosition != null) {
@@ -522,6 +576,48 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
   Future<void> setRepeatMode(RepeatMode mode) async {
     state = state.copyWith(repeatMode: mode, repeatTimesLeft: null);
     await _store.saveRepeatMode(mode.name);
+  }
+
+  /// Chọn chế độ nghe trong 4 lựa chọn hiển thị cho người dùng (VDP 0.10.3):
+  /// "Chỉ mục này" / "Lặp mục này" / "Tịnh tiến" / "Tịnh tiến · lặp".
+  ///
+  /// Ghi nhớ vĩnh viễn (cùng chỗ với tốc độ & chế độ lặp) để mở app sau vẫn
+  /// đúng thói quen nghe của người học.
+  Future<void> setPlayMode(AudioPlayMode mode) async {
+    switch (mode) {
+      case AudioPlayMode.singleOnce:
+        state = state.copyWith(
+          repeatMode: RepeatMode.off,
+          playScope: PlayScope.single,
+          repeatTimesLeft: null,
+        );
+        await _store.saveRepeatMode(RepeatMode.off.name);
+        await _store.savePlayScope(PlayScope.single.name);
+      case AudioPlayMode.singleLoop:
+        state = state.copyWith(
+          repeatMode: RepeatMode.one,
+          playScope: PlayScope.onward,
+          repeatTimesLeft: null,
+        );
+        await _store.saveRepeatMode(RepeatMode.one.name);
+        await _store.savePlayScope(PlayScope.onward.name);
+      case AudioPlayMode.sequenceOnce:
+        state = state.copyWith(
+          repeatMode: RepeatMode.off,
+          playScope: PlayScope.onward,
+          repeatTimesLeft: null,
+        );
+        await _store.saveRepeatMode(RepeatMode.off.name);
+        await _store.savePlayScope(PlayScope.onward.name);
+      case AudioPlayMode.sequenceLoop:
+        state = state.copyWith(
+          repeatMode: RepeatMode.all,
+          playScope: PlayScope.onward,
+          repeatTimesLeft: null,
+        );
+        await _store.saveRepeatMode(RepeatMode.all.name);
+        await _store.savePlayScope(PlayScope.onward.name);
+    }
   }
 
   /// "Nghe lại ×N" (plan §6.3): phát lại track hiện tại đủ N lượt rồi đi tiếp.
@@ -680,7 +776,10 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
       case RepeatMode.all:
         unawaited(_advance(wrap: true));
       case RepeatMode.off:
-        final isLast = state.currentIndex >= state.playlist.length - 1;
+        // Phạm vi "chỉ mục này" (0.10.3): hết mục đang chọn là dừng tại chỗ,
+        // dù danh sách còn mục phía sau — người nghe chủ động chọn như vậy.
+        final isLast = state.playScope == PlayScope.single ||
+            state.currentIndex >= state.playlist.length - 1;
         if (isLast) {
           _stopWatchdog();
           state = state.copyWith(status: PlayerStatus.paused);

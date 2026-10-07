@@ -1172,4 +1172,37 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'ප්ලේයරය වසන්න';
+
+  @override
+  String get playModeTitle => 'ඇසීමේ ප්‍රකාරය';
+
+  @override
+  String get playModeOnce => 'මෙම අයිතමය පමණි';
+
+  @override
+  String get playModeSequence => 'අනුපිළිවෙලින් අසන්න';
+
+  @override
+  String get playModeOnceHint => 'වත්මන් අයිතමය අවසන් වූ පසු නවතී';
+
+  @override
+  String get playModeRepeatOneHint => 'වත්මන් අයිතමය නැවත නැවත අසයි';
+
+  @override
+  String get playModeSequenceHint => 'ඊළඟ අයිතම දිගටම අසයි, ලැයිස්තුව අවසානයේ නවතී';
+
+  @override
+  String get playModeRepeatAllHint => 'දිගටම අසා අවසානයේ මුලට නැවත යයි';
+
+  @override
+  String get audioBubbleExpand => 'වාදකය විහිදන්න';
+
+  @override
+  String get audioBubbleCollapse => 'වාදකය හකුළන්න';
+
+  @override
+  String get studyTreeExpandAll => 'සියල්ල විහිදන්න';
+
+  @override
+  String get studyTreeCollapseAll => 'සියල්ල හකුළන්න';
 }

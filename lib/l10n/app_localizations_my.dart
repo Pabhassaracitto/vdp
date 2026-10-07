@@ -1182,4 +1182,37 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'ဖွင့်စက်ကို ပိတ်ပါ';
+
+  @override
+  String get playModeTitle => 'နားထောင်မှု မုဒ်';
+
+  @override
+  String get playModeOnce => 'ဤအရာသာ';
+
+  @override
+  String get playModeSequence => 'ဆက်တိုက် ဖွင့်ရန်';
+
+  @override
+  String get playModeOnceHint => 'လက်ရှိအရာ ပြီးဆုံးလျှင် ရပ်မည်';
+
+  @override
+  String get playModeRepeatOneHint => 'လက်ရှိအရာကို ထပ်ခါတလဲလဲ ဖွင့်မည်';
+
+  @override
+  String get playModeSequenceHint => 'နောက်အရာများကို ဆက်ဖွင့်မည်၊ စာရင်းဆုံးလျှင် ရပ်မည်';
+
+  @override
+  String get playModeRepeatAllHint => 'ဆက်ဖွင့်ပြီး စာရင်းဆုံးလျှင် အစသို့ ပြန်လည်ပတ်မည်';
+
+  @override
+  String get audioBubbleExpand => 'ဖွင့်စက် ချဲ့ရန်';
+
+  @override
+  String get audioBubbleCollapse => 'ဖွင့်စက် ခေါက်သိမ်းရန်';
+
+  @override
+  String get studyTreeExpandAll => 'အားလုံး ချဲ့ရန်';
+
+  @override
+  String get studyTreeCollapseAll => 'အားလုံး ခေါက်သိမ်းရန်';
 }

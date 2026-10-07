@@ -1182,4 +1182,37 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'Тоглуулагчийг хаах';
+
+  @override
+  String get playModeTitle => 'Сонсох горим';
+
+  @override
+  String get playModeOnce => 'Зөвхөн энэ зүйл';
+
+  @override
+  String get playModeSequence => 'Дараалан сонсох';
+
+  @override
+  String get playModeOnceHint => 'Одоогийн зүйл дуусахад зогсоно';
+
+  @override
+  String get playModeRepeatOneHint => 'Одоогийн зүйлийг давтан уншина';
+
+  @override
+  String get playModeSequenceHint => 'Дараагийн зүйлсийг үргэлжлүүлэн уншиж, жагсаалтын төгсгөлд зогсоно';
+
+  @override
+  String get playModeRepeatAllHint => 'Үргэлжлүүлэн уншиж, төгсгөлд эхнээсээ эргэлдэнэ';
+
+  @override
+  String get audioBubbleExpand => 'Тоглуулагчийг дэлгэх';
+
+  @override
+  String get audioBubbleCollapse => 'Тоглуулагчийг хураах';
+
+  @override
+  String get studyTreeExpandAll => 'Бүгдийг дэлгэх';
+
+  @override
+  String get studyTreeCollapseAll => 'Бүгдийг хураах';
 }

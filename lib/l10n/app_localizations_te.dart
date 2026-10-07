@@ -1182,4 +1182,37 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'ప్లేయర్‌ని మూసివేయండి';
+
+  @override
+  String get playModeTitle => 'వినే మోడ్';
+
+  @override
+  String get playModeOnce => 'ఈ అంశం మాత్రమే';
+
+  @override
+  String get playModeSequence => 'వరుసగా వినండి';
+
+  @override
+  String get playModeOnceHint => 'ప్రస్తుత అంశం పూర్తయ్యాక ఆగుతుంది';
+
+  @override
+  String get playModeRepeatOneHint => 'ప్రస్తుత అంశాన్ని పునరావృతం చేస్తుంది';
+
+  @override
+  String get playModeSequenceHint => 'తర్వాతి అంశాలను కొనసాగిస్తుంది, జాబితా చివరిలో ఆగుతుంది';
+
+  @override
+  String get playModeRepeatAllHint => 'కొనసాగించి, చివరిలో తిరిగి మొదటికి వెళ్తుంది';
+
+  @override
+  String get audioBubbleExpand => 'ప్లేయర్‌ను విస్తరించు';
+
+  @override
+  String get audioBubbleCollapse => 'ప్లేయర్‌ను కుదించు';
+
+  @override
+  String get studyTreeExpandAll => 'అన్నీ విస్తరించు';
+
+  @override
+  String get studyTreeCollapseAll => 'అన్నీ కుదించు';
 }

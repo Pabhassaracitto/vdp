@@ -1180,4 +1180,37 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'Закрыть плеер';
+
+  @override
+  String get playModeTitle => 'Режим воспроизведения';
+
+  @override
+  String get playModeOnce => 'Только этот элемент';
+
+  @override
+  String get playModeSequence => 'Подряд';
+
+  @override
+  String get playModeOnceHint => 'Остановится, когда текущий элемент закончится';
+
+  @override
+  String get playModeRepeatOneHint => 'Повторяет текущий элемент';
+
+  @override
+  String get playModeSequenceHint => 'Продолжит следующие элементы и остановится в конце списка';
+
+  @override
+  String get playModeRepeatAllHint => 'Продолжит и вернётся к началу в конце списка';
+
+  @override
+  String get audioBubbleExpand => 'Развернуть плеер';
+
+  @override
+  String get audioBubbleCollapse => 'Свернуть плеер';
+
+  @override
+  String get studyTreeExpandAll => 'Развернуть всё';
+
+  @override
+  String get studyTreeCollapseAll => 'Свернуть всё';
 }

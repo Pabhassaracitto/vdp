@@ -37,6 +37,7 @@ import '../../paticca/presentation/providers/paticca_providers.dart';
 import '../../paticca/presentation/screens/paticca_screen.dart';
 import '../../study/module_detail_screen.dart';
 import '../providers/audio_player_provider.dart';
+import 'audio_controls_common.dart';
 
 /// Khoảng hở tối thiểu giữa đáy thanh nghe nổi và đáy màn hình (px) — hành vi
 /// gốc trên mọi màn hình không có thanh tab ("nổi trên inset hệ thống").
@@ -49,8 +50,18 @@ const Key kGlobalAudioBubbleBarKey = Key('globalAudioBubbleBar');
 /// Key của nút tròn khôi phục (dạng đã Ẩn) — cùng mục đích.
 const Key kGlobalAudioBubbleRestoreKey = Key('globalAudioBubbleRestore');
 
-class GlobalAudioBubble extends ConsumerWidget {
+class GlobalAudioBubble extends ConsumerStatefulWidget {
   const GlobalAudioBubble({super.key});
+
+  @override
+  ConsumerState<GlobalAudioBubble> createState() => _GlobalAudioBubbleState();
+}
+
+class _GlobalAudioBubbleState extends ConsumerState<GlobalAudioBubble> {
+  /// Cấp 2 của thanh nghe (VDP 0.10.3): mở ra để chọn chế độ nghe (1 mục /
+  /// tịnh tiến / lặp) + tốc độ + tua mục NGAY TẠI CHỖ, không cần mở sheet.
+  /// Mặc định gọn — thanh 1 hàng như trước, chỉ cao lên khi người dùng mở.
+  bool _expanded = false;
 
   /// Điều hướng về đúng nơi đang phát — dùng `rootNavigatorKey` vì widget
   /// này không có Navigator tổ tiên (xem ghi chú đầu file).
@@ -125,6 +136,7 @@ class GlobalAudioBubble extends ConsumerWidget {
     final subtitle = track == null
         ? state.moduleTitle
         : '${state.moduleTitle} · ${state.currentTrackNumber}/${state.playlist.length}';
+    final playMode = state.playMode;
 
     return SafeArea(
       child: Padding(
@@ -149,7 +161,11 @@ class GlobalAudioBubble extends ConsumerWidget {
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: color.withOpacity(0.35)),
               ),
-              child: Row(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // ── Cấp 1: thanh gọn (như trước 0.10.3) ────────────────
+                  Row(
                 children: [
                   Semantics(
                     button: true,
@@ -192,6 +208,24 @@ class GlobalAudioBubble extends ConsumerWidget {
                       ],
                     ),
                   ),
+                  // ── Nút mở cấp 2: chế độ nghe + tốc độ + tua mục ──────
+                  // Một nút gọn để mở/đóng; nhãn Semantics nói rõ đang mở
+                  // hay đang đóng (thanh không dùng Tooltip — xem ghi chú
+                  // Issue Web ở đầu file).
+                  Semantics(
+                    button: true,
+                    label: _expanded
+                        ? context.l10n.audioBubbleCollapse
+                        : context.l10n.audioBubbleExpand,
+                    child: IconButton(
+                      onPressed: () => setState(() => _expanded = !_expanded),
+                      icon: Icon(
+                        _expanded
+                            ? Icons.expand_more_rounded
+                            : Icons.expand_less_rounded,
+                      ),
+                    ),
+                  ),
                   // VDP | Issue Web: các nút ở 2 đầu thanh KHÔNG bọc Tooltip
                   // (hover chuột trên web kích tooltip overlay ngoài Navigator
                   // → treo toàn bộ input app). Semantics giữ nguyên.
@@ -212,12 +246,143 @@ class GlobalAudioBubble extends ConsumerWidget {
                     ),
                   ),
                 ],
+                  ),
+
+                  // ── Cấp 2 (mở rộng): điều khiển đầy đủ tại chỗ ─────────
+                  // Góp ý 0.10.3: "có chỗ để người dùng chọn nghe 1 mục hay
+                  // tịnh tiến, có lặp hay hết là dừng" — 4 chip chế độ nghe
+                  // nằm ngay trên thanh, cộng tua mục + tốc độ. Thanh chỉ cao
+                  // thêm khi người dùng mở, nên không chiếm màn hình.
+                  AnimatedSize(
+                    duration: const Duration(milliseconds: 180),
+                    curve: Curves.easeOut,
+                    alignment: Alignment.bottomCenter,
+                    child: _expanded
+                        ? _ExpandedControls(
+                            color: color,
+                            playMode: playMode,
+                            speed: state.speed,
+                            onPrevious: notifier.previous,
+                            onNext: notifier.next,
+                            onSpeed: notifier.setSpeed,
+                          )
+                        : const SizedBox.shrink(),
+                  ),
+                ],
               ),
               ),
             ),
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Cấp 2 của thanh nghe nổi (VDP 0.10.3) — tua mục, chọn chế độ nghe (4 lựa
+/// chọn), và tốc độ; mọi thứ áp dụng ngay cho phiên đang phát.
+class _ExpandedControls extends StatelessWidget {
+  const _ExpandedControls({
+    required this.color,
+    required this.playMode,
+    required this.speed,
+    required this.onPrevious,
+    required this.onNext,
+    required this.onSpeed,
+  });
+
+  final Color color;
+  final AudioPlayMode playMode;
+  final double speed;
+  final VoidCallback onPrevious;
+  final VoidCallback onNext;
+  final ValueChanged<double> onSpeed;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Divider(height: 14, color: color.withOpacity(0.2)),
+        Row(
+          children: [
+            Semantics(
+              button: true,
+              label: context.l10n.previousTrack,
+              child: IconButton(
+                onPressed: onPrevious,
+                iconSize: 22,
+                visualDensity: VisualDensity.compact,
+                icon: const Icon(Icons.skip_previous_rounded),
+              ),
+            ),
+            Semantics(
+              button: true,
+              label: context.l10n.next,
+              child: IconButton(
+                onPressed: onNext,
+                iconSize: 22,
+                visualDensity: VisualDensity.compact,
+                icon: const Icon(Icons.skip_next_rounded),
+              ),
+            ),
+            const SizedBox(width: 4),
+            Expanded(
+              child: Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: Wrap(
+                  spacing: 6,
+                  runSpacing: 4,
+                  children: [
+                    for (final preset in kSpeedPresets)
+                      ChoiceChip(
+                        showCheckmark: false,
+                        visualDensity: VisualDensity.compact,
+                        label: Text(
+                          formatSpeed(preset),
+                          style: const TextStyle(fontSize: 11.5),
+                        ),
+                        selected: (speed - preset).abs() < 0.001,
+                        selectedColor: color.withOpacity(0.2),
+                        onSelected: (_) => onSpeed(preset),
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 2),
+          child: Row(
+            children: [
+              Icon(playModeIcon(playMode), size: 15, color: color),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  '${context.l10n.playModeTitle}: '
+                  '${playModeLabel(context, playMode)}',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w700,
+                    color: theme.textTheme.bodySmall?.color,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 6),
+        SizedBox(
+          width: double.infinity,
+          child: PlayModeSelector(color: color, dense: true, showHint: false),
+        ),
+        const SizedBox(height: 4),
+      ],
     );
   }
 }

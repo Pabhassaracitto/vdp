@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "ඇසීමේ ප්‍රකාරය",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "මෙම අයිතමය පමණි",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "අනුපිළිවෙලින් අසන්න",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "වත්මන් අයිතමය අවසන් වූ පසු නවතී",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "වත්මන් අයිතමය නැවත නැවත අසයි",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "ඊළඟ අයිතම දිගටම අසයි, ලැයිස්තුව අවසානයේ නවතී",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "දිගටම අසා අවසානයේ මුලට නැවත යයි",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "වාදකය විහිදන්න",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "වාදකය හකුළන්න",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "සියල්ල විහිදන්න",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "සියල්ල හකුළන්න",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "နားထောင်မှု မုဒ်",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "ဤအရာသာ",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "ဆက်တိုက် ဖွင့်ရန်",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "လက်ရှိအရာ ပြီးဆုံးလျှင် ရပ်မည်",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "လက်ရှိအရာကို ထပ်ခါတလဲလဲ ဖွင့်မည်",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "နောက်အရာများကို ဆက်ဖွင့်မည်၊ စာရင်းဆုံးလျှင် ရပ်မည်",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "ဆက်ဖွင့်ပြီး စာရင်းဆုံးလျှင် အစသို့ ပြန်လည်ပတ်မည်",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "ဖွင့်စက် ချဲ့ရန်",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "ဖွင့်စက် ခေါက်သိမ်းရန်",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "အားလုံး ချဲ့ရန်",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "အားလုံး ခေါက်သိမ်းရန်",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

@@ -155,31 +155,28 @@ class FullPlayerSheet extends ConsumerWidget {
             ),
             const SizedBox(height: 14),
 
-            // ── Lặp + Nghe lại ×N (học thuộc — H2) ────────────────────────
+            // ── Chế độ nghe (0.10.3) + Nghe lại ×N (học thuộc — H2) ───────
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Tooltip(
-                  message: repeatLabel(context, state.repeatMode),
-                  child: Semantics(
-                    button: true,
-                    label: repeatLabel(context, state.repeatMode),
-                    child: TextButton.icon(
-                      onPressed: notifier.cycleRepeatMode,
-                      icon: Icon(
-                        repeatIcon(state.repeatMode),
-                        color: state.repeatMode == RepeatMode.off
-                            ? theme.iconTheme.color?.withOpacity(0.45)
-                            : color,
-                      ),
-                      label: Text(
-                        repeatLabel(context, state.repeatMode),
-                        style: const TextStyle(fontSize: 12.5),
-                      ),
-                    ),
+                Icon(playModeIcon(state.playMode), size: 16, color: color),
+                const SizedBox(width: 6),
+                Text(
+                  context.l10n.playModeTitle,
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    fontWeight: FontWeight.w700,
+                    color: theme.textTheme.bodySmall?.color,
                   ),
                 ),
-                const SizedBox(width: 6),
+              ],
+            ),
+            const SizedBox(height: 6),
+            PlayModeSelector(color: color),
+            const SizedBox(height: 4),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 Tooltip(
                   message: context.l10n.listenAgain,
                   child: Semantics(

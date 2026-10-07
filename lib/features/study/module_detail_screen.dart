@@ -2,6 +2,12 @@
 // Module Detail — Dynamic Content từ VdpRepository
 // Milestone 3: Lọc Tâm/Tâm Sở theo ID có trong moduleData (không dùng static)
 // Type-safe, null-safe, 0 warnings
+//
+// VDP 0.10.3 §3: nhận `initialSectionId` + `autoPlaySection` từ cây học tập ở
+// StudyScreen — mở thẳng đúng mục bài học (mở rộng + cuộn tới) và, khi người
+// dùng bấm nút loa ở lá cây, phát riêng mục đó ngay.
+
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -34,7 +40,21 @@ import '../quiz/quiz_screen.dart';
 
 class ModuleDetailScreen extends ConsumerStatefulWidget {
   final StudyModule moduleData;
-  const ModuleDetailScreen({super.key, required this.moduleData});
+
+  /// VDP 0.10.3 §3 — mở thẳng tới MỘT mục bài học (lá của cây học tập ở
+  /// StudyScreen): tab Học tự mở rộng + cuộn tới đúng mục đó.
+  final String? initialSectionId;
+
+  /// true → chuẩn bị playlist của module rồi phát đúng mục [initialSectionId]
+  /// (nút loa ở lá cây). Không có hiệu lực nếu [initialSectionId] là null.
+  final bool autoPlaySection;
+
+  const ModuleDetailScreen({
+    super.key,
+    required this.moduleData,
+    this.initialSectionId,
+    this.autoPlaySection = false,
+  });
 
   @override
   ConsumerState<ModuleDetailScreen> createState() => _ModuleDetailScreenState();
@@ -156,6 +176,8 @@ class _ModuleDetailScreenState extends ConsumerState<ModuleDetailScreen>
                 _StudyTab(
                   module: widget.moduleData,
                   lesson: lesson,
+                  initialSectionId: widget.initialSectionId,
+                  autoPlaySection: widget.autoPlaySection,
                   cittas: moduleCittas,
                   cetasikas: moduleCetasikas,
                   kammas: moduleKammas,
@@ -331,6 +353,12 @@ List<AudioTrack> _buildStudyTracks(
 class _StudyTab extends ConsumerStatefulWidget {
   final StudyModule module;
   final ModuleLessonContent lesson;
+
+  /// Mục bài học cần mở sẵn (từ cây học tập) — null = mở bình thường.
+  final String? initialSectionId;
+
+  /// Phát luôn mục [initialSectionId] sau khi mở (nút loa ở lá cây).
+  final bool autoPlaySection;
   final List<CittaModel> cittas;
   final List<CetasikaModel> cetasikas;
   final List<KammaModel> kammas;
@@ -342,6 +370,8 @@ class _StudyTab extends ConsumerStatefulWidget {
   const _StudyTab({
     required this.module,
     required this.lesson,
+    this.initialSectionId,
+    this.autoPlaySection = false,
     required this.cittas,
     required this.cetasikas,
     required this.kammas,
@@ -361,13 +391,22 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
 
   /// Anchor cho auto-scroll paragraph đang đọc (mắt-nhìn-tai-nghe — H5).
   final Map<String, GlobalKey> _cueKeys = {};
+
+  /// Anchor cho cả thẻ mục — dùng khi mở thẳng tới một mục từ cây học tập.
+  final Map<String, GlobalKey> _sectionKeys = {};
   bool _prepared = false;
+
+  /// Mục bài học mở-sẵn từ cây học tập đã được xử lý chưa (chỉ 1 lần).
+  bool _initialSectionHandled = false;
 
   ExpansionTileController _controllerFor(String sectionId) =>
       _tileControllers.putIfAbsent(sectionId, () => ExpansionTileController());
 
   GlobalKey _keyFor(String sectionId, String cueRef) =>
       _cueKeys.putIfAbsent('$sectionId|$cueRef', () => GlobalKey());
+
+  GlobalKey _sectionKeyFor(String sectionId) =>
+      _sectionKeys.putIfAbsent(sectionId, () => GlobalKey());
 
   @override
   Widget build(BuildContext context) {
@@ -397,24 +436,13 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
       _prepared = true;
       Future<void>.microtask(() {
         if (!mounted) return;
-        ref.read(audioPlayerProvider.notifier).prepareModule(
-              moduleId: module.id,
-              moduleTitle: module.localizedTitle(context),
-              contentLocaleTag: context.contentCatalog.locale,
-              tracks: _buildStudyTracks(
-                context,
-                moduleId: module.id,
-                sections: sections,
-                cittas: cittas,
-                cetasikas: cetasikas,
-                kammas: kammas,
-                paticcas: paticcas,
-                rupas: rupas,
-                vithis: vithis,
-              ),
-            );
+        unawaited(_preparePlaylist());
       });
     }
+
+    // VDP 0.10.3 §3: mở thẳng tới mục bài học đã chọn từ cây học tập —
+    // mở rộng thẻ mục, cuộn vào khung nhìn, và phát luôn nếu là nút loa.
+    _handleInitialSection(sections);
 
     // Tới cue mới → mở section + cuộn paragraph đang đọc vào khung nhìn.
     ref.listen(audioPlayerProvider.select((s) => s.currentCueKey), (prev, next) {
@@ -470,9 +498,11 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
           _SectionHeader(context.l10n.learn, color),
           ...sections.map(
             (section) => _LessonSectionCard(
+              key: _sectionKeyFor(section.id),
               section: section,
               color: color,
               tileController: _controllerFor(section.id),
+              initiallyExpanded: section.id == widget.initialSectionId,
               keyFor: (cueRef) => _keyFor(section.id, cueRef),
             ),
           ),
@@ -595,6 +625,69 @@ class _StudyTabState extends ConsumerState<_StudyTab> {
         const SizedBox(height: 40),
       ],
     );
+  }
+
+  /// Chuẩn bị playlist đầy đủ của module (idempotent — xem prepareModule).
+  Future<void> _preparePlaylist() {
+    return ref.read(audioPlayerProvider.notifier).prepareModule(
+          moduleId: widget.module.id,
+          moduleTitle: widget.module.localizedTitle(context),
+          contentLocaleTag: context.contentCatalog.locale,
+          tracks: _buildStudyTracks(
+            context,
+            moduleId: widget.module.id,
+            sections: widget.lesson.sections,
+            cittas: widget.cittas,
+            cetasikas: widget.cetasikas,
+            kammas: widget.kammas,
+            paticcas: widget.paticcas,
+            rupas: widget.rupas,
+            vithis: widget.vithis,
+          ),
+        );
+  }
+
+  /// Mở thẳng tới một mục bài học (0.10.3 §3): mở rộng thẻ mục + cuộn vào
+  /// khung nhìn, và phát riêng mục đó khi nút loa ở cây học tập được bấm.
+  void _handleInitialSection(List<LessonSection> sections) {
+    if (_initialSectionHandled) return;
+    final sectionId = widget.initialSectionId;
+    if (sectionId == null) return;
+    _initialSectionHandled = true;
+    if (!sections.any((s) => s.id == sectionId)) return;
+
+    if (widget.autoPlaySection) {
+      Future<void>.microtask(() {
+        if (!mounted) return;
+        unawaited(_autoPlaySection(sectionId));
+      });
+    }
+
+    // Thẻ mục đã `initiallyExpanded` sẵn (kể cả khi ListView dựng nó sau);
+    // chỉ còn việc cuộn tới. Thử vài nhịp: nếu mục nằm ngoài khung nhìn, thẻ
+    // chưa được dựng nên chưa có context — lần thử sau khi danh sách đã dựng
+    // thêm sẽ bắt được.
+    for (final delay in const [280, 700, 1300]) {
+      Future<void>.delayed(Duration(milliseconds: delay), () {
+        if (!mounted) return;
+        final ctx = _sectionKeys[sectionId]?.currentContext;
+        if (ctx == null || !ctx.mounted) return;
+        Scrollable.ensureVisible(
+          ctx,
+          duration: const Duration(milliseconds: 320),
+          curve: Curves.easeOut,
+          alignment: 0.12,
+        );
+      });
+    }
+  }
+
+  /// Phát riêng một mục bài học (nút loa ở lá cây học tập): chuẩn bị playlist
+  /// của module — idempotent — rồi phát đúng mục đó.
+  Future<void> _autoPlaySection(String sectionId) async {
+    await _preparePlaylist();
+    if (!mounted) return;
+    await ref.read(audioPlayerProvider.notifier).playFrom(sectionId);
   }
 
   /// Cuộn paragraph đang đọc vào khung nhìn nếu nó đang nằm ngoài màn hình
@@ -1397,11 +1490,18 @@ class _LessonSectionCard extends ConsumerWidget {
   /// Sinh GlobalKey cho từng cue — neo auto-scroll paragraph đang đọc.
   final GlobalKey Function(String cueRef) keyFor;
 
+  /// Mở rộng sẵn thẻ này ngay từ lần dựng đầu — dùng khi màn hình được mở
+  /// thẳng tới một mục từ cây học tập (0.10.3 §3), kể cả khi thẻ chưa được
+  /// dựng vì nằm ngoài khung nhìn (ListView dựng con theo nhu cầu).
+  final bool initiallyExpanded;
+
   const _LessonSectionCard({
+    super.key,
     required this.section,
     required this.color,
     required this.tileController,
     required this.keyFor,
+    this.initiallyExpanded = false,
   });
 
   @override
@@ -1430,6 +1530,7 @@ class _LessonSectionCard extends ConsumerWidget {
         data: theme.copyWith(dividerColor: Colors.transparent),
         child: ExpansionTile(
           controller: tileController,
+          initiallyExpanded: initiallyExpanded,
           tilePadding: const EdgeInsets.symmetric(horizontal: 13),
           childrenPadding:
               const EdgeInsets.fromLTRB(13, 0, 13, 13),

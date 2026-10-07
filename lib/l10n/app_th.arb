@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "โหมดการฟัง",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "เฉพาะรายการนี้",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "ฟังต่อเนื่อง",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "หยุดเมื่ออ่านรายการปัจจุบันจบ",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "อ่านซ้ำรายการปัจจุบันไปเรื่อย ๆ",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "อ่านรายการถัดไปต่อเนื่อง หยุดเมื่อจบรายการ",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "อ่านต่อเนื่องและวนกลับไปเริ่มใหม่เมื่อจบรายการ",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "ขยายแถบเสียง",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "ย่อแถบเสียง",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "ขยายทั้งหมด",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "ย่อทั้งหมด",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

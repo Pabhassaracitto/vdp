@@ -104,26 +104,25 @@ class PlaylistSheet extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
 
-              // ── Tùy chọn: Lặp (H2) ─────────────────────────────────────
-              Wrap(
-                spacing: 8,
-                runSpacing: 4,
+              // ── Tùy chọn: Chế độ nghe (0.10.3) ─────────────────────────
+              // 4 lựa chọn gộp của "nghe 1 mục hay tịnh tiến × lặp hay hết
+              // là dừng" — thay cho hàng chip lặp rời rạc trước đây.
+              Row(
                 children: [
-                  for (final mode in RepeatMode.values)
-                    ChoiceChip(
-                      label: Text(repeatLabel(context, mode)),
-                      selected: state.repeatMode == mode,
-                      selectedColor: color.withOpacity(0.2),
-                      avatar: Icon(
-                        repeatIcon(mode),
-                        size: 16,
-                        color: state.repeatMode == mode ? color : null,
-                      ),
-                      onSelected: (_) =>
-                          notifier.setRepeatMode(mode),
+                  Icon(Icons.hearing_rounded, size: 16, color: color),
+                  const SizedBox(width: 6),
+                  Text(
+                    context.l10n.playModeTitle,
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w700,
+                      color: theme.textTheme.bodySmall?.color,
                     ),
+                  ),
                 ],
               ),
+              const SizedBox(height: 6),
+              PlayModeSelector(color: color),
               const SizedBox(height: 10),
 
               // ── Tùy chọn: Tốc độ (H3) ──────────────────────────────────

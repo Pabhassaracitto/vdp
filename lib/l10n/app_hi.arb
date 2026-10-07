@@ -1552,5 +1552,49 @@
   },
   "@audioFloatingClose": {
     "description": "audioFloatingClose"
+  },
+  "playModeTitle": "सुनने का मोड",
+  "@playModeTitle": {
+    "description": "playModeTitle"
+  },
+  "playModeOnce": "केवल यही मद",
+  "@playModeOnce": {
+    "description": "playModeOnce"
+  },
+  "playModeSequence": "क्रम से सुनें",
+  "@playModeSequence": {
+    "description": "playModeSequence"
+  },
+  "playModeOnceHint": "वर्तमान मद पूरी होने पर रुक जाएगा",
+  "@playModeOnceHint": {
+    "description": "playModeOnceHint"
+  },
+  "playModeRepeatOneHint": "वर्तमान मद को बार-बार दोहराएगा",
+  "@playModeRepeatOneHint": {
+    "description": "playModeRepeatOneHint"
+  },
+  "playModeSequenceHint": "अगली मदों को सुनता रहेगा, सूची के अंत में रुकेगा",
+  "@playModeSequenceHint": {
+    "description": "playModeSequenceHint"
+  },
+  "playModeRepeatAllHint": "सुनता रहेगा और अंत में शुरू से दोहराएगा",
+  "@playModeRepeatAllHint": {
+    "description": "playModeRepeatAllHint"
+  },
+  "audioBubbleExpand": "प्लेयर फैलाएं",
+  "@audioBubbleExpand": {
+    "description": "audioBubbleExpand"
+  },
+  "audioBubbleCollapse": "प्लेयर समेटें",
+  "@audioBubbleCollapse": {
+    "description": "audioBubbleCollapse"
+  },
+  "studyTreeExpandAll": "सभी फैलाएं",
+  "@studyTreeExpandAll": {
+    "description": "studyTreeExpandAll"
+  },
+  "studyTreeCollapseAll": "सभी समेटें",
+  "@studyTreeCollapseAll": {
+    "description": "studyTreeCollapseAll"
   }
 }

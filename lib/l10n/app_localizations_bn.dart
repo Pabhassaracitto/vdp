@@ -1179,4 +1179,37 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'প্লেয়ার বন্ধ করুন';
+
+  @override
+  String get playModeTitle => 'শোনার মোড';
+
+  @override
+  String get playModeOnce => 'শুধু এই আইটেম';
+
+  @override
+  String get playModeSequence => 'ক্রমাগত শোনা';
+
+  @override
+  String get playModeOnceHint => 'বর্তমান আইটেম শেষ হলে থেমে যাবে';
+
+  @override
+  String get playModeRepeatOneHint => 'বর্তমান আইটেমটি বারবার পড়বে';
+
+  @override
+  String get playModeSequenceHint => 'পরের আইটেমগুলো শুনতে থাকবে, তালিকার শেষে থামবে';
+
+  @override
+  String get playModeRepeatAllHint => 'শুনতে থাকবে এবং শেষে আবার শুরু থেকে ঘুরবে';
+
+  @override
+  String get audioBubbleExpand => 'প্লেয়ার প্রসারিত করুন';
+
+  @override
+  String get audioBubbleCollapse => 'প্লেয়ার গুটিয়ে নিন';
+
+  @override
+  String get studyTreeExpandAll => 'সব প্রসারিত করুন';
+
+  @override
+  String get studyTreeCollapseAll => 'সব গুটিয়ে নিন';
 }

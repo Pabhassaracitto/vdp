@@ -4,6 +4,7 @@
 // với ProgressNotifier: đọc 1 lần lúc mở, ghi khi đổi/pause/đóng module.
 //   audio.speed            → tốc độ dùng chung (H3)
 //   audio.repeatMode       → chế độ lặp (H2)
+//   audio.playScope        → phạm vi phát: tịnh tiến hay chỉ 1 mục (0.10.3)
 //   audio.pos.<moduleId>   → vị trí nghe dở của từng module (H4)
 
 import 'dart:convert';
@@ -49,6 +50,16 @@ abstract class ListeningPositionStore {
   Future<String?> loadRepeatMode();
   Future<void> saveRepeatMode(String mode);
 
+  /// Trả về tên PlayScope ('onward' | 'single') hoặc null nếu chưa lưu
+  /// (VDP 0.10.3 — góp ý "nghe 1 mục hay tịnh tiến"): 'single' = đọc xong mục
+  /// đang chọn thì DỪNG, không nhảy sang mục kế tiếp.
+  ///
+  /// Có sẵn implementation mặc định để các store giả trong test (và bản cài
+  /// trước 0.10.3, chưa từng ghi khoá này) không phải sửa gì — thiếu khoá thì
+  /// hành vi cũ (tịnh tiến) được giữ nguyên.
+  Future<String?> loadPlayScope() async => null;
+  Future<void> savePlayScope(String scope) async {}
+
   Future<ListeningPosition?> loadPosition(String moduleId);
   Future<void> savePosition(String moduleId, ListeningPosition position);
 }
@@ -58,6 +69,7 @@ class SharedPrefsListeningPositionStore implements ListeningPositionStore {
 
   static const _speedKey = 'audio.speed';
   static const _repeatKey = 'audio.repeatMode';
+  static const _playScopeKey = 'audio.playScope';
   static String _posKey(String moduleId) => 'audio.pos.$moduleId';
   static const _lastModuleKey = 'audio.lastModuleId';
 
@@ -83,6 +95,18 @@ class SharedPrefsListeningPositionStore implements ListeningPositionStore {
   Future<void> saveRepeatMode(String mode) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_repeatKey, mode);
+  }
+
+  @override
+  Future<String?> loadPlayScope() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString(_playScopeKey);
+  }
+
+  @override
+  Future<void> savePlayScope(String scope) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_playScopeKey, scope);
   }
 
   @override

@@ -1165,4 +1165,37 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get audioFloatingClose => 'プレイヤーを閉じる';
+
+  @override
+  String get playModeTitle => '再生モード';
+
+  @override
+  String get playModeOnce => 'この項目のみ';
+
+  @override
+  String get playModeSequence => '連続再生';
+
+  @override
+  String get playModeOnceHint => '現在の項目を読み終えたら停止';
+
+  @override
+  String get playModeRepeatOneHint => '現在の項目を繰り返し再生';
+
+  @override
+  String get playModeSequenceHint => '次の項目へ続けて再生し、リストの最後で停止';
+
+  @override
+  String get playModeRepeatAllHint => '続けて再生し、最後まで行ったら先頭へ戻る';
+
+  @override
+  String get audioBubbleExpand => 'プレイヤーを展開';
+
+  @override
+  String get audioBubbleCollapse => 'プレイヤーを折りたたむ';
+
+  @override
+  String get studyTreeExpandAll => 'すべて展開';
+
+  @override
+  String get studyTreeCollapseAll => 'すべて折りたたむ';
 }

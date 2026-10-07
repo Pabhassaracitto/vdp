@@ -376,6 +376,64 @@ void main() {
   );
 
   testWidgets(
+    'cấp 2 của thanh nghe: mở ra chọn chế độ nghe (1 mục / tịnh tiến / lặp), '
+    'không Tooltip, và vẫn không đè NavigationBar',
+    (tester) async {
+      tester.view.physicalSize = const Size(1366, 625);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+
+      await pumpApp(tester);
+
+      // Cấp 2 đang đóng: chưa có chip chế độ nghe nào.
+      expect(find.text('Tịnh tiến'), findsNothing);
+
+      await tester.tap(find.byIcon(Icons.expand_less_rounded));
+      await tester.pump(const Duration(milliseconds: 250));
+
+      // Đủ 4 lựa chọn của góp ý "nghe 1 mục hay tịnh tiến, có lặp hay hết
+      // là dừng" (chuỗi lấy từ lib/l10n/app_vi.arb).
+      expect(find.text('Chỉ mục này'), findsOneWidget);
+      expect(find.text('Lặp mục này'), findsOneWidget);
+      expect(find.text('Tịnh tiến'), findsOneWidget);
+      expect(find.text('Lặp cả danh sách'), findsOneWidget);
+
+      // VDP | Issue Web: mở rộng KHÔNG được kéo Tooltip trở lại thanh
+      // (bubble nằm ngoài Navigator — không có Overlay).
+      expect(
+        find.descendant(
+          of: find.byKey(kGlobalAudioBubbleBarKey),
+          matching: find.byType(Tooltip),
+        ),
+        findsNothing,
+      );
+
+      // Chọn "Chỉ mục này" → state đổi ngay tại chỗ.
+      await tester.tap(find.text('Chỉ mục này'));
+      await tester.pump(const Duration(milliseconds: 200));
+      expect(
+        container.read(audioPlayerProvider).playMode,
+        AudioPlayMode.singleOnce,
+      );
+
+      // Mở rộng làm thanh cao lên nhưng đáy vẫn phải nằm trên NavigationBar
+      // (không che vùng bấm của các tab).
+      expect(
+        barBottom(tester).dy,
+        lessThanOrEqualTo(navBarTop(tester).dy),
+        reason: 'thanh nghe mở rộng vẫn không được đè NavigationBar',
+      );
+
+      // Thu gọn lại — panel biến mất.
+      await tester.tap(find.byIcon(Icons.expand_more_rounded));
+      await tester.pump(const Duration(milliseconds: 250));
+      expect(find.text('Chỉ mục này'), findsNothing);
+      expect(barBottom(tester).dy, lessThanOrEqualTo(navBarTop(tester).dy));
+      expect(tester.takeException(), isNull);
+    },
+  );
+
+  testWidgets(
     'dạng Ẩn: restore handle cũng nằm trên NavigationBar, không Tooltip, '
     'hover không exception và bấm hiện lại thanh được',
     (tester) async {
