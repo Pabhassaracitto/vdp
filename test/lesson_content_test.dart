@@ -128,41 +128,46 @@ void main() {
   for (final locale in shippedLocales.where(
     (tag) => tag != 'en' && tag != 'vi',
   )) {
-    test('"$locale" lesson lookup never leaks English fallback', () async {
-      final container = ProviderContainer();
-      addTearDown(container.dispose);
-      final catalog =
-          await container.read(contentCatalogProvider(locale).future);
-      final safeLocales = _safeLessonLocales(locale);
-      final authoredAssets = {
-        for (final tag in safeLocales) tag: _readContentAsset(tag),
-      };
+    test(
+      '"$locale" lesson lookup uses English for untranslated modules',
+      () async {
+        final container = ProviderContainer();
+        addTearDown(container.dispose);
+        final catalog =
+            await container.read(contentCatalogProvider(locale).future);
+        final safeLocales = _safeLessonLocales(locale);
+        final authoredAssets = {
+          for (final tag in safeLocales) tag: _readContentAsset(tag),
+        };
 
-      for (final id in _moduleIds) {
-        final expectedSources = safeLocales.where(
-          (tag) => _hasLessonItems(authoredAssets[tag]!, id),
-        );
-        final expected = expectedSources.isNotEmpty;
-        final lesson = catalog.moduleLesson(id);
-        expect(
-          lesson.isNotEmpty,
-          expected,
-          reason: '$locale/$id must reflect authored safe-locale content only',
-        );
-
-        if (expected && lesson.sections.isNotEmpty) {
-          final expectedFirstTitle = safeLocales
-              .map((tag) => _firstLessonSectionTitle(authoredAssets[tag]!, id))
-              .whereType<String>()
-              .first;
-          expect(
-            lesson.sections.first.title,
-            expectedFirstTitle,
-            reason: '$locale/$id must prefer the selected-language lesson',
+        for (final id in _moduleIds) {
+          final expectedSources = safeLocales.where(
+            (tag) => _hasLessonItems(authoredAssets[tag]!, id),
           );
+          final expected = expectedSources.isNotEmpty;
+          final lesson = catalog.moduleLesson(id);
+          expect(
+            lesson.isNotEmpty,
+            expected,
+            reason: '$locale/$id must use the first authored allowed locale',
+          );
+
+          if (expected && lesson.sections.isNotEmpty) {
+            final expectedFirstTitle = safeLocales
+                .map(
+                  (tag) => _firstLessonSectionTitle(authoredAssets[tag]!, id),
+                )
+                .whereType<String>()
+                .first;
+            expect(
+              lesson.sections.first.title,
+              expectedFirstTitle,
+              reason: '$locale/$id must prefer the selected-language lesson',
+            );
+          }
         }
-      }
-    });
+      },
+    );
   }
 
   test('lesson content is auditable and internally consistent', () async {

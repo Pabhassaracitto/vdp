@@ -19,19 +19,19 @@ Full plan and rationale: [`doc/localization_content_plan.md`](../../doc/localiza
 
 ## Translation fallback policy
 
-The asset/resource chain still loads `en` and `vi` for recovery, but runtime
-rendering follows `ContentLanguage.allowsEnglishFallback`:
+The asset/resource chain loads `en` and `vi`, while rendered text follows
+`ContentLanguage.allowsEnglishFallback`:
 
-* Priority languages (`hi`, `zh`, `zh_TW`, `si`, `my`, `ja`, `th`) show only
-  text authored in that language. `zh_TW` may inherit the Simplified Chinese
-  (`zh`) value. Missing narrative/prose is hidden rather than mixed with English
-  or Vietnamese.
-* An unregistered locale (for example `fr`) may use the reviewed English
-  catalog as a recovery fallback.
+* Draft priority languages (`hi`, `zh`, `zh_TW`, `si`, `my`, `ja`, `th`) try
+  their own catalog first. `zh_TW` may inherit Simplified Chinese (`zh`), then
+  missing fields fall back to English so content stays available while
+  translation proceeds. Vietnamese is never used for non-Vietnamese readers.
+* An unregistered locale (for example `fr`) may also use the English catalog as
+  a recovery fallback.
 
-This is intentional: until a doctrinal translation has been authored and
-reviewed, a shorter localized screen is safer than presenting English as if it
-were part of the selected-language lesson.
+Keep English fallback enabled while a catalog is `draft`. Consider disabling
+it only after all learner-facing text has been translated and reviewed; this
+keeps the fallback policy explicit without treating a partial catalog as complete.
 
 ## Translating a new language
 
@@ -61,8 +61,8 @@ python3 tool/content/init_locale.py hi --strip
 # 6. Enable it in the app: in
 #    lib/core/localization/content_languages.dart change that language's
 #    status from `planned` to `draft` (then `reviewed` after approval), and
-#    set `allowsEnglishFallback: false` for a priority language so missing
-#    translations stay hidden rather than appearing in English.
+#    keep `allowsEnglishFallback: true` while learner-facing fields remain
+#    untranslated. Disable it only after the catalog is complete and reviewed.
 
 # 7. Final gates.
 python3 tool/check_localizations.py

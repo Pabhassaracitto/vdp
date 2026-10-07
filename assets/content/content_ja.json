@@ -494,470 +494,262 @@
     "CS_PHASSA": {
       "name": "触",
       "shortName": "触",
-      "description": "心と対象が接触すること。",
-      "characteristic": "所縁に触れること（Phassaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Phassaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Phassaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Phassaの足処）"
+      "description": "心と対象が接触すること。"
     },
     "CS_VEDANA": {
       "name": "受",
       "shortName": "受",
-      "description": "対象を感受・領納すること。",
-      "characteristic": "所縁に触れること（Vedanāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Vedanāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Vedanāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Vedanāの足処）"
+      "description": "対象を感受・領納すること。"
     },
     "CS_SANNA": {
       "name": "想",
       "shortName": "想",
-      "description": "対象の特徴を捉えて識別・記憶すること。",
-      "characteristic": "所縁に触れること（Saññāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Saññāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Saññāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Saññāの足処）"
+      "description": "対象の特徴を捉えて識別・記憶すること。"
     },
     "CS_CETANA": {
       "name": "思",
       "shortName": "思",
-      "description": "心と相応法を対象に促し業を形成すること。",
-      "characteristic": "所縁に触れること（Cetanāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Cetanāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Cetanāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Cetanāの足処）"
+      "description": "心と相応法を対象に促し業を形成すること。"
     },
     "CS_EKAGGATA": {
       "name": "一境性",
       "shortName": "一境性",
-      "description": "心を単一の対象に集中・安定させること。",
-      "characteristic": "所縁に触れること（Ekaggatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Ekaggatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Ekaggatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Ekaggatāの足処）"
+      "description": "心を単一の対象に集中・安定させること。"
     },
     "CS_JIVITINDRIYA": {
       "name": "命根",
       "shortName": "命根",
-      "description": "相応する心・心所の生命を維持・統率すること。",
-      "characteristic": "所縁に触れること（Jīvitindriyaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Jīvitindriyaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Jīvitindriyaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Jīvitindriyaの足処）"
+      "description": "相応する心・心所の生命を維持・統率すること。"
     },
     "CS_MANASIKARA": {
       "name": "作意",
       "shortName": "作意",
-      "description": "心を対象へと導き結びつけること。",
-      "characteristic": "所縁に触れること（Manasikāraの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Manasikāraの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Manasikāraの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Manasikāraの足処）"
+      "description": "心を対象へと導き結びつけること。"
     },
     "CS_VITAKKA": {
       "name": "尋",
       "shortName": "尋",
-      "description": "心を対象へ粗雑に向けること（初歩的思考）。",
-      "characteristic": "所縁に触れること（Vitakkaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Vitakkaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Vitakkaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Vitakkaの足処）"
+      "description": "心を対象へ粗雑に向けること（初歩的思考）。"
     },
     "CS_VICARA": {
       "name": "伺",
       "shortName": "伺",
-      "description": "心を対象の上で細かく巡らせ持続させること。",
-      "characteristic": "所縁に触れること（Vicāraの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Vicāraの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Vicāraの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Vicāraの足処）"
+      "description": "心を対象の上で細かく巡らせ持続させること。"
     },
     "CS_ADHIMOKKHA": {
       "name": "勝解",
       "shortName": "勝解",
-      "description": "対象に対して疑いなく確信・決定すること。",
-      "characteristic": "所縁に触れること（Adhimokkhaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Adhimokkhaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Adhimokkhaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Adhimokkhaの足処）"
+      "description": "対象に対して疑いなく確信・決定すること。"
     },
     "CS_VIRIYA": {
       "name": "精進",
       "shortName": "精進",
-      "description": "善行に励み相応法を維持・向上させる努力。",
-      "characteristic": "所縁に触れること（Vīriyaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Vīriyaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Vīriyaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Vīriyaの足処）"
+      "description": "善行に励み相応法を維持・向上させる努力。"
     },
     "CS_PITI": {
       "name": "喜",
       "shortName": "喜",
-      "description": "対象に対して歓喜・満足すること。",
-      "characteristic": "所縁に触れること（Pītiの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Pītiの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Pītiの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Pītiの足処）"
+      "description": "対象に対して歓喜・満足すること。"
     },
     "CS_CHANDA": {
       "name": "意欲",
       "shortName": "意欲",
-      "description": "対象に対して行為しようとする意欲・志望。",
-      "characteristic": "所縁に触れること（Chandaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Chandaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Chandaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Chandaの足処）"
+      "description": "対象に対して行為しようとする意欲・志望。"
     },
     "CS_MOHA": {
       "name": "痴",
       "shortName": "痴",
-      "description": "真理に暗く、事物の本性を覆い隠す無知。",
-      "characteristic": "所縁に触れること（Mohaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Mohaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Mohaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Mohaの足処）"
+      "description": "真理に暗く、事物の本性を覆い隠す無知。"
     },
     "CS_AHIRIKA": {
       "name": "無慚",
       "shortName": "無慚",
-      "description": "悪行に対して内面的な恥を知らないこと。",
-      "characteristic": "所縁に触れること（Ahirikaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Ahirikaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Ahirikaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Ahirikaの足処）"
+      "description": "悪行に対して内面的な恥を知らないこと。"
     },
     "CS_ANOTTAPPA": {
       "name": "無愧",
       "shortName": "無愧",
-      "description": "悪行の報いを恐れない無反省。",
-      "characteristic": "所縁に触れること（Anottappaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Anottappaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Anottappaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Anottappaの足処）"
+      "description": "悪行の報いを恐れない無反省。"
     },
     "CS_UDDHACCA": {
       "name": "掉挙",
       "shortName": "掉挙",
-      "description": "心が対象の上で散乱し動揺すること。",
-      "characteristic": "所縁に触れること（Uddhaccaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Uddhaccaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Uddhaccaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Uddhaccaの足処）"
+      "description": "心が対象の上で散乱し動揺すること。"
     },
     "CS_LOBHA": {
       "name": "貪",
       "shortName": "貪",
-      "description": "対象に執着し渇愛・執取すること。",
-      "characteristic": "所縁に触れること（Lobhaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Lobhaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Lobhaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Lobhaの足処）"
+      "description": "対象に執着し渇愛・執取すること。"
     },
     "CS_DITTHI": {
       "name": "邪見",
       "shortName": "邪見",
-      "description": "事物を歪んで捉える誤った見解。",
-      "characteristic": "所縁に触れること（Diṭṭhiの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Diṭṭhiの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Diṭṭhiの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Diṭṭhiの足処）"
+      "description": "事物を歪んで捉える誤った見解。"
     },
     "CS_MANA": {
       "name": "慢",
       "shortName": "慢",
-      "description": "自己を高く評価し他と比較して傲慢になること。",
-      "characteristic": "所縁に触れること（Mānaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Mānaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Mānaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Mānaの足処）"
+      "description": "自己を高く評価し他と比較して傲慢になること。"
     },
     "CS_DOSA": {
       "name": "瞋",
       "shortName": "瞋",
-      "description": "対象に対する怒り・憎悪・破壊性。",
-      "characteristic": "所縁に触れること（Dosaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Dosaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Dosaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Dosaの足処）"
+      "description": "対象に対する怒り・憎悪・破壊性。"
     },
     "CS_ISSA": {
       "name": "嫉",
       "shortName": "嫉",
-      "description": "他人の幸福や成功を妬むこと。",
-      "characteristic": "所縁に触れること（Issāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Issāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Issāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Issāの足処）"
+      "description": "他人の幸福や成功を妬むこと。"
     },
     "CS_MACCHARIYA": {
       "name": "慳",
       "shortName": "慳",
-      "description": "自らの利益や所有物を惜しんで隠すこと。",
-      "characteristic": "所縁に触れること（Macchariyaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Macchariyaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Macchariyaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Macchariyaの足処）"
+      "description": "自らの利益や所有物を惜しんで隠すこと。"
     },
     "CS_KUKKUCCA": {
       "name": "悪作",
       "shortName": "悪作",
-      "description": "過去の悪行や不完全な善行を後悔・苦悶すること。",
-      "characteristic": "所縁に触れること（Kukkuccaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Kukkuccaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Kukkuccaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Kukkuccaの足処）"
+      "description": "過去の悪行や不完全な善行を後悔・苦悶すること。"
     },
     "CS_THINA": {
       "name": "惛沈",
       "shortName": "惛沈",
-      "description": "心の無気力・萎縮・活動力の低下。",
-      "characteristic": "所縁に触れること（Thīnaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Thīnaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Thīnaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Thīnaの足処）"
+      "description": "心の無気力・萎縮・活動力の低下。"
     },
     "CS_MIDDHA": {
       "name": "睡眠",
       "shortName": "睡眠",
-      "description": "心所の重さ・鈍さ・眠気。",
-      "characteristic": "所縁に触れること（Middhaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Middhaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Middhaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Middhaの足処）"
+      "description": "心所の重さ・鈍さ・眠気。"
     },
     "CS_VICIKICCHA": {
       "name": "疑",
       "shortName": "疑",
-      "description": "三宝や業果の真理に対する疑念・惑い。",
-      "characteristic": "所縁に触れること（Vicikicchāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Vicikicchāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Vicikicchāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Vicikicchāの足処）"
+      "description": "三宝や業果の真理に対する疑念・惑い。"
     },
     "CS_SADDHA": {
       "name": "信",
       "shortName": "信",
-      "description": "三宝と真理に対する清澄な信敬。",
-      "characteristic": "所縁に触れること（Saddhāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Saddhāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Saddhāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Saddhāの足処）"
+      "description": "三宝と真理に対する清澄な信敬。"
     },
     "CS_SATI": {
       "name": "念",
       "shortName": "念",
-      "description": "善なる対象を忘れずに心に留め続けること（正念）。",
-      "characteristic": "所縁に触れること（Satiの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Satiの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Satiの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Satiの足処）"
+      "description": "善なる対象を忘れずに心に留め続けること（正念）。"
     },
     "CS_HIRI": {
       "name": "慚",
       "shortName": "慚",
-      "description": "自身の品位に照らし悪行を恥じる徳。",
-      "characteristic": "所縁に触れること（Hirīの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Hirīの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Hirīの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Hirīの足処）"
+      "description": "自身の品位に照らし悪行を恥じる徳。"
     },
     "CS_OTTAPPA": {
       "name": "愧",
       "shortName": "愧",
-      "description": "世間の非難や悪業の報いを恐れる心。",
-      "characteristic": "所縁に触れること（Ottappaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Ottappaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Ottappaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Ottappaの足処）"
+      "description": "世間の非難や悪業の報いを恐れる心。"
     },
     "CS_ALOBHA": {
       "name": "無貪",
       "shortName": "無貪",
-      "description": "対象に執着せず、施しと離欲を好む心。",
-      "characteristic": "所縁に触れること（Alobhaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Alobhaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Alobhaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Alobhaの足処）"
+      "description": "対象に執着せず、施しと離欲を好む心。"
     },
     "CS_ADOSA": {
       "name": "無瞋",
       "shortName": "無瞋",
-      "description": "憎しみなく慈愛と温かさを保つ心。",
-      "characteristic": "所縁に触れること（Adosaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Adosaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Adosaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Adosaの足処）"
+      "description": "憎しみなく慈愛と温かさを保つ心。"
     },
     "CS_TATRAMAJJHATTATA": {
       "name": "中捨性",
       "shortName": "中捨性",
-      "description": "心と諸心所を平等・中正に保つ捨の徳。",
-      "characteristic": "所縁に触れること（Tatramajjhattatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Tatramajjhattatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Tatramajjhattatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Tatramajjhattatāの足処）"
+      "description": "心と諸心所を平等・中正に保つ捨の徳。"
     },
     "CS_KAYAPASSADDHI": {
       "name": "身軽安",
       "shortName": "身軽安",
-      "description": "心所の熱苦を鎮め安らかにすること。",
-      "characteristic": "所縁に触れること（Kāya-passaddhiの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Kāya-passaddhiの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Kāya-passaddhiの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Kāya-passaddhiの足処）"
+      "description": "心所の熱苦を鎮め安らかにすること。"
     },
     "CS_CITTAPASSADDHI": {
       "name": "心軽安",
       "shortName": "心軽安",
-      "description": "心王の動揺を鎮め静寂にすること。",
-      "characteristic": "所縁に触れること（Citta-passaddhiの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Citta-passaddhiの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Citta-passaddhiの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Citta-passaddhiの足処）"
+      "description": "心王の動揺を鎮め静寂にすること。"
     },
     "CS_KAYALAHUTA": {
       "name": "身軽快性",
       "shortName": "身軽快性",
-      "description": "心所の重苦しさを除く軽やかさ。",
-      "characteristic": "所縁に触れること（Kāya-lahutāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Kāya-lahutāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Kāya-lahutāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Kāya-lahutāの足処）"
+      "description": "心所の重苦しさを除く軽やかさ。"
     },
     "CS_CITTALAHUTA": {
       "name": "心軽快性",
       "shortName": "心軽快性",
-      "description": "心王の重苦しさを除く軽やかさ。",
-      "characteristic": "所縁に触れること（Citta-lahutāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Citta-lahutāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Citta-lahutāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Citta-lahutāの足処）"
+      "description": "心王の重苦しさを除く軽やかさ。"
     },
     "CS_KAYAMUDUTA": {
       "name": "身柔軟性",
       "shortName": "身柔軟性",
-      "description": "心所の頑迷さを除くしなやかさ。",
-      "characteristic": "所縁に触れること（Kāya-mudutāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Kāya-mudutāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Kāya-mudutāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Kāya-mudutāの足処）"
+      "description": "心所の頑迷さを除くしなやかさ。"
     },
     "CS_CITTAMUDUTA": {
       "name": "心柔軟性",
       "shortName": "心柔軟性",
-      "description": "心王の頑迷さを除くしなやかさ。",
-      "characteristic": "所縁に触れること（Citta-mudutāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Citta-mudutāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Citta-mudutāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Citta-mudutāの足処）"
+      "description": "心王の頑迷さを除くしなやかさ。"
     },
     "CS_KAYAKAMMANNATA": {
       "name": "身適業性",
       "shortName": "身適業性",
-      "description": "心所が善業を行うのに適していること。",
-      "characteristic": "所縁に触れること（Kāya-kammaññatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Kāya-kammaññatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Kāya-kammaññatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Kāya-kammaññatāの足処）"
+      "description": "心所が善業を行うのに適していること。"
     },
     "CS_CITTAKAMMANNATA": {
       "name": "心適業性",
       "shortName": "心適業性",
-      "description": "心王が善業を行うのに適していること。",
-      "characteristic": "所縁に触れること（Citta-kammaññatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Citta-kammaññatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Citta-kammaññatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Citta-kammaññatāの足処）"
+      "description": "心王が善業を行うのに適していること。"
     },
     "CS_KAYAPAGUNNATA": {
       "name": "身練達性",
       "shortName": "身練達性",
-      "description": "心所が無病で熟達していること。",
-      "characteristic": "所縁に触れること（Kāya-pāguññatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Kāya-pāguññatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Kāya-pāguññatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Kāya-pāguññatāの足処）"
+      "description": "心所が無病で熟達していること。"
     },
     "CS_CITTAPAGUNNATA": {
       "name": "心練達性",
       "shortName": "心練達性",
-      "description": "心王が無病で熟達していること。",
-      "characteristic": "所縁に触れること（Citta-pāguññatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Citta-pāguññatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Citta-pāguññatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Citta-pāguññatāの足処）"
+      "description": "心王が無病で熟達していること。"
     },
     "CS_KAYUJUKATA": {
       "name": "身正直性",
       "shortName": "身正直性",
-      "description": "心所の真っ直ぐさ（歪み・偽りの排除）。",
-      "characteristic": "所縁に触れること（Kāy'ujukatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Kāy'ujukatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Kāy'ujukatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Kāy'ujukatāの足処）"
+      "description": "心所の真っ直ぐさ（歪み・偽りの排除）。"
     },
     "CS_CITTUJUKATA": {
       "name": "心正直性",
       "shortName": "心正直性",
-      "description": "心王の真っ直ぐさ（素直さ）。",
-      "characteristic": "所縁に触れること（Citt'ujukatāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Citt'ujukatāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Citt'ujukatāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Citt'ujukatāの足処）"
+      "description": "心王の真っ直ぐさ（素直さ）。"
     },
     "CS_SAMMAVACA": {
       "name": "正語",
       "shortName": "正語",
-      "description": "嘘、悪口、陰口、無駄話の四語悪を離れる離律儀。",
-      "characteristic": "所縁に触れること（Sammā-vācāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Sammā-vācāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Sammā-vācāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Sammā-vācāの足処）"
+      "description": "嘘、悪口、陰口、無駄話の四語悪を離れる離律儀。"
     },
     "CS_SAMMAKAMMANTA": {
       "name": "正業",
       "shortName": "正業",
-      "description": "殺生、盗み、不倫の三身悪を離れる離律儀。",
-      "characteristic": "所縁に触れること（Sammā-kammantaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Sammā-kammantaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Sammā-kammantaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Sammā-kammantaの足処）"
+      "description": "殺生、盗み、不倫の三身悪を離れる離律儀。"
     },
     "CS_SAMMAAJIVA": {
       "name": "正命",
       "shortName": "正命",
-      "description": "身・口の悪業による邪な生活を離れる離律儀。",
-      "characteristic": "所縁に触れること（Sammā-ājīvaの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Sammā-ājīvaの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Sammā-ājīvaの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Sammā-ājīvaの足処）"
+      "description": "身・口の悪業による邪な生活を離れる離律儀。"
     },
     "CS_KARUNA": {
       "name": "悲",
       "shortName": "悲",
-      "description": "苦しむ衆生の苦しみを取り除こうとする憐れみ。",
-      "characteristic": "所縁に触れること（Karuṇāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Karuṇāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Karuṇāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Karuṇāの足処）"
+      "description": "苦しむ衆生の苦しみを取り除こうとする憐れみ。"
     },
     "CS_MUDITA": {
       "name": "随喜",
       "shortName": "随喜",
-      "description": "他人の幸福や成功を心から共に喜ぶ心。",
-      "characteristic": "所縁に触れること（Muditāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Muditāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Muditāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Muditāの足処）"
+      "description": "他人の幸福や成功を心から共に喜ぶ心。"
     },
     "CS_PANNA": {
       "name": "慧根",
       "shortName": "慧根",
-      "description": "物事の真相（無常・苦・無我）を如実に知る智慧の機能。",
-      "characteristic": "所縁に触れること（Paññāの特相）",
-      "function": "倶生する心・心所を対象と結びつけること（Paññāの働き）",
-      "manifestation": "心・心所・根門・所縁の和合として現れること（Paññāの現起）",
-      "proximateCause": "所縁が生起し適切な根門を通じて現れること（Paññāの足処）"
+      "description": "物事の真相（無常・苦・無我）を如実に知る智慧の機能。"
     }
   },
   "rupas": {
@@ -1373,8 +1165,6 @@
       "name": "極大所縁五門心路",
       "shortName": "五門極大所縁",
       "description": "17刹那が完備し登録心（タダーラムバナ）に至る完全な五門認識。",
-      "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
-      "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
       "steps": {
         "1": {
           "name": "過去有分",
@@ -1437,24 +1227,18 @@
       "name": "大所縁五門心路",
       "shortName": "五門大所縁",
       "description": "七速行まで生じ登録心のない五門認識過程。",
-      "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
-      "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
       "steps": {}
     },
     "VT_Y_MON": {
       "name": "意門心路",
       "shortName": "意門心路",
       "description": "意門を通じて法処の対象を認識する心路過程。",
-      "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
-      "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
       "steps": {}
     },
     "VT_VITHIMUTTA": {
       "name": "離路心",
       "shortName": "離路心",
       "description": "門を通さず認識過程外で働く結生心・有分心・死心。",
-      "arisingCondition": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
-      "significance": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
       "steps": {}
     }
   },
@@ -2938,72 +2722,86 @@
     "M4_AKUSALA": {
       "title": "十二不善心",
       "description": "貪根心8、瞋根心2、痴根心2の12不善心。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M12_VO_NHAN": {
       "title": "十八無因心",
       "description": "不善異熟7、善異熟無因8、無因唯作3の18心。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M3_TINH_HAO_BIEN_HANH": {
       "title": "美心遍心所（19）",
       "description": "すべての美心に共通する19の美遍心所。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M5_SOBHANA": {
       "title": "欲界美心（24）",
       "description": "大善心8、大異熟心8、大唯作心8の24心。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M13_SAC_GIOI": {
       "title": "色界心（15）",
       "description": "五禅の善心・異熟心・唯作心からなる15の色界心。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M14_VO_SAC_GIOI": {
       "title": "無色界心（12）",
       "description": "四無色定の善・異熟・唯作の12心。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M7_SIEU_THE": {
       "title": "出世間心",
       "description": "涅槃を対象とする四道心と四果心。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M15_TAM_SO_PHOI_HOP": {
       "title": "心所相応（結合）",
       "description": "52心所が諸心とどのように結合するかの規則。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M6_NGHIEP": {
       "title": "業の分別",
       "description": "思心所と16種の業の分類と果報の法則。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M16_NGUOI_VA_COI": {
       "title": "有情と生存界",
       "description": "十二種の人と三十一界の生存の領域。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M8_NHAN_DUYEN": {
       "title": "縁起の概要",
       "description": "十二縁起の輪廻と滅尽の法則。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M17_DUYEN_CHI_TIET": {
       "title": "発趣法（二十四縁）",
       "description": "二十四縁の諸関係と法と法の相依性。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M9_SAC_PHAP": {
       "title": "色法（物質現象）",
       "description": "四大種と二十四所造色、計二十八色法。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M10_LO_TRINH": {
       "title": "心路過程（思考過程）",
       "description": "五門心路と意門心路の生滅過程。",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     }
   }
 }

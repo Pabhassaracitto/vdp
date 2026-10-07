@@ -494,470 +494,262 @@
     "CS_PHASSA": {
       "name": "ඵස්ස",
       "shortName": "ඵස්ස",
-      "description": "සිත සහ අරමුණ අතර ස්පර්ශය.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Phassa හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Phassa හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Phassa හි ආසන්න හේතුව)"
+      "description": "සිත සහ අරමුණ අතර ස්පර්ශය."
     },
     "CS_VEDANA": {
       "name": "වේදනා",
       "shortName": "වේදනා",
-      "description": "අරමුණේ රසය විඳීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Vedanā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Vedanā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Vedanā හි ආසන්න හේතුව)"
+      "description": "අරමුණේ රසය විඳීම."
     },
     "CS_SANNA": {
       "name": "සඤ්ඤා",
       "shortName": "සඤ්ඤා",
-      "description": "අරමුණ හඳුනාගැනීම සහ සටහන් කරගැනීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Saññā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Saññā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Saññā හි ආසන්න හේතුව)"
+      "description": "අරමුණ හඳුනාගැනීම සහ සටහන් කරගැනීම."
     },
     "CS_CETANA": {
       "name": "චේතනා",
       "shortName": "චේතනා",
-      "description": "සම්ප්‍රයුක්ත ධර්මයන් මෙහෙයවීම සහ කර්ම සකස් කිරීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Cetanā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Cetanā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Cetanā හි ආසන්න හේතුව)"
+      "description": "සම්ප්‍රයුක්ත ධර්මයන් මෙහෙයවීම සහ කර්ම සකස් කිරීම."
     },
     "CS_EKAGGATA": {
       "name": "ඒකග්ගතා",
       "shortName": "ඒකග්ගතා",
-      "description": "සිත එක් අරමුණක තැන්පත් කිරීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Ekaggatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Ekaggatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Ekaggatā හි ආසන්න හේතුව)"
+      "description": "සිත එක් අරමුණක තැන්පත් කිරීම."
     },
     "CS_JIVITINDRIYA": {
       "name": "ජීවිතින්ද්‍රිය",
       "shortName": "ජීවිතින්ද්‍රිය",
-      "description": "නාම ධර්මයන්ගේ පැවැත්ම පවත්වා ගැනීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Jīvitindriya හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Jīvitindriya හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Jīvitindriya හි ආසන්න හේතුව)"
+      "description": "නාම ධර්මයන්ගේ පැවැත්ම පවත්වා ගැනීම."
     },
     "CS_MANASIKARA": {
       "name": "මනසිකාර",
       "shortName": "මනසිකාර",
-      "description": "සිත අරමුණ වෙත යොමු කිරීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Manasikāra හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Manasikāra හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Manasikāra හි ආසන්න හේතුව)"
+      "description": "සිත අරමුණ වෙත යොමු කිරීම."
     },
     "CS_VITAKKA": {
       "name": "විතක්ක",
       "shortName": "විතක්ක",
-      "description": "සිත අරමුණ වෙත එසවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Vitakka හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Vitakka හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Vitakka හි ආසන්න හේතුව)"
+      "description": "සිත අරමුණ වෙත එසවීම."
     },
     "CS_VICARA": {
       "name": "විචාර",
       "shortName": "විචාර",
-      "description": "අරමුණෙහි සිත යෙදවීම, පිරිමැදීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Vicāra හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Vicāra හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Vicāra හි ආසන්න හේතුව)"
+      "description": "අරමුණෙහි සිත යෙදවීම, පිරිමැදීම."
     },
     "CS_ADHIMOKKHA": {
       "name": "අධිමොක්ඛ",
       "shortName": "අධිමොක්ඛ",
-      "description": "අරමුණ පිළිබඳ නිශ්චය කිරීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Adhimokkha හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Adhimokkha හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Adhimokkha හි ආසන්න හේතුව)"
+      "description": "අරමුණ පිළිබඳ නිශ්චය කිරීම."
     },
     "CS_VIRIYA": {
       "name": "වීරිය",
       "shortName": "වීරිය",
-      "description": "අලස නොවී වීර්යය වැඩීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Vīriya හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Vīriya හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Vīriya හි ආසන්න හේතුව)"
+      "description": "අලස නොවී වීර්යය වැඩීම."
     },
     "CS_PITI": {
       "name": "පීති",
       "shortName": "පීති",
-      "description": "අරමුණ කෙරෙහි ප්‍රීතිවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Pīti හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Pīti හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Pīti හි ආසන්න හේතුව)"
+      "description": "අරමුණ කෙරෙහි ප්‍රීතිවීම."
     },
     "CS_CHANDA": {
       "name": "ඡන්ද",
       "shortName": "ඡන්ද",
-      "description": "ක්‍රියා කිරීමේ කැමැත්ත.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Chanda හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Chanda හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Chanda හි ආසන්න හේතුව)"
+      "description": "ක්‍රියා කිරීමේ කැමැත්ත."
     },
     "CS_MOHA": {
       "name": "මෝහ",
       "shortName": "මෝහ",
-      "description": "යථාර්ථය නොදන්නා මුළාව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Moha හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Moha හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Moha හි ආසන්න හේතුව)"
+      "description": "යථාර්ථය නොදන්නා මුළාව."
     },
     "CS_AHIRIKA": {
       "name": "අහිරික",
       "shortName": "අහිරික",
-      "description": "පවට ලැජ්ජා නොවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Ahirika හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Ahirika හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Ahirika හි ආසන්න හේතුව)"
+      "description": "පවට ලැජ්ජා නොවීම."
     },
     "CS_ANOTTAPPA": {
       "name": "අනොත්තප්ප",
       "shortName": "අනොත්තප්ප",
-      "description": "පවට බිය නොවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Anottappa හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Anottappa හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Anottappa හි ආසන්න හේතුව)"
+      "description": "පවට බිය නොවීම."
     },
     "CS_UDDHACCA": {
       "name": "උද්ධච්ච",
       "shortName": "උද්ධච්ච",
-      "description": "සිතේ නොසන්සුන්කම, විසිරීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Uddhacca හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Uddhacca හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Uddhacca හි ආසන්න හේතුව)"
+      "description": "සිතේ නොසන්සුන්කම, විසිරීම."
     },
     "CS_LOBHA": {
       "name": "ලෝභ",
       "shortName": "ලෝභ",
-      "description": "අරමුණෙහි ඇලීම, ආශාව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Lobha හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Lobha හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Lobha හි ආසන්න හේතුව)"
+      "description": "අරමුණෙහි ඇලීම, ආශාව."
     },
     "CS_DITTHI": {
       "name": "දිට්ඨි",
       "shortName": "දිට්ඨි",
-      "description": "වැරදි දැක්ම, මිච්ඡා දිට්ඨිය.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Diṭṭhi හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Diṭṭhi හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Diṭṭhi හි ආසන්න හේතුව)"
+      "description": "වැරදි දැක්ම, මිච්ඡා දිට්ඨිය."
     },
     "CS_MANA": {
       "name": "මාන",
       "shortName": "මාන",
-      "description": "අහංකාරය, මානය.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Māna හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Māna හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Māna හි ආසන්න හේතුව)"
+      "description": "අහංකාරය, මානය."
     },
     "CS_DOSA": {
       "name": "දෝස",
       "shortName": "දෝස",
-      "description": "තරහව, ද්වේෂය, ක්‍රෝධය.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Dosa හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Dosa හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Dosa හි ආසන්න හේතුව)"
+      "description": "තරහව, ද්වේෂය, ක්‍රෝධය."
     },
     "CS_ISSA": {
       "name": "ඉස්සා",
       "shortName": "ඉස්සා",
-      "description": "අන් අයගේ දියුණුවට ඊර්ෂ්‍යා කිරීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Issā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Issā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Issā හි ආසන්න හේතුව)"
+      "description": "අන් අයගේ දියුණුවට ඊර්ෂ්‍යා කිරීම."
     },
     "CS_MACCHARIYA": {
       "name": "මච්ඡරිය",
       "shortName": "මච්ඡරිය",
-      "description": "තමන්ගේ සම්පත් අනුන්ට දීමට මසුරුකම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Macchariya හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Macchariya හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Macchariya හි ආසන්න හේතුව)"
+      "description": "තමන්ගේ සම්පත් අනුන්ට දීමට මසුරුකම."
     },
     "CS_KUKKUCCA": {
       "name": "කුක්කුච්ච",
       "shortName": "කුක්කුච්ච",
-      "description": "කළ නපුර හෝ නොකළ යහපත ගැන පසුතැවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Kukkucca හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Kukkucca හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Kukkucca හි ආසන්න හේතුව)"
+      "description": "කළ නපුර හෝ නොකළ යහපත ගැන පසුතැවීම."
     },
     "CS_THINA": {
       "name": "ථීන",
       "shortName": "ථීන",
-      "description": "සිතේ හැකිලීම, අලසබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Thīna හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Thīna හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Thīna හි ආසන්න හේතුව)"
+      "description": "සිතේ හැකිලීම, අලසබව."
     },
     "CS_MIDDHA": {
       "name": "මිද්ධ",
       "shortName": "මිද්ධ",
-      "description": "චෛතසිකයන්ගේ නිදිමතබව සහ බරබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Middha හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Middha හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Middha හි ආසන්න හේතුව)"
+      "description": "චෛතසිකයන්ගේ නිදිමතබව සහ බරබව."
     },
     "CS_VICIKICCHA": {
       "name": "විචිකිච්ඡා",
       "shortName": "විචිකිච්ඡා",
-      "description": "ධර්මය පිළිබඳ සැකය, අවිශ්වාසය.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Vicikicchā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Vicikicchā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Vicikicchā හි ආසන්න හේතුව)"
+      "description": "ධර්මය පිළිබඳ සැකය, අවිශ්වාසය."
     },
     "CS_SADDHA": {
       "name": "සද්ධා",
       "shortName": "සද්ධා",
-      "description": "ත්‍රිවිධ රත්නය කෙරෙහි ශ්‍රද්ධාව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Saddhā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Saddhā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Saddhā හි ආසන්න හේතුව)"
+      "description": "ත්‍රිවිධ රත්නය කෙරෙහි ශ්‍රද්ධාව."
     },
     "CS_SATI": {
       "name": "සති",
       "shortName": "සති",
-      "description": "කුසල් ධර්මයන්හි සිහිය පිහිටුවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Sati හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Sati හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Sati හි ආසන්න හේතුව)"
+      "description": "කුසල් ධර්මයන්හි සිහිය පිහිටුවීම."
     },
     "CS_HIRI": {
       "name": "හිරි",
       "shortName": "හිරි",
-      "description": "පවට ලැජ්ජාවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Hirī හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Hirī හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Hirī හි ආසන්න හේතුව)"
+      "description": "පවට ලැජ්ජාවීම."
     },
     "CS_OTTAPPA": {
       "name": "ඔත්තප්ප",
       "shortName": "ඔත්තප්ප",
-      "description": "පවට බියවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Ottappa හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Ottappa හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Ottappa හි ආසන්න හේතුව)"
+      "description": "පවට බියවීම."
     },
     "CS_ALOBHA": {
       "name": "අලෝභ",
       "shortName": "අලෝභ",
-      "description": "අරමුණෙහි නොඇලීම, ත්‍යාගශීලීබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Alobha හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Alobha හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Alobha හි ආසන්න හේතුව)"
+      "description": "අරමුණෙහි නොඇලීම, ත්‍යාගශීලීබව."
     },
     "CS_ADOSA": {
       "name": "අදෝස",
       "shortName": "අදෝස",
-      "description": "ද්වේෂය නැතිකම, මෛත්‍රිය.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Adosa හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Adosa හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Adosa හි ආසන්න හේතුව)"
+      "description": "ද්වේෂය නැතිකම, මෛත්‍රිය."
     },
     "CS_TATRAMAJJHATTATA": {
       "name": "තත්‍රමජ්ඣත්තතා",
       "shortName": "තත්‍රමජ්ඣත්තතා",
-      "description": "සිතෙහි මැදහත් බව, උපේක්ෂාව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Tatramajjhattatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Tatramajjhattatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Tatramajjhattatā හි ආසන්න හේතුව)"
+      "description": "සිතෙහි මැදහත් බව, උපේක්ෂාව."
     },
     "CS_KAYAPASSADDHI": {
       "name": "කායපස්සද්ධි",
       "shortName": "කායපස්සද්ධි",
-      "description": "චෛතසිකයන්ගේ සංසිඳීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Kāya-passaddhi හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Kāya-passaddhi හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Kāya-passaddhi හි ආසන්න හේතුව)"
+      "description": "චෛතසිකයන්ගේ සංසිඳීම."
     },
     "CS_CITTAPASSADDHI": {
       "name": "චිත්තපස්සද්ධි",
       "shortName": "චිත්තපස්සද්ධි",
-      "description": "සිතේ සංසිඳීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Citta-passaddhi හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Citta-passaddhi හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Citta-passaddhi හි ආසන්න හේතුව)"
+      "description": "සිතේ සංසිඳීම."
     },
     "CS_KAYALAHUTA": {
       "name": "කායලහුතා",
       "shortName": "කායලහුතා",
-      "description": "චෛතසිකයන්ගේ සැහැල්ලු බව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Kāya-lahutā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Kāya-lahutā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Kāya-lahutā හි ආසන්න හේතුව)"
+      "description": "චෛතසිකයන්ගේ සැහැල්ලු බව."
     },
     "CS_CITTALAHUTA": {
       "name": "චිත්තලහුතා",
       "shortName": "චිත්තලහුතා",
-      "description": "සිතේ සැහැල්ලු බව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Citta-lahutā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Citta-lahutā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Citta-lahutā හි ආසන්න හේතුව)"
+      "description": "සිතේ සැහැල්ලු බව."
     },
     "CS_KAYAMUDUTA": {
       "name": "කායමුදුතා",
       "shortName": "කායමුදුතා",
-      "description": "චෛතසිකයන්ගේ මෘදුබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Kāya-mudutā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Kāya-mudutā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Kāya-mudutā හි ආසන්න හේතුව)"
+      "description": "චෛතසිකයන්ගේ මෘදුබව."
     },
     "CS_CITTAMUDUTA": {
       "name": "චිත්තමුදුතා",
       "shortName": "චිත්තමුදුතා",
-      "description": "සිතේ මෘදුබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Citta-mudutā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Citta-mudutā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Citta-mudutā හි ආසන්න හේතුව)"
+      "description": "සිතේ මෘදුබව."
     },
     "CS_KAYAKAMMANNATA": {
       "name": "කායකම්මඤ්ඤතා",
       "shortName": "කායකම්මඤ්ඤතා",
-      "description": "චෛතසිකයන්ගේ ක්‍රියාශීලී බව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Kāya-kammaññatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Kāya-kammaññatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Kāya-kammaññatā හි ආසන්න හේතුව)"
+      "description": "චෛතසිකයන්ගේ ක්‍රියාශීලී බව."
     },
     "CS_CITTAKAMMANNATA": {
       "name": "චිත්තකම්මඤ්ඤතා",
       "shortName": "චිත්තකම්මඤ්ඤතා",
-      "description": "සිතේ සුදුසු බව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Citta-kammaññatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Citta-kammaññatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Citta-kammaññatā හි ආසන්න හේතුව)"
+      "description": "සිතේ සුදුසු බව."
     },
     "CS_KAYAPAGUNNATA": {
       "name": "කායපාගුඤ්ඤතා",
       "shortName": "කායපාගුඤ්ඤතා",
-      "description": "චෛතසිකයන්ගේ ප්‍රවීණබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Kāya-pāguññatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Kāya-pāguññatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Kāya-pāguññatā හි ආසන්න හේතුව)"
+      "description": "චෛතසිකයන්ගේ ප්‍රවීණබව."
     },
     "CS_CITTAPAGUNNATA": {
       "name": "චිත්තපාගුඤ්ඤතා",
       "shortName": "චිත්තපාගුඤ්ඤතා",
-      "description": "සිතේ ප්‍රවීණබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Citta-pāguññatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Citta-pāguññatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Citta-pāguññatā හි ආසන්න හේතුව)"
+      "description": "සිතේ ප්‍රවීණබව."
     },
     "CS_KAYUJUKATA": {
       "name": "කායඋජ්ජුකතා",
       "shortName": "කායඋජ්ජුකතා",
-      "description": "චෛතසිකයන්ගේ අවංකබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Kāy'ujukatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Kāy'ujukatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Kāy'ujukatā හි ආසන්න හේතුව)"
+      "description": "චෛතසිකයන්ගේ අවංකබව."
     },
     "CS_CITTUJUKATA": {
       "name": "චිත්තඋජ්ජුකතා",
       "shortName": "චිත්තඋජ්ජුකතා",
-      "description": "සිතේ අවංකබව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Citt'ujukatā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Citt'ujukatā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Citt'ujukatā හි ආසන්න හේතුව)"
+      "description": "සිතේ අවංකබව."
     },
     "CS_SAMMAVACA": {
       "name": "සම්මාවාචා",
       "shortName": "සම්මාවාචා",
-      "description": "සතර වාග් දුශ්චරිතයෙන් වැළකීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Sammā-vācā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Sammā-vācā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Sammā-vācā හි ආසන්න හේතුව)"
+      "description": "සතර වාග් දුශ්චරිතයෙන් වැළකීම."
     },
     "CS_SAMMAKAMMANTA": {
       "name": "සම්මාකම්මන්ත",
       "shortName": "සම්මාකම්මන්ත",
-      "description": "තුන් කාය දුශ්චරිතයෙන් වැළකීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Sammā-kammanta හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Sammā-kammanta හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Sammā-kammanta හි ආසන්න හේතුව)"
+      "description": "තුන් කාය දුශ්චරිතයෙන් වැළකීම."
     },
     "CS_SAMMAAJIVA": {
       "name": "සම්මාආජීව",
       "shortName": "සම්මාආජීව",
-      "description": "වැරදි දිවි පැවැත්මෙන් වැළකීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Sammā-ājīva හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Sammā-ājīva හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Sammā-ājīva හි ආසන්න හේතුව)"
+      "description": "වැරදි දිවි පැවැත්මෙන් වැළකීම."
     },
     "CS_KARUNA": {
       "name": "කරුණා",
       "shortName": "කරුණා",
-      "description": "දුක්ඛිත සත්වයන්ගේ දුක නිවීමේ කැමැත්ත.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Karuṇā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Karuṇā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Karuṇā හි ආසන්න හේතුව)"
+      "description": "දුක්ඛිත සත්වයන්ගේ දුක නිවීමේ කැමැත්ත."
     },
     "CS_MUDITA": {
       "name": "මුදිතා",
       "shortName": "මුදිතා",
-      "description": "අන් අයගේ සතුට දැක සතුටුවීම.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Muditā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Muditā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Muditā හි ආසන්න හේතුව)"
+      "description": "අන් අයගේ සතුට දැක සතුටුවීම."
     },
     "CS_PANNA": {
       "name": "පඤ්ඤින්ද්‍රිය",
       "shortName": "පඤ්ඤින්ද්‍රිය",
-      "description": "යථාර්ථය අවබෝධ කරවන ප්‍රඥාව.",
-      "characteristic": "ආරම්මණය ස්පර්ශ කිරීම (Paññā හි ලක්ෂණය)",
-      "function": "සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම (Paññā හි කෘත්‍යය)",
-      "manifestation": "සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-      "proximateCause": "සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම (Paññā හි ආසන්න හේතුව)"
+      "description": "යථාර්ථය අවබෝධ කරවන ප්‍රඥාව."
     }
   },
   "rupas": {
@@ -1373,8 +1165,6 @@
       "name": "අතිමහන්තාරම්මණ පංචද්වාර වීථි",
       "shortName": "අතිමහන්ත පංචද්වාර",
       "description": "චිත්තක්ෂණ 17ක් සම්පූර්ණ වන තදාරම්මණ සහිත පංචද්වාර වීථිය.",
-      "arisingCondition": "පැහැදිලි අරමුණක් ද්වාරයෙහි ගැටී භවාංග සිත කම්පනය වන විට පහළ වේ.",
-      "significance": "සිත අරමුණක් ග්‍රහණය කර කර්ම රැස් කර නැවත භවාංගයට වැටෙන ආකාරය පෙන්වයි.",
       "steps": {
         "1": {
           "name": "අතීත භවාංගය",
@@ -1437,24 +1227,18 @@
       "name": "මහන්තාරම්මණ පංචද්වාර වීථි",
       "shortName": "පංචද්වාර මහන්ත",
       "description": "ජවන සතක් පමණක් පහළ වන, තදාරම්මණ රහිත පංචද්වාරික වීථිය.",
-      "arisingCondition": "පැහැදිලි අරමුණක් ද්වාරයෙහි ගැටී භවාංග සිත කම්පනය වන විට පහළ වේ.",
-      "significance": "සිත අරමුණක් ග්‍රහණය කර කර්ම රැස් කර නැවත භවාංගයට වැටෙන ආකාරය පෙන්වයි.",
       "steps": {}
     },
     "VT_Y_MON": {
       "name": "මනෝද්වාර වීථි",
       "shortName": "මනෝද්වාර වීථිය",
       "description": "මනෝද්වාරය හරහා ධර්මාරම්මණ ග්‍රහණය කරමින් පහළ වන සිතුවිලි මාලාව.",
-      "arisingCondition": "පැහැදිලි අරමුණක් ද්වාරයෙහි ගැටී භවාංග සිත කම්පනය වන විට පහළ වේ.",
-      "significance": "සිත අරමුණක් ග්‍රහණය කර කර්ම රැස් කර නැවත භවාංගයට වැටෙන ආකාරය පෙන්වයි.",
       "steps": {}
     },
     "VT_VITHIMUTTA": {
       "name": "වීථිමුක්ත සිත්",
       "shortName": "වීථිමුක්ත",
       "description": "ද්වාර විමුක්තව පවතින ප්‍රතිසන්ධි, භවාංග සහ චුති සිත්.",
-      "arisingCondition": "පැහැදිලි අරමුණක් ද්වාරයෙහි ගැටී භවාංග සිත කම්පනය වන විට පහළ වේ.",
-      "significance": "සිත අරමුණක් ග්‍රහණය කර කර්ම රැස් කර නැවත භවාංගයට වැටෙන ආකාරය පෙන්වයි.",
       "steps": {}
     }
   },
@@ -1462,87 +1246,104 @@
     "M1_BASICS": {
       "title": "සබ්බචිත්තසාධාරණ චෛතසික (7)",
       "description": "සියලු සිත්හි යෙදෙන සර්වචිත්ත සාධාරණ චෛතසික 7.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M11_BIET_CANH": {
       "title": "ප්‍රකීර්ණක චෛතසික (6)",
       "description": "අවශ්‍ය පරිදි යෙදෙන ප්‍රකීර්ණක චෛතසික 6.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M2_SI_PHAN": {
       "title": "මෝහ චතුක්ක චෛතසික (4)",
       "description": "මෝහ, අහිරික, අනොත්තප්ප, උද්ධච්ච යන අකුසල සාධාරණ 4.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M4_AKUSALA": {
       "title": "දොළොස් අකුසල් සිත්",
       "description": "ලෝභමූල 8, ද්වේෂමූල 2, මෝහමූල 2 අකුසල් සිත්.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M12_VO_NHAN": {
       "title": "දහඅට අහේතුක සිත්",
       "description": "අකුසල් විපාක 7, කුසල් විපාක 8, අහේතුක ක්‍රියා 3.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M3_TINH_HAO_BIEN_HANH": {
       "title": "ශෝභන සාධාරණ චෛතසික (19)",
       "description": "සියලු ශෝභන සිත්හි යෙදෙන චෛතසික 19.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M5_SOBHANA": {
       "title": "කාවාවචර ශෝභන සිත් (24)",
       "description": "මහා කුසල් 8, මහා විපාක 8, මහා ක්‍රියා 8.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M13_SAC_GIOI": {
       "title": "රූපාවචර සිත් (15)",
       "description": "රූප ධ්‍යාන කුසල්, විපාක, ක්‍රියා සිත් 15.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M14_VO_SAC_GIOI": {
       "title": "අරූපාවචර සිත් (12)",
       "description": "අරූප ධ්‍යාන කුසල්, විපාක, ක්‍රියා සිත් 12.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M7_SIEU_THE": {
       "title": "ලෝකෝත්තර සිත්",
       "description": "නිවන් අරමුණු කරන මාර්ග සිත් 4 සහ ඵල සිත් 4.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M15_TAM_SO_PHOI_HOP": {
       "title": "චෛතසික සංග්‍රහය (සම්ප්‍රයෝග)",
       "description": "චෛතසික 52 සිත් හා යෙදෙන ක්‍රමය.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M6_NGHIEP": {
       "title": "කර්ම සංග්‍රහය",
       "description": "චේතනාව සහ කර්ම 16 විග්‍රහය.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M16_NGUOI_VA_COI": {
       "title": "පුද්ගල සහ භූමි",
       "description": "පුද්ගලයන් 12 දෙනා සහ තිස්එක් තලය.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M8_NHAN_DUYEN": {
       "title": "පටිච්චසමුප්පාදය",
       "description": "භව චක්‍රය සහ හේතුඵල ධර්මතා 12.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M17_DUYEN_CHI_TIET": {
       "title": "පට්ඨාන (ප්‍රත්‍ය 24)",
       "description": "විසිහතර ප්‍රත්‍ය ධර්ම විවරණය.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M9_SAC_PHAP": {
       "title": "රූප සංග්‍රහය",
       "description": "මහාභූත 4 සහ උපාදාය රූප 24 — රූප 28.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     },
     "M10_LO_TRINH": {
       "title": "චිත්ත වීථි",
       "description": "පංචද්වාර සහ මනෝද්වාර වීථි ක්‍රමය.",
-      "translationStatus": "reviewed"
+      "translationStatus": "draft",
+      "needsReview": true
     }
   }
 }

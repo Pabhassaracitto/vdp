@@ -3,10 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vdp_app/core/localization/content_catalog.dart';
 import 'package:vdp_app/core/localization/content_languages.dart';
 
-/// The five priority content languages agreed in
+/// The seven priority content locales agreed in
 /// `doc/localization_content_plan.md` (Chinese counts as two registry entries
 /// because Simplified and Traditional ship separately).
-const _priorityTags = <String>['hi', 'zh', 'zh_TW', 'si', 'my', 'ja'];
+const _priorityTags = <String>['hi', 'zh', 'zh_TW', 'si', 'my', 'ja', 'th'];
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -71,15 +71,30 @@ void main() {
       }
     });
 
-    test('priority content locales do not silently fall back to English', () {
-      for (final language in selectableContentLanguages) {
-        if (language.tag == 'vi' || language.tag == 'en') continue;
-        expect(language.allowsEnglishFallback, isFalse,
-            reason: '${language.tag} should show authored content only');
-      }
-      // An unsupported UI/content locale still has English as a recovery path.
-      expect(contentLanguageFor('fr'), isNull);
-    });
+    test(
+      'draft priority locales keep English available for missing fields',
+      () {
+        final draftLanguages = selectableContentLanguages
+            .where(
+              (language) => language.status == ContentTranslationStatus.draft,
+            )
+            .toList();
+        expect(
+          draftLanguages.map((language) => language.tag).toList(),
+          ['hi', 'zh', 'zh_TW', 'si', 'my', 'ja', 'th'],
+        );
+        for (final language in draftLanguages) {
+          expect(
+            language.allowsEnglishFallback,
+            isTrue,
+            reason: '${language.tag} should retain English recovery content',
+          );
+        }
+        // An unsupported UI/content locale still has English as a
+        // recovery path.
+        expect(contentLanguageFor('fr'), isNull);
+      },
+    );
 
     test('display names stay identifiable in an unreadable script', () {
       for (final language in kContentLanguages) {
@@ -157,9 +172,8 @@ void main() {
       expect(resolveContentLocaleChain('my'), ['my', 'en', 'vi']);
       expect(resolveContentLocaleChain('ja'), ['ja', 'en', 'vi']);
       expect(resolveContentLocaleChain('zh'), ['zh', 'en', 'vi']);
-      // Traditional Chinese loads Simplified before the shared en/vi recovery
-      // assets; ContentCatalog separately filters those recovery catalogs from
-      // rendered text for this priority locale.
+      // Traditional Chinese tries Simplified first, then English; Vietnamese
+      // remains excluded from rendered text for every non-Vietnamese locale.
       expect(resolveContentLocaleChain('zh_TW'), ['zh_TW', 'zh', 'en', 'vi']);
     });
 

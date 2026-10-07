@@ -70,11 +70,73 @@ void main() {
     );
   });
 
-  test('priority locales hide untranslated English prose, not translated fields',
-      () async {
+  test('priority fallback uses English but never the Vietnamese source', () {
+    const catalog = ContentCatalog(
+      locale: 'hi',
+      data: {},
+      fallbacks: [
+        ContentCatalog(
+          locale: 'en',
+          data: {
+            'paticcas': {
+              'PD_01': {'name': 'English name'},
+            },
+          },
+        ),
+        ContentCatalog(
+          locale: 'vi',
+          data: {
+            'paticcas': {
+              'PD_01': {'name': 'Vietnamese source'},
+            },
+          },
+        ),
+      ],
+    );
+
+    expect(
+      catalog.text('paticcas', 'PD_01', 'name', 'Vietnamese argument'),
+      'English name',
+    );
+    expect(
+      catalog.text('paticcas', 'PD_01', 'missing', 'Vietnamese argument'),
+      isEmpty,
+    );
+  });
+
+  test(
+    'priority lesson lookup never uses Vietnamese when English is absent',
+    () {
+      const catalog = ContentCatalog(
+        locale: 'hi',
+        data: {},
+        fallbacks: [
+          ContentCatalog(locale: 'en', data: {}),
+          ContentCatalog(
+            locale: 'vi',
+            data: {
+              'studyModules': {
+                'M1_BASICS': {
+                  'lessonSections': [
+                    {'id': 'M1_VI_ONLY', 'title': 'Vietnamese-only title'},
+                  ],
+                },
+              },
+            },
+          ),
+        ],
+      );
+
+      expect(catalog.moduleLesson('M1_BASICS').isEmpty, isTrue);
+    },
+  );
+
+  test('priority locales retain English for untranslated fields', () async {
     final container = ProviderContainer();
     addTearDown(container.dispose);
 
+    final english =
+        await container.read(contentCatalogProvider('en').future);
     final hindi = await container.read(contentCatalogProvider('hi').future);
     expect(
       hindi.text('paticcas', 'PD_01', 'name', 'Vietnamese fallback'),
@@ -85,9 +147,9 @@ void main() {
       contains('चार आर्य सत्यों'),
     );
     expect(
-      hindi.text('paticcas', 'PD_01', 'characteristic', 'English fallback'),
-      isEmpty,
-      reason: 'English templates are not translations',
+      hindi.text('paticcas', 'PD_01', 'characteristic', 'Vietnamese fallback'),
+      english.text('paticcas', 'PD_01', 'characteristic', ''),
+      reason: 'an untranslated four-aspect field uses English, not Vietnamese',
     );
     expect(
       hindi.optionalText(
@@ -96,35 +158,42 @@ void main() {
         'doctrinalNote',
         'Vietnamese fallback',
       ),
-      isNull,
+      english.optionalText('paticcas', 'PD_01', 'doctrinalNote', null),
     );
     expect(
-      hindi.text('paccayas', 'PC_01', 'paccayaDhamma', 'English fallback'),
-      isEmpty,
+      hindi.text('paccayas', 'PC_01', 'paccayaDhamma', 'Vietnamese fallback'),
+      english.text('paccayas', 'PC_01', 'paccayaDhamma', ''),
     );
     expect(
-      hindi.textList('cittas', 'CI_001', 'examples', const ['English']),
-      isEmpty,
+      hindi.textList('cittas', 'CI_001', 'examples', const ['Vietnamese']),
+      english.textList('cittas', 'CI_001', 'examples', const []),
     );
+    expect(hindi.moduleLesson('M1_BASICS').isNotEmpty, isTrue,
+        reason: 'English lessons remain available until Hindi translation');
     expect(
-      hindi.moduleLesson('M1_BASICS').isEmpty,
-      isTrue,
-      reason: 'Hindi has no authored lesson translation and must not inherit en',
+      hindi.moduleLesson('M1_BASICS').sections.first.title,
+      english.moduleLesson('M1_BASICS').sections.first.title,
     );
 
     final traditional =
         await container.read(contentCatalogProvider('zh_TW').future);
     expect(traditional.moduleLesson('M1_BASICS').isNotEmpty, isTrue);
     expect(
-      traditional.moduleLesson('M4_AKUSALA').isEmpty,
+      traditional.moduleLesson('M4_AKUSALA').isNotEmpty,
       isTrue,
-      reason: 'zh_TW may inherit zh, but not English prose',
+      reason: 'zh_TW may use zh first, then English for untranslated prose',
+    );
+    expect(
+      traditional.moduleLesson('M4_AKUSALA').sections.first.title,
+      english.moduleLesson('M4_AKUSALA').sections.first.title,
     );
   });
 
-  test('extended Chinese tags keep the priority locale safety policy', () async {
+  test('extended Chinese tags use zh before English fallback', () async {
     final container = ProviderContainer();
     addTearDown(container.dispose);
+    final english =
+        await container.read(contentCatalogProvider('en').future);
     final traditional =
         await container.read(contentCatalogProvider('zh-Hant-TW').future);
 
@@ -135,8 +204,8 @@ void main() {
     );
     expect(
       traditional.textList('cittas', 'CI_013', 'examples', const []),
-      contains(startsWith('生起于相应境遇中')),
-      reason: 'authored Chinese examples should survive catalog generation',
+      english.textList('cittas', 'CI_013', 'examples', const []),
+      reason: 'legacy Chinese placeholders use English fallback',
     );
     expect(
       traditional.moduleLesson('M1_BASICS').isNotEmpty,
@@ -144,63 +213,63 @@ void main() {
       reason: 'the chain should find the authored zh lesson',
     );
     expect(
-      traditional.moduleLesson('M4_AKUSALA').isEmpty,
+      traditional.moduleLesson('M4_AKUSALA').isNotEmpty,
       isTrue,
-      reason: 'an extended Chinese tag must not open the English fallback',
+      reason: 'the extended locale may use English after its zh fallback',
+    );
+    expect(
+      traditional.moduleLesson('M4_AKUSALA').sections.first.title,
+      english.moduleLesson('M4_AKUSALA').sections.first.title,
     );
   });
 
-  test('every priority locale omits untranslated English-only prose', () async {
-    final container = ProviderContainer();
-    addTearDown(container.dispose);
+  test(
+    'every draft priority locale uses English for current translation gaps',
+    () async {
+      final container = ProviderContainer();
+      addTearDown(container.dispose);
+      final english =
+          await container.read(contentCatalogProvider('en').future);
 
-    for (final language in selectableContentLanguages) {
-      if (language.tag == 'en' || language.tag == 'vi') continue;
-      final catalog =
-          await container.read(contentCatalogProvider(language.tag).future);
-      expect(
-        catalog.text(
-          'paticcas',
-          'PD_01',
-          'characteristic',
-          'English template',
-        ),
-        isEmpty,
-        reason: '${language.tag} must not borrow the English template',
-      );
-      expect(
-        catalog.optionalText(
-          'paticcas',
-          'PD_01',
-          'doctrinalNote',
-          'English template',
-        ),
-        isNull,
-        reason: '${language.tag} must omit missing prose',
-      );
-      expect(
-        catalog.text(
-          'paccayas',
-          'PC_01',
-          'paccayaDhamma',
-          'English template',
-        ),
-        isEmpty,
-        reason: '${language.tag} must not borrow English definitions',
-      );
-      expect(
-        catalog.text('rupas', 'RP_001', 'function', 'English template'),
-        isEmpty,
-        reason: '${language.tag} must not expose untranslated Rupa templates',
-      );
-    }
-  });
+      for (final language in selectableContentLanguages) {
+        if (language.tag == 'en' || language.tag == 'vi') continue;
+        final catalog =
+            await container.read(contentCatalogProvider(language.tag).future);
+        expect(
+          catalog.text('paticcas', 'PD_01', 'characteristic', 'Vietnamese'),
+          english.text('paticcas', 'PD_01', 'characteristic', ''),
+          reason: '${language.tag} should use English for missing fields',
+        );
+        expect(
+          catalog.optionalText(
+            'paticcas',
+            'PD_01',
+            'doctrinalNote',
+            'Vietnamese',
+          ),
+          english.optionalText('paticcas', 'PD_01', 'doctrinalNote', null),
+          reason: '${language.tag} should retain untranslated English prose',
+        );
+        expect(
+          catalog.text('paccayas', 'PC_01', 'paccayaDhamma', 'Vietnamese'),
+          english.text('paccayas', 'PC_01', 'paccayaDhamma', ''),
+          reason:
+              '${language.tag} should retain untranslated English definitions',
+        );
+        expect(
+          catalog.text('rupas', 'RP_001', 'function', 'Vietnamese'),
+          english.text('rupas', 'RP_001', 'function', ''),
+          reason: '${language.tag} should retain English for this current gap',
+        );
+      }
+    },
+  );
 
   // ── English recovery catalog coverage (Conditions + Mind Process tabs) ────
   //
-  // English remains the recovery locale for unregistered languages. These
-  // tests pin down that its overlay is complete, so an English learner never
-  // sees dataset Vietnamese and a recovery lookup does not return a blank.
+  // English is the field-level fallback for draft priority catalogs and
+  // unregistered languages. These tests pin down that its overlay is complete,
+  // so fallback lookups remain readable without leaking the Vietnamese source.
 
   test('English paticcas carry the full Tứ Nghĩa + prose fields', () async {
     final container = ProviderContainer();

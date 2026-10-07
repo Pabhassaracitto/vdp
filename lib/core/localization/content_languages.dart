@@ -9,19 +9,20 @@
 // translation that a reviewer can sanity-check in seconds. Doctrinal study
 // content is not. A mistranslated Abhidhamma term teaches wrong Dhamma, which
 // violates the project's Accuracy-First principle. So the two lists are
-// allowed to diverge: the UI ships 26 locales today, while content ships only
-// the locales that have actually been authored and reviewed.
+// allowed to diverge: the UI ships 26 locales today, while the content
+// registry tracks source, reviewed, and draft locales separately. Draft
+// locales remain selectable but may use English for untranslated fields.
 //
 // HOW TO ENABLE A NEW CONTENT LANGUAGE
 // ------------------------------------
 // 1. Author `assets/content/content_<tag>.json` (see tool/content/README.md).
 // 2. Flip that language's [status] here from [ContentTranslationStatus.planned]
 //    to `.draft`, and later to `.reviewed`.
-// 3. Set [ContentLanguage.allowsEnglishFallback] deliberately. Priority
-//    languages keep only text actually authored in that language (with
-//    zh_TW -> zh as a regional fallback), so missing prose is hidden instead
-//    of silently appearing in English. Unregistered locales can still use the
-//    reviewed English catalog as a recovery fallback.
+// 3. Set [ContentLanguage.allowsEnglishFallback] deliberately. A priority
+//    catalog in `draft` may use English after trying the selected locale and
+//    regional variants (zh_TW -> zh). Non-Vietnamese locales never fall back
+//    to Vietnamese. Disable English only after translation and review are
+//    complete.
 
 import 'package:flutter/foundation.dart';
 
@@ -36,8 +37,8 @@ enum ContentTranslationStatus {
   /// Fully translated **and** approved by a reviewer with doctrinal standing.
   reviewed,
 
-  /// Translated but not yet approved. Selectable, but the UI must warn the
-  /// learner that the text is provisional.
+  /// Partially or fully translated but not yet approved. Selectable, but the
+  /// UI must warn the learner that the text is provisional.
   draft,
 
   /// Declared but not shipped yet. Hidden from the picker; exists here so the
@@ -66,10 +67,10 @@ class ContentLanguage {
 
   /// Whether missing fields may be filled from the English catalog.
   ///
-  /// Keep this disabled for supported priority languages: otherwise a
-  /// partially translated Abhidhamma entry silently becomes a mixture of
-  /// scripts. Missing translated prose is omitted until it is reviewed rather
-  /// than presented as English (or as the Vietnamese source).
+  /// Keep this enabled while a supported priority locale is `draft`, so its
+  /// untranslated fields remain readable during gradual translation. Disable
+  /// it only when the catalog is complete and reviewed. Vietnamese is never
+  /// used as a fallback for another locale.
   final bool allowsEnglishFallback;
 
   /// Extra search tokens for the picker (romanisations, alternate names).
@@ -117,9 +118,9 @@ class ContentLanguage {
 
 /// Every content language the project targets, shipped or not.
 ///
-/// Order is intentional: shipped languages first, then the five priority
-/// languages agreed for the localisation milestone (Hindi, Chinese, Sinhala,
-/// Myanmar, Japanese) in the order they appear in the plan.
+/// Order is intentional: source/reviewed languages first, then the seven
+/// priority draft languages (Hindi, Simplified/Traditional Chinese, Sinhala,
+/// Myanmar, Japanese, and Thai) in the order used by the localization plan.
 const kContentLanguages = <ContentLanguage>[
   ContentLanguage(
     tag: 'vi',
@@ -143,7 +144,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'हिन्दी',
     englishName: 'Hindi',
     status: ContentTranslationStatus.draft,
-    allowsEnglishFallback: false,
+    allowsEnglishFallback: true,
     aliases: ['hindi'],
   ),
   ContentLanguage(
@@ -151,7 +152,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: '简体中文',
     englishName: 'Simplified Chinese',
     status: ContentTranslationStatus.draft,
-    allowsEnglishFallback: false,
+    allowsEnglishFallback: true,
     aliases: ['chinese', '中文', 'zh-cn', 'hans'],
   ),
   ContentLanguage(
@@ -159,7 +160,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: '繁體中文',
     englishName: 'Traditional Chinese',
     status: ContentTranslationStatus.draft,
-    allowsEnglishFallback: false,
+    allowsEnglishFallback: true,
     aliases: ['chinese', '中文', 'zh-hant', 'zh-tw', 'hant'],
   ),
   ContentLanguage(
@@ -167,7 +168,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'සිංහල',
     englishName: 'Sinhala',
     status: ContentTranslationStatus.draft,
-    allowsEnglishFallback: false,
+    allowsEnglishFallback: true,
     aliases: ['sinhala', 'sinhalese'],
   ),
   ContentLanguage(
@@ -175,7 +176,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'မြန်မာ',
     englishName: 'Myanmar',
     status: ContentTranslationStatus.draft,
-    allowsEnglishFallback: false,
+    allowsEnglishFallback: true,
     aliases: ['burmese', 'myanmar'],
   ),
   ContentLanguage(
@@ -183,7 +184,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: '日本語',
     englishName: 'Japanese',
     status: ContentTranslationStatus.draft,
-    allowsEnglishFallback: false,
+    allowsEnglishFallback: true,
     aliases: ['japanese', 'nihongo'],
   ),
   ContentLanguage(
@@ -191,7 +192,7 @@ const kContentLanguages = <ContentLanguage>[
     nativeName: 'ไทย',
     englishName: 'Thai',
     status: ContentTranslationStatus.draft,
-    allowsEnglishFallback: false,
+    allowsEnglishFallback: true,
     aliases: ['thai'],
   ),
 ];

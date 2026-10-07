@@ -93,15 +93,17 @@ def existing_citta_examples(locale, citta_id):
     )
     if not isinstance(localized, list):
         return []
-    # Preserve authored examples while dropping the English copies that older
-    # builders placed in every locale. Compare by value because translations
-    # can have a different number/order of examples than the English source.
+    # Preserve locale-authored examples while dropping English copies and the
+    # generic Chinese placeholder emitted by a legacy builder. The placeholder
+    # merely restated the Pāḷi name and was not a citta-specific example.
     return [
         value
         for value in localized
         if isinstance(value, str)
         and value.strip()
         and value not in english
+        and not value.startswith("生起于相应境遇中（")
+        and not value.startswith("生起于相应境遇中(")
     ]
 
 
@@ -136,53 +138,12 @@ def build_catalog(loc):
             cetasikas[cid] = {}
             continue
         name, short_name, desc = base
-        pali = cs["namePali"]
-        
-        char_map = {
-            "zh": f"触及所缘（{pali}之特相）",
-            "zh_TW": f"觸及所緣（{pali}之特相）",
-            "ja": f"所縁に触れること（{pali}の特相）",
-            "hi": f"आलम्बन का स्पर्श ({pali} का लक्षण)",
-            "th": f"การกระทบอารมณ์ (ลักษณะของ {pali})",
-            "si": f"ආරම්මණය ස්පර්ශ කිරීම ({pali} හි ලක්ෂණය)",
-            "my": f"အာရုံကို တွေ့ထိခြင်း ({pali} ၏ လက္ခဏာ)",
-        }
-        func_map = {
-            "zh": f"结合俱生名法，和合领纳所缘（{pali}之作用）",
-            "zh_TW": f"結合俱生名法，和合領納所緣（{pali}之作用）",
-            "ja": f"倶生する心・心所を対象と結びつけること（{pali}の働き）",
-            "hi": f"सहजात धर्मों को आलम्बन से जोड़ना ({pali} का कृत्य)",
-            "th": f"การประสานจิตและเจตสิกที่เกิดร่วมให้กระทบอารมณ์ (กิจของ {pali})",
-            "si": f"සම්ප්‍රයුක්ත ධර්ම අරමුණ හා එක් කිරීම ({pali} හි කෘත්‍යය)",
-            "my": f"ယှဉ်ဖက်တရားတို့ကို အာရုံနှင့် တွေ့ထိစေခြင်း ({pali} ၏ ကိစ္စ)",
-        }
-        manif_map = {
-            "zh": f"心、心所、根门与所缘和合显现（{pali}之现起）",
-            "zh_TW": f"心、心所、根門與所緣和合顯現（{pali}之現起）",
-            "ja": f"心・心所・根門・所縁の和合として現れること（{pali}の現起）",
-            "hi": f"चित्त, चेतसिक, इन्द्रिय और आलम्बन के संगम के रूप में उपस्थिति",
-            "th": f"การประชุมพร้อมกันของจิต เจตสิก ทวาร และอารมณ์ (อาการปรากฏของ {pali})",
-            "si": f"සිත, චෛතසික, ද්වාර සහ අරමුණ එක්වීමෙන් වැටහීම",
-            "my": f"စိတ်၊ စေတသိက်၊ ဒွါရနှင့် အာရုံတို့ ပေါင်းဆုံခြင်းအဖြစ် ထင်ရှားခြင်း",
-        }
-        cause_map = {
-            "zh": f"所缘现前并经由相应根门显现（{pali}之近因）",
-            "zh_TW": f"所緣現前並經由相應根門顯現（{pali}之近因）",
-            "ja": f"所縁が生起し適切な根門を通じて現れること（{pali}の足処）",
-            "hi": f"समुचित द्वार के माध्यम से आलम्बन की उपस्थिति ({pali} का निकट कारण)",
-            "th": f"การปรากฏของอารมณ์ทางทวารที่เหมาะสม (เหตุใกล้ของ {pali})",
-            "si": f"සුදුසු ද්වාරය හරහා අරමුණ පැමිණීම ({pali} හි ආසන්න හේතුව)",
-            "my": f"သင့်လျော်သော ဒွါရ၌ အာရုံထင်ရှားလာခြင်း ({pali} ၏ ပဒဋ္ဌာန်)",
-        }
-        
+        # Four-aspect prose is intentionally omitted until translated and
+        # doctrinally reviewed. The locale chain supplies its English value.
         cetasikas[cid] = {
             "name": name,
             "shortName": short_name,
             "description": desc,
-            "characteristic": char_map[loc],
-            "function": func_map[loc],
-            "manifestation": manif_map[loc],
-            "proximateCause": cause_map[loc]
         }
 
     # 3. RUPAS
@@ -272,33 +233,13 @@ def build_catalog(loc):
             if step_entry:
                 steps_map[snum] = step_entry
             
-        arising_map = {
-            "zh": "当清晰的五门或意门所缘撞击相应根门并扰动有分心流时生起。",
-            "zh_TW": "當清晰的五門或意門所緣撞擊相應根門並擾動有分心流時生起。",
-            "ja": "明確な対象が根門を刺激し、有分流を動揺させたときに生じる。",
-            "hi": "जब स्पष्ट आलम्बन इन्द्रिय-द्वार पर आघात करता है और भवङ्ग को कम्पित करता है।",
-            "th": "เกิดขึ้นเมื่ออารมณ์ที่ชัดเจนมากระทบทวารและกระตุ้นให้จิตขึ้นสู่วิถี",
-            "si": "පැහැදිලි අරමුණක් ද්වාරයෙහි ගැටී භවාංග සිත කම්පනය වන විට පහළ වේ.",
-            "my": "ထင်ရှားသော အာရုံသည် ဒွါရ၌ ထိခိုက်၍ ဘဝင်လှုပ်ရှားသောအခါ ဖြစ်ပေါ်သည်။",
-        }
-        
-        sig_map = {
-            "zh": "展示了心识从潜意识有分流转向所缘、造作善恶业并回归有分的完整生命认知过程。",
-            "zh_TW": "展示了心識從潛意識有分流轉向所緣、造作善惡業並回歸有分的完整生命認知過程。",
-            "ja": "心が有分から対象に向かい、善悪の業を造り、再び有分に戻る全過程を示す。",
-            "hi": "यह चित्त के भवङ्ग से जाग्रत होकर कर्म करने और पुनः भवङ्ग में लीन होने की प्रक्रिया को दर्शाता है।",
-            "th": "แสดงกระบวนการทำงานของจิตตั้งแต่การรับอารมณ์ การสร้างกรรม จนถึงการลงสู่ภวังค์",
-            "si": "සිත අරමුණක් ග්‍රහණය කර කර්ම රැස් කර නැවත භවාංගයට වැටෙන ආකාරය පෙන්වයි.",
-            "my": "စိတ်သည် အာရုံကိုသိ၍ ကံပြုပြီး မူလဘဝင်သို့ ပြန်သက်ဆင်းသော စိတ်စဉ်ကို ပြသသည်။",
-        }
-        
+        # Process context has not yet been translated per vithi. Keep it out
+        # of the locale asset so the safe chain can provide the English text.
         vithis[vid] = {
             "name": name,
             "shortName": short_name,
             "description": desc,
-            "arisingCondition": arising_map[loc],
-            "significance": sig_map[loc],
-            "steps": steps_map
+            "steps": steps_map,
         }
 
     # 8. STUDY MODULES
@@ -308,7 +249,8 @@ def build_catalog(loc):
         study_modules[mid] = {
             "title": title,
             "description": desc,
-            "translationStatus": "reviewed"
+            "translationStatus": "draft",
+            "needsReview": True,
         }
     vi_mods = vi_content["studyModules"]
 

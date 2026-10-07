@@ -169,9 +169,9 @@ flutter test
 **Bật một ngôn ngữ trong app:** đăng ký locale trong
 `lib/core/localization/content_languages.dart`, đổi `status` từ `planned` sang
 `draft`, rồi sang `reviewed`, và quyết định tường minh chính sách
-`allowsEnglishFallback`. Với locale ưu tiên, đặt chính sách này thành `false`
-để trường chưa dịch được ẩn thay vì hiển thị nhầm bằng English. Bộ chọn, cảnh
-báo và persistence tự động theo registry.
+`allowsEnglishFallback`. Với locale ưu tiên đang `draft`, bật fallback này để
+trường chưa dịch hiển thị bằng English; chỉ cân nhắc tắt sau khi hoàn tất bản
+dịch và duyệt chuyên môn. Bộ chọn, cảnh báo và persistence tự động theo registry.
 
 ---
 
@@ -241,10 +241,10 @@ JSON nội dung: mỗi locale ~250–600 KiB, 5 ngôn ngữ ≈ +2 MiB. Chấp n
 |---|---|---|
 | Dịch giả nhập nghĩa Đại thừa vào thuật ngữ Theravāda (`ja`) | **Cao** | Glossary bắt buộc + S5 + senior review không được bỏ qua |
 | Bản dịch nửa chừng làm hỏng quiz | Cao | H5 chặn cứng |
-| Không tìm được người duyệt bản xứ | Cao | Trạng thái `draft` cho phép ship với cảnh báo; trường chưa dịch được ẩn thay vì mượn ngôn ngữ khác |
+| Không tìm được người duyệt bản xứ | Cao | Trạng thái `draft` ship với cảnh báo; trường chưa dịch dùng English fallback cho đến khi hoàn tất bản dịch |
 | Dung lượng app phình vì CJK | Trung bình | §6; deferred component nếu cần |
 | Nguồn Việt đổi sau khi đã dịch | Trung bình | ID ổn định + worksheet idempotent → chỉ dịch phần đổi |
-| Nhầm zh vs zh_TW | Thấp | Tách registry; `zh_TW` có thể mượn `zh`, nhưng không rơi tiếp sang English/Vietnamese |
+| Nhầm zh vs zh_TW | Thấp | Tách registry; `zh_TW` thử `zh` trước English và không bao giờ rơi về Vietnamese |
 | Chọn nhầm ngôn ngữ không đọc được | Thấp | Endonym + tag Latin; nhấn giữ để khôi phục ngôn ngữ hệ thống |
 
 ---
@@ -263,10 +263,10 @@ Một ngôn ngữ được coi là **shipped (`reviewed`)** khi:
 - [ ] Kiểm thử text scale 80–150%, không vỡ layout
 - [ ] `status` = `reviewed` trong `content_languages.dart`
 
-Chưa đủ thì để `draft` và hiển thị cảnh báo. Các trường đã dịch vẫn dùng bình
-thường; trường/lesson chưa dịch được ẩn, không tự rơi về English hoặc Vietnamese.
-Tab Học vẫn có phần thẻ thực thể đã bản địa hoá, còn narrative chưa có bản dịch
-sẽ không xuất hiện cho đến khi được dịch và duyệt.
+Chưa đủ thì để `draft` và hiển thị cảnh báo. Các trường đã dịch dùng bản dịch;
+trường/lesson chưa dịch tạm dùng English để nội dung vẫn đọc được trong lúc dịch
+dần. Non-Vietnamese locales không dùng Vietnamese làm fallback. Chỉ cân nhắc
+tắt English fallback sau khi hoàn tất dịch và native doctrinal review.
 
 ---
 
@@ -281,12 +281,10 @@ thiết kế có chủ đích, không phải thiếu sót — vì vậy có hai 
 | Giao diện | `supportedAppLanguages` | 26 | Nhãn ngắn, dịch máy rồi rà là đủ |
 | Nội dung | `kContentLanguages` | 9 (2 source/reviewed, 7 draft) | Giáo lý — sai là dạy sai Pháp |
 
-**Chuỗi tải asset** vẫn có `en`/`vi` để phục hồi lỗi và hỗ trợ locale chưa đăng
-ký, nhưng chuỗi *được phép hiển thị* phụ thuộc registry. Các ngôn ngữ ưu tiên
-chỉ dùng trường đã dịch trong chính ngôn ngữ đó; `zh_TW` có thể mượn `zh`, còn
-English/Vietnamese không được hiển thị như nội dung bản địa hoá. Locale chưa
-đăng ký vẫn có thể dùng English để phục hồi. Nhờ vậy, bài học thiếu bản dịch sẽ
-được ẩn thay vì tạo nội dung trộn ngôn ngữ.
+**Chuỗi hiển thị** phụ thuộc registry: locale ưu tiên thử bản dịch đã có trước,
+`zh_TW` có thể mượn `zh`, sau đó dùng English cho các trường còn thiếu khi đang
+ở trạng thái `draft`. Vietnamese vẫn là nguồn, không phải fallback cho locale
+khác. Có thể tắt English fallback sau khi hoàn tất bản dịch và duyệt.
 
 ---
 

@@ -13221,9 +13221,9 @@
       ]
     }
   },
-  "fallbackLocale": "vi",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "English lessons translated from Vietnamese source. New modules M15-M17 pending translation.",
+  "fallbackLocale": "en",
+  "lessonTranslationStatus": "partial",
+  "lessonTranslationNote": "English lesson content is authored. Modules requiring further translation/review: M15_TAM_SO_PHOI_HOP, M16_NGUOI_VA_COI, M17_DUYEN_CHI_TIET.",
   "paccayas": {
     "PC_01": {
       "name": "Root condition",
