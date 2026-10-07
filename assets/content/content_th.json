@@ -2,643 +2,492 @@
   "locale": "th",
   "schemaVersion": 2,
   "fallbackLocale": "en",
-  "lessonTranslationStatus": "reviewed",
-  "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+  "lessonTranslationStatus": "partial",
+  "lessonTranslationNote": "Only authored priority-language fields are included. Missing translations are intentionally omitted rather than copied from English or Vietnamese.",
   "cittas": {
     "CI_001": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตสัมปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
-      "examples": [
-        "Taking delight in helping oneself to someone else's belongings, thinking 'it doesn't matter'",
-        "Greed accompanied by the wrong view that possessions are permanent"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
     },
     "CI_002": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตสัมปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
-      "examples": [
-        "Taking someone else's belongings only after being egged on by another",
-        "Greed that arises after persuasion, having deliberated before deciding"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
     },
     "CI_003": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตวิปปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 3)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
-      "examples": [
-        "Pride and delight in acquiring something for oneself",
-        "Wanting something out of conceit, comparing oneself favourably with others"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
     },
     "CI_004": {
       "name": "โสมนัสสสหคตัง ทิฏฐิคตวิปปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 4)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
-      "examples": [
-        "Greed mixed with conceit arising only after being incited by someone else"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
     },
     "CI_005": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตสัมปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 5)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ.",
-      "examples": [
-        "Indifferent, offhand greed arising from a wrong view"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ."
     },
     "CI_006": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตสัมปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 6)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ.",
-      "examples": [
-        "Indifferent sensual desire that arises after incitement and together with wrong view"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ."
     },
     "CI_007": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตวิปปยุตตัง อสังขาริกัง (โลภมูลจิต ดวงที่ 7)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ.",
-      "examples": [
-        "Smug, indifferent satisfaction at acquiring something"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ."
     },
     "CI_008": {
       "name": "อุเบกขาสหคตัง ทิฏฐิคตวิปปยุตตัง สสังขาริกัง (โลภมูลจิต ดวงที่ 8)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ.",
-      "examples": [
-        "Indifferent greed that arises after prompting, without any wrong view"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ."
     },
     "CI_009": {
       "name": "โทมนัสสสหคตัง ปฏิฆสัมปยุตตัง อสังขาริกัง (โทสมูลจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ.",
-      "examples": [
-        "Flaring up with anger when insulted",
-        "Spontaneous dislike of another person, arising without anyone's prompting"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ."
     },
     "CI_010": {
       "name": "โทมนัสสสหคตัง ปฏิฆสัมปยุตตัง สสังขาริกัง (โทสมูลจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ.",
-      "examples": [
-        "Anger that arises after being provoked by someone else, or after recalling an old grudge"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ."
     },
     "CI_011": {
       "name": "อุเบกขาสหคตัง วิจิกิจฉาสัมปยุตตัง (โมหมูลจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ.",
-      "examples": [
-        "Doubting the Buddha, the Dhamma and the Sangha",
-        "Being unable to decide what is wholesome and what is unwholesome"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ."
     },
     "CI_012": {
       "name": "อุเบกขาสหคตัง อุทธัจจสัมปยุตตัง (โมหมูลจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ.",
-      "examples": [
-        "A distracted, scattered mind drifting aimlessly",
-        "Rambling, unfocused thinking"
-      ]
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ Uddhaccasampayuttaṃ."
     },
     "CI_013": {
       "name": "อุเบกขาสหคตัง จักขุวิญญาณัง (อกุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ."
     },
     "CI_014": {
       "name": "อุเบกขาสหคตัง โสตวิญญาณัง (อกุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ."
     },
     "CI_015": {
       "name": "อุเบกขาสหคตัง ฆานวิญญาณัง (อกุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ."
     },
     "CI_016": {
       "name": "อุเบกขาสหคตัง ชิวหาวิญญาณัง (อกุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ."
     },
     "CI_017": {
       "name": "ทุกขสหคตัง กายวิญญาณัง (อกุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ."
     },
     "CI_018": {
       "name": "อุเบกขาสหคตัง สัมปฏิจฉันนจิตตัง (อกุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ."
     },
     "CI_019": {
       "name": "อุเบกขาสหคตัง สันตีรณจิตตัง (อกุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ."
     },
     "CI_020": {
       "name": "อุเบกขาสหคตัง จักขุวิญญาณัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ."
     },
     "CI_021": {
       "name": "อุเบกขาสหคตัง โสตวิญญาณัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ."
     },
     "CI_022": {
       "name": "อุเบกขาสหคตัง ฆานวิญญาณัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ."
     },
     "CI_023": {
       "name": "อุเบกขาสหคตัง ชิวหาวิญญาณัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ."
     },
     "CI_024": {
       "name": "สุขสหคตัง กายวิญญาณัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ."
     },
     "CI_025": {
       "name": "อุเบกขาสหคตัง สัมปฏิจฉันนจิตตัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ."
     },
     "CI_026": {
       "name": "โสมนัสสสหคตัง สันตีรณจิตตัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ."
     },
     "CI_027": {
       "name": "อุเบกขาสหคตัง สันตีรณจิตตัง (กุศลวิบาก)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ."
     },
     "CI_028": {
       "name": "อุเบกขาสหคตัง ปัญจทวาราวជ្ชนจิตตัง",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ."
     },
     "CI_029": {
       "name": "อุเบกขาสหคตัง มโนทวาราวជ្ชนจิตตัง",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ."
     },
     "CI_030": {
       "name": "โสมนัสสสหคตัง หสิตุปปาทจิตตัง",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ hasituppāda-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ hasituppāda-cittaṃ."
     },
     "CI_055": {
       "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
     },
     "CI_056": {
       "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_057": {
       "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 3)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
     },
     "CI_058": {
       "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 4)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_059": {
       "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 5)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
     },
     "CI_060": {
       "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 6)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_061": {
       "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 7)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
     },
     "CI_062": {
       "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากุศลจิต ดวงที่ 8)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_063": {
       "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
     },
     "CI_064": {
       "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_065": {
       "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 3)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
     },
     "CI_066": {
       "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 4)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_067": {
       "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 5)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
     },
     "CI_068": {
       "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 6)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_069": {
       "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 7)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
     },
     "CI_070": {
       "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหาวิบากจิต ดวงที่ 8)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_071": {
       "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 1)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
     },
     "CI_072": {
       "name": "โสมนัสสสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 2)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_073": {
       "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 3)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
     },
     "CI_074": {
       "name": "โสมนัสสสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 4)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_075": {
       "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 5)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ."
     },
     "CI_076": {
       "name": "อุเบกขาสหคตัง ญาณสัมปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 6)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_077": {
       "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 7)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ."
     },
     "CI_078": {
       "name": "อุเบกขาสหคตัง ญาณวิปปยุตตัง อสังขาริกัง (มหากิริยาจิต ดวงที่ 8)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ."
     },
     "CI_079": {
       "name": "รูปาวจรปฐมฌานกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ."
     },
     "CI_080": {
       "name": "รูปาวจรทุติยฌานกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ."
     },
     "CI_081": {
       "name": "รูปาวจรตติยฌานกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ."
     },
     "CI_082": {
       "name": "รูปาวจรจตุตถฌานกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ."
     },
     "CI_083": {
       "name": "รูปาวจรปัญจมฌานกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ."
     },
     "CI_084": {
       "name": "รูปาวจรปฐมฌานวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ."
     },
     "CI_085": {
       "name": "รูปาวจรทุติยฌานวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ."
     },
     "CI_086": {
       "name": "รูปาวจรตติยฌานวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ."
     },
     "CI_087": {
       "name": "รูปาวจรจตุตถฌานวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ."
     },
     "CI_088": {
       "name": "รูปาวจรปัญจมฌานวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ."
     },
     "CI_089": {
       "name": "รูปาวจรปฐมฌานกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ."
     },
     "CI_090": {
       "name": "รูปาวจรทุติยฌานกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ."
     },
     "CI_091": {
       "name": "รูปาวจรตติยฌานกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ."
     },
     "CI_092": {
       "name": "รูปาวจรจตุตถฌานกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ."
     },
     "CI_093": {
       "name": "รูปาวจรปัญจมฌานกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ."
     },
     "CI_094": {
       "name": "อรูปาวจรอากาสานัญจายตนกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-kusalaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-kusalaa-cittaṃ."
     },
     "CI_095": {
       "name": "อรูปาวจรวิญญาณัญจายตนกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-kusalaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-kusalaa-cittaṃ."
     },
     "CI_096": {
       "name": "อรูปาวจรอากิญจัญญายตนกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-kusalaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-kusalaa-cittaṃ."
     },
     "CI_097": {
       "name": "อรูปาวจรเนวสัญญานาสัญญายตนกุศลจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ."
     },
     "CI_098": {
       "name": "อรูปาวจรอากาสานัญจายตนวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-vipakaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-vipakaa-cittaṃ."
     },
     "CI_099": {
       "name": "อรูปาวจรวิญญาณัญจายตนวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-vipakaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-vipakaa-cittaṃ."
     },
     "CI_100": {
       "name": "อรูปาวจรอากิญจัญญายตนวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-vipakaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-vipakaa-cittaṃ."
     },
     "CI_101": {
       "name": "อรูปาวจรเนวสัญญานาสัญญายตนวิบากจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ."
     },
     "CI_102": {
       "name": "อรูปาวจรอากาสานัญจายตนกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-kiriyaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākāsānañcāyatana-kiriyaa-cittaṃ."
     },
     "CI_103": {
       "name": "อรูปาวจรวิญญาณัญจายตนกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-kiriyaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Viññāṇañcāyatana-kiriyaa-cittaṃ."
     },
     "CI_104": {
       "name": "อรูปาวจรอากิญจัญญายตนกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-kiriyaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Ākiñcaññāyatana-kiriyaa-cittaṃ."
     },
     "CI_105": {
       "name": "อรูปาวจรเนวสัญญานาสัญญายตนกิริยาจิต",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ."
     },
     "CI_106": {
       "name": "โสดาปัตติมัคคจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-paṭhama-jhāna-cittaṃ."
     },
     "CI_107": {
       "name": "โสดาปัตติมัคคจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-dutiya-jhāna-cittaṃ."
     },
     "CI_108": {
       "name": "โสดาปัตติมัคคจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-tatiya-jhāna-cittaṃ."
     },
     "CI_109": {
       "name": "โสดาปัตติมัคคจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-catuttha-jhāna-cittaṃ."
     },
     "CI_110": {
       "name": "โสดาปัตติมัคคจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-magga-pañcama-jhāna-cittaṃ."
     },
     "CI_111": {
       "name": "สกทาคามิมัคคจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ."
     },
     "CI_112": {
       "name": "สกทาคามิมัคคจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-dutiya-jhāna-cittaṃ."
     },
     "CI_113": {
       "name": "สกทาคามิมัคคจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-tatiya-jhāna-cittaṃ."
     },
     "CI_114": {
       "name": "สกทาคามิมัคคจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-catuttha-jhāna-cittaṃ."
     },
     "CI_115": {
       "name": "สกทาคามิมัคคจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-magga-pañcama-jhāna-cittaṃ."
     },
     "CI_116": {
       "name": "อนาคามิมัคคจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-paṭhama-jhāna-cittaṃ."
     },
     "CI_117": {
       "name": "อนาคามิมัคคจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-dutiya-jhāna-cittaṃ."
     },
     "CI_118": {
       "name": "อนาคามิมัคคจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-tatiya-jhāna-cittaṃ."
     },
     "CI_119": {
       "name": "อนาคามิมัคคจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-catuttha-jhāna-cittaṃ."
     },
     "CI_120": {
       "name": "อนาคามิมัคคจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-magga-pañcama-jhāna-cittaṃ."
     },
     "CI_121": {
       "name": "อรหัตตมัคคจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-paṭhama-jhāna-cittaṃ."
     },
     "CI_122": {
       "name": "อรหัตตมัคคจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-dutiya-jhāna-cittaṃ."
     },
     "CI_123": {
       "name": "อรหัตตมัคคจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-tatiya-jhāna-cittaṃ."
     },
     "CI_124": {
       "name": "อรหัตตมัคคจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-catuttha-jhāna-cittaṃ."
     },
     "CI_125": {
       "name": "อรหัตตมัคคจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-magga-pañcama-jhāna-cittaṃ."
     },
     "CI_126": {
       "name": "โสดาปัตติผลจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-paṭhama-jhāna-cittaṃ."
     },
     "CI_127": {
       "name": "โสดาปัตติผลจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-dutiya-jhāna-cittaṃ."
     },
     "CI_128": {
       "name": "โสดาปัตติผลจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-tatiya-jhāna-cittaṃ."
     },
     "CI_129": {
       "name": "โสดาปัตติผลจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-catuttha-jhāna-cittaṃ."
     },
     "CI_130": {
       "name": "โสดาปัตติผลจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sotāpatti-phala-pañcama-jhāna-cittaṃ."
     },
     "CI_131": {
       "name": "สกทาคามิผลจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ."
     },
     "CI_132": {
       "name": "สกทาคามิผลจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-dutiya-jhāna-cittaṃ."
     },
     "CI_133": {
       "name": "สกทาคามิผลจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-tatiya-jhāna-cittaṃ."
     },
     "CI_134": {
       "name": "สกทาคามิผลจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-catuttha-jhāna-cittaṃ."
     },
     "CI_135": {
       "name": "สกทาคามิผลจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Sakadāgāmi-phala-pañcama-jhāna-cittaṃ."
     },
     "CI_136": {
       "name": "อนาคามิผลจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-paṭhama-jhāna-cittaṃ."
     },
     "CI_137": {
       "name": "อนาคามิผลจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-dutiya-jhāna-cittaṃ."
     },
     "CI_138": {
       "name": "อนาคามิผลจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-tatiya-jhāna-cittaṃ."
     },
     "CI_139": {
       "name": "อนาคามิผลจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-catuttha-jhāna-cittaṃ."
     },
     "CI_140": {
       "name": "อนาคามิผลจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Anāgāmi-phala-pañcama-jhāna-cittaṃ."
     },
     "CI_141": {
       "name": "อรหัตตผลจิต (ปฐมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-paṭhama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-paṭhama-jhāna-cittaṃ."
     },
     "CI_142": {
       "name": "อรหัตตผลจิต (ทุติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-dutiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-dutiya-jhāna-cittaṃ."
     },
     "CI_143": {
       "name": "อรหัตตผลจิต (ตติยฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-tatiya-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-tatiya-jhāna-cittaṃ."
     },
     "CI_144": {
       "name": "อรหัตตผลจิต (จตุตถฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-catuttha-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-catuttha-jhāna-cittaṃ."
     },
     "CI_145": {
       "name": "อรหัตตผลจิต (ปัญจมฌาน)",
-      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-pañcama-jhāna-cittaṃ.",
-      "examples": []
+      "doctrinalNote": "การจำแนกจิตในพระอภิธรรม: Arahatta-phala-pañcama-jhāna-cittaṃ."
     }
   },
   "cetasikas": {
@@ -1115,1015 +964,408 @@
     "RP_001": {
       "name": "ปฐวีธาตุ",
       "shortName": "ปฐวี",
-      "description": "ธาตุดิน มีลักษณะแข้นแข็งหรืออ่อนนุ่ม เป็นที่ตั้งอาศัยของรูปอื่น.",
-      "characteristic": "ปฐวีธาตุ (Pathavī-dhātu)",
-      "function": "Rasa: Pathavī-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Pathavī-dhātu",
-      "proximateCause": "Padaṭṭhāna: Pathavī-dhātu",
-      "doctrinalNote": "The four great elements always arise together, inseparably. There is no materiality in the immaterial realm."
+      "description": "ธาตุดิน มีลักษณะแข้นแข็งหรืออ่อนนุ่ม เป็นที่ตั้งอาศัยของรูปอื่น."
     },
     "RP_002": {
       "name": "อาโปธาตุ",
       "shortName": "อาโป",
-      "description": "ธาตุน้ำ มีลักษณะไหลหรือเกาะกุมรูปธรรมทั้งหลายไว้ด้วยกัน.",
-      "characteristic": "อาโปธาตุ (Āpo-dhātu)",
-      "function": "Rasa: Āpo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Āpo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Āpo-dhātu",
-      "doctrinalNote": "The water element is the only great element that cannot be directly sensed through bodily contact."
+      "description": "ธาตุน้ำ มีลักษณะไหลหรือเกาะกุมรูปธรรมทั้งหลายไว้ด้วยกัน."
     },
     "RP_003": {
       "name": "เตโชธาตุ",
       "shortName": "เตโช",
-      "description": "ธาตุไฟ มีลักษณะร้อนหรือเย็น ทำหน้าที่ทำให้รูปอื่นอบอุ่นหรือสุกงอม.",
-      "characteristic": "เตโชธาตุ (Tejo-dhātu)",
-      "function": "Rasa: Tejo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Tejo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Tejo-dhātu",
-      "doctrinalNote": "When occurring independently as external heat (utu), the fire element gives rise to temperature-produced materiality (utu-samuṭṭhāna-rūpa)."
+      "description": "ธาตุไฟ มีลักษณะร้อนหรือเย็น ทำหน้าที่ทำให้รูปอื่นอบอุ่นหรือสุกงอม."
     },
     "RP_004": {
       "name": "วาโยธาตุ",
       "shortName": "วาโย",
-      "description": "ธาตุลม มีลักษณะเคร่งตึงหรือไหวตัว ทำหน้าที่ค้ำจุนและเคลื่อนไหว.",
-      "characteristic": "วาโยธาตุ (Vāyo-dhātu)",
-      "function": "Rasa: Vāyo-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Vāyo-dhātu",
-      "proximateCause": "Padaṭṭhāna: Vāyo-dhātu",
-      "doctrinalNote": "In the practice of ānāpānasati, the breath (air element) is the principal meditation object."
+      "description": "ธาตุลม มีลักษณะเคร่งตึงหรือไหวตัว ทำหน้าที่ค้ำจุนและเคลื่อนไหว."
     },
     "RP_005": {
       "name": "จักขุปสาท",
       "shortName": "จักขุปสาท",
-      "description": "รูปที่รับกระทบรูปารมณ์ (ความใสของตา).",
-      "characteristic": "จักขุปสาท (Cakkhu-pasāda)",
-      "function": "Rasa: Cakkhu-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Cakkhu-pasāda",
-      "proximateCause": "Padaṭṭhāna: Cakkhu-pasāda",
-      "doctrinalNote": "Produced only by kamma. Not present in the immaterial realm."
+      "description": "รูปที่รับกระทบรูปารมณ์ (ความใสของตา)."
     },
     "RP_006": {
       "name": "โสตปสาท",
       "shortName": "โสตปสาท",
-      "description": "รูปที่รับกระทบสัททารมณ์ (ความใสของหู).",
-      "characteristic": "โสตปสาท (Sota-pasāda)",
-      "function": "Rasa: Sota-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Sota-pasāda",
-      "proximateCause": "Padaṭṭhāna: Sota-pasāda",
-      "doctrinalNote": "Brahmās of the fine-material realm possess the ear faculty because they communicate through sound."
+      "description": "รูปที่รับกระทบสัททารมณ์ (ความใสของหู)."
     },
     "RP_007": {
       "name": "ฆานปสาท",
       "shortName": "ฆานปสาท",
-      "description": "รูปที่รับกระทบคันธารมณ์ (ความใสของจมูก).",
-      "characteristic": "ฆานปสาท (Ghāna-pasāda)",
-      "function": "Rasa: Ghāna-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Ghāna-pasāda",
-      "proximateCause": "Padaṭṭhāna: Ghāna-pasāda",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm lack the nose faculty."
+      "description": "รูปที่รับกระทบคันธารมณ์ (ความใสของจมูก)."
     },
     "RP_008": {
       "name": "ชิวหาปสาท",
       "shortName": "ชิวหาปสาท",
-      "description": "รูปที่รับกระทบรสารมณ์ (ความใสของลิ้น).",
-      "characteristic": "ชิวหาปสาท (Jivhā-pasāda)",
-      "function": "Rasa: Jivhā-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Jivhā-pasāda",
-      "proximateCause": "Padaṭṭhāna: Jivhā-pasāda",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās do not eat, so they lack the tongue faculty."
+      "description": "รูปที่รับกระทบรสารมณ์ (ความใสของลิ้น)."
     },
     "RP_009": {
       "name": "กายปสาท",
       "shortName": "กายปสาท",
-      "description": "รูปที่รับกระทบโผฏฐัพพารมณ์ (ความใสของกาย).",
-      "characteristic": "กายปสาท (Kāya-pasāda)",
-      "function": "Rasa: Kāya-pasāda",
-      "manifestation": "Paccupaṭṭhāna: Kāya-pasāda",
-      "proximateCause": "Padaṭṭhāna: Kāya-pasāda",
-      "doctrinalNote": "Brahmās of the fine-material realm possess the body faculty. It is absent in the non-percipient realm."
+      "description": "รูปที่รับกระทบโผฏฐัพพารมณ์ (ความใสของกาย)."
     },
     "RP_010": {
       "name": "รูปารมณ์",
       "shortName": "รูปารมณ์",
-      "description": "รูป สี หรือแสงสว่างที่ปรากฏทางตา.",
-      "characteristic": "รูปารมณ์ (Rūpa (Gocara))",
-      "function": "Rasa: Rūpa (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Rūpa (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Rūpa (Gocara)",
-      "doctrinalNote": "Visible form (colour) is distinct from materiality (matter) in general."
+      "description": "รูป สี หรือแสงสว่างที่ปรากฏทางตา."
     },
     "RP_011": {
       "name": "สัททารมณ์",
       "shortName": "สัททารมณ์",
-      "description": "เสียงต่างๆ ที่ปรากฏทางหู.",
-      "characteristic": "สัททารมณ์ (Sadda (Gocara))",
-      "function": "Rasa: Sadda (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Sadda (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Sadda (Gocara)",
-      "doctrinalNote": ""
+      "description": "เสียงต่างๆ ที่ปรากฏทางหู."
     },
     "RP_012": {
       "name": "คันธารมณ์",
       "shortName": "คันธารมณ์",
-      "description": "กลิ่นหอม กลิ่นเหม็น ที่ปรากฏทางจมูก.",
-      "characteristic": "คันธารมณ์ (Gandha (Gocara))",
-      "function": "Rasa: Gandha (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Gandha (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Gandha (Gocara)",
-      "doctrinalNote": ""
+      "description": "กลิ่นหอม กลิ่นเหม็น ที่ปรากฏทางจมูก."
     },
     "RP_013": {
       "name": "รสารมณ์",
       "shortName": "รสารมณ์",
-      "description": "รสหวาน เปรี้ยว เค็ม เผ็ด ขม ที่ปรากฏทางลิ้น.",
-      "characteristic": "รสารมณ์ (Rasa (Gocara))",
-      "function": "Rasa: Rasa (Gocara)",
-      "manifestation": "Paccupaṭṭhāna: Rasa (Gocara)",
-      "proximateCause": "Padaṭṭhāna: Rasa (Gocara)",
-      "doctrinalNote": ""
+      "description": "รสหวาน เปรี้ยว เค็ม เผ็ด ขม ที่ปรากฏทางลิ้น."
     },
     "RP_014": {
       "name": "อิตถินทรีย์",
       "shortName": "อิตถินทรีย์",
-      "description": "ภาวรูปที่กำหนดความเป็นหญิง สัณฐาน เสียง กิริยา.",
-      "characteristic": "อิตถินทรีย์ (Itthi-bhāva)",
-      "function": "Rasa: Itthi-bhāva",
-      "manifestation": "Paccupaṭṭhāna: Itthi-bhāva",
-      "proximateCause": "Padaṭṭhāna: Itthi-bhāva",
-      "doctrinalNote": "Occurs only in the sense-sphere realm. Brahmās of the fine-material realm have no sex faculty."
+      "description": "ภาวรูปที่กำหนดความเป็นหญิง สัณฐาน เสียง กิริยา."
     },
     "RP_015": {
       "name": "ปุริสินทรีย์",
       "shortName": "ปุริสินทรีย์",
-      "description": "ภาวรูปที่กำหนดความเป็นชาย สัณฐาน เสียง กิริยา.",
-      "characteristic": "ปุริสินทรีย์ (Purisa-bhāva)",
-      "function": "Rasa: Purisa-bhāva",
-      "manifestation": "Paccupaṭṭhāna: Purisa-bhāva",
-      "proximateCause": "Padaṭṭhāna: Purisa-bhāva",
-      "doctrinalNote": "Occurs only in the sense-sphere realm."
+      "description": "ภาวรูปที่กำหนดความเป็นชาย สัณฐาน เสียง กิริยา."
     },
     "RP_016": {
       "name": "หทยวัตถุ",
       "shortName": "หทยวัตถุ",
-      "description": "รูปอันเป็นที่อาศัยเกิดของมโนธาตุและมโนวิญญาณธาตุ.",
-      "characteristic": "หทยวัตถุ (Hadaya-vatthu)",
-      "function": "Rasa: Hadaya-vatthu",
-      "manifestation": "Paccupaṭṭhāna: Hadaya-vatthu",
-      "proximateCause": "Padaṭṭhāna: Hadaya-vatthu",
-      "doctrinalNote": "Absent in the immaterial realm. This is the most important material basis in the Abhidhamma system of cognition."
+      "description": "รูปอันเป็นที่อาศัยเกิดของมโนธาตุและมโนวิญญาณธาตุ."
     },
     "RP_017": {
       "name": "รูปชีวิตินทรีย์",
       "shortName": "ชีวิตรูป",
-      "description": "รูปที่ทำหน้าที่รักษากัมมชรูปทั้งหลายให้ดำรงอยู่.",
-      "characteristic": "รูปชีวิตินทรีย์ (Jīvitindriya (Rūpa))",
-      "function": "Rasa: Jīvitindriya (Rūpa)",
-      "manifestation": "Paccupaṭṭhāna: Jīvitindriya (Rūpa)",
-      "proximateCause": "Padaṭṭhāna: Jīvitindriya (Rūpa)",
-      "doctrinalNote": "The lifespan of materiality equals seventeen mind-moments. When material life faculty ceases, the kamma-produced materiality ceases with it."
+      "description": "รูปที่ทำหน้าที่รักษากัมมชรูปทั้งหลายให้ดำรงอยู่."
     },
     "RP_018": {
       "name": "กวฬีการาหาร",
       "shortName": "อาหารรูป",
-      "description": "รูปคืออาหารที่เป็นคำๆ โอชารูปที่หล่อเลี้ยงร่างกาย.",
-      "characteristic": "กวฬีการาหาร (Ojā)",
-      "function": "Rasa: Ojā",
-      "manifestation": "Paccupaṭṭhāna: Ojā",
-      "proximateCause": "Padaṭṭhāna: Ojā",
-      "doctrinalNote": "Nutritive essence in physical food (kabaḷīkāra-āhāra) is one of the four kinds of nutriment in the Abhidhamma."
+      "description": "รูปคืออาหารที่เป็นคำๆ โอชารูปที่หล่อเลี้ยงร่างกาย."
     },
     "RP_019": {
       "name": "อากาสธาตุ",
       "shortName": "อากาสธาตุ",
-      "description": "ช่องว่างที่คั่นระหว่างรูปกลาป เป็นขอบเขตของรูป.",
-      "characteristic": "อากาสธาตุ (Ākāsa-dhātu)",
-      "function": "Rasa: Ākāsa-dhātu",
-      "manifestation": "Paccupaṭṭhāna: Ākāsa-dhātu",
-      "proximateCause": "Padaṭṭhāna: Ākāsa-dhātu",
-      "doctrinalNote": "The space element as a material phenomenon is not the same as absolute space in philosophy."
+      "description": "ช่องว่างที่คั่นระหว่างรูปกลาป เป็นขอบเขตของรูป."
     },
     "RP_020": {
       "name": "กายวิญญัตติ",
       "shortName": "กายวิญญัตติ",
-      "description": "การเคลื่อนไหวทางกายที่แสดงความหมายให้ผู้อื่นรู้ได้.",
-      "characteristic": "กายวิญญัตติ (Kāya-viññatti)",
-      "function": "Rasa: Kāya-viññatti",
-      "manifestation": "Paccupaṭṭhāna: Kāya-viññatti",
-      "proximateCause": "Padaṭṭhāna: Kāya-viññatti",
-      "doctrinalNote": "Produced only by mind. It is the basis of bodily action (kāya-kamma)."
+      "description": "การเคลื่อนไหวทางกายที่แสดงความหมายให้ผู้อื่นรู้ได้."
     },
     "RP_021": {
       "name": "วจีวิญญัตติ",
       "shortName": "วจีวิญญัตติ",
-      "description": "การเปล่งเสียงพูดที่แสดงความหมายให้ผู้อื่นรู้ได้.",
-      "characteristic": "วจีวิญญัตติ (Vacī-viññatti)",
-      "function": "Rasa: Vacī-viññatti",
-      "manifestation": "Paccupaṭṭhāna: Vacī-viññatti",
-      "proximateCause": "Padaṭṭhāna: Vacī-viññatti",
-      "doctrinalNote": "Produced only by mind. It is the basis of verbal action (vacī-kamma)."
+      "description": "การเปล่งเสียงพูดที่แสดงความหมายให้ผู้อื่นรู้ได้."
     },
     "RP_022": {
       "name": "รูปลหุตา",
       "shortName": "รูปลหุตา",
-      "description": "ความเบา ความไม่เชื่องช้าของรูปธรรม.",
-      "characteristic": "รูปลหุตา (Rūpassa lahutā)",
-      "function": "Rasa: Rūpassa lahutā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa lahutā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa lahutā",
-      "doctrinalNote": "Not produced by kamma. Depends on present health and conditions."
+      "description": "ความเบา ความไม่เชื่องช้าของรูปธรรม."
     },
     "RP_023": {
       "name": "รูปมุทุตา",
       "shortName": "รูปมุทุตา",
-      "description": "ความอ่อนโยน ความสลวยไม่กระด้างของรูปธรรม.",
-      "characteristic": "รูปมุทุตา (Rūpassa mudutā)",
-      "function": "Rasa: Rūpassa mudutā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa mudutā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa mudutā",
-      "doctrinalNote": ""
+      "description": "ความอ่อนโยน ความสลวยไม่กระด้างของรูปธรรม."
     },
     "RP_024": {
       "name": "รูปกัมมัญญตา",
       "shortName": "รูปกัมมัญญตา",
-      "description": "ความควรแก่การงาน ความคล่องตัวในการเคลื่อนไหวของรูป.",
-      "characteristic": "รูปกัมมัญญตา (Rūpassa kammaññatā)",
-      "function": "Rasa: Rūpassa kammaññatā",
-      "manifestation": "Paccupaṭṭhāna: Rūpassa kammaññatā",
-      "proximateCause": "Padaṭṭhāna: Rūpassa kammaññatā",
-      "doctrinalNote": ""
+      "description": "ความควรแก่การงาน ความคล่องตัวในการเคลื่อนไหวของรูป."
     },
     "RP_025": {
       "name": "รูปุปจยะ",
       "shortName": "รูปุปจยะ",
-      "description": "ความก่อตัว ความเจริญขึ้นของรูปในระยะแรกเริ่ม.",
-      "characteristic": "รูปุปจยะ (Upacaya)",
-      "function": "Rasa: Upacaya",
-      "manifestation": "Paccupaṭṭhāna: Upacaya",
-      "proximateCause": "Padaṭṭhāna: Upacaya",
-      "doctrinalNote": "The four characteristics of materiality are phases of all material phenomena, not independent material instances."
+      "description": "ความก่อตัว ความเจริญขึ้นของรูปในระยะแรกเริ่ม."
     },
     "RP_026": {
       "name": "รูปสันตติ",
       "shortName": "รูปสันตติ",
-      "description": "ความสืบต่อ ความเป็นไปต่อเนื่องแห่งรูปธรรม.",
-      "characteristic": "รูปสันตติ (Santati)",
-      "function": "Rasa: Santati",
-      "manifestation": "Paccupaṭṭhāna: Santati",
-      "proximateCause": "Padaṭṭhāna: Santati",
-      "doctrinalNote": "Continuity explains why things seem stable to us — they are in fact an unbroken stream of arising and passing away."
+      "description": "ความสืบต่อ ความเป็นไปต่อเนื่องแห่งรูปธรรม."
     },
     "RP_027": {
       "name": "รูปชรตา",
       "shortName": "รูปชรตา",
-      "description": "ความแก่ ความทรุดโทรมเสื่อมถอยแห่งรูปธรรม.",
-      "characteristic": "รูปชรตา (Jaratā)",
-      "function": "Rasa: Jaratā",
-      "manifestation": "Paccupaṭṭhāna: Jaratā",
-      "proximateCause": "Padaṭṭhāna: Jaratā",
-      "doctrinalNote": "Decay is the clearest visible sign of impermanence (anicca) in materiality."
+      "description": "ความแก่ ความทรุดโทรมเสื่อมถอยแห่งรูปธรรม."
     },
     "RP_028": {
       "name": "รูปอนิจจตา",
       "shortName": "รูปอนิจจตา",
-      "description": "ความแตกดับ ความดับสูญไปสิ้นเชิงแห่งรูปธรรม.",
-      "characteristic": "รูปอนิจจตา (Aniccatā)",
-      "function": "Rasa: Aniccatā",
-      "manifestation": "Paccupaṭṭhāna: Aniccatā",
-      "proximateCause": "Padaṭṭhāna: Aniccatā",
-      "doctrinalNote": "Clearly seeing the phase of dissolution is the starting point of insight meditation (vipassanā)."
+      "description": "ความแตกดับ ความดับสูญไปสิ้นเชิงแห่งรูปธรรม."
     }
   },
   "paccayas": {
     "PC_01": {
       "name": "เหตุปัจจัย",
       "shortName": "เหตุ",
-      "definition": "เหตุ 6 (โลภะ โทสะ โมหะ อโลภะ อโทสะ อโมหะ) อุปมาดั่งรากแก้วที่ยังต้นไม้ให้ตั้งมั่น.",
-      "paccayaDhamma": "The six roots: greed (lobha), hatred (dosa), delusion (moha), non-greed (alobha), non-hatred (adosa), non-delusion (amoha).",
-      "paccayuppanna": "The mind states associated with a root (citta and cetasikas), and the materiality that mind produces — mind-born materiality in the course of existence, kamma-born materiality at rebirth.",
-      "doctrinalNote": "Only the six root cetasikas are roots; however strong the other mental factors may be, they support their states only through other conditions.",
-      "examples": [
-        "A greed-rooted consciousness carries the two roots greed and delusion: together they make the whole mind-moment unwholesome.",
-        "A rootless (ahetuka) consciousness has no root and therefore receives no root condition — for example, the two receiving consciousnesses."
-      ],
-      "subdivisions": {}
+      "definition": "เหตุ 6 (โลภะ โทสะ โมหะ อโลภะ อโทสะ อโมหะ) อุปมาดั่งรากแก้วที่ยังต้นไม้ให้ตั้งมั่น."
     },
     "PC_02": {
       "name": "อารัมมณปัจจัย",
       "shortName": "อารมณ์",
-      "definition": "อารมณ์ 6 ที่จิตและเจตสิกยึดหน่วงเป็นที่อาศัย อุปมาดั่งไม้เท้าของคนทุพพลภาพ.",
-      "paccayaDhamma": "The six objects: visible form, sound, odour, taste, tangible data, and mind objects (including Nibbāna and meditative attainments).",
-      "paccayuppanna": "All 89 cittas — every citta that knows an object — together with the 52 mental factors.",
-      "doctrinalNote": "According to Visuddhimagga XVII, ignorance serves as object condition for wholesome formations when a meditator examines ignorance with wisdom.",
-      "examples": [
-        "A visible object (an image) serves as object condition for eye-consciousness and its associated mental factors.",
-        "Nibbāna serves as object condition for supramundane consciousness."
-      ],
-      "subdivisions": {}
+      "definition": "อารมณ์ 6 ที่จิตและเจตสิกยึดหน่วงเป็นที่อาศัย อุปมาดั่งไม้เท้าของคนทุพพลภาพ."
     },
     "PC_03": {
       "name": "อธิปติปัจจัย",
       "shortName": "อธิบดี",
-      "definition": "ความเป็นใหญ่ ความเป็นหัวหน้า อุปมาดั่งพระเจ้าจักรพรรดิผู้เป็นใหญ่ในแผ่นดิน.",
-      "paccayaDhamma": "The four conascent dominants — desire-to-act (chanda), energy (viriya), consciousness (citta), and investigation (vīmaṃsā, wisdom); and the predominant object.",
-      "paccayuppanna": "The mental states that arise together with a dominant; for the predominant object, the 84 cittas (excluding rootless resultant cittas) and their associated mental factors.",
-      "doctrinalNote": "No predominance condition occurs among the 18 rootless cittas, nor in cittas where only one dominant is possible.",
-      "examples": [
-        "When a meditator's effort is at its strongest, energy predominates over the whole jhāna mind-moment.",
-        "A person besotted with a precious thing: that thing is the predominant object for the greedy mind."
-      ],
-      "subdivisions": {
-        "Sahajāt'ādhipati": {
-          "name": "Conascent dominance",
-          "note": "One of the four — desire, energy, consciousness, investigation — that stands out in a single mind-moment."
-        },
-        "Ārammaṇ'ādhipati": {
-          "name": "Object dominance",
-          "note": "An object held predominant, governing the mind that takes it as its object."
-        }
-      }
+      "definition": "ความเป็นใหญ่ ความเป็นหัวหน้า อุปมาดั่งพระเจ้าจักรพรรดิผู้เป็นใหญ่ในแผ่นดิน."
     },
     "PC_04": {
       "name": "อนันตรปัจจัย",
       "shortName": "อนันตระ",
-      "definition": "การดับไปของจิตและเจตสิกดวงก่อน เพื่อให้จิตดวงหลังเกิดขึ้นติดต่อกันโดยไม่มีระหว่างคั่น.",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased (except the dying consciousness of an Arahant).",
-      "paccayuppanna": "The mind and mental factors that arise immediately afterwards.",
-      "doctrinalNote": "Proximity condition underlies the continuity of the stream of consciousness — there is no gap between two mind-moments.",
-      "examples": [
-        "Eye-consciousness, on ceasing, is proximity condition for the receiving consciousness in a five-door process.",
-        "The rebirth-linking consciousness, on ceasing, is proximity condition for the first life-continuum moment."
-      ],
-      "subdivisions": {}
+      "definition": "การดับไปของจิตและเจตสิกดวงก่อน เพื่อให้จิตดวงหลังเกิดขึ้นติดต่อกันโดยไม่มีระหว่างคั่น."
     },
     "PC_05": {
       "name": "สมนันตรปัจจัย",
       "shortName": "สมนันตระ",
-      "definition": "การดับไปอย่างดีโดยลำดับและไม่มีระหว่างคั่น เพื่อให้จิตดวงหลังสืบต่อ.",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors that follow immediately.",
-      "doctrinalNote": "These two conditions are one reality, differing only in presentation — like the two sides of a coin.",
-      "examples": [
-        "The same relation is called proximity when spoken of as 'giving way', and contiguity when spoken of as 'following immediately'."
-      ],
-      "subdivisions": {}
+      "definition": "การดับไปอย่างดีโดยลำดับและไม่มีระหว่างคั่น เพื่อให้จิตดวงหลังสืบต่อ."
     },
     "PC_06": {
       "name": "สหชาตปัจจัย",
       "shortName": "สหชาตะ",
-      "definition": "ธรรมที่เกิดพร้อมกันและอุปการะซึ่งกันและกัน ดุจเปลวไฟกับแสงสว่าง.",
-      "paccayaDhamma": "The four mental aggregates that arise together; the four great essentials; mind and its factors in the course of existence; and name and materiality at rebirth.",
-      "paccayuppanna": "The mental states conascent with one another, mind-born and kamma-born materiality in the course of existence, and the name–materiality that support one another at rebirth.",
-      "doctrinalNote": "This is the condition most used to explain the simultaneity of name and materiality within a single mind-moment.",
-      "examples": [
-        "In one greedy mind-moment, feeling, perception, formations, and consciousness arise together and support one another.",
-        "At rebirth-linking, the rebirth consciousness and kamma-born materiality support each other through conascence condition."
-      ],
-      "subdivisions": {}
+      "definition": "ธรรมที่เกิดพร้อมกันและอุปการะซึ่งกันและกัน ดุจเปลวไฟกับแสงสว่าง."
     },
     "PC_07": {
       "name": "อัญญมัญญปัจจัย",
       "shortName": "อัญญมัญญะ",
-      "definition": "ธรรมที่ต้องอิงอาศัยกันและกันจึงเกิดขึ้นได้ ดุจไม้ค้ำสามเส้า.",
-      "paccayaDhamma": "The four conascent mental aggregates; the four great essentials; name and materiality at rebirth.",
-      "paccayuppanna": "Those very states — the relation is two-way.",
-      "doctrinalNote": "Mutuality always accompanies conascence, but is narrower: materiality born of mind is not mutual with consciousness.",
-      "examples": [
-        "The four great essentials: the earth element supports the water element and the water element supports the earth — no element stands alone."
-      ],
-      "subdivisions": {}
+      "definition": "ธรรมที่ต้องอิงอาศัยกันและกันจึงเกิดขึ้นได้ ดุจไม้ค้ำสามเส้า."
     },
     "PC_08": {
       "name": "นิสสยปัจจัย",
       "shortName": "นิสสยะ",
-      "definition": "ธรรมที่เป็นที่อาศัยของธรรมอื่น ดุจแผ่นดินเป็นที่ตั้งอาศัยของต้นไม้ทั้งหลาย.",
-      "paccayaDhamma": "The four conascent mental aggregates; the four great essentials; and the six bases (eye, ear, nose, tongue, body, and heart-base).",
-      "paccayuppanna": "The conascent mental states; derived materiality; and the seven consciousness-elements together with their mental factors.",
-      "doctrinalNote": "Distinguish from decisive support: dependence is the direct base, decisive support is strong assistance from a distance.",
-      "examples": [
-        "The eye-base is dependence condition for eye-consciousness and its associated mental factors.",
-        "The heart-base (hadaya-vatthu) supports the whole mind-consciousness element throughout the life of the five aggregates."
-      ],
-      "subdivisions": {
-        "Sahajāta-nissaya": {
-          "name": "Conascent dependence",
-          "note": "Mutual reliance within a single mind-moment."
-        },
-        "Purejāta-nissaya (vatthu)": {
-          "name": "Prenascence dependence — bases",
-          "note": "The six bases, arisen beforehand, serve as the support for the seven consciousness-elements."
-        },
-        "Vatthārammaṇa-purejāta-nissaya": {
-          "name": "Base-object prenascence dependence",
-          "note": "The heart-base serves at once as base and as object for mind-element consciousness."
-        }
-      }
+      "definition": "ธรรมที่เป็นที่อาศัยของธรรมอื่น ดุจแผ่นดินเป็นที่ตั้งอาศัยของต้นไม้ทั้งหลาย."
     },
     "PC_09": {
       "name": "อุปนิสสยปัจจัย",
       "shortName": "อุปนิสสยะ",
-      "definition": "ธรรมที่เป็นที่อาศัยอันมีกำลังมาก เช่น ศรัทธา ศีล สุตะ หรือกรรมที่กระทำสั่งสมมา.",
-      "paccayaDhamma": "An object strongly attended to; consciousness that has just ceased; and natural conditions such as faith, virtue, climate, food, and friends.",
-      "paccayuppanna": "The mind and mental factors that arise afterwards.",
-      "doctrinalNote": "The link Feeling → Craving in dependent origination is explained chiefly through natural decisive support.",
-      "examples": [
-        "Pleasant feeling is natural decisive support for craving — because feeling is agreeable, craving grows strong.",
-        "Faith decisively supports an act of generosity; greed decisively supports an act of stealing."
-      ],
-      "subdivisions": {
-        "Ārammaṇ'ūpanissaya": {
-          "name": "Object decisive support",
-          "note": "A powerful object becomes the decisive spur for the consciousness that follows."
-        },
-        "Anantar'ūpanissaya": {
-          "name": "Contiguous decisive support",
-          "note": "Equivalent to proximity condition considered as a force of support."
-        },
-        "Pakat'ūpanissaya": {
-          "name": "Natural decisive support",
-          "note": "Natural conditions: faith, virtue, climate, friends, former kamma."
-        }
-      }
+      "definition": "ธรรมที่เป็นที่อาศัยอันมีกำลังมาก เช่น ศรัทธา ศีล สุตะ หรือกรรมที่กระทำสั่งสมมา."
     },
     "PC_10": {
       "name": "ปุเรชาตปัจจัย",
       "shortName": "ปุเรชาตะ",
-      "definition": "ธรรมที่เกิดก่อนและยังตั้งอยู่ ช่วยอุปการะแก่ธรรมที่เกิดทีหลัง.",
-      "paccayaDhamma": "The six bases (materiality) and the six objects — the concrete material phenomena — that have already arisen.",
-      "paccayuppanna": "The mind and mental factors that arise later.",
-      "doctrinalNote": "Prenascence applies only to materiality; mental states cannot be prenascence conditions.",
-      "examples": [
-        "The eye-base must exist first; only then can eye-consciousness arise.",
-        "A present visible object (17 mind-moments long) serves as prenascence condition for an eye-door process."
-      ],
-      "subdivisions": {
-        "Vatthu-purejāta": {
-          "name": "Base prenascence",
-          "note": "The six bases support the seven consciousness-elements."
-        },
-        "Ārammaṇa-purejāta": {
-          "name": "Object prenascence",
-          "note": "Present concrete objects support the 54 sense-sphere cittas and 50 mental factors."
-        }
-      }
+      "definition": "ธรรมที่เกิดก่อนและยังตั้งอยู่ ช่วยอุปการะแก่ธรรมที่เกิดทีหลัง."
     },
     "PC_11": {
       "name": "ปัจฉาชาตปัจจัย",
       "shortName": "ปัจฉาชาตะ",
-      "definition": "ธรรมที่เกิดทีหลัง ช่วยอุปการะค้ำจุนแก่รูปกายที่เกิดก่อน ดุจฝนช่วยหล่อเลี้ยงต้นไม้.",
-      "paccayaDhamma": "The 85 cittas of the sense-sphere, form-sphere, formless-sphere and supramundane planes — that is, all consciousness except the rebirth-linking cittas — together with the 52 mental factors.",
-      "paccayuppanna": "The kamma-born body of materiality that arose earlier (the materiality of the living body).",
-      "doctrinalNote": "Only later-arising mentality supports earlier materiality; never the reverse.",
-      "examples": [
-        "Mind and mental factors during life support the body already born, keeping it from decay.",
-        "Hunger drives one to eat — later-arising mentality nourishes earlier-born materiality."
-      ],
-      "subdivisions": {}
+      "definition": "ธรรมที่เกิดทีหลัง ช่วยอุปการะค้ำจุนแก่รูปกายที่เกิดก่อน ดุจฝนช่วยหล่อเลี้ยงต้นไม้."
     },
     "PC_12": {
       "name": "อาเสวนปัจจัย",
       "shortName": "อาเสวนะ",
-      "definition": "การซ้ำๆ ชินชาแห่งชวนจิตดวงก่อนๆ ทำให้อารมณ์แก่กล้าแก่ชวนจิตดวงถัดไป.",
-      "paccayaDhamma": "The preceding impulsion consciousness and its mental factors (except the final impulsion and the path impulsion).",
-      "paccayuppanna": "The impulsion consciousness and its factors arising immediately after.",
-      "doctrinalNote": "A supramundane path impulsion is not repetition condition, because it arises for a single mind-moment only.",
-      "examples": [
-        "Among the seven impulsions, the first is repetition condition for the second.",
-        "Memorising by repeated recitation makes each later attempt easier — the same principle at work."
-      ],
-      "subdivisions": {}
+      "definition": "การซ้ำๆ ชินชาแห่งชวนจิตดวงก่อนๆ ทำให้อารมณ์แก่กล้าแก่ชวนจิตดวงถัดไป."
     },
     "PC_13": {
       "name": "กัมมปัจจัย",
       "shortName": "กรรม",
-      "definition": "เจตนาที่เป็นกุศลและอกุศล ซึ่งปรุงแต่งและส่งผลให้เกิดวิบากจิตและกัมมชรูป.",
-      "paccayaDhamma": "Wholesome and unwholesome volition — the cetanā mental factor.",
-      "paccayuppanna": "Conascent kamma: the citta and cetasikas arising with it, and mind-born materiality. Asynchronous kamma: resultant consciousness, its mental factors, and kamma-born materiality at rebirth.",
-      "doctrinalNote": "The links Formations → Consciousness and Becoming → Birth among the twelve links are explained through asynchronous kamma condition.",
-      "examples": [
-        "Volition in an act of generosity supports resultant mind and kamma-born materiality in a future life (asynchronous kamma).",
-        "Volition in a greedy mind-moment makes that whole mind-moment unwholesome (conascent kamma)."
-      ],
-      "subdivisions": {
-        "Sahajāta-kamma": {
-          "name": "Conascent kamma",
-          "note": "Volition supports the states arising with it in the same mind-moment."
-        },
-        "Nānākkhaṇika-kamma": {
-          "name": "Asynchronous kamma",
-          "note": "Volition in one mind-moment supports its result in another — the basis of rebirth."
-        }
-      }
+      "definition": "เจตนาที่เป็นกุศลและอกุศล ซึ่งปรุงแต่งและส่งผลให้เกิดวิบากจิตและกัมมชรูป."
     },
     "PC_14": {
       "name": "วิปากปัจจัย",
       "shortName": "วิบาก",
-      "definition": "ธรรมที่เป็นผลของกรรม มีสภาพสงบระงับ อุดหนุนซึ่งกันและกัน.",
-      "paccayaDhamma": "The 36 resultant cittas (rootless, sense-sphere beautiful, and great resultants) together with their 38 associated mental factors.",
-      "paccayuppanna": "The resultant mental states that arise together, and the kamma-born materiality they produce.",
-      "doctrinalNote": "Resultant consciousness creates no new kamma — the key point for understanding that 'a result does not produce a result'.",
-      "examples": [
-        "Rebirth-linking consciousness is a resultant: it supports the kamma-born materiality arising together with it.",
-        "Eye-consciousness is resultant mind — it supports its conascent mental factors by result condition without creating new kamma."
-      ],
-      "subdivisions": {}
+      "definition": "ธรรมที่เป็นผลของกรรม มีสภาพสงบระงับ อุดหนุนซึ่งกันและกัน."
     },
     "PC_15": {
       "name": "อาหารปัจจัย",
       "shortName": "อาหาร",
-      "definition": "รูปอาหารและนามอาหารที่หล่อเลี้ยงค้ำจุนสรีรยนต์และนามธรรมให้ดำรงอยู่.",
-      "paccayaDhamma": "Edible food (materiality) and the three mental nutriments: contact, volition, and consciousness.",
-      "paccayuppanna": "Food materiality sustains the body; the three mental nutriments sustain mind, mental factors, and mind-born materiality.",
-      "doctrinalNote": "Connect with the Four Nutriments in the Sutta Piṭaka (SN 12.63) — the contemplation of nutriment.",
-      "examples": [
-        "Food sustains the material body — edible food.",
-        "Volition nutriment: intention feeds kamma and prolongs the round of birth and death."
-      ],
-      "subdivisions": {
-        "Rūp'āhāra": {
-          "name": "Edible food",
-          "note": "Physical nutriment sustains the body."
-        },
-        "Nām'āhāra": {
-          "name": "Mental nutriment",
-          "note": "Contact, volition, and consciousness as nutriments."
-        }
-      }
+      "definition": "รูปอาหารและนามอาหารที่หล่อเลี้ยงค้ำจุนสรีรยนต์และนามธรรมให้ดำรงอยู่."
     },
     "PC_16": {
       "name": "อินทรียปัจจัย",
       "shortName": "อินทรีย์",
-      "definition": "ธรรมที่เป็นใหญ่ในหน้าที่ของตน เช่น ตาเป็นใหญ่ในการเห็น ปัญญาเป็นใหญ่ในการรู้.",
-      "paccayaDhamma": "The 20 faculties: five sensitive material faculties, the material life faculty, and fourteen mental faculties — feeling, faith, energy, mindfulness, concentration, wisdom, the three understanding faculties, and the mind faculty.",
-      "paccayuppanna": "The sensitive faculties support the seven consciousness-elements; the mental faculties support the conascent mind and its factors; the material life faculty sustains kamma-born materiality.",
-      "doctrinalNote": "The five spiritual faculties — faith, energy, mindfulness, concentration, wisdom — must be balanced in meditation.",
-      "examples": [
-        "The eye faculty governs eye-consciousness — without the eye faculty there is no seeing.",
-        "The concentration faculty rules the whole jhāna mind-moment."
-      ],
-      "subdivisions": {
-        "Purejāta-indriya": {
-          "name": "Prenascence faculties",
-          "note": "The five sensitive faculties support the consciousnesses they correspond to."
-        },
-        "Jīvit'indriya": {
-          "name": "Material life faculty",
-          "note": "Sustains the kamma-born materiality of its own group."
-        },
-        "Sahajāta-indriya": {
-          "name": "Conascent faculties",
-          "note": "The fourteen mental faculties support the mind and factors arising with them."
-        }
-      }
+      "definition": "ธรรมที่เป็นใหญ่ในหน้าที่ของตน เช่น ตาเป็นใหญ่ในการเห็น ปัญญาเป็นใหญ่ในการรู้."
     },
     "PC_17": {
       "name": "ฌานปัจจัย",
       "shortName": "ฌาน",
-      "definition": "องค์ฌานทั้งหลายที่เพ่งอารมณ์อย่างแน่วแน่และเผาธรรมอันเป็นปฏิปักษ์.",
-      "paccayaDhamma": "The seven jhāna factors: applied thought, sustained thought, rapture, pleasure, displeasure, equanimity, and one-pointedness.",
-      "paccayuppanna": "The associated mind and mental factors (except the two body consciousnesses), and the materiality produced by that mind.",
-      "doctrinalNote": "Not limited to meditative attainment: the seven jhāna factors operate in ordinary consciousness as well.",
-      "examples": [
-        "Applied thought brings the mind to the object — it is jhāna condition for the factors arising with it.",
-        "In the second jhāna applied thought is absent, yet rapture and one-pointedness still function as jhāna condition."
-      ],
-      "subdivisions": {}
+      "definition": "องค์ฌานทั้งหลายที่เพ่งอารมณ์อย่างแน่วแน่และเผาธรรมอันเป็นปฏิปักษ์."
     },
     "PC_18": {
       "name": "มัคคปัจจัย",
       "shortName": "มรรค",
-      "definition": "องค์มรรคทั้งหลายที่นำสัตว์ไปสู่สุคติ ทุคติ หรือนำไปสู่พระนิพพาน.",
-      "paccayaDhamma": "The twelve path factors: right view, right intention, right speech, right action, right livelihood, right effort, right mindfulness, right concentration — and wrong view, wrong intention, wrong effort, wrong one-pointedness.",
-      "paccayuppanna": "The associated mind and mental factors (except the two body consciousnesses), and the materiality produced by that mind.",
-      "doctrinalNote": "Path condition operates in wholesome and unwholesome states alike — not only in the supramundane Noble Eightfold Path.",
-      "examples": [
-        "Right view in a wholesome mind steers the whole mind-moment toward the wholesome.",
-        "Wrong view in a greedy mind steers it toward the unwholesome — path condition has two faces."
-      ],
-      "subdivisions": {}
+      "definition": "องค์มรรคทั้งหลายที่นำสัตว์ไปสู่สุคติ ทุคติ หรือนำไปสู่พระนิพพาน."
     },
     "PC_19": {
       "name": "สัมปยุตตปัจจัย",
       "shortName": "สัมปยุตต์",
-      "definition": "นามธรรมที่เกิดร่วมกัน ดับพร้อมกัน มีอารมณ์และวัตถุเดียวกัน ดุจน้ำกับน้ำนม.",
-      "paccayaDhamma": "The four conascent mental aggregates.",
-      "paccayuppanna": "Those very four aggregates — a two-way relation.",
-      "doctrinalNote": "Only mentality can be associated; materiality has no shared object and base, so it cannot be associated.",
-      "examples": [
-        "Feeling and perception in one mind-moment are associated: they know one object through one base."
-      ],
-      "subdivisions": {}
+      "definition": "นามธรรมที่เกิดร่วมกัน ดับพร้อมกัน มีอารมณ์และวัตถุเดียวกัน ดุจน้ำกับน้ำนม."
     },
     "PC_20": {
       "name": "วิปปยุตตปัจจัย",
       "shortName": "วิปปยุตต์",
-      "definition": "ธรรมที่ประกอบกันไม่ได้ คือรูปธรรมกับนามธรรม ดั่งน้ำกับน้ำมัน แต่อุดหนุนกัน.",
-      "paccayaDhamma": "Mental states (when supporting materiality), or material phenomena (when supporting mentality).",
-      "paccayuppanna": "Material phenomena (conascent or prenascent), or mental states (conascent or postnascent).",
-      "doctrinalNote": "This condition expresses the mind–matter relation, the backbone of the Name-and-Form analysis among the twelve links.",
-      "examples": [
-        "The heart-base (materiality) supports mind-consciousness (mentality) — different kinds, hence dissociation condition.",
-        "At rebirth-linking, the rebirth consciousness and kamma-born materiality arise together yet remain different kinds."
-      ],
-      "subdivisions": {
-        "Sahajāta-vippayutta": {
-          "name": "Conascent dissociation",
-          "note": "Mind and materiality arise together yet support each other as different kinds — at rebirth-linking."
-        },
-        "Purejāta-vippayutta": {
-          "name": "Prenascence dissociation",
-          "note": "The six bases, arisen earlier, support the seven consciousness-elements."
-        },
-        "Pacchājāta-vippayutta": {
-          "name": "Postnascence dissociation",
-          "note": "Later-arising mentality supports the earlier-born body of materiality."
-        }
-      }
+      "definition": "ธรรมที่ประกอบกันไม่ได้ คือรูปธรรมกับนามธรรม ดั่งน้ำกับน้ำมัน แต่อุดหนุนกัน."
     },
     "PC_21": {
       "name": "อัตถิปัจจัย",
       "shortName": "อัตถิ",
-      "definition": "ธรรมที่กำลังมีอยู่ กำลังปรากฏอยู่ และช่วยอุปการะค้ำจุนธรรมอื่นในขณะนั้น.",
-      "paccayaDhamma": "Comprises the states serving as conascence, prenascence, postnascence, nutriment, and faculty conditions.",
-      "paccayuppanna": "The states supported by those five conditions.",
-      "doctrinalNote": "The widest of the 24 conditions — it subsumes five others.",
-      "examples": [
-        "The eye-base being present, eye-consciousness can arise — presence condition.",
-        "The four great essentials being present support the derived materiality."
-      ],
-      "subdivisions": {
-        "Sahajāta-atthi": {
-          "name": "Conascent presence",
-          "note": "Present within the same mind-moment."
-        },
-        "Purejāta-atthi": {
-          "name": "Prenascence presence",
-          "note": "Earlier-born materiality still existing."
-        },
-        "Pacchājāta-atthi": {
-          "name": "Postnascence presence",
-          "note": "Later-arising mentality being present."
-        },
-        "Āhāra-atthi": {
-          "name": "Nutriment presence",
-          "note": "Edible food being present."
-        },
-        "Indriya-atthi": {
-          "name": "Faculty presence",
-          "note": "The material life faculty being present."
-        }
-      }
+      "definition": "ธรรมที่กำลังมีอยู่ กำลังปรากฏอยู่ และช่วยอุปการะค้ำจุนธรรมอื่นในขณะนั้น."
     },
     "PC_22": {
       "name": "นัตถิปัจจัย",
       "shortName": "นัตถิ",
-      "definition": "การไม่มีอยู่ คือธรรมดวงก่อนดับสูญไปแล้ว จึงเปิดโอกาสให้ธรรมดวงหลังเกิดขึ้นได้.",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors arising immediately after.",
-      "doctrinalNote": "Same scope as proximity condition, but stressing the absence of the preceding consciousness.",
-      "examples": [
-        "Eye-consciousness must cease for the receiving consciousness to arise."
-      ],
-      "subdivisions": {}
+      "definition": "การไม่มีอยู่ คือธรรมดวงก่อนดับสูญไปแล้ว จึงเปิดโอกาสให้ธรรมดวงหลังเกิดขึ้นได้."
     },
     "PC_23": {
       "name": "วิคตปัจจัย",
       "shortName": "วิคตะ",
-      "definition": "การปราศไป การดับลับหายไปของธรรมดวงก่อน ทำให้ธรรมดวงหลังสืบต่อได้.",
-      "paccayaDhamma": "The consciousness and mental factors that have just ceased.",
-      "paccayuppanna": "The mind and mental factors arising immediately after.",
-      "doctrinalNote": "One reality, two sayings: absence stresses 'no longer there'; disappearance stresses 'has gone'.",
-      "examples": [
-        "A life-continuum moment, just ceased (disappeared), supports the next life-continuum moment."
-      ],
-      "subdivisions": {}
+      "definition": "การปราศไป การดับลับหายไปของธรรมดวงก่อน ทำให้ธรรมดวงหลังสืบต่อได้."
     },
     "PC_24": {
       "name": "อวิคตปัจจัย",
       "shortName": "อวิคตะ",
-      "definition": "การไม่ปราศไป คือธรรมที่ยังไม่ดับ ยังดำรงอยู่เพื่อเกื้อกูลธรรมอื่น.",
-      "paccayaDhamma": "Comprises the states serving as conascence, prenascence, postnascence, nutriment, and faculty conditions.",
-      "paccayuppanna": "The states supported by those five conditions.",
-      "doctrinalNote": "The pairs 21–24 (presence / absence / disappearance / non-disappearance) close the 24 conditions with two pairs of synonyms.",
-      "examples": [
-        "The heart-base, not yet perished, keeps supporting mind-consciousness."
-      ],
-      "subdivisions": {}
+      "definition": "การไม่ปราศไป คือธรรมที่ยังไม่ดับ ยังดำรงอยู่เพื่อเกื้อกูลธรรมอื่น."
     }
   },
   "paticcas": {
     "PD_01": {
       "name": "อวิชชา",
       "shortName": "อวิชชา",
-      "description": "ความไม่รู้จริง คือไม่รู้ในอริยสัจ 4 ในปฏิจจสมุปบาท.",
-      "characteristic": "Characteristic of อวิชชา (Avijjā)",
-      "function": "Function of อวิชชา (Avijjā)",
-      "manifestation": "Manifestation of อวิชชา (Avijjā)",
-      "proximateCause": "Proximate cause of อวิชชา (Avijjā)",
-      "doctrinalNote": "Avijjā has no discernible beginning (anamatagga). The ending of ignorance is the attainment of the four path consciousnesses.",
-      "examples": [
-        "Not knowing this body is impermanent, one clings to it as a self and creates kamma to protect that self."
-      ]
+      "description": "ความไม่รู้จริง คือไม่รู้ในอริยสัจ 4 ในปฏิจจสมุปบาท."
     },
     "PD_02": {
       "name": "สังขาร",
       "shortName": "สังขาร",
-      "description": "การปรุงแต่งแห่งกรรมทางกาย วาจา ใจ (ปุญญาภิสังขาร อปุญญาภิสังขาร อาเนญชาภิสังขาร).",
-      "characteristic": "Characteristic of สังขาร (Saṅkhārā)",
-      "function": "Function of สังขาร (Saṅkhārā)",
-      "manifestation": "Manifestation of สังขาร (Saṅkhārā)",
-      "proximateCause": "Proximate cause of สังขาร (Saṅkhārā)",
-      "doctrinalNote": "Saṅkhārā in dependent origination means the volition (cetanā) mental factor that forms kamma.",
-      "examples": [
-        "Giving with a wholesome mind is a meritorious formation; its consciousness rebirth-links into a good destination.",
-        "Attaining jhāna is an imperturbable formation; its consciousness rebirth-links as a Brahmā."
-      ]
+      "description": "การปรุงแต่งแห่งกรรมทางกาย วาจา ใจ (ปุญญาภิสังขาร อปุญญาภิสังขาร อาเนญชาภิสังขาร)."
     },
     "PD_03": {
       "name": "วิญญาณ",
       "shortName": "วิญญาณ",
-      "description": "ปฏิสนธิวิญญาณที่เป็นไปในภพใหม่ตามอำนาจของกรรม.",
-      "characteristic": "Characteristic of วิญญาณ (Viññāṇa)",
-      "function": "Function of วิญญาณ (Viññāṇa)",
-      "manifestation": "Manifestation of วิญญาณ (Viññāṇa)",
-      "proximateCause": "Proximate cause of วิญญาณ (Viññāṇa)",
-      "doctrinalNote": "Consciousness and mind-and-matter lean on each other — like two sheaves of reeds propping one another up.",
-      "examples": [
-        "At the moment of conception the rebirth-linking consciousness appears, mind-and-matter develop, and a new life begins."
-      ]
+      "description": "ปฏิสนธิวิญญาณที่เป็นไปในภพใหม่ตามอำนาจของกรรม."
     },
     "PD_04": {
       "name": "นามรูป",
       "shortName": "นามรูป",
-      "description": "จิตและเจตสิก (นาม) กับมหาภูตรูปและอุปาทายรูป (รูป).",
-      "characteristic": "Characteristic of นามรูป (Nāmarūpa)",
-      "function": "Function of นามรูป (Nāmarūpa)",
-      "manifestation": "Manifestation of นามรูป (Nāmarūpa)",
-      "proximateCause": "Proximate cause of นามรูป (Nāmarūpa)",
-      "doctrinalNote": "Doctrinal note on Nāmarūpa",
-      "examples": [
-        "In the womb: rebirth consciousness appears and mind-and-matter gradually develop from embryo to full term."
-      ]
+      "description": "จิตและเจตสิก (นาม) กับมหาภูตรูปและอุปาทายรูป (รูป)."
     },
     "PD_05": {
       "name": "สฬายตนะ",
       "shortName": "สฬายตนะ",
-      "description": "อายตนะภายใน 6 คือ ตา หู จมูก ลิ้น กาย ใจ.",
-      "characteristic": "Characteristic of สฬายตนะ (Saḷāyatana)",
-      "function": "Function of สฬายตนะ (Saḷāyatana)",
-      "manifestation": "Manifestation of สฬายตนะ (Saḷāyatana)",
-      "proximateCause": "Proximate cause of สฬายตนะ (Saḷāyatana)",
-      "doctrinalNote": "Doctrinal note on Saḷāyatana",
-      "examples": [
-        "A newborn child: with the six bases complete, contact with the outside world begins."
-      ]
+      "description": "อายตนะภายใน 6 คือ ตา หู จมูก ลิ้น กาย ใจ."
     },
     "PD_06": {
       "name": "ผัสสะ",
       "shortName": "ผัสสะ",
-      "description": "การกระทบกันของอายตนะภายใน อายตนะภายนอก และวิญญาณ.",
-      "characteristic": "Characteristic of ผัสสะ (Phassa)",
-      "function": "Function of ผัสสะ (Phassa)",
-      "manifestation": "Manifestation of ผัสสะ (Phassa)",
-      "proximateCause": "Proximate cause of ผัสสะ (Phassa)",
-      "doctrinalNote": "Phassa in dependent origination is the contact mental factor (CS_PHASSA).",
-      "examples": [
-        "The eye sees a lovely object: eye-base + visible object + eye-consciousness give eye-contact, and glad feeling follows."
-      ]
+      "description": "การกระทบกันของอายตนะภายใน อายตนะภายนอก และวิญญาณ."
     },
     "PD_07": {
       "name": "เวทนา",
       "shortName": "เวทนา",
-      "description": "การเสวยอารมณ์อันเนื่องมาจากผัสสะ สุข ทุกข์ หรือไม่สุขไม่ทุกข์.",
-      "characteristic": "Characteristic of เวทนา (Vedanā)",
-      "function": "Function of เวทนา (Vedanā)",
-      "manifestation": "Manifestation of เวทนา (Vedanā)",
-      "proximateCause": "Proximate cause of เวทนา (Vedanā)",
-      "doctrinalNote": "This is the crux of the four foundations of mindfulness: halt at feeling, and do not let it ripen into craving.",
-      "examples": [
-        "Hearing praise (contact) brings glad feeling; without mindfulness, craving for more follows."
-      ]
+      "description": "การเสวยอารมณ์อันเนื่องมาจากผัสสะ สุข ทุกข์ หรือไม่สุขไม่ทุกข์."
     },
     "PD_08": {
       "name": "ตัณหา",
       "shortName": "ตัณหา",
-      "description": "ความทะยานอยาก ความกำหนัดยินดีในกาม ในภพ.",
-      "characteristic": "Characteristic of ตัณหา (Taṇhā)",
-      "function": "Function of ตัณหา (Taṇhā)",
-      "manifestation": "Manifestation of ตัณหา (Taṇhā)",
-      "proximateCause": "Proximate cause of ตัณหา (Taṇhā)",
-      "doctrinalNote": "Craving is the Origin of suffering among the Four Noble Truths. The ending of craving is the ending of suffering — Nibbāna.",
-      "examples": [
-        "Seeing delicious food, craving arises: wanting to eat more.",
-        "Meeting pain, craving for non-existence arises: wanting not to be."
-      ]
+      "description": "ความทะยานอยาก ความกำหนัดยินดีในกาม ในภพ."
     },
     "PD_09": {
       "name": "อุปาทาน",
       "shortName": "อุปาทาน",
-      "description": "ความยึดมั่นถือมั่นอย่างเหนียวแน่นในกาม ทิฏฐิ ศีลพรต และอัตตา.",
-      "characteristic": "Characteristic of อุปาทาน (Upādāna)",
-      "function": "Function of อุปาทาน (Upādāna)",
-      "manifestation": "Manifestation of อุปาทาน (Upādāna)",
-      "proximateCause": "Proximate cause of อุปาทาน (Upādāna)",
-      "doctrinalNote": "Doctrinal note on Upādāna",
-      "examples": [
-        "Not only wanting money (craving) but being unable to let money go (clinging)."
-      ]
+      "description": "ความยึดมั่นถือมั่นอย่างเหนียวแน่นในกาม ทิฏฐิ ศีลพรต และอัตตา."
     },
     "PD_10": {
       "name": "ภพ",
       "shortName": "ภพ",
-      "description": "ภาวะแห่งชีวิต ประกอบด้วยกรรมภพ (กรรมที่นำไปเกิด) และอุปปัตติภพ (ที่เกิด).",
-      "characteristic": "Characteristic of ภพ (Bhava)",
-      "function": "Function of ภพ (Bhava)",
-      "manifestation": "Manifestation of ภพ (Bhava)",
-      "proximateCause": "Proximate cause of ภพ (Bhava)",
-      "doctrinalNote": "Doctrinal note on Bhava",
-      "examples": [
-        "One who gives generously all their life builds wholesome sense-sphere becoming and is reborn wealthy in the next life."
-      ]
+      "description": "ภาวะแห่งชีวิต ประกอบด้วยกรรมภพ (กรรมที่นำไปเกิด) และอุปปัตติภพ (ที่เกิด)."
     },
     "PD_11": {
       "name": "ชาติ",
       "shortName": "ความเกิด",
-      "description": "การปรากฏขึ้นแห่งขันธ์ทั้งหลายในภพใหม่ การถือกำเนิด.",
-      "characteristic": "Characteristic of ชาติ (Jāti)",
-      "function": "Function of ชาติ (Jāti)",
-      "manifestation": "Manifestation of ชาติ (Jāti)",
-      "proximateCause": "Proximate cause of ชาติ (Jāti)",
-      "doctrinalNote": "The three-life circle joins here: birth (PD_11) corresponds to consciousness (PD_03) on the result side of the future life.",
-      "examples": [
-        "The moment of conception is birth — all suffering follows from it."
-      ]
+      "description": "การปรากฏขึ้นแห่งขันธ์ทั้งหลายในภพใหม่ การถือกำเนิด."
     },
     "PD_12": {
       "name": "ชรามรณะ",
       "shortName": "ชรามรณะ",
-      "description": "ความแก่ทรุดโทรมและความแตกดับสิ้นไปแห่งขันธ์ทั้งหลาย.",
-      "characteristic": "Characteristic of ชรามรณะ (Jarāmaraṇa)",
-      "function": "Function of ชรามรณะ (Jarāmaraṇa)",
-      "manifestation": "Manifestation of ชรามรณะ (Jarāmaraṇa)",
-      "proximateCause": "Proximate cause of ชรามรณะ (Jarāmaraṇa)",
-      "doctrinalNote": "Liberation means ending ignorance (PD_01) and craving (PD_08) — the realisation of Nibbāna.",
-      "examples": [
-        "Every being that has been born must age and die.",
-        "When ignorance and craving are destroyed, ageing-and-death no longer follow."
-      ]
+      "description": "ความแก่ทรุดโทรมและความแตกดับสิ้นไปแห่งขันธ์ทั้งหลาย."
     }
   },
   "kammas": {
     "KM_T_01": {
       "name": "ทิฏฐธรรมเวทนียกรรม",
       "shortName": "ทิฏฐธรรมเวทนียกรรม",
-      "description": "กรรมที่ให้ผลในปัจจุบันชาตินี้ (เกิดจากชวนจิตดวงที่ 1).",
-      "doctrinalNote": "Immediately-effective kamma has only a single opportunity to mature, within the very same life. If it fails to ripen in that life, it becomes defunct (ahosi-kamma).",
-      "examples": [
-        "Giving alms with a pure mind and reaping the benefit within this very life",
-        "The five heinous deeds (matricide, patricide, killing an Arahant, wounding a Buddha, causing a schism in the Sangha) ripen as hell in the very next life"
-      ]
+      "description": "กรรมที่ให้ผลในปัจจุบันชาตินี้ (เกิดจากชวนจิตดวงที่ 1)."
     },
     "KM_T_02": {
       "name": "อุปปัชชเวทนียกรรม",
       "shortName": "อุปปัชชเวทนียกรรม",
-      "description": "กรรมที่ให้ผลในภพถัดไป คือชาติหน้า (เกิดจากชวนจิตดวงที่ 7).",
-      "doctrinalNote": "It has only a single opportunity to ripen, in the immediately following life. If it fails to ripen in that life, it becomes defunct.",
-      "examples": [
-        "One who practises meditation in this life is reborn as a Brahmā in the next life"
-      ]
+      "description": "กรรมที่ให้ผลในภพถัดไป คือชาติหน้า (เกิดจากชวนจิตดวงที่ 7)."
     },
     "KM_T_03": {
       "name": "อปราปรเวทนียกรรม",
       "shortName": "อปราปรเวทนียกรรม",
-      "description": "กรรมที่ให้ผลตั้งแต่ชาติต่อๆ ไปจนกว่าจะถึงพระนิพพาน (เกิดจากชวนจิตดวงที่ 2-6).",
-      "doctrinalNote": "It never becomes defunct through lapse of time — one reason the stream of kamma and its results is so intricate. It is the most common of the three time-based kinds of kamma.",
-      "examples": [
-        "The kamma of building a temple in a past life ripens as wealth many lives later"
-      ]
+      "description": "กรรมที่ให้ผลตั้งแต่ชาติต่อๆ ไปจนกว่าจะถึงพระนิพพาน (เกิดจากชวนจิตดวงที่ 2-6)."
     },
     "KM_T_04": {
       "name": "อโหสิกรรม",
       "shortName": "อโหสิกรรม",
-      "description": "กรรมที่เลิกให้ผล ไม่มีผลอีกต่อไป.",
-      "doctrinalNote": "'Ahosi' means 'it has already been' — the kamma is not destroyed, it has simply lost its opportunity to ripen.",
-      "examples": [
-        "For an Arahant, every kamma not yet ripened becomes defunct after final passing away (parinibbāna)"
-      ]
+      "description": "กรรมที่เลิกให้ผล ไม่มีผลอีกต่อไป."
     },
     "KM_P_01": {
       "name": "ครุกรรม",
       "shortName": "ครุกรรม",
-      "description": "กรรมหนักที่สุดที่ต้องให้ผลก่อนกรรมอื่น (อนันตริยกรรม 5 หรือฌานสมาบัติ).",
-      "doctrinalNote": "Generative kamma determines the entire foundation of a life.",
-      "examples": [
-        "Sense-sphere wholesome kamma generates rebirth as a human being or a deva",
-        "Kamma that has attained jhāna generates rebirth as a Brahmā"
-      ]
+      "description": "กรรมหนักที่สุดที่ต้องให้ผลก่อนกรรมอื่น (อนันตริยกรรม 5 หรือฌานสมาบัติ)."
     },
     "KM_P_02": {
       "name": "อาสันนกรรม",
       "shortName": "อาสันนกรรม",
-      "description": "กรรมที่กระทำหรือระลึกถึงได้ในเวลาใกล้จะตาย.",
-      "doctrinalNote": "It is not the one who sows the seed but the one who waters it — it strengthens and extends a result that is already ripening rather than producing a new one of its own.",
-      "examples": [
-        "A person who performs wholesome deeds every day — supportive kamma increases their lifespan and health"
-      ]
+      "description": "กรรมที่กระทำหรือระลึกถึงได้ในเวลาใกล้จะตาย."
     },
     "KM_P_03": {
       "name": "อาจิณณกรรม",
       "shortName": "อาจิณณกรรม",
-      "description": "กรรมที่กระทำสั่งสมอยู่เป็นประจำจนเคยชิน ติดเป็นนิสัย.",
-      "doctrinalNote": "This explains why a person who does good may still encounter difficulty.",
-      "examples": [
-        "A wealthy person who is often ill — obstructive kamma diminishes the enjoyment of their fortune"
-      ]
+      "description": "กรรมที่กระทำสั่งสมอยู่เป็นประจำจนเคยชิน ติดเป็นนิสัย."
     },
     "KM_P_04": {
       "name": "กตัตตากรรม",
       "shortName": "กตัตตากรรม",
-      "description": "กรรมที่ทำด้วยเจตนาอันเบาบาง กรรมที่ไม่เข้าพวกข้างต้น.",
-      "doctrinalNote": "This is the most powerful kind of kamma classified by function; it explains the sudden reversals that occur in a life.",
-      "examples": [
-        "A wealthy person suddenly loses their entire fortune — destructive kamma cuts off the earlier generative kamma"
-      ]
+      "description": "กรรมที่ทำด้วยเจตนาอันเบาบาง กรรมที่ไม่เข้าพวกข้างต้น."
     },
     "KM_U_01": {
       "name": "ชนกกรรม",
       "shortName": "ชนกกรรม",
-      "description": "กรรมที่ทำหน้าที่นำไปเกิด นำปฏิสนธิและรูปขันธ์ในภพใหม่.",
-      "doctrinalNote": "Weighty kamma always determines rebirth — it never becomes defunct.",
-      "examples": [
-        "Wholesome: attaining the second jhāna generates rebirth in the second-jhāna Brahmā realm",
-        "Unwholesome: committing matricide leads to rebirth in the Avīci hell"
-      ]
+      "description": "กรรมที่ทำหน้าที่นำไปเกิด นำปฏิสนธิและรูปขันธ์ในภพใหม่."
     },
     "KM_U_02": {
       "name": "อุปัตถัมภกกรรม",
       "shortName": "อุปัตถัมภกกรรม",
-      "description": "กรรมที่ช่วยอุดหนุนสนับสนุนชนกกรรมให้มีกำลังและยั่งยืน.",
-      "doctrinalNote": "This explains the importance of preparing one's mind at the time of death.",
-      "examples": [
-        "Recalling a wholesome act of giving while dying leads to a wholesome rebirth",
-        "Seeing a vision of hell while dying leads to a woeful rebirth"
-      ]
+      "description": "กรรมที่ช่วยอุดหนุนสนับสนุนชนกกรรมให้มีกำลังและยั่งยืน."
     },
     "KM_U_03": {
       "name": "อุปปีฬกกรรม",
       "shortName": "อุปปีฬกกรรม",
-      "description": "กรรมที่เข้าไปบีบคั้นขัดขวางชนกกรรม ทำให้ผลที่ควรได้ลดน้อยลง.",
-      "doctrinalNote": "This is why the Buddha taught that one should constantly practise wholesome deeds.",
-      "examples": [
-        "Someone who has killed for a living their whole life — a strong unwholesome habitual kamma",
-        "Someone who recites scripture and meditates daily — a strong wholesome habitual kamma"
-      ]
+      "description": "กรรมที่เข้าไปบีบคั้นขัดขวางชนกกรรม ทำให้ผลที่ควรได้ลดน้อยลง."
     },
     "KM_U_04": {
       "name": "อุปฆาตกรรม",
       "shortName": "อุปฆาตกรรม",
-      "description": "กรรมที่เข้าไปตัดรอนผลของชนกกรรมอย่างเด็ดขาด.",
-      "doctrinalNote": "It is the weakest kind of kamma by priority of ripening, yet it makes up the greater part of the total kamma we have accumulated.",
-      "examples": [
-        "The ordinary, scattered wholesome or unwholesome actions of everyday life"
-      ]
+      "description": "กรรมที่เข้าไปตัดรอนผลของชนกกรรมอย่างเด็ดขาด."
     },
     "KM_R_01": {
       "name": "กามาวจรอกุศลกรรม",
       "shortName": "อกุศลกรรม",
-      "description": "อกุศลกรรมบถ 10 ที่นำไปสู่อบายภูมิ 4.",
-      "doctrinalNote": "Unwholesome kamma is the cause of the truth of suffering; it belongs to the sense sphere and ripens within the woeful planes of the sense sphere.",
-      "examples": [
-        "Killing, stealing, sexual misconduct, lying — these ripen as rebirth in a woeful state",
-        "Greed, hatred and delusion produce unwholesome kamma"
-      ]
+      "description": "อกุศลกรรมบถ 10 ที่นำไปสู่อบายภูมิ 4."
     },
     "KM_R_02": {
       "name": "กามาวจรกุศลกรรม",
       "shortName": "กุศลกรรม",
-      "description": "กุศลกรรมบถ 10 ที่นำไปเกิดในมนุษยภูมิและสวรรค์ 6 ชั้น.",
-      "doctrinalNote": "Sense-sphere wholesome kamma that ripens as happiness in the sense sphere — the foundation for all merit.",
-      "examples": [
-        "Giving, observing precepts and practising sense-sphere meditation ripen as a human or a sense-sphere deva",
-        "The ten courses of wholesome action: three bodily, four verbal, three mental"
-      ]
+      "description": "กุศลกรรมบถ 10 ที่นำไปเกิดในมนุษยภูมิและสวรรค์ 6 ชั้น."
     },
     "KM_R_03": {
       "name": "รูปาวจรกุศลกรรม",
       "shortName": "รูปกุศล",
-      "description": "รูปฌานกุศล 5 ที่นำไปเกิดในรูปพรหมภูมิ 16.",
-      "doctrinalNote": "Fine-material-sphere kamma belongs to the exalted (mahaggata) category, transcending the sense sphere; it ripens according to the jhāna attained.",
-      "examples": [
-        "Attaining the first fine-material jhāna generates rebirth in the Brahma-pārisajja realm",
-        "Attaining the fifth jhāna generates rebirth in the Vehapphala realm"
-      ]
+      "description": "รูปฌานกุศล 5 ที่นำไปเกิดในรูปพรหมภูมิ 16."
     },
     "KM_R_04": {
       "name": "อรูปาวจรกุศลกรรม",
       "shortName": "อรูปกุศล",
-      "description": "อรูปฌานกุศล 4 ที่นำไปเกิดในอรูปพรหมภูมิ 4.",
-      "doctrinalNote": "Supramundane kamma does not produce rebirth within the three realms; it produces Nibbāna as its result — the ultimate aim of the Abhidhamma.",
-      "examples": [
-        "Developing the Noble Eightfold Path to attain the first path cuts off three fetters, ending rebirth in the four woeful states",
-        "The four paths produce the four fruits — the only way leading out of suffering"
-      ]
+      "description": "อรูปฌานกุศล 4 ที่นำไปเกิดในอรูปพรหมภูมิ 4."
     }
   },
   "vithis": {
@@ -2133,7 +1375,6 @@
       "description": "วิถีจิตทางปัญจทวารที่มีอารมณ์ชัดเจนมาก ครบ 17 ขณะจิต มีตทาลัมพนะ.",
       "arisingCondition": "เกิดขึ้นเมื่ออารมณ์ที่ชัดเจนมากระทบทวารและกระตุ้นให้จิตขึ้นสู่วิถี",
       "significance": "แสดงกระบวนการทำงานของจิตตั้งแต่การรับอารมณ์ การสร้างกรรม จนถึงการลงสู่ภวังค์",
-      "doctrinalNote": "Atimahanta = an object great enough to allow Javana × 7 plus Tadārammaṇa × 2.",
       "steps": {
         "1": {
           "name": "อดีตภวังค์",
@@ -2198,54 +1439,7 @@
       "description": "วิถีจิตทางปัญจทวารที่มีชวนะ 7 ขณะแต่ไม่มีตทาลัมพนะ.",
       "arisingCondition": "เกิดขึ้นเมื่ออารมณ์ที่ชัดเจนมากระทบทวารและกระตุ้นให้จิตขึ้นสู่วิถี",
       "significance": "แสดงกระบวนการทำงานของจิตตั้งแต่การรับอารมณ์ การสร้างกรรม จนถึงการลงสู่ภวังค์",
-      "doctrinalNote": "It differs from the very-great-object process only in lacking the 2 registration moments.",
-      "steps": {
-        "1": {
-          "name": "Vibrating bhavaṅga",
-          "description": "The life-continuum vibrates as the object strikes the sense base.",
-          "doctrinalNote": null
-        },
-        "2": {
-          "name": "Arrest bhavaṅga",
-          "description": "The bhavaṅga stream is cut off — the process begins.",
-          "doctrinalNote": null
-        },
-        "3": {
-          "name": "Five-door adverting",
-          "description": "Turns the mind toward the object through the five-sense door.",
-          "doctrinalNote": null
-        },
-        "4": {
-          "name": "Five-fold sense consciousness",
-          "description": "Knows the object through the corresponding sense.",
-          "doctrinalNote": null
-        },
-        "5": {
-          "name": "Receiving",
-          "description": "Receives the object.",
-          "doctrinalNote": null
-        },
-        "6": {
-          "name": "Investigating",
-          "description": "Examines the object.",
-          "doctrinalNote": null
-        },
-        "7": {
-          "name": "Determining",
-          "description": "Determines the object, opening the way for the impulsions.",
-          "doctrinalNote": null
-        },
-        "8": {
-          "name": "Impulsion (Javana)",
-          "description": "Seven impulsion moments create kamma. Afterwards there is NO registration.",
-          "doctrinalNote": "After the 7 impulsions the mind drops straight back into the life-continuum."
-        },
-        "9": {
-          "name": "Post-process bhavaṅga",
-          "description": "The life-continuum resumes after the process.",
-          "doctrinalNote": null
-        }
-      }
+      "steps": {}
     },
     "VT_Y_MON": {
       "name": "มโนทวารวิถี",
@@ -2253,39 +1447,7 @@
       "description": "วิถีจิตที่เกิดขึ้นเมื่อจิตรับอารมณ์ทางมโนทวาร.",
       "arisingCondition": "เกิดขึ้นเมื่ออารมณ์ที่ชัดเจนมากระทบทวารและกระตุ้นให้จิตขึ้นสู่วิถี",
       "significance": "แสดงกระบวนการทำงานของจิตตั้งแต่การรับอารมณ์ การสร้างกรรม จนถึงการลงสู่ภวังค์",
-      "doctrinalNote": "The mind-door process begins with the mind-door adverting consciousness (CI_029), without passing through five-door adverting.",
-      "steps": {
-        "1": {
-          "name": "Vibrating bhavaṅga",
-          "description": "The life-continuum vibrates as the mind object strikes.",
-          "doctrinalNote": null
-        },
-        "2": {
-          "name": "Arrest bhavaṅga",
-          "description": "The life-continuum is arrested — the mind-door process begins.",
-          "doctrinalNote": null
-        },
-        "3": {
-          "name": "Mind-door adverting",
-          "description": "Opens the mind door and directs the mind to the mind object, at the same time determining it (serving as determining within this process).",
-          "doctrinalNote": "CI_029 serves both as mind-door adverting and as determining. 11 mental factors."
-        },
-        "4": {
-          "name": "Impulsion (Javana)",
-          "description": "Seven impulsion moments — creating mind-kamma. All deliberate thought, speech, and action arise here.",
-          "doctrinalNote": "Creates mind-kamma directly. Verbal and bodily kamma also begin at the mind door."
-        },
-        "5": {
-          "name": "Registration (optional)",
-          "description": "Registration in the mind-door process — depending on the strength of the mind object.",
-          "doctrinalNote": null
-        },
-        "6": {
-          "name": "Post-process bhavaṅga",
-          "description": "The life-continuum resumes.",
-          "doctrinalNote": null
-        }
-      }
+      "steps": {}
     },
     "VT_VITHIMUTTA": {
       "name": "วิถีมุตตจิต",
@@ -2293,24 +1455,7 @@
       "description": "จิตที่พ้นจากวิถีจิต ไม่ต้องอาศัยทวาร 6 ทำหน้าที่ปฏิสนธิ ภวังค์ และจุติ.",
       "arisingCondition": "เกิดขึ้นเมื่ออารมณ์ที่ชัดเจนมากระทบทวารและกระตุ้นให้จิตขึ้นสู่วิถี",
       "significance": "แสดงกระบวนการทำงานของจิตตั้งแต่การรับอารมณ์ การสร้างกรรม จนถึงการลงสู่ภวังค์",
-      "doctrinalNote": "Process-free consciousness creates no new kamma — it is kammically indeterminate resultant mind.",
-      "steps": {
-        "1": {
-          "name": "Rebirth-linking consciousness",
-          "description": "The first consciousness of the new life — continuing directly from the previous life's dying consciousness, carrying kamma's seed.",
-          "doctrinalNote": "CI_019/CI_026 = a two-rooted person; CI_027 = a specially favoured person; CI_063–CI_070 = a three-rooted person or a deva."
-        },
-        "2": {
-          "name": "Life-continuum consciousness",
-          "description": "The stream of consciousness that sustains the life between processes. It arises and passes innumerable times, and is the foundation of all mental activity.",
-          "doctrinalNote": "Bhavaṅga = the life-maintaining part of the stream. It runs in deep sleep and between processes."
-        },
-        "3": {
-          "name": "Death consciousness",
-          "description": "The final mind-moment — the material life faculty perishes, the death consciousness falls, and the life ends. Immediately afterwards the next life's rebirth-linking consciousness arises.",
-          "doctrinalNote": "Cuti = to move on, to depart. The object of the death consciousness is the death-proximate (āsanna) object."
-        }
-      }
+      "steps": {}
     }
   },
   "studyModules": {

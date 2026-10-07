@@ -71,6 +71,16 @@ void main() {
       }
     });
 
+    test('priority content locales do not silently fall back to English', () {
+      for (final language in selectableContentLanguages) {
+        if (language.tag == 'vi' || language.tag == 'en') continue;
+        expect(language.allowsEnglishFallback, isFalse,
+            reason: '${language.tag} should show authored content only');
+      }
+      // An unsupported UI/content locale still has English as a recovery path.
+      expect(contentLanguageFor('fr'), isNull);
+    });
+
     test('display names stay identifiable in an unreadable script', () {
       for (final language in kContentLanguages) {
         // Always carries a Latin-script tag so a learner who picked the wrong
@@ -114,8 +124,7 @@ void main() {
     });
 
     test('Chinese script/region resolution never throws', () {
-      // Both currently resolve to `en` because zh is planned; the point is
-      // that the zh_Hant branch is exercised and stays total.
+      // Exercise both the Traditional (`zh_TW`) and Simplified (`zh`) paths.
       for (final probe in [
         () => defaultContentLocaleFor(languageCode: 'zh', countryCode: 'TW'),
         () => defaultContentLocaleFor(languageCode: 'zh', scriptCode: 'Hant'),
@@ -141,15 +150,16 @@ void main() {
     });
   });
 
-  group('fallback chain for the priority languages', () {
-    test('each priority tag degrades to en then vi', () {
+  group('resource chain for the priority languages', () {
+    test('files remain available in the en/vi recovery chain', () {
       expect(resolveContentLocaleChain('hi'), ['hi', 'en', 'vi']);
       expect(resolveContentLocaleChain('si'), ['si', 'en', 'vi']);
       expect(resolveContentLocaleChain('my'), ['my', 'en', 'vi']);
       expect(resolveContentLocaleChain('ja'), ['ja', 'en', 'vi']);
       expect(resolveContentLocaleChain('zh'), ['zh', 'en', 'vi']);
-      // Traditional Chinese borrows Simplified before English: a zh_TW reader
-      // understands zh far better than en.
+      // Traditional Chinese loads Simplified before the shared en/vi recovery
+      // assets; ContentCatalog separately filters those recovery catalogs from
+      // rendered text for this priority locale.
       expect(resolveContentLocaleChain('zh_TW'), ['zh_TW', 'zh', 'en', 'vi']);
     });
 
@@ -169,7 +179,7 @@ void main() {
       expect(
         catalog.moduleLesson('M1_BASICS').isNotEmpty,
         isTrue,
-        reason: 'lesson content should fall through to the Vietnamese source',
+        reason: 'lesson content should fall through to reviewed English',
       );
     });
   });

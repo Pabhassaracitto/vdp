@@ -95,10 +95,10 @@ extension LocalizedKammaContent on KammaModel {
 }
 
 extension LocalizedPaccayaContent on PaccayaModel {
-  /// The 24 Duyên Hệ are served through the same locale chain as every other
-  /// entity: `content_en.json` carries the English overlay (see
-  /// tool/content/build_english_entities.py), Vietnamese stays canonical in
-  /// assets/data/paccayas.json, and further languages translate on top.
+  /// The 24 Duyên Hệ are resolved through the selected content language's safe
+  /// chain. Priority-language catalogs contain only authored translations;
+  /// untranslated prose stays absent instead of borrowing English or the
+  /// Vietnamese source.
   String localizedName(BuildContext context) => context.contentCatalog.text(
         'paccayas',
         id,
@@ -250,8 +250,8 @@ extension LocalizedVithiContent on VithiModel {
         step.description,
       );
 
-  /// Bối cảnh phát sinh lộ — dataset chỉ có tiếng Việt, các ngôn ngữ khác đọc
-  /// qua overlay (en trước); trả `null` thay vì lộ tiếng Việt.
+  /// Bối cảnh phát sinh lộ — các ngôn ngữ khác chỉ đọc từ chuỗi locale an toàn;
+  /// trả `null` thay vì lộ văn bản của ngôn ngữ khác.
   String? localizedArisingCondition(BuildContext context) =>
       context.contentCatalog.optionalText(
         'vithis',
@@ -291,8 +291,11 @@ extension LocalizedVithiContent on VithiModel {
 }
 
 extension LocalizedStudyModuleContent on StudyModule {
-  String localizedTitle(BuildContext context) =>
-      context.contentCatalog.moduleText(id, 'title', title);
+  String localizedTitle(BuildContext context) {
+    final localized = context.contentCatalog.moduleText(id, 'title', title);
+    return localized.isNotEmpty ? localized : titlePali;
+  }
+
   String localizedDescription(BuildContext context) =>
       context.contentCatalog.moduleText(id, 'description', description);
 

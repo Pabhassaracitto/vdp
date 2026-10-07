@@ -21,8 +21,8 @@ class PaticcaDetailSheet extends ConsumerWidget {
     final l10n = context.l10n;
     final relatedPaccayas =
         ref.watch(paccayasForPaticcaProvider(item.id)).valueOrNull ?? const [];
-    // Văn bản tuỳ chọn đọc qua catalog: tiếng Việt từ dataset, ngôn ngữ khác
-    // từ overlay tiếng Anh; chưa dịch thì ẩn mục thay vì rò tiếng Việt.
+    // Văn bản tuỳ chọn đọc qua chuỗi catalog an toàn: tiếng Việt từ dataset;
+    // priority locale chỉ nhận bản dịch đã có và ẩn mục còn thiếu.
     final localizedExamples = item.localizedExamples(context) ?? const [];
     final doctrinalNote = item.localizedDoctrinalNote(context);
 
@@ -140,9 +140,9 @@ class PaticcaDetailSheet extends ConsumerWidget {
   /// Tứ Nghĩa (lakkhaṇa / rasa / paccupaṭṭhāna / padaṭṭhāna) — cùng chuẩn với
   /// CetasikaDetailSheet để người học gặp lại một cấu trúc quen thuộc.
   ///
-  /// Đọc qua content catalog: với tiếng Việt lấy từ dataset, với ngôn ngữ khác
-  /// lấy overlay (en) và tự ẩn hàng khi chưa có bản dịch — không bao giờ hiển
-  /// thị văn bản nguồn tiếng Việt cho người đọc ngôn ngữ khác.
+  /// Đọc qua content catalog: với tiếng Việt lấy từ dataset; ngôn ngữ khác lấy
+  /// từ chuỗi locale an toàn (English chỉ khi registry cho phép) và ẩn hàng khi
+  /// chưa có bản dịch.
   Widget _fourAspects(BuildContext context, AppLocalizations l10n) {
     final rows = <(String, String?)>[
       (l10n.characteristic, item.localizedCharacteristic(context)),

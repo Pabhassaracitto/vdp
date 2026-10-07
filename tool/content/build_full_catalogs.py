@@ -39,37 +39,104 @@ cittas_raw = json.load(open(os.path.join(DATA, "cittas.json"), encoding="utf-8")
 rupas_raw = json.load(open(os.path.join(DATA, "rupas.json"), encoding="utf-8"))["rupas"]
 kammas_raw = json.load(open(os.path.join(DATA, "kammas.json"), encoding="utf-8"))["kammas"]
 
-# Load Vithi Steps
-from generate_all_priority_data import VITHI_STEPS_TRANSLATIONS
+# The vithi-step translation source file referenced by an older version of this
+# builder is no longer in the repository. Preserve translations already authored
+# in the locale catalogs, but treat exact English copies as missing. This makes
+# regeneration reproducible while preventing old fallback values being written
+# back out.
+_existing_locale_content = {}
+for _locale in LOCALES:
+    _path = os.path.join(CONTENT, f"content_{_locale}.json")
+    try:
+        with open(_path, encoding="utf-8") as _handle:
+            _existing_locale_content[_locale] = json.load(_handle)
+    except (OSError, json.JSONDecodeError):
+        _existing_locale_content[_locale] = {}
+
+
+def existing_vithi_step_translation(locale, vithi_id, step_number):
+    localized = (
+        _existing_locale_content.get(locale, {})
+        .get("vithis", {})
+        .get(vithi_id, {})
+        .get("steps", {})
+        .get(str(step_number), {})
+    )
+    english = (
+        en_content.get("vithis", {})
+        .get(vithi_id, {})
+        .get("steps", {})
+        .get(str(step_number), {})
+    )
+    if not isinstance(localized, dict):
+        return None
+    translated = {
+        field: value
+        for field, value in localized.items()
+        if field in {"name", "description", "doctrinalNote"}
+        and isinstance(value, str)
+        and value.strip()
+        and value != english.get(field)
+    }
+    return translated or None
+
+
+def existing_citta_examples(locale, citta_id):
+    localized = (
+        _existing_locale_content.get(locale, {})
+        .get("cittas", {})
+        .get(citta_id, {})
+        .get("examples", [])
+    )
+    english = (
+        en_content.get("cittas", {}).get(citta_id, {}).get("examples", [])
+    )
+    if not isinstance(localized, list):
+        return []
+    # Preserve authored examples while dropping the English copies that older
+    # builders placed in every locale. Compare by value because translations
+    # can have a different number/order of examples than the English source.
+    return [
+        value
+        for value in localized
+        if isinstance(value, str)
+        and value.strip()
+        and value not in english
+    ]
+
 
 def build_catalog(loc):
     # 1. CITTAS
+    # Only write text authored for this locale. The old builder copied English
+    # examples into every language file (and used Vietnamese as a final source
+    # fallback), which made partial translations look complete while leaking
+    # prose into the learner-facing study tab.
     cittas = {}
     for c in cittas_raw:
         cid = c["id"]
-        c_p = dcit.CITTAS.get(cid, {}).get(loc, (c["nameVietnamese"], c.get("doctrinalNote", "")))
-        name, doc = c_p
-        
-        # Localized examples
-        en_c = en_content.get("cittas", {}).get(cid, {})
-        exs = en_c.get("examples", [])
-        if loc in ["zh", "zh_TW"]:
-            # Clean Chinese examples
-            exs = [f"生起于相应境遇中（{c['namePali']}）"] if not exs else exs
-        cittas[cid] = {
-            "name": name,
-            "doctrinalNote": doc,
-            "examples": exs
-        }
+        translated = dcit.CITTAS.get(cid, {}).get(loc)
+        entry = {}
+        if translated:
+            name, doc = translated
+            if name:
+                entry["name"] = name
+            if doc:
+                entry["doctrinalNote"] = doc
+        examples = existing_citta_examples(loc, cid)
+        if examples:
+            entry["examples"] = examples
+        cittas[cid] = entry
 
     # 2. CETASIKAS
     cetasikas = {}
     for cs in cetasikas_raw:
         cid = cs["id"]
-        base = dcet.CETASIKAS.get(cid, {}).get(loc, (cs["nameVietnamese"], cs["nameShort"], cs["descriptionVi"]))
+        base = dcet.CETASIKAS.get(cid, {}).get(loc)
+        if not base:
+            cetasikas[cid] = {}
+            continue
         name, short_name, desc = base
         pali = cs["namePali"]
-        en_cs = en_content.get("cetasikas", {}).get(cid, {})
         
         char_map = {
             "zh": f"触及所缘（{pali}之特相）",
@@ -122,113 +189,88 @@ def build_catalog(loc):
     rupas = {}
     for r in rupas_raw:
         rid = r["id"]
-        base = drup.RUPAS.get(rid, {}).get(loc, (r["nameVietnamese"], r["nameShort"], r["descriptionVi"]))
+        base = drup.RUPAS.get(rid, {}).get(loc)
+        if not base:
+            rupas[rid] = {}
+            continue
         name, short_name, desc = base
-        pali = r["namePali"]
-        en_r = en_content.get("rupas", {}).get(rid, {})
+        # Only these three fields are translated. Do not manufacture English/Pāḷi
+        # labels for the four-aspect fields and present them as localized prose.
         rupas[rid] = {
             "name": name,
             "shortName": short_name,
             "description": desc,
-            "characteristic": f"{name} ({pali})",
-            "function": f"Rasa: {pali}",
-            "manifestation": f"Paccupaṭṭhāna: {pali}",
-            "proximateCause": f"Padaṭṭhāna: {pali}",
-            "doctrinalNote": en_r.get("doctrinalNote", "")
         }
 
     # 4. PACCAYAS
+    # Names and definitions are localized. The remaining prose/subdivision
+    # fields have not been translated yet, so omit them instead of copying the
+    # English reference strings into each priority catalog.
     paccayas = {}
     for p in paccayas_raw:
         pid = p["id"]
-        base = dcond.PACCAYAS.get(pid, {}).get(loc, (p["nameVietnamese"], p["nameShort"], p["definitionVi"]))
+        base = dcond.PACCAYAS.get(pid, {}).get(loc)
+        if not base:
+            paccayas[pid] = {}
+            continue
         name, short_name, definition = base
-        en_p = en_content.get("paccayas", {}).get(pid, {})
-        pali = p["namePali"]
-        
-        # Build subdivisions map
-        subs = {}
-        for sub in p.get("subdivisions", []):
-            spali = sub["namePali"]
-            en_sub = en_p.get("subdivisions", {}).get(spali, {})
-            subs[spali] = {
-                "name": en_sub.get("name", spali),
-                "note": en_sub.get("note", "")
-            }
-            
         paccayas[pid] = {
             "name": name,
             "shortName": short_name,
             "definition": definition,
-            "paccayaDhamma": en_p.get("paccayaDhamma", p.get("paccayaDhamma", "")),
-            "paccayuppanna": en_p.get("paccayuppanna", p.get("paccayuppanna", "")),
-            "doctrinalNote": en_p.get("doctrinalNote", f"Paccaya doctrinal note for {pali}"),
-            "examples": en_p.get("examples", [f"Example of {pali}"]),
-            "subdivisions": subs
         }
 
     # 5. PATICCAS
+    # The Tứ Nghĩa labels, notes and examples below used to be English
+    # templates embedded in every locale. Until those fields are translated,
+    # publish only the localized name/description.
     paticcas = {}
     for pd in paticcas_raw:
         pid = pd["id"]
-        base = dcond.PATICCAS.get(pid, {}).get(loc, (pd["nameVietnamese"], pd["nameShort"], pd["descriptionVi"]))
+        base = dcond.PATICCAS.get(pid, {}).get(loc)
+        if not base:
+            paticcas[pid] = {}
+            continue
         name, short_name, desc = base
-        en_pd = en_content.get("paticcas", {}).get(pid, {})
-        pali = pd["namePali"]
-        
         paticcas[pid] = {
             "name": name,
             "shortName": short_name,
             "description": desc,
-            "characteristic": f"Characteristic of {name} ({pali})",
-            "function": f"Function of {name} ({pali})",
-            "manifestation": f"Manifestation of {name} ({pali})",
-            "proximateCause": f"Proximate cause of {name} ({pali})",
-            "doctrinalNote": en_pd.get("doctrinalNote", f"Doctrinal note on {pali}"),
-            "examples": en_pd.get("examples", [f"Example of {pali}"])
         }
 
     # 6. KAMMAS
     kammas = {}
     for k in kammas_raw:
         kid = k["id"]
-        base = dcond.KAMMAS.get(kid, {}).get(loc, (k["nameVietnamese"], k["nameShort"], k["descriptionVi"]))
+        base = dcond.KAMMAS.get(kid, {}).get(loc)
+        if not base:
+            kammas[kid] = {}
+            continue
         name, short_name, desc = base
-        en_k = en_content.get("kammas", {}).get(kid, {})
         kammas[kid] = {
             "name": name,
             "shortName": short_name,
             "description": desc,
-            "doctrinalNote": en_k.get("doctrinalNote", ""),
-            "examples": en_k.get("examples", [])
         }
 
     # 7. VITHIS
     vithis = {}
     for v in vithis_raw:
         vid = v["id"]
-        base = dcond.VITHIS.get(vid, {}).get(loc, (v["nameVietnamese"], v["nameShort"], v["descriptionVi"]))
+        base = dcond.VITHIS.get(vid, {}).get(loc)
+        if not base:
+            vithis[vid] = {}
+            continue
         name, short_name, desc = base
-        en_v = en_content.get("vithis", {}).get(vid, {})
-        
+
         steps_map = {}
         for step in v.get("steps", []):
             snum = str(step["stepNumber"])
-            en_step = en_v.get("steps", {}).get(snum, {})
-            # Look up step translation if available
-            st_data = VITHI_STEPS_TRANSLATIONS.get(vid, {}).get(snum, {}).get(loc)
-            if st_data:
-                sname, sdesc, sdoc = st_data
-            else:
-                sname = en_step.get("name", step.get("nameVietnamese", f"Step {snum}"))
-                sdesc = en_step.get("description", step.get("description", ""))
-                sdoc = en_step.get("doctrinalNote", step.get("doctrinalNote", ""))
-                
-            steps_map[snum] = {
-                "name": sname,
-                "description": sdesc,
-                "doctrinalNote": sdoc
-            }
+            # Missing step translations stay missing: do not copy the English
+            # reference or Vietnamese source into the selected locale.
+            step_entry = existing_vithi_step_translation(loc, vid, snum)
+            if step_entry:
+                steps_map[snum] = step_entry
             
         arising_map = {
             "zh": "当清晰的五门或意门所缘撞击相应根门并扰动有分心流时生起。",
@@ -256,7 +298,6 @@ def build_catalog(loc):
             "description": desc,
             "arisingCondition": arising_map[loc],
             "significance": sig_map[loc],
-            "doctrinalNote": en_v.get("doctrinalNote", f"Doctrinal analysis of {v['namePali']}"),
             "steps": steps_map
         }
 
@@ -311,8 +352,12 @@ def build_catalog(loc):
         "locale": loc,
         "schemaVersion": 2,
         "fallbackLocale": "en",
-        "lessonTranslationStatus": "reviewed",
-        "lessonTranslationNote": "Canonically reviewed Buddhist doctrinal terms and titles in priority language.",
+        "lessonTranslationStatus": "partial",
+        "lessonTranslationNote": (
+            "Only authored priority-language fields are included. Missing "
+            "translations are intentionally omitted rather than copied from "
+            "English or Vietnamese."
+        ),
         "cittas": cittas,
         "cetasikas": cetasikas,
         "rupas": rupas,

@@ -11,17 +11,34 @@ Full plan and rationale: [`doc/localization_content_plan.md`](../../doc/localiza
 |---|---|
 | `build_content.py` | Serialises the authored Vietnamese source (`m1_m5_m7.py`, `m6_m8.py`, `m9_m10.py`) into `content_vi.json`. **Vietnamese is the source of truth.** |
 | `build_english_entities.py` | Normalises the English overlay for the Conditions and Mind Process tabs (`paticcas` / `paccayas` / `vithis`): merges fully-authored English into `content_en.json` without touching the reviewed study modules. `--check` gates staleness. |
+| `build_full_catalogs.py` | Regenerates the seven priority-language catalogs from authored translation tables, preserving existing non-English citta examples and vithi-step translations while omitting untranslated prose. |
 | `build_source_notes.py` | Regenerates `docs/study-content-sources.md`, the audit trail. Run after `build_content.py`. |
 | `build_glossary.py` | Builds the 324-headword Pāḷi glossary every translation must key to. |
 | `init_locale.py` | Scaffolds / refreshes a translation worksheet, and promotes it to a shippable file. |
 | `check_content_locale.py` | Validates a translation before it may ship. |
+
+## Translation fallback policy
+
+The asset/resource chain still loads `en` and `vi` for recovery, but runtime
+rendering follows `ContentLanguage.allowsEnglishFallback`:
+
+* Priority languages (`hi`, `zh`, `zh_TW`, `si`, `my`, `ja`, `th`) show only
+  text authored in that language. `zh_TW` may inherit the Simplified Chinese
+  (`zh`) value. Missing narrative/prose is hidden rather than mixed with English
+  or Vietnamese.
+* An unregistered locale (for example `fr`) may use the reviewed English
+  catalog as a recovery fallback.
+
+This is intentional: until a doctrinal translation has been authored and
+reviewed, a shorter localized screen is safer than presenting English as if it
+were part of the selected-language lesson.
 
 ## Translating a new language
 
 ```bash
 # 1. Agree terminology FIRST — this gates everything else.
 python3 tool/content/build_glossary.py
-#    Fill the hi / zh / zh_TW / si / my / ja columns in l10n_work/glossary.csv,
+#    Fill the hi / zh / zh_TW / si / my / ja / th columns in l10n_work/glossary.csv,
 #    following the reference edition named in that file's header.
 python3 tool/content/build_glossary.py --report     # aim for >= 95%
 
@@ -43,7 +60,9 @@ python3 tool/content/init_locale.py hi --strip
 
 # 6. Enable it in the app: in
 #    lib/core/localization/content_languages.dart change that language's
-#    status from `planned` to `draft` (then `reviewed` after approval).
+#    status from `planned` to `draft` (then `reviewed` after approval), and
+#    set `allowsEnglishFallback: false` for a priority language so missing
+#    translations stay hidden rather than appearing in English.
 
 # 7. Final gates.
 python3 tool/check_localizations.py

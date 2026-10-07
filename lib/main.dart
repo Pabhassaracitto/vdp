@@ -40,10 +40,10 @@ class VdpApp extends ConsumerWidget {
       data: (catalog) => catalog,
       loading: () => localeSettings.contentLocale == 'vi'
           ? ContentCatalog.vietnamese
-          : const ContentCatalog(locale: 'en', data: {}),
+          : ContentCatalog(locale: localeSettings.contentLocale, data: const {}),
       error: (e, st) => localeSettings.contentLocale == 'vi'
           ? ContentCatalog.vietnamese
-          : const ContentCatalog(locale: 'en', data: {}),
+          : ContentCatalog(locale: localeSettings.contentLocale, data: const {}),
     );
 
     final effectiveLocale = localeSettings.uiLocale ??
