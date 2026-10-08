@@ -4,6 +4,8 @@ Scripts that build and validate the study content shipped in
 `assets/content/content_<locale>.json`.
 
 Full plan and rationale: [`doc/localization_content_plan.md`](../../doc/localization_content_plan.md).
+Agent-team prompts (locale agents + manager/orchestrator):
+[`priority_translation_agents/README.md`](priority_translation_agents/README.md).
 
 ## The scripts
 
