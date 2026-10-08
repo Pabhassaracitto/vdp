@@ -1,0 +1,730 @@
+{
+  "_note": "zh Batch 1 proposal — Dependent Origination (paticcas 12 links / paccayas 24 conditions / vithis): paticcas (four aspects/examples/notes), paccayas (paccayaDhamma/paccayuppanna/examples/notes/subdivisions), vithis (arisingCondition/significance/notes + missing steps). English is semantic bridge only; Pali/Ye-Jun ch.8 <7>-<12> are doctrinal source. Missing fields intentionally omitted so runtime falls back to English, never Vietnamese. Simplified script only.",
+  "paticcas": {
+    "PD_01": {
+      "pali": "Avijjā",
+      "characteristic": "不了知——对诸法真实相（四圣谛、三相）盲昧不见。",
+      "function": "障蔽正见，并作为诸行生起的缘。",
+      "manifestation": "现为迷惑与黑暗——于无觉中相续造业（诸行）。",
+      "proximateCause": "非如理作意（ayoniso-manasikāra）；未亲近善知识、未听闻正法。",
+      "doctrinalNote": "无明无可推求之始（anamatagga）。无明之灭即四道心的证得。",
+      "examples": [
+        "不了知此身无常，却执为我而造业以卫此我。"
+      ]
+    },
+    "PD_02": {
+      "pali": "Saṅkhārā",
+      "characteristic": "造作与筹划——经由身、语、意的有意造作。",
+      "function": "造业——积聚将于来生感果的业力。",
+      "manifestation": "现为积聚之业，将牵引识入胎结生。",
+      "proximateCause": "以无明为缘；若无无明，诸行即成出世间而不造新业。",
+      "doctrinalNote": "缘起中之“行”指造业的思心所（cetanā）。",
+      "examples": [
+        "以善心布施为福行，其识结生入善趣。",
+        "证得禅那为不动行，其识结生为梵天。"
+      ]
+    },
+    "PD_03": {
+      "pali": "Viññāṇa",
+      "characteristic": "识知所缘——依止于新起名色的结生识。",
+      "function": "结生——开启新一期生命。",
+      "manifestation": "现为新一期生存的显现——名色现起。",
+      "proximateCause": "以业（行）为缘；须有名色为所依方得安住。",
+      "doctrinalNote": "识与名色相互依存——如两束芦苇相依而立。",
+      "examples": [
+        "结生刹那，有结生识现起，名色渐次生长，新生命即此开始。"
+      ]
+    },
+    "PD_04": {
+      "pali": "Nāmarūpa",
+      "characteristic": "存在——名与色具足并辗转生长。",
+      "function": "为识的运作提供所依，并为六处之成熟提供缘。",
+      "manifestation": "现为六处具足成形。",
+      "proximateCause": "以识为缘；并依四类色生起之源（业·心·时节·食）。",
+      "examples": [
+        "于母胎中：结生识既现，名色逐渐从胚胎生长至具足。"
+      ]
+    },
+    "PD_05": {
+      "pali": "Saḷāyatana",
+      "characteristic": "堪能领受——六门为所缘入处。",
+      "function": "作门（dvāra），令心与外境相遇。",
+      "manifestation": "现为触的建立——心得触及所缘。",
+      "proximateCause": "以圆满的名色为缘。",
+      "examples": [
+        "新生儿六处既成，与外界之触即此开始。"
+      ]
+    },
+    "PD_06": {
+      "pali": "Phassa",
+      "characteristic": "触击——根、境、识三者之和合相遇。",
+      "function": "摄合根、境、识——为受生起之缘。",
+      "manifestation": "现为心、心所、根、境之和合现前。",
+      "proximateCause": "三事具足：根＋所缘＋识。",
+      "doctrinalNote": "缘起中之“触”即触心所（CS_PHASSA）。",
+      "examples": [
+        "眼见可爱色：眼根＋色境＋眼识成眼触，随后生起悦受。"
+      ]
+    },
+    "PD_07": {
+      "pali": "Vedanā",
+      "characteristic": "领纳——于触后尝所缘之味，分苦、乐、舍。",
+      "function": "享用所缘——于非如理作意时为爱生起之缘。",
+      "manifestation": "现为苦、乐或舍受于心中之形成。",
+      "proximateCause": "以触为缘。",
+      "doctrinalNote": "此为四念处的枢机：于受处截断，不令受转成爱。",
+      "examples": [
+        "闻赞誉（触）生悦受；若无正念，随后即起求更多之爱。"
+      ]
+    },
+    "PD_08": {
+      "pali": "Taṇhā",
+      "characteristic": "渴求——由受而生的黏着希求。",
+      "function": "执取所缘——为取生起之缘。",
+      "manifestation": "现为取之执持；轮回得以相续。",
+      "proximateCause": "以受（尤指悦受、乐受）为缘。",
+      "doctrinalNote": "爱即四圣谛中之集谛。爱灭则苦灭——即涅槃。",
+      "examples": [
+        "见美食而起爱：欲更食。",
+        "遇苦而起对无有的渴爱：欲不复存在。"
+      ]
+    },
+    "PD_09": {
+      "pali": "Upādāna",
+      "characteristic": "执持不舍——牢不可释之抓取。",
+      "function": "坚固执取所缘——为有生起之缘。",
+      "manifestation": "现为有之成形——感生之业积聚。",
+      "proximateCause": "以爱为缘——取即爱之强化与巩固。",
+      "examples": [
+        "不仅欲得财物（爱），且执财不舍（取）。"
+      ]
+    },
+    "PD_10": {
+      "pali": "Bhava",
+      "characteristic": "存在——已积聚、堪能感生来世的业力。",
+      "function": "令来世之生得以现起。",
+      "manifestation": "现为与业相应之趣地的结生现前。",
+      "proximateCause": "以取为缘——取为有之资粮。",
+      "examples": [
+        "一生广行布施者，积欲界善有，来世生于富裕家。"
+      ]
+    },
+    "PD_11": {
+      "pali": "Jāti",
+      "characteristic": "结生——识于新趣之再结生。",
+      "function": "开启新一期生命——并牵来整堆苦蕴。",
+      "manifestation": "现为苦（老死）之显现。",
+      "proximateCause": "以有（业力）为缘。",
+      "doctrinalNote": "三世轮转于此对接：生（PD_11）对应来世果分之识（PD_03）。",
+      "examples": [
+        "结生刹那即是生；众苦随生而至。"
+      ]
+    },
+    "PD_12": {
+      "pali": "Jarāmaraṇa",
+      "characteristic": "衰老与死亡——一切有为名色之必然衰朽与坏灭。",
+      "function": "结束一期生命——若未得解脱，则令新一轮有转复续。",
+      "manifestation": "现为一期生命之终结；未解脱则轮回不息。",
+      "proximateCause": "以生为缘——有生必有老死。",
+      "doctrinalNote": "解脱即断无明（PD_01）与爱（PD_08）——现证涅槃。",
+      "examples": [
+        "有生必有老死。",
+        "无明与爱既断，老死不再相续。"
+      ]
+    }
+  },
+  "paccayas": {
+    "PC_01": {
+      "pali": "Hetu-paccaya",
+      "paccayaDhamma": "六因：贪（lobha）、瞋（dosa）、痴（moha）、无贪（alobha）、无瞋（adosa）、无痴（amoha）。",
+      "paccayuppanna": "与因相应的心法（心与心所），以及由该心所生之色——住时为心生色，结生时为业生色。",
+      "examples": [
+        "一贪根心具足贪与痴二因，令整个心识刹那成不善。",
+        "无因（ahetuka）心无因，故不由因缘所助——如二领受心。"
+      ],
+      "doctrinalNote": "唯六根本心所为因；其余心所虽强，仅依他缘而助。",
+      "subdivisions": {}
+    },
+    "PC_02": {
+      "pali": "Ārammaṇa-paccaya",
+      "paccayaDhamma": "六所缘：色、声、香、味、触、法所缘（含涅槃与定境）。",
+      "paccayuppanna": "一切识知所缘之心——89心及其相应52心所。",
+      "examples": [
+        "色所缘为眼识及其相应心所作所缘缘。",
+        "涅槃为道、果心作所缘缘。"
+      ],
+      "doctrinalNote": "据《清净道论》第十七品，无明以智慧作意观照时，亦可为善行作所缘缘。",
+      "subdivisions": {}
+    },
+    "PC_03": {
+      "pali": "Adhipati-paccaya",
+      "paccayaDhamma": "四俱生增上——欲（chanda）、精进（viriya）、心（citta）、审察（vīmaṃsā，慧）；以及所缘增上（被执为增上的所缘）。",
+      "paccayuppanna": "与增上俱生的名色诸法；于所缘增上，则为84心（除无因异熟）及其相应心所。",
+      "examples": [
+        "禅修者精进最强时，精进于整个禅心刹那中居增上。",
+        "恋宝者以珍宝为所缘增上，心为之所主。"
+      ],
+      "doctrinalNote": "十八无因心及仅容一增上之心，无增上缘。",
+      "subdivisions": {
+        "Sahajāt'ādhipati": {
+          "name": "俱生增上",
+          "note": "四增上之一于一心刹那中特胜而起。"
+        },
+        "Ārammaṇ'ādhipati": {
+          "name": "所缘增上",
+          "note": "被执为增上的所缘，统治缘取它的心。"
+        }
+      }
+    },
+    "PC_04": {
+      "pali": "Anantara-paccaya",
+      "paccayaDhamma": "刚刚灭去的心与心所（除阿罗汉死心）。",
+      "paccayuppanna": "紧随其后生起的心与心所。",
+      "examples": [
+        "眼识灭去后，即为领受心作无间缘。",
+        "结生心灭去后，即为有分作无间缘。"
+      ],
+      "doctrinalNote": "无间缘显心流之相续——二刹那之间无有间隙。",
+      "subdivisions": {}
+    },
+    "PC_05": {
+      "pali": "Samanantara-paccaya",
+      "paccayaDhamma": "刚刚灭去的心与心所。",
+      "paccayuppanna": "紧随其后之心与心所。",
+      "examples": [
+        "与无间缘同一事体，就“让路”说名无间，就“等同相续”说名等无间。"
+      ],
+      "doctrinalNote": "无间与等无间为一体二名——如钱币之两面。",
+      "subdivisions": {}
+    },
+    "PC_06": {
+      "pali": "Sahajāta-paccaya",
+      "paccayaDhamma": "俱生之四名蕴；四大种；住时之心与心所；以及名与色。",
+      "paccayuppanna": "彼此俱生的名法、由心所生与由业所生之色，以及结生时之名色。",
+      "examples": [
+        "一贪心刹那中，受、想、行、识俱生互助。",
+        "结生时名与色俱生互为缘。"
+      ],
+      "doctrinalNote": "此缘最常用于说明一心刹那中名与色的同时性。",
+      "subdivisions": {}
+    },
+    "PC_07": {
+      "pali": "Aññamañña-paccaya",
+      "paccayaDhamma": "俱生之四名蕴；四大种；结生时之名与色。",
+      "paccayuppanna": "即彼诸法本身——此关系为双向。",
+      "examples": [
+        "四大种中地界支水界，水界亦支地界——无一界独存。"
+      ],
+      "doctrinalNote": "相互缘必伴俱生缘而更窄：心生色非与识相互。",
+      "subdivisions": {}
+    },
+    "PC_08": {
+      "pali": "Nissaya-paccaya",
+      "paccayaDhamma": "俱生之四名蕴；四大种；以及六依处（眼、耳、鼻、舌、身、意处/心所依处）。",
+      "paccayuppanna": "俱生名法；所造色；以及七识界及其相应心所。",
+      "examples": [
+        "眼处为眼识及其相应心所作依止缘。",
+        "心所依处（hadaya-vatthu）支助意界诸心。"
+      ],
+      "doctrinalNote": "当别于亲依止：依止为直接所依，亲依止为远而有力之助。",
+      "subdivisions": {
+        "Sahajāta-nissaya": {
+          "name": "俱生依止",
+          "note": "一心刹那中之相互依止。"
+        },
+        "Purejāta-nissaya (vatthu)": {
+          "name": "前生依止——依处",
+          "note": "六处先已生起，为七识界作依止。"
+        },
+        "Vatthārammaṇa-purejāta-nissaya": {
+          "name": "依处所缘前生依止",
+          "note": "心所依处同时为依处与所缘，支助意界。"
+        }
+      }
+    },
+    "PC_09": {
+      "pali": "Upanissaya-paccaya",
+      "paccayaDhamma": "强所缘；刚刚灭去之识；以及自然之缘如信、戒、多闻、气候、食物、善友、宿业等。",
+      "paccayuppanna": "其后生起之心与心所。",
+      "examples": [
+        "悦受为爱作自然亲依止——因受可爱，爱遂增盛。",
+        "信为精进作自然亲依止。"
+      ],
+      "doctrinalNote": "缘起中“受缘爱”主要依自然亲依止而说。",
+      "subdivisions": {
+        "Ārammaṇ'ūpanissaya": {
+          "name": "所缘亲依止",
+          "note": "强大的所缘为后生识作决定性策动。"
+        },
+        "Anantar'ūpanissaya": {
+          "name": "无间亲依止",
+          "note": "即以无间缘为亲依止力而说。"
+        },
+        "Pakat'ūpanissaya": {
+          "name": "自然亲依止",
+          "note": "自然之缘：信、戒、多闻、气候、善友、宿业等。别名“本性亲依止”。"
+        }
+      }
+    },
+    "PC_10": {
+      "pali": "Purejāta-paccaya",
+      "paccayaDhamma": "先已生起的六处（色法）与六所缘——已现的物质现象。",
+      "paccayuppanna": "其后生起之心与心所。",
+      "examples": [
+        "眼处须先有，方有眼识生。",
+        "现前之色所缘（住十七刹那）为眼识作所缘前生缘。"
+      ],
+      "doctrinalNote": "前生缘唯约色法；名法不能作前生缘。",
+      "subdivisions": {
+        "Vatthu-purejāta": {
+          "name": "依处前生",
+          "note": "六处支助七识界。"
+        },
+        "Ārammaṇa-purejāta": {
+          "name": "所缘前生",
+          "note": "现前坚实所缘支助54欲界心及50心所。"
+        }
+      }
+    },
+    "PC_11": {
+      "pali": "Pacchājāta-paccaya",
+      "paccayaDhamma": "85心——欲、色、无色及出世间诸心（除结生刹那之心）——即住时之后生名法。",
+      "paccayuppanna": "先已生起的业生色身（活身的物质）。",
+      "examples": [
+        "住时之心与心所摄养已生之身，令不速坏。",
+        "饥时思食——后生名法摄养身色。"
+      ],
+      "doctrinalNote": "唯后生名法支助前生色法，反之不然。",
+      "subdivisions": {}
+    },
+    "PC_12": {
+      "pali": "Āsevana-paccaya",
+      "paccayaDhamma": "前一速行心及其心所（除最后速行与道速行）。",
+      "paccayuppanna": "紧接其后之速行心及其心所。",
+      "examples": [
+        "七速行中，第一速行为第二速行作习行缘。",
+        "反复诵习令后念愈熟。"
+      ],
+      "doctrinalNote": "出世间道速行仅一刹那，故不为习行缘。",
+      "subdivisions": {}
+    },
+    "PC_13": {
+      "pali": "Kamma-paccaya",
+      "paccayaDhamma": "善与不善之思——思心所（cetanā）。",
+      "paccayuppanna": "俱生业：与思俱生的心、心所及心生色；异时业：异熟心、其相应心所及业生色。",
+      "examples": [
+        "布施时之思，支助来世之异熟心与业生色（异时业）。",
+        "贪心时之思，俱时支助相应名法与心生色（俱生业）。"
+      ],
+      "doctrinalNote": "十二支中“行缘识”与“有缘生”主要依异时业缘而说。",
+      "subdivisions": {
+        "Sahajāta-kamma": {
+          "name": "俱生业",
+          "note": "思于同刹那支助俱生法。"
+        },
+        "Nānākkhaṇika-kamma": {
+          "name": "异时业",
+          "note": "思于一刹那支助异时之果——轮回之据。"
+        }
+      }
+    },
+    "PC_14": {
+      "pali": "Vipāka-paccaya",
+      "paccayaDhamma": "36异熟心（无因、欲界美、大异熟）及其相应38心所。",
+      "paccayuppanna": "俱生的异熟名法及其所生业生色。",
+      "examples": [
+        "结生识为异熟，支助俱生之业生色。",
+        "眼识为异熟，无造业之寂静性。"
+      ],
+      "doctrinalNote": "异熟识不造新业——“果不生果”之要点。",
+      "subdivisions": {}
+    },
+    "PC_15": {
+      "pali": "Āhāra-paccaya",
+      "paccayaDhamma": "段食（色法）与三名食：触、思、识。",
+      "paccayuppanna": "段食摄养色身；三名食摄养名法、心所及心生色。",
+      "examples": [
+        "段食摄养色身——如饭食。",
+        "思食：意图滋养业，令生死相续。"
+      ],
+      "doctrinalNote": "可连结经藏四食（SN 12.63）之食观。",
+      "subdivisions": {
+        "Rūp'āhāra": {
+          "name": "段食",
+          "note": "物质食摄养色身。"
+        },
+        "Nām'āhāra": {
+          "name": "名食",
+          "note": "触、思、识为食。"
+        }
+      }
+    },
+    "PC_16": {
+      "pali": "Indriya-paccaya",
+      "paccayaDhamma": "二十根：五净色根、色命根及十四名根——受、信、精进、念、定、慧等。",
+      "paccayuppanna": "净色根支助七识界；名根支助俱生名法；色命根支助俱生业生色。",
+      "examples": [
+        "眼根司眼识——无眼根则无见。",
+        "定根统摄整个禅心刹那。"
+      ],
+      "doctrinalNote": "五根——信、精进、念、定、慧——于修行中须均衡。",
+      "subdivisions": {
+        "Purejāta-indriya": {
+          "name": "前生根",
+          "note": "五净色根支助相应识。"
+        },
+        "Jīvit'indriya": {
+          "name": "色命根",
+          "note": "维系同聚之业生色。"
+        },
+        "Sahajāta-indriya": {
+          "name": "俱生根",
+          "note": "十四名根支助俱生名法。"
+        }
+      }
+    },
+    "PC_17": {
+      "pali": "Jhāna-paccaya",
+      "paccayaDhamma": "七禅支：寻、伺、喜、乐、忧、舍、一境性。",
+      "paccayuppanna": "相应之名法（除双身识）及其所生心生色。",
+      "examples": [
+        "寻将心导向所缘——为俱生法作禅那缘。",
+        "二禅中寻已离，余支仍为禅那缘。"
+      ],
+      "doctrinalNote": "不限于定境：七禅支亦行于寻常心识中。",
+      "subdivisions": {}
+    },
+    "PC_18": {
+      "pali": "Magga-paccaya",
+      "paccayaDhamma": "十二道支：正见、正思惟、正语、正业、正命、正精进、正念、正定，以及邪见、邪思惟、邪精进、邪定。",
+      "paccayuppanna": "相应之名法（除双身识）及其所生心生色。",
+      "examples": [
+        "善心中的正见引导整个心识刹那向善。",
+        "贪心中的邪见引导心识向不善。"
+      ],
+      "doctrinalNote": "道缘通于善与不善——不限于出世间八正道。",
+      "subdivisions": {}
+    },
+    "PC_19": {
+      "pali": "Sampayutta-paccaya",
+      "paccayaDhamma": "俱生之四名蕴。",
+      "paccayuppanna": "即彼四名蕴本身——双向关系。",
+      "examples": [
+        "一心刹那中受与想相应：同缘、同依。"
+      ],
+      "doctrinalNote": "唯名法得相应；色法无同缘同依，故不相应。",
+      "subdivisions": {}
+    },
+    "PC_20": {
+      "pali": "Vippayutta-paccaya",
+      "paccayaDhamma": "名法（支助色法时）或色法（支助名法时）。",
+      "paccayuppanna": "色法（俱生或前生）或名法（俱生或后生）。",
+      "examples": [
+        "心所依处（色法）支助意识（名法）——异类故为不相应缘。",
+        "结生时名色俱生而异类相依。"
+      ],
+      "doctrinalNote": "此缘表名色关系，为十二支中名色分析之骨干。",
+      "subdivisions": {
+        "Sahajāta-vippayutta": {
+          "name": "俱生不相应",
+          "note": "结生时名与色俱生而异类相依。"
+        },
+        "Purejāta-vippayutta": {
+          "name": "前生不相应",
+          "note": "六处先已生起支助七识界。"
+        },
+        "Pacchājāta-vippayutta": {
+          "name": "后生不相应",
+          "note": "后生名法支助先已生之色身。"
+        }
+      }
+    },
+    "PC_21": {
+      "pali": "Atthi-paccaya",
+      "paccayaDhamma": "摄俱生、前生、后生、食、根五缘之事。",
+      "paccayuppanna": "为彼五缘所支助之法。",
+      "examples": [
+        "眼处现存，眼识得生——有缘。",
+        "四大种现存，支助所造色。"
+      ],
+      "doctrinalNote": "二十四缘中最广者——摄五缘。",
+      "subdivisions": {
+        "Sahajāta-atthi": {
+          "name": "俱生有",
+          "note": "同刹那中现存。"
+        },
+        "Purejāta-atthi": {
+          "name": "前生有",
+          "note": "先已生起之色仍存。"
+        },
+        "Pacchājāta-atthi": {
+          "name": "后生有",
+          "note": "后生名法现存。"
+        },
+        "Āhāra-atthi": {
+          "name": "食有",
+          "note": "段食现存。"
+        },
+        "Indriya-atthi": {
+          "name": "根有",
+          "note": "色命根现存。"
+        }
+      }
+    },
+    "PC_22": {
+      "pali": "Natthi-paccaya",
+      "paccayaDhamma": "刚刚灭去之心与心所。",
+      "paccayuppanna": "紧随其后之心与心所。",
+      "examples": [
+        "眼识必灭，领受心得生。"
+      ],
+      "doctrinalNote": "与无间缘同境而侧重“无有”之相。",
+      "subdivisions": {}
+    },
+    "PC_23": {
+      "pali": "Vigata-paccaya",
+      "paccayaDhamma": "刚刚灭去之心与心所。",
+      "paccayuppanna": "紧随其后之心与心所。",
+      "examples": [
+        "一有分刹那既灭（离去），次一有分离即得生。"
+      ],
+      "doctrinalNote": "一事二名：无有重“已无”，离去重“已去”。",
+      "subdivisions": {}
+    },
+    "PC_24": {
+      "pali": "Avigata-paccaya",
+      "paccayaDhamma": "摄俱生、前生、后生、食、根五缘之事。",
+      "paccayuppanna": "为彼五缘所支助之法。",
+      "examples": [
+        "心所依处未坏，持续支助意识。"
+      ],
+      "doctrinalNote": "21–24为两对同义之收束：有/无有、离去/不离去。",
+      "subdivisions": {}
+    }
+  },
+  "vithis": {
+    "VT_NGU_MON_RATLON": {
+      "pali": "Atimahanta-ārammaṇa Pañcadvāra-vīthi",
+      "arisingCondition": "五境中之一种（色、声、香、味、触）以极强之力撞击相应净色根。",
+      "significance": "最圆满之心路——具足17心识刹那及2彼所缘；七速行圆满造业，彼所缘领受余境。",
+      "doctrinalNote": "极极大所缘之判准：堪容七速行＋二彼所缘；若未具此则不为极极大。",
+      "steps": {}
+    },
+    "VT_NGU_MON_LON": {
+      "pali": "Mahanta-ārammaṇa Pañcadvāra-vīthi",
+      "arisingCondition": "五境以强力撞击根门，堪容七速行但不足以引生彼所缘。",
+      "significance": "最常见之欲界心路——七速行圆满造业，但无彼所缘享境。",
+      "doctrinalNote": "与极极大路仅差无彼所缘二刹那。",
+      "steps": {
+        "1": {
+          "name": "有分波动",
+          "description": "所缘撞击根门，有分识首次波动。",
+          "doctrinalNote": ""
+        },
+        "2": {
+          "name": "有分截断",
+          "description": "有分流被截断——心路于此开端。",
+          "doctrinalNote": ""
+        },
+        "3": {
+          "name": "五门转向",
+          "description": "转心向境，判定何门被撞击。",
+          "doctrinalNote": "CI_028，舍受，11心所。不造业。"
+        },
+        "4": {
+          "name": "双五识",
+          "description": "于相应根门直接识知所缘。仅七遍一切心所随行。",
+          "doctrinalNote": "不善异熟（CI_013–017）或善异熟（CI_020–024），依结生业而定。"
+        },
+        "5": {
+          "name": "领受",
+          "description": "从五识处领受所缘，转入内心流。",
+          "doctrinalNote": "CI_018为不善异熟舍俱；CI_025为善异熟舍俱。10心所。"
+        },
+        "6": {
+          "name": "推度",
+          "description": "审查所缘——判为好/恶、可意/不可意。",
+          "doctrinalNote": "CI_027（喜俱）仅于极可爱境现起。"
+        },
+        "7": {
+          "name": "确定",
+          "description": "对所缘作最终判定——为七速行开路。",
+          "doctrinalNote": "CI_029（意门转向）执行确定。11心所。其判定决定随后速行之种类与善恶。"
+        },
+        "8": {
+          "name": "速行",
+          "description": "七个相续之速行刹那——造善或不善业；七速行后无彼所缘，直接入有分。",
+          "doctrinalNote": "一类心相续7刹那；心路中唯此处造业。"
+        },
+        "9": {
+          "name": "后有分",
+          "description": "心路终结后，有分复归常流。",
+          "doctrinalNote": ""
+        }
+      }
+    },
+    "VT_Y_MON": {
+      "pali": "Manodvāra-vīthi",
+      "arisingCondition": "法所缘（dhammārammaṇa）现于意门——忆念、思惟、想象等。",
+      "significance": "统摄一切内心活动；造意业，并为语、身业之源。",
+      "doctrinalNote": "意门心路中，意门转向后即起七速行；无五识、领受、推度等前分。",
+      "steps": {
+        "1": {
+          "name": "有分波动",
+          "description": "法所缘触动意门，有分波动。",
+          "doctrinalNote": ""
+        },
+        "2": {
+          "name": "有分截断",
+          "description": "有分流截断，意门心路开端。",
+          "doctrinalNote": ""
+        },
+        "3": {
+          "name": "意门转向",
+          "description": "转向法所缘，作意门之开端。",
+          "doctrinalNote": "CI_029，11心所。"
+        },
+        "4": {
+          "name": "速行",
+          "description": "七速行相续造业——意业于此成就。",
+          "doctrinalNote": "七刹那同一类心；依所缘与作意之善恶而分善恶。"
+        },
+        "5": {
+          "name": "彼所缘（如有）",
+          "description": "若所缘为极大，则有二彼所缘享余境；否则无。",
+          "doctrinalNote": "欲界意门中彼所缘非必具；色/无色/出世间速行后无彼所缘。"
+        },
+        "6": {
+          "name": "后有分",
+          "description": "心路结束，有分复续。",
+          "doctrinalNote": ""
+        }
+      }
+    },
+    "VT_VITHIMUTTA": {
+      "pali": "Vīthimutta-citta",
+      "arisingCondition": "无所缘撞击——不经六门之离路作用。",
+      "significance": "维系生命相续之底流：结生、有分、死为同一种异熟心，离心路而运作。",
+      "doctrinalNote": "离路心与心路心互斥：于离路时无心路，于心路时无离路。",
+      "steps": {
+        "1": {
+          "name": "结生",
+          "description": "新一期生命最初刹那——结生识依宿业生起，摄持名色。",
+          "doctrinalNote": "十九种结生心之一，依业而定趣地。"
+        },
+        "2": {
+          "name": "有分",
+          "description": "生命相续之底流——于心路间隙相续不绝，守护生命不断。",
+          "doctrinalNote": "与结生、死为同一种心；如河之常流。"
+        },
+        "3": {
+          "name": "死",
+          "description": "一期生命最后刹那——死心灭后，即接次生结生。",
+          "doctrinalNote": "死后无间即结生，无中有。"
+        }
+      }
+    }
+  },
+  "kammas": {
+    "_note": "Draft translations for 16 kammas — doctrinalNote/examples. Provided for review but gated by confidence; integrator may publish only high-confidence items and keep remainder on English fallback.",
+    "KM_T_01": {
+      "doctrinalNote": "现法受业仅于现生有一成熟机会；若当生未熟，即成既有业（ahosi-kamma）。",
+      "examples": [
+        "以清净心布施，当生即获现报。"
+      ]
+    },
+    "KM_T_02": {
+      "doctrinalNote": "次生受业由第七速行所造，必于次一生成熟；若未成熟则成既有。",
+      "examples": [
+        "临终第七速行所造之业决定次生趣向。"
+      ]
+    },
+    "KM_T_03": {
+      "doctrinalNote": "后后受业由中间五速行所造，自第三生起直至涅槃前皆得成熟。",
+      "examples": [
+        "日常积习之善恶，于未来多生中随缘感果。"
+      ]
+    },
+    "KM_T_04": {
+      "doctrinalNote": "既有业为已失成熟机会或已被对治而不再感果之业。",
+      "examples": [
+        "阿罗汉已断轮回，过去当感轮回之业皆成既有。"
+      ]
+    },
+    "KM_U_01": {
+      "doctrinalNote": "生产业引生结生与有分，奠定一期生命之趣地与根身。",
+      "examples": [
+        "宿业为生产业，引生人趣结生。"
+      ]
+    },
+    "KM_U_02": {
+      "doctrinalNote": "支持业助生产业，令乐/苦受增盛相续。",
+      "examples": [
+        "健康与顺缘为善生产业之支持业。"
+      ]
+    },
+    "KM_U_03": {
+      "doctrinalNote": "阻碍业压制生产业，令福寿减损或苦报减轻。",
+      "examples": [
+        "疾病与逆缘阻碍善趣之乐受。"
+      ]
+    },
+    "KM_U_04": {
+      "doctrinalNote": "毁坏业以强业彻底截断生产业之相续。",
+      "examples": [
+        "重恶业截断善趣寿命。"
+      ]
+    },
+    "KM_P_01": {
+      "doctrinalNote": "重业为五逆或深定，最优先感果。",
+      "examples": [
+        "五无间业与安止定为重业。"
+      ]
+    },
+    "KM_P_02": {
+      "doctrinalNote": "临死业为命终前所忆或所行，引生次生结生。",
+      "examples": [
+        "临终忆念佛号为临死业。"
+      ]
+    },
+    "KM_P_03": {
+      "doctrinalNote": "惯行业为数数修习而成习性之业。",
+      "examples": [
+        "日常诵经、布施为惯行业。"
+      ]
+    },
+    "KM_P_04": {
+      "doctrinalNote": "已作业为除前三者外之零散旧业，于前三无时方感果。",
+      "examples": [
+        "偶一为之的微弱业为已作业。"
+      ]
+    },
+    "KM_R_01": {
+      "doctrinalNote": "欲界不善业为十恶业道，感四恶趣果。",
+      "examples": [
+        "杀生、偷盗等感恶趣。"
+      ]
+    },
+    "KM_R_02": {
+      "doctrinalNote": "欲界善业为十善业道，感人天善趣。",
+      "examples": [
+        "布施、持戒感人天乐果。"
+      ]
+    },
+    "KM_R_03": {
+      "doctrinalNote": "色界善业为四禅定善，感色界梵天。",
+      "examples": [
+        "修初禅至四禅感生色界。"
+      ]
+    },
+    "KM_R_04": {
+      "doctrinalNote": "无色界善业为四无色定善，感无色界。",
+      "examples": [
+        "修空无边处定感生无色界。"
+      ]
+    }
+  },
+  "studyModules": {
+    "_note": "Audit: 17 modules present. Only M1_BASICS, M2_SI_PHAN, M11_BIET_CANH have full zh lessonSections/reviewCards/quizSeeds (status reviewed). Other 14 modules retain draft with title/description only; body/summary/keyTerms.meaning/reviewCards/quizSeeds intentionally absent to fallback to English. Proposal does NOT overwrite existing zh lessons nor duplicate them; no new lesson content is manufactured here."
+  }
+}
