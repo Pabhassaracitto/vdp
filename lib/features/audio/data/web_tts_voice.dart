@@ -55,6 +55,15 @@ class WebTtsVoice {
 
   bool get isLikelyFemale => genderHint == WebTtsVoiceGender.female;
 
+  /// UI copy key for the gender shown next to every voice: `male`, `female`
+  /// or `unknownGender` ("Chưa xác định"). An unidentified voice is always
+  /// labelled "Chưa xác định" — never guessed as Nam/Nữ (IN4-74).
+  String get genderLabelKey => switch (genderHint) {
+        WebTtsVoiceGender.male => 'male',
+        WebTtsVoiceGender.female => 'female',
+        WebTtsVoiceGender.unknown => 'unknownGender',
+      };
+
   /// Shape expected by `FlutterTts.setVoice` on the web implementation.
   Map<String, String> toFlutterTtsVoice() => {
         'name': name,

@@ -67,6 +67,10 @@ class WebTtsVoiceSettingsNotifier
         _preferences = preferences ?? WebTtsVoicePreferences.instance,
         _catalog = catalog ?? WebTtsVoiceCatalog.instance,
         super(const WebTtsVoiceSettingsState()) {
+    // Late browser voices (online "Natural" voices published after the first
+    // getVoices() snapshot) flow in through the catalog tail — show them in
+    // the picker without requiring a manual refresh (IN4-74).
+    _catalog.addListener(_onCatalogUpdated);
     unawaited(refresh());
   }
 
@@ -74,6 +78,17 @@ class WebTtsVoiceSettingsNotifier
   final WebTtsVoicePreferences _preferences;
   final WebTtsVoiceCatalog _catalog;
   bool _hasRefreshed = false;
+
+  void _onCatalogUpdated(List<WebTtsVoice> voices) {
+    if (!mounted) return;
+    state = state.copyWith(voices: voices);
+  }
+
+  @override
+  void dispose() {
+    _catalog.removeListener(_onCatalogUpdated);
+    super.dispose();
+  }
 
   /// The first load reuses the shared catalog (possibly already stabilized by
   /// lesson playback); later calls come from "Refresh voices" and re-enumerate.

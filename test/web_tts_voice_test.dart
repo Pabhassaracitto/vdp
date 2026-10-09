@@ -133,6 +133,29 @@ void main() {
       );
     });
 
+    test('gender label key: unknown voices read "Chưa xác định"', () {
+      expect(
+        const WebTtsVoice(name: 'Tiếng Việt (Việt Nam)', locale: 'vi-VN')
+            .genderLabelKey,
+        'unknownGender',
+      );
+      expect(
+        const WebTtsVoice(
+          name: 'Microsoft NamMinh Online (Natural)',
+          locale: 'vi-VN',
+        ).genderLabelKey,
+        'male',
+      );
+      expect(
+        const WebTtsVoice(
+          name: 'Microsoft HoaiMy Online (Natural)',
+          locale: 'vi-VN',
+          gender: 'female',
+        ).genderLabelKey,
+        'female',
+      );
+    });
+
     test('automatic Vietnamese ranks unknown above known female', () {
       final voices = parseWebTtsVoices([
         {'name': 'Microsoft HoaiMy Online (Natural)', 'locale': 'vi-VN'},
@@ -175,12 +198,16 @@ void main() {
   group('WebTtsVoiceCatalog', () {
     late DateTime clock;
 
-    WebTtsVoiceCatalog catalogFor(List<Object?> Function(int call) snapshot) {
+    WebTtsVoiceCatalog catalogFor(
+      List<Object?> Function(int call) snapshot, {
+      Duration tailWindow = Duration.zero,
+    }) {
       var calls = 0;
       return WebTtsVoiceCatalog(
         readVoices: () async => snapshot(calls++),
         now: () => clock,
         delay: (duration) async => clock = clock.add(duration),
+        tailWindow: tailWindow,
       );
     }
 
@@ -252,6 +279,37 @@ void main() {
       );
       expect(await catalog.load(), isEmpty);
       expect(catalog.hasLoaded, isTrue);
+    });
+
+    test('tail polling publishes late voices and notifies listeners', () async {
+      var onlinePublished = false;
+      final catalog = catalogFor(
+        (_) => [
+          {'name': 'Microsoft An - Vietnamese (Vietnam)', 'locale': 'vi-VN'},
+          if (onlinePublished) ...[
+            {'name': 'Microsoft HoaiMy Online (Natural)', 'locale': 'vi-VN'},
+            {'name': 'Microsoft NamMinh Online (Natural)', 'locale': 'vi-VN'},
+          ],
+        ],
+        tailWindow: const Duration(milliseconds: 8000),
+      );
+
+      final updates = <List<WebTtsVoice>>[];
+      catalog.addListener(updates.add);
+      final first = await catalog.load();
+      expect(first, hasLength(1));
+
+      // Online "Natural" voices appear only after the first snapshot has
+      // already settled — the partial non-empty list case from IN4-74.
+      onlinePublished = true;
+      await catalog.tailFuture;
+
+      expect(catalog.voices, hasLength(3));
+      expect(updates, hasLength(1));
+      expect(
+        updates.last.map((voice) => voice.name),
+        contains('Microsoft NamMinh Online (Natural)'),
+      );
     });
   });
 
