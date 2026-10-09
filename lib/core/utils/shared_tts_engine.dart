@@ -32,6 +32,7 @@ typedef TtsProgressCallback = void Function(
 class SharedTtsEngine {
   SharedTtsEngine._internal() {
     _tts
+      ..setStartHandler(_markStarted)
       ..setCompletionHandler(() => _finish(true))
       ..setCancelHandler(() => _finish(false))
       ..setErrorHandler((message) => _finish(false));
@@ -50,6 +51,7 @@ class SharedTtsEngine {
 
   final FlutterTts _tts = FlutterTts();
   Completer<bool>? _pending;
+  Completer<bool>? _startSignal;
 
   /// Gắn tạm thời bởi [TtsTrackPlayer] khi cần theo dõi từ đang đọc (karaoke
   /// tô chữ). Không ai gắn thì không tốn gì — mặc định null.
@@ -66,6 +68,46 @@ class SharedTtsEngine {
   Future<bool> speakAndWait(
     String text, {
     Duration timeout = const Duration(seconds: 20),
+  }) =>
+      _speakAndWait(text, timeout: timeout);
+
+  /// Đọc [text] và trả về `true` NGAY KHI engine báo đã bắt đầu phát
+  /// (`onstart`), không chờ `onend`.
+  ///
+  /// Dùng cho "Nghe thử" giọng trong Cài đặt (IN4-74): một số bản cài Web
+  /// Speech không bao giờ phát sự kiện `onend` cho giọng online, nên chờ hoàn
+  /// tất sẽ báo sai "không phát được" dù người dùng đã nghe thấy tiếng. Nếu
+  /// engine không phát `onstart` nhưng lại báo hoàn tất thành công thì vẫn
+  /// tính là đã phát. Trả `false` khi lỗi/bị hủy hoặc quá [startTimeout].
+  /// Phần đọc vẫn tiếp tục chạy nền và tự giải phóng sau [completionTimeout].
+  Future<bool> speakAndConfirmStart(
+    String text, {
+    Duration startTimeout = const Duration(seconds: 8),
+    Duration completionTimeout = const Duration(seconds: 20),
+  }) async {
+    final started = Completer<bool>();
+    final done = _speakAndWait(
+      text,
+      timeout: completionTimeout,
+      startSignal: started,
+    );
+    unawaited(done.then((completed) {
+      if (!started.isCompleted) started.complete(completed);
+    }));
+    try {
+      return await started.future.timeout(
+        startTimeout,
+        onTimeout: () => false,
+      );
+    } finally {
+      if (identical(_startSignal, started)) _startSignal = null;
+    }
+  }
+
+  Future<bool> _speakAndWait(
+    String text, {
+    required Duration timeout,
+    Completer<bool>? startSignal,
   }) async {
     // Một phiên trong app chỉ nên có một câu đang đọc tại một thời điểm (Audio
     // Coordinator). Nếu có lời gọi chồng lấn, đợi lượt trước kết thúc thay vì
@@ -79,6 +121,9 @@ class SharedTtsEngine {
     }
     final completer = Completer<bool>();
     _pending = completer;
+    // Gắn tín hiệu "đã bắt đầu" ngay trước speak() để không nhận nhầm
+    // `onstart` của một câu trước đó.
+    _startSignal = startSignal;
     try {
       await _tts.speak(text);
     } catch (_) {
@@ -91,7 +136,19 @@ class SharedTtsEngine {
     }
   }
 
+  void _markStarted() {
+    final signal = _startSignal;
+    _startSignal = null;
+    if (signal != null && !signal.isCompleted) signal.complete(true);
+  }
+
   void _finish(bool success) {
+    final signal = _startSignal;
+    if (signal != null && !signal.isCompleted) {
+      // Hoàn tất thành công mà thiếu `onstart` vẫn nghĩa là đã phát.
+      _startSignal = null;
+      signal.complete(success);
+    }
     final pending = _pending;
     if (pending != null && !pending.isCompleted) pending.complete(success);
   }

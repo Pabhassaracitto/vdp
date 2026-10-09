@@ -25,6 +25,7 @@ import '../../../core/utils/shared_tts_engine.dart';
 import '../models/audio_track.dart';
 import '../data/tts_voice_chain.dart';
 import '../data/web_tts_voice.dart';
+import '../services/web_tts_voice_catalog.dart';
 import '../services/web_tts_voice_preferences.dart';
 import 'text_chunking.dart';
 import 'track_player.dart';
@@ -40,10 +41,14 @@ class _Cursor {
 }
 
 class TtsTrackPlayer implements TrackPlayer {
-  TtsTrackPlayer({SharedTtsEngine? engine})
-      : _engine = engine ?? SharedTtsEngine.instance;
+  TtsTrackPlayer({
+    SharedTtsEngine? engine,
+    WebTtsVoiceCatalog? webVoiceCatalog,
+  })  : _engine = engine ?? SharedTtsEngine.instance,
+        _webVoiceCatalog = webVoiceCatalog ?? WebTtsVoiceCatalog.instance;
 
   final SharedTtsEngine _engine;
+  final WebTtsVoiceCatalog _webVoiceCatalog;
   final StreamController<TrackPlayerEvent> _events =
       StreamController<TrackPlayerEvent>.broadcast();
 
@@ -304,6 +309,9 @@ class TtsTrackPlayer implements TrackPlayer {
   Future<void> _applyMainVoice() async {
     if (kIsWeb) {
       try {
+        // Pick up a newer list stabilized by Settings ("Refresh voices").
+        final shared = _webVoiceCatalog.voices;
+        if (shared.length > _webVoices.length) _webVoices = shared;
         final preferred =
             await WebTtsVoicePreferences.instance.selectedFor(_contentLocaleTag);
         final savedVoiceMissing = preferred != null &&
@@ -311,11 +319,19 @@ class TtsTrackPlayer implements TrackPlayer {
         if (_webVoices.isEmpty || savedVoiceMissing) {
           await _refreshWebVoices(force: savedVoiceMissing);
         }
-        final voice = resolveWebTtsVoice(
+        var voice = resolveWebTtsVoice(
           voices: _webVoices,
           contentLocaleTag: _contentLocaleTag,
           preferred: preferred,
         );
+        // IN4-74: if the browser has not enumerated any voice yet, still
+        // request the exact voice saved in Settings. setVoice matches by
+        // name + locale and is a no-op when the browser really lacks it.
+        if (voice == null &&
+            preferred != null &&
+            preferred.supportsLanguage(_contentLocaleTag)) {
+          voice = preferred;
+        }
         if (voice != null) {
           // `flutter_tts` Web selects the voice from name + locale. Apply the
           // locale first: setVoice changes SpeechSynthesisUtterance.voice, but
@@ -331,16 +347,20 @@ class TtsTrackPlayer implements TrackPlayer {
     if (_mainVoice != null) await _engine.raw.setLanguage(_mainVoice!);
   }
 
+  /// Uses the same stabilized, shared voice list as the Settings picker so a
+  /// lesson resolves exactly the voice that Settings shows/previews (IN4-74).
   Future<void> _refreshWebVoices({bool force = false}) async {
     if (!kIsWeb || (_webVoices.isNotEmpty && !force)) return;
     final lastQuery = _lastWebVoiceQueryAt;
     if (lastQuery != null &&
-        DateTime.now().difference(lastQuery) < const Duration(seconds: 1)) {
+        DateTime.now().difference(lastQuery) < const Duration(seconds: 30)) {
+      // A full enumeration takes ~1.4–2.2 s. If it recently returned nothing
+      // (or still lacks the saved voice), don't re-poll before every sentence.
       return;
     }
     _lastWebVoiceQueryAt = DateTime.now();
     try {
-      final voices = parseWebTtsVoices(await _engine.raw.getVoices);
+      final voices = await _webVoiceCatalog.load(force: force);
       if (voices.isNotEmpty) _webVoices = voices;
     } catch (_) {
       // Voice enumeration is an enhancement; language-based playback remains.

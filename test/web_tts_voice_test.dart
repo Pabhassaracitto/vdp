@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vdp_app/features/audio/data/web_tts_voice.dart';
+import 'package:vdp_app/features/audio/services/web_tts_voice_catalog.dart';
 import 'package:vdp_app/features/audio/services/web_tts_voice_preferences.dart';
 
 void main() {
@@ -86,6 +87,171 @@ void main() {
         locale: 'vi-VN',
       );
       expect(voice.isLikelyMale, isFalse);
+      expect(voice.isLikelyFemale, isTrue);
+    });
+
+    test('"Việt Nam" in a voice name is not treated as male (IN4-74)', () {
+      for (final name in [
+        'Tiếng Việt (Việt Nam)',
+        'Vietnamese (Viet Nam)',
+        'Google Tiếng Việt',
+        'vi-vn-x-gft-network',
+      ]) {
+        final voice = WebTtsVoice(name: name, locale: 'vi-VN');
+        expect(voice.genderHint, WebTtsVoiceGender.unknown, reason: name);
+        expect(voice.isLikelyMale, isFalse, reason: name);
+      }
+    });
+
+    test('known Vietnamese voices get a gender; others stay unknown', () {
+      WebTtsVoiceGender g(String name) =>
+          WebTtsVoice(name: name, locale: 'vi-VN').genderHint;
+
+      expect(g('Microsoft NamMinh Online (Natural) - Vietnamese (Vietnam)'),
+          WebTtsVoiceGender.male);
+      expect(g('Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam)'),
+          WebTtsVoiceGender.female);
+      expect(g('Microsoft An - Vietnamese (Vietnam)'), WebTtsVoiceGender.male);
+      expect(g('Linh'), WebTtsVoiceGender.female);
+      expect(g('vi-VN-Wavenet-B'), WebTtsVoiceGender.male);
+      expect(g('vi-VN-Neural2-D'), WebTtsVoiceGender.male);
+      expect(g('vi-VN-Wavenet-A'), WebTtsVoiceGender.female);
+      expect(g('vi-VN-Standard-C'), WebTtsVoiceGender.female);
+      expect(g('Some Vendor Voice'), WebTtsVoiceGender.unknown);
+    });
+
+    test('explicit gender metadata wins and "female" never reads as male', () {
+      expect(
+        const WebTtsVoice(name: 'X', locale: 'vi-VN', gender: 'female')
+            .genderHint,
+        WebTtsVoiceGender.female,
+      );
+      expect(
+        const WebTtsVoice(name: 'X', locale: 'vi-VN', gender: 'male')
+            .genderHint,
+        WebTtsVoiceGender.male,
+      );
+    });
+
+    test('automatic Vietnamese ranks unknown above known female', () {
+      final voices = parseWebTtsVoices([
+        {'name': 'Microsoft HoaiMy Online (Natural)', 'locale': 'vi-VN'},
+        {'name': 'Google Tiếng Việt', 'locale': 'vi-VN'},
+      ]);
+      expect(
+        resolveWebTtsVoice(voices: voices, contentLocaleTag: 'vi')?.name,
+        'Google Tiếng Việt',
+      );
+      expect(hasIdentifiableVietnameseMaleVoice(voices), isFalse);
+    });
+
+    test('browser order breaks ties deterministically', () {
+      final voices = parseWebTtsVoices([
+        {'name': 'Voice 1', 'locale': 'en-US'},
+        {'name': 'Voice 2', 'locale': 'en-US'},
+        {'name': 'Voice 3', 'locale': 'en-US'},
+      ]);
+      expect(
+        sortWebTtsVoicesForLocale(voices, 'en').map((voice) => voice.name),
+        ['Voice 1', 'Voice 2', 'Voice 3'],
+      );
+    });
+
+    test('mergeWebTtsVoices keeps first-seen order without duplicates', () {
+      final first = parseWebTtsVoices([
+        {'name': 'A', 'locale': 'vi-VN'},
+      ]);
+      final second = parseWebTtsVoices([
+        {'name': 'A', 'locale': 'vi-VN'},
+        {'name': 'B', 'locale': 'vi-VN'},
+      ]);
+      expect(
+        mergeWebTtsVoices(first, second).map((voice) => voice.name),
+        ['A', 'B'],
+      );
+    });
+  });
+
+  group('WebTtsVoiceCatalog', () {
+    late DateTime clock;
+
+    WebTtsVoiceCatalog catalogFor(List<Object?> Function(int call) snapshot) {
+      var calls = 0;
+      return WebTtsVoiceCatalog(
+        readVoices: () async => snapshot(calls++),
+        now: () => clock,
+        delay: (duration) async => clock = clock.add(duration),
+      );
+    }
+
+    setUp(() => clock = DateTime(2026, 10, 9));
+
+    test('merges a partial first list with voices published later', () async {
+      // Edge-like: one local voice first, online Natural voices ~0.6 s later.
+      final catalog = catalogFor((call) => [
+            {'name': 'Microsoft An - Vietnamese (Vietnam)', 'locale': 'vi-VN'},
+            if (call >= 3) ...[
+              {'name': 'Microsoft HoaiMy Online (Natural)', 'locale': 'vi-VN'},
+              {'name': 'Microsoft NamMinh Online (Natural)', 'locale': 'vi-VN'},
+            ],
+          ]);
+
+      final voices = await catalog.load();
+      expect(voices, hasLength(3));
+      expect(
+        clock.difference(DateTime(2026, 10, 9)),
+        greaterThanOrEqualTo(const Duration(milliseconds: 1400)),
+      );
+    });
+
+    test('stops at the maximum window when the list never settles', () async {
+      var counter = 0;
+      final catalog = catalogFor((_) => [
+            {'name': 'Voice ${counter++}', 'locale': 'en-US'},
+          ]);
+      await catalog.load();
+      expect(
+        clock.difference(DateTime(2026, 10, 9)),
+        lessThanOrEqualTo(const Duration(milliseconds: 2400)),
+      );
+    });
+
+    test('caches the stabilized list and shares in-flight loads', () async {
+      var reads = 0;
+      final catalog = catalogFor((_) {
+        reads++;
+        return [
+          {'name': 'English', 'locale': 'en-US'},
+        ];
+      });
+      final results = await Future.wait([catalog.load(), catalog.load()]);
+      expect(identical(results[0], results[1]), isTrue);
+      final readsAfterFirstLoad = reads;
+      await catalog.load();
+      expect(reads, readsAfterFirstLoad);
+    });
+
+    test('an empty forced refresh keeps the previous good list', () async {
+      var empty = false;
+      final catalog = catalogFor((_) => empty
+          ? const []
+          : [
+              {'name': 'English', 'locale': 'en-US'},
+            ]);
+      await catalog.load();
+      empty = true;
+      final voices = await catalog.load(force: true);
+      expect(voices.single.name, 'English');
+    });
+
+    test('read errors are treated as empty snapshots', () async {
+      final catalog = WebTtsVoiceCatalog(
+        readVoices: () async => throw StateError('speechSynthesis missing'),
+        now: () => clock,
+        delay: (duration) async => clock = clock.add(duration),
+      );
+      expect(await catalog.load(), isEmpty);
+      expect(catalog.hasLoaded, isTrue);
     });
   });
 

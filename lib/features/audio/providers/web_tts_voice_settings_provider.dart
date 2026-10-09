@@ -6,7 +6,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/utils/pali_tts_helper.dart';
 import '../../../core/utils/shared_tts_engine.dart';
 import '../data/web_tts_voice.dart';
+import '../services/web_tts_voice_catalog.dart';
 import '../services/web_tts_voice_preferences.dart';
+
+/// Error codes surfaced by [WebTtsVoiceSettingsState.error].
+abstract final class WebTtsVoiceErrors {
+  static const listUnavailable = 'voice-list-unavailable';
+  static const previewFailed = 'voice-preview-failed';
+  static const noVoiceForLanguage = 'voice-missing-for-language';
+}
 
 @immutable
 class WebTtsVoiceSettingsState {
@@ -54,20 +62,29 @@ class WebTtsVoiceSettingsNotifier
   WebTtsVoiceSettingsNotifier({
     SharedTtsEngine? engine,
     WebTtsVoicePreferences? preferences,
+    WebTtsVoiceCatalog? catalog,
   })  : _engine = engine ?? SharedTtsEngine.instance,
         _preferences = preferences ?? WebTtsVoicePreferences.instance,
+        _catalog = catalog ?? WebTtsVoiceCatalog.instance,
         super(const WebTtsVoiceSettingsState()) {
     unawaited(refresh());
   }
 
   final SharedTtsEngine _engine;
   final WebTtsVoicePreferences _preferences;
+  final WebTtsVoiceCatalog _catalog;
+  bool _hasRefreshed = false;
 
+  /// The first load reuses the shared catalog (possibly already stabilized by
+  /// lesson playback); later calls come from "Refresh voices" and re-enumerate.
   Future<void> refresh() async {
+    final force = _hasRefreshed;
+    _hasRefreshed = true;
     state = state.copyWith(isLoading: true, clearError: true);
     try {
-      final voices = await _loadBrowserVoices();
+      final voices = await _catalog.load(force: force);
       final selections = await _preferences.loadAll();
+      if (!mounted) return;
       state = state.copyWith(
         voices: voices,
         selectedByLocale: selections,
@@ -75,27 +92,12 @@ class WebTtsVoiceSettingsNotifier
         clearError: true,
       );
     } catch (_) {
+      if (!mounted) return;
       state = state.copyWith(
         isLoading: false,
-        error: 'voice-list-unavailable',
+        error: WebTtsVoiceErrors.listUnavailable,
       );
     }
-  }
-
-  /// `speechSynthesis.getVoices()` is asynchronous on some browsers. Poll a few
-  /// times so the first visit to Settings does not incorrectly show an empty
-  /// voice list while the browser fires its initial `voiceschanged` event.
-  Future<List<WebTtsVoice>> _loadBrowserVoices() async {
-    for (var attempt = 0; attempt < 4; attempt++) {
-      final voices = parseWebTtsVoices(await _engine.raw.getVoices);
-      if (voices.isNotEmpty) return voices;
-      if (attempt < 3) {
-        await Future<void>.delayed(
-          Duration(milliseconds: 100 * (attempt + 1)),
-        );
-      }
-    }
-    return const [];
   }
 
   Future<void> selectVoice({
@@ -120,6 +122,12 @@ class WebTtsVoiceSettingsNotifier
     state = state.copyWith(isSaving: false);
   }
 
+  /// Speaks a short sample with exactly the voice lesson playback would use
+  /// (saved choice, else the automatic match from the same shared list).
+  ///
+  /// Returns `true` as soon as the browser reports that speech STARTED —
+  /// some Web Speech implementations never fire `onend` for online voices,
+  /// which previously made a preview the user could hear report a failure.
   Future<bool> preview(String contentLocaleTag) async {
     if (state.isPreviewing) return false;
     state = state.copyWith(isPreviewing: true, clearError: true);
@@ -131,6 +139,12 @@ class WebTtsVoiceSettingsNotifier
         contentLocaleTag: contentLocaleTag,
         preferred: preferred,
       );
+      if (voice == null && state.voices.isNotEmpty) {
+        // The browser listed voices, but none for this language: speaking
+        // would use another language's voice (or nothing). Say so clearly.
+        state = state.copyWith(error: WebTtsVoiceErrors.noVoiceForLanguage);
+        return false;
+      }
 
       // Use the app-wide coordinator so a settings preview never overlaps a
       // lesson or Pāli pronunciation already using the shared TTS engine.
@@ -142,16 +156,23 @@ class WebTtsVoiceSettingsNotifier
         await _engine.raw.setLanguage(voice.locale);
         await _engine.raw.setVoice(voice.toFlutterTtsVoice());
       } else {
+        // Voice list unavailable: let the browser pick its locale default.
         await _engine.raw.setLanguage(contentLocaleTag.replaceAll('_', '-'));
       }
       await _engine.raw.setSpeechRate(0.5);
 
-      return await _engine.speakAndWait(
+      final started = await _engine.speakAndConfirmStart(
         webTtsPreviewText(contentLocaleTag),
-        timeout: const Duration(seconds: 18),
+        completionTimeout: const Duration(seconds: 18),
       );
+      if (!started && mounted) {
+        state = state.copyWith(error: WebTtsVoiceErrors.previewFailed);
+      }
+      return started;
     } catch (_) {
-      state = state.copyWith(error: 'voice-preview-failed');
+      if (mounted) {
+        state = state.copyWith(error: WebTtsVoiceErrors.previewFailed);
+      }
       return false;
     } finally {
       if (mounted) state = state.copyWith(isPreviewing: false);

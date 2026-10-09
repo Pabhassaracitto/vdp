@@ -26,36 +26,34 @@ class WebTtsVoice {
 
   String get languageCode => ttsLanguageCode(locale);
 
-  /// Heuristic only. Browser voices normally do not report gender.
-  bool get isLikelyMale {
+  /// Conservative gender hint for labelling and automatic Vietnamese ranking.
+  ///
+  /// Browser voices normally do not report gender (Web Speech exposes only
+  /// name, lang, voiceURI, localService and default), so this returns
+  /// [WebTtsVoiceGender.unknown] unless explicit metadata is present or the
+  /// voice is a known Vietnamese voice ID/name. Generic words are deliberately
+  /// NOT used: "nam" is Vietnamese for "male" but also part of "Việt Nam",
+  /// which made female voices such as "Tiếng Việt (Việt Nam)" show up as male.
+  WebTtsVoiceGender get genderHint {
     final normalizedGender = gender?.trim().toLowerCase() ?? '';
-    if (normalizedGender == 'f' || normalizedGender.contains('female')) {
-      return false;
+    if (normalizedGender == 'f' ||
+        normalizedGender == 'female' ||
+        normalizedGender == 'feminine') {
+      return WebTtsVoiceGender.female;
     }
-    if (normalizedGender == 'm' || normalizedGender.contains('male')) {
-      return true;
+    if (normalizedGender == 'm' ||
+        normalizedGender == 'male' ||
+        normalizedGender == 'masculine') {
+      return WebTtsVoiceGender.male;
     }
-
-    final normalizedName = name.toLowerCase().replaceAll(
-          RegExp(r'[^a-z0-9]+'),
-          ' ',
-        );
-    final compactName = normalizedName.replaceAll(' ', '');
-    if (compactName.contains('namminh')) return true;
-
-    // Cloud voice names can also appear in the browser's list when an OS or
-    // browser has installed them. Keep these known male Vietnamese examples
-    // near the front without claiming that every browser exposes them.
-    if (RegExp(r'\b(neural2 d|wavenet b|wavenet d)\b')
-        .hasMatch(normalizedName)) {
-      return true;
-    }
-
-    final words = normalizedName.split(' ');
-    return words.contains('male') ||
-        words.contains('masculine') ||
-        words.contains('nam');
+    return knownWebTtsVoiceGender(name);
   }
+
+  /// True only when the voice is known (or reported) to be male. Unknown
+  /// voices are never labelled male.
+  bool get isLikelyMale => genderHint == WebTtsVoiceGender.male;
+
+  bool get isLikelyFemale => genderHint == WebTtsVoiceGender.female;
 
   /// Shape expected by `FlutterTts.setVoice` on the web implementation.
   Map<String, String> toFlutterTtsVoice() => {
@@ -112,6 +110,74 @@ class WebTtsVoice {
   }
 }
 
+enum WebTtsVoiceGender { male, female, unknown }
+
+String _compactVoiceName(String name) =>
+    name.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]+'), ' ').trim();
+
+/// Gender of well-known Vietnamese voices, matched by name/ID only.
+///
+/// * Microsoft Edge online voices: `vi-VN-NamMinhNeural` (male),
+///   `vi-VN-HoaiMyNeural` (female); Windows desktop voice `Microsoft An`
+///   (male).
+/// * Apple: `Linh` (female).
+/// * Google Cloud IDs, when an OS/browser exposes them:
+///   `vi-VN-{Standard,Wavenet,Neural2}-*`; B/D are male, A/C are female.
+///
+/// Everything else returns [WebTtsVoiceGender.unknown].
+WebTtsVoiceGender knownWebTtsVoiceGender(String name) {
+  final normalized = _compactVoiceName(name);
+  final compact = normalized.replaceAll(' ', '');
+
+  if (compact.contains('namminh')) return WebTtsVoiceGender.male;
+  if (compact.contains('hoaimy')) return WebTtsVoiceGender.female;
+
+  final cloud = RegExp(r'\b(?:standard|wavenet|neural2)\s+([a-d])\b')
+      .firstMatch(normalized);
+  if (cloud != null && normalized.contains('vi vn')) {
+    return switch (cloud.group(1)) {
+      'b' || 'd' => WebTtsVoiceGender.male,
+      _ => WebTtsVoiceGender.female,
+    };
+  }
+
+  // Windows SAPI/OneCore desktop voice: "Microsoft An - Vietnamese (Vietnam)".
+  if (RegExp(r'^microsoft an\b').hasMatch(normalized)) {
+    return WebTtsVoiceGender.male;
+  }
+  // Apple Vietnamese voice ("Linh", sometimes "Linh (Enhanced)").
+  if (RegExp(r'^linh\b').hasMatch(normalized)) {
+    return WebTtsVoiceGender.female;
+  }
+
+  // Explicit English gender words in the voice name ("... Male", "Female").
+  final words = normalized.split(' ');
+  if (words.contains('female')) return WebTtsVoiceGender.female;
+  if (words.contains('male')) {
+    return WebTtsVoiceGender.male;
+  }
+  return WebTtsVoiceGender.unknown;
+}
+
+/// True when [voices] contains a Vietnamese voice that is known to be male.
+bool hasIdentifiableVietnameseMaleVoice(Iterable<WebTtsVoice> voices) =>
+    voices.any((voice) => voice.languageCode == 'vi' && voice.isLikelyMale);
+
+/// Merges successive `getVoices()` snapshots, keeping first-seen order.
+/// Browsers (notably Chrome) may first publish only local voices and add
+/// network voices after `voiceschanged`; merging avoids dropping either set.
+List<WebTtsVoice> mergeWebTtsVoices(
+  Iterable<WebTtsVoice> current,
+  Iterable<WebTtsVoice> incoming,
+) {
+  final merged = <WebTtsVoice>[];
+  final seen = <String>{};
+  for (final voice in [...current, ...incoming]) {
+    if (seen.add(voice.id)) merged.add(voice);
+  }
+  return List.unmodifiable(merged);
+}
+
 /// Converts either an app content tag (`zh_TW`) or a BCP-47 tag (`vi-VN`) to a
 /// comparison/storage form (`zh-tw`, `vi-vn`).
 String normalizeTtsLocale(String localeTag) =>
@@ -138,7 +204,9 @@ List<WebTtsVoice> parseWebTtsVoices(Object? raw) {
 }
 
 /// Lists voices for one content locale, preferring an exact region and then a
-/// likely male Vietnamese voice. Browser order is the final tie-break.
+/// known male Vietnamese voice (unknown before known female). Browser order is
+/// the final tie-break (Dart's List.sort is not stable, so the original index
+/// is used explicitly).
 List<WebTtsVoice> sortWebTtsVoicesForLocale(
   Iterable<WebTtsVoice> voices,
   String contentLocaleTag,
@@ -153,13 +221,28 @@ List<WebTtsVoice> sortWebTtsVoicesForLocale(
     var result = 0;
     final voiceLocale = normalizeTtsLocale(voice.locale);
     if (voiceLocale == normalizedTarget) result += 1000;
-    if (languageCode == 'vi' && voice.isLikelyMale) result += 500;
+    if (languageCode == 'vi') {
+      // Prefer a voice known to be male; never rank a known female voice
+      // above an unknown one in automatic Vietnamese mode.
+      switch (voice.genderHint) {
+        case WebTtsVoiceGender.male:
+          result += 500;
+        case WebTtsVoiceGender.unknown:
+          result += 100;
+        case WebTtsVoiceGender.female:
+          break;
+      }
+    }
     if (voice.isDefault) result += 10;
     return result;
   }
 
-  return List.unmodifiable(candidates.toList()
-    ..sort((a, b) => score(b).compareTo(score(a))));
+  final indexed = candidates.indexed.toList()
+    ..sort((a, b) {
+      final byScore = score(b.$2).compareTo(score(a.$2));
+      return byScore != 0 ? byScore : a.$1.compareTo(b.$1);
+    });
+  return List.unmodifiable(indexed.map((entry) => entry.$2));
 }
 
 /// Resolves an explicit saved voice when it is still available. If no saved
