@@ -41,6 +41,18 @@ class _WebTtsVoiceSettingsSectionState
     final selectedVoice = savedVoice == null
         ? null
         : _findVoice(voices, savedVoice.id);
+    // The voice that automatic mode resolves to — the same function the
+    // lesson player uses, so the label matches what will actually be heard.
+    final automaticVoice = resolveWebTtsVoice(
+      voices: settings.voices,
+      contentLocaleTag: language.tag,
+    );
+    final isVietnamese = ttsLanguageCode(language.tag) == 'vi';
+    final showNoMaleWarning = isVietnamese &&
+        !settings.isLoading &&
+        voices.isNotEmpty &&
+        selectedVoice == null &&
+        !hasIdentifiableVietnameseMaleVoice(voices);
 
     return Padding(
       padding: const EdgeInsetsDirectional.fromSTEB(20, 2, 20, 8),
@@ -92,7 +104,10 @@ class _WebTtsVoiceSettingsSectionState
               DropdownMenuItem<String>(
                 value: _automaticVoiceId,
                 child: Text(
-                  _copy(context, 'automatic'),
+                  automaticVoice == null
+                      ? _copy(context, 'automatic')
+                      : '${_copy(context, 'automatic')} → '
+                          '${automaticVoice.name}',
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
@@ -121,10 +136,23 @@ class _WebTtsVoiceSettingsSectionState
             const SizedBox(height: 10),
             const LinearProgressIndicator(minHeight: 2),
           ],
+          if (showNoMaleWarning) ...[
+            const SizedBox(height: 8),
+            Text(
+              _copy(context, 'noMaleVoice'),
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.orange.shade900,
+              ),
+            ),
+          ],
           if (!settings.isLoading && voices.isEmpty) ...[
             const SizedBox(height: 8),
             Text(
-              _copy(context, 'noVoices'),
+              _copy(
+                context,
+                settings.voices.isEmpty ? 'noVoices' : 'noVoiceForLanguage',
+              ),
               style: TextStyle(
                 fontSize: 12,
                 color: Colors.orange.shade900,
@@ -139,12 +167,7 @@ class _WebTtsVoiceSettingsSectionState
           if (settings.error != null) ...[
             const SizedBox(height: 8),
             Text(
-              _copy(
-                context,
-                settings.error == 'voice-list-unavailable'
-                    ? 'voiceListFailed'
-                    : 'previewFailed',
-              ),
+              _copy(context, _errorCopyKey(settings.error)),
               style: TextStyle(fontSize: 12, color: Colors.red.shade700),
             ),
           ],
@@ -164,9 +187,13 @@ class _WebTtsVoiceSettingsSectionState
                     : () async {
                         final didPlay = await notifier.preview(language.tag);
                         if (!mounted || didPlay) return;
+                        final error =
+                            ref.read(webTtsVoiceSettingsProvider).error;
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
-                            content: Text(_copy(context, 'previewFailed')),
+                            content: Text(
+                              _copy(context, _errorCopyKey(error)),
+                            ),
                           ),
                         );
                       },
@@ -192,13 +219,22 @@ class _WebTtsVoiceSettingsSectionState
     return null;
   }
 
+  /// Gender is shown only when it is KNOWN (explicit metadata or a known
+  /// Vietnamese voice). Unknown voices get no label — never "male" by guess.
   String _voiceLabel(WebTtsVoice voice, String contentLocaleTag) {
-    final maleLabel = ttsLanguageCode(contentLocaleTag) == 'vi' &&
-            voice.isLikelyMale
-        ? ' · ${_copy(context, 'male')}'
-        : '';
-    return '${voice.name} · ${voice.locale}$maleLabel';
+    final genderLabel = switch (voice.genderHint) {
+      WebTtsVoiceGender.male => ' · ${_copy(context, 'male')}',
+      WebTtsVoiceGender.female => ' · ${_copy(context, 'female')}',
+      WebTtsVoiceGender.unknown => '',
+    };
+    return '${voice.name} · ${voice.locale}$genderLabel';
   }
+
+  String _errorCopyKey(String? error) => switch (error) {
+        WebTtsVoiceErrors.listUnavailable => 'voiceListFailed',
+        WebTtsVoiceErrors.noVoiceForLanguage => 'noVoiceForLanguage',
+        _ => 'previewFailed',
+      };
 
   String _copy(BuildContext context, String key) => localizedUiText(
         context,
@@ -255,6 +291,22 @@ const Map<String, Map<String, String>> _webTtsCopy = {
     'zh_TW': '找不到瀏覽器語音。請先在作業系統中安裝語音，然後重新整理。',
     'my': 'ဘရောက်ဇာအသံ မတွေ့ပါ။ စက်လည်ပတ်မှုစနစ်တွင် အသံထည့်သွင်းပြီး ပြန်လည်စတင်ပါ။',
   },
+  'noVoiceForLanguage': {
+    'en': 'This browser has no voice for the selected language. Install one in your operating system (or use another browser), then refresh.',
+    'vi': 'Trình duyệt này không có giọng cho ngôn ngữ đã chọn. Hãy cài giọng trong hệ điều hành (hoặc dùng trình duyệt khác) rồi tải lại.',
+    'ja': 'このブラウザーには選択した言語の音声がありません。OSに音声をインストールする（または別のブラウザーを使う）と、更新後に利用できます。',
+    'zh': '此浏览器没有所选语言的语音。请在操作系统中安装语音（或换用其他浏览器），然后刷新。',
+    'zh_TW': '此瀏覽器沒有所選語言的語音。請在作業系統中安裝語音（或改用其他瀏覽器），然後重新整理。',
+    'my': 'ဤဘရောက်ဇာတွင် ရွေးထားသောဘာသာစကားအတွက် အသံမရှိပါ။ စက်လည်ပတ်မှုစနစ်တွင် အသံထည့်သွင်းပါ (သို့မဟုတ် အခြားဘရောက်ဇာသုံးပါ)၊ ပြီးနောက် ပြန်ဖတ်ပါ။',
+  },
+  'noMaleVoice': {
+    'en': 'No identifiable male Vietnamese voice is available in this browser, so automatic mode uses the voice shown above. Web Speech cannot add voices; install one (e.g. Microsoft NamMinh in Edge) or configure a TTS proxy.',
+    'vi': 'Trình duyệt này không cung cấp giọng Nam tiếng Việt nhận diện được, nên chế độ tự động dùng giọng hiển thị ở trên. Web Speech không thể tự thêm giọng; hãy cài giọng (vd. Microsoft NamMinh trên Edge) hoặc cấu hình TTS proxy.',
+    'ja': 'このブラウザーには識別可能なベトナム語の男性音声がないため、自動モードは上に表示された音声を使います。Web Speech では音声を追加できません。音声をインストールする（例：Edge の Microsoft NamMinh）か、TTS プロキシを設定してください。',
+    'zh': '此浏览器没有可识别的越南语男声，因此自动模式使用上方显示的语音。Web Speech 无法自行添加语音；请安装语音（如 Edge 中的 Microsoft NamMinh）或配置 TTS 代理。',
+    'zh_TW': '此瀏覽器沒有可辨識的越南語男聲，因此自動模式使用上方顯示的語音。Web Speech 無法自行新增語音；請安裝語音（如 Edge 中的 Microsoft NamMinh）或設定 TTS 代理。',
+    'my': 'ဤဘရောက်ဇာတွင် ခွဲခြားသိနိုင်သော ဗီယက်နမ် အမျိုးသားအသံ မရှိသဖြင့် အလိုအလျောက်မုဒ်သည် အထက်ပါအသံကို သုံးပါသည်။ Web Speech သည် အသံအသစ် မထည့်နိုင်ပါ၊ အသံထည့်သွင်းပါ (ဥပမာ Edge ရှိ Microsoft NamMinh) သို့မဟုတ် TTS proxy ကို သတ်မှတ်ပါ။',
+  },
   'voiceListFailed': {
     'en': 'Could not load this browser’s voice list. Try refreshing, or use the automatic voice.',
     'vi': 'Không đọc được danh sách giọng của trình duyệt. Hãy thử tải lại hoặc dùng giọng tự động.',
@@ -264,12 +316,12 @@ const Map<String, Map<String, String>> _webTtsCopy = {
     'my': 'ဘရောက်ဇာ၏ အသံစာရင်းကို ဖတ်၍မရပါ။ ပြန်လည်ဖတ်ပါ သို့မဟုတ် အလိုအလျောက်အသံကို သုံးပါ။',
   },
   'note': {
-    'en': 'Uses voices provided by this browser/device. Gender is not standardized by browsers; male matching is best-effort.',
-    'vi': 'Dùng giọng do trình duyệt/thiết bị cung cấp. Trình duyệt không chuẩn hóa giới tính; ưu tiên giọng Nam chỉ là suy đoán theo tên giọng.',
-    'ja': 'このブラウザー／端末が提供する音声を使用します。性別情報は標準化されていないため、男性音声の判定は目安です。',
-    'zh': '使用浏览器/设备提供的语音。浏览器不统一提供性别信息，男声识别仅供参考。',
-    'zh_TW': '使用瀏覽器／裝置提供的語音。瀏覽器未統一提供性別資訊，男聲辨識僅供參考。',
-    'my': 'ဤဘရောက်ဇာ/စက်မှ ပံ့ပိုးသောအသံကို သုံးပါသည်။ လိင်အချက်အလက် စံမသတ်မှတ်ထားသဖြင့် အမျိုးသားအသံရွေးချယ်မှုသည် ခန့်မှန်းချက်သာဖြစ်သည်။',
+    'en': 'Uses voices provided by this browser/device. Browsers do not report voice gender; a male/female tag is shown only for known voices.',
+    'vi': 'Dùng giọng do trình duyệt/thiết bị cung cấp. Trình duyệt không báo giới tính giọng; nhãn Nam/Nữ chỉ hiện với các giọng đã biết.',
+    'ja': 'このブラウザー／端末が提供する音声を使用します。ブラウザーは音声の性別を報告しないため、男性／女性の表示は既知の音声にのみ付きます。',
+    'zh': '使用浏览器/设备提供的语音。浏览器不提供语音性别信息，仅对已知语音标注男声/女声。',
+    'zh_TW': '使用瀏覽器／裝置提供的語音。瀏覽器不提供語音性別資訊，僅對已知語音標示男聲／女聲。',
+    'my': 'ဤဘရောက်ဇာ/စက်မှ ပံ့ပိုးသောအသံကို သုံးပါသည်။ ဘရောက်ဇာများသည် အသံ၏လိင်ကို မဖော်ပြသဖြင့် သိရှိပြီးသားအသံများအတွက်သာ အမျိုးသား/အမျိုးသမီး ဟု ပြပါသည်။',
   },
   'refresh': {
     'en': 'Refresh voices',
@@ -288,7 +340,7 @@ const Map<String, Map<String, String>> _webTtsCopy = {
     'my': 'နားထောင်စမ်းရန်',
   },
   'previewFailed': {
-    'en': 'Could not play the preview. Check browser audio permissions and try again.',
+    'en': 'The preview did not start. Check browser audio permissions and try again.',
     'vi': 'Không phát được giọng mẫu. Hãy kiểm tra quyền âm thanh của trình duyệt rồi thử lại.',
     'ja': '音声を再生できませんでした。ブラウザーの音声権限を確認して、もう一度お試しください。',
     'zh': '无法播放语音示例。请检查浏览器音频权限后重试。',
@@ -302,5 +354,13 @@ const Map<String, Map<String, String>> _webTtsCopy = {
     'zh': '男声',
     'zh_TW': '男聲',
     'my': 'အမျိုးသား',
+  },
+  'female': {
+    'en': 'female',
+    'vi': 'Nữ',
+    'ja': '女性',
+    'zh': '女声',
+    'zh_TW': '女聲',
+    'my': 'အမျိုးသမီး',
   },
 };
