@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -9,6 +10,7 @@ import '../../data/models/study_module.dart';
 import '../../l10n/l10n.dart';
 import '../../shared/providers/progress_provider.dart';
 import '../audio/providers/karaoke_settings_provider.dart';
+import '../audio/widgets/web_tts_voice_settings_section.dart';
 
 class AppSettings {
   final bool highContrastMode;
@@ -79,6 +81,7 @@ class SettingsScreen extends ConsumerWidget {
             secondary: const Icon(Icons.record_voice_over),
           ),
           _SectionDivider('🎧 ${context.l10n.karaokeSettingsTitle}'),
+          if (kIsWeb) const WebTtsVoiceSettingsSection(),
           const _KaraokeSettingsSection(),
           _SectionDivider('🔤 ${context.l10n.textSize}'),
           Padding(

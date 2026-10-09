@@ -28,7 +28,7 @@ import '../services/audio_handler.dart';
 import '../../../core/utils/pali_tts_helper.dart';
 import '../models/audio_track.dart';
 import '../players/track_player.dart';
-import '../players/sherpa_tts_track_player.dart';
+import '../players/default_track_player.dart';
 import '../services/audio_session_service.dart';
 import '../services/listening_position_store.dart';
 import '../services/sleep_timer.dart';
@@ -248,7 +248,7 @@ class AudioPlayerNotifier extends StateNotifier<AudioPlayerState> {
     Duration watchdogInterval = const Duration(seconds: 5),
     Duration stallThreshold = const Duration(seconds: 18),
     bool initializePlatformServices = true,
-  })  : _player = player ?? SherpaTtsTrackPlayer(),
+  })  : _player = player ?? createDefaultTrackPlayer(),
         _store = store ?? const SharedPrefsListeningPositionStore(),
         _watchdogInterval = watchdogInterval,
         _stallThreshold = stallThreshold,

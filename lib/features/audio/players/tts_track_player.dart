@@ -24,6 +24,8 @@ import '../../../core/utils/pali_tts_helper.dart';
 import '../../../core/utils/shared_tts_engine.dart';
 import '../models/audio_track.dart';
 import '../data/tts_voice_chain.dart';
+import '../data/web_tts_voice.dart';
+import '../services/web_tts_voice_preferences.dart';
 import 'text_chunking.dart';
 import 'track_player.dart';
 import 'tts_rate.dart';
@@ -50,6 +52,8 @@ class TtsTrackPlayer implements TrackPlayer {
   String? _mainVoice;
   String? _paliVoice;
   List<String> _supportedLanguages = const [];
+  List<WebTtsVoice> _webVoices = const [];
+  DateTime? _lastWebVoiceQueryAt;
   bool _initialized = false;
   bool _running = false;
   double _speed = 1.0;
@@ -231,7 +235,7 @@ class TtsTrackPlayer implements TrackPlayer {
         await _engine.raw.setLanguage(_paliVoice!);
         _engine.onProgress = null;
       } else {
-        if (_mainVoice != null) await _engine.raw.setLanguage(_mainVoice!);
+        await _applyMainVoice();
         await _engine.raw.setSpeechRate(
           engineSpeechRate(_speed, isIOS: defaultTargetPlatform == TargetPlatform.iOS),
         );
@@ -256,7 +260,7 @@ class TtsTrackPlayer implements TrackPlayer {
       _engine.onProgress = null;
       if (isPali && _paliVoice != null && _mainVoice != null) {
         try {
-          await _engine.raw.setLanguage(_mainVoice!);
+          await _applyMainVoice();
         } catch (_) {}
       }
     }
@@ -273,6 +277,7 @@ class TtsTrackPlayer implements TrackPlayer {
   // ─── Khởi tạo engine ──────────────────────────────────────────────────────
 
   Future<void> _configureMainVoice() async {
+    if (kIsWeb) await _refreshWebVoices();
     _mainVoice = pickTtsLanguage(
       preferred: [
         ...ttsVoiceChain(_contentLocaleTag),
@@ -280,13 +285,66 @@ class TtsTrackPlayer implements TrackPlayer {
       ],
       supported: _supportedLanguages,
     );
+
+    // A browser may expose SpeechSynthesis but return an empty language list
+    // during its initial voice load. Still pass the content locale through so
+    // the browser can use its own default voice instead of disabling TTS.
+    if (_mainVoice == null && kIsWeb) {
+      _mainVoice = ttsTagForContentTag(_contentLocaleTag);
+    }
     if (_mainVoice == null) {
       _events.add(
         const TrackPlayerEvent(TrackPlayerEventType.voiceUnavailable),
       );
       return;
     }
-    await _engine.raw.setLanguage(_mainVoice!);
+    await _applyMainVoice();
+  }
+
+  Future<void> _applyMainVoice() async {
+    if (kIsWeb) {
+      try {
+        final preferred =
+            await WebTtsVoicePreferences.instance.selectedFor(_contentLocaleTag);
+        final savedVoiceMissing = preferred != null &&
+            !_webVoices.any((voice) => voice.id == preferred.id);
+        if (_webVoices.isEmpty || savedVoiceMissing) {
+          await _refreshWebVoices(force: savedVoiceMissing);
+        }
+        final voice = resolveWebTtsVoice(
+          voices: _webVoices,
+          contentLocaleTag: _contentLocaleTag,
+          preferred: preferred,
+        );
+        if (voice != null) {
+          // `flutter_tts` Web selects the voice from name + locale. Apply the
+          // locale first: setVoice changes SpeechSynthesisUtterance.voice, but
+          // the plugin keeps the utterance language as a separate property.
+          await _engine.raw.setLanguage(voice.locale);
+          await _engine.raw.setVoice(voice.toFlutterTtsVoice());
+          return;
+        }
+      } catch (_) {
+        // Unsupported/stale browser voices fall back to setLanguage below.
+      }
+    }
+    if (_mainVoice != null) await _engine.raw.setLanguage(_mainVoice!);
+  }
+
+  Future<void> _refreshWebVoices({bool force = false}) async {
+    if (!kIsWeb || (_webVoices.isNotEmpty && !force)) return;
+    final lastQuery = _lastWebVoiceQueryAt;
+    if (lastQuery != null &&
+        DateTime.now().difference(lastQuery) < const Duration(seconds: 1)) {
+      return;
+    }
+    _lastWebVoiceQueryAt = DateTime.now();
+    try {
+      final voices = parseWebTtsVoices(await _engine.raw.getVoices);
+      if (voices.isNotEmpty) _webVoices = voices;
+    } catch (_) {
+      // Voice enumeration is an enhancement; language-based playback remains.
+    }
   }
 
   Future<void> _ensureInitialized() async {
@@ -298,6 +356,7 @@ class TtsTrackPlayer implements TrackPlayer {
 
       _supportedLanguages =
           parseTtsLanguageList(await _engine.raw.getLanguages);
+      if (kIsWeb) await _refreshWebVoices();
       // Giọng Pāli: cùng chuỗi với PaliTtsHelper.
       _paliVoice = pickTtsLanguage(
         preferred: kPaliVoiceChain,
