@@ -147,7 +147,11 @@ flutter run
 | `flutter_animate` | Animations |
 | `just_audio` | Pali pronunciation |
 | `go_router` | Navigation |
-| `flutter_tts` | Screen reader support |
+| `flutter_tts` | Text-to-Speech / browser speech synthesis |
+
+### Web TTS
+
+Flutter Web uses the browser's built-in SpeechSynthesis voices; choose a voice per study language in **Cài đặt → Nghe & Tô sáng → Giọng đọc trình duyệt**. No API key is shipped to the browser. The optional Google Cloud / Edge TTS proxy example, deployment notes, and CORS/security guidance are in [`docs/audio-web-tts.md`](docs/audio-web-tts.md).
 
 ---
 

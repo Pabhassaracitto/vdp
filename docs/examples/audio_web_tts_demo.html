@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="VDP browser TTS demo using a same-origin Google Cloud TTS or Edge TTS proxy."
+    />
+    <title>VDP · Web TTS demo</title>
+    <link rel="stylesheet" href="audio_web_tts_demo.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <span class="eyebrow">VDP · AUDIO WEB</span>
+        <h1>Text to speech</h1>
+        <p>Nghe thử nội dung bằng giọng đọc của dịch vụ TTS đã cấu hình trên máy chủ.</p>
+      </header>
+
+      <form id="tts-form">
+        <label for="tts-text">Văn bản</label>
+        <textarea id="tts-text" rows="6" required>
+Xin chào. Đây là phần nghe thử giọng đọc tiếng Việt của VDP.
+        </textarea>
+
+        <div class="field-grid">
+          <div>
+            <label for="tts-provider">Dịch vụ TTS</label>
+            <select id="tts-provider">
+              <option value="google">Google Cloud Text-to-Speech</option>
+              <option value="edge">Microsoft Edge TTS proxy</option>
+            </select>
+          </div>
+          <div>
+            <label for="tts-language">Ngôn ngữ</label>
+            <select id="tts-language">
+              <option value="vi-VN" selected>Tiếng Việt · vi-VN</option>
+              <option value="en-US">English · en-US</option>
+              <option value="ja-JP">日本語 · ja-JP</option>
+              <option value="zh-CN">简体中文 · zh-CN</option>
+              <option value="ko-KR">한국어 · ko-KR</option>
+            </select>
+          </div>
+          <div>
+            <label for="tts-gender">Giới tính giọng đọc</label>
+            <select id="tts-gender">
+              <option value="MALE" selected>Nam</option>
+              <option value="FEMALE">Nữ</option>
+              <option value="NEUTRAL">Trung tính / tự chọn</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="primary" id="play-button" type="submit">▶ Phát</button>
+          <button id="pause-button" type="button">Ⅱ Tạm dừng</button>
+          <button class="quiet" id="stop-button" type="button">■ Dừng</button>
+        </div>
+      </form>
+
+      <audio id="tts-audio" preload="none"></audio>
+      <p id="tts-status" class="status" role="status" aria-live="polite">
+        Sẵn sàng · Mặc định vi-VN, giọng Nam
+      </p>
+      <p class="notice">
+        Trang demo chỉ gọi <code>/api/tts</code> trên máy chủ cùng origin. Không đặt API key
+        Google trong JavaScript hoặc trong mã được deploy lên GitHub Pages.
+      </p>
+    </main>
+
+    <script type="module" src="audio_web_tts_demo.js"></script>
+  </body>
+</html>
