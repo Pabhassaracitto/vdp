@@ -65,3 +65,11 @@
 - [ ] Android device: install a verified model externally, lock screen, headset unplug, Bluetooth controls, interruption, resume, seek/duration and Pāli switching.
 - [ ] iOS device: background audio, lock screen, route change, interruption and fallback TTS limitations.
 - [ ] Flutter analyze/test: sandbox has no Flutter SDK (`flutter: command not found`), therefore not run here. Run `flutter gen-l10n`, `flutter analyze`, `flutter test` and the device cases above on a Flutter-enabled CI/device.
+
+## 8. Web TTS — Browser voices
+- [x] Web player factory selects `flutter_tts`/SpeechSynthesis without compiling the native Sherpa file-cache implementation into the browser target.
+- [x] Settings voice picker lists browser voices, remembers a choice per content locale, previews a voice and automatically prefers a likely male Vietnamese voice when available.
+- [x] Pure voice matching and preference tests added in `test/web_tts_voice_test.dart`.
+- [ ] Manual Chrome/Edge/Safari QA: voice enumeration, Vietnamese male preference, explicit voice changes, preview, pause/stop and reload persistence.
+- [ ] Flutter Web release build and browser smoke test; Flutter SDK is unavailable in this sandbox, so build/test/analyze were not run here.
+- [ ] Cloud neural voice demo requires a separately deployed Google/Edge TTS proxy. GitHub Pages must never receive provider API keys; see `docs/audio-web-tts.md`.
