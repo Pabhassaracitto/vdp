@@ -107,7 +107,8 @@ class _WebTtsVoiceSettingsSectionState
                   automaticVoice == null
                       ? _copy(context, 'automatic')
                       : '${_copy(context, 'automatic')} → '
-                          '${automaticVoice.name}',
+                          '${automaticVoice.name} · '
+                          '${_copy(context, automaticVoice.genderLabelKey)}',
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
@@ -115,7 +116,7 @@ class _WebTtsVoiceSettingsSectionState
                 DropdownMenuItem<String>(
                   value: voice.id,
                   child: Text(
-                    _voiceLabel(voice, language.tag),
+                    _voiceLabel(voice),
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
@@ -135,6 +136,31 @@ class _WebTtsVoiceSettingsSectionState
           if (settings.isLoading) ...[
             const SizedBox(height: 10),
             const LinearProgressIndicator(minHeight: 2),
+          ],
+          // IN4-74: enumerate every voice of this language with its name and
+          // gender ("Chưa xác định" when undetermined) plus the total count,
+          // so the browser's list is fully visible even when the dropdown is
+          // collapsed or entries are ellipsized.
+          if (!settings.isLoading && voices.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text(
+              _copy(context, 'voiceCount')
+                  .replaceAll('{count}', '${voices.length}'),
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: Colors.grey.shade800,
+              ),
+            ),
+            const SizedBox(height: 2),
+            for (final (index, voice) in voices.indexed)
+              Padding(
+                padding: const EdgeInsetsDirectional.only(start: 4, bottom: 2),
+                child: Text(
+                  '${index + 1}. ${_voiceLabel(voice)}',
+                  style: TextStyle(fontSize: 12, color: Colors.grey.shade800),
+                ),
+              ),
           ],
           if (showNoMaleWarning) ...[
             const SizedBox(height: 8),
@@ -219,16 +245,12 @@ class _WebTtsVoiceSettingsSectionState
     return null;
   }
 
-  /// Gender is shown only when it is KNOWN (explicit metadata or a known
-  /// Vietnamese voice). Unknown voices get no label — never "male" by guess.
-  String _voiceLabel(WebTtsVoice voice, String contentLocaleTag) {
-    final genderLabel = switch (voice.genderHint) {
-      WebTtsVoiceGender.male => ' · ${_copy(context, 'male')}',
-      WebTtsVoiceGender.female => ' · ${_copy(context, 'female')}',
-      WebTtsVoiceGender.unknown => '',
-    };
-    return '${voice.name} · ${voice.locale}$genderLabel';
-  }
+  /// Every voice row shows name, locale and gender. Gender is stated only
+  /// from explicit metadata or a known Vietnamese voice; anything else is
+  /// labelled "Chưa xác định" (gender undetermined) — never guessed Nam/Nữ
+  /// (IN4-74).
+  String _voiceLabel(WebTtsVoice voice) =>
+      '${voice.name} · ${voice.locale} · ${_copy(context, voice.genderLabelKey)}';
 
   String _errorCopyKey(String? error) => switch (error) {
         WebTtsVoiceErrors.listUnavailable => 'voiceListFailed',
@@ -316,12 +338,12 @@ const Map<String, Map<String, String>> _webTtsCopy = {
     'my': 'ဘရောက်ဇာ၏ အသံစာရင်းကို ဖတ်၍မရပါ။ ပြန်လည်ဖတ်ပါ သို့မဟုတ် အလိုအလျောက်အသံကို သုံးပါ။',
   },
   'note': {
-    'en': 'Uses voices provided by this browser/device. Browsers do not report voice gender; a male/female tag is shown only for known voices.',
-    'vi': 'Dùng giọng do trình duyệt/thiết bị cung cấp. Trình duyệt không báo giới tính giọng; nhãn Nam/Nữ chỉ hiện với các giọng đã biết.',
-    'ja': 'このブラウザー／端末が提供する音声を使用します。ブラウザーは音声の性別を報告しないため、男性／女性の表示は既知の音声にのみ付きます。',
-    'zh': '使用浏览器/设备提供的语音。浏览器不提供语音性别信息，仅对已知语音标注男声/女声。',
-    'zh_TW': '使用瀏覽器／裝置提供的語音。瀏覽器不提供語音性別資訊，僅對已知語音標示男聲／女聲。',
-    'my': 'ဤဘရောက်ဇာ/စက်မှ ပံ့ပိုးသောအသံကို သုံးပါသည်။ ဘရောက်ဇာများသည် အသံ၏လိင်ကို မဖော်ပြသဖြင့် သိရှိပြီးသားအသံများအတွက်သာ အမျိုးသား/အမျိုးသမီး ဟု ပြပါသည်။',
+    'en': 'Uses voices provided by this browser/device. Browsers do not report voice gender; unknown voices are shown as “gender undetermined” instead of being guessed as male/female.',
+    'vi': 'Dùng giọng do trình duyệt/thiết bị cung cấp. Trình duyệt không báo giới tính giọng; giọng không rõ được ghi “Chưa xác định” thay vì tự đoán Nam/Nữ.',
+    'ja': 'このブラウザー／端末が提供する音声を使用します。ブラウザーは音声の性別を報告しないため、不明な音声は男性／女性と推測せず「性別未確定」と表示します。',
+    'zh': '使用浏览器/设备提供的语音。浏览器不提供语音性别信息；无法识别的语音标为“性别未确定”，不会臆测为男声/女声。',
+    'zh_TW': '使用瀏覽器／裝置提供的語音。瀏覽器不提供語音性別資訊；無法辨識的語音標為「性別未確定」，不會臆測為男聲/女聲。',
+    'my': 'ဤဘရောက်ဇာ/စက်မှ ပံ့ပိုးသောအသံကို သုံးပါသည်။ ဘရောက်ဇာများသည် အသံ၏လိင်ကို မဖော်ပြပါ။ အမျိုးအစားမသိသောအသံများကို အမျိုးသား/အမျိုးသမီး ဟု မခန့်မှန်းဘဲ “လိင်မသိရသေးပါ” ဟု ပြပါသည်။',
   },
   'refresh': {
     'en': 'Refresh voices',
@@ -362,5 +384,21 @@ const Map<String, Map<String, String>> _webTtsCopy = {
     'zh': '女声',
     'zh_TW': '女聲',
     'my': 'အမျိုးသမီး',
+  },
+  'unknownGender': {
+    'en': 'gender undetermined',
+    'vi': 'Chưa xác định',
+    'ja': '性別未確定',
+    'zh': '性别未确定',
+    'zh_TW': '性別未確定',
+    'my': 'လိင်မသိရသေးပါ',
+  },
+  'voiceCount': {
+    'en': 'Total voices available for this language: {count}.',
+    'vi': 'Tổng số giọng khả dụng cho ngôn ngữ này: {count}.',
+    'ja': 'この言語で利用可能な音声の合計: {count}。',
+    'zh': '此语言可用语音总数：{count}。',
+    'zh_TW': '此語言可用語音總數：{count}。',
+    'my': 'ဤဘာသာစကားအတွက် ရရှိနိုင်သောအသံ စုစုပေါင်း: {count}။',
   },
 };

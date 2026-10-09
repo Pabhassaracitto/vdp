@@ -21,6 +21,13 @@ typedef WebTtsVoiceReader = Future<Object?> Function();
 /// [maximumWindow]). Concurrent callers share one in-flight load and the same
 /// cached result, so Settings preview and lesson playback resolve voices from
 /// an identical list.
+///
+/// Even after the first stabilized snapshot the catalog keeps polling in the
+/// background for up to [tailWindow] ("tail" enumeration): Edge/Chrome may
+/// publish online voices seconds after the first non-empty list. When the
+/// merged list grows, listeners (the Settings picker) are notified so the new
+/// voices appear without a manual refresh. Pass [tailWindow] as
+/// [Duration.zero] to disable the tail (used by deterministic tests).
 class WebTtsVoiceCatalog {
   WebTtsVoiceCatalog({
     required WebTtsVoiceReader readVoices,
@@ -30,6 +37,8 @@ class WebTtsVoiceCatalog {
     this.maximumWindow = const Duration(milliseconds: 2200),
     this.settleWindow = const Duration(milliseconds: 400),
     this.pollInterval = const Duration(milliseconds: 200),
+    this.tailWindow = const Duration(milliseconds: 8000),
+    this.tailPollInterval = const Duration(milliseconds: 400),
   })  : _readVoices = readVoices,
         _delay = delay ?? ((duration) => Future<void>.delayed(duration)),
         _now = now ?? DateTime.now;
@@ -46,15 +55,44 @@ class WebTtsVoiceCatalog {
   final Duration maximumWindow;
   final Duration settleWindow;
   final Duration pollInterval;
+  final Duration tailWindow;
+  final Duration tailPollInterval;
 
   List<WebTtsVoice> _voices = const [];
   bool _hasLoaded = false;
   Future<List<WebTtsVoice>>? _inFlight;
+  Future<void>? _tailFuture;
+  final List<void Function(List<WebTtsVoice> voices)> _listeners = [];
 
   /// Last stabilized list (empty until the first load completes).
   List<WebTtsVoice> get voices => _voices;
 
   bool get hasLoaded => _hasLoaded;
+
+  /// Completes when the background tail enumeration stops, or `null` when no
+  /// tail is running. Test/support hook; production code uses [addListener].
+  Future<void>? get tailFuture => _tailFuture;
+
+  /// Notified whenever the stabilized list grows (late `voiceschanged`
+  /// network voices, or a successful forced refresh).
+  void addListener(void Function(List<WebTtsVoice> voices) listener) {
+    if (!_listeners.contains(listener)) _listeners.add(listener);
+  }
+
+  void removeListener(void Function(List<WebTtsVoice> voices) listener) {
+    _listeners.remove(listener);
+  }
+
+  void _notifyListeners() {
+    final voices = _voices;
+    for (final listener in List.of(_listeners)) {
+      try {
+        listener(voices);
+      } catch (_) {
+        // One broken listener must not stop the enumeration.
+      }
+    }
+  }
 
   /// Returns the cached stabilized list, loading it first when needed.
   /// [force] re-enumerates (Settings "Refresh voices", or a saved voice that
@@ -74,7 +112,9 @@ class WebTtsVoiceCatalog {
 
   Future<List<WebTtsVoice>> _collect() async {
     final startedAt = _now();
-    var merged = const <WebTtsVoice>[];
+    // Seed with what is already known so a refresh only ever adds voices; a
+    // failed re-enumeration must not wipe a previously good list.
+    var merged = _voices;
     var lastGrowthAt = Duration.zero;
 
     while (true) {
@@ -98,9 +138,40 @@ class WebTtsVoiceCatalog {
       await _delay(pollInterval);
     }
 
-    // A failed re-enumeration must not wipe a previously good list.
     if (merged.isNotEmpty || !_hasLoaded) _voices = merged;
     _hasLoaded = true;
+    _scheduleTail();
     return _voices;
+  }
+
+  void _scheduleTail() {
+    if (_tailFuture != null || tailWindow <= Duration.zero) return;
+    final future = _runTail();
+    _tailFuture = future;
+    future.whenComplete(() {
+      if (identical(_tailFuture, future)) _tailFuture = null;
+    });
+  }
+
+  /// Keeps polling after the first stabilized snapshot and pushes late
+  /// arrivals (online "Natural" voices, second `voiceschanged` waves) into the
+  /// cached list so the picker never freezes at a partial list (IN4-74).
+  Future<void> _runTail() async {
+    final startedAt = _now();
+    while (_now().difference(startedAt) < tailWindow) {
+      await _delay(tailPollInterval);
+      List<WebTtsVoice> snapshot;
+      try {
+        snapshot = parseWebTtsVoices(await _readVoices());
+      } catch (_) {
+        continue;
+      }
+      final merged = mergeWebTtsVoices(_voices, snapshot);
+      if (merged.length != _voices.length) {
+        _voices = merged;
+        _hasLoaded = true;
+        _notifyListeners();
+      }
+    }
   }
 }
