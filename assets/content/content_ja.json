@@ -106,11 +106,11 @@
       "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ。"
     },
     "CI_026": {
-      "name": "喜倶推度心（善異熟無因）",
+      "name": "捨倶推度心（善異熟無因）",
       "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
     },
     "CI_027": {
-      "name": "捨倶推度心（善異熟無因）",
+      "name": "喜倶推度心（善異熟無因）",
       "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
     },
     "CI_028": {
@@ -1100,44 +1100,44 @@
       "description": "果報をもたらす機会を失い、効力を失った業（無効業）。"
     },
     "KM_P_01": {
-      "name": "重業",
-      "shortName": "重業",
-      "description": "五逆罪や禅定の達成など、最優先で来世の結生を決定する業。"
-    },
-    "KM_P_02": {
-      "name": "近死業",
-      "shortName": "近死業",
-      "description": "臨終の際に記憶または実践され、次の生を誘導する業。"
-    },
-    "KM_P_03": {
-      "name": "習行業",
-      "shortName": "習行業",
-      "description": "生前に恒常的・習慣的に反復して培われた強い業。"
-    },
-    "KM_P_04": {
-      "name": "軽小業",
-      "shortName": "軽小業",
-      "description": "上記三種以外の、意図が弱く習慣化されていない偶発的行為。"
-    },
-    "KM_U_01": {
       "name": "生産業",
       "shortName": "生産業",
       "description": "新たな生存の結生識と名色を生起させる根本的な業。"
     },
-    "KM_U_02": {
+    "KM_P_02": {
       "name": "支持業",
       "shortName": "支持業",
       "description": "生産業の果報を助長し、幸福や苦痛を持続・強化させる業。"
     },
-    "KM_U_03": {
+    "KM_P_03": {
       "name": "妨害業",
       "shortName": "妨害業",
       "description": "生産業の果報を抑圧・妨害し、苦楽の享受を損なう業。"
     },
-    "KM_U_04": {
+    "KM_P_04": {
       "name": "破壊業",
       "shortName": "破壊業",
       "description": "より強力な力で現行の業の報いを断ち切り奪い去る業。"
+    },
+    "KM_U_01": {
+      "name": "重業",
+      "shortName": "重業",
+      "description": "五逆罪や禅定の達成など、最優先で来世の結生を決定する業。"
+    },
+    "KM_U_02": {
+      "name": "近死業",
+      "shortName": "近死業",
+      "description": "臨終の際に記憶または実践され、次の生を誘導する業。"
+    },
+    "KM_U_03": {
+      "name": "習行業",
+      "shortName": "習行業",
+      "description": "生前に恒常的・習慣的に反復して培われた強い業。"
+    },
+    "KM_U_04": {
+      "name": "軽小業",
+      "shortName": "軽小業",
+      "description": "上記三種以外の、意図が弱く習慣化されていない偶発的行為。"
     },
     "KM_R_01": {
       "name": "欲界不善業",
@@ -1154,11 +1154,7 @@
       "shortName": "色界善",
       "description": "色界五禅の定善であり、色界梵天への転生因となる業。"
     },
-    "KM_R_04": {
-      "name": "無色界善業",
-      "shortName": "無色界善",
-      "description": "四無色定の善行であり、無色界天への転生因となる業。"
-    }
+    "KM_R_04": {}
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {

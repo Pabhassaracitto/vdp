@@ -106,11 +106,11 @@
       "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ。"
     },
     "CI_026": {
-      "name": "悦俱推度心（善异熟无因）",
+      "name": "舍俱推度心（善异熟无因）",
       "doctrinalNote": "阿毗达摩法数之心识分类：Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
     },
     "CI_027": {
-      "name": "舍俱推度心（善异熟无因）",
+      "name": "悦俱推度心（善异熟无因）",
       "doctrinalNote": "阿毗达摩法数之心识分类：Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ。"
     },
     "CI_028": {
@@ -1100,44 +1100,44 @@
       "description": "已造作但失去感果机缘或已被对治而不再受报之业。"
     },
     "KM_P_01": {
-      "name": "重业",
-      "shortName": "重业",
-      "description": "力量至重之业（如五逆罪或深妙禅定），必优先先受报。"
-    },
-    "KM_P_02": {
-      "name": "临死业",
-      "shortName": "临死业",
-      "description": "临命终时忆起或造作之业，引向次生结生。"
-    },
-    "KM_P_03": {
-      "name": "惯行业",
-      "shortName": "惯行业",
-      "description": "生前经常重复熏习、积习成性之坚强业习。"
-    },
-    "KM_P_04": {
-      "name": "已作业",
-      "shortName": "已作业",
-      "description": "除上述三者之外，偶尔所作而未加深习之零散旧业。"
-    },
-    "KM_U_01": {
       "name": "生产业",
       "shortName": "生产业",
       "description": "引生结生识及名色之业，产生一期生命的果报。"
     },
-    "KM_U_02": {
+    "KM_P_02": {
       "name": "支持业",
       "shortName": "支持业",
       "description": "辅助支持生产业所感果报，使乐受或苦受增盛延续。"
     },
-    "KM_U_03": {
+    "KM_P_03": {
       "name": "阻碍业",
       "shortName": "阻碍业",
       "description": "压迫阻碍生产业，缩短其福寿或消减其恶报。"
     },
-    "KM_U_04": {
+    "KM_P_04": {
       "name": "毁坏业",
       "shortName": "毁坏业",
       "description": "以更强业力彻底切断摧毁原有生产业之相续果报。"
+    },
+    "KM_U_01": {
+      "name": "重业",
+      "shortName": "重业",
+      "description": "力量至重之业（如五逆罪或深妙禅定），必优先先受报。"
+    },
+    "KM_U_02": {
+      "name": "临死业",
+      "shortName": "临死业",
+      "description": "临命终时忆起或造作之业，引向次生结生。"
+    },
+    "KM_U_03": {
+      "name": "惯行业",
+      "shortName": "惯行业",
+      "description": "生前经常重复熏习、积习成性之坚强业习。"
+    },
+    "KM_U_04": {
+      "name": "已作业",
+      "shortName": "已作业",
+      "description": "除上述三者之外，偶尔所作而未加深习之零散旧业。"
     },
     "KM_R_01": {
       "name": "欲界不善业",
@@ -1154,11 +1154,7 @@
       "shortName": "色界善",
       "description": "五禅色界善心，感得色界十六梵天果报。"
     },
-    "KM_R_04": {
-      "name": "无色界善业",
-      "shortName": "无色界善",
-      "description": "四无色定善心，感得无色界四天果报。"
-    }
+    "KM_R_04": {}
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {
