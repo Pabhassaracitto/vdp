@@ -12,4 +12,4 @@ Linear IN4-38.
 | `round1_gemini_an_tich.md` | AI-Ngữ văn Ấn–Tích Lan (Gemini) | 1 | pending |
 | `round1_red_team.md` | AI-Phản biện đỏ (Grok/Qwen) | 1 | pending |
 
-PM notes on Round 1 are in `pm_notes_round1.md`.
+PM notes on Round 1 are in `pm_notes_round1.md`. How to run the next rounds: `ROUND_KIT.md`.
