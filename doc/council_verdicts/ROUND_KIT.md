@@ -92,7 +92,7 @@ THUẬN" kèm 2 phương án + nguồn. Chỉ sau chữ ký trưởng lão mới
 ## Những gì KHÔNG làm trong lúc chờ
 
 - Không sửa Q1–Q4 trong `paccayas.json` dù Claude đã cho câu "dán thẳng".
-- Không đổi 一欲 → 欲 / 習行緣 cho tới khi có ≥ 2 phiếu nữa đồng ý.
+- 一欲 → 欲: ĐÃ ÁP DỤNG (4/4 Vòng 1). 習行緣 vẫn chờ (2/4, ba đáp án khác nhau).
 - Việc mechanical (禅→禪, 摂→攝, trùng khóa Aparāpariya) vẫn đi đường
   integrator (IN4-49 §5), không chờ hội đồng.
 
