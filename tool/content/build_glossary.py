@@ -8,7 +8,7 @@ Abhidhamma terminology is not ordinary vocabulary. Each of the 52 cetasikas,
 121 cittas and 28 rūpas is a technical term with a fixed doctrinal meaning, and
 every receiving language already has a centuries-old rendering tradition:
 
-* Chinese  — 摂阿毘達磨義論, the classical rendering (触/受/想/思/一境性…).
+* Chinese  — 攝阿毘達磨義論, the classical rendering (触/受/想/思/一境性…).
 * Sinhala  — the Sri Lankan Abhidhamma teaching tradition; the Sangaha has been
              printed in Sinhala script continuously.
 * Myanmar  — Myanmar has been the international centre of Abhidhamma study
@@ -64,8 +64,8 @@ DEFAULT_LOCALES = ["hi", "zh", "zh_TW", "si", "my", "ja", "th"]
 # inventing a rendering.
 AUTHORITIES = {
     "hi": "Rewata Dhamma, Abhidharma Prakasini (Hindi, Varanasi 1967)",
-    "zh": "摂阿毘達磨義論 (classical Chinese Abhidhamma rendering)",
-    "zh_TW": "摂阿毘達磨義論 (traditional-script Chinese rendering)",
+    "zh": "攝阿毘達磨義論 (classical Chinese Abhidhamma rendering)",
+    "zh_TW": "攝阿毘達磨義論 (traditional-script Chinese rendering)",
     "si": "Sri Lankan Abhidhamma teaching tradition (Sangaha, Sinhala script)",
     "my": "Myanmar let-than manual tradition (Abhidhammattha Sangaha)",
     "ja": "南伝大蔵経 65: 摂阿毘達磨義論 (tr. Mizuno Kogen) — avoid Mahayana senses",
