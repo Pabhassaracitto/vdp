@@ -15,7 +15,7 @@ Linear IN4-38.
 | `round2_red_team.md` | AI-Phản biện đỏ (Grok/Qwen) | 2 | received 2026-10-21 — rubric + 6 điểm vênh, đổi 28→52, rút Q5 |
 | `round2_chatgpt_han_nhat.md` | AI-Ngữ văn Hán–Nhật (ChatGPT) | 2 | received 2026-10-21 — rubric chi tiết 6 cột + phiếu KHÔNG XÁC MINH Q4/Q6/Q10 |
 | `round2_gemini_an_tich.md` | AI-Ngữ văn Ấn–Tích Lan (Gemini) | 2 | received 2026-10-21 — 28 citta Table 8.4, hasituppāda CÓ āsevana |
-| `round2_consensus.md` | PM Round-2 matrix (3/4, Claude V2 pending) | 2 | 2026-10-21 — nhóm A/B/C trình IN4-38 |
-| `round2_claude_luan_su.md` | AI-Luận sư (Claude) | 2 | pending |
+| `round2_consensus.md` | PM Round-2 matrix **4/4** | 2 | 2026-10-21 — nhóm A/B/C trình IN4-38, V3 candidates |
+| `round2_claude_luan_su.md` | AI-Luận sư (Claude Sonnet 5) | 2 | received 2026-10-21 — tự sửa Q3 (đạo→quả sai), hạ Q6 xuống KHÔNG XÁC MINH, nghiêng 28 loại 52 |
 
 PM notes on Round 1 are in `pm_notes_round1.md`; the 4-sheet position matrix in `round1_consensus.md`. Round-2 consolidation in `round2_consensus.md`. How to run the next rounds: `ROUND_KIT.md`; the Round-2 message is `ROUND2_MESSAGE.md`.
