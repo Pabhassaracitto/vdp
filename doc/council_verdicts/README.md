@@ -19,3 +19,19 @@ Linear IN4-38.
 | `round2_claude_luan_su.md` | AI-Luận sư (Claude Sonnet 5) | 2 | received 2026-10-21 — tự sửa Q3 (đạo→quả sai), hạ Q6 xuống KHÔNG XÁC MINH, nghiêng 28 loại 52 |
 
 PM notes on Round 1 are in `pm_notes_round1.md`; the 4-sheet position matrix in `round1_consensus.md`. Round-2 consolidation in `round2_consensus.md`. How to run the next rounds: `ROUND_KIT.md`; the Round-2 message is `ROUND2_MESSAGE.md`.
+
+## Review policy — per-language, not one elder for all (2026-10-21)
+
+**Nguyên tắc:** Không có một vị trưởng lão duy nhất duyệt cả 7 ngôn ngữ. Mỗi locale duyệt bởi người có thẩm quyền của chính ngôn ngữ/truyền thống đó (List A/B tách riêng). Sri Lanka (si) chỉ duyệt Sinhala — hi do tu sĩ Ấn, zh/zh_TW do Đài Loan/Đại Lục, ja do Nhật, my/th do Miến/Thái duyệt. Đề xuất hiệu đính của người dùng cũng đi theo cùng luồng này (xem `../../tool/content/priority_translation_agents/REVIEW_TEMPLATES.md`).
+
+| Locale | Linear issue | Người duyệt gợi ý | Ghi chú |
+|---|---|---|---|
+| hi | IN4-42 | Tu sĩ Hindi (Rewata Dhamma / Dharmarakshita lineage) | Đối chiếu `tool/content/priority_translation_agents/REVIEW_TEMPLATES.md#hi` |
+| zh | IN4-43 | Tăng đoàn Hán (bản 攝阿毘達磨義論) | Giản thể |
+| zh_TW | IN4-44 | Tăng đoàn Đài Loan (CBETA, 攝阿毘達磨義論 phồn thể) | Đã fix 禪/攝 ở `ce97b61` |
+| si | IN4-45 | Trưởng lão Sri Lanka (duyên hiện có) | Chỉ duyệt `si` |
+| my | IN4-46 | Tăng Miến (Q13a–h) | Đang chờ handoff |
+| ja | IN4-47 | Tăng Nhật (ウ・ウェープッラ / 水野弘元) | Shinjitai check |
+| th | IN4-48 | Tăng Thái (อภิธัมมัตถสังคหะ) | Silent — sẽ tạo handoff |
+
+Hội đồng đa AI chỉ là **advisory**. Quyết định cuối thuộc về người duyệt của locale đó, ghi lại trên Linear issue tương ứng + comment trên IN4-38 để PM tổng hợp áp dụng.
