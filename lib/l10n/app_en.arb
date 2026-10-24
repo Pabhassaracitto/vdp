@@ -1596,5 +1596,80 @@
   "studyTreeCollapseAll": "Collapse all",
   "@studyTreeCollapseAll": {
     "description": "studyTreeCollapseAll"
+  },
+  "suggestCorrection": "Suggest correction",
+  "@suggestCorrection": {
+    "description": "suggestCorrection"
+  },
+  "suggestCorrectionHint": "Suggest a better translation for this entry",
+  "@suggestCorrectionHint": {
+    "description": "suggestCorrectionHint"
+  },
+  "suggestCorrectionTitle": "Suggest correction",
+  "@suggestCorrectionTitle": {
+    "description": "suggestCorrectionTitle"
+  },
+  "suggestCorrectionIntro": "Pāḷi {paliKey} — locale {locale}",
+  "@suggestCorrectionIntro": {
+    "description": "suggestCorrectionIntro",
+    "placeholders": {
+      "paliKey": {},
+      "locale": {}
+    }
+  },
+  "suggestCorrectionCurrentText": "Current text",
+  "@suggestCorrectionCurrentText": {
+    "description": "suggestCorrectionCurrentText"
+  },
+  "suggestCorrectionSuggestionLabel": "Your suggestion",
+  "@suggestCorrectionSuggestionLabel": {
+    "description": "suggestCorrectionSuggestionLabel"
+  },
+  "suggestCorrectionSuggestionHint": "Enter the corrected translation…",
+  "@suggestCorrectionSuggestionHint": {
+    "description": "suggestCorrectionSuggestionHint"
+  },
+  "suggestCorrectionReasonLabel": "Reason / source (optional)",
+  "@suggestCorrectionReasonLabel": {
+    "description": "suggestCorrectionReasonLabel"
+  },
+  "suggestCorrectionReasonHint": "e.g. Rewata Dhamma p.42; common usage in temple X…",
+  "@suggestCorrectionReasonHint": {
+    "description": "suggestCorrectionReasonHint"
+  },
+  "suggestCorrectionReviewLink": "Review link for venerables: {link}",
+  "@suggestCorrectionReviewLink": {
+    "description": "suggestCorrectionReviewLink",
+    "placeholders": {
+      "link": {}
+    }
+  },
+  "suggestCorrectionSubmit": "Submit",
+  "@suggestCorrectionSubmit": {
+    "description": "suggestCorrectionSubmit"
+  },
+  "suggestCorrectionCopied": "Copied to clipboard — paste into the GitHub issue",
+  "@suggestCorrectionCopied": {
+    "description": "suggestCorrectionCopied"
+  },
+  "suggestCorrectionSuccessTitle": "Thank you — suggestion recorded",
+  "@suggestCorrectionSuccessTitle": {
+    "description": "suggestCorrectionSuccessTitle"
+  },
+  "suggestCorrectionSuccessBody": "Your suggestion for {issue} has been prepared. Link for venerables: {link}",
+  "@suggestCorrectionSuccessBody": {
+    "description": "suggestCorrectionSuccessBody",
+    "placeholders": {
+      "issue": {},
+      "link": {}
+    }
+  },
+  "copyLink": "Copy link",
+  "@copyLink": {
+    "description": "copyLink"
+  },
+  "linkCopied": "Link copied",
+  "@linkCopied": {
+    "description": "linkCopied"
   }
 }

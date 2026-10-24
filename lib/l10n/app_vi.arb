@@ -1596,5 +1596,80 @@
   "studyTreeCollapseAll": "Thu gọn toàn bộ",
   "@studyTreeCollapseAll": {
     "description": "studyTreeCollapseAll"
+  },
+  "suggestCorrection": "Đề xuất hiệu đính",
+  "@suggestCorrection": {
+    "description": "suggestCorrection"
+  },
+  "suggestCorrectionHint": "Đề xuất bản dịch hay hơn cho mục này",
+  "@suggestCorrectionHint": {
+    "description": "suggestCorrectionHint"
+  },
+  "suggestCorrectionTitle": "Đề xuất hiệu đính",
+  "@suggestCorrectionTitle": {
+    "description": "suggestCorrectionTitle"
+  },
+  "suggestCorrectionIntro": "Pāḷi {paliKey} — ngôn ngữ {locale}",
+  "@suggestCorrectionIntro": {
+    "description": "suggestCorrectionIntro",
+    "placeholders": {
+      "paliKey": {},
+      "locale": {}
+    }
+  },
+  "suggestCorrectionCurrentText": "Văn bản hiện tại",
+  "@suggestCorrectionCurrentText": {
+    "description": "suggestCorrectionCurrentText"
+  },
+  "suggestCorrectionSuggestionLabel": "Đề xuất của bạn",
+  "@suggestCorrectionSuggestionLabel": {
+    "description": "suggestCorrectionSuggestionLabel"
+  },
+  "suggestCorrectionSuggestionHint": "Nhập bản dịch đã sửa…",
+  "@suggestCorrectionSuggestionHint": {
+    "description": "suggestCorrectionSuggestionHint"
+  },
+  "suggestCorrectionReasonLabel": "Lý do / nguồn (tuỳ chọn)",
+  "@suggestCorrectionReasonLabel": {
+    "description": "suggestCorrectionReasonLabel"
+  },
+  "suggestCorrectionReasonHint": "VD: Rewata Dhamma tr.42; cách dùng ở chùa X…",
+  "@suggestCorrectionReasonHint": {
+    "description": "suggestCorrectionReasonHint"
+  },
+  "suggestCorrectionReviewLink": "Link duyệt cho vị lớn: {link}",
+  "@suggestCorrectionReviewLink": {
+    "description": "suggestCorrectionReviewLink",
+    "placeholders": {
+      "link": {}
+    }
+  },
+  "suggestCorrectionSubmit": "Gửi",
+  "@suggestCorrectionSubmit": {
+    "description": "suggestCorrectionSubmit"
+  },
+  "suggestCorrectionCopied": "Đã copy — dán vào issue GitHub",
+  "@suggestCorrectionCopied": {
+    "description": "suggestCorrectionCopied"
+  },
+  "suggestCorrectionSuccessTitle": "Cảm ơn — đã ghi nhận đề xuất",
+  "@suggestCorrectionSuccessTitle": {
+    "description": "suggestCorrectionSuccessTitle"
+  },
+  "suggestCorrectionSuccessBody": "Đề xuất cho {issue} đã được chuẩn bị. Link cho vị duyệt: {link}",
+  "@suggestCorrectionSuccessBody": {
+    "description": "suggestCorrectionSuccessBody",
+    "placeholders": {
+      "issue": {},
+      "link": {}
+    }
+  },
+  "copyLink": "Copy link",
+  "@copyLink": {
+    "description": "copyLink"
+  },
+  "linkCopied": "Đã copy link",
+  "@linkCopied": {
+    "description": "linkCopied"
   }
 }
