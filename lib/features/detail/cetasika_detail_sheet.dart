@@ -6,10 +6,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/localization/content_catalog.dart';
 import '../../core/localization/localized_content.dart';
+import '../../core/localization/locale_controller.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../core/utils/pali_tts_helper.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../l10n/l10n.dart';
+import '../../shared/widgets/suggest_correction_button.dart';
 import 'widgets/pali_name_card.dart';
 
 class CetasikaDetailSheet extends ConsumerStatefulWidget {
@@ -237,6 +239,24 @@ class _CetasikaDetailSheetState extends ConsumerState<CetasikaDetailSheet> {
                 ...cetasika.conflictRules
                     .map((rule) => _ConflictRuleCard(rule: rule)),
               ],
+
+              // ── Suggest correction (per-language review) ───────────────
+              Consumer(builder: (context, ref, _) {
+                final contentLocale = ref.watch(localeSettingsProvider).contentLocale;
+                if (contentLocale == 'vi' || contentLocale == 'en') return const SizedBox.shrink();
+                return Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: SuggestCorrectionButton(
+                      localeTag: contentLocale,
+                      paliKey: cetasika.id,
+                      paliName: cetasika.namePali,
+                      currentText: localizedName,
+                    ),
+                  ),
+                );
+              }),
 
               const SizedBox(height: 32),
             ],

@@ -7,11 +7,13 @@ import 'package:vdp_app/shared/providers/progress_provider.dart';
 
 import '../../core/localization/content_catalog.dart';
 import '../../core/localization/localized_content.dart';
+import '../../core/localization/locale_controller.dart';
 import '../../core/theme/vdp_theme.dart';
 import '../../core/utils/pali_tts_helper.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/repositories/vdp_repository.dart';
 import '../../l10n/l10n.dart';
+import '../../shared/widgets/suggest_correction_button.dart';
 import 'widgets/pali_name_card.dart';
 
 // Chuyển sang StatefulWidget để quản lý trạng thái isSpeaking
@@ -277,6 +279,26 @@ class _CittaDetailSheetState extends ConsumerState<CittaDetailSheet> {
                     }).toList(),
                   ),
                 ],
+
+                // ── Suggest correction (per-language review) ───────────────
+                Consumer(builder: (context, ref, _) {
+                  final contentLocale = ref.watch(localeSettingsProvider).contentLocale;
+                  // vi/en are source — no need to suggest for themselves
+                  if (contentLocale == 'vi' || contentLocale == 'en') return const SizedBox.shrink();
+                  return Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: SuggestCorrectionButton(
+                        localeTag: contentLocale,
+                        paliKey: citta.id,
+                        paliName: citta.namePali,
+                        currentText: localizedName,
+                        englishFallback: citta.namePali, // Pāli is anchor; English name is fallback if needed
+                      ),
+                    ),
+                  );
+                }),
 
                 const SizedBox(height: 32),
               ],
