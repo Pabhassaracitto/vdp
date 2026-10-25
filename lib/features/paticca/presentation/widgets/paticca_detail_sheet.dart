@@ -4,8 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vdp_app/core/localization/content_catalog.dart';
 
 import '../../../../core/localization/localized_content.dart';
+import '../../../../core/localization/locale_controller.dart';
 import '../../../../data/models/paticca_model.dart';
 import '../../../../l10n/l10n.dart';
+import '../../../../shared/widgets/suggest_correction_button.dart';
 import '../providers/paticca_providers.dart';
 import 'paccaya_detail_sheet.dart';
 
@@ -131,6 +133,22 @@ class PaticcaDetailSheet extends ConsumerWidget {
               ],
               if (doctrinalNote != null && doctrinalNote.isNotEmpty)
                 _section(context, l10n.notes, doctrinalNote),
+              Consumer(
+                builder: (context, ref, _) {
+                  final localeTag = ref.watch(localeSettingsProvider).contentLocale;
+                  if (localeTag == 'vi' || localeTag == 'en') return const SizedBox.shrink();
+                  return Padding(
+                    padding: const EdgeInsets.only(top: 16),
+                    child: SuggestCorrectionButton(
+                      localeTag: localeTag,
+                      paliKey: item.id,
+                      currentText: item.localizedName(context),
+                      englishFallback: item.namePali,
+                      paliName: item.namePali,
+                    ),
+                  );
+                },
+              ),
             ],
           ),
         ),
