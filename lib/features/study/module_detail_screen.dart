@@ -13,8 +13,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/localization/content_catalog.dart';
+import '../../core/localization/locale_controller.dart';
 import '../../core/localization/localized_content.dart';
 import '../../core/theme/vdp_theme.dart';
+import '../../shared/widgets/suggest_correction_button.dart';
 import '../../data/models/cetasika_model.dart';
 import '../../data/models/citta_model.dart';
 import '../../data/models/kamma_model.dart';
@@ -1676,6 +1678,22 @@ class _LessonSectionCard extends ConsumerWidget {
                 ],
               ),
             ],
+            Consumer(
+              builder: (context, ref, _) {
+                final localeTag = ref.watch(localeSettingsProvider).contentLocale;
+                if (localeTag == 'vi' || localeTag == 'en') return const SizedBox.shrink();
+                return Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: SuggestCorrectionButton(
+                    localeTag: localeTag,
+                    paliKey: section.id,
+                    currentText: section.title,
+                    englishFallback: section.title,
+                    paliName: section.id,
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),
