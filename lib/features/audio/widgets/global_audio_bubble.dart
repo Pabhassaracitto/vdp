@@ -30,12 +30,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/navigation/app_navigator.dart';
+import '../../../core/localization/content_catalog.dart';
+import '../../../core/localization/localized_content.dart';
 import '../../../data/models/study_module.dart';
+import '../../../data/repositories/vdp_repository.dart';
 import '../../../l10n/l10n.dart';
 import '../../home/home_tab_index.dart';
 import '../../paticca/presentation/providers/paticca_providers.dart';
 import '../../paticca/presentation/screens/paticca_screen.dart';
 import '../../study/module_detail_screen.dart';
+import '../data/study_module_playlist_builder.dart';
 import '../providers/audio_player_provider.dart';
 import 'audio_controls_common.dart';
 
@@ -101,6 +105,40 @@ class _GlobalAudioBubbleState extends ConsumerState<GlobalAudioBubble> {
         ref.read(homeTabIndexProvider.notifier).state = kHomeTabMatrix;
         navigator.popUntil((route) => route.isFirst);
     }
+  }
+
+  Future<void> _goToModule(
+      BuildContext context, WidgetRef ref, String targetId) async {
+    final modules = kStudyModules
+        .map((m) => StudyModule.fromJson(Map<String, dynamic>.from(m)))
+        .toList();
+    StudyModule? target;
+    for (final m in modules) {
+      if (m.id == targetId) {
+        target = m;
+        break;
+      }
+    }
+    if (target == null) return;
+    final repoState = ref.read(vdpRepositoryProvider);
+    if (repoState.status == DataLoadStatus.loading ||
+        repoState.status == DataLoadStatus.initial) {
+      return;
+    }
+    final tracks = buildStudyModuleTracks(
+      context,
+      module: target,
+      dataState: repoState,
+    );
+    if (tracks.isEmpty) return;
+    final localeTag = context.contentCatalog.locale;
+    await ref.read(audioPlayerProvider.notifier).prepareModule(
+          moduleId: target.id,
+          moduleTitle: target.localizedTitle(context),
+          contentLocaleTag: localeTag,
+          tracks: tracks,
+        );
+    await ref.read(audioPlayerProvider.notifier).playAll(resume: false);
   }
 
   @override
@@ -262,8 +300,16 @@ class _GlobalAudioBubbleState extends ConsumerState<GlobalAudioBubble> {
                             color: color,
                             playMode: playMode,
                             speed: state.speed,
+                            hasPreviousLesson: state.hasPreviousModule,
+                            hasNextLesson: state.hasNextModule,
                             onPrevious: notifier.previous,
                             onNext: notifier.next,
+                            onPreviousLesson: state.hasPreviousModule
+                                ? () => _goToModule(context, ref, state.previousModuleId!)
+                                : null,
+                            onNextLesson: state.hasNextModule
+                                ? () => _goToModule(context, ref, state.nextModuleId!)
+                                : null,
                             onSpeed: notifier.setSpeed,
                           )
                         : const SizedBox.shrink(),
@@ -279,23 +325,31 @@ class _GlobalAudioBubbleState extends ConsumerState<GlobalAudioBubble> {
   }
 }
 
-/// Cấp 2 của thanh nghe nổi (VDP 0.10.3) — tua mục, chọn chế độ nghe (4 lựa
-/// chọn), và tốc độ; mọi thứ áp dụng ngay cho phiên đang phát.
+/// Cấp 2 của thanh nghe nổi (VDP 0.10.3) — tua mục + Bài trước/kế, chọn chế độ
+/// nghe (4 lựa chọn), và tốc độ; mọi thứ áp dụng ngay cho phiên đang phát.
 class _ExpandedControls extends StatelessWidget {
   const _ExpandedControls({
     required this.color,
     required this.playMode,
     required this.speed,
+    required this.hasPreviousLesson,
+    required this.hasNextLesson,
     required this.onPrevious,
     required this.onNext,
+    this.onPreviousLesson,
+    this.onNextLesson,
     required this.onSpeed,
   });
 
   final Color color;
   final AudioPlayMode playMode;
   final double speed;
+  final bool hasPreviousLesson;
+  final bool hasNextLesson;
   final VoidCallback onPrevious;
   final VoidCallback onNext;
+  final VoidCallback? onPreviousLesson;
+  final VoidCallback? onNextLesson;
   final ValueChanged<double> onSpeed;
 
   @override
@@ -307,6 +361,19 @@ class _ExpandedControls extends StatelessWidget {
         Divider(height: 14, color: color.withOpacity(0.2)),
         Row(
           children: [
+            // Bài trước (module) — chỉ cho phiên study, disable khi ở đầu lộ trình
+            Semantics(
+              button: true,
+              enabled: hasPreviousLesson,
+              label: 'Bài trước',
+              child: IconButton(
+                onPressed: onPreviousLesson,
+                iconSize: 20,
+                visualDensity: VisualDensity.compact,
+                tooltip: 'Bài trước',
+                icon: const Icon(Icons.first_page_rounded),
+              ),
+            ),
             Semantics(
               button: true,
               label: context.l10n.previousTrack,
@@ -325,6 +392,18 @@ class _ExpandedControls extends StatelessWidget {
                 iconSize: 22,
                 visualDensity: VisualDensity.compact,
                 icon: const Icon(Icons.skip_next_rounded),
+              ),
+            ),
+            Semantics(
+              button: true,
+              enabled: hasNextLesson,
+              label: 'Bài kế',
+              child: IconButton(
+                onPressed: onNextLesson,
+                iconSize: 20,
+                visualDensity: VisualDensity.compact,
+                tooltip: 'Bài kế',
+                icon: const Icon(Icons.last_page_rounded),
               ),
             ),
             const SizedBox(width: 4),

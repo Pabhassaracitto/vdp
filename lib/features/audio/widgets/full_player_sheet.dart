@@ -6,7 +6,12 @@
 import 'package:flutter/material.dart' hide RepeatMode; // use audio RepeatMode
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/localization/content_catalog.dart';
+import '../../../core/localization/localized_content.dart';
+import '../../../data/models/study_module.dart';
+import '../../../data/repositories/vdp_repository.dart';
 import '../../../l10n/l10n.dart';
+import '../data/study_module_playlist_builder.dart';
 import '../providers/audio_player_provider.dart';
 import 'audio_controls_common.dart';
 import 'playlist_sheet.dart';
@@ -34,6 +39,40 @@ class FullPlayerSheet extends ConsumerWidget {
       backgroundColor: Colors.transparent,
       builder: (_) => FullPlayerSheet(color: color, moduleId: moduleId),
     );
+  }
+
+  Future<void> _goToModule(
+    BuildContext context, WidgetRef ref, String targetId) async {
+    final modules = kStudyModules
+        .map((m) => StudyModule.fromJson(Map<String, dynamic>.from(m)))
+        .toList();
+    StudyModule? target;
+    for (final m in modules) {
+      if (m.id == targetId) {
+        target = m;
+        break;
+      }
+    }
+    if (target == null) return;
+    final repoState = ref.read(vdpRepositoryProvider);
+    if (repoState.status == DataLoadStatus.loading ||
+        repoState.status == DataLoadStatus.initial) {
+      return;
+    }
+    final tracks = buildStudyModuleTracks(
+      context,
+      module: target,
+      dataState: repoState,
+    );
+    if (tracks.isEmpty) return;
+    final localeTag = context.contentCatalog.locale;
+    await ref.read(audioPlayerProvider.notifier).prepareModule(
+          moduleId: target.id,
+          moduleTitle: target.localizedTitle(context),
+          contentLocaleTag: localeTag,
+          tracks: tracks,
+        );
+    await ref.read(audioPlayerProvider.notifier).playAll(resume: false);
   }
 
   @override
@@ -98,10 +137,25 @@ class FullPlayerSheet extends ConsumerWidget {
             ),
             const SizedBox(height: 18),
 
-            // ── Transport: ⏮ / ⏯ / ⏭ (cùng ngôn ngữ vithi playback) ──────
+            // ── Transport: Bài trước / ⏮ / ⏯ / ⏭ / Bài kế (phương án nhẹ) ─
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // Bài trước (module) — chỉ cho phiên study
+                Semantics(
+                  button: true,
+                  enabled: state.hasPreviousModule,
+                  label: 'Bài trước',
+                  child: IconButton(
+                    onPressed: state.hasPreviousModule
+                        ? () => _goToModule(context, ref, state.previousModuleId!)
+                        : null,
+                    iconSize: 28,
+                    tooltip: 'Bài trước',
+                    icon: const Icon(Icons.first_page_rounded),
+                  ),
+                ),
+                const SizedBox(width: 6),
                 Tooltip(
                   message: context.l10n.previousTrack,
                   child: Semantics(
@@ -114,7 +168,7 @@ class FullPlayerSheet extends ConsumerWidget {
                     ),
                   ),
                 ),
-                const SizedBox(width: 18),
+                const SizedBox(width: 8),
                 Semantics(
                   button: true,
                   label: state.isPlaying
@@ -138,7 +192,7 @@ class FullPlayerSheet extends ConsumerWidget {
                     ),
                   ),
                 ),
-                const SizedBox(width: 18),
+                const SizedBox(width: 8),
                 Tooltip(
                   message: context.l10n.next,
                   child: Semantics(
@@ -149,6 +203,21 @@ class FullPlayerSheet extends ConsumerWidget {
                       iconSize: 32,
                       icon: const Icon(Icons.skip_next_rounded),
                     ),
+                  ),
+                ),
+                const SizedBox(width: 6),
+                // Bài kế (module)
+                Semantics(
+                  button: true,
+                  enabled: state.hasNextModule,
+                  label: 'Bài kế',
+                  child: IconButton(
+                    onPressed: state.hasNextModule
+                        ? () => _goToModule(context, ref, state.nextModuleId!)
+                        : null,
+                    iconSize: 28,
+                    tooltip: 'Bài kế',
+                    icon: const Icon(Icons.last_page_rounded),
                   ),
                 ),
               ],

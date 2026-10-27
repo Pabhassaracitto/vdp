@@ -26,6 +26,7 @@ import 'package:audio_service/audio_service.dart';
 import '../services/audio_handler.dart';
 
 import '../../../core/utils/pali_tts_helper.dart';
+import '../../../data/models/study_module.dart';
 import '../models/audio_track.dart';
 import '../players/track_player.dart';
 import '../players/default_track_player.dart';
@@ -178,6 +179,41 @@ class AudioPlayerState {
 
   int get currentTrackNumber =>
       currentIndex < 0 ? 0 : currentIndex + 1;
+
+  /// Thứ tự module theo `recommendedOrder` — dùng cho “Bài trước/kế” (phương án nhẹ).
+  static List<String> get _orderedModuleIds {
+    final modules = kStudyModules
+        .map((m) => StudyModule.fromJson(Map<String, dynamic>.from(m)))
+        .toList();
+    modules.sort((a, b) => a.recommendedOrder.compareTo(b.recommendedOrder));
+    return modules.map((m) => m.id).toList();
+  }
+
+  /// Module kế trong lộ trình học (null = đang ở cuối hoặc chưa có phiên study).
+  String? get nextModuleId {
+    final id = moduleId;
+    if (id == null) return null;
+    // Chỉ áp dụng cho phiên Study; các nguồn khác (matrix, paticca) không có Bài.
+    if (sourceKind != AudioSourceKind.study) return null;
+    final ordered = _orderedModuleIds;
+    final idx = ordered.indexOf(id);
+    if (idx < 0 || idx >= ordered.length - 1) return null;
+    return ordered[idx + 1];
+  }
+
+  /// Module trước trong lộ trình học.
+  String? get previousModuleId {
+    final id = moduleId;
+    if (id == null) return null;
+    if (sourceKind != AudioSourceKind.study) return null;
+    final ordered = _orderedModuleIds;
+    final idx = ordered.indexOf(id);
+    if (idx <= 0) return null;
+    return ordered[idx - 1];
+  }
+
+  bool get hasNextModule => nextModuleId != null;
+  bool get hasPreviousModule => previousModuleId != null;
 
   /// Chế độ nghe suy ra từ (lặp × phạm vi) — nguồn sự thật của mọi UI chọn
   /// chế độ (thanh nghe nổi, playlist, bảng điều khiển đầy đủ).
