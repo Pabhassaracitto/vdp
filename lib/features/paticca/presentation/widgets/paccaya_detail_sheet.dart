@@ -142,16 +142,6 @@ class PaccayaDetailSheet extends ConsumerWidget {
                       style: theme.textTheme.bodySmall,
                     ),
                   ),
-              if (item.sourceRefs.isNotEmpty) ...[
-                _heading(context, context.l10n.paccayaSources),
-                for (final source in item.sourceRefs)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 4),
-                    child: Text(
-                      '• ${source.describe()}  [${source.confidence}]',
-                      style: theme.textTheme.bodySmall,
-                    ),
-                  ),
               ],
               Consumer(
                 builder: (context, ref, _) {
