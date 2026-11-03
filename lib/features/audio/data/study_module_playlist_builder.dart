@@ -24,7 +24,7 @@ import '../../audio/models/audio_track.dart';
 List<AudioTrack> buildStudyModuleTracks(
   BuildContext context, {
   required StudyModule module,
-  required VdpRepositoryState dataState,
+  required VdpDataState dataState,
 }) {
   final lesson = module.lessonContent(context);
   final moduleCittas = _filterCittas(

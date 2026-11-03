@@ -23,12 +23,13 @@ class KammaCard extends ConsumerWidget {
             style: const TextStyle(fontWeight: FontWeight.bold)),
         subtitle: Text(kamma.namePali),
         trailing: showSuggest
-            ? SuggestCorrectionButton.compact(
+            ? SuggestCorrectionButton(
                 localeTag: localeTag,
                 paliKey: kamma.id,
                 currentText: kamma.localizedName(context),
                 englishFallback: kamma.namePali,
                 paliName: kamma.namePali,
+                compact: true,
               )
             : null,
         onTap: onTap,
