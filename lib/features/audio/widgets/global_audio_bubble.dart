@@ -362,6 +362,7 @@ class _ExpandedControls extends StatelessWidget {
         Row(
           children: [
             // Bài trước (module) — chỉ cho phiên study, disable khi ở đầu lộ trình
+            // VDP | Issue Web: KHÔNG dùng Tooltip (bubble ngoài Navigator)
             Semantics(
               button: true,
               enabled: hasPreviousLesson,
@@ -370,7 +371,6 @@ class _ExpandedControls extends StatelessWidget {
                 onPressed: onPreviousLesson,
                 iconSize: 20,
                 visualDensity: VisualDensity.compact,
-                tooltip: 'Bài trước',
                 icon: const Icon(Icons.first_page_rounded),
               ),
             ),
@@ -402,7 +402,6 @@ class _ExpandedControls extends StatelessWidget {
                 onPressed: onNextLesson,
                 iconSize: 20,
                 visualDensity: VisualDensity.compact,
-                tooltip: 'Bài kế',
                 icon: const Icon(Icons.last_page_rounded),
               ),
             ),
