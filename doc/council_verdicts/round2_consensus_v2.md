@@ -15,7 +15,7 @@
 | Q | Nội dung | Đồng thuận (ước lượng) | Điểm TB | Trạng thái |
 |---|---|---|---|---|
 | Q1 | Xóa ngoặc vuông ở PC_02 | 4/4 | PM ĐIỀN | Đủ điều kiện trình |
-| Q2 | Pacchājāta: 85 tâm, trừ tục sinh | 3/4 | PM ĐIỀN | Trình, kèm cờ nghi vấn vế (xem Mục II) |
+| Q2 | Pacchājāta (PC_11): 85 tâm thuộc **paccayaDhamma** | 3/4 | PM ĐIỀN | Trình — đã xác nhận vế, sửa trường (Mục II) |
 | Q3 | Āsevana: 47 javana hiệp thế | 4/4 về nguyên tắc | PM ĐIỀN | Trình, kèm câu hỏi mở |
 | Q4 | Ārammaṇādhipati: số tâm | 2/4 | PM ĐIỀN | **Round 3** |
 | Q5 | `operatesInPaticca` Hetu/Jhāna | 3/4 | PM ĐIỀN | Trình: giữ rỗng |
@@ -33,15 +33,17 @@
 
 > Đối chiếu repo `assets/data/paccayas.json`: `PC_02` hiện có `paccayuppanna: "89 tâm (trừ 2 ngũ thức thân? — chính xác: trừ tâm không bắt cảnh) và 52 tâm sở."` — phần ngoặc chính là chỗ cần xóa theo đồng thuận 4/4.
 
-**Q2.** Hướng đồng thuận: loại 4 tâm quả vô sắc, và loại sát-na tục sinh (chưa có sắc có trước). Chuỗi đề xuất ở vòng 2: *"85 tâm (89 tâm trừ 4 tâm quả vô sắc giới) và 52 tâm sở tương ưng — trừ trong sát-na tục sinh…"*
-- **Cờ 1:** vế năng duyên hay sở duyên. Theo `paccayas.json` hiện tại: `PC_11 Pacchājāta-paccaya` có `paccayaDhamma: "85 tâm … và 52 tâm sở"` và `paccayuppanna: "Thân sắc nghiệp sanh trước"` → **85 tâm là vế năng duyên**, trái với cách v1 ghi vào `paccayuppanna`. PM xác nhận hiện trạng JSON trước khi gửi.
-- **Cờ 2:** ID. Theo thứ tự chuẩn 24 duyên, pacchājāta là **PC_11**, không phải PC_19 (PC_19 là Sampayutta) như v1 đã ghi. Repo là nguồn xác nhận cuối.
+**Q2.** Hướng đồng thuận: loại 4 tâm quả vô sắc, và loại sát-na tục sinh (chưa có sắc có trước). Chuỗi đề xuất ở Vòng 2 (*) vẫn dùng được nhưng **phải ghi vào `paccayaDhamma`** (năng duyên), không phải `paccayuppanna`.
+> (*) *“85 tâm (89 tâm trừ 4 tâm quả vô sắc giới) và 52 tâm sở tương ưng — trừ trong sát-na tục sinh…”* — lý do loại trừ (không có thân sắc có trước, không có sắc thân ở cõi vô sắc) hợp với vế năng duyên, nên chỉnh văn bản đề xuất theo hướng “85 tâm … ở paccayaDhamma”.
+- **Đã xác nhận repo `assets/data/paccayas.json`:** `PC_11 Pacchājāta-paccaya` có `paccayaDhamma: "85 tâm (trừ 2 ngũ thức thân và tâm tục sanh? — chính xác: 85 tâm dục, sắc, vô sắc, siêu thế trừ tục sanh) và 52 tâm sở."` và `paccayuppanna: "Thân sắc nghiệp sanh trước"` → **85 tâm thuộc năng duyên**. V1 đặt sai trường, v2 sửa; không còn cờ “vế nào?”.
+- **ID:** pacchājāta là **PC_11**; PC_19 là Sampayutta; PC_12 là Āsevana (đã đối chiếu repo, gỡ cờ).
 - Nguồn: CMA Ch. VIII, mục pacchājāta. Số § KHÔNG XÁC MINH ĐƯỢC.
 
-**Q3.** Hướng đồng thuận: javana **hiệp thế** gồm 12 + 8 + 9 + 8 + 9 + 1 = **47**, trừ javana cuối của lộ. Magga **không** làm āsevana cho phala. v1 ghi nhầm "hiệp thế và siêu thế", nay đã sửa.
-- **Câu hỏi mở cho Trưởng lão** (v1 bỏ sót): gotrabhū và vodāna có được tính trong āsevana không, và nằm ở bên nào?
-- **Cần cả hai vế:** năng duyên (javana trước) và sở duyên (javana sau), vì số liệu hai bên có thể khác nhau.
-- ID āsevana: **PC_12** theo thứ tự chuẩn (`Āsevana-paccaya` trong repo: `paccayaDhamma: "Đổng lực tâm và tâm sở đi trước"`).
+**Q3.** Hướng đồng thuận: javana **hiệp thế** gồm 12 + 8 + 9 + 8 + 9 + 1 = **47**. v1 ghi nhầm "hiệp thế và siêu thế", nay đã sửa thành hiệp thế.
+- **Cần cả hai vế:** năng duyên (javana trước) và sở duyên (javana sau) — vì loại trừ có thể khác nhau: bên năng duyên trừ javana cuối của lộ, bên sở duyên trừ javana đầu của lộ. Tờ trình phải nêu: 47 nằm ở `paccayaDhamma`, `paccayuppanna` hay cả hai. Hiện `PC_12` repo ghi `paccayaDhamma: "Đổng lực tâm và tâm sở đi trước (trừ đổng lực thứ 7 và đổng lực siêu thế? — chính xác: trừ đổng lực cuối và đổng lực đạo)."` và `paccayuppanna: "Đổng lực tâm và tâm sở sanh liền sau."` — cần làm rõ hai ô.
+- Magga **không** làm āsevana cho phala.
+- **Câu hỏi mở cho Trưởng lão:** gotrabhū và vodāna có được tính trong āsevana không, và nằm ở bên nào?
+- ID āsevana: **PC_12** theo thứ tự chuẩn (đã đối chiếu repo). PC_11 = Pacchājāta; PC_19 = Sampayutta.
 
 **Q5.** Giữ `operatesInPaticca` rỗng cho Hetu và Jhāna. Lý do: việc phối 24 duyên vào 12 chi là cách ứng dụng của chú giải, không phải yêu cầu của Tạng. Đề xuất ADD của Red Team không có số trang nên không nhận. **v1 viện dẫn "Sāratthadīpanī/Visuddhimagga" là sai và đã bỏ.** Nguồn cho điểm này: KHÔNG XÁC MINH ĐƯỢC; chỉ có cơ sở là nguyên tắc "trường nghi ngờ thì để trống".
 
@@ -55,12 +57,12 @@
 
 ## III. Các câu sang Round 3
 
-**Q4: phiếu Round 3 của Claude (chưa kiểm chứng):**
-- Hướng nghiêng: **28 tâm** = 8 lobhamūla + 8 mahākusala + 4 mahākiriya-ñāṇasampayutta + 8 lokuttara. Vòng 2 tôi đã rút số 38 của mình, và Red Team đưa 52 tự mâu thuẫn.
+**Q4: phiếu Round 3 của Claude (chưa kiểm chứng) — NGHI VẤN, ĐANG ĐỐI CHIẾU:**
+- Hướng nghiêng: **28 tâm cho ārammaṇādhipati** = 8 lobhamūla + 8 mahākusala + 4 mahākiriya-ñāṇasampayutta + 8 lokuttara. Vòng 2 đã loại 38 (Claude) và 52 (Red Team tự mâu thuẫn).
 - **Con số 45 tâm sở và dòng "180 pháp" trong v1: bỏ.** Không ai đối chiếu được.
-- Nguồn cần mở: Saṅgaha, phần Paccayaparicchedo, và CMA Table 8.4. **KHÔNG XÁC MINH ĐƯỢC.**
-- Cờ cấu trúc: repo `PC_03 Adhipati` hiện `paccayuppanna: "Các danh pháp câu sanh; với cảnh trưởng là 84 tâm (trừ tâm quả vô nhân...) và tâm sở tương ưng."` → 84 đã biết sai theo 4/4, cần xem đó là trường của Adhipati chung hay tiểu mục ārammaṇādhipati.
-- Cần nhờ **3 AI còn lại** mở nguồn và trả lời.
+- Nguồn cần mở: Saṅgaha Paccayapariccheda và CMA Table 8.4. **KHÔNG XÁC MINH ĐƯỢC** — chưa ai mở sách trong phiên này.
+- Cờ cấu trúc (sau đối chiếu repo): `PC_03 Adhipati-paccaya` có hai tiểu mục `Sahajāt'ādhipati` (câu sanh trưởng) và `Ārammaṇ'ādhipati` (cảnh trưởng); trường `paccayuppanna` hiện ghi gộp `"Các danh pháp câu sanh; với cảnh trưởng là 84 tâm (trừ tâm quả vô nhân...) và tâm sở tương ưng."` — Con số **84** nằm ở trường `paccayuppanna` của bản ghi chung, có thể đúng cho `sahajātādhipati` ở ngữ cảnh khác, nên **chưa kết luận "84 sai"**. Q4 chỉ hỏi riêng tiểu mục ārammaṇādhipati; nếu 84 thuộc tiểu mục kia thì 28/84 là hai câu cho hai tiểu mục, không phải hai đáp án loại trừ. — Cần 3 AI còn lại mở nguồn và trả lời theo đúng câu Round 3 dưới Mục IV.
+- Nguyên văn PC_03: xem phụ lục `verdict_sheet_elder_v2.md` (đã dán JSON).
 
 **Q6: Claude không tra được gì.**
 - Ba ứng viên: 習行緣 (hiện tại), 習緣, 重複緣. Mọi lời gán "Diệp Quân dùng X" hay "Tầm Pháp dùng Y" trong v1 là **không có căn cứ** và đã rút. Tên "Kosei Rathapāla" cũng không xác minh được.
@@ -71,6 +73,13 @@
 - Hai chữ rác "Chu央公論社" và "U Weconfiguration" trong v1 đã bỏ. Về hình thức chữ, chỉ nhớ rằng bản repo nên dùng shinjitai (圧/壊) cho nhất quán.
 - Sách của Mizuno Kōgen và U Wepulla: chưa ai kiểm số trang.
 
-## IV. Thu hồi
+## IV. Gửi Round 3 cho C / M / G / R (bản tóm tắt để PM dán)
 
-Bản `round2_consensus.md` v1 ngày 24/05/2024 và `verdict_sheet_elder.md` v1 được **thu hồi**. Bản v2 này thay thế, với mọi chỗ không có nguồn đều ghi KHÔNG XÁC MINH ĐƯỢC.
+> **Round 3, Q4/Q6/Q10.** Chỉ trả lời nếu **mở được nguồn**; trích số §/trang. Không có nguồn thì ghi `KHÔNG XÁC MINH ĐƯỢC`.
+> - **Q4:** Với *ārammaṇādhipati*, tập tâm sở duyên theo Saṅgaha (Paccayapariccheda) và CMA Table 8.4 là bao nhiêu và gồm những tâm nào? Số tâm sở đi kèm? Dòng PC_03 trong repo ứng với tiểu mục nào? (*Ghi chú: PC_03 có subdivisions sahajātādhipati / ārammaṇādhipati; 84 hiện ở paccayuppanna chung — chưa kết luận sai.*)
+> - **Q6:** Āsevana-paccaya trong bản dịch Trung văn Theravāda: có số trang cho 習行緣, 習緣 hoặc 重複緣 không?
+> - **Q10:** Bốn kamma theo chức năng (janaka, upatthambhaka, upapīḷaka, upaghātaka) trong sách Nhật Theravāda: số trang? Dùng shinjitai.
+
+## V. Thu hồi
+
+Bản `round2_consensus.md` v1 ngày 24/05/2024 và `verdict_sheet_elder.md` v1 được **thu hồi**. Bản v2 này thay thế, với mọi chỗ không có nguồn đều ghi KHÔNG XÁC MINH ĐƯỢC. Q2 đã sửa trường (85 ∈ paccayaDhamma); Q4 chuyển từ "84 sai" sang "nghi vấn, đang đối chiếu" cho tới khi có §/trang.
