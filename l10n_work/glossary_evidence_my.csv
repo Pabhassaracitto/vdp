@@ -1,0 +1,402 @@
+# glossary_evidence_my.csv — Myanmar (my) evidence ledger for l10n_work/glossary.csv
+# Baseline named by glossary.csv header line 7: "my: Myanmar let-than manual tradition (Abhidhammattha Sangaha)"
+# source_ref column is copied verbatim from glossary.csv `refs`; NO page-level edition citation exists — see IN4-50.
+# confidence: high = attested in shipped my catalog; medium = exercised in this cycle; low = unverified, needs reviewer sign-off
+pali,term,source_ref,confidence,note
+Adhimokkha,အဓိမောက္ခ,CS_ADHIMOKKHA M11_BIET_CANH/M11_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Adosa,အဒေါသ,CS_ADOSA M3_TINH_HAO_BIEN_HANH/M3_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ahirika,အဟိရိက,CS_AHIRIKA M2_SI_PHAN/M2_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Alobha,အလောဘ,CS_ALOBHA M3_TINH_HAO_BIEN_HANH/M3_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anottappa,အနောတ္တပ္ပ,CS_ANOTTAPPA M2_SI_PHAN/M2_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Cetanā,စေတနာ,CS_CETANA M1_BASICS/M1_S03 M6_NGHIEP/M6_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Chanda,ဆန္ဒ,CS_CHANDA M11_BIET_CANH/M11_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Citt'ujukatā,စိတ္တုဇ္ဇုကတာ,CS_CITTUJUKATA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Citta-kammaññatā,စိတ္တကမ္မညတာ,CS_CITTAKAMMANNATA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Citta-lahutā,စိတ္တလဟုတာ,CS_CITTALAHUTA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Citta-mudutā,စိတ္တမုဒုတာ,CS_CITTAMUDUTA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Citta-passaddhi,စိတ္တပဿဒ္ဓိ,CS_CITTAPASSADDHI,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Citta-pāguññatā,စိတ္တပါဂုညတာ,CS_CITTAPAGUNNATA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Diṭṭhi,ဒိဋ္ဌိ,CS_DITTHI M4_AKUSALA/M4_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Dosa,ဒေါသ,CS_DOSA M4_AKUSALA/M4_S03 M4_AKUSALA/M4_S07,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ekaggatā,ဧကဂ္ဂတာ,CS_EKAGGATA M1_BASICS/M1_S04 M13_SAC_GIOI/M13_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Hirī,ဟိရိ,CS_HIRI,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Issā,ဣဿာ,CS_ISSA M4_AKUSALA/M4_S07,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jīvitindriya,ဇီဝိတိန္ဒြေ,CS_JIVITINDRIYA M1_BASICS/M1_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Karuṇā,ကရုဏာ,CS_KARUNA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kukkucca,ကုက္ကုစ္စ,CS_KUKKUCCA M4_AKUSALA/M4_S07,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāy'ujukatā,ကာယုဇ္ဇုကတာ,CS_KAYUJUKATA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāya-kammaññatā,ကာယကမ္မညတာ,CS_KAYAKAMMANNATA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāya-lahutā,ကာယလဟုတာ,CS_KAYALAHUTA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāya-mudutā,ကာယမုဒုတာ,CS_KAYAMUDUTA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāya-passaddhi,ကာယပဿဒ္ဓိ,CS_KAYAPASSADDHI,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāya-pāguññatā,ကာယပါဂုညတာ,CS_KAYAPAGUNNATA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Lobha,လောဘ,CS_LOBHA M4_AKUSALA/M4_S02 M4_AKUSALA/M4_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Macchariya,မစ္ဆရိယ,CS_MACCHARIYA M4_AKUSALA/M4_S07,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Manasikāra,မနသိကာရ,CS_MANASIKARA M1_BASICS/M1_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Middha,မိဒ္ဓ,CS_MIDDHA M4_AKUSALA/M4_S08,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Moha,မောဟ,CS_MOHA M4_AKUSALA/M4_S04 M8_NHAN_DUYEN/M8_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Muditā,မုဒိတာ,CS_MUDITA M3_TINH_HAO_BIEN_HANH/M3_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Māna,မာန,CS_MANA M4_AKUSALA/M4_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ottappa,ဩတ္တပ္ပ,CS_OTTAPPA M3_TINH_HAO_BIEN_HANH/M3_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Paññā,ပညိန္ဒြေ,CS_PANNA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Phassa,ဖဿ,CS_PHASSA PD_06 M1_BASICS/M1_S02 M17_DUYEN_CHI_TIET/M17_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Pīti,ပီတိ,CS_PITI M11_BIET_CANH/M11_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Saddhā,သဒ္ဓါ,CS_SADDHA M3_TINH_HAO_BIEN_HANH/M3_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sammā-kammanta,သမ္မာကမ္မန္တ,CS_SAMMAKAMMANTA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sammā-vācā,သမ္မာဝါစာ,CS_SAMMAVACA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sammā-ājīva,သမ္မာအာဇီဝ,CS_SAMMAAJIVA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sati,သတိ,CS_SATI M3_TINH_HAO_BIEN_HANH/M3_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Saññā,သညာ,CS_SANNA M1_BASICS/M1_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Tatramajjhattatā,တတြမဇ္ဈတ္တတာ,CS_TATRAMAJJHATTATA M3_TINH_HAO_BIEN_HANH/M3_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Thīna,ထိန,CS_THINA M4_AKUSALA/M4_S08,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Uddhacca,ဥဒ္ဓစ္စ,CS_UDDHACCA M2_SI_PHAN/M2_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vedanā,ဝေဒနာ,CS_VEDANA PD_07 M1_BASICS/M1_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vicikicchā,ဝိစိကိစ္ဆာ,CS_VICIKICCHA M4_AKUSALA/M4_S04 M4_AKUSALA/M4_S08,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vicāra,ဝိစာရ,CS_VICARA M11_BIET_CANH/M11_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vitakka,ဝိတက်,CS_VITAKKA M11_BIET_CANH/M11_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vīriya,ဝီရိယ,CS_VIRIYA M11_BIET_CANH/M11_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Abhijjhā,အဘိဇ္ဈာ,M6_NGHIEP/M6_S07,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Abhiññā,အဘိညာဉ်,M13_SAC_GIOI/M13_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Addhā,ကာလသုံးပါး,M17_DUYEN_CHI_TIET/M17_S06,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Ahetuka,အဟိတ်,M12_VO_NHAN/M12_S01 M9_SAC_PHAP/M9_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ahetuka puggala,အဟိတ်ပုဂ္ဂိုလ်,M16_NGUOI_VA_COI/M16_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Ahosikamma,အဟောသိကံ,M6_NGHIEP/M6_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Akusala,အကုသိုလ်,M4_AKUSALA/M4_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Akusala cetasika,အကုသိုလ်စေတသိက်,M2_SI_PHAN/M2_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Akusala citta,အကုသိုလ်စိတ်,M4_AKUSALA/M4_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Akusala-vipāka ahetuka,အကုသလဝိပါက် အဟိတ်စိတ်,M12_VO_NHAN/M12_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Anipphannarūpa,အနိပ္ဖန္နရုပ်,M9_SAC_PHAP/M9_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Anāgāmi,အနာဂါမ်,M7_SIEU_THE/M7_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Anārammaṇa,အာရုံမရှိသော,M9_SAC_PHAP/M9_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Aparāpariyavedanīyakamma,အပရာပရိယဝေဒနီယကံ,M6_NGHIEP/M6_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Appamaññā,အပ္ပမညာ,M3_TINH_HAO_BIEN_HANH/M3_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Apuññābhisaṅkhāra,အပုညာဘိသင်္ခါရ,M8_NHAN_DUYEN/M8_S07,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Arahatta,အရဟတ္တ,M7_SIEU_THE/M7_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahattamagga,အရဟတ္တမဂ်,M16_NGUOI_VA_COI/M16_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arūpabhūmi,အရူပဘုံ ၄ ဘုံ,M16_NGUOI_VA_COI/M16_S08,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Arūpāvacara,အရူပါဝစရ,M14_VO_SAC_GIOI/M14_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arūpāvacara-kiriyā,အရူပါဝစရကြိယာ,M14_VO_SAC_GIOI/M14_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Arūpāvacarakusala,အရူပါဝစရကုသိုလ်ကံ,M6_NGHIEP/M6_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Asaṅkhārika,အသင်္ခါရိက,M4_AKUSALA/M4_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Asura,အသူရာ,M16_NGUOI_VA_COI/M16_S05,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Atimahanta-ārammaṇa,အတိမဟန္တာရုံ,M10_LO_TRINH/M10_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ayoniso manasikāra,အယောနိသောမနသိကာရ,M4_AKUSALA/M4_S04,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Aññasamāna,အညသမာန်း,M1_BASICS/M1_S01 M11_BIET_CANH/M11_S01 M15_TAM_SO_PHOI_HOP/M15_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Aṭṭha mahāniraya,မဟာငရဲ ၈ ထပ်,M16_NGUOI_VA_COI/M16_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Bhavaṅga,ဘဝင်စိတ်,M10_LO_TRINH/M10_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Bhūmi,ဘုံ,M16_NGUOI_VA_COI/M16_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Bījakamma,ကံမျိုးစေ့,M10_LO_TRINH/M10_S06,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Catusaṅkhepa,အကျဉ်းလေးပါး,M8_NHAN_DUYEN/M8_S04,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Cetasikasaṅgaha,စေတသိက်သင်္ဂဟ,M15_TAM_SO_PHOI_HOP/M15_S01,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Citta,စိတ်,M4_AKUSALA/M4_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Cittavīthi,စိတ်ဝီထိ,M10_LO_TRINH/M10_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Diṭṭhadhammavedanīyakamma,ဒိဋ္ဌဓမ္မဝေဒနီယကံ,M6_NGHIEP/M6_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Diṭṭhigatasampayutta,ဒိဋ္ဌိဂတသမ္ပယုတ်,M4_AKUSALA/M4_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Domanassa,ဒေါမနဿ,M4_AKUSALA/M4_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Dosamūla,ဒေါသမူစိတ်,M15_TAM_SO_PHOI_HOP/M15_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Dosatuka cetasika,ဒေါသစတုက္က စေတသိက်,M4_AKUSALA/M4_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Dve mūlāni,မူလနှစ်ပါး (အဝိဇ္ဇာနှင့် တဏှာ),M8_NHAN_DUYEN/M8_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Dvihetuka,ဒွိဟိတ်ပုဂ္ဂိုလ်,M6_NGHIEP/M6_S08,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Dvipañcaviññāṇa,ဒွိပဉ္စဝိညာဏ် ၁၀,M15_TAM_SO_PHOI_HOP/M15_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Dvāra,ဒွါရ,M10_LO_TRINH/M10_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Garukakamma,ဂရုကံ,M6_NGHIEP/M6_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Gocararūpa,ဂေါစရရုပ်,M9_SAC_PHAP/M9_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Hadayavatthu,ဟဒယဝတ္ထု,M9_SAC_PHAP/M9_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Hasanacitta,ဟသိတုပ္ပါဒ်စိတ်,M15_TAM_SO_PHOI_HOP/M15_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Hasituppāda,ဟသိတုပ္ပါဒ်,M12_VO_NHAN/M12_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Hiri,ဟိရီ,M3_TINH_HAO_BIEN_HANH/M3_S02,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Jambūdīpa,ဇမ္ဗူဒိပ်,M16_NGUOI_VA_COI/M16_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Janakakamma,ဇနကကံ,M6_NGHIEP/M6_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Javana,ဇော,M6_NGHIEP/M6_S05 M10_LO_TRINH/M10_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jhāna,ဈာန်,M13_SAC_GIOI/M13_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jāti (4),ယောနိ ၄ ပါး,M17_DUYEN_CHI_TIET/M17_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Kamma,ကံ,M6_NGHIEP/M6_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kammabhava,ကမ္မဘဝ,M17_DUYEN_CHI_TIET/M17_S04 M17_DUYEN_CHI_TIET/M17_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kammacatukka,ကံလေးပါးအုပ်စု,M6_NGHIEP/M6_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Kammaja-rūpa,ကမ္မဇရုပ်,M6_NGHIEP/M6_S08 M17_DUYEN_CHI_TIET/M17_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kammavaṭṭa,ကမ္မဝဋ်,M8_NHAN_DUYEN/M8_S05,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Kammaññatā,ကမ္မညတာ,M3_TINH_HAO_BIEN_HANH/M3_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Karunā,ကရုဏာ,M3_TINH_HAO_BIEN_HANH/M3_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kaṭattākamma,ကဋတ္တာကံ,M6_NGHIEP/M6_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kilesavaṭṭa,ကိလေသဝဋ်,M8_NHAN_DUYEN/M8_S05,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Kusala-vipāka ahetuka,ကုသလဝိပါက် အဟိတ်စိတ်,M12_VO_NHAN/M12_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Kāmāvacara,ကာမာဝစရ,M5_SOBHANA/M5_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāmāvacarakusala,ကာမာဝစရကုသိုလ်ကံ,M6_NGHIEP/M6_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Kāya – Citta,ကာယနှင့် စိတ္တ,M3_TINH_HAO_BIEN_HANH/M3_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Kāyakamma,ကာယကံ,M6_NGHIEP/M6_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Lahutā,လဟုတာ,M3_TINH_HAO_BIEN_HANH/M3_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Lakkhaṇarūpa,လက္ခဏရုပ်,M9_SAC_PHAP/M9_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Lobhamūla,လောဘမူစိတ်,M15_TAM_SO_PHOI_HOP/M15_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Lobhatuka cetasika,လောဘတိက စေတသိက်,M4_AKUSALA/M4_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Lokuttara,လောကုတ္တရာ,M7_SIEU_THE/M7_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Lokuttaracitta,လောကုတ္တရာစိတ်,M15_TAM_SO_PHOI_HOP/M15_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Magga citta,မဂ်စိတ်,M7_SIEU_THE/M7_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mahaggata,မဟဂ္ဂုတ်,M13_SAC_GIOI/M13_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Mahaggatacitta,မဟဂ္ဂုတ်စိတ်,M15_TAM_SO_PHOI_HOP/M15_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Mahābhūtāni,မဟာဘုတ် ၄ ပါး,M9_SAC_PHAP/M9_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mahākiriya citta,မဟာကြိယာစိတ်,M5_SOBHANA/M5_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mahākusala,မဟာကုသိုလ်,M15_TAM_SO_PHOI_HOP/M15_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mahākusala citta,မဟာကုသိုလ်စိတ်,M5_SOBHANA/M5_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mahāvipāka citta,မဟာဝိပါက်စိတ်,M5_SOBHANA/M5_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Manodvārāvajjana,မနောဒွါရာဝဇ္ဇန်း,M10_LO_TRINH/M10_S08,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Manokamma,မနောကံ,M6_NGHIEP/M6_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Manovedanā,မနောဝေဒနာ,M17_DUYEN_CHI_TIET/M17_S03,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Manussā,လူ့ဘုံ,M16_NGUOI_VA_COI/M16_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mocatuka,မောစတုက္က စေတသိက်,M2_SI_PHAN/M2_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mudutā,မုဒုတာ,M3_TINH_HAO_BIEN_HANH/M3_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Musāvāda,မုသာဝါဒ,M6_NGHIEP/M6_S07,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Mānāyatana,မနာယတန,M17_DUYEN_CHI_TIET/M17_S02,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Nevasaññā-nāsaññāyatana,နေဝသညာနာသညာယတန,M14_VO_SAC_GIOI/M14_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Nipphannarūpa,နိပ္ဖန္နရုပ်,M9_SAC_PHAP/M9_S06,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Nirodha-samāpatti,နိရောဓသမာပတ်,M13_SAC_GIOI/M13_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Nāma-khandha,နာမက္ခန္ဓာ ၄ ပါး,M15_TAM_SO_PHOI_HOP/M15_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Nānākālika hetu,နာနာက္ခဏိက ကမ္မပစ္စည်း,M12_VO_NHAN/M12_S01,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Ojā / Āhāra,ဩဇာ / အာဟာရ,M9_SAC_PHAP/M9_S07,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Paccaya,ပစ္စည်း,M8_NHAN_DUYEN/M8_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Pakiṇṇaka,ပကိဏ်း,M1_BASICS/M1_S01 M11_BIET_CANH/M11_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Paramatthasacca,ပရမတ္ထသစ္စာ,M15_TAM_SO_PHOI_HOP/M15_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Passaddhi,ပဿဒ္ဓိ,M3_TINH_HAO_BIEN_HANH/M3_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Pasādarūpa,ပသာဒရုပ်,M9_SAC_PHAP/M9_S05,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Pañcadvārāvajjana,ပဉ္စဒွါရာဝဇ္ဇန်း,M10_LO_TRINH/M10_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Paññindriya,ပညာိန္ဒြေ,M3_TINH_HAO_BIEN_HANH/M3_S03 M3_TINH_HAO_BIEN_HANH/M3_S07,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Paṭhavī-dhātu,ပထဝီဓာတ်,M9_SAC_PHAP/M9_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Paṭiccasamuppāda,ပဋိစ္စသမုပ္ပါဒ်,M8_NHAN_DUYEN/M8_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Paṭigha,ပဋိဃ,M4_AKUSALA/M4_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Paṭisandhi viññāṇa,ပဋိသန္ဓေဝိညာဏ်,M6_NGHIEP/M6_S03,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Paṭṭhāna,ပဋ္ဌာန်း,M8_NHAN_DUYEN/M8_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Phala citta,ဖိုလ်စိတ်,M7_SIEU_THE/M7_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Puggala,ပုဂ္ဂိုလ်,M16_NGUOI_VA_COI/M16_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Puggala-bheda,ပုဂ္ဂလဘေဒ,M16_NGUOI_VA_COI/M16_S01,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Puññābhisaṅkhāra,ပုညာဘိသင်္ခါရ,M8_NHAN_DUYEN/M8_S07,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Pāguññatā,ပါဂုညတာ,M3_TINH_HAO_BIEN_HANH/M3_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Pāṇātipāta,ပါဏာတိပါတ,M6_NGHIEP/M6_S07,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Rūpa,ရုပ်,M9_SAC_PHAP/M9_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpasamuṭṭhāna,ရူပသမုဋ္ဌာန်,M9_SAC_PHAP/M9_S07,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Rūpāvacara,ရူပါဝစရ,M13_SAC_GIOI/M13_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacarabhūmi,ရူပ ၁၆ ဘုံ,M16_NGUOI_VA_COI/M16_S08,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacarakusala,ရူပါဝစရကုသိုလ်ကံ,M6_NGHIEP/M6_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sabbacittasādhāraṇa,သဗ္ဗစိတ္တသာဓာရဏ,M1_BASICS/M1_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sabbākusalasādhāraṇā,သဗ္ဗာကုသလသာဓာရဏ,M15_TAM_SO_PHOI_HOP/M15_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sakadāgāmi,သကဒါဂါမ်,M7_SIEU_THE/M7_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sakkāyadiṭṭhi,သက္ကာယဒိဋ္ဌိ,M4_AKUSALA/M4_S06 M7_SIEU_THE/M7_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sammā-ājīvo,သမ္မာအာဇီဝ,M3_TINH_HAO_BIEN_HANH/M3_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sammādiṭṭhi,သမ္မာဒိဋ္ဌိ,M6_NGHIEP/M6_S07,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Sammākammanto,သမ္မာကမ္မန္တ,M3_TINH_HAO_BIEN_HANH/M3_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sammāpadhāna,သမ္မပ္ပဓာန် ၄ ပါး,M11_BIET_CANH/M11_S04,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sammāsaddhā,သမ္မာသဒ္ဓါ,M3_TINH_HAO_BIEN_HANH/M3_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sammāvācā,သမ္မာဝါစာ,M3_TINH_HAO_BIEN_HANH/M3_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sampaṭicchana,သမ္ပဋိစ္ဆိုင်းစိတ်,M10_LO_TRINH/M10_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Santīraṇa,သန္တီရဏစိတ်,M10_LO_TRINH/M10_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sasaṅkhārika,သသင်္ခါရိက,M4_AKUSALA/M4_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sobhana,သောဘဏ,M3_TINH_HAO_BIEN_HANH/M3_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+"Soka, Parideva, Dukkha, Domanassa, Upāyāsa",စိုးရိမ်ခြင်း၊ ငိုကြွေးခြင်း၊ ဆင်းရဲခြင်း၊ နှလုံးမသာခြင်း၊ ပြင်းစွာပူပန်ခြင်း,M17_DUYEN_CHI_TIET/M17_S05,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Sotāpatti,သောတာပတ္တိ,M7_SIEU_THE/M7_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpattimagga,သောတာပတ္တိမဂ်,M16_NGUOI_VA_COI/M16_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Suddhāvāsā,သုဒ္ဓါဝါသ ၅ ဘုံ,M16_NGUOI_VA_COI/M16_S04,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sugati ahetuka puggala,သုဂတိ အဟိတ်ပုဂ္ဂိုလ်,M16_NGUOI_VA_COI/M16_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Suttamayā – Cintāmayā – Bhāvanāmayā,သုတမယ၊ စိန္တာမယ၊ ဘာဝနာမယ ဉာဏ် ၃ ပါး,M3_TINH_HAO_BIEN_HANH/M3_S07,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Sīlabbataparāmāsa,သီလဗ္ဗတပရာမာသ,M7_SIEU_THE/M7_S03,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Tadālambana,တဒါရုံ,M10_LO_TRINH/M10_S03 M10_LO_TRINH/M10_S07,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Tayo addhā,ကာလသုံးပါး,M8_NHAN_DUYEN/M8_S03,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Thīna + Middha,ထိနနှင့် မိဒ္ဓ,M4_AKUSALA/M4_S08,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Tihetuka,တိဟိတ်ပုဂ္ဂိုလ်,M6_NGHIEP/M6_S08,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Tisandhi,စပ်ကြား ၃ ပါး,M8_NHAN_DUYEN/M8_S04,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Ujukatā,ဥဇုကတာ,M3_TINH_HAO_BIEN_HANH/M3_S06,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Upaghātakakamma,ဥပဃာတကကံ,M6_NGHIEP/M6_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upapajjavedanīyakamma,ဥပပဇ္ဇဝေဒနီယကံ,M6_NGHIEP/M6_S05,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upapattibhava,ဥပပတ္တိဘဝ,M17_DUYEN_CHI_TIET/M17_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upapīḷakakamma,ဥပပီဠကကံ,M6_NGHIEP/M6_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upatthambhakakamma,ဥပတ္ထမ္ဘကကံ,M6_NGHIEP/M6_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Uppattideva,ဥပပတ္တိဒေဝ,M16_NGUOI_VA_COI/M16_S07,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Upādāna (4),ဥပါဒါန် ၄ ပါး,M17_DUYEN_CHI_TIET/M17_S04,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Upādāyarūpāni,ဥပါဒါရုပ် ၂၄ ပါး,M9_SAC_PHAP/M9_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Utu,ဥတု,M9_SAC_PHAP/M9_S07,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Vacīkamma,ဝစီကံ,M6_NGHIEP/M6_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Vatthu,ဝတ္ထု,M10_LO_TRINH/M10_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vedanāpaccayā taṇhā,ဝေဒနာပစ္စယာ တဏှာ,M17_DUYEN_CHI_TIET/M17_S03,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Vibhūta-ārammaṇa,ဝိဘူတာရုံ,M10_LO_TRINH/M10_S02,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Vijjā,ဝိဇ္ဇာ,M8_NHAN_DUYEN/M8_S06,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vipākavaṭṭa,ဝိပါကဝဋ်,M8_NHAN_DUYEN/M8_S05,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Viratiyo,ဝိရတီ ၃ ပါး,M3_TINH_HAO_BIEN_HANH/M3_S01,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Visākāra,အခြင်းအရာ ၂၀,M17_DUYEN_CHI_TIET/M17_S06,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Viññattirūpa,ဝိညတ်ရုပ်,M9_SAC_PHAP/M9_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Viññāṇapaccayā nāmarūpaṁ,ဝိညာဏပစ္စယာ နာမရူပံ,M17_DUYEN_CHI_TIET/M17_S01,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Viññāṇañcāyatana,ဝိညာဏဉ္စာယတန,M14_VO_SAC_GIOI/M14_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Voṭṭhapana,ဝုဋ္ဌော,M10_LO_TRINH/M10_S03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vô tham – Vô sân – Vô si,အလောဘ၊ အဒေါသ၊ အမောဟ (ကုသိုလ်မူလ ၃ ပါး),M3_TINH_HAO_BIEN_HANH/M3_S05,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Vīsatākārā,အခြင်းအရာ ၂၀,M8_NHAN_DUYEN/M8_S04,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Vīthimutta,ဝီထိမုတ်,M10_LO_TRINH/M10_S09,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ñāṇasampayutta,ဉာဏသမ္ပယုတ်,M5_SOBHANA/M5_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ñāṇavippayutta,ဉာဏဝိပ္ပယုတ်,M5_SOBHANA/M5_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Āciṇṇakamma,အာစိဏ္ဏကံ,M6_NGHIEP/M6_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākiñcaññāyatana,အာကိဉ္စညာယတန,M14_VO_SAC_GIOI/M14_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākāsānañcāyatana,အာကာသာနဉ္စာယတန,M14_VO_SAC_GIOI/M14_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ānantariyakamma,အာနန္တရိယကံ ၅ ပါး,M6_NGHIEP/M6_S04,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Āneñjābhisaṅkhāra,အာနေဉ္ဇာဘိသင်္ခါရ,M8_NHAN_DUYEN/M8_S07,medium,glossary rendering exercised in this cycle's my tables/modules; not yet in a shipped catalog
+Āsannakamma,အာသန္နကံ,M6_NGHIEP/M6_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Āvajjana,အာဝဇ္ဇန်း,M12_VO_NHAN/M12_S04,low,glossary rendering only; no page-level Myanmar-edition attestation available in this sandbox
+Āyatana,အာယတန,M14_VO_SAC_GIOI/M14_S01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+—,စေတသိက် ၅၂ ပါး,M15_TAM_SO_PHOI_HOP/M15_S02 M16_NGUOI_VA_COI/M16_S07,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Aniccatā,ရူပအနိစ္စတာ,RP_028,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Cakkhu-pasāda,စက္ခုပသာဒ,RP_005,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Gandha (Gocara),ဂန္ဓာရုံ,RP_012,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ghāna-pasāda,ဃာနပသာဒ,RP_007,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Hadaya-vatthu,ဟဒယဝတ္ထု,RP_016,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Itthi-bhāva,ဣတ္ထိန္ဒြေ,RP_014,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jaratā,ရူပဇရတာ,RP_027,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jivhā-pasāda,ဇိဝှါပသာဒ,RP_008,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jīvitindriya (Rūpa),ရူပဇီဝိတိန္ဒြေ,RP_017,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāya-pasāda,ကာယပသာဒ,RP_009,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāya-viññatti,ကာယဝိညတ်,RP_020,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ojā,ကဗဠီကာရာဟာရ,RP_018,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Pathavī-dhātu,ပထဝီဓာတ်,RP_001,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Purisa-bhāva,ပုရိသိန္ဒြေ,RP_015,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rasa (Gocara),ရသာရုံ,RP_013,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpa (Gocara),ရူပါရုံ,RP_010,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpassa kammaññatā,ရူပကမ္မညတာ,RP_024,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpassa lahutā,ရူပလဟုတာ,RP_022,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpassa mudutā,ရူပမုဒုတာ,RP_023,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sadda (Gocara),သဒ္ဒါရုံ,RP_011,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Santati,ရူပသန္တတိ,RP_026,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sota-pasāda,သောတပသာဒ,RP_006,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Tejo-dhātu,တေဇောဓာတ်,RP_003 M9_SAC_PHAP/M9_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upacaya,ရူပုပစယ,RP_025,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vacī-viññatti,ဝစီဝိညတ်,RP_021,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vāyo-dhātu,ဝါယောဓာတ်,RP_004 M9_SAC_PHAP/M9_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākāsa-dhātu,အာကာသဓာတ်,RP_019,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Āpo-dhātu,အာပေါဓာတ်,RP_002 M9_SAC_PHAP/M9_S04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Avijjā,အဝိဇ္ဇာ,PD_01 M8_NHAN_DUYEN/M8_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Bhava,ဘဝ,PD_10,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jarāmaraṇa,ဇရာ-မရဏ,PD_12 M8_NHAN_DUYEN/M8_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Jāti,ဇာတိ,PD_11,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Nāmarūpa,နာမ်ရုပ်,PD_04 M8_NHAN_DUYEN/M8_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Saḷāyatana,သဠာယတန,PD_05 M8_NHAN_DUYEN/M8_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Saṅkhārā,သင်္ခါရ,PD_02 M8_NHAN_DUYEN/M8_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Taṇhā,တဏှာ,PD_08,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upādāna,ဥပါဒါန်,PD_09,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Viññāṇa,ဝိညာဏ်,PD_03 M8_NHAN_DUYEN/M8_S02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ahosi-kamma,အဟောသိကံ,KM_T_04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Akusala-kamma,ကာမာဝစရ အကုသိုလ်ကံ,KM_R_01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Aparāpariyavedanīya-kamma,အပရာပရိယဝေဒနီယကံ,KM_T_03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Diṭṭhadhammavedanīya-kamma,ဒိဋ္ဌဓမ္မဝေဒနီယကံ,KM_T_01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Garuka-kamma,ဇနကကံ,KM_U_01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Janaka-kamma,ဂရုကကံ,KM_P_01,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kaṭattā-kamma,ဥပဃာတကကံ,KM_U_04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Kāmāvacara-kusala-kamma,ကာမာဝစရ ကုသိုလ်ကံ,KM_R_02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Lokuttara-kamma / Magga-kamma,အရူပါဝစရ ကုသိုလ်ကံ,KM_R_04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kusala-kamma,ရူပါဝစရ ကုသိုလ်ကံ,KM_R_03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upaghātaka-kamma,ကဋတ္တာကံ,KM_P_04,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upapajjavedanīya-kamma,ဥပပဇ္ဇဝေဒနီယကံ,KM_T_02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upapīḷaka-kamma,အာစိဏ္ဏကံ,KM_P_03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upatthambhaka-kamma,အာသန္နကံ,KM_P_02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Āciṇṇa-kamma,ဥပပီဠကကံ,KM_U_03,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Āsanna-kamma,ဥပတ္ထမ္ဘကကံ,KM_U_02,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Atimahanta-ārammaṇa Pañcadvāra-vīthi,အတိမဟန္တာရုံ ပဉ္စဒွါရဝီထိ,VT_NGU_MON_RATLON,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Mahanta-ārammaṇa Pañcadvāra-vīthi,မဟန္တာရမ္မဏ ပဉ္စဒွါရဝီထိ,VT_NGU_MON_LON,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Manodvāra-vīthi,မနောဒွါရဝီထိ,VT_Y_MON M10_LO_TRINH/M10_S08,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Vīthimutta-citta,ဝီထိမုတ်စိတ်,VT_VITHIMUTTA,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-magga-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် အနာဂါမိမဂ်စိတ်,CI_119,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-magga-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် အနာဂါမိမဂ်စိတ်,CI_117,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-magga-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် အနာဂါမိမဂ်စိတ်,CI_120,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-magga-paṭhama-jhāna-cittaṃ,ပထမဈာန် အနာဂါမိမဂ်စိတ်,CI_116,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-magga-tatiya-jhāna-cittaṃ,တတိယဈာန် အနာဂါမိမဂ်စိတ်,CI_118,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-phala-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် အနာဂါမိဖိုလ်စိတ်,CI_139,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-phala-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် အနာဂါမိဖိုလ်စိတ်,CI_137,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-phala-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် အနာဂါမိဖိုလ်စိတ်,CI_140,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-phala-paṭhama-jhāna-cittaṃ,ပထမဈာန် အနာဂါမိဖိုလ်စိတ်,CI_136,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Anāgāmi-phala-tatiya-jhāna-cittaṃ,တတိယဈာန် အနာဂါမိဖိုလ်စိတ်,CI_138,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-magga-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် အရဟတ္တမဂ်စိတ်,CI_124,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-magga-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် အရဟတ္တမဂ်စိတ်,CI_122,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-magga-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် အရဟတ္တမဂ်စိတ်,CI_125,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-magga-paṭhama-jhāna-cittaṃ,ပထမဈာန် အရဟတ္တမဂ်စိတ်,CI_121,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-magga-tatiya-jhāna-cittaṃ,တတိယဈာန် အရဟတ္တမဂ်စိတ်,CI_123,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-phala-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် အရဟတ္တဖိုလ်စိတ်,CI_144,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-phala-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် အရဟတ္တဖိုလ်စိတ်,CI_142,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-phala-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် အရဟတ္တဖိုလ်စိတ်,CI_145,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-phala-paṭhama-jhāna-cittaṃ,ပထမဈာန် အရဟတ္တဖိုလ်စိတ်,CI_141,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Arahatta-phala-tatiya-jhāna-cittaṃ,တတိယဈာန် အရဟတ္တဖိုလ်စိတ်,CI_143,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ,ဒေါမနဿသဟဂုတ် ပဋိဃသမ္ပယုတ် အသင်္ခါရိက ဒေါသမူစိတ်,CI_009,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ,ဒေါမနဿသဟဂုတ် ပဋိဃသမ္ပယုတ် သသင်္ခါရိက ဒေါသမူစိတ်,CI_010,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Dukkha-sahagataṃ akusalavipākaṃ kāya-viññāṇaṃ,ဒုက္ခသဟဂုတ် ကာယဝိညာဏ် (အကုသလဝိပါက်),CI_017,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Nevasaññā-nāsaññāyatana-kiriyaa-cittaṃ,အရူပါဝစရ နေဝသညာနာသညာယတန ကြိယာစိတ်,CI_105,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Nevasaññā-nāsaññāyatana-kusalaa-cittaṃ,အရူပါဝစရ နေဝသညာနာသညာယတန ကုသိုလ်စိတ်,CI_097,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Nevasaññā-nāsaññāyatana-vipakaa-cittaṃ,အရူပါဝစရ နေဝသညာနာသညာယတန ဝိပါက်စိတ်,CI_101,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kiriyaa-catuttha-jhāna-cittaṃ,ရူပါဝစရ စတုတ္ထဈာန် ကြိယာစိတ်,CI_092,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kiriyaa-dutiya-jhāna-cittaṃ,ရူပါဝစရ ဒုတိယဈာန် ကြိယာစိတ်,CI_090,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kiriyaa-pañcama-jhāna-cittaṃ,ရူပါဝစရ ပဉ္စမဈာန် ကြိယာစိတ်,CI_093,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kiriyaa-paṭhama-jhāna-cittaṃ,ရူပါဝစရ ပထမဈာန် ကြိယာစိတ်,CI_089,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kiriyaa-tatiya-jhāna-cittaṃ,ရူပါဝစရ တတိယဈာန် ကြိယာစိတ်,CI_091,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kusalaa-catuttha-jhāna-cittaṃ,ရူပါဝစရ စတုတ္ထဈာန် ကုသိုလ်စိတ်,CI_082,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kusalaa-dutiya-jhāna-cittaṃ,ရူပါဝစရ ဒုတိယဈာန် ကုသိုလ်စိတ်,CI_080,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kusalaa-pañcama-jhāna-cittaṃ,ရူပါဝစရ ပဉ္စမဈာန် ကုသိုလ်စိတ်,CI_083,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kusalaa-paṭhama-jhāna-cittaṃ,ရူပါဝစရ ပထမဈာန် ကုသိုလ်စိတ်,CI_079,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-kusalaa-tatiya-jhāna-cittaṃ,ရူပါဝစရ တတိယဈာန် ကုသိုလ်စိတ်,CI_081,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-vipakaa-catuttha-jhāna-cittaṃ,ရူပါဝစရ စတုတ္ထဈာန် ဝိပါက်စိတ်,CI_087,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-vipakaa-dutiya-jhāna-cittaṃ,ရူပါဝစရ ဒုတိယဈာန် ဝိပါက်စိတ်,CI_085,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-vipakaa-pañcama-jhāna-cittaṃ,ရူပါဝစရ ပဉ္စမဈာန် ဝိပါက်စိတ်,CI_088,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-vipakaa-paṭhama-jhāna-cittaṃ,ရူပါဝစရ ပထမဈာန် ဝိပါက်စိတ်,CI_084,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Rūpāvacara-vipakaa-tatiya-jhāna-cittaṃ,ရူပါဝစရ တတိယဈာန် ဝိပါက်စိတ်,CI_086,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-magga-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် သကဒါဂါမိမဂ်စိတ်,CI_114,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-magga-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် သကဒါဂါမိမဂ်စိတ်,CI_112,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-magga-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် သကဒါဂါမိမဂ်စိတ်,CI_115,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ,ပထမဈာန် သကဒါဂါမိမဂ်စိတ်,CI_111,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-magga-tatiya-jhāna-cittaṃ,တတိယဈာန် သကဒါဂါမိမဂ်စိတ်,CI_113,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-phala-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် သကဒါဂါမိဖိုလ်စိတ်,CI_134,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-phala-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် သကဒါဂါမိဖိုလ်စိတ်,CI_132,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-phala-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် သကဒါဂါမိဖိုလ်စိတ်,CI_135,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-phala-paṭhama-jhāna-cittaṃ,ပထမဈာန် သကဒါဂါမိဖိုလ်စိတ်,CI_131,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sakadāgāmi-phala-tatiya-jhāna-cittaṃ,တတိယဈာန် သကဒါဂါမိဖိုလ်စိတ်,CI_133,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ,သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်,CI_001,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ,သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်,CI_002,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ,သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်,CI_003,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ,သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်,CI_004,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ hasituppāda-cittaṃ,သောမနဿသဟဂုတ် ဟသိတုပ္ပါဒ်စိတ်,CI_030,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,ဥပေက္ခာသဟဂုတ် သန္တီရဏစိတ် (ကုသလဝိပါက်),CI_027,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ,သောမနဿသဟဂုတ် ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_055 CI_063 CI_071,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ,သောမနဿသဟဂုတ် ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_056 CI_064 CI_072,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ,သောမနဿသဟဂုတ် ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_057 CI_065 CI_073,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ,သောမနဿသဟဂုတ် ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_058 CI_066 CI_074,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-magga-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် သောတာပတ္တိမဂ်စိတ်,CI_109,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-magga-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် သောတာပတ္တိမဂ်စိတ်,CI_107,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-magga-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် သောတာပတ္တိမဂ်စိတ်,CI_110,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-magga-paṭhama-jhāna-cittaṃ,ပထမဈာန် သောတာပတ္တိမဂ်စိတ်,CI_106,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-magga-tatiya-jhāna-cittaṃ,တတိယဈာန် သောတာပတ္တိမဂ်စိတ်,CI_108,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-phala-catuttha-jhāna-cittaṃ,စတုတ္ထဈာန် သောတာပတ္တိဖိုလ်စိတ်,CI_129,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-phala-dutiya-jhāna-cittaṃ,ဒုတိယဈာန် သောတာပတ္တိဖိုလ်စိတ်,CI_127,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-phala-pañcama-jhāna-cittaṃ,ပဉ္စမဈာန် သောတာပတ္တိဖိုလ်စိတ်,CI_130,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-phala-paṭhama-jhāna-cittaṃ,ပထမဈာန် သောတာပတ္တိဖိုလ်စိတ်,CI_126,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sotāpatti-phala-tatiya-jhāna-cittaṃ,တတိယဈာန် သောတာပတ္တိဖိုလ်စိတ်,CI_128,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Sukha-sahagataṃ kusalavipākaṃ kāya-viññāṇaṃ,သုခသဟဂုတ် ကာယဝိညာဏ် (ကုသလဝိပါက်),CI_024,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ akusalavipākaṃ cakkhu-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် စက္ခုဝိညာဏ် (အကုသလဝိပါက်),CI_013,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ akusalavipākaṃ ghāna-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် ဃာနဝိညာဏ် (အကုသလဝိပါက်),CI_015,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ akusalavipākaṃ jivhā-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် ဇိဝှါဝိညာဏ် (အကုသလဝိပါက်),CI_016,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ akusalavipākaṃ sampaṭicchana-cittaṃ,ဥပေက္ခာသဟဂုတ် သမ္ပဋိစ္ဆိုင်းစိတ် (အကုသလဝိပါက်),CI_018,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ akusalavipākaṃ santīraṇa-cittaṃ,ဥပေက္ခာသဟဂုတ် သန္တီရဏစိတ် (အကုသလဝိပါက်),CI_019,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ akusalavipākaṃ sota-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် သောတဝိညာဏ် (အကုသလဝိပါက်),CI_014,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်,CI_005,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်,CI_006,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် အသင်္ခါရိက လောဘမူစိတ်,CI_007,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဒိဋ္ဌိဂတဝိပ္ပယုတ် သသင်္ခါရိက လောဘမူစိတ်,CI_008,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ kusalavipākaṃ cakkhu-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် စက္ခုဝိညာဏ် (ကုသလဝိပါက်),CI_020,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ kusalavipākaṃ ghāna-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် ဃာနဝိညာဏ် (ကုသလဝိပါက်),CI_022,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ kusalavipākaṃ jivhā-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် ဇိဝှါဝိညာဏ် (ကုသလဝိပါက်),CI_023,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ kusalavipākaṃ sampaṭicchana-cittaṃ,ဥပေက္ခာသဟဂုတ် သမ္ပဋိစ္ဆိုင်းစိတ် (ကုသလဝိပါက်),CI_025,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,သောမနဿသဟဂုတ် သန္တီရဏစိတ် (ကုသလဝိပါက်),CI_026,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ kusalavipākaṃ sota-viññāṇaṃ,ဥပေက္ခာသဟဂုတ် သောတဝိညာဏ် (ကုသလဝိပါက်),CI_021,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ,ဥပေက္ခာသဟဂုတ် မနောဒွါရာဝဇ္ဇန်းစိတ်,CI_029,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ,ဥပေက္ခာသဟဂုတ် ပဉ္စဒွါရာဝဇ္ဇန်းစိတ်,CI_028,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ Uddhaccasampayuttaṃ,ဥပေက္ခာသဟဂုတ် ဥဒ္ဓစ္စသမ္ပယုတ် မောဟမူစိတ်,CI_012,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ,ဥပေက္ခာသဟဂုတ် ဝိစိကိစ္ဆာသမ္ပယုတ် မောဟမူစိတ်,CI_011,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ ñāṇasampayuttaṃ asaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_059 CI_067 CI_075,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_060 CI_068 CI_076,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ ñāṇavippayuttaṃ asaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_061 CI_069 CI_077,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ,ဥပေက္ခာသဟဂုတ် ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်,CI_062 CI_070 CI_078,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Viññāṇañcāyatana-kiriyaa-cittaṃ,အရူပါဝစရ ဝိညာဏဉ္စာယတန ကြိယာစိတ်,CI_103,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Viññāṇañcāyatana-kusalaa-cittaṃ,အရူပါဝစရ ဝိညာဏဉ္စာယတန ကုသိုလ်စိတ်,CI_095,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Viññāṇañcāyatana-vipakaa-cittaṃ,အရူပါဝစရ ဝိညာဏဉ္စာယတန ဝိပါက်စိတ်,CI_099,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākiñcaññāyatana-kiriyaa-cittaṃ,အရူပါဝစရ အာကိဉ္စညာယတန ကြိယာစိတ်,CI_104,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākiñcaññāyatana-kusalaa-cittaṃ,အရူပါဝစရ အာကိဉ္စညာယတန ကုသိုလ်စိတ်,CI_096,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākiñcaññāyatana-vipakaa-cittaṃ,အရူပါဝစရ အာကိဉ္စညာယတန ဝိပါက်စိတ်,CI_100,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākāsānañcāyatana-kiriyaa-cittaṃ,အရူပါဝစရ အာကာသာနဉ္စာယတန ကြိယာစိတ်,CI_102,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākāsānañcāyatana-kusalaa-cittaṃ,အရူပါဝစရ အာကာသာနဉ္စာယတန ကုသိုလ်စိတ်,CI_094,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
+Ākāsānañcāyatana-vipakaa-cittaṃ,အရူပါဝစရ အာကာသာနဉ္စာယတန ဝိပါက်စိတ်,CI_098,high,attested verbatim in shipped assets/content/content_my.json (HEAD)
