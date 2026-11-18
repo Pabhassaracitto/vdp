@@ -1,0 +1,1345 @@
+diff --git a/l10n_work/glossary_evidence_th.csv b/l10n_work/glossary_evidence_th.csv
+new file mode 100644
+index 0000000..2f9e4d2
+--- /dev/null
++++ b/l10n_work/glossary_evidence_th.csv
+@@ -0,0 +1,84 @@
++pali,term,source_ref,confidence,note
++lakkhaṇa,ลักษณะ,"S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๒ หน้า ๓ (ลักขณาทิจตุกะ); S7 dhammahome.com teaching threads (tradition of อาจารย์สุจินต์ บริหารวนเขตต์) webboard/topic/26149, audio/topic/6745",high,English field 'characteristic'. Quote: เจตสิกมี ลักษณะ ( คือคุณภาพหรือเครื่องแสดง ). Drafting register: …เป็นลักษณะ
++rasa,รสะ (กิจ),"S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๒ หน้า ๓; S7 dhammahome.com teaching threads (tradition of อาจารย์สุจินต์ บริหารวนเขตต์) webboard/topic/26149",high,English field 'function'. Quote: รสะ ( กิจการงาน หรือหน้าที่ ). Per-entity formulas read …เป็นกิจ
++paccupaṭṭhāna,ปัจจุปัฏฐาน,"S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๒ หน้า ๓; S7 dhammahome.com teaching threads (tradition of อาจารย์สุจินต์ บริหารวนเขตต์) webboard/topic/26149",high,English field 'manifestation'. Quote: ปัจจุปัฏฐาน ( อาการปรากฏ หรือ ผล )
++padaṭṭhāna,ปทัฏฐาน,"S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๒ หน้า ๓; S7 dhammahome.com teaching threads (tradition of อาจารย์สุจินต์ บริหารวนเขตต์) webboard/topic/26149",high,English field 'proximateCause'. Quote: ปทัฏฐาน ( เหตุใกล้ให้เกิด )
++visesalakkhaṇa (catukka),ลักขณาทิจตุกะ,"S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๒ หน้า ๓; S7 dhammahome.com teaching threads (tradition of อาจารย์สุจินต์ บริหารวนเขตต์) audio/topic/6745",high,Umbrella term for the four aspects; used in doctrinalNote text
++avijjā,อวิชชา,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ entry ปฏิจจสมุปบาท (อวิชฺชาปจฺจยา สงฺขารา); S4 ปฏิจจสมุปบาท series (ปริจเฉทที่ ๘), prachaniyom.blogspot.com blog-post_62",high,glossary.csv line 273 (Avijjā); paṭiccas PD_01; name kept as in the existing Thai catalog and glossary
++saṅkhārā,สังขาร,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; S4 ปฏิจจสมุปบาท series (ปริจเฉทที่ ๘), prachaniyom.blogspot.com blog-post_62 (อภิสงฺขรณลกฺขณา)",high,glossary.csv line 279 (Saṅkhārā); paṭiccas PD_02; name kept as in the existing Thai catalog and glossary
++viññāṇa,วิญญาณ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 282 (Viññāṇa); paṭiccas PD_03; name kept as in the existing Thai catalog and glossary
++nāmarūpa,นามรูป,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 277 (Nāmarūpa); paṭiccas PD_04; name kept as in the existing Thai catalog and glossary
++saḷāyatana,สฬายตนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 278 (Saḷāyatana); paṭiccas PD_05; name kept as in the existing Thai catalog and glossary
++phassa,ผัสสะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ (ผสฺสปจฺจยา เวทนา); glossary.csv th column (baseline) — not independently verified for this row (CS_PHASSA)",high,glossary.csv line 47 (Phassa); paṭiccas PD_06; name kept as in the existing Thai catalog and glossary
++vedanā,เวทนา,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 58 (Vedanā); paṭiccas PD_07; name kept as in the existing Thai catalog and glossary
++taṇhā,ตัณหา,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 280 (Taṇhā); paṭiccas PD_08; name kept as in the existing Thai catalog and glossary
++upādāna,อุปาทาน,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row (อุปาทาน 4)",high,glossary.csv line 216 (Upādāna (4)); paṭiccas PD_09; name kept as in the existing Thai catalog and glossary
++bhava,ภพ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 274 (Bhava); paṭiccas PD_10; name kept as in the existing Thai catalog and glossary
++jāti,ชาติ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 117 (Jāti (4)); paṭiccas PD_11; name kept as in the existing Thai catalog and glossary
++jarāmaraṇa,ชรามรณะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; S4 ปฏิจจสมุปบาท series (ปริจเฉทที่ ๘), prachaniyom.blogspot.com blog-post_968",high,glossary.csv line 275 (Jarāmaraṇa); paṭiccas PD_12; name kept as in the existing Thai catalog and glossary
++jarāmaraṇa (per-item formulas),ชรามรณะ + โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส,"S4 ปฏิจจสมุปบาท series (ปริจเฉทที่ ๘), prachaniyom.blogspot.com blog-post_968 (excerpt only: ชรา มรณะ และโสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส ทั้ง ๗ นี้ปรากฏเกิดขึ้น เพราะอาศัยชาติเป็นเหตุ)",medium,glossary.csv line 275 (Jarāmaraṇa); PD_12 four-aspect formulas: only the โสกะ/อุปายาส excerpts were retrieved; re-verify before quoting further (ledger row PD_12)
++ayoniso-manasikāra,อโยนิโสมนสิการ,"glossary.csv th column (baseline) — not independently verified for this row; S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๑ (อโยนิโสมนสิการ ปทฏฺฐานํ)",high,glossary.csv line 88 (Ayoniso manasikāra); used in PD_01 doctrinalNote
++anamatagga,อนมตัคคะ,Thai Pāḷi usage (อนมตัคฺค); no printed Thai page retrieved,medium,U-7 — transliteration of the English gloss only; confirm before keeping
++puññābhisaṅkhāra / apuññābhisaṅkhāra / āneñjābhisaṅkhāra,ปุญญาภิสังขาร / อปุญญาภิสังขาร / อาเนญชาภิสังขาร,"glossary.csv th column (baseline) — not independently verified for this row (all three entries); S4 ปฏิจจสมุปบาท series (ปริจเฉทที่ ๘), prachaniyom.blogspot.com blog-post_62",high,glossary.csv line 175 (Puññābhisaṅkhāra); PD_02 subdivisions/examples
++paṭisandhi-viññāṇa,ปฏิสนธิวิญญาณ,glossary.csv th column (baseline) — not independently verified for this row,high,glossary.csv line 170 (Paṭisandhi viññāṇa); PD_03 note
++kammabhava / upapattibhava,กรรมภพ / อุปปัตติภพ,glossary.csv th column (baseline) — not independently verified for this row,high,glossary.csv line 119 (Kammabhava); PD_10 subdivision pair
++"soka, parideva, dukkha, domanassa, upāyāsa",โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส,"S4 ปฏิจจสมุปบาท series (ปริจเฉทที่ ๘), prachaniyom.blogspot.com blog-post_968; S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ (Thai formula)",high,"glossary.csv line 197 (Soka, Parideva, Dukkha, Domanassa, Upāyāsa); U-4 — glossary.csv th cell is Sanskritised (โศกะ … โทมนัสสะ อุปายาสะ); proposed correction sent to IN4-49"
++sahajāta-kamma / nānākkhaṇika-kamma,rendered descriptively (กรรม … วิบาก …),"S3 ปัฏฐาน (ปัจจัย ๒๔) lecture series, dhammahome.com มาติกานิกเขปวาระ (กัมมปัจจัย wording)",medium,PC_13 subdivisions; no fixed Thai compound retrieved
++hetu-paccaya,เหตุปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_01; name/shortName (เหตุ) already present in the Thai catalog — kept unchanged
++ārammaṇa-paccaya,อารัมมณปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_02; name/shortName (อารมณ์) already present in the Thai catalog — kept unchanged
++adhipati-paccaya,อธิปติปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_03; name/shortName (อธิปติ) already present in the Thai catalog — kept unchanged
++anantara-paccaya,อนันตรปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_04; name/shortName (อนันตระ) already present in the Thai catalog — kept unchanged
++samanantara-paccaya,สมนันตรปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_05; name/shortName (สมนันตระ) already present in the Thai catalog — kept unchanged
++sahajāta-paccaya,สหชาตปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_06; name/shortName (สหชาตะ) already present in the Thai catalog — kept unchanged
++aññamañña-paccaya,อัญญมัญญปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_07; name/shortName (อัญญมัญญะ) already present in the Thai catalog — kept unchanged
++nissaya-paccaya,นิสสยปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_08; name/shortName (นิสสยะ) already present in the Thai catalog — kept unchanged
++upanissaya-paccaya,อุปนิสสยปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_09; name/shortName (อุปนิสสยะ) already present in the Thai catalog — kept unchanged
++purejāta-paccaya,ปุเรชาตปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_10; name/shortName (ปุเรชาตะ) already present in the Thai catalog — kept unchanged
++pacchājāta-paccaya,ปัจฉาชาตปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_11; name/shortName (ปัจฉาชาตะ) already present in the Thai catalog — kept unchanged
++āsevana-paccaya,อาเสวนปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_12; name/shortName (อาเสวนะ) already present in the Thai catalog — kept unchanged
++kamma-paccaya,กัมมปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_13; name/shortName (กรรม) already present in the Thai catalog — kept unchanged
++vipāka-paccaya,วิปากปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_14; name/shortName (วิปาก) already present in the Thai catalog — kept unchanged
++āhāra-paccaya,อาหารปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_15; name/shortName (อาหาร) already present in the Thai catalog — kept unchanged
++indriya-paccaya,อินทรียปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_16; name/shortName (อินทรีย์) already present in the Thai catalog — kept unchanged
++jhāna-paccaya,ฌานปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_17; name/shortName (ฌาน) already present in the Thai catalog — kept unchanged
++magga-paccaya,มัคคปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_18; name/shortName (มรรค) already present in the Thai catalog — kept unchanged
++sampayutta-paccaya,สัมปยุตตปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_19; name/shortName (สัมปยุตต์) already present in the Thai catalog — kept unchanged
++vippayutta-paccaya,วิปปยุตตปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_20; name/shortName (วิปปยุตต์) already present in the Thai catalog — kept unchanged
++atthi-paccaya,อัตถิปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_21; name/shortName (อัตถิ) already present in the Thai catalog — kept unchanged
++natthi-paccaya,นัตถิปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_22; name/shortName (นัตถิ) already present in the Thai catalog — kept unchanged
++vigata-paccaya,วิคตปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_23; name/shortName (วิคตะ) already present in the Thai catalog — kept unchanged
++avigata-paccaya,อวิคตปัจจัย,"S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com (full list ปัจจัย ๒๔ with Pāḷi headwords); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; corroborated by uttayarndham.org/node/6169",high,PC_24; name/shortName (อวิคตะ) already present in the Thai catalog — kept unchanged
++paccaya-dhamma,ปัจจัยธรรม,"S3 ปัฏฐาน (ปัจจัย ๒๔) lecture series, dhammahome.com ตอนที่ 29 (ปัจจัยธรรมได้แก่ จิต ๘๕ ดวง …); S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; S4 ปฏิจจสมุปบาท series (ปริจเฉทที่ ๘), prachaniyom.blogspot.com blog-post_480",high,field paccayaDhamma
++paccayuppanna-dhamma,ปัจจยุปบันนธรรม,"S3 ปัฏฐาน (ปัจจัย ๒๔) lecture series, dhammahome.com ตอนที่ 29; S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘ (การอุปการะระหว่างปัจจัยและปัจจยุปบันนธรรม)",high,field paccayuppanna
++paccaya subdivisions,ประเภทของปัจจัย (ชื่อ + คำอธิบาย),"S1 คู่มือพระอภิธัมมัตถสังคหะ (อภิธรรมโชติกะวิทยาลัย มจร), thepathofpurity.com ปริจเฉทที่ ๘; S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com",medium,"field subdivisions; medium-high in the ledger, recorded as medium here"
++sahajāt'ādhipati-paccaya / ārammaṇ'ādhipati-paccaya,สหชาตาธิปติปัจจัย / อารัมมณาธิปติปัจจัย,"S3 ปัฏฐาน (ปัจจัย ๒๔) lecture series, dhammahome.com มาติกานิกเขปวาระ ภาค ๑ §๓ (อธิปติปัจจัยนั้นมี ๒ อย่างคือ สหชาตาธิปติปัจจัยและอารัมมณาธิปติปัจจัย); webboard/topic/42186",high,PC_03 subdivisions
++purejāta (11 kinds),วัตถุปุเรชาต / อารัมมณปุเรชาต,"S3 ปัฏฐาน (ปัจจัย ๒๔) lecture series, dhammahome.com มาติกานิกเขปวาระ ภาค ๑ §๑๐ (ปุเรชาตปัจจัย นั้น มี ๑๑ อย่าง ด้วยอำนาจวัตถุ อารมณ์ และหทัยวัตถุในปัญจทวาร)",high,PC_10 subdivisions
++pacchājāta — rūpa of the four origins,กัมมชรูป / จิตตชรูป / อุตุชรูป / อาหารชรูป,"S3 ปัฏฐาน (ปัจจัย ๒๔) lecture series, dhammahome.com ตอนที่ 29; dhammahome.com/cd/topic/5/29",high,PC_11 — U-2: Thai source is more precise than the English source text; doctrinal decision needed before changing English
++vīthi / vīthicitta,วิถีจิต,"S6 ศึกษาวิถีจิตในการพิจารณารูป-นามในปัจจยปริคคหญาณ, มจร (๒๕๖๒), oldweb.mcu.ac.th",high,vīthi step name used in VT_* steps
++atīta-bhavaṅga,อดีตภวังค์,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ entry วิถีจิต; S6 ศึกษาวิถีจิตในการพิจารณารูป-นามในปัจจยปริคคหญาณ, มจร (๒๕๖๒), oldweb.mcu.ac.th",high,vīthi step name used in VT_* steps
++bhavaṅga-calana,ภวังคจลนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; S6 ศึกษาวิถีจิตในการพิจารณารูป-นามในปัจจยปริคคหญาณ, มจร (๒๕๖๒), oldweb.mcu.ac.th",high,vīthi step name used in VT_* steps
++bhavaṅga-upaccheda,ภวังคุปัจเฉทะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ (ภวังคุปัจเฉท); S6 ศึกษาวิถีจิตในการพิจารณารูป-นามในปัจจยปริคคหญาณ, มจร (๒๕๖๒), oldweb.mcu.ac.th",high,S6 writes ภวังคุปัจเฉท without the final vowel
++pañcadvāra-āvajjana,ปัญจทวาราวัชชนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; S6 ศึกษาวิถีจิตในการพิจารณารูป-นามในปัจจยปริคคหญาณ, มจร (๒๕๖๒), oldweb.mcu.ac.th",high,glossary.csv th cell reads ปัญจทวาราวชัชชน — correction proposed (line 166)
++dvi-pañcaviññāṇa,ทวิปัญจวิญญาณ,"glossary.csv th column (baseline) — not independently verified for this row (Dvipañcaviññāṇa = ทวิปัญจวิญญาณ 10); S6 ศึกษาวิถีจิตในการพิจารณารูป-นามในปัจจยปริคคหญาณ, มจร (๒๕๖๒), oldweb.mcu.ac.th",high,glossary.csv line 105 (Dvipañcaviññāṇa); vīthi step name used in VT_* steps
++sampaṭicchana,สัมปฏิจฉันนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ (สัมปฏิจฉนะ, สัมปฏิจฉันนะ ก็เรียก); glossary.csv th column (baseline) — not independently verified for this row (สัมปฏิจฉันนจิต)",high,glossary.csv line 193 (Sampaṭicchana); two Thai spellings accepted by S5
++santīraṇa,สันตีรณะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row (สันตีรณจิต)",high,glossary.csv line 194 (Santīraṇa); vīthi step name used in VT_* steps
++voṭṭhabbana / voṭṭhapana,โวฏฐัพพนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 230 (Voṭṭhapana); vīthi step name used in VT_* steps
++javana,ชวนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑; glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 115 (Javana); vīthi step name used in VT_* steps
++tadārammaṇa / tadālambana,ตทาลัมพนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ (also ตทารมณ์); glossary.csv th column (baseline) — not independently verified for this row",high,glossary.csv line 204 (Tadālambana); vīthi step name used in VT_* steps
++manodvāra-āvajjana,มโนทวาราวัชชนะ,"S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ (มโนทวารวัชชนะ); S2 ปัจจัย ๒๔ — เอกสารประกอบการศึกษาพระอภิธรรม, thepathofpurity.com",high,glossary.csv th cell reads มโนทวาราวชัชชน — correction proposed (line 147)
++paṭisandhi / bhavaṅga / cuti,ปฏิสนธิจิต / ภวังคจิต / จุติจิต,"glossary.csv th column (baseline) — not independently verified for this row (Bhavaṅga = ภวังคจิต); S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑",high,glossary.csv line 91 (Bhavaṅga); vīthi step name used in VT_* steps
++vīthimutta,วิถีมุตตจิต,glossary.csv th column (baseline) — not independently verified for this row (Vīthimutta = วิถีมุต); app vīthi name VT_VITHIMUTTA,medium,glossary.csv line 233 (Vīthimutta); glossary cell is shorter than the app form; kept the app form for consistency
++bhavaṅga-pāta,ภวังคปาตะ,"not attested in S3–S6; S5 พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ uses เกิดเป็นภวังคจิตขึ้นใหม่ (ตกภวังค์)",medium,U-5 — kept because existing Thai VT_NGU_MON_RATLON text already uses it; ลงสู่ภวังค์ is the safer plain-Thai alternative
++janaka-kamma,ชนกกรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 114 (Janakakamma); KM_P_01 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++upatthambhaka-kamma,อุปัตถัมภกกรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 214 (Upatthambhakakamma); KM_P_02 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++upapīḷaka-kamma,อุปปีฬกกรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 213 (Upapīḷakakamma); KM_P_03 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++upaghātaka-kamma,อุปฆาตกรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 210 (Upaghātakakamma); KM_P_04 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++garuka-kamma,ครุกรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 107 (Garukakamma); KM_U_01 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++āsanna-kamma,อาสันนกรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 241 (Āsannakamma); KM_U_02 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++āciṇṇa-kamma,อาจิณณกรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 236 (Āciṇṇakamma); KM_U_03 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++kaṭattā-kamma,กตัตตากรรม,"assets/data/kammas.json (namePali, group) + content_en.json names; glossary.csv th column is ROTATED for these rows",high,glossary.csv line 125 (Kaṭattākamma); KM_U_04 — pairing corrected in this batch; U-3 spelling variants (อุปฆาตกกรรม / อาจิณกรรม in glossary.json) need one agreed form
++lokuttara-kamma / magga-kamma,โลกุตตรกรรม (มัคคกรรม),content_en.json (Supramundane kamma (Path kamma)); glossary.csv th cell reads อรูปาวจรกุศลกรรม,high,"glossary.csv line 136 (Lokuttara); glossary row 292 correction proposed; en/glossary Pāḷi anomaly noted, en left untouched"
++upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,อุเบกขาสหคตัง สันตีรณจิตตัง (กุศลวิบาก),content_en.json canonical Pāḷi for CI_026,high,glossary.csv line 389 (Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ); CI_026 — th/vi pair CI_026/CI_027 was swapped (somanassa vs upekkhā); corrected
++somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ,โสมนัสสสหคตัง สันตีรณจิตตัง (กุศลวิบาก),content_en.json canonical Pāḷi for CI_027,high,glossary.csv line 359 (Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ); CI_027 — see CI_026
++upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ,อุเบกขาสหคตัง ปัญจทวาราวัชชนจิตตัง,content_en.json canonical Pāḷi for CI_028; Thai form per S5/S6,high,glossary.csv line 392 (Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ); CI_028 — Khmer-script contamination (ជ + coeng ្) inside the Thai word in content_th.json and glossary.csv row 393
++upekkhā-sahagataṃ manodvārāvajjana-cittaṃ,อุเบกขาสหคตัง มโนทวาราวัชชนจิตตัง,content_en.json canonical Pāḷi for CI_029,high,glossary.csv line 391 (Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ); CI_029 — same Khmer-script contamination; glossary.csv row 392
+diff --git a/l10n_work/th/README.md b/l10n_work/th/README.md
+new file mode 100644
+index 0000000..c490c9c
+--- /dev/null
++++ b/l10n_work/th/README.md
+@@ -0,0 +1,113 @@
++# Thai (`th`) — batch 1 deliverable: Nhân Duyên (Paṭiccasamuppāda · 24 paccayas · vīthis)
++
++**Status: `draft` / not reviewed.** This is a Thai translation *proposal* for a
++qualified Thai reviewer and for the integration agent. No other locale, no
++builder/runtime code, no registry/status and no test file in the repository has
++been modified in the working tree.
++
++## 1. Files in this delivery
++
++| File | What it is |
++| --- | --- |
++| `tool/content/data_priority_th.py` | **New, Thai-only** translation source table (327 authored Thai strings). Contains `PATICCAS`, `PACCAYAS`, `VITHIS`, `CORRECTIONS`. |
++| `l10n_work/th/build_hook.diff` | **Proposed** locale-guarded merge in `tool/content/build_full_catalogs.py` (not applied to the repo). Without it the builder cannot emit the deeper fields — see §5. |
++| `l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md` | Terminology evidence ledger (term → Thai rendering → Thai source & section → confidence → unresolved forms). |
++| `l10n_work/glossary_evidence_th.csv` | Machine-readable evidence ledger in the shape the project asks for (`pali, term, source_ref, confidence(high\|medium\|low), note`) — **83 rows** covering every term authored or repaired in batch 1. Not the full 397-row glossary: rows whose Thai cell this batch did not touch are still to be verified (see §6). |
++| `l10n_work/th/glossary_th_corrections.csv` | **14 rows** of `l10n_work/glossary.csv` whose **th** column must be fixed before the glossary is regenerated (shared file — sent to the integrator; each row carries its exact line number). |
++| `l10n_work/th/ci_evidence.txt` | Exact commands run and their output (scratch-copy build, byte-identity of the other six locales, idempotence, locale checkers). |
++| `l10n_work/th/th_only.patch` | Unified diff of this delivery (new files only; nothing else touched). |
++
++## 2. What was translated (batch 1 = work priority 1)
++
++| Section | Fields translated | Count |
++| --- | --- | --- |
++| `paticcas` (PD_01–PD_12) | `characteristic`, `function`, `manifestation`, `proximateCause` (all 12) + `doctrinalNote` (8 — the four where `content_en.json` has none were deliberately left absent) | 56 strings + 15 examples |
++| `paccayas` (PC_01–PC_24) | `paccayaDhamma`, `paccayuppanna`, `doctrinalNote` (all 24), `subdivisions` for the 9 paccayas that have them, `examples` | 72 strings + 25 subdivision entries + 42 examples |
++| `vithis` (VT_*) | `arisingCondition`, `significance`, `doctrinalNote` (all 4) + **all 29 step texts** (VT_NGU_MON_RATLON 11, VT_NGU_MON_LON 9, VT_Y_MON 6, VT_VITHIMUTTA 3) | 12 + 29 steps |
++| Repairs | `cittas` CI_026/CI_027 (somanassa/equanimity swap), CI_028/CI_029 (Khmer-script corruption); `kammas` KM_P_01…KM_U_04 (names/short names/descriptions were attached to the wrong ids) | 4 + 8 entries |
++
++Register and conventions: Thai Abhidhamma teaching Thai (อภิธรรมโชติกะ /
++อภิธัมมัตถสังคหะ). The four aspects read `…เป็นลักษณะ / …เป็นกิจ /
++…เป็นปัจจุปัฏฐาน / …เป็นปทัฏฐาน` (ลักขณาทิจตุกะ). Pāḷi terms are kept in Thai
++transliteration following `l10n_work/glossary.csv` (th) and the Thai sources;
++no English text is embedded in any Thai value (verified by script). Entity IDs
++inside prose (`CI_028`, `CS_PHASSA`-style references) are preserved unchanged.
++
++## 3. Coverage effect (measured on a scratch copy with the hook applied)
++
++| Metric | before | after |
++| --- | --- | --- |
++| `check_content_locale.py th` coverage slots | 717/4312 (16.6 %) | **981/4312 (22.8 %)** |
++| Leaf fields missing vs `content_en.json` in `paticcas` / `paccayas` / `vithis` | 71 / 164 / 54 | **0 / 0 / 0** |
++
++## 4. Fields intentionally left on English fallback (not gaps by accident)
++
++| Section | Remaining fields | Reason |
++| --- | --- | --- |
++| `cetasikas` (52) | four aspects ×4 = 208 | Not in this batch; next batch (needs its own term-by-term review). |
++| `rupas` (28) | four aspects ×4 + `doctrinalNote` = 135 | idem |
++| `cittas` | `shortName` where English has one (89), `examples` (12) | idem (plus a decision: 32 English cittas ship `shortName: null`) |
++| `kammas` | `doctrinalNote` (16), `examples` (16), remaining leaf slots | idem |
++| all 17 `studyModules` | 6006 slots (`lessonSections`, `reviewCards`, `quizSeeds`) | Priority 3; the Thai module content does not exist yet and must be authored module-by-module (quiz items authored atomically). |
++| `paticcas` PD_04/PD_05/PD_09/PD_10 | `doctrinalNote` | `content_en.json` has no such field for these ids; nothing was invented. |
++| `paccayas` | `examples`/notes for fields the English source does not carry | idem |
++
++## 5. Integration notes (for the coordinator — do not merge blindly)
++
++1. **The hook is required.** `build_full_catalogs.py` currently publishes only
++   `name`/`shortName`/`description` for these sections, so nothing in
++   `data_priority_th.py` can reach `content_th.json` without a merge step.
++   `build_hook.diff` is a minimal, locale-guarded (`if loc == "th"`) addition:
++   - it never runs for another locale (verified: hi/ja/my/si/zh/zh_TW byte-identical after the build),
++   - it preserves existing Thai prose unless the entry is in `CORRECTIONS`
++     (verified: the authored VT_NGU_MON_RATLON step text already in
++     `content_th.json` is kept),
++   - it is idempotent (two consecutive builds produced identical files).
++   Review/apply it, or copy the three merge statements into your own
++   integration step. Applying it touches **no** other locale and no runtime
++   code.
++2. **Fix the Thai glossary first** (`glossary_th_corrections.csv`), then
++   regenerate `l10n_work/glossary.json`. The eight corrected kamma names will
++   otherwise trip `S5` glossary-drift warnings against the currently rotated
++   `Garuka-kamma → ชนกกรรม …` rows.
++3. **Source-metadata bug worth fixing on the integration side:**
++   `tool/content/data_priority_conditions.py`, `KAMMAS`, has the `pali` labels of
++   the `KM_P_*` (by-function: Janaka/Upatthambhaka/Upapīḷaka/Upaghātaka) and
++   `KM_U_*` (by-priority: Garuka/Āsanna/Āciṇṇa/Kaṭattā) groups swapped. That
++   bug is what produced the wrong Thai names and the rotated glossary rows.
++   `assets/data/kammas.json` and `content_en.json` agree with each other and
++   with this patch; only the table labels and the two generated glossary files
++   disagree.
++4. Rebuild and check:
++   ```bash
++   python3 tool/content/build_full_catalogs.py
++   python3 tool/content/build_full_catalogs.py          # idempotence
++   python3 tool/check_localizations.py
++   python3 tool/content/check_content_locale.py th
++   python3 tool/content/check_content_locale.py th --glossary   # S5 only after step 2
++   flutter analyze && flutter test
++   ```
++   Expected after step 2: `✓ th (981/4312 slots, 22.8%)` and no hard failures
++   (the current run in `ci_evidence.txt` is green; `S5` warns until the
++   glossary rows are fixed).
++5. `assets/content/content_th.json` is generated — the working tree keeps it
++   untouched, as required; regenerate it via the builder rather than editing it.
++
++## 6. Glossary coverage of this batch, and open questions for qualified Thai review
++
++`l10n_work/glossary_evidence_th.csv` has 83 rows: **39** of them map to an
++existing `l10n_work/glossary.csv` headword (the note carries the line number),
++and **44** are terms the glossary does not currently contain — the four aspects
++(ลักษณะ / รสะ / ปัจจุปัฏฐาน / ปทัฏฐาน / ลักขณาทิจตุกะ), the 24 paccaya names
++(only `Paccaya` itself is a headword today), the vīthi moment names
++(อตีตภวังค์, ภวังคจลนะ, ภวังคุปัจเฉทะ, ทวิปัญจวิญญาณ, โวฏฐัพพนะ, ชวนะ …) and the
++field-level terms ปัจจัยธรรม / ปัจจยุปบันนธรรม. Those 44 are candidates for the
++glossary, but adding headwords is the coordinator's call (`glossary.csv` is a
++shared file). The remaining ~358 headwords were **not** verified in this batch —
++they belong to batches 2–3 (cetasikas, rupas, modules).
++
++See `TERMINOLOGY_EVIDENCE_LEDGER.md` §6 (U-1…U-9). The most consequential are
++U-1 (the 84-citta figure for อารัมมณาธิปติ in `PC_03`), U-2 (postnascence: the
++English narrows the conditioned state to kamma-born matter, while the Thai
++Paṭṭhāna teaching includes matter born of any of the four origins) and U-6
++(the English "three understanding faculties" list in `PC_16`).
+diff --git a/l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md b/l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md
+new file mode 100644
+index 0000000..0370bf8
+--- /dev/null
++++ b/l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md
+@@ -0,0 +1,203 @@
++# Thai (th) — terminology evidence ledger
++
++Scope: the Thai rendering of every term authored in
++`tool/content/data_priority_th.py` (batch 1: Nhân Duyên / Paṭiccasamuppāda,
++24 paccayas, vīthis, plus high-confidence repairs of existing Thai entries).
++Status of the whole batch: **draft — not reviewed**. Nothing here is a claim
++of doctrinal approval; disputed or unavailable forms are marked below and the
++corresponding field was left on English fallback where required.
++
++Method
++------
++1. Terminology was taken first from the Thai column of `l10n_work/glossary.csv`
++   (and the normalised `l10n_work/glossary.json`) — the agreed baseline named
++   in the assignment (Thai Abhidhamma tradition, *Abhidhammattha Saṅgaha*,
++   Thai script).
++2. Every central or disputed form was then checked against a recognised Thai
++   Theravāda teaching text (course material of อภิธรรมโชติกะวิทยาลัย,
++   มหาวิทยาลัยมหาจุฬาลงกรณราชวิทยาลัย; the Thai study manual of the
++   *Abhidhammattha Sangaha*; the Pāḷi–Thai dictionary of พระพรหมคุณาภรณ์).
++   The source and the section are recorded per row. Page numbers are given
++   only where the retrieved text itself carried them.
++3. No citation was invented. Where only a course/site section (not a printed
++   page) could be confirmed, the row says so.
++
++Sources used (short keys)
++-------------------------
++| Key | Source |
++| --- | --- |
++| **S1** | *คู่มือพระอภิธัมมัตถสังคหะ* (Thai study manual of the Abhidhammattha Sangaha, หลักสูตรอภิธรรมโชติกะวิทยาลัย มจร) — ปริจเฉทที่ ๑, ๒, ๘ — thepathofpurity.com (paths `…/คู่มือพระอภิธัมมัตถสังคหะ/ปริจเฉทที่-๑/`, `-๒/`, `-๘/`) |
++| **S2** | *ปัจจัย ๒๔* — เอกสารประกอบการศึกษาพระอภิธรรม ชั้นจูฬตรี–มหาเอก, thepathofpurity.com (index page `…/พระอภิธรรม/`) |
++| **S3** | *ปัฏฐาน (ปัจจัย ๒๔)* lecture series, dhammahome.com — ตอนที่ 29 (ปัจฉาชาตปัจจัย) and มาติกานิกเขปวาระ ภาค ๑ (webboard topic 42186) |
++| **S4** | *ปฏิจจสมุปบาท series* — Thai teaching notes on ปริจเฉทที่ ๘, prachaniyom.blogspot.com: post `blog-post_62` (อวิชฺชาปจฺจยา สงฺขารา) and `blog-post_968` (ชาติปจฺจยา ชรามรณํ …) |
++| **S5** | *พจนานุกรมพุทธศาสตร์ ฉบับประมวลศัพท์*, พระพรหมคุณาภรณ์ (ป.อ. ปยุตฺโต), พิมพ์ครั้งที่ ๓๑ — book.watnyanaves.net (used for the standard Thai names of the 12 links and the vīthi moments; the assignment warns a dictionary alone is not sufficient — it is paired with S1/S4 here) |
++| **S6** | *ศึกษาวิถีจิตในการพิจารณารูป-นามในปัจจยปริคคหญาณ*, มหาวิทยาลัยมหาจุฬาลงกรณราชวิทยาลัย (๒๕๖๒) — oldweb.mcu.ac.th PDF, plus dhammahome teaching posts on วิถีจิต ๑๗ ขณะ |
++| **S7** | dhammahome.com teaching/forum threads in the Thai tradition of อาจารย์สุจินต์ บริหารวนเขตต์ (มูลนิธิศึกษาและเผยแพร่พระพุทธศาสนา): `webboard/topic/26149` (ปัจจุปัฏฐาน ปทัฏฐาน — วิเสสลักษณะ ๔ = ลักษณะ รสะ ปัจจุปัฏฐาน ปทัฏฐาน), `webboard/topic/24348`, `audio/topic/6745` (ลักขณาทิจตุกะ) |
++
++---
++
++## 1. The four aspects of a dhammas — ลักขณาทิจตุกะ
++
++The English entity fields `characteristic` / `function` / `manifestation` /
++`proximateCause` are the four *visesalakkhaṇa* of the Thai Sangaha tradition,
++known as **ลักขณาทิจตุกะ**. Thai renders them as follows (S1 ปริจเฉทที่ ๒
++หน้า ๓ "ลักขณาทิจตุกะ"; corroborated by S7 `webboard/topic/26149` and
++`audio/topic/6745`):
++
++| English field | Pāḷi | Thai rendering | Form as used in the source | Confidence |
++| --- | --- | --- | --- | --- |
++| characteristic | lakkhaṇa | **ลักษณะ** | S1: "เจตสิกมี **ลักษณะ** ( คือคุณภาพหรือเครื่องแสดง )"; S7: "วิเสสลักษณะ … มี ๔ ประการ คือ ลักษณะ รสะ ปัจจุปัฏฐาน และ ปทัฏฐาน เรียกว่า **ลักขณาทิจตุกะ**" | high |
++| function | rasa | **รสะ**, glossed **กิจ** | S1: "**รสะ** ( กิจการงาน หรือหน้าที่ )"; S7: "รสะ (กิจหน้าที่ของธรรม)"; the Thai teaching register reads "…เป็นกิจ" in the per-cetasika formulas | high |
++| manifestation | paccupaṭṭhāna | **ปัจจุปัฏฐาน** | S1: "**ปัจจุปัฏฐาน** ( อาการปรากฏ หรือ ผล )"; S7: "ปัจจุปัฏฐาน (อาการปรากฏ)" | high |
++| proximate cause | padaṭṭhāna | **ปทัฏฐาน** | S1: "**ปทัฏฐาน** ( เหตุใกล้ให้เกิด )"; S7: "ปทัฏฐาน (เหตุใกล้ให้เกิด)" | high |
++
++Consequence for the Thai drafting: each aspect is written as
++`「…」 + เป็นลักษณะ / เป็นกิจ / เป็นปัจจุปัฏฐาน / เป็นปทัฏฐาน`, which is the
++register used in S1 and S4, e.g. S4 (อวิชชา): "อญาณลกฺขณา มีความไม่รู้เป็น
++ลักษณะ", "สมฺโมหนรสา … เป็นกิจ", "ฉาทนปจฺจุปฏฺฐานา … เป็นอาการปรากฏ",
++"อาสวปทฏฺฐานา มีอาสวะ ๓ เป็นเหตุใกล้".
++
++## 2. Paṭiccasamuppāda — links and factors
++
++| Concept (Pāḷi / English) | ID | Thai rendering used | Source & section | Confidence |
++| --- | --- | --- | --- | --- |
++| Avijjā / Ignorance | PD_01 | อวิชชา | S5 entry ปฏิจจสมุปบาท (`อวิชฺชาปจฺจยา สงฺขารา`); S4 blog-post_62 (วจนัตถะ อ+วิชฺชา; อาสวปทฏฺฐานา) | high |
++| Saṅkhārā / Formations | PD_02 | สังขาร | S5; S4 blog-post_62 (อภิสงฺขรณลกฺขณา, อายูหนรสา, เจตนาปจฺจุปฺฏฺฐานา, อวิชฺชาปทฏฺฐานา) | high |
++| Viññāṇa / Consciousness | PD_03 | วิญญาณ | S5; glossary th | high |
++| Nāmarūpa / Mind-and-matter | PD_04 | นามรูป | S5; glossary th | high |
++| Saḷāyatana / Six bases | PD_05 | สฬายตนะ | S5; glossary th | high |
++| Phassa / Contact | PD_06 | ผัสสะ | S5 (`ผสฺสปจฺจยา เวทนา`); glossary th (CS_PHASSA) | high |
++| Vedanā / Feeling | PD_07 | เวทนา | S5; glossary th | high |
++| Taṇhā / Craving | PD_08 | ตัณหา | S5; glossary th | high |
++| Upādāna / Clinging | PD_09 | อุปาทาน | S5; glossary th (`อุปาทาน 4`) | high |
++| Bhava / Becoming | PD_10 | ภพ (กรรมภพ / อุปปัตติภพ) | S5; glossary th (Kammabhava = กรรมภพ, Upapattibhava = อุปปัตติภพ) | high |
++| Jāti / Birth | PD_11 | ชาติ | S5; glossary th | high |
++| Jarāmaraṇa / Ageing-and-death | PD_12 | ชรามรณะ (+ โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส) | S5; S4 blog-post_968 (excerpt retrieved: "ชรา มรณะ และโสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส ทั้ง ๗ นี้ปรากฏเกิดขึ้น เพราะอาศัยชาติเป็นเหตุ"; ชรา — ขนฺธปริปากลกฺขณา / มรณูปนยนรสา = กิจ (กิจจรส); อุปายาสะ — จิตฺตปริทหนลกฺขโณ). The remaining per-item formulas in that post are excerpt-level only and must be re-verified before they are quoted in the app. | high for the term; **medium for the formulas** |
++
++Supporting forms used in the Thai text:
++
++| Form | Thai | Source | Confidence |
++| --- | --- | --- | --- |
++| Ayoniso-manasikāra | อโยนิโสมนสิการ | glossary th (`Ayoniso manasikāra`); S1 ปริจเฉทที่ ๑ (อโยนิโสมนสิการ ปทฏฺฐานํ) | high |
++| Anamatagga | อนมตัคคะ | Thai Pāḷi usage (อนมตัคฺค); retained only as the transliteration of the English gloss | medium |
++| Puññābhisaṅkhāra / Apuññābhisaṅkhāra / Āneñjābhisaṅkhāra | ปุญญาภิสังขาร / อปุญญาภิสังขาร / อาเนญชาภิสังขาร | glossary th (all three entries); S4 blog-post_62 (อปุญญาภิสังขาร, อาเนญชาภิสังขาร) | high |
++| Paṭisandhi-viññāṇa | ปฏิสนธิวิญญาณ | glossary th (`Paṭisandhi viññāṇa`) | high |
++| Kamma-becoming / rebirth-becoming | กรรมภพ / อุปปัตติภพ | glossary th | high |
++| Soka, Parideva, Dukkha, Domanassa, Upāyāsa (5 aspects of Jarāmaraṇa in the Pāḷi formula) | โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส | S4 blog-post_968; S5 (Thai formula). **Note:** `glossary.csv` renders this row as "โศกะ ปริเทวะ ทุกขะ โทมนัสสะ อุปายาสะ" (Sanskritised โศก/สะ) — the Thai Pāḷi transliteration is โสกะ … โทมนัส; flagged below. | high for โสกะ/โทมนัส; see unresolved U-4 |
++| Sahajāta-kamma / Nānākkhaṇika-kamma (used in PC_13) | กรรม … วิบาก … (translated descriptively) | S3 มาติกานิกเขปวาระ (กัมมปัจจัย wording) | medium |
++
++## 3. The 24 paccayas
++
++Thai names verified against S2 (the full list "ปัจจัย ๒๔" with Pāḷi headwords
++เหตุปจฺจโย … อวิคตปจฺจโย) and S1 ปริจเฉทที่ ๘; the app's `name` / `shortName`
++columns already carry the same forms and were kept unchanged.
++
++| ID | Pāḷi | Thai name | Thai short name | Confidence |
++| --- | --- | --- | --- | --- |
++| PC_01 | Hetu-paccaya | เหตุปัจจัย | เหตุ | high |
++| PC_02 | Ārammaṇa-paccaya | อารัมมณปัจจัย | อารมณ์ | high |
++| PC_03 | Adhipati-paccaya | อธิปติปัจจัย | อธิปติ | high |
++| PC_04 | Anantara-paccaya | อนันตรปัจจัย | อนันตระ | high |
++| PC_05 | Samanantara-paccaya | สมนันตรปัจจัย | สมนันตระ | high |
++| PC_06 | Sahajāta-paccaya | สหชาตปัจจัย | สหชาตะ | high |
++| PC_07 | Aññamañña-paccaya | อัญญมัญญปัจจัย | อัญญมัญญะ | high |
++| PC_08 | Nissaya-paccaya | นิสสยปัจจัย | นิสสยะ | high |
++| PC_09 | Upanissaya-paccaya | อุปนิสสยปัจจัย | อุปนิสสยะ | high |
++| PC_10 | Purejāta-paccaya | ปุเรชาตปัจจัย | ปุเรชาตะ | high |
++| PC_11 | Pacchājāta-paccaya | ปัจฉาชาตปัจจัย | ปัจฉาชาตะ | high |
++| PC_12 | Āsevana-paccaya | อาเสวนปัจจัย | อาเสวนะ | high |
++| PC_13 | Kamma-paccaya | กัมมปัจจัย | กรรม | high |
++| PC_14 | Vipāka-paccaya | วิปากปัจจัย | วิปาก | high |
++| PC_15 | Āhāra-paccaya | อาหารปัจจัย | อาหาร | high |
++| PC_16 | Indriya-paccaya | อินทรียปัจจัย | อินทรีย์ | high |
++| PC_17 | Jhāna-paccaya | ฌานปัจจัย | ฌาน | high |
++| PC_18 | Magga-paccaya | มัคคปัจจัย | มรรค | high |
++| PC_19 | Sampayutta-paccaya | สัมปยุตตปัจจัย | สัมปยุตต์ | high |
++| PC_20 | Vippayutta-paccaya | วิปปยุตตปัจจัย | วิปปยุตต์ | high |
++| PC_21 | Atthi-paccaya | อัตถิปัจจัย | อัตถิ | high |
++| PC_22 | Natthi-paccaya | นัตถิปัจจัย | นัตถิ | high |
++| PC_23 | Vigata-paccaya | วิคตปัจจัย | วิคตะ | high |
++| PC_24 | Avigata-paccaya | อวิคตปัจจัย | อวิคตะ | high |
++
++Field-level terms introduced by this batch:
++
++| English field | Thai rendering | Source evidence | Confidence |
++| --- | --- | --- | --- |
++| `paccayaDhamma` | **ปัจจัยธรรม** (นิยมใช้คู่กับ **ปัจจยุปบันนธรรม**) | S3 ตอนที่ 29: "ปัจจัยธรรมได้แก่ จิต ๘๕ ดวง …"; S1 ปริจเฉทที่ ๘: "การอุปการะระหว่างปัจจัยและปัจจยุปบันนธรรม"; S4 blog-post_480 ("ปัจจัยธรรม … ปัจจยุปบันธรรม") | high |
++| `paccayuppanna` | **ปัจจยุปบันนธรรม** | as above | high |
++| `paccayuppanna` in the app UI | rendered in sentences as "สภาวธรรมที่ได้รับการอุปการะ …" where a prose clause reads better | drafting decision | n/a |
++| `subdivisions` | **ชื่อและคำอธิบายของประเภทของปัจจัยนั้น** (e.g. สหชาตาธิปติ / อารัมมณาธิปติ) | S1 ปริจเฉทที่ ๘, S2 | medium-high |
++| Sahajāt'ādhipati / Ārammaṇ'ādhipati | สหชาตาธิปติ / อารัมมณาธิปติ | S3 มาติกานิกเขปวาระ §๓ อธิปติปัจจัย: "อธิปติปัจจัยนั้นมี ๒ อย่างคือ **สหชาตาธิปติปัจจัย**และ**อารัมมณาธิปติปัจจัย**"; §๑๐ ปุเรชาตปัจจัย: "ปุเรชาตปัจจัย นั้น มี ๑๑ อย่าง ด้วยอำนาจวัตถุ อารมณ์ และหทัยวัตถุในปัญจทวาร" | high |
++| Purejāta (11 kinds: วัตถุ/อารมณ์/หทัยวัตถุในปัญจทวาร) | วัตถุปุเรชาต / อารัมมณปุเรชาต (+ "ปุเรชาตปัจจัย นั้น มี ๑๑ อย่าง ด้วยอำนาจวัตถุ อารมณ์ และหทัยวัตถุในปัญจทวาร") | S3 มาติกานิกเขปวาระ ภาค ๑ | high |
++| Pacchājāta "รูปทุกรูปที่เกิดเพราะทุกสมุฏฐาน" | กัมมชรูป/จิตตชรูป/อุตุชรูป/อาหารชรูป อุปการะโดยปัจฉาชาตปัจจัย | S3 ตอนที่ 29 | high (see unresolved U-2) |
++
++## 4. Vīthi — process and step names
++
++| Pāḷi | Thai rendering used | Source & section | Confidence |
++| --- | --- | --- | --- |
++| Vīthi / vīthicitta | วิถีจิต | S6 | high |
++| Atīta-bhavaṅga | อดีตภวังค์ | S5 entry วิถีจิต (อตีตภวังค์); S6 (อตีตภวังค์) | high |
++| Bhavaṅga-calana | ภวังคจลนะ | S5 (ภวังคจลนะ); S6 | high |
++| Bhavaṅga-upaccheda | ภวังคุปัจเฉทะ (S6 writes ภวังคุปัจเฉท) | S5 (ภวังคุปัจเฉท); S6 | high |
++| Pañcadvāra-āvajjana | ปัญจทวาราวัชชนะ | S5 (ปัญจทวาราวัชชนะ); S6 | high |
++| Dvi-pañcaviññāṇa | ทวิปัญจวิญญาณ | glossary th (`Dvipañcaviññāṇa = ทวิปัญจวิญญาณ 10`); S6 (ปัญจวิญญาณ) | high |
++| Sampaṭicchana | สัมปฏิจฉันนะ | S5 (สัมปฏิจฉนะ, สัมปฏิจฉันนะ ก็เรียก); glossary th (สัมปฏิจฉันนจิต) | high |
++| Santīraṇa | สันตีรณะ | S5; glossary th (สันตีรณจิต) | high |
++| Voṭṭhabbana / voṭṭhapana | โวฏฐัพพนะ | S5 (โวฏฐัพพนะ); glossary th (โวฏฐัพพนะ) | high |
++| Javana | ชวนะ | S5; glossary th (ชวนะ) | high |
++| Tadārammaṇa / tadālambana | ตทาลัมพนะ (S5 also: ตทารมณ์) | S5; glossary th (ตทาลัมพนะ) | high |
++| Manodvāra-āvajjana | มโนทวาราวัชชนะ | S5 entry (มโนทวารวัชชนะ), S2 | high |
++| Paṭisandhi / Bhavaṅga / Cuti | ปฏิสนธิ(จิต) / ภวังคจิต / จุติจิต | glossary th (Bhavaṅga = ภวังคจิต); S5 | high |
++| Vīthimutta | วิถีมุตตจิต | glossary th (`Vīthimutta = วิถีมุต`); the app's vīthi name | medium |
++| Bhavaṅga-pāta (post-process bhavaṅga; named ภวังคปาตะ in the Thai vīthi steps) | ภวังคปาตะ | not found as a term in S3–S6; the descriptor "ลงสู่ภวังค์" (ตกภวังค์) is the wording used in S5 ("เกิดเป็นภวังคจิตขึ้นใหม่ (ตกภวังค์)") | **medium — flagged U-5** |
++
++## 5. Repairs made to existing Thai entries (evidence)
++
++| Entry | Current th | Corrected th | Evidence | Confidence |
++| --- | --- | --- | --- | --- |
++| cittas.CI_026.name | โสมนัสสสหคตัง สันตีรณจิตตัง (กุศลวิบาก) | **อุเบกขาสหคตัง สันตีรณจิตตัง (กุศลวิบาก)** | `content_en.json` canonical Pāḷi for CI_026 = `Upekkhā-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ` (Pāḷi is the cross-language anchor; the pair CI_026/CI_027 was swapped) | high |
++| cittas.CI_027.name | อุเบกขาสหคตัง สันตีรณจิตตัง (กุศลวิบาก) | **โสมนัสสสหคตัง สันตีรณจิตตัง (กุศลวิบาก)** | canonical Pāḷi for CI_027 = `Somanassa-sahagataṃ kusalavipākaṃ santīraṇa-cittaṃ` | high |
++| cittas.CI_028.name | อุเบกขาสหคตัง ปัญจทวาราว**ជ្**ชนจิตตัง (Khmer-script `ជ` + coeng `្` inside a Thai word) | **อุเบกขาสหคตัง ปัญจทวาราวัชชนจิตตัง** | canonical Pāḷi = `Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ`; Thai ปัญจทวาราวัชชนะ (S5/S6). Same string also sits in `l10n_work/glossary.csv` rows 392–393 (`th` column) | high |
++| cittas.CI_029.name | อุเบกขาสหคตัง มโนทวาราว**ជ្**ชนจิตตัง | **อุเบกขาสหคตัง มโนทวาราวัชชนจิตตัง** | canonical Pāḷi = `… manodvārāvajjana-cittaṃ` | high |
++| kammas.KM_P_01…KM_U_04 name/shortName/description | attached by-priority names (ครุกรรม ฯลฯ) to the by-function ids and vice versa | ชนกกรรม / อุปัตถัมภกกรรม / อุปปีฬกกรรม / อุปฆาตกรรม, ครุกรรม / อาสันนกรรม / อาจิณณกรรม / กตัตตากรรม | `assets/data/kammas.json` (`namePali`, `group`) + `content_en.json` names ("Reproductive kamma" = ชนกกรรม, "Weighty kamma" = ครุกรรม, …) | high for the pairing; see U-3 for spelling variants |
++
++## 6. Unresolved forms and items requiring qualified review
++
++| # | Item | Where | Note for the reviewer |
++| --- | --- | --- | --- |
++| U-1 | PC_03 `paccayuppanna` — "จิต 84 ดวง (เว้นจิตวิบากอเหตุกะ)" | PC_03 | The English figure (84) and its parenthetical do not reconcile arithmetically with the 89/121 schemes (excluding the 15 rootless resultants gives 74). The Thai follows the English verbatim; the correct count/gloss for **อารัมมณาธิปติ** should be confirmed from a Thai Pāḷi source (S1 ปริจเฉทที่ ๘ discusses อธิปติปัจจัย but the retrieved portion did not give the count). |
++| U-2 | PC_11 `paccayaDhamma` — "จิต 85 ดวง … (เว้นปฏิสนธิจิต)" | PC_11 | The English sentence is loose ("all consciousness except the rebirth-linking cittas"). The Thai Patthāna lecture (S3 ตอนที่ 29) is precise: 85 = 89 minus the 4 **อรูปาวจรวิปากจิต**, and all ปฏิสนธิจิต are additionally excluded; the conditioned state is *every* rūpa born of any of the four origins (กรรม/จิต/อุตุ/อาหาร) that has arisen and not ceased — the English restricts it to kamma-born rūpa. Thai translation keeps the English meaning; **doctrinal decision needed** before changing the English side. |
++| U-3 | Spelling variants: อุปฆาตกรรม vs **อุปฆาตกกรรม**; อาจิณณกรรม vs **อาจิณกรรม** | kammas corrections | The batch keeps the forms already used in the app/Thai tables (อุปฆาตกรรม, อาจิณณกรรม). The glossary itself carries both: keyTerm line **211** `Upaghātakakamma` = อุปฆาตกกรรม and line **237** `Āciṇṇakamma` = อาจิณกรรม, against the `kammas` rows **294** / **298** this batch proposes as อุปฆาตกรรม / อาจิณณกรรม. One form per term should be agreed, then the pairs normalised. |
++| U-4 | "โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส" vs glossary "โศกะ … โทมนัสสะ" | PD_12 | The `glossary.csv` th cell for `Soka, Parideva, …` (line **198**, keyTerm, feeds `M17_DUYEN_CHI_TIET/M17_S05`) is Sanskritised (โศก/สะ); the Thai Pāḷi transliteration is โสกะ … โทมนัส (S4 blog-post_968, S5). The batch does not change the shared file — the row is proposed in `l10n_work/th/glossary_th_corrections.csv` and needs doctrinal sign-off. |
++| U-5 | ภวังคปาตะ (post-process bhavaṅga step in the Thai vīthi lists) | VT_* steps | Not attested in the retrieved Thai sources (S3–S6); the wording used for this moment in S5 is "เกิดเป็นภวังคจิตขึ้นใหม่ (ตกภวังค์)". The existing Thai `VT_NGU_MON_RATLON` text already used ภวังคปาตะ, so the same word is kept for the other processes to stay consistent with existing Thai content; ลงสู่ภวังค์ is the safer plain-Thai alternative if the reviewer prefers it. |
++| U-6 | "อินทรีย์ที่เกี่ยวกับการรู้แจ้งอีก 3" (PC_16, English "the three understanding faculties") | PC_16 | A descriptive rendering was used to avoid coining a Thai term. Thai canonical forms are อนัญญตัญญัสสามีตินทรีย์ / อัญญินทรีย์ / อัญญาตาวินทรีย์ — to be confirmed; note the English list of the 20 faculties itself should be reviewed (it should be 22 minus 2). |
++| U-7 | อนมตัคคะ / อโนมตัคคะ | PD_01 note | Only the transliteration of the English gloss is given; confirm the Thai standard form if the field is to be kept. |
++| U-8 | "วิสุทธิมรรค ปริจเฉทที่ 17" and "(SN 12.63)" inside translated prose | PC_02, PC_15 | Citations were carried over from the English source unchanged (no Thai edition page verified). |
++| U-9 | Pāḷi compounds สหชาตาธิปติ / อารัมมณาธิปติ / วัตถารัมมณปุเรชาตนิสสยะ … | paccaya subdivisions | Compound Thai-Pāḷi spellings are regular but no printed Thai page was retrieved for each; low doctrinal risk, still worth a native check. |
++
++## 7. Thai glossary cells that must be corrected with this batch
++
++`l10n_work/glossary.csv`, `th` column (shared file — corrections are supplied
++in `l10n_work/th/glossary_th_corrections.csv` for the integrator):
++
++1. rows 392–393 (`Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ` and
++   `… pañcadvārāvajjana-cittaṃ`): the Khmer-contaminated strings must be
++   replaced with `อุเบกขาสหคตัง มโนทวาราวัชชนจิตตัง` /
++   `อุเบกขาสหคตัง ปัญจทวาราวัชชนจิตตัง` **before** regenerating
++   `l10n_work/glossary.json` (which also feeds the `S5` glossary drift check).
++2. lines **147** / **166** (`Manodvārāvajjana` / `Pañcadvārāvajjana`, keyTerm):
++   the `th` cells read "มโนทวาราวชัชชน" / "ปัญจทวาราวชัชชน" — should be
++   "มโนทวาราวัชชนะ" / "ปัญจทวาราวัชชนะ" (S5/S6).
++3. the eight hyphenated kamma rows, lines **288–299** (`Garuka-kamma` …
++   `Kaṭattā-kamma`): the `th` column is rotated relative to the Pāḷi column
++   (Garuka→ชนกกรรม, Janaka→ครุกรรม, …). This rotation is what makes
++   `check_content_locale.py th --glossary` report `S5` warnings against the
++   *corrected* Thai kamma names in this batch.
++4. line **198** (`Soka, Parideva, Dukkha, Domanassa, Upāyāsa`, keyTerm): the
++   `th` cell is Sanskritised — โศกะ … โทมนัสสะ อุปายาสะ; proposed
++   โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส (U-4, needs sign-off).
++5. lines **211** / **237** (keyTerm `Upaghātakakamma` = อุปฆาตกกรรม,
++   `Āciṇṇakamma` = อาจิณกรรม) disagree in spelling with the `kammas` rows
++   **294** / **298** proposed above (อุปฆาตกรรม, อาจิณณกรรม). Not a rotation —
++   a variant-spelling decision (U-3); the reviewer should pick one form per
++   term and the two pairs should then be normalised together.
+diff --git a/l10n_work/th/build_hook.diff b/l10n_work/th/build_hook.diff
+new file mode 100644
+index 0000000..df407bc
+--- /dev/null
++++ b/l10n_work/th/build_hook.diff
+@@ -0,0 +1,60 @@
++--- a/tool/content/build_full_catalogs.py
+++++ b/tool/content/build_full_catalogs.py
++@@ -24,6 +24,7 @@
++ import tool.content.data_priority_m1 as dm1
++ import tool.content.data_priority_m2 as dm2
++ import tool.content.data_priority_m11 as dm11
+++import tool.content.data_priority_th as dth
++ 
++ LOCALES = ["hi", "ja", "my", "si", "th", "zh", "zh_TW"]
++ 
++@@ -107,6 +108,30 @@
++     ]
++ 
++ 
+++def _merge_th_fields(section, details, *, override=False):
+++    """Thai-only: merge authored detail fields into the built section.
+++
+++    Locale-guarded caller; no other locale is touched.  Existing Thai text
+++    authored in the catalog (e.g. VT_NGU_MON_RATLON step prose) is preserved
+++    unless ``override`` is set, so no good Thai content is replaced.
+++    """
+++    for key, fields in details.items():
+++        entry = section.setdefault(key, {})
+++        for field, value in fields.items():
+++            if isinstance(value, dict) and isinstance(entry.get(field), dict):
+++                merged = entry[field]
+++                for sub_key, sub_value in value.items():
+++                    slot = merged.setdefault(sub_key, {})
+++                    if isinstance(sub_value, dict):
+++                        for inner_key, inner_value in sub_value.items():
+++                            if override or not slot.get(inner_key):
+++                                slot[inner_key] = inner_value
+++                    elif override or not slot:
+++                        merged[sub_key] = sub_value
+++            elif override or not entry.get(field):
+++                entry[field] = value
+++
+++
++ def build_catalog(loc):
++     # 1. CITTAS
++     # Only write text authored for this locale. The old builder copied English
++@@ -290,6 +315,18 @@
++             q["sourceRefs"] = vi_m11["quizSeeds"][i]["sourceRefs"]
++         study_modules["M11_BIET_CANH"] = m11_copy
++ 
+++
+++    # 8b. THAI DETAILS (locale `th` only — see l10n_work/th/README.md)
+++    # The legacy tables carry only name/shortName/description.  Authored Thai
+++    # detail prose and repairs live in tool/content/data_priority_th.py.
+++    if loc == "th":
+++        _merge_th_fields(paticcas, dth.PATICCAS)
+++        _merge_th_fields(paccayas, dth.PACCAYAS)
+++        _merge_th_fields(vithis, dth.VITHIS)
+++        for section_name, entries in dth.CORRECTIONS.items():
+++            target = {"cittas": cittas, "kammas": kammas}[section_name]
+++            _merge_th_fields(target, entries, override=True)
+++
++     out = {
++         "locale": loc,
++         "schemaVersion": 2,
+diff --git a/l10n_work/th/ci_evidence.txt b/l10n_work/th/ci_evidence.txt
+new file mode 100644
+index 0000000..46ce44d
+--- /dev/null
++++ b/l10n_work/th/ci_evidence.txt
+@@ -0,0 +1,94 @@
++$ python3 tool/content/build_full_catalogs.py   (working tree copy, hook applied)
++Wrote /tmp/vdptest/assets/content/content_hi.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++Wrote /tmp/vdptest/assets/content/content_ja.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++Wrote /tmp/vdptest/assets/content/content_my.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++Wrote /tmp/vdptest/assets/content/content_si.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++Wrote /tmp/vdptest/assets/content/content_th.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++Wrote /tmp/vdptest/assets/content/content_zh.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++Wrote /tmp/vdptest/assets/content/content_zh_TW.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++
++$ python3 tool/content/build_full_catalogs.py   (second run, idempotence)
++Wrote /tmp/vdptest/assets/content/content_zh.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++Wrote /tmp/vdptest/assets/content/content_zh_TW.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
++
++$ diff -q  repo-vs-scratch per locale (only th may differ)
++hi identical
++ja identical
++my identical
++si identical
++zh identical
++zh_TW identical
++vi identical
++
++$ python3 tool/content/check_content_locale.py th
++✓ th  (981/4312 slots, 22.8%)  assets/content/content_th.json
++
++$ python3 tool/content/check_content_locale.py th --glossary
++✓ th  (981/4312 slots, 22.8%)  assets/content/content_th.json
++    warn [S5] kammas.KM_P_01.name: 'ชนกกรรม' does not use the agreed rendering 'ครุกรรม' for 'Janaka-kamma'
++    warn [S5] kammas.KM_P_02.name: 'อุปัตถัมภกกรรม' does not use the agreed rendering 'อาสันนกรรม' for 'Upatthambhaka-kamma'
++    warn [S5] kammas.KM_P_03.name: 'อุปปีฬกกรรม' does not use the agreed rendering 'อาจิณณกรรม' for 'Upapīḷaka-kamma'
++    warn [S5] kammas.KM_P_04.name: 'อุปฆาตกรรม' does not use the agreed rendering 'กตัตตากรรม' for 'Upaghātaka-kamma'
++    warn [S5] kammas.KM_U_01.name: 'ครุกรรม' does not use the agreed rendering 'ชนกกรรม' for 'Garuka-kamma'
++    warn [S5] kammas.KM_U_02.name: 'อาสันนกรรม' does not use the agreed rendering 'อุปัตถัมภกกรรม' for 'Āsanna-kamma'
++    warn [S5] kammas.KM_U_03.name: 'อาจิณณกรรม' does not use the agreed rendering 'อุปปีฬกกรรม' for 'Āciṇṇa-kamma'
++    warn [S5] kammas.KM_U_04.name: 'กตัตตากรรม' does not use the agreed rendering 'อุปฆาตกรรม' for 'Kaṭattā-kamma'
++
++$ python3 tool/check_localizations.py
++OK: 26 locales, 350 UI keys, content [en, hi, ja, my, si, th, vi, zh, zh_TW]
++
++$ python3 tool/check_paccaya_data.py
++PASS — 24 Duyên Hệ
++  • 24/24 duyên, thứ tự khớp Paccayuddesa
++  • nguồn canonical: 24/24
++  • liên kết 12 chi: 52 cặp duyên–chi
++
++-------------------------------------------------------------------------------
++Re-verification after adding l10n_work/glossary_evidence_th.csv (2026-10-09)
++-------------------------------------------------------------------------------
++
++$ git clone /home/user/vdp /tmp/verify && cd /tmp/verify && git checkout 630186d194d4d44b6d6fd3c5472d2e489e06c179
++HEAD: 630186d
++
++$ git apply --check --verbose th_only.patch      (7 files: glossary_evidence_th.csv,
++                                                  th/README.md, th/TERMINOLOGY_EVIDENCE_LEDGER.md,
++                                                  th/build_hook.diff, th/ci_evidence.txt,
++                                                  th/glossary_th_corrections.csv,
++                                                  tool/content/data_priority_th.py)
++Checking patch l10n_work/glossary_evidence_th.csv...
++Checking patch l10n_work/th/README.md...
++Checking patch l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md...
++Checking patch l10n_work/th/build_hook.diff...
++Checking patch l10n_work/th/ci_evidence.txt...
++Checking patch l10n_work/th/glossary_th_corrections.csv...
++Checking patch tool/content/data_priority_th.py...
++th_only.patch: git apply --check OK
++warning: 5 lines add whitespace errors.
++  (all five are the blank *context* lines inside the nested build_hook.diff —
++   an inner diff represents a blank context line as a single space; they are
++   not trailing whitespace in the Thai content)
++
++$ git apply th_only.patch
++th_only.patch: APPLIED
++?? l10n_work/glossary_evidence_th.csv
++?? l10n_work/th/
++?? tool/content/data_priority_th.py
++
++$ python3 -c "ast.parse(open('tool/content/data_priority_th.py').read())"
++data_priority_th.py: ast.parse OK
++
++$ python3 -c "csv.DictReader(open('l10n_work/glossary_evidence_th.csv'))"
++glossary_evidence_th.csv: 83 rows; cols= ['pali', 'term', 'source_ref', 'confidence', 'note']
++confidence: {'high': 77, 'medium': 6}
++rows missing a field: 0
++
++$ git apply --check l10n_work/th/build_hook.diff
++build_hook.diff: APPLIES CLEANLY to tool/content/build_full_catalogs.py (repo file untouched)
++
++$ final delivery inventory (re-checked after adding the U-4 glossary row)
++files in th_only.patch: 7 (all new; no tracked repo file modified)
++l10n_work/glossary_evidence_th.csv : 83 rows (77 high / 6 medium), 39 mapped to a glossary.csv line
++l10n_work/th/glossary_th_corrections.csv : 14 rows; every 'line' number re-verified against glossary.csv
++tool/content/data_priority_th.py : 327 Thai strings, ast.parse OK
++git apply --check at 630186d : clean (5 whitespace warnings = blank context lines of the nested build_hook.diff)
++l10n_work/th/build_hook.diff : applies cleanly to tool/content/build_full_catalogs.py
+diff --git a/l10n_work/th/glossary_th_corrections.csv b/l10n_work/th/glossary_th_corrections.csv
+new file mode 100644
+index 0000000..55d5863
+--- /dev/null
++++ b/l10n_work/th/glossary_th_corrections.csv
+@@ -0,0 +1,15 @@
++line,pali,category,current_th,proposed_th,reason
++147,Manodvārāvajjana,keyTerm,มโนทวาราวชัชชน,มโนทวาราวัชชนะ,misspelt Thai Pāḷi (should be …วัชชนะ)
++166,Pañcadvārāvajjana,keyTerm,ปัญจทวาราวชัชชน,ปัญจทวาราวัชชนะ,misspelt Thai Pāḷi (should be …วัชชนะ)
++198,"Soka, Parideva, Dukkha, Domanassa, Upāyāsa",keyTerm,โศกะ ปริเทวะ ทุกขะ โทมนัสสะ อุปายาสะ,โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส,"Sanskritised th cell (โศก / -สะ endings); the Thai Pāḷi transliteration is โสกะ … โทมนัส อุปายาส (S4 blog-post_968, S5). Ledger U-4 — needs doctrinal sign-off before it is applied; feeds M17_DUYEN_CHI_TIET/M17_S05"
++288,Garuka-kamma,kammas,ชนกกรรม,ครุกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++289,Janaka-kamma,kammas,ครุกรรม,ชนกกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++290,Kaṭattā-kamma,kammas,อุปฆาตกรรม,กตัตตากรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++292,Lokuttara-kamma / Magga-kamma,kammas,อรูปาวจรกุศลกรรม,โลกุตตรกรรม (มัคคกรรม),th column rotated relative to the Pāḷi column (wrong kamma)
++294,Upaghātaka-kamma,kammas,กตัตตากรรม,อุปฆาตกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++296,Upapīḷaka-kamma,kammas,อาจิณณกรรม,อุปปีฬกกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++297,Upatthambhaka-kamma,kammas,อาสันนกรรม,อุปัตถัมภกกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++298,Āciṇṇa-kamma,kammas,อุปปีฬกกรรม,อาจิณณกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++299,Āsanna-kamma,kammas,อุปัตถัมภกกรรม,อาสันนกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
++392,Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ,cittas,อุเบกขาสหคตัง มโนทวาราวជ្ชนจิตตัง,อุเบกขาสหคตัง มโนทวาราวัชชนจิตตัง,Khmer-script corruption inside a Thai word (ជ + ្)
++393,Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ,cittas,อุเบกขาสหคตัง ปัญจทวาราวជ្ชนจิตตัง,อุเบกขาสหคตัง ปัญจทวาราวัชชนจิตตัง,Khmer-script corruption inside a Thai word (ជ + ្)
+diff --git a/tool/content/data_priority_th.py b/tool/content/data_priority_th.py
+new file mode 100644
+index 0000000..0ca37b5
+--- /dev/null
++++ b/tool/content/data_priority_th.py
+@@ -0,0 +1,734 @@
++# -*- coding: utf-8 -*-
++"""Thai (th) priority-content translation source table.
++
++Scope: **Thai only.**  Nothing in this module is read by any other locale.
++The existing ``data_priority_*.py`` tables carry one 3-tuple per locale
++(``name, shortName, description``) and the builder therefore publishes only
++those three fields.  Every deeper learner-facing field listed in the
++assignment (Paṭiccasamuppāda four aspects, ``paccayaDhamma`` /
++``paccayuppanna`` / ``subdivisions``, vīthi process context and step text)
++is authored here, keyed by the canonical id, so that the integrator can wire
++it with one locale-guarded merge (see ``l10n_work/th/build_hook.diff``).
++
++Schema
++------
++``PACCAYAS[id] = {"paccayaDhamma", "paccayuppanna", "subdivisions",
++                  "examples", "doctrinalNote"}``
++    ``subdivisions`` is ``{paliKey: {"name", "note"}}`` in the order used by
++    ``assets/data/paccayas.json``.
++``PATICCAS[id] = {"characteristic", "function", "manifestation",
++                  "proximateCause", "doctrinalNote", "examples"}``
++``VITHIS[id]   = {"arisingCondition", "significance", "doctrinalNote",
++                  "steps": {stepNumber(str): {"name", "description",
++                                             "doctrinalNote"}}}``
++``CORRECTIONS[section][id] = {field: value}``
++    High-confidence repairs of existing Thai entries that contradict the
++    canonical Pāḷi designation shipped in ``content_en.json`` (Pāḷi is the
++    cross-language anchor).  Each entry is justified in
++    ``l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md``.
++
++Fields absent from ``content_en.json`` are absent here as well: a field the
++English source does not contain is never invented.
++
++Translator: Thai Theravāda Abhidhamma draft, 2026-10-08.  Register:
++อภิธรรมโชติกะ / อภิธัมมัตถสังคหะ teaching Thai.  Status: **draft**, not
++reviewed; every term is listed with its Thai source evidence in
++``l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md``.
++"""
++
++# ---------------------------------------------------------------------------
++# 1. Paṭiccasamuppāda — the four aspects (ลักขณาทิจตุกะ) + notes + examples
++# ---------------------------------------------------------------------------
++
++PATICCAS = {
++    "PD_01": {
++        "characteristic": "ความไม่รู้แจ้งในสภาวธรรมตามความเป็นจริง (อริยสัจ 4 และไตรลักษณะ) เป็นลักษณะ",
++        "function": "ปิดบังความเห็นแจ้ง และเป็นปัจจัยให้สังขารเกิดขึ้น เป็นกิจ",
++        "manifestation": "ความหลงและความมืดมน เป็นปัจจุปัฏฐาน คือยังคงปรุงแต่งกรรม (สังขาร) อยู่โดยไม่รู้ตัว",
++        "proximateCause": "อโยนิโสมนสิการ (การมนสิการโดยไม่แยบคาย) การไม่คบหาสัตบุรุษ และการไม่ฟัง สัทธรรม เป็นปทัฏฐาน",
++        "doctrinalNote": "อวิชชาไม่มีเบื้องต้นอันพึงทราบได้ (อนมตัคคะ) ความสิ้นสุดแห่งอวิชชา คือการบรรลุมรรคจิตทั้ง 4",
++        "examples": [
++            "เพราะไม่รู้ว่าร่างกายนี้ไม่เที่ยง จึงยึดถือว่าเป็นตัวตน และสร้างกรรมเพื่อปกป้องตัวตนนั้น",
++        ],
++    },
++    "PD_02": {
++        "characteristic": "การกระทำและการปรุงแต่ง คือการจงใจปรุงแต่งทางกาย วาจา และใจ เป็นลักษณะ",
++        "function": "ให้เกิดกรรม คือสั่งสมกำลังแห่งกรรมที่จะให้ผลเกิดในภพหน้า เป็นกิจ",
++        "manifestation": "กรรมที่สั่งสมไว้ซึ่งจะชักนำวิญญาณไปสู่การเกิด เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีอวิชชาเป็นปัจจัย (เมื่อไม่มีอวิชชา สังขารย่อมเป็นโลกุตระและไม่สร้างกรรมใหม่) เป็นปทัฏฐาน",
++        "doctrinalNote": "สังขารในปฏิจจสมุปบาทหมายถึงเจตนาเจตสิกที่ปรุงแต่งกรรม",
++        "examples": [
++            "การให้ทานด้วยจิตที่เป็นกุศลเป็นปุญญาภิสังขาร วิญญาณของกรรมนั้นปฏิสนธิในสุคติ",
++            "การบรรลุฌานเป็นอาเนญชาภิสังขาร วิญญาณของกรรมนั้นปฏิสนธิเป็นพรหม",
++        ],
++    },
++    "PD_03": {
++        "characteristic": "การรู้อารมณ์ คือปฏิสนธิวิญญาณที่อาศัยนามรูปใหม่ เป็นลักษณะ",
++        "function": "ทำปฏิสนธิ คือเปิดชีวิตใหม่ เป็นกิจ",
++        "manifestation": "ภพใหม่ก่อตัวขึ้น คือการปรากฏของนามรูป เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีกรรม (สังขาร) เป็นปัจจัย และต้องมีนามรูปให้อาศัย เป็นปทัฏฐาน",
++        "doctrinalNote": "วิญญาณและนามรูปอาศัยกันและกัน ดุจฟ่อนไม้ไผ่สองฟ่อนที่พิงกันไว้",
++        "examples": [
++            "ขณะปฏิสนธิ ปฏิสนธิวิญญาณเกิดขึ้น นามรูปเจริญขึ้น และชีวิตใหม่เริ่มต้น",
++        ],
++    },
++    "PD_04": {
++        "characteristic": "ความมีอยู่ คือจิตและกายที่เกิดขึ้นและกำลังเจริญ เป็นลักษณะ",
++        "function": "เป็นที่ตั้งของวิญญาณ และเป็นปัจจัยให้สฬายตนะเจริญขึ้น เป็นกิจ",
++        "manifestation": "อายตนะทั้ง 6 บริบูรณ์ขึ้น เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีวิญญาณเป็นปัจจัย และมีสมุฏฐาน 4 ของรูป เป็นปทัฏฐาน",
++        "examples": [
++            "ในครรภ์ ปฏิสนธิวิญญาณเกิดขึ้น นามรูปค่อย ๆ เจริญขึ้นจากตัวอ่อนจนครบกำหนดคลอด",
++        ],
++    },
++    "PD_05": {
++        "characteristic": "ความพร้อมที่จะรับอารมณ์ คือทวาร 6 ที่อารมณ์ทั้งหลายเข้ามา เป็นลักษณะ",
++        "function": "เป็นทวารให้จิตได้พบอารมณ์ภายนอก เป็นกิจ",
++        "manifestation": "ผัสสะเกิดขึ้น จิตกระทบอารมณ์ได้ เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีนามรูปที่บริบูรณ์แล้วเป็นปัจจัย เป็นปทัฏฐาน",
++        "examples": [
++            "ทารกแรกเกิดเมื่ออายตนะทั้ง 6 ครบ ก็เริ่มมีการกระทบกับโลกภายนอก",
++        ],
++    },
++    "PD_06": {
++        "characteristic": "การกระทบ คือการประจวบกันของอายตนะ อารมณ์ และวิญญาณ เป็นลักษณะ",
++        "function": "รวบรวมอายตนะ อารมณ์ และวิญญาณให้มาบรรจบกัน เป็นปัจจัยให้เวทนาเกิด เป็นกิจ",
++        "manifestation": "จิต เจตสิก อายตนะ และอารมณ์รวมกันเข้าปรากฏ เป็นปัจจุปัฏฐาน",
++        "proximateCause": "ต้องมีครบทั้ง 3 คือ อายตนะ อารมณ์ และวิญญาณ เป็นปทัฏฐาน",
++        "doctrinalNote": "ผัสสะในปฏิจจสมุปบาทคือผัสสเจตสิก",
++        "examples": [
++            "ตาเห็นอารมณ์ที่น่าพอใจ จักขายตนะ รูปารมณ์ และจักขุวิญญาณรวมกันเป็นจักขุสัมผัส แล้วโสมนัสเวทนาก็เกิดตามมา",
++        ],
++    },
++    "PD_07": {
++        "characteristic": "การเสวยอารมณ์ คือลิ้มรสอารมณ์ว่าสุข ทุกข์ หรือเป็นกลาง หลังจากผัสสะ เป็นลักษณะ",
++        "function": "เสวยรสอารมณ์ เป็นปัจจัยให้ตัณหาเกิดเมื่อมีอโยนิโสมนสิการ เป็นกิจ",
++        "manifestation": "ความรู้สึกสุข ทุกข์ หรือเป็นกลางที่เกิดขึ้นในจิต เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีผัสสะเป็นปัจจัย เป็นปทัฏฐาน",
++        "doctrinalNote": "นี่เป็นจุดสำคัญของสติปัฏฐาน 4 คือให้หยุดอยู่เพียงเวทนา ไม่ปล่อยให้เจริญเป็นตัณหา",
++        "examples": [
++            "ได้ยินคำสรรเสริญ (ผัสสะ) เกิดโสมนัสเวทนา ถ้าขาดสติ ตัณหาที่อยากได้อีกก็เกิดตามมา",
++        ],
++    },
++    "PD_08": {
++        "characteristic": "ความกระหายอยาก คือความอยากที่ยึดหน่วง เกิดจากเวทนา เป็นลักษณะ",
++        "function": "ยึดเกาะอารมณ์ของตน เป็นปัจจัยให้อุปาทานเกิดขึ้น เป็นกิจ",
++        "manifestation": "การยึดถือที่เกิดขึ้น วัฏฏะจึงหมุนต่อไป เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีเวทนา (โดยเฉพาะโสมนัสและสุขเวทนา) เป็นปัจจัย เป็นปทัฏฐาน",
++        "doctrinalNote": "ตัณหาเป็นสมุทัย (เหตุแห่งทุกข์) ในอริยสัจ 4 ความสิ้นตัณหาคือความสิ้นทุกข์ คือนิพพาน",
++        "examples": [
++            "เห็นอาหารอร่อย ตัณหาก็เกิด อยากกินอีก",
++            "ประสบความทุกข์ วิภวตัณหาก็เกิด อยากไม่เป็น",
++        ],
++    },
++    "PD_09": {
++        "characteristic": "ความยึดมั่น คือการเกาะกุมที่ไม่ยอมปล่อย เป็นลักษณะ",
++        "function": "ยึดอารมณ์ไว้แน่น เป็นปัจจัยให้ภพเกิดขึ้น เป็นกิจ",
++        "manifestation": "ภพที่ก่อตัวขึ้น กรรมที่นำไปเกิดสั่งสมขึ้น เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีตัณหาเป็นปัจจัย อุปาทานคือตัณหาที่กล้าและมั่นคงขึ้น เป็นปทัฏฐาน",
++        "examples": [
++            "ไม่ใช่เพียงอยากได้เงิน (ตัณหา) แต่ปล่อยเงินไม่ได้ (อุปาทาน)",
++        ],
++    },
++    "PD_10": {
++        "characteristic": "ความมีอยู่ คือกำลังกรรมที่สั่งสมพร้อมจะให้เกิด เป็นลักษณะ",
++        "function": "เป็นปัจจัยให้ชาติเกิดขึ้นในภพหน้า เป็นกิจ",
++        "manifestation": "การเกิดในภูมิที่สมควรแก่กรรมนั้น เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีอุปาทานเป็นปัจจัย อุปาทานเป็นเชื้อเพลิงของภพ เป็นปทัฏฐาน",
++        "examples": [
++            "ผู้ที่ให้ทานอยู่ตลอดชีวิต ย่อมสั่งสมกามภพที่เป็นกุศล และเกิดเป็นผู้มั่งคั่งในชาติหน้า",
++        ],
++    },
++    "PD_11": {
++        "characteristic": "การปฏิสนธิ คือวิญญาณเกิดในภูมิใหม่ เป็นลักษณะ",
++        "function": "เปิดชีวิตใหม่ นำกองทุกข์ทั้งปวงมาด้วย เป็นกิจ",
++        "manifestation": "ทุกข์คือชราและมรณะปรากฏขึ้น เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีภพ (กำลังกรรม) เป็นปัจจัย เป็นปทัฏฐาน",
++        "doctrinalNote": "วัฏฏะสามชาติมาเชื่อมกันตรงนี้ ชาติ (PD_11) เทียบได้กับวิญญาณ (PD_03) ฝ่ายผลของชาติหน้า",
++        "examples": [
++            "ขณะปฏิสนธิคือชาติ ทุกข์ทั้งปวงย่อมตามมาแต่ชาตินั้น",
++        ],
++    },
++    "PD_12": {
++        "characteristic": "ความแก่และความตาย คือความเสื่อมสลายและความดับสิ้นที่หลีกเลี่ยงไม่ได้ของนามรูปที่ปัจจัยปรุงแต่ง เป็นลักษณะ",
++        "function": "สิ้นสุดชีวิตหนึ่ง และเริ่มวัฏฏะใหม่ถ้ายังไม่หลุดพ้น เป็นกิจ",
++        "manifestation": "ชีวิตหนึ่งจบลง ถ้ายังไม่หลุดพ้น วัฏฏะก็ดำเนินต่อไป เป็นปัจจุปัฏฐาน",
++        "proximateCause": "มีชาติเป็นปัจจัย ที่ใดมีชาติ ที่นั้นต้องมีชราและมรณะ เป็นปทัฏฐาน",
++        "doctrinalNote": "ความหลุดพ้นคือการสิ้นอวิชชา (PD_01) และตัณหา (PD_08) คือการประจักษ์แจ้งนิพพาน",
++        "examples": [
++            "สัตว์ทั้งหลายที่เกิดแล้ว ย่อมต้องแก่และตายทั้งนั้น",
++            "เมื่ออวิชชาและตัณหาถูกทำลาย ชราและมรณะย่อมไม่เกิดขึ้นอีก",
++        ],
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 2. Paccayas — ปัจจัยธรรม / ปัจจยุปบันนธรรม, subdivisions, notes, examples
++# ---------------------------------------------------------------------------
++
++PACCAYAS = {
++    "PC_01": {
++        "paccayaDhamma": "เหตุ 6 คือ โลภะ โทสะ โมหะ อโลภะ อโทสะ อโมหะ",
++        "paccayuppanna": "จิตและเจตสิกที่สัมปยุตด้วยเหตุ และรูปที่มีจิตเป็นสมุฏฐาน คือจิตตชรูปในระหว่างภพ และกัมมชรูปในขณะปฏิสนธิ",
++        "examples": [
++            "จิตที่มีโลภะเป็นมูลมีเหตุ 2 คือ โลภะและโมหะ เหตุทั้งสองทำให้จิตขณะนั้นเป็นอกุศลทั้งขณะ",
++            "จิตอเหตุกะไม่มีเหตุ จึงไม่ได้รับเหตุปัจจัย เช่น สัมปฏิจฉันนจิต 2 ดวง",
++        ],
++        "doctrinalNote": "เฉพาะเหตุเจตสิก 6 ดวงเท่านั้นที่เป็นเหตุ เจตสิกอื่นแม้มีกำลังเพียงใด ก็ช่วยอุปการะธรรมของตนได้เพียงโดยปัจจัยอื่นเท่านั้น",
++    },
++    "PC_02": {
++        "paccayaDhamma": "อารมณ์ 6 คือ รูป เสียง กลิ่น รส โผฏฐัพพะ และธรรมารมณ์ (รวมนิพพานและอารมณ์ของฌาน)",
++        "paccayuppanna": "จิต 89 ดวงทั้งหมดที่รู้อารมณ์ พร้อมด้วยเจตสิก 52 ดวง",
++        "examples": [
++            "รูปารมณ์ (ภาพที่เห็น) เป็นอารัมมณปัจจัยแก่จักขุวิญญาณและเจตสิกที่สัมปยุต",
++            "นิพพานเป็นอารัมมณปัจจัยแก่โลกุตตรจิต",
++        ],
++        "doctrinalNote": "ตามนัยในวิสุทธิมรรค ปริจเฉทที่ 17 อวิชชาเป็นอารัมมณปัจจัยแก่สังขารที่เป็นกุศลได้ เมื่อผู้ปฏิบัติพิจารณาอวิชชาด้วยปัญญา",
++    },
++    "PC_03": {
++        "paccayaDhamma": "อธิบดี 4 ที่เกิดร่วมกัน คือ ฉันทะ (ความพอใจ) วิริยะ (ความเพียร) จิตตะ (จิต) และวิมังสา (ปัญญา) รวมทั้งอารมณ์ที่เป็นใหญ่",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดร่วมกับอธิบดีนั้น สำหรับอารมณ์ที่เป็นใหญ่ ได้แก่ จิต 84 ดวง (เว้นจิตวิบากอเหตุกะ) พร้อมเจตสิกที่สัมปยุต",
++        "subdivisions": {
++            "Sahajāt'ādhipati": {
++                "name": "สหชาตาธิปติ",
++                "note": "หนึ่งในอธิบดี 4 คือ ฉันทะ วิริยะ จิตตะ และวิมังสา ที่โดดเด่นในจิตขณะหนึ่ง",
++            },
++            "Ārammaṇ'ādhipati": {
++                "name": "อารัมมณาธิปติ",
++                "note": "อารมณ์ที่ถือเป็นใหญ่ ครอบงำจิตที่ยึดอารมณ์นั้น",
++            },
++        },
++        "examples": [
++            "เมื่อความเพียรของผู้ปฏิบัติกล้าแข็งที่สุด วิริยะเป็นอธิบดีครอบงำจิตขณะฌานทั้งขณะ",
++            "ผู้ที่หลงใหลในสิ่งของมีค่า สิ่งนั้นเป็นอารมณ์ที่เป็นใหญ่ของจิตที่กำหนัด",
++        ],
++        "doctrinalNote": "อธิปติปัจจัยไม่มีในจิตอเหตุกะ 18 ดวง และไม่มีในจิตที่อธิบดีเพียงอย่างเดียวเป็นไปได้",
++    },
++    "PC_04": {
++        "paccayaDhamma": "จิตและเจตสิกที่เพิ่งดับไป (เว้นจุติจิตของพระอรหันต์)",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดติดต่อกันในขณะถัดไปทันที",
++        "examples": [
++            "จักขุวิญญาณเมื่อดับไปแล้ว เป็นอนันตรปัจจัยแก่สัมปฏิจฉันนจิตในวิถีปัญจทวาร",
++            "ปฏิสนธิจิตเมื่อดับไปแล้ว เป็นอนันตรปัจจัยแก่ภวังคจิตขณะแรก",
++        ],
++        "doctrinalNote": "อนันตรปัจจัยเป็นเหตุให้กระแสจิตสืบต่อกันไม่ขาดตอน ระหว่างจิตสองขณะไม่มีช่องว่าง",
++    },
++    "PC_05": {
++        "paccayaDhamma": "จิตและเจตสิกที่เพิ่งดับไป",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดตามมาติด ๆ",
++        "examples": [
++            "ความสัมพันธ์เดียวกันนี้ เรียกว่า อนันตรปัจจัย เมื่อพูดถึงการเปิดทางให้ และเรียกว่า สมันนตรปัจจัย เมื่อพูดถึงการเกิดตามลำดับติดต่อกัน",
++        ],
++        "doctrinalNote": "ปัจจัยสองข้อนี้เป็นสภาวธรรมเดียวกัน ต่างกันเพียงนัยที่แสดง ดุจด้านสองด้านของเหรียญเดียวกัน",
++    },
++    "PC_06": {
++        "paccayaDhamma": "นามขันธ์ 4 ที่เกิดพร้อมกัน มหาภูตรูป 4 จิตและเจตสิกในระหว่างภพ และนามรูปในขณะปฏิสนธิ",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดพร้อมกัน จิตตชรูปและกัมมชรูปในระหว่างภพ และนามรูปที่อาศัยกันในขณะปฏิสนธิ",
++        "examples": [
++            "ในจิตขณะหนึ่งที่มีโลภะ เวทนา สัญญา สังขาร และวิญญาณ เกิดพร้อมกันและอุปการะกันและกัน",
++            "ในขณะปฏิสนธิ ปฏิสนธิวิญญาณและกัมมชรูปอุปการะกันและกันโดยสหชาตปัจจัย",
++        ],
++        "doctrinalNote": "ปัจจัยนี้ถูกใช้มากที่สุดในการอธิบายความพร้อมกันของนามและรูปในจิตขณะเดียว",
++    },
++    "PC_07": {
++        "paccayaDhamma": "นามขันธ์ 4 ที่เกิดพร้อมกัน มหาภูตรูป 4 และนามรูปในขณะปฏิสนธิ",
++        "paccayuppanna": "สภาวธรรมเหล่านั้นเอง เพราะความสัมพันธ์นี้เป็นไปทั้งสองทาง",
++        "examples": [
++            "มหาภูตรูป 4 คือ ธาตุดินอาศัยธาตุน้ำ ธาตุน้ำอาศัยธาตุดิน ไม่มีธาตุใดตั้งอยู่ลำพัง",
++        ],
++        "doctrinalNote": "อัญญมัญญปัจจัยย่อมเกิดร่วมกับสหชาตปัจจัยเสมอ แต่แคบกว่า จิตตชรูปไม่เป็นอัญญมัญญปัจจัยกับจิต",
++    },
++    "PC_08": {
++        "paccayaDhamma": "นามขันธ์ 4 ที่เกิดพร้อมกัน มหาภูตรูป 4 และวัตถุ 6 (จักขุ โสตะ ฆานะ ชิวหา กาย และหทัยวัตถุ)",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดพร้อมกัน อุปาทายรูป และวิญญาณธาตุ 7 พร้อมเจตสิกที่สัมปยุต",
++        "subdivisions": {
++            "Sahajāta-nissaya": {
++                "name": "สหชาตนิสสยะ",
++                "note": "การอาศัยกันและกันในจิตขณะเดียวกัน",
++            },
++            "Purejāta-nissaya (vatthu)": {
++                "name": "ปุเรชาตนิสสยะ (วัตถุ)",
++                "note": "วัตถุ 6 ที่เกิดก่อน เป็นที่อาศัยของวิญญาณธาตุ 7",
++            },
++            "Vatthārammaṇa-purejāta-nissaya": {
++                "name": "วัตถารัมมณปุเรชาตนิสสยะ",
++                "note": "หทัยวัตถุเป็นทั้งที่อาศัยและเป็นอารมณ์ของมโนธาตุพร้อมกัน",
++            },
++        },
++        "examples": [
++            "จักขุวัตถุเป็นนิสสยปัจจัยแก่จักขุวิญญาณและเจตสิกที่สัมปยุต",
++            "หทัยวัตถุค้ำจุนมโนวิญญาณธาตุทั้งปวงตลอดชีวิตของสัตว์ที่มีขันธ์ 5",
++        ],
++        "doctrinalNote": "พึงแยกจากอุปนิสสยปัจจัย นิสสยะเป็นที่อาศัยโดยตรง ส่วนอุปนิสสยะเป็นการช่วยอุปการะอย่างมีกำลังจากที่ไกล",
++    },
++    "PC_09": {
++        "paccayaDhamma": "อารมณ์ที่มนสิการอย่างแรงกล้า จิตและเจตสิกที่เพิ่งดับไป และปัจจัยตามธรรมชาติ เช่น ศรัทธา ศีล ฤดู อาหาร และกัลยาณมิตร",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดขึ้นในภายหลัง",
++        "subdivisions": {
++            "Ārammaṇ'ūpanissaya": {
++                "name": "อารัมมณูปนิสสยะ",
++                "note": "อารมณ์ที่มีกำลังกลายเป็นเหตุกระตุ้นอย่างเด็ดขาดแก่จิตที่เกิดตามมา",
++            },
++            "Anantar'ūpanissaya": {
++                "name": "อนันตรูปนิสสยะ",
++                "note": "เท่ากับอนันตรปัจจัยเมื่อพิจารณาในแง่กำลังที่ช่วยอุปการะ",
++            },
++            "Pakat'ūpanissaya": {
++                "name": "ปกตูปนิสสยะ",
++                "note": "ปัจจัยตามธรรมชาติ เช่น ศรัทธา ศีล ฤดู กัลยาณมิตร และกรรมที่เคยกระทำ",
++            },
++        },
++        "examples": [
++            "สุขเวทนาเป็นปกตูปนิสสยะแก่ตัณหา เพราะเวทนาน่าพอใจ ตัณหาจึงกล้าแข็งขึ้น",
++            "ศรัทธาเป็นอุปนิสสยปัจจัยอย่างมีกำลังแก่การให้ทาน โลภะเป็นอุปนิสสยปัจจัยอย่างมีกำลังแก่การลักขโมย",
++        ],
++        "doctrinalNote": "ความเชื่อม เวทนา → ตัณหา ในปฏิจจสมุปบาท อธิบายได้เป็นหลักด้วยปกตูปนิสสยปัจจัย",
++    },
++    "PC_10": {
++        "paccayaDhamma": "วัตถุ 6 และอารมณ์ 6 ซึ่งเป็นรูปที่เกิดก่อนแล้วยังตั้งอยู่",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดในภายหลัง",
++        "subdivisions": {
++            "Vatthu-purejāta": {
++                "name": "วัตถุปุเรชาต",
++                "note": "วัตถุ 6 อุปการะวิญญาณธาตุ 7",
++            },
++            "Ārammaṇa-purejāta": {
++                "name": "อารัมมณปุเรชาต",
++                "note": "อารมณ์ปัจจุบันที่เป็นรูป อุปการะจิต 54 ดวงในกามาวจรและเจตสิก 50 ดวง",
++            },
++        },
++        "examples": [
++            "จักขุวัตถุต้องเกิดก่อน จักขุวิญญาณจึงเกิดขึ้นได้",
++            "รูปารมณ์ปัจจุบัน (อายุ 17 ขณะจิต) เป็นปุเรชาตปัจจัยแก่วิถีจิตทางจักขุทวาร",
++        ],
++        "doctrinalNote": "ปุเรชาตปัจจัยใช้ได้เฉพาะกับรูปเท่านั้น นามธรรมเป็นปุเรชาตปัจจัยไม่ได้",
++    },
++    "PC_11": {
++        "paccayaDhamma": "จิต 85 ดวง คือจิตในกามาวจร รูปาวจร อรูปาวจร และโลกุตตระ (เว้นปฏิสนธิจิต) พร้อมด้วยเจตสิก 52 ดวง",
++        "paccayuppanna": "กัมมชรูปที่เกิดก่อน คือรูปของร่างกายที่มีชีวิต",
++        "examples": [
++            "จิตและเจตสิกในระหว่างชีวิตค้ำจุนร่างกายที่เกิดแล้ว ไม่ให้เสื่อมสลาย",
++            "ความหิวทำให้ต้องกินอาหาร นามธรรมที่เกิดภายหลังหล่อเลี้ยงรูปที่เกิดก่อน",
++        ],
++        "doctrinalNote": "นามธรรมที่เกิดภายหลังเท่านั้นที่อุปการะรูปที่เกิดก่อน ไม่มีทางกลับกัน",
++    },
++    "PC_12": {
++        "paccayaDhamma": "ชวนจิตและเจตสิกที่เกิดก่อน (เว้นชวนจิตขณะสุดท้ายและชวนจิตของมรรค)",
++        "paccayuppanna": "ชวนจิตและเจตสิกที่เกิดติดต่อกันในขณะถัดไป",
++        "examples": [
++            "ในชวนะ 7 ขณะ ขณะแรกเป็นอาเสวนปัจจัยแก่ขณะที่สอง",
++            "การท่องจำด้วยการสวดซ้ำ ๆ ทำให้ครั้งต่อ ๆ ไปง่ายขึ้น ก็เป็นหลักการเดียวกัน",
++        ],
++        "doctrinalNote": "ชวนจิตของโลกุตตรมรรคไม่เป็นอาเสวนปัจจัย เพราะเกิดขึ้นเพียงขณะจิตเดียว",
++    },
++    "PC_13": {
++        "paccayaDhamma": "เจตนาที่เป็นกุศลและอกุศล คือเจตนาเจตสิก",
++        "paccayuppanna": "สหชาตกัมมะ ได้แก่ จิตและเจตสิกที่เกิดพร้อมกับเจตนานั้น และจิตตชรูป ส่วนนานักขณิกกัมมะ ได้แก่ วิบากจิต เจตสิกที่สัมปยุต และกัมมชรูปในขณะปฏิสนธิ",
++        "subdivisions": {
++            "Sahajāta-kamma": {
++                "name": "สหชาตกัมมะ",
++                "note": "เจตนาอุปการะสภาวธรรมที่เกิดพร้อมกับตนในจิตขณะเดียวกัน",
++            },
++            "Nānākkhaṇika-kamma": {
++                "name": "นานักขณิกกัมมะ",
++                "note": "เจตนาในจิตขณะหนึ่งให้ผลในจิตอีกขณะหนึ่ง เป็นรากฐานของการเกิด",
++            },
++        },
++        "examples": [
++            "เจตนาในการให้ทานอุปการะวิบากจิตและกัมมชรูปในชาติหน้า (นานักขณิกกัมมะ)",
++            "เจตนาในจิตขณะที่มีโลภะ ทำให้จิตขณะนั้นเป็นอกุศลทั้งขณะ (สหชาตกัมมะ)",
++        ],
++        "doctrinalNote": "ความเชื่อม สังขาร → วิญญาณ และ ภพ → ชาติ ในองค์ 12 อธิบายได้ด้วยนานักขณิกกัมมปัจจัย",
++    },
++    "PC_14": {
++        "paccayaDhamma": "วิบากจิต 36 ดวง (อเหตุกะ กามาวจรโสภณ และมหาวิบาก) พร้อมด้วยเจตสิกที่สัมปยุต 38 ดวง",
++        "paccayuppanna": "วิบากจิตและเจตสิกที่เกิดพร้อมกัน และกัมมชรูปที่จิตนั้นให้เกิด",
++        "examples": [
++            "ปฏิสนธิจิตเป็นวิบาก อุปการะกัมมชรูปที่เกิดพร้อมกับตน",
++            "จักขุวิญญาณเป็นวิบากจิต อุปการะเจตสิกที่เกิดพร้อมกันโดยวิปากปัจจัย โดยไม่สร้างกรรมใหม่",
++        ],
++        "doctrinalNote": "วิบากจิตไม่สร้างกรรมใหม่ นี่เป็นจุดสำคัญที่ทำให้เข้าใจว่า “ผลไม่ให้ผล”",
++    },
++    "PC_15": {
++        "paccayaDhamma": "กวฬีการาหาร (รูป) และนามาหาร 3 คือ ผัสสะ เจตนา และวิญญาณ",
++        "paccayuppanna": "อาหารรูปหล่อเลี้ยงร่างกาย นามาหาร 3 หล่อเลี้ยงจิต เจตสิก และจิตตชรูป",
++        "subdivisions": {
++            "Rūp'āhāra": {
++                "name": "รูปาหาร",
++                "note": "อาหารที่เป็นรูปหล่อเลี้ยงร่างกาย",
++            },
++            "Nām'āhāra": {
++                "name": "นามาหาร",
++                "note": "ผัสสะ เจตนา และวิญญาณ เป็นอาหารของนามธรรม",
++            },
++        },
++        "examples": [
++            "อาหารหล่อเลี้ยงร่างกายที่เป็นรูป คือกวฬีการาหาร",
++            "เจตนาหาร เจตนาเป็นอาหารของกรรมและยืดวัฏฏะการเกิดและตายให้ยาวออกไป",
++        ],
++        "doctrinalNote": "เทียบได้กับอาหาร 4 ในพระสุตตันตปิฎก (SN 12.63) คือการพิจารณาอาหาร",
++    },
++    "PC_16": {
++        "paccayaDhamma": "อินทรีย์ 20 คือ ปสาทรูป 5 รูปชีวิตินทรีย์ 1 และนามินทรีย์ 14 ได้แก่ เวทนา ศรัทธา วิริยะ สติ สมาธิ ปัญญา อินทรีย์ที่เกี่ยวกับการรู้แจ้งอีก 3 และมโนอินทรีย์",
++        "paccayuppanna": "ปสาทรูปอุปการะวิญญาณธาตุ 7 นามินทรีย์อุปการะจิตและเจตสิกที่เกิดพร้อมกัน รูปชีวิตินทรีย์ค้ำจุนกัมมชรูป",
++        "subdivisions": {
++            "Purejāta-indriya": {
++                "name": "ปุเรชาตินทรีย์",
++                "note": "ปสาทรูป 5 ที่เกิดก่อน อุปการะวิญญาณที่รับรู้อารมณ์ทางทวารนั้น ๆ",
++            },
++            "Jīvit'indriya": {
++                "name": "ชีวิตินทรีย์ (รูป)",
++                "note": "ค้ำจุนกัมมชรูปในกลุ่มของตน",
++            },
++            "Sahajāta-indriya": {
++                "name": "สหชาตินทรีย์",
++                "note": "นามินทรีย์ 14 อุปการะจิตและเจตสิกที่เกิดพร้อมกัน",
++            },
++        },
++        "examples": [
++            "จักขุนทรีย์เป็นใหญ่ในการเห็น ถ้าไม่มีจักขุนทรีย์ก็ไม่มีการเห็น",
++            "สมาธินทรีย์เป็นใหญ่ครอบงำจิตขณะฌานทั้งขณะ",
++        ],
++        "doctrinalNote": "อินทรีย์ 5 คือ ศรัทธา วิริยะ สติ สมาธิ และปัญญา ต้องปรับให้สมดุลในการปฏิบัติ",
++    },
++    "PC_17": {
++        "paccayaDhamma": "องค์ฌาน 7 คือ วิตก วิจาร ปีติ สุข โทมนัส อุเบกขา และเอกัคคตา",
++        "paccayuppanna": "จิตและเจตสิกที่สัมปยุต (เว้นวิญญาณ 2 ดวงทางกาย) และรูปที่จิตนั้นให้เกิด",
++        "examples": [
++            "วิตกนำจิตไปสู่อารมณ์ เป็นฌานปัจจัยแก่องค์ฌานที่เกิดพร้อมกัน",
++            "ในทุติยฌานไม่มีวิตก แต่ปีติและเอกัคคตายังทำหน้าที่เป็นฌานปัจจัย",
++        ],
++        "doctrinalNote": "ฌานปัจจัยไม่ได้จำกัดอยู่เพียงฌานสมาบัติ องค์ฌาน 7 ยังทำหน้าที่ในจิตทั่วไปได้ด้วย",
++    },
++    "PC_18": {
++        "paccayaDhamma": "องค์มรรค 12 คือ สัมมาทิฏฐิ สัมมาสังกัปปะ สัมมาวาจา สัมมากัมมันตะ สัมมาอาชีวะ สัมมาวายามะ สัมมาสติ สัมมาสมาธิ และมิจฉาทิฏฐิ มิจฉาสังกัปปะ มิจฉาวายามะ มิจฉาสมาธิ",
++        "paccayuppanna": "จิตและเจตสิกที่สัมปยุต (เว้นวิญญาณ 2 ดวงทางกาย) และรูปที่จิตนั้นให้เกิด",
++        "examples": [
++            "สัมมาทิฏฐิในจิตที่เป็นกุศล นำจิตขณะนั้นไปสู่ฝ่ายกุศล",
++            "มิจฉาทิฏฐิในจิตที่มีโลภะ นำจิตไปสู่ฝ่ายอกุศล มัคคปัจจัยมีสองหน้า",
++        ],
++        "doctrinalNote": "มัคคปัจจัยเป็นไปได้ทั้งในสภาวธรรมที่เป็นกุศลและอกุศล ไม่จำกัดอยู่เพียงอริยมรรคมีองค์ 8 ที่เป็นโลกุตระ",
++    },
++    "PC_19": {
++        "paccayaDhamma": "นามขันธ์ 4 ที่เกิดพร้อมกัน",
++        "paccayuppanna": "นามขันธ์ 4 เหล่านั้นเอง เพราะความสัมพันธ์นี้เป็นไปทั้งสองทาง",
++        "examples": [
++            "เวทนาและสัญญาในจิตขณะหนึ่งเป็นสัมปยุตกัน เพราะรู้อารมณ์เดียวกันด้วยวัตถุเดียวกัน",
++        ],
++        "doctrinalNote": "เฉพาะนามธรรมเท่านั้นที่เป็นสัมปยุตได้ รูปไม่มีอารมณ์และวัตถุร่วมกัน จึงเป็นสัมปยุตไม่ได้",
++    },
++    "PC_20": {
++        "paccayaDhamma": "นามธรรม (เมื่ออุปการะรูป) หรือรูปธรรม (เมื่ออุปการะนาม)",
++        "paccayuppanna": "รูปธรรม (ที่เกิดพร้อมกันหรือเกิดก่อน) หรือนามธรรม (ที่เกิดพร้อมกันหรือเกิดภายหลัง)",
++        "subdivisions": {
++            "Sahajāta-vippayutta": {
++                "name": "สหชาตวิปปยุตตะ",
++                "note": "นามและรูปเกิดพร้อมกันแต่อุปการะกันในฐานะต่างชนิดกัน ในขณะปฏิสนธิ",
++            },
++            "Purejāta-vippayutta": {
++                "name": "ปุเรชาตวิปปยุตตะ",
++                "note": "วัตถุ 6 ที่เกิดก่อน อุปการะวิญญาณธาตุ 7",
++            },
++            "Pacchājāta-vippayutta": {
++                "name": "ปัจฉาชาตวิปปยุตตะ",
++                "note": "นามธรรมที่เกิดภายหลังอุปการะรูปที่เกิดก่อน",
++            },
++        },
++        "examples": [
++            "หทัยวัตถุ (รูป) อุปการะมโนวิญญาณธาตุ (นาม) ต่างชนิดกัน จึงเป็นวิปปยุตตปัจจัย",
++            "ในขณะปฏิสนธิ ปฏิสนธิวิญญาณและกัมมชรูปเกิดพร้อมกันแต่ยังเป็นต่างชนิดกัน",
++        ],
++        "doctrinalNote": "ปัจจัยนี้แสดงความสัมพันธ์ของจิตและรูป ซึ่งเป็นแกนของการวิเคราะห์นามรูปในองค์ 12",
++    },
++    "PC_21": {
++        "paccayaDhamma": "รวมสภาวธรรมที่เป็นสหชาตปัจจัย ปุเรชาตปัจจัย ปัจฉาชาตปัจจัย อาหารปัจจัย และอินทริยปัจจัย",
++        "paccayuppanna": "สภาวธรรมที่ได้รับการอุปการะจากปัจจัย 5 ข้อนั้น",
++        "subdivisions": {
++            "Sahajāta-atthi": {
++                "name": "สหชาตอัตถิ",
++                "note": "มีอยู่ในจิตขณะเดียวกัน",
++            },
++            "Purejāta-atthi": {
++                "name": "ปุเรชาตอัตถิ",
++                "note": "รูปที่เกิดก่อนและยังตั้งอยู่",
++            },
++            "Pacchājāta-atthi": {
++                "name": "ปัจฉาชาตอัตถิ",
++                "note": "นามธรรมที่เกิดภายหลังและกำลังตั้งอยู่",
++            },
++            "Āhāra-atthi": {
++                "name": "อาหารอัตถิ",
++                "note": "กวฬีการาหารที่กำลังมีอยู่",
++            },
++            "Indriya-atthi": {
++                "name": "อินทริยอัตถิ",
++                "note": "รูปชีวิตินทรีย์ที่กำลังมีอยู่",
++            },
++        },
++        "examples": [
++            "เมื่อจักขุวัตถุมีอยู่ จักขุวิญญาณจึงเกิดขึ้นได้ เป็นอัตถิปัจจัย",
++            "มหาภูตรูป 4 ที่มีอยู่ อุปการะอุปาทายรูป",
++        ],
++        "doctrinalNote": "อัตถิปัจจัยกว้างที่สุดในปัจจัย 24 เพราะครอบคลุมปัจจัยอื่นอีก 5 ข้อ",
++    },
++    "PC_22": {
++        "paccayaDhamma": "จิตและเจตสิกที่เพิ่งดับไป",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดติดต่อกันในขณะถัดไปทันที",
++        "examples": [
++            "จักขุวิญญาณต้องดับไปก่อน สัมปฏิจฉันนจิตจึงเกิดขึ้นได้",
++        ],
++        "doctrinalNote": "มีขอบเขตเดียวกับอนันตรปัจจัย แต่เน้นความไม่มีอยู่ของจิตดวงก่อน",
++    },
++    "PC_23": {
++        "paccayaDhamma": "จิตและเจตสิกที่เพิ่งดับไป",
++        "paccayuppanna": "จิตและเจตสิกที่เกิดติดต่อกันในขณะถัดไปทันที",
++        "examples": [
++            "ภวังคจิตขณะหนึ่งที่เพิ่งดับไป (วิคตะ) อุปการะภวังคจิตขณะถัดไป",
++        ],
++        "doctrinalNote": "สภาวธรรมเดียว สองนัยคำพูด นัตถิเน้น “ไม่มีอยู่แล้ว” วิคตเน้น “จากไปแล้ว”",
++    },
++    "PC_24": {
++        "paccayaDhamma": "รวมสภาวธรรมที่เป็นสหชาตปัจจัย ปุเรชาตปัจจัย ปัจฉาชาตปัจจัย อาหารปัจจัย และอินทริยปัจจัย",
++        "paccayuppanna": "สภาวธรรมที่ได้รับการอุปการะจากปัจจัย 5 ข้อนั้น",
++        "examples": [
++            "หทัยวัตถุที่ยังไม่ดับไป คอยอุปการะมโนวิญญาณธาตุอยู่",
++        ],
++        "doctrinalNote": "คู่ที่ 21–24 (อัตถิ/นัตถิ และ วิคต/อวิคต) ปิดท้ายปัจจัย 24 ด้วยคู่คำที่มีความหมายอย่างเดียวกัน",
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 3. Vīthis — process context and step text
++# ---------------------------------------------------------------------------
++
++VITHIS = {
++    "VT_NGU_MON_RATLON": {
++        "arisingCondition": "อารมณ์ทางปัญจทวาร (รูป เสียง กลิ่น รส โผฏฐัพพะ) กระทบปสาทรูปที่ตรงกันอย่างแรงกล้ามาก",
++        "significance": "วิถีที่สมบูรณ์ที่สุด ชวนะ 7 ขณะสร้างกรรมได้เต็มที่ และตทาลัมพนะเสวยอารมณ์ที่เหลืออยู่",
++        "doctrinalNote": "อติมหันตารมณ์ หมายถึงอารมณ์ที่ยิ่งใหญ่พอที่จะมีชวนะ 7 ขณะ และตทาลัมพนะ 2 ขณะ",
++        "steps": {
++            "1": {
++                "name": "อดีตภวังค์",
++                "description": "ภวังคจิตที่กำลังเป็นไปตามปกติก่อนที่อารมณ์จะกระทบทวาร",
++                "doctrinalNote": "เป็นจิตประเภทเดียวกับปฏิสนธิจิตและจุติจิตของบุคคลนั้น",
++            },
++            "2": {
++                "name": "ภวังคจลนะ",
++                "description": "อารมณ์กระทบปสาทรูป ภวังคจิตไหวตัวเป็นครั้งแรก",
++            },
++            "3": {
++                "name": "ภวังคุปัจเฉทะ",
++                "description": "กระแสภวังค์ขาดตอนลงอย่างสิ้นเชิง วิถีจิตเริ่มต้นขึ้น",
++                "doctrinalNote": "หลังจากขณะนี้ ปัญจทวาราวัชชนจิตจึงเกิดขึ้น",
++            },
++            "4": {
++                "name": "ปัญจทวาราวัชชนะ",
++                "description": "เปิดทวารทั้ง 5 และหันจิตไปสู่อารมณ์ กำหนดว่าอารมณ์มากระทบทวารใด",
++                "doctrinalNote": "จิตดวงนี้คือ CI_028 มีอุเบกขาเวทนา พร้อมเจตสิก 11 ดวง ไม่สร้างกรรม",
++            },
++            "5": {
++                "name": "ทวิปัญจวิญญาณ",
++                "description": "รู้อารมณ์ทางทวารที่ตรงกัน มีเพียงสัพพจิตตสาธารณเจตสิก 7 ดวงเกิดร่วม",
++                "doctrinalNote": "เป็นอกุศลวิบาก (CI_013–017) หรือกุศลวิบาก (CI_020–024) ตามกรรมที่ให้ปฏิสนธิ",
++            },
++            "6": {
++                "name": "สัมปฏิจฉันนะ",
++                "description": "รับอารมณ์ต่อจากวิญญาณทางทวารนั้น แล้วส่งเข้าสู่กระแสจิตภายใน",
++                "doctrinalNote": "CI_018 คืออกุศลวิบากที่มีอุเบกขา CI_025 คือกุศลวิบากที่มีอุเบกขา พร้อมเจตสิก 10 ดวง",
++            },
++            "7": {
++                "name": "สันตีรณะ",
++                "description": "ไต่สวนอารมณ์ว่าดีหรือไม่ดี น่าพอใจหรือไม่",
++                "doctrinalNote": "CI_027 (ที่มีโสมนัส) เกิดเฉพาะเมื่ออารมณ์งดงามมากเท่านั้น",
++            },
++            "8": {
++                "name": "โวฏฐัพพนะ",
++                "description": "ตัดสินอารมณ์เป็นครั้งสุดท้ายว่าดีหรือไม่ดี เปิดทางให้ชวนะ 7 ขณะ",
++                "doctrinalNote": "CI_029 (มโนทวาราวัชชนจิต) ทำหน้าที่ตัดสิน พร้อมเจตสิก 11 ดวง เป็นตัวกำหนดชนิดของชวนะที่จะเกิดตามมา",
++            },
++            "9": {
++                "name": "ชวนะ",
++                "description": "ชวนจิตเกิดติดต่อกัน 7 ขณะ สร้างกรรมที่เป็นกุศลหรืออกุศล ขณะที่ 1 ให้ผลในชาตินี้ ขณะที่ 7 ให้ผลในชาติหน้า และขณะที่ 2–6 ให้ผลในชาติต่อ ๆ ไป",
++                "doctrinalNote": "เป็นจิตขณะเดียวกัน 7 ขณะ เป็นส่วนเดียวของวิถีที่สร้างกรรม",
++            },
++            "10": {
++                "name": "ตทาลัมพนะ",
++                "description": "รับอารมณ์ที่เหลืออยู่ต่อจากชวนะ 2 ขณะ เกิดเฉพาะในวิถีที่มีอารมณ์ยิ่งใหญ่มาก และไม่สร้างกรรมใหม่",
++                "doctrinalNote": "ตทะ = นั้น อารมณ์ = อารมณ์ เกิดเฉพาะเมื่ออารมณ์ยิ่งใหญ่พอเท่านั้น",
++            },
++            "11": {
++                "name": "ภวังคปาตะ",
++                "description": "เมื่อวิถีจิตสิ้นสุดลง ภวังคจิตกลับเป็นไปตามปกติอีกครั้ง",
++            },
++        },
++    },
++    "VT_NGU_MON_LON": {
++        "arisingCondition": "อารมณ์ทางปัญจทวารที่แรงพอให้มีชวนะ 7 ขณะ แต่ไม่แรงพอจะให้เกิดตทาลัมพนะ",
++        "significance": "วิถีที่เกิดบ่อยที่สุด กรรมเกิดขึ้นเต็มที่ด้วยชวนะ 7 ขณะ",
++        "doctrinalNote": "ต่างจากอติมหันตารมณ์วิถีเพียงการไม่มีตทาลัมพนะ 2 ขณะ",
++        "steps": {
++            "1": {
++                "name": "ภวังคจลนะ",
++                "description": "อารมณ์กระทบปสาทรูป ภวังคจิตไหวตัว",
++            },
++            "2": {
++                "name": "ภวังคุปัจเฉทะ",
++                "description": "กระแสภวังค์ขาดตอนลง วิถีจิตเริ่มต้น",
++            },
++            "3": {
++                "name": "ปัญจทวาราวัชชนะ",
++                "description": "หันจิตไปสู่อารมณ์ทางปัญจทวาร",
++            },
++            "4": {
++                "name": "ทวิปัญจวิญญาณ",
++                "description": "รู้อารมณ์ทางทวารที่ตรงกัน",
++            },
++            "5": {
++                "name": "สัมปฏิจฉันนะ",
++                "description": "รับอารมณ์",
++            },
++            "6": {
++                "name": "สันตีรณะ",
++                "description": "ไต่สวนอารมณ์",
++            },
++            "7": {
++                "name": "โวฏฐัพพนะ",
++                "description": "ตัดสินอารมณ์ เปิดทางให้ชวนะ",
++            },
++            "8": {
++                "name": "ชวนะ",
++                "description": "ชวนจิต 7 ขณะสร้างกรรม หลังจากนั้นไม่มีตทาลัมพนะ",
++                "doctrinalNote": "เมื่อชวนะ 7 ขณะสิ้นสุด จิตกลับลงสู่ภวังค์ทันที",
++            },
++            "9": {
++                "name": "ภวังคปาตะ",
++                "description": "ภวังคจิตกลับเป็นไปตามปกติหลังวิถีจิตสิ้นสุด",
++            },
++        },
++    },
++    "VT_Y_MON": {
++        "arisingCondition": "ธรรมารมณ์ปรากฏที่มโนทวาร เช่น ความคิด ความทรงจำ หรือภาพที่คิดนึกขึ้น",
++        "significance": "อธิบายกิจกรรมทางใจทั้งปวง เป็นที่เกิดของมโนกรรม และเป็นต้นทางของวจีกรรมและกายกรรม",
++        "doctrinalNote": "มโนทวารวิถีเริ่มด้วยมโนทวาราวัชชนจิต (CI_029) โดยไม่ผ่านปัญจทวาราวัชชนจิต",
++        "steps": {
++            "1": {
++                "name": "ภวังคจลนะ",
++                "description": "ธรรมารมณ์กระทบ ภวังคจิตไหวตัว",
++            },
++            "2": {
++                "name": "ภวังคุปัจเฉทะ",
++                "description": "ภวังคจิตขาดตอนลง วิถีมโนทวารเริ่มต้น",
++            },
++            "3": {
++                "name": "มโนทวาราวัชชนะ",
++                "description": "เปิดมโนทวารและหันจิตไปสู่อารมณ์ทางใจ พร้อมทั้งตัดสินอารมณ์ในตัว (ทำหน้าที่เป็นโวฏฐัพพนะในวิถีนี้)",
++                "doctrinalNote": "CI_029 ทำหน้าที่ทั้งมโนทวาราวัชชนะและโวฏฐัพพนะ พร้อมเจตสิก 11 ดวง",
++            },
++            "4": {
++                "name": "ชวนะ",
++                "description": "ชวนจิต 7 ขณะ สร้างมโนกรรม ความคิด คำพูด และการกระทำที่จงใจทั้งปวงเกิดขึ้นที่นี่",
++                "doctrinalNote": "สร้างมโนกรรมโดยตรง วจีกรรมและกายกรรมก็เริ่มที่มโนทวารนี้เช่นกัน",
++            },
++            "5": {
++                "name": "ตทาลัมพนะ (แล้วแต่กรณี)",
++                "description": "ตทาลัมพนะในวิถีมโนทวาร ขึ้นอยู่กับกำลังของธรรมารมณ์",
++            },
++            "6": {
++                "name": "ภวังคปาตะ",
++                "description": "ภวังคจิตกลับเป็นไปตามปกติ",
++            },
++        },
++    },
++    "VT_VITHIMUTTA": {
++        "arisingCondition": "ปฏิสนธิ เมื่อชีวิตก่อนสิ้นสุดลง ภวังค์ ในระหว่างวิถีจิต จุติ เมื่อรูปชีวิตินทรีย์ดับ",
++        "significance": "อธิบายกลไกของการเกิดใหม่และความเชื่อมโยงระหว่างชาติ",
++        "doctrinalNote": "วิถีมุตตจิตไม่สร้างกรรมใหม่ เป็นวิบากจิตที่เป็นอัพยากฤตทางกรรม",
++        "steps": {
++            "1": {
++                "name": "ปฏิสนธิจิต",
++                "description": "จิตดวงแรกของชีวิตใหม่ สืบต่อจากจุติจิตของชาติก่อนโดยตรง และนำเมล็ดพันธุ์แห่งกรรมมาด้วย",
++                "doctrinalNote": "CI_019/CI_026 = บุคคลทวิเหตุกะ CI_027 = บุคคลที่ได้อภิญญาพิเศษ CI_063–CI_070 = บุคคลติเหตุกะหรือเทวดา",
++            },
++            "2": {
++                "name": "ภวังคจิต",
++                "description": "กระแสจิตที่ค้ำจุนชีวิตในระหว่างวิถีจิต เกิดและดับนับครั้งไม่ถ้วน เป็นพื้นฐานของกิจกรรมทางใจทั้งปวง",
++                "doctrinalNote": "ภวังค์คือส่วนที่ค้ำจุนชีวิตของกระแสจิต เป็นไปในการหลับลึกและระหว่างวิถีจิต",
++            },
++            "3": {
++                "name": "จุติจิต",
++                "description": "จิตขณะสุดท้าย รูปชีวิตินทรีย์ดับ จุติจิตดับลง ชีวิตสิ้นสุด ทันใดนั้นปฏิสนธิจิตของชาติถัดไปก็เกิดขึ้น",
++                "doctrinalNote": "จุติ = เคลื่อนไป จากไป อารมณ์ของจุติจิตคืออารมณ์อาสันนกรรม",
++            },
++        },
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 4. Repairs to existing Thai entries (evidence: canonical Pāḷi designation
++#    shipped in content_en.json + the Pāḷi anchor in assets/data/*.json)
++# ---------------------------------------------------------------------------
++
++CORRECTIONS = {
++    "cittas": {
++        # CI_026/CI_027 had somanassa/equanimity swapped; CI_028/CI_029 carried
++        # Khmer-script corruptions of "าวชฺชน" and a misspelled "าวชัชชน".
++        "CI_026": {
++            "name": "โสมนัสสสหคตัง สันตีรณจิตตัง (กุศลวิบาก)",
++        },
++        "CI_027": {
++            "name": "อุเบกขาสหคตัง สันตีรณจิตตัง (กุศลวิบาก)",
++        },
++        "CI_028": {
++            "name": "อุเบกขาสหคตัง ปัญจทวาราวัชชนจิตตัง",
++        },
++        "CI_029": {
++            "name": "อุเบกขาสหคตัง มโนทวาราวัชชนจิตตัง",
++        },
++    },
++    "kammas": {
++        # The legacy table attached the four by-function names to the
++        # by-priority ids and vice versa (Janaka/Garuka swapped, and so on).
++        # Names below follow assets/data/kammas.json (namePali) and the English
++        # names in content_en.json.
++        "KM_P_01": {
++            "name": "ชนกกรรม",
++            "shortName": "ชนกกรรม",
++            "description": "กรรมที่ให้เกิดปฏิสนธิและขันธ์ของชีวิตใหม่ เป็นกรรมที่กำหนดภูมิที่เกิด.",
++        },
++        "KM_P_02": {
++            "name": "อุปัตถัมภกกรรม",
++            "shortName": "อุปัตถัมภกกรรม",
++            "description": "กรรมที่คอยเกื้อหนุนและค้ำจุนผลของกรรมอื่นให้ดำเนินต่อไป.",
++        },
++        "KM_P_03": {
++            "name": "อุปปีฬกกรรม",
++            "shortName": "อุปปีฬกกรรม",
++            "description": "กรรมที่ขัดขวางหรือทำให้ผลของกรรมอื่นอ่อนกำลังลง.",
++        },
++        "KM_P_04": {
++            "name": "อุปฆาตกรรม",
++            "shortName": "อุปฆาตกรรม",
++            "description": "กรรมที่ตัดผลของกรรมอื่นแล้วให้ผลของตนแทน.",
++        },
++        "KM_U_01": {
++            "name": "ครุกรรม",
++            "shortName": "ครุกรรม",
++            "description": "กรรมหนักที่ให้ผลก่อนกรรมอื่นในการเกิดใหม่.",
++        },
++        "KM_U_02": {
++            "name": "อาสันนกรรม",
++            "shortName": "อาสันนกรรม",
++            "description": "กรรมที่ระลึกได้หรือกระทำในเวลาใกล้ตาย มีอิทธิพลต่อการเกิดใหม่.",
++        },
++        "KM_U_03": {
++            "name": "อาจิณณกรรม",
++            "shortName": "อาจิณณกรรม",
++            "description": "กรรมที่กระทำซ้ำ ๆ จนเป็นนิสัยและมีกำลังมาก.",
++        },
++        "KM_U_04": {
++            "name": "กตัตตากรรม",
++            "shortName": "กตัตตากรรม",
++            "description": "กรรมที่สั่งสมไว้โดยไม่มีกรรมอื่นที่แรงกว่ามาก่อน จึงให้ผลเมื่อถึงเวลา.",
++        },
++    },
++}

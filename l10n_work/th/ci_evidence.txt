@@ -1,0 +1,94 @@
+$ python3 tool/content/build_full_catalogs.py   (working tree copy, hook applied)
+Wrote /tmp/vdptest/assets/content/content_hi.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+Wrote /tmp/vdptest/assets/content/content_ja.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+Wrote /tmp/vdptest/assets/content/content_my.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+Wrote /tmp/vdptest/assets/content/content_si.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+Wrote /tmp/vdptest/assets/content/content_th.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+Wrote /tmp/vdptest/assets/content/content_zh.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+Wrote /tmp/vdptest/assets/content/content_zh_TW.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+
+$ python3 tool/content/build_full_catalogs.py   (second run, idempotence)
+Wrote /tmp/vdptest/assets/content/content_zh.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+Wrote /tmp/vdptest/assets/content/content_zh_TW.json (cittas: 121, cetasikas: 52, paccayas: 24, vithis: 4)
+
+$ diff -q  repo-vs-scratch per locale (only th may differ)
+hi identical
+ja identical
+my identical
+si identical
+zh identical
+zh_TW identical
+vi identical
+
+$ python3 tool/content/check_content_locale.py th
+✓ th  (981/4312 slots, 22.8%)  assets/content/content_th.json
+
+$ python3 tool/content/check_content_locale.py th --glossary
+✓ th  (981/4312 slots, 22.8%)  assets/content/content_th.json
+    warn [S5] kammas.KM_P_01.name: 'ชนกกรรม' does not use the agreed rendering 'ครุกรรม' for 'Janaka-kamma'
+    warn [S5] kammas.KM_P_02.name: 'อุปัตถัมภกกรรม' does not use the agreed rendering 'อาสันนกรรม' for 'Upatthambhaka-kamma'
+    warn [S5] kammas.KM_P_03.name: 'อุปปีฬกกรรม' does not use the agreed rendering 'อาจิณณกรรม' for 'Upapīḷaka-kamma'
+    warn [S5] kammas.KM_P_04.name: 'อุปฆาตกรรม' does not use the agreed rendering 'กตัตตากรรม' for 'Upaghātaka-kamma'
+    warn [S5] kammas.KM_U_01.name: 'ครุกรรม' does not use the agreed rendering 'ชนกกรรม' for 'Garuka-kamma'
+    warn [S5] kammas.KM_U_02.name: 'อาสันนกรรม' does not use the agreed rendering 'อุปัตถัมภกกรรม' for 'Āsanna-kamma'
+    warn [S5] kammas.KM_U_03.name: 'อาจิณณกรรม' does not use the agreed rendering 'อุปปีฬกกรรม' for 'Āciṇṇa-kamma'
+    warn [S5] kammas.KM_U_04.name: 'กตัตตากรรม' does not use the agreed rendering 'อุปฆาตกรรม' for 'Kaṭattā-kamma'
+
+$ python3 tool/check_localizations.py
+OK: 26 locales, 350 UI keys, content [en, hi, ja, my, si, th, vi, zh, zh_TW]
+
+$ python3 tool/check_paccaya_data.py
+PASS — 24 Duyên Hệ
+  • 24/24 duyên, thứ tự khớp Paccayuddesa
+  • nguồn canonical: 24/24
+  • liên kết 12 chi: 52 cặp duyên–chi
+
+-------------------------------------------------------------------------------
+Re-verification after adding l10n_work/glossary_evidence_th.csv (2026-10-09)
+-------------------------------------------------------------------------------
+
+$ git clone /home/user/vdp /tmp/verify && cd /tmp/verify && git checkout 630186d194d4d44b6d6fd3c5472d2e489e06c179
+HEAD: 630186d
+
+$ git apply --check --verbose th_only.patch      (7 files: glossary_evidence_th.csv,
+                                                  th/README.md, th/TERMINOLOGY_EVIDENCE_LEDGER.md,
+                                                  th/build_hook.diff, th/ci_evidence.txt,
+                                                  th/glossary_th_corrections.csv,
+                                                  tool/content/data_priority_th.py)
+Checking patch l10n_work/glossary_evidence_th.csv...
+Checking patch l10n_work/th/README.md...
+Checking patch l10n_work/th/TERMINOLOGY_EVIDENCE_LEDGER.md...
+Checking patch l10n_work/th/build_hook.diff...
+Checking patch l10n_work/th/ci_evidence.txt...
+Checking patch l10n_work/th/glossary_th_corrections.csv...
+Checking patch tool/content/data_priority_th.py...
+th_only.patch: git apply --check OK
+warning: 5 lines add whitespace errors.
+  (all five are the blank *context* lines inside the nested build_hook.diff —
+   an inner diff represents a blank context line as a single space; they are
+   not trailing whitespace in the Thai content)
+
+$ git apply th_only.patch
+th_only.patch: APPLIED
+?? l10n_work/glossary_evidence_th.csv
+?? l10n_work/th/
+?? tool/content/data_priority_th.py
+
+$ python3 -c "ast.parse(open('tool/content/data_priority_th.py').read())"
+data_priority_th.py: ast.parse OK
+
+$ python3 -c "csv.DictReader(open('l10n_work/glossary_evidence_th.csv'))"
+glossary_evidence_th.csv: 83 rows; cols= ['pali', 'term', 'source_ref', 'confidence', 'note']
+confidence: {'high': 77, 'medium': 6}
+rows missing a field: 0
+
+$ git apply --check l10n_work/th/build_hook.diff
+build_hook.diff: APPLIES CLEANLY to tool/content/build_full_catalogs.py (repo file untouched)
+
+$ final delivery inventory (re-checked after adding the U-4 glossary row)
+files in th_only.patch: 7 (all new; no tracked repo file modified)
+l10n_work/glossary_evidence_th.csv : 83 rows (77 high / 6 medium), 39 mapped to a glossary.csv line
+l10n_work/th/glossary_th_corrections.csv : 14 rows; every 'line' number re-verified against glossary.csv
+tool/content/data_priority_th.py : 327 Thai strings, ast.parse OK
+git apply --check at 630186d : clean (5 whitespace warnings = blank context lines of the nested build_hook.diff)
+l10n_work/th/build_hook.diff : applies cleanly to tool/content/build_full_catalogs.py
