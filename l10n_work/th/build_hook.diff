@@ -1,0 +1,60 @@
+--- a/tool/content/build_full_catalogs.py
++++ b/tool/content/build_full_catalogs.py
+@@ -24,6 +24,7 @@
+ import tool.content.data_priority_m1 as dm1
+ import tool.content.data_priority_m2 as dm2
+ import tool.content.data_priority_m11 as dm11
++import tool.content.data_priority_th as dth
+ 
+ LOCALES = ["hi", "ja", "my", "si", "th", "zh", "zh_TW"]
+ 
+@@ -107,6 +108,30 @@
+     ]
+ 
+ 
++def _merge_th_fields(section, details, *, override=False):
++    """Thai-only: merge authored detail fields into the built section.
++
++    Locale-guarded caller; no other locale is touched.  Existing Thai text
++    authored in the catalog (e.g. VT_NGU_MON_RATLON step prose) is preserved
++    unless ``override`` is set, so no good Thai content is replaced.
++    """
++    for key, fields in details.items():
++        entry = section.setdefault(key, {})
++        for field, value in fields.items():
++            if isinstance(value, dict) and isinstance(entry.get(field), dict):
++                merged = entry[field]
++                for sub_key, sub_value in value.items():
++                    slot = merged.setdefault(sub_key, {})
++                    if isinstance(sub_value, dict):
++                        for inner_key, inner_value in sub_value.items():
++                            if override or not slot.get(inner_key):
++                                slot[inner_key] = inner_value
++                    elif override or not slot:
++                        merged[sub_key] = sub_value
++            elif override or not entry.get(field):
++                entry[field] = value
++
++
+ def build_catalog(loc):
+     # 1. CITTAS
+     # Only write text authored for this locale. The old builder copied English
+@@ -290,6 +315,18 @@
+             q["sourceRefs"] = vi_m11["quizSeeds"][i]["sourceRefs"]
+         study_modules["M11_BIET_CANH"] = m11_copy
+ 
++
++    # 8b. THAI DETAILS (locale `th` only — see l10n_work/th/README.md)
++    # The legacy tables carry only name/shortName/description.  Authored Thai
++    # detail prose and repairs live in tool/content/data_priority_th.py.
++    if loc == "th":
++        _merge_th_fields(paticcas, dth.PATICCAS)
++        _merge_th_fields(paccayas, dth.PACCAYAS)
++        _merge_th_fields(vithis, dth.VITHIS)
++        for section_name, entries in dth.CORRECTIONS.items():
++            target = {"cittas": cittas, "kammas": kammas}[section_name]
++            _merge_th_fields(target, entries, override=True)
++
+     out = {
+         "locale": loc,
+         "schemaVersion": 2,

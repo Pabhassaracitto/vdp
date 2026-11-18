@@ -1,0 +1,15 @@
+line,pali,category,current_th,proposed_th,reason
+147,Manodvārāvajjana,keyTerm,มโนทวาราวชัชชน,มโนทวาราวัชชนะ,misspelt Thai Pāḷi (should be …วัชชนะ)
+166,Pañcadvārāvajjana,keyTerm,ปัญจทวาราวชัชชน,ปัญจทวาราวัชชนะ,misspelt Thai Pāḷi (should be …วัชชนะ)
+198,"Soka, Parideva, Dukkha, Domanassa, Upāyāsa",keyTerm,โศกะ ปริเทวะ ทุกขะ โทมนัสสะ อุปายาสะ,โสกะ ปริเทวะ ทุกขะ โทมนัส อุปายาส,"Sanskritised th cell (โศก / -สะ endings); the Thai Pāḷi transliteration is โสกะ … โทมนัส อุปายาส (S4 blog-post_968, S5). Ledger U-4 — needs doctrinal sign-off before it is applied; feeds M17_DUYEN_CHI_TIET/M17_S05"
+288,Garuka-kamma,kammas,ชนกกรรม,ครุกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+289,Janaka-kamma,kammas,ครุกรรม,ชนกกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+290,Kaṭattā-kamma,kammas,อุปฆาตกรรม,กตัตตากรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+292,Lokuttara-kamma / Magga-kamma,kammas,อรูปาวจรกุศลกรรม,โลกุตตรกรรม (มัคคกรรม),th column rotated relative to the Pāḷi column (wrong kamma)
+294,Upaghātaka-kamma,kammas,กตัตตากรรม,อุปฆาตกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+296,Upapīḷaka-kamma,kammas,อาจิณณกรรม,อุปปีฬกกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+297,Upatthambhaka-kamma,kammas,อาสันนกรรม,อุปัตถัมภกกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+298,Āciṇṇa-kamma,kammas,อุปปีฬกกรรม,อาจิณณกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+299,Āsanna-kamma,kammas,อุปัตถัมภกกรรม,อาสันนกรรม,th column rotated relative to the Pāḷi column (wrong kamma)
+392,Upekkhā-sahagataṃ manodvārāvajjana-cittaṃ,cittas,อุเบกขาสหคตัง มโนทวาราวជ្ชนจิตตัง,อุเบกขาสหคตัง มโนทวาราวัชชนจิตตัง,Khmer-script corruption inside a Thai word (ជ + ្)
+393,Upekkhā-sahagataṃ pañcadvārāvajjana-cittaṃ,cittas,อุเบกขาสหคตัง ปัญจทวาราวជ្ชนจิตตัง,อุเบกขาสหคตัง ปัญจทวาราวัชชนจิตตัง,Khmer-script corruption inside a Thai word (ជ + ្)
