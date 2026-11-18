@@ -1,0 +1,1907 @@
+diff --git a/tool/content/data_priority_zh_tw.py b/tool/content/data_priority_zh_tw.py
+new file mode 100644
+index 0000000..402ea37
+--- /dev/null
++++ b/tool/content/data_priority_zh_tw.py
+@@ -0,0 +1,1901 @@
++# -*- coding: utf-8 -*-
++"""zh_TW (Traditional Chinese / Taiwan) extended translation source.
++
++Authored by the zh_TW translation agent. This module is the **only** file in
++the batch; no shared table, builder, locale asset, registry entry or test is
++touched here. The integration agent is expected to wire it into
++``tool/content/build_full_catalogs.py`` and then regenerate the catalogs.
++
++What lives here
++---------------
++Fields the current builder does not yet emit, because its tuple sources only
++carry ``name`` / ``shortName`` / ``description`` (or ``definition``):
++
++* ``PATICCAS_ZH_TW``  — four aspects + doctrinal note + examples (12 links)
++* ``PACCAYAS_ZH_TW``  — paccayaDhamma / paccayuppanna / subdivisions /
++                        examples / doctrinal note (24 conditions)
++* ``VITHIS_ZH_TW``    — arisingCondition / significance / doctrinal note /
++                        steps (4 processes)
++* ``KAMMAS_ZH_TW``    — doctrinal note + examples (16 kammas), plus the
++                        name/shortName corrections listed in
++                        ``KAMMA_NAME_CORRECTIONS_ZH_TW``
++
++Editing rules honoured
++----------------------
++* Every value is Traditional Chinese in Taiwan idiom, written from the English
++  reference + the Vietnamese source + the Pāḷi/``assets/data/*.json`` record.
++  Nothing is pasted through from English, Vietnamese or Simplified Chinese.
++* Canonical IDs, Pāḷi, formulas and numbers are preserved exactly.
++* Existing zh_TW work is preserved: the vithi steps already shipped for
++  ``VT_NGU_MON_RATLON`` are NOT repeated here (``STEPS`` only lists what is
++  missing), and no name/shortName/description already in the catalog is
++  overwritten except where ``KAMMA_NAME_CORRECTIONS_ZH_TW`` proves the shipped
++  value is attached to the wrong ID.
++* Absent fields stay absent. Nothing here is invented: where the source is
++  ambiguous the field is simply left out of the dict.
++
++Terminology anchor
++------------------
++Native Theravāda Chinese source used throughout (verified in context, not from
++a word list):
++
++    阿耨樓陀 (Ācariya Anuruddha) 造，葉均 譯，《攝阿毘達磨義論》
++    (Abhidhammatthasaṅgaha). 台灣繁體版：台北，大千出版社，2002 年 2 月，
++    ISBN 9789578231849，262 頁。（簡體版：中國佛教協會，1986 年。）
++
++Sections cited: 第三〈攝雜分別品〉（vithi 作用名相）、第四〈攝路分別品〉
++（五門／意門心路、極大境等四種境）、第八〈攝緣分別品〉（緣起法十二支、
++發趣法二十四緣之名目與分類）。
++
++Note: the glossary header in ``l10n_work/glossary.csv`` writes the title as
++「摂阿毘達磨義論」. 「摂」 is the Japanese shinjitai form of 「攝」 and is not
++a Traditional Chinese character; the correct Traditional/Taiwan form is
++「攝」 (《攝阿毘達磨義論》). Flagged, not silently changed — see the ledger.
++"""
++
++LOCALE = "zh_TW"
++
++# ---------------------------------------------------------------------------
++# 1. PATICCAS — 12 links of dependent origination
++#    Fields: characteristic / function / manifestation / proximateCause
++#            (the "four aspects"), doctrinalNote, examples.
++#    The four-aspect labels follow the shipped zh_TW UI strings:
++#    特相 (Lakkhaṇa) · 作用 (Rasa) · 現起 (Paccupaṭṭhāna) · 近因 (Padaṭṭhāna).
++#    Link names verified verbatim: 《攝阿毘達磨義論》第八攝緣分別品 · 一、緣起法
++#    §3 「十二支：即無明、行、識、名色、六處、觸、受、愛、取、有、生、老死。」
++# ---------------------------------------------------------------------------
++
++PATICCAS_ZH_TW = {
++    "PD_01": {
++        "characteristic": "不了知——於諸法實相（四聖諦、三相）闇昧無知。",
++        "function": "障蔽明澈的照見，並作「行」生起之緣。",
++        "manifestation": "昏昧闇蔽——於不知不覺中持續造作諸行（業）。",
++        "proximateCause": "不如理作意（ayoniso-manasikāra）；不親近善知識、不聞正法。",
++        "doctrinalNote": (
++            "無明無始可見（anamatagga）。無明的斷除，即是證得四種道心。"
++        ),
++        "examples": [
++            "不知此身是無常，遂執此身為我，而造作種種業以保護這個「我」。",
++        ],
++    },
++    "PD_02": {
++        "characteristic": "造作、經營——透過身、語、意三門的刻意造作。",
++        "function": "造業——積聚將於後世引生結生的業力。",
++        "manifestation": "積聚足以牽引識趣向結生的業。",
++        "proximateCause": "以無明為緣（若無無明，則諸行即成出世間，不復造作新業）。",
++        "doctrinalNote": (
++            "緣起中的「行」，指造作業的思心所（cetanā）。分為福行、非福行、"
++            "不動行三種。"
++        ),
++        "examples": [
++            "以善心布施，是福行；其識結生於善趣。",
++            "證得禪那，是不動行；其識結生為梵天。",
++        ],
++    },
++    "PD_03": {
++        "characteristic": "了別所緣——結生識依於新得的名色而住。",
++        "function": "結生——開啟新的一期生命。",
++        "manifestation": "新的一期生命成形——名色現起。",
++        "proximateCause": "以業（行）為緣；並須有名色作為其所依。",
++        "doctrinalNote": (
++            "識與名色互相依持——如兩束蘆葦互相支撐而立。"
++        ),
++        "examples": [
++            "於結生之剎那，結生識現起，名色隨之發展，新的一期生命於焉開始。",
++        ],
++    },
++    "PD_04": {
++        "characteristic": "存在——身心現起並持續發展。",
++        "function": "作為識活動的依處，並作六處發育的條件。",
++        "manifestation": "六處圓滿成形。",
++        "proximateCause": (
++            "以識為緣；色法由四種等起之源（業、心、時節、食）而生。"
++        ),
++        "examples": [
++            "於母胎中：結生識現起，名色由最初結胎漸次發育，乃至足月。",
++        ],
++    },
++    "PD_05": {
++        "characteristic": "堪能領納——所緣得以進入的六道門。",
++        "function": "作為門（dvāra），令心得以接觸外境。",
++        "manifestation": "觸得以成立——心能觸及其所緣。",
++        "proximateCause": "以圓滿發育的名色為緣。",
++        "examples": [
++            "初生嬰兒：六處既已完具，與外境的接觸即由此開始。",
++        ],
++    },
++    "PD_06": {
++        "characteristic": "接觸——根、境、識三者的會合。",
++        "function": "和合根、境、識三者——作受生起之緣。",
++        "manifestation": "心、心所、根、境會集一處。",
++        "proximateCause": "根、境、識三者必須同時具足。",
++        "doctrinalNote": (
++            "緣起中的觸，即觸心所（CS_PHASSA）。"
++        ),
++        "examples": [
++            "眼見可愛之色：眼根＋色所緣＋眼識，即有眼觸，悅受隨之而生。",
++        ],
++    },
++    "PD_07": {
++        "characteristic": "領納——觸後品嘗所緣為樂、苦或不苦不樂。",
++        "function": "受用所緣——於不如理作意時，作愛生起之緣。",
++        "manifestation": "於心中現起樂、苦或不苦不樂的感受。",
++        "proximateCause": "以觸為緣。",
++        "doctrinalNote": (
++            "此即四念處的關鍵所在：於受處停步，不令其成熟為愛。"
++        ),
++        "examples": [
++            "聞讚歎（觸）而生悅受；若無正念，欲求更多的愛便隨之而來。",
++        ],
++    },
++    "PD_08": {
++        "characteristic": "渴求——由受而生、黏著不捨的欲求。",
++        "function": "執取所緣——作取生起之緣。",
++        "manifestation": "執著牢牢固著；生死輪迴相續不絕。",
++        "proximateCause": "以受為緣（尤其是悅受與樂受）。",
++        "doctrinalNote": (
++            "愛即四聖諦中的苦集聖諦。愛盡即是苦盡——涅槃。"
++            "愛分三種：欲愛、有愛、無有愛。"
++        ),
++        "examples": [
++            "見美味佳餚，愛即生起：想吃得更多。",
++            "遭遇苦痛，則生起無有愛：不想存在。",
++        ],
++    },
++    "PD_09": {
++        "characteristic": "緊握——執持而不肯放捨。",
++        "function": "牢固地執取所緣——作有生起之緣。",
++        "manifestation": "有成形——能引生結生的業積聚起來。",
++        "proximateCause": "以愛為緣——取是愛的增強與堅固。",
++        "doctrinalNote": (
++            "取比愛更為牢固，分為四種：欲取、見取、戒禁取、我語取。"
++            "（四取名目見《攝阿毘達磨義論》第七攝集分別品·一、攝不善。）"
++        ),
++        "examples": [
++            "不只是想要錢（愛），而是錢財到手便無法割捨（取）。",
++        ],
++    },
++    "PD_10": {
++        "characteristic": "存在——積聚成熟、足以引生結生的業力。",
++        "function": "作未來生中「生」的條件。",
++        "manifestation": "於與業相應的生存地結生。",
++        "proximateCause": "以取為緣——取是有的燃料。",
++        "doctrinalNote": (
++            "有分為二分：業有（kamma-bhava，即所積聚、將引生結生的業）"
++            "與生有（upapatti-bhava，即將結生的生存地）。"
++            "依三界分為欲有、色有、無色有。"
++            "（業有、生有之名見《攝阿毘達磨義論》第八攝緣分別品·一、緣起法"
++            "§6 三輪轉。）"
++        ),
++        "examples": [
++            "畢生樂善好施者，積聚欲界善有，來生結生於富貴之家。",
++        ],
++    },
++    "PD_11": {
++        "characteristic": "結生——識再生於新的生存地。",
++        "function": "開啟新的一期生命——牽引整堆苦隨之而來。",
++        "manifestation": "苦（老死）現前。",
++        "proximateCause": "以有（業力）為緣。",
++        "doctrinalNote": (
++            "三世的圓輪於此接合：生（PD_11）相當於未來世果側的識（PD_03）。"
++        ),
++        "examples": [
++            "結生的剎那即是生——一切苦皆由此而生。",
++        ],
++    },
++    "PD_12": {
++        "characteristic": "老與死——一切有為的身心必趨衰敗、壞滅。",
++        "function": "終結一期生命——若未證解脫，則繼續開啟新的輪迴。",
++        "manifestation": "一期生命告終；未證解脫者，輪迴依然相續。",
++        "proximateCause": "以生為緣——有生，則老死必然隨之。",
++        "doctrinalNote": (
++            "解脫即是斷除無明（PD_01）與愛（PD_08）——證悟涅槃。"
++            "經典於老死之後並說愁、悲、苦、憂、惱，彼等只是顯示等流果，"
++            "並非各別的支。"
++        ),
++        "examples": [
++            "凡有生者，皆必老、必死。",
++            "無明與愛既已斷除，老死便不再隨之而來。",
++        ],
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 2. PACCAYAS — 24 conditional relations (Paṭṭhāna naya)
++#    Fields: paccayaDhamma (能緣法) / paccayuppanna (所緣起法) /
++#            subdivisions / examples / doctrinalNote.
++#
++#    The 24 names were checked one by one against
++#    《攝阿毘達磨義論》第八攝緣分別品 · 二、發趣法 §7:
++#      「因緣、所緣緣、增上緣、無間緣、等無間緣、俱生緣、相互緣、依止緣、
++#        親依止緣、前生緣、後生緣、數數修習緣、業緣、異熟緣、食緣、根緣、
++#        禪緣、道緣、相應緣、不相應緣、有緣、無有緣、離去緣、不離去緣。」
++#    22/24 match the shipped zh_TW names exactly; PC_12 and PC_17 differ and
++#    are reported in the ledger (proposed, NOT changed here).
++# ---------------------------------------------------------------------------
++
++PACCAYAS_ZH_TW = {
++    "PC_01": {
++        "paccayaDhamma": (
++            "六因：貪（lobha）、瞋（dosa）、癡（moha）、"
++            "無貪（alobha）、無瞋（adosa）、無癡（amoha）。"
++        ),
++        "paccayuppanna": (
++            "與因相應的諸名法（心與心所），以及該心所產生的色法——"
++            "轉起時的心生色，結生時的業生色。"
++        ),
++        "examples": [
++            "貪根心具有貪與癡二因：此二因令整個心剎那成為不善。",
++            "無因心（ahetuka）沒有因，故不受因緣所助——例如二種領受心。",
++        ],
++        "doctrinalNote": (
++            "唯有六種因心所才是「因」；其餘心所縱然強而有力，"
++            "也只能透過其他緣來支助其俱生之法。"
++        ),
++    },
++    "PC_02": {
++        "paccayaDhamma": (
++            "六種所緣：色、聲、香、味、觸，以及法所緣"
++            "（含涅槃與禪那等證得）。"
++        ),
++        "paccayuppanna": "八十九心——凡能了知所緣的一切心——以及五十二心所。",
++        "examples": [
++            "色所緣（影像）作為眼識及其相應心所的所緣緣。",
++            "涅槃作為出世間心的所緣緣。",
++        ],
++        "doctrinalNote": (
++            "依《清淨道論》第十七品，當修觀者以智慧觀察無明時，"
++            "無明即以所緣緣支助福行。"
++        ),
++    },
++    "PC_03": {
++        "paccayaDhamma": (
++            "四種俱生增上——欲（chanda）、精進（viriya）、心（citta）、"
++            "觀（vīmaṃsā，即慧 paññā）；以及所緣增上"
++            "（被極度重視的所緣）。"
++        ),
++        "paccayuppanna": (
++            "與增上法俱生的諸名法；就所緣增上而言，"
++            "為八十四心（不含無因的果報心）及其相應心所。"
++        ),
++        "subdivisions": {
++            "Sahajāt'ādhipati": {
++                "name": "俱生增上",
++                "note": "於單一心剎那中，欲、精進、心、觀四者之一最為突出。",
++            },
++            "Ārammaṇ'ādhipati": {
++                "name": "所緣增上",
++                "note": "被極度重視的所緣，支配著緣取該所緣的心。",
++            },
++        },
++        "examples": [
++            "修行者精勤至極時，精進即為整個禪心剎那的增上。",
++            "有人迷戀珍貴之物：該物即是貪心的所緣增上。",
++        ],
++        "doctrinalNote": (
++            "十八無因心中沒有增上緣；於只有一種增上可得的心中亦無增上緣。"
++            "（四增上名目見《攝阿毘達磨義論》第七攝集分別品·二、攝雜："
++            "「欲增上、精進增上、心增上、觀（慧）增上」。）"
++        ),
++    },
++    "PC_04": {
++        "paccayaDhamma": "剛滅去的心與心所（阿羅漢的死心除外）。",
++        "paccayuppanna": "緊接其後生起的心與心所。",
++        "examples": [
++            "眼識滅去，即為五門心路中領受心的無間緣。",
++            "結生識滅去，即為第一個有分心的無間緣。",
++        ],
++        "doctrinalNote": (
++            "無間緣是心流相續的基礎——前後二心剎那之間沒有間隙。"
++        ),
++    },
++    "PC_05": {
++        "paccayaDhamma": "剛滅去的心與心所。",
++        "paccayuppanna": "緊接其後生起的心與心所。",
++        "examples": [
++            "同一關係，就「讓位」而說名無間，就「緊隨相接」而說名等無間。",
++        ],
++        "doctrinalNote": (
++            "此二緣實是同一事實，只有說法上的差別——如一枚銅板的兩面。"
++        ),
++    },
++    "PC_06": {
++        "paccayaDhamma": (
++            "俱生的四名蘊；四大種；轉起時的心與心所；以及結生時的名與色。"
++        ),
++        "paccayuppanna": (
++            "彼此俱生的諸名法、轉起時的心生色與業生色，"
++            "以及結生時互相支助的名與色。"
++        ),
++        "examples": [
++            "在一個貪心剎那中，受、想、行、識同時生起並互相支助。",
++            "於結生的剎那，結生識與業生色依俱生緣互相支助。",
++        ],
++        "doctrinalNote": (
++            "此緣最常用以說明同一心剎那中名與色的同時性。"
++            "《攝阿毘達磨義論》第八攝緣分別品 §10 說俱生緣有三種："
++            "心心所相互及對俱生色、大種相互及對所造色、"
++            "結生剎那所依色與異熟心相互。"
++        ),
++    },
++    "PC_07": {
++        "paccayaDhamma": "俱生的四名蘊；四大種；結生時的名與色。",
++        "paccayuppanna": "即彼等諸法本身——此關係是雙向的。",
++        "examples": [
++            "四大種之中，地界支助水界，水界亦支助地界——沒有一界能獨立而立。",
++        ],
++        "doctrinalNote": (
++            "相互緣必伴隨俱生緣，但範圍較狹：心生色與識並不互相為緣。"
++        ),
++    },
++    "PC_08": {
++        "paccayaDhamma": (
++            "俱生的四名蘊；四大種；以及六所依"
++            "（眼、耳、鼻、舌、身與心所依處）。"
++        ),
++        "paccayuppanna": (
++            "俱生的諸名法；所造色；以及七識界及其相應心所。"
++        ),
++        "subdivisions": {
++            "Sahajāta-nissaya": {
++                "name": "俱生依止",
++                "note": "同一心剎那之內的互相依恃。",
++            },
++            "Purejāta-nissaya (vatthu)": {
++                "name": "前生依止（所依）",
++                "note": "已先生起的六所依，作為七識界的依處。",
++            },
++            "Vatthārammaṇa-purejāta-nissaya": {
++                "name": "所依—所緣前生依止",
++                "note": "心所依處同時作為意界心的所依與所緣。",
++            },
++        },
++        "examples": [
++            "眼根是眼識及其相應心所的依止緣。",
++            "心所依處（hadaya-vatthu）於五蘊一期生命中，支助整個意識界。",
++        ],
++        "doctrinalNote": (
++            "應與親依止緣區別：依止緣是直接的依處，"
++            "親依止緣則是強而有力的助益。"
++            "（《攝阿毘達磨義論》第八攝緣分別品 §10 說依止緣有三種。）"
++        ),
++    },
++    "PC_09": {
++        "paccayaDhamma": (
++            "被強力注意的所緣；剛滅去的心；以及自然親依止，"
++            "如信心、戒行、時節、食物、善友等。"
++        ),
++        "paccayuppanna": "其後生起的心與心所。",
++        "subdivisions": {
++            "Ārammaṇ'ūpanissaya": {
++                "name": "所緣親依止",
++                "note": "強有力的所緣，成為後起之心的決定性助緣。",
++            },
++            "Anantar'ūpanissaya": {
++                "name": "無間親依止",
++                "note": "就其支持力而言，等同無間緣。",
++            },
++            "Pakat'ūpanissaya": {
++                "name": "自然親依止",
++                "note": "天然的條件：信心、戒行、時節、善友、宿業。",
++            },
++        },
++        "examples": [
++            "樂受是愛的自然親依止——由於感受可意，愛便增強。",
++            "信心親依止於布施之行；貪親依止於偷盜之行。",
++        ],
++        "doctrinalNote": (
++            "緣起中「受 → 愛」這一環，主要即依自然親依止緣來說明。"
++            "（《攝阿毘達磨義論》第八攝緣分別品 §9：親依止有三種，"
++            "即所緣親依止、無間親依止、自然親依止。）"
++        ),
++    },
++    "PC_10": {
++        "paccayaDhamma": (
++            "已經生起的六所依（色法）與六所緣——即具體的色法。"
++        ),
++        "paccayuppanna": "其後生起的心與心所。",
++        "subdivisions": {
++            "Vatthu-purejāta": {
++                "name": "所依前生",
++                "note": "六所依支助七識界。",
++            },
++            "Ārammaṇa-purejāta": {
++                "name": "所緣前生",
++                "note": "現前的具體所緣，支助五十四欲界心與五十心所。",
++            },
++        },
++        "examples": [
++            "眼根必須先存在，眼識才能生起。",
++            "現前的色所緣（延續十七個心剎那），作為眼門心路的前生緣。",
++        ],
++        "doctrinalNote": (
++            "前生緣只適用於色法；名法不能作為前生緣。"
++            "（《攝阿毘達磨義論》第八攝緣分別品 §9（四）："
++            "「六所依……對於七識界（依前生緣為緣）；五所緣……"
++            "對於五識路，依前生緣（為緣）」。）"
++        ),
++    },
++    "PC_11": {
++        "paccayaDhamma": (
++            "欲界、色界、無色界與出世間的八十五心——即除結生心之外的"
++            "一切心——以及五十二心所。"
++        ),
++        "paccayuppanna": "先前已生起的業生身（活著的生命體的色法）。",
++        "examples": [
++            "生命期間的心與心所，支持已經生起的身體，使之不致敗壞。",
++            "飢餓驅使人進食——後生的名法滋養先已生起的色法。",
++        ],
++        "doctrinalNote": (
++            "唯有後生的名法支助先已生起的色法；絕無反過來的情形。"
++        ),
++    },
++    "PC_12": {
++        "paccayaDhamma": (
++            "前一個速行心及其心所（最後一個速行心與道心除外）。"
++        ),
++        "paccayuppanna": "緊接其後生起的速行心及其心所。",
++        "examples": [
++            "於七個速行之中，第一個速行是第二個速行的習行緣。",
++            "反覆讀誦而能記憶，愈後愈容易——同一原理的運作。",
++        ],
++        "doctrinalNote": (
++            "出世間的道速行不作習行緣，因為它只生起一個心剎那。"
++            "術語註：《攝阿毘達磨義論》第八攝緣分別品 §7 作「數數修習緣」；"
++            "現行 zh_TW 名為「習行緣」。見術語對照表，未於此擅自更改。"
++        ),
++    },
++    "PC_13": {
++        "paccayaDhamma": "善與不善的思——即思心所（cetanā）。",
++        "paccayuppanna": (
++            "俱生業：與思俱生的心與心所，以及心生色。"
++            "異剎那業：異熟心、其心所，以及結生時的業生色。"
++        ),
++        "subdivisions": {
++            "Sahajāta-kamma": {
++                "name": "俱生業",
++                "note": "思支助同一心剎那中與其俱生的諸法。",
++            },
++            "Nānākkhaṇika-kamma": {
++                "name": "異剎那業",
++                "note": (
++                    "某一心剎那的思，支助另一心剎那的果——此即結生的基礎。"
++                ),
++            },
++        },
++        "examples": [
++            "布施時的思，支助未來生的異熟心與業生色（異剎那業）。",
++            "貪心剎那中的思，令整個心剎那成為不善（俱生業）。",
++        ],
++        "doctrinalNote": (
++            "十二支中「行 → 識」與「有 → 生」這兩組關係，"
++            "即依異剎那業緣來說明。"
++            "（《攝阿毘達磨義論》第八攝緣分別品 §9（二）分「俱生的思」"
++            "與「多剎那的思」二種。）"
++        ),
++    },
++    "PC_14": {
++        "paccayaDhamma": (
++            "三十六種異熟心（無因果報心、欲界美因果報心、大果報心）"
++            "及其三十八種相應心所。"
++        ),
++        "paccayuppanna": (
++            "俱生的諸異熟名法，以及彼等所產生的業生色。"
++        ),
++        "examples": [
++            "結生識是異熟心：它支助與其俱生的業生色。",
++            "眼識是異熟心——它以異熟緣支助其俱生心所，而不造作新業。",
++        ],
++        "doctrinalNote": (
++            "異熟心不造新業——這是理解「果不生果」的關鍵。"
++        ),
++    },
++    "PC_15": {
++        "paccayaDhamma": (
++            "段食（色法），以及三種名食：觸食、意思食、識食。"
++        ),
++        "paccayuppanna": (
++            "食素色維持身體；三種名食維持心、心所與心生色。"
++        ),
++        "subdivisions": {
++            "Rūp'āhāra": {
++                "name": "段食",
++                "note": "物質的食素維持色身。",
++            },
++            "Nām'āhāra": {
++                "name": "名食",
++                "note": "觸食、意思食、識食作為食。",
++            },
++        },
++        "examples": [
++            "食物維持色身——段食。",
++            "意思食：意向滋養業，延長生死輪迴。",
++        ],
++        "doctrinalNote": (
++            "可與經藏中的四食（SN 12.63）相連——食的觀察。"
++            "（《攝阿毘達磨義論》第七攝集分別品·二、攝雜："
++            "「四食：即段食（第一）、觸食第二、意思食第三、識食第四」。）"
++        ),
++    },
++    "PC_16": {
++        "paccayaDhamma": (
++            "二十根：五種淨色根（眼、耳、鼻、舌、身）、命根色，"
++            "以及十四種名根——五受根（樂、苦、喜、憂、捨）、信、精進、念、"
++            "定、慧、未知當知根、已知根、具知根，以及意根。"
++        ),
++        "paccayuppanna": (
++            "淨色根支助七識界；名根支助俱生的心與心所；"
++            "命根色維持其自組的業生色。"
++        ),
++        "subdivisions": {
++            "Purejāta-indriya": {
++                "name": "前生根",
++                "note": "五種淨色根支助與其相應的諸識。",
++            },
++            "Jīvit'indriya": {
++                "name": "命根",
++                "note": "維持其自組的業生色。",
++            },
++            "Sahajāta-indriya": {
++                "name": "俱生根",
++                "note": "十四種名根支助與其俱生的心與心所。",
++            },
++        },
++        "examples": [
++            "眼根統攝眼識——沒有眼根即無有見。",
++            "定根統攝整個禪心剎那。",
++        ],
++        "doctrinalNote": (
++            "修習時，信、精進、念、定、慧五根必須平衡。"
++            "（二十二根名目見《攝阿毘達磨義論》第七攝集分別品·二、攝雜。）"
++        ),
++    },
++    "PC_17": {
++        "paccayaDhamma": (
++            "七禪支：尋（vitakka）、伺（vicāra）、喜（pīti）、樂（sukha）、"
++            "憂（domanassa）、捨（upekkhā）、一境性（ekaggatā）。"
++        ),
++        "paccayuppanna": (
++            "相應的心與心所（二種身識除外），以及該心所產生的色法。"
++        ),
++        "examples": [
++            "尋把心導向所緣——它對俱生的諸禪支作禪那緣。",
++            "第二禪中雖無尋，喜與一境性仍然作禪那緣。",
++        ],
++        "doctrinalNote": (
++            "不限於禪定證得：七禪支在一般心中亦同樣運作。"
++            "術語註：《攝阿毘達磨義論》第八攝緣分別品 §7 作「禪緣」；"
++            "現行 zh_TW 名為「禪那緣」。見術語對照表，未於此擅自更改。"
++            "（七禪支名目見第七攝集分別品·二、攝雜。）"
++        ),
++    },
++    "PC_18": {
++        "paccayaDhamma": (
++            "十二道支：正見、正思惟、正語、正業、正命、正精進、正念、正定"
++            "——以及邪見、邪思惟、邪精進、邪定。"
++        ),
++        "paccayuppanna": (
++            "相應的心與心所（二種身識除外），以及該心所產生的色法。"
++        ),
++        "examples": [
++            "善心中的正見，引導整個心剎那趣向善。",
++            "貪心中的邪見，引導它趣向不善——道緣有兩面。",
++        ],
++        "doctrinalNote": (
++            "道緣於善與不善中同樣運作——不限於出世間的八聖道分。"
++            "（十二道支名目見《攝阿毘達磨義論》第七攝集分別品·二、攝雜。）"
++        ),
++    },
++    "PC_19": {
++        "paccayaDhamma": "俱生的四名蘊。",
++        "paccayuppanna": "即彼四蘊本身——此關係是雙向的。",
++        "examples": [
++            "同一心剎那中的受與想是相應的："
++            "它們透過同一所依了知同一所緣。",
++        ],
++        "doctrinalNote": (
++            "唯有名法能相應；色法沒有共同的所緣與所依，故不能相應。"
++        ),
++    },
++    "PC_20": {
++        "paccayaDhamma": "名法（支助色法時），或色法（支助名法時）。",
++        "paccayuppanna": "色法（俱生或前生），或名法（俱生或後生）。",
++        "subdivisions": {
++            "Sahajāta-vippayutta": {
++                "name": "俱生不相應",
++                "note": (
++                    "結生之時，心與色同時生起，"
++                    "卻以不同的種類互相支助。"
++                ),
++            },
++            "Purejāta-vippayutta": {
++                "name": "前生不相應",
++                "note": "已先生起的六所依，支助七識界。",
++            },
++            "Pacchājāta-vippayutta": {
++                "name": "後生不相應",
++                "note": "後生的名法支助先生起的色身。",
++            },
++        },
++        "examples": [
++            "心所依處（色法）支助意識界（名法）——種類不同，故為不相應緣。",
++            "於結生之時，結生識與業生色同時生起，而種類仍然不同。",
++        ],
++        "doctrinalNote": (
++            "此緣表達名與色的關係，"
++            "是十二支中名色分析的骨幹。"
++        ),
++    },
++    "PC_21": {
++        "paccayaDhamma": (
++            "總括作為俱生、前生、後生、食、根等緣的諸法。"
++        ),
++        "paccayuppanna": "為彼五種緣所支助的諸法。",
++        "subdivisions": {
++            "Sahajāta-atthi": {
++                "name": "俱生有",
++                "note": "存在於同一心剎那之中。",
++            },
++            "Purejāta-atthi": {
++                "name": "前生有",
++                "note": "先前已生而仍然存在的色法。",
++            },
++            "Pacchājāta-atthi": {
++                "name": "後生有",
++                "note": "後生的名法現前存在。",
++            },
++            "Āhāra-atthi": {
++                "name": "食有",
++                "note": "段食現前存在。",
++            },
++            "Indriya-atthi": {
++                "name": "根有",
++                "note": "命根色現前存在。",
++            },
++        },
++        "examples": [
++            "眼根現前存在，眼識才能生起——有緣。",
++            "四大種現前存在，支助所造色。",
++        ],
++        "doctrinalNote": (
++            "二十四緣中範圍最廣的一種——它總攝其他五緣。"
++        ),
++    },
++    "PC_22": {
++        "paccayaDhamma": "剛滅去的心與心所。",
++        "paccayuppanna": "緊接其後生起的心與心所。",
++        "examples": [
++            "眼識必須滅去，領受心才能生起。",
++        ],
++        "doctrinalNote": (
++            "範圍與無間緣相同，但強調前一心已不復存在。"
++        ),
++    },
++    "PC_23": {
++        "paccayaDhamma": "剛滅去的心與心所。",
++        "paccayuppanna": "緊接其後生起的心與心所。",
++        "examples": [
++            "一個有分心剎那剛滅去（離去），即支助下一個有分心剎那。",
++        ],
++        "doctrinalNote": (
++            "一實二說：無有緣強調「已不在」，離去緣強調「已離去」。"
++        ),
++    },
++    "PC_24": {
++        "paccayaDhamma": "總括作為俱生、前生、後生、食、根等緣的諸法。",
++        "paccayuppanna": "為彼五種緣所支助的諸法。",
++        "examples": [
++            "心所依處尚未壞滅，持續支助意識界。",
++        ],
++        "doctrinalNote": (
++            "第二十一至二十四緣（有、無有、離去、不離去）"
++            "以兩組同義語為二十四緣作結。"
++        ),
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 3. VITHIS — cognitive processes
++#    Fields: arisingCondition / significance / doctrinalNote / STEPS.
++#
++#    STEP KEYS ARE THE STEP NUMBERS THAT ARE **MISSING** FROM THE SHIPPED
++#    zh_TW CATALOG. `VT_NGU_MON_RATLON` steps 1–11 already exist in
++#    assets/content/content_zh_TW.json and are deliberately NOT repeated here,
++#    so nothing overwrites the existing Traditional Chinese step text.
++#
++#    Terminology verified in context:
++#    《攝阿毘達磨義論》第四攝路分別品·二、通過五門的心識過程
++#      「……有分心波動二次，遮斷了有分之流，轉向（喚起注意）那色所緣而
++#        有五門轉向心……便生起見色的眼識、領受（所緣）的領受心、推度的
++#        推度心、確定的確定心……欲界二十九速行心……波動七次，隨於速行
++#        之後而有二（剎那）彼所緣異熟心……」
++#    第三攝雜分別品·三、攝作用：「結生」「有分」「死」的作用。
++#    第五攝離路分別品題 + 第四攝路分別品 §2：「但於離路（的心），
++#        只有三種境轉起，即業、業相、趣相。」
++# ---------------------------------------------------------------------------
++
++VITHIS_ZH_TW = {
++    "VT_NGU_MON_RATLON": {
++        "arisingCondition": (
++            "五種感官所緣（色、聲、香、味、觸）極強力地撞擊其對應的根門。"
++        ),
++        "significance": (
++            "最完整的心路——七個速行心圓滿造業，"
++            "彼所緣則受用所緣的餘味。"
++        ),
++        "doctrinalNote": (
++            "Atimahanta（極極大）＝所緣強至足以具足速行 × 7 ＋ "
++            "彼所緣 × 2，合為十七個心剎那。"
++            "（《攝阿毘達磨義論》第四攝路分別品 §3 於五門分"
++            "「極大、大、小、極小」四種境轉起；現行 zh_TW 名相"
++            "「極極大所緣／極大所緣」依 `l10n_work/glossary.csv` "
++            "之 Atimahanta-ārammaṇa 條，見術語對照表。）"
++        ),
++        "STEPS": {},
++    },
++    "VT_NGU_MON_LON": {
++        "arisingCondition": (
++            "五種感官所緣強至足以生起七個速行心，"
++            "但尚未強至能生起彼所緣。"
++        ),
++        "significance": "最常見的心路——七個速行心圓滿造業。",
++        "doctrinalNote": (
++            "與極極大所緣心路的差別，唯在於缺少二個彼所緣剎那。"
++        ),
++        "STEPS": {
++            "1": {
++                "name": "有分波動",
++                "description": "所緣撞擊根門，有分心隨之波動。",
++            },
++            "2": {
++                "name": "有分截斷",
++                "description": "有分心流被切斷——心路過程開始。",
++            },
++            "3": {
++                "name": "五門轉向",
++                "description": "透過五根門，將心轉向所緣。",
++            },
++            "4": {
++                "name": "雙五識",
++                "description": "透過對應的根門了知所緣。",
++            },
++            "5": {
++                "name": "領受心",
++                "description": "領受該所緣。",
++            },
++            "6": {
++                "name": "推度心",
++                "description": "審察該所緣。",
++            },
++            "7": {
++                "name": "確定心",
++                "description": "確定該所緣，為速行心開路。",
++            },
++            "8": {
++                "name": "速行 (Javana)",
++                "description": "七個速行心剎那造業。其後沒有彼所緣。",
++                "doctrinalNote": (
++                    "七個速行之後，心直接落回有分。"
++                ),
++            },
++            "9": {
++                "name": "後有分",
++                "description": "心路結束後，有分心再度相續。",
++            },
++        },
++    },
++    "VT_Y_MON": {
++        "arisingCondition": (
++            "法所緣（dhammārammaṇa）現於意門——"
++            "一個念頭、一段回憶、一種想像。"
++        ),
++        "significance": (
++            "說明一切內在的心理活動。它造作意業，"
++            "並且是語業與身業的源頭。"
++        ),
++        "doctrinalNote": (
++            "意門心路由意門轉向心（CI_029）開始，不經過五門轉向。"
++        ),
++        "STEPS": {
++            "1": {
++                "name": "有分波動",
++                "description": "法所緣撞擊之時，有分心隨之波動。",
++            },
++            "2": {
++                "name": "有分截斷",
++                "description": "有分心流被切斷——意門心路開始。",
++            },
++            "3": {
++                "name": "意門轉向",
++                "description": (
++                    "打開意門，將心導向法所緣，"
++                    "同時對它作確定（在此心路中兼作確定心）。"
++                ),
++                "doctrinalNote": (
++                    "CI_029 同時作意門轉向與確定之用。十一心所。"
++                ),
++            },
++            "4": {
++                "name": "速行 (Javana)",
++                "description": (
++                    "七個速行心剎那——造作意業。"
++                    "一切刻意的思惟、言語、行動皆由此而生。"
++                ),
++                "doctrinalNote": (
++                    "直接造作意業。語業與身業亦由意門起始。"
++                ),
++            },
++            "5": {
++                "name": "彼所緣（或有）",
++                "description": (
++                    "意門心路中的彼所緣——視法所緣的強弱而定。"
++                ),
++            },
++            "6": {
++                "name": "後有分",
++                "description": "有分心再度相續。",
++            },
++        },
++    },
++    "VT_VITHIMUTTA": {
++        "arisingCondition": (
++            "結生：前一期生命結束之時。"
++            "有分：介於各個心路過程之間。"
++            "死：色命根壞滅之時。"
++        ),
++        "significance": (
++            "說明結生的機制，以及前後世之間的連結。"
++        ),
++        "doctrinalNote": (
++            "離路心不造新業——它是業的無記異熟心。"
++            "（《攝阿毘達磨義論》第四攝路分別品 §2：「但於離路（的心），"
++            "只有三種境轉起，即業、業相、趣相。」）"
++        ),
++        "STEPS": {
++            "1": {
++                "name": "結生心",
++                "description": (
++                    "新一期生命的第一個心——直接相續於前一期生命的死心，"
++                    "攜帶著業的種子。"
++                ),
++                "doctrinalNote": (
++                    "CI_019／CI_026 為二因者；CI_027 為殊勝者；"
++                    "CI_063–CI_070 為三因者或天人。"
++                ),
++            },
++            "2": {
++                "name": "有分心",
++                "description": (
++                    "於各個心路過程之間維持生命的識流。"
++                    "它生滅無數次，是一切心理活動的基礎。"
++                ),
++                "doctrinalNote": (
++                    "Bhavaṅga（有分）＝識流中維持生命的部分。"
++                    "它於深眠時及各個心路之間持續運行。"
++                ),
++            },
++            "3": {
++                "name": "死心",
++                "description": (
++                    "最後一個心剎那——色命根壞滅，死心落下，"
++                    "一期生命告終。緊接著，下一期生命的結生心隨即生起。"
++                ),
++                "doctrinalNote": (
++                    "Cuti＝離去、逝去。死心的所緣是臨死（āsanna）的所緣。"
++                ),
++            },
++        },
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 4. KAMMAS — 16 kinds of kamma
++#
++#    4a. NAME CORRECTIONS. The shipped zh_TW names for the KM_P_* / KM_U_*
++#    groups are attached to the WRONG ids. `tool/content/data_priority_conditions.py`
++#    itself records KM_U_01 -> "Janaka-kamma", while `assets/data/kammas.json`
++#    (the canonical structural record) has KM_U_01 -> "Garuka-kamma" and
++#    KM_P_01 -> "Janaka-kamma". The two Pāḷi groups are transposed in the
++#    shared source table, so every locale shipped the wrong label; zh_TW is no
++#    exception. KM_R_04 is separately wrong (shipped as 無色界善業, but
++#    `kammas.json` has Lokuttara-kamma / Magga-kamma, 出世間業／道業).
++#
++#    These are corrections, NOT new translations: propose replacing the
++#    name/shortName/description currently shipped for these ids.
++#    Rationale per row is in the ledger.
++#
++#    4b. doctrinalNote + examples for all 16 kammas.
++# ---------------------------------------------------------------------------
++
++KAMMA_NAME_CORRECTIONS_ZH_TW = {
++    # id: (name, shortName, why)
++    "KM_P_01": (
++        "令生業",
++        "令生業",
++        "kammas.json KM_P_01 = Janaka-kamma；現行 zh_TW 誤植為 KM_U_01 的「重業」。",
++    ),
++    "KM_P_02": (
++        "支助業",
++        "支助業",
++        "kammas.json KM_P_02 = Upatthambhaka-kamma；現行 zh_TW 誤植為「臨死業」。",
++    ),
++    "KM_P_03": (
++        "妨害業",
++        "妨害業",
++        "kammas.json KM_P_03 = Upapīḷaka-kamma；現行 zh_TW 誤植為「慣行業」。",
++    ),
++    "KM_P_04": (
++        "毀壞業",
++        "毀壞業",
++        "kammas.json KM_P_04 = Upaghātaka-kamma；現行 zh_TW 誤植為「已作業」。",
++    ),
++    "KM_U_01": (
++        "重業",
++        "重業",
++        "kammas.json KM_U_01 = Garuka-kamma；現行 zh_TW 誤植為「生產業」。",
++    ),
++    "KM_U_02": (
++        "臨死業",
++        "臨死業",
++        "kammas.json KM_U_02 = Āsanna-kamma；現行 zh_TW 誤植為「支持業」。",
++    ),
++    "KM_U_03": (
++        "慣行業",
++        "慣行業",
++        "kammas.json KM_U_03 = Āciṇṇa-kamma；現行 zh_TW 誤植為「阻礙業」。",
++    ),
++    "KM_U_04": (
++        "累積業",
++        "累積業",
++        "kammas.json KM_U_04 = Kaṭattā-kamma；現行 zh_TW 誤植為「毀壞業」。",
++    ),
++    "KM_R_04": (
++        "出世間業（道業）",
++        "出世間業",
++        "kammas.json KM_R_04 = Lokuttara-kamma / Magga-kamma；"
++        "現行 zh_TW 誤植為「無色界善業」（那應是 Arūpāvacara-kusala-kamma）。",
++    ),
++}
++
++KAMMAS_ZH_TW = {
++    "KM_T_01": {
++        "doctrinalNote": (
++            "現法受業只有一次成熟的機會，就在同一期生命之內。"
++            "若於該期生命中未能成熟，即成為既有業（ahosi-kamma）。"
++        ),
++        "examples": [
++            "以清淨心布施供養，即於現生之中得其利益。",
++            "五逆罪（弒母、弒父、殺阿羅漢、出佛身血、破和合僧）"
++            "於緊接的下一生成熟為地獄之報。",
++        ],
++    },
++    "KM_T_02": {
++        "doctrinalNote": (
++            "它只有一次成熟的機會，就在緊接的下一生。"
++            "若於該生未能成熟，即成為既有業。"
++        ),
++        "examples": [
++            "畢生持戒清淨，其次一生結生於善趣。",
++        ],
++    },
++    "KM_T_03": {
++        "doctrinalNote": (
++            "它不會因時日流逝而成為既有業——"
++            "這正是業與業果之流如此錯綜複雜的原因之一。"
++            "在三種依成熟時間而分的業中，它是最常見的一種。"
++        ),
++        "examples": [
++            "宿世所造、至今尚未成熟的業，於漫長的生死中隨緣而熟。",
++        ],
++    },
++    "KM_T_04": {
++        "doctrinalNote": (
++            "「Ahosi」意為「曾經有過」——業並沒有被摧毀，"
++            "它只是失去了成熟的機會。"
++        ),
++        "examples": [
++            "現法受業於該期生命中未能成熟，即成為既有業。",
++        ],
++    },
++    "KM_P_01": {
++        "doctrinalNote": "令生業決定整期生命的根本基礎。",
++        "examples": [
++            "欲界善業令其結生為人或天人。",
++            "證得禪那之業令其結生為梵天。",
++        ],
++    },
++    "KM_P_02": {
++        "doctrinalNote": (
++            "並非播種者的業，而是澆水者的業——"
++            "它增強並延續已經在成熟的果報，而不是自己另生一個新的果報。"
++        ),
++        "examples": [
++            "結生於人間之後，持續布施持戒，令原有的樂報更為長久圓滿。",
++        ],
++    },
++    "KM_P_03": {
++        "doctrinalNote": "這就說明：為何行善之人仍會遭遇困境。",
++        "examples": [
++            "宿世的不善業於此時成熟，障礙並削弱現前善業的果報。",
++        ],
++    },
++    "KM_P_04": {
++        "doctrinalNote": (
++            "這是依作用而分的業當中最強有力的一種；"
++            "生命中之所以突然發生逆轉，即由此業說明。"
++        ),
++        "examples": [
++            "極重的不善業現前，截斷正在成熟的善報之流，"
++            "而代之以苦報。",
++        ],
++    },
++    "KM_U_01": {
++        "doctrinalNote": "重業必定決定結生——它絕不會成為既有業。",
++        "examples": [
++            "證得禪那的善重業，決定結生於梵天界。",
++            "五逆罪的不善重業，決定結生於地獄。",
++        ],
++    },
++    "KM_U_02": {
++        "doctrinalNote": "由此可見臨終之時預備其心的重要性。",
++        "examples": [
++            "臨終之際憶起生平所造的善業，或以善心緣取善相而捨報。",
++        ],
++    },
++    "KM_U_03": {
++        "doctrinalNote": "這正是佛陀教導應當恆常修習善行的原因。",
++        "examples": [
++            "日日誦習、時時布施，習以為常，臨終時便自然現起。",
++        ],
++    },
++    "KM_U_04": {
++        "doctrinalNote": (
++            "依成熟的優先順序而言，它是最弱的一種業，"
++            "然而在我們所積聚的全部業當中，它佔了最大的部分。"
++        ),
++        "examples": [
++            "既非強烈、亦非習慣、亦非臨死現起的其餘一切業。",
++        ],
++    },
++    "KM_R_01": {
++        "doctrinalNote": (
++            "不善業是苦諦的因；它屬於欲界，"
++            "並於欲界的惡趣之中成熟。"
++        ),
++        "examples": [
++            "殺生等不善業，成熟為惡趣的結生與苦報。",
++        ],
++    },
++    "KM_R_02": {
++        "doctrinalNote": (
++            "欲界善業於欲界成熟為樂報——一切福德的基礎。"
++        ),
++        "examples": [
++            "布施持戒之業，成熟為人間或欲界天的樂報。",
++        ],
++    },
++    "KM_R_03": {
++        "doctrinalNote": (
++            "色界善業屬於廣大（mahaggata）的一類，超越欲界；"
++            "它依所證得的禪那而成熟。"
++        ),
++        "examples": [
++            "證得初禪之業，成熟為初禪梵天之結生。",
++        ],
++    },
++    "KM_R_04": {
++        "doctrinalNote": (
++            "出世間業不在三界之內引生結生；"
++            "它以涅槃為所緣、以道心之智斷除煩惱，"
++            "是阿毘達摩的究竟目標。"
++        ),
++        "examples": [
++            "須陀洹道心斷除身見、疑與戒禁取，證得須陀洹果。",
++            "阿羅漢道心斷除一切殘餘煩惱，證得阿羅漢果。",
++        ],
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 5. CETASIKAS — four aspects (特相 · 作用 · 現起 · 近因) for all 52.
++#
++#    Only the four aspect fields are supplied here: `name`, `shortName` and
++#    `description` already ship in assets/content/content_zh_TW.json and are
++#    left untouched.
++#
++#    The four-aspect scheme itself is the standard Theravāda 四種鑑別法
++#    (lakkhaṇa / rasa / paccupaṭṭhāna / padaṭṭhāna); the zh_TW UI already
++#    labels them 特相 (Lakkhaṇa) · 現起 (Paccupaṭṭhāna) · 近因 (Padaṭṭhāna)
++#    in lib/l10n/app_zh_TW.arb. Where a rendering might carry a Mahāyāna sense
++#    the Pāḷi is kept in parentheses, e.g. 一境性 (ekaggatā), 中捨性
++#    (tatramajjhattatā).
++# ---------------------------------------------------------------------------
++
++CETASIKAS_ZH_TW = {
++    "CS_PHASSA": {
++        "characteristic": "接觸所緣——心識、根與所緣三者相觸的方式。",
++        "function": "聚集其餘諸相應心所，令彼等與心一同貼觸根與所緣。",
++        "manifestation": "心、心所、根與所緣會合。",
++        "proximateCause": "有由適當門徑現起的所緣（根＋所緣＋識）。",
++    },
++    "CS_VEDANA": {
++        "characteristic": "感受、領納所緣——領受並感受所緣的方式。",
++        "function": "受用所緣之味；或令俱生之法萎靡，或令其增盛。",
++        "manifestation": (
++            "心的安適（悅受、樂受）；心的苦惱（苦受）；"
++            "身的樂或苦；或捨受的寂止。"
++        ),
++        "proximateCause": (
++            "身的輕安與心的安適（悅受、樂受）；"
++            "心所依處的現前（苦受）；無踴躍（捨受）。"
++        ),
++    },
++    "CS_SANNA": {
++        "characteristic": "憶念——記憶的方式；標記並記取所緣的差別相。",
++        "function": "依先前所記取的相，而憶起過去之事。",
++        "manifestation": "憶起先前所曾了知的事物，或正確或不正確。",
++        "proximateCause": (
++            "所緣如先前所取般再度現起——能引發記憶的所緣"
++            "（例如由憶起相逢之處而認出熟人）。"
++        ),
++    },
++    "CS_CETANA": {
++        "characteristic": "策勵、調度並統合與其俱生的諸法。",
++        "function": "聚集俱生之法，令彼等一同趣向所緣而握持所緣。",
++        "manifestation": "組織、導引並安排俱生之法。",
++        "proximateCause": (
++            "其餘三名蘊的現起——受、想、識"
++            "（思自屬行蘊，故須有餘三蘊）。"
++        ),
++    },
++    "CS_EKAGGATA": {
++        "characteristic": "不散亂、於所緣不動搖——專注一境的定。",
++        "function": "聚集俱生之法，令彼等集於單一所緣。",
++        "manifestation": "於所緣之中現起寂靜與穩固。",
++        "proximateCause": (
++            "樂的現起，以及癡之掉舉與疑二分的息除（得定須有樂）。"
++        ),
++    },
++    "CS_JIVITINDRIYA": {
++        "characteristic": "維持、保養並滋潤俱生之法。",
++        "function": "令俱生之法於壞滅之前，持續存活三個小剎那。",
++        "manifestation": "俱生之法持續存在，直至壞滅之剎那。",
++        "proximateCause": "受、想、識三蘊的現起。",
++    },
++    "CS_MANASIKARA": {
++        "characteristic": "引導俱生之法徹底把握所緣的方式。",
++        "function": "令心與心所會集，並一同握持所緣。",
++        "manifestation": "將心轉向所緣（如舵手將船駛向目的地）。",
++        "proximateCause": "有所緣現起——或過去、或現在、或未來。",
++    },
++    "CS_VITAKKA": {
++        "characteristic": "將俱生之法帶上所緣——把心導向、舉上所緣。",
++        "function": "令心與心所觸及所緣。",
++        "manifestation": "心與其俱生心所到達所緣。",
++        "proximateCause": (
++            "有所緣，並有其餘三蘊（受、想、識）——尋屬於行蘊。"
++        ),
++    },
++    "CS_VICARA": {
++        "characteristic": "注意所緣的方式——密切而持續地觀察、審視它。",
++        "function": "令心與其俱生心所持續地與所緣緊密結合，無有間斷。",
++        "manifestation": (
++            "既已緣取所緣，即把俱生之法繫縛於彼，"
++            "令彼等持續把握同一所緣而不偏離。"
++        ),
++        "proximateCause": (
++            "有所緣，並有其餘三蘊——伺亦屬於行蘊。"
++        ),
++    },
++    "CS_ADHIMOKKHA": {
++        "characteristic": (
++            "決斷的方式，突破猶豫不決——"
++            "令心從疑惑中解脫，得以趣向所緣。"
++        ),
++        "function": "令心堅定地決意於所緣，無有動搖。",
++        "manifestation": "對所緣已作堅定決斷——並執行該決斷。",
++        "proximateCause": "有可供判斷、決定或決斷的所緣。",
++    },
++    "CS_VIRIYA": {
++        "characteristic": "努力與堅忍的方式——不退縮的勤勇之力。",
++        "function": "支持俱生之法，令彼等不退墮。",
++        "manifestation": "於所承擔之事不退轉。",
++        "proximateCause": (
++            "悚懼心，或能激動其心之事，如老、病、死或苦。"
++        ),
++    },
++    "CS_PITI": {
++        "characteristic": (
++            "欣喜與踴躍，因所緣而歡悅"
++            "（與受不同：受是領納所緣，"
++            "喜則對所緣生起興趣與滋味）。"
++        ),
++        "function": "滋潤色身並令心歡悅。",
++        "manifestation": (
++            "心的踴躍，一種被提昇、遍滿的感受"
++            "（與受不同——受是心的安適）。"
++        ),
++        "proximateCause": (
++            "受、想、識三蘊"
++            "（喜屬於行蘊——不同於悅受以身輕安、心安適為近因）。"
++        ),
++    },
++    "CS_CHANDA": {
++        "characteristic": "希望並希求獲得所緣。",
++        "function": "令心去尋求並抓取所緣。",
++        "manifestation": "得到所欲求的所緣。",
++        "proximateCause": "有可欲、值得希求的所緣。",
++    },
++    "CS_MOHA": {
++        "characteristic": "心的盲昧，不知所應知——與慧相反。",
++        "function": "障蔽明澈，令諸法實相不得顯現。",
++        "manifestation": "闇蔽不明。",
++        "proximateCause": "不如理作意——放逸、不當的作意。",
++    },
++    "CS_AHIRIKA": {
++        "characteristic": "於惡行、罪過與過失無有羞恥。",
++        "function": "造作邪惡、有過失與不當的行為。",
++        "manifestation": "於不善之行不退避。",
++        "proximateCause": "不尊重自己。",
++    },
++    "CS_ANOTTAPPA": {
++        "characteristic": "於不善之法無所畏懼。",
++        "function": "造作惡行與不當的行為。",
++        "manifestation": "作惡之時不退縮、不畏懼。",
++        "proximateCause": "不尊重他人。",
++    },
++    "CS_UDDHACCA": {
++        "characteristic": "不寧靜——心動盪而散亂。",
++        "function": "令心不能穩固而持久地安住於所緣。",
++        "manifestation": "心不安穩而被擾動。",
++        "proximateCause": "不如理作意——放逸、不當地處理其心。",
++    },
++    "CS_LOBHA": {
++        "characteristic": "執著所緣——並令俱生的心所一同執著它。",
++        "function": "令心黏著於所緣。",
++        "manifestation": "不肯放捨所緣。",
++        "proximateCause": (
++            "於可愛、可意、能繫縛之法耽樂——"
++            "愛著於美麗、誘人、可喜之物。"
++        ),
++    },
++    "CS_DITTHI": {
++        "characteristic": "頑固地執取與真實相違之事。",
++        "function": "錯誤地解讀事物，與事實相違。",
++        "manifestation": "堅執錯誤的見解。",
++        "proximateCause": "不親近聖者與智者。",
++    },
++    "CS_MANA": {
++        "characteristic": (
++            "驕慢、傲慢、自我膨脹——"
++            "與他人相較而為勝、為等、為劣。"
++        ),
++        "function": "驅使俱生之法趣向自我抬舉。",
++        "manifestation": "虛榮與自我誇大。",
++        "proximateCause": "有可供比較的所緣。",
++    },
++    "CS_DOSA": {
++        "characteristic": (
++            "身心的粗暴與嚴厲——一種敵對與熾燃瞋害的狀態。"
++        ),
++        "function": "令心熾熱、燒灼，並尋求損壞所緣。",
++        "manifestation": "造作惡行，損害自己、他人，或兩者皆損。",
++        "proximateCause": (
++            "有不可意的所緣現起——缺乏理解與如理思惟。"
++        ),
++    },
++    "CS_ISSA": {
++        "characteristic": "對他人的成就或優越生起妒忌與羨嫉。",
++        "function": "於他人的利得或優勝而心不歡悅。",
++        "manifestation": "背離、掉頭不顧他人的優勝。",
++        "proximateCause": (
++            "他人的名聞、財富、安樂或成就，勝過自己者。"
++        ),
++    },
++    "CS_MACCHARIYA": {
++        "characteristic": "隱藏自己所擁有的財物或所成就之事。",
++        "function": "不願與他人分享，不願讓他人分用自己所有。",
++        "manifestation": "不肯施捨自己的財物，慳吝而不肯給予。",
++        "proximateCause": "自己所有的財物或所成就之事。",
++    },
++    "CS_KUKKUCCA": {
++        "characteristic": (
++            "追悔、懊惱的方式——"
++            "對已作之事與未作之事心懷憂惱。"
++        ),
++        "function": "令心對過去之事動盪而苦惱。",
++        "manifestation": "心中的悔恨與懊惱。",
++        "proximateCause": "已造之惡行，或應作而未作的善行福德。",
++    },
++    "CS_THINA": {
++        "characteristic": "萎靡，令精勤停滯。",
++        "function": (
++            "捨棄精進之力，使主動的勤修止息，"
++            "令心向外沉墜而退回有分。"
++        ),
++        "manifestation": "心退縮、萎靡。",
++        "proximateCause": "不如理作意——放逸、不當地處理其心。",
++    },
++    "CS_MIDDHA": {
++        "characteristic": "不堪任於事——昏沉、懈怠、睏倦的狀態。",
++        "function": "覆蔽並包裹其心。",
++        "manifestation": "睏倦、遲鈍、嗜睡。",
++        "proximateCause": "沒有適當的如理作意。",
++    },
++    "CS_VICIKICCHA": {
++        "characteristic": (
++            "懷疑的方式——於佛、法、僧三寶與教法動搖、猶豫。"
++        ),
++        "function": "令人動搖、焦躁、遲疑而無所決斷。",
++        "manifestation": "不能決斷，無有決意。",
++        "proximateCause": "不如理作意。",
++    },
++    "CS_SADDHA": {
++        "characteristic": (
++            "於三寶與業果法則信受不疑的淨信——心的清淨狀態。"
++        ),
++        "function": "淨化其心，令其信託於真正可信者。",
++        "manifestation": "遠離迷信的染污。",
++        "proximateCause": (
++            "有堪為信受之事物（三寶、業與業果之法則）。"
++        ),
++    },
++    "CS_SATI": {
++        "characteristic": (
++            "警覺而不放逸、不隨流的方式——將所緣憶持不失。"
++        ),
++        "function": "憶持，令不忘失。",
++        "manifestation": (
++            "培養緊繫於所緣的心——守護六根門。"
++        ),
++        "proximateCause": "堅固的想。",
++    },
++    "CS_HIRI": {
++        "characteristic": "厭惡惡行，不樂於過失。",
++        "function": "不造作不當與不義之事。",
++        "manifestation": "退避惡行與過失，遠離不當之舉。",
++        "proximateCause": "尊重自己。",
++    },
++    "CS_OTTAPPA": {
++        "characteristic": "畏懼惡行，厭惡過失所帶來的危險。",
++        "function": "不造惡行，不生損害。",
++        "manifestation": "退避並遠離惡行。",
++        "proximateCause": "尊重他人，畏懼他人的呵責。",
++    },
++    "CS_ALOBHA": {
++        "characteristic": (
++            "心不為所緣所染——無所執取、無所繫著。"
++        ),
++        "function": "不抓取、不執著、不黏縛；超越繫縛。",
++        "manifestation": (
++            "不執持現前之物，不為可意之境所迷；"
++            "至其究竟，乃至於新的結生亦無所執取。"
++        ),
++        "proximateCause": "如理作意。",
++    },
++    "CS_ADOSA": {
++        "characteristic": (
++            "遠離殘暴、惡意與敵對——清涼與柔和的狀態。"
++        ),
++        "function": "去除殘暴，避免損害，息除瞋熱。",
++        "manifestation": "柔和與清涼的顯現。",
++        "proximateCause": "如理作意。",
++    },
++    "CS_TATRAMAJJHATTATA": {
++        "characteristic": (
++            "令心與其心所彼此齊平——平衡而中正的狀態。"
++        ),
++        "function": "防止不足與過分，令俱生之法不失其平衡。",
++        "manifestation": "生起平衡與均等。",
++        "proximateCause": "有和合共事的俱生之法。",
++    },
++    "CS_KAYAPASSADDHI": {
++        "characteristic": (
++            "平靜，遠離心所組（受、想、行三蘊）的躁動。"
++        ),
++        "function": "止息心所的躁動，令彼等不再動搖。",
++        "manifestation": "心所變得平靜、安詳而清涼。",
++        "proximateCause": "心所的現起（受、想、行三蘊）。",
++    },
++    "CS_CITTAPASSADDHI": {
++        "characteristic": "平靜，遠離心（識蘊）的躁動。",
++        "function": "止息心的躁動，令其不再動搖。",
++        "manifestation": "心變得平靜、安詳而清涼。",
++        "proximateCause": "心的現起（識蘊）。",
++    },
++    "CS_KAYALAHUTA": {
++        "characteristic": "輕快，遠離心所組（受、想、行）的沉重。",
++        "function": "不令沉重壓抑心所，使彼等輕盈。",
++        "manifestation": "心所不再遲滯而變得輕快。",
++        "proximateCause": "心與其俱生心所（受、想、行）的現起。",
++    },
++    "CS_CITTALAHUTA": {
++        "characteristic": "輕快，遠離心的沉重。",
++        "function": "不令沉重壓抑其心，使心輕盈。",
++        "manifestation": "心不再遲滯而變得輕快。",
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_KAYAMUDUTA": {
++        "characteristic": "心所組（受、想、行）的柔軟與柔順。",
++        "function": "消解心所的剛強，減緩其僵硬與粗重。",
++        "manifestation": (
++            "柔順，於把握所緣時輕鬆自在，無有僵硬。"
++        ),
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_CITTAMUDUTA": {
++        "characteristic": "心的柔軟與柔順。",
++        "function": "消解心的剛強，減緩其僵硬與粗重。",
++        "manifestation": (
++            "心變得柔順，於把握所緣時輕鬆自在，無有僵硬。"
++        ),
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_KAYAKAMMANNATA": {
++        "characteristic": "令心所組遠離不堪任、不適業的狀態。",
++        "function": "消解並去除心所的不適業。",
++        "manifestation": "心所變得調順而堪能，足以應對所緣。",
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_CITTAKAMMANNATA": {
++        "characteristic": "令心遠離不堪任、不適業的狀態。",
++        "function": "消解並去除心的不適業。",
++        "manifestation": "心變得調順而堪能，足以應對所緣。",
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_KAYAPAGUNNATA": {
++        "characteristic": (
++            "心所組無有停滯——心所的殊勝純熟。"
++        ),
++        "function": "破除並消解心所的停滯。",
++        "manifestation": "遠離並不執著於惡行與過失。",
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_CITTAPAGUNNATA": {
++        "characteristic": "心無有停滯——心的殊勝純熟。",
++        "function": "破除並消解心的停滯。",
++        "manifestation": "遠離並不執著於惡行與過失。",
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_KAYUJUKATA": {
++        "characteristic": "心所組的正直與平直。",
++        "function": "對治心所的邪曲與不正直。",
++        "manifestation": "心所變得正直，無有邪曲與偏差。",
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_CITTUJUKATA": {
++        "characteristic": "心的正直與平直。",
++        "function": "對治心的邪曲與不正直。",
++        "manifestation": "心變得正直，無有邪曲與偏差。",
++        "proximateCause": "心與其俱生心所的現起。",
++    },
++    "CS_SAMMAVACA": {
++        "characteristic": "持守正語——遠離並防護語的惡行。",
++        "function": (
++            "遠離虛偽與欺誑"
++            "（邪語：妄語、兩舌、惡口、綺語）。"
++        ),
++        "manifestation": "邪語的除滅。",
++        "proximateCause": (
++            "信、念、慚、愧與寡欲的現起。"
++        ),
++    },
++    "CS_SAMMAKAMMANTA": {
++        "characteristic": (
++            "正當而行，一面支持善法，一面滅除自己的煩惱。"
++        ),
++        "function": "遠離不善的身業（殺生、偷盜、邪婬）。",
++        "manifestation": "邪業的除滅。",
++        "proximateCause": "信、念、慚、愧與寡欲的現起。",
++    },
++    "CS_SAMMAAJIVA": {
++        "characteristic": "清淨——捨離並遠離身、語二種惡行。",
++        "function": "維持正當的營生，防止不當的行為。",
++        "manifestation": "邪命的除滅，不造不善之行。",
++        "proximateCause": "信、念、慚、愧與寡欲的現起。",
++    },
++    "CS_KARUNA": {
++        "characteristic": (
++            "願眾生離苦——欲拔除眾生之苦的方式。"
++        ),
++        "function": (
++            "不忍見眾生受苦——"
++            "於他人的苦難之前不能漠然不動。"
++        ),
++        "manifestation": "慈藹，或不逼惱其他眾生。",
++        "proximateCause": (
++            "遇見正在受苦的眾生——"
++            "見眾生為苦所迫而亟須濟拔。"
++        ),
++    },
++    "CS_MUDITA": {
++        "characteristic": (
++            "隨喜眾生的福樂——於他人的安樂而生歡喜。"
++        ),
++        "function": "於其他眾生無所妒嫉。",
++        "manifestation": (
++            "對其他眾生的進步與安樂感到滿足——瞋恚的摧破。"
++        ),
++        "proximateCause": (
++            "見眾生造作並享受安樂——"
++            "認知眾生已獲成就。"
++        ),
++    },
++    "CS_PANNA": {
++        "characteristic": (
++            "明瞭而知，通達諸法的實相——"
++            "照見三相（無常、苦、無我）的智慧。"
++        ),
++        "function": "破除並消滅無明的闇。",
++        "manifestation": "無有迷惑，無有染著的執取。",
++        "proximateCause": (
++            "如理作意；寂靜（安止的心）；"
++            "以及以三善根（無貪、無瞋、無癡）為因的結生識。"
++        ),
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 6. RUPAS — four aspects + doctrinal note for all 28 kinds of materiality.
++#    Only the fields below are supplied; `name`, `shortName` and `description`
++#    already ship in assets/content/content_zh_TW.json and are left untouched.
++#
++#    色聚 (kalāpa)、四大種 (mahābhūta)、淨色 (pasāda-rūpa)、心所依處
++#    (hadaya-vatthu) 等名相，依《攝阿毘達磨義論》第六攝色分別品。
++# ---------------------------------------------------------------------------
++
++RUPAS_ZH_TW = {
++    "RP_001": {
++        "characteristic": "硬或軟——色法中堅固或柔順的性質。",
++        "function": "作為同一色聚之中其餘諸色的支持基礎。",
++        "manifestation": "領納——以身觸而覺知為硬或軟。",
++        "proximateCause": "其餘三大種（水、火、風）與之俱生。",
++        "doctrinalNote": (
++            "四大種必定同時生起，不可分離。無色界之中沒有色法。"
++        ),
++    },
++    "RP_002": {
++        "characteristic": "流動與凝聚——色法的黏結性質。",
++        "function": "結合同一色聚之內的諸色。",
++        "manifestation": "色法被維繫而不散壞。",
++        "proximateCause": "其餘三大種（地、火、風）與之俱生。",
++        "doctrinalNote": (
++            "水界是四大種之中唯一不能以身觸直接覺知的。"
++        ),
++    },
++    "RP_003": {
++        "characteristic": "熱或冷——色法的溫度性質。",
++        "function": "令同一色聚的諸色成熟並持續。",
++        "manifestation": "色法達於成熟與圓熟。",
++        "proximateCause": "其餘三大種（地、水、風）與之俱生。",
++        "doctrinalNote": (
++            "火界單獨作為外在的熱（utu，時節）而出現時，"
++            "能生起時節生色（utu-samuṭṭhāna-rūpa）。"
++        ),
++    },
++    "RP_004": {
++        "characteristic": "膨脹與推動——色法中移動的性質。",
++        "function": "支持色法並令其移動。",
++        "manifestation": "色法被支持而得以運動。",
++        "proximateCause": "其餘三大種（地、水、火）與之俱生。",
++        "doctrinalNote": (
++            "於安那般那念（入出息念）的修習中，"
++            "氣息（風界）是主要的業處所緣。"
++        ),
++    },
++    "RP_005": {
++        "characteristic": "微細而明淨，能取色所緣為其所緣。",
++        "function": "作為眼識生起的物質依處。",
++        "manifestation": "眼識生起而見色所緣。",
++        "proximateCause": "宿業；並有色所緣撞擊於彼。",
++        "doctrinalNote": "唯由業所生。無色界之中沒有此色。",
++    },
++    "RP_006": {
++        "characteristic": "微細，能取聲所緣為其所緣。",
++        "function": "作為耳識生起的物質依處。",
++        "manifestation": "耳識生起而聞聲所緣。",
++        "proximateCause": "宿業；並有聲所緣撞擊於彼。",
++        "doctrinalNote": (
++            "色界梵天具有耳根，因為他們以聲音互相溝通。"
++        ),
++    },
++    "RP_007": {
++        "characteristic": "微細，能取香所緣為其所緣。",
++        "function": "作為鼻識生起的物質依處。",
++        "manifestation": "鼻識生起而嗅香所緣。",
++        "proximateCause": "宿業；並有香所緣撞擊於彼。",
++        "doctrinalNote": (
++            "唯於欲界有。色界梵天沒有鼻根。"
++        ),
++    },
++    "RP_008": {
++        "characteristic": "微細，能取味所緣為其所緣。",
++        "function": "作為舌識生起的物質依處。",
++        "manifestation": "舌識生起而嘗味所緣。",
++        "proximateCause": "宿業；並有味所緣撞擊於彼。",
++        "doctrinalNote": (
++            "唯於欲界有。梵天不進食，所以沒有舌根。"
++        ),
++    },
++    "RP_009": {
++        "characteristic": (
++            "遍滿全身的微細色，"
++            "取觸所緣（地、火、風）為其所緣。"
++        ),
++        "function": "作為身識生起的物質依處。",
++        "manifestation": "身識生起而覺知觸所緣。",
++        "proximateCause": "宿業；並有觸所緣撞擊於彼。",
++        "doctrinalNote": (
++            "色界梵天具有身根。無想有情天則無身根。"
++        ),
++    },
++    "RP_010": {
++        "characteristic": "顯現與呈現——為眼根所見的所緣。",
++        "function": "作為眼識所了知的所緣。",
++        "manifestation": "眼識生起而把握彼。",
++        "proximateCause": "有光的現起，並與眼根相觸。",
++        "doctrinalNote": (
++            "色所緣（顏色）不同於一般所說的色法（物質）。"
++        ),
++    },
++    "RP_011": {
++        "characteristic": "作響——為耳根所聞的所緣。",
++        "function": "作為耳識所了知的所緣。",
++        "manifestation": "耳識生起而把握彼。",
++        "proximateCause": "有聲音生起，並與耳根相觸。",
++    },
++    "RP_012": {
++        "characteristic": "飄散——為鼻根所嗅的所緣。",
++        "function": "作為鼻識所了知的所緣。",
++        "manifestation": "鼻識生起而把握彼。",
++        "proximateCause": "有香氣生起，並與鼻根相觸。",
++    },
++    "RP_013": {
++        "characteristic": "呈現——為舌根所嘗的所緣。",
++        "function": "作為舌識所了知的所緣。",
++        "manifestation": "舌識生起而把握彼。",
++        "proximateCause": "為舌根所取的味與之相觸。",
++    },
++    "RP_014": {
++        "characteristic": "女性的表徵——影響整個色身。",
++        "function": "決定女性特有的性徵與行為。",
++        "manifestation": "於色身之中顯現女性的性徵。",
++        "proximateCause": "自結生之剎那即令其成為女性的業。",
++        "doctrinalNote": (
++            "唯於欲界有。色界梵天沒有性根色。"
++        ),
++    },
++    "RP_015": {
++        "characteristic": "男性的表徵——影響整個色身。",
++        "function": "決定男性特有的性徵與行為。",
++        "manifestation": "於色身之中顯現男性的性徵。",
++        "proximateCause": "自結生之剎那即令其成為男性的業。",
++        "doctrinalNote": "唯於欲界有。",
++    },
++    "RP_016": {
++        "characteristic": "作為座處——意門心識所依的物質基礎。",
++        "function": (
++            "作為一切由意門生起的心識"
++            "（除五門的雙五識之外）的物質依處。"
++        ),
++        "manifestation": "意門心識得以生起。",
++        "proximateCause": "由宿業所生；並由心臟之血所維持。",
++        "doctrinalNote": (
++            "無色界之中沒有此色。"
++            "它是阿毘達摩認知系統中最重要的物質依處。"
++        ),
++    },
++    "RP_017": {
++        "characteristic": "維持生命——保有所由業生的諸色。",
++        "function": (
++            "令業生色於一期色法的壽命之內持續存在。"
++        ),
++        "manifestation": "業生色被維持存活、相續不絕。",
++        "proximateCause": "唯有業能產生命根色。",
++        "doctrinalNote": (
++            "色法的壽命等於十七個心剎那。"
++            "命根色壞滅之時，業生色亦隨之壞滅。"
++        ),
++    },
++    "RP_018": {
++        "characteristic": "滋養——存在於每一色聚之中的食素。",
++        "function": (
++            "滋養同一色聚中的諸色，"
++            "並由食而生起新的色法。"
++        ),
++        "manifestation": "色法受到滋養、維持並增廣。",
++        "proximateCause": "有被消化的食物（食）存在。",
++        "doctrinalNote": (
++            "物質食物（kabaḷīkāra-āhāra，段食）中的食素，"
++            "是阿毘達摩所說四食之一。"
++        ),
++    },
++    "RP_019": {
++        "characteristic": "劃定界限——於諸色聚之間作出分際。",
++        "function": "標示色聚與色聚之間的界限。",
++        "manifestation": "諸色聚彼此區別而不相混雜。",
++        "proximateCause": "有並存而相鄰的諸色聚。",
++        "doctrinalNote": (
++            "作為色法的空界，"
++            "不同於哲學上所說的絕對空間。"
++        ),
++    },
++    "RP_020": {
++        "characteristic": "動作——用以傳達意圖的身體表達。",
++        "function": "藉由身體的姿態傳達意圖。",
++        "manifestation": "他人由身體的姿態而知曉自己的意圖。",
++        "proximateCause": "生起帶有表達意圖的心。",
++        "doctrinalNote": (
++            "唯由心所生。它是身業（kāya-kamma）的基礎。"
++        ),
++    },
++    "RP_021": {
++        "characteristic": "言語的表達——用以傳達意圖的話語。",
++        "function": "藉由言語傳達意圖。",
++        "manifestation": "他人由語聲而知曉自己的意圖。",
++        "proximateCause": "生起帶有說話意圖的心。",
++        "doctrinalNote": (
++            "唯由心所生。它是語業（vacī-kamma）的基礎。"
++        ),
++    },
++    "RP_022": {
++        "characteristic": "輕快——色法輕盈靈敏的性質。",
++        "function": "令色法不致沉重與僵硬。",
++        "manifestation": "身體輕盈，動作自如。",
++        "proximateCause": "適宜的心、時節與食；並無疾病。",
++        "doctrinalNote": (
++            "非由業所生。依於現前的健康與條件而有。"
++        ),
++    },
++    "RP_023": {
++        "characteristic": "柔軟——色法柔順可塑的性質。",
++        "function": "令色法不致僵硬與剛強。",
++        "manifestation": "身體柔軟而靈活。",
++        "proximateCause": "調和的心、時節與食；並無疾病。",
++    },
++    "RP_024": {
++        "characteristic": "適業——色法堪能合用的性質。",
++        "function": "令色法易於使用而無疲倦。",
++        "manifestation": "身體堪能勝任任何工作。",
++        "proximateCause": "調和的心、時節與食。",
++    },
++    "RP_025": {
++        "characteristic": "積集——色聚最初生起的階段。",
++        "function": "標示一個色聚存在的開始。",
++        "manifestation": "色法於世間現起。",
++        "proximateCause": (
++            "色法的四種等起之源（業、心、時節、食）。"
++        ),
++        "doctrinalNote": (
++            "色法的四種特相，"
++            "是一切色法的階段，而非各自獨立的色。"
++        ),
++    },
++    "RP_026": {
++        "characteristic": "相續——色法之流持續存在的階段。",
++        "function": "令色法之流持續不斷。",
++        "manifestation": "色法顯得穩定而相續。",
++        "proximateCause": "四種等起之源持續地作用。",
++        "doctrinalNote": (
++            "相續說明事物何以看似穩定——"
++            "它們其實是一條生滅不已、從未間斷的流。"
++        ),
++    },
++    "RP_027": {
++        "characteristic": "衰敗——色法老化、衰退的階段。",
++        "function": "標示色法的變易與衰退。",
++        "manifestation": "色法變舊、耗損、改變。",
++        "proximateCause": "時間的流逝；色法既已存在。",
++        "doctrinalNote": (
++            "衰敗是色法中最明顯可見的無常（anicca）之相。"
++        ),
++    },
++    "RP_028": {
++        "characteristic": "壞滅——色法的完全息滅。",
++        "function": "標示色法存在的終結。",
++        "manifestation": "色法不復存在——已完全息滅。",
++        "proximateCause": (
++            "色法既已歷經生起、持續、變易三個在前的階段。"
++        ),
++        "doctrinalNote": (
++            "清楚照見壞滅的階段，"
++            "是修習觀禪（vipassanā）的起點。"
++        ),
++    },
++}
++
++# ---------------------------------------------------------------------------
++# 7. Wiring helper — for the integration agent.
++#
++#    Call ``apply(catalog)`` on the zh_TW catalog dict **after** the existing
++#    builder has produced it and **before** it is serialised. It only fills
++#    keys that are missing (or empty) and never overwrites a value that is
++#    already there, so shipped zh_TW step text and names survive. The vithi
++#    step numbers listed in ``VITHIS_ZH_TW[...]["STEPS"]`` are the ones that
++#    are currently absent from the catalog; nothing else is touched.
++# ---------------------------------------------------------------------------
++
++_SECTION_FIELDS = {
++    "paticcas": (PATICCAS_ZH_TW, ("characteristic", "function",
++                                  "manifestation", "proximateCause",
++                                  "doctrinalNote", "examples")),
++    "paccayas": (PACCAYAS_ZH_TW, ("paccayaDhamma", "paccayuppanna",
++                                  "subdivisions", "examples",
++                                  "doctrinalNote")),
++    "kammas": (KAMMAS_ZH_TW, ("doctrinalNote", "examples")),
++    "cetasikas": (CETASIKAS_ZH_TW, ("characteristic", "function",
++                                    "manifestation", "proximateCause")),
++    "rupas": (RUPAS_ZH_TW, ("characteristic", "function",
++                            "manifestation", "proximateCause",
++                            "doctrinalNote")),
++}
++
++
++def apply(catalog):
++    """Fill missing zh_TW fields in ``catalog`` (mutated in place).
++
++    Returns a per-section count of the fields written.
++    """
++    written = {}
++    for section, (source, fields) in _SECTION_FIELDS.items():
++        target = catalog.setdefault(section, {})
++        count = 0
++        for entity_id, data in source.items():
++            node = target.setdefault(entity_id, {})
++            for field in fields:
++                if field in data and not node.get(field):
++                    node[field] = data[field]
++                    count += 1
++        written[section] = count
++
++    vithis = catalog.setdefault("vithis", {})
++    count = 0
++    for vithi_id, data in VITHIS_ZH_TW.items():
++        node = vithis.setdefault(vithi_id, {})
++        for field in ("arisingCondition", "significance", "doctrinalNote"):
++            if field in data and not node.get(field):
++                node[field] = data[field]
++                count += 1
++        steps = node.setdefault("steps", {})
++        for step_number, step in data.get("STEPS", {}).items():
++            step_node = steps.setdefault(step_number, {})
++            for field, value in step.items():
++                if not step_node.get(field):
++                    step_node[field] = value
++                    count += 1
++    written["vithis"] = count
++
++    # Kamma name corrections are deliberate replacements, not fills: they fix
++    # labels attached to the wrong id. Applied only when KAMMA_NAME_CORRECTIONS
++    # is switched on by the integrator after the id/Pāḷi mismatch is confirmed.
++    return written
++
++
++def apply_kamma_name_corrections(catalog):
++    """Replace the mis-keyed kamma name/shortName with the correct ones."""
++    kammas = catalog.setdefault("kammas", {})
++    for kamma_id, (name, short_name, _why) in KAMMA_NAME_CORRECTIONS_ZH_TW.items():
++        node = kammas.setdefault(kamma_id, {})
++        node["name"] = name
++        node["shortName"] = short_name
++    return len(KAMMA_NAME_CORRECTIONS_ZH_TW)
