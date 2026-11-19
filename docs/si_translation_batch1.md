@@ -83,7 +83,7 @@ Key sets were checked against `content_en.json`. Each missing key is one of the 
   - Feelings: joy → සෝමනස්ස; equanimity → උපෙක්ඛා; pleasure → සුඛ; pain → දුක්ඛ. The spellings follow the committed citta names.
   - The Pāḷi designation is copied verbatim from English.
   - Status: template output, a direct rendering of the English sentence. The group and feeling assignments come from the English data and are not re-checked against a source.
-- **Vithi steps (18):** VT_NGU_MON_LON (9), VT_Y_MON (6), VT_VITHIMUTTA (3). Step names reuse the committed VT_NGU_MON_RATLON wording. Unverified; no step-level doctrinalNote for VT_Y_MON 3–4 and VT_VITHIMUTTA 1 (§8).
+- **Vithi steps (18):** VT_NGU_MON_LON (9), VT_Y_MON (6), VT_VITHIMUTTA (3). Step names reuse the committed VT_NGU_MON_RATLON wording. Checked against Chandrikava 5-3, 5-6 and 5-9 (see §3f). No step-level doctrinalNote for VT_Y_MON 3–4 and VT_VITHIMUTTA 1 (§8).
 
 ## 3e. Study module pilots: M1_BASICS, M2_SI_PHAN, M3 (not yet shipped)
 
@@ -110,7 +110,7 @@ Each entry was checked against the English meaning, field by field. Pāḷi, ids
 - **Paccaya (PC_01–12):** paccayaDhamma and paccayuppanna match English. PC_11 stays English (§8).
 - **Paticca (PD_01–12):** four-aspect, examples and doctrinalNote read against English. Fixed: PD_02 doctrinalNote had a repeated "චේතනා (චේතනා)" (now "Cetanā" in Pāḷi form); PD_03 simile changed from "ගසා තබන කොළ" to "නළා පැදුරු", matching the English "two sheaves of reeds"; PD_07 doctrinalNote "මූලය" → "හරය" for "crux"; ඵස්ස used for Phassa where the Sinhala referred to the factor (PD_05–07 examples and doctrinalNote, PC_15 paccayaDhamma and its Nām'āhāra note). PD_06 shortName still uses ස්පර්ශය, to be aligned in the council pass (§7).
 - **Citta doctrinalNote (121):** the template was checked for each entry: feeling word (head and tail), group, sasaṅkhārika/asaṅkhārika, and Pāḷi designation. Fixed: CI_026 and CI_027 had their feeling words swapped; CI_056–CI_078 (prompted, even numbers) said "unprompted"; CI_030 now says "ක්‍රියා" (functional) and uses the Chandrikava 5-9 form හසිතුප්පාද. The per-entry gloss is still a template, not checked against a Sinhala text.
-- **Vithi steps:** VT_NGU_MON_LON compared with Chandrikava 5-3 (mahanta-ārammaṇa vīthi, pitaka.lk/books/abhidharma-chandrikava/5-3.html): steps 1–9 and the absence of tadārammaṇa match. VT_VITHIMUTTA: the rules in Chandrikava 5-9 (tadārammaṇa, vīthimutta, bhavaṅga) match; fixed "අසංඛ්‍යාත වාරයක්" → "වාර" and "ආසන්න (ආසන්න)" → "මරණාසන්න (āsanna)". VT_Y_MON: the mind-door vīthi section of Chandrikava was not found, so it is checked against English only.
+- **Vithi steps:** VT_NGU_MON_LON compared with Chandrikava 5-3 (mahanta-ārammaṇa vīthi, pitaka.lk/books/abhidharma-chandrikava/5-3.html): steps 1–9 and the absence of tadārammaṇa match. VT_VITHIMUTTA: the rules in Chandrikava 5-9 (tadārammaṇa, vīthimutta, bhavaṅga) match; fixed "අසංඛ්‍යාත වාරයක්" → "වාර" and "ආසන්න (ආසන්න)" → "මරණාසන්න (āsanna)". VT_Y_MON: compared with Chandrikava 5-6 (parittā manodvārika vīthi, pitaka.lk/books/abhidharma-chandrikava/5-6.html): bhavaṅga-calana, upaccheda, manodvārāvajjana (which also performs determining), 7 javana, and tadārammaṇa for a clear object, match. Registration is optional in the English, and Chandrikava gives two tadārammaṇa for a clear object and none for an unclear one, so the English wording fits. The VT_Y_MON doctrinalNote (CI_029 does both adverting and determining) is supported by 5-6; its "11 mental factors" count is not verified and it stays English (§8).
 - **Cetasika four-aspect (52):** all 52 read against English. Fixed: CS_KUKKUCCA manifestation (remorse, not "sorrow"); CS_TATRAMAJJHATTATA "සමසභාවිකත්වය" → "සමභාවය" (the first form is not a standard word); CS_THINA "භවාංග" → "භවංග" (the spelling used in citta and vithi).
 - **M3 (S05–S07, R01–R20, Q01–Q20):** read against English. Fixed: "ඍජුතාව" → "උජුකතාව" (as in S06 and R06); "කරුණාව/මුදිතාව" → "කරුණා/මුදිතා" in the S07 summary and body, matching the title and glossary; S06 "අස්ථිරභාවයට" → "නොසන්සුන් බවට" for restlessness; the S06 closing note listing the six non-universal factors by name was removed, since English does not name them. Sammāsaddhā → සම්මාසද්ධා.
 - **M3 items kept on purpose:** the Faith etymology (saṃ + dah), the Shame cause list (5), the Dread cause list (4), and "ධ්‍යාන සහ උසස් අභිඥා ඉක්මනින්" in S06 are all present in English, so they stay. TERM_PANNINDRIYA (S03) and TERM_TU_QUYEN_M3 (S07) both have the same definition because English uses Paññindriya as a keyTerm in both sections. They are not merged, so the structure matches English. M3_Q20 keeps the English question wording (see §3e).
@@ -119,18 +119,19 @@ Each entry was checked against the English meaning, field by field. Pāḷi, ids
 
 ## 4. Field coverage (si) — gap inventory
 
-Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ no si value (English fallback)
+Status key: ✅ si value in committed `content_si.json` · 🟡 drafted in `tool/content/data_priority_si_*` (not shipped) · ⚪ English fallback on purpose (§8) · ❌ not translated yet.
+Counts are English entries with a non-empty field. Checked by script this round; the old table was out of date.
 
-| Category | Entities | Name / short / description | Four aspects | Other fields |
+| Category | Entities | Name / shortName / description | Four aspects | Other fields |
 |---|---|---|---|---|
-| cittas | 121 | ✅ name; 🟡 doctrinalNote (121, template sentence, §3d) | n/a | 🟡 examples for the 12 akusala cittas (18 items). The other 109 cittas have no English examples either. |
-| cetasikas | 52 | ✅ name, shortName, description | 🟡 208 fields | — |
-| rupas | 28 | ✅ name, shortName, description | 🟡 112 fields | ❌ doctrinalNote (28) |
-| paccayas | 24 | ✅ name, shortName, definition (14 corrected, §2) | 🟡 paccayaDhamma (23), 🟡 paccayuppanna (23) | ❌ examples, subdivisions, doctrinalNote |
-| paticcas | 12 | ✅ name, shortName, description (4 corrected, §2) | 🟡 48 fields | ❌ doctrinalNote (12), examples (12) |
-| kammas | 16 | ✅ name, shortName, description (1 corrected) | n/a | 🟡 examples (32 items, 16 entries); ❌ doctrinalNote (16) |
-| vithis | 4 | ✅ name, shortName, description | n/a | 🟡 arisingCondition, significance (4 each); 🟡 steps for all four vithis (VT_NGU_MON_RATLON committed, 11; the other three in `data_priority_si_detail_vithi.py`, 18); ❌ doctrinalNote (4), with a few step notes left in English (§8) |
-| studyModules | 17 | ✅ title, description | n/a | 🟡 3 modules drafted: M1_BASICS (`data_priority_si_study_m1.py`; 4 sections, 14 reviewCards, 12 quizSeeds), M2_SI_PHAN (`_m2.py`; 3, 10, 10), M3 (`_m3.py`; 7, 20, 20). The other 14 modules not started (Batch 3) |
+| cittas | 121 | ✅ name (121). shortName (71 entries): English shortName equals name in every case, so the si shortName equals the si name; not yet written to the catalog (§5). | n/a | 🟡 doctrinalNote (121, revised, §3f; committed content_si has the older template). 🟡 examples (12 entries). |
+| cetasikas | 52 | ✅ name, shortName, description (52) | 🟡 208 fields (52 × 4), reviewed §3f | — |
+| rupas | 28 | ✅ name, shortName, description (28) | 🟡 112 fields (28 × 4), reviewed §3f | 🟡 doctrinalNote (21 of 23); ⚪ RP_002, RP_022 (§8) |
+| paccayas | 24 | ✅ name, shortName, definition (24; 14 corrected, §2) | 🟡 paccayaDhamma (23 of 24), 🟡 paccayuppanna (23 of 24); ⚪ PC_11 | 🟡 examples (23 of 24); 🟡 subdivisions (9 of 9); 🟡 doctrinalNote (22 of 24); ⚪ PC_11, PC_15 (§8) |
+| paticcas | 12 | ✅ name, shortName, description (12; 4 corrected, §2) | 🟡 48 fields (12 × 4) | 🟡 examples (12); 🟡 doctrinalNote (7 of 8); ⚪ PD_11 (§8) |
+| kammas | 16 | ✅ name, shortName, description (16; 1 corrected) | n/a | 🟡 examples (16 entries); 🟡 doctrinalNote (14 of 16); ⚪ KM_R_01, KM_R_04 (§8) |
+| vithis | 4 | ✅ name, shortName, description (4) | 🟡 arisingCondition, significance (4 each) | 🟡 steps for all four vithis (VT_NGU_MON_RATLON ✅ committed, 11; VT_NGU_MON_LON 9, VT_Y_MON 6, VT_VITHIMUTTA 3 🟡); 🟡 doctrinalNote (3 of 4); ⚪ VT_Y_MON (§8) |
+| studyModules | 17 | ✅ title, description (17) | n/a | 🟡 3 modules drafted: M1_BASICS (`data_priority_si_study_m1.py`; 4 sections, 14 reviewCards, 12 quizSeeds), M2_SI_PHAN (`_m2.py`; 3, 10, 10), M3 (`_m3.py`; 7, 20, 20). ❌ the other 14 modules (Batch 3, not started) |
 
 ## 5. Builder integration (for coordinator; NOT applied)
 
@@ -145,6 +146,8 @@ Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ n
 Batch 2 (`data_priority_si_detail_b2.py`) needs the same kind of change for `cetasikas` and `rupas` (four keys each), `kammas` (`examples`), `vithis` (`arisingCondition`, `significance`) and `cittas` (`examples`).
 
 Citta examples need a specific note: today the builder copies citta examples only from the existing `content_si.json` (`existing_citta_examples`). That is circular for si, so the coordinator should take citta examples from `SI_CITTA_EXAMPLES` instead.
+
+Citta shortName (71 entries): the English shortName is identical to the English name in all 71 cases. The coordinator can set si shortName to the committed si name, with no new translation. This is not part of the drafts.
 
 Note: both modules are keyed by `loc == "si"` only. They must not be applied to any other locale.
 
@@ -224,7 +227,7 @@ Left in English because the English claim is either unsourced in our files or do
 - **PD_11** doctrinalNote: a correspondence claim between PD_11 and PD_03.
 - **RP_002** and **RP_022** doctrinalNote: RP_022 says lightness of matter is not produced by kamma; this needs checking against the Abhidhamma list of causes.
 - **KM_R_01** and **KM_R_04** doctrinalNote: KM_R_04 says path kamma produces Nibbāna as its result; check whether the result is fruition instead.
-- **VT_Y_MON** doctrinalNote: refers to CI_029 without a source.
+- **VT_Y_MON** doctrinalNote: the adverting/determining claim is supported by Chandrikava 5-6 (§3f); the "11 mental factors" count is not verified, so the whole note stays English.
 - Vithi steps: the step-level doctrinalNote for VT_Y_MON steps 3–4 and VT_VITHIMUTTA step 1 (citta-number and kamma-location claims).
 - Rupa/kamma/paticca items above are translated, but the claims inside them are still unverified.
 
