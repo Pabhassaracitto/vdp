@@ -1154,7 +1154,11 @@
       "shortName": "色界善",
       "description": "五禅色界善心，感得色界十六梵天果报。"
     },
-    "KM_R_04": {}
+    "KM_R_04": {
+      "name": "出世間業",
+      "shortName": "出世間",
+      "description": "四道心斷煩惱、給四果心及涅槃為果、終止輪迴之業。"
+    }
   },
   "vithis": {
     "VT_NGU_MON_RATLON": {

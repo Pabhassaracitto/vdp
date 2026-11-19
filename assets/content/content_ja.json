@@ -952,122 +952,239 @@
     "RP_005": {
       "name": "眼浄色",
       "shortName": "眼浄色",
-      "description": "色（光）を感受する眼球内部の透明な感性色。"
+      "description": "色（光）を感受する眼球内部の透明な感性色。",
+      "characteristic": "繊細で透明 — 色所縁を捉える能力を持つこと。",
+      "function": "可見の対象を見ること。",
+      "manifestation": "眼門における視覚の基盤として現れること。",
+      "proximateCause": "他の三大種と倶生する四大種。",
+      "doctrinalNote": "業のみによって生ずる。無色界には存在しない。"
     },
     "RP_006": {
       "name": "耳浄色",
       "shortName": "耳浄色",
-      "description": "音を感受する耳の感性色。"
+      "description": "音を感受する耳の感性色。",
+      "characteristic": "繊細 — 声所縁を捉える能力を持つこと。",
+      "function": "可聴の対象を聞くこと。",
+      "manifestation": "耳門における聴覚の基盤として現れること。",
+      "proximateCause": "四大種。",
+      "doctrinalNote": "色界の梵天は音でCommunicationするので耳根を持つ。"
     },
     "RP_007": {
       "name": "鼻浄色",
       "shortName": "鼻浄色",
-      "description": "香りを感受する鼻の感性色。"
+      "description": "香りを感受する鼻の感性色。",
+      "characteristic": "繊細 — 香所縁を捉える能力を持つこと。",
+      "function": "嗅ぐ対象を嗅ぐこと。",
+      "manifestation": "鼻門における嗅覚の基盤として現れること。",
+      "proximateCause": "四大種。",
+      "doctrinalNote": "欲界にのみ存在する。色界の梵天は鼻根を持たない。"
     },
     "RP_008": {
       "name": "舌浄色",
       "shortName": "舌浄色",
-      "description": "味を感受する舌の感性色。"
+      "description": "味を感受する舌の感性色。",
+      "characteristic": "繊細 — 味所縁を捉える能力を持つこと。",
+      "function": "味わう対象を味わうこと。",
+      "manifestation": "舌門における味覚の基盤として現れること。",
+      "proximateCause": "四大種。",
+      "doctrinalNote": "欲界にのみ存在する。梵天は飲食しないので舌根を持たない。"
     },
     "RP_009": {
       "name": "身浄色",
       "shortName": "身浄色",
-      "description": "全身に広がり触覚を感受する身体の感性色。"
+      "description": "全身に広がり触覚を感受する身体の感性色。",
+      "characteristic": "繊細で遍在 — 触所縁（地・火・風）を捉えること。",
+      "function": "触れる対象を触れること。",
+      "manifestation": "身門における触觉の基盤として現れること。",
+      "proximateCause": "四大種。",
+      "doctrinalNote": "色界の梵天は身根を持つ。無想界には存在しない。"
     },
     "RP_010": {
       "name": "色所縁",
       "shortName": "色所縁",
-      "description": "眼識の対象となる色彩と形態。"
+      "description": "眼識の対象となる色彩と形態。",
+      "characteristic": "顕現・表現 — 眼根によって見られる対象。",
+      "function": "視覚の対象となること。",
+      "manifestation": "色彩・形相として現れること。",
+      "proximateCause": "四大種。",
+      "doctrinalNote": "色所縁（色彩）は色法（物質一般）とは異なる。"
     },
     "RP_011": {
       "name": "声所縁",
       "shortName": "声所縁",
-      "description": "耳識の対象となる一切の音響。"
+      "description": "耳識の対象となる一切の音響。",
+      "characteristic": "鳴り響くこと — 耳根によって聞かれる対象。",
+      "function": "聴覚の対象となること。",
+      "manifestation": "音として現れること。",
+      "proximateCause": "四大種または心の作用。"
     },
     "RP_012": {
       "name": "香所縁",
       "shortName": "香所縁",
-      "description": "鼻識の対象となる芳香や悪臭。"
+      "description": "鼻識の対象となる芳香や悪臭。",
+      "characteristic": "香ること — 鼻根によって嗅がれる対象。",
+      "function": "嗅覚の対象となること。",
+      "manifestation": "香りとして現れること。",
+      "proximateCause": "四大種。"
     },
     "RP_013": {
       "name": "味所縁",
       "shortName": "味所縁",
-      "description": "舌識の対象となる甘味・苦味・塩味など。"
+      "description": "舌識の対象となる甘味・苦味・塩味など。",
+      "characteristic": "味わい — 舌根によって味わわれる対象。",
+      "function": "味覚の対象となること。",
+      "manifestation": "味として現れること。",
+      "proximateCause": "四大種。"
     },
     "RP_014": {
       "name": "女根色",
       "shortName": "女根色",
-      "description": "女性の身体構造や特徴を決定する物質力。"
+      "description": "女性の身体構造や特徴を決定する物質力。",
+      "characteristic": "女性的性質 — 女性としての特質を表すこと。",
+      "function": "女性の身体・行動・声などを決定すること。",
+      "manifestation": "女性的な外見・振る舞いとして現れること。",
+      "proximateCause": "業生色。",
+      "doctrinalNote": "業のみによって生ずる。"
     },
     "RP_015": {
       "name": "男根色",
       "shortName": "男根色",
-      "description": "男性の身体構造や特徴を決定する物質力。"
+      "description": "男性の身体構造や特徴を決定する物質力。",
+      "characteristic": "男性的性質 — 男性としての特質を表すこと。",
+      "function": "男性の身体・行動・声などを決定すること。",
+      "manifestation": "男性的な外見・振る舞いとして現れること。",
+      "proximateCause": "業生色。",
+      "doctrinalNote": "業のみによって生ずる。"
     },
     "RP_016": {
       "name": "心所依処",
       "shortName": "心所依処",
-      "description": "心（意界・意識界）が成立・生起するための物質的基盤。"
+      "description": "心（意界・意識界）が成立・生起するための物質的基盤。",
+      "characteristic": "心の基盤 — 識界の物質的依処となること。",
+      "function": "意門として機能すること。",
+      "manifestation": "心の物質的基盤として現れること。",
+      "proximateCause": "業生色。",
+      "doctrinalNote": "心臓の内部に存在するとされる。"
     },
     "RP_017": {
       "name": "命根色",
       "shortName": "命根色",
-      "description": "業生色の生命力を保護・持続させる物質的命根。"
+      "description": "業生色の生命力を保護・持続させる物質的命根。",
+      "characteristic": "生命力 — 業生色を維持・保護すること。",
+      "function": "業生色の寿命を維持すること。",
+      "manifestation": "業生色の存続として現れること。",
+      "proximateCause": "業。",
+      "doctrinalNote": "業生色のみを維持する。心生色などは維持しない。"
     },
     "RP_018": {
       "name": "段食",
       "shortName": "段食",
-      "description": "食物中の栄養素（オージャー）であり身体を滋養する物質。"
+      "description": "食物中の栄養素（オージャー）であり身体を滋養する物質。",
+      "characteristic": "栄養 — 身体を養うこと。",
+      "function": "色聚を支持・維持すること。",
+      "manifestation": "身体の滋養として現れること。",
+      "proximateCause": "摂取された食物。",
+      "doctrinalNote": "段食（物質的食物）の栄養素。"
     },
     "RP_019": {
       "name": "空界",
       "shortName": "空界",
-      "description": "色聚と色聚の間を区切る境界的空間。"
+      "description": "色聚と色聚の間を区切る境界的空間。",
+      "characteristic": "隙間・限界 — 色聚を区画すること。",
+      "function": "色聚の境界を形成すること。",
+      "manifestation": "隙間・空洞として現れること。",
+      "proximateCause": "四大種。",
+      "doctrinalNote": "無色界には存在しない。"
     },
     "RP_020": {
       "name": "身表",
       "shortName": "身表",
-      "description": "心の意図を身体動作によって外部に表示する物質。"
+      "description": "心の意図を身体動作によって外部に表示する物質。",
+      "characteristic": "身体による意思表示 — 身業を表現すること。",
+      "function": "身体の動きによって意図を伝えること。",
+      "manifestation": "身振・動作として現れること。",
+      "proximateCause": "心。",
+      "doctrinalNote": "心生色。意志に基づく身体の動き。"
     },
     "RP_021": {
       "name": "語表",
       "shortName": "語表",
-      "description": "心の意図を言語音声によって表示する物質。"
+      "description": "心の意図を言語音声によって表示する物質。",
+      "characteristic": "音声による意思表示 — 口業を表現すること。",
+      "function": "音声によって意図を伝えること。",
+      "manifestation": "言語・音声として現れること。",
+      "proximateCause": "心。",
+      "doctrinalNote": "心生色。意志に基づく発話。"
     },
     "RP_022": {
       "name": "色軽快性",
       "shortName": "色軽快性",
-      "description": "物質の重苦しさを除き軽快にする状態。"
+      "description": "物質の重苦しさを除き軽快にする状態。",
+      "characteristic": "軽快 — 色の重さを除くこと。",
+      "function": "色の硬直を除去すること。",
+      "manifestation": "色の敏捷性として現れること。",
+      "proximateCause": "軽快性を伴う色聚。",
+      "doctrinalNote": "心生色および時節生色に存在する。"
     },
     "RP_023": {
       "name": "色柔軟性",
       "shortName": "色柔軟性",
-      "description": "物質の強ばりを除き柔軟にする状態。"
+      "description": "物質の強ばりを除き柔軟にする状態。",
+      "characteristic": "柔軟 — 色の硬さを除くこと。",
+      "function": "色の強剛を除去すること。",
+      "manifestation": "色の柔軟性として現れること。",
+      "proximateCause": "柔軟性を伴う色聚。",
+      "doctrinalNote": "心生色および時節生色に存在する。"
     },
     "RP_024": {
       "name": "色適業性",
       "shortName": "色適業性",
-      "description": "身体活動が思い通りスムーズに行える適合性。"
+      "description": "身体活動が思い通りスムーズに行える適合性。",
+      "characteristic": "適業 — 色の不適業性を除くこと。",
+      "function": "色の不适応性を除去すること。",
+      "manifestation": "色の適応性として現れること。",
+      "proximateCause": "適業性を伴う色聚。",
+      "doctrinalNote": "心生色および時節生色に存在する。"
     },
     "RP_025": {
       "name": "色積聚",
       "shortName": "色積聚",
-      "description": "物質（諸根）が生起・成長・充足していく相。"
+      "description": "物質（諸根）が生起・成長・充足していく相。",
+      "characteristic": "集積 — 色聚を初めて生起させること。",
+      "function": "色法を積み上げること。",
+      "manifestation": "色の最初の生起として現れること。",
+      "proximateCause": "四因のいずれか（業・心・時節・食物）。",
+      "doctrinalNote": "結生時および生存中の新生時にのみ存在する。"
     },
     "RP_026": {
       "name": "色相続",
       "shortName": "色相続",
-      "description": "成長した物質が途切れることなく連鎖生成する相。"
+      "description": "成長した物質が途切れることなく連鎖生成する相。",
+      "characteristic": "継続 — 色聚を維持すること。",
+      "function": "色法を引き継ぐこと。",
+      "manifestation": "色の存続として現れること。",
+      "proximateCause": "積聚色。",
+      "doctrinalNote": "積聚から滅坏までの間に存在する。"
     },
     "RP_027": {
       "name": "色老性",
       "shortName": "色老性",
-      "description": "物質が成熟・変質し衰えゆく相。"
+      "description": "物質が成熟・変質し衰えゆく相。",
+      "characteristic": "老化 — 色聚を成熟させること。",
+      "function": "色法を老衰させること。",
+      "manifestation": "色の衰えとして現れること。",
+      "proximateCause": "続色。",
+      "doctrinalNote": "色法の老化は49刹那の住位から始まる。"
     },
     "RP_028": {
       "name": "色無常性",
       "shortName": "色無常性",
-      "description": "物質が完全に破壊・消滅する死滅相。"
+      "description": "物質が完全に破壊・消滅する死滅相。",
+      "characteristic": "滅坏 — 色聚を完全に消滅させること。",
+      "function": "色法を滅尽させること。",
+      "manifestation": "色の消滅として現れること。",
+      "proximateCause": "老色。",
+      "doctrinalNote": "色法の17刹那の寿命の最後。"
     }
   },
   "paccayas": {
@@ -1781,10 +1898,13 @@
       ]
     },
     "KM_R_04": {
-      "doctrinalNote": "四無色定の善心が無色界四天への転生因となる。",
+      "name": "出世間業",
+      "shortName": "出世間",
+      "description": "四道心が煩悩を断じ、四果心と涅槃を果として輪廻を終える業。",
+      "doctrinalNote": "出世間業は三界内で結生せず、涅槃を果として与える — アビダンマの究極目標。",
       "examples": [
-        "空無辺処定を成就して空無辺処天に結生する。",
-        "非想非非想処定を成就して非想非非想処天に結生する。"
+        "八正道を修習して初道を証得すれば三結を断じ、四悪趣への墜落を終える。",
+        "四道が四果を生む — 苦からの唯一の脱出方法。"
       ]
     }
   },
