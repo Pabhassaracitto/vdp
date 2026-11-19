@@ -114,6 +114,7 @@ Each entry was checked against the English meaning, field by field. Pāḷi, ids
 - **Cetasika four-aspect (52):** all 52 read against English. Fixed: CS_KUKKUCCA manifestation (remorse, not "sorrow"); CS_TATRAMAJJHATTATA "සමසභාවිකත්වය" → "සමභාවය" (the first form is not a standard word); CS_THINA "භවාංග" → "භවංග" (the spelling used in citta and vithi).
 - **M3 (S05–S07, R01–R20, Q01–Q20):** read against English. Fixed: "ඍජුතාව" → "උජුකතාව" (as in S06 and R06); "කරුණාව/මුදිතාව" → "කරුණා/මුදිතා" in the S07 summary and body, matching the title and glossary; S06 "අස්ථිරභාවයට" → "නොසන්සුන් බවට" for restlessness; the S06 closing note listing the six non-universal factors by name was removed, since English does not name them. Sammāsaddhā → සම්මාසද්ධා.
 - **M3 items kept on purpose:** the Faith etymology (saṃ + dah), the Shame cause list (5), the Dread cause list (4), and "ධ්‍යාන සහ උසස් අභිඥා ඉක්මනින්" in S06 are all present in English, so they stay. TERM_PANNINDRIYA (S03) and TERM_TU_QUYEN_M3 (S07) both have the same definition because English uses Paññindriya as a keyTerm in both sections. They are not merged, so the structure matches English. M3_Q20 keeps the English question wording (see §3e).
+- **Rupa four-aspect (28):** all 28 read against English. Fixed: RP_012 characteristic "ගලා ඇවිදීම" → "ගලා පැතිරීම" (wafting forth). Rupa doctrinalNote is still not translated (§4).
 - **Quiz items:** all distractors and explanations are translated one-to-one. None fell back to English.
 
 ## 4. Field coverage (si) — gap inventory
