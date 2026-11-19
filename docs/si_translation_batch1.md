@@ -98,10 +98,23 @@ Key sets were checked against `content_en.json`. Each missing key is one of the 
 
 **M3** — `tool/content/data_priority_si_study_m3.py` (`SI_STUDY_M3`, DRAFT): 7 lessonSections, 20 reviewCards, 20 quizSeeds (3 distractors each). Same checks as M2, all passing.
 - Cetasika names use the `CS_*` glossary rows where those exist (for example, කායපස්සද්ධි, චිත්තපස්සද්ධි, කායකම්මඤ්ඤතා, සම්මාවාචා, සද්ධා, සති, කරුණා, මුදිතා, පඤ්ඤින්ද්‍රිය). Bare-name glossary rows that conflict with these were not used (for example ප්‍රඥේන්ද්‍රිය, ලහුතාව, මුදුතාව, කම්මඤ්ඤතාව).
-- Glossary variants kept as they are: සම්මා ශ්‍රද්ධාව (Sanskrit-leaning spelling, §7 open item); අප්‍රමාණ; සෝභන; විරති (glossary form "විරති 3").
+- Glossary variants kept as they are: අප්‍රමාණ; සෝභන; විරති (glossary form "විරති 3").
 - Descriptors with no verified Sinhala gloss, such as passaddhi/lahutā/mudutā/kammaññatā/pāguññatā/ujukatā as "tranquillity/lightness/…", are translated descriptively and marked for native review. Not verified against a Sinhala Abhidhamma text.
 - Source issues in the English M3 that were copied as-is and flagged, not fixed: keyTerm `TERM_BA_NHAN_THIEN_M3` has Vietnamese text in its `pali` field ("Vô tham – Vô sân – Vô si"); M3_Q20 asks about the three kinds of wisdom "according to development", while the answer lists the three kinds in general.
 - Quiz items are translated one-to-one; none fell back to English.
+
+## 3f. Review pass on drafts (this round; still draft, nothing marked reviewed)
+
+Each entry was checked against the English meaning, field by field. Pāḷi, ids, and sourceRefs were not changed.
+
+- **Paccaya (PC_01–12):** paccayaDhamma and paccayuppanna match English. PC_11 stays English (§8).
+- **Paticca (PD_01–12):** four-aspect, examples and doctrinalNote read against English. Fixed: PD_02 doctrinalNote had a repeated "චේතනා (චේතනා)" (now "Cetanā" in Pāḷi form); PD_03 simile changed from "ගසා තබන කොළ" to "නළා පැදුරු", matching the English "two sheaves of reeds"; PD_07 doctrinalNote "මූලය" → "හරය" for "crux"; ඵස්ස used for Phassa where the Sinhala referred to the factor (PD_05–07 examples and doctrinalNote, PC_15 paccayaDhamma and its Nām'āhāra note). PD_06 shortName still uses ස්පර්ශය, to be aligned in the council pass (§7).
+- **Citta doctrinalNote (121):** the template was checked for each entry: feeling word (head and tail), group, sasaṅkhārika/asaṅkhārika, and Pāḷi designation. Fixed: CI_026 and CI_027 had their feeling words swapped; CI_056–CI_078 (prompted, even numbers) said "unprompted"; CI_030 now says "ක්‍රියා" (functional) and uses the Chandrikava 5-9 form හසිතුප්පාද. The per-entry gloss is still a template, not checked against a Sinhala text.
+- **Vithi steps:** VT_NGU_MON_LON compared with Chandrikava 5-3 (mahanta-ārammaṇa vīthi, pitaka.lk/books/abhidharma-chandrikava/5-3.html): steps 1–9 and the absence of tadārammaṇa match. VT_VITHIMUTTA: the rules in Chandrikava 5-9 (tadārammaṇa, vīthimutta, bhavaṅga) match; fixed "අසංඛ්‍යාත වාරයක්" → "වාර" and "ආසන්න (ආසන්න)" → "මරණාසන්න (āsanna)". VT_Y_MON: the mind-door vīthi section of Chandrikava was not found, so it is checked against English only.
+- **Cetasika four-aspect (52):** all 52 read against English. Fixed: CS_KUKKUCCA manifestation (remorse, not "sorrow"); CS_TATRAMAJJHATTATA "සමසභාවිකත්වය" → "සමභාවය" (the first form is not a standard word); CS_THINA "භවාංග" → "භවංග" (the spelling used in citta and vithi).
+- **M3 (S05–S07, R01–R20, Q01–Q20):** read against English. Fixed: "ඍජුතාව" → "උජුකතාව" (as in S06 and R06); "කරුණාව/මුදිතාව" → "කරුණා/මුදිතා" in the S07 summary and body, matching the title and glossary; S06 "අස්ථිරභාවයට" → "නොසන්සුන් බවට" for restlessness; the S06 closing note listing the six non-universal factors by name was removed, since English does not name them. Sammāsaddhā → සම්මාසද්ධා.
+- **M3 items kept on purpose:** the Faith etymology (saṃ + dah), the Shame cause list (5), the Dread cause list (4), and "ධ්‍යාන සහ උසස් අභිඥා ඉක්මනින්" in S06 are all present in English, so they stay. TERM_PANNINDRIYA (S03) and TERM_TU_QUYEN_M3 (S07) both have the same definition because English uses Paññindriya as a keyTerm in both sections. They are not merged, so the structure matches English. M3_Q20 keeps the English question wording (see §3e).
+- **Quiz items:** all distractors and explanations are translated one-to-one. None fell back to English.
 
 ## 4. Field coverage (si) — gap inventory
 
