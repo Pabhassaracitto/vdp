@@ -84,5 +84,301 @@
         "各别色法之归属：心所依处与诸根唯由业生；二表色唯由心生；声由心与时节生；三变化色（轻快、柔软、适业）由时节、心与食生；八不分离色与空界由全部四因所生。色法四相则不由任何因所生。"
       ]
     }
+  ],
+  "reviewCards": [
+    {
+      "id": "M9_R01",
+      "front": "“Rūpa”（色）源自什么词根？是什么意思？",
+      "back": "词根 rup：在逆境物理条件（冷、热等）下坏灭、损毁、变易。"
+    },
+    {
+      "id": "M9_R02",
+      "front": "一个色法持续多长时间？",
+      "back": "恰好 17 个心识刹那（相当于 51 个小刹那）。"
+    },
+    {
+      "id": "M9_R03",
+      "front": "色法（Rūpa）的一般特征有哪些？",
+      "back": "无因（ahetuka）、有缘（sappaccaya）、有漏（sāsava）、世间（lokiya）、无所缘（anārammaṇa）。"
+    },
+    {
+      "id": "M9_R04",
+      "front": "为何色法被称为“Anārammaṇa”（无所缘）？",
+      "back": "因为物质无法认知或体验所缘——它没有觉知能力。"
+    },
+    {
+      "id": "M9_R05",
+      "front": "色法的两大分类是什么？",
+      "back": "4 大种（Mahābhūta）与 24 所造色（Upādārūpa）。"
+    },
+    {
+      "id": "M9_R06",
+      "front": "色法（rūpa）总共有多少种？",
+      "back": "28 种色法 = 4 大种 + 24 所造色。"
+    },
+    {
+      "id": "M9_R07",
+      "front": "地界（Paṭhavī）的特相与作用是什么？",
+      "back": "特相：坚硬或柔软。作用：安立并作为俱生色法的支撑基础。"
+    },
+    {
+      "id": "M9_R08",
+      "front": "哪几个大种构成触所缘（phoṭṭhabba）？",
+      "back": "三大种：地、火与风（水界 Āpo 除外，因凝聚性无法由触觉感知）。"
+    },
+    {
+      "id": "M9_R09",
+      "front": "五净色（Pasādarūpa）是什么？",
+      "back": "眼、耳、鼻、舌、身五种净色。"
+    },
+    {
+      "id": "M9_R10",
+      "front": "二性根色（Bhāvarūpa）是什么？",
+      "back": "女根（Itthindriya）与男根（Purisindriya）。"
+    },
+    {
+      "id": "M9_R11",
+      "front": "二表色（Viññattirūpa）是什么？",
+      "back": "身表（Kāyaviññatti）与语表（Vacīviññatti）。"
+    },
+    {
+      "id": "M9_R12",
+      "front": "三变化色（Vikārarūpa）是什么？",
+      "back": "轻快性（Lahutā）、柔软性（Mudutā）与适业性（Kammaññatā）。"
+    },
+    {
+      "id": "M9_R13",
+      "front": "四相色（Lakkhaṇarūpa）是什么？",
+      "back": "积聚（Upacaya）、相续（Santati）、老性（Jaratā）与无常性（Aniccatā）。"
+    },
+    {
+      "id": "M9_R14",
+      "front": "完成色（Nipphanna）与非完成色（Anipphanna）各有多少种？",
+      "back": "18 种完成色与 10 种非完成色。"
+    },
+    {
+      "id": "M9_R15",
+      "front": "色法的四生因（Rūpasamuṭṭhāna）是什么？",
+      "back": "业（Kamma）、心（Citta）、时节（Utu）与食（Āhāra）。"
+    },
+    {
+      "id": "M9_R16",
+      "front": "四生因各自生起多少种色法？",
+      "back": "业生 18 种；心生 15 种；时节生 13 种；食生 12 种。"
+    },
+    {
+      "id": "M9_R17",
+      "front": "哪些色法【唯由心】所生？",
+      "back": "二表色：身表与语表。"
+    },
+    {
+      "id": "M9_R18",
+      "front": "哪些色法【不由】四因中的任何一因所生？",
+      "back": "四相色（Lakkhaṇarūpa）——因为它们代表色法固有的生住灭阶段。"
+    },
+    {
+      "id": "M9_R19",
+      "front": "业生色何时开始生起？",
+      "back": "在结生识（paṭisandhi）的生时小刹那，并在此后每一小刹那持续生起。"
+    },
+    {
+      "id": "M9_R20",
+      "front": "心生色何时开始生起？",
+      "back": "在结生之后第一个有分心（bhavaṅga）的生时小刹那。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M9_Q01",
+      "type": "mcq",
+      "question": "Rūpa 的词根“Rup”是什么意思？",
+      "correctAnswer": "坏灭、变形或离散",
+      "distractors": [
+        "执取或黏着",
+        "照亮并显现",
+        "支撑并维持"
+      ],
+      "explanation": "Ruppatī ti rūpaṃ——之所以称为色，是因为它在不利物理条件下被破坏与改变。"
+    },
+    {
+      "id": "M9_Q02",
+      "type": "mcq",
+      "question": "一个色法持续多长时间？",
+      "correctAnswer": "17 个心刹那",
+      "distractors": [
+        "7 个心刹那",
+        "12 个心刹那",
+        "28 个心刹那"
+      ],
+      "explanation": "一个色法单位存活 17 个心刹那（51 个小刹那）。"
+    },
+    {
+      "id": "M9_Q03",
+      "type": "mcq",
+      "question": "色法（rūpadhammā）总共有多少种？",
+      "correctAnswer": "28",
+      "distractors": [
+        "24",
+        "18",
+        "11"
+      ],
+      "explanation": "4 大种 + 24 所造色 = 28 种色法。"
+    },
+    {
+      "id": "M9_Q04",
+      "type": "mcq",
+      "question": "所造色（Upādārūpa）有多少种？",
+      "correctAnswer": "24",
+      "distractors": [
+        "28",
+        "18",
+        "4"
+      ],
+      "explanation": "共有 24 种依止于四大种的所造色。"
+    },
+    {
+      "id": "M9_Q05",
+      "type": "mcq",
+      "question": "地界（Paṭhavī）的定义性特相是什么？",
+      "correctAnswer": "坚硬或柔软",
+      "distractors": [
+        "热或冷",
+        "凝聚或流动",
+        "推动或压迫"
+      ],
+      "explanation": "地界（Paṭhavīdhātu）的特相为坚硬（kakkhala）或柔软。"
+    },
+    {
+      "id": "M9_Q06",
+      "type": "mcq",
+      "question": "哪一个大种【不包含】在触所缘（phoṭṭhabba）中？",
+      "correctAnswer": "水界（Āpo）",
+      "distractors": [
+        "地界（Paṭhavī）",
+        "火界（Tejo）",
+        "风界（Vāyo）"
+      ],
+      "explanation": "水界无法由身触直接感知；触所缘由地、火、风组成。"
+    },
+    {
+      "id": "M9_Q07",
+      "type": "mcq",
+      "question": "净色（Pasādarūpa）共有多少种？",
+      "correctAnswer": "5",
+      "distractors": [
+        "4",
+        "7",
+        "2"
+      ],
+      "explanation": "五净色为眼、耳、鼻、舌、身净色。"
+    },
+    {
+      "id": "M9_Q08",
+      "type": "mcq",
+      "question": "四相色（Lakkhaṇarūpa）是什么？",
+      "correctAnswer": "积聚、相续、老性、无常性",
+      "distractors": [
+        "轻快、柔软、适业、空界",
+        "地、水、火、风",
+        "色、声、香、味"
+      ],
+      "explanation": "Upacaya、Santati、Jaratā 与 Aniccatā 代表色法的四相。"
+    },
+    {
+      "id": "M9_Q09",
+      "type": "mcq",
+      "question": "变化色（Vikārarūpa）共有多少种？",
+      "correctAnswer": "3：轻快性、柔软性、适业性",
+      "distractors": [
+        "2：身表与语表",
+        "4：积聚、相续、老性、无常性",
+        "5：五净色"
+      ],
+      "explanation": "Lahutā、mudutā 与 kammaññatā 构成 3 种变化色。"
+    },
+    {
+      "id": "M9_Q10",
+      "type": "mcq",
+      "question": "完成色（Nipphannarūpa）共有多少种？",
+      "correctAnswer": "18",
+      "distractors": [
+        "10",
+        "24",
+        "28"
+      ],
+      "explanation": "共有 18 种具足各自固有特相的完成色。"
+    },
+    {
+      "id": "M9_Q11",
+      "type": "mcq",
+      "question": "色法的四生因（Rūpasamuṭṭhāna）是什么？",
+      "correctAnswer": "业、心、时节、食",
+      "distractors": [
+        "贪、瞋、痴、无明",
+        "地、水、火、风",
+        "积聚、相续、老性、无常性"
+      ],
+      "explanation": "色法生起于业（kamma）、心（citta）、时节（utu）与食（āhāra）。"
+    },
+    {
+      "id": "M9_Q12",
+      "type": "mcq",
+      "question": "业能生起多少种色法？",
+      "correctAnswer": "18",
+      "distractors": [
+        "15",
+        "13",
+        "12"
+      ],
+      "explanation": "业生起 18 种色法。"
+    },
+    {
+      "id": "M9_Q13",
+      "type": "mcq",
+      "question": "心能生起多少种色法？",
+      "correctAnswer": "15",
+      "distractors": [
+        "18",
+        "13",
+        "12"
+      ],
+      "explanation": "心生起 15 种色法。"
+    },
+    {
+      "id": "M9_Q14",
+      "type": "mcq",
+      "question": "食（Āhāra）能生起多少种色法？",
+      "correctAnswer": "12",
+      "distractors": [
+        "13",
+        "15",
+        "18"
+      ],
+      "explanation": "食生起 12 种色法。"
+    },
+    {
+      "id": "M9_Q15",
+      "type": "mcq",
+      "question": "哪些色法【唯由心】所生？",
+      "correctAnswer": "二表色（身表与语表）",
+      "distractors": [
+        "心所依处",
+        "五净色",
+        "色命根"
+      ],
+      "explanation": "身表（Kāyaviññatti）与语表（vacīviññatti）唯由心生（cittaja）。"
+    },
+    {
+      "id": "M9_Q16",
+      "type": "mcq",
+      "question": "哪些色法不由任何四生因所生？",
+      "correctAnswer": "相色（Lakkhaṇarūpa）",
+      "distractors": [
+        "空界（Ākāsa）",
+        "营养素（Ojā）",
+        "色命根"
+      ],
+      "explanation": "4 种相色仅为色法之特征/阶段，不由四因所生。"
+    }
   ]
 }
