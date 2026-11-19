@@ -1040,3 +1040,92 @@ on `main`, and those contribute too.
 | **total** | **1323** | **+1309** |
 
 `1206 + 1309 = 2515`, matching `check_content_locale.py` exactly.
+
+---
+
+## 16. Batch 3 (cont.) — modules `M13_SAC_GIOI` and `M14_VO_SAC_GIOI`
+
+Two new files, taken together because they cover the same territory — the 27
+mahaggata cittas, 15 rūpāvacara + 12 arūpāvacara — and share terminology.
+
+* `l10n_work/gen/M13_SAC_GIOI.json` — 3 sections / 10 cards / 10 seeds, 114 fields.
+* `l10n_work/gen/M14_VO_SAC_GIOI.json` — 3 sections / 10 cards / 10 seeds, 115 fields.
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2740/4312 slots, 63.5%)   (9 modules merged)
+```
+
+`merge_batch` for `my` lists 9 modules; **9/17** now have `lessonSections`. Delta
+`2515 → 2740` = **+225** = (114 − 2) + (115 − 2), consistent with §12.
+
+Structure and text checks pass on both (ids/counts vs VI, 20 seeds × 3 distinct
+distractors, 0 Vietnamese tone marks, 0 non-Myanmar fields across 229
+translatable fields, all `pali` values byte-identical to the source).
+
+### One more glossary inconsistency
+
+`Anāgāmi` has **two conflicting glossary renderings**:
+
+| Row | `my` |
+| --- | --- |
+| `Anāgāmi` (standalone) | **အနာဂါမ်** |
+| `Anāgāmi-magga-{paṭhama…catuttha}-jhāna-cittaṃ` (5 rows) | **အနာဂါမိ**မဂ်စိတ် |
+
+I used **အနာဂါမိ**, matching the five compound rows and the 13 occurrences
+already in the shipped `my` catalog (including `M4_AKUSALA`). Flagging the
+standalone row for IN4-49 rather than introducing a second spelling.
+
+### Terms used
+
+**Glossary rows:** `Mahaggata` → မဟဂ္ဂုတ် / `Mahaggatacitta` → မဟဂ္ဂုတ်စိတ် ·
+`Rūpāvacara` → ရူပါဝစရ · `Arūpāvacara` → အရူပါဝစရ ·
+`Arūpāvacara-kiriyā` → အရူပါဝစရကြိယာ · `Jhāna` → ဈာန် · `Ekaggatā` → ဧကဂ္ဂတာ ·
+`Vicāra` → ဝိစာရ · `Vitakka`/`Pīti` (M1_BASICS rows) · `Abhiññā` → အဘိညာဉ် ·
+`Nirodha-samāpatti` → နိရောဓသမာပတ် · `Āyatana` → အာယတန · and all four arūpa
+āyatana rows (`Ākāsānañcāyatana`, `Viññāṇañcāyatana`, `Ākiñcaññāyatana`,
+`Nevasaññā-nāsaññāyatana`) · `Bhavaṅga` → ဘဝင်စိတ် ·
+`Paṭisandhi viññāṇa` → ပဋိသန္ဓေဝိညာဏ် · `Rūpāvacarakusala` /
+`Arūpāvacarakusala` for the kusala group names.
+
+**In-repo attestation:** `စုတိ` (2×) for *cuti*, `ဝိပဿနာ` (1×) for *vipassanā*,
+`သုခ` (16×), `ဗြဟ္မာ` (5×).
+
+**No attestation — flagged for the council (4 terms):**
+
+| Pāḷi | As written | Where |
+| --- | --- | --- |
+| `Kasina` | ကသိုဏ် | `M14_S02` body 1, `M14_R04` |
+| `Samatha` | သမထ | `M13_S03` title/body, `M13_R10` |
+| `Dibbacakkhu` / `Pubbenivāsa` / `Dibbasota` / `Iddhividha` / `Cetopariya` | ဒိဗ္ဗစက္ခု / ပုဗ္ဗေနိဝါသ / ဒိဗ္ဗသောတ / ဣဒ္ဓိဝိဓ / စေတောပရိယ | `M13_S03` body 3, `M13_R10`, `M13_Q09` |
+| `Anāgāmi` (see inconsistency above) | အနာဂါမိ | `M13_S03` body 5, `M13_Q10` |
+
+The five abhiññā names are written as *Burmese (Pāḷi — Burmese gloss)*, the
+convention from §13–§15, so the meaning does not depend on the transliteration.
+`ကသိုဏ်` and `သမထ` are the standard Burmese forms but have no glossary row and no
+in-repo occurrence — propose adding both.
+
+Running total of reviewable terms across the seven authored modules: **21**
+(9 from M4 per §14, 4 from M3 per §15, 8 here — `Kasina`, `Samatha`, the five
+abhiññā names, and `Anāgāmi`).
+
+### Remaining — counted with the tool's own `count_slots`
+
+I first wrote "~1529" here by hand and it was wrong. Recounting with
+`check_content_locale.count_slots` imported directly (not re-implemented) gives
+**1523 slots across 8 modules**. The earlier per-module weights quoted in §11–§15
+were already produced by this method and are confirmed correct:
+
+```
+M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 118
+= 1523
+```
+
+`count_slots` over all 17 modules returns **3075**, matching the `studyModules`
+share of the 4312 denominator recorded in §11. Note `STRUCTURAL_KEYS` excludes
+`id`, `pali`, **`type`**, **`sourceRefs`** and `translationStatus` — my own
+field counter had been omitting `type` and `sourceRefs`, which is why a naive
+recount overshoots (it gave 2102 for the same 8 modules). Use the tool's
+function.
