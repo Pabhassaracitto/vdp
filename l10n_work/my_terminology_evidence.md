@@ -269,6 +269,8 @@ if loc == "my":
         cetasikas.setdefault(cid, {}).update(extra)
     for cid, ex in dcit_my.CITTA_EXAMPLES_MY.items():
         cittas.setdefault(cid, {})["examples"] = ex
+    for kid, extra in dcit_my.KAMMAS_MY.items():
+        kammas.setdefault(kid, {}).update(extra)
 ```
 
 **This exact snippet has been executed and verified** — see §6, "End-to-end
@@ -495,3 +497,107 @@ silently fixed. At the base commit `630186d` this checker still passed
 `flutter analyze` and `flutter test` — neither `flutter` nor `dart` is on
 `PATH` in this sandbox. This proposal changes zero Dart code and zero shipped
 asset, but the gates have not been executed here.
+---
+
+## 11. Full gap audit + Batch 3 first module (M1_BASICS)
+
+### Where the remaining slots actually are
+
+`check_content_locale.py` derives the 4312 denominator from the Vietnamese
+source (`expected_slots()`), so the split is fixed:
+
+| Bucket | Slots | Share |
+| -- | -- | -- |
+| `studyModules` | **3075** | 71.3% |
+| entities | 1237 | 28.7% |
+
+Everything left is essentially study modules — 15 of 17 were untranslated.
+
+### The entity gap is mostly missing at the SOURCE, not missing translations
+
+I audited every field the app actually reads (call-site map re-verified against
+`lib/core/localization/localized_content.dart` on current `main`; it is
+unchanged — `rupas` and `kammas` still expose only `name` + `description`).
+115 consumed entity slots were empty. Cross-checking each against **both**
+`content_vi.json` and `content_en.json`:
+
+| Gap | Count | Verdict |
+| -- | -- | -- |
+| `cittas.examples` | 109 | **No source.** `assets/data/cittas.json` carries `examples` for exactly 12/121 cittas (CI_001–CI_012, already translated). EN has the same 12. Nothing to translate. |
+| `vithis.steps.doctrinalNote` | 12 | **No source.** VI is `None` for all 12; EN has 15 of 29, a strict subset of what `my` already carries. Nothing to translate. |
+| `paticcas.doctrinalNote` | 4 | **No source.** PD_04, PD_05, PD_09, PD_10 are `None` in VI and absent in EN. Nothing to translate. |
+| `kammas.name` / `.description` | 2 | **Real gap — fixed.** `KM_R_04`. |
+
+So of 115 empty entity slots, **113 have nothing to translate from**. Filling
+them would mean inventing doctrine, which this brief forbids. They stay absent
+for English fallback. Filling them is a *content authoring* task (IN4-38 /
+IN4-39 territory), not a translation task.
+
+### Why `KM_R_04` was missing, and the glossary fix it implies
+
+Root cause: the glossary headword **`Lokuttara-kamma / Magga-kamma` has an empty
+`my` cell** in `l10n_work/glossary.csv`, so the shared table emits nothing and
+`main`'s catalog dropped the entry (this is the −3 slot delta recorded in §10).
+
+Added as `KAMMAS_MY` in `tool/content/data_priority_my_cittas.py`, built only
+from glossary-attested pieces — `Lokuttara` → လောကုတ္တရာ, `Kamma` → ကံ,
+`Magga citta` → မဂ်စိတ် (hence မဂ်), `Phala citta` → ဖိုလ်စိတ်:
+
+* `name` → **လောကုတ္တရာကံ (မဂ်ကံ)**
+
+**Proposed glossary fill (→ IN4-49):** set the `my` cell of
+`Lokuttara-kamma / Magga-kamma` to `လောကုတ္တရာကံ (မဂ်ကံ)`.
+
+The §5 builder snippet gained one line for this:
+
+```python
+    for kid, extra in dcit_my.KAMMAS_MY.items():
+        kammas.setdefault(kid, {}).update(extra)
+```
+
+### Batch 3 — `M1_BASICS` (7 universal cetasikas), translated in full
+
+`l10n_work/gen/M1_BASICS.json` — 4 sections / 14 review cards / 12 quiz seeds.
+Chosen first because it is the declared prerequisite module ("nền tảng bắt buộc
+trước khi học các module khác") and every term in it is one I had already fixed
+while translating the 52 cetasikas, so no new terminology risk was introduced.
+
+Verified in a throwaway worktree at `main` (`d7b6793`):
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (1742/4312 slots, 40.4%)   (3 modules merged)
+
+check_content_locale.py my --glossary --strict   EXIT 0
+check_content_locale.py --all --quiet            EXIT 0
+check_paccaya_data.py                            EXIT 0
+```
+
+`1594 → 1742` = **+148**: 146 from M1_BASICS (its `title`/`description` were
+already emitted by the builder, so 2 of its 148 slots were pre-filled) plus 2
+from `KM_R_04`.
+
+Structural and integrity checks, all clean:
+
+* ids and counts match `content_vi.json` exactly — sections 4/4, cards 14/14,
+  quiz seeds 12/12, keyTerm ids per section, body paragraph counts 4/5/4/5,
+  distractor counts per seed. The real `merge_module()` accepted it.
+* 12 quiz seeds: no `correctAnswer` among distractors, exactly 3 distractors
+  each, no duplicates, no empty field.
+* **0** Vietnamese tone marks; **0** fields without Myanmar script.
+* 15 glossary headwords used, each matching the glossary `my` cell verbatim:
+  ဖဿ · ဝေဒနာ · သညာ · စေတနာ · ဧကဂ္ဂတာ · ဇီဝိတိန္ဒြေ · မနသိကာရ · ဝိတက် ·
+  ဝိစာရ · အဓိမောက္ခ · ပီတိ · ဆန္ဒ · အညသမာန်း · သဗ္ဗစိတ္တသာဓာရဏ · ပကိဏ်း.
+
+### Remaining after this batch
+
+14 modules, ~2533 slots, largest first: M4_AKUSALA 284 · M3_TINH_HAO_BIEN_HANH
+273 · M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+· M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN
+118 · M14_VO_SAC_GIOI 115 · M5_SOBHANA 114 · M13_SAC_GIOI 114 · M2_SI_PHAN 110.
+
+Note for whoever takes `M10_LO_TRINH`: section **M10_S09** is titled
+*"Vīthimutta — chưa có nguồn trong tài liệu này"* in the Vietnamese source, and
+**M10_S05 does not exist**. That is the open source gap tracked as IN4-53; do
+not invent content for S09.
