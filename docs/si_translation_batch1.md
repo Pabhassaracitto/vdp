@@ -85,12 +85,23 @@ Key sets were checked against `content_en.json`. Each missing key is one of the 
   - Status: template output, a direct rendering of the English sentence. The group and feeling assignments come from the English data and are not re-checked against a source.
 - **Vithi steps (18):** VT_NGU_MON_LON (9), VT_Y_MON (6), VT_VITHIMUTTA (3). Step names reuse the committed VT_NGU_MON_RATLON wording. Unverified; no step-level doctrinalNote for VT_Y_MON 3–4 and VT_VITHIMUTTA 1 (§8).
 
-## 3e. Study module pilot: M1_BASICS (not yet shipped)
+## 3e. Study module pilots: M1_BASICS, M2_SI_PHAN, M3 (not yet shipped)
 
 - `tool/content/data_priority_si_study_m1.py`: lessonSections (4 sections, 14 keyTerms), reviewCards (14), quizSeeds (12, one-to-one translation of question, correctAnswer, distractors and explanation).
 - Structure, ids, Pāḷi terms and sourceRefs are copied from `content_en.json`, not retyped. Counts and keys were checked.
 - Terms used: the glossary forms where they exist (ඵස්ස, වේදනා, සඤ්ඤා, චේතනා, ඒකග්ගතා, ජීවිතින්ද්‍රිය, මනසිකාර, විතක්ක, විචාර, අධිමොක්ඛ, වීරිය, පීති, ඡන්ද, අඤ්ඤසමාන, සබ්බචිත්තසාධාරණ, පකිණ්ණක). Open items are logged in §7 (ඵස්ස vs ස්පර්ශය).
 - Status: draft, unverified against Sinhala texts. English keeps the source-file notes in sourceRefs.
+
+**M2_SI_PHAN** — `tool/content/data_priority_si_study_m2.py` (`SI_STUDY_M2`, DRAFT): 3 lessonSections, 10 reviewCards, 10 quizSeeds (3 distractors each). Checked against English: ids, Pāḷi, type, sourceRefs, body lengths, keyTerm ids, distractor count, no answer/distractor overlap, no Devanagari.
+- Terms: Mocatuka → මෝහ චතුක්ක චෛතසික; Ahirika → අහිරික; Anottappa → අනොත්තප්ප; Uddhacca → උද්ධච්ච; Akusala cetasika → අකුසල චෛතසික; Moha → මෝහ; Akusala → අකුසල්.
+- Not in glossary, chosen here and open: **sukha** (used as සුඛ, jhāna factor) and **nīvaraṇa** (used as නීවරණ, in M2_S03). Both need a glossary entry and a source check.
+
+**M3** — `tool/content/data_priority_si_study_m3.py` (`SI_STUDY_M3`, DRAFT): 7 lessonSections, 20 reviewCards, 20 quizSeeds (3 distractors each). Same checks as M2, all passing.
+- Cetasika names use the `CS_*` glossary rows where those exist (for example, කායපස්සද්ධි, චිත්තපස්සද්ධි, කායකම්මඤ්ඤතා, සම්මාවාචා, සද්ධා, සති, කරුණා, මුදිතා, පඤ්ඤින්ද්‍රිය). Bare-name glossary rows that conflict with these were not used (for example ප්‍රඥේන්ද්‍රිය, ලහුතාව, මුදුතාව, කම්මඤ්ඤතාව).
+- Glossary variants kept as they are: සම්මා ශ්‍රද්ධාව (Sanskrit-leaning spelling, §7 open item); අප්‍රමාණ; සෝභන; විරති (glossary form "විරති 3").
+- Descriptors with no verified Sinhala gloss, such as passaddhi/lahutā/mudutā/kammaññatā/pāguññatā/ujukatā as "tranquillity/lightness/…", are translated descriptively and marked for native review. Not verified against a Sinhala Abhidhamma text.
+- Source issues in the English M3 that were copied as-is and flagged, not fixed: keyTerm `TERM_BA_NHAN_THIEN_M3` has Vietnamese text in its `pali` field ("Vô tham – Vô sân – Vô si"); M3_Q20 asks about the three kinds of wisdom "according to development", while the answer lists the three kinds in general.
+- Quiz items are translated one-to-one; none fell back to English.
 
 ## 4. Field coverage (si) — gap inventory
 
@@ -105,7 +116,7 @@ Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ n
 | paticcas | 12 | ✅ name, shortName, description (4 corrected, §2) | 🟡 48 fields | ❌ doctrinalNote (12), examples (12) |
 | kammas | 16 | ✅ name, shortName, description (1 corrected) | n/a | 🟡 examples (32 items, 16 entries); ❌ doctrinalNote (16) |
 | vithis | 4 | ✅ name, shortName, description | n/a | 🟡 arisingCondition, significance (4 each); 🟡 steps for all four vithis (VT_NGU_MON_RATLON committed, 11; the other three in `data_priority_si_detail_vithi.py`, 18); ❌ doctrinalNote (4), with a few step notes left in English (§8) |
-| studyModules | 17 | ✅ title, description | n/a | 🟡 M1_BASICS pilot (4 lessonSections, 14 reviewCards, 12 quizSeeds) in `data_priority_si_study_m1.py`; the other 16 modules not started (Batch 3) |
+| studyModules | 17 | ✅ title, description | n/a | 🟡 3 modules drafted: M1_BASICS (`data_priority_si_study_m1.py`; 4 sections, 14 reviewCards, 12 quizSeeds), M2_SI_PHAN (`_m2.py`; 3, 10, 10), M3 (`_m3.py`; 7, 20, 20). The other 14 modules not started (Batch 3) |
 
 ## 5. Builder integration (for coordinator; NOT applied)
 
@@ -205,7 +216,7 @@ Left in English because the English claim is either unsourced in our files or do
 
 Not translated yet, outside this batch:
 
-- lessonSections / reviewCards / quizSeeds for the other 16 modules (Batch 3). M1_BASICS is done as a pilot (§3e).
+- lessonSections / reviewCards / quizSeeds for the other 14 modules (Batch 3). M1_BASICS, M2_SI_PHAN and M3 are drafted (§3e).
 - Cittas examples for the 109 cittas that have no English examples (nothing to translate from).
 
 English fallback stays on for si. Nothing is marked reviewed. Terminology questions (§7) are deferred, as agreed.
