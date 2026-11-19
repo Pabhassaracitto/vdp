@@ -9,6 +9,7 @@ Nothing here marks any locale as reviewed.
 |---|---|---|
 | `tool/content/data_priority_conditions.py` | 14 si field corrections (see §2) | Yes. `build_full_catalogs.py` emits these fields. |
 | `tool/content/data_priority_si_detail.py` (new, Batch 1) | Four-aspect fields for 12 paticca factors; `paccayaDhamma` / `paccayuppanna` for 23 paccayas | **No.** The builder does not read this module yet. See §5. |
+| `tool/content/data_priority_si_detail_notes.py` (new, Batch 1 and 2 remaining fields) | Paccaya examples, subdivisions and doctrinalNote; paticca examples and doctrinalNote; rupa, kamma and vithi doctrinalNote | **No.** Same integration as Batch 1. See §5. |
 | `tool/content/data_priority_si_detail_b2.py` (new, Batch 2) | Four-aspect fields for 52 cetasikas and 28 rupas; examples for 12 cittas and 16 kammas; `arisingCondition` / `significance` for 4 vithis | **No.** Same integration as Batch 1. See §5. |
 | `docs/si_translation_batch1.md` (this file) | Ledger, coverage, questions | No |
 
@@ -57,6 +58,21 @@ Note on KM_P_01: the new wording lists the source's three garuka classes. Native
 - **Not translated in Batch 2:** rupa `doctrinalNote` (28; several English notes are specific claims, for example about Brahmās' faculties, that need a source before translation); cetasika `doctrinalNote` is not in the data.
 
 Status for all of 3b: **unverified draft**. The English reference is the only text these were rendered from. Sinhala commentary or Abhidharmārtha Saṅgraha was not checked.
+
+## 3c. Remaining example, subdivision and doctrinalNote translations (`data_priority_si_detail_notes.py`, not yet shipped)
+
+Translated from the English fields in `content_en.json` (same status as §3: draft, unverified, not read by the builder):
+
+- **Paccaya examples:** 40 items across 23 paccayas (PC_01–PC_24, except PC_11).
+- **Paccaya subdivisions:** 25 keys across 9 paccayas, Pāḷi keys unchanged, with `name` and `note` in Sinhala.
+- **Paccaya doctrinalNote:** 22 entries (PC_01–PC_24, except PC_11 and PC_15).
+- **Paticca examples:** 15 items across 12 paticcas (PD_01–PD_12).
+- **Paticca doctrinalNote:** 7 entries (PD_01, 02, 03, 06, 07, 08, 12).
+- **Rupa doctrinalNote:** 21 entries (all except RP_002 and RP_022).
+- **Kamma doctrinalNote:** 14 entries (all except KM_R_01 and KM_R_04).
+- **Vithi doctrinalNote:** 3 entries (all except VT_Y_MON).
+
+Key sets were checked against `content_en.json`. Each missing key is one of the intentional English exclusions in §8.
 
 ## 4. Field coverage (si) — gap inventory
 
@@ -156,13 +172,23 @@ Questions:
 - Citta and vithi doctrinalNote sources and the vithi-steps home: structural decisions for the coordinator.
 - Study-module source edition (IN4-45 cites "Sinhala Abhidharmārtha Saṅgraha"): not verified, see §8.
 
-## 8. Not translated yet
+## 8. Still English (on purpose)
 
-- Rupa `doctrinalNote` (28) and kamma `doctrinalNote` (16). Citta and paticca `doctrinalNote` are in §4.
-- Paccaya examples (48 items), subdivisions (9 items), doctrinalNote (24); paticca doctrinalNote (12) and examples (12).
-- PC_11 four-aspect pair (count question, Q5).
-- Vithi `doctrinalNote` (4) and steps for the other three vithis.
+Left in English because the English claim is either unsourced in our files or doubtful. Each needs a source check, not a translation decision:
+
+- **PC_11** (whole entry): the English says 85 cittas. The count and wording need checking.
+- **PC_15** doctrinalNote: cites SN 12.63; the citation is not verified.
+- **PD_11** doctrinalNote: a correspondence claim between PD_11 and PD_03.
+- **RP_002** and **RP_022** doctrinalNote: RP_022 says lightness of matter is not produced by kamma; this needs checking against the Abhidhamma list of causes.
+- **KM_R_01** and **KM_R_04** doctrinalNote: KM_R_04 says path kamma produces Nibbāna as its result; check whether the result is fruition instead.
+- **VT_Y_MON** doctrinalNote: refers to CI_029 without a source.
+- **Citta doctrinalNote**: still the Pāḷi-only template.
+- Vithi steps for the other three vithis.
+- Rupa/kamma/paticca items above are translated, but the claims inside them are still unverified.
+
+Not translated yet, outside this batch:
+
 - All lessonSections / reviewCards / quizSeeds for 17 modules (Batch 3; needs a coherent reviewed batch).
 - Cittas examples for the 109 cittas that have no English examples (nothing to translate from).
 
-Open source checks (not for council): PC_11, PD_02, PC_20, study-module edition. English fallback stays on for si. Nothing is marked reviewed.
+English fallback stays on for si. Nothing is marked reviewed. Terminology questions (§7) are deferred, as agreed.
