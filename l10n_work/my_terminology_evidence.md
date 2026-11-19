@@ -601,3 +601,105 @@ Note for whoever takes `M10_LO_TRINH`: section **M10_S09** is titled
 *"Vīthimutta — chưa có nguồn trong tài liệu này"* in the Vietnamese source, and
 **M10_S05 does not exist**. That is the open source gap tracked as IN4-53; do
 not invent content for S09.
+
+---
+
+## 12. Batch 3 (cont.) — module `M5_SOBHANA`
+
+`l10n_work/gen/M5_SOBHANA.json` — new, 3 sections / 10 review cards / 10 quiz
+seeds, `translationStatus: draft`. Module id is the filename, matching the
+existing `l10n_work/gen/` convention.
+
+Measured with the real merge pipeline in a throwaway worktree at `d7b6793`:
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (1854/4312 slots, 43.0%)   (4 modules merged)
+```
+
+`merge_batch` reported for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M5_SOBHANA,
+M8_NHAN_DUYEN` — so the real `merge_module()` accepted `M5_SOBHANA`. Catalog now
+**4/17** modules with `lessonSections`.
+
+Per-module net contribution is *field count − 2*, because the builder already
+emits `title` and `description` for every module (verified: `build_catalog('my')`
+returns title=True desc=True sections=0 for all four). Hence M1_BASICS
+148 → **+146** and M5_SOBHANA 114 → **+112** (1742 → 1854).
+
+Verification, all clean:
+
+* ids and counts match `content_vi.json` exactly — sections 3/3, cards 10/10,
+  seeds 10/10, keyTerm ids per section, body paragraph counts 5/5/4, distractor
+  counts per seed.
+* 10 quiz seeds: exactly 3 distractors each, no `correctAnswer` among
+  distractors, no duplicates, no empty field.
+* **0** Vietnamese tone marks and **0** non-Myanmar fields among the 114
+  translatable fields (`id`, `pali`, `translationStatus` excluded — `id` is an
+  invariant identifier and `pali` legitimately holds Latin-script Pāḷi).
+  The same re-run over `M1_BASICS` gives 0/0 across its 148 fields, confirming
+  the figure quoted in §11.
+
+### Terms used, all attested
+
+Every doctrinal term in this module already had a glossary `my` cell or an
+in-repo attestation from the merged batches:
+
+| Pāḷi | Myanmar | Source of attestation |
+| --- | --- | --- |
+| `Sobhana` | သောဘဏ | glossary |
+| `Kāmāvacara` | ကာမာဝစရ | glossary |
+| `Mahākusala citta` | မဟာကုသိုလ်စိတ် | glossary |
+| `Mahāvipāka citta` | မဟာဝိပါက်စိတ် | glossary |
+| `Mahākiriya citta` | မဟာကြိယာစိတ် | glossary |
+| `Ñāṇasampayutta` | ဉာဏသမ္ပယုတ် | glossary |
+| `Ñāṇavippayutta` | ဉာဏဝိပ္ပယုတ် | glossary |
+| `Asaṅkhārika` | အသင်္ခါရိက | glossary |
+| `Sasaṅkhārika` | သသင်္ခါရိက | glossary |
+| `Diṭṭhigatasampayutta` | ဒိဋ္ဌိဂတသမ္ပယုတ် | glossary |
+| `Somanassa-` | သောမနဿ… | in-repo (22 occurrences) |
+| `Upekkhā-` | ဥပေက္ခာ… | in-repo (48 occurrences) |
+
+Three glossary gaps, worked around rather than invented:
+
+* **`arahant` has no glossary row.** Rendered as the composed
+  **အရဟတ္တဖိုလ်ရ ပုဂ္ဂိုလ်** ("a person who has attained Arahatta-phala") from
+  attested pieces only — `Arahatta` → အရဟတ္တ, `Phala` → ဖိုလ်, and ပုဂ္ဂိုလ် for
+  "person". Propose adding `Arahant` → **ရဟန္တာ** (→ IN4-49); if accepted, the
+  module can be shortened to the ordinary term.
+* **`sekha` / `ariya` have no rows.** The source says "bậc thánh hữu học". Rather
+  than coin a term, the three still-in-training noble persons are named
+  explicitly — **သောတာပတ္တိ၊ သကဒါဂါမိ၊ အနာဂါမိ ပုဂ္ဂိုလ်များ** — all three
+  attested in the glossary via their `*-magga` rows. Doctrinally equivalent and
+  more concrete.
+* **`petā` / `tiracchāna` have no rows.** Used ပြေတ and တိရစ္ဆာန်, the standard
+  Burmese for the two apāya; ငရဲ (niraya), နတ် (deva), ဗြဟ္မာ (brahmā) and
+  လူ (manussa) were already in use. Flagging these four for the council rather
+  than leaving the realm list half-English.
+
+### Glossary defect found while working (→ IN4-49)
+
+Four `glossary.csv` rows carry **`sasaṅkhārika` in the Pāḷi column but render it
+as `အသင်္ခါရိက`** — the *a*- prefix form, i.e. the opposite pairing:
+
+```
+Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ   -> …ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ   -> …ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ     -> …ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ     -> …ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+```
+
+All four are Mahākiriya rows; the standalone `Asaṅkhārika` / `Sasaṅkhārika` rows
+are correct, and I followed the standalone rows. Whoever owns `glossary.csv`
+should fix these four (→ IN4-49), otherwise the Mahākiriya citta names will be
+wrong in any downstream generation.
+
+### Remaining
+
+13 modules, ~2419 slots. Largest first: M4_AKUSALA 284 · M3_TINH_HAO_BIEN_HANH
+273 · M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+· M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN
+118 · M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114 · M2_SI_PHAN 110.
+
+Note `l10n_work/gen/M6_NGHIEP.json` already exists carrying an `hi` block only —
+whoever takes `M6_NGHIEP` must **append** `my` and leave `hi` byte-identical.
