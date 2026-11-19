@@ -1480,3 +1480,146 @@ M17 gen file `hi` block vs HEAD                                       byte-ident
 
 Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter SDK
 on `PATH`. This commit changes zero Dart and zero shipped asset; CI runs both.
+
+---
+
+## 19. Batch 3 (cont.) — `M9_SAC_PHAP` + `M16_NGUOI_VA_COI`
+
+Two more modules translated in full:
+
+| Module | s/c/q | Slots | Subject |
+| --- | --- | --- | --- |
+| `M9_SAC_PHAP` | 7/20/16 | 223 | the 28 rūpas, their 11 groups, and the 4 rūpa-samuṭṭhāna |
+| `M16_NGUOI_VA_COI` | 8/16/16 | 224 | the 12 puggalas and the 31 bhūmis |
+
+```
+baseline (HEAD 067bc28)                714/4312  (16.6%)
++ §5 builder overlay, my only         1206/4312  (28.0%)   7a0dcdcd5d740aec
++ merge_batch.py l10n_work/gen        3751/4312  (87.0%)   my: merged 15 module(s)
+catalog studyModules with sections    15 / 17
+```
+
+Reconciles exactly: `count_slots` over the 15 merged modules = **2575**;
+`1206 + (2575 − 30) = 3751`.
+
+### A new glossary defect: the `—` placeholder headword collides across modules
+
+`glossary.csv` has a row whose `pali` cell is the literal placeholder **`—`**:
+
+```
+—,keyTerm,Tổng số tâm sở,,कुल चैतसिक (52),…,စေတသိက် ၅၂ ပါး,…,M15_TAM_SO_PHOI_HOP/M15_S02 M16_NGUOI_VA_COI/M16_S07
+```
+
+Its `sourceRefs` names **two** keyTerms in two different modules —
+`TERM_TONG_SO_TS_M15` (total number of cetasikas → `စေတသိက် ၅၂ ပါး`) and
+`TERM_TUOI_THO_TROI_M16` (lifespans of the six kāma-deva realms, a completely
+different concept). One glossary `my` value cannot serve both. The root cause is
+upstream: `content_vi.json` puts `—` in the `pali` field of both keyTerms, so both
+collapsed onto one row.
+
+Handling: `TERM_TUOI_THO_TROI_M16` is rendered `နတ် ၆ ဘုံ၏ သက်တမ်း` from its VI
+gloss, not from the glossary row, and the conformance check now **skips keyTerms
+whose `pali` is a placeholder** (`—`, `-`, empty) with the reason recorded here
+rather than silently passing. Routed to PSRC-49 — the row needs splitting, and the
+VI `pali` fields need real Pāḷi. This is the same defect class as the
+Vietnamese-in-`pali` finding for `TERM_BA_NHAN_THIEN_M3`.
+
+### An orthography audit, narrowed until it is actually meaningful
+
+I re-ran the codepoint audit that originally caught the malformed `ပညာိန္ဒြေ`.
+Two naive versions produced noise: flagging *any* adjacent pair of vowel/medial
+signs gave 13,839 hits, because Burmese legitimately stacks `103B`+`102D`
+(medial *ya* + vowel *i*) and `102C`+`1038` (*ā* + visarga); flagging any two
+adjacent "main" vowels gave 2,615, because `1031`+`102C` (ေ + ါ = ော) is ordinary
+Burmese (`သော`).
+
+The precise illegal pattern is a **right-side vowel `102B`/`102C` immediately
+followed by an above/before vowel `102D`/`102E`/`1031`** on the same consonant —
+you cannot have both. Result over all 15 `my` modules: **0 hits**. Verified the
+check is meaningful rather than vacuous: it flags `ပညာိန္ဒြေ`
+(`1015 100A 102C 102D …`) and passes the corrected `ပညိန္ဒြေ`
+(`1015 100A 102D …`).
+
+### Terms for council review
+
+**`M9_SAC_PHAP`** — Tier A throughout the core vocabulary (`Rūpa → ရုပ်`,
+`Ahetuka → အဟိတ်`, `Anārammaṇa → အာရုံမရှိသော`, `Mahābhūtāni → မဟာဘုတ် ၄ ပါး`,
+`Upādāyarūpāni → ဥပါဒါရုပ် ၂၄ ပါး`, the four dhātus, `Pasādarūpa → ပသာဒရုပ်`,
+`Gocararūpa → ဂေါစရရုပ်`, `Hadayavatthu → ဟဒယဝတ္ထု`, `Viññattirūpa → ဝိညတ်ရုပ်`,
+`Lakkhaṇarūpa → လက္ခဏရုပ်`, `Nipphannarūpa`/`Anipphannarūpa`, `Rūpasamuṭṭhāna →
+ရူပသမုဋ္ဌာန်`, `Utu → ဥတု`, `Ojā / Āhāra → ဩဇာ / အာဟာရ`, plus exact rows for
+`Upacaya/Santati/Jaratā/Aniccatā → ရူပုပစယ/ရူပသန္တတိ/ရူပဇရတာ/ရူပအနိစ္စတာ`,
+`Lahutā/Mudutā/Kammaññatā`, `Itthi-bhāva → ဣတ္ထိန္ဒြေ`, `Purisa-bhāva → ပုရိသိန္ဒြေ`).
+
+**Tier D from M9 (16, all composed, 0 in the shipped catalog):** the five
+characteristics without rows — `Sappaccaya သပ္ပစ္စယ` · `Sāsava သာသဝ` ·
+`Saṅkhata သင်္ခတ` · `Lokiya လောကိယ` · `Appahātabba` (rendered descriptively,
+`ပယ်ဖျောက်၍ မရသော`); the six rūpa-groups without rows — `Bhūtarūpa ဘူတရုပ်` ·
+`Bhāvarūpa ဘာဝရုပ်` · `Jīvitarūpa ဇီဝိတရုပ်` · `Āhārarūpa အာဟာရရုပ်` ·
+`Paricchedarūpa ပရိစ္ဆေဒရုပ်` · `Vikārarūpa ဝိကာရရုပ်`; `Phoṭṭhabba ဖောဋ္ဌဗ္ဗ`;
+and the four ways the 18 nipphanna rūpas are grouped — `Sabhāvarūpa သဘာဝရုပ်` ·
+`Salakkhaṇarūpa သလက္ခဏရုပ်` · `Rūparūpa ရူပရုပ်` · `Sammasanarūpa သမ္မသနရုပ်`.
+Every one follows the `-ရုပ်` pattern that the glossary itself attests seven times,
+so a council decision on the pattern settles all ten rūpa-group names at once.
+
+**`M16_NGUOI_VA_COI`** — Tier A for all 15 named keyTerms (`Puggala → ပုဂ္ဂိုလ်`,
+`Puggala-bheda → ပုဂ္ဂလဘေဒ`, `Ahetuka puggala → အဟိတ်ပုဂ္ဂိုလ်`,
+`Sugati ahetuka puggala → သုဂတိ အဟိတ်ပုဂ္ဂိုလ်`, `Dvihetuka`/`Tihetuka`,
+`Sotāpattimagga`/`Arahattamagga`, `Bhūmi → ဘုံ`, `Suddhāvāsā → သုဒ္ဓါဝါသ ၅ ဘုံ`,
+`Aṭṭha mahāniraya → မဟာငရဲ ၈ ထပ်`, `Asura → အသူရာ`, `Jambūdīpa → ဇမ္ဗူဒိပ်`,
+`Manussā → လူ့ဘုံ`, `Uppattideva → ဥပပတ္တိဒေဝ`, `Rūpāvacarabhūmi → ရူပ ၁၆ ဘုံ`,
+`Arūpabhūmi → အရူပဘုံ ၄ ဘုံ`) plus the three attested arūpa āyatanas.
+
+**Tier D from M16 (46 proper names, one systematic category).** The VI source names
+every realm and hell in Sino-Vietnamese (`Tam Thập Tam Thiên`, `Quang Âm Thiên`,
+`Đấu Xuất Đà Thiên`…), none of which has a glossary row, so all are rendered as
+Pāḷi transliterations with the VI gloss carried by the sentence: the two bhūmi
+group names, `Tiracchāna`, `Peta`, the six kāma-deva realms, the twelve rūpa-bhūmi
+names, the eight `mahāniraya` names, `Ussada`, `Gandhabba`, `Kumbhaṇḍa`, `Paṇḍaka`,
+`Ubhatobyañjana`, `Jaccandha`, `Sineru`, `Māra`, the three other `dīpa`s and
+`Virāga`. These should be reviewed **as one block** — a single decision on the
+transliteration convention settles all 46; the meanings do not depend on it.
+`အသညသတ်` for `Asaññasatta` and `အပါယ်` for `Apāya` are not new: both already occur
+in the shipped catalog (14× and 1×).
+
+Running total of reviewable terms: **100** — 38 through `M15` (§18), plus 16 (M9)
+and 46 (M16).
+
+### Integrity, all 15 modules I have authored
+
+```
+M1  148/148 · M2 110/110 · M3 273/273 · M4 284/284 · M5 114/114 · M7 136/136
+M8  223/223 · M9 223/223 · M11 151/151 · M12 118/118 · M13 114/114 · M14 115/115
+M15 171/171 · M16 224/224 · M17 171/171                        TOTAL 2575/2575
+0 Vietnamese tone marks · 0 non-Myanmar leaves · 198 seeds
+keyTerms.pali 195/196 identical · glossary keyTerm mismatches 0
+```
+
+The single `pali` deviation is the documented one (`TERM_BA_NHAN_THIEN_M3`, where
+the VI source's `pali` field holds Vietnamese). No doctrinal content added — every
+paragraph, card and seed renders an existing `content_vi.json` string.
+
+### Remaining — recounted with the tool's own `count_slots`
+
+**2 modules, 500 slots:** `M6_NGHIEP 266` · `M10_LO_TRINH 234`. All 17 modules =
+**3075**; done 15 = **2575**; TODO 2 = **500**.
+
+Standing cautions for the last two: `l10n_work/gen/M6_NGHIEP.json` holds **only an
+`hi` block** — read-modify-write, and verify `hi` byte-identical afterwards (§18
+shows exactly how this can go wrong). `M10_S09` is titled *"Vīthimutta — chưa có
+nguồn trong tài liệu này"* in the VI source and `M10_S05` does not exist (IN4-53) —
+M10 has 8 sections numbered S01–S04, S06–S09.
+
+### Gates run on this commit
+
+```
+python3 tool/content/check_content_locale.py my --glossary --strict   EXIT 0   (3751/4312, 87.0%)
+python3 tool/content/check_content_locale.py --all --quiet            EXIT 0
+python3 tool/check_paccaya_data.py                                    EXIT 0   (24/24, 52 links)
+builder rebuild                                                       7a0dcdcd5d740aec (unchanged)
+merged content_hi.json Myanmar-script runs                            0
+Myanmar orthography audit (right-vowel + above-vowel)                 0 illegal
+```
+
+Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter SDK
+on `PATH`. This commit changes zero Dart and zero shipped asset; CI runs both.
