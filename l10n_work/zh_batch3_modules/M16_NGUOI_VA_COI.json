@@ -104,5 +104,281 @@
         "梵天之生活：不显现男女特征，然形貌似男子；梵天虽乐于宫殿园林，却无欲爱之盖，因彼等在为人时已修习离欲；其中圣者则常入果定。"
       ]
     }
+  ],
+  "reviewCards": [
+    {
+      "id": "M16_R01",
+      "front": "“Puggala”（补特伽罗/人）是什么意思？共有多少种人？",
+      "back": "Puggala：受业力支配的人/众生；共 12 种：4 种凡夫（puthujjana）+ 8 种圣者（ariya-puggala）。"
+    },
+    {
+      "id": "M16_R02",
+      "front": "四种凡夫（Puthujjana）是什么？",
+      "back": "恶趣无因人（duggati-ahetuka）、善趣无因人（sugati-ahetuka）、二因人（dvihetuka）与三因人（tihetuka）。"
+    },
+    {
+      "id": "M16_R03",
+      "front": "恶趣无因人的结生心是什么？",
+      "back": "舍俱不善异熟无因推度心——11 个不善心之果报。"
+    },
+    {
+      "id": "M16_R04",
+      "front": "为何掉举相应痴根心不产生结生？",
+      "back": "因为它过于散乱且微弱——仅在生命过程（pavatti）中感果。"
+    },
+    {
+      "id": "M16_R05",
+      "front": "善趣无因人的结生心是什么？",
+      "back": "舍俱善异熟无因推度心——执行结生、有分与死之作用。"
+    },
+    {
+      "id": "M16_R06",
+      "front": "须陀洹道断除哪些心所与心？",
+      "back": "2 心所：邪见与疑。5 心：4 邪见相应贪根心 + 1 疑相应痴根心。"
+    },
+    {
+      "id": "M16_R07",
+      "front": "四界地（bhūmi）是什么？",
+      "back": "1）恶趣地（apāya）；2）欲界善趣地；3）色界地；4）无色界地。"
+    },
+    {
+      "id": "M16_R08",
+      "front": "四恶趣（apāya）是什么？",
+      "back": "地狱（Niraya）、畜生界（Tiracchāna）、饿鬼界（Peta）与阿修罗界。"
+    },
+    {
+      "id": "M16_R09",
+      "front": "请列举八大地狱。",
+      "back": "等活、黑绳、众合、号叫、大号叫、炎热、大炎热与无间地狱。"
+    },
+    {
+      "id": "M16_R10",
+      "front": "为何赞叹赡部洲（南赡部洲）最宜修法？",
+      "back": "此处众生心智勇猛精进于善德，且诸佛出世于此——尽管比其余诸洲有更多艰辛。"
+    },
+    {
+      "id": "M16_R11",
+      "front": "人间的四大部洲是什么？",
+      "back": "南赡部洲（Jambūdīpa）、北俱卢洲（Uttarakuru）、东胜身洲（Pubbavideha）与西牛货洲（Aparagoyāna）。"
+    },
+    {
+      "id": "M16_R12",
+      "front": "六欲天的寿量（以天年计）各是多少？",
+      "back": "四大天王天：500；三十三天：1,000；夜摩天：2,000；兜率天：4,000；化乐天：8,000；他化自在天：16,000。"
+    },
+    {
+      "id": "M16_R13",
+      "front": "魔王（Māra）居于哪一天？",
+      "back": "他化自在天（Paranimmitavasavattī）——最高之欲界天。"
+    },
+    {
+      "id": "M16_R14",
+      "front": "五净居天（Suddhāvāsa）是什么？谁投生于此？",
+      "back": "无烦、无热、善现、善见与色究竟天——专属于不还果（阿那含）与阿罗汉之居所。"
+    },
+    {
+      "id": "M16_R15",
+      "front": "无色界是否有色蕴（rūpakkhandha）？",
+      "back": "没有——唯有四名蕴（受、想、行、识）；依厌离色法而证得。"
+    },
+    {
+      "id": "M16_R16",
+      "front": "梵天众生是否具足欲爱（kāmacchanda）？",
+      "back": "没有——彼等已借由禅那镇伏欲爱，然仍乐于梵天宫殿与寂静。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M16_Q01",
+      "type": "mcq",
+      "question": "阿毗达磨中将人（Puggala）分为多少种？",
+      "correctAnswer": "12——4 凡夫 + 8 圣者",
+      "distractors": [
+        "8——唯 8 圣者",
+        "4——唯 4 凡夫",
+        "31——依 31 界"
+      ],
+      "explanation": "补特伽罗分类计为 4 凡夫（puthujjana）与 8 圣者（4 道、4 果）。"
+    },
+    {
+      "id": "M16_Q02",
+      "type": "mcq",
+      "question": "恶趣无因人（duggati-ahetuka）的结生心是什么？",
+      "correctAnswer": "舍俱不善异熟无因推度心",
+      "distractors": [
+        "善异熟推度心",
+        "领受心",
+        "五门转向心"
+      ],
+      "explanation": "不善异熟舍俱推度心在四恶趣中执行结生。"
+    },
+    {
+      "id": "M16_Q03",
+      "type": "mcq",
+      "question": "须陀洹道断除哪三个烦恼结？",
+      "correctAnswer": "萨迦耶见、疑、戒禁取",
+      "distractors": [
+        "贪、瞋、痴",
+        "萨迦耶见、慢、嫉",
+        "疑、掉举、昏沉"
+      ],
+      "explanation": "须陀洹道断除 sakkāyadiṭṭhi、vicikicchā 与 sīlabbataparāmāsa。"
+    },
+    {
+      "id": "M16_Q04",
+      "type": "mcq",
+      "question": "哪四界构成恶趣地（Apāya）？",
+      "correctAnswer": "地狱、畜生界、饿鬼界、阿修罗界",
+      "distractors": [
+        "地狱、饿鬼界、畜生界、人界",
+        "地狱、阿修罗、夜摩天、兜率天",
+        "饿鬼、畜生、无想天、无色界"
+      ],
+      "explanation": "四恶趣为地狱、畜生、饿鬼与阿修罗。"
+    },
+    {
+      "id": "M16_Q05",
+      "type": "mcq",
+      "question": "欲界善趣地（kāmasugati）包含多少界？",
+      "correctAnswer": "7",
+      "distractors": [
+        "4",
+        "6",
+        "11"
+      ],
+      "explanation": "1 人界 + 6 欲天 = 7 欲界善趣。"
+    },
+    {
+      "id": "M16_Q06",
+      "type": "mcq",
+      "question": "依传统宇宙观，八大地狱彼此相距多远？",
+      "correctAnswer": "1,500 由旬",
+      "distractors": [
+        "42,000 由旬",
+        "1,000 由旬",
+        "84,000 由旬"
+      ],
+      "explanation": "依宇宙论经典，每座大地狱相距 1,500 由旬。"
+    },
+    {
+      "id": "M16_Q07",
+      "type": "mcq",
+      "question": "在哪一大洲修习正法最富成果且诸佛出世？",
+      "correctAnswer": "南赡部洲（Jambūdīpa）",
+      "distractors": [
+        "北俱卢洲（Uttarakuru）",
+        "东胜身洲（Pubbavideha）",
+        "西牛货洲（Aparagoyāna）"
+      ],
+      "explanation": "赡部洲是勇猛精进修法且诸佛出世之处。"
+    },
+    {
+      "id": "M16_Q08",
+      "type": "mcq",
+      "question": "四大天王天的一昼夜等于人间多少年？",
+      "correctAnswer": "人间 50 年",
+      "distractors": [
+        "人间 100 年",
+        "人间 200 年",
+        "人间 400 年"
+      ],
+      "explanation": "四大天王天一昼夜等于人间 50 年。"
+    },
+    {
+      "id": "M16_Q09",
+      "type": "mcq",
+      "question": "帝释天王（Sakka）统领哪一天界？",
+      "correctAnswer": "三十三天（Tāvatiṃsa，忉利天）",
+      "distractors": [
+        "四大天王天",
+        "夜摩天",
+        "化乐天"
+      ],
+      "explanation": "帝释天王统领三十三天。"
+    },
+    {
+      "id": "M16_Q10",
+      "type": "mcq",
+      "question": "哪一天界是魔王（Māra）的居所？",
+      "correctAnswer": "他化自在天（Paranimmitavasavattī）",
+      "distractors": [
+        "化乐天",
+        "兜率天",
+        "光音天"
+      ],
+      "explanation": "魔王居于最高欲界天——他化自在天之一部。"
+    },
+    {
+      "id": "M16_Q11",
+      "type": "mcq",
+      "question": "色界地（Rūpabhūmi）包含多少界？",
+      "correctAnswer": "16 界，依禅那层级分为 4 组",
+      "distractors": [
+        "15 界，分为 3 组",
+        "12 界，分为 4 组",
+        "16 界，分为 2 组"
+      ],
+      "explanation": "色界包含对应四禅的 16 界（含净居天）。"
+    },
+    {
+      "id": "M16_Q12",
+      "type": "mcq",
+      "question": "谁能投生于五净居天（Suddhāvāsa）？",
+      "correctAnswer": "不还果（阿那含）与阿罗汉",
+      "distractors": [
+        "任何圣弟子",
+        "精通第五禅的凡夫",
+        "唯须陀洹"
+      ],
+      "explanation": "五净居天专为不还果与阿罗汉所居。"
+    },
+    {
+      "id": "M16_Q13",
+      "type": "mcq",
+      "question": "无想有情天（Asaññasatta）的定义性特征是什么？",
+      "correctAnswer": "唯有色法，全无心法",
+      "distractors": [
+        "唯有心法而无色法",
+        "具足名色二法",
+        "名色二法皆无"
+      ],
+      "explanation": "在无想有情天中，唯有色命根与色法；无有心识。"
+    },
+    {
+      "id": "M16_Q14",
+      "type": "mcq",
+      "question": "依《起世经》（Aggañña Sutta），世界重成时人类的最初祖先是谁？",
+      "correctAnswer": "来自光音天（Ābhassara）的梵天众生",
+      "distractors": [
+        "摩奴王",
+        "大梵天",
+        "四大天王天的天人"
+      ],
+      "explanation": "人类源自降临大地的光明光音天梵天。"
+    },
+    {
+      "id": "M16_Q15",
+      "type": "mcq",
+      "question": "众生借由何种心力投生于无色界？",
+      "correctAnswer": "厌离物质色法的无色禅定",
+      "distractors": [
+        "慈心禅",
+        "布施",
+        "初禅定"
+      ],
+      "explanation": "无色界投生须精通远离对色法执着的无色禅定。"
+    },
+    {
+      "id": "M16_Q16",
+      "type": "mcq",
+      "question": "最高净居天——色究竟天（Akaniṭṭha）的特征是什么？",
+      "correctAnswer": "色界中戒、定、慧最上圆满之处",
+      "distractors": [
+        "第四禅最低之界",
+        "魔王居所",
+        "无光明之界"
+      ],
+      "explanation": "色究竟天是色界之巅，资深阿那含于此证入般涅槃。"
+    }
   ]
 }
