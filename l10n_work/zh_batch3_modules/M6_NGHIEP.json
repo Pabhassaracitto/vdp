@@ -96,5 +96,325 @@
         "业亦生起色法：有十八种业生色——8 不分离色、5 净色、空界、色命根、心所依处与 2 性根色。"
       ]
     }
+  ],
+  "reviewCards": [
+    {
+      "id": "M6_R01",
+      "front": "业（Kamma）的究竟法（paramattha）是什么？",
+      "back": "思（Cetanā）——有意识的心理行为。“Cetanāhaṃ, bhikkhave, kammaṃ vadāmi”（诸比丘，我说思即是业）。"
+    },
+    {
+      "id": "M6_R02",
+      "front": "业经由多少门生起？哪一门最为重要？",
+      "back": "三门：身、语、意。意业最为重要。"
+    },
+    {
+      "id": "M6_R03",
+      "front": "业四法（Kammacatukka）将业分为多少种？",
+      "back": "16 种业，分为 4 组：依作用、依成熟次序、依成熟时间与依成熟界地。"
+    },
+    {
+      "id": "M6_R04",
+      "front": "依作用分类的四种业是什么？",
+      "back": "令生业（Janaka）、支持业（Upatthambhaka）、妨害业（Upapīḷaka）与毁坏业（Upaghātaka）。"
+    },
+    {
+      "id": "M6_R05",
+      "front": "令生业（Janakakamma）的作用是什么？",
+      "back": "在结生（paṭisandhi）时生起名色五蕴。"
+    },
+    {
+      "id": "M6_R06",
+      "front": "妨害业与毁坏业有何区别？",
+      "back": "妨害业削弱并阻碍令生业；毁坏业则彻底截断并终止正在运作的令生业。"
+    },
+    {
+      "id": "M6_R07",
+      "front": "妨害业不生起于哪些界地？",
+      "back": "色界与无色界。"
+    },
+    {
+      "id": "M6_R08",
+      "front": "依成熟次序（优先顺序）的四种业是什么？",
+      "back": "重业（Garuka）、临终近业（Āsanna）、习惯业（Āciṇṇa）与已作业（Kaṭattā）。"
+    },
+    {
+      "id": "M6_R09",
+      "front": "什么是五无间业（Ānantariyakamma）？",
+      "back": "杀母、杀父、杀阿罗汉、破和合僧与出佛身血。"
+    },
+    {
+      "id": "M6_R10",
+      "front": "哪一种不善重业最具毁坏性？",
+      "back": "定邪见（Niyatamicchādiṭṭhikamma），其次为破和合僧。"
+    },
+    {
+      "id": "M6_R11",
+      "front": "什么构成善重业？",
+      "back": "9 个广大善心（5 色界善心 + 4 无色界善心）。"
+    },
+    {
+      "id": "M6_R12",
+      "front": "业的成熟时间（Pākakāla）在心路过程的何处决定？",
+      "back": "在 7 个速行（Javana）心刹那。"
+    },
+    {
+      "id": "M6_R13",
+      "front": "第一速行刹那造作什么业？",
+      "back": "现法受业（Diṭṭhadhammavedanīya）——于今生感果。"
+    },
+    {
+      "id": "M6_R14",
+      "front": "第七速行刹那造作什么业？",
+      "back": "次生受业（Upapajjavedanīya）——于来生感果。"
+    },
+    {
+      "id": "M6_R15",
+      "front": "第二至第六速行刹那造作什么业？",
+      "back": "后后受业（Aparāpariyavedanīya）——自第三生起直至涅槃间感果；第四刹那最强。"
+    },
+    {
+      "id": "M6_R16",
+      "front": "什么是无效业（Ahosikamma）？",
+      "back": "因未能在指定时限内获得成熟机会而失效之业。"
+    },
+    {
+      "id": "M6_R17",
+      "front": "业成熟的四类界地是什么？",
+      "back": "不善业、欲界善业、色界善业与无色界善业。"
+    },
+    {
+      "id": "M6_R18",
+      "front": "十不善业道依门如何分类？",
+      "back": "身 3（杀生、偷盗、邪淫）；语 4（妄语、两舌、恶口、绮语）；意 3（贪婪、瞋恚、邪见）。"
+    },
+    {
+      "id": "M6_R19",
+      "front": "有多少个心能作为令生业之因？",
+      "back": "28 个心：11 不善心、8 欲界大善心、5 色界善心、4 无色界善心。"
+    },
+    {
+      "id": "M6_R20",
+      "front": "为何掉举相应痴根心不能造作令生业？",
+      "back": "因为它过于微弱且躁动，无法引生结生识。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M6_Q01",
+      "type": "mcq",
+      "question": "业的究竟法是哪一个心所？",
+      "correctAnswer": "思（Cetanā）",
+      "distractors": [
+        "触（Phassa）",
+        "受（Vedanā）",
+        "想（Saññā）"
+      ],
+      "explanation": "佛陀宣说：“Cetanāhaṃ, bhikkhave, kammaṃ vadāmi”——思即是业。"
+    },
+    {
+      "id": "M6_Q02",
+      "type": "mcq",
+      "question": "在三业门中，哪一门被视为最重要？",
+      "correctAnswer": "意门（意业，manokamma）",
+      "distractors": [
+        "身门",
+        "语门",
+        "三者完全平等"
+      ],
+      "explanation": "意业是一切身业与语业的前导与基础。"
+    },
+    {
+      "id": "M6_Q03",
+      "type": "mcq",
+      "question": "业四法（Kammacatukka）将业分为多少种？",
+      "correctAnswer": "16 种，分为 4 组",
+      "distractors": [
+        "12 种，分为 3 组",
+        "20 种，分为 5 组",
+        "8 种，分为 2 组"
+      ],
+      "explanation": "业分为 4 个四法组 = 16 种。"
+    },
+    {
+      "id": "M6_Q04",
+      "type": "mcq",
+      "question": "哪一种业在结生时生起名色五蕴？",
+      "correctAnswer": "令生业（Janakakamma）",
+      "distractors": [
+        "支持业",
+        "妨害业",
+        "毁坏业"
+      ],
+      "explanation": "令生业引生结生（paṭisandhi）及一生中的五蕴。"
+    },
+    {
+      "id": "M6_Q05",
+      "type": "mcq",
+      "question": "哪一种业具有更强力量，能彻底截断并取代令生业？",
+      "correctAnswer": "毁坏业（Upaghātakakamma）",
+      "distractors": [
+        "妨害业",
+        "支持业",
+        "已作业"
+      ],
+      "explanation": "毁坏业截断现有之业，并以自身果报取代之。"
+    },
+    {
+      "id": "M6_Q06",
+      "type": "mcq",
+      "question": "妨害业不生起于哪些界地？",
+      "correctAnswer": "色界与无色界",
+      "distractors": [
+        "欲界",
+        "四恶趣",
+        "人界"
+      ],
+      "explanation": "梵天界的生命在寿尽前不受妨害业干扰而持续。"
+    },
+    {
+      "id": "M6_Q07",
+      "type": "mcq",
+      "question": "五无间业属于哪一类？",
+      "correctAnswer": "重业（Garukakamma）",
+      "distractors": [
+        "临终近业",
+        "习惯业",
+        "已作业"
+      ],
+      "explanation": "五无间业（ānantariya）是最重的不善业。"
+    },
+    {
+      "id": "M6_Q08",
+      "type": "mcq",
+      "question": "依文献所载，哪一种不善业最重？",
+      "correctAnswer": "定邪见（Niyatamicchādiṭṭhikamma）",
+      "distractors": [
+        "杀母",
+        "杀父",
+        "出佛身血"
+      ],
+      "explanation": "不可救药的定邪见是最具毁坏性之业，障碍解脱。"
+    },
+    {
+      "id": "M6_Q09",
+      "type": "mcq",
+      "question": "什么构成善重业（Garuka kusala）？",
+      "correctAnswer": "9 广大善心（色界与无色界禅那）",
+      "distractors": [
+        "8 大善心",
+        "12 不善心",
+        "8 出世间心"
+      ],
+      "explanation": "证得禅那构成善重业。"
+    },
+    {
+      "id": "M6_Q10",
+      "type": "mcq",
+      "question": "业的成熟时间在心路过程的何处决定？",
+      "correctAnswer": "7 个速行（Javana）刹那",
+      "distractors": [
+        "3 个有分刹那",
+        "2 个彼所缘刹那",
+        "结生刹那"
+      ],
+      "explanation": "7 个速行刹那中的思心所决定业何时成熟。"
+    },
+    {
+      "id": "M6_Q11",
+      "type": "mcq",
+      "question": "第一速行刹那造作什么业？",
+      "correctAnswer": "现法受业——于今生感果",
+      "distractors": [
+        "次生受业——于来生感果",
+        "后后受业——自第三生起感果",
+        "无效业"
+      ],
+      "explanation": "第 1 速行造作现法受业（diṭṭhadhammavedanīya kamma）。"
+    },
+    {
+      "id": "M6_Q12",
+      "type": "mcq",
+      "question": "第七速行刹那造作什么业？",
+      "correctAnswer": "次生受业（Upapajjavedanīya）",
+      "distractors": [
+        "现法受业",
+        "后后受业",
+        "无效业"
+      ],
+      "explanation": "第 7 速行造作次生受业，于紧接的下一生感果。"
+    },
+    {
+      "id": "M6_Q13",
+      "type": "mcq",
+      "question": "七个速行刹那中，哪一个力量最强？",
+      "correctAnswer": "第 4 速行刹那",
+      "distractors": [
+        "第 1 速行刹那",
+        "第 7 速行刹那",
+        "第 2 速行刹那"
+      ],
+      "explanation": "第 4 速行处于心识动势之巅峰。"
+    },
+    {
+      "id": "M6_Q14",
+      "type": "mcq",
+      "question": "有多少个心能造作令生业（Janakakamma）？",
+      "correctAnswer": "28 个心",
+      "distractors": [
+        "19 个心",
+        "12 个心",
+        "8 个心"
+      ],
+      "explanation": "11 不善 + 8 大善 + 5 色善 + 4 无色善 = 28。"
+    },
+    {
+      "id": "M6_Q15",
+      "type": "mcq",
+      "question": "为何只有 11 个（而非 12 个）不善心能造作令生业？",
+      "correctAnswer": "因为掉举相应痴根心无法产生结生",
+      "distractors": [
+        "因为瞋根心不能感果",
+        "因为邪见不相应贪心不能感果",
+        "因为疑相应痴根心不能感果"
+      ],
+      "explanation": "掉举心过于躁动微弱，无法引生结生识（paṭisandhi-viññāṇa）。"
+    },
+    {
+      "id": "M6_Q16",
+      "type": "mcq",
+      "question": "有多少个异熟心能执行结生（paṭisandhi）作用？",
+      "correctAnswer": "19 个心",
+      "distractors": [
+        "28 个心",
+        "12 个心",
+        "11 个心"
+      ],
+      "explanation": "19 个异熟心执行结生：2 推度心、8 大异熟心、5 色异熟心、4 无色异熟心。"
+    },
+    {
+      "id": "M6_Q17",
+      "type": "mcq",
+      "question": "有多少种色法（rūpa）由业所生？",
+      "correctAnswer": "18 种色法",
+      "distractors": [
+        "15 种色法",
+        "13 种色法",
+        "12 种色法"
+      ],
+      "explanation": "业生起 18 种色法。"
+    },
+    {
+      "id": "M6_Q18",
+      "type": "mcq",
+      "question": "语不善业道共有多少种？",
+      "correctAnswer": "4 种",
+      "distractors": [
+        "3 种",
+        "5 种",
+        "7 种"
+      ],
+      "explanation": "妄语、两舌、恶口与绮语。"
+    }
   ]
 }
