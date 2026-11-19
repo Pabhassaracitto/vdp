@@ -7,51 +7,93 @@
   "cittas": {
     "CI_001": {
       "name": "喜倶邪見相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "「かまわない」と思いながら、他人の物を勝手に取る喜びを楽しむ。",
+        "所有物は永遠であるという邪見を伴った貪り。"
+      ]
     },
     "CI_002": {
       "name": "喜倶邪見相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "他人に促されてから初めて他人の物を取る。",
+        "熟考してから決定し、そそのかされて後に生じる貪り。"
+      ]
     },
     "CI_003": {
       "name": "喜倶邪見不相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "自分のために何かを得ることへの誇りと喜び。",
+        "慢心から他者より優れていると比べて何かを欲しがること。"
+      ]
     },
     "CI_004": {
       "name": "喜倶邪見不相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Somanassa-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "他者にそそのかされて後に生じる、慢心と混じった貪り。"
+      ]
     },
     "CI_005": {
       "name": "捨倶邪見相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "邪見から生じる、無関心で軽率な貪り。"
+      ]
     },
     "CI_006": {
       "name": "捨倶邪見相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatasampayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "そそのかされて邪見と共に生じる、無関心な欲。"
+      ]
     },
     "CI_007": {
       "name": "捨倶邪見不相応無行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "何かを得ることへの、自己満足した無関心な満足感。"
+      ]
     },
     "CI_008": {
       "name": "捨倶邪見不相応有行貪根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Diṭṭhigatavippayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "邪見なく、促されて後に生じる無関心な貪り。"
+      ]
     },
     "CI_009": {
       "name": "憂倶瞋恚相応無行瞋根心",
-      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Asaṅkhārikaṃ。",
+      "examples": [
+        "侮辱されたときに激しく怒り立つ。",
+        "誰かのそそのかしもなく、他者に対して自然に生じる嫌悪。"
+      ]
     },
     "CI_010": {
       "name": "憂倶瞋恚相応有行瞋根心",
-      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Domanassa-sahagataṃ Paṭighasampayuttaṃ Sasaṅkhārikaṃ。",
+      "examples": [
+        "他者に挑発されて、または古い恨みを思い出して生じる怒り。"
+      ]
     },
     "CI_011": {
       "name": "捨倶疑相応痴根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Vicikicchāsampayuttaṃ。",
+      "examples": [
+        "仏・法・僧を疑うこと。",
+        "何が善で何が不善か決断できないこと。"
+      ]
     },
     "CI_012": {
       "name": "捨倶掉挙相応痴根心",
-      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。"
+      "doctrinalNote": "アビダンマの心識分類：Upekkhā-sahagataṃ Uddhaccasampayuttaṃ。",
+      "examples": [
+        "目的もなくさまよう、散乱した心。",
+        "焦点の定まらない、あちこち動き回る思考。"
+      ]
     },
     "CI_013": {
       "name": "捨倶眼識（不善異熟）",
@@ -764,7 +806,11 @@
     "CS_OTTAPPA": {
       "name": "愧",
       "shortName": "愧",
-      "description": "世間の非難や悪業の報いを恐れる心。"
+      "description": "世間の非難や悪業の報いを恐れる心。",
+      "characteristic": "畏れること — 悪行の結果を恐れること。",
+      "function": "悪行を遠ざけること。",
+      "manifestation": "恐怖・退避として現れること。",
+      "proximateCause": "世間の制裁に対する畏敬。"
     },
     "CS_ALOBHA": {
       "name": "無貪",
@@ -796,62 +842,110 @@
     "CS_KAYAPASSADDHI": {
       "name": "身軽安",
       "shortName": "身軽安",
-      "description": "心所の熱苦を鎮め安らかにすること。"
+      "description": "心所の熱苦を鎮め安らかにすること。",
+      "characteristic": "心所の平静 — 心所の煩悩を鎮めること。",
+      "function": "心所の擾乱を止めること。",
+      "manifestation": "心所の平静・安穏として現れること。",
+      "proximateCause": "心所または定。"
     },
     "CS_CITTAPASSADDHI": {
       "name": "心軽安",
       "shortName": "心軽安",
-      "description": "心王の動揺を鎮め静寂にすること。"
+      "description": "心王の動揺を鎮め静寂にすること。",
+      "characteristic": "心の平静 — 心の煩悩を鎮めること。",
+      "function": "心の擾乱を止めること。",
+      "manifestation": "心の平静・安穏として現れること。",
+      "proximateCause": "心所または定。"
     },
     "CS_KAYALAHUTA": {
       "name": "身軽快性",
       "shortName": "身軽快性",
-      "description": "心所の重苦しさを除く軽やかさ。"
+      "description": "心所の重苦しさを除く軽やかさ。",
+      "characteristic": "心所の軽快 — 心所の重さを除くこと。",
+      "function": "心所の硬直を除去すること。",
+      "manifestation": "心所の敏捷性として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_CITTALAHUTA": {
       "name": "心軽快性",
       "shortName": "心軽快性",
-      "description": "心王の重苦しさを除く軽やかさ。"
+      "description": "心王の重苦しさを除く軽やかさ。",
+      "characteristic": "心の軽快 — 心の重さを除くこと。",
+      "function": "心の硬直を除去すること。",
+      "manifestation": "心の敏捷性として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_KAYAMUDUTA": {
       "name": "身柔軟性",
       "shortName": "身柔軟性",
-      "description": "心所の頑迷さを除くしなやかさ。"
+      "description": "心所の頑迷さを除くしなやかさ。",
+      "characteristic": "心所の柔軟 — 心所の硬さを除くこと。",
+      "function": "心所の強剛を除去すること。",
+      "manifestation": "心所の柔軟性として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_CITTAMUDUTA": {
       "name": "心柔軟性",
       "shortName": "心柔軟性",
-      "description": "心王の頑迷さを除くしなやかさ。"
+      "description": "心王の頑迷さを除くしなやかさ。",
+      "characteristic": "心の柔軟 — 心の硬さを除くこと。",
+      "function": "心の強剛を除去すること。",
+      "manifestation": "心の柔軟性として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_KAYAKAMMANNATA": {
       "name": "身適業性",
       "shortName": "身適業性",
-      "description": "心所が善業を行うのに適していること。"
+      "description": "心所が善業を行うのに適していること。",
+      "characteristic": "心所の適業 — 心所の不適業性を除くこと。",
+      "function": "心所の不适応性を除去すること。",
+      "manifestation": "心所の適応性として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_CITTAKAMMANNATA": {
       "name": "心適業性",
       "shortName": "心適業性",
-      "description": "心王が善業を行うのに適していること。"
+      "description": "心王が善業を行うのに適していること。",
+      "characteristic": "心の適業 — 心の不適業性を除くこと。",
+      "function": "心の不适応性を除去すること。",
+      "manifestation": "心の適応性として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_KAYAPAGUNNATA": {
       "name": "身練達性",
       "shortName": "身練達性",
-      "description": "心所が無病で熟達していること。"
+      "description": "心所が無病で熟達していること。",
+      "characteristic": "心所の練達 — 心所の未練達を除くこと。",
+      "function": "心所の不熟練を除去すること。",
+      "manifestation": "心所の熟練として現れること。",
+      "proximateCause": "心所の反復修習。"
     },
     "CS_CITTAPAGUNNATA": {
       "name": "心練達性",
       "shortName": "心練達性",
-      "description": "心王が無病で熟達していること。"
+      "description": "心王が無病で熟達していること。",
+      "characteristic": "心の練達 — 心の未練達を除くこと。",
+      "function": "心の不熟練を除去すること。",
+      "manifestation": "心の熟練として現れること。",
+      "proximateCause": "心の反復修習。"
     },
     "CS_KAYUJUKATA": {
       "name": "身正直性",
       "shortName": "身正直性",
-      "description": "心所の真っ直ぐさ（歪み・偽りの排除）。"
+      "description": "心所の真っ直ぐさ（歪み・偽りの排除）。",
+      "characteristic": "心所の正直 — 心所の曲がりを除くこと。",
+      "function": "心所の歪みを正すこと。",
+      "manifestation": "心所の端正として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_CITTUJUKATA": {
       "name": "心正直性",
       "shortName": "心正直性",
-      "description": "心王の真っ直ぐさ（素直さ）。"
+      "description": "心王の真っ直ぐさ（素直さ）。",
+      "characteristic": "心の正直 — 心の曲がりを除くこと。",
+      "function": "心の歪みを正すこと。",
+      "manifestation": "心の端正として現れること。",
+      "proximateCause": "心所。"
     },
     "CS_SAMMAVACA": {
       "name": "正語",
