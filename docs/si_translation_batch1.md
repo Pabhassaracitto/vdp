@@ -126,27 +126,35 @@ Note: both modules are keyed by `loc == "si"` only. They must not be applied to 
 
 Unverified: the paticca four-aspect *content* (characteristic / function / manifestation / proximateCause). It comes from the English reference, which follows the commentarial four-aspect method. The Sinhala text that would confirm it (Visuddhimagga or Abhidharmārtha Saṅgraha in Sinhala) was not accessible or checked. The Sinhala Abhidharmārtha Saṅgraha scan on tipitaka.lk (141 pp.) is image-only and was not read.
 
-## 7. Competing usages and native-review questions (for council)
+## 7. Terminology disputes for council
 
-Competing usages in the source (all in Chandrikava, pitaka.lk):
+Scope decision: the council decides terminology only. Everything else stays English (see §8).
+
+Competing usages found in the source (Chandrikava, pitaka.lk):
 - අත්ථි/නත්ථි vs අස්ති/නාස්ති — 9-17 uses both.
 - නිස්සය vs නිශ්‍රය — 9-14 uses both.
 - විඥාන vs විඤ්ඤාණ — 9-13, 9-14, 9-17 use both.
 - තණ්හා vs තෘෂ්ණා — 9-14 uses තණ්හා in text; headings elsewhere use තෘෂ්ණා.
-- Sampayutta / vippayutta: Sanskritized and Pāḷi-based forms both appear.
+- ඵස්ස vs ස්පර්ශය — the glossary says ඵස්ස for Phassa; the current content_si shortName is ස්පර්ශය.
+- Sampayutta / vippayutta: Sanskritised and Pāḷi-based forms both appear.
 
-Questions for the council:
-1. **Q1.** Use අත්ථි/නත්ථි (builder) or අස්ති/නාස්ති (source) for paccaya 21–22? Both are attested.
-2. **Q2.** Confirm විඥාන for viññāṇa (glossary) as the house form, against විඤ්ඤාණ.
-3. **Q3.** Confirm තණ්හා for taṇhā (glossary) as the house form, against තෘෂ්ණා.
-4. **Q4.** Is the four-aspect Sinhala content (§3, §6) acceptable as a draft? Please check against a Sinhala Visuddhimagga or Abhidharmārtha Saṅgraha text, since the English reference is Visuddhimagga-based.
-5. **Q5.** PC_11 postnascence: the English reference says 85 cittas. Confirm the number and wording before translating.
-6. **Q6.** PD_02 proximateCause says that without avijjā, saṅkhāra become lokuttara and create no new kamma. Confirm that statement and its wording.
-7. **Q7.** PC_20 simile: confirm ෂඩ්රස wording.
-8. **Q8.** KM_P_01: confirm the Sinhala term for "niyata micchādiṭṭhi" (මිථ්‍යාදෘෂ්ටිය or මිච්ඡාදිට්ඨිය) and the list "පඤ්චානන්තරිය, මහග්ගත කුසල්".
-9. **Q9.** Cittas `doctrinalNote` is still the Pāḷi-only template for si. Do you want source-verified Sinhala glosses for the 12 akusala cittas (proposal text not yet written), or keep English?
-10. **Q10.** Vithi steps for si exist only in the committed `content_si.json` for VT_NGU_MON_RATLON. Where should a corrected or extended set live, given there is no si source table?
-11. **Q11.** Source for the si study-module text. The IN4-45 issue cites "Sinhala Abhidharmārtha Saṅgraha". Please confirm which edition the council will use.
+Questions:
+1. **Q1.** Paccaya 21–22: අත්ථි/නත්ථි (builder) or අස්ති/නාස්ති (source)?
+2. **Q2.** viññāṇa: confirm විඥාන as the house form against විඤ්ඤාණ.
+3. **Q3.** taṇhā: confirm තණ්හා as the house form against තෘෂ්ණා.
+4. **Q4.** Phassa: confirm ඵස්ස (glossary) or ස්පර්ශය (current shortName).
+5. **Q5.** nissaya: confirm නිස්සය or නිශ්‍රය.
+6. **Q6.** sampayutta / vippayutta: confirm the house forms.
+7. **Q7.** niyata micchādiṭṭhi: confirm මිථ්‍යාදෘෂ්ටිය or මිච්ඡාදිට්ඨිය.
+
+## 7b. Dropped from council scope (kept English, not terminology)
+
+- Four-aspect Sinhala content as a draft: stays draft, no council sign-off requested.
+- PC_11 wording and number (85 cittas): open source check, see §8.
+- PD_02 claim about saṅkhāra becoming lokuttara: open source check, see §8.
+- PC_20 simile wording: open source check, see §8.
+- Citta and vithi doctrinalNote sources and the vithi-steps home: structural decisions for the coordinator.
+- Study-module source edition (IN4-45 cites "Sinhala Abhidharmārtha Saṅgraha"): not verified, see §8.
 
 ## 8. Not translated yet
 
@@ -157,4 +165,4 @@ Questions for the council:
 - All lessonSections / reviewCards / quizSeeds for 17 modules (Batch 3; needs a coherent reviewed batch).
 - Cittas examples for the 109 cittas that have no English examples (nothing to translate from).
 
-English fallback stays on for si. Nothing is marked reviewed.
+Open source checks (not for council): PC_11, PD_02, PC_20, study-module edition. English fallback stays on for si. Nothing is marked reviewed.
