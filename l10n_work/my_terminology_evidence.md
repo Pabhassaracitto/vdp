@@ -1021,3 +1021,22 @@ Running total of reviewable terms across the five modules: **13** (9 from
 10 modules, ~1754 slots: M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224
 · M9_SAC_PHAP 223 · M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE
 136 · M12_VO_NHAN 118 · M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114.
+
+### Arithmetic reconciliation
+
+So the numbers can be checked by hand: the 2515 is not just
+`1206 + (my five modules)`. `merge_batch` also merges the two modules already
+on `main`, and those contribute too.
+
+| Module | Fields | Net |
+| --- | --- | --- |
+| `M8_NHAN_DUYEN` *(pre-existing)* | 223 | +221 |
+| `M17_DUYEN_CHI_TIET` *(pre-existing)* | 171 | +169 |
+| `M1_BASICS` | 148 | +146 |
+| `M2_SI_PHAN` | 110 | +108 |
+| `M3_TINH_HAO_BIEN_HANH` | 273 | +271 |
+| `M4_AKUSALA` | 284 | +282 |
+| `M5_SOBHANA` | 114 | +112 |
+| **total** | **1323** | **+1309** |
+
+`1206 + 1309 = 2515`, matching `check_content_locale.py` exactly.
