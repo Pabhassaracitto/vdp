@@ -67,10 +67,10 @@ Translated from the English fields in `content_en.json` (same status as §3: dra
 
 - **Paccaya examples:** 40 items across 23 paccayas (PC_01–PC_24, except PC_11).
 - **Paccaya subdivisions:** 25 keys across 9 paccayas, Pāḷi keys unchanged, with `name` and `note` in Sinhala.
-- **Paccaya doctrinalNote:** 22 entries (PC_01–PC_24, except PC_11 and PC_15).
+- **Paccaya doctrinalNote:** 24 entries (PC_01–PC_24). PC_11 and PC_15 added after source check (§8).
 - **Paticca examples:** 15 items across 12 paticcas (PD_01–PD_12).
 - **Paticca doctrinalNote:** 7 entries (PD_01, 02, 03, 06, 07, 08, 12).
-- **Rupa doctrinalNote:** 21 entries (all except RP_002 and RP_022).
+- **Rupa doctrinalNote:** 22 entries (all except RP_022). RP_002 added after source check (§8).
 - **Kamma doctrinalNote:** 14 entries (all except KM_R_01 and KM_R_04).
 - **Vithi doctrinalNote:** 3 entries (all except VT_Y_MON).
 
@@ -126,7 +126,7 @@ Counts are English entries with a non-empty field. Checked by script this round;
 |---|---|---|---|---|
 | cittas | 121 | ✅ name (121). shortName (71 entries): English shortName equals name in every case, so the si shortName equals the si name; not yet written to the catalog (§5). | n/a | 🟡 doctrinalNote (121, revised, §3f; committed content_si has the older template). 🟡 examples (12 entries). |
 | cetasikas | 52 | ✅ name, shortName, description (52) | 🟡 208 fields (52 × 4), reviewed §3f | — |
-| rupas | 28 | ✅ name, shortName, description (28) | 🟡 112 fields (28 × 4), reviewed §3f | 🟡 doctrinalNote (21 of 23); ⚪ RP_002, RP_022 (§8) |
+| rupas | 28 | ✅ name, shortName, description (28) | 🟡 112 fields (28 × 4), reviewed §3f | 🟡 doctrinalNote (22 of 23); ⚪ RP_022 (§8) |
 | paccayas | 24 | ✅ name, shortName, definition (24; 14 corrected, §2) | 🟡 paccayaDhamma (23 of 24), 🟡 paccayuppanna (23 of 24); ⚪ PC_11 | 🟡 examples (23 of 24); 🟡 subdivisions (9 of 9); 🟡 doctrinalNote (22 of 24); ⚪ PC_11, PC_15 (§8) |
 | paticcas | 12 | ✅ name, shortName, description (12; 4 corrected, §2) | 🟡 48 fields (12 × 4) | 🟡 examples (12); 🟡 doctrinalNote (7 of 8); ⚪ PD_11 (§8) |
 | kammas | 16 | ✅ name, shortName, description (16; 1 corrected) | n/a | 🟡 examples (16 entries); 🟡 doctrinalNote (14 of 16); ⚪ KM_R_01, KM_R_04 (§8) |
@@ -222,11 +222,13 @@ Questions:
 
 Left in English because the English claim is either unsourced in our files or doubtful. Each needs a source check, not a translation decision:
 
-- **PC_11** (whole entry): the English says 85 cittas. The count and wording need checking.
-- **PC_15** doctrinalNote: cites SN 12.63; the citation is not verified.
+- **PC_11** (paccayaDhamma, paccayuppanna, examples): still English. The doctrinalNote was checked and translated: the post-nascence source (Paṭṭhāna ch.15: 85 cittas, 89 minus 4 arūpa-vipāka) matches English.
+- **PC_15** doctrinalNote: checked and translated. SN 12.63 (Puttamaṃsūpama) is the sutta on the four nutriments.
 - **PD_11** doctrinalNote: a correspondence claim between PD_11 and PD_03.
-- **RP_002** and **RP_022** doctrinalNote: RP_022 says lightness of matter is not produced by kamma; this needs checking against the Abhidhamma list of causes.
-- **KM_R_01** and **KM_R_04** doctrinalNote: KM_R_04 says path kamma produces Nibbāna as its result; check whether the result is fruition instead.
+- **RP_002** doctrinalNote: checked (Ven. Nārada, Manual of Abhidhamma ch.6: āpo is not tangible) and translated.
+- **RP_022** doctrinalNote: still English. Not verified yet. Its claim (lightness not produced by kamma) needs checking against the Saṅgaha list of causes for lahutā.
+- **KM_R_04** doctrinalNote: English error. Nārada (ch.5) says supramundane consciousness is not regarded as kamma, and the path's result is fruition consciousness (phala), not Nibbāna. Stays English; a correction to the English source is needed.
+- **KM_R_01** doctrinalNote: still English, not checked.
 - **VT_Y_MON** doctrinalNote: the adverting/determining claim is supported by Chandrikava 5-6 (§3f); the "11 mental factors" count is not verified, so the whole note stays English.
 - Vithi steps: the step-level doctrinalNote for VT_Y_MON steps 3–4 and VT_VITHIMUTTA step 1 (citta-number and kamma-location claims).
 - Rupa/kamma/paticca items above are translated, but the claims inside them are still unverified.
