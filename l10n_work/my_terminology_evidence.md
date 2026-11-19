@@ -920,3 +920,104 @@ M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 1
 
 **Process note for the next batch:** check glossary membership by **substring**,
 not exact key. Three silent misses in one module came from exact matching.
+
+---
+
+## 15. Batch 3 (cont.) — module `M3_TINH_HAO_BIEN_HANH` (25 sobhaṇa cetasikas)
+
+`l10n_work/gen/M3_TINH_HAO_BIEN_HANH.json` — new, 7 sections / 20 review cards /
+20 quiz seeds, `translationStatus: draft`. 273 slots.
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2515/4312 slots, 58.3%)   (7 modules merged)
+```
+
+`merge_batch` for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M2_SI_PHAN,
+M3_TINH_HAO_BIEN_HANH, M4_AKUSALA, M5_SOBHANA, M8_NHAN_DUYEN` — **7/17**. Delta
+`2244 → 2515` = **+271** = 273 − 2, same rule as §12.
+
+Structure and text checks pass (ids/counts vs VI, 20 seeds × 3 distinct
+distractors with no `correctAnswer` among them, 0 Vietnamese tone marks, 0
+non-Myanmar fields across the 273 translatable fields). **One `pali` field
+deliberately differs from the source — see below.**
+
+### Two more glossary defects (→ IN4-49)
+
+Found while looking up `Paññindriya`:
+
+1. **`Paññā` → `ပညိန္ဒြေ`** — that string reads *paññ-indri-ya*. It is the
+   rendering of **`Paññindriya`**, filed under the headword **`Paññā`**. `Paññā`
+   (wisdom) should be **ပညာ**, which appears 8× in the shipped catalog but has
+   no glossary row of its own. Note `assets/data/cetasikas.json` gives
+   `CS_PANNA.namePali = "Paññā"` while `content_en.json` names it *"Wisdom
+   faculty"*, so the mis-filing may be deliberate downstream and wrong upstream —
+   either way the two rows disagree with each other.
+
+2. **`Paññindriya` → `ပညာိန္ဒြေ`** — codepoints are
+   `1015 100A 102C 102D 1014 1039 1012 103C 1031`: ပ + ည + **U+102C (AA)** +
+   **U+102D (I)** + န + ္ + ဒ + ြ + ေ. **Two vowel signs stacked on one
+   consonant** — not valid Myanmar orthography for any reading.
+
+   I had copied this string into 16 places in M3 before checking it. Replaced
+   all 16 with the well-formed **ပညိန္ဒြေ**, which *is* in the glossary (under
+   the `Paññā` headword, see defect 1) and reads correctly as *paññindriya*.
+   Copying a malformed string 16 times to honour a broken row would have spread
+   the defect, so I chose accuracy and flagged it instead. **This is a
+   deliberate departure from the glossary column and is the one such case.**
+
+### One Vietnamese leak in the source, not reproduced (→ IN4-53)
+
+`content_vi.json` → `M3_S05` → `TERM_BA_NHAN_THIEN_M3` has
+
+```
+"pali": "Vô tham – Vô sân – Vô si"
+```
+
+The `pali` field of the Vietnamese source holds **Vietnamese**, not Pāḷi. I
+wrote the actual Pāḷi — `Alobha – Adosa – Amoha` — because the brief forbids
+Vietnamese in `my` assets and this field is not a translation target. Verified
+empirically that this does not break anything: the real `merge_module()`
+accepted M3 (it checks section/card/seed/keyTerm **counts and ids** and
+distractor counts, not `pali`), and `merge_batch` reported 7 modules merged.
+
+This is the **only** `pali` value in the five authored modules that differs from
+the source: of 75 `keyTerms.pali` values across M1/M2/M3/M4/M5, **74 match byte
+for byte** and this is the single exception.
+
+### Terms used
+
+**Glossary rows (30+):** `Sobhana` `Saddhā` `Sammāsaddhā` `Sati` `Hiri`
+`Ottappa` `Ahirika` `Anottappa` `Alobha` `Adosa` `Tatramajjhattatā`
+`Passaddhi` `Lahutā` `Mudutā` `Kammaññatā` `Pāguññatā` `Ujukatā` and all twelve
+`Kāya-`/`Citta-` compound rows `Sammāvācā` `Sammākammanto` `Sammā-ājīvo`
+`Viratiyo` `Appamaññā` `Karunā` `Muditā` `Musāvāda` `Mettā`(in-repo 1×), plus
+the compound row
+`Suttamayā – Cintāmayā – Bhāvanāmayā` → **သုတမယ၊ စိန္တာမယ၊ ဘာဝနာမယ ဉာဏ် ၃ ပါး**
+for the three wisdoms.
+
+`ပညာ` for *paññā* is used from in-repo attestation (8×) because, per defect 1
+above, the glossary's `Paññā` row does not actually render *paññā*.
+
+**No attestation — 4 terms, all in `M3_S04` body 2** (the four wrong kinds of
+speech):
+
+| Pāḷi | As written | Note |
+| --- | --- | --- |
+| `Pisuṇāvācā` | ပိသုနဝါစာ | transliteration + gloss "ကွဲပြားစေသော စကား" |
+| `Pharusa-vācā` | ဖရုသဝါစာ | transliteration + gloss "ကြမ်းတမ်းသော စကား" |
+| `Samphappalāpa` | သမ္ဖပ္ပလာပ် | transliteration + gloss "အကျိုးမရှိသော ပြောခြင်း" |
+| `Micchāsaddhā` | မိစ္ဆာသဒ္ဓါ | composed; သဒ္ဓါ attested, မိစ္ဆာ is not |
+
+Same convention as §13/§14 Tier D: *transliteration (Pāḷi — Burmese gloss)*, so
+a reviewer can overrule the transliteration without touching the meaning.
+
+Running total of reviewable terms across the five modules: **13** (9 from
+`M4_AKUSALA`, 4 here). Everything else is glossary- or in-repo-attested.
+
+### Remaining
+
+10 modules, ~1754 slots: M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224
+· M9_SAC_PHAP 223 · M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE
+136 · M12_VO_NHAN 118 · M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114.
