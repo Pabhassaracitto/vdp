@@ -6,9 +6,11 @@ Step names follow the committed VT_NGU_MON_RATLON wording (for example,
 භවාංග චලනය, පංචද්වාරාවජ්ජනය, සම්පටිච්ඡනය, සන්තීරණය, වොට්ඨපනය, ජවන).
 Pāḷi keys ("1".."9") are unchanged.
 
-Not translated (English kept, see docs §8): the doctrinalNote on VT_Y_MON steps 3
-and 4, and on VT_VITHIMUTTA step 1. They make citta-number and kamma-location claims
-that are not verified against a source.
+VT_Y_MON step 3 doctrinalNote (CI_029, 11 cetasikas) checked against Chandrikava 5-9
+and the Abhidhamma tradition (Aggañāṇī booklet, Nārada *Manual of Abhidhamma*) and translated.
+Not translated (English kept, see docs §8): the doctrinalNote on VT_Y_MON step 4,
+and on VT_VITHIMUTTA step 1. They make kamma-location and citta-group claims that
+are not verified against a source.
 
 Status: DRAFT. Not reviewed. Not read by build_full_catalogs.py.
 Source of meaning: English steps in content_en.json.
@@ -66,6 +68,7 @@ SI_VITHI_STEPS = {
         "3": {
             "name": "මනෝද්වාරාවජ්ජනය",
             "description": "මනෝද්වාරය විවර කර, සිත මනෝ අරමුණ වෙත යොමු කරයි; ඒ සමඟම එය තීරණය කරයි (මෙම ක්‍රියාවලියේ තීරණය ලෙස ක්‍රියා කරයි).",
+            "doctrinalNote": "CI_029 මනෝද්වාරාවජ්ජනය ලෙසත්, තීරණය (voṭṭhapana) ලෙසත් ක්‍රියා කරයි. චෛතසික 11ක් සමඟ.",
         },
         "4": {
             "name": "ජවන (Javana)",

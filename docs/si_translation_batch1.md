@@ -69,10 +69,10 @@ Translated from the English fields in `content_en.json` (same status as §3: dra
 - **Paccaya subdivisions:** 25 keys across 9 paccayas, Pāḷi keys unchanged, with `name` and `note` in Sinhala.
 - **Paccaya doctrinalNote:** 24 entries (PC_01–PC_24). PC_11 and PC_15 added after source check (§8).
 - **Paticca examples:** 15 items across 12 paticcas (PD_01–PD_12).
-- **Paticca doctrinalNote:** 7 entries (PD_01, 02, 03, 06, 07, 08, 12).
-- **Rupa doctrinalNote:** 22 entries (all except RP_022). RP_002 added after source check (§8).
+- **Paticca doctrinalNote:** 8 entries (PD_01, 02, 03, 06, 07, 08, 11, 12). PD_11 added after source check (§8).
+- **Rupa doctrinalNote:** 23 entries (all with English text). RP_002 and RP_022 added after source check (§8).
 - **Kamma doctrinalNote:** 14 entries (all except KM_R_01 and KM_R_04).
-- **Vithi doctrinalNote:** 3 entries (all except VT_Y_MON).
+- **Vithi doctrinalNote:** 4 entries (all four vithis). VT_Y_MON added after source check (§8).
 
 Key sets were checked against `content_en.json`. Each missing key is one of the intentional English exclusions in §8.
 
@@ -126,11 +126,11 @@ Counts are English entries with a non-empty field. Checked by script this round;
 |---|---|---|---|---|
 | cittas | 121 | ✅ name (121). shortName (71 entries): English shortName equals name in every case, so the si shortName equals the si name; not yet written to the catalog (§5). | n/a | 🟡 doctrinalNote (121, revised, §3f; committed content_si has the older template). 🟡 examples (12 entries). |
 | cetasikas | 52 | ✅ name, shortName, description (52) | 🟡 208 fields (52 × 4), reviewed §3f | — |
-| rupas | 28 | ✅ name, shortName, description (28) | 🟡 112 fields (28 × 4), reviewed §3f | 🟡 doctrinalNote (22 of 23); ⚪ RP_022 (§8) |
+| rupas | 28 | ✅ name, shortName, description (28) | 🟡 112 fields (28 × 4), reviewed §3f | 🟡 doctrinalNote (23 of 23; RP_002, RP_022 checked, §8) |
 | paccayas | 24 | ✅ name, shortName, definition (24; 14 corrected, §2) | 🟡 paccayaDhamma (23 of 24), 🟡 paccayuppanna (23 of 24); ⚪ PC_11 | 🟡 examples (23 of 24); 🟡 subdivisions (9 of 9); 🟡 doctrinalNote (22 of 24); ⚪ PC_11, PC_15 (§8) |
-| paticcas | 12 | ✅ name, shortName, description (12; 4 corrected, §2) | 🟡 48 fields (12 × 4) | 🟡 examples (12); 🟡 doctrinalNote (7 of 8); ⚪ PD_11 (§8) |
+| paticcas | 12 | ✅ name, shortName, description (12; 4 corrected, §2) | 🟡 48 fields (12 × 4) | 🟡 examples (12); 🟡 doctrinalNote (8 of 8; PD_11 checked, §8) |
 | kammas | 16 | ✅ name, shortName, description (16; 1 corrected) | n/a | 🟡 examples (16 entries); 🟡 doctrinalNote (14 of 16); ⚪ KM_R_01, KM_R_04 (§8) |
-| vithis | 4 | ✅ name, shortName, description (4) | 🟡 arisingCondition, significance (4 each) | 🟡 steps for all four vithis (VT_NGU_MON_RATLON ✅ committed, 11; VT_NGU_MON_LON 9, VT_Y_MON 6, VT_VITHIMUTTA 3 🟡); 🟡 doctrinalNote (3 of 4); ⚪ VT_Y_MON (§8) |
+| vithis | 4 | ✅ name, shortName, description (4) | 🟡 arisingCondition, significance (4 each) | 🟡 steps for all four vithis (VT_NGU_MON_RATLON ✅ committed, 11; VT_NGU_MON_LON 9, VT_Y_MON 6, VT_VITHIMUTTA 3 🟡); 🟡 doctrinalNote (4 of 4; VT_Y_MON checked, §8); step 3 doctrinalNote drafted (VT_Y_MON), steps 4 and VT_VITHIMUTTA 1 English (§8) |
 | studyModules | 17 | ✅ title, description (17) | n/a | 🟡 3 modules drafted: M1_BASICS (`data_priority_si_study_m1.py`; 4 sections, 14 reviewCards, 12 quizSeeds), M2_SI_PHAN (`_m2.py`; 3, 10, 10), M3 (`_m3.py`; 7, 20, 20). ❌ the other 14 modules (Batch 3, not started) |
 
 ## 5. Builder integration (for coordinator; NOT applied)
@@ -217,21 +217,34 @@ Questions:
 - PC_20 simile wording: open source check, see §8.
 - Citta and vithi doctrinalNote sources and the vithi-steps home: structural decisions for the coordinator.
 - Study-module source edition (IN4-45 cites "Sinhala Abhidharmārtha Saṅgraha"): not verified, see §8.
+- Citta shortName (71): the English shortName equals the English name in all 71 cases (checked). The si shortName is therefore the si name, copied with no new wording. This is not a new translation. The builder step is in §5.
 
-## 8. Still English (on purpose)
+## 8. Still English (on purpose) and source checks
 
-Left in English because the English claim is either unsourced in our files or doubtful. Each needs a source check, not a translation decision:
+Left in English because the English claim is either unsourced in our files or doubtful. Each item states what was checked. Sources used: pitaka.lk Chandrikava (Sinhala, online, edition not confirmed); the English Abhidhamma tradition (Ven. Nārada, *Manual of Abhidhamma*; Abhidhammattha Saṅgaha ch.5–6 as reproduced on palikanon.com and budsas.org); SN 12.63 as reproduced on theemptyrobot.com and know2.com. These are secondary or English-language sources, not the Sinhala primary text.
 
-- **PC_11** (paccayaDhamma, paccayuppanna, examples): still English. The doctrinalNote was checked and translated: the post-nascence source (Paṭṭhāna ch.15: 85 cittas, 89 minus 4 arūpa-vipāka) matches English.
-- **PC_15** doctrinalNote: checked and translated. SN 12.63 (Puttamaṃsūpama) is the sutta on the four nutriments.
-- **PD_11** doctrinalNote: a correspondence claim between PD_11 and PD_03.
-- **RP_002** doctrinalNote: checked (Ven. Nārada, Manual of Abhidhamma ch.6: āpo is not tangible) and translated.
-- **RP_022** doctrinalNote: still English. Not verified yet. Its claim (lightness not produced by kamma) needs checking against the Saṅgaha list of causes for lahutā.
-- **KM_R_04** doctrinalNote: English error. Nārada (ch.5) says supramundane consciousness is not regarded as kamma, and the path's result is fruition consciousness (phala), not Nibbāna. Stays English; a correction to the English source is needed.
-- **KM_R_01** doctrinalNote: still English, not checked.
-- **VT_Y_MON** doctrinalNote: the adverting/determining claim is supported by Chandrikava 5-6 (§3f); the "11 mental factors" count is not verified, so the whole note stays English.
-- Vithi steps: the step-level doctrinalNote for VT_Y_MON steps 3–4 and VT_VITHIMUTTA step 1 (citta-number and kamma-location claims).
-- Rupa/kamma/paticca items above are translated, but the claims inside them are still unverified.
+Checked and translated (draft, not reviewed):
+
+- **PC_11** doctrinalNote: post-nascence (pacchājāta) = 85 cittas (89 minus 4 arūpa-vipāka) plus 52 cetasikas, supporting earlier rūpa. English matches. Other PC_11 fields (paccayaDhamma, paccayuppanna, examples) remain English; not yet compared with the source.
+- **PC_15** doctrinalNote: SN 12.63 (Puttamaṃsūpama) is the sutta on the four nutriments. Checked.
+- **RP_002** doctrinalNote: Nārada ch.6: āpo is not tangible (phoṭṭhabba); the other three great elements are. Checked.
+- **RP_022** doctrinalNote: Saṅgaha ch.6 §4 lists the kamma-born groups without lahutā, mudutā, kammaññatā; these come from citta, utu and āhāra. Saṅgaha §31 defines lahutā as physical health. English claim matches. Translated as the English text.
+- **PD_11** doctrinalNote: Visuddhimagga XVII (secondary quotation via tibetanbuddhistencyclopedia.com) names the five future results beginning with consciousness as "birth" (jāti). English matches. Primary Sinhala text not checked.
+- **VT_Y_MON** doctrinalNote (vithi and step 3): Chandrikava 5-9 says manodvārāvajjana does voṭṭhapana. Nārada, *Manual of Abhidhamma* (buddhistelibrary.org) and the Aggañāṇī booklet (abhidhamma.com) give the determining consciousness 11 cetasikas (7 universals + vitakka, vicāra, adhimokkha, vīriya). English "11 mental factors" matches.
+- **VT_VITHIMUTTA**: Chandrikava 5-9 says bhavaṅga, bhavaṅga-calana and bhavaṅga-upaccheda are vīthimutta and vipāka, and that tadārammaṇa is not part of a process. Steps 2–3 match. Gap in English: calana and upaccheda are vīthimutta but are not steps in the English list. This is an English data gap; do not change without a decision.
+
+Still English, not verified or with an English error:
+
+- **KM_R_04** doctrinalNote: English error. Nārada ch.5 says supramundane consciousness is not regarded as kamma, and the path's result is fruition consciousness (phala), not Nibbāna. Stays English. The English source needs correction, not translation.
+- **KM_R_01** doctrinalNote: still English. Partly supported (the 12 akusala are kāmāvacara), but "ripens within woeful planes" is one of several outcomes, so it is not a full match. Needs a source decision.
+- **VT_Y_MON step 4**: "creates mind-kamma directly; verbal and bodily kamma also begin at the mind door". Not checked against a source.
+- **VT_VITHIMUTTA step 1**: the citta-number claims (CI_019/CI_026, CI_027, CI_063–CI_070). Not checked.
+- **PD_02**: "(Cetanā)" stays in Latin inside parentheses, the same convention as "(āsanna)" in VT_VITHIMUTTA. Checked; no fix needed.
+- **Rupa, kamma and paticca items above** are translated, but the claims inside them are only as strong as the sources listed in this section.
+
+Checked by script (this round): 52 cetasika and 28 rupa four-aspect entries. Each has four non-empty Sinhala fields, the key set matches the English IDs, there are no Latin characters outside parentheses, and no field equals the English text. Result: 0 problems. The script is outside the repo and is not committed.
+
+Duplicates (kept): TERM_PANNINDRIYA (M3, one section) and TERM_TU_QUYEN_M3 (M3, another section) carry the same term and meaning with different ids. Not merged, to avoid changing ids that may be referenced.
 
 Not translated yet, outside this batch:
 
