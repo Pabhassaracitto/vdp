@@ -85,6 +85,13 @@ Key sets were checked against `content_en.json`. Each missing key is one of the 
   - Status: template output, a direct rendering of the English sentence. The group and feeling assignments come from the English data and are not re-checked against a source.
 - **Vithi steps (18):** VT_NGU_MON_LON (9), VT_Y_MON (6), VT_VITHIMUTTA (3). Step names reuse the committed VT_NGU_MON_RATLON wording. Unverified; no step-level doctrinalNote for VT_Y_MON 3–4 and VT_VITHIMUTTA 1 (§8).
 
+## 3e. Study module pilot: M1_BASICS (not yet shipped)
+
+- `tool/content/data_priority_si_study_m1.py`: lessonSections (4 sections, 14 keyTerms), reviewCards (14), quizSeeds (12, one-to-one translation of question, correctAnswer, distractors and explanation).
+- Structure, ids, Pāḷi terms and sourceRefs are copied from `content_en.json`, not retyped. Counts and keys were checked.
+- Terms used: the glossary forms where they exist (ඵස්ස, වේදනා, සඤ්ඤා, චේතනා, ඒකග්ගතා, ජීවිතින්ද්‍රිය, මනසිකාර, විතක්ක, විචාර, අධිමොක්ඛ, වීරිය, පීති, ඡන්ද, අඤ්ඤසමාන, සබ්බචිත්තසාධාරණ, පකිණ්ණක). Open items are logged in §7 (ඵස්ස vs ස්පර්ශය).
+- Status: draft, unverified against Sinhala texts. English keeps the source-file notes in sourceRefs.
+
 ## 4. Field coverage (si) — gap inventory
 
 Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ no si value (English fallback)
@@ -98,7 +105,7 @@ Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ n
 | paticcas | 12 | ✅ name, shortName, description (4 corrected, §2) | 🟡 48 fields | ❌ doctrinalNote (12), examples (12) |
 | kammas | 16 | ✅ name, shortName, description (1 corrected) | n/a | 🟡 examples (32 items, 16 entries); ❌ doctrinalNote (16) |
 | vithis | 4 | ✅ name, shortName, description | n/a | 🟡 arisingCondition, significance (4 each); 🟡 steps for all four vithis (VT_NGU_MON_RATLON committed, 11; the other three in `data_priority_si_detail_vithi.py`, 18); ❌ doctrinalNote (4), with a few step notes left in English (§8) |
-| studyModules | 17 | ✅ title, description | n/a | ❌ lessonSections, reviewCards, quizSeeds for all 17 (Batch 3, not started) |
+| studyModules | 17 | ✅ title, description | n/a | 🟡 M1_BASICS pilot (4 lessonSections, 14 reviewCards, 12 quizSeeds) in `data_priority_si_study_m1.py`; the other 16 modules not started (Batch 3) |
 
 ## 5. Builder integration (for coordinator; NOT applied)
 
@@ -198,7 +205,7 @@ Left in English because the English claim is either unsourced in our files or do
 
 Not translated yet, outside this batch:
 
-- All lessonSections / reviewCards / quizSeeds for 17 modules (Batch 3; needs a coherent reviewed batch).
+- lessonSections / reviewCards / quizSeeds for the other 16 modules (Batch 3). M1_BASICS is done as a pilot (§3e).
 - Cittas examples for the 109 cittas that have no English examples (nothing to translate from).
 
 English fallback stays on for si. Nothing is marked reviewed. Terminology questions (§7) are deferred, as agreed.
