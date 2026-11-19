@@ -110,5 +110,349 @@
         "对佛陀之疑列有五点：彼是否真证一切智？其光明是否真能照彻隐微？据说彼观照阿毗达磨时所放六色光是否真实圆满？彼如何以神通降伏外道？彼是否果真具足三十二大人相？"
       ]
     }
+  ],
+  "reviewCards": [
+    {
+      "id": "M4_R01",
+      "front": "不善心共有多少个？如何分类？",
+      "back": "12 个心：8 贪根心（Lobhamūla）、2 瞋根心（Dosamūla）与 2 痴根心（Mohamūla）。"
+    },
+    {
+      "id": "M4_R02",
+      "front": "欲界心共有多少个？分为哪几组？",
+      "back": "54 个心：12 不善心 + 18 无因心 + 24 欲界美心。"
+    },
+    {
+      "id": "M4_R03",
+      "front": "心（Citta）的四相（lakkhaṇādicatukka）是什么？",
+      "back": "特相：了知所缘；作用：引领相应心所；现起：相续不断；近因：名色与所缘。"
+    },
+    {
+      "id": "M4_R04",
+      "front": "生起心识的四因是什么？",
+      "back": "过去业；所缘缘；相应心所；物理依处。"
+    },
+    {
+      "id": "M4_R05",
+      "front": "八贪根心依哪三对相对特征分类？",
+      "back": "喜/舍；邪见相应/不相应；无行/有行 → 2×2×2 = 8。"
+    },
+    {
+      "id": "M4_R06",
+      "front": "“Lobha”（贪）源自哪个词根？",
+      "back": "词根 lub：执着、黏着、渴求或贪爱。"
+    },
+    {
+      "id": "M4_R07",
+      "front": "就造业力量而言，哪些贪根心更强？",
+      "back": "喜俱 > 舍俱；无行 > 有行；邪见相应 > 邪见不相应。"
+    },
+    {
+      "id": "M4_R08",
+      "front": "“Asaṅkhārika”与“Sasaṅkhārika”是什么意思？",
+      "back": "Asaṅkhārika：无行（自发、无需鼓动）。Sasaṅkhārika：有行（经由鼓动或犹豫而起）。"
+    },
+    {
+      "id": "M4_R09",
+      "front": "二瞋根心有何不同？",
+      "back": "两者皆与忧受俱生且与瞋恚相应；唯在无行（自发）与有行（被鼓动）上有所不同。"
+    },
+    {
+      "id": "M4_R10",
+      "front": "生起瞋根心的四因是什么？",
+      "back": "习惯性暴躁性情；缺乏如理省思；缺乏正法学识；常遇不可意所缘。"
+    },
+    {
+      "id": "M4_R11",
+      "front": "二痴根心的名称是什么？",
+      "back": "舍俱疑相应痴根心（vicikicchā）与舍俱掉举相应痴根心（uddhacca）。"
+    },
+    {
+      "id": "M4_R12",
+      "front": "疑（Vicikicchā）具体怀疑什么？",
+      "back": "怀疑佛、法、僧、三学、过去世、未来世、过去与未来以及缘起法。"
+    },
+    {
+      "id": "M4_R13",
+      "front": "生起痴根心的二因是什么？",
+      "back": "不如理作意（ayoniso manasikāra）与潜在诸漏（欲漏、有漏、见漏、无明漏）。"
+    },
+    {
+      "id": "M4_R14",
+      "front": "二痴根心皆与何受俱生？",
+      "back": "两者皆与舍受（upekkhā-sahagata）俱生。"
+    },
+    {
+      "id": "M4_R15",
+      "front": "贪组（Lobha-triad）包含哪些心所？",
+      "back": "3 个：贪（Lobha）、邪见（Diṭṭhi）与慢（Māna）。"
+    },
+    {
+      "id": "M4_R16",
+      "front": "邪见与慢各自生起于哪些心中？",
+      "back": "邪见（Diṭṭhi）：4 个邪见相应贪根心。慢（Māna）：4 个邪见不相应贪根心。"
+    },
+    {
+      "id": "M4_R17",
+      "front": "瞋组（Dosa-tetrad）包含哪些心所？",
+      "back": "4 个：瞋（Dosa）、嫉（Issā）、悭（Macchariya）与恶作（Kukkucca）——唯生起于 2 瞋根心。"
+    },
+    {
+      "id": "M4_R18",
+      "front": "昏沉与睡眠（Thīna-middha）的特相是什么？",
+      "back": "昏沉（Thīna）：心之不堪任与退缩，与精进相反。睡眠（Middha）：心所之迟钝与昏睡。两者唯生起于 5 个有行不善心。"
+    },
+    {
+      "id": "M4_R19",
+      "front": "疑（Vicikicchā）生起于哪个心中？",
+      "back": "唯生起于舍俱疑相应痴根心。"
+    },
+    {
+      "id": "M4_R20",
+      "front": "十四不善心所如何分组？",
+      "back": "5 组：痴组（4）、贪组（3）、瞋组（4）、昏沉睡眠对（2）与疑（1）。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M4_Q01",
+      "type": "mcq",
+      "question": "十二不善心如何分类？",
+      "correctAnswer": "8 贪根 + 2 瞋根 + 2 痴根",
+      "distractors": [
+        "6 贪 + 4 瞋 + 2 痴",
+        "8 贪 + 2 痴 + 2 疑",
+        "4 贪 + 4 瞋 + 4 痴"
+      ],
+      "explanation": "12 不善心包括 8 贪根心、2 瞋根心与 2 痴根心。"
+    },
+    {
+      "id": "M4_Q02",
+      "type": "mcq",
+      "question": "欲界心共有多少个？",
+      "correctAnswer": "54",
+      "distractors": [
+        "12",
+        "24",
+        "121"
+      ],
+      "explanation": "54 欲界心由 12 不善心、18 无因心与 24 欲界美心组成。"
+    },
+    {
+      "id": "M4_Q03",
+      "type": "mcq",
+      "question": "八贪根心依哪三对相对特征区分？",
+      "correctAnswer": "喜/舍 — 邪见相应/不相应 — 无行/有行",
+      "distractors": [
+        "善/不善 — 因/果 — 内/外",
+        "喜/忧 — 智相应/不相应 — 快/慢",
+        "欲界/色界 — 因/果 — 有行/无行"
+      ],
+      "explanation": "8 贪根心依受（喜/舍）、邪见（相应/不相应）与行（无行/有行）变化。"
+    },
+    {
+      "id": "M4_Q04",
+      "type": "mcq",
+      "question": "“Asaṅkhārika”是什么意思？",
+      "correctAnswer": "无行——自发而无需鼓动",
+      "distractors": [
+        "有行——由他人鼓动",
+        "邪见相应",
+        "喜俱"
+      ],
+      "explanation": "Asaṅkhārika 指自发、无需他人或自己鼓动而生起。"
+    },
+    {
+      "id": "M4_Q05",
+      "type": "mcq",
+      "question": "“Lobha”（贪）源自哪个词根？",
+      "correctAnswer": "词根 lub——执着或黏着",
+      "distractors": [
+        "词根 muh——迷惑",
+        "词根 ju——疾行",
+        "词根 rup——坏灭"
+      ],
+      "explanation": "Lobha 来自词根 lub，意为渴求、贪恋或黏着所缘。"
+    },
+    {
+      "id": "M4_Q06",
+      "type": "mcq",
+      "question": "瞋根心与何受俱生？",
+      "correctAnswer": "忧受（domanassa）",
+      "distractors": [
+        "喜受（somanassa）",
+        "舍受（upekkhā）",
+        "身苦受（dukkha）"
+      ],
+      "explanation": "瞋根心恒常与心理不适或忧受（domanassa）俱生。"
+    },
+    {
+      "id": "M4_Q07",
+      "type": "mcq",
+      "question": "瞋根心共有多少个？",
+      "correctAnswer": "2",
+      "distractors": [
+        "1",
+        "4",
+        "8"
+      ],
+      "explanation": "共有 2 个瞋根心：无行与有行，皆与忧受俱生且与瞋恚相应。"
+    },
+    {
+      "id": "M4_Q08",
+      "type": "mcq",
+      "question": "二痴根心皆与何受俱生？",
+      "correctAnswer": "舍受（upekkhā）",
+      "distractors": [
+        "忧受",
+        "喜受",
+        "一喜一舍"
+      ],
+      "explanation": "二痴根心（疑相应与掉举相应）皆与中性受（舍受，upekkhā）俱生。"
+    },
+    {
+      "id": "M4_Q09",
+      "type": "mcq",
+      "question": "哪一个痴根心与疑（Vicikicchā）相应？",
+      "correctAnswer": "舍俱疑相应痴根心",
+      "distractors": [
+        "舍俱掉举相应痴根心",
+        "舍俱贪根心",
+        "忧俱瞋根心"
+      ],
+      "explanation": "疑（vicikicchā）唯与第一痴根心相应。"
+    },
+    {
+      "id": "M4_Q10",
+      "type": "mcq",
+      "question": "生起痴根心的两个主要原因是什么？",
+      "correctAnswer": "不如理作意与潜在诸漏",
+      "distractors": [
+        "习惯性愤怒与不可意境",
+        "过去业与所缘缘",
+        "无惭与无愧"
+      ],
+      "explanation": "痴主要由不正省思（ayoniso manasikāra）在潜在烦恼（诸漏，āsava）支持下生起。"
+    },
+    {
+      "id": "M4_Q11",
+      "type": "mcq",
+      "question": "依阿毗达磨，哪一种贪根心产生更强的业果？",
+      "correctAnswer": "喜俱强于舍俱",
+      "distractors": [
+        "舍俱强于喜俱",
+        "有行强于无行",
+        "邪见不相应强于相应"
+      ],
+      "explanation": "喜俱、无行、邪见相应的心产生较重的不善业。"
+    },
+    {
+      "id": "M4_Q12",
+      "type": "mcq",
+      "question": "心（Citta）的定义性特相（lakkhaṇa）是什么？",
+      "correctAnswer": "了知所缘（vijānana）",
+      "distractors": [
+        "领受所缘",
+        "忆念所缘",
+        "造作行业"
+      ],
+      "explanation": "心的根本特相是了知或觉知所缘（vijānanalakkhaṇaṃ）。"
+    },
+    {
+      "id": "M4_Q13",
+      "type": "mcq",
+      "question": "贪组（Greed-triad）由多少个心所组成？",
+      "correctAnswer": "3——贪、邪见、慢",
+      "distractors": [
+        "4——贪、邪见、慢、嫉",
+        "2——贪、邪见",
+        "1——唯贪"
+      ],
+      "explanation": "贪组（lobha-triad）由贪、邪见与慢组成。"
+    },
+    {
+      "id": "M4_Q14",
+      "type": "mcq",
+      "question": "邪见（Diṭṭhi）生起于哪些心中？",
+      "correctAnswer": "4 个邪见相应贪根心",
+      "distractors": [
+        "4 个邪见不相应贪根心",
+        "2 个瞋根心",
+        "疑相应痴根心"
+      ],
+      "explanation": "邪见唯生起于四个邪见相应（diṭṭhigata-sampayutta）的贪根心。"
+    },
+    {
+      "id": "M4_Q15",
+      "type": "mcq",
+      "question": "慢（Māna）生起于哪些心中？",
+      "correctAnswer": "4 个邪见不相应贪根心",
+      "distractors": [
+        "4 个邪见相应贪根心",
+        "全部 8 个贪根心",
+        "2 个瞋根心"
+      ],
+      "explanation": "慢唯能生起于邪见不相应（diṭṭhigata-vippayutta）的贪根心。"
+    },
+    {
+      "id": "M4_Q16",
+      "type": "mcq",
+      "question": "瞋组（Hatred-tetrad）包含哪些心所？",
+      "correctAnswer": "瞋、嫉、悭、恶作",
+      "distractors": [
+        "瞋、嫉、悭、昏沉",
+        "瞋、疑",
+        "瞋、嫉、悭"
+      ],
+      "explanation": "瞋组（dosa-tetrad）包括瞋、嫉、悭与恶作。"
+    },
+    {
+      "id": "M4_Q17",
+      "type": "mcq",
+      "question": "什么是嫉（Issā）？",
+      "correctAnswer": "于他人之成功与福乐心怀嫉妒与怨恨",
+      "distractors": [
+        "隐匿并守护自身兴盛",
+        "追悔过去恶行",
+        "愤怒与暴躁脾气"
+      ],
+      "explanation": "嫉的特相是嫉妒他人的兴盛与好运。"
+    },
+    {
+      "id": "M4_Q18",
+      "type": "mcq",
+      "question": "什么是悭（Macchariya）？",
+      "correctAnswer": "吝啬——隐匿并拒绝分享自身兴盛",
+      "distractors": [
+        "嫉妒他人成就",
+        "恶意挑拨",
+        "心意昏昧状态"
+      ],
+      "explanation": "悭的特相是隐匿自身成就且不愿分享。"
+    },
+    {
+      "id": "M4_Q19",
+      "type": "mcq",
+      "question": "昏沉（Thīna）直接与哪一个善心所相反？",
+      "correctAnswer": "精进（Vīriya）",
+      "distractors": [
+        "智慧（Paññā）",
+        "正念（Sati）",
+        "信（Saddhā）"
+      ],
+      "explanation": "昏沉是心的迟钝与退缩，直接与精进（Vīriya）的策励特质相反。"
+    },
+    {
+      "id": "M4_Q20",
+      "type": "mcq",
+      "question": "疑（Vicikicchā）生起于哪个心中？",
+      "correctAnswer": "舍俱疑相应痴根心",
+      "distractors": [
+        "掉举相应痴根心",
+        "忧俱瞋根心",
+        "舍俱贪根心"
+      ],
+      "explanation": "疑唯生起于第一痴根心。"
+    }
   ]
 }
