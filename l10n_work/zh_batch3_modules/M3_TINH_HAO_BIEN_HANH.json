@@ -94,5 +94,349 @@
         "慧有三种：闻所成慧（suttamayā paññā），由听闻并摄受他人所说正法而生；思所成慧（cintāmayā paññā），由自身思惟与分析而生；修所成慧（bhāvanāmayā paññā），由禅修、亲证与实修而生。"
       ]
     }
+  ],
+  "reviewCards": [
+    {
+      "id": "M3_R01",
+      "front": "“Sobhana”（美）是什么意思？",
+      "back": "光辉、美妙、清净、善好。Sobhana 象征清净、良善与道德正直。"
+    },
+    {
+      "id": "M3_R02",
+      "front": "美心所（Sobhana cetasika）共有多少个？",
+      "back": "共有 25 个心所，分为 4 组。"
+    },
+    {
+      "id": "M3_R03",
+      "front": "遍一切美心心所（Sobhanasādhāraṇa）有多少个？",
+      "back": "19 个心所。"
+    },
+    {
+      "id": "M3_R04",
+      "front": "十九遍一切美心心所的前四个是什么？",
+      "back": "信（Saddhā）、念（Sati）、惭（Hiri）与愧（Ottappa）。"
+    },
+    {
+      "id": "M3_R05",
+      "front": "十九遍一切美心心所的第 5、6、7 个是什么？",
+      "back": "无贪（Alobha）、无瞋（Adosa）与中舍性（Tatramajjhattatā）。"
+    },
+    {
+      "id": "M3_R06",
+      "front": "六对轻安与练达心所是什么？",
+      "back": "轻安、轻快、柔软、适业、练达与正直——每一对皆分心所聚（kāya）与心识（citta）两侧。"
+    },
+    {
+      "id": "M3_R07",
+      "front": "惭（Hiri）与愧（Ottappa）分别对治哪两个不善心所？",
+      "back": "惭对治无惭（Ahirika）；愧对治无愧（Anottappa）。"
+    },
+    {
+      "id": "M3_R08",
+      "front": "离心所（Viratiyo）包含哪几个心所？",
+      "back": "3 个心所：正语（Sammāvācā）、正业（Sammākammanta）与正命（Sammā-ājīva）。"
+    },
+    {
+      "id": "M3_R09",
+      "front": "什么是身轻安（Kāyapassaddhi）与心轻安（Cittapassaddhi）？",
+      "back": "心所聚（相应心所）的轻安与心识的轻安——六对孪生心所中的第一对。"
+    },
+    {
+      "id": "M3_R10",
+      "front": "十九遍一切美心心所的最后两个是什么？",
+      "back": "身正直性（Kāyujjukatā）与心正直性（Cittujjukatā）。"
+    },
+    {
+      "id": "M3_R11",
+      "front": "二十五美心所的四个分组是什么？",
+      "back": "19 遍一切美心心所 + 3 离心所 + 2 无量心所 + 1 慧根 = 25。"
+    },
+    {
+      "id": "M3_R12",
+      "front": "无量心所（Appamaññā）包含哪几个心所？",
+      "back": "2 个心所：悲（Karuṇā）与随喜（Muditā）。"
+    },
+    {
+      "id": "M3_R13",
+      "front": "正语（Sammāvācā）远离哪四种语恶行？",
+      "back": "妄语（musāvāda）、两舌（pisuṇāvācā）、恶口（pharusavācā）与绮语（samphappalāpa）。"
+    },
+    {
+      "id": "M3_R14",
+      "front": "正业（Sammākammanta）断除哪三种身不善业？",
+      "back": "杀生、偷盗与邪淫。"
+    },
+    {
+      "id": "M3_R15",
+      "front": "什么是正命（Sammā-ājīva）？",
+      "back": "正当的维生与谋生方式——远离以身语恶行来谋生。"
+    },
+    {
+      "id": "M3_R16",
+      "front": "什么是悲（Karuṇā）？",
+      "back": "高尚之心因见他众生受苦而震颤；愿拔除彼等之苦恼与逼迫。"
+    },
+    {
+      "id": "M3_R17",
+      "front": "什么是随喜（Muditā）？",
+      "back": "于他人的快乐与兴盛心生欢喜、随喜赞叹，远离嫉妒。"
+    },
+    {
+      "id": "M3_R18",
+      "front": "慧根（Paññindriya）的特相是什么？",
+      "back": "穿透性的了知与洞察——如实照见究竟法，破除无明黑暗。"
+    },
+    {
+      "id": "M3_R19",
+      "front": "在六对心所中，“身”（Kāya）与“心”（Citta）各指什么？",
+      "back": "Kāya 指心所聚：受、想、行三蕴（相应心所）；Citta 指识蕴（心本身）。"
+    },
+    {
+      "id": "M3_R20",
+      "front": "什么是三善根？",
+      "back": "无贪（Alobha）、无瞋（Adosa）与无痴（Amoha / Paññā）——在美心中俱生，作为一切善法之根。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M3_Q01",
+      "type": "mcq",
+      "question": "遍一切美心心所（Sobhanasādhāraṇa）有多少个？",
+      "correctAnswer": "19",
+      "distractors": [
+        "25",
+        "14",
+        "7"
+      ],
+      "explanation": "共有 19 个遍一切美心心所存在于每一个美心中。"
+    },
+    {
+      "id": "M3_Q02",
+      "type": "mcq",
+      "question": "整个美心所（Sobhana）组共有多少个心所？",
+      "correctAnswer": "25 个，分为 4 组",
+      "distractors": [
+        "19 个，分为 2 组",
+        "14 个，分为 3 组",
+        "52 个，分为 4 组"
+      ],
+      "explanation": "25 个美心所包括：19 遍一切美心心所、3 离心所、2 无量心所与 1 慧根。"
+    },
+    {
+      "id": "M3_Q03",
+      "type": "mcq",
+      "question": "“Sobhana”一词表示什么？",
+      "correctAnswer": "美妙、光辉、良善与清净",
+      "distractors": [
+        "愚痴与昏昧",
+        "遍一切其他心",
+        "顽固执着"
+      ],
+      "explanation": "Sobhana 意为美妙、良善、悦意与光明。"
+    },
+    {
+      "id": "M3_Q04",
+      "type": "mcq",
+      "question": "十九遍一切美心心所之首是哪一个心所？",
+      "correctAnswer": "信（Saddhā）",
+      "distractors": [
+        "念（Sati）",
+        "惭（Hiri）",
+        "无贪（Alobha）"
+      ],
+      "explanation": "信（Saddhā，净信）位列十九遍一切美心心所之首。"
+    },
+    {
+      "id": "M3_Q05",
+      "type": "mcq",
+      "question": "什么是中舍性（Tatramajjhattatā）？",
+      "correctAnswer": "心的平衡与中立不偏",
+      "distractors": [
+        "无瞋",
+        "心轻安",
+        "正念"
+      ],
+      "explanation": "中舍性的特相是令心与心所平稳、不偏不倚地运作。"
+    },
+    {
+      "id": "M3_Q06",
+      "type": "mcq",
+      "question": "离心所（Viratiyo）由多少个心所组成？",
+      "correctAnswer": "3",
+      "distractors": [
+        "2",
+        "4",
+        "19"
+      ],
+      "explanation": "三离心所为正语、正业与正命。"
+    },
+    {
+      "id": "M3_Q07",
+      "type": "mcq",
+      "question": "以下哪一个心所不属于离心所（Viratiyo）？",
+      "correctAnswer": "正念（Sammāsati）",
+      "distractors": [
+        "正语（Sammāvācā）",
+        "正业（Sammākammanta）",
+        "正命（Sammā-ājīva）"
+      ],
+      "explanation": "正念即念（Sati），属于遍一切美心心所，而非离心所。"
+    },
+    {
+      "id": "M3_Q08",
+      "type": "mcq",
+      "question": "身轻快性（Kāyalahutā）与心轻快性（Cittalahutā）是哪一对心所？",
+      "correctAnswer": "心所聚的轻快与心识的轻快",
+      "distractors": [
+        "身与心的轻安",
+        "身与心的柔软",
+        "身与心的正直"
+      ],
+      "explanation": "Lahutā 指轻快或轻盈，对治沉重与迟钝。"
+    },
+    {
+      "id": "M3_Q09",
+      "type": "mcq",
+      "question": "十九遍一切美心心所中有多少对身心孪生心所？",
+      "correctAnswer": "6 对",
+      "distractors": [
+        "3 对",
+        "4 对",
+        "12 对"
+      ],
+      "explanation": "共有 6 对（12 个心所）：轻安、轻快、柔软、适业、练达与正直。"
+    },
+    {
+      "id": "M3_Q10",
+      "type": "mcq",
+      "question": "惭（Hiri）直接与哪一个不善心所相反？",
+      "correctAnswer": "无惭（Ahirika）",
+      "distractors": [
+        "无愧（Anottappa）",
+        "掉举（Uddhacca）",
+        "痴（Moha）"
+      ],
+      "explanation": "惭（道德羞耻心）直接对治无惭（Ahirika）。"
+    },
+    {
+      "id": "M3_Q11",
+      "type": "mcq",
+      "question": "无量心所（Appamaññā）包含多少个心所？",
+      "correctAnswer": "2 个——悲与随喜",
+      "distractors": [
+        "4 个——慈、悲、喜、舍",
+        "3 个——悲、喜、舍",
+        "1 个——唯悲"
+      ],
+      "explanation": "慈即无瞋（adosa），舍即中舍性（tatramajjhattatā）；故无量心所组含 2 个独立心所：悲与随喜。"
+    },
+    {
+      "id": "M3_Q12",
+      "type": "mcq",
+      "question": "慧根（Paññindriya）由多少个心所组成？",
+      "correctAnswer": "1",
+      "distractors": [
+        "2",
+        "3",
+        "19"
+      ],
+      "explanation": "慧根为单个心所：Paññindriya（无痴，amoha）。"
+    },
+    {
+      "id": "M3_Q13",
+      "type": "mcq",
+      "question": "离心所（Viratiyo）属于哪一大类心所？",
+      "correctAnswer": "美心所（Sobhana cetasikas）",
+      "distractors": [
+        "无量心所（Appamaññā）",
+        "遍一切美心心所（Sobhanasādhāraṇa）",
+        "慧根（Paññindriya）"
+      ],
+      "explanation": "离心所是 25 美心所中的一个独立分组。"
+    },
+    {
+      "id": "M3_Q14",
+      "type": "mcq",
+      "question": "正语远离哪四种语恶行？",
+      "correctAnswer": "妄语、两舌、恶口与绮语",
+      "distractors": [
+        "妄语、两舌、恶口与赞叹他人",
+        "说谎、空许、咒骂与呻吟",
+        "妄语、分享正法、恶口与沉默"
+      ],
+      "explanation": "正语远离四种语恶行：musāvāda、pisuṇāvācā、pharusavācā 与 samphappalāpa。"
+    },
+    {
+      "id": "M3_Q15",
+      "type": "mcq",
+      "question": "正业远离哪三种身不善业？",
+      "correctAnswer": "杀生、偷盗与邪淫",
+      "distractors": [
+        "杀生、偷盗与饮酒",
+        "妄语、偷盗与杀生",
+        "杀生、邪见与偷盗"
+      ],
+      "explanation": "正业远离身恶行：杀生（pāṇātipātā）、偷盗（adinnādānā）与邪淫（kāmesumicchācārā）。"
+    },
+    {
+      "id": "M3_Q16",
+      "type": "mcq",
+      "question": "Sammā-ājīva 是哪一个心所？",
+      "correctAnswer": "正命",
+      "distractors": [
+        "正业",
+        "正语",
+        "正精进"
+      ],
+      "explanation": "Sammā-ājīva 即正命心所。"
+    },
+    {
+      "id": "M3_Q17",
+      "type": "mcq",
+      "question": "随喜（Muditā）与悲（Karuṇā）有何不同？",
+      "correctAnswer": "悲以受苦众生为所缘；随喜为他人的成就而欢喜",
+      "distractors": [
+        "悲随喜快乐；随喜哀悼痛苦",
+        "两者皆唯以受苦众生为所缘",
+        "两者皆唯为兴盛众生而欢喜"
+      ],
+      "explanation": "悲（Karuṇā）以受苦众生为所缘，而随喜（Muditā）以兴盛、快乐的众生为所缘。"
+    },
+    {
+      "id": "M3_Q18",
+      "type": "mcq",
+      "question": "慧根（Paññindriya）的特相是什么？",
+      "correctAnswer": "破除无明的穿透性理解",
+      "distractors": [
+        "忆持善所缘而不忘失",
+        "平衡相应心所",
+        "畏避恶行"
+      ],
+      "explanation": "慧根如实照亮诸法实相，摧破痴（moha）的黑暗帷幕。"
+    },
+    {
+      "id": "M3_Q19",
+      "type": "mcq",
+      "question": "身轻快性与心轻快性（Kāyalahutā / Cittalahutā）直接对治哪些不善心所？",
+      "correctAnswer": "昏沉与睡眠（Thīna-middha）",
+      "distractors": [
+        "掉举与疑",
+        "贪与瞋",
+        "邪见与慢"
+      ],
+      "explanation": "轻快性消除昏沉（thīna）与睡眠（middha）的沉重、僵硬与迟钝。"
+    },
+    {
+      "id": "M3_Q20",
+      "type": "mcq",
+      "question": "依修习方式区分，三种智慧是什么？",
+      "correctAnswer": "闻所成慧、思所成慧与修所成慧",
+      "distractors": [
+        "听闻慧、禅定慧与内观慧",
+        "学习慧、实践慧与证悟慧",
+        "初阶慧、中阶慧与究竟慧"
+      ],
+      "explanation": "三种智慧为：闻所成慧（sutamayā paññā）、思所成慧（cintāmayā paññā）与修所成慧（bhāvanāmayā paññā）。"
+    }
   ]
 }
