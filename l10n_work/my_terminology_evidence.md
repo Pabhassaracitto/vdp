@@ -223,7 +223,7 @@ question for the reviewer rather than silently smoothed over.
 | Scope | Reason |
 |---|---|
 | **`rupas` four aspects + `doctrinalNote`** (135 slots) | **No UI call site.** `LocalizedRupaContent` (localized_content.dart:83-88) resolves only `name` and `description`. Translating these would ship text no screen can display. Verified by grepping `lib/features/detail/rupa_detail_sheet.dart` — zero references to `trangThai/phanSu/thanhTuu/nhanGan/doctrinalNote`. |
-| **`kammas` `doctrinalNote` + `examples`** (32 slots) | **No UI call site.** `LocalizedKammaContent` (lines 90-93) resolves only `name` and `description`. |
+| **`kammas` `doctrinalNote` + `examples` + `shortName`** (42 slots: 16 + 25 + 1) | **No UI call site.** `LocalizedKammaContent` (lines 90-95) resolves only `name` and `description`, at lines 92 and 94. Re-measured in §20. |
 | **`VT_NGU_MON_RATLON` steps** | Already authored in `content_my.json` (all 11 steps). Preserved verbatim; **not** re-authored. |
 | **15 of 17 study modules** (M1–M7, M9–M16) | Prioritised complete, source-grounded Nhân Duyên units over partial coverage of all 17, per the brief ("do not trade doctrinal accuracy for coverage"). See §8. |
 | Any field where the Myanmar rendering could not be grounded | none needed — no field was dropped for that reason in this batch; but every **L**-confidence term in §3.2 is a review gate before merge. |
@@ -269,6 +269,8 @@ if loc == "my":
         cetasikas.setdefault(cid, {}).update(extra)
     for cid, ex in dcit_my.CITTA_EXAMPLES_MY.items():
         cittas.setdefault(cid, {})["examples"] = ex
+    for kid, extra in dcit_my.KAMMAS_MY.items():
+        kammas.setdefault(kid, {}).update(extra)
 ```
 
 **This exact snippet has been executed and verified** — see §6, "End-to-end
@@ -495,3 +497,1352 @@ silently fixed. At the base commit `630186d` this checker still passed
 `flutter analyze` and `flutter test` — neither `flutter` nor `dart` is on
 `PATH` in this sandbox. This proposal changes zero Dart code and zero shipped
 asset, but the gates have not been executed here.
+---
+
+## 11. Full gap audit + Batch 3 first module (M1_BASICS)
+
+### Where the remaining slots actually are
+
+`check_content_locale.py` derives the 4312 denominator from the Vietnamese
+source (`expected_slots()`), so the split is fixed:
+
+| Bucket | Slots | Share |
+| -- | -- | -- |
+| `studyModules` | **3075** | 71.3% |
+| entities | 1237 | 28.7% |
+
+Everything left is essentially study modules — 15 of 17 were untranslated.
+
+### The entity gap is mostly missing at the SOURCE, not missing translations
+
+I audited every field the app actually reads (call-site map re-verified against
+`lib/core/localization/localized_content.dart` on current `main`; it is
+unchanged — `rupas` and `kammas` still expose only `name` + `description`).
+115 consumed entity slots were empty. Cross-checking each against **both**
+`content_vi.json` and `content_en.json`:
+
+| Gap | Count | Verdict |
+| -- | -- | -- |
+| `cittas.examples` | 109 | **No source.** `assets/data/cittas.json` carries `examples` for exactly 12/121 cittas (CI_001–CI_012, already translated). EN has the same 12. Nothing to translate. |
+| `vithis.steps.doctrinalNote` | 12 | **No source.** VI is `None` for all 12; EN has 15 of 29, a strict subset of what `my` already carries. Nothing to translate. |
+| `paticcas.doctrinalNote` | 4 | **No source.** PD_04, PD_05, PD_09, PD_10 are `None` in VI and absent in EN. Nothing to translate. |
+| `kammas.name` / `.description` | 2 | **Real gap — fixed.** `KM_R_04`. |
+
+So of 115 empty entity slots, **113 have nothing to translate from**. Filling
+them would mean inventing doctrine, which this brief forbids. They stay absent
+for English fallback. Filling them is a *content authoring* task (IN4-38 /
+IN4-39 territory), not a translation task.
+
+### Why `KM_R_04` was missing, and the glossary fix it implies
+
+Root cause: the glossary headword **`Lokuttara-kamma / Magga-kamma` has an empty
+`my` cell** in `l10n_work/glossary.csv`, so the shared table emits nothing and
+`main`'s catalog dropped the entry (this is the −3 slot delta recorded in §10).
+
+Added as `KAMMAS_MY` in `tool/content/data_priority_my_cittas.py`, built only
+from glossary-attested pieces — `Lokuttara` → လောကုတ္တရာ, `Kamma` → ကံ,
+`Magga citta` → မဂ်စိတ် (hence မဂ်), `Phala citta` → ဖိုလ်စိတ်:
+
+* `name` → **လောကုတ္တရာကံ (မဂ်ကံ)**
+
+**Proposed glossary fill (→ IN4-49):** set the `my` cell of
+`Lokuttara-kamma / Magga-kamma` to `လောကုတ္တရာကံ (မဂ်ကံ)`.
+
+The §5 builder snippet gained one line for this:
+
+```python
+    for kid, extra in dcit_my.KAMMAS_MY.items():
+        kammas.setdefault(kid, {}).update(extra)
+```
+
+### Batch 3 — `M1_BASICS` (7 universal cetasikas), translated in full
+
+`l10n_work/gen/M1_BASICS.json` — 4 sections / 14 review cards / 12 quiz seeds.
+Chosen first because it is the declared prerequisite module ("nền tảng bắt buộc
+trước khi học các module khác") and every term in it is one I had already fixed
+while translating the 52 cetasikas, so no new terminology risk was introduced.
+
+Verified in a throwaway worktree at `main` (`d7b6793`):
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (1742/4312 slots, 40.4%)   (3 modules merged)
+
+check_content_locale.py my --glossary --strict   EXIT 0
+check_content_locale.py --all --quiet            EXIT 0
+check_paccaya_data.py                            EXIT 0
+```
+
+`1594 → 1742` = **+148**: 146 from M1_BASICS (its `title`/`description` were
+already emitted by the builder, so 2 of its 148 slots were pre-filled) plus 2
+from `KM_R_04`.
+
+Structural and integrity checks, all clean:
+
+* ids and counts match `content_vi.json` exactly — sections 4/4, cards 14/14,
+  quiz seeds 12/12, keyTerm ids per section, body paragraph counts 4/5/4/5,
+  distractor counts per seed. The real `merge_module()` accepted it.
+* 12 quiz seeds: no `correctAnswer` among distractors, exactly 3 distractors
+  each, no duplicates, no empty field.
+* **0** Vietnamese tone marks; **0** fields without Myanmar script.
+* 15 glossary headwords used, each matching the glossary `my` cell verbatim:
+  ဖဿ · ဝေဒနာ · သညာ · စေတနာ · ဧကဂ္ဂတာ · ဇီဝိတိန္ဒြေ · မနသိကာရ · ဝိတက် ·
+  ဝိစာရ · အဓိမောက္ခ · ပီတိ · ဆန္ဒ · အညသမာန်း · သဗ္ဗစိတ္တသာဓာရဏ · ပကိဏ်း.
+
+### Remaining after this batch
+
+14 modules, ~2533 slots, largest first: M4_AKUSALA 284 · M3_TINH_HAO_BIEN_HANH
+273 · M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+· M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN
+118 · M14_VO_SAC_GIOI 115 · M5_SOBHANA 114 · M13_SAC_GIOI 114 · M2_SI_PHAN 110.
+
+Note for whoever takes `M10_LO_TRINH`: section **M10_S09** is titled
+*"Vīthimutta — chưa có nguồn trong tài liệu này"* in the Vietnamese source, and
+**M10_S05 does not exist**. That is the open source gap tracked as IN4-53; do
+not invent content for S09.
+
+---
+
+## 12. Batch 3 (cont.) — module `M5_SOBHANA`
+
+`l10n_work/gen/M5_SOBHANA.json` — new, 3 sections / 10 review cards / 10 quiz
+seeds, `translationStatus: draft`. Module id is the filename, matching the
+existing `l10n_work/gen/` convention.
+
+Measured with the real merge pipeline in a throwaway worktree at `d7b6793`:
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (1854/4312 slots, 43.0%)   (4 modules merged)
+```
+
+`merge_batch` reported for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M5_SOBHANA,
+M8_NHAN_DUYEN` — so the real `merge_module()` accepted `M5_SOBHANA`. Catalog now
+**4/17** modules with `lessonSections`.
+
+Per-module net contribution is *field count − 2*, because the builder already
+emits `title` and `description` for every module (verified: `build_catalog('my')`
+returns title=True desc=True sections=0 for all four). Hence M1_BASICS
+148 → **+146** and M5_SOBHANA 114 → **+112** (1742 → 1854).
+
+Verification, all clean:
+
+* ids and counts match `content_vi.json` exactly — sections 3/3, cards 10/10,
+  seeds 10/10, keyTerm ids per section, body paragraph counts 5/5/4, distractor
+  counts per seed.
+* 10 quiz seeds: exactly 3 distractors each, no `correctAnswer` among
+  distractors, no duplicates, no empty field.
+* **0** Vietnamese tone marks and **0** non-Myanmar fields among the 114
+  translatable fields (`id`, `pali`, `translationStatus` excluded — `id` is an
+  invariant identifier and `pali` legitimately holds Latin-script Pāḷi).
+  The same re-run over `M1_BASICS` gives 0/0 across its 148 fields, confirming
+  the figure quoted in §11.
+
+### Terms used, all attested
+
+Every doctrinal term in this module already had a glossary `my` cell or an
+in-repo attestation from the merged batches:
+
+| Pāḷi | Myanmar | Source of attestation |
+| --- | --- | --- |
+| `Sobhana` | သောဘဏ | glossary |
+| `Kāmāvacara` | ကာမာဝစရ | glossary |
+| `Mahākusala citta` | မဟာကုသိုလ်စိတ် | glossary |
+| `Mahāvipāka citta` | မဟာဝိပါက်စိတ် | glossary |
+| `Mahākiriya citta` | မဟာကြိယာစိတ် | glossary |
+| `Ñāṇasampayutta` | ဉာဏသမ္ပယုတ် | glossary |
+| `Ñāṇavippayutta` | ဉာဏဝိပ္ပယုတ် | glossary |
+| `Asaṅkhārika` | အသင်္ခါရိက | glossary |
+| `Sasaṅkhārika` | သသင်္ခါရိက | glossary |
+| `Diṭṭhigatasampayutta` | ဒိဋ္ဌိဂတသမ္ပယုတ် | glossary |
+| `Somanassa-` | သောမနဿ… | in-repo (22 occurrences) |
+| `Upekkhā-` | ဥပေက္ခာ… | in-repo (48 occurrences) |
+
+Three glossary gaps, worked around rather than invented:
+
+* **`arahant` has no glossary row.** Rendered as the composed
+  **အရဟတ္တဖိုလ်ရ ပုဂ္ဂိုလ်** ("a person who has attained Arahatta-phala") from
+  attested pieces only — `Arahatta` → အရဟတ္တ, `Phala` → ဖိုလ်, and ပုဂ္ဂိုလ် for
+  "person". Propose adding `Arahant` → **ရဟန္တာ** (→ IN4-49); if accepted, the
+  module can be shortened to the ordinary term.
+* **`sekha` / `ariya` have no rows.** The source says "bậc thánh hữu học". Rather
+  than coin a term, the three still-in-training noble persons are named
+  explicitly — **သောတာပတ္တိ၊ သကဒါဂါမိ၊ အနာဂါမိ ပုဂ္ဂိုလ်များ** — all three
+  attested in the glossary via their `*-magga` rows. Doctrinally equivalent and
+  more concrete.
+* **`petā` / `tiracchāna` have no rows.** Used ပြေတ and တိရစ္ဆာန်, the standard
+  Burmese for the two apāya; ငရဲ (niraya), နတ် (deva), ဗြဟ္မာ (brahmā) and
+  လူ (manussa) were already in use. Flagging these four for the council rather
+  than leaving the realm list half-English.
+
+### Glossary defect found while working (→ IN4-49)
+
+Four `glossary.csv` rows carry **`sasaṅkhārika` in the Pāḷi column but render it
+as `အသင်္ခါရိက`** — the *a*- prefix form, i.e. the opposite pairing:
+
+```
+Somanassa-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ   -> …ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+Somanassa-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ   -> …ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+Upekkhā-sahagataṃ ñāṇasampayuttaṃ sasaṅkhārikaṃ     -> …ဉာဏသမ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+Upekkhā-sahagataṃ ñāṇavippayuttaṃ sasaṅkhārikaṃ     -> …ဉာဏဝိပ္ပယုတ် အသင်္ခါရိက မဟာကြိယာစိတ်
+```
+
+All four are Mahākiriya rows; the standalone `Asaṅkhārika` / `Sasaṅkhārika` rows
+are correct, and I followed the standalone rows. Whoever owns `glossary.csv`
+should fix these four (→ IN4-49), otherwise the Mahākiriya citta names will be
+wrong in any downstream generation.
+
+### Remaining
+
+13 modules, ~2419 slots. Largest first: M4_AKUSALA 284 · M3_TINH_HAO_BIEN_HANH
+273 · M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+· M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN
+118 · M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114 · M2_SI_PHAN 110.
+
+Note `l10n_work/gen/M6_NGHIEP.json` already exists carrying an `hi` block only —
+whoever takes `M6_NGHIEP` must **append** `my` and leave `hi` byte-identical.
+
+---
+
+## 13. Batch 3 (cont.) — module `M4_AKUSALA` (12 akusala cittas, 14 akusala cetasikas)
+
+`l10n_work/gen/M4_AKUSALA.json` — new, 8 sections / 20 review cards / 20 quiz
+seeds, `translationStatus: draft`. Largest single module in the set (284 slots).
+
+Measured with the real merge pipeline in a throwaway worktree at `51954c2`:
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2136/4312 slots, 49.5%)   (5 modules merged)
+```
+
+`merge_batch` reported for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M4_AKUSALA,
+M5_SOBHANA, M8_NHAN_DUYEN` — the real `merge_module()` accepted it. Catalog now
+**5/17** modules with `lessonSections`.
+
+Delta `1854 → 2136` = **+282** = 284 translatable fields − 2 (the builder
+already emits `title`/`description` for every module, consistent with §12).
+
+Verification, all clean:
+
+* ids and counts match `content_vi.json` exactly — sections 8/8, cards 20/20,
+  seeds 20/20, keyTerm ids per section, body paragraph counts 5/5/5/4/5/10/11/7,
+  distractor counts.
+* **all 27 `pali` values byte-identical to the Vietnamese source** — checked
+  field by field, since `pali` is not translated.
+* 20 quiz seeds: exactly 3 distractors each, no `correctAnswer` among
+  distractors, no duplicates, no empty field.
+* **0** Vietnamese tone marks and **0** non-Myanmar fields across the 284
+  translatable fields (`id` / `pali` / `translationStatus` excluded).
+
+### Terms used — four attestation tiers, from solid to reviewable
+
+**Tier A — glossary `my` cell present (28).** `Citta` `Akusala citta` `Lobha`
+`Dosa` `Moha` `Asaṅkhārika` `Sasaṅkhārika` `Diṭṭhigatasampayutta` `Diṭṭhi`
+`Sakkāyadiṭṭhi` `Māna` `Issā` `Macchariya` `Kukkucca` `Thīna` `Middha`
+`Vicikicchā` `Domanassa` `Paṭigha` `Uddhacca` `Lobhatuka cetasika` `Taṇhā`
+`Upādāna` `Ahirika` `Anottappa` `Vīriya` `Akusala cetasika`
+`Sabbākusalasādhāraṇā`. No judgement calls.
+
+**Tier B — no glossary row, but already in use in the shipped catalog (5).**
+
+| Pāḷi | Myanmar | Occurrences in existing `my` text |
+| --- | --- | --- |
+| `Somanassa` | သောမနဿ | 35 |
+| `Upekkhā` | ဥပေက္ခာ | 56 |
+| `Diṭṭhigatavippayutta` | ဒိဋ္ဌိဂတဝိပ္ပယုတ် | 5 |
+| `Rāga` | ရာဂ | 1 |
+| `Āsava` | အာသဝေါ | 1 |
+
+Reusing these keeps the module consistent with what is already published. `Rāga`
+and `Āsava` are single-occurrence, so they deserve a glossary row.
+
+**Tier C — no glossary row, composed from attested pieces (5).**
+
+| Pāḷi | Myanmar | Basis |
+| --- | --- | --- |
+| `Dosatuka cetasika` | ဒေါသတိက စေတသိက် | exact parallel to glossary `Lobhatuka` → လောဘတိက စေတသိက် |
+| `Micchā diṭṭhi` | မိစ္ဆာဒိဋ္ဌိ | ဒိဋ္ဌိ attested; မိစ္ဆာ has 0 occurrences — **review** |
+| `Ayoniso manasikāra` | အယောနိသော မနသိကာရ | မနသိကာရ attested (§M1_BASICS); အယောနိသော has 0 — **review** |
+| 4 `āsava` | ကာမာသဝေါ / ဘဝါသဝေါ / ဒိဋ္ဌာသဝေါ / အဝိဇ္ဇာသဝေါ | အာသဝေါ attested once |
+| 5 `khandha` | ရူပက္ခန္ဓာ ဝေဒနာက္ခန္ဓာ သညာက္ခန္ဓာ သင်္ခါရက္ခန္ဓာ ဝိညာဏက္ခန္ဓာ | ရူပက္ခန္ဓာ attested 4×, others follow the same pattern |
+
+### Tier D — no attestation at all. **These are the parts to review.**
+
+Eleven Pāḷi terms appear **only in two synonym lists** and nowhere else in the
+module. None has a glossary row and none appears in the shipped catalog. I wrote
+them as `Burmese transliteration (Pāḷi — Burmese gloss)` so that (a) the Pāḷi
+is visible to whoever checks, and (b) the meaning is carried by the descriptive
+gloss rather than by the transliteration being correct. **If the council
+disagrees with any transliteration, only the first token needs changing — the
+gloss and the Pāḷi stay valid.**
+
+`M4_S06` body 3 — synonyms of `Lobha`:
+
+| Pāḷi | As written | Status |
+| --- | --- | --- |
+| `Pema` | ပေမ | transliteration only |
+| `Piya` | ပိယ | transliteration only |
+| `Nandi` | နန္ဒိ | transliteration only |
+
+`M4_S07` body 4 — states associated with `Dosa`:
+
+| Pāḷi | As written | Status |
+| --- | --- | --- |
+| `Soka` | ဆောက | transliteration only |
+| `Parideva` | ပရိဒေဝ | transliteration only |
+| `Hiṃsa` | ဟိံသာ | transliteration only |
+| `Palāsa` | ပလာသ | transliteration only |
+| `Kodha` | ကောဓ | transliteration only |
+| `Bherava` | ဘေရဝ | transliteration only |
+| `Bhaya` | ဘယ | transliteration only |
+
+`M4_S06` body 7 — two fixed wrong views:
+
+| Pāḷi | As written | Status |
+| --- | --- | --- |
+| `Ahetuka-diṭṭhi` | အဟိတ်ကဒိဋ္ဌိ | composed; ဒိဋ္ဌိ attested |
+| `Akiriya-diṭṭhi` | အကိရိယဒိဋ္ဌိ | composed; ဒိဋ္ဌိ attested |
+
+Per the brief these are the candidates for "leave in English": I judged a
+transliteration-plus-gloss to be more useful to a reader than a half-English
+list, but they are flagged here so the council can overrule them wholesale.
+**No doctrinal content was added** — every one of these appears in the
+Vietnamese source with its own gloss, which is what I translated.
+
+Two more judgement calls worth a look:
+
+* **`Dosatuka` (ဒေါသတိက)** — the Vietnamese source says "Sân phần". I formed it
+  by exact parallel with the glossary's `Lobhatuka` → လောဘတိက. If the council
+  prefers a different formation, the change is confined to this one token, which
+  occurs in `M4_S05` body 4, the `TERM_DOSA_NHOM_M4` keyTerm, and the module
+  description.
+* **The 9 `māna`** (`M4_S06` body 9) — the Vietnamese gives a 3×3 matrix
+  ("hơn ỷ hơn" etc.). I rendered it as *standing of self* × *standing of the
+  other* ("သာသူအပေါ် မာန်ထောင်၍ — ငါသာသည်၊ ငါတူသည်၊ ငါနိမ့်သည်"),
+  which is more explicit than a literal transliteration of the matrix but says
+  the same thing. Worth a doctrinal check.
+
+### Remaining
+
+12 modules, ~2137 slots. Largest first: M3_TINH_HAO_BIEN_HANH 273 · M6_NGHIEP
+266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223 ·
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 118
+· M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114 · M2_SI_PHAN 110.
+
+---
+
+## 14. Batch 3 (cont.) — module `M2_SI_PHAN`, plus three corrections to §13
+
+`l10n_work/gen/M2_SI_PHAN.json` — new, 3 sections / 10 review cards / 10 quiz
+seeds, `translationStatus: draft`. This closes the loop opened by `M4_S05`,
+which points at M2 for the four universal akusala cetasikas.
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2244/4312 slots, 52.0%)   (6 modules merged)
+```
+
+`merge_batch` for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M2_SI_PHAN, M4_AKUSALA,
+M5_SOBHANA, M8_NHAN_DUYEN` — **6/17** modules. Delta `2136 → 2244` = **+108** =
+110 fields − 2, again matching the rule in §12.
+
+Verification over **all four** authored modules at once:
+
+| Module | s/c/q | Translatable fields | Structure vs VI | `pali` vs VI | VN marks | Non-Myanmar |
+| --- | --- | --- | --- | --- | --- | --- |
+| `M1_BASICS` | 4/14/12 | 148 | match | match | 0 | 0 |
+| `M2_SI_PHAN` | 3/10/10 | 110 | match | match | 0 | 0 |
+| `M4_AKUSALA` | 8/20/20 | 284 | match | match | 0 | 0 |
+| `M5_SOBHANA` | 3/10/10 | 114 | match | match | 0 | 0 |
+
+### §13 was wrong in three places — corrected here
+
+§13 recorded `Dosatuka` and `Mocatuka` as composed-from-nothing (Tier C) and
+`Soka`/`Parideva` as unattested (Tier D). **All four have glossary rows.** My
+lookup used exact key matching against the `pali` column, which silently skipped
+`Dosatuka cetasika`, `Mocatuka`, and the compound row
+`Soka, Parideva, Dukkha, Domanassa, Upāyāsa`. Re-running with substring matching
+found them.
+
+| Term | I had written | Glossary actually says | Action |
+| --- | --- | --- | --- |
+| `Mocatuka` | မောဟတိက (my own formation) | **မောစတုက္က စေတသိက်** | `M4_AKUSALA`: 6 occurrences replaced |
+| `Dosatuka cetasika` | ဒေါသတိက (my own formation) | **ဒေါသစတုက္က စေတသိက်** | `M4_AKUSALA`: 10 occurrences replaced |
+| `Soka` | ဆောက (transliteration) | **စိုးရိမ်ခြင်း** (descriptive) | `M4_AKUSALA` body: replaced |
+| `Parideva` | ပရိဒေဝ (transliteration) | **ငိုကြွေးခြင်း** (descriptive) | `M4_AKUSALA` body: replaced |
+| `Nāma-khandha` | နာမ်ခန္ဓာ | **နာမက္ခန္ဓာ ၄ ပါး** | `M1_BASICS`: 3 occurrences replaced |
+
+The group names are now မောစတုက္က / လောဘတိက / ဒေါသစတုက္က, exactly as the
+glossary has them. Note the glossary is *itself* uneven here — `Lobhatuka` uses
+တိက while `Dosatuka` and `Mocatuka` use စတုက္က — but the glossary column wins,
+so I followed it rather than regularising.
+
+**Tier D shrinks from 11 to 9.** Still without any attestation, all confined to
+two synonym lists in `M4_AKUSALA`: `Pema` ပေမ, `Piya` ပိယ, `Nandi` နန္ဒိ
+(§S06 body 3); `Hiṃsa` ဟိံသာ, `Palāsa` ပလာသ, `Kodha` ကောဓ, `Bherava` ဘေရဝ,
+`Bhaya` ဘယ (§S07 body 4); plus the composed `အဟိတ်ကဒိဋ္ဌိ` /
+`အကိရိယဒိဋ္ဌိ` (§S06 body 7). Written as *transliteration (Pāḷi — Burmese
+gloss)* so a reviewer can overrule the transliteration without touching the
+meaning. **These remain the only reviewable terms in the four modules.**
+
+Also flagging, not fixing: I render the Thīna group as **ထိနတိက**. There is no
+glossary row for it, and the Vietnamese source only says "Hôn phần", so I formed
+it by parallel with `Lobhatuka` → လောဘတိက. If the council prefers a
+စတုက္က-style name for consistency with the other two groups, the change is
+confined to `M4_AKUSALA` §S05 and its `TERM_THINA_MIDDHA_M4` keyTerm.
+
+### `M2_SI_PHAN` terms
+
+All doctrinal terms attested: `Akusala cetasika` `Moha` `Ahirika` `Anottappa`
+`Uddhacca` `Hiri` `Ottappa` `Jhāna` `Pīti` `Vitakka` `Sabbākusalasādhāraṇā`
+`Mocatuka` from glossary `my` cells; `ရူပက္ခန္ဓာ` (4×) and `သုခ` (12×) in-repo.
+
+Two composed, both flagged:
+
+* **`နီဝရဏ်`** for *triền cái* / `nīvaraṇa` — no glossary row. Standard
+  Burmese; used in `M2_S03` body 4 and `M2_R10`/`M2_Q09`. Propose a glossary row.
+* **`သုခဈာန်အင်္ဂ`** for *chi thiền Lạc* / `sukha-jhānaṅga` — composed from
+  attested သုခ + ဈာန်; `Jhānaṅga` itself has no row. The Vietnamese source's
+  claim that uddhacca opposes the *sukha* jhāna-factor is reproduced as written,
+  not reinterpreted.
+
+### Remaining
+
+11 modules, ~2027 slots. Largest first: M3_TINH_HAO_BIEN_HANH 273 · M6_NGHIEP
+266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223 ·
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 118
+· M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114.
+
+**Process note for the next batch:** check glossary membership by **substring**,
+not exact key. Three silent misses in one module came from exact matching.
+
+---
+
+## 15. Batch 3 (cont.) — module `M3_TINH_HAO_BIEN_HANH` (25 sobhaṇa cetasikas)
+
+`l10n_work/gen/M3_TINH_HAO_BIEN_HANH.json` — new, 7 sections / 20 review cards /
+20 quiz seeds, `translationStatus: draft`. 273 slots.
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2515/4312 slots, 58.3%)   (7 modules merged)
+```
+
+`merge_batch` for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M2_SI_PHAN,
+M3_TINH_HAO_BIEN_HANH, M4_AKUSALA, M5_SOBHANA, M8_NHAN_DUYEN` — **7/17**. Delta
+`2244 → 2515` = **+271** = 273 − 2, same rule as §12.
+
+Structure and text checks pass (ids/counts vs VI, 20 seeds × 3 distinct
+distractors with no `correctAnswer` among them, 0 Vietnamese tone marks, 0
+non-Myanmar fields across the 273 translatable fields). **One `pali` field
+deliberately differs from the source — see below.**
+
+### Two more glossary defects (→ IN4-49)
+
+Found while looking up `Paññindriya`:
+
+1. **`Paññā` → `ပညိန္ဒြေ`** — that string reads *paññ-indri-ya*. It is the
+   rendering of **`Paññindriya`**, filed under the headword **`Paññā`**. `Paññā`
+   (wisdom) should be **ပညာ**, which appears 8× in the shipped catalog but has
+   no glossary row of its own. Note `assets/data/cetasikas.json` gives
+   `CS_PANNA.namePali = "Paññā"` while `content_en.json` names it *"Wisdom
+   faculty"*, so the mis-filing may be deliberate downstream and wrong upstream —
+   either way the two rows disagree with each other.
+
+2. **`Paññindriya` → `ပညာိန္ဒြေ`** — codepoints are
+   `1015 100A 102C 102D 1014 1039 1012 103C 1031`: ပ + ည + **U+102C (AA)** +
+   **U+102D (I)** + န + ္ + ဒ + ြ + ေ. **Two vowel signs stacked on one
+   consonant** — not valid Myanmar orthography for any reading.
+
+   I had copied this string into 16 places in M3 before checking it. Replaced
+   all 16 with the well-formed **ပညိန္ဒြေ**, which *is* in the glossary (under
+   the `Paññā` headword, see defect 1) and reads correctly as *paññindriya*.
+   Copying a malformed string 16 times to honour a broken row would have spread
+   the defect, so I chose accuracy and flagged it instead. **This is a
+   deliberate departure from the glossary column and is the one such case.**
+
+### One Vietnamese leak in the source, not reproduced (→ IN4-53)
+
+`content_vi.json` → `M3_S05` → `TERM_BA_NHAN_THIEN_M3` has
+
+```
+"pali": "Vô tham – Vô sân – Vô si"
+```
+
+The `pali` field of the Vietnamese source holds **Vietnamese**, not Pāḷi. I
+wrote the actual Pāḷi — `Alobha – Adosa – Amoha` — because the brief forbids
+Vietnamese in `my` assets and this field is not a translation target. Verified
+empirically that this does not break anything: the real `merge_module()`
+accepted M3 (it checks section/card/seed/keyTerm **counts and ids** and
+distractor counts, not `pali`), and `merge_batch` reported 7 modules merged.
+
+This is the **only** `pali` value in the five authored modules that differs from
+the source: of 75 `keyTerms.pali` values across M1/M2/M3/M4/M5, **74 match byte
+for byte** and this is the single exception.
+
+### Terms used
+
+**Glossary rows (30+):** `Sobhana` `Saddhā` `Sammāsaddhā` `Sati` `Hiri`
+`Ottappa` `Ahirika` `Anottappa` `Alobha` `Adosa` `Tatramajjhattatā`
+`Passaddhi` `Lahutā` `Mudutā` `Kammaññatā` `Pāguññatā` `Ujukatā` and all twelve
+`Kāya-`/`Citta-` compound rows `Sammāvācā` `Sammākammanto` `Sammā-ājīvo`
+`Viratiyo` `Appamaññā` `Karunā` `Muditā` `Musāvāda` `Mettā`(in-repo 1×), plus
+the compound row
+`Suttamayā – Cintāmayā – Bhāvanāmayā` → **သုတမယ၊ စိန္တာမယ၊ ဘာဝနာမယ ဉာဏ် ၃ ပါး**
+for the three wisdoms.
+
+`ပညာ` for *paññā* is used from in-repo attestation (8×) because, per defect 1
+above, the glossary's `Paññā` row does not actually render *paññā*.
+
+**No attestation — 4 terms, all in `M3_S04` body 2** (the four wrong kinds of
+speech):
+
+| Pāḷi | As written | Note |
+| --- | --- | --- |
+| `Pisuṇāvācā` | ပိသုနဝါစာ | transliteration + gloss "ကွဲပြားစေသော စကား" |
+| `Pharusa-vācā` | ဖရုသဝါစာ | transliteration + gloss "ကြမ်းတမ်းသော စကား" |
+| `Samphappalāpa` | သမ္ဖပ္ပလာပ် | transliteration + gloss "အကျိုးမရှိသော ပြောခြင်း" |
+| `Micchāsaddhā` | မိစ္ဆာသဒ္ဓါ | composed; သဒ္ဓါ attested, မိစ္ဆာ is not |
+
+Same convention as §13/§14 Tier D: *transliteration (Pāḷi — Burmese gloss)*, so
+a reviewer can overrule the transliteration without touching the meaning.
+
+Running total of reviewable terms across the five modules: **13** (9 from
+`M4_AKUSALA`, 4 here). Everything else is glossary- or in-repo-attested.
+
+### Remaining
+
+10 modules, ~1754 slots: M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224
+· M9_SAC_PHAP 223 · M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE
+136 · M12_VO_NHAN 118 · M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114.
+
+### Arithmetic reconciliation
+
+So the numbers can be checked by hand: the 2515 is not just
+`1206 + (my five modules)`. `merge_batch` also merges the two modules already
+on `main`, and those contribute too.
+
+| Module | Fields | Net |
+| --- | --- | --- |
+| `M8_NHAN_DUYEN` *(pre-existing)* | 223 | +221 |
+| `M17_DUYEN_CHI_TIET` *(pre-existing)* | 171 | +169 |
+| `M1_BASICS` | 148 | +146 |
+| `M2_SI_PHAN` | 110 | +108 |
+| `M3_TINH_HAO_BIEN_HANH` | 273 | +271 |
+| `M4_AKUSALA` | 284 | +282 |
+| `M5_SOBHANA` | 114 | +112 |
+| **total** | **1323** | **+1309** |
+
+`1206 + 1309 = 2515`, matching `check_content_locale.py` exactly.
+
+---
+
+## 16. Batch 3 (cont.) — modules `M13_SAC_GIOI` and `M14_VO_SAC_GIOI`
+
+Two new files, taken together because they cover the same territory — the 27
+mahaggata cittas, 15 rūpāvacara + 12 arūpāvacara — and share terminology.
+
+* `l10n_work/gen/M13_SAC_GIOI.json` — 3 sections / 10 cards / 10 seeds, 114 fields.
+* `l10n_work/gen/M14_VO_SAC_GIOI.json` — 3 sections / 10 cards / 10 seeds, 115 fields.
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2740/4312 slots, 63.5%)   (9 modules merged)
+```
+
+`merge_batch` for `my` lists 9 modules; **9/17** now have `lessonSections`. Delta
+`2515 → 2740` = **+225** = (114 − 2) + (115 − 2), consistent with §12.
+
+Structure and text checks pass on both (ids/counts vs VI, 20 seeds × 3 distinct
+distractors, 0 Vietnamese tone marks, 0 non-Myanmar fields across 229
+translatable fields, all `pali` values byte-identical to the source).
+
+### One more glossary inconsistency
+
+`Anāgāmi` has **two conflicting glossary renderings**:
+
+| Row | `my` |
+| --- | --- |
+| `Anāgāmi` (standalone) | **အနာဂါမ်** |
+| `Anāgāmi-magga-{paṭhama…catuttha}-jhāna-cittaṃ` (5 rows) | **အနာဂါမိ**မဂ်စိတ် |
+
+I used **အနာဂါမိ**, matching the five compound rows and the shipped `my` catalog.
+Flagging the standalone row for IN4-49 rather than introducing a second spelling.
+
+*(Count corrected in §17: I originally wrote "13 occurrences already in the
+shipped `my` catalog (including `M4_AKUSALA`)". Both halves were wrong — the
+shipped `content_my.json` at `286c41d` has **0** study modules with sections, so
+no module contributed anything, and the true count is **10**, all of them in the
+`cittas` catalog: the five `Anāgāmi-magga` cittas `CI_116`–`CI_120` and the five
+`Anāgāmi-phala` cittas `CI_136`–`CI_140`. The "13" was a string count over
+`content_my.json` **plus** the not-yet-committed `gen/` files.)*
+
+### Terms used
+
+**Glossary rows:** `Mahaggata` → မဟဂ္ဂုတ် / `Mahaggatacitta` → မဟဂ္ဂုတ်စိတ် ·
+`Rūpāvacara` → ရူပါဝစရ · `Arūpāvacara` → အရူပါဝစရ ·
+`Arūpāvacara-kiriyā` → အရူပါဝစရကြိယာ · `Jhāna` → ဈာန် · `Ekaggatā` → ဧကဂ္ဂတာ ·
+`Vicāra` → ဝိစာရ · `Vitakka`/`Pīti` (M1_BASICS rows) · `Abhiññā` → အဘိညာဉ် ·
+`Nirodha-samāpatti` → နိရောဓသမာပတ် · `Āyatana` → အာယတန · and all four arūpa
+āyatana rows (`Ākāsānañcāyatana`, `Viññāṇañcāyatana`, `Ākiñcaññāyatana`,
+`Nevasaññā-nāsaññāyatana`) · `Bhavaṅga` → ဘဝင်စိတ် ·
+`Paṭisandhi viññāṇa` → ပဋိသန္ဓေဝိညာဏ် · `Rūpāvacarakusala` /
+`Arūpāvacarakusala` for the kusala group names.
+
+**In-repo attestation:** `စုတိ` (2×) for *cuti*, `ဝိပဿနာ` (1×) for *vipassanā*,
+`သုခ` (16×), `ဗြဟ္မာ` (5×).
+
+**No attestation — flagged for the council (4 terms):**
+
+| Pāḷi | As written | Where |
+| --- | --- | --- |
+| `Kasina` | ကသိုဏ် | `M14_S02` body 1, `M14_R04` |
+| `Samatha` | သမထ | `M13_S03` title/body, `M13_R10` |
+| `Dibbacakkhu` / `Pubbenivāsa` / `Dibbasota` / `Iddhividha` / `Cetopariya` | ဒိဗ္ဗစက္ခု / ပုဗ္ဗေနိဝါသ / ဒိဗ္ဗသောတ / ဣဒ္ဓိဝိဓ / စေတောပရိယ | `M13_S03` body 3, `M13_R10`, `M13_Q09` |
+| `Anāgāmi` (see inconsistency above) | အနာဂါမိ | `M13_S03` body 5, `M13_Q10` |
+
+The five abhiññā names are written as *Burmese (Pāḷi — Burmese gloss)*, the
+convention from §13–§15, so the meaning does not depend on the transliteration.
+`ကသိုဏ်` and `သမထ` are the standard Burmese forms but have no glossary row and no
+in-repo occurrence — propose adding both.
+
+Running total of reviewable terms across the seven authored modules: **21**
+(9 from M4 per §14, 4 from M3 per §15, 8 here — `Kasina`, `Samatha`, the five
+abhiññā names, and `Anāgāmi`).
+
+### Remaining — counted with the tool's own `count_slots`
+
+I first wrote "~1529" here by hand and it was wrong. Recounting with
+`check_content_locale.count_slots` imported directly (not re-implemented) gives
+**1523 slots across 8 modules**. The earlier per-module weights quoted in §11–§15
+were already produced by this method and are confirmed correct:
+
+```
+M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 118
+= 1523
+```
+
+`count_slots` over all 17 modules returns **3075**, matching the `studyModules`
+share of the 4312 denominator recorded in §11. Note `STRUCTURAL_KEYS` excludes
+`id`, `pali`, **`type`**, **`sourceRefs`** and `translationStatus` — my own
+field counter had been omitting `type` and `sourceRefs`, which is why a naive
+recount overshoots (it gave 2102 for the same 8 modules). Use the tool's
+function.
+
+---
+
+## 17. Batch 3 (cont.) — modules `M12_VO_NHAN` + `M7_SIEU_THE`, and a correction to §16
+
+Two more modules translated in full. Coverage after this commit:
+
+```
+baseline (HEAD, assets untouched)      714/4312  (16.6%)
++ §5 builder overlay, my only         1206/4312  (28.0%)   7a0dcdcd5d740aec, idempotent 2×
++ merge_batch.py l10n_work/gen        2990/4312  (69.3%)   my: merged 11 module(s)
+                                                           hi: merged 2 module(s)  (pre-existing)
+catalog studyModules with sections    11 / 17
+```
+
+### §16 claimed a glossary hit I had not actually used — corrected here
+
+§16 lists `Bhavaṅga → ဘဝင်စိတ်` among the "glossary hits used" for M13/M14.
+**That claim was false.** The glossary's only `Bhavaṅga` row is:
+
+```
+Bhavaṅga  ->  ဘဝင်စိတ်
+```
+
+but `M13_SAC_GIOI.json` carried `ဘဝင်္ဂ` 1× and `M14_VO_SAC_GIOI.json` 3×
+(all in the paṭisandhi / bhavaṅga / cuti triad). `ဘဝင်္ဂ` is the plain Pāḷi
+transliteration; the glossary column is the Burmese compound ဘဝင်စိတ်, and the
+shipped `content_my.json` uses that form 3× (and `ဘဝင်္ဂ` 0×). Both files were
+committed with the deviation in `286c41d`.
+
+Fixed in this commit — all 4 occurrences → `ဘဝင်စိတ်`. `M12_VO_NHAN` had the same
+error twice (`ဘဝင်္ဂစိတ်`, `ဘဝင်္ဂစိတ်စဉ်`) and was corrected **before** it was
+ever committed. After the fix, `ဘဝင်္ဂ` occurs **0** times in the merged catalog.
+
+Lesson: "glossary row exists" is not "glossary row was used". The check has to be
+a string comparison against the row's `my` cell, run over the delivered file — not
+a recollection while writing.
+
+### Glossary rows actually used (Tier A, verified by substring scan)
+
+`M12_VO_NHAN` — the module's core vocabulary is fully glossary-attested:
+
+| Pāḷi headword | `my` column |
+| --- | --- |
+| `Ahetuka` | အဟိတ် |
+| `Akusala-vipāka ahetuka` | အကုသလဝိပါက် အဟိတ်စိတ် |
+| `Kusala-vipāka ahetuka` | ကုသလဝိပါက် အဟိတ်စိတ် |
+| `Sampaṭicchana` | သမ္ပဋိစ္ဆိုင်းစိတ် |
+| `Santīraṇa` | သန္တီရဏစိတ် |
+| `Pañcadvārāvajjana` | ပဉ္စဒွါရာဝဇ္ဇန်း |
+| `Manodvārāvajjana` | မနောဒွါရာဝဇ္ဇန်း |
+| `Hasituppāda` | ဟသိတုပ္ပါဒ် |
+| `Nānākālika hetu` | နာနာက္ခဏိက ကမ္မပစ္စည်း (I use the segment နာနာက္ခဏိက — Tier C) |
+
+`M7_SIEU_THE`:
+
+| Pāḷi headword | `my` column |
+| --- | --- |
+| `Lokuttara` / `Lokuttaracitta` | လောကုတ္တရာ / လောကုတ္တရာစိတ် |
+| `Magga citta` | မဂ်စိတ် |
+| `Sotāpatti` / `Sotāpattimagga` | သောတာပတ္တိ / သောတာပတ္တိမဂ် |
+| `Arahatta` / `Arahattamagga` | အရဟတ္တ / အရဟတ္တမဂ် |
+| `Sīlabbataparāmāsa` | သီလဗ္ဗတပရာမာသ |
+| `Sakkāyadiṭṭhi` | သက္ကာယဒိဋ္ဌိ |
+| `Vicikicchā` | ဝိစိကိစ္ဆာ |
+| `Sammā-vācā` / `Sammā-kammanta` / `Sammā-ājīva` | သမ္မာဝါစာ / သမ္မာကမ္မန္တ / သမ္မာအာဇီဝ |
+
+### Second instance of the `Anāgāmi` defect: `Sakadāgāmi`
+
+The §16 `Anāgāmi` finding is not isolated. `Sakadāgāmi` has the **same** conflict:
+
+```
+Sakadāgāmi                                 -> သကဒါဂါမ်          (standalone row)
+Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ      -> ပထမဈာန် သကဒါဂါမိမဂ်စိတ်
+… and 4 further magga rows, all သကဒါဂါမိ
+```
+
+In the shipped `content_my.json` at `286c41d`: `သကဒါဂါမ်` = **0** occurrences,
+`သကဒါဂါမိ` = **10** — the five `Sakadāgāmi-magga` cittas `CI_111`–`CI_115` and
+the five `Sakadāgāmi-phala` cittas `CI_131`–`CI_135`, one hit in `name` each.
+(The shipped catalog at this commit has **0** study modules with sections, so
+every occurrence is entity content, none of it mine.) So the compound rows and
+the shipped catalog agree on `…ာမိ`; the standalone row is the outlier. I used
+`သကဒါဂါမိ` and `သကဒါဂါမိမဂ်စိတ်` throughout `M7_SIEU_THE`, i.e. the attested
+form, and flag the row to PSRC-49 alongside the `Anāgāmi` item. Same
+recommendation: make the standalone rows agree with the five magga rows.
+
+*Measurement note: my first count here said 13, for both `Sakadāgāmi` and the
+§16 `Anāgāmi` figure. Both came from scanning `content_my.json` concatenated
+with the `gen/` directory, which at that moment held three further occurrences
+from my own uncommitted `M7_SIEU_THE.json`. Count the shipped catalog alone.*
+
+### Terms composed by me — for council review (Tier C / Tier D)
+
+**Tier D — no glossary row and no prior in-repo occurrence (0 in shipped
+`content_my.json`):**
+
+| Pāḷi | As written | Where |
+| --- | --- | --- |
+| `Maggaṅga` | မဂ်အင်္ဂါ | `M7_S02` body 4, `M7_S03` body 1, `M7_R06`, `M7_Q05` |
+| `Sammā-diṭṭhi` | သမ္မာဒိဋ္ဌိ | `M7_S02` body 4 |
+| `Sammā-saṅkappa` | သမ္မာသင်္ကပ္ပ | `M7_S02` body 4 |
+| `Sammā-vāyāma` | သမ္မာဝါယာမ | `M7_S02` body 4 |
+| `Sammā-sati` | သမ္မာသတိ | `M7_S02` body 4 |
+| `Sammā-samādhi` | သမ္မာသမာဓိ | `M7_S02` body 4 |
+
+All six sit in one place: the enumeration of the noble eightfold path in
+`M7_S02` body 4 (and its echoes in `M7_S03`/`M7_R06`/`M7_Q05`). The glossary has
+rows for `Sammā-vācā`, `Sammā-kammanta` and `Sammā-ājīva` but **none** for the
+other five, so the set as shipped is three attested forms and five composed ones.
+A single council decision covering the `Sammā-` prefix settles all six; the
+three existing rows already show the pattern (Pāḷi stem + Burmese transcription,
+no gloss).
+
+**Tier C — no standalone row, but the segment is attested inside a glossary
+compound or in the shipped catalog:** `Āvajjana → အာဝဇ္ဇန်း` (inside
+`Pañcadvārāvajjana`/`Manodvārāvajjana`) · `Kiriyā → ကြိယာ` (inside
+`Arūpāvacara-kiriyā`) · `Nibbāna → နိဗ္ဗာန်` (shipped 2×, no row) ·
+`Nānākālika → နာနာက္ခဏိက` (inside `Nānākālika hetu`).
+
+Running total of reviewable terms across the nine modules I have authored:
+**28** — 9 from M4 (§14), 4 from M3 (§15), 8 from M13/M14 (§16), and here 6
+Tier-D `Sammā-`/`Maggaṅga` forms plus the `Sakadāgāmi` conflict.
+
+### No doctrinal content was added
+
+Every body paragraph, card and seed in both modules renders a Vietnamese source
+string that already exists in `content_vi.json`. The integrity pass confirms it
+structurally: for all nine of my modules, section/card/seed counts and **ids**
+match the VI source exactly, every `keyTerms[i].pali` is byte-identical to the VI
+source (`pali-diff = 0` for M12 and M7), each of the 10 + 12 new seeds has three
+distinct distractors none of which equals `correctAnswer`, and there are **0**
+Vietnamese tone marks and **0** non-Myanmar leaf strings across 1412 delivered
+leaves:
+
+```
+M1  4/14/12  148   M2  3/10/10  110   M3  7/20/20  273   M4  8/20/20  284
+M5  3/10/10  114   M12 4/10/10  118   M7  3/12/12  136   M13 3/10/10  114
+M14 3/10/10  115                                     TOTAL 1412   ALL OK
+```
+
+### Arithmetic reconciliation
+
+`count_slots` over the 11 merged modules returns **1806** VI slots. The builder
+emits `title` + `description` for each module, so the merge adds
+`1806 − 2×11 = 1784`, and `1206 + 1784 = 2990` — exact. This is the same
+"fields − 2 per module" rule reconciled in §16, now confirmed over 11 modules.
+
+### Remaining — recounted with the tool's own `count_slots`
+
+§16's figure of **1523 across 8 modules** stands. Subtracting M7 (136) and M12
+(118) leaves **1269 across 6 modules**:
+
+```
+M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 = 1269
+```
+
+`count_slots` over all 17 modules returns **3075** again; `done` total **1806**;
+`TODO` total **1269**. Note for the next batch: `l10n_work/gen/M6_NGHIEP.json`
+contains **only an `hi` block** — it must be read-modified, never overwritten.
+
+### Gates run on this commit
+
+```
+python3 tool/content/check_content_locale.py my --glossary --strict   EXIT 0   (2990/4312, 69.3%)
+python3 tool/content/check_content_locale.py --all --quiet            EXIT 0
+python3 tool/check_paccaya_data.py                                    EXIT 0   (24/24, 52 links)
+builder rebuild 2×                                                    identical (7a0dcdcd5d740aec)
+content_hi.json Myanmar-script runs after merge_batch                 0
+```
+
+Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter
+SDK on `PATH`. No Dart file and no shipped asset is touched by this commit;
+CI runs both on the branch.
+
+---
+
+## 18. Batch 3 (cont.) — `M11_BIET_CANH` + `M15_TAM_SO_PHOI_HOP`, and a glossary-conformance check that finally works
+
+Two more modules translated in full:
+
+| Module | s/c/q | Slots | Subject |
+| --- | --- | --- | --- |
+| `M11_BIET_CANH` | 5/12/12 | 151 | the 6 pakiṇṇaka cetasikas |
+| `M15_TAM_SO_PHOI_HOP` | 6/12/12 | 171 | how the 52 cetasikas combine into each citta |
+
+```
+baseline (HEAD ad48764)                714/4312  (16.6%)
++ §5 builder overlay, my only         1206/4312  (28.0%)   7a0dcdcd5d740aec
++ merge_batch.py l10n_work/gen        3308/4312  (76.7%)   my: merged 13 module(s)
+catalog studyModules with sections    13 / 17
+```
+
+Reconciles exactly: `count_slots` over the 13 merged modules = **2128**; the builder
+emits `title` + `description` per module, so `1206 + (2128 − 26) = 3308`.
+
+### The check that §17 said was needed — written, and it immediately found 12 real defects
+
+§17 concluded that "a glossary row exists" is not "the glossary row was used", and
+that the check has to be a string comparison over the delivered file. So I wrote it:
+for every `keyTerms[i]` in every module, look up `pali` as an **exact key** in
+`glossary.csv` and assert the row's `my` cell appears **inside that keyTerm's `term`
+field**. First version used substring-search over the whole file — that gives false
+positives (e.g. `စေတသိက် ၅၂ ပါး` was "found" in M15 only because the module
+`description` happens to contain it). Scoping the comparison to the `term` field
+found **16 mismatches across 8 modules**. Four are the documented deviations
+(`Paññindriya` ×2, `Sakadāgāmi`, `Anāgāmi`). The other **12 were real drift and are
+fixed in this commit**:
+
+| Module | keyTerm | Was | Now (glossary) |
+| --- | --- | --- | --- |
+| `M12_VO_NHAN` | `Nānākālika hetu` | နာနာက္ခဏိက ဟိတ် | နာနာက္ခဏိက ကမ္မပစ္စည်း |
+| `M15_…` | `—` (total cetasikas) | စုစုပေါင်း စေတသိက်အရေအတွက် | စေတသိက် ၅၂ ပါး |
+| `M17_…` | `Viññāṇapaccayā nāmarūpaṁ` | descriptive gloss | ဝိညာဏပစ္စယာ နာမရူပံ |
+| `M17_…` | `Vedanāpaccayā taṇhā` | descriptive gloss | ဝေဒနာပစ္စယာ တဏှာ |
+| `M17_…` | `Jāti (4)` | **ဇာတိ ၄ မျိုး** | **ယောနိ ၄ ပါး** |
+| `M17_…` | `Soka, Parideva, …` | ` – ` separators | `၊ ` separators |
+| `M3_…` | `Viratiyo` | ဝိရတီ | ဝိရတီ ၃ ပါး |
+| `M3_…` | `Kāya – Citta` | ကာယ – စိတ္တ | ကာယနှင့် စိတ္တ |
+| `M3_…` | `Suttamayā – Cintāmayā – Bhāvanāmayā` | ပညာ ၃ ပါး (…) | သုတမယ၊ စိန္တာမယ၊ ဘာဝနာမယ ဉာဏ် ၃ ပါး |
+| `M4_AKUSALA` | `Ayoniso manasikāra` | with a space | အယောနိသောမနသိကာရ |
+| `M4_AKUSALA` | `Thīna + Middha` | ထိနတိက (၂) | ထိနနှင့် မိဒ္ဓ (၂) |
+| `M8_NHAN_DUYEN` | `Dve mūlāni` | မူလနှစ်ပါး | မူလနှစ်ပါး (အဝိဇ္ဇာနှင့် တဏှာ) |
+
+**One of these was a genuine accuracy error, not cosmetic.** `Jāti (4)` renders the
+four ways of birth — `aṇḍaja`, `jalābuja`, `saṃsedaja`, `opapātika` — which in
+Burmese Abhidhamma usage are the **ယောနိ ၄ ပါး**, set against **ခန္ဓာဇာတိ ၃ မျိုး**
+(pañca-/catu-/eka-vokāra). My `ဇာတိ ၄ မျိုး` collapsed that contrast. Fixed in the
+keyTerm *and* in all three body/card sites in `M17`.
+
+### The blind spot in substring scanning — and why it cost me a term
+
+`glossary.csv` **does** have a row `Sabbākusalasādhāraṇā → သဗ္ဗာကုသလသာဓာရဏ`. My
+substring scan for `Sabbākusalasādhāraṇa` returned `NONE`, because the row's headword
+ends in `…ṇā` (macron) and my query ended in `…ṇa` — `sabbākusalasādhāraṇa` is not a
+substring of `sabbākusalasādhāraṇā`. So I composed `အကုသလသာဓာရဏ` from the
+`Sabbacittasādhāraṇa` pattern and reported it as Tier D. The exact-key lookup found
+it in one pass. Fixed in `M15`.
+
+This supersedes the §12/§14 advice to "substring-scan `pali`". Substring scanning
+catches comma-joined and compound rows, which exact lookup misses — but it also
+silently misses **diacritic variants**. The right procedure is both: exact-key
+lookup over the keyTerms' own `pali` values for conformance, *and* substring scanning
+when hunting for a term that may be buried inside a longer headword. Both must be
+NFC-normalised.
+
+### Two process errors this turn, both caught and reverted before commit
+
+**1. Re-serialising a file to change one string.** I loaded `M8`/`M17` with
+`json.load`, edited, and wrote back with `json.dump(…, indent=2)`. The content was
+correct but the whole file was re-formatted — `git diff` showed **751 lines** changed
+in `M17` and 38 in `M8` for four and one string edits. Reverted; re-did it as a
+scoped textual replacement. Final diff: `M17` 14 lines, `M8` 2 lines.
+
+**2. A regex that walked into the wrong locale — and wrote Myanmar into `hi`.**
+`M17_DUYEN_CHI_TIET.json` holds both an `hi` and a `my` block, and `hi` comes first.
+My first fix searched forward from `"id": "TERM_…"` for the next `"term":` — which
+belongs to the **Hindi** copy. It replaced four Hindi values with Myanmar text, a
+direct breach of the `my`-only constraint. Caught only because the printed `was:`
+values came back in Devanagari. Reverted and re-done with a locale-scoped search
+(`s.index('\n  "my": {')` first) plus an assertion that the value being replaced is
+Myanmar script. Verified afterwards: the `hi` block is **byte-identical to `HEAD`**
+(`json.dumps(sort_keys=True)` comparison), and the merged `content_hi.json` contains
+**0** Myanmar-script runs.
+
+The lesson generalises: any file under `l10n_work/gen/` may be multi-locale. Never
+edit one by whole-file re-serialisation, and never locate a field by forward search
+without first scoping to the locale block.
+
+### Terms for council review
+
+**Tier D from `M11`** — no glossary row, 0 occurrences in the shipped catalog:
+`Viriyabala` ဝီရိယဗလ · `Vīriya-sambojjhaṅga` ဝီရိယသမ္ဗောဇ္ဈင် · the five pīti
+degrees `Khuddikā` ခုဒ္ဒိကာပီတိ · `Khaṇikā` ခဏိကာပီတိ · `Okkantikā`
+အောက္ကန္တိကာပီတိ · `Ubbegā` ဥဗ္ဗေကာပီတိ · `Pharaṇā` ဖရဏာပီတိ · the three
+chanda kinds `Kāmacchanda` ကာမစ္ဆန္ဒ · `Dhammacchanda` ဓမ္မစ္ဆန္ဒ · `Kiriyāchanda`
+ကြိယာစ္ဆန္ဒ. Each is written *Burmese (Pāḷi)* with the meaning carried by the
+surrounding sentence, so an overruling decision changes one token.
+
+**Tier C:** `Viriyindriya → ဝီရိယိန္ဒြေ` (no row of its own, but the `-indriya`
+pattern is attested by `Jīvitindriya → ဇီဝိတိန္ဒြေ`).
+
+**`ထိနတိက` stays, deliberately.** It appears 11× in M4/M15 body and card text as the
+grouping name in a series — `မောစတုက္က ၄၊ လောဘတိက ၃၊ ဒေါသစတုက္က ၄၊ ထိနတိက ၂၊
+ဝိစိကိစ္ဆာ ၁`. That `-တိက` / `-စတုက္က` pattern *is* the glossary's own convention
+(`Mocatuka → မောစတုက္က`, `Dosatuka cetasika → ဒေါသစတုက္က`), so it is a parallel
+construction rather than an invention; every occurrence is glossed `(ထိန၊ မိဒ္ဓ)`.
+The pair-name keyTerm now carries the glossary form `ထိနနှင့် မိဒ္ဓ`.
+
+**Tier A, all M11/M15 core vocabulary glossary-attested:** `Pakiṇṇaka → ပကိဏ်း` ·
+`Aññasamāna → အညသမာန်း` · `Sabbacittasādhāraṇa → သဗ္ဗစိတ္တသာဓာရဏ` · `Vitakka →
+ဝိတက်` · `Vicāra → ဝိစာရ` · `Adhimokkha → အဓိမောက္ခ` · `Vīriya → ဝီရိယ` ·
+`Sammāpadhāna → သမ္မပ္ပဓာန် ၄ ပါး` · `Pīti → ပီတိ` · `Chanda → ဆန္ဒ` ·
+`Cetasikasaṅgaha → စေတသိက်သင်္ဂဟ` · `Sabbākusalasādhāraṇā → သဗ္ဗာကုသလသာဓာရဏ` ·
+`Paramatthasacca → ပရမတ္ထသစ္စာ` · `Nāma-khandha → နာမက္ခန္ဓာ ၄ ပါး` · `Lobhamūla →
+လောဘမူစိတ်` · `Dosamūla → ဒေါသမူစိတ်` · `Dvipañcaviññāṇa → ဒွိပဉ္စဝိညာဏ် ၁၀` ·
+`Hasanacitta → ဟသိတုပ္ပါဒ်စိတ်` · `Mahākusala → မဟာကုသိုလ်` · `Mahaggatacitta →
+မဟဂ္ဂုတ်စိတ်` · `Lokuttaracitta → လောကုတ္တရာစိတ်` · `Viratiyo → ဝိရတီ ၃ ပါး` ·
+`Appamaññā → အပ္ပမညာ` · `Karuṇā → ကရုဏာ` · `Muditā → မုဒိတာ`.
+
+Running total of reviewable terms: **38** (28 through `M7_SIEU_THE` per §17, plus
+the 10 Tier-D items above).
+
+### Integrity, all 13 modules I have authored
+
+All ids, body-paragraph counts, `keyTerms[i].pali` values, seed distractor counts and
+leaf scripts verified against `content_vi.json` and `check_content_locale.count_slots`:
+
+```
+M1  148/148 · M2 110/110 · M3 273/273 · M4 284/284 · M5 114/114 · M7 136/136
+M8  223/223 · M11 151/151 · M12 118/118 · M13 114/114 · M14 115/115
+M15 171/171 · M17 171/171                                TOTAL 2128/2128
+0 Vietnamese tone marks · 0 non-Myanmar leaves · 138 seeds · keyTerms.pali 124/125
+identical (the 1 exception is the documented Vietnamese-in-`pali` source defect)
+```
+
+### Remaining — recounted with the tool's own `count_slots`
+
+**4 modules, 947 slots:**
+
+```
+M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223 = 947
+```
+
+`count_slots` over all 17 modules returns **3075**; done 13 = **2128**; TODO 4 =
+**947**. Standing cautions: `l10n_work/gen/M6_NGHIEP.json` holds **only an `hi`
+block** — read-modify-write, and verify `hi` is byte-identical afterwards.
+`M10_S09` is titled *"Vīthimutta — chưa có nguồn"* in the VI source and `M10_S05`
+does not exist (IN4-53).
+
+### Gates run on this commit
+
+```
+python3 tool/content/check_content_locale.py my --glossary --strict   EXIT 0   (3308/4312, 76.7%)
+python3 tool/content/check_content_locale.py --all --quiet            EXIT 0
+python3 tool/check_paccaya_data.py                                    EXIT 0   (24/24, 52 links)
+builder rebuild                                                       7a0dcdcd5d740aec (unchanged)
+merged content_hi.json Myanmar-script runs                            0
+M17 gen file `hi` block vs HEAD                                       byte-identical
+```
+
+Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter SDK
+on `PATH`. This commit changes zero Dart and zero shipped asset; CI runs both.
+
+---
+
+## 19. Batch 3 (cont.) — `M9_SAC_PHAP` + `M16_NGUOI_VA_COI`
+
+Two more modules translated in full:
+
+| Module | s/c/q | Slots | Subject |
+| --- | --- | --- | --- |
+| `M9_SAC_PHAP` | 7/20/16 | 223 | the 28 rūpas, their 11 groups, and the 4 rūpa-samuṭṭhāna |
+| `M16_NGUOI_VA_COI` | 8/16/16 | 224 | the 12 puggalas and the 31 bhūmis |
+
+```
+baseline (HEAD 067bc28)                714/4312  (16.6%)
++ §5 builder overlay, my only         1206/4312  (28.0%)   7a0dcdcd5d740aec
++ merge_batch.py l10n_work/gen        3751/4312  (87.0%)   my: merged 15 module(s)
+catalog studyModules with sections    15 / 17
+```
+
+Reconciles exactly: `count_slots` over the 15 merged modules = **2575**;
+`1206 + (2575 − 30) = 3751`.
+
+### A new glossary defect: the `—` placeholder headword collides across modules
+
+`glossary.csv` has a row whose `pali` cell is the literal placeholder **`—`**:
+
+```
+—,keyTerm,Tổng số tâm sở,,कुल चैतसिक (52),…,စေတသိက် ၅၂ ပါး,…,M15_TAM_SO_PHOI_HOP/M15_S02 M16_NGUOI_VA_COI/M16_S07
+```
+
+Its `sourceRefs` names **two** keyTerms in two different modules —
+`TERM_TONG_SO_TS_M15` (total number of cetasikas → `စေတသိက် ၅၂ ပါး`) and
+`TERM_TUOI_THO_TROI_M16` (lifespans of the six kāma-deva realms, a completely
+different concept). One glossary `my` value cannot serve both. The root cause is
+upstream: `content_vi.json` puts `—` in the `pali` field of both keyTerms, so both
+collapsed onto one row.
+
+Handling: `TERM_TUOI_THO_TROI_M16` is rendered `နတ် ၆ ဘုံ၏ သက်တမ်း` from its VI
+gloss, not from the glossary row, and the conformance check now **skips keyTerms
+whose `pali` is a placeholder** (`—`, `-`, empty) with the reason recorded here
+rather than silently passing. Routed to PSRC-49 — the row needs splitting, and the
+VI `pali` fields need real Pāḷi. This is the same defect class as the
+Vietnamese-in-`pali` finding for `TERM_BA_NHAN_THIEN_M3`.
+
+### An orthography audit, narrowed until it is actually meaningful
+
+I re-ran the codepoint audit that originally caught the malformed `ပညာိန္ဒြေ`.
+Two naive versions produced noise: flagging *any* adjacent pair of vowel/medial
+signs gave 13,839 hits, because Burmese legitimately stacks `103B`+`102D`
+(medial *ya* + vowel *i*) and `102C`+`1038` (*ā* + visarga); flagging any two
+adjacent "main" vowels gave 2,615, because `1031`+`102C` (ေ + ါ = ော) is ordinary
+Burmese (`သော`).
+
+The precise illegal pattern is a **right-side vowel `102B`/`102C` immediately
+followed by an above/before vowel `102D`/`102E`/`1031`** on the same consonant —
+you cannot have both. Result over all 15 `my` modules: **0 hits**. Verified the
+check is meaningful rather than vacuous: it flags `ပညာိန္ဒြေ`
+(`1015 100A 102C 102D …`) and passes the corrected `ပညိန္ဒြေ`
+(`1015 100A 102D …`).
+
+### Terms for council review
+
+**`M9_SAC_PHAP`** — Tier A throughout the core vocabulary (`Rūpa → ရုပ်`,
+`Ahetuka → အဟိတ်`, `Anārammaṇa → အာရုံမရှိသော`, `Mahābhūtāni → မဟာဘုတ် ၄ ပါး`,
+`Upādāyarūpāni → ဥပါဒါရုပ် ၂၄ ပါး`, the four dhātus, `Pasādarūpa → ပသာဒရုပ်`,
+`Gocararūpa → ဂေါစရရုပ်`, `Hadayavatthu → ဟဒယဝတ္ထု`, `Viññattirūpa → ဝိညတ်ရုပ်`,
+`Lakkhaṇarūpa → လက္ခဏရုပ်`, `Nipphannarūpa`/`Anipphannarūpa`, `Rūpasamuṭṭhāna →
+ရူပသမုဋ္ဌာန်`, `Utu → ဥတု`, `Ojā / Āhāra → ဩဇာ / အာဟာရ`, plus exact rows for
+`Upacaya/Santati/Jaratā/Aniccatā → ရူပုပစယ/ရူပသန္တတိ/ရူပဇရတာ/ရူပအနိစ္စတာ`,
+`Lahutā/Mudutā/Kammaññatā`, `Itthi-bhāva → ဣတ္ထိန္ဒြေ`, `Purisa-bhāva → ပုရိသိန္ဒြေ`).
+
+**Tier D from M9 (16, all composed, 0 in the shipped catalog):** the five
+characteristics without rows — `Sappaccaya သပ္ပစ္စယ` · `Sāsava သာသဝ` ·
+`Saṅkhata သင်္ခတ` · `Lokiya လောကိယ` · `Appahātabba` (rendered descriptively,
+`ပယ်ဖျောက်၍ မရသော`); the six rūpa-groups without rows — `Bhūtarūpa ဘူတရုပ်` ·
+`Bhāvarūpa ဘာဝရုပ်` · `Jīvitarūpa ဇီဝိတရုပ်` · `Āhārarūpa အာဟာရရုပ်` ·
+`Paricchedarūpa ပရိစ္ဆေဒရုပ်` · `Vikārarūpa ဝိကာရရုပ်`; `Phoṭṭhabba ဖောဋ္ဌဗ္ဗ`;
+and the four ways the 18 nipphanna rūpas are grouped — `Sabhāvarūpa သဘာဝရုပ်` ·
+`Salakkhaṇarūpa သလက္ခဏရုပ်` · `Rūparūpa ရူပရုပ်` · `Sammasanarūpa သမ္မသနရုပ်`.
+Every one follows the `-ရုပ်` pattern that the glossary itself attests seven times,
+so a council decision on the pattern settles all ten rūpa-group names at once.
+
+**`M16_NGUOI_VA_COI`** — Tier A for all 15 named keyTerms (`Puggala → ပုဂ္ဂိုလ်`,
+`Puggala-bheda → ပုဂ္ဂလဘေဒ`, `Ahetuka puggala → အဟိတ်ပုဂ္ဂိုလ်`,
+`Sugati ahetuka puggala → သုဂတိ အဟိတ်ပုဂ္ဂိုလ်`, `Dvihetuka`/`Tihetuka`,
+`Sotāpattimagga`/`Arahattamagga`, `Bhūmi → ဘုံ`, `Suddhāvāsā → သုဒ္ဓါဝါသ ၅ ဘုံ`,
+`Aṭṭha mahāniraya → မဟာငရဲ ၈ ထပ်`, `Asura → အသူရာ`, `Jambūdīpa → ဇမ္ဗူဒိပ်`,
+`Manussā → လူ့ဘုံ`, `Uppattideva → ဥပပတ္တိဒေဝ`, `Rūpāvacarabhūmi → ရူပ ၁၆ ဘုံ`,
+`Arūpabhūmi → အရူပဘုံ ၄ ဘုံ`) plus the three attested arūpa āyatanas.
+
+**Tier D from M16 (46 proper names, one systematic category).** The VI source names
+every realm and hell in Sino-Vietnamese (`Tam Thập Tam Thiên`, `Quang Âm Thiên`,
+`Đấu Xuất Đà Thiên`…), none of which has a glossary row, so all are rendered as
+Pāḷi transliterations with the VI gloss carried by the sentence: the two bhūmi
+group names, `Tiracchāna`, `Peta`, the six kāma-deva realms, the twelve rūpa-bhūmi
+names, the eight `mahāniraya` names, `Ussada`, `Gandhabba`, `Kumbhaṇḍa`, `Paṇḍaka`,
+`Ubhatobyañjana`, `Jaccandha`, `Sineru`, `Māra`, the three other `dīpa`s and
+`Virāga`. These should be reviewed **as one block** — a single decision on the
+transliteration convention settles all 46; the meanings do not depend on it.
+`အသညသတ်` for `Asaññasatta` and `အပါယ်` for `Apāya` are not new: both already occur
+in the shipped catalog (14× and 1×).
+
+Running total of reviewable terms: **100** — 38 through `M15` (§18), plus 16 (M9)
+and 46 (M16).
+
+### Integrity, all 15 modules I have authored
+
+```
+M1  148/148 · M2 110/110 · M3 273/273 · M4 284/284 · M5 114/114 · M7 136/136
+M8  223/223 · M9 223/223 · M11 151/151 · M12 118/118 · M13 114/114 · M14 115/115
+M15 171/171 · M16 224/224 · M17 171/171                        TOTAL 2575/2575
+0 Vietnamese tone marks · 0 non-Myanmar leaves · 198 seeds
+keyTerms.pali 195/196 identical · glossary keyTerm mismatches 0
+```
+
+The single `pali` deviation is the documented one (`TERM_BA_NHAN_THIEN_M3`, where
+the VI source's `pali` field holds Vietnamese). No doctrinal content added — every
+paragraph, card and seed renders an existing `content_vi.json` string.
+
+### Remaining — recounted with the tool's own `count_slots`
+
+**2 modules, 500 slots:** `M6_NGHIEP 266` · `M10_LO_TRINH 234`. All 17 modules =
+**3075**; done 15 = **2575**; TODO 2 = **500**.
+
+Standing cautions for the last two: `l10n_work/gen/M6_NGHIEP.json` holds **only an
+`hi` block** — read-modify-write, and verify `hi` byte-identical afterwards (§18
+shows exactly how this can go wrong). `M10_S09` is titled *"Vīthimutta — chưa có
+nguồn trong tài liệu này"* in the VI source and `M10_S05` does not exist (IN4-53) —
+M10 has 8 sections numbered S01–S04, S06–S09.
+
+### Gates run on this commit
+
+```
+python3 tool/content/check_content_locale.py my --glossary --strict   EXIT 0   (3751/4312, 87.0%)
+python3 tool/content/check_content_locale.py --all --quiet            EXIT 0
+python3 tool/check_paccaya_data.py                                    EXIT 0   (24/24, 52 links)
+builder rebuild                                                       7a0dcdcd5d740aec (unchanged)
+merged content_hi.json Myanmar-script runs                            0
+Myanmar orthography audit (right-vowel + above-vowel)                 0 illegal
+```
+
+Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter SDK
+on `PATH`. This commit changes zero Dart and zero shipped asset; CI runs both.
+
+---
+
+## 20. Batch 3 (final) — `M6_NGHIEP` + `M10_LO_TRINH` · the `my` study-module set is complete
+
+The last two modules, both translated in full:
+
+| Module | s/c/q | Slots | Subject |
+| --- | --- | --- | --- |
+| `M6_NGHIEP` | 8/20/18 | 266 | kamma, the kammacatukka (16 kamma in 4 groups), kamma ↔ citta |
+| `M10_LO_TRINH` | 8/20/17 | 234 | the 17-moment five-door vīthi, javana, tadālambana, manodvāra-vīthi |
+
+```
+baseline (HEAD 6f8ddb5)               714/4312  (16.6%)
++ §5 builder overlay, my only        1206/4312  (28.0%)   7a0dcdcd5d740aec
++ merge_batch.py l10n_work/gen       4247/4312  (98.5%)   my: merged 17 module(s)
+catalog studyModules with sections   17 / 17
+```
+
+Reconciles exactly: `count_slots` over the 17 merged modules = **3075**;
+`1206 + (3075 − 34) = 4247`. **No study module is left untranslated.**
+
+### Every keyTerm in both modules has an exact glossary row
+
+Unusual, and worth flagging because it is the strongest evidence batch in the
+project. All **31** `M6` keyTerms and all **17** `M10` keyTerms resolve to an
+**EXACT** `pali` key in `glossary.csv` — no substring inference, no composed
+transliteration. `M6` is the kamma module and the glossary carries a full row for
+each of the sixteen kamma names: `ဇနကကံ` `ဥပတ္ထမ္ဘကကံ` `ဥပပီဠကကံ` `ဥပဃာတကကံ`
+`ဂရုကံ` `အာနန္တရိယကံ ၅ ပါး` `အာသန္နကံ` `အာစိဏ္ဏကံ` `ကဋတ္တာကံ`
+`ဒိဋ္ဌဓမ္မဝေဒနီယကံ` `ဥပပဇ္ဇဝေဒနီယကံ` `အပရာပရိယဝေဒနီယကံ` `အဟောသိကံ`
+`ကာမာဝစရကုသိုလ်ကံ` `ရူပါဝစရကုသိုလ်ကံ` `အရူပါဝစရကုသိုလ်ကံ`, plus `ကံ` `စေတနာ`
+`ကာယကံ` `ဝစီကံ` `မနောကံ` `ကံလေးပါးအုပ်စု` `ပဋိသန္ဓေဝိညာဏ်` `ပါဏာတိပါတ`
+`မုသာဝါဒ` `အဘိဇ္ဈာ` `သမ္မာဒိဋ္ဌိ` `တိဟိတ်ပုဂ္ဂိုလ်` `ဒွိဟိတ်ပုဂ္ဂိုလ်`
+`ကမ္မဇရုပ်`. `M10` likewise: `စိတ်ဝီထိ` `ဒွါရ` `ဝတ္ထု` `အတိမဟန္တာရုံ`
+`ဝိဘူတာရုံ` `ပဉ္စဒွါရာဝဇ္ဇန်း` `သမ္ပဋိစ္ဆိုင်းစိတ်` `သန္တီရဏစိတ်` `ဝုဋ္ဌော`
+`တဒါရုံ` `ကံမျိုးစေ့` `မနောဒွါရဝီထိ` `မနောဒွါရာဝဇ္ဇန်း` `ဝီထိမုတ်` `ဘဝင်စိတ်`
+`ဇော`.
+
+I also audited all **49** glossary `my` values I used for the illegal Myanmar
+sequence (§19) **before** writing: 0 hits. This is the check that would have
+caught a malformed glossary string like `ပညာိန္ဒြေ` being copied into a
+deliverable, which is how that defect reached `M3` in the first place.
+
+### M10 vīthi step names come from shipped `my` content, not from me
+
+`data_priority_my_conditions.py::VITHIS_MY` already carries authored Myanmar step
+names. I read them and reused them verbatim: `ဘဝင်လှုပ်` (Bhavaṅgacalana),
+`ဘဝင်ပြတ်` (Bhavaṅgupaccheda), `ဒွေပဉ္စဝိညာဉ်`, `ပဉ္စဒွါရာဝဇ္ဇန်း`,
+`သမ္ပဋိစ္ဆိုင်း`, `သန္တီရဏ`, `ဝုဋ္ဌော (မနောဒွါရာဝဇ္ဇန်း)`, `ဇော (၇ စိတ္တက္ခဏ)`,
+`တဒါရုံ`, `ဘဝင်ကျ`, and from `VT_VITHIMUTTA`: `ပဋိသန္ဓေစိတ်`, `ဘဝင်စိတ်`,
+`စုတိစိတ်`. Counted in the pre-merge shipped catalog: `ဘဝင်လှုပ်` 1×,
+`ဘဝင်ပြတ်` 2×, `ဒွေပဉ္စဝိညာဉ်` 2×, `တဒါရုံ` 3×, `ဝီထိမုတ်` 2×, `အတိမဟန္တာရုံ` 3×,
+`ဝုဋ္ဌော` 2×, `မနောဒွါရဝီထိ` 3× — so the vīthi vocabulary in `M10` is
+attested, not invented. Only `အတီတဘဝင်` (Atītabhavaṅga), `ကမ္မနိမိတ်` and
+`ဂတိနိမိတ်` are new spellings.
+
+### Two source-integrity decisions
+
+**`M10_S09` is `source_missing` in the Vietnamese source and stays that way.**
+The VI title is literally *"Vīthimutta — chưa có nguồn trong tài liệu này"* and its
+summary is `source_missing: VDP-LoTrinhTam.pdf không đề cập trực tiếp Vīthimutta`.
+I translated the section as the meta-statement it is — including keeping the
+`source_missing:` token verbatim so downstream tooling still sees the flag — and
+did **not** write a Vīthimutta lesson. The only doctrinal content in it is the one
+point the source does cite (kamma / kammanimitta / gatinimitta as the three
+objects for vīthimutta citta, p. 2). Inventing the rest would have been exactly
+the failure mode the acceptance criteria forbid.
+
+**One Vietnamese string removed after my own gate caught it.** My first draft of
+`M10_S07.body[0]` carried the VI source's three synonym labels for Tadālambana,
+one of which — `Đồng sở duyên` — contains Vietnamese tone marks. The integrity
+gate flagged it (1 Vietnamese tone mark), and I replaced all three with Myanmar
+glosses (`အာရုံတူ စွဲမှတ်ခြင်း` / `အကြွင်းအာရုံကို ကောက်ယူခြင်း` /
+`မူလအာရုံကို ဆက်ခံခြင်း`). Two of the VI labels are Sino-Vietnamese; transliterating
+them into Burmese would have invented orthography. Re-run: 0.
+
+### `M6_NGHIEP` holds an `hi` block — read-modify-write, verified
+
+`l10n_work/gen/M6_NGHIEP.json` shipped with **only** a Hindi block. §18 records how
+a forward regex overwrote four Hindi values in `M17`, so this was done as string
+surgery on the raw text (the file uses `indent=1`), never a whole-file
+`json.dump`. Verified three ways: the `hi` **object** equals `HEAD`'s, the `hi`
+**substring** is character-identical from its offset onward, and the written file
+re-parses with `hi` intact (`M6 hi object identical to HEAD: True`,
+8/20/18). `merge_batch` reports `hi: merged 2 module(s)` and the merged
+`content_hi.json` contains **0** Myanmar-script runs.
+
+### Council review list — 34 more
+
+**`M6`, composed by me (no glossary row):** `Adinnādāna အဒိန္နာဒါန` ·
+`Byāpāda ဗျာပါဒ` · `Anabhijjhā အနဘိဇ္ဈာ` · `Abyāpāda အဗျာပါဒ` ·
+`Niyatamicchādiṭṭhi နိယတမိစ္ဆာဒိဋ္ဌိ` · `Avinibbhogarūpa အဝိနိဘောဂရုပ်` ·
+`Puññakiriyā ပုညကိရိယာ`. Reused from earlier modules where they already existed:
+`Kāmesumicchācāra` `Pisuṇavācā` `Pharusavācā` `Samphappalāpa` `Micchādiṭṭhi`
+`Sammākammanta` `Sammāājīva` — all still without rows.
+
+**`M6`, deliberately left in Latin** (7 of the 10 meritorious deeds). `ဒါန` `သီလ`
+`ဘာဝနာ` are already established in this corpus (67 / 31 / 23×), but for
+`Apacāyana` `Veyyāvacca` `Pattidāna` `Pattānumodanā` `Dhammassavana`
+`Dhammadesanā` `Diṭṭhijukamma` I gave a Myanmar descriptive gloss with the Pāḷi
+left in Latin rather than composing an unverified transliteration.
+
+**`M10`:** `Atītabhavaṅga အတီတဘဝင်` · `Kammanimitta ကမ္မနိမိတ်` ·
+`Gatinimitta ဂတိနိမိတ်` · `Ālambana အာရုံ` · `Hasituppāda ဟသိတုပ္ပါဒ်`, plus the
+**10 special manodvāra vīthis** which the VI source names only in Sino-Vietnamese
+(`Lộ Nhập Niết Bàn Phản Kháng Chi Thiền` and similar). Three are standard and I
+gave Pāḷi — `Jhānasamāpatti ဈာန်သမာပတ်`, `Phalasamāpatti ဖိုလ်သမာပတ်`,
+`Nirodhasamāpatti နိရောဓသမာပတ်`; the other seven are descriptive. These should
+be reviewed **as one block**, the same way as the 46 M16 realm names.
+
+Running total of reviewable terms: **134** — 100 through `M16` (§19), plus 34 here.
+
+### Integrity, all 17 modules
+
+```
+M1  148 · M2  110 · M3  273 · M4  284 · M5  114 · M6  266 · M7  136 · M8  223
+M9  223 · M10 234 · M11 151 · M12 118 · M13 114 · M14 115 · M15 171
+M16 224 · M17 171                                     TOTAL 3075/3075  ·  233 seeds
+0 Vietnamese tone marks · 0 non-Myanmar leaves · keyTerms.pali 243/244
+illegal Myanmar sequences: 0 over 4152 strings
+```
+
+The gate reports exactly **4** glossary keyTerm mismatches and they are precisely
+the four documented in §18 — `M3/TERM_PANNINDRIYA` + `M3/TERM_TU_QUYEN_M3` (the
+glossary's own `ပညာိန္ဒြေ` is malformed) and `M7/TERM_SAKADAGAMI` +
+`M7/TERM_ANAGAMI` (`…ာမ်` standalone vs `…ာမိ` magga). Nothing new.
+
+### What the remaining 65 slots actually are
+
+`count_slots` on the merged catalog: **4247 of 4312 (98.5%)**, and **0** of those
+4247 are empty or `TODO` — every slot present is filled. The split:
+
+```
+studyModules   my 3075   vi 3075   gap   0     <- all 17 modules complete
+entities       my 1172   vi 1237   gap  65
+```
+
+The 65 is a **net** figure, and I want to be precise rather than tidy about it.
+Field-by-field, `my` is *missing* `rupas.{characteristic,function,manifestation,
+proximateCause}` 28 each + `rupas.doctrinalNote` 23 = **135**, and
+`kammas.{doctrinalNote 16, examples 25, shortName 1}` = **42** — 177 fields
+absent, offset by 112 slots the §5 overlay adds that the VI-derived index does not
+count (paccaya `subdivisions`, vīthi `steps`), giving 177 − 112 = 65.
+
+Those 177 are absent **by decision, not oversight**, and I re-verified the call
+sites this turn rather than trusting the earlier audit: in
+`lib/core/localization/localized_content.dart`, `extension LocalizedRupaContent on
+RupaModel` (lines 83–88) resolves only `name` and `description` — `text('rupas',
+id, 'name', …)` at line 85, `text('rupas', id, 'description', …)` at 87;
+`extension LocalizedKammaContent on KammaModel` (lines 90–95) likewise, at lines 92
+and 94. The `_optionalContent` helper that *does* resolve `characteristic` /
+`function` / `manifestation` / `proximateCause` (lines 64–80, called from the four
+getters at 55–62) sits inside `extension LocalizedCetasikaContent on CetasikaModel`
+(lines 36–81) and hardcodes the section string `'cetasikas'` at line 74. `RupaModel` and `KammaModel`
+declare those fields, but nothing in the localization layer reads them for those
+two sections. Translating them would add 177 dead strings. If the council wants
+rupas/kammas to carry the four aspects, that is a Dart change first.
+
+### Gates run on this commit
+
+```
+python3 tool/content/check_content_locale.py my --glossary --strict   EXIT 0   (4247/4312, 98.5%)
+python3 tool/content/check_content_locale.py --all --quiet            EXIT 0
+python3 tool/check_paccaya_data.py                                    EXIT 0   (24/24, 52 links)
+builder rebuild                                                       7a0dcdcd5d740aec (unchanged)
+merge_batch                                                           my: 17 module(s), hi: 2 module(s)
+merged content_hi.json Myanmar-script runs                            0
+M6 `hi` block vs HEAD                                                 byte-identical
+Myanmar orthography audit                                             0 illegal / 4152 strings
+```
+
+Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter SDK
+on `PATH`. This commit changes zero Dart and zero shipped asset; CI runs both.
+
+---
+
+## 21. Addendum — the rupas/kammas absence is now verified against *two* consumers
+
+§20 argued the 177 absent rupas/kamma fields have no UI call site, citing only
+`localized_content.dart`. That was one consumer; the claim deserves the other. Both
+check out, and the detail matters because the fields are *declared* on `RupaModel`
+and on `KammaModel`, which looks like consumption until you follow it.
+
+**Consumer 1 — `lib/core/localization/localized_content.dart`.**
+`trangThai` / `phanSu` / `thanhTuu` / `nhanGan` are declared on **three** models —
+`cetasika_model.dart:98-101`, `paticca_model.dart:124-127`, `rupa_model.dart:99-102`
+— but the localization layer resolves them for only two of the three:
+`LocalizedCetasikaContent` (lines 56–62, via `_optionalContent`) and
+`LocalizedPaticcaContent` (lines 189–208, via `optionalText`). There is no
+corresponding call anywhere in `LocalizedRupaContent` (83–88). A grep for those
+four identifiers across `lib/`, excluding `*.g.dart` and `*.freezed.dart`, returns
+only those two extensions plus the three model declarations — no direct field read
+from any widget.
+
+`localizedDoctrinalNote` exists in exactly three extensions —
+`LocalizedPaccayaContent:132`, `LocalizedPaticcaContent:219`,
+`LocalizedVithiContent:270` — and its three UI call sites are
+`paccaya_detail_sheet.dart:27`, `paticca_detail_sheet.dart:30`,
+`vithi_screen.dart:227`. Neither `LocalizedRupaContent` nor `LocalizedKammaContent`
+declares one.
+
+**Consumer 2 — `lib/features/quiz/services/quiz_generator.dart`.** This one reads the
+content catalog directly rather than through the extensions, so it is the consumer
+that could have invalidated the claim. It does not:
+
+| Helper | Lines | Catalog section | Fields |
+| --- | --- | --- | --- |
+| `kammaName` / `kammaDescription` | 942, 949 | `'kammas'` | `name`, `description` |
+| `rupaName` / `rupaDescription` | 970, 977 | `'rupas'` | `name`, `description` |
+| `cetasikaName` / `cetasikaDescription` | 928, 935 | `'cetasikas'` | `name`, `description` |
+
+No quiz helper reaches `characteristic`, `function`, `manifestation`,
+`proximateCause`, `doctrinalNote`, `examples` or `shortName` for either section.
+
+**Conclusion, unchanged but now on firmer ground.** The only strings the app reads
+for `rupas` and `kammas` are `name` and `description`, and both are fully translated
+in `my`. Adding the other 177 would populate keys that no code path in
+`localized_content.dart` or `quiz_generator.dart` requests. If the council decides
+rupas should carry the four aspects — a reasonable product call, since cetasikas and
+paticcas already do — the change is: add four `_optionalContent`-style getters to
+`LocalizedRupaContent`, wire them into the rupa detail widget, and *then* the
+translations are needed. That is a Dart change, and it is outside a `my`-only diff.
