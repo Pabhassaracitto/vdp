@@ -233,6 +233,13 @@ Checked and translated (draft, not reviewed):
 - **VT_Y_MON** doctrinalNote (vithi and step 3): Chandrikava 5-9 says manodvārāvajjana does voṭṭhapana. Nārada, *Manual of Abhidhamma* (buddhistelibrary.org) and the Aggañāṇī booklet (abhidhamma.com) give the determining consciousness 11 cetasikas (7 universals + vitakka, vicāra, adhimokkha, vīriya). English "11 mental factors" matches.
 - **VT_VITHIMUTTA**: Chandrikava 5-9 says bhavaṅga, bhavaṅga-calana and bhavaṅga-upaccheda are vīthimutta and vipāka, and that tadārammaṇa is not part of a process. Steps 2–3 match. Gap in English: calana and upaccheda are vīthimutta but are not steps in the English list. This is an English data gap; do not change without a decision.
 
+Paccaya check against Chandrikava 9-12 (hetu, ārammaṇa, adhipati) and 9-15 (purejāta, pacchājāta, āsevana), read this round. Existing si drafts for PC_01–03 and PC_10–12 stand; no text changed.
+
+- PC_01 (six roots), PC_10 (prenascence: rūpa conditions cakkhāyatana etc.; mano-viññāṇa-dhātu is conditioned, not conditioning), PC_11 (rain and tree image), PC_12 (javana repetition): English definitions and si notes match.
+- PC_02: Chandrikava 9-12 says ignorance is ārammaṇa for kāmāvacara puññābhisaṅkhāra when contemplated as decay and passing (ඛය වය). The substance matches. The attribution to Visuddhimagga XVII is not confirmed.
+- PC_03: Chandrikava 9-12 gives the four adhipati (chanda, viriya, citta, vīmaṃsā) and says only one is dominant at a time. The claim "no adhipati among the 18 rootless cittas" is not in 9-12; it is standard Abhidhamma doctrine but not checked against a Sinhala source.
+- PC_12: Chandrikava 9-15 lists kusala, akusala and kiriya javana. It does not state the supramundane exclusion; the si note gives the reason (a single mind-moment) without a source line.
+
 Still English, not verified or with an English error:
 
 - **KM_R_04** doctrinalNote: English error. Nārada ch.5 says supramundane consciousness is not regarded as kamma, and the path's result is fruition consciousness (phala), not Nibbāna. Stays English. The English source needs correction, not translation.
