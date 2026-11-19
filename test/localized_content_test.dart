@@ -233,6 +233,9 @@ void main() {
 
       for (final language in selectableContentLanguages) {
         if (language.tag == 'en' || language.tag == 'vi') continue;
+        // Japanese (ja) has complete translations for paticcas, paccayas, rupas
+        // as of PR #52, so skip this test for Japanese.
+        if (language.tag == 'ja') continue;
         final catalog =
             await container.read(contentCatalogProvider(language.tag).future);
         expect(
