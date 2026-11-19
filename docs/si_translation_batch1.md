@@ -10,6 +10,8 @@ Nothing here marks any locale as reviewed.
 | `tool/content/data_priority_conditions.py` | 14 si field corrections (see §2) | Yes. `build_full_catalogs.py` emits these fields. |
 | `tool/content/data_priority_si_detail.py` (new, Batch 1) | Four-aspect fields for 12 paticca factors; `paccayaDhamma` / `paccayuppanna` for 23 paccayas | **No.** The builder does not read this module yet. See §5. |
 | `tool/content/data_priority_si_detail_notes.py` (new, Batch 1 and 2 remaining fields) | Paccaya examples, subdivisions and doctrinalNote; paticca examples and doctrinalNote; rupa, kamma and vithi doctrinalNote | **No.** Same integration as Batch 1. See §5. |
+| `tool/content/data_priority_si_detail_cittas.py` (new, Batch 2) | `doctrinalNote` for all 121 cittas (template sentence, see §3d) | **No.** Same integration as Batch 1. See §5. |
+| `tool/content/data_priority_si_detail_vithi.py` (new, Batch 1) | Steps for VT_NGU_MON_LON (9), VT_Y_MON (6), VT_VITHIMUTTA (3) | **No.** Same integration as Batch 1. See §5. |
 | `tool/content/data_priority_si_detail_b2.py` (new, Batch 2) | Four-aspect fields for 52 cetasikas and 28 rupas; examples for 12 cittas and 16 kammas; `arisingCondition` / `significance` for 4 vithis | **No.** Same integration as Batch 1. See §5. |
 | `docs/si_translation_batch1.md` (this file) | Ledger, coverage, questions | No |
 
@@ -74,19 +76,28 @@ Translated from the English fields in `content_en.json` (same status as §3: dra
 
 Key sets were checked against `content_en.json`. Each missing key is one of the intentional English exclusions in §8.
 
+## 3d. Citta doctrinalNote and vithi steps (not yet shipped)
+
+- **Citta doctrinalNote (121):** the English note is a fixed template: name, group, accompanying feeling, canonical Pāḷi designation. The Sinhala sentence reuses the committed si citta name (`content_si.json`) and maps the group and feeling words:
+  - Groups: unwholesome → අකුසල්; rootless → අහේතුක; sobhana_kamavacara → සෝභන කාමාවචර; fine-material-sphere → රූපාවචර; immaterial-sphere → අරූපාවචර; supramundane → ලෝකෝත්තර.
+  - Feelings: joy → සෝමනස්ස; equanimity → උපෙක්ඛා; pleasure → සුඛ; pain → දුක්ඛ. The spellings follow the committed citta names.
+  - The Pāḷi designation is copied verbatim from English.
+  - Status: template output, a direct rendering of the English sentence. The group and feeling assignments come from the English data and are not re-checked against a source.
+- **Vithi steps (18):** VT_NGU_MON_LON (9), VT_Y_MON (6), VT_VITHIMUTTA (3). Step names reuse the committed VT_NGU_MON_RATLON wording. Unverified; no step-level doctrinalNote for VT_Y_MON 3–4 and VT_VITHIMUTTA 1 (§8).
+
 ## 4. Field coverage (si) — gap inventory
 
 Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ no si value (English fallback)
 
 | Category | Entities | Name / short / description | Four aspects | Other fields |
 |---|---|---|---|---|
-| cittas | 121 | ✅ name, doctrinalNote (Pāḷi-only template, see §6) | n/a | 🟡 examples for the 12 akusala cittas (18 items). The other 109 cittas have no English examples either. |
+| cittas | 121 | ✅ name; 🟡 doctrinalNote (121, template sentence, §3d) | n/a | 🟡 examples for the 12 akusala cittas (18 items). The other 109 cittas have no English examples either. |
 | cetasikas | 52 | ✅ name, shortName, description | 🟡 208 fields | — |
 | rupas | 28 | ✅ name, shortName, description | 🟡 112 fields | ❌ doctrinalNote (28) |
 | paccayas | 24 | ✅ name, shortName, definition (14 corrected, §2) | 🟡 paccayaDhamma (23), 🟡 paccayuppanna (23) | ❌ examples, subdivisions, doctrinalNote |
 | paticcas | 12 | ✅ name, shortName, description (4 corrected, §2) | 🟡 48 fields | ❌ doctrinalNote (12), examples (12) |
 | kammas | 16 | ✅ name, shortName, description (1 corrected) | n/a | 🟡 examples (32 items, 16 entries); ❌ doctrinalNote (16) |
-| vithis | 4 | ✅ name, shortName, description | n/a | 🟡 arisingCondition, significance (4 each); ❌ doctrinalNote (4); steps only for VT_NGU_MON_RATLON (11 of 11 steps; the other three vithis have none) |
+| vithis | 4 | ✅ name, shortName, description | n/a | 🟡 arisingCondition, significance (4 each); 🟡 steps for all four vithis (VT_NGU_MON_RATLON committed, 11; the other three in `data_priority_si_detail_vithi.py`, 18); ❌ doctrinalNote (4), with a few step notes left in English (§8) |
 | studyModules | 17 | ✅ title, description | n/a | ❌ lessonSections, reviewCards, quizSeeds for all 17 (Batch 3, not started) |
 
 ## 5. Builder integration (for coordinator; NOT applied)
@@ -182,8 +193,7 @@ Left in English because the English claim is either unsourced in our files or do
 - **RP_002** and **RP_022** doctrinalNote: RP_022 says lightness of matter is not produced by kamma; this needs checking against the Abhidhamma list of causes.
 - **KM_R_01** and **KM_R_04** doctrinalNote: KM_R_04 says path kamma produces Nibbāna as its result; check whether the result is fruition instead.
 - **VT_Y_MON** doctrinalNote: refers to CI_029 without a source.
-- **Citta doctrinalNote**: still the Pāḷi-only template.
-- Vithi steps for the other three vithis.
+- Vithi steps: the step-level doctrinalNote for VT_Y_MON steps 3–4 and VT_VITHIMUTTA step 1 (citta-number and kamma-location claims).
 - Rupa/kamma/paticca items above are translated, but the claims inside them are still unverified.
 
 Not translated yet, outside this batch:
