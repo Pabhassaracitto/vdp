@@ -832,3 +832,91 @@ Two more judgement calls worth a look:
 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223 ·
 M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 118
 · M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114 · M2_SI_PHAN 110.
+
+---
+
+## 14. Batch 3 (cont.) — module `M2_SI_PHAN`, plus three corrections to §13
+
+`l10n_work/gen/M2_SI_PHAN.json` — new, 3 sections / 10 review cards / 10 quiz
+seeds, `translationStatus: draft`. This closes the loop opened by `M4_S05`,
+which points at M2 for the four universal akusala cetasikas.
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2244/4312 slots, 52.0%)   (6 modules merged)
+```
+
+`merge_batch` for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M2_SI_PHAN, M4_AKUSALA,
+M5_SOBHANA, M8_NHAN_DUYEN` — **6/17** modules. Delta `2136 → 2244` = **+108** =
+110 fields − 2, again matching the rule in §12.
+
+Verification over **all four** authored modules at once:
+
+| Module | s/c/q | Translatable fields | Structure vs VI | `pali` vs VI | VN marks | Non-Myanmar |
+| --- | --- | --- | --- | --- | --- | --- |
+| `M1_BASICS` | 4/14/12 | 148 | match | match | 0 | 0 |
+| `M2_SI_PHAN` | 3/10/10 | 110 | match | match | 0 | 0 |
+| `M4_AKUSALA` | 8/20/20 | 284 | match | match | 0 | 0 |
+| `M5_SOBHANA` | 3/10/10 | 114 | match | match | 0 | 0 |
+
+### §13 was wrong in three places — corrected here
+
+§13 recorded `Dosatuka` and `Mocatuka` as composed-from-nothing (Tier C) and
+`Soka`/`Parideva` as unattested (Tier D). **All four have glossary rows.** My
+lookup used exact key matching against the `pali` column, which silently skipped
+`Dosatuka cetasika`, `Mocatuka`, and the compound row
+`Soka, Parideva, Dukkha, Domanassa, Upāyāsa`. Re-running with substring matching
+found them.
+
+| Term | I had written | Glossary actually says | Action |
+| --- | --- | --- | --- |
+| `Mocatuka` | မောဟတိက (my own formation) | **မောစတုက္က စေတသိက်** | `M4_AKUSALA`: 6 occurrences replaced |
+| `Dosatuka cetasika` | ဒေါသတိက (my own formation) | **ဒေါသစတုက္က စေတသိက်** | `M4_AKUSALA`: 10 occurrences replaced |
+| `Soka` | ဆောက (transliteration) | **စိုးရိမ်ခြင်း** (descriptive) | `M4_AKUSALA` body: replaced |
+| `Parideva` | ပရိဒေဝ (transliteration) | **ငိုကြွေးခြင်း** (descriptive) | `M4_AKUSALA` body: replaced |
+| `Nāma-khandha` | နာမ်ခန္ဓာ | **နာမက္ခန္ဓာ ၄ ပါး** | `M1_BASICS`: 3 occurrences replaced |
+
+The group names are now မောစတုက္က / လောဘတိက / ဒေါသစတုက္က, exactly as the
+glossary has them. Note the glossary is *itself* uneven here — `Lobhatuka` uses
+တိက while `Dosatuka` and `Mocatuka` use စတုက္က — but the glossary column wins,
+so I followed it rather than regularising.
+
+**Tier D shrinks from 11 to 9.** Still without any attestation, all confined to
+two synonym lists in `M4_AKUSALA`: `Pema` ပေမ, `Piya` ပိယ, `Nandi` နန္ဒိ
+(§S06 body 3); `Hiṃsa` ဟိံသာ, `Palāsa` ပလာသ, `Kodha` ကောဓ, `Bherava` ဘေရဝ,
+`Bhaya` ဘယ (§S07 body 4); plus the composed `အဟိတ်ကဒိဋ္ဌိ` /
+`အကိရိယဒိဋ္ဌိ` (§S06 body 7). Written as *transliteration (Pāḷi — Burmese
+gloss)* so a reviewer can overrule the transliteration without touching the
+meaning. **These remain the only reviewable terms in the four modules.**
+
+Also flagging, not fixing: I render the Thīna group as **ထိနတိက**. There is no
+glossary row for it, and the Vietnamese source only says "Hôn phần", so I formed
+it by parallel with `Lobhatuka` → လောဘတိက. If the council prefers a
+စတုက္က-style name for consistency with the other two groups, the change is
+confined to `M4_AKUSALA` §S05 and its `TERM_THINA_MIDDHA_M4` keyTerm.
+
+### `M2_SI_PHAN` terms
+
+All doctrinal terms attested: `Akusala cetasika` `Moha` `Ahirika` `Anottappa`
+`Uddhacca` `Hiri` `Ottappa` `Jhāna` `Pīti` `Vitakka` `Sabbākusalasādhāraṇā`
+`Mocatuka` from glossary `my` cells; `ရူပက္ခန္ဓာ` (4×) and `သုခ` (12×) in-repo.
+
+Two composed, both flagged:
+
+* **`နီဝရဏ်`** for *triền cái* / `nīvaraṇa` — no glossary row. Standard
+  Burmese; used in `M2_S03` body 4 and `M2_R10`/`M2_Q09`. Propose a glossary row.
+* **`သုခဈာန်အင်္ဂ`** for *chi thiền Lạc* / `sukha-jhānaṅga` — composed from
+  attested သုခ + ဈာန်; `Jhānaṅga` itself has no row. The Vietnamese source's
+  claim that uddhacca opposes the *sukha* jhāna-factor is reproduced as written,
+  not reinterpreted.
+
+### Remaining
+
+11 modules, ~2027 slots. Largest first: M3_TINH_HAO_BIEN_HANH 273 · M6_NGHIEP
+266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223 ·
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 118
+· M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114.
+
+**Process note for the next batch:** check glossary membership by **substring**,
+not exact key. Three silent misses in one module came from exact matching.
