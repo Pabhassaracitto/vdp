@@ -1,0 +1,320 @@
+{
+  "locale": "zh",
+  "batch": "batch2_cetasikas",
+  "count": 52,
+  "segments": 208,
+  "cetasikas": {
+    "CS_PHASSA": {
+      "characteristic": "触及所缘——心、依处与所缘三者和合相触之相。",
+      "function": "摄集其余相应心所，使之与心一同紧贴所缘与依处。",
+      "manifestation": "心、心所、依处与所缘四者会合。",
+      "proximateCause": "所缘依适当之门（根、境、识）而现前。"
+    },
+    "CS_VEDANA": {
+      "characteristic": "领纳、感受所缘——领受并体验所缘之相。",
+      "function": "受用可意所缘，或于相应法中生起疲乏或滋长。",
+      "manifestation": "心适悦（乐受、喜受）；心逼恼（苦受）；身乐或身苦；或寂静（舍受）。",
+      "proximateCause": "身轻安与心轻安（乐受、喜受之近因）；心所依处之存在（苦受之近因）；无欢腾之状态（舍受之近因）。"
+    },
+    "CS_SANNA": {
+      "characteristic": "忆念——记取、辨识并标示所缘之特征。",
+      "function": "借由所记取之相状，回忆往事。",
+      "manifestation": "正确或错误地忆起先前所知之事。",
+      "proximateCause": "所缘如先前所执取般再度现前——能唤起记忆之所缘（如见熟人而忆起昔日相逢之处）。"
+    },
+    "CS_CETANA": {
+      "characteristic": "策励、驱使并协调与其俱生之相应法。",
+      "function": "聚集俱生诸法，使其共同朝向所缘，执取所缘。",
+      "manifestation": "组织、引导并整顿相应诸法。",
+      "proximateCause": "其余三名蕴（受蕴、想蕴、识蕴）之存在（因思本身属行蕴，故须依其余三蕴而起）。"
+    },
+    "CS_EKAGGATA": {
+      "characteristic": "面对所缘而不散乱、不动摇——专一、集中之相。",
+      "function": "聚集俱生心法，使其汇聚于单一所缘。",
+      "manifestation": "于所缘中呈现寂静与稳固安住。",
+      "proximateCause": "乐受之存在，以及无痴中之掉举与疑（定须依乐而成）。"
+    },
+    "CS_JIVITINDRIYA": {
+      "characteristic": "维持、护持并滋养俱生诸法。",
+      "function": "令俱生诸法于其生、住、灭三刹那间得以存续而不灭。",
+      "manifestation": "俱生诸法持续存在，直至坏灭刹那。",
+      "proximateCause": "受蕴、想蕴与识蕴之存在。"
+    },
+    "CS_MANASIKARA": {
+      "characteristic": "引导相应诸法全面朝向并执取所缘之相。",
+      "function": "令心与心所共同汇聚并执取所缘。",
+      "manifestation": "令心转向所缘（犹如舵手驾舟驶向目的地）。",
+      "proximateCause": "过去、现在或未来所缘之现前。"
+    },
+    "CS_VITAKKA": {
+      "characteristic": "将俱生诸法投向所缘——举心投向所缘之相。",
+      "function": "令心与心所撞击、接触所缘。",
+      "manifestation": "心与俱生心所抵达所缘。",
+      "proximateCause": "所缘与其余三蕴（受、想、识）之存在（因寻属行蕴）。"
+    },
+    "CS_VICARA": {
+      "characteristic": "省察所缘之相——细密且持续地审视、观察所缘。",
+      "function": "令心与俱生心所无间断地紧贴所缘。",
+      "manifestation": "既已接触所缘，便系缚相应诸法于其上，使其持续缘取同一所缘而不偏离。",
+      "proximateCause": "所缘与其余三蕴之存在（因伺亦属行蕴）。"
+    },
+    "CS_ADHIMOKKHA": {
+      "characteristic": "决断、破除犹豫之相——令心脱离疑虑而朝向所缘。",
+      "function": "令心坚定决断于所缘，不动摇。",
+      "manifestation": "对所缘作出坚定决断——并依此决断而行。",
+      "proximateCause": "须加以审度、抉择或决断之所缘现前。"
+    },
+    "CS_VIRIYA": {
+      "characteristic": "勤勉、坚忍之相——勇猛精进而不退转。",
+      "function": "扶持俱生诸法，使其不致退失。",
+      "manifestation": "（于所作事）不退缩、不懈怠。",
+      "proximateCause": "悚惧心，或能策发心志之事缘，如生老病死等苦。"
+    },
+    "CS_PITI": {
+      "characteristic": "欣喜、欢悦，因所缘而心生踊跃（不同于领受所缘之受，喜乃于所缘中生起兴味与悦意）。",
+      "function": "令身轻爽、令心欢喜。",
+      "manifestation": "心意高扬、充盈振奋（不同于属于心适悦之乐受）。",
+      "proximateCause": "受蕴、想蕴与识蕴之存在（因喜属行蕴——不同于喜受以身轻安与心轻安为近因）。"
+    },
+    "CS_CHANDA": {
+      "characteristic": "希求、欲得所缘之相。",
+      "function": "令心寻求并趋向所缘。",
+      "manifestation": "获得所希求之所缘。",
+      "proximateCause": "可欲、值得希求之所缘现前。"
+    },
+    "CS_MOHA": {
+      "characteristic": "心盲、无知于所应知——与智慧相反之相。",
+      "function": "障蔽清明，令无法照见诸法实相。",
+      "manifestation": "黑暗与蒙蔽。",
+      "proximateCause": "不如理作意——疏忽、不当之作意。"
+    },
+    "CS_AHIRIKA": {
+      "characteristic": "于恶行、罪过与过失全无羞耻之心。",
+      "function": "造作恶行、过失与不善业。",
+      "manifestation": "于不善业毫不退缩。",
+      "proximateCause": "缺乏自重。"
+    },
+    "CS_ANOTTAPPA": {
+      "characteristic": "于不善法全无畏惧之心。",
+      "function": "造作恶行与不端之业。",
+      "manifestation": "行恶时毫不畏缩、无所顾忌。",
+      "proximateCause": "不顾念他人。"
+    },
+    "CS_UDDHACCA": {
+      "characteristic": "躁动不安——心散乱、浮躁之相。",
+      "function": "令心无法稳固持久地安住于所缘。",
+      "manifestation": "心意动摇、纷扰不安。",
+      "proximateCause": "不如理作意——疏忽、不当之摄心。"
+    },
+    "CS_LOBHA": {
+      "characteristic": "执着所缘——令俱生心所贪着于所缘。",
+      "function": "令心黏着于所缘。",
+      "manifestation": "不舍所缘。",
+      "proximateCause": "耽乐、受缚于令人悦意、诱惑、可爱之诸法。"
+    },
+    "CS_DITTHI": {
+      "characteristic": "固执违背真理之见解。",
+      "function": "违背事实，错误地曲解诸法。",
+      "manifestation": "坚执错误之见解。",
+      "proximateCause": "不亲近圣者与智者。"
+    },
+    "CS_MANA": {
+      "characteristic": "骄傲、憍慢、自高——与人较量而自认胜过、相等或不如。",
+      "function": "驱使相应诸法趋向自赞高举。",
+      "manifestation": "虚荣与自我夸耀。",
+      "proximateCause": "可供比较之所缘现前。"
+    },
+    "CS_DOSA": {
+      "characteristic": "身心暴恶、粗猛——敌对与炽燃憎恨之相。",
+      "function": "令心燃烧、焦灼，并欲毁坏所缘。",
+      "manifestation": "造作毁坏、伤害自他或俱伤之恶业。",
+      "proximateCause": "不可意所缘现前——缺乏理解与如理省思。"
+    },
+    "CS_ISSA": {
+      "characteristic": "于他人之成就或胜妙心怀嫉妒。",
+      "function": "因他人获利或卓越而不悦。",
+      "manifestation": "背离、不愿正视他人之胜处。",
+      "proximateCause": "他人胜过自己之名声、财富、快乐或成就。"
+    },
+    "CS_MACCHARIYA": {
+      "characteristic": "隐匿自身之财物或成就。",
+      "function": "不愿与他人分享或令他人受用己物。",
+      "manifestation": "吝啬不施，不肯分财予人。",
+      "proximateCause": "自身所拥有之财物或成就。"
+    },
+    "CS_KUKKUCCA": {
+      "characteristic": "追悔之相——为已作之恶或未作之善而懊恼不安。",
+      "function": "令心因往事而烦躁、忧恼。",
+      "manifestation": "心中生起懊悔与愧疚。",
+      "proximateCause": "已造之恶业，或应行而未行之善业功德。"
+    },
+    "CS_THINA": {
+      "characteristic": "令精进停滞之懈怠沉重。",
+      "function": "舍弃勇猛精进，使精勤止息，令心向外退堕回有分。",
+      "manifestation": "心意退缩、萎靡。",
+      "proximateCause": "不如理作意——疏忽、不当之摄心。"
+    },
+    "CS_MIDDHA": {
+      "characteristic": "不堪任作业——昏昧、倦怠、睡意之相。",
+      "function": "笼罩并蒙蔽心识。",
+      "manifestation": "昏沉、愚钝、嗜睡。",
+      "proximateCause": "缺乏正念与如理作意。"
+    },
+    "CS_VICIKICCHA": {
+      "characteristic": "疑惑之相——于三宝与正法犹豫不决。",
+      "function": "令心摇摆、动荡、迟疑不决。",
+      "manifestation": "无法决断、缺乏定见。",
+      "proximateCause": "不如理作意。"
+    },
+    "CS_SADDHA": {
+      "characteristic": "于三宝及业果法则深怀净信——心意清净之相。",
+      "function": "令心澄净，使之信靠真正值得信赖之境。",
+      "manifestation": "远离迷信之染污。",
+      "proximateCause": "值得信赖之境（三宝、业报法则）现前。"
+    },
+    "CS_SATI": {
+      "characteristic": "警觉、不放逸、不漂浮——忆持所缘之相。",
+      "function": "忆念不忘，防止失念。",
+      "manifestation": "修习令心紧贴所缘——守护六根门。",
+      "proximateCause": "坚固之想（稳固之辨识）。"
+    },
+    "CS_HIRI": {
+      "characteristic": "厌恶恶行、不喜过失。",
+      "function": "远离并止息造作恶业。",
+      "manifestation": "遇恶与过失则退缩、回避。",
+      "proximateCause": "自重之心。"
+    },
+    "CS_OTTAPPA": {
+      "characteristic": "畏惧恶行、厌恶过失之险患。",
+      "function": "远离恶业，不造伤害。",
+      "manifestation": "遇恶则退缩并回避。",
+      "proximateCause": "顾念他人，畏惧他人谴责。"
+    },
+    "CS_ALOBHA": {
+      "characteristic": "心不为所缘所染——不执着、不贪爱之相。",
+      "function": "不执取、不黏着、不贪恋，超越系缚。",
+      "manifestation": "不贪恋现前之物，不迷醉于悦意所缘；乃至究竟时，亦不贪求来生之有。",
+      "proximateCause": "如理作意。"
+    },
+    "CS_ADOSA": {
+      "characteristic": "远离残忍、恶意与敌对——清凉柔和之相。",
+      "function": "除灭残暴，避免伤害，平息炽燃瞋怒。",
+      "manifestation": "呈现柔和与清凉。",
+      "proximateCause": "如理作意。"
+    },
+    "CS_TATRAMAJJHATTATA": {
+      "characteristic": "令心与心所彼此平齐——平衡、不偏不倚之相。",
+      "function": "防止不足或过度，令相应诸法不失平衡。",
+      "manifestation": "生起平稳与中舍。",
+      "proximateCause": "和谐共处、协同运作之诸法现前。"
+    },
+    "CS_KAYAPASSADDHI": {
+      "characteristic": "寂静，远离心所聚（受、想、行三蕴）之躁动。",
+      "function": "平息心所之躁动，使其不再动摇。",
+      "manifestation": "心所变得寂静、安宁而清凉。",
+      "proximateCause": "心所（受、想、行三蕴）之存在。"
+    },
+    "CS_CITTAPASSADDHI": {
+      "characteristic": "寂静，远离心（识蕴）之躁动。",
+      "function": "平息心之躁动，使其不再动摇。",
+      "manifestation": "心变得寂静、安宁而清凉。",
+      "proximateCause": "心（识蕴）之存在。"
+    },
+    "CS_KAYALAHUTA": {
+      "characteristic": "轻快，远离心所聚（受、想、行）之沉重。",
+      "function": "防止沉重压抑心所，使其轻快。",
+      "manifestation": "心所不再迟钝而变得轻安敏捷。",
+      "proximateCause": "心与俱生心所（受、想、行）之存在。"
+    },
+    "CS_CITTALAHUTA": {
+      "characteristic": "轻快，远离心之沉重。",
+      "function": "防止沉重压抑心识，使其轻快。",
+      "manifestation": "心不再迟钝而变得轻安敏捷。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_KAYAMUDUTA": {
+      "characteristic": "心所聚（受、想、行）之柔软与柔顺。",
+      "function": "消融心所之僵硬，减除刚强与粗涩。",
+      "manifestation": "柔顺、易于缘取所缘、远离僵硬。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_CITTAMUDUTA": {
+      "characteristic": "心之柔软与柔顺。",
+      "function": "消融心之僵硬，减除其刚强与粗涩。",
+      "manifestation": "心变得柔顺，易于缘取所缘，远离僵硬。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_KAYAKAMMANNATA": {
+      "characteristic": "令心所聚脱离不堪任、不适用之状态。",
+      "function": "消融并去除心所之不堪任性。",
+      "manifestation": "心所变得调适且堪任缘取所缘。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_CITTAKAMMANNATA": {
+      "characteristic": "令心脱离不堪任、不适用之状态。",
+      "function": "消融并去除心之不堪任性。",
+      "manifestation": "心变得调适且堪任缘取所缘。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_KAYAPAGUNNATA": {
+      "characteristic": "心所聚无滞涩——心所之纯熟练达。",
+      "function": "破除并消融心所之滞涩。",
+      "manifestation": "远离并解脱恶行与过失。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_CITTAPAGUNNATA": {
+      "characteristic": "心无滞涩——心之纯熟练达。",
+      "function": "破除并消融心之滞涩。",
+      "manifestation": "远离并解脱恶行与过失。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_KAYUJUKATA": {
+      "characteristic": "心所聚之正直与端直。",
+      "function": "对治心所之谄曲与不直。",
+      "manifestation": "心所变得正直，无谄曲或偏邪。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_CITTUJUKATA": {
+      "characteristic": "心之正直与端直。",
+      "function": "对治心之谄曲与不直。",
+      "manifestation": "心变得正直，无谄曲或偏邪。",
+      "proximateCause": "心与俱生心所之存在。"
+    },
+    "CS_SAMMAVACA": {
+      "characteristic": "护持正语——远离并节制语恶行。",
+      "function": "远离虚妄与欺诳（妄语、两舌、恶口、绮语）。",
+      "manifestation": "断除邪语。",
+      "proximateCause": "信、念、惭、愧与少欲之存在。"
+    },
+    "CS_SAMMAKAMMANTA": {
+      "characteristic": "正当行事，扶助善法并断除自身烦恼。",
+      "function": "远离不善身业（杀生、偷盗、邪淫）。",
+      "manifestation": "断除邪业。",
+      "proximateCause": "信、念、惭、愧与少欲之存在。"
+    },
+    "CS_SAMMAAJIVA": {
+      "characteristic": "清净，舍离并节制身、语二种恶行。",
+      "function": "维持正当生计，防止恶行。",
+      "manifestation": "断除邪命，远离不善行。",
+      "proximateCause": "信、念、惭、愧与少欲之存在。"
+    },
+    "CS_KARUNA": {
+      "characteristic": "愿诸众生离苦——欲拔除众生痛苦之相。",
+      "function": "不忍见众生受苦——无法于他众生之苦前漠然置之。",
+      "manifestation": "仁慈，或不恼害其他众生。",
+      "proximateCause": "值遇受苦之众生——察觉众生为苦所逼之急迫境遇。"
+    },
+    "CS_MUDITA": {
+      "characteristic": "随喜众生之福乐——于他人快乐心生欢喜之相。",
+      "function": "于其他众生远离嫉妒。",
+      "manifestation": "于他众生之进步与快乐心生欣慰——瞋恚之破除。",
+      "proximateCause": "见众生造作并享有快乐——认清众生已获成就。"
+    },
+    "CS_PANNA": {
+      "characteristic": "明了、洞察诸法实相——照见无常、苦、无我三相之智慧。",
+      "function": "破除并消灭无明黑暗。",
+      "manifestation": "远离愚痴迷惑，远离染着贪爱。",
+      "proximateCause": "如理作意；寂止（安宁之心）；以及具足三善根（无贪、无瞋、无痴）之结生心。"
+    }
+  }
+}

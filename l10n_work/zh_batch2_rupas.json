@@ -1,0 +1,198 @@
+{
+  "locale": "zh",
+  "batch": "batch2_rupas",
+  "count": 28,
+  "rupas": {
+    "RP_001": {
+      "characteristic": "坚硬或柔软——物质之坚实或柔顺性。",
+      "function": "作为同一色聚（kalāpa）中其余诸色法之支撑基础。",
+      "manifestation": "领受——借由身触可感知为坚硬或柔软。",
+      "proximateCause": "其余三大种（水界、火界、风界）之俱生。",
+      "doctrinalNote": "四大种恒常俱生，不可分离。无色界中无有色法。"
+    },
+    "RP_002": {
+      "characteristic": "流动或凝聚——物质之粘合性。",
+      "function": "将同一色聚中之诸色法粘合在一起。",
+      "manifestation": "诸色法得以凝聚而不散坏。",
+      "proximateCause": "其余三大种（地界、火界、风界）之俱生。",
+      "doctrinalNote": "水界是四大种中唯一无法借由身触直接感知之界。"
+    },
+    "RP_003": {
+      "characteristic": "热或冷——物质之温度性。",
+      "function": "成熟并滋养同一色聚中之诸色法。",
+      "manifestation": "诸色法得以成熟与圆满。",
+      "proximateCause": "其余三大种（地界、水界、风界）之俱生。",
+      "doctrinalNote": "火界若作为外在温度（utu）独立运作，则生起时节生色（utu-samuṭṭhāna-rūpa）。"
+    },
+    "RP_004": {
+      "characteristic": "支持或推动——物质之运动性。",
+      "function": "支撑并推动物质产生运动。",
+      "manifestation": "物质获得支撑并产生移动。",
+      "proximateCause": "其余三大种（地界、水界、火界）之俱生。",
+      "doctrinalNote": "在入出息念（ānāpānasati）修行中，呼吸（风界）为主要禅修所缘。"
+    },
+    "RP_005": {
+      "characteristic": "微细而澄净，能摄取色所缘为境。",
+      "function": "作为眼识生起之物理依处。",
+      "manifestation": "眼识生起并见色所缘。",
+      "proximateCause": "过去业；色所缘现前撞击眼净色。",
+      "doctrinalNote": "唯由业所生。无色界中不存在。"
+    },
+    "RP_006": {
+      "characteristic": "微细，能摄取声所缘为境。",
+      "function": "作为耳识生起之物理依处。",
+      "manifestation": "耳识生起并闻声所缘。",
+      "proximateCause": "过去业；声所缘现前撞击耳净色。",
+      "doctrinalNote": "色界梵天具足耳根，因彼等借由声音沟通。"
+    },
+    "RP_007": {
+      "characteristic": "微细，能摄取香所缘为境。",
+      "function": "作为鼻识生起之物理依处。",
+      "manifestation": "鼻识生起并嗅香所缘。",
+      "proximateCause": "过去业；香所缘现前撞击鼻净色。",
+      "doctrinalNote": "唯出现于欲界。色界梵天不具鼻根。"
+    },
+    "RP_008": {
+      "characteristic": "微细，能摄取味所缘为境。",
+      "function": "作为舌识生起之物理依处。",
+      "manifestation": "舌识生起并尝味所缘。",
+      "proximateCause": "过去业；味所缘现前撞击舌净色。",
+      "doctrinalNote": "唯出现于欲界。梵天不食，故不具舌根。"
+    },
+    "RP_009": {
+      "characteristic": "遍布全身之微细净色，能摄取触所缘（地、火、风）为境。",
+      "function": "作为身识生起之物理依处。",
+      "manifestation": "身识生起并触知触所缘。",
+      "proximateCause": "过去业；触所缘现前撞击身净色。",
+      "doctrinalNote": "色界梵天具足身根。无想有情天中则无。"
+    },
+    "RP_010": {
+      "characteristic": "显现与呈现——眼根所见之所缘。",
+      "function": "作为眼识所认知之所缘。",
+      "manifestation": "眼识生起并执取之。",
+      "proximateCause": "光明存在并与眼根接触。",
+      "doctrinalNote": "色所缘（颜色）不同于一般意义上之色法（物质）。"
+    },
+    "RP_011": {
+      "characteristic": "振响——耳根所闻之所缘。",
+      "function": "作为耳识所认知之所缘。",
+      "manifestation": "耳识生起并执取之。",
+      "proximateCause": "声音生起并与耳根接触。"
+    },
+    "RP_012": {
+      "characteristic": "飘散——鼻根所嗅之所缘。",
+      "function": "作为鼻识所认知之所缘。",
+      "manifestation": "鼻识生起并执取之。",
+      "proximateCause": "气味生起并与鼻根接触。"
+    },
+    "RP_013": {
+      "characteristic": "呈现——舌根所尝之所缘。",
+      "function": "作为舌识所认知之所缘。",
+      "manifestation": "舌识生起并执取之。",
+      "proximateCause": "味所缘为舌根所摄取而接触。"
+    },
+    "RP_014": {
+      "characteristic": "女性特征之表现——影响全身色法。",
+      "function": "决定女性之形相与举止特征。",
+      "manifestation": "于色身中显现女性性别特征。",
+      "proximateCause": "自结生刹那起即产生女性之业。",
+      "doctrinalNote": "唯出现于欲界。色界梵天无有性根。"
+    },
+    "RP_015": {
+      "characteristic": "男性特征之表现——影响全身色法。",
+      "function": "决定男性之形相与举止特征。",
+      "manifestation": "于色身中显现男性性别特征。",
+      "proximateCause": "自结生刹那起即产生男性之业。",
+      "doctrinalNote": "唯出现于欲界。"
+    },
+    "RP_016": {
+      "characteristic": "作为依止处——意门诸识所依之物理基础。",
+      "function": "作为一切经由意门生起之心识（除五双识外）之物理依处。",
+      "manifestation": "意门诸识得以生起。",
+      "proximateCause": "由过去业所生；依心脏血液而维持。",
+      "doctrinalNote": "无色界中不存在。此乃阿毗达磨认知体系中最重要之色依处。"
+    },
+    "RP_017": {
+      "characteristic": "维持生命——护持由业所生之诸色法。",
+      "function": "令业生色法于一色法寿限内持续存在。",
+      "manifestation": "业生色法得以存活并延续。",
+      "proximateCause": "唯业能产生色命根。",
+      "doctrinalNote": "色法之寿限等于十七个心刹那。色命根灭时，业生色法亦随之而灭。"
+    },
+    "RP_018": {
+      "characteristic": "滋养——存在于每一色聚中之营养素。",
+      "function": "滋养同一色聚中之诸色法，并由食生起新色法。",
+      "manifestation": "色法获得滋养、维持并增殖。",
+      "proximateCause": "所消化之食物（段食）存在。",
+      "doctrinalNote": "食物中之营养素（kabaḷīkāra-āhāra）为阿毗达磨四食之一。"
+    },
+    "RP_019": {
+      "characteristic": "界限——在诸色聚之间形成分界。",
+      "function": "划分诸色聚之间的界限。",
+      "manifestation": "诸色聚得以区分而不相混杂。",
+      "proximateCause": "彼此并存之诸色聚存在。",
+      "doctrinalNote": "作为色法之空界，不同于哲学上之绝对空间。"
+    },
+    "RP_020": {
+      "characteristic": "动作——用以传达意图之身体表达。",
+      "function": "借由身体姿态传达意图。",
+      "manifestation": "他人借由身体姿态理解己之意图。",
+      "proximateCause": "伴随欲表达某事之意图而生起之心。",
+      "doctrinalNote": "唯由心所生。乃身业（kāya-kamma）之基础。"
+    },
+    "RP_021": {
+      "characteristic": "语音表达——用以传达意图之言语。",
+      "function": "借由言语传达意图。",
+      "manifestation": "他人借由言语声音理解己之意图。",
+      "proximateCause": "伴随欲说话之意图而生起之心。",
+      "doctrinalNote": "唯由心所生。乃语业（vacī-kamma）之基础。"
+    },
+    "RP_022": {
+      "characteristic": "轻快——物质轻盈、敏捷之性。",
+      "function": "防止物质沉重与僵硬。",
+      "manifestation": "身体轻盈，行动自如。",
+      "proximateCause": "调适之心、时节与食物；无病。",
+      "doctrinalNote": "非由业所生，取决于当前健康与诸缘。"
+    },
+    "RP_023": {
+      "characteristic": "柔软——物质柔顺、可塑之性。",
+      "function": "防止物质刚强与僵硬。",
+      "manifestation": "身体柔软而富有弹性。",
+      "proximateCause": "和谐之心、时节与食物；无病。"
+    },
+    "RP_024": {
+      "characteristic": "适业性——物质堪任、适用之性。",
+      "function": "令物质易于运用且远离疲乏。",
+      "manifestation": "身体堪任任何作业。",
+      "proximateCause": "和谐之心、时节与食物。"
+    },
+    "RP_025": {
+      "characteristic": "生起——色聚最初生起之阶段。",
+      "function": "标示色聚存在之开端。",
+      "manifestation": "色法于世间生起。",
+      "proximateCause": "色法之四生因（业、心、时节、食）。",
+      "doctrinalNote": "色法四相乃一切色法之阶段，而非独立之色法实体。"
+    },
+    "RP_026": {
+      "characteristic": "相续——色法流延续与住立之阶段。",
+      "function": "令色法流无间断地持续。",
+      "manifestation": "色法呈现稳定与连续之相。",
+      "proximateCause": "色法四生因持续运作。",
+      "doctrinalNote": "相续性说明何以万物看似稳定——实则乃生灭不断之相续流。"
+    },
+    "RP_027": {
+      "characteristic": "老衰——色法老化、衰退之阶段。",
+      "function": "标示色法之变化与衰退。",
+      "manifestation": "色法衰老、耗损并变易。",
+      "proximateCause": "时间推移；色法已然存在。",
+      "doctrinalNote": "老性是色法中无常（anicca）最清晰可见之相。"
+    },
+    "RP_028": {
+      "characteristic": "坏灭——色法彻底止息之阶段。",
+      "function": "标示色法存在之终结。",
+      "manifestation": "色法不复存在——已彻底止息。",
+      "proximateCause": "色法已经历前三个生、住、异阶段。",
+      "doctrinalNote": "清晰照见坏灭阶段乃内观禅修（vipassanā）之起点。"
+    }
+  }
+}
