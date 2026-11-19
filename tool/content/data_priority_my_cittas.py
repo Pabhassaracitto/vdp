@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Myanmar (`my`) examples for the 12 akusala cittas.
+"""Myanmar (`my`) per-entity extras that the shared tables do not carry.
+
+Two blocks live here:
+  * ``CITTA_EXAMPLES_MY`` -- examples for the 12 akusala cittas.
+  * ``KAMMAS_MY``         -- the single kamma whose glossary row is empty.
 
 `CittaModel.localizedExamples` (`lib/core/localization/localized_content.dart`)
 reads `cittas.<id>.examples`, so these are learner-facing. Only the 12 akusala
@@ -55,4 +59,32 @@ CITTA_EXAMPLES_MY = {
         "ရည်ရွယ်ချက်မရှိ လွင့်ပါးနေသော ပျံ့လွင့်သည့် စိတ်။",
         "မစုစည်းဘဲ ပြန့်ကျဲနေသော အတွေးအခေါ်။",
     ],
+}
+
+
+# ---------------------------------------------------------------------------
+# Kammas
+#
+# `LocalizedKammaContent` (lib/core/localization/localized_content.dart:90-95)
+# reads ONLY `name` and `description` for this section, so only those two fields
+# are supplied. `shortName`, `doctrinalNote` and `examples` have no call site
+# and are deliberately left absent for English fallback.
+#
+# KM_R_04 is the one kamma missing from the shipped catalog. Root cause: the
+# glossary headword "Lokuttara-kamma / Magga-kamma" has an EMPTY `my` cell in
+# l10n_work/glossary.csv, so the shared table has nothing to emit. The rendering
+# below is composed only from glossary-attested pieces --
+#   Lokuttara -> လောကုတ္တရာ, Kamma -> ကံ, "Magga citta" -> မဂ်စိတ် (hence မဂ်)
+# The proposed glossary fill is recorded in l10n_work/my_terminology_evidence.md.
+# ---------------------------------------------------------------------------
+
+KAMMAS_MY = {
+    "KM_R_04": {
+        "name": "လောကုတ္တရာကံ (မဂ်ကံ)",
+        "description": (
+            "လောကုတ္တရာကံဆိုသည်မှာ မဂ်စိတ် ၄ ပါး ဖြစ်သည် — ကိလေသာတို့ကို "
+            "ပယ်သတ်ပြီး လောကုတ္တရာအကျိုးကို ပေးသည်။ ထိုအကျိုးမှာ ဖိုလ်စိတ် "
+            "၄ ပါးနှင့် နိဗ္ဗာန် ဖြစ်ကာ သံသရာကို ချုပ်ငြိမ်းစေသည်။"
+        ),
+    },
 }
