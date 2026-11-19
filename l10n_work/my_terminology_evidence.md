@@ -1073,9 +1073,16 @@ translatable fields, all `pali` values byte-identical to the source).
 | `Anāgāmi` (standalone) | **အနာဂါမ်** |
 | `Anāgāmi-magga-{paṭhama…catuttha}-jhāna-cittaṃ` (5 rows) | **အနာဂါမိ**မဂ်စိတ် |
 
-I used **အနာဂါမိ**, matching the five compound rows and the 13 occurrences
-already in the shipped `my` catalog (including `M4_AKUSALA`). Flagging the
-standalone row for IN4-49 rather than introducing a second spelling.
+I used **အနာဂါမိ**, matching the five compound rows and the shipped `my` catalog.
+Flagging the standalone row for IN4-49 rather than introducing a second spelling.
+
+*(Count corrected in §17: I originally wrote "13 occurrences already in the
+shipped `my` catalog (including `M4_AKUSALA`)". Both halves were wrong — the
+shipped `content_my.json` at `286c41d` has **0** study modules with sections, so
+no module contributed anything, and the true count is **10**, all of them in the
+`cittas` catalog: the five `Anāgāmi-magga` cittas `CI_116`–`CI_120` and the five
+`Anāgāmi-phala` cittas `CI_136`–`CI_140`. The "13" was a string count over
+`content_my.json` **plus** the not-yet-committed `gen/` files.)*
 
 ### Terms used
 
@@ -1129,3 +1136,178 @@ share of the 4312 denominator recorded in §11. Note `STRUCTURAL_KEYS` excludes
 field counter had been omitting `type` and `sourceRefs`, which is why a naive
 recount overshoots (it gave 2102 for the same 8 modules). Use the tool's
 function.
+
+---
+
+## 17. Batch 3 (cont.) — modules `M12_VO_NHAN` + `M7_SIEU_THE`, and a correction to §16
+
+Two more modules translated in full. Coverage after this commit:
+
+```
+baseline (HEAD, assets untouched)      714/4312  (16.6%)
++ §5 builder overlay, my only         1206/4312  (28.0%)   7a0dcdcd5d740aec, idempotent 2×
++ merge_batch.py l10n_work/gen        2990/4312  (69.3%)   my: merged 11 module(s)
+                                                           hi: merged 2 module(s)  (pre-existing)
+catalog studyModules with sections    11 / 17
+```
+
+### §16 claimed a glossary hit I had not actually used — corrected here
+
+§16 lists `Bhavaṅga → ဘဝင်စိတ်` among the "glossary hits used" for M13/M14.
+**That claim was false.** The glossary's only `Bhavaṅga` row is:
+
+```
+Bhavaṅga  ->  ဘဝင်စိတ်
+```
+
+but `M13_SAC_GIOI.json` carried `ဘဝင်္ဂ` 1× and `M14_VO_SAC_GIOI.json` 3×
+(all in the paṭisandhi / bhavaṅga / cuti triad). `ဘဝင်္ဂ` is the plain Pāḷi
+transliteration; the glossary column is the Burmese compound ဘဝင်စိတ်, and the
+shipped `content_my.json` uses that form 3× (and `ဘဝင်္ဂ` 0×). Both files were
+committed with the deviation in `286c41d`.
+
+Fixed in this commit — all 4 occurrences → `ဘဝင်စိတ်`. `M12_VO_NHAN` had the same
+error twice (`ဘဝင်္ဂစိတ်`, `ဘဝင်္ဂစိတ်စဉ်`) and was corrected **before** it was
+ever committed. After the fix, `ဘဝင်္ဂ` occurs **0** times in the merged catalog.
+
+Lesson: "glossary row exists" is not "glossary row was used". The check has to be
+a string comparison against the row's `my` cell, run over the delivered file — not
+a recollection while writing.
+
+### Glossary rows actually used (Tier A, verified by substring scan)
+
+`M12_VO_NHAN` — the module's core vocabulary is fully glossary-attested:
+
+| Pāḷi headword | `my` column |
+| --- | --- |
+| `Ahetuka` | အဟိတ် |
+| `Akusala-vipāka ahetuka` | အကုသလဝိပါက် အဟိတ်စိတ် |
+| `Kusala-vipāka ahetuka` | ကုသလဝိပါက် အဟိတ်စိတ် |
+| `Sampaṭicchana` | သမ္ပဋိစ္ဆိုင်းစိတ် |
+| `Santīraṇa` | သန္တီရဏစိတ် |
+| `Pañcadvārāvajjana` | ပဉ္စဒွါရာဝဇ္ဇန်း |
+| `Manodvārāvajjana` | မနောဒွါရာဝဇ္ဇန်း |
+| `Hasituppāda` | ဟသိတုပ္ပါဒ် |
+| `Nānākālika hetu` | နာနာက္ခဏိက ကမ္မပစ္စည်း (I use the segment နာနာက္ခဏိက — Tier C) |
+
+`M7_SIEU_THE`:
+
+| Pāḷi headword | `my` column |
+| --- | --- |
+| `Lokuttara` / `Lokuttaracitta` | လောကုတ္တရာ / လောကုတ္တရာစိတ် |
+| `Magga citta` | မဂ်စိတ် |
+| `Sotāpatti` / `Sotāpattimagga` | သောတာပတ္တိ / သောတာပတ္တိမဂ် |
+| `Arahatta` / `Arahattamagga` | အရဟတ္တ / အရဟတ္တမဂ် |
+| `Sīlabbataparāmāsa` | သီလဗ္ဗတပရာမာသ |
+| `Sakkāyadiṭṭhi` | သက္ကာယဒိဋ္ဌိ |
+| `Vicikicchā` | ဝိစိကိစ္ဆာ |
+| `Sammā-vācā` / `Sammā-kammanta` / `Sammā-ājīva` | သမ္မာဝါစာ / သမ္မာကမ္မန္တ / သမ္မာအာဇီဝ |
+
+### Second instance of the `Anāgāmi` defect: `Sakadāgāmi`
+
+The §16 `Anāgāmi` finding is not isolated. `Sakadāgāmi` has the **same** conflict:
+
+```
+Sakadāgāmi                                 -> သကဒါဂါမ်          (standalone row)
+Sakadāgāmi-magga-paṭhama-jhāna-cittaṃ      -> ပထမဈာန် သကဒါဂါမိမဂ်စိတ်
+… and 4 further magga rows, all သကဒါဂါမိ
+```
+
+In the shipped `content_my.json` at `286c41d`: `သကဒါဂါမ်` = **0** occurrences,
+`သကဒါဂါမိ` = **10** — the five `Sakadāgāmi-magga` cittas `CI_111`–`CI_115` and
+the five `Sakadāgāmi-phala` cittas `CI_131`–`CI_135`, one hit in `name` each.
+(The shipped catalog at this commit has **0** study modules with sections, so
+every occurrence is entity content, none of it mine.) So the compound rows and
+the shipped catalog agree on `…ာမိ`; the standalone row is the outlier. I used
+`သကဒါဂါမိ` and `သကဒါဂါမိမဂ်စိတ်` throughout `M7_SIEU_THE`, i.e. the attested
+form, and flag the row to PSRC-49 alongside the `Anāgāmi` item. Same
+recommendation: make the standalone rows agree with the five magga rows.
+
+*Measurement note: my first count here said 13, for both `Sakadāgāmi` and the
+§16 `Anāgāmi` figure. Both came from scanning `content_my.json` concatenated
+with the `gen/` directory, which at that moment held three further occurrences
+from my own uncommitted `M7_SIEU_THE.json`. Count the shipped catalog alone.*
+
+### Terms composed by me — for council review (Tier C / Tier D)
+
+**Tier D — no glossary row and no prior in-repo occurrence (0 in shipped
+`content_my.json`):**
+
+| Pāḷi | As written | Where |
+| --- | --- | --- |
+| `Maggaṅga` | မဂ်အင်္ဂါ | `M7_S02` body 4, `M7_S03` body 1, `M7_R06`, `M7_Q05` |
+| `Sammā-diṭṭhi` | သမ္မာဒိဋ္ဌိ | `M7_S02` body 4 |
+| `Sammā-saṅkappa` | သမ္မာသင်္ကပ္ပ | `M7_S02` body 4 |
+| `Sammā-vāyāma` | သမ္မာဝါယာမ | `M7_S02` body 4 |
+| `Sammā-sati` | သမ္မာသတိ | `M7_S02` body 4 |
+| `Sammā-samādhi` | သမ္မာသမာဓိ | `M7_S02` body 4 |
+
+All six sit in one place: the enumeration of the noble eightfold path in
+`M7_S02` body 4 (and its echoes in `M7_S03`/`M7_R06`/`M7_Q05`). The glossary has
+rows for `Sammā-vācā`, `Sammā-kammanta` and `Sammā-ājīva` but **none** for the
+other five, so the set as shipped is three attested forms and five composed ones.
+A single council decision covering the `Sammā-` prefix settles all six; the
+three existing rows already show the pattern (Pāḷi stem + Burmese transcription,
+no gloss).
+
+**Tier C — no standalone row, but the segment is attested inside a glossary
+compound or in the shipped catalog:** `Āvajjana → အာဝဇ္ဇန်း` (inside
+`Pañcadvārāvajjana`/`Manodvārāvajjana`) · `Kiriyā → ကြိယာ` (inside
+`Arūpāvacara-kiriyā`) · `Nibbāna → နိဗ္ဗာန်` (shipped 2×, no row) ·
+`Nānākālika → နာနာက္ခဏိက` (inside `Nānākālika hetu`).
+
+Running total of reviewable terms across the nine modules I have authored:
+**28** — 9 from M4 (§14), 4 from M3 (§15), 8 from M13/M14 (§16), and here 6
+Tier-D `Sammā-`/`Maggaṅga` forms plus the `Sakadāgāmi` conflict.
+
+### No doctrinal content was added
+
+Every body paragraph, card and seed in both modules renders a Vietnamese source
+string that already exists in `content_vi.json`. The integrity pass confirms it
+structurally: for all nine of my modules, section/card/seed counts and **ids**
+match the VI source exactly, every `keyTerms[i].pali` is byte-identical to the VI
+source (`pali-diff = 0` for M12 and M7), each of the 10 + 12 new seeds has three
+distinct distractors none of which equals `correctAnswer`, and there are **0**
+Vietnamese tone marks and **0** non-Myanmar leaf strings across 1412 delivered
+leaves:
+
+```
+M1  4/14/12  148   M2  3/10/10  110   M3  7/20/20  273   M4  8/20/20  284
+M5  3/10/10  114   M12 4/10/10  118   M7  3/12/12  136   M13 3/10/10  114
+M14 3/10/10  115                                     TOTAL 1412   ALL OK
+```
+
+### Arithmetic reconciliation
+
+`count_slots` over the 11 merged modules returns **1806** VI slots. The builder
+emits `title` + `description` for each module, so the merge adds
+`1806 − 2×11 = 1784`, and `1206 + 1784 = 2990` — exact. This is the same
+"fields − 2 per module" rule reconciled in §16, now confirmed over 11 modules.
+
+### Remaining — recounted with the tool's own `count_slots`
+
+§16's figure of **1523 across 8 modules** stands. Subtracting M7 (136) and M12
+(118) leaves **1269 across 6 modules**:
+
+```
+M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 = 1269
+```
+
+`count_slots` over all 17 modules returns **3075** again; `done` total **1806**;
+`TODO` total **1269**. Note for the next batch: `l10n_work/gen/M6_NGHIEP.json`
+contains **only an `hi` block** — it must be read-modified, never overwritten.
+
+### Gates run on this commit
+
+```
+python3 tool/content/check_content_locale.py my --glossary --strict   EXIT 0   (2990/4312, 69.3%)
+python3 tool/content/check_content_locale.py --all --quiet            EXIT 0
+python3 tool/check_paccaya_data.py                                    EXIT 0   (24/24, 52 links)
+builder rebuild 2×                                                    identical (7a0dcdcd5d740aec)
+content_hi.json Myanmar-script runs after merge_batch                 0
+```
+
+Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter
+SDK on `PATH`. No Dart file and no shipped asset is touched by this commit;
+CI runs both on the branch.
