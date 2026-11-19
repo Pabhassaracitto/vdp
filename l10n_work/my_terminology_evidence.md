@@ -1797,3 +1797,52 @@ Myanmar orthography audit                                             0 illegal 
 
 Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter SDK
 on `PATH`. This commit changes zero Dart and zero shipped asset; CI runs both.
+
+---
+
+## 21. Addendum — the rupas/kammas absence is now verified against *two* consumers
+
+§20 argued the 177 absent rupas/kamma fields have no UI call site, citing only
+`localized_content.dart`. That was one consumer; the claim deserves the other. Both
+check out, and the detail matters because the fields are *declared* on `RupaModel`
+and on `KammaModel`, which looks like consumption until you follow it.
+
+**Consumer 1 — `lib/core/localization/localized_content.dart`.**
+`trangThai` / `phanSu` / `thanhTuu` / `nhanGan` are declared on **three** models —
+`cetasika_model.dart:98-101`, `paticca_model.dart:124-127`, `rupa_model.dart:99-102`
+— but the localization layer resolves them for only two of the three:
+`LocalizedCetasikaContent` (lines 56–62, via `_optionalContent`) and
+`LocalizedPaticcaContent` (lines 189–208, via `optionalText`). There is no
+corresponding call anywhere in `LocalizedRupaContent` (83–88). A grep for those
+four identifiers across `lib/`, excluding `*.g.dart` and `*.freezed.dart`, returns
+only those two extensions plus the three model declarations — no direct field read
+from any widget.
+
+`localizedDoctrinalNote` exists in exactly three extensions —
+`LocalizedPaccayaContent:132`, `LocalizedPaticcaContent:219`,
+`LocalizedVithiContent:270` — and its three UI call sites are
+`paccaya_detail_sheet.dart:27`, `paticca_detail_sheet.dart:30`,
+`vithi_screen.dart:227`. Neither `LocalizedRupaContent` nor `LocalizedKammaContent`
+declares one.
+
+**Consumer 2 — `lib/features/quiz/services/quiz_generator.dart`.** This one reads the
+content catalog directly rather than through the extensions, so it is the consumer
+that could have invalidated the claim. It does not:
+
+| Helper | Lines | Catalog section | Fields |
+| --- | --- | --- | --- |
+| `kammaName` / `kammaDescription` | 942, 949 | `'kammas'` | `name`, `description` |
+| `rupaName` / `rupaDescription` | 970, 977 | `'rupas'` | `name`, `description` |
+| `cetasikaName` / `cetasikaDescription` | 928, 935 | `'cetasikas'` | `name`, `description` |
+
+No quiz helper reaches `characteristic`, `function`, `manifestation`,
+`proximateCause`, `doctrinalNote`, `examples` or `shortName` for either section.
+
+**Conclusion, unchanged but now on firmer ground.** The only strings the app reads
+for `rupas` and `kammas` are `name` and `description`, and both are fully translated
+in `my`. Adding the other 177 would populate keys that no code path in
+`localized_content.dart` or `quiz_generator.dart` requests. If the council decides
+rupas should carry the four aspects — a reasonable product call, since cetasikas and
+paticcas already do — the change is: add four `_optionalContent`-style getters to
+`LocalizedRupaContent`, wire them into the rupa detail widget, and *then* the
+translations are needed. That is a Dart change, and it is outside a `my`-only diff.
