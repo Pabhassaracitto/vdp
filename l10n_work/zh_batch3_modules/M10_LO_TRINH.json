@@ -98,5 +98,313 @@
         "此项空缺有待日后核实来源后，从其他文献（可能为 VDP-NguoiVaCoi.pdf）或完整讲义文本中补全。"
       ]
     }
+  ],
+  "reviewCards": [
+    {
+      "id": "M10_R01",
+      "front": "心路过程中的“六组六法”是什么？",
+      "back": "6 依处、6 门、6 所缘、6 识、6 心路过程与所缘的 6 种显现方式。"
+    },
+    {
+      "id": "M10_R02",
+      "front": "进入五根门的所缘如何分级？",
+      "back": "四级：极大（atimahanta）、大（mahanta）、微细（paritta）与极微细（atiparitta）。"
+    },
+    {
+      "id": "M10_R03",
+      "front": "极大所缘的五门心路有多少个心刹那？",
+      "back": "17 个心刹那（止于彼所缘 / tadālambana）。"
+    },
+    {
+      "id": "M10_R04",
+      "front": "五门心路的前三个有分刹那是什么？",
+      "back": "过去有分（Atīta-bhavaṅga）、有分波动（Bhavaṅga-calana）与有分断（Bhavaṅgupaccheda）。"
+    },
+    {
+      "id": "M10_R05",
+      "front": "请列举极大所缘五门心路的七个阶段。",
+      "back": "五门转向 → 五识 → 领受 → 推度 → 确定 → 速行 → 彼所缘。"
+    },
+    {
+      "id": "M10_R06",
+      "front": "在 17 刹那心路中有多少个客来（活跃）心刹那？",
+      "back": "14 个活跃心刹那（扣除前 3 个有分刹那）。"
+    },
+    {
+      "id": "M10_R07",
+      "front": "五门转向（Pañcadvārāvajjana）的作用是什么？",
+      "back": "令心流转向感官所缘，并觉察其于根门之现前。"
+    },
+    {
+      "id": "M10_R08",
+      "front": "速行（Javana）的作用是什么？",
+      "back": "主动认知、处理并充分体验所缘之滋味——造作善业或不善业。"
+    },
+    {
+      "id": "M10_R09",
+      "front": "有多少个心能在根门心路中作为速行？",
+      "back": "29 个欲界心：12 不善心 + 8 大善心 + 8 大唯作心 + 1 生笑心。"
+    },
+    {
+      "id": "M10_R10",
+      "front": "在芒果譬喻中，“咬七口芒果”代表什么？",
+      "back": "7 个速行（Javana）心刹那。"
+    },
+    {
+      "id": "M10_R12",
+      "front": "速行刹那储存什么？",
+      "back": "业之种子（Bījakamma）。词根 ju：疾驰。"
+    },
+    {
+      "id": "M10_R13",
+      "front": "哪一个速行刹那最强？为什么？",
+      "back": "第四刹那，因它处于动势巅峰，获前驱诸刹那充分扶持。"
+    },
+    {
+      "id": "M10_R14",
+      "front": "“Tadālambana”的字面意思是什么？",
+      "back": "Tadā（彼）+ ārammaṇa（所缘）→ “缘取同一所缘”；即彼所缘（登记/拾遗）。"
+    },
+    {
+      "id": "M10_R15",
+      "front": "为何恰好有二个彼所缘（Tadālambana）刹那？",
+      "back": "因为极大所缘速行之动势须经二刹那缓和，心方能回归有分。"
+    },
+    {
+      "id": "M10_R16",
+      "front": "有多少个心能执行彼所缘（Tadālambana）作用？",
+      "back": "11 个欲界异熟心：8 大异熟心 + 3 无因推度心。"
+    },
+    {
+      "id": "M10_R17",
+      "front": "彼所缘（Tadālambana）造业吗？",
+      "back": "不造业。彼所缘属异熟（vipāka）心，仅受用所缘之余留。"
+    },
+    {
+      "id": "M10_R18",
+      "front": "意门（Manodvāra）究竟是什么？",
+      "back": "意门即有分心（Bhavaṅga）本身。"
+    },
+    {
+      "id": "M10_R19",
+      "front": "标准清晰意门心路有多少个活跃心刹那？",
+      "back": "10 个活跃刹那：1 意门转向 + 7 速行 + 2 彼所缘。"
+    },
+    {
+      "id": "M10_R20",
+      "front": "特殊意门心路有多少种？",
+      "back": "10 种：证禅那、证道、神通心路、入定、入果定、灭尽定等。"
+    },
+    {
+      "id": "M10_R21",
+      "front": "离路心（vīthimutta）显现哪三种所缘？",
+      "back": "业（Kamma）、业相（Kammanimitta）或趣相（Gatinimitta）。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M10_Q01",
+      "type": "mcq",
+      "question": "极大所缘的五门心路有多少个心刹那？",
+      "correctAnswer": "17 个心刹那",
+      "distractors": [
+        "15 个心刹那",
+        "14 个心刹那",
+        "10 个心刹那"
+      ],
+      "explanation": "极大所缘（atimahanta）的完整五门心路恰好运行 17 个心刹那，等于色法寿限。"
+    },
+    {
+      "id": "M10_Q02",
+      "type": "mcq",
+      "question": "在 17 刹那心路中，有多少个客来活跃心？",
+      "correctAnswer": "14 个活跃心",
+      "distractors": [
+        "17 个活跃心",
+        "11 个活跃心",
+        "7 个活跃心"
+      ],
+      "explanation": "17 刹那减去 3 个有分刹那（常住心）= 14 个客来（vīthi）心。"
+    },
+    {
+      "id": "M10_Q03",
+      "type": "mcq",
+      "question": "在五门心路中，哪一个心首先转向所缘？",
+      "correctAnswer": "五门转向（Pañcadvārāvajjana）",
+      "distractors": [
+        "眼识（Cakkhuviññāṇa）",
+        "领受（Sampaṭicchana）",
+        "意门转向（Manodvārāvajjana）"
+      ],
+      "explanation": "五门转向心令心转向传入的感官资料。"
+    },
+    {
+      "id": "M10_Q04",
+      "type": "mcq",
+      "question": "紧接在领受（Sampaṭicchana）之后的是哪一阶段？",
+      "correctAnswer": "推度（Santīraṇa）",
+      "distractors": [
+        "确定（Voṭṭhapana）",
+        "速行（Javana）",
+        "彼所缘（Tadālambana）"
+      ],
+      "explanation": "顺序为：五门转向 → 五识 → 领受 → 推度 → 确定 → 速行 → 彼所缘。"
+    },
+    {
+      "id": "M10_Q05",
+      "type": "mcq",
+      "question": "极大所缘五门心路包含多少个活跃阶段？",
+      "correctAnswer": "7 个阶段",
+      "distractors": [
+        "5 个阶段",
+        "3 个阶段",
+        "17 个阶段"
+      ],
+      "explanation": "从转向至彼所缘共 7 个独立运作阶段。"
+    },
+    {
+      "id": "M10_Q06",
+      "type": "mcq",
+      "question": "哪一阶段主动体验所缘之全味并造作行业？",
+      "correctAnswer": "速行（Javana）",
+      "distractors": [
+        "彼所缘（Tadālambana）",
+        "推度（Santīraṇa）",
+        "领受（Sampaṭicchana）"
+      ],
+      "explanation": "速行是善恶思心所运作及造业的主动阶段。"
+    },
+    {
+      "id": "M10_Q07",
+      "type": "mcq",
+      "question": "有多少个心能在根门心路中作为速行？",
+      "correctAnswer": "29 个欲界心",
+      "distractors": [
+        "41 个心",
+        "11 个心",
+        "12 个心"
+      ],
+      "explanation": "12 不善 + 8 大善 + 8 大唯作 + 1 生笑心 = 29。"
+    },
+    {
+      "id": "M10_Q08",
+      "type": "mcq",
+      "question": "哪一个速行刹那力量最强？",
+      "correctAnswer": "第 4 速行刹那",
+      "distractors": [
+        "第 1 速行刹那",
+        "第 7 速行刹那",
+        "第 6 速行刹那"
+      ],
+      "explanation": "第 4 速行以全速与最大强度运作。"
+    },
+    {
+      "id": "M10_Q09",
+      "type": "mcq",
+      "question": "“Javana”源自哪个词根？是什么意思？",
+      "correctAnswer": "词根 ju——疾驰",
+      "distractors": [
+        "词根 rup——坏灭",
+        "词根 muh——迷惑",
+        "词根 puth——扩展"
+      ],
+      "explanation": "Javana 来自词根 ju，意为疾驰越过所缘。"
+    },
+    {
+      "id": "M10_Q10",
+      "type": "mcq",
+      "question": "彼所缘（Tadālambana）的作用是什么？",
+      "correctAnswer": "登记并受用速行所体验所缘之余留",
+      "distractors": [
+        "确定所缘之身份",
+        "将所缘领受入心",
+        "令心转向所缘"
+      ],
+      "explanation": "彼所缘在心归于平静前，登记速行所体验的同一所缘。"
+    },
+    {
+      "id": "M10_Q11",
+      "type": "mcq",
+      "question": "有多少个心能执行彼所缘（Tadālambana）作用？",
+      "correctAnswer": "11 个欲界异熟心",
+      "distractors": [
+        "29 个速行心",
+        "19 个结生心",
+        "8 个大异熟心"
+      ],
+      "explanation": "3 推度心 + 8 大异熟心 = 11 个可执行彼所缘之心。"
+    },
+    {
+      "id": "M10_Q12",
+      "type": "mcq",
+      "question": "彼所缘（Tadālambana）造业吗？",
+      "correctAnswer": "不造，因为彼所缘属异熟（vipāka）心",
+      "distractors": [
+        "造，因为彼所缘受用所缘",
+        "造，但仅造微细业",
+        "仅在临终时造业"
+      ],
+      "explanation": "彼所缘是被动的异熟心，不造作新业。"
+    },
+    {
+      "id": "M10_Q13",
+      "type": "mcq",
+      "question": "彼所缘（Tadālambana）生起于哪一界？",
+      "correctAnswer": "唯生起于欲界",
+      "distractors": [
+        "遍及三界",
+        "唯生起于色界",
+        "生起于无色界"
+      ],
+      "explanation": "彼所缘唯出现于欲界（kāmadhātu）；永不生起于色界或无色界。"
+    },
+    {
+      "id": "M10_Q14",
+      "type": "mcq",
+      "question": "就究竟法而言，意门（Manodvāra）是什么？",
+      "correctAnswer": "有分心（Bhavaṅga）",
+      "distractors": [
+        "五门转向心",
+        "推度心",
+        "结生心"
+      ],
+      "explanation": "意门即作为意门认知门槛的有分心流。"
+    },
+    {
+      "id": "M10_Q15",
+      "type": "mcq",
+      "question": "标准清晰意门心路有多少个活跃心刹那？",
+      "correctAnswer": "10 个心刹那",
+      "distractors": [
+        "17 个心刹那",
+        "8 个心刹那",
+        "14 个心刹那"
+      ],
+      "explanation": "1 意门转向 + 7 速行 + 2 彼所缘 = 10 个活跃心。"
+    },
+    {
+      "id": "M10_Q16",
+      "type": "mcq",
+      "question": "对于离路心（vīthimutta），临终时可显现多少种所缘？",
+      "correctAnswer": "三种：业、业相与趣相",
+      "distractors": [
+        "四种：极大、大、微细、极微细",
+        "二种：清晰与不清晰",
+        "六种：六尘"
+      ],
+      "explanation": "临终时，业、业相或趣相会作为所缘显现。"
+    },
+    {
+      "id": "M10_Q17",
+      "type": "mcq",
+      "question": "进入意门的所缘依显现方式分为几等？",
+      "correctAnswer": "二级：清晰（vibhūta）与不清晰（avibhūta）",
+      "distractors": [
+        "四级：极大、大、微细、极微细",
+        "三种：业、业相、趣相",
+        "六种感官类型"
+      ],
+      "explanation": "在意门心路中，所缘分为清晰（vibhūta）或不清晰（avibhūta）。"
+    }
   ]
 }
