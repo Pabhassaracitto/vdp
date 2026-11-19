@@ -1311,3 +1311,172 @@ content_hi.json Myanmar-script runs after merge_batch                 0
 Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter
 SDK on `PATH`. No Dart file and no shipped asset is touched by this commit;
 CI runs both on the branch.
+
+---
+
+## 18. Batch 3 (cont.) — `M11_BIET_CANH` + `M15_TAM_SO_PHOI_HOP`, and a glossary-conformance check that finally works
+
+Two more modules translated in full:
+
+| Module | s/c/q | Slots | Subject |
+| --- | --- | --- | --- |
+| `M11_BIET_CANH` | 5/12/12 | 151 | the 6 pakiṇṇaka cetasikas |
+| `M15_TAM_SO_PHOI_HOP` | 6/12/12 | 171 | how the 52 cetasikas combine into each citta |
+
+```
+baseline (HEAD ad48764)                714/4312  (16.6%)
++ §5 builder overlay, my only         1206/4312  (28.0%)   7a0dcdcd5d740aec
++ merge_batch.py l10n_work/gen        3308/4312  (76.7%)   my: merged 13 module(s)
+catalog studyModules with sections    13 / 17
+```
+
+Reconciles exactly: `count_slots` over the 13 merged modules = **2128**; the builder
+emits `title` + `description` per module, so `1206 + (2128 − 26) = 3308`.
+
+### The check that §17 said was needed — written, and it immediately found 12 real defects
+
+§17 concluded that "a glossary row exists" is not "the glossary row was used", and
+that the check has to be a string comparison over the delivered file. So I wrote it:
+for every `keyTerms[i]` in every module, look up `pali` as an **exact key** in
+`glossary.csv` and assert the row's `my` cell appears **inside that keyTerm's `term`
+field**. First version used substring-search over the whole file — that gives false
+positives (e.g. `စေတသိက် ၅၂ ပါး` was "found" in M15 only because the module
+`description` happens to contain it). Scoping the comparison to the `term` field
+found **16 mismatches across 8 modules**. Four are the documented deviations
+(`Paññindriya` ×2, `Sakadāgāmi`, `Anāgāmi`). The other **12 were real drift and are
+fixed in this commit**:
+
+| Module | keyTerm | Was | Now (glossary) |
+| --- | --- | --- | --- |
+| `M12_VO_NHAN` | `Nānākālika hetu` | နာနာက္ခဏိက ဟိတ် | နာနာက္ခဏိက ကမ္မပစ္စည်း |
+| `M15_…` | `—` (total cetasikas) | စုစုပေါင်း စေတသိက်အရေအတွက် | စေတသိက် ၅၂ ပါး |
+| `M17_…` | `Viññāṇapaccayā nāmarūpaṁ` | descriptive gloss | ဝိညာဏပစ္စယာ နာမရူပံ |
+| `M17_…` | `Vedanāpaccayā taṇhā` | descriptive gloss | ဝေဒနာပစ္စယာ တဏှာ |
+| `M17_…` | `Jāti (4)` | **ဇာတိ ၄ မျိုး** | **ယောနိ ၄ ပါး** |
+| `M17_…` | `Soka, Parideva, …` | ` – ` separators | `၊ ` separators |
+| `M3_…` | `Viratiyo` | ဝိရတီ | ဝိရတီ ၃ ပါး |
+| `M3_…` | `Kāya – Citta` | ကာယ – စိတ္တ | ကာယနှင့် စိတ္တ |
+| `M3_…` | `Suttamayā – Cintāmayā – Bhāvanāmayā` | ပညာ ၃ ပါး (…) | သုတမယ၊ စိန္တာမယ၊ ဘာဝနာမယ ဉာဏ် ၃ ပါး |
+| `M4_AKUSALA` | `Ayoniso manasikāra` | with a space | အယောနိသောမနသိကာရ |
+| `M4_AKUSALA` | `Thīna + Middha` | ထိနတိက (၂) | ထိနနှင့် မိဒ္ဓ (၂) |
+| `M8_NHAN_DUYEN` | `Dve mūlāni` | မူလနှစ်ပါး | မူလနှစ်ပါး (အဝိဇ္ဇာနှင့် တဏှာ) |
+
+**One of these was a genuine accuracy error, not cosmetic.** `Jāti (4)` renders the
+four ways of birth — `aṇḍaja`, `jalābuja`, `saṃsedaja`, `opapātika` — which in
+Burmese Abhidhamma usage are the **ယောနိ ၄ ပါး**, set against **ခန္ဓာဇာတိ ၃ မျိုး**
+(pañca-/catu-/eka-vokāra). My `ဇာတိ ၄ မျိုး` collapsed that contrast. Fixed in the
+keyTerm *and* in all three body/card sites in `M17`.
+
+### The blind spot in substring scanning — and why it cost me a term
+
+`glossary.csv` **does** have a row `Sabbākusalasādhāraṇā → သဗ္ဗာကုသလသာဓာရဏ`. My
+substring scan for `Sabbākusalasādhāraṇa` returned `NONE`, because the row's headword
+ends in `…ṇā` (macron) and my query ended in `…ṇa` — `sabbākusalasādhāraṇa` is not a
+substring of `sabbākusalasādhāraṇā`. So I composed `အကုသလသာဓာရဏ` from the
+`Sabbacittasādhāraṇa` pattern and reported it as Tier D. The exact-key lookup found
+it in one pass. Fixed in `M15`.
+
+This supersedes the §12/§14 advice to "substring-scan `pali`". Substring scanning
+catches comma-joined and compound rows, which exact lookup misses — but it also
+silently misses **diacritic variants**. The right procedure is both: exact-key
+lookup over the keyTerms' own `pali` values for conformance, *and* substring scanning
+when hunting for a term that may be buried inside a longer headword. Both must be
+NFC-normalised.
+
+### Two process errors this turn, both caught and reverted before commit
+
+**1. Re-serialising a file to change one string.** I loaded `M8`/`M17` with
+`json.load`, edited, and wrote back with `json.dump(…, indent=2)`. The content was
+correct but the whole file was re-formatted — `git diff` showed **751 lines** changed
+in `M17` and 38 in `M8` for four and one string edits. Reverted; re-did it as a
+scoped textual replacement. Final diff: `M17` 14 lines, `M8` 2 lines.
+
+**2. A regex that walked into the wrong locale — and wrote Myanmar into `hi`.**
+`M17_DUYEN_CHI_TIET.json` holds both an `hi` and a `my` block, and `hi` comes first.
+My first fix searched forward from `"id": "TERM_…"` for the next `"term":` — which
+belongs to the **Hindi** copy. It replaced four Hindi values with Myanmar text, a
+direct breach of the `my`-only constraint. Caught only because the printed `was:`
+values came back in Devanagari. Reverted and re-done with a locale-scoped search
+(`s.index('\n  "my": {')` first) plus an assertion that the value being replaced is
+Myanmar script. Verified afterwards: the `hi` block is **byte-identical to `HEAD`**
+(`json.dumps(sort_keys=True)` comparison), and the merged `content_hi.json` contains
+**0** Myanmar-script runs.
+
+The lesson generalises: any file under `l10n_work/gen/` may be multi-locale. Never
+edit one by whole-file re-serialisation, and never locate a field by forward search
+without first scoping to the locale block.
+
+### Terms for council review
+
+**Tier D from `M11`** — no glossary row, 0 occurrences in the shipped catalog:
+`Viriyabala` ဝီရိယဗလ · `Vīriya-sambojjhaṅga` ဝီရိယသမ္ဗောဇ္ဈင် · the five pīti
+degrees `Khuddikā` ခုဒ္ဒိကာပီတိ · `Khaṇikā` ခဏိကာပီတိ · `Okkantikā`
+အောက္ကန္တိကာပီတိ · `Ubbegā` ဥဗ္ဗေကာပီတိ · `Pharaṇā` ဖရဏာပီတိ · the three
+chanda kinds `Kāmacchanda` ကာမစ္ဆန္ဒ · `Dhammacchanda` ဓမ္မစ္ဆန္ဒ · `Kiriyāchanda`
+ကြိယာစ္ဆန္ဒ. Each is written *Burmese (Pāḷi)* with the meaning carried by the
+surrounding sentence, so an overruling decision changes one token.
+
+**Tier C:** `Viriyindriya → ဝီရိယိန္ဒြေ` (no row of its own, but the `-indriya`
+pattern is attested by `Jīvitindriya → ဇီဝိတိန္ဒြေ`).
+
+**`ထိနတိက` stays, deliberately.** It appears 11× in M4/M15 body and card text as the
+grouping name in a series — `မောစတုက္က ၄၊ လောဘတိက ၃၊ ဒေါသစတုက္က ၄၊ ထိနတိက ၂၊
+ဝိစိကိစ္ဆာ ၁`. That `-တိက` / `-စတုက္က` pattern *is* the glossary's own convention
+(`Mocatuka → မောစတုက္က`, `Dosatuka cetasika → ဒေါသစတုက္က`), so it is a parallel
+construction rather than an invention; every occurrence is glossed `(ထိန၊ မိဒ္ဓ)`.
+The pair-name keyTerm now carries the glossary form `ထိနနှင့် မိဒ္ဓ`.
+
+**Tier A, all M11/M15 core vocabulary glossary-attested:** `Pakiṇṇaka → ပကိဏ်း` ·
+`Aññasamāna → အညသမာန်း` · `Sabbacittasādhāraṇa → သဗ္ဗစိတ္တသာဓာရဏ` · `Vitakka →
+ဝိတက်` · `Vicāra → ဝိစာရ` · `Adhimokkha → အဓိမောက္ခ` · `Vīriya → ဝီရိယ` ·
+`Sammāpadhāna → သမ္မပ္ပဓာန် ၄ ပါး` · `Pīti → ပီတိ` · `Chanda → ဆန္ဒ` ·
+`Cetasikasaṅgaha → စေတသိက်သင်္ဂဟ` · `Sabbākusalasādhāraṇā → သဗ္ဗာကုသလသာဓာရဏ` ·
+`Paramatthasacca → ပရမတ္ထသစ္စာ` · `Nāma-khandha → နာမက္ခန္ဓာ ၄ ပါး` · `Lobhamūla →
+လောဘမူစိတ်` · `Dosamūla → ဒေါသမူစိတ်` · `Dvipañcaviññāṇa → ဒွိပဉ္စဝိညာဏ် ၁၀` ·
+`Hasanacitta → ဟသိတုပ္ပါဒ်စိတ်` · `Mahākusala → မဟာကုသိုလ်` · `Mahaggatacitta →
+မဟဂ္ဂုတ်စိတ်` · `Lokuttaracitta → လောကုတ္တရာစိတ်` · `Viratiyo → ဝိရတီ ၃ ပါး` ·
+`Appamaññā → အပ္ပမညာ` · `Karuṇā → ကရုဏာ` · `Muditā → မုဒိတာ`.
+
+Running total of reviewable terms: **38** (28 through `M7_SIEU_THE` per §17, plus
+the 10 Tier-D items above).
+
+### Integrity, all 13 modules I have authored
+
+All ids, body-paragraph counts, `keyTerms[i].pali` values, seed distractor counts and
+leaf scripts verified against `content_vi.json` and `check_content_locale.count_slots`:
+
+```
+M1  148/148 · M2 110/110 · M3 273/273 · M4 284/284 · M5 114/114 · M7 136/136
+M8  223/223 · M11 151/151 · M12 118/118 · M13 114/114 · M14 115/115
+M15 171/171 · M17 171/171                                TOTAL 2128/2128
+0 Vietnamese tone marks · 0 non-Myanmar leaves · 138 seeds · keyTerms.pali 124/125
+identical (the 1 exception is the documented Vietnamese-in-`pali` source defect)
+```
+
+### Remaining — recounted with the tool's own `count_slots`
+
+**4 modules, 947 slots:**
+
+```
+M6_NGHIEP 266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223 = 947
+```
+
+`count_slots` over all 17 modules returns **3075**; done 13 = **2128**; TODO 4 =
+**947**. Standing cautions: `l10n_work/gen/M6_NGHIEP.json` holds **only an `hi`
+block** — read-modify-write, and verify `hi` is byte-identical afterwards.
+`M10_S09` is titled *"Vīthimutta — chưa có nguồn"* in the VI source and `M10_S05`
+does not exist (IN4-53).
+
+### Gates run on this commit
+
+```
+python3 tool/content/check_content_locale.py my --glossary --strict   EXIT 0   (3308/4312, 76.7%)
+python3 tool/content/check_content_locale.py --all --quiet            EXIT 0
+python3 tool/check_paccaya_data.py                                    EXIT 0   (24/24, 52 links)
+builder rebuild                                                       7a0dcdcd5d740aec (unchanged)
+merged content_hi.json Myanmar-script runs                            0
+M17 gen file `hi` block vs HEAD                                       byte-identical
+```
+
+Not run here, unchanged reason: `flutter analyze` / `flutter test` — no Flutter SDK
+on `PATH`. This commit changes zero Dart and zero shipped asset; CI runs both.
