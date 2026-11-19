@@ -82,5 +82,291 @@
         "思的作用是策励与推动其余诸法：令俱生诸法执取所缘、完成作业，并统率相应诸法协同运作。"
       ]
     }
+  ],
+  "reviewCards": [
+    {
+      "id": "M8_R01",
+      "front": "“Paṭicca-samuppāda”（缘起）的字面意思是什么？",
+      "back": "Paṭicca（依于、因于）+ samuppāda（生起、起源）→ 缘起（“依缘而生”）。"
+    },
+    {
+      "id": "M8_R02",
+      "front": "核心公式“Imasmiṃ sati, idaṃ hoti”是什么意思？",
+      "back": "“此有故彼有；此生故彼生；此无故彼无；此灭故彼灭。”"
+    },
+    {
+      "id": "M8_R03",
+      "front": "缘摄（Paccaya-saṅgaha）的两大部分是什么？",
+      "back": "1）缘起（Paṭiccasamuppāda）；2）发趣缘关系系统（Paṭṭhāna）。"
+    },
+    {
+      "id": "M8_R04",
+      "front": "请列举十二缘起支。",
+      "back": "无明、行、识、名色、六入、触、受、爱、取、有、生、老死。"
+    },
+    {
+      "id": "M8_R05",
+      "front": "为何愁、悲、苦、忧、恼不列为独立支？",
+      "back": "因为它们是“生”的附带果报（nissandaphala），而非独立之支。"
+    },
+    {
+      "id": "M8_R06",
+      "front": "哪些支属于过去世？",
+      "back": "无明（Avijjā）与行（Saṅkhārā）。"
+    },
+    {
+      "id": "M8_R07",
+      "front": "哪些支属于未来世？",
+      "back": "生（Jāti）与老死（Jarāmaraṇa）。"
+    },
+    {
+      "id": "M8_R08",
+      "front": "有多少支属于现在世？",
+      "back": "八支：识、名色、六入、触、受、爱、取、有。"
+    },
+    {
+      "id": "M8_R09",
+      "front": "什么是四略（catusaṅkhepa）？",
+      "back": "过去五因、现在五果、现在五因、未来五果。"
+    },
+    {
+      "id": "M8_R10",
+      "front": "“Vīsatākārā”与“Tisandhi”是什么意思？",
+      "back": "二十行相（跨越三世的二十种要素）与连接四略的三连结。"
+    },
+    {
+      "id": "M8_R11",
+      "front": "什么是三轮转（tīṇi vaṭṭāni）？",
+      "back": "烦恼轮（无明、爱、取）；业轮（行、业有）；异熟轮（识、名色、六入、触、受、生、老死）。"
+    },
+    {
+      "id": "M8_R12",
+      "front": "生死轮回的二根本（dve mūlāni）是什么？",
+      "back": "无明（Avijjā）与爱（Taṇhā）。"
+    },
+    {
+      "id": "M8_R13",
+      "front": "生死轮回如何终结？",
+      "back": "借由彻底断除其根本——“Tesam eva ca mūlānaṃ nirodhena nirujjhati”。"
+    },
+    {
+      "id": "M8_R14",
+      "front": "经典中如何定义无明？",
+      "back": "不知苦、不知苦集、不知苦灭、不知趣苦灭之道（四圣谛）。"
+    },
+    {
+      "id": "M8_R15",
+      "front": "无明的究竟法是哪一个心所？",
+      "back": "痴（Moha）——存在于全部 12 个不善心中。"
+    },
+    {
+      "id": "M8_R16",
+      "front": "行（Saṅkhārā）的究竟法是什么？",
+      "back": "思（Cetanā），七遍一切心心所之一。"
+    },
+    {
+      "id": "M8_R17",
+      "front": "三种行（Saṅkhārā）是什么？",
+      "back": "福行（Puññābhisaṅkhāra）、非福行（Apuññābhisaṅkhāra）与不动行（Āneñjābhisaṅkhāra）。"
+    },
+    {
+      "id": "M8_R18",
+      "front": "不动行（Āneñjābhisaṅkhāra）感得什么果报？",
+      "back": "投生无色界（4 个无色界异熟心）。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M8_Q01",
+      "type": "mcq",
+      "question": "Paṭiccasamuppāda 的字面意思是什么？",
+      "correctAnswer": "缘起 / 依缘而生",
+      "distractors": [
+        "缘关系系统",
+        "无尽轮回之轮",
+        "业报法则"
+      ],
+      "explanation": "Paṭiccasamuppāda 意为依于条件而生起。"
+    },
+    {
+      "id": "M8_Q02",
+      "type": "mcq",
+      "question": "缘摄（Compendium of Conditions）的两大部分是什么？",
+      "correctAnswer": "缘起（Paṭiccasamuppāda）与发趣（Paṭṭhāna）",
+      "distractors": [
+        "业、缘、果",
+        "四时期",
+        "唯十二支"
+      ],
+      "explanation": "条件性的两大体系为缘起（因果相续）与发趣（二十四缘）。"
+    },
+    {
+      "id": "M8_Q03",
+      "type": "mcq",
+      "question": "哪一支作为行（Saṅkhārā）的条件？",
+      "correctAnswer": "无明（Avijjā）",
+      "distractors": [
+        "识（Viññāṇa）",
+        "爱（Taṇhā）",
+        "取（Upādāna）"
+      ],
+      "explanation": "Avijjāpaccayā saṅkhārā——缘无明生行。"
+    },
+    {
+      "id": "M8_Q04",
+      "type": "mcq",
+      "question": "哪一支依受（Vedanā）而生起？",
+      "correctAnswer": "爱（Taṇhā）",
+      "distractors": [
+        "触（Phassa）",
+        "取（Upādāna）",
+        "有（Bhava）"
+      ],
+      "explanation": "Vedanāpaccayā taṇhā——缘受生爱。"
+    },
+    {
+      "id": "M8_Q05",
+      "type": "mcq",
+      "question": "紧接在触（Phassa）之前的是哪一支？",
+      "correctAnswer": "六入（Saḷāyatana，六处）",
+      "distractors": [
+        "名色（Nāmarūpa）",
+        "受（Vedanā）",
+        "识（Viññāṇa）"
+      ],
+      "explanation": "Saḷāyatanapaccayā phasso——缘六入生触。"
+    },
+    {
+      "id": "M8_Q06",
+      "type": "mcq",
+      "question": "哪两支属于过去世？",
+      "correctAnswer": "无明与行",
+      "distractors": [
+        "生与老死",
+        "爱与取",
+        "识与名色"
+      ],
+      "explanation": "无明（avijjā）与行（saṅkhārā）是过去因。"
+    },
+    {
+      "id": "M8_Q07",
+      "type": "mcq",
+      "question": "有多少支属于现在世？",
+      "correctAnswer": "8 支",
+      "distractors": [
+        "2 支",
+        "5 支",
+        "12 支"
+      ],
+      "explanation": "从识到有共 8 支属于现在世。"
+    },
+    {
+      "id": "M8_Q08",
+      "type": "mcq",
+      "question": "“Vīsatākārā”在缘起中表示什么？",
+      "correctAnswer": "因果的二十种行相",
+      "distractors": [
+        "二十支",
+        "二十缘",
+        "二十界地"
+      ],
+      "explanation": "Vīsatākārā 指二十行相：过去五因、现在五果、现在五因、未来五果。"
+    },
+    {
+      "id": "M8_Q09",
+      "type": "mcq",
+      "question": "哪三支构成烦恼轮（Kilesavaṭṭa）？",
+      "correctAnswer": "无明、爱、取",
+      "distractors": [
+        "行、有、生",
+        "识、名色、六入",
+        "触、受、爱"
+      ],
+      "explanation": "烦恼轮由无明、爱与取构成。"
+    },
+    {
+      "id": "M8_Q10",
+      "type": "mcq",
+      "question": "什么构成业轮（Kammavaṭṭa）？",
+      "correctAnswer": "行与有之中属于业的部分（业有）",
+      "distractors": [
+        "无明与爱",
+        "生与老死",
+        "识与名色"
+      ],
+      "explanation": "业轮由行（Saṅkhārā）与业有（Kammabhava）构成。"
+    },
+    {
+      "id": "M8_Q11",
+      "type": "mcq",
+      "question": "生死轮回的两个根本原因（dve mūlāni）是什么？",
+      "correctAnswer": "无明（Avijjā）与爱（Taṇhā）",
+      "distractors": [
+        "贪与瞋",
+        "业与果",
+        "行与取"
+      ],
+      "explanation": "轮回以无明（过去根本）与爱（现在根本）为根而转动。"
+    },
+    {
+      "id": "M8_Q12",
+      "type": "mcq",
+      "question": "在经典中，无明根本上未能了知什么？",
+      "correctAnswer": "四圣谛：苦、集、灭、道",
+      "distractors": [
+        "二十八色法",
+        "心路过程序列",
+        "十六种业"
+      ],
+      "explanation": "无明是不了知苦、集、灭、道四圣谛。"
+    },
+    {
+      "id": "M8_Q13",
+      "type": "mcq",
+      "question": "无明的究竟法是哪一个心所？",
+      "correctAnswer": "痴（Moha）",
+      "distractors": [
+        "贪（Lobha）",
+        "瞋（Dosa）",
+        "邪见（Diṭṭhi）"
+      ],
+      "explanation": "就究竟法而言，无明即痴心所（Moha）。"
+    },
+    {
+      "id": "M8_Q14",
+      "type": "mcq",
+      "question": "行（Saṅkhārā）的究竟法是哪一个心所？",
+      "correctAnswer": "思（Cetanā）",
+      "distractors": [
+        "痴（Moha）",
+        "触（Phassa）",
+        "一境性（Ekaggatā）"
+      ],
+      "explanation": "缘起中的行即造作行业之思心所（cetanā）。"
+    },
+    {
+      "id": "M8_Q15",
+      "type": "mcq",
+      "question": "福行（Puññābhisaṅkhāra）对应哪些心？",
+      "correctAnswer": "8 大善心与 5 色界善心",
+      "distractors": [
+        "12 不善心",
+        "4 无色界善心",
+        "8 出世间心"
+      ],
+      "explanation": "福行包括 8 欲界善心与 5 色界善心。"
+    },
+    {
+      "id": "M8_Q16",
+      "type": "mcq",
+      "question": "不动行（Āneñjābhisaṅkhāra）属于哪些心？",
+      "correctAnswer": "4 无色界善心",
+      "distractors": [
+        "5 色界善心",
+        "8 大善心",
+        "12 不善心"
+      ],
+      "explanation": "不动行代表 4 个不动摇的无色界善禅那。"
+    }
   ]
 }
