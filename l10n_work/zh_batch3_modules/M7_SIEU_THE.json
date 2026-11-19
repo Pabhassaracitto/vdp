@@ -1,0 +1,201 @@
+{
+  "moduleId": "M7_SIEU_THE",
+  "locale": "zh",
+  "lessonSections": [
+    {
+      "id": "M7_S01",
+      "title": "什么是出世间心？",
+      "summary": "出世间心是以无为法——涅槃——为所缘的有为心；共有四道心与四果心。",
+      "body": [
+        "Lokuttara citta——出世间心——是了知超越世间之所缘的心识。",
+        "其显著特征在于：它本身是有为法，却以无为法为所缘。有为法有生有灭；无为法则是无生、无死之境——涅槃。",
+        "依广说计算，出世间心共有 40 个；依其基本二类计算，则有四道心与四果心。",
+        "此二类为：A. 出世间道心（Lokuttara Magga Cittāni），共四个；B. 出世间果心（Lokuttara Phala Cittāni），亦共四个。"
+      ]
+    },
+    {
+      "id": "M7_S02",
+      "title": "四道心与四果心",
+      "summary": "四道——入流、一来、不还与阿罗汉——各自紧接着生起其果心，且每一道心皆与完整的八圣道俱起。",
+      "body": [
+        "四道心为：1. 须陀洹道心（Sotāpattimaggacittaṃ），入流道，第一道；2. 斯陀含道心（Sakadāgāmimaggacittaṃ），一来道，第二道；3. 阿那含道心（Anāgāmimaggacittaṃ），不还道，第三道；4. 阿罗汉道心（Arahattamaggacittaṃ），阿罗汉道，第四道。",
+        "四果心为：1. 须陀洹果心（Sotāpattiphalacittaṃ），入流果；2. 斯陀含果心（Sakadāgāmiphalacittaṃ），一来果；3. 阿那含果心（Anāgāmiphalacittaṃ），不还果；4. 阿罗汉果心（Arahattaphalacittaṃ），阿罗汉果。",
+        "“Sotāpattimagga”可如此解析：sota 是流，āpatti 是进入，magga 是道——即踏入圣道之流的心识。",
+        "每一道心皆与八道支（即八圣道）俱生：正见、正思惟、正语、正业、正命、正精进、正念与正定——八者于同一心刹那中同时生起。"
+      ]
+    },
+    {
+      "id": "M7_S03",
+      "title": "入流道（Sotāpattimagga）",
+      "summary": "入流道断除萨迦耶见、疑与戒禁取，首次亲证涅槃，并永闭恶趣之门。",
+      "body": [
+        "第一道心与八道支俱生；借由它，修行者首次踏入圣道之流。",
+        "它断除三种烦恼（三结）：萨迦耶见（执取身心为我）、疑（对佛、法、僧三宝的犹豫不决）以及戒禁取（误以为仪式、迷信与徒具形式的仪轨能带来解脱）。",
+        "在此，智慧是主导力量，撕裂无明的帷幕。这是首次亲证涅槃。",
+        "其果报为：已证第一道者，永不再堕入四恶趣。",
+        "生起道心有四因：（1）亲近善士——依正法与经典宣说，而非依个人私见者；（2）听闻正法；（3）如理作意——朝向涅槃、导向解脱之作意；（4）法随法行——直趋道果之修行，即修习四念处，乃内观禅修而非仅止禅。",
+        "须注意，第一道心不生起于无色界，因彼处无法具足此四因：无有色身，故无法听闻正法。"
+      ]
+    }
+  ],
+  "reviewCards": [
+    {
+      "id": "M7_R01",
+      "front": "什么是出世间心（Lokuttara citta）？",
+      "back": "超越世间之心——以无为法（涅槃）为所缘的有为心。"
+    },
+    {
+      "id": "M7_R02",
+      "front": "出世间心共有多少个？",
+      "back": "8 个心（4 道心 + 4 果心），若依五禅那展开则为 40 个心。"
+    },
+    {
+      "id": "M7_R03",
+      "front": "请列出四个出世间道心。",
+      "back": "须陀洹道（Sotāpattimagga，入流道）、斯陀含道（Sakadāgāmimagga，一来道）、阿那含道（Anāgāmimagga，不还道）、阿罗汉道（Arahattamagga，阿罗汉道）。"
+    },
+    {
+      "id": "M7_R04",
+      "front": "请列出四个出世间果心。",
+      "back": "须陀洹果、斯陀含果、阿那含果、阿罗汉果——即入流、一来、不还与阿罗汉之果心。"
+    },
+    {
+      "id": "M7_R05",
+      "front": "“Sotāpatti”依词源如何解析？",
+      "back": "Sota（流）+ āpatti（进入）→ 进入八圣道之流（入流）。"
+    },
+    {
+      "id": "M7_R06",
+      "front": "每一道心中同时生起多少个道支？",
+      "back": "8 个道支——完整的八圣道同时生起。"
+    },
+    {
+      "id": "M7_R07",
+      "front": "入流道断除哪些结（saṃyojana）？",
+      "back": "三结：萨迦耶见（sakkāyadiṭṭhi）、疑（vicikicchā）与戒禁取（sīlabbataparāmāsa）。"
+    },
+    {
+      "id": "M7_R08",
+      "front": "证得入流（须陀洹）的必然结果是什么？",
+      "back": "永免堕入四恶趣（apāya），且至多于七次生命内证得涅槃。"
+    },
+    {
+      "id": "M7_R09",
+      "front": "生起道心的四个条件（四预流支）是什么？",
+      "back": "亲近善士、听闻正法、如理作意与法随法行。"
+    },
+    {
+      "id": "M7_R10",
+      "front": "为何入流道不能在无色界生起？",
+      "back": "因为无法具足四因——彼界众生无有物质感官（眼耳等根），无法见闻正法。"
+    },
+    {
+      "id": "M7_R11",
+      "front": "什么是阿罗汉道（Arahattamagga）？",
+      "back": "阿罗汉之道——彻底断除一切剩余烦恼，无有余留。"
+    },
+    {
+      "id": "M7_R12",
+      "front": "不还道（Anāgāmimagga）是第几次亲证涅槃？",
+      "back": "第 3 次亲证涅槃（第 1 次在入流道，第 2 次在一来道）。"
+    }
+  ],
+  "quizSeeds": [
+    {
+      "id": "M7_Q01",
+      "type": "mcq",
+      "question": "出世间心的独特之处是什么？",
+      "correctAnswer": "以无为法（涅槃）为所缘的有为心",
+      "distractors": ["以有为法为所缘的无为心", "以无为法为所缘的无为心", "以有为法为所缘的有为心"],
+      "explanation": "出世间心（Lokuttara citta）是直接体验无为界（Asankhata-dhātu，涅槃）的有为心。"
+    },
+    {
+      "id": "M7_Q02",
+      "type": "mcq",
+      "question": "若依禅那层级展开，出世间心共有多少个？",
+      "correctAnswer": "40",
+      "distractors": ["8", "24", "121"],
+      "explanation": "8 个出世间心 × 5 禅那层级 = 40 个心。"
+    },
+    {
+      "id": "M7_Q03",
+      "type": "mcq",
+      "question": "Sotāpattimagga 的另一名称是什么？",
+      "correctAnswer": "入流道心——第一道",
+      "distractors": ["一来道——第二道", "不还道——第三道", "阿罗汉道——第四道"],
+      "explanation": "须陀洹道（Sotāpattimagga）是第一圣道。"
+    },
+    {
+      "id": "M7_Q04",
+      "type": "mcq",
+      "question": "入流道断除多少个烦恼结？",
+      "correctAnswer": "3 个：萨迦耶见、疑、戒禁取",
+      "distractors": ["2 个：贪与瞋", "5 个：五盖", "10 个：十结"],
+      "explanation": "入流道断除前三下分结：sakkāyadiṭṭhi、vicikicchā 与 sīlabbataparāmāsa。"
+    },
+    {
+      "id": "M7_Q05",
+      "type": "mcq",
+      "question": "每一道心中同时生起多少个道支？",
+      "correctAnswer": "8 个道支（八圣道）",
+      "distractors": ["4 个道支", "5 个道支", "7 个道支"],
+      "explanation": "在出世间道中，全部 8 个道支于单一心刹那同时俱生。"
+    },
+    {
+      "id": "M7_Q06",
+      "type": "mcq",
+      "question": "Sota + Āpatti 意指什么？",
+      "correctAnswer": "进入（圣道之）流",
+      "distractors": ["渡至彼岸", "断尽一切烦恼", "永不再还"],
+      "explanation": "Sota 是八圣道之流；āpatti 是进入。"
+    },
+    {
+      "id": "M7_Q07",
+      "type": "mcq",
+      "question": "证得入流者（须陀洹）的标志是什么？",
+      "correctAnswer": "永免堕入四恶趣（apāya）",
+      "distractors": ["彻底断尽一切烦恼", "永不再还欲界", "仅再往返一次"],
+      "explanation": "须陀洹远离堕入恶趣之险，且至多七生内证得解脱。"
+    },
+    {
+      "id": "M7_Q08",
+      "type": "mcq",
+      "question": "以下哪一项不属于生起入流道的四个条件？",
+      "correctAnswer": "证得全部五种色界禅那",
+      "distractors": ["亲近善士", "听闻正法", "如理省思"],
+      "explanation": "入流四支为：亲近善士（sappurisasaṃseva）、听闻正法（saddhammassavana）、如理作意（yonisomanasikāra）与法随法行（dhammānudhammapatipatti）。"
+    },
+    {
+      "id": "M7_Q09",
+      "type": "mcq",
+      "question": "为何入流道不能在无色界生起？",
+      "correctAnswer": "因为彼界众生无物质感官，无法听闻正法",
+      "distractors": ["因为无色界没有心识", "因为彼处仅有异熟心", "因为彼处没有涅槃"],
+      "explanation": "在无色界（Arūpaloka）无有眼根或耳根，无法从他人处听闻正法。"
+    },
+    {
+      "id": "M7_Q10",
+      "type": "mcq",
+      "question": "什么是 Arahattaphalacitta？",
+      "correctAnswer": "阿罗汉果心——第四果",
+      "distractors": ["阿罗汉道心——第四道", "不还果心——第三果", "入流果心——第一果"],
+      "explanation": "阿罗汉果（Arahattaphala）是最高之出世间果。"
+    },
+    {
+      "id": "M7_Q11",
+      "type": "mcq",
+      "question": "出世间道心（未展开）共有多少个？",
+      "correctAnswer": "4",
+      "distractors": ["8", "40", "2"],
+      "explanation": "共有 4 个未展开的道心：须陀洹道、斯陀含道、阿那含道与阿罗汉道。"
+    },
+    {
+      "id": "M7_Q12",
+      "type": "mcq",
+      "question": "在入流道中，哪一根作为主要推动力量？",
+      "correctAnswer": "慧根（Paññā）——撕破无明帷幕",
+      "distractors": ["信根（Saddhā）——净信", "定根（Samādhi）——寂止", "精进根（Vīriya）——勤勉"],
+      "explanation": "智慧洞察四圣谛并摧破无始无明。"
+    }
+  ]
+}
