@@ -8,7 +8,8 @@ Nothing here marks any locale as reviewed.
 | File | Change | Ships through builder? |
 |---|---|---|
 | `tool/content/data_priority_conditions.py` | 14 si field corrections (see §2) | Yes. `build_full_catalogs.py` emits these fields. |
-| `tool/content/data_priority_si_detail.py` (new) | Four-aspect fields for 12 paticca factors; `paccayaDhamma` / `paccayuppanna` for 23 paccayas | **No.** The builder does not read this module yet. See §5. |
+| `tool/content/data_priority_si_detail.py` (new, Batch 1) | Four-aspect fields for 12 paticca factors; `paccayaDhamma` / `paccayuppanna` for 23 paccayas | **No.** The builder does not read this module yet. See §5. |
+| `tool/content/data_priority_si_detail_b2.py` (new, Batch 2) | Four-aspect fields for 52 cetasikas and 28 rupas; examples for 12 cittas and 16 kammas; `arisingCondition` / `significance` for 4 vithis | **No.** Same integration as Batch 1. See §5. |
 | `docs/si_translation_batch1.md` (this file) | Ledger, coverage, questions | No |
 
 Not touched: `assets/content/content_si.json` (generated; the coordinator regenerates it), the builder, other locales, fallback code, the registry, tests, and any PR or branch metadata.
@@ -47,19 +48,29 @@ Note on KM_P_01: the new wording lists the source's three garuka classes. Native
 - **Paccaya `paccayaDhamma` / `paccayuppanna` (PC_01–PC_24 except PC_11, 46 fields).** Lists and relations were checked against Chandrikava 9-13, 9-14, 9-16, 9-17 where those pages were read. PC_11 is left to English because the English count ("85 cittas") could not be checked against a Sinhala source. PC_12 and PC_10 were checked only against the English reference and the existing definitions. Treat as unverified.
 - **Left to English fallback in this batch:** paccaya `examples` (48 items), `subdivisions` (9 items), paccaya `doctrinalNote` (24), paticca `doctrinalNote` (12) and `examples` (12), and the PC_11 pair above.
 
+## 3b. Batch 2 translations (in `data_priority_si_detail_b2.py`, not yet shipped)
+
+- **Cetasikas (52 × 4 = 208 fields)** and **rupas (28 × 4 = 112 fields)**: the four aspects, rendered from the English reference. Key coverage checked against `content_en.json`: no missing or extra IDs, no empty values.
+- **Cittas examples (12 entries, 18 items):** the akusala cittas that have English examples. Translated as written in the English reference.
+- **Kamma examples (16 entries, 32 items):** translated as written in the English reference. Doctrinal claims such as the realm of rebirth are the council's to check.
+- **Vithi `arisingCondition` / `significance` (4 × 2 = 8 fields).**
+- **Not translated in Batch 2:** rupa `doctrinalNote` (28; several English notes are specific claims, for example about Brahmās' faculties, that need a source before translation); cetasika `doctrinalNote` is not in the data.
+
+Status for all of 3b: **unverified draft**. The English reference is the only text these were rendered from. Sinhala commentary or Abhidharmārtha Saṅgraha was not checked.
+
 ## 4. Field coverage (si) — gap inventory
 
 Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ no si value (English fallback)
 
 | Category | Entities | Name / short / description | Four aspects | Other fields |
 |---|---|---|---|---|
-| cittas | 121 | ✅ name, doctrinalNote (Pāḷi-only template, see §6) | n/a | ❌ examples (0 of 121) |
-| cetasikas | 52 | ✅ name, shortName, description | ❌ 208 fields (Batch 2) | — |
-| rupas | 28 | ✅ name, shortName, description | ❌ 112 fields (Batch 2) | ❌ doctrinalNote (28) |
+| cittas | 121 | ✅ name, doctrinalNote (Pāḷi-only template, see §6) | n/a | 🟡 examples for the 12 akusala cittas (18 items). The other 109 cittas have no English examples either. |
+| cetasikas | 52 | ✅ name, shortName, description | 🟡 208 fields | — |
+| rupas | 28 | ✅ name, shortName, description | 🟡 112 fields | ❌ doctrinalNote (28) |
 | paccayas | 24 | ✅ name, shortName, definition (14 corrected, §2) | 🟡 paccayaDhamma (23), 🟡 paccayuppanna (23) | ❌ examples, subdivisions, doctrinalNote |
 | paticcas | 12 | ✅ name, shortName, description (4 corrected, §2) | 🟡 48 fields | ❌ doctrinalNote (12), examples (12) |
-| kammas | 16 | ✅ name, shortName, description (1 corrected) | n/a | ❌ examples (16), doctrinalNote (16) |
-| vithis | 4 | ✅ name, shortName, description | n/a | ❌ arisingCondition, significance, doctrinalNote (4 each); steps only for VT_NGU_MON_RATLON (11 of 11 steps; the other three vithis have none) |
+| kammas | 16 | ✅ name, shortName, description (1 corrected) | n/a | 🟡 examples (32 items, 16 entries); ❌ doctrinalNote (16) |
+| vithis | 4 | ✅ name, shortName, description | n/a | 🟡 arisingCondition, significance (4 each); ❌ doctrinalNote (4); steps only for VT_NGU_MON_RATLON (11 of 11 steps; the other three vithis have none) |
 | studyModules | 17 | ✅ title, description | n/a | ❌ lessonSections, reviewCards, quizSeeds for all 17 (Batch 3, not started) |
 
 ## 5. Builder integration (for coordinator; NOT applied)
@@ -72,7 +83,11 @@ Status key: ✅ present in si catalog · 🟡 drafted here, not shipped · ❌ n
 4. Keep the English fallback for missing keys. Do not copy English into the locale.
 5. Build twice (idempotence), then `check_content_locale.py si --glossary`.
 
-Note: `data_priority_si_detail` is keyed by `loc == "si"` only. It must not be applied to any other locale.
+Batch 2 (`data_priority_si_detail_b2.py`) needs the same kind of change for `cetasikas` and `rupas` (four keys each), `kammas` (`examples`), `vithis` (`arisingCondition`, `significance`) and `cittas` (`examples`).
+
+Citta examples need a specific note: today the builder copies citta examples only from the existing `content_si.json` (`existing_citta_examples`). That is circular for si, so the coordinator should take citta examples from `SI_CITTA_EXAMPLES` instead.
+
+Note: both modules are keyed by `loc == "si"` only. They must not be applied to any other locale.
 
 ## 6. Evidence ledger (terminology)
 
@@ -133,13 +148,13 @@ Questions for the council:
 10. **Q10.** Vithi steps for si exist only in the committed `content_si.json` for VT_NGU_MON_RATLON. Where should a corrected or extended set live, given there is no si source table?
 11. **Q11.** Source for the si study-module text. The IN4-45 issue cites "Sinhala Abhidharmārtha Saṅgraha". Please confirm which edition the council will use.
 
-## 8. Not translated in this batch
+## 8. Not translated yet
 
-- Cetasikas and rupas four aspects (Batch 2).
-- Cittas examples (121 entries; Batch 2).
-- Kammas examples and doctrinalNote (Batch 2).
-- Vithi arisingCondition / significance / doctrinalNote (Batch 2).
+- Rupa `doctrinalNote` (28) and kamma `doctrinalNote` (16). Citta and paticca `doctrinalNote` are in §4.
+- Paccaya examples (48 items), subdivisions (9 items), doctrinalNote (24); paticca doctrinalNote (12) and examples (12).
+- PC_11 four-aspect pair (count question, Q5).
+- Vithi `doctrinalNote` (4) and steps for the other three vithis.
 - All lessonSections / reviewCards / quizSeeds for 17 modules (Batch 3; needs a coherent reviewed batch).
-- Paccaya examples, subdivisions, doctrinalNote; paticca doctrinalNote and examples (English fallback).
+- Cittas examples for the 109 cittas that have no English examples (nothing to translate from).
 
 English fallback stays on for si. Nothing is marked reviewed.
