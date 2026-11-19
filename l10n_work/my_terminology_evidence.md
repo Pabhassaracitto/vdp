@@ -703,3 +703,132 @@ wrong in any downstream generation.
 
 Note `l10n_work/gen/M6_NGHIEP.json` already exists carrying an `hi` block only —
 whoever takes `M6_NGHIEP` must **append** `my` and leave `hi` byte-identical.
+
+---
+
+## 13. Batch 3 (cont.) — module `M4_AKUSALA` (12 akusala cittas, 14 akusala cetasikas)
+
+`l10n_work/gen/M4_AKUSALA.json` — new, 8 sections / 20 review cards / 20 quiz
+seeds, `translationStatus: draft`. Largest single module in the set (284 slots).
+
+Measured with the real merge pipeline in a throwaway worktree at `51954c2`:
+
+```
+baseline                      ✓ my  (714/4312 slots, 16.6%)
++ builder overlay (§5)        ✓ my  (1206/4312 slots, 28.0%)   idempotent d1105a5ecf531e67
++ merge_batch l10n_work/gen   ✓ my  (2136/4312 slots, 49.5%)   (5 modules merged)
+```
+
+`merge_batch` reported for `my`: `M17_DUYEN_CHI_TIET, M1_BASICS, M4_AKUSALA,
+M5_SOBHANA, M8_NHAN_DUYEN` — the real `merge_module()` accepted it. Catalog now
+**5/17** modules with `lessonSections`.
+
+Delta `1854 → 2136` = **+282** = 284 translatable fields − 2 (the builder
+already emits `title`/`description` for every module, consistent with §12).
+
+Verification, all clean:
+
+* ids and counts match `content_vi.json` exactly — sections 8/8, cards 20/20,
+  seeds 20/20, keyTerm ids per section, body paragraph counts 5/5/5/4/5/10/11/7,
+  distractor counts.
+* **all 27 `pali` values byte-identical to the Vietnamese source** — checked
+  field by field, since `pali` is not translated.
+* 20 quiz seeds: exactly 3 distractors each, no `correctAnswer` among
+  distractors, no duplicates, no empty field.
+* **0** Vietnamese tone marks and **0** non-Myanmar fields across the 284
+  translatable fields (`id` / `pali` / `translationStatus` excluded).
+
+### Terms used — four attestation tiers, from solid to reviewable
+
+**Tier A — glossary `my` cell present (28).** `Citta` `Akusala citta` `Lobha`
+`Dosa` `Moha` `Asaṅkhārika` `Sasaṅkhārika` `Diṭṭhigatasampayutta` `Diṭṭhi`
+`Sakkāyadiṭṭhi` `Māna` `Issā` `Macchariya` `Kukkucca` `Thīna` `Middha`
+`Vicikicchā` `Domanassa` `Paṭigha` `Uddhacca` `Lobhatuka cetasika` `Taṇhā`
+`Upādāna` `Ahirika` `Anottappa` `Vīriya` `Akusala cetasika`
+`Sabbākusalasādhāraṇā`. No judgement calls.
+
+**Tier B — no glossary row, but already in use in the shipped catalog (5).**
+
+| Pāḷi | Myanmar | Occurrences in existing `my` text |
+| --- | --- | --- |
+| `Somanassa` | သောမနဿ | 35 |
+| `Upekkhā` | ဥပေက္ခာ | 56 |
+| `Diṭṭhigatavippayutta` | ဒိဋ္ဌိဂတဝိပ္ပယုတ် | 5 |
+| `Rāga` | ရာဂ | 1 |
+| `Āsava` | အာသဝေါ | 1 |
+
+Reusing these keeps the module consistent with what is already published. `Rāga`
+and `Āsava` are single-occurrence, so they deserve a glossary row.
+
+**Tier C — no glossary row, composed from attested pieces (5).**
+
+| Pāḷi | Myanmar | Basis |
+| --- | --- | --- |
+| `Dosatuka cetasika` | ဒေါသတိက စေတသိက် | exact parallel to glossary `Lobhatuka` → လောဘတိက စေတသိက် |
+| `Micchā diṭṭhi` | မိစ္ဆာဒိဋ္ဌိ | ဒိဋ္ဌိ attested; မိစ္ဆာ has 0 occurrences — **review** |
+| `Ayoniso manasikāra` | အယောနိသော မနသိကာရ | မနသိကာရ attested (§M1_BASICS); အယောနိသော has 0 — **review** |
+| 4 `āsava` | ကာမာသဝေါ / ဘဝါသဝေါ / ဒိဋ္ဌာသဝေါ / အဝိဇ္ဇာသဝေါ | အာသဝေါ attested once |
+| 5 `khandha` | ရူပက္ခန္ဓာ ဝေဒနာက္ခန္ဓာ သညာက္ခန္ဓာ သင်္ခါရက္ခန္ဓာ ဝိညာဏက္ခန္ဓာ | ရူပက္ခန္ဓာ attested 4×, others follow the same pattern |
+
+### Tier D — no attestation at all. **These are the parts to review.**
+
+Eleven Pāḷi terms appear **only in two synonym lists** and nowhere else in the
+module. None has a glossary row and none appears in the shipped catalog. I wrote
+them as `Burmese transliteration (Pāḷi — Burmese gloss)` so that (a) the Pāḷi
+is visible to whoever checks, and (b) the meaning is carried by the descriptive
+gloss rather than by the transliteration being correct. **If the council
+disagrees with any transliteration, only the first token needs changing — the
+gloss and the Pāḷi stay valid.**
+
+`M4_S06` body 3 — synonyms of `Lobha`:
+
+| Pāḷi | As written | Status |
+| --- | --- | --- |
+| `Pema` | ပေမ | transliteration only |
+| `Piya` | ပိယ | transliteration only |
+| `Nandi` | နန္ဒိ | transliteration only |
+
+`M4_S07` body 4 — states associated with `Dosa`:
+
+| Pāḷi | As written | Status |
+| --- | --- | --- |
+| `Soka` | ဆောက | transliteration only |
+| `Parideva` | ပရိဒေဝ | transliteration only |
+| `Hiṃsa` | ဟိံသာ | transliteration only |
+| `Palāsa` | ပလာသ | transliteration only |
+| `Kodha` | ကောဓ | transliteration only |
+| `Bherava` | ဘေရဝ | transliteration only |
+| `Bhaya` | ဘယ | transliteration only |
+
+`M4_S06` body 7 — two fixed wrong views:
+
+| Pāḷi | As written | Status |
+| --- | --- | --- |
+| `Ahetuka-diṭṭhi` | အဟိတ်ကဒိဋ္ဌိ | composed; ဒိဋ္ဌိ attested |
+| `Akiriya-diṭṭhi` | အကိရိယဒိဋ္ဌိ | composed; ဒိဋ္ဌိ attested |
+
+Per the brief these are the candidates for "leave in English": I judged a
+transliteration-plus-gloss to be more useful to a reader than a half-English
+list, but they are flagged here so the council can overrule them wholesale.
+**No doctrinal content was added** — every one of these appears in the
+Vietnamese source with its own gloss, which is what I translated.
+
+Two more judgement calls worth a look:
+
+* **`Dosatuka` (ဒေါသတိက)** — the Vietnamese source says "Sân phần". I formed it
+  by exact parallel with the glossary's `Lobhatuka` → လောဘတိက. If the council
+  prefers a different formation, the change is confined to this one token, which
+  occurs in `M4_S05` body 4, the `TERM_DOSA_NHOM_M4` keyTerm, and the module
+  description.
+* **The 9 `māna`** (`M4_S06` body 9) — the Vietnamese gives a 3×3 matrix
+  ("hơn ỷ hơn" etc.). I rendered it as *standing of self* × *standing of the
+  other* ("သာသူအပေါ် မာန်ထောင်၍ — ငါသာသည်၊ ငါတူသည်၊ ငါနိမ့်သည်"),
+  which is more explicit than a literal transliteration of the matrix but says
+  the same thing. Worth a doctrinal check.
+
+### Remaining
+
+12 modules, ~2137 slots. Largest first: M3_TINH_HAO_BIEN_HANH 273 · M6_NGHIEP
+266 · M10_LO_TRINH 234 · M16_NGUOI_VA_COI 224 · M9_SAC_PHAP 223 ·
+M15_TAM_SO_PHOI_HOP 171 · M11_BIET_CANH 151 · M7_SIEU_THE 136 · M12_VO_NHAN 118
+· M14_VO_SAC_GIOI 115 · M13_SAC_GIOI 114 · M2_SI_PHAN 110.
