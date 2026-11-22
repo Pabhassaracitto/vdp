@@ -1395,7 +1395,7 @@
       "function": "Preventing materiality from being heavy and rigid.",
       "manifestation": "The body is light and moves with ease.",
       "proximateCause": "Favourable mind, temperature and nutriment; freedom from illness.",
-      "doctrinalNote": "Not produced by kamma. Depends on present health and conditions."
+      "doctrinalNote": "Not produced by kamma; produced by mind (citta), temperature (utu) and nutriment (āhāra) only (Saṅgaha ch.6). Cf. §31: lahutā is physical health — absence of heaviness."
     },
     "RP_023": {
       "name": "Malleability of matter",
@@ -1604,7 +1604,7 @@
       "name": "Supramundane kamma (Path kamma)",
       "shortName": "Supramundane",
       "description": "Supramundane kamma is the 4 Path cittas (Magga) - eradicating defilements and giving supramundane results as 4 Fruition cittas (Phala) and Nibbana, ending samsara.",
-      "doctrinalNote": "Supramundane kamma does not produce rebirth within the three realms; it produces Nibbāna as its result — the ultimate aim of the Abhidhamma.",
+      "doctrinalNote": "In strict Abhidhamma classification the supramundane path consciousness (magga-citta) is not kamma nor vipāka (Nārada ch.5). Its immediate result is fruition consciousness (phala-citta) with Nibbāna as object; it does not produce rebirth within the three realms.",
       "examples": [
         "Developing the Noble Eightfold Path to attain the first path cuts off three fetters, ending rebirth in the four woeful states",
         "The four paths produce the four fruits — the only way leading out of suffering"
@@ -1924,17 +1924,17 @@
       "doctrinalNote": "Process-free consciousness creates no new kamma — it is kammically indeterminate resultant mind.",
       "steps": {
         "1": {
-          "name": "Rebirth-linking consciousness",
+          "name": "Rebirth-linking consciousness (paṭisandhi)",
           "description": "The first consciousness of the new life — continuing directly from the previous life's dying consciousness, carrying kamma's seed.",
           "doctrinalNote": "CI_019/CI_026 = a two-rooted person; CI_027 = a specially favoured person; CI_063–CI_070 = a three-rooted person or a deva."
         },
         "2": {
-          "name": "Life-continuum consciousness",
-          "description": "The stream of consciousness that sustains the life between processes. It arises and passes innumerable times, and is the foundation of all mental activity.",
-          "doctrinalNote": "Bhavaṅga = the life-maintaining part of the stream. It runs in deep sleep and between processes."
+          "name": "Life-continuum (bhavaṅga) — including vibrating and arrest",
+          "description": "The stream of consciousness sustaining life between cognitive processes. It includes its vibrating phase (bhavaṅga-calana) and arrest phase (bhavaṅga-upaccheda), both classed as vīthimutta vipāka (Chandrikava 5-9, ed. unconfirmed).",
+          "doctrinalNote": "Bhavaṅga, bhavaṅga-calana and bhavaṅga-upaccheda are all vīthimutta vipāka; they share the same citta type (paṭisandhi/bhavaṅga/cuti) for that individual (cf. Chandrikava 5-9)."
         },
         "3": {
-          "name": "Death consciousness",
+          "name": "Death consciousness (cuti)",
           "description": "The final mind-moment — the material life faculty perishes, the death consciousness falls, and the life ends. Immediately afterwards the next life's rebirth-linking consciousness arises.",
           "doctrinalNote": "Cuti = to move on, to depart. The object of the death consciousness is the death-proximate (āsanna) object."
         }
