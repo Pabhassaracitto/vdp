@@ -62,3 +62,17 @@ Sources used (secondary or English-language, not the Sinhala primary text): Ven.
 - PC_15 SN 12.63 reference matches the sutta on the four nutriments.
 - VT_Y_MON "11 mental factors" matches Nārada's determining consciousness (7 universals + vitakka, vicāra, adhimokkha, vīriya).
 - VT_Y_MON "begins with mind-door adverting (CI_029), without five-door adverting" matches Chandrikava 5-9.
+
+## Batch 3 (draft): points found while translating M4, M6, M9, M16
+
+Các mục dưới đây không sửa trong English. Các câu tương ứng được để English trong bản si draft, hoặc được dịch kèm đánh dấu chưa xác minh.
+
+B3-1. **M9 gocara (TERM_GOCARA, S05 body[1])**: English liệt kê "tangibility" như một gocararūpa cùng với sắc, thanh, hương, vị. Theo cách phân chia thông thường, gocararūpa gồm 4 (sắc, thanh, hương, vị); phoṭṭhabba là ba đại chủng (đất, lửa, gió) đã được tính trong đại chủng. Đề xuất: làm rõ trong English. Bản si dịch "ස්පර්ශ (පඨවි, තේජෝ, වායෝ ධාතු)" để giữ nghĩa English.
+
+B3-2. **M6 S04 body[1] (ranking of unwholesome weighty kamma)**: English xếp tà kiến cố định > phá Tăng > làm chảy máu Phật > giết cha mẹ. Chandrikava 6-7 (pitaka.lk) không nêu thứ tự này. Đề xuất: ghi nguồn cụ thể, hoặc bỏ. Bản si để câu này bằng English.
+
+B3-3. **M6 S05 body[3] and quiz M6_Q13 (fourth javana strongest)**: Chandrikava 6-7 nói năm javana giữa "ආසෙවන ප්‍රත්‍යය ලත් හෙයින් බලවත්" nhưng không chỉ đích danh javana thứ tư. Đề xuất: ghi nguồn cho "sáu·tư" hoặc sửa. Bản si để English.
+
+B3-4. **M6 S03 body[2] and card M6_R07 (obstructive kamma absent in form and formless realms)**: Chandrikava 6-6 không có nội dung này. Đề xuất: ghi nguồn. Bản si để English.
+
+B3-5. **M16 S02 body[0] (mention of "lifespan")**: câu nêu "lifespan" có vẻ không liên quan đến chủ đề puggala (cảnh giới tái sinh). Đề xuất: admin kiểm tra.
