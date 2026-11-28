@@ -71,7 +71,7 @@ B3-1. **M9 gocara (TERM_GOCARA, S05 body[1])**: English liệt kê "tangibility"
 
 B3-2. **M6 S04 body[1] (ranking of unwholesome weighty kamma)**: English xếp tà kiến cố định > phá Tăng > làm chảy máu Phật > giết cha mẹ. Chandrikava 6-7 (pitaka.lk) không nêu thứ tự này. Đề xuất: ghi nguồn cụ thể, hoặc bỏ. Bản si để câu này bằng English.
 
-B3-3. **M6 S05 body[3] and quiz M6_Q13 (fourth javana strongest)**: Chandrikava 6-7 nói năm javana giữa "ආසෙවන ප්‍රත්‍යය ලත් හෙයින් බලවත්" nhưng không chỉ đích danh javana thứ tư. Đề xuất: ghi nguồn cho "sáu·tư" hoặc sửa. Bản si để English.
+B3-3. **M6 S05 body[3] and quiz M6_Q13 (fourth javana strongest)**: Chandrikava 6-7 nói năm javana giữa "ආසෙවන ප්‍රත්‍යය ලත් හෙයින් බලවත්" nhưng không chỉ đích danh javana thứ tư. Đề xuất: ghi nguồn cho việc javana thứ tư mạnh nhất, hoặc sửa câu. Bản si để English.
 
 B3-4. **M6 S03 body[2] and card M6_R07 (obstructive kamma absent in form and formless realms)**: Chandrikava 6-6 không có nội dung này. Đề xuất: ghi nguồn. Bản si để English.
 
