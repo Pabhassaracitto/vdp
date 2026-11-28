@@ -7,7 +7,7 @@ Status: DRAFT, not reviewed, not read by build_full_catalogs.py.
 
 SI_STUDY_M10 = {'translationStatus': 'draft',
  'lessonSections': [{'id': 'M10_S01',
-                     'title': 'චිත්ත වීථිය යනු කුමක්ද? — ෂඩ් ෂට්ක හය',
+                     'title': 'චිත්ත වීථිය යනු කුමක්ද? — ෂට්ක හය',
                      'summary': 'චිත්ත වීථිය අධ්\u200dයයනය කරන්නේ ෂට්ක හය මත ය — වස්තු, ද්වාර, ආරම්මණ, විඥාන, වීථි සහ '
                                 'අරමුණ පෙනී සිටින ආකාර.',
                      'body': ['චිත්ත වීථියේ සාරාංශය සඳහා ෂට්ක හය දැනගත යුතු ය: වස්තු 6, ද්වාර 6, ආරම්මණ 6, විඥාන 6, '
@@ -252,7 +252,7 @@ SI_STUDY_M10 = {'translationStatus': 'draft',
                                      'page': 2,
                                      'note': 'Vīthimuttānaṁ… kamma-kammanimitta-gatinimitta-vasena tividhā'}]}],
  'reviewCards': [{'id': 'M10_R01',
-                  'front': "චිත්ත ධාරාවේ 'ෂට්ක ෂට්ක හය' (six sextets) මොනවාද?",
+                  'front': 'චිත්ත වීථියේ ෂට්ක හය (six sextets) මොනවාද?',
                   'back': 'වස්තු 6, ද්වාර 6, ආරම්මණ 6, විඥාන 6, චිත්ත වීථි 6 සහ අරමුණ පෙනී සිටින ආකාර 6.',
                   'sourceRefs': [{'file': 'VDP-LoTrinhTam.pdf', 'page': 2}]},
                  {'id': 'M10_R02',
